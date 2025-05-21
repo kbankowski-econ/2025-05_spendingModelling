@@ -1,4 +1,9 @@
 # Specify filepatterns you want git to ignore.
 .DS_Store
 +utils/+call/paths.m
+models/+**
+*.bin
+*.cod
+*.log
+checksum
 
