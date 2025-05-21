@@ -1,9 +1,12 @@
-%// NOTE: next step is to introduce the missing elements of the
-% import content that may be not covered in the loops (see also
-% some TODO items; first to load the model and then later to
-% solve for its SS)
+% PREAMBLE
+% cleaning evenrything
+close all;
+clear all;
+clc;
 
+% recalling the paths
 utils.call.paths;
+
 % Cding to a relevant directory
 cd(fullfile(project_path, 'models'));
 

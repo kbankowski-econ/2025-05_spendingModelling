@@ -223,4 +223,4 @@ shocks;
     var epsi_ig;
     stderr 0.25;
 end;
-stoch_simul(order=1) R by_ann lnyd Ig_ys pdef;
+stoch_simul(order=1, graph_format=none) R by_ann lnyd Ig_ys pdef;
