@@ -6,4 +6,4 @@ models/+**
 *.cod
 *.log
 checksum
-
+*.asv

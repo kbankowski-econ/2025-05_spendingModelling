@@ -18,8 +18,12 @@ shockConfig = struct(...
 varConfig = struct(...
     'Model_HumanCapital_v0', struct(...
         'yd', 'Aggregate Demand', ...
-        'effshock', 'Efficiency Process', ...
-        'Ig', 'Goverment Investment' ...
+        'C', 'Private Consumption', ...
+        'Ip', 'Private investment', ...
+        'Ig', 'Goverment Investment', ...
+        'Cg', 'Goverment consumption: wastefule', ...
+        'Cge', 'Government consumption: usefule', ...
+        'effshock', 'Efficiency Process' ...
     ) ...
 );
 
@@ -56,7 +60,7 @@ for i = 1:length(modelNames)
     end
 
     % Calculate IRF transformations
-    serIndex = cellfun(@(x) any(endsWith(x, {'_pic4', '_pic'})), M_.endo_names);
+    serIndex = cellfun(@(x) any(endsWith(x, {'effshock', 'effgeshock'})), M_.endo_names);
 
     results.(modelName).irfStruct.model = databank.copy( ...
         results.(modelName).endoStruct.model, ...
@@ -85,7 +89,7 @@ function vertModelComparison(results, varConfig, outputFileName)
     utils.call.paths;
 
     % Please specify the list of the variables to plot   
-    VarListToPlot = ["yd", "Ig"];
+    VarListToPlot = ["yd", "C", "Ip", "Ig", "Cg", "Cge", "effshock", "effgeshock"];
     modelList = fieldnames(results);  % Get the model names dynamically
     numModels = length(modelList);
 
@@ -96,7 +100,7 @@ function vertModelComparison(results, varConfig, outputFileName)
     figure
 
     % Create main tiledlayout
-    t = tiledlayout(length(VarListToPlot), 2, 'TileSpacing', 'compact', 'Padding', 'compact');
+    t = tiledlayout(length(VarListToPlot)/2, 2, 'TileSpacing', 'compact', 'Padding', 'compact');
     
     h = gcf;
     set(h, 'Units', 'centimeters', 'Position', [0 0 17 15])
@@ -120,9 +124,6 @@ function vertModelComparison(results, varConfig, outputFileName)
             hold on 
 
             modelNameAux=modelList{j};
-    
-            % Setting of the title
-            title(modelNameAux, 'Interpreter', 'latex', 'Fontweight', 'normal', 'Fontsize', 8);
 
             % Plotting the data
             plotData = results.(modelNameAux).irfStruct.model.(aVar){dataRange};  % Accessing the specific variable for the current model
