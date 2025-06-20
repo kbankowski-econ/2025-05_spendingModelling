@@ -7,12 +7,7 @@ utils.call.paths;
 %  ----------------
 
 %Declaring model names 
-modelNames = ["Model_HumanCapital_v0"];  
-
-%Declaring the shocks we want to plot
-shockConfig = struct(...
-    'Model_HumanCapital_v0', 'shock_ea_epsr1' ...
-);
+modelNames = ["Model_HumanCapital_v0", "Model_HumanCapital_v1"];  
 
 %Declaring variables 
 varConfig = struct(...
@@ -23,7 +18,8 @@ varConfig = struct(...
         'Ig', 'Goverment Investment', ...
         'Cg', 'Goverment consumption: wastefule', ...
         'Cge', 'Government consumption: usefule', ...
-        'effshock', 'Efficiency Process' ...
+        'effshock', 'Efficiency Process (1)', ...
+        'effgeshock', 'Efficiency Process (2)' ...
     ) ...
 );
 
@@ -100,48 +96,49 @@ function vertModelComparison(results, varConfig, outputFileName)
     figure
 
     % Create main tiledlayout
-    t = tiledlayout(length(VarListToPlot)/2, 2, 'TileSpacing', 'compact', 'Padding', 'compact');
+    t = tiledlayout(4, 2, 'TileSpacing', 'compact', 'Padding', 'compact');
     
     h = gcf;
+
     set(h, 'Units', 'centimeters', 'Position', [0 0 17 15])
-    
-    % Set default text interpreter to LaTeX for the entire figure
     set(h, 'DefaultTextInterpreter', 'latex');
     set(h, 'DefaultAxesTickLabelInterpreter', 'latex');
     set(h, 'DefaultLegendInterpreter', 'latex');
 
     % Create nested tiledlayouts for each row
     for i = 1:length(VarListToPlot)
-        t1 = tiledlayout(t, 1, numModels, 'TileSpacing', 'compact');
-        t1.Layout.Tile = i;
+        nexttile;
+        grid on
+        hold on 
 
         aVar = VarListToPlot(i);
-        title(t1, replace(aVar, "_", "\_"), 'Interpreter', 'latex', 'FontWeight', 'bold', 'FontSize', 10);        
+
+        title(replace(aVar, "_", "\_"), 'Interpreter', 'latex', 'FontWeight', 'bold', 'FontSize', 10);        
 
         for j = 1:numModels % for each panel
-            nexttile(t1);
-            grid on
-            hold on 
 
             modelNameAux=modelList{j};
 
             % Plotting the data
             plotData = results.(modelNameAux).irfStruct.model.(aVar){dataRange};  % Accessing the specific variable for the current model
             plot(plotData, "LineWidth", 2);
-            hold off;
-    
-            % Setting of the x and y axis
-            xtickformat(gca,'yQQQ');
-
-            set(gca ...
-                , 'Xtick', dater.toMatlab(dataRange(1:16:end)) ...
-                , 'Fontsize', 8 ...
-                , 'Box', 'off' ...
-                , 'TickLabelInterpreter', 'latex' ...
-                , 'XLimitMethod', 'tight' ...
-            );
 
         end 
+
+        hold off;
+
+            
+        % Setting of the x and y axis
+        xtickformat(gca,'yQQQ');
+
+        set(gca ...
+            , 'Xtick', dater.toMatlab(dataRange(1:16:end)) ...
+            , 'Fontsize', 8 ...
+            , 'Box', 'off' ...
+            , 'TickLabelInterpreter', 'latex' ...
+            , 'XLimitMethod', 'tight' ...
+        );
+
     end
 
     % Save graph
