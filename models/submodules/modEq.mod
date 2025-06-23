@@ -141,56 +141,7 @@ alphaRD         % R&D on TFP
 Cgrdy           % share of expenditure for R&D
 ;
 
-betta=0.9985;    
-phi= 1.2 ;       
-chi =0.6;        
-delta =0.025;    
-thetap = 0.8;    
-epsilon =10;     
-alppha=0.3;      
-Bigtheta=0;      
-Bigtheta_y=0;
-zeta=0.025;      
-rho_R=0.7;      
-gamma_pi=1.5;    
-gamma_y=0.25;    
-Piss=1;          
-rho_RG=0;        
-rho_tauc=0.9;  
-taucss=0.19;    
-gamma_y_tauc=0; 
-gamma_d_tauc=0.0; 
-rho_tauw=0.9;  
-tauwss=0.25 ;   
-gamma_y_tauw=0;  
-gamma_d_tauw=0; 
-byss=1*4;         
-rho_ZZ= 0.24 ;    
-ZZss=1.004;       
-eta1=-18.12;      
-eta2=3.12;
-Deltacost=0;  % Shutting down the feedback of debt on rate
-Igy=0.04;
-Cgy=0.1;
-rho_Cg=0.9;
-rho_Ig=0.9;
-gamma_d_trans=0.5;
-rho_trans=0;
-eff=0.8;
-effge=0.8;
-Cgey=0.1;
-deltaH=0.025;   
-muy=0.3;
-alphaH=0.3;
-rho_Cge=0.9;
-%load param_need;  
-alphaZZ1=0.2;
-rhoeffge =0;
-rhoeff =0;
-rho_AAt=0;
-alphaHA=0.05;
-alphaRD=0.1;
-Cgrdy=0.006;
+@#include "AE_parameters.macro"
 
 model;
 

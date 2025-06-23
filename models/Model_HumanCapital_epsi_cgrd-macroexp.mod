@@ -143,14 +143,14 @@ epsilon =10;
 alppha=0.3;      
 Bigtheta=0;      
 Bigtheta_y=0;
-zeta=0.025;      
+zeta=0.05;      
 rho_R=0.7;      
 gamma_pi=1.5;    
 gamma_y=0.25;    
 Piss=1;          
 rho_RG=0;        
 rho_tauc=0.9;  
-taucss=0.19;    
+taucss=0.20;    
 gamma_y_tauc=0; 
 gamma_d_tauc=0.0; 
 rho_tauw=0.9;  
@@ -163,15 +163,15 @@ ZZss=1.004;
 eta1=-18.12;      
 eta2=3.12;
 Deltacost=0;  % Shutting down the feedback of debt on rate
-Igy=0.04;
-Cgy=0.1;
+Igy=0.02;
+Cgy=0.2;
 rho_Cg=0.9;
 rho_Ig=0.9;
 gamma_d_trans=0.5;
 rho_trans=0;
 eff=0.8;
 effge=0.8;
-Cgey=0.1;
+Cgey=0.03;
 deltaH=0.025;   
 muy=0.3;
 alphaH=0.3;
@@ -180,9 +180,9 @@ rho_Cge=0.9;
 alphaZZ1=0.2;
 rhoeffge =0;
 rhoeff =0;
-rho_AAt=0;
+rho_AAt=0.0;
 alphaHA=0.05;
-alphaRD=0.1;
+alphaRD=0.02;
 Cgrdy=0.006;
 model;
 //********************************************************
@@ -224,12 +224,12 @@ g2=lambda*PIstar*yd+betta*thetap*(PI^chi/PI(+1))^(1-epsilon)*PIstar/PIstar(+1)*g
 epsilon*g1=(epsilon-1)*g2;
 // optimal inputs
 Kp(-1)/N=alppha/(1-alppha)*W_real/rk*ZZ;
-mc=(1/(1-alppha))^(1-alppha)*(1/alppha)^alppha*W_real^(1-alppha)*rk^alppha/(Kg(-1)/(yt+Bigtheta)*1/ZZ)^(zeta/(1-zeta));
+mc=(1/(1-alppha))^(1-alppha)*(1/alppha)^alppha*W_real^(1-alppha)*rk^alppha/(Kg(-1)/(yt+Bigtheta)*1/ZZ)^(zeta/(1-zeta))*1/AAt;
 // law of motion prices
 1=thetap*(PI(-1)^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon);
 // Production
 %yt=1/ZZ^(zeta+alppha-zeta*alppha)*(Kg(-1)^zeta)*(Kp(-1)^(alppha*(1-zeta)))*(N^((1-alppha)*(1-zeta)))-Bigtheta_y*STEADY_STATES(yt);
-yt=AAt*1/ZZ^(zeta+alppha-zeta*alppha)*(Kg(-1)^zeta)*(Kp(-1)^(alppha*(1-zeta)))*(N^((1-alppha)*(1-zeta)))-Bigtheta;
+yt=AAt*1/ZZ^(zeta+alppha-zeta*alppha)*(Kg(-1)^zeta)*(Kp(-1)^(alppha*(1-zeta)))*((N)^((1-alppha)*(1-zeta)))-Bigtheta;
 //Stationary tech process
 log(AAt)=rho_AAt*log(AAt(-1))+alphaHA*log(H(-1)/STEADY_STATE(H))+alphaRD*log(Cgrd(-1)/Cgrdss);
 //********************************************************
