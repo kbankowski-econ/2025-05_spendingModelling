@@ -18,3 +18,6 @@ dynare('Model_HumanCapital_v0.mod', 'savemacro');
 
 %% just a simple stochastic simulation of gov. investment shock
 dynare('Model_HumanCapital_v1.mod', 'savemacro');
+
+%% gov. investment shock
+dynare('Model_HumanCapital_epsiig.mod', 'savemacro');

@@ -7,7 +7,7 @@ utils.call.paths;
 % ----------------
 
 % Declaring model names
-modelList = ["Model_HumanCapital_v0", "Model_HumanCapital_v1"];
+modelList = ["Model_HumanCapital_epsiig"];
 
 % Initialize an empty structure to hold results
 resultsProc = struct();
@@ -56,7 +56,7 @@ end
 
 
 %% Plot comparison
-vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "effshock", "effgeshock"], modelList, 'epsi_eff');
+vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "H", "Lab", "E", "effshock", "effgeshock"], modelList, 'epsiig');
 
 %%
 function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileName)
@@ -70,9 +70,9 @@ function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileNa
     figure
     
     % Create main tiledlayout
-    t = tiledlayout(4, 2, 'TileSpacing', 'compact', 'Padding', 'compact');
+    t = tiledlayout(3, 4, 'TileSpacing', 'compact', 'Padding', 'compact');
     h = gcf;
-    set(h, 'Units', 'centimeters', 'Position', [0 0 17 15])
+    set(h, 'Units', 'centimeters', 'Position', [0 0 17 11])
     set(h, 'DefaultTextInterpreter', 'latex');
     set(h, 'DefaultAxesTickLabelInterpreter', 'latex');
     set(h, 'DefaultLegendInterpreter', 'latex');
