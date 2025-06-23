@@ -1,28 +1,12 @@
-git mv ./models/Model_HumanCapital_epsiig ./models/Model_HumanCapital_epsi_ig
-git mv ./models/Model_HumanCapital_epsiig/Output/Model_HumanCapital_epsiig_results.mat ./models/Model_HumanCapital_epsi_ig/Output/Model_HumanCapital_epsi_ig_results.mat
-git mv ./models/Model_HumanCapital_epsiig_steadystate.m ./models/Model_HumanCapital_epsi_ig_steadystate.m
-git mv ./models/+Model_HumanCapital_epsiig ./models/+Model_HumanCapital_epsi_ig
-git mv ./models/Model_HumanCapital_epsiig.mod ./models/Model_HumanCapital_epsi_ig.mod
-git mv ./models/Model_HumanCapital_epsiig.log ./models/Model_HumanCapital_epsi_ig.log
-git mv ./models/Model_HumanCapital_epsiig-macroexp.mod ./models/Model_HumanCapital_epsi_ig-macroexp.mod
-git mv ./models/Model_HumanCapital_epsicg ./models/Model_HumanCapital_epsi_cge
-git mv ./models/Model_HumanCapital_epsicg/Output/Model_HumanCapital_epsicg_results.mat ./models/Model_HumanCapital_epsi_cge/Output/Model_HumanCapital_epsi_cge_results.mat
-git mv ./models/Model_HumanCapital_epsicg_steadystate.m ./models/Model_HumanCapital_epsi_cge_steadystate.m
-git mv ./models/+Model_HumanCapital_epsicg ./models/+Model_HumanCapital_epsi_cge
-git mv ./models/Model_HumanCapital_epsicg.log ./models/Model_HumanCapital_epsi_cge.log
-git mv ./models/Model_HumanCapital_epsicg-macroexp.mod ./models/Model_HumanCapital_epsi_cge-macroexp.mod
-git mv ./models/Model_HumanCapital_epsicg.mod ./models/Model_HumanCapital_epsi_cge.mod
-git mv ./models/Model_HumanCapital_epsigrd-macroexp.mod ./models/Model_HumanCapital_epsi_cgrd-macroexp.mod
-git mv ./models/Model_HumanCapital_epsigrd_steadystate.m ./models/Model_HumanCapital_epsi_cgrd_steadystate.m
-git mv ./models/Model_HumanCapital_epsigrd.mod ./models/Model_HumanCapital_epsi_cgrd.mod
-git mv ./models/+Model_HumanCapital_epsigrd ./models/+Model_HumanCapital_epsi_cgrd
-git mv ./models/Model_HumanCapital_epsigrd ./models/Model_HumanCapital_epsi_cgrd
-git mv ./models/Model_HumanCapital_epsigrd/Output/Model_HumanCapital_epsigrd_results.mat ./models/Model_HumanCapital_epsi_cgrd/Output/Model_HumanCapital_epsi_cgrd_results.mat
-git mv ./models/Model_HumanCapital_epsigrd.log ./models/Model_HumanCapital_epsi_cgrd.log
-git mv ./models/Model_HumanCapital_epsiall-macroexp.mod ./models/Model_HumanCapital_epsi_all-macroexp.mod
-git mv ./models/Model_HumanCapital_epsiall.mod ./models/Model_HumanCapital_epsi_all.mod
-git mv ./models/Model_HumanCapital_epsiall_steadystate.m ./models/Model_HumanCapital_epsi_all_steadystate.m
-git mv ./models/Model_HumanCapital_epsiall.log ./models/Model_HumanCapital_epsi_all.log
-git mv ./models/+Model_HumanCapital_epsiall ./models/+Model_HumanCapital_epsi_all
-git mv ./models/Model_HumanCapital_epsiall ./models/Model_HumanCapital_epsi_all
-git mv ./models/Model_HumanCapital_epsiall/Output/Model_HumanCapital_epsiall_results.mat ./models/Model_HumanCapital_epsi_all/Output/Model_HumanCapital_epsi_all_results.mat
+mv ./models/Model_HumanCapital_epsiig/Output/Model_HumanCapital_epsiig_results.mat ./models/Model_HumanCapital_epsi_ig/Output/Model_HumanCapital_epsi_ig_results.mat
+mv ./models/+Model_HumanCapital_epsiig ./models/+Model_HumanCapital_epsi_ig
+mv ./models/Model_HumanCapital_epsiig.log ./models/Model_HumanCapital_epsi_ig.log
+mv ./models/Model_HumanCapital_epsicg/Output/Model_HumanCapital_epsicg_results.mat ./models/Model_HumanCapital_epsi_cge/Output/Model_HumanCapital_epsi_cge_results.mat
+mv ./models/+Model_HumanCapital_epsicg ./models/+Model_HumanCapital_epsi_cge
+mv ./models/Model_HumanCapital_epsicg.log ./models/Model_HumanCapital_epsi_cge.log
+mv ./models/+Model_HumanCapital_epsigrd ./models/+Model_HumanCapital_epsi_cgrd
+mv ./models/Model_HumanCapital_epsigrd/Output/Model_HumanCapital_epsigrd_results.mat ./models/Model_HumanCapital_epsi_cgrd/Output/Model_HumanCapital_epsi_cgrd_results.mat
+mv ./models/Model_HumanCapital_epsigrd.log ./models/Model_HumanCapital_epsi_cgrd.log
+mv ./models/Model_HumanCapital_epsiall.log ./models/Model_HumanCapital_epsi_all.log
+mv ./models/+Model_HumanCapital_epsiall ./models/+Model_HumanCapital_epsi_all
+mv ./models/Model_HumanCapital_epsiall/Output/Model_HumanCapital_epsiall_results.mat ./models/Model_HumanCapital_epsi_all/Output/Model_HumanCapital_epsi_all_results.mat
