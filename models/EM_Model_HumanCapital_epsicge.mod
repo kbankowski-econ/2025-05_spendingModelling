@@ -1,0 +1,74 @@
+% ANH NGUYEN (FAD FP)
+% This model is a standard macro-fiscal model
+% A representative HH 
+% Public expenditure: public consumption, pubic investment
+% Public revenue: consumption tax, income tax, lump-sum transfer
+% Price stickiness
+% Public investment is modelled as in Drautzburg and Uhlig (2015)
+
+
+% June 23: 
+% revise the debt equation: R(-1)/PI
+% revise the gov expenditure equation in terms of GDP
+% revsie the transfer adjustment equation
+
+@#include "declare_all.macro"
+
+% Include EM parameters
+@#include  "EM_parameters.macro"
+
+
+model;
+
+@#include "model_block.modpart"
+
+end;
+
+
+steady;
+check;
+
+
+shocks;
+
+var epsi_cge;
+periods 1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20 21:2000  ;
+values 0.000500000000000000
+0.00100000000000000
+0.00150000000000000
+0.00200000000000000
+0.00250000000000000
+0.00300000000000000
+0.00350000000000000
+0.00400000000000000
+0.00450000000000000
+0.00500000000000000
+0.00550000000000000
+0.00600000000000000
+0.00650000000000000
+0.00700000000000000
+0.00750000000000000
+0.00800000000000000
+0.00850000000000000
+0.00900000000000000
+0.00950000000000000
+0.0100000000000000
+0.01;
+
+end;
+
+
+perfect_foresight_setup(periods=2000);%options_.debug
+perfect_foresight_solver(maxit=20); %maxit=10 linear_approximation, endogenous_terminal_period
+
+
+
+fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;
+multiplier=sum((yd(2:40)-yd(1)))/sum((fiscalchange(2:30)))
+
+
+/*
+num=[1:20]
+v1=[0:1/20:1]
+v2=v1(2:end)'/100;
+*/
