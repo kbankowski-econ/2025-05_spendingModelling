@@ -305,42 +305,8 @@ ygrowth=log(yd/yd(-1))*100+log(ZZ)*100;
 end;
 steady;
 check;
-/*
 shocks;
-var epsi_effge; 
-stderr 0.001;
-end;
-stoch_simul(order=1) ygrowth lnyd effshock effgeshock;
-*/
-/*
-shocks;
-var epsi_effge;
-periods 1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20 21:2000  ;
-values 0.0125000000000000
-0.0250000000000000
-0.0375000000000000
-0.0500000000000000
-0.0625000000000000
-0.0750000000000000
-0.0875000000000000
-0.100000000000000
-0.112500000000000
-0.125000000000000
-0.137500000000000
-0.150000000000000
-0.162500000000000
-0.175000000000000
-0.187500000000000
-0.200000000000000
-0.212500000000000
-0.225000000000000
-0.237500000000000
-0.250000000000000
-0.250000000000000;
-end;
-*/
-shocks;
-var epsi_cgrd;
+    var epsi_cgrd;
 periods 1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20 21:2000  ;
 values 0.000500000000000000
 0.00100000000000000
@@ -366,8 +332,3 @@ values 0.000500000000000000
 end;
 perfect_foresight_setup(periods=2000);%options_.debug
 perfect_foresight_solver(maxit=20); %maxit=10 linear_approximation, endogenous_terminal_period
-/*
-num=[1:20]
-v1=[0:1/20:1]
-v2=v1(2:end)'/100;
-*/
