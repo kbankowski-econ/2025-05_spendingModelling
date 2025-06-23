@@ -20,13 +20,13 @@ dynare('Model_HumanCapital_v0.mod', 'savemacro');
 dynare('Model_HumanCapital_v1.mod', 'savemacro');
 
 %% gov. investment shock
-dynare('Model_HumanCapital_epsiig.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'));
+dynare('Model_HumanCapital_epsi_ig.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'));
 
 %% gov. cge shock
-dynare('Model_HumanCapital_epsicg.mod', 'savemacro');
+dynare('Model_HumanCapital_epsi_cge.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'));
 
 %% gov. cgerd shock
-dynare('Model_HumanCapital_epsigrd.mod', 'savemacro');
+dynare('Model_HumanCapital_epsi_cgrd.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'));
 
 %% gov. cgerd shock
-dynare('Model_HumanCapital_epsiall.mod', 'savemacro');
+dynare('Model_HumanCapital_epsi_all.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'));
