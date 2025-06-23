@@ -1,195 +1,53 @@
 ﻿,description,diffTransf,diffDesc
-C,Household consumption expenditure,pctDev,% deviation
-lambda,Marginal utility of consumption,pctDev,% deviation
-R,Nominal interest rate on government bonds,pctDev,% deviation
-PI,Gross inflation rate,pctDev,% deviation
-N,Effective labor supply,pctDev,% deviation
-W_real,Real wage rate,pctDev,% deviation
-Ip,Private sector investment,pctDev,% deviation
-Kp,Private sector capital stock,pctDev,% deviation
-rk,Rate of return on private capital,pctDev,% deviation
-g1,Price-setting auxiliary variable 1,pctDev,% deviation
-g2,Price-setting auxiliary variable 2,pctDev,% deviation
-mc,Marginal cost of production,pctDev,% deviation
-PIstar,Optimal gross inflation rate,pctDev,% deviation
-yt,Total production output,pctDev,% deviation
-Kg,Public sector capital stock,pctDev,% deviation
-Rmp,Monetary policy interest rate,pctDev,% deviation
-Bt,Government debt level,pctDev,% deviation
-by,Debt-to-GDP ratio,pctDev,% deviation
-Ig,Public sector investment,pctDev,% deviation
-Cg,Public sector consumption,pctDev,% deviation
-tauc,Consumption tax rate,pctDev,% deviation
-tauw,Labor income tax rate,pctDev,% deviation
-yd,Aggregate demand,pctDev,% deviation
-vp,Price dispersion measure,pctDev,% deviation
-ZZ,Gross economic growth rate,pctDev,% deviation
-Delta_G,Expected utility loss,pctDev,% deviation
-prob_def,Probability of sovereign default,pctDev,% deviation
-omega,Scaling parameter,pctDev,% deviation
-Igss,Steady-state public investment,pctDev,% deviation
-Cgss,Steady-state public consumption,pctDev,% deviation
-Rss,Steady-state interest rate,pctDev,% deviation
-ydss,Steady-state aggregate output,pctDev,% deviation
-Trans,Government transfers to households,pctDev,% deviation
-lnyd,Natural logarithm of output,pctDev,% deviation
-pdef,Primary fiscal deficit,pctDev,% deviation
-Ig_ys,Public investment as percentage of GDP,pctDev,% deviation
-by_ann,Annualized debt-to-GDP ratio,pctDev,% deviation
-lnPI,Natural logarithm of price index,pctDev,% deviation
-H,Human capital stock,pctDev,% deviation
-Kge,Public human capital-related infrastructure stock,pctDev,% deviation
-Cge,Public expenditure on human capital infrastructure,pctDev,% deviation
-E,Time allocated to education and health capital formation,pctDev,% deviation
-lambda_HC,Lagrange multiplier for human capital constraint,pctDev,% deviation
-Cgess,Steady-state public spending on human capital infrastructure,pctDev,% deviation
-Lab,Total labor supply,pctDev,% deviation
-muyH,Adjustment parameter for time allocation (E=0.1),pctDev,% deviation
-ygrowth,Economic growth rate,pctDev,% deviation
-effgeshock,Efficiency shock to human capital spending,dev,abs. deviation
-effshock,Efficiency shock to infrastructure spending,dev,abs. deviation
-AAt,Stationary technology process,pctDev,% deviation
-Cgrd,Public research and development expenditure,pctDev,% deviation
-Cgrdss,Steady-state R&D expenditure,pctDev,% deviation
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
-,,,
+C,Household consumption,pctDev,\% deviation
+lambda,Marginal utility of consumption,pctDev,\% deviation
+R,Nominal interest rate on gov. bonds,pctDev,\% deviation
+PI,Gross inflation rate,pctDev,\% deviation
+N,Effective labor supply,pctDev,\% deviation
+W_real,Real wage rate,pctDev,\% deviation
+Ip,Private investment,pctDev,\% deviation
+Kp,Private capital stock,pctDev,\% deviation
+rk,Rate of return on private capital,pctDev,\% deviation
+g1,Price-setting auxiliary variable 1,pctDev,\% deviation
+g2,Price-setting auxiliary variable 2,pctDev,\% deviation
+mc,Marginal cost of production,pctDev,\% deviation
+PIstar,Optimal gross inflation rate,pctDev,\% deviation
+yt,Total production output,pctDev,\% deviation
+Kg,Gov. capital stock,pctDev,\% deviation
+Rmp,Monetary policy interest rate,pctDev,\% deviation
+Bt,Government debt level,pctDev,\% deviation
+by,Debt-to-GDP ratio,pctDev,\% deviation
+Ig,Gov. investment,pctDev,\% deviation
+Cg,Gov. consumption,pctDev,\% deviation
+tauc,Consumption tax rate,pctDev,\% deviation
+tauw,Labor income tax rate,pctDev,\% deviation
+yd,Aggregate demand,pctDev,\% deviation
+vp,Price dispersion measure,pctDev,\% deviation
+ZZ,Gross economic growth rate,pctDev,\% deviation
+Delta_G,Expected utility loss,pctDev,\% deviation
+prob_def,Probability of sovereign default,pctDev,\% deviation
+omega,Scaling parameter,pctDev,\% deviation
+Igss,Steady-state gov. investment,pctDev,\% deviation
+Cgss,Steady-state gov. consumption,pctDev,\% deviation
+Rss,Steady-state interest rate,pctDev,\% deviation
+ydss,Steady-state aggregate output,pctDev,\% deviation
+Trans,Government transfers to households,pctDev,\% deviation
+lnyd,Natural logarithm of output,pctDev,\% deviation
+pdef,Primary fiscal deficit,pctDev,\% deviation
+Ig_ys,Gov. investment as percentage of GDP,pctDev,\% deviation
+by_ann,Annualized debt-to-GDP ratio,pctDev,\% deviation
+lnPI,Natural logarithm of price index,pctDev,\% deviation
+H,Human capital stock,pctDev,\% deviation
+Kge,Gov. human capital-related infrastructure stock,pctDev,\% deviation
+Cge,Gov. exp. on human capital,pctDev,\% deviation
+E,Time allocated to education,pctDev,\% deviation
+lambda_HC,Lagrange multiplier for human capital constraint,pctDev,\% deviation
+Cgess,Steady-state gov. spending on human capital infrastructure,pctDev,\% deviation
+Lab,Total labor supply,pctDev,\% deviation
+muyH,Adjustment parameter for time allocation (E=0.1),pctDev,\% deviation
+ygrowth,Economic growth rate,pctDev,\% deviation
+effgeshock,Efficiency of human capital spending,dev,abs. deviation
+effshock,Efficiency of infrastructure spending,dev,abs. deviation
+AAt,Stationary technology process,pctDev,\% deviation
+Cgrd,Gov. R and D expenditure,pctDev,\% deviation
+Cgrdss,Steady-state R&D expenditure,pctDev,\% deviation

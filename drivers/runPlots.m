@@ -86,7 +86,7 @@ function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileNa
         nexttile;
         grid on
         hold on
-        title(replace(aVar, "_", "\_"), 'Interpreter', 'latex', 'FontWeight', 'bold', 'FontSize', 10);
+        title({envi.varDict{aVar, "description"}; "("+replace(aVar, "_", "\_")+", "+envi.varDict{aVar, "diffDesc"}+")"}, 'Interpreter', 'latex', 'FontWeight', 'bold', 'FontSize', 10);
         
         for aModel = modelList % for each panel
             % Plotting the data
