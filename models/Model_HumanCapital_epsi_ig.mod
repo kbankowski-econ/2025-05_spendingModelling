@@ -1,5 +1,8 @@
 @#include "modEq.mod"
 
-@#include "shocSpec_epsi_ig.mod"
+shocks;
+    var epsi_ig;
+    @#include "shockStandardVal.mod"
+end;
 
 @#include "simulSpec.mod"
