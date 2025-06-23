@@ -10,7 +10,16 @@ envi = environment.setup();
 % ----------------
 
 % Declaring model names
-modelList = ["Model_HumanCapital_epsi_ig", "Model_HumanCapital_epsi_cge", "Model_HumanCapital_epsi_cgrd", "Model_HumanCapital_epsi_all"];
+modelList = ["Model_HumanCapital_epsi_ig" ...
+    , "Model_HumanCapital_epsi_cge" ...
+    , "Model_HumanCapital_epsi_cgrd" ...
+    , "Model_HumanCapital_epsi_all" ...
+    , "EM_Model_HumanCapital_epsiig" ...
+    , "EM_Model_HumanCapital_epsicge" ...
+    , "EM_Model_HumanCapital_epsieff" ...
+    , "EM_Model_HumanCapital_epsieffcge" ...
+    , "EM_Model_HumanCapital_epsiall" ...
+    ];
 
 % Initialize an empty structure to hold results
 resultsProc = struct();
@@ -59,7 +68,10 @@ end
 
 
 %% Plot comparison
-vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], modelList, 'epsiall');
+vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_ig" , "Model_HumanCapital_epsi_cge" , "Model_HumanCapital_epsi_cgrd"], 'epsiall_AE');
+vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["EM_Model_HumanCapital_epsiig", "EM_Model_HumanCapital_epsicge", "EM_Model_HumanCapital_epsieff", "EM_Model_HumanCapital_epsieffcge"], 'epsiall_EM');
+vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_ig", "EM_Model_HumanCapital_epsiig"], 'epsi_ig');;
+vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_cge", "EM_Model_HumanCapital_epsicge"], 'epsi_cge');;
 
 %%
 function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileName)
