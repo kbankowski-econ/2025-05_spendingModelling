@@ -1,0 +1,5 @@
+﻿,description
+Model_HumanCapital_epsi_ig,Infrastructure investment shock
+Model_HumanCapital_epsi_cge,Human capital-related investment shock
+Model_HumanCapital_epsi_cgrd,R&D investment spending shock
+Model_HumanCapital_epsi_all,All shocks combined

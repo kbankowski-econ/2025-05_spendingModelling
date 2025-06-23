@@ -2,6 +2,9 @@
 clear all; close all; clc; 
 utils.call.paths;
 
+envi = environment.setup();
+
+
 %% ----------------
 % Loading the databases
 % ----------------
