@@ -87,7 +87,7 @@ function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileNa
         for aModel = modelList % for each panel
             % Plotting the data
             plotData = resultsProc.(aModel).irf.(aVar){dataRange}; % Accessing the specific variable for the current model
-            plot(plotData, "LineWidth", 2);
+            pp.(aModel) = plot(plotData, "LineWidth", 2);
         end
         
         hold off;
@@ -102,6 +102,19 @@ function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileNa
             'XLimitMethod', 'tight' ...
         );
     end
+
+    % Setting of the legend   
+    % Setting of the legend   
+    leg = legend(...
+        struct2array(pp) ...
+        , replace(modelList, "_", "\_") ...
+        , 'Orientation', 'horizontal' ...
+        , 'Color', [1 1 1] ...
+        , 'Fontsize', 8 ...
+        , 'Interpreter', 'latex' ...
+    );
+    leg.Layout.Tile = 'north';
+    leg.NumColumns = 2;    
     
     fullFileName = fullfile(project_path, 'docs', [outputFileName '.png']);
     exportgraphics(t, fullFileName, 'BackgroundColor', 'none');
