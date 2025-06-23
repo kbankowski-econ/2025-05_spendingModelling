@@ -7,7 +7,7 @@ utils.call.paths;
 % ----------------
 
 % Declaring model names
-modelList = ["Model_HumanCapital_epsigrd"];
+modelList = ["Model_HumanCapital_epsiall"];
 
 % Initialize an empty structure to hold results
 resultsProc = struct();
@@ -56,7 +56,7 @@ end
 
 
 %% Plot comparison
-vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "H", "Lab", "E", "effshock", "effgeshock"], modelList, 'epsigrd');
+vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "H", "Lab", "E", "effshock", "effgeshock"], modelList, 'epsiall');
 
 %%
 function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileName)
