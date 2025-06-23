@@ -21,3 +21,6 @@ dynare('Model_HumanCapital_v1.mod', 'savemacro');
 
 %% gov. investment shock
 dynare('Model_HumanCapital_epsiig.mod', 'savemacro');
+
+%% gov. cge shock
+dynare('Model_HumanCapital_epsicg.mod', 'savemacro');
