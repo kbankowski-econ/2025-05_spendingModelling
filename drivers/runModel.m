@@ -24,3 +24,15 @@ dynare('Model_HumanCapital_epsi_all.mod', 'savemacro', sprintf('-I%s/%s/submodul
 
 %% EM: gov. cgerd shock
 dynare('EM_Model_HumanCapital_epsiig.mod', 'savemacro');
+
+%% EM: gov. cgerd shock
+dynare('EM_Model_HumanCapital_epsicge.mod', 'savemacro');
+
+%% EM: gov. cgerd shock
+dynare('EM_Model_HumanCapital_epsieff.mod', 'savemacro');
+
+%% EM: gov. cgerd shock
+dynare('EM_Model_HumanCapital_epsieffcge.mod', 'savemacro');
+
+%% EM: gov. cgerd shock
+dynare('EM_Model_HumanCapital_epsiall.mod', 'savemacro');

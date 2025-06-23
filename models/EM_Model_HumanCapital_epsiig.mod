@@ -63,8 +63,8 @@ perfect_foresight_solver(maxit=20); %maxit=10 linear_approximation, endogenous_t
 
 
 
-fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;
-multiplier=sum((yd(2:40)-yd(1)))/sum((fiscalchange(2:30)))
+// fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;
+// multiplier=sum((yd(2:40)-yd(1)))/sum((fiscalchange(2:30)))
 
 
 /*

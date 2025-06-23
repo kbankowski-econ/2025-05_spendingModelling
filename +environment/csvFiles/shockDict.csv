@@ -3,3 +3,8 @@ Model_HumanCapital_epsi_ig,Infrastructure investment shock
 Model_HumanCapital_epsi_cge,Human capital-related investment shock
 Model_HumanCapital_epsi_cgrd,R&D investment spending shock
 Model_HumanCapital_epsi_all,All shocks combined
+EM_Model_HumanCapital_epsiig,Infrastructure investment shock
+EM_Model_HumanCapital_epsicge,Human capital-related investment shock
+EM_Model_HumanCapital_epsieff,Infrastructure efficiency
+EM_Model_HumanCapital_epsieffcge,Human capital efficiency
+EM_Model_HumanCapital_epsiall,All shocks combined
