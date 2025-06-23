@@ -1,0 +1,128 @@
+var 
+C               % HH consumption
+lambda          % Marginal Utility
+R               % Interest rate on bond
+PI              % Gross inflation
+N               % (Effective) Labor supply
+W_real          % Real wages
+Ip              % Private investment
+Kp              % Private capital
+rk              % Return on private investment
+g1              % Price setting 1
+g2              % Price setting 2
+mc              % Marginal cost
+PIstar          % Optimnal gross inflation 
+yt              % Production
+Kg              % Public capital
+Rmp             % Policy rate
+Bt              % Debt level
+by              % Debt/GDP
+Ig              % Public investment
+Cg              % Public consumption
+tauc            % Consumption tax
+tauw            % Income tax
+yd              % Aggregate demand
+vp              % Price dispersion
+ZZ              % Gross growth rate
+%shock_ZZ        % shock to the ZZ process  
+Delta_G         % Expected loss 
+prob_def        % probability of default
+omega           % Scaling
+Igss            % Steady state of Investment
+Cgss            % Steady state of Consumption
+Rss             % Steady state interest rate   
+ydss            % Steady state output
+Trans           % Transfer
+lnyd            % Log of Output
+pdef            % Primary Deficit 
+Ig_ys           % Public Investment as percent of GDP
+by_ann          % Debt to GDP 
+lnPI            % Log of Prince index
+
+H               % Human capital
+Kge             % Public Human-related Capital Stock (HCS)
+Cge             % Public spending in public humand-related capital stock
+E               % Time for schooling and taking care of health (building capital)
+lambda_HC        % Lagrangian of the Human capital formation
+Cgess           % Steady state of public spending on Public human-capital related stock
+Lab             % Labor supply 
+muyH            % Adjuster so that E=0.1
+ygrowth          % econonmic growth
+effgeshock
+effshock
+AAt             % staionary Tech Process
+Cgrd            % R&D spending
+Cgrdss          % R&D spending SS
+;
+
+%-----------------------------
+% Define exogenous variables
+%-----------------------------
+varexo
+%epsi_cg         % Shock to government consumption
+epsi_ig         % Shock to government investment  
+epsi_ZZ         % Shock to trend
+epsi_spread     % Shock to Spread
+epsi_MP         % Monetary Policy Shocks
+epsi_tauc       % Consumption income tax shock 
+epsi_tauw       % Labor income tax shock
+epsi_cge        % Public HC spending shock
+epsi_effge  
+epsi_eff
+epsi_cgrd       % Shock to R&D
+;
+
+%--------------------------
+% Define parameters
+%--------------------------
+parameters 
+betta           % Discount value
+phi             % Frisch parameter
+chi             % indexation
+delta           % depreciationf
+thetap          % firsm cant change the price
+epsilon         % elasticity of substitution 
+alppha          % share of capital in intermediate firms production
+Bigtheta        % Fixed cost
+Bigtheta_y      % Fixed cost to GDP
+zeta            % Share of public capital in teh production
+rho_R           % Persistence of policy rate
+gamma_pi        % Reponse of MP to inflation
+gamma_y         % Reponse of MP to OG
+Piss            % SS of gross inflation
+rho_RG          % Persistence of goverment bond rate capturing the maturity (1/(1-rho_RG)) s the average maturity
+rho_tauc        % AR(1) of consumption tax rate
+taucss          % Consumption tax rate SS
+gamma_y_tauc    % Response of consumption tax to OG
+gamma_d_tauc    % Response of consumption tax to debt
+rho_tauw        % AR(1) of income tax rate
+tauwss          % Income tax rate SS
+gamma_y_tauw    % Response of consumption tax to OG
+gamma_d_tauw    % Response of consumption tax to debt
+byss            % Steady state of debt
+rho_ZZ          % AR(1) of growth shock 
+ZZss            % SS of growth
+eta1            % Prof default param 1
+eta2            % Prof default param 2 
+Deltacost       % Feed back of debt on rate
+Igy             % Public investment/GDP
+Cgy             % Public consumption/GDP
+rho_Cg          % AR(1) process for public consumption
+rho_Ig          % AR(1) process for public investment  
+gamma_d_trans   % Response of lump sum transfer to debt
+rho_trans
+eff            % Efficiency of public investment
+deltaH          % Depreciation of Labor
+muy             % Effectiveness of education investment.
+alphaH          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
+effge           % Efficiency of public HRC 
+Cgey            % Share of goevrnment expenditure to human capital
+alphaZZ1        % Learning by doing off HHon ZZ
+rho_Cge         % Persistence of human-related spending
+rhoeffge
+rhoeff
+rho_AAt         % Persistence of staionary tech process
+alphaHA         % feed back of Human cpital to TFP
+alphaRD         % R&D on TFP
+Cgrdy           % share of expenditure for R&D
+;
