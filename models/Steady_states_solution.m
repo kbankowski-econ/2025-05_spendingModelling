@@ -15,7 +15,7 @@ Rmp=R;                   % Monetary policy rate
 N=1/3;                    % Effective Labor supply
 %H=1;
 %L=0.2;
-E=0.1;
+E=0.05;
 
 
 %eff=effss;
