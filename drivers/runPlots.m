@@ -76,18 +76,13 @@ end
 
 
 %% Plot comparison
-vertModelComparison(results, varConfig, 'epsi_eff');
+vertModelComparison(results, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "effshock", "effgeshock"], ["Model_HumanCapital_v0", "Model_HumanCapital_v1"], 'epsi_eff');
 
 %%
-function vertModelComparison(results, varConfig, outputFileName)
+function vertModelComparison(results, VarListToPlot, modelList, outputFileName)
 
     % Load objects and adjust settings
     utils.call.paths;
-
-    % Please specify the list of the variables to plot   
-    VarListToPlot = ["yd", "C", "Ip", "Ig", "Cg", "Cge", "effshock", "effgeshock"];
-    modelList = fieldnames(results);  % Get the model names dynamically
-    numModels = length(modelList);
 
     % Please specify the date range of the series
     dataRange = qq(1,1): qq(25,4);
@@ -106,21 +101,17 @@ function vertModelComparison(results, varConfig, outputFileName)
     set(h, 'DefaultLegendInterpreter', 'latex');
 
     % Create nested tiledlayouts for each row
-    for i = 1:length(VarListToPlot)
+    for aVar = VarListToPlot
         nexttile;
         grid on
         hold on 
 
-        aVar = VarListToPlot(i);
-
         title(replace(aVar, "_", "\_"), 'Interpreter', 'latex', 'FontWeight', 'bold', 'FontSize', 10);        
 
-        for j = 1:numModels % for each panel
-
-            modelNameAux=modelList{j};
+        for aModel = modelList % for each panel
 
             % Plotting the data
-            plotData = results.(modelNameAux).irfStruct.model.(aVar){dataRange};  % Accessing the specific variable for the current model
+            plotData = results.(aModel).irfStruct.model.(aVar){dataRange};  % Accessing the specific variable for the current model
             plot(plotData, "LineWidth", 2);
 
         end 
@@ -139,12 +130,6 @@ function vertModelComparison(results, varConfig, outputFileName)
             , 'XLimitMethod', 'tight' ...
         );
 
-    end
-
-    % Save graph
-    if nargin < 3 || isempty(outputFileName)
-        % Default file name if not provided
-        outputFileName = 'vertModelComparison';
     end
     
     fullFileName = fullfile(project_path, 'docs', [outputFileName '.png']);
