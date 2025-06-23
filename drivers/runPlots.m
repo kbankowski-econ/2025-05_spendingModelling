@@ -7,7 +7,7 @@ utils.call.paths;
 % ----------------
 
 % Declaring model names
-modelList = ["Model_HumanCapital_epsiig", "Model_HumanCapital_epsicg", "Model_HumanCapital_epsigrd"];
+modelList = ["Model_HumanCapital_epsi_ig", "Model_HumanCapital_epsi_cge", "Model_HumanCapital_epsi_cgrd", "Model_HumanCapital_epsi_all"];
 
 % Initialize an empty structure to hold results
 resultsProc = struct();
