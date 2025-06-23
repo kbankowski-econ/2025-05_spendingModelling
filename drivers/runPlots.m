@@ -74,6 +74,11 @@ vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H
 vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_cge", "EM_Model_HumanCapital_epsicge"], 'epsi_cge');;
 
 %%
+vertModelComparison(resultsProc, ["yd"], ["Model_HumanCapital_epsi_ig" , "Model_HumanCapital_epsi_cge" , "Model_HumanCapital_epsi_cgrd"], 'epsiall_AE_oneChart');
+vertModelComparison(resultsProc, ["yd"], ["EM_Model_HumanCapital_epsiig", "EM_Model_HumanCapital_epsicge", "EM_Model_HumanCapital_epsieff", "EM_Model_HumanCapital_epsieffcge"], 'epsiall_EM_oneChart');
+
+
+%%
 function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileName)
     % Load objects and adjust settings
     utils.call.paths;
@@ -86,9 +91,9 @@ function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileNa
     figure
     
     % Create main tiledlayout
-    t = tiledlayout(3, 4, 'TileSpacing', 'compact', 'Padding', 'compact');
+    t = tiledlayout(1, 1, 'TileSpacing', 'compact', 'Padding', 'compact');
     h = gcf;
-    set(h, 'Units', 'centimeters', 'Position', [0 0 18 11])
+    set(h, 'Units', 'centimeters', 'Position', [0 0 7 7])
     set(h, 'DefaultTextInterpreter', 'latex');
     set(h, 'DefaultAxesTickLabelInterpreter', 'latex');
     set(h, 'DefaultLegendInterpreter', 'latex');
@@ -130,7 +135,7 @@ function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileNa
         , 'Interpreter', 'latex' ...
     );
     leg.Layout.Tile = 'north';
-    leg.NumColumns = 2;    
+    leg.NumColumns = 1;    
     
     fullFileName = fullfile(project_path, 'docs', [outputFileName '.png']);
     exportgraphics(t, fullFileName, 'BackgroundColor', 'none');
