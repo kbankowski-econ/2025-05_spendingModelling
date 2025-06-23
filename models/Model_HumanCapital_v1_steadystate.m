@@ -103,21 +103,23 @@ ydss=yt;
 yd=yt;
 Ig=Igy*yt;
 Cg=Cgy*yt;
-C=yd-(Ip+Ig+Cg+Cge);
+Cgrd=Cgrdy*yt;
+Cgrdss=Cgrd;
+C=yd-(Ip+Ig+Cg+Cge+Cgrd);
 lambda=1/C/(1+tauc);
 
-Cy=1-Ip_y-Igy-Cgy-Cgey;
+Cy=1-Ip_y-Igy-Cgy-Cgey-Cgrdy;
 g2=1/(1+tauc)*1/Cy/(1-betta*thetap);  % g2=lambda*y/(1-betta*thetap)= 1/(1+tauc)*y/c/(1-betta*thetap)
 g1=mc*g2;
 
 Bt=yt*by;
-Trans=Bt-((1-0*Delta_G)*(R/PI)*Bt/ZZ+Cg+Ig-tauw*W_real*N-tauc*C);
+Trans=Bt-((1-0*Delta_G)*(R/PI)*Bt/ZZ+Cg+Ig+Cge+Cgrd-tauw*W_real*N-tauc*C);
 Cgss=Cgy*(yt);
 Igss=Igy*(yt);
 
 %Variables of interest
 lnyd=log(yd)*100;
-pdef=(Cg+Ig+Trans-tauw*W_real*N-tauc*C)/yt*100;
+pdef=(Cg+Ig+Cge+Cgrd+Trans-tauw*W_real*N-tauc*C)/yt*100;
 Ig_ys=Ig/ydss*100;
 by_ann=by/4*100;
 lnPI=log(PI)*100;
@@ -142,6 +144,7 @@ muyH=omega*(Lab+E)^phi/(lambda_HC*muy*E^(muy-1)* (Kge/ZZ)^alphaH);
 ygrowth=log(ZZ)*100;
 effgeshock=effge;
 effshock=eff;
+AAt=1;
 %% END OF THE MODEL SPECIFIC BLOCK.
 
 

@@ -6,6 +6,12 @@
 % Price stickiness
 % Public investment is modelled as in Drautzburg and Uhlig (2015)
 
+
+% June 23: 
+% revise the debt equation: R(-1)/PI
+% revise the gov expenditure equation in terms of GDP
+% revsie the transfer adjustment equation
+
 var 
 C               % HH consumption
 lambda          % Marginal Utility
@@ -32,7 +38,7 @@ tauw            % Income tax
 yd              % Aggregate demand
 vp              % Price dispersion
 ZZ              % Gross growth rate
-shock_ZZ        % shock to the ZZ process  
+%shock_ZZ        % shock to the ZZ process  
 Delta_G         % Expected loss 
 prob_def        % probability of default
 omega           % Scaling
@@ -58,13 +64,16 @@ muyH            % Adjuster so that E=0.1
 ygrowth          % econonmic growth
 effgeshock
 effshock
+AAt             % staionary Tech Process
+Cgrd            % R&D spending
+Cgrdss          % R&D spending SS
 ;
 
 %-----------------------------
 % Define exogenous variables
 %-----------------------------
 varexo
-epsi_cg         % Shock to government consumption
+%epsi_cg         % Shock to government consumption
 epsi_ig         % Shock to government investment  
 epsi_ZZ         % Shock to trend
 epsi_spread     % Shock to Spread
@@ -74,6 +83,7 @@ epsi_tauw       % Labor income tax shock
 epsi_cge        % Public HC spending shock
 epsi_effge  
 epsi_eff
+epsi_cgrd       % Shock to R&D
 ;
 
 %--------------------------
@@ -125,6 +135,10 @@ alphaZZ1        % Learning by doing off HHon ZZ
 rho_Cge         % Persistence of human-related spending
 rhoeffge
 rhoeff
+rho_AAt         % Persistence of staionary tech process
+alphaHA         % feed back of Human cpital to TFP
+alphaRD         % R&D on TFP
+Cgrdy           % share of expenditure for R&D
 ;
 
 betta=0.9985;    
@@ -137,7 +151,7 @@ alppha=0.3;
 Bigtheta=0;      
 Bigtheta_y=0;
 zeta=0.025;      
-rho_R=0.75;      
+rho_R=0.7;      
 gamma_pi=1.5;    
 gamma_y=0.25;    
 Piss=1;          
@@ -145,7 +159,7 @@ rho_RG=0;
 rho_tauc=0.9;  
 taucss=0.19;    
 gamma_y_tauc=0; 
-gamma_d_tauc=0.01; 
+gamma_d_tauc=0.0; 
 rho_tauw=0.9;  
 tauwss=0.25 ;   
 gamma_y_tauw=0;  
@@ -158,12 +172,12 @@ eta2=3.12;
 Deltacost=0;  % Shutting down the feedback of debt on rate
 Igy=0.04;
 Cgy=0.1;
-rho_Cg=0.95;
-rho_Ig=0.95;
-gamma_d_trans=0;
-rho_trans=0.9;
-eff=0.6;
-effge=0.6;
+rho_Cg=0.9;
+rho_Ig=0.9;
+gamma_d_trans=0.5;
+rho_trans=0;
+eff=0.8;
+effge=0.8;
 Cgey=0.1;
 deltaH=0.025;   
 muy=0.3;
@@ -173,6 +187,10 @@ rho_Cge=0.9;
 alphaZZ1=0.2;
 rhoeffge =0;
 rhoeff =0;
+rho_AAt=0;
+alphaHA=0.05;
+alphaRD=0.1;
+Cgrdy=0.006;
 
 model;
 
@@ -183,6 +201,7 @@ omega=STEADY_STATE(omega);
 Cgss=Cgy*STEADY_STATE(yt);
 Igss=Igy*STEADY_STATE(yt);
 Cgess=Cgey*STEADY_STATE(yt);
+Cgrdss=Cgrdy*STEADY_STATE(yt);
 Rss=STEADY_STATE(R);
 ydss=STEADY_STATE(yd);
 muyH=STEADY_STATE(muyH);
@@ -235,7 +254,10 @@ mc=(1/(1-alppha))^(1-alppha)*(1/alppha)^alppha*W_real^(1-alppha)*rk^alppha/(Kg(-
 
 // Production
 %yt=1/ZZ^(zeta+alppha-zeta*alppha)*(Kg(-1)^zeta)*(Kp(-1)^(alppha*(1-zeta)))*(N^((1-alppha)*(1-zeta)))-Bigtheta_y*STEADY_STATES(yt);
-yt=1/ZZ^(zeta+alppha-zeta*alppha)*(Kg(-1)^zeta)*(Kp(-1)^(alppha*(1-zeta)))*(N^((1-alppha)*(1-zeta)))-Bigtheta;
+yt=AAt*1/ZZ^(zeta+alppha-zeta*alppha)*(Kg(-1)^zeta)*(Kp(-1)^(alppha*(1-zeta)))*(N^((1-alppha)*(1-zeta)))-Bigtheta;
+
+//Stationary tech process
+log(AAt)=rho_AAt*log(AAt(-1))+alphaHA*log(H(-1)/STEADY_STATE(H))+alphaRD*log(Cgrd(-1)/Cgrdss);
 
 //********************************************************
 //Monetary Authority-2
@@ -256,20 +278,24 @@ prob_def=exp(eta1 + eta2*by(-1))/(1+exp(eta1 + eta2*by(-1)));
 Kg=(1-delta)*Kg(-1)/ZZ+effshock*Ig;
 
 //Debt equation
-Bt=(R/PI(+1))*Bt(-1)/ZZ+Cg+Ig+Trans-tauw*W_real*N-tauc*C;
+%Bt=(R/PI(+1))*Bt(-1)/ZZ+Cg+Ig+Trans-tauw*W_real*N-tauc*C;
+Bt=(R(-1)/PI)*Bt(-1)/ZZ+Cg+Ig+Cge+Cgrd+Trans-tauw*W_real*N-tauc*C;
 
 //Lump-sum Transfer 
-Trans-STEADY_STATE(Trans)=rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_trans)*(gamma_d_trans*(by(-1)-byss)); 
+%Trans-STEADY_STATE(Trans)=rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_trans)*(gamma_d_trans*(by(-1)-byss)); 
+Trans-STEADY_STATE(Trans)=rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_trans)*(-gamma_d_trans*(by(-1)-byss)*ydss); 
 
 // Debt to GDP
 by=Bt/yt;
 
 // Gov Investment dynamics
-log(Ig/Igss)=rho_Ig*log(Ig(-1)/Igss)+epsi_ig;
-%Ig=Igss+ydss*epsi_ig;
+%log(Ig/Igss)=rho_Ig*log(Ig(-1)/Igss)+epsi_ig;
+Ig=Igss+ydss*epsi_ig;
 
 // Gov Consumption dynamics
-log(Cg/Cgss)=rho_Cg*log(Cg(-1)/Cgss)+epsi_cg;
+%log(Cg/Cgss)=rho_Cg*log(Cg(-1)/Cgss)+epsi_cg;
+Cg-Cgss=-(Ig-Igss+Cge-Cgess+Cgrd-Cgrdss);
+
 
 // Consumption tax
 %tauc-taucss=rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_y_tauc*log(yd/ydss)+gamma_d_tauc*(by-byss));
@@ -285,15 +311,17 @@ tauw-tauwss=rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_d_tauw*(by(-1)-byss))
 Kge=(1-delta)*Kge(-1)/ZZ+effgeshock*Cge;
 
 // Gov Consumption dynamics
-log(Cge/Cgess)=rho_Cge*log(Cge(-1)/Cgess)+epsi_cge;
+%log(Cge/Cgess)=rho_Cge*log(Cge(-1)/Cgess)+epsi_cge;
+Cge=Cgess+ydss*epsi_cge;
 
-
+// R&D Spending
+Cgrd=Cgrdss+ydss*epsi_cgrd;
 
 //********************************************************
 //MARKET CLEARING-3
 //********************************************************
 // Aggregate Demand
-yd=C+Ip+Ig+Cg+Cge;
+yd=C+Ip+Ig+Cg+Cge+Cgrd;
 
 //Aggregate production
 yt=vp*yd;
@@ -304,8 +332,7 @@ vp=thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 //********************************************************
 //Shock dynamic-2
 //********************************************************
-log(ZZ)=(1-rho_ZZ)*log(ZZ(-1))+rho_ZZ*(log(ZZss)+shock_ZZ)+epsi_ZZ;
-shock_ZZ=alphaZZ1*log(H(-1)/STEADY_STATE(H));
+log(ZZ)=(1-rho_ZZ)*log(ZZ(-1))+rho_ZZ*(log(ZZss))+epsi_ZZ;
 %ZZ=ZZ(-1)^(1-rho_ZZ)* (ZZss H^alphaZZ)^rho_ZZ
 
 
@@ -320,7 +347,7 @@ effshock-eff=rhoeff*(effshock(-1)-eff)+epsi_eff;
 
 //********************************************************
 lnyd=log(yd)*100;
-pdef=(Cg+Ig+Trans-tauw*W_real*N-tauc*C)/yt*100;
+pdef=(Cg+Ig+Cge+Cgrd+Trans-tauw*W_real*N-tauc*C)/yt*100;
 Ig_ys=Ig/ydss*100;
 by_ann=by/4*100;
 lnPI=log(PI)*100;
@@ -342,10 +369,11 @@ end;
 stoch_simul(order=1) ygrowth lnyd effshock effgeshock;
 */
 
-
+/*
 shocks;
+
 var epsi_effge;
-periods 1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20 21:200  ;
+periods 1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20 21:2000  ;
 values 0.0125000000000000
 0.0250000000000000
 0.0375000000000000
@@ -369,14 +397,44 @@ values 0.0125000000000000
 0.250000000000000;
 
 end;
+*/
 
-perfect_foresight_setup(periods=1000);%options_.debug
+shocks;
+
+var epsi_cgrd;
+periods 1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20 21:2000  ;
+values 0.000500000000000000
+0.00100000000000000
+0.00150000000000000
+0.00200000000000000
+0.00250000000000000
+0.00300000000000000
+0.00350000000000000
+0.00400000000000000
+0.00450000000000000
+0.00500000000000000
+0.00550000000000000
+0.00600000000000000
+0.00650000000000000
+0.00700000000000000
+0.00750000000000000
+0.00800000000000000
+0.00850000000000000
+0.00900000000000000
+0.00950000000000000
+0.0100000000000000
+0.01;
+
+end;
+
+
+perfect_foresight_setup(periods=2000);%options_.debug
 perfect_foresight_solver(maxit=20); %maxit=10 linear_approximation, endogenous_terminal_period
 
 
 
 /*
 num=[1:20]
-v1=[0:0.25/20:0.25]
-
+v1=[0:1/20:1]
+v2=v1(2:end)'/100;
 */
