@@ -4,57 +4,54 @@ utils.call.paths;
 
 %% ----------------
 % Loading the databases
-%  ----------------
+% ----------------
 
-%Declaring model names 
-modelList = ["Model_HumanCapital_v0", "Model_HumanCapital_v1"];  
+% Declaring model names
+modelList = ["Model_HumanCapital_v0", "Model_HumanCapital_v1"];
 
 % Initialize an empty structure to hold results
 resultsProc = struct();
 
 % Loop through each model and load data
 for aModel = modelList
-
     % Load the model data
     resultsRaw = load(fullfile(project_path, 'models', aModel, 'Output', [char(aModel) '_results.mat']));
-
     dataRange = qq(0, 4): qq(0, 4) + size(resultsRaw.oo_.endo_simul', 1) - 1;
-
+    
     % Store endogenous and steady state variables
-    resultsProc.(aModel).endoStruct = databank.fromArray( ...
+    resultsProc.(aModel).endo = databank.fromArray( ...
         resultsRaw.oo_.endo_simul', ...
         resultsRaw.M_.endo_names, ...
         dataRange(1) ...
     );
     
-    resultsProc.(aModel).ssStruct = databank.fromArray( ...
+    % Handle SS values
+    resultsProc.(aModel).ss = databank.fromArray( ...
         repmat(resultsRaw.oo_.steady_state', numel(dataRange), 1), ...
         resultsRaw.M_.endo_names, ...
         dataRange(1) ...
     );
-
+    
     % Handle parameters
     for aParam = string(reshape(resultsRaw.M_.param_names, 1, []))
-        resultsProc.(aModel).paramStruct.(aParam) = resultsRaw.M_.params(strcmp(aParam, resultsRaw.M_.param_names));
+        resultsProc.(aModel).param.(aParam) = resultsRaw.M_.params(strcmp(aParam, resultsRaw.M_.param_names));
     end
-
+    
     % Calculate IRF transformations
     serIndex = cellfun(@(x) any(endsWith(x, {'effshock', 'effgeshock'})), resultsRaw.M_.endo_names);
-
-    resultsProc.(aModel).irfStruct = databank.copy( ...
-        resultsProc.(aModel).endoStruct, ...
+    
+    resultsProc.(aModel).irf = databank.copy( ...
+        resultsProc.(aModel).endo, ...
         "Transform", @(x) (x/x(qq(0, 4))-1)*100, ...
         "SourceNames", resultsRaw.M_.endo_names(~serIndex) ...
     );
-
-    resultsProc.(aModel).irfStruct = databank.copy( ...
-        resultsProc.(aModel).endoStruct, ...
+    
+    resultsProc.(aModel).irf = databank.copy( ...
+        resultsProc.(aModel).endo, ...
         "SourceNames", resultsRaw.M_.endo_names(serIndex), ...
-        "Transform", @(x) (x-x(qq(0, 4)))*100, ...
-        "TargetDb", resultsProc.(aModel).irfStruct ...
+        "Transform", @(x) (x-x(qq(0, 4))), ...
+        "TargetDb", resultsProc.(aModel).irf ...
     );
-
-
 end
 
 
@@ -89,7 +86,7 @@ function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileNa
         
         for aModel = modelList % for each panel
             % Plotting the data
-            plotData = resultsProc.(aModel).irfStruct.(aVar){dataRange}; % Accessing the specific variable for the current model
+            plotData = resultsProc.(aModel).irf.(aVar){dataRange}; % Accessing the specific variable for the current model
             plot(plotData, "LineWidth", 2);
         end
         
