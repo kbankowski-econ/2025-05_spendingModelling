@@ -36,7 +36,7 @@ function iniProject()
     iris.startup();
 
     % Call Dynare
-    addpath(dynare_6_1_official);
+    addpath(dynare_5_5_official);
     dynare_config()
 
 end
