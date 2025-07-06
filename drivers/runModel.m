@@ -11,7 +11,7 @@ utils.call.paths;
 cd(fullfile(project_path, 'models'));
 
 %% gov. investment shock
-dynare('Model_HumanCapital_epsi_ig.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'));
+dynare('Model_HumanCapital_epsi_ig.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
 
 %% gov. cge shock
 dynare('Model_HumanCapital_epsi_cge.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'));
