@@ -339,6 +339,7 @@ Cgrd=Cgrdss+ydss*epsi_cgrd;
 //MARKET CLEARING-3
 //********************************************************
 // Aggregate Demand
+[name = 'yd']
 yd=C+Ip+Ig+Cg+Cge+Cgrd;
 //Aggregate production
 yt=vp*yd;
