@@ -101,11 +101,14 @@ end
 
 
 %% investigating interest rate reaction upon the request from Sandra
-panelContributions(contributionSeries.("Model_HumanCapital_epsi_ig"), project_path);
+panelContributions("Model_HumanCapital_epsi_ig", contributionSeries, project_path);
 % panelContributionsSlide(contributionSeries,g projectPath, subProjectPath);
 
 %%
-function panelContributions(contributionSeries, projectPath)
+function panelContributions(aModel, contributionSeriesAllModels, projectPath)
+
+    % Specify the model
+    contributionSeries = contributionSeriesAllModels.(aModel);
 
     % Please specify the list of the variables to plot   
     VarListToPlot = string(reshape(fieldnames(contributionSeries.total), 1, []));
@@ -187,7 +190,7 @@ function panelContributions(contributionSeries, projectPath)
     end 
         
     % Save graph
-    fileName = fullfile(projectPath, "docs/contributions/temp");
+    fileName = fullfile(projectPath, "docs/contributions/contrib" + aModel);
     exportgraphics(t, sprintf('%s.png',fileName),'BackgroundColor','none');
 end
 
