@@ -69,8 +69,8 @@ end
 
 
 %% Plot comparison
-vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_ig" , "Model_HumanCapital_epsi_cge" , "Model_HumanCapital_epsi_cgrd", "Model_HumanCapital_epsi_all"], 'epsiall_AE');
-vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["EM_Model_HumanCapital_epsiig", "EM_Model_HumanCapital_epsicge", "EM_Model_HumanCapital_epsieff", "EM_Model_HumanCapital_epsieffcge", "EM_Model_HumanCapital_epsiall", "EM_Model_HumanCapital_epsicgeall"], 'epsiall_EM');
+vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_ig" , "Model_HumanCapital_epsi_cge" , "Model_HumanCapital_epsi_cgrd", "Model_HumanCapital_epsi_all"], 'epsiall_AE_50y');
+vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["EM_Model_HumanCapital_epsiig", "EM_Model_HumanCapital_epsicge", "EM_Model_HumanCapital_epsieff", "EM_Model_HumanCapital_epsieffcge", "EM_Model_HumanCapital_epsiall", "EM_Model_HumanCapital_epsicgeall"], 'epsiall_EM_50y');
 %vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_ig", "EM_Model_HumanCapital_epsiig"], 'epsi_ig');;
 %vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_cge", "EM_Model_HumanCapital_epsicge"], 'epsi_cge');;
 
@@ -100,7 +100,7 @@ function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileNa
     envi = environment.setup();
     
     % Please specify the date range of the series
-    dataRange = qq(1,1): qq(30,4);
+    dataRange = qq(1,1): qq(50,4);
     
     % Plotting
     figure
@@ -131,7 +131,7 @@ function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileNa
         % Setting of the x and y axis
         xtickformat(gca,'yQQQ');
         set(gca, ...
-            'Xtick', dater.toMatlab(dataRange(1:20:end)), ...
+            'Xtick', dater.toMatlab(dataRange(1:40:end)), ...
             'Fontsize', 6, ...
             'Box', 'off', ...
             'TickLabelInterpreter', 'latex', ...
