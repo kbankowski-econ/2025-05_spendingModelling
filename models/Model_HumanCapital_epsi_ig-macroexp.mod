@@ -256,7 +256,7 @@ lambda_HC = betta * (lambda(+1) * (1 - tauw(+1)) * W_real(+1) * Lab(+1) +
 [name = 'N']
 N + Ns = Lab * H(-1);
 // Effective labor in the R&D
-[name = 'yd']
+[name = 'Ns']
 Ns = (1 - AAt(-1) / ZZRD(-1)) * SAt + SSt;
 //********************************************************
 // FIRMS DECISIONS - 17 equations
