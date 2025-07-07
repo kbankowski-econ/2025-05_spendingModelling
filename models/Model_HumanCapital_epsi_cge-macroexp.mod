@@ -238,7 +238,7 @@ lambda = betta * (lambda(+1) / ZZ(+1) * R / PI(+1));
 omega * (Lab + E)^phi = lambda * W_real * H(-1) * (1 - tauw);
 // Law of motion of private capital
 [name = 'Ip']
-Kp * ZZ = (1 - delta) * Kp(-1) + Ip;
+Ip = Kp * ZZ - (1 - delta) * Kp(-1);
 // Return on investment - Choose private capital
 [name = 'rk']
 1 = betta * (lambda(+1) / lambda / ZZ(+1) * (1 - delta + rk(+1)));
