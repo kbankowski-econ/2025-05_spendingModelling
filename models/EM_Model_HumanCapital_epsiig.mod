@@ -32,27 +32,8 @@ check;
 shocks;
 
 var epsi_ig;
-periods 1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20 21:2000  ;
-values 0.000500000000000000
-0.00100000000000000
-0.00150000000000000
-0.00200000000000000
-0.00250000000000000
-0.00300000000000000
-0.00350000000000000
-0.00400000000000000
-0.00450000000000000
-0.00500000000000000
-0.00550000000000000
-0.00600000000000000
-0.00650000000000000
-0.00700000000000000
-0.00750000000000000
-0.00800000000000000
-0.00850000000000000
-0.00900000000000000
-0.00950000000000000
-0.0100000000000000
+periods 1:1000  ;
+values 
 0.01;
 
 end;
@@ -63,8 +44,18 @@ perfect_foresight_solver(maxit=20); %maxit=10 linear_approximation, endogenous_t
 
 
 
-// fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;
-// multiplier=sum((yd(2:40)-yd(1)))/sum((fiscalchange(2:30)))
+fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;
+ped=1*4;
+multiplier_1y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
+ped=5*4;
+multiplier_5y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
+ped=10*4;
+multiplier_10y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
+ped=20*4;
+multiplier_20y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
+ped=25*4;
+multiplier_25y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
+
 
 
 /*

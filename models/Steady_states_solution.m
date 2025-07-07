@@ -15,7 +15,7 @@ Rmp=R;                   % Monetary policy rate
 N=1/3;                    % Effective Labor supply
 %H=1;
 %L=0.2;
-E=0.1;
+%E=0.1;
 
 
 %eff=effss;
@@ -73,18 +73,34 @@ Cgrdss=Cgrd;
 
 
 % R&D path
+%markupss=1.015;
+AAt=1;
 probadopt=probadoptss;
 SDF=betta;
 VA=(1+gammaa)/(1+gammaa-phiob*SDF)*(markupss-1)/(markupss/mc)*yt;
-ZZRD=(1+gammaa-phiob)/(probadopt*phiob)+1;
-JZt=(1-rhoSADOPT)*probadopt*phiob*SDF/(1+gammaa-(1-probadopt+rhoSADOPT*probadopt)*phiob*betta)*VA*ZZRD;
-SAt=rhoSADOPT*probadopt*phiob*SDF/(1+gammaa)*(VA*ZZRD-JZt)/W_real;
-SSt=betta*JZt*(1+gammaa-phiob)/(1+gammaa)/W_real;
+ZZRD=(1+gammaa-phiob)/(probadopt*phiob)+AAt;
+
+JZt=(1-rhoSADOPT)*probadopt*phiob*SDF/(1+gammaa-(1-probadopt+rhoSADOPT*probadopt)*phiob*betta)*VA;
+
+SAt=rhoSADOPT*probadopt*phiob*SDF/(1+gammaa)*(VA-JZt);
+
+%SSt=SDF*JZt*(ZZRD/AAt-phiob*ZZRD/AAt*1/(1+gammaa));
+SSt=0;
+%shockchit=(1+gammaa-phiob)/(SSt^alphaSRD*Cgrd^alphaRD);
+%shockchit=(1+gammaa-phiob)/(SSt^alphaSRD);
+shockchit=1;
+
+
+
 kappaprob=probadopt/((SAt)^rhoSADOPT);
-shockchit=(1+gammaa-phiob)/(SSt^alphaSRD*Cgrd^alphaRD);
+
+
 Ns=(1-1/ZZRD)*SAt+SSt;
+
 shockchitss=shockchit;
 
+share_in_RD=(SSt+(ZZRD/AAt-1)*SAt)/yt;
+(ZZRD/AAt-1)*SAt/yt
 Ip_y=Ip/yt;
 %Ip_y=(1-(1-delta)/ZZ)*Kp_y;
 Ip_y=(ZZ-(1-delta))*Kp_y;
@@ -96,10 +112,10 @@ yd=yt;
 Ig=Igy*yt;
 Cg=Cgy*yt;
 
-C=yd-(Ip+Ig+Cg+Cge+Cgrd);
+C=yd-(Ip+Ig+Cg+Cge+Cgrd+SSt+(ZZRD/AAt-1)*SAt);
 lambda=1/C/(1+tauc);
 
-Cy=1-Ip_y-Igy-Cgy-Cgey-Cgrdy;
+Cy=1-Ip_y-Igy-Cgy-Cgey-Cgrdy-(SSt+(ZZRD/AAt-1)*SAt)/yd;
 g2=1/(1+tauc)*1/Cy/(1-betta*thetap);  % g2=lambda*y/(1-betta*thetap)= 1/(1+tauc)*y/c/(1-betta*thetap)
 g1=mc*g2;
 
@@ -117,15 +133,26 @@ lnPI=log(PI)*100;
 
 
 
+Lab=N;
+
+%{
+Lss=0.3
+Ess=0.05
+muySS=(1/betta-1+deltaH)/(Lss/Ess)/deltaH
+%}
+
+Lab_E_ratio=(1/betta-1+deltaH)/(muy*deltaH);
+E=Lab/Lab_E_ratio;
 % Langangra of teh human capital equation
 lambda_HC=lambda*W_real*(1-tauw)/(muy*1/E*deltaH);
 
 % Lab 
-Lab=lambda_HC*(1/betta-1+deltaH)/(lambda*(1-tauw)*W_real);
-
+%Lab=lambda_HC*(1/betta-1+deltaH)/(lambda*(1-tauw)*W_real);
+%deltaH=0.016
+%
 % Human capital
 %H=N/Lab;
-H=(N+Ns)/Lab;
+H=(N+0*Ns)/Lab;
 
 % Adjustment parameter for N 
 omega=lambda*W_real*(1-tauw)*H/(Lab+E)^phi;
@@ -136,4 +163,8 @@ muyH=omega*(Lab+E)^phi/(lambda_HC*muy*E^(muy-1)* (Kge)^alphaH);
 ygrowth=log(ZZ)*100;
 effgeshock=effge;
 effshock=eff;
-AAt=1;
+
+TFP=AAt^(varthetaat-1)*(Kg^zeta)*H^(1-alppha);
+ln_Cgrd=log(Cgrd);
+Cgrd_ydss_ratio=Cgrd/ydss;
+%AAt=1;

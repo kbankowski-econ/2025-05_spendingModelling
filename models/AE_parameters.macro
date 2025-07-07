@@ -46,8 +46,8 @@ rhoeffge =0;
 rhoeff =0;
 rho_AAt=0.0;
 alphaHA=0.05;
-alphaRD=0.02;
 Cgrdy=0.006;
+rho_Cgrd=0;
 
 
 
@@ -56,6 +56,8 @@ phiob=1-0.08/4;   % obsolescence rate: 0.08/4
 varthetaat=1.35;
 gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
 probadoptss=0.2/4;
-rhoSADOPT=0.925;
-alphaSRD=0.4;
-rhoshockchit=0;
+rhoSADOPT=0.8;
+alphaSRD=0.1;
+rhoshockchit=1;
+rho_ZZRD=0.79;
+alphaRD=0.09*(1-rho_ZZRD);

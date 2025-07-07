@@ -33,8 +33,8 @@ rho_Cg=0.9;
 rho_Ig=0.9;
 gamma_d_trans=0.5;
 rho_trans=0;
-eff=0.5;
-effge=0.5;
+eff=0.6;
+effge=0.6;
 Cgey=0.045;
 deltaH=0.025;   
 muy=0.5;
@@ -45,6 +45,21 @@ alphaZZ1=0.2;
 rhoeffge =0;
 rhoeff =0;
 rho_AAt=0.0;
-alphaHA=0.1;
+%alphaHA=0.1;
+alphaHA=0;
 alphaRD=0.001;
 Cgrdy=0.001;
+
+
+rho_Cgrd=0;
+
+markupss=1.18;
+phiob=1-0.08/4;   % obsolescence rate: 0.08/4
+varthetaat=1.35;
+gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
+probadoptss=0.2/4;
+rhoSADOPT=0.1;
+alphaSRD=0;
+rhoshockchit=1;
+rho_ZZRD=0.79;
+alphaRD=0;

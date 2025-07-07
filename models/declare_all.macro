@@ -64,6 +64,9 @@ ZZRD            % R&D product
 kappaprob       % Parameter in the probability for scaling
 shockchitss     %% SS of shockchit 
 Ns              % Labor in R&D
+TFP             % TFP
+Cgrd_ydss_ratio
+ln_Cgrd
 ;
 
 %-----------------------------
@@ -145,4 +148,6 @@ probadoptss    % Probability of adoption
 rhoSADOPT      % Adoption elasticity
 alphaSRD       % R&D elasticity
 rhoshockchit    % AR (1) or shock to r&D 
+rho_Cgrd
+rho_ZZRD
 ;
