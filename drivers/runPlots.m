@@ -78,7 +78,7 @@ function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileNa
     envi = environment.setup();
     
     % Please specify the date range of the series
-    dataRange = qq(1,1): qq(20,4);
+    dataRange = qq(1,1): qq(30,4);
     
     % Plotting
     figure
