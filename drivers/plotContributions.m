@@ -8,14 +8,15 @@ cd(fullfile(project_path, 'models'));
 
 % Declaring model names
 modelList = ["Model_HumanCapital_epsi_ig" ...
+    , "Model_HumanCapital_epsi_cge" ...
+    , "Model_HumanCapital_epsi_cgrd" ...
     ];
-aItemList = ["yd"];
 
+aItemList = ["yd"];
 
 %% ----------------
 % Loading the databases
 % ----------------
-
 
 % Initialize an empty structure to hold results
 resultsProc = struct();
