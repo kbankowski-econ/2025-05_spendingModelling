@@ -12,7 +12,7 @@ modelList = ["Model_HumanCapital_epsi_ig" ...
     , "Model_HumanCapital_epsi_cgrd" ...
     ];
 
-aItemList = ["yd", "Ip"];
+aItemList = ["yd"];
 
 %% ----------------
 % Loading the databases
