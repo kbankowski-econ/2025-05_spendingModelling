@@ -69,20 +69,29 @@ end
 
 
 %% Plot comparison
-vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "TFP"], ["Model_HumanCapital_epsi_ig" , "Model_HumanCapital_epsi_cge" , "Model_HumanCapital_epsi_cgrd", "Model_HumanCapital_epsi_all"], 'epsiall_AE');
-% vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "TFP"], ["EM_Model_HumanCapital_epsiig", "EM_Model_HumanCapital_epsicge", "EM_Model_HumanCapital_epsieff", "EM_Model_HumanCapital_epsieffcge", "EM_Model_HumanCapital_epsiall", "EM_Model_HumanCapital_epsicgeall"], 'epsiall_EM');
+vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_ig" , "Model_HumanCapital_epsi_cge" , "Model_HumanCapital_epsi_cgrd", "Model_HumanCapital_epsi_all"], 'epsiall_AE');
+vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["EM_Model_HumanCapital_epsiig", "EM_Model_HumanCapital_epsicge", "EM_Model_HumanCapital_epsieff", "EM_Model_HumanCapital_epsieffcge", "EM_Model_HumanCapital_epsiall", "EM_Model_HumanCapital_epsicgeall"], 'epsiall_EM');
 %vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_ig", "EM_Model_HumanCapital_epsiig"], 'epsi_ig');;
 %vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_cge", "EM_Model_HumanCapital_epsicge"], 'epsi_cge');;
 
 
 %% reporting the numbers
 
-tempDatabank.epsiig = resultsProc.EM_Model_HumanCapital_epsiig.irf.yd;
-tempDatabank.epsicge = resultsProc.EM_Model_HumanCapital_epsicge.irf.yd;
-tempDatabank.epsieff = resultsProc.EM_Model_HumanCapital_epsieff.irf.yd;
-tempDatabank.epsieffcge = resultsProc.EM_Model_HumanCapital_epsieffcge.irf.yd;
+tempDatabank = struct();
 
-databank.toCSV(tempDatabank, "/Users/kk/Documents/0000-00_work/2025-05_spendingModelling/docs/csvFiles/figureNumbers.csv");
+varList = ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock", "TFP", "ZZRD", "AAt"]
+
+for aVar = varList
+
+for aModel = modelList
+
+tempDatabank.(aModel+"___"+aVar) = resultsProc.(aModel).irf.(aVar);
+
+end
+
+end
+
+databank.toCSV(tempDatabank, "/Users/kk/Documents/0000-00_work/2025-05_spendingModelling/docs/csvFiles/figureNumbers.csv", "Decimals", 3);
 
 %%
 function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileName)
