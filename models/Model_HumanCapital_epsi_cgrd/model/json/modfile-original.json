@@ -132,7 +132,7 @@
 {"statementName": "param_init", "name": "alphaRD", "value": "0.09*(1-rho_ZZRD)"},
 {"statementName": "steady"},
 {"statementName": "check"},
-{"statementName": "shocks", "overwrite": false, "deterministic_shocks": [{"var": "epsi_cgrd", "values": [{"period1": 1, "period2": 1, "value": "0.00025"}, {"period1": 2, "period2": 2, "value": "0.0005"}, {"period1": 3, "period2": 3, "value": "0.00075"}, {"period1": 4, "period2": 4, "value": "0.001"}, {"period1": 5, "period2": 5, "value": "0.00125"}, {"period1": 6, "period2": 6, "value": "0.0015"}, {"period1": 7, "period2": 7, "value": "0.00175"}, {"period1": 8, "period2": 8, "value": "0.002"}, {"period1": 9, "period2": 9, "value": "0.00225"}, {"period1": 10, "period2": 10, "value": "0.0025"}, {"period1": 11, "period2": 11, "value": "0.00275"}, {"period1": 12, "period2": 12, "value": "0.003"}, {"period1": 13, "period2": 13, "value": "0.00325"}, {"period1": 14, "period2": 14, "value": "0.0035"}, {"period1": 15, "period2": 15, "value": "0.00375"}, {"period1": 16, "period2": 16, "value": "0.004"}, {"period1": 17, "period2": 17, "value": "0.00425"}, {"period1": 18, "period2": 18, "value": "0.0045"}, {"period1": 19, "period2": 19, "value": "0.00475"}, {"period1": 20, "period2": 20, "value": "0.005"}, {"period1": 21, "period2": 2000, "value": "0.005"}]}], "variance": [], "stderr": [], "covariance": [], "correlation": []},
+{"statementName": "shocks", "overwrite": false, "deterministic_shocks": [{"var": "epsi_cgrd", "values": [{"period1": 1, "period2": 1000, "value": "0.01"}]}], "variance": [], "stderr": [], "covariance": [], "correlation": []},
 {"statementName": "perfect_foresight_setup", "options": {"periods": 2000}},
 {"statementName": "perfect_foresight_solver", "options": {"simul.maxit": 20}}]
 }

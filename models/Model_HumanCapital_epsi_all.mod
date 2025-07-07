@@ -1,12 +1,16 @@
 @#include "modEq.mod"
 
 shocks;
-    var epsi_ig;
-    @#include "shockStandardVal.mod"
     var epsi_cge;
-    @#include "shockStandardVal.mod"
+    periods 1:1000  ;
+    values 
+    0.005;
+
     var epsi_cgrd;
-    @#include "shockStandardVal.mod"
+    periods 1:1000  ;
+    values 
+    0.005;
+
 end;
 
 @#include "simulSpec.mod"

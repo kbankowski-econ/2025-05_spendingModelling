@@ -403,28 +403,9 @@ steady;
 check;
 shocks;
     var epsi_cgrd;
-periods 1     2     3     4     5     6     7     8     9    10    11    12    13    14    15    16    17    18    19    20 21:2000  ;
-values 0.00025
-0.0005
-0.00075
-0.001
-0.00125
-0.0015
-0.00175
-0.002
-0.00225
-0.0025
-0.00275
-0.003
-0.00325
-0.0035
-0.00375
-0.004
-0.00425
-0.0045
-0.00475
-0.005
-0.005;
+periods 1:1000  ;
+values 
+0.01;
 end;
 perfect_foresight_setup(periods=2000);%options_.debug
 perfect_foresight_solver(maxit=20); %maxit=10 linear_approximation, endogenous_terminal_period
