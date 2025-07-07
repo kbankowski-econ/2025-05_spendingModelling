@@ -71,6 +71,16 @@ vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H
 %vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_ig", "EM_Model_HumanCapital_epsiig"], 'epsi_ig');;
 %vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_cge", "EM_Model_HumanCapital_epsicge"], 'epsi_cge');;
 
+
+%% reporting the numbers
+
+tempDatabank.epsiig = resultsProc.EM_Model_HumanCapital_epsiig.irf.yd;
+tempDatabank.epsicge = resultsProc.EM_Model_HumanCapital_epsicge.irf.yd;
+tempDatabank.epsieff = resultsProc.EM_Model_HumanCapital_epsieff.irf.yd;
+tempDatabank.epsieffcge = resultsProc.EM_Model_HumanCapital_epsieffcge.irf.yd;
+
+databank.toCSV(tempDatabank, "/Users/kk/Documents/0000-00_work/2025-05_spendingModelling/docs/csvFiles/figureNumbers.csv");
+
 %%
 function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileName)
     % Load objects and adjust settings
