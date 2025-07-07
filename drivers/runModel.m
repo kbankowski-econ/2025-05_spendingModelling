@@ -35,4 +35,4 @@ dynare('EM_Model_HumanCapital_epsieff.mod', 'savemacro');
 dynare('EM_Model_HumanCapital_epsieffcge.mod', 'savemacro');
 
 %% EM: gov. cgerd shock
-% dynare('EM_Model_HumanCapital_epsiall.mod', 'savemacro');
+dynare('EM_Model_HumanCapital_epsiall.mod', 'savemacro');
