@@ -1,4 +1,4 @@
-function [lineSeries, contributionSeries, aLHS] = createContributions(equationname, ds1, ds0)
+function [lineSeries, contributionSeries, aLHS] = createContributions(aModel, equationname, ds1, ds0)
 %function plot_contributions(equationname, ds1, ds0)
 % Plots the contribution to the lhs variable of the rhs variables in an equation.
 %
@@ -40,6 +40,7 @@ function [lineSeries, contributionSeries, aLHS] = createContributions(equationna
 % along with Dynare.  If not, see <https://www.gnu.org/licenses/>.
 
 global M_
+M_ = aModel;
 
 jsonfile = [M_.fname filesep() 'model' filesep() 'json' filesep() 'modfile-original.json'];
 if exist(jsonfile, 'file') ~= 2
@@ -47,8 +48,8 @@ if exist(jsonfile, 'file') ~= 2
 end
 
 % Check the number of input arguments.
-if nargin>3
-    error('plot_contributions:: Exactly three arguments are required!')
+if nargin>4
+    error('plot_contributions:: Exactly four arguments are required!')
 end
 
 % Check the type of the first argument
