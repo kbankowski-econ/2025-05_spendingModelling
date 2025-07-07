@@ -224,15 +224,25 @@ model;
 // HOUSEHOLD DECISIONS - 10 equations
 //********************************************************
 // Steady state values
+[name = 'omega']
 omega = STEADY_STATE(omega);
+[name = 'Cgss']
 Cgss = Cgy * STEADY_STATE(yt);
+[name = 'Igss']
 Igss = Igy * STEADY_STATE(yt);
+[name = 'Cgess']
 Cgess = Cgey * STEADY_STATE(yt);
+[name = 'Cgrdss']
 Cgrdss = Cgrdy * STEADY_STATE(yt);
+[name = 'Rss']
 Rss = STEADY_STATE(R);
+[name = 'ydss']
 ydss = STEADY_STATE(yd);
+[name = 'muyH']
 muyH = STEADY_STATE(muyH);
+[name = 'shockchitss']
 shockchitss = STEADY_STATE(shockchit);  // Exogenous disturbance to the R&D Tech
+[name = 'kappaprob']
 kappaprob = STEADY_STATE(kappaprob);
 // Marginal Utility
 [name = 'C']
