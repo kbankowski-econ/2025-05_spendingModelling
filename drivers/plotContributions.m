@@ -226,9 +226,11 @@ function panelContributionsManyModels(modelList, contributionSeriesAllModels, pr
     set(h, 'Units','centimeters', 'Position',[0 0 21-2*2.5 20-2*2.5])
     set(h,'defaulttextinterpreter','latex');
     
-    for aModel = modelList
 
-        for aItem = VarListToPlot %for each panel
+    for aItem = VarListToPlot %for each panel
+
+        for aModel = modelList
+
             nexttile;
             grid on
             hold on 
