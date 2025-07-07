@@ -6,30 +6,25 @@
 , {"temporary_term": "T99", "value": "Kge^alphaH"}
 , {"temporary_term": "T107", "value": "E^(muy-1)"}
 , {"temporary_term": "T108", "value": "muy*muyH*lambda_HC*T107"}
-, {"temporary_term": "T139", "value": "PI^chi"}
-, {"temporary_term": "T140", "value": "T139/PI"}
-, {"temporary_term": "T143", "value": "T140^(-epsilon)"}
-, {"temporary_term": "T153", "value": "T140^(1-epsilon)"}
-, {"temporary_term": "T184", "value": "AAt^(varthetaat-1)"}
-, {"temporary_term": "T187", "value": "Kg^zeta"}
-, {"temporary_term": "T188", "value": "T184*T187"}
-, {"temporary_term": "T189", "value": "Kp^alppha"}
-, {"temporary_term": "T190", "value": "T188*T189"}
-, {"temporary_term": "T191", "value": "N^(1-alppha)"}
-, {"temporary_term": "T201", "value": "SSt^alphaSRD"}
-, {"temporary_term": "T202", "value": "shockchit*ZZRD*T201"}
-, {"temporary_term": "T205", "value": "Cgrd^alphaRD"}
-, {"temporary_term": "T218", "value": "SSt^(alphaSRD-1)"}
-, {"temporary_term": "T219", "value": "shockchit*SDF*JZt/(1+gammaa)*T218"}
+, {"temporary_term": "T131", "value": "PI^chi"}
+, {"temporary_term": "T132", "value": "T131/PI"}
+, {"temporary_term": "T135", "value": "T132^(-epsilon)"}
+, {"temporary_term": "T145", "value": "T132^(1-epsilon)"}
+, {"temporary_term": "T177", "value": "AAt^(varthetaat-1)"}
+, {"temporary_term": "T180", "value": "Kg^zeta"}
+, {"temporary_term": "T181", "value": "T177*T180"}
+, {"temporary_term": "T182", "value": "Kp^alppha"}
+, {"temporary_term": "T183", "value": "T181*T182"}
+, {"temporary_term": "T184", "value": "N^(1-alppha)"}
+, {"temporary_term": "T190", "value": "H^(1-alppha)"}
 , {"temporary_term": "T224", "value": "SDF/(1+gammaa)"}
-, {"temporary_term": "T239", "value": "SAt^rhoSADOPT"}
-, {"temporary_term": "T262", "value": "SDF*phiob*probadopt*rhoSADOPT/(1+gammaa)"}
-, {"temporary_term": "T266", "value": "ZZRD*VA/AAt-JZt"}
-, {"temporary_term": "T285", "value": "(Rmp/Rss)^rho_R"}
-, {"temporary_term": "T289", "value": "(PI/Piss)^gamma_pi"}
-, {"temporary_term": "T292", "value": "(yd/ydss)^gamma_y"}
-, {"temporary_term": "T293", "value": "T289*T292"}
-, {"temporary_term": "T295", "value": "T293^(1-rho_R)"}
+, {"temporary_term": "T237", "value": "SAt^rhoSADOPT"}
+, {"temporary_term": "T260", "value": "SDF*phiob*probadopt*rhoSADOPT/(1+gammaa)"}
+, {"temporary_term": "T281", "value": "(Rmp/Rss)^rho_R"}
+, {"temporary_term": "T285", "value": "(PI/Piss)^gamma_pi"}
+, {"temporary_term": "T288", "value": "(yd/ydss)^gamma_y"}
+, {"temporary_term": "T289", "value": "T285*T288"}
+, {"temporary_term": "T291", "value": "T289^(1-rho_R)"}
 ], 
 "residuals":[
 {"residual": {"lhs": "omega", "rhs": "(omega)"}}
@@ -45,13 +40,13 @@
 , {"residual": {"lhs": "1/C", "rhs": "lambda*(1+tauc)"}}
 , {"residual": {"lhs": "lambda", "rhs": "betta*R*lambda/ZZ/PI"}}
 , {"residual": {"lhs": "omega*(Lab+E)^phi", "rhs": "lambda*W_real*H*(1-tauw)"}}
-, {"residual": {"lhs": "Ip", "rhs": "ZZ*Kp-Kp*(1-delta)"}}
+, {"residual": {"lhs": "ZZ*Kp", "rhs": "Kp*(1-delta)+Ip"}}
 , {"residual": {"lhs": "1", "rhs": "betta*1/ZZ*(1-delta+rk)"}}
 , {"residual": {"lhs": "H", "rhs": "H*(1-deltaH)+muyH*E^muy*Kge^alphaH"}}
 , {"residual": {"lhs": "omega*(Lab+E)^phi", "rhs": "Kge^alphaH*muy*muyH*lambda_HC*E^(muy-1)"}}
 , {"residual": {"lhs": "lambda_HC", "rhs": "betta*(Lab*W_real*lambda*(1-tauw)+(1-deltaH)*lambda_HC)"}}
-, {"residual": {"lhs": "N+Ns", "rhs": "Lab*H"}}
-, {"residual": {"lhs": "Ns", "rhs": "(1-AAt/ZZRD)*SAt+SSt"}}
+, {"residual": {"lhs": "N", "rhs": "Lab*H"}}
+, {"residual": {"lhs": "Ns", "rhs": "(Ns)"}}
 , {"residual": {"lhs": "g1", "rhs": "yd*lambda*mc+g1*betta*thetap*(PI^chi/PI)^(-epsilon)"}}
 , {"residual": {"lhs": "g2", "rhs": "yd*lambda*PIstar+g2*betta*thetap*(PI^chi/PI)^(1-epsilon)"}}
 , {"residual": {"lhs": "g1*epsilon", "rhs": "g2*(epsilon-1)"}}
@@ -59,14 +54,15 @@
 , {"residual": {"lhs": "yt*mc*(1-alppha)/N", "rhs": "W_real*markupss"}}
 , {"residual": {"lhs": "1", "rhs": "thetap*(PI^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon)"}}
 , {"residual": {"lhs": "yt", "rhs": "AAt^(varthetaat-1)*Kg^zeta*Kp^alppha*N^(1-alppha)-Bigtheta"}}
-, {"residual": {"lhs": "ZZRD*(1+gammaa)", "rhs": "shockchit*ZZRD*SSt^alphaSRD*Cgrd^alphaRD+ZZRD*phiob"}}
-, {"residual": {"lhs": "Cgrd^alphaRD*shockchit*SDF*JZt/(1+gammaa)*SSt^(alphaSRD-1)", "rhs": "W_real"}}
-, {"residual": {"lhs": "JZt", "rhs": "W_real*(-SAt)+phiob*SDF/(1+gammaa)*(ZZRD*probadopt*VA/AAt+JZt*(1-probadopt))"}}
+, {"residual": {"lhs": "TFP", "rhs": "AAt^(varthetaat-1)*Kg^zeta*H^(1-alppha)"}}
+, {"residual": {"lhs": "log(ZZRD/(ZZRD))", "rhs": "log(ZZRD/(ZZRD))*rho_ZZRD+alphaRD*log(Cgrd/(Cgrd))+alphaSRD*log(H/(H))+log(shockchit)"}}
+, {"residual": {"lhs": "SSt", "rhs": "(SSt)"}}
+, {"residual": {"lhs": "JZt", "rhs": "phiob*SDF/(1+gammaa)*(probadopt*VA+JZt*(1-probadopt))-SAt"}}
 , {"residual": {"lhs": "probadopt", "rhs": "kappaprob*SAt^rhoSADOPT"}}
 , {"residual": {"lhs": "AAt*(1+gammaa)", "rhs": "phiob*probadopt*(ZZRD-AAt)+AAt*phiob"}}
 , {"residual": {"lhs": "VA", "rhs": "yt*mc*(markupss-1)/markupss+VA*phiob*SDF/(1+gammaa)"}}
-, {"residual": {"lhs": "SDF*phiob*probadopt*rhoSADOPT/(1+gammaa)*(ZZRD*VA/AAt-JZt)", "rhs": "W_real*SAt"}}
-, {"residual": {"lhs": "SDF", "rhs": "betta"}}
+, {"residual": {"lhs": "SDF*phiob*probadopt*rhoSADOPT/(1+gammaa)*(VA-JZt)", "rhs": "SAt"}}
+, {"residual": {"lhs": "SDF", "rhs": "(1+tauc)*lambda*betta/(lambda*(1+tauc))"}}
 , {"residual": {"lhs": "log(shockchit)", "rhs": "(1-rhoshockchit)*log(shockchitss)+log(shockchit)*rhoshockchit+epsi_shockchit"}}
 , {"residual": {"lhs": "Rmp/Rss", "rhs": "(Rmp/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP)"}}
 , {"residual": {"lhs": "log(R)", "rhs": "R*rho_RG+(1-rho_RG)*(log(Rmp)+Delta_G*(by-byss))+epsi_spread"}}
@@ -82,8 +78,10 @@
 , {"residual": {"lhs": "tauw-tauwss", "rhs": "(tauw-tauwss)*rho_tauw+(1-rho_tauw)*(by-byss)*gamma_d_tauw+epsi_tauw"}}
 , {"residual": {"lhs": "ZZ*Kge", "rhs": "(1-delta)*Kge+Cge*effgeshock"}}
 , {"residual": {"lhs": "Cge", "rhs": "Cgess+ydss*epsi_cge"}}
-, {"residual": {"lhs": "Cgrd", "rhs": "Cgrdss+ydss*epsi_cgrd"}}
-, {"residual": {"lhs": "yd", "rhs": "Cgrd+Cge+Cg+Ig+C+Ip"}}
+, {"residual": {"lhs": "Cgrd-Cgrdss", "rhs": "(Cgrd-Cgrdss)*rho_Cgrd+ydss*epsi_cgrd"}}
+, {"residual": {"lhs": "ln_Cgrd", "rhs": "log(Cgrd)"}}
+, {"residual": {"lhs": "Cgrd_ydss_ratio", "rhs": "Cgrd/ydss"}}
+, {"residual": {"lhs": "yd", "rhs": "SSt+Cgrd+Cge+Cg+Ig+C+Ip+SAt*(ZZRD/AAt-1)"}}
 , {"residual": {"lhs": "yt", "rhs": "yd*vp"}}
 , {"residual": {"lhs": "vp", "rhs": "vp*thetap*(PI^chi/PI)^(-epsilon)+(1-thetap)*PIstar^(-epsilon)"}}
 , {"residual": {"lhs": "log(ZZ)", "rhs": "log(ZZ)*(1-rho_ZZ)+rho_ZZ*log(ZZss)+epsi_ZZ"}}
@@ -97,17 +95,19 @@
 , {"residual": {"lhs": "ygrowth", "rhs": "log(ZZ)*100"}}
 
 ]
-, "external_functions_temporary_terms_jacobian": [], "temporary_terms_jacobian": [{"temporary_term": "T528", "value": "(PI*get_power_deriv(PI,chi,1)-T139)/(PI*PI)"}
-, {"temporary_term": "T530", "value": "T528*get_power_deriv(T140,(-epsilon),1)"}
-, {"temporary_term": "T535", "value": "T528*get_power_deriv(T140,1-epsilon,1)"}
-, {"temporary_term": "T545", "value": "get_power_deriv(T293,1-rho_R,1)"}
-, {"temporary_term": "T634", "value": "get_power_deriv(Rmp/Rss,rho_R,1)"}
-, {"temporary_term": "T667", "value": "(-(100*1/yt))"}
-, {"temporary_term": "T688", "value": "get_power_deriv(yd/ydss,gamma_y,1)"}
-, {"temporary_term": "T749", "value": "get_power_deriv(Kge,alphaH,1)"}
-, {"temporary_term": "T756", "value": "omega*get_power_deriv(Lab+E,phi,1)"}
-, {"temporary_term": "T804", "value": "get_power_deriv(Cgrd,alphaRD,1)"}
-], "jacobian": {  "nrows": 63, "ncols": 63, "entries": [{"eq": 2, "col": 14, "var": "yt", "val": "(-Cgy)"}
+, "external_functions_temporary_terms_jacobian": [], "temporary_terms_jacobian": [{"temporary_term": "T545", "value": "(PI*get_power_deriv(PI,chi,1)-T131)/(PI*PI)"}
+, {"temporary_term": "T547", "value": "T545*get_power_deriv(T132,(-epsilon),1)"}
+, {"temporary_term": "T552", "value": "T545*get_power_deriv(T132,1-epsilon,1)"}
+, {"temporary_term": "T562", "value": "get_power_deriv(T289,1-rho_R,1)"}
+, {"temporary_term": "T645", "value": "T177*get_power_deriv(Kg,zeta,1)"}
+, {"temporary_term": "T652", "value": "get_power_deriv(Rmp/Rss,rho_R,1)"}
+, {"temporary_term": "T685", "value": "(-(100*1/yt))"}
+, {"temporary_term": "T711", "value": "get_power_deriv(yd/ydss,gamma_y,1)"}
+, {"temporary_term": "T784", "value": "get_power_deriv(Kge,alphaH,1)"}
+, {"temporary_term": "T791", "value": "omega*get_power_deriv(Lab+E,phi,1)"}
+, {"temporary_term": "T819", "value": "T180*get_power_deriv(AAt,varthetaat-1,1)"}
+, {"temporary_term": "T884", "value": "((ZZRD)-ZZRD)/((ZZRD)*(ZZRD))/(ZZRD/(ZZRD))"}
+], "jacobian": {  "nrows": 66, "ncols": 66, "entries": [{"eq": 2, "col": 14, "var": "yt", "val": "(-Cgy)"}
 , {"eq": 2, "col": 30, "var": "Cgss", "val": "1"}
 , {"eq": 3, "col": 14, "var": "yt", "val": "(-Igy)"}
 , {"eq": 3, "col": 29, "var": "Igss", "val": "1"}
@@ -133,22 +133,22 @@
 , {"eq": 13, "col": 22, "var": "tauw", "val": "lambda*W_real*H"}
 , {"eq": 13, "col": 28, "var": "omega", "val": "T67"}
 , {"eq": 13, "col": 39, "var": "H", "val": "(-(lambda*W_real*(1-tauw)))"}
-, {"eq": 13, "col": 42, "var": "E", "val": "T756"}
-, {"eq": 13, "col": 45, "var": "Lab", "val": "T756"}
-, {"eq": 14, "col": 7, "var": "Ip", "val": "1"}
-, {"eq": 14, "col": 8, "var": "Kp", "val": "(-(ZZ-(1-delta)))"}
-, {"eq": 14, "col": 25, "var": "ZZ", "val": "(-Kp)"}
+, {"eq": 13, "col": 42, "var": "E", "val": "T791"}
+, {"eq": 13, "col": 45, "var": "Lab", "val": "T791"}
+, {"eq": 14, "col": 7, "var": "Ip", "val": "(-1)"}
+, {"eq": 14, "col": 8, "var": "Kp", "val": "ZZ-(1-delta)"}
+, {"eq": 14, "col": 25, "var": "ZZ", "val": "Kp"}
 , {"eq": 15, "col": 9, "var": "rk", "val": "(-(betta*T85))"}
 , {"eq": 15, "col": 25, "var": "ZZ", "val": "(-(betta*(1-delta+rk)*(-1)/(ZZ*ZZ)))"}
 , {"eq": 16, "col": 39, "var": "H", "val": "1-(1-deltaH)"}
-, {"eq": 16, "col": 40, "var": "Kge", "val": "(-(T96*T749))"}
+, {"eq": 16, "col": 40, "var": "Kge", "val": "(-(T96*T784))"}
 , {"eq": 16, "col": 42, "var": "E", "val": "(-(T99*muyH*get_power_deriv(E,muy,1)))"}
 , {"eq": 16, "col": 46, "var": "muyH", "val": "(-(T95*T99))"}
 , {"eq": 17, "col": 28, "var": "omega", "val": "T67"}
-, {"eq": 17, "col": 40, "var": "Kge", "val": "(-(T108*T749))"}
-, {"eq": 17, "col": 42, "var": "E", "val": "T756-T99*muy*muyH*lambda_HC*get_power_deriv(E,muy-1,1)"}
+, {"eq": 17, "col": 40, "var": "Kge", "val": "(-(T108*T784))"}
+, {"eq": 17, "col": 42, "var": "E", "val": "T791-T99*muy*muyH*lambda_HC*get_power_deriv(E,muy-1,1)"}
 , {"eq": 17, "col": 43, "var": "lambda_HC", "val": "(-(T99*T107*muyH*muy))"}
-, {"eq": 17, "col": 45, "var": "Lab", "val": "T756"}
+, {"eq": 17, "col": 45, "var": "Lab", "val": "T791"}
 , {"eq": 17, "col": 46, "var": "muyH", "val": "(-(T99*T107*muy*lambda_HC))"}
 , {"eq": 18, "col": 2, "var": "lambda", "val": "(-(betta*Lab*W_real*(1-tauw)))"}
 , {"eq": 18, "col": 6, "var": "W_real", "val": "(-(betta*Lab*lambda*(1-tauw)))"}
@@ -158,20 +158,14 @@
 , {"eq": 19, "col": 5, "var": "N", "val": "1"}
 , {"eq": 19, "col": 39, "var": "H", "val": "(-Lab)"}
 , {"eq": 19, "col": 45, "var": "Lab", "val": "(-H)"}
-, {"eq": 19, "col": 63, "var": "Ns", "val": "1"}
-, {"eq": 20, "col": 50, "var": "AAt", "val": "(-(SAt*(-(1/ZZRD))))"}
-, {"eq": 20, "col": 55, "var": "SAt", "val": "(-(1-AAt/ZZRD))"}
-, {"eq": 20, "col": 59, "var": "SSt", "val": "(-1)"}
-, {"eq": 20, "col": 60, "var": "ZZRD", "val": "(-(SAt*(-((-AAt)/(ZZRD*ZZRD)))))"}
-, {"eq": 20, "col": 63, "var": "Ns", "val": "1"}
 , {"eq": 21, "col": 2, "var": "lambda", "val": "(-(yd*mc))"}
-, {"eq": 21, "col": 4, "var": "PI", "val": "(-(g1*betta*thetap*T530))"}
-, {"eq": 21, "col": 10, "var": "g1", "val": "1-betta*thetap*T143"}
+, {"eq": 21, "col": 4, "var": "PI", "val": "(-(g1*betta*thetap*T547))"}
+, {"eq": 21, "col": 10, "var": "g1", "val": "1-betta*thetap*T135"}
 , {"eq": 21, "col": 12, "var": "mc", "val": "(-(yd*lambda))"}
 , {"eq": 21, "col": 23, "var": "yd", "val": "(-(lambda*mc))"}
 , {"eq": 22, "col": 2, "var": "lambda", "val": "(-(yd*PIstar))"}
-, {"eq": 22, "col": 4, "var": "PI", "val": "(-(g2*betta*thetap*T535))"}
-, {"eq": 22, "col": 11, "var": "g2", "val": "1-betta*thetap*T153"}
+, {"eq": 22, "col": 4, "var": "PI", "val": "(-(g2*betta*thetap*T552))"}
+, {"eq": 22, "col": 11, "var": "g2", "val": "1-betta*thetap*T145"}
 , {"eq": 22, "col": 13, "var": "PIstar", "val": "(-(yd*lambda))"}
 , {"eq": 22, "col": 23, "var": "yd", "val": "(-(lambda*PIstar))"}
 , {"eq": 23, "col": 10, "var": "g1", "val": "epsilon"}
@@ -184,150 +178,153 @@
 , {"eq": 25, "col": 6, "var": "W_real", "val": "(-markupss)"}
 , {"eq": 25, "col": 12, "var": "mc", "val": "yt*(1-alppha)/N"}
 , {"eq": 25, "col": 14, "var": "yt", "val": "mc*(1-alppha)/N"}
-, {"eq": 26, "col": 4, "var": "PI", "val": "(-(thetap*T535))"}
+, {"eq": 26, "col": 4, "var": "PI", "val": "(-(thetap*T552))"}
 , {"eq": 26, "col": 13, "var": "PIstar", "val": "(-((1-thetap)*get_power_deriv(PIstar,1-epsilon,1)))"}
-, {"eq": 27, "col": 5, "var": "N", "val": "(-(T190*get_power_deriv(N,1-alppha,1)))"}
-, {"eq": 27, "col": 8, "var": "Kp", "val": "(-(T191*T188*get_power_deriv(Kp,alppha,1)))"}
+, {"eq": 27, "col": 5, "var": "N", "val": "(-(T183*get_power_deriv(N,1-alppha,1)))"}
+, {"eq": 27, "col": 8, "var": "Kp", "val": "(-(T184*T181*get_power_deriv(Kp,alppha,1)))"}
 , {"eq": 27, "col": 14, "var": "yt", "val": "1"}
-, {"eq": 27, "col": 15, "var": "Kg", "val": "(-(T191*T189*T184*get_power_deriv(Kg,zeta,1)))"}
-, {"eq": 27, "col": 50, "var": "AAt", "val": "(-(T191*T189*T187*get_power_deriv(AAt,varthetaat-1,1)))"}
-, {"eq": 28, "col": 51, "var": "Cgrd", "val": "(-(T202*T804))"}
-, {"eq": 28, "col": 53, "var": "shockchit", "val": "(-(T205*ZZRD*T201))"}
-, {"eq": 28, "col": 59, "var": "SSt", "val": "(-(T205*shockchit*ZZRD*get_power_deriv(SSt,alphaSRD,1)))"}
-, {"eq": 28, "col": 60, "var": "ZZRD", "val": "1+gammaa-(phiob+T205*shockchit*T201)"}
-, {"eq": 29, "col": 6, "var": "W_real", "val": "(-1)"}
-, {"eq": 29, "col": 51, "var": "Cgrd", "val": "T219*T804"}
-, {"eq": 29, "col": 53, "var": "shockchit", "val": "T205*T218*SDF*JZt/(1+gammaa)"}
-, {"eq": 29, "col": 54, "var": "SDF", "val": "T205*T218*shockchit*JZt/(1+gammaa)"}
-, {"eq": 29, "col": 58, "var": "JZt", "val": "T205*T218*shockchit*SDF/(1+gammaa)"}
-, {"eq": 29, "col": 59, "var": "SSt", "val": "T205*shockchit*SDF*JZt/(1+gammaa)*get_power_deriv(SSt,alphaSRD-1,1)"}
-, {"eq": 30, "col": 6, "var": "W_real", "val": "SAt"}
-, {"eq": 30, "col": 50, "var": "AAt", "val": "(-(phiob*T224*(-(ZZRD*probadopt*VA))/(AAt*AAt)))"}
-, {"eq": 30, "col": 54, "var": "SDF", "val": "(-(phiob*(ZZRD*probadopt*VA/AAt+JZt*(1-probadopt))*1/(1+gammaa)))"}
-, {"eq": 30, "col": 55, "var": "SAt", "val": "W_real"}
-, {"eq": 30, "col": 56, "var": "VA", "val": "(-(phiob*T224*ZZRD*probadopt/AAt))"}
-, {"eq": 30, "col": 57, "var": "probadopt", "val": "(-(phiob*T224*T266))"}
-, {"eq": 30, "col": 58, "var": "JZt", "val": "1-phiob*T224*(1-probadopt)"}
-, {"eq": 30, "col": 60, "var": "ZZRD", "val": "(-(phiob*T224*probadopt*VA/AAt))"}
-, {"eq": 31, "col": 55, "var": "SAt", "val": "(-(kappaprob*get_power_deriv(SAt,rhoSADOPT,1)))"}
-, {"eq": 31, "col": 57, "var": "probadopt", "val": "1"}
-, {"eq": 31, "col": 61, "var": "kappaprob", "val": "(-T239)"}
-, {"eq": 32, "col": 50, "var": "AAt", "val": "1+gammaa-(phiob-phiob*probadopt)"}
-, {"eq": 32, "col": 57, "var": "probadopt", "val": "(-(phiob*(ZZRD-AAt)))"}
-, {"eq": 32, "col": 60, "var": "ZZRD", "val": "(-(phiob*probadopt))"}
-, {"eq": 33, "col": 12, "var": "mc", "val": "(-(yt*(markupss-1)/markupss))"}
-, {"eq": 33, "col": 14, "var": "yt", "val": "(-(mc*(markupss-1)/markupss))"}
-, {"eq": 33, "col": 54, "var": "SDF", "val": "(-(phiob*VA/(1+gammaa)))"}
-, {"eq": 33, "col": 56, "var": "VA", "val": "1-phiob*SDF/(1+gammaa)"}
-, {"eq": 34, "col": 6, "var": "W_real", "val": "(-SAt)"}
-, {"eq": 34, "col": 50, "var": "AAt", "val": "T262*(-(ZZRD*VA))/(AAt*AAt)"}
-, {"eq": 34, "col": 54, "var": "SDF", "val": "T266*phiob*probadopt*rhoSADOPT/(1+gammaa)"}
-, {"eq": 34, "col": 55, "var": "SAt", "val": "(-W_real)"}
-, {"eq": 34, "col": 56, "var": "VA", "val": "T262*ZZRD/AAt"}
-, {"eq": 34, "col": 57, "var": "probadopt", "val": "T266*SDF*phiob*rhoSADOPT/(1+gammaa)"}
-, {"eq": 34, "col": 58, "var": "JZt", "val": "(-T262)"}
-, {"eq": 34, "col": 60, "var": "ZZRD", "val": "T262*VA/AAt"}
-, {"eq": 35, "col": 54, "var": "SDF", "val": "1"}
-, {"eq": 36, "col": 53, "var": "shockchit", "val": "1/shockchit-rhoshockchit*1/shockchit"}
-, {"eq": 36, "col": 62, "var": "shockchitss", "val": "(-((1-rhoshockchit)*1/shockchitss))"}
-, {"eq": 37, "col": 4, "var": "PI", "val": "(-(exp(epsi_MP)*T285*T292*1/Piss*get_power_deriv(PI/Piss,gamma_pi,1)*T545))"}
-, {"eq": 37, "col": 16, "var": "Rmp", "val": "1/Rss-exp(epsi_MP)*T295*1/Rss*T634"}
-, {"eq": 37, "col": 23, "var": "yd", "val": "(-(exp(epsi_MP)*T285*T545*T289*1/ydss*T688))"}
-, {"eq": 37, "col": 31, "var": "Rss", "val": "(-Rmp)/(Rss*Rss)-exp(epsi_MP)*T295*T634*(-Rmp)/(Rss*Rss)"}
-, {"eq": 37, "col": 32, "var": "ydss", "val": "(-(exp(epsi_MP)*T285*T545*T289*T688*(-yd)/(ydss*ydss)))"}
-, {"eq": 38, "col": 3, "var": "R", "val": "1/R-rho_RG"}
-, {"eq": 38, "col": 16, "var": "Rmp", "val": "(-((1-rho_RG)*1/Rmp))"}
-, {"eq": 38, "col": 18, "var": "by", "val": "(-((1-rho_RG)*Delta_G))"}
-, {"eq": 38, "col": 26, "var": "Delta_G", "val": "(-((1-rho_RG)*(by-byss)))"}
-, {"eq": 39, "col": 26, "var": "Delta_G", "val": "1"}
-, {"eq": 39, "col": 27, "var": "prob_def", "val": "(-Deltacost)"}
-, {"eq": 40, "col": 18, "var": "by", "val": "(-(((1+exp(eta1+by*eta2))*eta2*exp(eta1+by*eta2)-exp(eta1+by*eta2)*eta2*exp(eta1+by*eta2))/((1+exp(eta1+by*eta2))*(1+exp(eta1+by*eta2)))))"}
-, {"eq": 40, "col": 27, "var": "prob_def", "val": "1"}
-, {"eq": 41, "col": 15, "var": "Kg", "val": "ZZ-(1-delta)"}
-, {"eq": 41, "col": 19, "var": "Ig", "val": "(-effshock)"}
-, {"eq": 41, "col": 25, "var": "ZZ", "val": "Kg"}
-, {"eq": 41, "col": 49, "var": "effshock", "val": "(-Ig)"}
-, {"eq": 42, "col": 1, "var": "C", "val": "tauc"}
-, {"eq": 42, "col": 3, "var": "R", "val": "(-(Bt*1/PI/ZZ))"}
-, {"eq": 42, "col": 4, "var": "PI", "val": "(-(Bt*(-R)/(PI*PI)/ZZ))"}
-, {"eq": 42, "col": 5, "var": "N", "val": "W_real*tauw"}
-, {"eq": 42, "col": 6, "var": "W_real", "val": "tauw*N"}
-, {"eq": 42, "col": 17, "var": "Bt", "val": "1-R/PI/ZZ"}
-, {"eq": 42, "col": 19, "var": "Ig", "val": "(-1)"}
-, {"eq": 42, "col": 20, "var": "Cg", "val": "(-1)"}
-, {"eq": 42, "col": 21, "var": "tauc", "val": "C"}
-, {"eq": 42, "col": 22, "var": "tauw", "val": "W_real*N"}
-, {"eq": 42, "col": 25, "var": "ZZ", "val": "(-((-(Bt*R/PI))/(ZZ*ZZ)))"}
-, {"eq": 42, "col": 33, "var": "Trans", "val": "(-1)"}
-, {"eq": 42, "col": 41, "var": "Cge", "val": "(-1)"}
-, {"eq": 42, "col": 51, "var": "Cgrd", "val": "(-1)"}
-, {"eq": 43, "col": 18, "var": "by", "val": "(-((1-rho_trans)*ydss*(-gamma_d_trans)))"}
-, {"eq": 43, "col": 32, "var": "ydss", "val": "(-((1-rho_trans)*(by-byss)*(-gamma_d_trans)))"}
-, {"eq": 44, "col": 14, "var": "yt", "val": "(-((-Bt)/(yt*yt)))"}
-, {"eq": 44, "col": 17, "var": "Bt", "val": "(-(1/yt))"}
-, {"eq": 44, "col": 18, "var": "by", "val": "1"}
-, {"eq": 45, "col": 19, "var": "Ig", "val": "1"}
-, {"eq": 45, "col": 29, "var": "Igss", "val": "(-1)"}
-, {"eq": 45, "col": 32, "var": "ydss", "val": "(-epsi_ig)"}
+, {"eq": 27, "col": 15, "var": "Kg", "val": "(-(T184*T182*T645))"}
+, {"eq": 27, "col": 50, "var": "AAt", "val": "(-(T184*T182*T819))"}
+, {"eq": 28, "col": 15, "var": "Kg", "val": "(-(T190*T645))"}
+, {"eq": 28, "col": 39, "var": "H", "val": "(-(T181*get_power_deriv(H,1-alppha,1)))"}
+, {"eq": 28, "col": 50, "var": "AAt", "val": "(-(T190*T819))"}
+, {"eq": 28, "col": 64, "var": "TFP", "val": "1"}
+, {"eq": 29, "col": 39, "var": "H", "val": "(-(alphaSRD*((H)-H)/((H)*(H))/(H/(H))))"}
+, {"eq": 29, "col": 51, "var": "Cgrd", "val": "(-(alphaRD*((Cgrd)-Cgrd)/((Cgrd)*(Cgrd))/(Cgrd/(Cgrd))))"}
+, {"eq": 29, "col": 53, "var": "shockchit", "val": "(-(1/shockchit))"}
+, {"eq": 29, "col": 60, "var": "ZZRD", "val": "T884-rho_ZZRD*T884"}
+, {"eq": 31, "col": 54, "var": "SDF", "val": "(-(phiob*(probadopt*VA+JZt*(1-probadopt))*1/(1+gammaa)))"}
+, {"eq": 31, "col": 55, "var": "SAt", "val": "1"}
+, {"eq": 31, "col": 56, "var": "VA", "val": "(-(phiob*T224*probadopt))"}
+, {"eq": 31, "col": 57, "var": "probadopt", "val": "(-(phiob*T224*(VA-JZt)))"}
+, {"eq": 31, "col": 58, "var": "JZt", "val": "1-phiob*T224*(1-probadopt)"}
+, {"eq": 32, "col": 55, "var": "SAt", "val": "(-(kappaprob*get_power_deriv(SAt,rhoSADOPT,1)))"}
+, {"eq": 32, "col": 57, "var": "probadopt", "val": "1"}
+, {"eq": 32, "col": 61, "var": "kappaprob", "val": "(-T237)"}
+, {"eq": 33, "col": 50, "var": "AAt", "val": "1+gammaa-(phiob-phiob*probadopt)"}
+, {"eq": 33, "col": 57, "var": "probadopt", "val": "(-(phiob*(ZZRD-AAt)))"}
+, {"eq": 33, "col": 60, "var": "ZZRD", "val": "(-(phiob*probadopt))"}
+, {"eq": 34, "col": 12, "var": "mc", "val": "(-(yt*(markupss-1)/markupss))"}
+, {"eq": 34, "col": 14, "var": "yt", "val": "(-(mc*(markupss-1)/markupss))"}
+, {"eq": 34, "col": 54, "var": "SDF", "val": "(-(phiob*VA/(1+gammaa)))"}
+, {"eq": 34, "col": 56, "var": "VA", "val": "1-phiob*SDF/(1+gammaa)"}
+, {"eq": 35, "col": 54, "var": "SDF", "val": "(VA-JZt)*phiob*probadopt*rhoSADOPT/(1+gammaa)"}
+, {"eq": 35, "col": 55, "var": "SAt", "val": "(-1)"}
+, {"eq": 35, "col": 56, "var": "VA", "val": "T260"}
+, {"eq": 35, "col": 57, "var": "probadopt", "val": "(VA-JZt)*SDF*phiob*rhoSADOPT/(1+gammaa)"}
+, {"eq": 35, "col": 58, "var": "JZt", "val": "(-T260)"}
+, {"eq": 36, "col": 2, "var": "lambda", "val": "(-((lambda*(1+tauc)*(1+tauc)*betta-(1+tauc)*(1+tauc)*lambda*betta)/(lambda*(1+tauc)*lambda*(1+tauc))))"}
+, {"eq": 36, "col": 21, "var": "tauc", "val": "(-((lambda*(1+tauc)*lambda*betta-lambda*(1+tauc)*lambda*betta)/(lambda*(1+tauc)*lambda*(1+tauc))))"}
+, {"eq": 36, "col": 54, "var": "SDF", "val": "1"}
+, {"eq": 37, "col": 53, "var": "shockchit", "val": "1/shockchit-rhoshockchit*1/shockchit"}
+, {"eq": 37, "col": 62, "var": "shockchitss", "val": "(-((1-rhoshockchit)*1/shockchitss))"}
+, {"eq": 38, "col": 4, "var": "PI", "val": "(-(exp(epsi_MP)*T281*T288*1/Piss*get_power_deriv(PI/Piss,gamma_pi,1)*T562))"}
+, {"eq": 38, "col": 16, "var": "Rmp", "val": "1/Rss-exp(epsi_MP)*T291*1/Rss*T652"}
+, {"eq": 38, "col": 23, "var": "yd", "val": "(-(exp(epsi_MP)*T281*T562*T285*1/ydss*T711))"}
+, {"eq": 38, "col": 31, "var": "Rss", "val": "(-Rmp)/(Rss*Rss)-exp(epsi_MP)*T291*T652*(-Rmp)/(Rss*Rss)"}
+, {"eq": 38, "col": 32, "var": "ydss", "val": "(-(exp(epsi_MP)*T281*T562*T285*T711*(-yd)/(ydss*ydss)))"}
+, {"eq": 39, "col": 3, "var": "R", "val": "1/R-rho_RG"}
+, {"eq": 39, "col": 16, "var": "Rmp", "val": "(-((1-rho_RG)*1/Rmp))"}
+, {"eq": 39, "col": 18, "var": "by", "val": "(-((1-rho_RG)*Delta_G))"}
+, {"eq": 39, "col": 26, "var": "Delta_G", "val": "(-((1-rho_RG)*(by-byss)))"}
+, {"eq": 40, "col": 26, "var": "Delta_G", "val": "1"}
+, {"eq": 40, "col": 27, "var": "prob_def", "val": "(-Deltacost)"}
+, {"eq": 41, "col": 18, "var": "by", "val": "(-(((1+exp(eta1+by*eta2))*eta2*exp(eta1+by*eta2)-exp(eta1+by*eta2)*eta2*exp(eta1+by*eta2))/((1+exp(eta1+by*eta2))*(1+exp(eta1+by*eta2)))))"}
+, {"eq": 41, "col": 27, "var": "prob_def", "val": "1"}
+, {"eq": 42, "col": 15, "var": "Kg", "val": "ZZ-(1-delta)"}
+, {"eq": 42, "col": 19, "var": "Ig", "val": "(-effshock)"}
+, {"eq": 42, "col": 25, "var": "ZZ", "val": "Kg"}
+, {"eq": 42, "col": 49, "var": "effshock", "val": "(-Ig)"}
+, {"eq": 43, "col": 1, "var": "C", "val": "tauc"}
+, {"eq": 43, "col": 3, "var": "R", "val": "(-(Bt*1/PI/ZZ))"}
+, {"eq": 43, "col": 4, "var": "PI", "val": "(-(Bt*(-R)/(PI*PI)/ZZ))"}
+, {"eq": 43, "col": 5, "var": "N", "val": "W_real*tauw"}
+, {"eq": 43, "col": 6, "var": "W_real", "val": "tauw*N"}
+, {"eq": 43, "col": 17, "var": "Bt", "val": "1-R/PI/ZZ"}
+, {"eq": 43, "col": 19, "var": "Ig", "val": "(-1)"}
+, {"eq": 43, "col": 20, "var": "Cg", "val": "(-1)"}
+, {"eq": 43, "col": 21, "var": "tauc", "val": "C"}
+, {"eq": 43, "col": 22, "var": "tauw", "val": "W_real*N"}
+, {"eq": 43, "col": 25, "var": "ZZ", "val": "(-((-(Bt*R/PI))/(ZZ*ZZ)))"}
+, {"eq": 43, "col": 33, "var": "Trans", "val": "(-1)"}
+, {"eq": 43, "col": 41, "var": "Cge", "val": "(-1)"}
+, {"eq": 43, "col": 51, "var": "Cgrd", "val": "(-1)"}
+, {"eq": 44, "col": 18, "var": "by", "val": "(-((1-rho_trans)*ydss*(-gamma_d_trans)))"}
+, {"eq": 44, "col": 32, "var": "ydss", "val": "(-((1-rho_trans)*(by-byss)*(-gamma_d_trans)))"}
+, {"eq": 45, "col": 14, "var": "yt", "val": "(-((-Bt)/(yt*yt)))"}
+, {"eq": 45, "col": 17, "var": "Bt", "val": "(-(1/yt))"}
+, {"eq": 45, "col": 18, "var": "by", "val": "1"}
 , {"eq": 46, "col": 19, "var": "Ig", "val": "1"}
-, {"eq": 46, "col": 20, "var": "Cg", "val": "1"}
 , {"eq": 46, "col": 29, "var": "Igss", "val": "(-1)"}
-, {"eq": 46, "col": 30, "var": "Cgss", "val": "(-1)"}
-, {"eq": 46, "col": 41, "var": "Cge", "val": "1"}
-, {"eq": 46, "col": 44, "var": "Cgess", "val": "(-1)"}
-, {"eq": 46, "col": 51, "var": "Cgrd", "val": "1"}
-, {"eq": 46, "col": 52, "var": "Cgrdss", "val": "(-1)"}
-, {"eq": 47, "col": 18, "var": "by", "val": "(-((1-rho_tauc)*gamma_d_tauc))"}
-, {"eq": 47, "col": 21, "var": "tauc", "val": "1-rho_tauc"}
-, {"eq": 48, "col": 18, "var": "by", "val": "(-((1-rho_tauw)*gamma_d_tauw))"}
-, {"eq": 48, "col": 22, "var": "tauw", "val": "1-rho_tauw"}
-, {"eq": 49, "col": 25, "var": "ZZ", "val": "Kge"}
-, {"eq": 49, "col": 40, "var": "Kge", "val": "ZZ-(1-delta)"}
-, {"eq": 49, "col": 41, "var": "Cge", "val": "(-effgeshock)"}
-, {"eq": 49, "col": 48, "var": "effgeshock", "val": "(-Cge)"}
-, {"eq": 50, "col": 32, "var": "ydss", "val": "(-epsi_cge)"}
-, {"eq": 50, "col": 41, "var": "Cge", "val": "1"}
-, {"eq": 50, "col": 44, "var": "Cgess", "val": "(-1)"}
-, {"eq": 51, "col": 32, "var": "ydss", "val": "(-epsi_cgrd)"}
-, {"eq": 51, "col": 51, "var": "Cgrd", "val": "1"}
-, {"eq": 51, "col": 52, "var": "Cgrdss", "val": "(-1)"}
-, {"eq": 52, "col": 1, "var": "C", "val": "(-1)"}
-, {"eq": 52, "col": 7, "var": "Ip", "val": "(-1)"}
-, {"eq": 52, "col": 19, "var": "Ig", "val": "(-1)"}
-, {"eq": 52, "col": 20, "var": "Cg", "val": "(-1)"}
-, {"eq": 52, "col": 23, "var": "yd", "val": "1"}
-, {"eq": 52, "col": 41, "var": "Cge", "val": "(-1)"}
-, {"eq": 52, "col": 51, "var": "Cgrd", "val": "(-1)"}
-, {"eq": 53, "col": 14, "var": "yt", "val": "1"}
-, {"eq": 53, "col": 23, "var": "yd", "val": "(-vp)"}
-, {"eq": 53, "col": 24, "var": "vp", "val": "(-yd)"}
-, {"eq": 54, "col": 4, "var": "PI", "val": "(-(vp*thetap*T530))"}
-, {"eq": 54, "col": 13, "var": "PIstar", "val": "(-((1-thetap)*get_power_deriv(PIstar,(-epsilon),1)))"}
-, {"eq": 54, "col": 24, "var": "vp", "val": "1-thetap*T143"}
-, {"eq": 55, "col": 25, "var": "ZZ", "val": "T85-T85*(1-rho_ZZ)"}
-, {"eq": 56, "col": 48, "var": "effgeshock", "val": "1-rhoeffge"}
-, {"eq": 57, "col": 49, "var": "effshock", "val": "1-rhoeff"}
-, {"eq": 58, "col": 23, "var": "yd", "val": "(-(100*1/yd))"}
-, {"eq": 58, "col": 34, "var": "lnyd", "val": "1"}
-, {"eq": 59, "col": 1, "var": "C", "val": "(-(100*(-tauc)/yt))"}
-, {"eq": 59, "col": 5, "var": "N", "val": "(-(100*(-(W_real*tauw))/yt))"}
-, {"eq": 59, "col": 6, "var": "W_real", "val": "(-(100*(-(tauw*N))/yt))"}
-, {"eq": 59, "col": 14, "var": "yt", "val": "(-(100*(-(Trans+Cgrd+Cge+Ig+Cg-N*W_real*tauw-C*tauc))/(yt*yt)))"}
-, {"eq": 59, "col": 19, "var": "Ig", "val": "T667"}
-, {"eq": 59, "col": 20, "var": "Cg", "val": "T667"}
-, {"eq": 59, "col": 21, "var": "tauc", "val": "(-(100*(-C)/yt))"}
-, {"eq": 59, "col": 22, "var": "tauw", "val": "(-(100*(-(W_real*N))/yt))"}
-, {"eq": 59, "col": 33, "var": "Trans", "val": "T667"}
-, {"eq": 59, "col": 35, "var": "pdef", "val": "1"}
-, {"eq": 59, "col": 41, "var": "Cge", "val": "T667"}
-, {"eq": 59, "col": 51, "var": "Cgrd", "val": "T667"}
-, {"eq": 60, "col": 19, "var": "Ig", "val": "(-(100*1/ydss))"}
-, {"eq": 60, "col": 32, "var": "ydss", "val": "(-(100*(-Ig)/(ydss*ydss)))"}
-, {"eq": 60, "col": 36, "var": "Ig_ys", "val": "1"}
-, {"eq": 61, "col": 18, "var": "by", "val": "(-25)"}
-, {"eq": 61, "col": 37, "var": "by_ann", "val": "1"}
-, {"eq": 62, "col": 4, "var": "PI", "val": "(-(100*1/PI))"}
-, {"eq": 62, "col": 38, "var": "lnPI", "val": "1"}
-, {"eq": 63, "col": 25, "var": "ZZ", "val": "(-(T85*100))"}
-, {"eq": 63, "col": 47, "var": "ygrowth", "val": "1"}
-]}, "external_functions_temporary_terms_hessian": [], "temporary_terms_hessian": [], "hessian": {  "nrows": 63, "ncols": 3969, "entries": []}, "external_functions_temporary_terms_third_derivative": [], "temporary_terms_third_derivative": [], "third_derivative": {  "nrows": 63, "ncols": 250047, "entries": []}}}
+, {"eq": 46, "col": 32, "var": "ydss", "val": "(-epsi_ig)"}
+, {"eq": 47, "col": 19, "var": "Ig", "val": "1"}
+, {"eq": 47, "col": 20, "var": "Cg", "val": "1"}
+, {"eq": 47, "col": 29, "var": "Igss", "val": "(-1)"}
+, {"eq": 47, "col": 30, "var": "Cgss", "val": "(-1)"}
+, {"eq": 47, "col": 41, "var": "Cge", "val": "1"}
+, {"eq": 47, "col": 44, "var": "Cgess", "val": "(-1)"}
+, {"eq": 47, "col": 51, "var": "Cgrd", "val": "1"}
+, {"eq": 47, "col": 52, "var": "Cgrdss", "val": "(-1)"}
+, {"eq": 48, "col": 18, "var": "by", "val": "(-((1-rho_tauc)*gamma_d_tauc))"}
+, {"eq": 48, "col": 21, "var": "tauc", "val": "1-rho_tauc"}
+, {"eq": 49, "col": 18, "var": "by", "val": "(-((1-rho_tauw)*gamma_d_tauw))"}
+, {"eq": 49, "col": 22, "var": "tauw", "val": "1-rho_tauw"}
+, {"eq": 50, "col": 25, "var": "ZZ", "val": "Kge"}
+, {"eq": 50, "col": 40, "var": "Kge", "val": "ZZ-(1-delta)"}
+, {"eq": 50, "col": 41, "var": "Cge", "val": "(-effgeshock)"}
+, {"eq": 50, "col": 48, "var": "effgeshock", "val": "(-Cge)"}
+, {"eq": 51, "col": 32, "var": "ydss", "val": "(-epsi_cge)"}
+, {"eq": 51, "col": 41, "var": "Cge", "val": "1"}
+, {"eq": 51, "col": 44, "var": "Cgess", "val": "(-1)"}
+, {"eq": 52, "col": 32, "var": "ydss", "val": "(-epsi_cgrd)"}
+, {"eq": 52, "col": 51, "var": "Cgrd", "val": "1-rho_Cgrd"}
+, {"eq": 52, "col": 52, "var": "Cgrdss", "val": "rho_Cgrd-1"}
+, {"eq": 53, "col": 51, "var": "Cgrd", "val": "(-(1/Cgrd))"}
+, {"eq": 53, "col": 66, "var": "ln_Cgrd", "val": "1"}
+, {"eq": 54, "col": 32, "var": "ydss", "val": "(-((-Cgrd)/(ydss*ydss)))"}
+, {"eq": 54, "col": 51, "var": "Cgrd", "val": "(-(1/ydss))"}
+, {"eq": 54, "col": 65, "var": "Cgrd_ydss_ratio", "val": "1"}
+, {"eq": 55, "col": 1, "var": "C", "val": "(-1)"}
+, {"eq": 55, "col": 7, "var": "Ip", "val": "(-1)"}
+, {"eq": 55, "col": 19, "var": "Ig", "val": "(-1)"}
+, {"eq": 55, "col": 20, "var": "Cg", "val": "(-1)"}
+, {"eq": 55, "col": 23, "var": "yd", "val": "1"}
+, {"eq": 55, "col": 41, "var": "Cge", "val": "(-1)"}
+, {"eq": 55, "col": 50, "var": "AAt", "val": "(-(SAt*(-ZZRD)/(AAt*AAt)))"}
+, {"eq": 55, "col": 51, "var": "Cgrd", "val": "(-1)"}
+, {"eq": 55, "col": 55, "var": "SAt", "val": "(-(ZZRD/AAt-1))"}
+, {"eq": 55, "col": 59, "var": "SSt", "val": "(-1)"}
+, {"eq": 55, "col": 60, "var": "ZZRD", "val": "(-(SAt*1/AAt))"}
+, {"eq": 56, "col": 14, "var": "yt", "val": "1"}
+, {"eq": 56, "col": 23, "var": "yd", "val": "(-vp)"}
+, {"eq": 56, "col": 24, "var": "vp", "val": "(-yd)"}
+, {"eq": 57, "col": 4, "var": "PI", "val": "(-(vp*thetap*T547))"}
+, {"eq": 57, "col": 13, "var": "PIstar", "val": "(-((1-thetap)*get_power_deriv(PIstar,(-epsilon),1)))"}
+, {"eq": 57, "col": 24, "var": "vp", "val": "1-thetap*T135"}
+, {"eq": 58, "col": 25, "var": "ZZ", "val": "T85-T85*(1-rho_ZZ)"}
+, {"eq": 59, "col": 48, "var": "effgeshock", "val": "1-rhoeffge"}
+, {"eq": 60, "col": 49, "var": "effshock", "val": "1-rhoeff"}
+, {"eq": 61, "col": 23, "var": "yd", "val": "(-(100*1/yd))"}
+, {"eq": 61, "col": 34, "var": "lnyd", "val": "1"}
+, {"eq": 62, "col": 1, "var": "C", "val": "(-(100*(-tauc)/yt))"}
+, {"eq": 62, "col": 5, "var": "N", "val": "(-(100*(-(W_real*tauw))/yt))"}
+, {"eq": 62, "col": 6, "var": "W_real", "val": "(-(100*(-(tauw*N))/yt))"}
+, {"eq": 62, "col": 14, "var": "yt", "val": "(-(100*(-(Trans+Cgrd+Cge+Ig+Cg-N*W_real*tauw-C*tauc))/(yt*yt)))"}
+, {"eq": 62, "col": 19, "var": "Ig", "val": "T685"}
+, {"eq": 62, "col": 20, "var": "Cg", "val": "T685"}
+, {"eq": 62, "col": 21, "var": "tauc", "val": "(-(100*(-C)/yt))"}
+, {"eq": 62, "col": 22, "var": "tauw", "val": "(-(100*(-(W_real*N))/yt))"}
+, {"eq": 62, "col": 33, "var": "Trans", "val": "T685"}
+, {"eq": 62, "col": 35, "var": "pdef", "val": "1"}
+, {"eq": 62, "col": 41, "var": "Cge", "val": "T685"}
+, {"eq": 62, "col": 51, "var": "Cgrd", "val": "T685"}
+, {"eq": 63, "col": 19, "var": "Ig", "val": "(-(100*1/ydss))"}
+, {"eq": 63, "col": 32, "var": "ydss", "val": "(-(100*(-Ig)/(ydss*ydss)))"}
+, {"eq": 63, "col": 36, "var": "Ig_ys", "val": "1"}
+, {"eq": 64, "col": 18, "var": "by", "val": "(-25)"}
+, {"eq": 64, "col": 37, "var": "by_ann", "val": "1"}
+, {"eq": 65, "col": 4, "var": "PI", "val": "(-(100*1/PI))"}
+, {"eq": 65, "col": 38, "var": "lnPI", "val": "1"}
+, {"eq": 66, "col": 25, "var": "ZZ", "val": "(-(T85*100))"}
+, {"eq": 66, "col": 47, "var": "ygrowth", "val": "1"}
+]}, "external_functions_temporary_terms_hessian": [], "temporary_terms_hessian": [], "hessian": {  "nrows": 66, "ncols": 4356, "entries": []}, "external_functions_temporary_terms_third_derivative": [], "temporary_terms_third_derivative": [], "third_derivative": {  "nrows": 66, "ncols": 287496, "entries": []}}}
