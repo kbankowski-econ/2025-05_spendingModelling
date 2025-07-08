@@ -91,7 +91,7 @@ end
 
 end
 
-databank.toCSV(tempDatabank, "/Users/kk/Documents/0000-00_work/2025-05_spendingModelling/docs/csvFiles/figureNumbers.csv", "Decimals", 3);
+databank.toCSV(tempDatabank, "/Users/kk/Documents/0000-00_work/2025-05_spendingModelling/docs/csvFiles/figureNumbers.csv", qq(0, 4): qq(50, 4) , "Decimals", 3);
 
 %%
 function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileName)
