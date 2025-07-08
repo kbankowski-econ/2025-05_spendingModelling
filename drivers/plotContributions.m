@@ -199,11 +199,9 @@ function panelContributions(aModel, contributionSeriesAllModels, projectPath)
 end
 
 function panelContributionsManyModels(modelList, contributionSeriesAllModels, projectPath)
-
  % Read in the environment table
  envi = environment.setup();
-
- % Specify the model
+% Specify the model
  contributionSeries = contributionSeriesAllModels;
 % Please specify the list of the variables to plot
  VarListToPlot = string(reshape(fieldnames(contributionSeries.(modelList(1)).total), 1, []));
@@ -221,10 +219,11 @@ function panelContributionsManyModels(modelList, contributionSeriesAllModels, pr
  h = gcf;
  set(h, 'Units','centimeters', 'Position',[0 0 21-2*2.5 12-2*2.5])
  set(h,'defaulttextinterpreter','latex');
-
 % Store axis handles for linking
 axesHandles = [];
-
+% Store legend handles for global legend
+legendHandles = [];
+legendLabels = [];
 for aItem = VarListToPlot %for each panel
 for aModel = modelList
  ax = nexttile;
@@ -264,20 +263,24 @@ for aModel = modelList
  , 'Box', 'off' ...
  , 'TickLabelInterpreter','latex' ...
  );
- legendLabels = replace([contributionSeries.(aModel).contrib.(aItem).Comment, aItem], "_", "\_");
- legend( ...
- [bars_, line_] ...
- , legendLabels ...
- , 'location', 'northoutside' ...
- , 'Interpreter','latex' ...
- , 'Fontsize', 6 ...
- , 'NumColumns', 2 ...
- );
+ 
+ % Store legend information from first subplot only
+ if isempty(legendHandles)
+     legendHandles = [bars_, line_];
+     legendLabels = replace([contributionSeries.(aModel).contrib.(aItem).Comment, aItem], "_", "\_");
+ end
 end
 end
-
 % Link y-axes of all subplots
 linkaxes(axesHandles, 'y');
+
+% Create global legend for the tiledlayout
+lgd = legend(t, legendHandles, legendLabels, ...
+    'Orientation', 'horizontal', ...
+    'Location', 'north', ...
+    'Interpreter', 'latex', ...
+    'Fontsize', 6, ...
+    'NumColumns', 2);
 
 % Save graph
  fileName = fullfile(projectPath, "docs/contributions/panelContributionsManyModels");
