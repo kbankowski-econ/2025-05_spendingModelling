@@ -10,32 +10,53 @@ utils.call.paths;
 % Cding to a relevant directory
 cd(fullfile(project_path, 'models'));
 
-%% gov. investment shock
+%% 
 dynare('Model_HumanCapital_epsi_ig.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
 
-%% gov. cge shock
+%% 
 dynare('Model_HumanCapital_epsi_cge.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
 
-%% gov. cgerd shock
+%% 
 dynare('Model_HumanCapital_epsi_cgrd.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
 
-%% gov. cgerd shock
-dynare('Model_HumanCapital_epsi_all.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+%% 
+dynare('Model_HumanCapital_epsieff30y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
 
-%% EM: gov. cgerd shock
+%% 
+dynare('Model_HumanCapital_epsieffcge30y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+
+%% 
+dynare('Model_HumanCapital_epsi_igeff30y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+dynare('Model_HumanCapital_epsi_igeff25y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+dynare('Model_HumanCapital_epsi_igeff10y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+dynare('Model_HumanCapital_epsi_igeff5y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+
+%% 
+dynare('Model_HumanCapital_epsi_cgeeff30y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+dynare('Model_HumanCapital_epsi_cgeeff25y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+dynare('Model_HumanCapital_epsi_cgeeff10y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+dynare('Model_HumanCapital_epsi_cgeeff5y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+
+%% 
 dynare('EM_Model_HumanCapital_epsiig.mod', 'savemacro', 'json=compute');
 
-%% EM: gov. cgerd shock
+%% 
 dynare('EM_Model_HumanCapital_epsicge.mod', 'savemacro', 'json=compute');
 
-%% EM: gov. cgerd shock
-dynare('EM_Model_HumanCapital_epsieff.mod', 'savemacro', 'json=compute');
+%% 
+dynare('EM_Model_HumanCapital_epsieff30y.mod', 'savemacro', 'json=compute');
 
-%% EM: gov. cgerd shock
-dynare('EM_Model_HumanCapital_epsieffcge.mod', 'savemacro', 'json=compute');
+%% 
+dynare('EM_Model_HumanCapital_epsieffcge30y.mod', 'savemacro', 'json=compute');
 
-%% EM: gov. cgerd shock
-dynare('EM_Model_HumanCapital_epsiall.mod', 'savemacro', 'json=compute');
+%% 
+dynare('EM_Model_HumanCapital_epsiigeff30y.mod', 'savemacro', 'json=compute');
+dynare('EM_Model_HumanCapital_epsiigeff25y.mod', 'savemacro', 'json=compute');
+dynare('EM_Model_HumanCapital_epsiigeff10y.mod', 'savemacro', 'json=compute');
+dynare('EM_Model_HumanCapital_epsiigeff5y.mod', 'savemacro', 'json=compute');
 
-%% EM: gov. combined 2
-dynare('EM_Model_HumanCapital_epsicgeall.mod', 'savemacro', 'json=compute');
+%% 
+dynare('EM_Model_HumanCapital_epsicgeeff30y.mod', 'savemacro', 'json=compute');
+dynare('EM_Model_HumanCapital_epsicgeeff25y.mod', 'savemacro', 'json=compute');
+dynare('EM_Model_HumanCapital_epsicgeeff10y.mod', 'savemacro', 'json=compute');
+dynare('EM_Model_HumanCapital_epsicgeeff5y.mod', 'savemacro', 'json=compute');

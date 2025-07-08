@@ -2,10 +2,25 @@
 Model_HumanCapital_epsi_ig,Infrastructure investment shock
 Model_HumanCapital_epsi_cge,Human capital investment shock
 Model_HumanCapital_epsi_cgrd,R&D investment shock
-Model_HumanCapital_epsi_all,R&D and human capital investment
+Model_HumanCapital_epsieff30y,Infrastructure efficiency (30y)
+Model_HumanCapital_epsieffcge30y,Human capital efficiency (30y)
+Model_HumanCapital_epsi_igeff30y,Infrastructure: investment + efficiency (30y)
+Model_HumanCapital_epsi_igeff25y,Infrastructure: investment + efficiency (25y)
+Model_HumanCapital_epsi_igeff10y,Infrastructure: investment + efficiency (10y)
+Model_HumanCapital_epsi_igeff5y,Infrastructure: investment + efficiency (5y)
+Model_HumanCapital_epsi_cgeeff30y,Human capital: investment + efficiency (30y)
+Model_HumanCapital_epsi_cgeeff25y,Human capital: investment + efficiency (25y)
+Model_HumanCapital_epsi_cgeeff10y,Human capital: investment + efficiency (10y)
+Model_HumanCapital_epsi_cgeeff5y,Human capital: investment + efficiency (5y)
 EM_Model_HumanCapital_epsiig,Infrastructure investment shock
 EM_Model_HumanCapital_epsicge,Human capital investment shock
-EM_Model_HumanCapital_epsieff,Infrastructure efficiency
-EM_Model_HumanCapital_epsieffcge,Human capital efficiency
-EM_Model_HumanCapital_epsiall,Infrastructure: investment + efficiency
-EM_Model_HumanCapital_epsicgeall,Human capital: investment + efficiency
+EM_Model_HumanCapital_epsieff30y,Infrastructure efficiency (30y)
+EM_Model_HumanCapital_epsieffcge30y,Human capital efficiency (30y)
+EM_Model_HumanCapital_epsiigeff30y,Infrastructure: investment + efficiency (30y)
+EM_Model_HumanCapital_epsiigeff25y,Infrastructure: investment + efficiency (25y)
+EM_Model_HumanCapital_epsiigeff10y,Infrastructure: investment + efficiency (10y)
+EM_Model_HumanCapital_epsiigeff5y,Infrastructure: investment + efficiency (5y)
+EM_Model_HumanCapital_epsicgeeff30y,Human capital: investment + efficiency (30y)
+EM_Model_HumanCapital_epsicgeeff25y,Human capital: investment + efficiency (25y)
+EM_Model_HumanCapital_epsicgeeff10y,Human capital: investment + efficiency (10y)
+EM_Model_HumanCapital_epsicgeeff5y,Human capital: investment + efficiency (5y)
