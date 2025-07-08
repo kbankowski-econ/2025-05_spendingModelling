@@ -106,7 +106,12 @@ panelContributions("Model_HumanCapital_epsi_ig", contributionSeries, project_pat
 % panelContributionsSlide(contributionSeries,g projectPath, subProjectPath);
 
 %%
-panelContributionsManyModels(modelList, contributionSeries, project_path)
+modelList = ["Model_HumanCapital_epsi_ig" ...
+    , "Model_HumanCapital_epsi_cge" ...
+    , "Model_HumanCapital_epsi_cgrd" ...
+    ];
+panelContributionsManyModels(modelList, contributionSeries, project_path, "panelContributionsManyModelsAE")
+
 
 %%
 function panelContributions(aModel, contributionSeriesAllModels, projectPath)
@@ -198,7 +203,7 @@ function panelContributions(aModel, contributionSeriesAllModels, projectPath)
     exportgraphics(t, sprintf('%s.png',fileName),'BackgroundColor','none');
 end
 
-function panelContributionsManyModels(modelList, contributionSeriesAllModels, projectPath)
+function panelContributionsManyModels(modelList, contributionSeriesAllModels, projectPath, outputFileName)
  % Read in the environment table
  envi = environment.setup();
 % Specify the model
@@ -213,7 +218,7 @@ function panelContributionsManyModels(modelList, contributionSeriesAllModels, pr
 % Plotting
  figure
 % Defining the shape of the figure
- tiledlayout_width = 3; %Specify the # of columns desired
+ tiledlayout_width = numel(modelList); %Specify the # of columns desired
  tiledlayout_height = 1;
  t = tiledlayout(tiledlayout_height, tiledlayout_width, 'TileSpacing', 'compact','Padding','compact');
  h = gcf;
@@ -275,14 +280,14 @@ end
 linkaxes(axesHandles, 'y');
 
 % Create global legend for the tiledlayout
-lgd = legend(t, legendHandles, legendLabels, ...
+lgd = legend(legendHandles, legendLabels, ...
     'Orientation', 'horizontal', ...
-    'Location', 'north', ...
     'Interpreter', 'latex', ...
-    'Fontsize', 6, ...
-    'NumColumns', 2);
+    'Fontsize', 6);
+lgd.Layout.Tile = 'north';
+lgd.NumColumns = 6;
 
 % Save graph
- fileName = fullfile(projectPath, "docs/contributions/panelContributionsManyModels");
+ fileName = fullfile(projectPath, "docs/contributions", outputFileName);
  exportgraphics(t, sprintf('%s.png',fileName),'BackgroundColor','none');
 end
