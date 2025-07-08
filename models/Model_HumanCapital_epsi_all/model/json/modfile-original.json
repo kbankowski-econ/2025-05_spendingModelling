@@ -110,7 +110,7 @@
 {"statementName": "param_init", "name": "effge", "value": "0.8"},
 {"statementName": "param_init", "name": "Cgey", "value": "0.03"},
 {"statementName": "param_init", "name": "deltaH", "value": "0.025"},
-{"statementName": "param_init", "name": "muy", "value": "0.2"},
+{"statementName": "param_init", "name": "muy", "value": "0.5"},
 {"statementName": "param_init", "name": "alphaH", "value": "0.2"},
 {"statementName": "param_init", "name": "rho_Cge", "value": "0.9"},
 {"statementName": "param_init", "name": "alphaZZ1", "value": "0.2"},

@@ -198,7 +198,7 @@ eff=0.8;
 effge=0.8;
 Cgey=0.03;
 deltaH=0.025;   
-muy=0.2;
+muy=0.5;
 alphaH=0.2;
 rho_Cge=0.9;
 %load param_need;  
