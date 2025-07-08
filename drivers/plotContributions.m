@@ -12,7 +12,7 @@ modelList = ["Model_HumanCapital_epsi_ig" ...
     , "Model_HumanCapital_epsi_cgrd" ...
     ];
 
-aItemList = ["omega"];
+aItemList = ["yd"];
 
 %% ----------------
 % Loading the databases
@@ -128,7 +128,7 @@ function panelContributions(aModel, contributionSeriesAllModels, projectPath)
     
     % Defining the shape of the figure
     tiledlayout_width = 3; %Specify the # of columns desired
-    tiledlayout_height = 2;
+    tiledlayout_height = 1;
     
     t = tiledlayout(tiledlayout_height, tiledlayout_width, 'TileSpacing', 'compact','Padding','compact');
     
@@ -207,7 +207,7 @@ function panelContributionsManyModels(modelList, contributionSeriesAllModels, pr
     VarListToPlot = string(reshape(fieldnames(contributionSeries.(modelList(1)).total), 1, []));
     
     % Please specify the date range of the series
-    DateRange = qq(1,1):qq(50,4);
+    DateRange = qq(1,1):qq(25,4);
     aShift = 0;
     DateRangeNorm = DateRange - aShift;
     DateRangeDateTime = dater.toMatlab(DateRangeNorm);
@@ -217,13 +217,12 @@ function panelContributionsManyModels(modelList, contributionSeriesAllModels, pr
     
     % Defining the shape of the figure
     tiledlayout_width = 3; %Specify the # of columns desired
-    tiledlayout_height = 2;
+    tiledlayout_height = 1;
     
     t = tiledlayout(tiledlayout_height, tiledlayout_width, 'TileSpacing', 'compact','Padding','compact');
     
     h = gcf;
-    FigureHeight = min(29.7, tiledlayout_height*6.5);
-    set(h, 'Units','centimeters', 'Position',[0 0 21-2*2.5 20-2*2.5])
+    set(h, 'Units','centimeters', 'Position',[0 0 21-2*2.5 12-2*2.5])
     set(h,'defaulttextinterpreter','latex');
     
 
