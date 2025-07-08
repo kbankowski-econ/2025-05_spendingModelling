@@ -20,22 +20,22 @@ dynare('Model_HumanCapital_epsi_cge.mod', 'savemacro', sprintf('-I%s/%s/submodul
 dynare('Model_HumanCapital_epsi_cgrd.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
 
 %% gov. cgerd shock
-dynare('Model_HumanCapital_epsi_all.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'));
+dynare('Model_HumanCapital_epsi_all.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
 
 %% EM: gov. cgerd shock
-dynare('EM_Model_HumanCapital_epsiig.mod', 'savemacro');
+dynare('EM_Model_HumanCapital_epsiig.mod', 'savemacro', 'json=compute');
 
 %% EM: gov. cgerd shock
-dynare('EM_Model_HumanCapital_epsicge.mod', 'savemacro');
+dynare('EM_Model_HumanCapital_epsicge.mod', 'savemacro', 'json=compute');
 
 %% EM: gov. cgerd shock
-dynare('EM_Model_HumanCapital_epsieff.mod', 'savemacro');
+dynare('EM_Model_HumanCapital_epsieff.mod', 'savemacro', 'json=compute');
 
 %% EM: gov. cgerd shock
-dynare('EM_Model_HumanCapital_epsieffcge.mod', 'savemacro');
+dynare('EM_Model_HumanCapital_epsieffcge.mod', 'savemacro', 'json=compute');
 
 %% EM: gov. cgerd shock
-dynare('EM_Model_HumanCapital_epsiall.mod', 'savemacro');
+dynare('EM_Model_HumanCapital_epsiall.mod', 'savemacro', 'json=compute');
 
 %% EM: gov. combined 2
-dynare('EM_Model_HumanCapital_epsicgeall.mod', 'savemacro');
+dynare('EM_Model_HumanCapital_epsicgeall.mod', 'savemacro', 'json=compute');
