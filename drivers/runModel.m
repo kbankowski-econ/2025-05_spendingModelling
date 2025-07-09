@@ -54,9 +54,11 @@ dynare('EM_Model_HumanCapital_epsiigeff30y.mod', 'savemacro', 'json=compute');
 dynare('EM_Model_HumanCapital_epsiigeff25y.mod', 'savemacro', 'json=compute');
 dynare('EM_Model_HumanCapital_epsiigeff10y.mod', 'savemacro', 'json=compute');
 dynare('EM_Model_HumanCapital_epsiigeff5y.mod', 'savemacro', 'json=compute');
+dynare('EM_Model_HumanCapital_epsiigLAGeff10y.mod', 'savemacro', 'json=compute');
 
 %% 
 dynare('EM_Model_HumanCapital_epsicgeeff30y.mod', 'savemacro', 'json=compute');
 dynare('EM_Model_HumanCapital_epsicgeeff25y.mod', 'savemacro', 'json=compute');
 dynare('EM_Model_HumanCapital_epsicgeeff10y.mod', 'savemacro', 'json=compute');
 dynare('EM_Model_HumanCapital_epsicgeeff5y.mod', 'savemacro', 'json=compute');
+dynare('EM_Model_HumanCapital_epsicgeLAGeff10y.mod', 'savemacro', 'json=compute');
