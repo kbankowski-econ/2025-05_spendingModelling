@@ -54,6 +54,8 @@ dynare('EM_Model_HumanCapital_epsicge.mod', 'savemacro', 'json=compute');
 %% 
 dynare('EM_Model_HumanCapital_epsiigCge.mod', 'savemacro', 'json=compute');
 %% 
+dynare('EM_Model_HumanCapital_epsiigCgeVarShare.mod', 'savemacro', 'json=compute');
+%% 
 dynare('EM_Model_HumanCapital_epsieff30y.mod', 'savemacro', 'json=compute');
 
 %% 
