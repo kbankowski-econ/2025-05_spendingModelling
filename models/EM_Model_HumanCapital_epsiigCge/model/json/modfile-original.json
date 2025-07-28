@@ -133,7 +133,7 @@
 {"statementName": "param_init", "name": "alphaRD", "value": "0"},
 {"statementName": "steady"},
 {"statementName": "check"},
-{"statementName": "shocks", "overwrite": false, "deterministic_shocks": [{"var": "epsi_ig", "values": [{"period1": 1, "period2": 1000, "value": "0.01"}]}], "variance": [], "stderr": [], "covariance": [], "correlation": []},
+{"statementName": "shocks", "overwrite": false, "deterministic_shocks": [{"var": "epsi_ig", "values": [{"period1": 1, "period2": 1000, "value": "0.005"}]}, {"var": "epsi_cge", "values": [{"period1": 1, "period2": 1000, "value": "0.005"}]}], "variance": [], "stderr": [], "covariance": [], "correlation": []},
 {"statementName": "perfect_foresight_setup", "options": {"periods": 2000}},
 {"statementName": "perfect_foresight_solver", "options": {"simul.maxit": 20}},
 {"statementName": "native", "string": "fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;"},
