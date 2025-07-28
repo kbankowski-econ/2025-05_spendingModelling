@@ -18,6 +18,7 @@ Model_HumanCapital_epsi_cgeeff5y,Human capital: investment + efficiency (5y)
 EM_Model_HumanCapital_epsiig,Infrastructure investment shock
 EM_Model_HumanCapital_epsicge,Human capital investment shock
 EM_Model_HumanCapital_epsiigCge,Joint infrastructure and human capital investment shock
+EM_Model_HumanCapital_epsiigCgeVarShare,Joint infrastructure and human capital investment shock with changing shares
 EM_Model_HumanCapital_epsieff30y,Infrastructure efficiency (30y)
 EM_Model_HumanCapital_epsieffcge30y,Human capital efficiency (30y)
 EM_Model_HumanCapital_epsiigeff30y,Infrastructure: investment + efficiency (30y)
