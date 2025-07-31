@@ -32,7 +32,7 @@ check;
 shocks;
 
 var epsi_ig;
-periods 1:1000  ;
+periods 40:1000  ;
 values 
 0.01;
 
