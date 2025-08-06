@@ -7,14 +7,14 @@ epsilon =10;
 alppha=0.3;      
 Bigtheta=0;      
 Bigtheta_y=0;
-zeta=0.05;      
+zeta=0.054;      
 rho_R=0.7;      
 gamma_pi=1.5;    
 gamma_y=0.25;    
 Piss=1;          
 rho_RG=0;        
 rho_tauc=0.9;  
-taucss=0.20;    
+taucss=0.18;    
 gamma_y_tauc=0; 
 gamma_d_tauc=0.0; 
 rho_tauw=0.9;  
@@ -27,18 +27,18 @@ ZZss=1.004;
 eta1=-18.12;      
 eta2=3.12;
 Deltacost=0;  % Shutting down the feedback of debt on rate
-Igy=0.02;
-Cgy=0.2;
+
 rho_Cg=0.9;
 rho_Ig=0.9;
 gamma_d_trans=0.5;
 rho_trans=0;
 eff=0.9;
 effge=0.9;
-Cgey=0.03;
+eff_cgrd=0.7;
+
 deltaH=0.025;   
 muy=0.2;
-alphaH=0.2;
+
 rho_Cge=0.9;
 %load param_need;  
 alphaZZ1=0.2;
@@ -49,6 +49,17 @@ alphaHA=0.05;
 Cgrdy=0.006;
 rho_Cgrd=0;
 
+/*
+Igy=0.02;
+Cgy=0.2;
+Cgey=0.03;
+alphaH=0.2;
+*/
+
+Igy=0.03;
+Cgy=0.18;
+Cgey=0.0145;
+alphaH=0.1;
 
 
 markupss=1.18;

@@ -67,13 +67,15 @@ Ns              % Labor in R&D
 TFP             % TFP
 Cgrd_ydss_ratio
 ln_Cgrd
+Cgrdeff
+effcgrdshock
 ;
 
 %-----------------------------
 % Define exogenous variables
 %-----------------------------
 varexo
-%epsi_cg         % Shock to government consumption
+epsi_cg         % Shock to government consumption
 epsi_ig         % Shock to government investment  
 epsi_ZZ         % Shock to trend
 epsi_spread     % Shock to Spread
@@ -85,6 +87,10 @@ epsi_effge
 epsi_eff
 epsi_cgrd       % Shock to R&D spending
 epsi_shockchit  % Shock to the R&D process 
+epsirhoadopt
+epsi_effcgrd
+epsiallo_ig        % shock to elasticity wrt public infrastructure capital
+epsiallo_cge       % Shock to elasticity wrt public human capital 
 ;
 
 %--------------------------
@@ -150,4 +156,5 @@ alphaSRD       % R&D elasticity
 rhoshockchit    % AR (1) or shock to r&D 
 rho_Cgrd
 rho_ZZRD
+eff_cgrd
 ;

@@ -62,6 +62,7 @@ Bigtheta=Bigtheta_y*yt;
 % NEW PATH
 %kGe_y=effge*Cgey/(1-(1-delta)/ZZ);
 % Human capital
+%kGe_y=effge*Cgey/(ZZ-(1-delta));
 kGe_y=effge*Cgey/(ZZ-(1-delta));
 Kge=kGe_y*yt;
 Cge=Cgey*yt;
@@ -167,4 +168,7 @@ effshock=eff;
 TFP=AAt^(varthetaat-1)*(Kg^zeta)*H^(1-alppha);
 ln_Cgrd=log(Cgrd);
 Cgrd_ydss_ratio=Cgrd/ydss;
+Cgrdeff=eff_cgrd*Cgrd;
+
+effcgrdshock=eff_cgrd;
 %AAt=1;
