@@ -8,7 +8,7 @@ shocks;
     @#include  "epsi_eff_AE_10Y_values.macro"
 
     var epsiallo_cge;
-    @#include  "epsi_allo_AE_10Y_values.macro"
+    @#include  "epsi_allo_cge_AE_10Y_values.macro"
 
 end;
 
