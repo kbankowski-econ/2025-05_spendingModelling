@@ -45,6 +45,9 @@ dynare('Model_HumanCapital_epsi_cgeeff30y.mod', 'savemacro', sprintf('-I%s/%s/su
 dynare('Model_HumanCapital_epsi_cgeeff25y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
 dynare('Model_HumanCapital_epsi_cgeeff10y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
 dynare('Model_HumanCapital_epsi_cgeeff5y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+%%
+dynare('Model_HumanCapital_epsi_igeff10y_al.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+dynare('Model_HumanCapital_epsi_cgeeff10y_al.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
 
 %% 
 dynare('EM_Model_HumanCapital_epsiig.mod', 'savemacro', 'json=compute');
@@ -74,3 +77,7 @@ dynare('EM_Model_HumanCapital_epsicgeeff25y.mod', 'savemacro', 'json=compute');
 dynare('EM_Model_HumanCapital_epsicgeeff10y.mod', 'savemacro', 'json=compute');
 dynare('EM_Model_HumanCapital_epsicgeeff5y.mod', 'savemacro', 'json=compute');
 dynare('EM_Model_HumanCapital_epsicgeLAGeff10y.mod', 'savemacro', 'json=compute');
+
+%%
+dynare('EM_Model_HumanCapital_epsiigeff25y_al.mod', 'savemacro', 'json=compute');
+dynare('EM_Model_HumanCapital_epsicgeeff25y_al.mod', 'savemacro', 'json=compute');
