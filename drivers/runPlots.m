@@ -57,59 +57,19 @@ for aModel = modelList
     );
 end
 
-% Loop through each model and load data
-for aModel = modelList
-    % Load the model data
-    resultsRaw = load(fullfile(project_path, 'models', aModel, 'Output', [char(aModel) '_results_old.mat']));
-    dataRange = qq(0, 4): qq(0, 4) + size(resultsRaw.oo_.endo_simul', 1) - 1;
-    
-    % Store endogenous and steady state variables
-    resultsProc.(aModel+"_old").endo = databank.fromArray( ...
-        resultsRaw.oo_.endo_simul', ...
-        resultsRaw.M_.endo_names, ...
-        dataRange(1) ...
-    );
-    
-    % Handle SS values
-    resultsProc.(aModel+"_old").ss = databank.fromArray( ...
-        repmat(resultsRaw.oo_.steady_state', numel(dataRange), 1), ...
-        resultsRaw.M_.endo_names, ...
-        dataRange(1) ...
-    );
-    
-    % Handle parameters
-    for aParam = string(reshape(resultsRaw.M_.param_names, 1, []))
-        resultsProc.(aModel+"_old").param.(aParam) = resultsRaw.M_.params(strcmp(aParam, resultsRaw.M_.param_names));
-    end
-    
-    % Calculate IRF transformations
-    serIndex = cellfun(@(x) any(endsWith(x, {'effshock', 'effgeshock'})), resultsRaw.M_.endo_names);
-    
-    resultsProc.(aModel+"_old").irf = databank.copy( ...
-        resultsProc.(aModel+"_old").endo, ...
-        "Transform", @(x) (x/x(qq(0, 4))-1)*100, ...
-        "SourceNames", resultsRaw.M_.endo_names(~serIndex) ...
-    );
-    
-    resultsProc.(aModel+"_old").irf = databank.copy( ...
-        resultsProc.(aModel+"_old").endo, ...
-        "SourceNames", resultsRaw.M_.endo_names(serIndex), ...
-        "Transform", @(x) (x-x(qq(0, 4))), ...
-        "TargetDb", resultsProc.(aModel+"_old").irf ...
-    );
-end
-
 
 %% Plot comparison
 %vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_ig" , "Model_HumanCapital_epsi_cge" , "Model_HumanCapital_epsi_cgrd", "Model_HumanCapital_epsieff30y", "Model_HumanCapital_epsieffcge30y"], 'epsiall_AE');
-vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["EM_Model_HumanCapital_epsiigeff10y", "EM_Model_HumanCapital_epsiigLAGeff10y", "EM_Model_HumanCapital_epsicgeeff10y", "EM_Model_HumanCapital_epsicgeLAGeff10y"], 'epsiall_EM');
+vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock", "TFP"], ["Model_HumanCapital_epsi_igeff10y", "Model_HumanCapital_epsi_cgeeff10y", "Model_HumanCapital_epsi_igeff10y_al", "Model_HumanCapital_epsi_cgeeff10y_al"], 'epsiall_AE');
+vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock", "TFP"], ["EM_Model_HumanCapital_epsiigeff25y", "EM_Model_HumanCapital_epsicgeeff25y", "EM_Model_HumanCapital_epsiigeff25y_al", "EM_Model_HumanCapital_epsicgeeff25y_al"], 'epsiall_EM');
+
 %vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_ig", "EM_Model_HumanCapital_epsiig"], 'epsi_ig');;
 %vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], ["Model_HumanCapital_epsi_cge", "EM_Model_HumanCapital_epsicge"], 'epsi_cge');;
 
 %%
 
 for aModel = modelList
-    vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], [aModel, aModel+"_old"], char(aModel));
+    vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Cge", "Cgrd", "H", "Lab", "E", "effshock", "effgeshock"], [aModel], char(aModel));
 end
 
 
@@ -144,7 +104,7 @@ function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileNa
     figure
     
     % Create main tiledlayout
-    t = tiledlayout(3, 4, 'TileSpacing', 'compact', 'Padding', 'compact');
+    t = tiledlayout(4, 4, 'TileSpacing', 'compact', 'Padding', 'compact');
     h = gcf;
     set(h, 'Units', 'centimeters', 'Position', [0 0 18 11])
     set(h, 'DefaultTextInterpreter', 'latex');
@@ -181,7 +141,7 @@ function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileNa
     % Setting of the legend   
     leg = legend(...
         struct2array(pp) ...
-        , ["new", "old"] ...
+        , replace(envi.shockDict{fieldnames(pp), "description"}, "&", "\&") ...
         , 'Orientation', 'horizontal' ...
         , 'Color', [1 1 1] ...
         , 'Fontsize', 8 ...
