@@ -38,6 +38,10 @@ values
 
 var epsi_effge;
 @#include  "epsi_eff_EM_25Y_values.macro"
+
+var epsiallo_cge;
+@#include  "epsi_allo_EM_25Y_values.macro"
+
 end;
 
 

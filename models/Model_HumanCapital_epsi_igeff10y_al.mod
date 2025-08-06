@@ -7,6 +7,9 @@ shocks;
     var epsi_eff;
     @#include  "epsi_eff_AE_10Y_values.macro"
 
+    var epsiallo_ig;
+    @#include  "epsi_allo_AE_10Y_values.macro"
+
 end;
 
 @#include "simulSpec.mod"
