@@ -31,3 +31,7 @@ EM_Model_HumanCapital_epsicgeeff25y,Human capital: investment + efficiency (25y)
 EM_Model_HumanCapital_epsicgeeff10y,Human capital: investment + efficiency (10y)
 EM_Model_HumanCapital_epsicgeeff5y,Human capital: investment + efficiency (5y)
 EM_Model_HumanCapital_epsicgeLAGeff10y,Human capital: investment (delayed) + efficiency (10y)
+Model_HumanCapital_epsi_igeff10y_al,Infrastructure: investment + efficiency (10y) + allocation
+Model_HumanCapital_epsi_cgeeff10y_al,Human capital: investment + efficiency (10y) + allocation
+EM_Model_HumanCapital_epsiigeff25y_al,Infrastructure: investment + efficiency (25y) + allocation
+EM_Model_HumanCapital_epsicgeeff25y_al,Human capital: investment + efficiency (25y) + allocation
