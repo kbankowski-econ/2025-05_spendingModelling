@@ -262,10 +262,10 @@ Kp*ZZ=(1-delta)*Kp(-1)+Ip;
 //NEW PATH 
 //Human capital of Household:  H=(1-delta)*H(-1)+E^muy (Kge/At)^alphaH; 
 %H=(1-deltaH)*H(-1)+muyH*E^muy*(Kge(-1)/ZZ)^alphaH; 
-H=(1-deltaH)*H(-1)+muyH*E^muy*(Kge(-1))^(alphaH+epsiallo_cge); 
+H=(1-deltaH)*H(-1)+muyH*E^muy*(Kge(-1))^(alphaH*(1+epsiallo_cge)); 
 // Time for human capital build: E 
 %omega*(Lab+E)^phi=lambda_HC*muyH*muy*E^(muy-1)* (Kge(-1)/ZZ)^alphaH;
-omega*(Lab+E)^phi=lambda_HC*muyH*muy*E^(muy-1)* (Kge(-1))^(alphaH+epsiallo_cge);
+omega*(Lab+E)^phi=lambda_HC*muyH*muy*E^(muy-1)* (Kge(-1))^(alphaH*(1+epsiallo_cge));
 // Human capital 
 lambda_HC=betta*(lambda(+1)*(1-tauw(+1))*W_real(+1)*Lab(+1)+lambda_HC(+1)*(1-deltaH));
 //Effective labor
@@ -292,8 +292,8 @@ Kp(-1)/N=alppha/(1-alppha)*W_real/rk;
 // Production
 %yt=1/ZZ^(zeta+alppha-zeta*alppha)*(Kg(-1)^zeta)*(Kp(-1)^(alppha*(1-zeta)))*(N^((1-alppha)*(1-zeta)))-Bigtheta_y*STEADY_STATES(yt);
 %yt=AAt*1/ZZ^(zeta+alppha-zeta*alppha)*(Kg(-1)^zeta)*(Kp(-1)^(alppha*(1-zeta)))*((N)^((1-alppha)*(1-zeta)))-Bigtheta;
-yt=AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta+epsiallo_ig))*(Kp(-1)^alppha)*(N^(1-alppha))-Bigtheta;
-TFP=AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta+epsiallo_ig))*H(-1)^(1-alppha);
+yt=AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*(Kp(-1)^alppha)*(N^(1-alppha))-Bigtheta;
+TFP=AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*H(-1)^(1-alppha);
 //Stationary tech process
 %log(AAt)=rho_AAt*log(AAt(-1))+alphaHA*log(H(-1)/STEADY_STATE(H))+alphaRD*log(Cgrd(-1)/Cgrdss);
 /*
