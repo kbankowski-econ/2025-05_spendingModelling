@@ -41,7 +41,7 @@ var epsi_eff;
 @#include  "epsi_eff_EM_25Y_values.macro"
 
 var epsiallo_ig;
-@#include  "epsi_allo_ig_EM_25Y_values.macro"
+@#include  "epsi_allo_ig_AE_10Y_values.macro"
 
 end;
 
