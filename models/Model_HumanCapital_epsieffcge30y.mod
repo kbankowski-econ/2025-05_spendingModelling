@@ -3,7 +3,7 @@
 shocks;
 
 var epsi_effge;
-@#include  "epsi_eff_AE_30Y_values.macro"
+@#include  "Model_HumanCapital_epsieffcge30y.shockValues"
 end;
 
 @#include "simulSpec.mod"
