@@ -259,10 +259,10 @@ Kp*ZZ=(1-delta)*Kp(-1)+Ip;
 //NEW PATH 
 //Human capital of Household:  H=(1-delta)*H(-1)+E^muy (Kge/At)^alphaH; 
 %H=(1-deltaH)*H(-1)+muyH*E^muy*(Kge(-1)/ZZ)^alphaH; 
-H=(1-deltaH)*H(-1)+muyH*E^muy*(Kge(-1))^(alphaH+epsiallo_cge); 
+H=(1-deltaH)*H(-1)+muyH*E^muy*(Kge(-1))^(alphaH*(1+epsiallo_cge)); 
 // Time for human capital build: E 
 %omega*(Lab+E)^phi=lambda_HC*muyH*muy*E^(muy-1)* (Kge(-1)/ZZ)^alphaH;
-omega*(Lab+E)^phi=lambda_HC*muyH*muy*E^(muy-1)* (Kge(-1))^(alphaH+epsiallo_cge);
+omega*(Lab+E)^phi=lambda_HC*muyH*muy*E^(muy-1)* (Kge(-1))^(alphaH*(1+epsiallo_cge));
 // Human capital 
 lambda_HC=betta*(lambda(+1)*(1-tauw(+1))*W_real(+1)*Lab(+1)+lambda_HC(+1)*(1-deltaH));
 //Effective labor
@@ -289,8 +289,8 @@ Kp(-1)/N=alppha/(1-alppha)*W_real/rk;
 // Production
 %yt=1/ZZ^(zeta+alppha-zeta*alppha)*(Kg(-1)^zeta)*(Kp(-1)^(alppha*(1-zeta)))*(N^((1-alppha)*(1-zeta)))-Bigtheta_y*STEADY_STATES(yt);
 %yt=AAt*1/ZZ^(zeta+alppha-zeta*alppha)*(Kg(-1)^zeta)*(Kp(-1)^(alppha*(1-zeta)))*((N)^((1-alppha)*(1-zeta)))-Bigtheta;
-yt=AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta+epsiallo_ig))*(Kp(-1)^alppha)*(N^(1-alppha))-Bigtheta;
-TFP=AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta+epsiallo_ig))*H(-1)^(1-alppha);
+yt=AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*(Kp(-1)^alppha)*(N^(1-alppha))-Bigtheta;
+TFP=AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*H(-1)^(1-alppha);
 //Stationary tech process
 %log(AAt)=rho_AAt*log(AAt(-1))+alphaHA*log(H(-1)/STEADY_STATE(H))+alphaRD*log(Cgrd(-1)/Cgrdss);
 /*
@@ -422,49 +422,50 @@ periods 40:1000  ;
 values 
 0.01;
 var epsi_effge;
-periods 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41:1000;
+periods 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41:1000 ;
 values
-    0.0050
-    0.0100
-    0.0150
-    0.0200
-    0.0250
-    0.0300
-    0.0350
-    0.0400
-    0.0450
-    0.0500
-    0.0550
-    0.0600
-    0.0650
-    0.0700
-    0.0750
-    0.0800
-    0.0850
-    0.0900
-    0.0950
-    0.1000
-    0.1050
-    0.1100
-    0.1150
-    0.1200
-    0.1250
-    0.1300
-    0.1350
-    0.1400
-    0.1450
-    0.1500
-    0.1550
-    0.1600
-    0.1650
-    0.1700
-    0.1750
-    0.1800
-    0.1850
-    0.1900
-    0.1950
-    0.2000
-0.2;
+    0.005
+    0.01
+    0.015
+    0.02
+    0.025
+    0.03
+    0.035
+    0.04
+    0.045
+    0.05
+    0.055
+    0.06
+    0.065
+    0.07
+    0.075
+    0.08
+    0.085
+    0.09
+    0.095
+    0.1
+    0.105
+    0.11
+    0.115
+    0.12
+    0.125
+    0.13
+    0.135
+    0.14
+    0.145
+    0.15
+    0.155
+    0.16
+    0.165
+    0.17
+    0.175
+    0.18
+    0.185
+    0.19
+    0.195
+    0.2
+    0.2
+;
 end;
 perfect_foresight_setup(periods=2000);%options_.debug
 perfect_foresight_solver(maxit=20); %maxit=10 linear_approximation, endogenous_terminal_period
