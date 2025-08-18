@@ -5,7 +5,7 @@ shocks;
     @#include "shockStandardVal.mod"
 
     var epsi_effge;
-    @#include  "epsi_eff_AE_25Y_values.macro"
+    @#include  "Model_HumanCapital_epsi_cgeeff25y.shockValues"
 
 end;
 

@@ -32,7 +32,7 @@ check;
 shocks;
 
 var epsi_eff;
-@#include  "epsi_eff_EM_30Y_values.macro"
+@#include  "EM_Model_HumanCapital_epsieff30y.shockValues"
 end;
 
 
