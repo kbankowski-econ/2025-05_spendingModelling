@@ -32,9 +32,9 @@ rho_Cg=0.9;
 rho_Ig=0.9;
 gamma_d_trans=0.5;
 rho_trans=0;
-eff=0.9;
-effge=0.9;
-eff_cgrd=0.7;
+eff=1-0.35;
+effge=1-0.295;
+eff_cgrd=1-0.41;
 
 deltaH=0.025;   
 muy=0.2;
