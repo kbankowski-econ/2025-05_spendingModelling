@@ -78,14 +78,15 @@ dynare('EM_Model_HumanCapital_epsiigCge.mod', 'savemacro', 'json=compute');
 
 dynare('EM_Model_HumanCapital_epsiigCgeVarShare.mod', 'savemacro', 'json=compute'); 
 
-utils.subroutines.generateShockFile('EM_Model_HumanCapital_epsieff30y.shockValues', 0.415, 30);
+utils.subroutines.generateShockFile('EM_Model_HumanCapital_epsieff30y.shockValues', 0.415, 20);
 dynare('EM_Model_HumanCapital_epsieff30y.mod', 'savemacro', 'json=compute');
 
-utils.subroutines.generateShockFile('EM_Model_HumanCapital_epsieffcge30y.shockValues', 0.320, 30);
+utils.subroutines.generateShockFile('EM_Model_HumanCapital_epsieffcge30y.shockValues', 0.320, 20);
 dynare('EM_Model_HumanCapital_epsieffcge30y.mod', 'savemacro', 'json=compute');
 
-utils.subroutines.generateShockFile('EM_Model_HumanCapital_epsiigeff30y.shockValues', 0.415, 30);
+utils.subroutines.generateShockFile('EM_Model_HumanCapital_epsiigeff30y.shockValues', 0.415, 20);
 dynare('EM_Model_HumanCapital_epsiigeff30y.mod', 'savemacro', 'json=compute');
+dynare('EM_Model_HumanCapital_epsiigeff30ylow.mod', 'savemacro', 'json=compute');
 
 utils.subroutines.generateShockFile('EM_Model_HumanCapital_epsiigeff25y.shockValues', 0.415, 25);
 dynare('EM_Model_HumanCapital_epsiigeff25y.mod', 'savemacro', 'json=compute');
@@ -101,8 +102,9 @@ dynare('EM_Model_HumanCapital_epsiigeff5y.mod', 'savemacro', 'json=compute');
 utils.subroutines.generateShockFile('EM_Model_HumanCapital_epsiigLAGeff10y.shockValues', 0.415, 10);
 dynare('EM_Model_HumanCapital_epsiigLAGeff10y.mod', 'savemacro', 'json=compute');
 
-utils.subroutines.generateShockFile('EM_Model_HumanCapital_epsicgeeff30y.shockValues', 0.320, 30);
+utils.subroutines.generateShockFile('EM_Model_HumanCapital_epsicgeeff30y.shockValues', 0.320, 20);
 dynare('EM_Model_HumanCapital_epsicgeeff30y.mod', 'savemacro', 'json=compute');
+dynare('EM_Model_HumanCapital_epsicgeeff30ylow.mod', 'savemacro', 'json=compute');
 
 utils.subroutines.generateShockFile('EM_Model_HumanCapital_epsicgeeff25y.shockValues', 0.320, 25);
 dynare('EM_Model_HumanCapital_epsicgeeff25y.mod', 'savemacro', 'json=compute');
@@ -126,6 +128,9 @@ dynare('EM_Model_HumanCapital_epsicgeeff25y_al.mod', 'savemacro', 'json=compute'
 
 utils.subroutines.generateShockFile('Model_HumanCapital_epsi_cgrd_eff.shockValues', 0.41, 10);
 dynare('Model_HumanCapital_epsi_cgrd_eff.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+
+utils.subroutines.generateShockFile('Model_HumanCapital_epsi_cgrd_eff25y.shockValues', 0.41, 25);
+dynare('Model_HumanCapital_epsi_cgrd_eff25y.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
 
 utils.subroutines.generateShockFile('Model_HumanCapital_epsicgrd_cge_adt.shockValues', 0.03, 10);
 dynare('Model_HumanCapital_epsicgrd_cge_adt.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
