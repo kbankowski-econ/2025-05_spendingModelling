@@ -203,7 +203,7 @@ eff=1-0.35;
 effge=1-0.295;
 eff_cgrd=1-0.41;
 deltaH=0.025;   
-muy=0.2;
+muy=0.5;
 rho_Cge=0.9;
 %load param_need;  
 alphaZZ1=0.2;
