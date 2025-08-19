@@ -1,0 +1,70 @@
+betta=0.9985;    
+phi= 1.2 ;       
+chi =0.6;        
+delta =0.025;    
+thetap = 0.8;    
+epsilon =10;     
+alppha=0.3;      
+Bigtheta=0;      
+Bigtheta_y=0;
+zeta=0.2;      
+rho_R=0.7;      
+gamma_pi=1.5;    
+gamma_y=0.25;    
+Piss=1;          
+rho_RG=0;        
+rho_tauc=0.9;  
+taucss=0.15;    
+gamma_y_tauc=0; 
+gamma_d_tauc=0.0; 
+rho_tauw=0.9;  
+tauwss=0.10 ;   
+gamma_y_tauw=0;  
+gamma_d_tauw=0; 
+byss=0.6*4;         
+rho_ZZ= 0.24 ;    
+ZZss=1.0075;       
+eta1=-18.12;      
+eta2=3.12;
+Deltacost=0;  % Shutting down the feedback of debt on rate
+
+rho_Cg=0.9;
+rho_Ig=0.9;
+gamma_d_trans=0.5;
+rho_trans=0;
+eff=1-0.415-0.2;
+effge=1-0.320-0.2;
+eff_cgrd=0.8;
+
+deltaH=0.025;   
+muy=0.5;
+
+rho_Cge=0.9;
+%load param_need;  
+alphaZZ1=0.2;
+rhoeffge =0;
+rhoeff =0;
+rho_AAt=0.0;
+%alphaHA=0.1;
+alphaHA=0;
+alphaRD=0.001;
+Cgrdy=0.001;
+
+
+Igy=0.05;
+Cgy=0.14;
+Cgey=0.02;
+alphaH=0.25;
+
+rho_Cgrd=0;
+
+markupss=1.18;
+phiob=1-0.08/4;   % obsolescence rate: 0.08/4
+varthetaat=1.35;
+gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
+probadoptss=0.2/4;
+rhoSADOPT=0.1;
+alphaSRD=0;
+rhoshockchit=1;
+rho_ZZRD=0.79;
+alphaRD=0;
