@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(invoke:*)",
+      "Bash(ls:*)",
+      "Bash(head:*)",
+      "Bash(du:*)",
+      "Bash(code:*)",
+      "Bash(open:*)",
+      "Bash(echo:*)",
+      "Bash(rm:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(mkdir:*)",
+      "Bash(wc:*)",
+      "Bash(xargs:*)",
+      "Bash(pip3:*)",
+      "Bash(curl:*)",
+      "Bash(sips:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git checkout:*)",
+      "Bash(git restore:*)",
+      "Bash(git mv:*)",
+      "Bash(git rm:*)",
+      "Bash(git lfs:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(git cat-file:*)",
+      "Bash(git check-ignore:*)",
+      "WebSearch",
+      "WebFetch(domain:api.fiscaldata.treasury.gov)",
+      "WebFetch(domain:fiscaldata.treasury.gov)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}

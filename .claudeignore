@@ -1,0 +1,31 @@
+# Binary and large data files
+data/fmData/*.dta
+data/fmData/*.dta.enc
+data/fmData/*.xlsx
+data/fmData/*.xls
+data/fmData/*.rds
+data/fmBondradar/*.rds
+
+# Generated chart outputs (read from docu/ when needed)
+docu/**/*.png
+docu/**/*.svg
+docu/**/*.html
+docu/**/*.pdf
+
+# Python cache
+**/__pycache__/
+**/*.pyc
+
+# OS files
+.DS_Store
+**/Thumbs.db
+
+# Logs
+**/*.log
+
+# Encrypted files
+**/*.enc
+
+# Temporary files
+temp_*
+compare_outputs/
