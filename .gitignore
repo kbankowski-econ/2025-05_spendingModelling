@@ -9,3 +9,4 @@ checksum
 *.asv
 __pycache__/
 *.pyc
+*.html

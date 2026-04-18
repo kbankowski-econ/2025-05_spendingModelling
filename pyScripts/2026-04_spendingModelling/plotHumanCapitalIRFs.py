@@ -20,10 +20,13 @@ from fiscal_common import (
 
 
 SERIES = [
-    ("Model_HumanCapital_epsi_cge___yd",      "Human capital investment"),
-    ("Model_HumanCapital_epsi_cgrd___yd",     "R&D investment"),
-    ("Model_HumanCapital_epsi_cgeCgrd___yd",  "Joint human capital + R&D"),
+    ("Model_HumanCapital_epsi_cgeCgrd___yd",  "Joint human capital + R&D", "#E65100"),
+    ("Model_HumanCapital_epsi_cge___yd",      "Human capital investment",  "#6A1B9A"),
+    ("Model_HumanCapital_epsi_cgrd___yd",     "R&D investment",            "#2E7D32"),
 ]
+
+PLOT_START_YEAR = 2026
+X_TICKS = [2026, 2031, 2036, 2041, 2046, 2050]
 
 INPUT_CSV = "../../docs/csvFiles/figureNumbers_yearly.csv"
 OUTPUT_STEM = "humanCapital_yd_IRF"
@@ -42,11 +45,11 @@ def main():
     output_dir = ensure_output_dir(config)
 
     df = load_data()
+    df = df[df["year"] >= PLOT_START_YEAR]
 
     fig = go.Figure()
-    palette = chart_cfg["colors"]["palette"]
 
-    for (col, label), color in zip(SERIES, palette):
+    for col, label, color in SERIES:
         fig.add_trace(
             go.Scatter(
                 x=df["year"],
@@ -85,8 +88,9 @@ def main():
         linewidth=axes["linewidth"],
         ticks=axes["ticks"],
         tickfont=dict(size=axes["tickfont_size"]),
-        dtick=5,
-        title=dict(text="Year", font=dict(size=axes["tickfont_size"])),
+        tickmode="array",
+        tickvals=X_TICKS,
+        title=None,
     )
     fig.update_yaxes(
         showgrid=axes["showgrid"],
@@ -99,20 +103,22 @@ def main():
         linewidth=axes["linewidth"],
         ticks=axes["ticks"],
         tickfont=dict(size=axes["tickfont_size"]),
-        title=dict(text="% deviation from baseline", font=dict(size=axes["tickfont_size"])),
+        title=None,
     )
 
-    png_path = output_dir / f"{OUTPUT_STEM}.png"
-    html_path = output_dir / f"{OUTPUT_STEM}.html"
+    figures_dir = output_dir / "figures"
+    figures_dir.mkdir(parents=True, exist_ok=True)
+    png_path = figures_dir / f"{OUTPUT_STEM}.png"
+    html_path = figures_dir / f"{OUTPUT_STEM}.html"
     smart_save_image(fig, png_path)
     fig.write_html(html_path, auto_open=config["output_settings"].get("auto_open_html", False))
     print(f"  Saved {png_path.name} and {html_path.name}")
 
-    csv_cols = ["year"] + [c for c, _ in SERIES]
+    csv_cols = ["year"] + [c for c, _, _ in SERIES]
     csv_data = df[csv_cols].copy()
-    rename_map = {c: label for c, label in SERIES}
+    rename_map = {c: label for c, label, _ in SERIES}
     csv_data = csv_data.rename(columns=rename_map).round(3)
-    csv_path = output_dir / f"{OUTPUT_STEM}.csv"
+    csv_path = figures_dir / f"{OUTPUT_STEM}.csv"
     csv_data.to_csv(csv_path, index=False)
     print(f"  Exported data to {csv_path.name}")
 
