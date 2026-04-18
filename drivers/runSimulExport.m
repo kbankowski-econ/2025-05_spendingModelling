@@ -73,7 +73,9 @@ end
 
 end
 
-databank.toCSV(tempDatabank, fullfile(project_path, "docs/csvFiles/figureNumbers.csv"), qq(0, 4): qq(50, 4) , "Decimals", 3, "Comments", false, "Class", false);
+tempDatabank = databank.redate(tempDatabank, qq(25, 4), qq(2050, 1));
+
+databank.toCSV(tempDatabank, fullfile(project_path, "docs/csvFiles/figureNumbers.csv"), qq(2025, 1): qq(2075, 1) , "Decimals", 3, "Comments", false, "Class", false);
 
 %%
 function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileName)
