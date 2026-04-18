@@ -1,29 +1,33 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{opensans}
 \usepackage[margin=1.2cm]{geometry}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{caption}
 
-\title{FM Panel Replication}
-\date{}
-
 \newcommand{\panelSubtitle}[1]{\noindent\textbf{#1}\par\vspace{0.15em}}
+
+\pagestyle{empty}
 
 \begin{document}
 
-\maketitle
+\noindent{\Large\bfseries Figure 1.6. Long-Term Gains in Output}\\[0.3em]
+{\normalsize (Percent deviation from steady state)}
+
+\vspace{0.2cm}
 
 \begin{figure}[H]
     \centering
     % Row 1
     \begin{minipage}{0.48\textwidth}
-        \panelSubtitle{1. Panel title}
+        \panelSubtitle{1. Advanced Economies: Reallocation of Expenditure}
         \includegraphics[width=\textwidth]{figures/humanCapital_yd_IRF.png}
     \end{minipage}
     \hfill
     \begin{minipage}{0.48\textwidth}
-        \panelSubtitle{2. Panel title}
+        \panelSubtitle{2. Emerging Market and Developing Economies: Reallocation of Expenditure}
         \includegraphics[width=\textwidth]{figures/humanCapital_yd_IRF.png}
     \end{minipage}
 
@@ -31,12 +35,12 @@
 
     % Row 2
     \begin{minipage}{0.48\textwidth}
-        \panelSubtitle{3. Panel title}
+        \panelSubtitle{3. Advanced Economies: Increase in Spending Efficiency}
         \includegraphics[width=\textwidth]{figures/humanCapital_yd_IRF.png}
     \end{minipage}
     \hfill
     \begin{minipage}{0.48\textwidth}
-        \panelSubtitle{4. Panel title}
+        \panelSubtitle{4. Emerging Market and Developing Economies: Increase in Spending Efficiency}
         \includegraphics[width=\textwidth]{figures/humanCapital_yd_IRF.png}
     \end{minipage}
 
@@ -44,14 +48,24 @@
 
     % Row 3
     \begin{minipage}{0.48\textwidth}
-        \panelSubtitle{5. Panel title}
+        \panelSubtitle{5. Advanced Economies: Combining Human Capital and R\&D}
         \includegraphics[width=\textwidth]{figures/humanCapital_yd_IRF.png}
     \end{minipage}
     \hfill
     \begin{minipage}{0.48\textwidth}
-        \panelSubtitle{6. Panel title}
+        \panelSubtitle{6. Advanced Economies: High versus Low Levels of Technology Diffusion, 2050}
         \includegraphics[width=\textwidth]{figures/humanCapital_yd_IRF.png}
     \end{minipage}
 \end{figure}
+
+\vspace{0.3cm}
+
+{\small
+\noindent\textbf{Source:} IMF staff estimates.
+
+\smallskip
+
+\noindent\textbf{Note:} Panels 1 and 2 depict output responses to a permanent increase, in the expenditure categories listed in the legends, of 1 percent of GDP in 2025, funded by a cut in public consumption. Panel 3 shows additional gains in output by 2050 when gaps in spending efficiency are gradually closed by then. Panel 4 illustrates additional gains in output from gradually closing gaps in spending efficiency, by 2040 and 2050, as indicated on the horizontal axis, and from different initial efficiency levels, as described in the legend. Panel 5 shows output gains from increasing public investment in human capital, public spending on research and development (R\&D), and a 50/50 mix of both, financed by cutting public consumption. Panel 6 depicts output gains from the 50/50 mix in panel 5 for different levels of diffusion of technology.
+\par}
 
 \end{document}
