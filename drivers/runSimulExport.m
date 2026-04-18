@@ -82,6 +82,12 @@ tempDatabank = databank.redate(tempDatabank, qq(25, 4), qq(2050, 1));
 % care about (pre-shock steady state through the 2050Q1 endpoint).
 databank.toCSV(tempDatabank, fullfile(project_path, "docs/csvFiles/figureNumbers.csv"), qq(2025, 1): qq(2050, 1) , "Decimals", 3, "Comments", false, "Class", false);
 
+% Annual version: take the Q1 value as the representative for each year.
+% convert(..., "Method", "first") picks the first high-frequency observation
+% in each yearly period; since our series is anchored at Q1, that's Q1.
+annualDatabank = databank.apply(tempDatabank, @(x) convert(x, Frequency.YEARLY, "Method", "first"));
+databank.toCSV(annualDatabank, fullfile(project_path, "docs/csvFiles/figureNumbers_yearly.csv"), yy(2025): yy(2050) , "Decimals", 3, "Comments", false, "Class", false);
+
 %%
 function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileName)
     % Load objects and adjust settings
