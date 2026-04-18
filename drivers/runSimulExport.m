@@ -73,9 +73,14 @@ end
 
 end
 
+% Shift the whole databank onto a real calendar: the simulation is built on
+% a synthetic date axis starting at qq(0,4); we anchor period 25Q4 to 2050Q1
+% so that calendar dates in the exported CSV match the shock horizon.
 tempDatabank = databank.redate(tempDatabank, qq(25, 4), qq(2050, 1));
 
-databank.toCSV(tempDatabank, fullfile(project_path, "docs/csvFiles/figureNumbers.csv"), qq(2025, 1): qq(2075, 1) , "Decimals", 3, "Comments", false, "Class", false);
+% Write the CSV from the post-redate databank, truncated to the window we
+% care about (pre-shock steady state through the 2050Q1 endpoint).
+databank.toCSV(tempDatabank, fullfile(project_path, "docs/csvFiles/figureNumbers.csv"), qq(2025, 1): qq(2050, 1) , "Decimals", 3, "Comments", false, "Class", false);
 
 %%
 function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileName)
