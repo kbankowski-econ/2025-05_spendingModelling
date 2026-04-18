@@ -27,6 +27,8 @@ SERIES = [
 
 PLOT_START_YEAR = 2026
 X_TICKS = [2026, 2031, 2036, 2041, 2046, 2050]
+# Show the first tick as full 4-digit year, abbreviate the rest to 2 digits.
+X_TICK_LABELS = [str(X_TICKS[0])] + [f"{y % 100:02d}" for y in X_TICKS[1:]]
 
 INPUT_CSV = "../../docs/csvFiles/figureNumbers_yearly.csv"
 OUTPUT_STEM = "humanCapital_yd_IRF"
@@ -90,6 +92,7 @@ def main():
         tickfont=dict(size=axes["tickfont_size"]),
         tickmode="array",
         tickvals=X_TICKS,
+        ticktext=X_TICK_LABELS,
         title=None,
     )
     fig.update_yaxes(
