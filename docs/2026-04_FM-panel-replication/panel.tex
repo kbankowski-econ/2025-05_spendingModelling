@@ -1,0 +1,57 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+
+\title{FM Panel Replication}
+\date{}
+
+\newcommand{\panelSubtitle}[1]{\noindent\textbf{#1}\par\vspace{0.15em}}
+
+\begin{document}
+
+\maketitle
+
+\begin{figure}[H]
+    \centering
+    % Row 1
+    \begin{minipage}{0.48\textwidth}
+        \panelSubtitle{1. Panel title}
+        \includegraphics[width=\textwidth]{figures/humanCapital_yd_IRF.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \panelSubtitle{2. Panel title}
+        \includegraphics[width=\textwidth]{figures/humanCapital_yd_IRF.png}
+    \end{minipage}
+
+    \vspace{0.6cm}
+
+    % Row 2
+    \begin{minipage}{0.48\textwidth}
+        \panelSubtitle{3. Panel title}
+        \includegraphics[width=\textwidth]{figures/humanCapital_yd_IRF.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \panelSubtitle{4. Panel title}
+        \includegraphics[width=\textwidth]{figures/humanCapital_yd_IRF.png}
+    \end{minipage}
+
+    \vspace{0.6cm}
+
+    % Row 3
+    \begin{minipage}{0.48\textwidth}
+        \panelSubtitle{5. Panel title}
+        \includegraphics[width=\textwidth]{figures/humanCapital_yd_IRF.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.48\textwidth}
+        \panelSubtitle{6. Panel title}
+        \includegraphics[width=\textwidth]{figures/humanCapital_yd_IRF.png}
+    \end{minipage}
+\end{figure}
+
+\end{document}

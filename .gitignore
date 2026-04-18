@@ -10,3 +10,9 @@ checksum
 __pycache__/
 *.pyc
 *.html
+*.aux
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
