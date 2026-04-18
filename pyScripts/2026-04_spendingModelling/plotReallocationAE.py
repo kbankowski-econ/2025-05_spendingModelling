@@ -26,6 +26,8 @@ SERIES = [
 ]
 
 YEARS = [2026, 2030, 2040, 2050]
+# Convention: first label as full yyyy, the rest as two-digit yy.
+YEAR_LABELS = [str(YEARS[0])] + [f"{y % 100:02d}" for y in YEARS[1:]]
 INPUT_CSV = "../../docs/csvFiles/figureNumbers_yearly.csv"
 OUTPUT_STEM = "reallocationAE_yd"
 
@@ -45,13 +47,11 @@ def main():
     df = load_data()
     df = df[df["year"].isin(YEARS)].sort_values("year")
 
-    x_labels = [str(y) for y in YEARS]
-
     fig = go.Figure()
     for col, label, color in SERIES:
         fig.add_trace(
             go.Bar(
-                x=x_labels,
+                x=YEAR_LABELS,
                 y=df.set_index("year").loc[YEARS, col].values,
                 name=label,
                 marker_color=color,
