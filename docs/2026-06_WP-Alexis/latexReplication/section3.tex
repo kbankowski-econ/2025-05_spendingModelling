@@ -1,0 +1,214 @@
+% =====================================================================
+%  Spending Smarter in SACU — Section 3 (LaTeX replication)
+%  Source: docs/2026-06_WP-Alexis/Spending-Smarter-in-SACU.docx
+%  Self-contained, compilable with pdflatex.
+% =====================================================================
+\documentclass[11pt]{article}
+
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage[hidelinks]{hyperref}
+
+% --- light styling so captions/sources/notes read like the SDN ----------
+% Caption + subcaption sit on TOP of each float and are centered.
+\captionsetup{font=small,labelfont=bf,justification=centering,singlelinecheck=false}
+\graphicspath{{figures/}}
+
+% Subcaption: centered, directly under the caption (top of the float).
+\newcommand{\subcap}[1]{{\footnotesize #1\par}}
+
+% Source / Note: left-aligned, at the BOTTOM of the float.
+\newcommand{\figsource}[1]{\par\vspace{4pt}{\raggedright\footnotesize\textsc{Source:} #1\par}}
+\newcommand{\fignote}[1]{{\raggedright\footnotesize\textsc{Note:} #1\par}}
+
+% Efficiency-gap symbols (kept as macros so they are easy to restyle later)
+\newcommand{\eGI}{\ensuremath{e_{GI}}}
+\newcommand{\eGH}{\ensuremath{e_{GH}}}
+\newcommand{\eGHedu}{\ensuremath{e_{GH}^{\,edu}}}
+\newcommand{\eGHhlt}{\ensuremath{e_{GH}^{\,hlt}}}
+\newcommand{\eGHblend}{\ensuremath{e_{GH}^{\,blend}}}
+
+\begin{document}
+
+% Mirror the working paper's numbering: Section 3, Figures 3--4, Table 1.
+\setcounter{section}{2}
+\setcounter{figure}{2}
+
+\section{Measuring Spending Efficiency: Methodology and SACU Results}
+\label{sec:efficiency}
+
+This section explains the stochastic-frontier methodology used in the Fiscal
+Monitor (IMF 2025f), reports the SACU-specific efficiency-gap estimates that
+enter the paper's simulations, and discusses interpretation and caveats.
+
+% ---------------------------------------------------------------------
+\subsection{Methodology}
+\label{sec:methodology}
+
+The Fiscal Monitor methodology proceeds in three steps:
+
+First, for each of four spending sectors---public investment, health,
+education, and research and development---a frontier is estimated via
+stochastic frontier analysis. The dependent variable is a sector-specific
+outcome measure (e.g., the infrastructure quality index for public investment,
+life expectancy at birth for health, learning-adjusted years of schooling for
+education). The explanatory variable is a five-year moving average of real
+sectoral spending per capita, controlled for country characteristics that
+affect outcomes independently of spending (population, income level,
+geography). The frontier represents the maximum outcome observed across
+countries with a given level of spending, net of factors outside the
+government's short-run control.
+
+Second, each country's efficiency gap is measured as the distance from its own
+outcome to the frontier, expressed on a 0--1 scale in which 0 indicates full
+efficiency (the country is on the frontier) and 1 indicates full inefficiency.
+The five-year moving average smooths short-run noise and reflects the
+capital-stock-like nature of the spending--outcome relationship. For public
+investment, the Fiscal Monitor (IMF 2025g, Online Annex 1.2, footnote 9) notes
+that related studies such as Kapsoli et al.\ (2023) and Baum et al.\ (2020)
+typically use the public capital stock as the input measure, but reports that
+efficiency estimates do not change significantly when the capital stock is used
+in place of cumulative spending.
+
+Third, the efficiency gaps feed directly into the DSGE model described in
+Section 5. An efficiency gap of 0.35 means that 35 percent of each unit spent
+on infrastructure ``leaks''---through over-invoicing, poor project selection,
+weak implementation, or inadequate maintenance---and does not contribute to the
+productive public capital stock. The advantage of this formulation is that it
+separates the level of spending from the productivity of spending: a country
+with the same expenditure as its peers but a larger gap is wasting a higher
+share. Closing the gap raises productivity without requiring additional budget
+resources.
+
+% ---------------------------------------------------------------------
+\subsection{SACU Results}
+\label{sec:sacu-results}
+
+Efficiency gaps persist across sectors in SACU. Figure~\ref{fig:eff-gaps}
+reports the Fiscal Monitor efficiency gaps for the five SACU countries in three
+sectors---health, education, and infrastructure---at two points in time (2000
+and 2023), alongside the unweighted averages for advanced economies, emerging
+markets, and sub-Saharan Africa. Three points stand out:
+
+\textit{Infrastructure gaps have narrowed but remain wider than peers.} The
+right panel of Figure~\ref{fig:eff-gaps} shows that all five SACU countries
+closed their infrastructure efficiency gaps substantially between 2000 and
+2023, with Lesotho's dramatic improvement from a gap close to 0.9 to about 0.4
+being the most striking. Even so, the SACU average remains above the
+advanced-economy average and close to the emerging-market level. The progress
+reflects both rising spending and strengthened investment-management
+frameworks, but the remaining gap points to scope for further gains.
+
+\textit{Education gaps have been broadly stable.} The middle panel shows
+education efficiency gaps of 0.30 to 0.45 across SACU, with limited change
+between 2000 and 2023 and South Africa and Namibia modestly above their 2000
+levels.
+
+\textit{Health gaps are persistent and larger than peers.} The left panel shows
+health efficiency gaps of 0.35 to 0.50 for SACU countries, little changed since
+2000, and above the peer-group averages. Health outcomes in SACU continue to
+reflect the lingering effects of the HIV/AIDS epidemic, but also structural
+features of the health systems---urban-rural coverage gaps, workforce
+pressures, and supply-chain weaknesses---that limit how efficiently spending
+translates into outcomes.
+
+\begin{figure}[htbp]
+  \centering
+  \caption{Efficiency Gaps in Health, Education, and Infrastructure Spending}
+  \label{fig:eff-gaps}
+  \subcap{Efficiency gaps, 0 to 1 scale. Higher values indicate larger gaps.}
+  \vspace{4pt}
+  \includegraphics[width=\textwidth]{figure3_efficiency_gaps.jpeg}
+  \figsource{Reproduced from IMF (2026), based on IMF Fiscal Monitor (2025)
+  efficiency-score database.}
+\end{figure}
+
+Infrastructure efficiency differences appear small but place SACU countries far
+apart in international comparison. Figure~\ref{fig:infra-dist} sets the
+infrastructure gap in global context. It plots the 2023 infrastructure
+efficiency gap for every country in the Fiscal Monitor database, ordered from
+highest to lowest gap, with the five SACU countries highlighted. Namibia,
+Lesotho, and Eswatini sit close to the median of the global distribution;
+Botswana and South Africa are modestly below the median. None of the five SACU
+countries is among the best performers, confirming that the SACU distribution
+represents a set of economies with meaningful but not extreme scope for
+improvement.
+
+\begin{figure}[htbp]
+  \centering
+  \caption{Infrastructure Efficiency Gap Across Countries, 2023}
+  \label{fig:infra-dist}
+  \subcap{Cross-country distribution of infrastructure efficiency gap, with
+  SACU countries highlighted.}
+  \vspace{4pt}
+  \includegraphics[width=\textwidth]{figure4_infra_distribution.jpeg}
+  \figsource{Reproduced from IMF (2026).}
+  \fignote{Each bar is one country; SACU members shown in blue.}
+\end{figure}
+
+Table~\ref{tab:eff-gaps} summarizes the country-specific efficiency gaps that
+feed the simulation exercise in Sections 5 and 6. The infrastructure gap is
+measured for the latest available year (2023). For human capital, we report
+both the education-specific gap (latest year 2024) and the health-specific gap
+(2023), as well as a blended gap defined as the simple average of the two. The
+blended gap is used in the model because the Fiscal Monitor DSGE framework
+treats education and health as a single public human-capital stock (schools and
+hospitals). The education-specific gap is reported separately because one of the
+reallocation variants targets education-sector investment only.
+
+\begin{table}[htbp]
+  \centering
+  \caption{SACU Efficiency Gaps, Latest Available Year}
+  \label{tab:eff-gaps}
+  \subcap{Efficiency gap, 0 to 1 scale; higher values indicate larger gaps.
+  Used as inputs to the DSGE simulations.}
+  \vspace{6pt}
+  \begin{tabular}{lcccc}
+    \toprule
+    Country & Infrastructure & Education & Health & Blended HC \\
+            & (\eGI, 2023)   & (\eGHedu, 2024) & (\eGHhlt, 2023) & (\eGHblend) \\
+    \midrule
+    Botswana     & 0.34 & 0.38 & 0.40 & 0.39 \\
+    Eswatini     & 0.39 & 0.35 & 0.41 & 0.38 \\
+    Lesotho      & 0.40 & 0.42 & 0.47 & 0.45 \\
+    Namibia      & 0.41 & 0.35 & 0.37 & 0.36 \\
+    South Africa & 0.33 & 0.37 & 0.37 & 0.37 \\
+    \bottomrule
+  \end{tabular}
+  \figsource{IMF Fiscal Monitor (2025) efficiency-score database, extracted for
+  the FM2025\_SACU\_DSGE model.}
+  \fignote{Blended human-capital gap is the simple average of the education and
+  health gaps.}
+\end{table}
+
+% ---------------------------------------------------------------------
+\subsection{Interpretation and Caveats}
+\label{sec:caveats}
+
+Three interpretive caveats apply:
+
+First, efficiency gaps conflate several underlying factors---institutional
+capacity, governance quality, the project mix, and country-specific
+shocks---and do not, on their own, identify the mechanism by which resources are
+lost. Section 4 links the measured gaps to institutional evidence from the
+Public Investment Management Assessments to address this.
+
+Second, estimates are sensitive to the frontier specification. The Fiscal
+Monitor Online Annex (IMF 2025g) reports that alternative weightings of the
+underlying efficiency-score models can shift the level of estimated gaps by up
+to 26 percentage points in the extreme case. We use the baseline specification
+throughout, with sensitivity analysis discussed in Section 6.
+
+Third, there are data-window limitations. The SFA uses a five-year moving
+average, which means the 2023 estimate reflects spending and outcomes between
+2019 and 2023---a period disrupted by the COVID-19 shock, the subsequent SACU
+revenue boom, and commodity-price swings that affected Botswana in particular.
+Estimates should therefore be interpreted as reflecting the medium-run
+institutional capacity of each system rather than a precise snapshot of any
+single year.
+
+\end{document}
