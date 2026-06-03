@@ -5,3 +5,7 @@
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+*.bbl
+*.bcf
+*.blg
+*.run.xml

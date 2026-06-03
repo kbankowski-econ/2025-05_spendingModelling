@@ -13,9 +13,15 @@
 \usepackage{amsmath}
 \usepackage{siunitx}
 \usepackage{xcolor}
-% Cross-references (Figure/Table) shown as clickable blue links.
+% Cross-references (Figure/Table) and citations shown as clickable blue links.
 \definecolor{linkblue}{HTML}{1E88E5}
 \usepackage[colorlinks=true,linkcolor=linkblue,citecolor=linkblue,urlcolor=linkblue]{hyperref}
+
+% Bibliography: biblatex with Chicago author-date (matches the SDN reference
+% format). Citations via \textcite / \parencite are colored by citecolor above.
+\usepackage{csquotes}
+\usepackage[authordate,backend=biber]{biblatex-chicago}
+\addbibresource{refs.bib}
 
 % --- light styling so captions/sources/notes read like the SDN ----------
 % Caption + subcaption sit on TOP of each float and are centered.
@@ -29,8 +35,6 @@
 \newcommand{\figsource}[1]{\par\vspace{4pt}{\raggedright\footnotesize\textsc{Source:} #1\par}}
 \newcommand{\fignote}[1]{{\raggedright\footnotesize\textsc{Note:} #1\par}}
 
-% Hanging-indent entry for the manual reference list.
-\newcommand{\refitem}[1]{\noindent\hangindent=1.5em\hangafter=1 #1\par\medskip}
 
 % Efficiency-gap symbols (kept as macros so they are easy to restyle later)
 \newcommand{\eGI}{\ensuremath{e_{GI}}}
@@ -66,16 +70,17 @@ raises output without additional budget resources.
 \label{sec:efficiency}
 
 This section explains the stochastic-frontier methodology used in the Fiscal
-Monitor (IMF 2025f), reports the SACU-specific efficiency-gap estimates that
-enter the paper's simulations, and discusses interpretation and caveats.
+Monitor \parencite{imf2025fm}, reports the SACU-specific efficiency-gap
+estimates that enter the paper's simulations, and discusses interpretation and
+caveats.
 
 % ---------------------------------------------------------------------
 \subsection{Methodology}
 \label{sec:methodology}
 
 This paper relies on the spending-efficiency measures established in
-Ba\'nkowski, Cho, and Sher (2026), which underpin the October 2025 Fiscal
-Monitor (IMF 2025f). Their approach compares public spending (the input) with
+\textcite{bankowskichosher2026}, which underpin the October 2025 Fiscal
+Monitor \parencite{imf2025fm}. Their approach compares public spending (the input) with
 the socioeconomic outcomes it is meant to deliver (the output) in each of the
 four spending sectors covered by the framework---public investment, education,
 health, and research and development.\footnote{R\&D lies outside the scope of
@@ -87,7 +92,7 @@ frontiers such as data envelopment analysis, SFA separates genuine inefficiency
 from statistical noise. Persistent structural differences between
 countries---such as being landlocked or having a large private health
 sector---are handled separately, through the four-component (``true random
-effects'') estimator of Filippini and Greene (2016), which distinguishes
+effects'') estimator of \textcite{filippinigreene2016}, which distinguishes
 time-invariant structural heterogeneity from persistent inefficiency so that the
 former is not mislabelled as the latter.
 
@@ -102,8 +107,9 @@ indicators. The procedure yields, for each country and year, an efficiency score
 between 0 and 1, with 1 denoting a country on the frontier. Throughout this
 paper we work with the complementary \emph{efficiency gap}---one minus the
 score---so that 0 denotes full efficiency and higher values denote larger
-shortfalls. Full methodological detail is given in Ba\'nkowski, Cho, and Sher
-(2026) and the Fiscal Monitor Online Annex (IMF 2025g).
+shortfalls. Full methodological detail is given in
+\textcite{bankowskichosher2026} and the Fiscal Monitor Online Annex
+\parencite{imf2025annex}.
 
 % ---------------------------------------------------------------------
 \subsection{SACU Results}
@@ -219,7 +225,7 @@ lost. Section 4 links the measured gaps to institutional evidence from the
 Public Investment Management Assessments to address this.
 
 Second, estimates are sensitive to the frontier specification. The Fiscal
-Monitor Online Annex (IMF 2025g) reports that alternative weightings of the
+Monitor Online Annex \parencite{imf2025annex} reports that alternative weightings of the
 underlying efficiency-score models can shift the level of estimated gaps by up
 to 26 percentage points in the extreme case. We use the baseline specification
 throughout, with sensitivity analysis discussed in Section 6.
@@ -233,24 +239,9 @@ institutional capacity of each system rather than a precise snapshot of any
 single year.
 
 % --- References ------------------------------------------------------------
-\section*{References}
-
-\refitem{Ba\'nkowski, Krzysztof, Chloe Hyungsun Cho, and Galen Sher. 2026.
-``Public Spending Efficiency.'' Unpublished.}
-
-\refitem{Filippini, Massimo, and William Greene. 2016. ``Persistent and
-Transient Productive Inefficiency: A Maximum Simulated Likelihood Approach.''
-\emph{Journal of Productivity Analysis} 45 (2): 187--196.}
-
-\refitem{IMF. 2025f. \emph{Fiscal Monitor: Spending Smarter---How Efficient and
-Well-Allocated Public Spending Can Boost Economic Growth.} International Monetary
-Fund, Washington, DC, October.}
-
-\refitem{IMF. 2025g. \emph{Fiscal Monitor Online Annex: Methodological
-Sections.} International Monetary Fund, Washington, DC, October.}
-
-\refitem{IMF. 2026. ``Spending Smarter in SACU: Diagnosis, Modelling, and Policy
-Implications.'' Staff presentation, African Department, International Monetary
-Fund, Washington, DC, April.}
+% IMF (2026) is cited only in figure/table source lines, so \nocite keeps it in
+% the list.
+\nocite{imf2026sacu}
+\printbibliography[title={References}]
 
 \end{document}
