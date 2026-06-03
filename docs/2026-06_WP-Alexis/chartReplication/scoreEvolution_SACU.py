@@ -144,10 +144,10 @@ def make_figure(series, measure, snapshot_only=False):
     fig.update_annotations(font_size=10.5)  # subplot titles, matched to the ~8 pt ticks
     for i in range(1, cols + 1):
         if snapshot_only:
-            fig.update_yaxes(range=[0.2, 1.0], showgrid=True, gridcolor='rgba(0,0,0,0.1)', gridwidth=0.5,
+            fig.update_yaxes(range=[0.2, 0.6], showgrid=True, gridcolor='rgba(0,0,0,0.1)', gridwidth=0.5,
                              zeroline=True, zerolinecolor='black', zerolinewidth=1.5,
                              linecolor='black', linewidth=1.5, ticks='inside', tickfont=dict(size=10.5),
-                             tickvals=[0.2, 0.4, 0.6, 0.8, 1.0], row=1, col=i)
+                             tickvals=[0.2, 0.3, 0.4, 0.5, 0.6], row=1, col=i)
         else:
             fig.update_yaxes(range=[0, 1], showgrid=True, gridcolor='rgba(0,0,0,0.1)', gridwidth=0.5,
                              zeroline=True, zerolinecolor='black', zerolinewidth=1.5,
@@ -161,6 +161,23 @@ def make_figure(series, measure, snapshot_only=False):
             fig.update_xaxes(showgrid=False, linecolor='black', linewidth=1.5, ticks='inside',
                              tickfont=dict(size=10.5), tickvals=[1980, 2000, 2020], ticktext=['1980', '00', '20'],
                              range=[YEAR_MIN, XAXIS_MAX], row=1, col=i)
+    if snapshot_only:
+        fig.add_annotation(
+            x=2000, y=0.58,
+            text="Lesotho (2000): 0.88",
+            showarrow=True,
+            arrowhead=2,
+            arrowsize=1,
+            arrowwidth=1.5,
+            arrowcolor='#6A1B9A',
+            ax=55, ay=35,
+            font=dict(size=9.5, color='#6A1B9A'),
+            bgcolor="white",
+            bordercolor='#6A1B9A',
+            borderwidth=1,
+            borderpad=3,
+            row=1, col=1
+        )
     return fig
 
 
