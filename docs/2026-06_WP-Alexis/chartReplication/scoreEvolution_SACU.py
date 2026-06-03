@@ -37,6 +37,8 @@ SACU_COLORS = {
 GLOBAL_COLOR = '#7F8C8D'  # grey reference
 
 YEAR_MIN, YEAR_MAX = 1980, 2024  # source extends to 2029 (likely projections); cap as in original
+XAXIS_MAX = 2025                 # axis extends a year past the data so 2023 circles aren't clipped
+MARKER_YEARS = [2000, 2023]      # circle markers at Figure 3's two snapshot years
 
 # Authored 1:1 for a 16 cm-wide figure: layout ~600 px = 16 cm at 96 dpi, so at
 # scale=2 the PNG is ~190 dpi and the fonts render at their intended size in the
@@ -72,31 +74,41 @@ def make_figure(series, measure):
     fig = make_subplots(rows=1, cols=4,
                         subplot_titles=tuple(SECTOR_TITLES[s] for s in SECTORS),
                         shared_yaxes=True, horizontal_spacing=0.07)
+    def add_markers(ser, color, col):
+        yrs = [y for y in MARKER_YEARS if y in ser.index]
+        if yrs:
+            fig.add_trace(go.Scatter(x=yrs, y=[ser.loc[y] for y in yrs], mode='markers',
+                                     marker=dict(color=color, size=7, symbol='circle-open',
+                                                 line=dict(color=color, width=1.6)),
+                                     showlegend=False), row=1, col=col)
+
     for i, s in enumerate(SECTORS, 1):
         # Global reference (grey) first so country lines sit on top.
         g = series[s]['Global'].sort_index()
         fig.add_trace(go.Scatter(x=g.index, y=g.values, mode='lines', name='Global',
-                                 line=dict(color=GLOBAL_COLOR, width=3, dash='dot'),
+                                 line=dict(color=GLOBAL_COLOR, width=2, dash='dot'),
                                  showlegend=(i == 1)), row=1, col=i)
+        add_markers(g, GLOBAL_COLOR, i)
         for name, color in SACU_COLORS.items():
             if name in series[s]:
                 ser = series[s][name].sort_index()
                 fig.add_trace(go.Scatter(x=ser.index, y=ser.values, mode='lines', name=name,
-                                         line=dict(color=color, width=3),
+                                         line=dict(color=color, width=2),
                                          showlegend=(i == 1)), row=1, col=i)
+                add_markers(ser, color, i)
 
     fig.update_layout(template='simple_white', height=HEIGHT, width=WIDTH, font={'size': 20},
-                      margin=dict(l=60, r=30, t=100, b=50),
+                      margin=dict(l=38, r=10, t=78, b=34),
                       legend=dict(orientation='h', yanchor='bottom', y=1.18,
-                                  xanchor='center', x=0.5, font=dict(size=12)))
-    fig.update_annotations(font_size=14)
+                                  xanchor='center', x=0.5, font=dict(size=10.5)))
+    fig.update_annotations(font_size=10.5)  # subplot titles, matched to the ~8 pt ticks
     for i in range(1, 5):
         fig.update_yaxes(range=[0, 1], showgrid=True, gridcolor='rgba(0,0,0,0.1)', gridwidth=0.5,
                          zeroline=True, zerolinecolor='black', zerolinewidth=1.5,
                          linecolor='black', linewidth=1.5, ticks='inside', tickfont=dict(size=10.5),
                          row=1, col=i)
         fig.update_xaxes(showgrid=False, linecolor='black', linewidth=1.5, ticks='inside',
-                         tickfont=dict(size=10.5), dtick=20, range=[YEAR_MIN, YEAR_MAX], row=1, col=i)
+                         tickfont=dict(size=10.5), dtick=20, range=[YEAR_MIN, XAXIS_MAX], row=1, col=i)
     return fig
 
 
