@@ -125,15 +125,21 @@ def make_figure(series, measure, snapshot_only=False):
         add_markers(agg, SACU_AGG_COLOR, i)
 
     fig.update_layout(template='simple_white', height=HEIGHT, width=WIDTH, font={'size': 10.5},
-                      margin=dict(l=38, r=10, t=78, b=34),
-                      legend=dict(orientation='h', yanchor='bottom', y=1.18,
+                      margin=dict(l=28, r=8, t=55, b=28),
+                      legend=dict(orientation='h', yanchor='bottom', y=1.15,
                                   xanchor='center', x=0.5, font=dict(size=10.5)))
     fig.update_annotations(font_size=10.5)  # subplot titles, matched to the ~8 pt ticks
     for i in range(1, cols + 1):
-        fig.update_yaxes(range=[0, 1], showgrid=True, gridcolor='rgba(0,0,0,0.1)', gridwidth=0.5,
-                         zeroline=True, zerolinecolor='black', zerolinewidth=1.5,
-                         linecolor='black', linewidth=1.5, ticks='inside', tickfont=dict(size=10.5),
-                         row=1, col=i)
+        if snapshot_only:
+            fig.update_yaxes(range=[0.2, 1.0], showgrid=True, gridcolor='rgba(0,0,0,0.1)', gridwidth=0.5,
+                             zeroline=True, zerolinecolor='black', zerolinewidth=1.5,
+                             linecolor='black', linewidth=1.5, ticks='inside', tickfont=dict(size=10.5),
+                             tickvals=[0.2, 0.4, 0.6, 0.8, 1.0], row=1, col=i)
+        else:
+            fig.update_yaxes(range=[0, 1], showgrid=True, gridcolor='rgba(0,0,0,0.1)', gridwidth=0.5,
+                             zeroline=True, zerolinecolor='black', zerolinewidth=1.5,
+                             linecolor='black', linewidth=1.5, ticks='inside', tickfont=dict(size=10.5),
+                             row=1, col=i)
         if snapshot_only:
             fig.update_xaxes(showgrid=False, linecolor='black', linewidth=1.5, ticks='inside',
                              tickfont=dict(size=10.5), tickvals=[2000, 2023], ticktext=['00', '23'],
