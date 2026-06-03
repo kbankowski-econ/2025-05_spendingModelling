@@ -155,7 +155,7 @@ def make_figure(series, measure, snapshot_only=False):
                              row=1, col=i)
         if snapshot_only:
             fig.update_xaxes(showgrid=False, linecolor='black', linewidth=1.5, ticks='inside',
-                             tickfont=dict(size=10.5), tickvals=[2000, 2023], ticktext=['00', '23'],
+                             tickfont=dict(size=10.5), tickvals=[2000, 2023], ticktext=['2000', '23'],
                              range=[1998, XAXIS_MAX], row=1, col=i)
         else:
             fig.update_xaxes(showgrid=False, linecolor='black', linewidth=1.5, ticks='inside',
@@ -163,10 +163,15 @@ def make_figure(series, measure, snapshot_only=False):
                              range=[YEAR_MIN, XAXIS_MAX], row=1, col=i)
     if snapshot_only:
         fig.add_annotation(
-            x=2000, y=0.58,
+            x=2000, y=0.60,
+            yshift=10,
             text="0.88",
             showarrow=False,
-            font=dict(size=9.5, color='#6A1B9A'),
+            font=dict(size=9.5, color='white'),
+            bgcolor='#6A1B9A',
+            bordercolor='#6A1B9A',
+            borderwidth=1,
+            borderpad=2,
             row=1, col=1
         )
     return fig
