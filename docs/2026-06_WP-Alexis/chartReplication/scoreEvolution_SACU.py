@@ -55,7 +55,7 @@ MARKER_YEARS = [2000, 2023]      # circle markers at Figure 3's two snapshot yea
 # them proportionally larger than the old 1280 px authoring.
 WIDTH, HEIGHT = 600, 230
 SCALE = 2
-BORDER_PX = 3                 # light-blue frame thickness (px) on the final PNG
+BORDER_PX = 1                 # light-blue frame thickness (px) on the final PNG
 BORDER_COLOR = (100, 181, 246)  # #64B5F6
 
 
