@@ -42,7 +42,7 @@ SACU_AGG_COLOR = '#424242'  # SACU aggregate: thick solid dark-grey headline lin
 REFERENCES = {
     'AEs': {'color': '#1A237E', 'dash': 'dot'},  # navy
     'EMs': {'color': '#2E7D32', 'dash': 'dot'},  # green
-    'SSA': {'color': '#5D4037', 'dash': 'dot'},  # brown
+    'SSA': {'color': '#5D4037', 'dash': 'dash'},  # brown
 }
 
 YEAR_MIN, YEAR_MAX = 1980, 2024  # source extends to 2029 (likely projections); cap as in original
@@ -103,21 +103,34 @@ def make_figure(series, measure, snapshot_only=False):
                                      showlegend=False), row=1, col=col)
 
     for i, s in enumerate(sectors, 1):
-        # Peer-group reference lines (dashed/dotted) first, so country lines sit on top.
-        for ref, st in REFERENCES.items():
+        # Layer 1: AE and EM (lines first, then markers)
+        for ref in ['AEs', 'EMs']:
+            st = REFERENCES[ref]
             r = series[s][ref].sort_index()
+            rank = 2 if ref == 'AEs' else 3
             fig.add_trace(go.Scatter(x=r.index, y=r.values, mode='lines', name=ref,
                                      line=dict(color=st['color'], width=2, dash=st['dash']),
-                                     showlegend=(i == 1)), row=1, col=i)
+                                     legendrank=rank, showlegend=(i == 1)), row=1, col=i)
             add_markers(r, st['color'], i)
-        for name, color in SACU_COLORS.items():
+
+        # Layer 2: SSA (line, then markers)
+        st = REFERENCES['SSA']
+        r = series[s]['SSA'].sort_index()
+        fig.add_trace(go.Scatter(x=r.index, y=r.values, mode='lines', name='SSA',
+                                 line=dict(color=st['color'], width=2, dash=st['dash']),
+                                 legendrank=4, showlegend=(i == 1)), row=1, col=i)
+        add_markers(r, st['color'], i)
+
+        # Layer 3: Single countries (each country's line, then markers)
+        for rank_offset, (name, color) in enumerate(SACU_COLORS.items()):
             if name in series[s]:
                 ser = series[s][name].sort_index()
                 fig.add_trace(go.Scatter(x=ser.index, y=ser.values, mode='lines', name=name,
                                          line=dict(color=color, width=2),
-                                         showlegend=(i == 1)), row=1, col=i)
+                                         legendrank=5 + rank_offset, showlegend=(i == 1)), row=1, col=i)
                 add_markers(ser, color, i)
-        # SACU aggregate: thick solid line on top, first in the legend (headline series).
+
+        # Layer 4: SACU aggregate (line, then markers) at the very top
         agg = series[s]['SACU'].sort_index()
         fig.add_trace(go.Scatter(x=agg.index, y=agg.values, mode='lines', name='SACU',
                                  line=dict(color=SACU_AGG_COLOR, width=3.6),
