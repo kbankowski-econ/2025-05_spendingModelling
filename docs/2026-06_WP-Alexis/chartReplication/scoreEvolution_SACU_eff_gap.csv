@@ -1,0 +1,1081 @@
+sector,entity,year,eff_gap
+INF,Global,1980,0.6054
+INF,Global,1981,0.5998
+INF,Global,1982,0.5864
+INF,Global,1983,0.5813
+INF,Global,1984,0.5683
+INF,Global,1985,0.5645
+INF,Global,1986,0.5513
+INF,Global,1987,0.5507
+INF,Global,1988,0.5424
+INF,Global,1989,0.5369
+INF,Global,1990,0.5311
+INF,Global,1991,0.5262
+INF,Global,1992,0.5138
+INF,Global,1993,0.5044
+INF,Global,1994,0.4957
+INF,Global,1995,0.48
+INF,Global,1996,0.4667
+INF,Global,1997,0.4508
+INF,Global,1998,0.439
+INF,Global,1999,0.4392
+INF,Global,2000,0.4334
+INF,Global,2001,0.4201
+INF,Global,2002,0.4134
+INF,Global,2003,0.4031
+INF,Global,2004,0.3915
+INF,Global,2005,0.3872
+INF,Global,2006,0.3791
+INF,Global,2007,0.3765
+INF,Global,2008,0.3702
+INF,Global,2009,0.363
+INF,Global,2010,0.359
+INF,Global,2011,0.3562
+INF,Global,2012,0.3548
+INF,Global,2013,0.354
+INF,Global,2014,0.3561
+INF,Global,2015,0.3573
+INF,Global,2016,0.3625
+INF,Global,2017,0.3671
+INF,Global,2018,0.3676
+INF,Global,2019,0.3722
+INF,Global,2020,0.3769
+INF,Global,2021,0.3807
+INF,Global,2022,0.3793
+INF,Global,2023,0.3889
+INF,Global,2024,
+INF,Botswana,1980,0.7821
+INF,Botswana,1981,0.7624
+INF,Botswana,1982,0.7572
+INF,Botswana,1983,0.7577
+INF,Botswana,1984,0.7592
+INF,Botswana,1985,0.7627
+INF,Botswana,1986,0.7545
+INF,Botswana,1987,0.7324
+INF,Botswana,1988,0.7578
+INF,Botswana,1989,0.7265
+INF,Botswana,1990,0.7136
+INF,Botswana,1991,0.693
+INF,Botswana,1992,0.6928
+INF,Botswana,1993,0.6445
+INF,Botswana,1994,0.6163
+INF,Botswana,1995,0.5845
+INF,Botswana,1996,0.5707
+INF,Botswana,1997,0.538
+INF,Botswana,1998,0.5073
+INF,Botswana,1999,0.491
+INF,Botswana,2000,0.4679
+INF,Botswana,2001,0.4644
+INF,Botswana,2002,0.4601
+INF,Botswana,2003,0.4599
+INF,Botswana,2004,0.4595
+INF,Botswana,2005,0.4492
+INF,Botswana,2006,0.4348
+INF,Botswana,2007,0.4144
+INF,Botswana,2008,0.3962
+INF,Botswana,2009,0.4005
+INF,Botswana,2010,0.3932
+INF,Botswana,2011,0.3796
+INF,Botswana,2012,0.3696
+INF,Botswana,2013,0.3696
+INF,Botswana,2014,0.3742
+INF,Botswana,2015,0.3643
+INF,Botswana,2016,0.3604
+INF,Botswana,2017,0.3684
+INF,Botswana,2018,0.3672
+INF,Botswana,2019,0.3498
+INF,Botswana,2020,0.3483
+INF,Botswana,2021,0.3406
+INF,Botswana,2022,0.3333
+INF,Botswana,2023,0.3479
+INF,Botswana,2024,
+INF,Eswatini,1980,0.647
+INF,Eswatini,1981,0.6372
+INF,Eswatini,1982,0.6397
+INF,Eswatini,1983,0.6155
+INF,Eswatini,1984,0.5963
+INF,Eswatini,1985,0.5923
+INF,Eswatini,1986,0.566
+INF,Eswatini,1987,0.5747
+INF,Eswatini,1988,0.5519
+INF,Eswatini,1989,0.5531
+INF,Eswatini,1990,0.5569
+INF,Eswatini,1991,0.5776
+INF,Eswatini,1992,0.6409
+INF,Eswatini,1993,0.6753
+INF,Eswatini,1994,0.6272
+INF,Eswatini,1995,0.5949
+INF,Eswatini,1996,0.5282
+INF,Eswatini,1997,0.5354
+INF,Eswatini,1998,0.4717
+INF,Eswatini,1999,0.4459
+INF,Eswatini,2000,0.4701
+INF,Eswatini,2001,0.4419
+INF,Eswatini,2002,0.4465
+INF,Eswatini,2003,0.4205
+INF,Eswatini,2004,0.3747
+INF,Eswatini,2005,0.376
+INF,Eswatini,2006,0.3775
+INF,Eswatini,2007,0.3713
+INF,Eswatini,2008,0.3676
+INF,Eswatini,2009,0.3922
+INF,Eswatini,2010,0.3619
+INF,Eswatini,2011,0.3427
+INF,Eswatini,2012,0.3302
+INF,Eswatini,2013,0.3123
+INF,Eswatini,2014,0.3087
+INF,Eswatini,2015,0.3143
+INF,Eswatini,2016,0.3245
+INF,Eswatini,2017,0.3206
+INF,Eswatini,2018,0.3084
+INF,Eswatini,2019,0.3976
+INF,Eswatini,2020,0.4032
+INF,Eswatini,2021,0.4045
+INF,Eswatini,2022,0.4153
+INF,Eswatini,2023,0.4
+INF,Eswatini,2024,
+INF,Lesotho,1980,0.8439
+INF,Lesotho,1981,0.8203
+INF,Lesotho,1982,0.7945
+INF,Lesotho,1983,0.7894
+INF,Lesotho,1984,0.8085
+INF,Lesotho,1985,0.778
+INF,Lesotho,1986,0.7586
+INF,Lesotho,1987,0.75
+INF,Lesotho,1988,0.7526
+INF,Lesotho,1989,0.7758
+INF,Lesotho,1990,0.791
+INF,Lesotho,1991,0.8109
+INF,Lesotho,1992,0.8723
+INF,Lesotho,1993,0.8624
+INF,Lesotho,1994,0.8558
+INF,Lesotho,1995,0.8545
+INF,Lesotho,1996,0.8852
+INF,Lesotho,1997,0.886
+INF,Lesotho,1998,0.8778
+INF,Lesotho,1999,0.8792
+INF,Lesotho,2000,0.8788
+INF,Lesotho,2001,0.8828
+INF,Lesotho,2002,0.8324
+INF,Lesotho,2003,0.7801
+INF,Lesotho,2004,0.7336
+INF,Lesotho,2005,0.6633
+INF,Lesotho,2006,0.6138
+INF,Lesotho,2007,0.5485
+INF,Lesotho,2008,0.489
+INF,Lesotho,2009,0.4027
+INF,Lesotho,2010,0.372
+INF,Lesotho,2011,0.3735
+INF,Lesotho,2012,0.3762
+INF,Lesotho,2013,0.362
+INF,Lesotho,2014,0.3478
+INF,Lesotho,2015,0.321
+INF,Lesotho,2016,0.3361
+INF,Lesotho,2017,0.4072
+INF,Lesotho,2018,0.4158
+INF,Lesotho,2019,0.3967
+INF,Lesotho,2020,0.4037
+INF,Lesotho,2021,0.4197
+INF,Lesotho,2022,0.4458
+INF,Lesotho,2023,0.419
+INF,Lesotho,2024,
+INF,Namibia,1980,
+INF,Namibia,1981,
+INF,Namibia,1982,
+INF,Namibia,1983,
+INF,Namibia,1984,
+INF,Namibia,1985,
+INF,Namibia,1986,
+INF,Namibia,1987,
+INF,Namibia,1988,
+INF,Namibia,1989,
+INF,Namibia,1990,0.5539
+INF,Namibia,1991,0.5625
+INF,Namibia,1992,0.6279
+INF,Namibia,1993,0.6039
+INF,Namibia,1994,0.6018
+INF,Namibia,1995,0.5877
+INF,Namibia,1996,0.5685
+INF,Namibia,1997,0.5396
+INF,Namibia,1998,0.5294
+INF,Namibia,1999,0.5415
+INF,Namibia,2000,0.5091
+INF,Namibia,2001,0.5113
+INF,Namibia,2002,0.4952
+INF,Namibia,2003,0.4763
+INF,Namibia,2004,0.4677
+INF,Namibia,2005,0.4562
+INF,Namibia,2006,0.446
+INF,Namibia,2007,0.4427
+INF,Namibia,2008,0.4269
+INF,Namibia,2009,0.3973
+INF,Namibia,2010,0.3976
+INF,Namibia,2011,0.414
+INF,Namibia,2012,0.4039
+INF,Namibia,2013,0.4068
+INF,Namibia,2014,0.4215
+INF,Namibia,2015,0.4285
+INF,Namibia,2016,0.4434
+INF,Namibia,2017,0.4462
+INF,Namibia,2018,0.4693
+INF,Namibia,2019,0.4742
+INF,Namibia,2020,0.4505
+INF,Namibia,2021,0.4384
+INF,Namibia,2022,0.4297
+INF,Namibia,2023,0.44
+INF,Namibia,2024,
+INF,South Africa,1980,0.588
+INF,South Africa,1981,0.5748
+INF,South Africa,1982,0.572
+INF,South Africa,1983,0.5724
+INF,South Africa,1984,0.5648
+INF,South Africa,1985,0.574
+INF,South Africa,1986,0.5809
+INF,South Africa,1987,0.5837
+INF,South Africa,1988,0.5802
+INF,South Africa,1989,0.5792
+INF,South Africa,1990,0.5887
+INF,South Africa,1991,0.5994
+INF,South Africa,1992,0.6165
+INF,South Africa,1993,0.5907
+INF,South Africa,1994,0.5705
+INF,South Africa,1995,0.56
+INF,South Africa,1996,0.5159
+INF,South Africa,1997,0.4502
+INF,South Africa,1998,0.4581
+INF,South Africa,1999,0.4319
+INF,South Africa,2000,0.4207
+INF,South Africa,2001,0.3955
+INF,South Africa,2002,0.3935
+INF,South Africa,2003,0.3689
+INF,South Africa,2004,0.3637
+INF,South Africa,2005,0.3523
+INF,South Africa,2006,0.349
+INF,South Africa,2007,0.369
+INF,South Africa,2008,0.3691
+INF,South Africa,2009,0.3591
+INF,South Africa,2010,0.3608
+INF,South Africa,2011,0.3533
+INF,South Africa,2012,0.3455
+INF,South Africa,2013,0.3438
+INF,South Africa,2014,0.3443
+INF,South Africa,2015,0.3445
+INF,South Africa,2016,0.3532
+INF,South Africa,2017,0.3607
+INF,South Africa,2018,0.36
+INF,South Africa,2019,0.3606
+INF,South Africa,2020,0.3477
+INF,South Africa,2021,0.3432
+INF,South Africa,2022,0.3354
+INF,South Africa,2023,0.3307
+INF,South Africa,2024,
+HLT,Global,1980,0.3363
+HLT,Global,1981,0.3348
+HLT,Global,1982,0.3292
+HLT,Global,1983,0.3257
+HLT,Global,1984,0.3216
+HLT,Global,1985,0.3158
+HLT,Global,1986,0.3092
+HLT,Global,1987,0.3039
+HLT,Global,1988,0.3015
+HLT,Global,1989,0.2991
+HLT,Global,1990,0.2995
+HLT,Global,1991,0.297
+HLT,Global,1992,0.2913
+HLT,Global,1993,0.2899
+HLT,Global,1994,0.2915
+HLT,Global,1995,0.2877
+HLT,Global,1996,0.2862
+HLT,Global,1997,0.2852
+HLT,Global,1998,0.2835
+HLT,Global,1999,0.2811
+HLT,Global,2000,0.2821
+HLT,Global,2001,0.2783
+HLT,Global,2002,0.2759
+HLT,Global,2003,0.2743
+HLT,Global,2004,0.2734
+HLT,Global,2005,0.2719
+HLT,Global,2006,0.2714
+HLT,Global,2007,0.2709
+HLT,Global,2008,0.2687
+HLT,Global,2009,0.2673
+HLT,Global,2010,0.2671
+HLT,Global,2011,0.2663
+HLT,Global,2012,0.2659
+HLT,Global,2013,0.2659
+HLT,Global,2014,0.2681
+HLT,Global,2015,0.269
+HLT,Global,2016,0.2718
+HLT,Global,2017,0.2754
+HLT,Global,2018,0.2783
+HLT,Global,2019,0.2812
+HLT,Global,2020,0.2862
+HLT,Global,2021,0.2926
+HLT,Global,2022,0.2966
+HLT,Global,2023,0.302
+HLT,Global,2024,
+HLT,Botswana,1980,0.3081
+HLT,Botswana,1981,0.3092
+HLT,Botswana,1982,0.3087
+HLT,Botswana,1983,0.3088
+HLT,Botswana,1984,0.3086
+HLT,Botswana,1985,0.3086
+HLT,Botswana,1986,0.3087
+HLT,Botswana,1987,0.3095
+HLT,Botswana,1988,0.3112
+HLT,Botswana,1989,0.3131
+HLT,Botswana,1990,0.3192
+HLT,Botswana,1991,0.3234
+HLT,Botswana,1992,0.3308
+HLT,Botswana,1993,0.342
+HLT,Botswana,1994,0.3558
+HLT,Botswana,1995,0.3588
+HLT,Botswana,1996,0.3661
+HLT,Botswana,1997,0.3757
+HLT,Botswana,1998,0.3866
+HLT,Botswana,1999,0.3933
+HLT,Botswana,2000,0.4023
+HLT,Botswana,2001,0.4069
+HLT,Botswana,2002,0.4077
+HLT,Botswana,2003,0.418
+HLT,Botswana,2004,0.4107
+HLT,Botswana,2005,0.4116
+HLT,Botswana,2006,0.4042
+HLT,Botswana,2007,0.3971
+HLT,Botswana,2008,0.3932
+HLT,Botswana,2009,0.3923
+HLT,Botswana,2010,0.3859
+HLT,Botswana,2011,0.387
+HLT,Botswana,2012,0.3829
+HLT,Botswana,2013,0.38
+HLT,Botswana,2014,0.3851
+HLT,Botswana,2015,0.3824
+HLT,Botswana,2016,0.3804
+HLT,Botswana,2017,0.3789
+HLT,Botswana,2018,0.3778
+HLT,Botswana,2019,0.3797
+HLT,Botswana,2020,0.3761
+HLT,Botswana,2021,0.4023
+HLT,Botswana,2022,0.4054
+HLT,Botswana,2023,0.407
+HLT,Botswana,2024,
+HLT,Eswatini,1980,0.3111
+HLT,Eswatini,1981,0.311
+HLT,Eswatini,1982,0.3109
+HLT,Eswatini,1983,0.3255
+HLT,Eswatini,1984,0.3026
+HLT,Eswatini,1985,0.2991
+HLT,Eswatini,1986,0.2968
+HLT,Eswatini,1987,0.2955
+HLT,Eswatini,1988,0.2948
+HLT,Eswatini,1989,0.2951
+HLT,Eswatini,1990,0.2971
+HLT,Eswatini,1991,0.3005
+HLT,Eswatini,1992,0.3014
+HLT,Eswatini,1993,0.3067
+HLT,Eswatini,1994,0.3098
+HLT,Eswatini,1995,0.3281
+HLT,Eswatini,1996,0.3483
+HLT,Eswatini,1997,0.3695
+HLT,Eswatini,1998,0.3923
+HLT,Eswatini,1999,0.4106
+HLT,Eswatini,2000,0.4273
+HLT,Eswatini,2001,0.4375
+HLT,Eswatini,2002,0.4508
+HLT,Eswatini,2003,0.4647
+HLT,Eswatini,2004,0.4734
+HLT,Eswatini,2005,0.4811
+HLT,Eswatini,2006,0.4785
+HLT,Eswatini,2007,0.481
+HLT,Eswatini,2008,0.4854
+HLT,Eswatini,2009,0.4852
+HLT,Eswatini,2010,0.4815
+HLT,Eswatini,2011,0.4771
+HLT,Eswatini,2012,0.4726
+HLT,Eswatini,2013,0.4677
+HLT,Eswatini,2014,0.451
+HLT,Eswatini,2015,0.4323
+HLT,Eswatini,2016,0.4208
+HLT,Eswatini,2017,0.4078
+HLT,Eswatini,2018,0.3913
+HLT,Eswatini,2019,0.3977
+HLT,Eswatini,2020,0.4091
+HLT,Eswatini,2021,0.4147
+HLT,Eswatini,2022,0.3791
+HLT,Eswatini,2023,0.3913
+HLT,Eswatini,2024,
+HLT,Lesotho,1980,0.3157
+HLT,Lesotho,1981,0.3158
+HLT,Lesotho,1982,0.3227
+HLT,Lesotho,1983,0.3232
+HLT,Lesotho,1984,0.3234
+HLT,Lesotho,1985,0.3267
+HLT,Lesotho,1986,0.3313
+HLT,Lesotho,1987,0.334
+HLT,Lesotho,1988,0.3361
+HLT,Lesotho,1989,0.3384
+HLT,Lesotho,1990,0.341
+HLT,Lesotho,1991,0.3418
+HLT,Lesotho,1992,0.3426
+HLT,Lesotho,1993,0.345
+HLT,Lesotho,1994,0.3606
+HLT,Lesotho,1995,0.3775
+HLT,Lesotho,1996,0.4006
+HLT,Lesotho,1997,0.4223
+HLT,Lesotho,1998,0.4488
+HLT,Lesotho,1999,0.4704
+HLT,Lesotho,2000,0.4877
+HLT,Lesotho,2001,0.5054
+HLT,Lesotho,2002,0.5117
+HLT,Lesotho,2003,0.5219
+HLT,Lesotho,2004,0.5305
+HLT,Lesotho,2005,0.5362
+HLT,Lesotho,2006,0.5408
+HLT,Lesotho,2007,0.5392
+HLT,Lesotho,2008,0.5272
+HLT,Lesotho,2009,0.5235
+HLT,Lesotho,2010,0.5174
+HLT,Lesotho,2011,0.5111
+HLT,Lesotho,2012,0.5056
+HLT,Lesotho,2013,0.4878
+HLT,Lesotho,2014,0.4722
+HLT,Lesotho,2015,0.4546
+HLT,Lesotho,2016,0.4576
+HLT,Lesotho,2017,0.4634
+HLT,Lesotho,2018,0.4548
+HLT,Lesotho,2019,0.4586
+HLT,Lesotho,2020,0.4585
+HLT,Lesotho,2021,0.4631
+HLT,Lesotho,2022,0.4662
+HLT,Lesotho,2023,0.4633
+HLT,Lesotho,2024,
+HLT,Namibia,1980,
+HLT,Namibia,1981,
+HLT,Namibia,1982,
+HLT,Namibia,1983,
+HLT,Namibia,1984,
+HLT,Namibia,1985,
+HLT,Namibia,1986,
+HLT,Namibia,1987,
+HLT,Namibia,1988,
+HLT,Namibia,1989,
+HLT,Namibia,1990,0.3858
+HLT,Namibia,1991,0.3913
+HLT,Namibia,1992,0.3925
+HLT,Namibia,1993,0.3906
+HLT,Namibia,1994,0.3913
+HLT,Namibia,1995,0.4006
+HLT,Namibia,1996,0.4042
+HLT,Namibia,1997,0.4115
+HLT,Namibia,1998,0.4154
+HLT,Namibia,1999,0.4234
+HLT,Namibia,2000,0.4199
+HLT,Namibia,2001,0.422
+HLT,Namibia,2002,0.4237
+HLT,Namibia,2003,0.4284
+HLT,Namibia,2004,0.4289
+HLT,Namibia,2005,0.4179
+HLT,Namibia,2006,0.4094
+HLT,Namibia,2007,0.4036
+HLT,Namibia,2008,0.3938
+HLT,Namibia,2009,0.3881
+HLT,Namibia,2010,0.3812
+HLT,Namibia,2011,0.3771
+HLT,Namibia,2012,0.3755
+HLT,Namibia,2013,0.3775
+HLT,Namibia,2014,0.3769
+HLT,Namibia,2015,0.3905
+HLT,Namibia,2016,0.3896
+HLT,Namibia,2017,0.3863
+HLT,Namibia,2018,0.3931
+HLT,Namibia,2019,0.3892
+HLT,Namibia,2020,0.3798
+HLT,Namibia,2021,0.3891
+HLT,Namibia,2022,0.3788
+HLT,Namibia,2023,0.3731
+HLT,Namibia,2024,
+HLT,South Africa,1980,0.3516
+HLT,South Africa,1981,0.3325
+HLT,South Africa,1982,0.3308
+HLT,South Africa,1983,0.3294
+HLT,South Africa,1984,0.3286
+HLT,South Africa,1985,0.3283
+HLT,South Africa,1986,0.3282
+HLT,South Africa,1987,0.3277
+HLT,South Africa,1988,0.3276
+HLT,South Africa,1989,0.3276
+HLT,South Africa,1990,0.3278
+HLT,South Africa,1991,0.3275
+HLT,South Africa,1992,0.328
+HLT,South Africa,1993,0.3281
+HLT,South Africa,1994,0.3303
+HLT,South Africa,1995,0.3319
+HLT,South Africa,1996,0.3327
+HLT,South Africa,1997,0.3351
+HLT,South Africa,1998,0.3456
+HLT,South Africa,1999,0.3533
+HLT,South Africa,2000,0.3644
+HLT,South Africa,2001,0.3767
+HLT,South Africa,2002,0.3886
+HLT,South Africa,2003,0.4016
+HLT,South Africa,2004,0.405
+HLT,South Africa,2005,0.4072
+HLT,South Africa,2006,0.4083
+HLT,South Africa,2007,0.4058
+HLT,South Africa,2008,0.4036
+HLT,South Africa,2009,0.3992
+HLT,South Africa,2010,0.3922
+HLT,South Africa,2011,0.3768
+HLT,South Africa,2012,0.3732
+HLT,South Africa,2013,0.3755
+HLT,South Africa,2014,0.3803
+HLT,South Africa,2015,0.3761
+HLT,South Africa,2016,0.3796
+HLT,South Africa,2017,0.3741
+HLT,South Africa,2018,0.3755
+HLT,South Africa,2019,0.3745
+HLT,South Africa,2020,0.38
+HLT,South Africa,2021,0.3997
+HLT,South Africa,2022,0.4007
+HLT,South Africa,2023,0.4178
+HLT,South Africa,2024,
+EDU,Global,1980,0.3826
+EDU,Global,1981,0.3907
+EDU,Global,1982,0.3849
+EDU,Global,1983,0.3797
+EDU,Global,1984,0.3753
+EDU,Global,1985,0.3681
+EDU,Global,1986,0.3635
+EDU,Global,1987,0.3606
+EDU,Global,1988,0.3578
+EDU,Global,1989,0.3535
+EDU,Global,1990,0.3608
+EDU,Global,1991,0.3552
+EDU,Global,1992,0.3457
+EDU,Global,1993,0.3412
+EDU,Global,1994,0.3369
+EDU,Global,1995,0.3327
+EDU,Global,1996,0.328
+EDU,Global,1997,0.3249
+EDU,Global,1998,0.323
+EDU,Global,1999,0.3214
+EDU,Global,2000,0.3219
+EDU,Global,2001,0.32
+EDU,Global,2002,0.3184
+EDU,Global,2003,0.3158
+EDU,Global,2004,0.3142
+EDU,Global,2005,0.3135
+EDU,Global,2006,0.3123
+EDU,Global,2007,0.3104
+EDU,Global,2008,0.3073
+EDU,Global,2009,0.3042
+EDU,Global,2010,0.3028
+EDU,Global,2011,0.3019
+EDU,Global,2012,0.3038
+EDU,Global,2013,0.3053
+EDU,Global,2014,0.3069
+EDU,Global,2015,0.309
+EDU,Global,2016,0.3115
+EDU,Global,2017,0.3162
+EDU,Global,2018,0.3189
+EDU,Global,2019,0.3216
+EDU,Global,2020,0.3259
+EDU,Global,2021,0.3282
+EDU,Global,2022,0.3342
+EDU,Global,2023,0.3439
+EDU,Global,2024,0.3585
+EDU,Botswana,1980,0.4264
+EDU,Botswana,1981,0.4274
+EDU,Botswana,1982,0.4184
+EDU,Botswana,1983,0.4085
+EDU,Botswana,1984,0.402
+EDU,Botswana,1985,0.401
+EDU,Botswana,1986,0.4031
+EDU,Botswana,1987,0.4
+EDU,Botswana,1988,0.3995
+EDU,Botswana,1989,0.3979
+EDU,Botswana,1990,0.3971
+EDU,Botswana,1991,0.3908
+EDU,Botswana,1992,0.3854
+EDU,Botswana,1993,0.3774
+EDU,Botswana,1994,0.3755
+EDU,Botswana,1995,0.3764
+EDU,Botswana,1996,0.3763
+EDU,Botswana,1997,0.3765
+EDU,Botswana,1998,0.373
+EDU,Botswana,1999,0.3722
+EDU,Botswana,2000,0.369
+EDU,Botswana,2001,0.3673
+EDU,Botswana,2002,0.3665
+EDU,Botswana,2003,0.3631
+EDU,Botswana,2004,0.3581
+EDU,Botswana,2005,0.3551
+EDU,Botswana,2006,0.3538
+EDU,Botswana,2007,0.3499
+EDU,Botswana,2008,0.3455
+EDU,Botswana,2009,0.3401
+EDU,Botswana,2010,0.3322
+EDU,Botswana,2011,0.3282
+EDU,Botswana,2012,0.3249
+EDU,Botswana,2013,0.325
+EDU,Botswana,2014,0.3259
+EDU,Botswana,2015,0.328
+EDU,Botswana,2016,0.3267
+EDU,Botswana,2017,0.3294
+EDU,Botswana,2018,0.328
+EDU,Botswana,2019,0.3277
+EDU,Botswana,2020,0.3278
+EDU,Botswana,2021,0.327
+EDU,Botswana,2022,0.3245
+EDU,Botswana,2023,0.3443
+EDU,Botswana,2024,0.3621
+EDU,Eswatini,1980,0.343
+EDU,Eswatini,1981,0.3566
+EDU,Eswatini,1982,0.3571
+EDU,Eswatini,1983,0.3561
+EDU,Eswatini,1984,0.3532
+EDU,Eswatini,1985,0.3536
+EDU,Eswatini,1986,0.3519
+EDU,Eswatini,1987,0.3492
+EDU,Eswatini,1988,0.3479
+EDU,Eswatini,1989,0.348
+EDU,Eswatini,1990,0.3497
+EDU,Eswatini,1991,0.348
+EDU,Eswatini,1992,0.3479
+EDU,Eswatini,1993,0.3489
+EDU,Eswatini,1994,0.342
+EDU,Eswatini,1995,0.3416
+EDU,Eswatini,1996,0.3429
+EDU,Eswatini,1997,0.3395
+EDU,Eswatini,1998,0.339
+EDU,Eswatini,1999,0.3392
+EDU,Eswatini,2000,0.3307
+EDU,Eswatini,2001,0.3338
+EDU,Eswatini,2002,0.3257
+EDU,Eswatini,2003,0.3265
+EDU,Eswatini,2004,0.3263
+EDU,Eswatini,2005,0.3274
+EDU,Eswatini,2006,0.3323
+EDU,Eswatini,2007,0.3327
+EDU,Eswatini,2008,0.3328
+EDU,Eswatini,2009,0.3329
+EDU,Eswatini,2010,0.3302
+EDU,Eswatini,2011,0.3216
+EDU,Eswatini,2012,0.3198
+EDU,Eswatini,2013,0.3162
+EDU,Eswatini,2014,0.3121
+EDU,Eswatini,2015,0.3132
+EDU,Eswatini,2016,0.312
+EDU,Eswatini,2017,0.3137
+EDU,Eswatini,2018,0.3149
+EDU,Eswatini,2019,0.3137
+EDU,Eswatini,2020,0.3164
+EDU,Eswatini,2021,0.3175
+EDU,Eswatini,2022,0.318
+EDU,Eswatini,2023,0.314
+EDU,Eswatini,2024,0.324
+EDU,Lesotho,1980,0.388
+EDU,Lesotho,1981,0.3957
+EDU,Lesotho,1982,0.4011
+EDU,Lesotho,1983,0.4016
+EDU,Lesotho,1984,0.403
+EDU,Lesotho,1985,0.4027
+EDU,Lesotho,1986,0.4039
+EDU,Lesotho,1987,0.3986
+EDU,Lesotho,1988,0.3946
+EDU,Lesotho,1989,0.3966
+EDU,Lesotho,1990,0.3967
+EDU,Lesotho,1991,0.3943
+EDU,Lesotho,1992,0.3927
+EDU,Lesotho,1993,0.3945
+EDU,Lesotho,1994,0.3969
+EDU,Lesotho,1995,0.3986
+EDU,Lesotho,1996,0.4007
+EDU,Lesotho,1997,0.4104
+EDU,Lesotho,1998,0.4266
+EDU,Lesotho,1999,0.4431
+EDU,Lesotho,2000,0.4366
+EDU,Lesotho,2001,0.4291
+EDU,Lesotho,2002,0.423
+EDU,Lesotho,2003,0.4197
+EDU,Lesotho,2004,0.4056
+EDU,Lesotho,2005,0.4035
+EDU,Lesotho,2006,0.3966
+EDU,Lesotho,2007,0.3845
+EDU,Lesotho,2008,0.3716
+EDU,Lesotho,2009,0.3569
+EDU,Lesotho,2010,0.3491
+EDU,Lesotho,2011,0.3462
+EDU,Lesotho,2012,0.3425
+EDU,Lesotho,2013,0.3202
+EDU,Lesotho,2014,0.3102
+EDU,Lesotho,2015,0.3094
+EDU,Lesotho,2016,0.3141
+EDU,Lesotho,2017,0.3185
+EDU,Lesotho,2018,0.3232
+EDU,Lesotho,2019,0.3248
+EDU,Lesotho,2020,0.3251
+EDU,Lesotho,2021,0.3337
+EDU,Lesotho,2022,0.3261
+EDU,Lesotho,2023,0.3275
+EDU,Lesotho,2024,0.3392
+EDU,Namibia,1980,
+EDU,Namibia,1981,
+EDU,Namibia,1982,
+EDU,Namibia,1983,
+EDU,Namibia,1984,
+EDU,Namibia,1985,
+EDU,Namibia,1986,
+EDU,Namibia,1987,
+EDU,Namibia,1988,
+EDU,Namibia,1989,
+EDU,Namibia,1990,0.346
+EDU,Namibia,1991,0.3526
+EDU,Namibia,1992,0.3513
+EDU,Namibia,1993,0.3494
+EDU,Namibia,1994,0.348
+EDU,Namibia,1995,0.3468
+EDU,Namibia,1996,0.3471
+EDU,Namibia,1997,0.3495
+EDU,Namibia,1998,0.355
+EDU,Namibia,1999,0.367
+EDU,Namibia,2000,0.3665
+EDU,Namibia,2001,0.3675
+EDU,Namibia,2002,0.3611
+EDU,Namibia,2003,0.3607
+EDU,Namibia,2004,0.3652
+EDU,Namibia,2005,0.359
+EDU,Namibia,2006,0.3619
+EDU,Namibia,2007,0.3563
+EDU,Namibia,2008,0.3475
+EDU,Namibia,2009,0.342
+EDU,Namibia,2010,0.3413
+EDU,Namibia,2011,0.3392
+EDU,Namibia,2012,0.3414
+EDU,Namibia,2013,0.3426
+EDU,Namibia,2014,0.3457
+EDU,Namibia,2015,0.3469
+EDU,Namibia,2016,0.3482
+EDU,Namibia,2017,0.3554
+EDU,Namibia,2018,0.3613
+EDU,Namibia,2019,0.366
+EDU,Namibia,2020,0.3647
+EDU,Namibia,2021,0.3656
+EDU,Namibia,2022,0.3649
+EDU,Namibia,2023,0.3727
+EDU,Namibia,2024,0.3876
+EDU,South Africa,1980,0.4002
+EDU,South Africa,1981,0.4105
+EDU,South Africa,1982,0.4086
+EDU,South Africa,1983,0.4085
+EDU,South Africa,1984,0.4077
+EDU,South Africa,1985,0.4073
+EDU,South Africa,1986,0.4034
+EDU,South Africa,1987,0.398
+EDU,South Africa,1988,0.3935
+EDU,South Africa,1989,0.394
+EDU,South Africa,1990,0.3922
+EDU,South Africa,1991,0.3866
+EDU,South Africa,1992,0.389
+EDU,South Africa,1993,0.3919
+EDU,South Africa,1994,0.3957
+EDU,South Africa,1995,0.3909
+EDU,South Africa,1996,0.3951
+EDU,South Africa,1997,0.3996
+EDU,South Africa,1998,0.3883
+EDU,South Africa,1999,0.3751
+EDU,South Africa,2000,0.3691
+EDU,South Africa,2001,0.3754
+EDU,South Africa,2002,0.3395
+EDU,South Africa,2003,0.3356
+EDU,South Africa,2004,0.3359
+EDU,South Africa,2005,0.3311
+EDU,South Africa,2006,0.3344
+EDU,South Africa,2007,0.3353
+EDU,South Africa,2008,0.3322
+EDU,South Africa,2009,0.3323
+EDU,South Africa,2010,0.332
+EDU,South Africa,2011,0.3338
+EDU,South Africa,2012,0.3354
+EDU,South Africa,2013,0.3359
+EDU,South Africa,2014,0.3394
+EDU,South Africa,2015,0.3381
+EDU,South Africa,2016,0.3499
+EDU,South Africa,2017,0.3557
+EDU,South Africa,2018,0.3602
+EDU,South Africa,2019,0.3607
+EDU,South Africa,2020,0.366
+EDU,South Africa,2021,0.3698
+EDU,South Africa,2022,0.386
+EDU,South Africa,2023,0.4064
+EDU,South Africa,2024,0.4219
+RND,Global,1980,
+RND,Global,1981,0.3721
+RND,Global,1982,0.3783
+RND,Global,1983,0.3842
+RND,Global,1984,0.3908
+RND,Global,1985,0.3969
+RND,Global,1986,0.3883
+RND,Global,1987,0.4036
+RND,Global,1988,0.3878
+RND,Global,1989,0.3818
+RND,Global,1990,0.3956
+RND,Global,1991,0.4422
+RND,Global,1992,0.4162
+RND,Global,1993,0.422
+RND,Global,1994,0.4094
+RND,Global,1995,0.4302
+RND,Global,1996,0.434
+RND,Global,1997,0.4502
+RND,Global,1998,0.4643
+RND,Global,1999,0.4561
+RND,Global,2000,0.469
+RND,Global,2001,0.4717
+RND,Global,2002,0.483
+RND,Global,2003,0.4819
+RND,Global,2004,0.4736
+RND,Global,2005,0.4782
+RND,Global,2006,0.4797
+RND,Global,2007,0.4875
+RND,Global,2008,0.4837
+RND,Global,2009,0.4827
+RND,Global,2010,0.4827
+RND,Global,2011,0.4818
+RND,Global,2012,0.492
+RND,Global,2013,0.4835
+RND,Global,2014,0.484
+RND,Global,2015,0.4794
+RND,Global,2016,0.4715
+RND,Global,2017,0.4698
+RND,Global,2018,0.4792
+RND,Global,2019,0.4832
+RND,Global,2020,0.4866
+RND,Global,2021,0.4959
+RND,Global,2022,0.4882
+RND,Global,2023,0.4372
+RND,Global,2024,
+RND,Botswana,1980,
+RND,Botswana,1981,
+RND,Botswana,1982,
+RND,Botswana,1983,
+RND,Botswana,1984,
+RND,Botswana,1985,
+RND,Botswana,1986,
+RND,Botswana,1987,
+RND,Botswana,1988,
+RND,Botswana,1989,
+RND,Botswana,1990,
+RND,Botswana,1991,
+RND,Botswana,1992,
+RND,Botswana,1993,
+RND,Botswana,1994,
+RND,Botswana,1995,
+RND,Botswana,1996,
+RND,Botswana,1997,
+RND,Botswana,1998,
+RND,Botswana,1999,
+RND,Botswana,2000,
+RND,Botswana,2001,
+RND,Botswana,2002,
+RND,Botswana,2003,
+RND,Botswana,2004,
+RND,Botswana,2005,
+RND,Botswana,2006,
+RND,Botswana,2007,
+RND,Botswana,2008,
+RND,Botswana,2009,
+RND,Botswana,2010,
+RND,Botswana,2011,
+RND,Botswana,2012,0.5445
+RND,Botswana,2013,0.5753
+RND,Botswana,2014,0.5772
+RND,Botswana,2015,0.6821
+RND,Botswana,2016,0.7147
+RND,Botswana,2017,0.6698
+RND,Botswana,2018,
+RND,Botswana,2019,
+RND,Botswana,2020,
+RND,Botswana,2021,
+RND,Botswana,2022,
+RND,Botswana,2023,
+RND,Botswana,2024,
+RND,Eswatini,1980,
+RND,Eswatini,1981,
+RND,Eswatini,1982,
+RND,Eswatini,1983,
+RND,Eswatini,1984,
+RND,Eswatini,1985,
+RND,Eswatini,1986,
+RND,Eswatini,1987,
+RND,Eswatini,1988,
+RND,Eswatini,1989,
+RND,Eswatini,1990,
+RND,Eswatini,1991,
+RND,Eswatini,1992,
+RND,Eswatini,1993,
+RND,Eswatini,1994,
+RND,Eswatini,1995,
+RND,Eswatini,1996,
+RND,Eswatini,1997,
+RND,Eswatini,1998,
+RND,Eswatini,1999,
+RND,Eswatini,2000,
+RND,Eswatini,2001,
+RND,Eswatini,2002,
+RND,Eswatini,2003,
+RND,Eswatini,2004,
+RND,Eswatini,2005,
+RND,Eswatini,2006,
+RND,Eswatini,2007,
+RND,Eswatini,2008,
+RND,Eswatini,2009,
+RND,Eswatini,2010,
+RND,Eswatini,2011,
+RND,Eswatini,2012,0.5901
+RND,Eswatini,2013,
+RND,Eswatini,2014,
+RND,Eswatini,2015,
+RND,Eswatini,2016,
+RND,Eswatini,2017,
+RND,Eswatini,2018,
+RND,Eswatini,2019,
+RND,Eswatini,2020,
+RND,Eswatini,2021,
+RND,Eswatini,2022,
+RND,Eswatini,2023,
+RND,Eswatini,2024,
+RND,Lesotho,1980,
+RND,Lesotho,1981,
+RND,Lesotho,1982,
+RND,Lesotho,1983,
+RND,Lesotho,1984,
+RND,Lesotho,1985,
+RND,Lesotho,1986,
+RND,Lesotho,1987,
+RND,Lesotho,1988,
+RND,Lesotho,1989,
+RND,Lesotho,1990,
+RND,Lesotho,1991,
+RND,Lesotho,1992,
+RND,Lesotho,1993,
+RND,Lesotho,1994,
+RND,Lesotho,1995,
+RND,Lesotho,1996,
+RND,Lesotho,1997,
+RND,Lesotho,1998,
+RND,Lesotho,1999,
+RND,Lesotho,2000,
+RND,Lesotho,2001,
+RND,Lesotho,2002,
+RND,Lesotho,2003,
+RND,Lesotho,2004,
+RND,Lesotho,2005,
+RND,Lesotho,2006,
+RND,Lesotho,2007,
+RND,Lesotho,2008,
+RND,Lesotho,2009,0.4837
+RND,Lesotho,2010,0.5922
+RND,Lesotho,2011,0.7506
+RND,Lesotho,2012,0.6729
+RND,Lesotho,2013,0.6846
+RND,Lesotho,2014,0.7354
+RND,Lesotho,2015,0.6956
+RND,Lesotho,2016,0.6649
+RND,Lesotho,2017,0.6531
+RND,Lesotho,2018,0.7123
+RND,Lesotho,2019,0.7056
+RND,Lesotho,2020,
+RND,Lesotho,2021,
+RND,Lesotho,2022,
+RND,Lesotho,2023,
+RND,Lesotho,2024,
+RND,Namibia,1980,
+RND,Namibia,1981,
+RND,Namibia,1982,
+RND,Namibia,1983,
+RND,Namibia,1984,
+RND,Namibia,1985,
+RND,Namibia,1986,
+RND,Namibia,1987,
+RND,Namibia,1988,
+RND,Namibia,1989,
+RND,Namibia,1990,
+RND,Namibia,1991,
+RND,Namibia,1992,
+RND,Namibia,1993,
+RND,Namibia,1994,
+RND,Namibia,1995,
+RND,Namibia,1996,
+RND,Namibia,1997,
+RND,Namibia,1998,
+RND,Namibia,1999,
+RND,Namibia,2000,
+RND,Namibia,2001,
+RND,Namibia,2002,
+RND,Namibia,2003,
+RND,Namibia,2004,
+RND,Namibia,2005,
+RND,Namibia,2006,
+RND,Namibia,2007,
+RND,Namibia,2008,
+RND,Namibia,2009,
+RND,Namibia,2010,0.6071
+RND,Namibia,2011,0.5808
+RND,Namibia,2012,0.5475
+RND,Namibia,2013,0.5082
+RND,Namibia,2014,0.5201
+RND,Namibia,2015,0.5178
+RND,Namibia,2016,0.5257
+RND,Namibia,2017,0.5378
+RND,Namibia,2018,0.4825
+RND,Namibia,2019,
+RND,Namibia,2020,
+RND,Namibia,2021,
+RND,Namibia,2022,
+RND,Namibia,2023,
+RND,Namibia,2024,
+RND,South Africa,1980,
+RND,South Africa,1981,
+RND,South Africa,1982,
+RND,South Africa,1983,
+RND,South Africa,1984,
+RND,South Africa,1985,
+RND,South Africa,1986,
+RND,South Africa,1987,
+RND,South Africa,1988,
+RND,South Africa,1989,
+RND,South Africa,1990,
+RND,South Africa,1991,
+RND,South Africa,1992,
+RND,South Africa,1993,
+RND,South Africa,1994,
+RND,South Africa,1995,
+RND,South Africa,1996,
+RND,South Africa,1997,
+RND,South Africa,1998,
+RND,South Africa,1999,
+RND,South Africa,2000,
+RND,South Africa,2001,0.4608
+RND,South Africa,2002,0.4574
+RND,South Africa,2003,0.4694
+RND,South Africa,2004,0.4346
+RND,South Africa,2005,0.4682
+RND,South Africa,2006,0.4718
+RND,South Africa,2007,0.4912
+RND,South Africa,2008,0.5181
+RND,South Africa,2009,0.5159
+RND,South Africa,2010,0.5347
+RND,South Africa,2011,0.5254
+RND,South Africa,2012,0.5095
+RND,South Africa,2013,0.4902
+RND,South Africa,2014,0.4886
+RND,South Africa,2015,0.4657
+RND,South Africa,2016,0.4644
+RND,South Africa,2017,0.4557
+RND,South Africa,2018,0.4965
+RND,South Africa,2019,0.517
+RND,South Africa,2020,0.5494
+RND,South Africa,2021,0.5397
+RND,South Africa,2022,0.5409
+RND,South Africa,2023,0.8312
+RND,South Africa,2024,
