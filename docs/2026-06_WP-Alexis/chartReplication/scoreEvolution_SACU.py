@@ -88,7 +88,7 @@ def build_series(data, measure):
     return series
 
 
-def make_figure(series, measure):
+def make_figure(series, measure, snapshot_only=False):
     fig = make_subplots(rows=1, cols=4,
                         subplot_titles=tuple(SECTOR_TITLES[s] for s in SECTORS),
                         shared_yaxes=True, horizontal_spacing=0.03)
@@ -132,14 +132,19 @@ def make_figure(series, measure):
                          zeroline=True, zerolinecolor='black', zerolinewidth=1.5,
                          linecolor='black', linewidth=1.5, ticks='inside', tickfont=dict(size=10.5),
                          row=1, col=i)
-        fig.update_xaxes(showgrid=False, linecolor='black', linewidth=1.5, ticks='inside',
-                         tickfont=dict(size=10.5), tickvals=[1980, 2000, 2020], ticktext=['1980', '00', '20'],
-                         range=[YEAR_MIN, XAXIS_MAX], row=1, col=i)
+        if snapshot_only:
+            fig.update_xaxes(showgrid=False, linecolor='black', linewidth=1.5, ticks='inside',
+                             tickfont=dict(size=10.5), tickvals=[2000, 2023], ticktext=['00', '23'],
+                             range=[1998, XAXIS_MAX], row=1, col=i)
+        else:
+            fig.update_xaxes(showgrid=False, linecolor='black', linewidth=1.5, ticks='inside',
+                             tickfont=dict(size=10.5), tickvals=[1980, 2000, 2020], ticktext=['1980', '00', '20'],
+                             range=[YEAR_MIN, XAXIS_MAX], row=1, col=i)
     return fig
 
 
-def save(fig, series, measure):
-    base = os.path.join(OUT_DIR, f'scoreEvolution_SACU_{measure}')
+def save(fig, series, measure, suffix=''):
+    base = os.path.join(OUT_DIR, f'scoreEvolution_SACU_{measure}{suffix}')
     png = base + '.png'
     # Use fig.write_image (not the legacy PlotlyScope API, which drops traces under plotly 6.x).
     fig.write_image(png, width=WIDTH, height=HEIGHT, scale=SCALE)
@@ -160,12 +165,28 @@ def save(fig, series, measure):
     webbrowser.open(f'file://{os.path.abspath(html)}')  # auto-open the interactive chart
 
 
+def filter_series_to_snapshot(series):
+    snapshot_series = {}
+    for s in SECTORS:
+        snapshot_series[s] = {}
+        for name, ser in series[s].items():
+            snapshot_series[s][name] = ser[ser.index.isin([2000, 2023])]
+    return snapshot_series
+
+
 def main():
     measure = sys.argv[1] if len(sys.argv) > 1 else 'eff_gap'
     data = load(measure)
     series = build_series(data, measure)
-    fig = make_figure(series, measure)
+    
+    # 1. Full evolution plot
+    fig = make_figure(series, measure, snapshot_only=False)
     save(fig, series, measure)
+    
+    # 2. Snapshot comparison plot (2000 vs 2023)
+    snapshot_series = filter_series_to_snapshot(series)
+    fig_snap = make_figure(snapshot_series, measure, snapshot_only=True)
+    save(fig_snap, snapshot_series, measure, suffix='_snapshot')
 
 
 if __name__ == '__main__':

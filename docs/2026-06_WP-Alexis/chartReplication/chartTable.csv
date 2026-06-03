@@ -1,5 +1,5 @@
 id,pngFile,task,Title,Subtitle,Sources,Notes,Width,Height
 eff_gap_evolution,scoreEvolution_SACU_eff_gap.png,scoreEvolution_SACU,SACU Spending-Efficiency Gaps over Time,"(Efficiency gap, 0–1 scale; higher values indicate larger gaps)",Source: IMF staff estimates.,"Note: The thick dark-grey line is the SACU aggregate (unweighted mean of the five members); thin solid lines show the individual countries; dotted lines show reference averages — advanced economies (AEs), emerging markets (EMs), and sub-Saharan Africa (SSA). Hollow circles mark 2000 and 2023.",16,6
-,,,,,,,,
+eff_gap_snapshot,scoreEvolution_SACU_eff_gap_snapshot.png,scoreEvolution_SACU,SACU Spending-Efficiency Gaps (2000 vs 2023),"(Efficiency gap, 0–1 scale; comparison between 2000 and 2023)",Source: IMF staff estimates.,"Note: The thick dark-grey line is the SACU aggregate (unweighted mean of the five members); thin solid lines show the individual countries; dotted lines show reference averages — advanced economies (AEs), emerging markets (EMs), and sub-Saharan Africa (SSA). Hollow circles mark 2000 and 2023.",16,6
 ,,,,,,,,
 ,,,,,,,,
