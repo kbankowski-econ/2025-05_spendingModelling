@@ -89,8 +89,10 @@ def build_series(data, measure):
 
 
 def make_figure(series, measure, snapshot_only=False):
-    fig = make_subplots(rows=1, cols=4,
-                        subplot_titles=tuple(SECTOR_TITLES[s] for s in SECTORS),
+    sectors = ['INF', 'HLT', 'EDU'] if snapshot_only else SECTORS
+    cols = len(sectors)
+    fig = make_subplots(rows=1, cols=cols,
+                        subplot_titles=tuple(SECTOR_TITLES[s] for s in sectors),
                         shared_yaxes=True, horizontal_spacing=0.03)
     def add_markers(ser, color, col):
         yrs = [y for y in MARKER_YEARS if y in ser.index]
@@ -100,7 +102,7 @@ def make_figure(series, measure, snapshot_only=False):
                                                  line=dict(color=color, width=1.6)),
                                      showlegend=False), row=1, col=col)
 
-    for i, s in enumerate(SECTORS, 1):
+    for i, s in enumerate(sectors, 1):
         # Peer-group reference lines (dashed/dotted) first, so country lines sit on top.
         for ref, st in REFERENCES.items():
             r = series[s][ref].sort_index()
@@ -127,7 +129,7 @@ def make_figure(series, measure, snapshot_only=False):
                       legend=dict(orientation='h', yanchor='bottom', y=1.18,
                                   xanchor='center', x=0.5, font=dict(size=10.5)))
     fig.update_annotations(font_size=10.5)  # subplot titles, matched to the ~8 pt ticks
-    for i in range(1, 5):
+    for i in range(1, cols + 1):
         fig.update_yaxes(range=[0, 1], showgrid=True, gridcolor='rgba(0,0,0,0.1)', gridwidth=0.5,
                          zeroline=True, zerolinecolor='black', zerolinewidth=1.5,
                          linecolor='black', linewidth=1.5, ticks='inside', tickfont=dict(size=10.5),
@@ -152,7 +154,7 @@ def save(fig, series, measure, suffix=''):
     bordered = ImageOps.expand(Image.open(png).convert('RGB'), border=BORDER_PX, fill=BORDER_COLOR)
     bordered.save(png)
     rows = []
-    for s in SECTORS:
+    for s in series.keys():
         for name, ser in series[s].items():
             for yr, val in ser.items():
                 rows.append({'sector': s, 'entity': name, 'year': int(yr), measure: round(float(val), 4)})
@@ -167,7 +169,7 @@ def save(fig, series, measure, suffix=''):
 
 def filter_series_to_snapshot(series):
     snapshot_series = {}
-    for s in SECTORS:
+    for s in ['INF', 'HLT', 'EDU']:
         snapshot_series[s] = {}
         for name, ser in series[s].items():
             snapshot_series[s][name] = ser[ser.index.isin([2000, 2023])]
