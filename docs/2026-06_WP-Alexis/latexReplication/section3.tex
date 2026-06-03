@@ -11,7 +11,10 @@
 \usepackage{caption}
 \usepackage{amsmath}
 \usepackage{siunitx}
-\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+% Cross-references (Figure/Table) shown as clickable blue links.
+\definecolor{linkblue}{HTML}{1E88E5}
+\usepackage[colorlinks=true,linkcolor=linkblue,citecolor=linkblue,urlcolor=linkblue]{hyperref}
 
 % --- light styling so captions/sources/notes read like the SDN ----------
 % Caption + subcaption sit on TOP of each float and are centered.
