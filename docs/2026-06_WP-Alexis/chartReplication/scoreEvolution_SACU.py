@@ -164,18 +164,9 @@ def make_figure(series, measure, snapshot_only=False):
     if snapshot_only:
         fig.add_annotation(
             x=2000, y=0.58,
-            text="Lesotho (2000): 0.88",
-            showarrow=True,
-            arrowhead=2,
-            arrowsize=1,
-            arrowwidth=1.5,
-            arrowcolor='#6A1B9A',
-            ax=55, ay=35,
+            text="0.88",
+            showarrow=False,
             font=dict(size=9.5, color='#6A1B9A'),
-            bgcolor="white",
-            bordercolor='#6A1B9A',
-            borderwidth=1,
-            borderpad=3,
             row=1, col=1
         )
     return fig
