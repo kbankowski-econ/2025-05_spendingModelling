@@ -162,6 +162,12 @@ def main():
     
     fig.update_annotations(font_size=10.5)
     
+    # Shift subplot titles down slightly to reduce vertical space between titles and plots
+    for annot in fig.layout.annotations:
+        if annot.xref == 'paper' and annot.yref == 'paper':
+            if annot.text in ['Infrastructure', 'Health', 'Education']:
+                annot.y -= 0.035
+    
     # Save the output files
     base = os.path.join(OUT_DIR, 'scoreEvolution_SACU_infra_dist')
     png = base + '.png'
