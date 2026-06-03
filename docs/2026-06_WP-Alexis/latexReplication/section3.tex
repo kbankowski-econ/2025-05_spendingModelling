@@ -5,6 +5,7 @@
 % =====================================================================
 \documentclass[11pt]{article}
 
+\usepackage[T1]{fontenc}
 \usepackage[a4paper,margin=2.5cm]{geometry}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -28,6 +29,9 @@
 \newcommand{\figsource}[1]{\par\vspace{4pt}{\raggedright\footnotesize\textsc{Source:} #1\par}}
 \newcommand{\fignote}[1]{{\raggedright\footnotesize\textsc{Note:} #1\par}}
 
+% Hanging-indent entry for the manual reference list.
+\newcommand{\refitem}[1]{\noindent\hangindent=1.5em\hangafter=1 #1\par\medskip}
+
 % Efficiency-gap symbols (kept as macros so they are easy to restyle later)
 \newcommand{\eGI}{\ensuremath{e_{GI}}}
 \newcommand{\eGH}{\ensuremath{e_{GH}}}
@@ -37,6 +41,23 @@
 
 \begin{document}
 
+% --- Introduction (excerpt) ------------------------------------------------
+% The full Introduction lives in the Word draft; this carries the relocated
+% "efficiency gaps as a wedge" paragraph moved out of former 3.1 (revComments R2).
+\setcounter{section}{0}
+\section{Introduction}
+\label{sec:intro}
+
+At the heart of the paper's quantification, the estimated efficiency gaps enter
+directly as a wedge on public spending: an efficiency gap of, say, 0.35 implies
+that 35 percent of each unit spent does not reach the productive public capital
+stock---lost to over-invoicing, poor project selection, weak implementation, or
+inadequate maintenance. The appeal of this formulation is that it separates the
+level of spending from its productivity---a country spending as much as its
+peers but with a larger gap wastes a higher share---so that closing the gap
+raises output without additional budget resources.
+
+% --- Section 3 -------------------------------------------------------------
 % Mirror the working paper's numbering: Section 3, Figures 3--4, Table 1.
 \setcounter{section}{2}
 \setcounter{figure}{2}
@@ -52,40 +73,37 @@ enter the paper's simulations, and discusses interpretation and caveats.
 \subsection{Methodology}
 \label{sec:methodology}
 
-The Fiscal Monitor methodology proceeds in three steps:
+This paper relies on the spending-efficiency measures established in
+Ba\'nkowski, Cho, and Sher (2026), which underpin the October 2025 Fiscal
+Monitor (IMF 2025f). Their approach compares public spending (the input) with
+the socioeconomic outcomes it is meant to deliver (the output) in each of the
+four spending sectors covered by the framework---public investment, education,
+health, and research and development.\footnote{R\&D lies outside the scope of
+this paper and is not considered further; the analysis focuses on public
+investment, education, and health.} Stochastic frontier analysis (SFA) estimates
+a best-practice production function from a cross-country panel and measures each
+country's efficiency as its distance below that frontier. Unlike non-parametric
+frontiers such as data envelopment analysis, SFA separates genuine inefficiency
+from statistical noise. Persistent structural differences between
+countries---such as being landlocked or having a large private health
+sector---are handled separately, through the four-component (``true random
+effects'') estimator of Filippini and Greene (2016), which distinguishes
+time-invariant structural heterogeneity from persistent inefficiency so that the
+former is not mislabelled as the latter.
 
-First, for each of four spending sectors---public investment, health,
-education, and research and development---a frontier is estimated via
-stochastic frontier analysis. The dependent variable is a sector-specific
-outcome measure (e.g., the infrastructure quality index for public investment,
-life expectancy at birth for health, learning-adjusted years of schooling for
-education). The explanatory variable is a five-year moving average of real
-sectoral spending per capita, controlled for country characteristics that
-affect outcomes independently of spending (population, income level,
-geography). The frontier represents the maximum outcome observed across
-countries with a given level of spending, net of factors outside the
-government's short-run control.
-
-Second, each country's efficiency gap is measured as the distance from its own
-outcome to the frontier, expressed on a 0--1 scale in which 0 indicates full
-efficiency (the country is on the frontier) and 1 indicates full inefficiency.
-The five-year moving average smooths short-run noise and reflects the
-capital-stock-like nature of the spending--outcome relationship. For public
-investment, the Fiscal Monitor (IMF 2025g, Online Annex 1.2, footnote 9) notes
-that related studies such as Kapsoli et al.\ (2023) and Baum et al.\ (2020)
-typically use the public capital stock as the input measure, but reports that
-efficiency estimates do not change significantly when the capital stock is used
-in place of cumulative spending.
-
-Third, the efficiency gaps feed directly into the DSGE model described in
-Section 5. An efficiency gap of 0.35 means that 35 percent of each unit spent
-on infrastructure ``leaks''---through over-invoicing, poor project selection,
-weak implementation, or inadequate maintenance---and does not contribute to the
-productive public capital stock. The advantage of this formulation is that it
-separates the level of spending from the productivity of spending: a country
-with the same expenditure as its peers but a larger gap is wasting a higher
-share. Closing the gap raises productivity without requiring additional budget
-resources.
+Inputs are measured as a five-year moving average of real public spending per
+capita in purchasing-power-parity terms; outputs combine multiple quantity and
+quality indicators for each sector (for public investment, for example, road and
+electricity access alongside infrastructure-quality ratings; for education,
+enrolment, completion, and learning measures; for health, life expectancy,
+immunization, and health-system capacity). To avoid sensitivity to any single
+indicator, scores are averaged across all combinations of the available
+indicators. The procedure yields, for each country and year, an efficiency score
+between 0 and 1, with 1 denoting a country on the frontier. Throughout this
+paper we work with the complementary \emph{efficiency gap}---one minus the
+score---so that 0 denotes full efficiency and higher values denote larger
+shortfalls. Full methodological detail is given in Ba\'nkowski, Cho, and Sher
+(2026) and the Fiscal Monitor Online Annex (IMF 2025g).
 
 % ---------------------------------------------------------------------
 \subsection{SACU Results}
@@ -213,5 +231,26 @@ revenue boom, and commodity-price swings that affected Botswana in particular.
 Estimates should therefore be interpreted as reflecting the medium-run
 institutional capacity of each system rather than a precise snapshot of any
 single year.
+
+% --- References ------------------------------------------------------------
+\section*{References}
+
+\refitem{Ba\'nkowski, Krzysztof, Chloe Hyungsun Cho, and Galen Sher. 2026.
+``Public Spending Efficiency.'' Unpublished.}
+
+\refitem{Filippini, Massimo, and William Greene. 2016. ``Persistent and
+Transient Productive Inefficiency: A Maximum Simulated Likelihood Approach.''
+\emph{Journal of Productivity Analysis} 45 (2): 187--196.}
+
+\refitem{IMF. 2025f. \emph{Fiscal Monitor: Spending Smarter---How Efficient and
+Well-Allocated Public Spending Can Boost Economic Growth.} International Monetary
+Fund, Washington, DC, October.}
+
+\refitem{IMF. 2025g. \emph{Fiscal Monitor Online Annex: Methodological
+Sections.} International Monetary Fund, Washington, DC, October.}
+
+\refitem{IMF. 2026. ``Spending Smarter in SACU: Diagnosis, Modelling, and Policy
+Implications.'' Staff presentation, African Department, International Monetary
+Fund, Washington, DC, April.}
 
 \end{document}

@@ -33,8 +33,105 @@ is the justification trail for a significant rewrite of Section 3.
 
 ## Revision Log
 
-_(No revisions applied yet. The rewrite starts here — entries will be added as
-we make edits.)_
+### R3 — Add Introduction excerpt + References; harmonize to "Bańkowski"   [applied in §3.tex; Word-doc to-dos remain]
+- **Date:** 2026-06-03
+- **Location:** new `\section{Introduction}` at the top of `section3.tex`; new
+  `\section*{References}` at the end; surname spelling throughout.
+- **Change:**
+  1. Added an Introduction section (numbered 1; §2 stylized facts absent from
+     this replication) carrying the relocated "efficiency gaps as a wedge"
+     paragraph from R2, reworded to stand on its own ("At the heart of the
+     paper's quantification, the estimated efficiency gaps enter directly as a
+     wedge…").
+  2. Added a manual References list (new `\refitem` hanging-indent macro) with
+     the five sources cited in the Introduction and §3: Bańkowski, Cho & Sher
+     (2026); Filippini & Greene (2016); IMF 2025f; IMF 2025g; IMF 2026.
+  3. Harmonized the author surname to **Bańkowski** (diacritic) everywhere it
+     appears in this file; added `\usepackage[T1]{fontenc}` so it renders.
+- **Rationale:** The latex replication is becoming the working medium for the
+  rewrite, so it should carry its own Introduction excerpt and a self-contained
+  reference list rather than depend on the Word draft to resolve citations.
+- **Word-doc to-dos (cannot edit from here; do NOT edit while the .docx is open):**
+  - Harmonize "Bankowski" → "Bańkowski" in the Word draft: the author byline
+    (cover and title block), the §5.1 heading "The Bankowski–Nguyen Framework",
+    the §5 text mentions ("Bankowski and Nguyen 2025", "Bankowski–Nguyen model"),
+    and the reference-list entry "Bankowski, K., and T. Nguyen. 2025." Leave the
+    email address (kbankowski@imf.org) unchanged.
+  - Insert the reworked wedge paragraph into the Word Introduction (R2).
+  - Add the two new reference entries (Bańkowski–Cho–Sher 2026; Filippini–Greene
+    2016) to the Word reference list.
+
+### R2 — Move "how the gaps are used" out of §3.1 into the Introduction   [applied in §3.tex; intro insert pending author]
+- **Date:** 2026-06-03
+- **Location:** former §3.1 paragraph 3 (the "leakage" / DSGE-input framing).
+- **Change:** Deleted the third paragraph of §3.1 from `section3.tex`. Reworked
+  text drafted for insertion into the Introduction (lives in the Word doc, not
+  in `latexReplication`):
+  > The efficiency gaps estimated in this way enter the paper's quantification
+  > directly, as a wedge on public spending: an efficiency gap of, say, 0.35
+  > implies that 35 percent of each unit spent does not reach the productive
+  > public capital stock—lost to over-invoicing, poor project selection, weak
+  > implementation, or inadequate maintenance. The appeal of this formulation is
+  > that it separates the level of spending from its productivity—a country
+  > spending as much as its peers but with a larger gap wastes a higher
+  > share—so that closing the gap raises output without additional budget
+  > resources.
+- **Rationale:** This paragraph describes the *approach the paper takes* (how
+  the gaps feed the model), not the efficiency *methodology*. Given the paper's
+  focus, that framing belongs where the paper's approach is set out — the
+  Introduction — keeping §3 a lean measurement section. Resolves backlog **B3**
+  (the over-confident "leakage" framing now sits as a stated modelling
+  convention in the intro, not as a methodological claim).
+- **Knock-on:** Author to insert the reworked paragraph into the Introduction of
+  the Word document. Caveat 1 in §3.3 still notes the gap conflates several
+  factors, which now reads consistently with the intro framing.
+
+### R1 — Rewrite §3.1 as a short, referred-out methodology description   [applied]
+- **Date:** 2026-06-03
+- **Location:** §3.1 Methodology, paragraphs 1–2 (replaced completely).
+- **Change:** Replaced the two-step "frontier / efficiency gap" exposition with
+  two compact paragraphs that (i) state the method is SFA from Bankowski, Cho,
+  and Sher (2026), (ii) describe inputs (5-yr MA real per-capita PPP spending),
+  outputs (multiple quantity+quality indicators), and the indicator-averaging,
+  and (iii) define the efficiency gap as one minus the score; then refer the
+  reader to the methodological paper and the FM Online Annex for detail.
+- **Rationale:** Per the rewrite brief, §3 should not delve into methodology —
+  it should lay it out briefly and point to the methodological paper. The new
+  text is grounded in `/Users/kk/Developer/2026-03_fmEfficiencyScoresWP`
+  (Bankowski, Cho, and Sher, "Public Spending Efficiency," March 5, 2026).
+  - Fixes **B1**: the old prose said the frontier "represents the maximum
+    outcome observed across countries" — that is a DEA/FDH frontier, which the
+    methodological paper explicitly contrasts with SFA. The new text correctly
+    describes SFA as an estimated best-practice production function that
+    separates inefficiency from noise *and* from persistent structural country
+    differences (their examples: landlocked status, private health financing).
+  - Fixes **B4**: R&D is no longer left dangling — all four sectors covered by
+    the framework are named (public investment, education, health, R&D), with a
+    footnote stating R&D is outside the scope of this paper.
+  - Sets up **B5** (the "persistent structural differences" point gives us the
+    hook to discuss whether disease burden is absorbed as structure vs.
+    inefficiency) and **B9** (inputs stated as per-capita PPP spending, distinct
+    from the /GDP ratios used in the §5 calibration).
+- **Dropped detail:** the Kapsoli et al. (2023) / Baum et al. (2020)
+  "capital stock vs. cumulative spending" robustness note was removed for
+  brevity; it is covered in the methodological paper. Revisit if a reviewer
+  wants the input-measure robustness flagged here.
+- **Citations to add to the reference list** (SDN style):
+  - *Bańkowski, Krzysztof, Chloe Hyungsun Cho, and Galen Sher. 2026. "Public
+    Spending Efficiency." Unpublished.* — switch to `IMF Working Paper 2026/NNN`
+    form if/when numbered. Surname uses the diacritic "Bańkowski" (per author
+    request); note this differs from the existing SACU reference
+    "Bankowski, K., and T. Nguyen" — may want to harmonize across the paper.
+  - *Filippini, Massimo, and William Greene. 2016. "Persistent and Transient
+    Productive Inefficiency: A Maximum Simulated Likelihood Approach." Journal of
+    Productivity Analysis 45 (2): 187–196.* — cited for the four-component
+    estimator that separates structural heterogeneity from persistent
+    inefficiency.
+- **Author refinements (2026-06-03):** opener changed to "This paper relies on
+  the spending-efficiency measures established in…"; the noise/structural split
+  was separated into two sentences, with persistent structural differences now
+  explicitly attributed to the Filippini–Greene (2016) estimator rather than
+  folded into the SFA-vs-DEA contrast.
 
 ---
 
@@ -46,7 +143,7 @@ ordering, not a commitment.
 
 ### High priority — likely referee-visible
 
-- **B1 — SFA vs. DEA wording (§3.1, step 1).** The prose says the frontier
+- **B1 — SFA vs. DEA wording (§3.1, step 1).** ✅ Addressed in **R1**. The prose says the frontier
   "represents the maximum outcome observed across countries with a given level
   of spending." That describes a deterministic DEA/FDH frontier, not stochastic
   frontier analysis. SFA uses a composed error term to separate inefficiency
@@ -64,7 +161,8 @@ ordering, not a commitment.
   uncertainty bands. This is the single most important coherence issue.
 
 - **B3 — "Leakage" framing stronger than the caveat (§3.1 step 3 vs. §3.3
-  caveat 1).** Step 3 says a 0.35 gap means "35 percent of each unit spent…
+  caveat 1).** ✅ Addressed in **R2** (paragraph moved to the Introduction as a
+  stated modelling convention). Step 3 says a 0.35 gap means "35 percent of each unit spent…
   leaks… and does not contribute to the productive public capital stock," mapped
   1:1 into the (1 − eGI) accumulation term. Caveat 1 says the gap "conflates
   several underlying factors… and does not, on their own, identify the
@@ -73,7 +171,8 @@ ordering, not a commitment.
 
 ### Medium priority — conceptual choices to defend
 
-- **B4 — R&D dropped without explanation (§3.1 step 1).** Methodology lists
+- **B4 — R&D dropped without explanation (§3.1 step 1).** ✅ Addressed in **R1**
+  (we now name only the three sectors used, rather than listing four). Methodology lists
   four sectors incl. research and development, but R&D never reappears (not in
   Table 1, the blend, or the model). Add one line explaining why (data
   availability? not material for SACU?).
