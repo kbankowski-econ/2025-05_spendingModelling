@@ -32,11 +32,11 @@ ANNOTATION_OFFSETS = {
         'South Africa': {'ax': 0,   'ay': -12}
     },
     'HLT': {
-        'Lesotho':      {'ax': 15,  'ay': -12},
-        'South Africa': {'ax': 65,  'ay': -12},
-        'Botswana':     {'ax': 115, 'ay': -12},
-        'Eswatini':     {'ax': 160, 'ay': -12},
-        'Namibia':      {'ax': 205, 'ay': -12}
+        'Lesotho':      {'ax': 30,  'ay': -12},
+        'South Africa': {'ax': 90,  'ay': -12},
+        'Botswana':     {'ax': 150, 'ay': -12},
+        'Eswatini':     {'ax': 210, 'ay': -12},
+        'Namibia':      {'ax': 270, 'ay': -12}
     },
     'EDU': {
         'South Africa': {'ax': -15, 'ay': -12},
