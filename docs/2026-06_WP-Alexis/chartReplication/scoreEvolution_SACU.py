@@ -133,7 +133,8 @@ def make_figure(series, measure):
                          linecolor='black', linewidth=1.5, ticks='inside', tickfont=dict(size=10.5),
                          row=1, col=i)
         fig.update_xaxes(showgrid=False, linecolor='black', linewidth=1.5, ticks='inside',
-                         tickfont=dict(size=10.5), dtick=20, range=[YEAR_MIN, XAXIS_MAX], row=1, col=i)
+                         tickfont=dict(size=10.5), tickvals=[1980, 2000, 2020], ticktext=['1980', '00', '20'],
+                         range=[YEAR_MIN, XAXIS_MAX], row=1, col=i)
     return fig
 
 
