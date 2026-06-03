@@ -122,7 +122,7 @@ def make_figure(series, measure):
                                  legendrank=1, showlegend=(i == 1)), row=1, col=i)
         add_markers(agg, SACU_AGG_COLOR, i)
 
-    fig.update_layout(template='simple_white', height=HEIGHT, width=WIDTH, font={'size': 20},
+    fig.update_layout(template='simple_white', height=HEIGHT, width=WIDTH, font={'size': 10.5},
                       margin=dict(l=38, r=10, t=78, b=34),
                       legend=dict(orientation='h', yanchor='bottom', y=1.18,
                                   xanchor='center', x=0.5, font=dict(size=10.5)))
