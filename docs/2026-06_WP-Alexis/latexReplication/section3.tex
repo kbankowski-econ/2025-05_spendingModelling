@@ -29,7 +29,7 @@
 \graphicspath{{figures/}{../chartReplication/}}
 
 % Subcaption: centered, directly under the caption (top of the float).
-\newcommand{\subcap}[1]{{\footnotesize #1\par}}
+\newcommand{\subcap}[1]{\vspace{-3pt}{\footnotesize\itshape #1\par}}
 
 % Source / Note: left-aligned, at the BOTTOM of the float.
 \newcommand{\figsource}[1]{\par\vspace{4pt}{\raggedright\footnotesize\textsc{Source:} #1\par}}
@@ -160,7 +160,7 @@ The gaps in South Africa and Namibia ended modestly above their
   \centering
   \caption{Efficiency Gaps in Health, Education, and Infrastructure Spending}
   \label{fig:eff-gaps}
-  \subcap{(Comparison between 2000 and 2023)}
+  \subcap{Comparison between 2000 and 2023.}
   \vspace{4pt}
   \includegraphics[width=\textwidth]{scoreEvolution_SACU_eff_gap_snapshot.png}
   \figsource{IMF staff estimates based on \textcite{imf2025fm}.}
@@ -184,8 +184,7 @@ Eswatini are closer to the global median.
   \centering
   \caption{Spending-Efficiency Gaps Across Countries, 2023}
   \label{fig:infra-dist}
-  \subcap{Cross-country distribution of spending-efficiency gaps in three sectors,
-  with SACU countries highlighted.}
+  \subcap{Cross-country distribution of spending-efficiency gaps in three sectors, with SACU countries highlighted.}
   \vspace{4pt}
   \includegraphics[width=\textwidth]{scoreEvolution_SACU_infra_dist.png}
   \figsource{IMF staff estimates based on \textcite{imf2025fm}.}
@@ -204,8 +203,7 @@ and health as a single public human-capital stock (schools and hospitals).
   \centering
   \caption{SACU Efficiency Gaps, Latest Available Year}
   \label{tab:eff-gaps}
-  \subcap{Efficiency gap, 0 to 1 scale; higher values indicate larger gaps.
-  Used as inputs to the DSGE simulations.}
+  \subcap{Efficiency gap, 0 to 1 scale; higher values indicate larger gaps. Used as inputs to the DSGE simulations.}
   \vspace{6pt}
   \begingroup
   \sffamily\fontsize{10.5}{13.5}\selectfont
@@ -238,7 +236,7 @@ and health as a single public human-capital stock (schools and hospitals).
   \centering
   \caption{SACU Spending-Efficiency Gaps over Time}
   \label{fig:eff-gaps-evolution}
-  \subcap{(Efficiency gap, 0--1 scale; higher values indicate larger gaps)}
+  \subcap{Efficiency gap, 0--1 scale; higher values indicate larger gaps.}
   \vspace{4pt}
   \includegraphics[width=\textwidth]{scoreEvolution_SACU_eff_gap.png}
   \figsource{IMF staff estimates based on \textcite{imf2025fm}.}
