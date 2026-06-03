@@ -16,10 +16,36 @@ SACU = {'BWA': 'Botswana', 'SWZ': 'Eswatini', 'LSO': 'Lesotho', 'NAM': 'Namibia'
 SACU_HIGHLIGHT_COLOR = '#1E88E5' # Blue
 OTHER_COLOR = '#BDBDBD'         # Light grey
 
-WIDTH, HEIGHT = 600, 540
+WIDTH, HEIGHT = 600, 720
 SCALE = 2
 BORDER_PX = 1
 BORDER_COLOR = (100, 181, 246)  # #64B5F6
+
+# Predefined offsets (ax, ay) to stagger and spread out country labels horizontally and vertically
+# This prevents overlaps when labels are drawn horizontally
+ANNOTATION_OFFSETS = {
+    'INF': {
+        'Namibia':      {'ax': -40, 'ay': -40},
+        'Lesotho':      {'ax': 0,   'ay': -40},
+        'Eswatini':     {'ax': 40,  'ay': -40},
+        'Botswana':     {'ax': 0,   'ay': -40},
+        'South Africa': {'ax': 0,   'ay': -40}
+    },
+    'HLT': {
+        'Lesotho':      {'ax': 0,   'ay': -40},
+        'South Africa': {'ax': 45,  'ay': -40},
+        'Botswana':     {'ax': 90,  'ay': -40},
+        'Eswatini':     {'ax': 130, 'ay': -40},
+        'Namibia':      {'ax': 170, 'ay': -40}
+    },
+    'EDU': {
+        'South Africa': {'ax': -15, 'ay': -40},
+        'Namibia':      {'ax': 15,  'ay': -40},
+        'Botswana':     {'ax': 0,   'ay': -40},
+        'Lesotho':      {'ax': -15, 'ay': -40},
+        'Eswatini':     {'ax': 15,  'ay': -40}
+    }
+}
 
 def main():
     # Build 3x1 subplots
@@ -81,20 +107,38 @@ def main():
             row=r_idx, col=1
         )
         
-        # Update x-axis for this row (only show SACU names)
-        present_sacu = [SACU[iso] for iso in ['NAM', 'LSO', 'SWZ', 'BWA', 'ZAF'] if SACU[iso] in df_2023['country'].values]
-        
+        # Update x-axis for this row (hide tick labels/tick marks)
         fig.update_xaxes(
+            showticklabels=False,
             showgrid=False,
             linecolor='black',
             linewidth=1.5,
-            ticks='inside',
-            tickfont=dict(size=10.5),
-            tickvals=present_sacu,
-            ticktext=present_sacu,
-            tickangle=45,
+            ticks='',
             row=r_idx, col=1
         )
+        
+        # Add custom annotations for SACU countries (horizontal text with pointer lines)
+        for iso, name in SACU.items():
+            if name in df_2023['country'].values:
+                row_data = df_2023[df_2023['country'] == name].iloc[0]
+                val = row_data['eff_gap']
+                
+                # Get custom offsets
+                offsets = ANNOTATION_OFFSETS[s][name]
+                
+                fig.add_annotation(
+                    x=name,
+                    y=val,
+                    ax=offsets['ax'],
+                    ay=offsets['ay'],
+                    text=name,
+                    showarrow=True,
+                    arrowhead=0,
+                    arrowwidth=1.2,
+                    arrowcolor='#424242',
+                    font=dict(size=9.5, color='#212121'),
+                    row=r_idx, col=1
+                )
         
     # Add dummy traces for the legend (showlegend=True, aligned centrally)
     fig.add_trace(go.Bar(x=[None], y=[None], name='SACU', marker_color=SACU_HIGHLIGHT_COLOR))
@@ -105,7 +149,7 @@ def main():
         height=HEIGHT,
         width=WIDTH,
         font={'size': 10.5},
-        margin=dict(l=28, r=8, t=70, b=55),
+        margin=dict(l=28, r=8, t=70, b=28), # reduced bottom margin since labels are now inside annotations
         legend=dict(
             orientation='h',
             yanchor='bottom',
