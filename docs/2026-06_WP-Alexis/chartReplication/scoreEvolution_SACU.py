@@ -15,9 +15,11 @@ Self-contained: hardcodes the 5 SACU countries; no countryTable/chartTable deps.
 """
 import os
 import sys
+import webbrowser
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+from PIL import Image, ImageOps
 
 DATA_DIR = '/Users/kk/Documents/0000-00_work/2025-05_fmEfficiencyScores/code-output/2025-04-14-efficiency-estimates'
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -34,13 +36,13 @@ SACU_COLORS = {
     'Namibia': '#E65100',       # deep orange
     'South Africa': '#C2185B',  # crimson
 }
+SACU_AGG_COLOR = '#424242'  # SACU aggregate: thick solid dark-grey headline line
 # Peer-group reference lines (dashed/dotted), mirroring Figure 3's AE/EM/SSA averages.
 # SSA uses the IMF African Department (includes the SACU members themselves).
 REFERENCES = {
-    'Global': {'color': '#9E9E9E', 'dash': 'dot'},  # grey
-    'AEs':    {'color': '#1A237E', 'dash': 'dot'},  # navy
-    'EMs':    {'color': '#2E7D32', 'dash': 'dot'},  # green
-    'SSA':    {'color': '#5D4037', 'dash': 'dot'},  # brown
+    'AEs': {'color': '#1A237E', 'dash': 'dot'},  # navy
+    'EMs': {'color': '#2E7D32', 'dash': 'dot'},  # green
+    'SSA': {'color': '#5D4037', 'dash': 'dot'},  # brown
 }
 
 YEAR_MIN, YEAR_MAX = 1980, 2024  # source extends to 2029 (likely projections); cap as in original
@@ -52,6 +54,9 @@ MARKER_YEARS = [2000, 2023]      # circle markers at Figure 3's two snapshot yea
 # document (no 2x downscale). Fonts are absolute px, so the smaller canvas makes
 # them proportionally larger than the old 1280 px authoring.
 WIDTH, HEIGHT = 600, 230
+SCALE = 2
+BORDER_PX = 3                 # light-blue frame thickness (px) on the final PNG
+BORDER_COLOR = (100, 181, 246)  # #64B5F6
 
 
 def load(measure):
@@ -70,7 +75,6 @@ def build_series(data, measure):
     for s in SECTORS:
         df = data[s]
         d = {
-            'Global': df.groupby('year')[measure].mean(),
             'AEs': df[df.income == 'AE'].groupby('year')[measure].mean(),
             'EMs': df[df.income == 'EM'].groupby('year')[measure].mean(),
             'SSA': df[df.department == 'AFR'].groupby('year')[measure].mean(),
@@ -79,6 +83,7 @@ def build_series(data, measure):
             sub = df[df.iso3c == iso].set_index('year')[measure]
             if len(sub):
                 d[name] = sub
+        d['SACU'] = df[df.iso3c.isin(SACU)].groupby('year')[measure].mean()  # 5-country mean
         series[s] = d
     return series
 
@@ -86,7 +91,7 @@ def build_series(data, measure):
 def make_figure(series, measure):
     fig = make_subplots(rows=1, cols=4,
                         subplot_titles=tuple(SECTOR_TITLES[s] for s in SECTORS),
-                        shared_yaxes=True, horizontal_spacing=0.07)
+                        shared_yaxes=True, horizontal_spacing=0.03)
     def add_markers(ser, color, col):
         yrs = [y for y in MARKER_YEARS if y in ser.index]
         if yrs:
@@ -110,6 +115,12 @@ def make_figure(series, measure):
                                          line=dict(color=color, width=2),
                                          showlegend=(i == 1)), row=1, col=i)
                 add_markers(ser, color, i)
+        # SACU aggregate: thick solid line on top, first in the legend (headline series).
+        agg = series[s]['SACU'].sort_index()
+        fig.add_trace(go.Scatter(x=agg.index, y=agg.values, mode='lines', name='SACU',
+                                 line=dict(color=SACU_AGG_COLOR, width=3.6),
+                                 legendrank=1, showlegend=(i == 1)), row=1, col=i)
+        add_markers(agg, SACU_AGG_COLOR, i)
 
     fig.update_layout(template='simple_white', height=HEIGHT, width=WIDTH, font={'size': 20},
                       margin=dict(l=38, r=10, t=78, b=34),
@@ -130,15 +141,22 @@ def save(fig, series, measure):
     base = os.path.join(OUT_DIR, f'scoreEvolution_SACU_{measure}')
     png = base + '.png'
     # Use fig.write_image (not the legacy PlotlyScope API, which drops traces under plotly 6.x).
-    fig.write_image(png, width=WIDTH, height=HEIGHT, scale=2)
+    fig.write_image(png, width=WIDTH, height=HEIGHT, scale=SCALE)
+    # Bake a light-blue frame around the whole PNG.
+    bordered = ImageOps.expand(Image.open(png).convert('RGB'), border=BORDER_PX, fill=BORDER_COLOR)
+    bordered.save(png)
     rows = []
     for s in SECTORS:
         for name, ser in series[s].items():
             for yr, val in ser.items():
                 rows.append({'sector': s, 'entity': name, 'year': int(yr), measure: round(float(val), 4)})
     pd.DataFrame(rows).to_csv(base + '.csv', index=False)
+    html = base + '.html'
+    fig.write_html(html)
     print(f'wrote {png}')
     print(f'wrote {base}.csv ({len(rows)} rows)')
+    print(f'wrote {html}')
+    webbrowser.open(f'file://{os.path.abspath(html)}')  # auto-open the interactive chart
 
 
 def main():
