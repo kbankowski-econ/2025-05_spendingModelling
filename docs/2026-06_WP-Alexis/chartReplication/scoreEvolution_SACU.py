@@ -38,8 +38,11 @@ GLOBAL_COLOR = '#7F8C8D'  # grey reference
 
 YEAR_MIN, YEAR_MAX = 1980, 2024  # source extends to 2029 (likely projections); cap as in original
 
-# Full-width 1x4 panel: authored at ~2x so it lands crisp at \textwidth (16 cm).
-WIDTH, HEIGHT = 1280, 400
+# Authored 1:1 for a 16 cm-wide figure: layout ~600 px = 16 cm at 96 dpi, so at
+# scale=2 the PNG is ~190 dpi and the fonts render at their intended size in the
+# document (no 2x downscale). Fonts are absolute px, so the smaller canvas makes
+# them proportionally larger than the old 1280 px authoring.
+WIDTH, HEIGHT = 600, 230
 
 
 def load(measure):
@@ -68,7 +71,7 @@ def build_series(data, measure):
 def make_figure(series, measure):
     fig = make_subplots(rows=1, cols=4,
                         subplot_titles=tuple(SECTOR_TITLES[s] for s in SECTORS),
-                        shared_yaxes=True, horizontal_spacing=0.035)
+                        shared_yaxes=True, horizontal_spacing=0.07)
     for i, s in enumerate(SECTORS, 1):
         # Global reference (grey) first so country lines sit on top.
         g = series[s]['Global'].sort_index()
@@ -90,10 +93,10 @@ def make_figure(series, measure):
     for i in range(1, 5):
         fig.update_yaxes(range=[0, 1], showgrid=True, gridcolor='rgba(0,0,0,0.1)', gridwidth=0.5,
                          zeroline=True, zerolinecolor='black', zerolinewidth=1.5,
-                         linecolor='black', linewidth=1.5, ticks='inside', tickfont=dict(size=14),
+                         linecolor='black', linewidth=1.5, ticks='inside', tickfont=dict(size=10.5),
                          row=1, col=i)
         fig.update_xaxes(showgrid=False, linecolor='black', linewidth=1.5, ticks='inside',
-                         tickfont=dict(size=14), dtick=10, range=[YEAR_MIN, YEAR_MAX], row=1, col=i)
+                         tickfont=dict(size=10.5), dtick=20, range=[YEAR_MIN, YEAR_MAX], row=1, col=i)
     return fig
 
 
