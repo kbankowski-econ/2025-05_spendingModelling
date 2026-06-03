@@ -34,7 +34,14 @@ SACU_COLORS = {
     'Namibia': '#E65100',       # deep orange
     'South Africa': '#C2185B',  # crimson
 }
-GLOBAL_COLOR = '#7F8C8D'  # grey reference
+# Peer-group reference lines (dashed/dotted), mirroring Figure 3's AE/EM/SSA averages.
+# SSA uses the IMF African Department (includes the SACU members themselves).
+REFERENCES = {
+    'Global': {'color': '#9E9E9E', 'dash': 'dot'},  # grey
+    'AEs':    {'color': '#1A237E', 'dash': 'dot'},  # navy
+    'EMs':    {'color': '#2E7D32', 'dash': 'dot'},  # green
+    'SSA':    {'color': '#5D4037', 'dash': 'dot'},  # brown
+}
 
 YEAR_MIN, YEAR_MAX = 1980, 2024  # source extends to 2029 (likely projections); cap as in original
 XAXIS_MAX = 2025                 # axis extends a year past the data so 2023 circles aren't clipped
@@ -50,7 +57,8 @@ WIDTH, HEIGHT = 600, 230
 def load(measure):
     out = {}
     for s in SECTORS:
-        df = pd.read_csv(f'{DATA_DIR}/{s}_inefficiency-scores.csv', usecols=['iso3c', 'year', measure])
+        df = pd.read_csv(f'{DATA_DIR}/{s}_inefficiency-scores.csv',
+                         usecols=['iso3c', 'year', measure, 'income', 'department'])
         df = df[(df.year >= YEAR_MIN) & (df.year <= YEAR_MAX)]
         out[s] = df
     return out
@@ -61,7 +69,12 @@ def build_series(data, measure):
     series = {}
     for s in SECTORS:
         df = data[s]
-        d = {'Global': df.groupby('year')[measure].mean()}
+        d = {
+            'Global': df.groupby('year')[measure].mean(),
+            'AEs': df[df.income == 'AE'].groupby('year')[measure].mean(),
+            'EMs': df[df.income == 'EM'].groupby('year')[measure].mean(),
+            'SSA': df[df.department == 'AFR'].groupby('year')[measure].mean(),
+        }
         for iso, name in SACU.items():
             sub = df[df.iso3c == iso].set_index('year')[measure]
             if len(sub):
@@ -83,12 +96,13 @@ def make_figure(series, measure):
                                      showlegend=False), row=1, col=col)
 
     for i, s in enumerate(SECTORS, 1):
-        # Global reference (grey) first so country lines sit on top.
-        g = series[s]['Global'].sort_index()
-        fig.add_trace(go.Scatter(x=g.index, y=g.values, mode='lines', name='Global',
-                                 line=dict(color=GLOBAL_COLOR, width=2, dash='dot'),
-                                 showlegend=(i == 1)), row=1, col=i)
-        add_markers(g, GLOBAL_COLOR, i)
+        # Peer-group reference lines (dashed/dotted) first, so country lines sit on top.
+        for ref, st in REFERENCES.items():
+            r = series[s][ref].sort_index()
+            fig.add_trace(go.Scatter(x=r.index, y=r.values, mode='lines', name=ref,
+                                     line=dict(color=st['color'], width=2, dash=st['dash']),
+                                     showlegend=(i == 1)), row=1, col=i)
+            add_markers(r, st['color'], i)
         for name, color in SACU_COLORS.items():
             if name in series[s]:
                 ser = series[s][name].sort_index()
