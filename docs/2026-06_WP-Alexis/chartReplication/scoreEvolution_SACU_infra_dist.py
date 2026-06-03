@@ -16,7 +16,7 @@ SACU = {'BWA': 'Botswana', 'SWZ': 'Eswatini', 'LSO': 'Lesotho', 'NAM': 'Namibia'
 SACU_HIGHLIGHT_COLOR = '#1E88E5' # Blue
 OTHER_COLOR = '#BDBDBD'         # Light grey
 
-WIDTH, HEIGHT = 600, 720
+WIDTH, HEIGHT = 600, 360
 SCALE = 2
 BORDER_PX = 1
 BORDER_COLOR = (100, 181, 246)  # #64B5F6
@@ -25,25 +25,25 @@ BORDER_COLOR = (100, 181, 246)  # #64B5F6
 # This prevents overlaps when labels are drawn horizontally
 ANNOTATION_OFFSETS = {
     'INF': {
-        'Namibia':      {'ax': -40, 'ay': -40},
-        'Lesotho':      {'ax': 0,   'ay': -40},
-        'Eswatini':     {'ax': 40,  'ay': -40},
-        'Botswana':     {'ax': 0,   'ay': -40},
-        'South Africa': {'ax': 0,   'ay': -40}
+        'Namibia':      {'ax': -40, 'ay': -18},
+        'Lesotho':      {'ax': 0,   'ay': -18},
+        'Eswatini':     {'ax': 40,  'ay': -18},
+        'Botswana':     {'ax': 0,   'ay': -18},
+        'South Africa': {'ax': 0,   'ay': -18}
     },
     'HLT': {
-        'Lesotho':      {'ax': 0,   'ay': -40},
-        'South Africa': {'ax': 45,  'ay': -40},
-        'Botswana':     {'ax': 90,  'ay': -40},
-        'Eswatini':     {'ax': 130, 'ay': -40},
-        'Namibia':      {'ax': 170, 'ay': -40}
+        'Lesotho':      {'ax': 15,  'ay': -18},
+        'South Africa': {'ax': 65,  'ay': -18},
+        'Botswana':     {'ax': 115, 'ay': -18},
+        'Eswatini':     {'ax': 160, 'ay': -18},
+        'Namibia':      {'ax': 205, 'ay': -18}
     },
     'EDU': {
-        'South Africa': {'ax': -15, 'ay': -40},
-        'Namibia':      {'ax': 15,  'ay': -40},
-        'Botswana':     {'ax': 0,   'ay': -40},
-        'Lesotho':      {'ax': -15, 'ay': -40},
-        'Eswatini':     {'ax': 15,  'ay': -40}
+        'South Africa': {'ax': -15, 'ay': -18},
+        'Namibia':      {'ax': 15,  'ay': -18},
+        'Botswana':     {'ax': 0,   'ay': -18},
+        'Lesotho':      {'ax': -15, 'ay': -18},
+        'Eswatini':     {'ax': 15,  'ay': -18}
     }
 }
 
@@ -149,7 +149,7 @@ def main():
         height=HEIGHT,
         width=WIDTH,
         font={'size': 10.5},
-        margin=dict(l=28, r=8, t=70, b=28), # reduced bottom margin since labels are now inside annotations
+        margin=dict(l=28, r=8, t=45, b=20), # reduced margins for shorter height
         legend=dict(
             orientation='h',
             yanchor='bottom',
