@@ -1,37 +1,469 @@
 variable,entity,year,value
 debt,AEs,2000,76.179
+debt,AEs,2001,67.3674
+debt,AEs,2002,68.4808
+debt,AEs,2003,70.6167
+debt,AEs,2004,73.9222
+debt,AEs,2005,73.487
+debt,AEs,2006,70.9186
+debt,AEs,2007,68.7582
+debt,AEs,2008,74.7593
+debt,AEs,2009,87.8026
+debt,AEs,2010,93.8499
+debt,AEs,2011,97.5752
+debt,AEs,2012,101.7823
+debt,AEs,2013,101.0164
+debt,AEs,2014,100.7088
+debt,AEs,2015,100.5954
+debt,AEs,2016,102.4719
+debt,AEs,2017,100.4491
+debt,AEs,2018,99.9919
+debt,AEs,2019,100.9357
+debt,AEs,2020,119.2938
+debt,AEs,2021,112.9544
+debt,AEs,2022,107.8645
 debt,AEs,2023,107.0623
+debt,AEs,2024,107.5989
+debt,AEs,2025,108.0035
 debt,EMs,2000,44.8876
+debt,EMs,2001,46.0648
+debt,EMs,2002,49.6419
+debt,EMs,2003,48.0642
+debt,EMs,2004,45.4705
+debt,EMs,2005,40.9797
+debt,EMs,2006,36.9895
+debt,EMs,2007,35.7346
+debt,EMs,2008,33.5683
+debt,EMs,2009,38.8191
+debt,EMs,2010,37.7202
+debt,EMs,2011,36.835
+debt,EMs,2012,36.8535
+debt,EMs,2013,38.1178
+debt,EMs,2014,40.0487
+debt,EMs,2015,43.8089
+debt,EMs,2016,49.4515
+debt,EMs,2017,51.4317
+debt,EMs,2018,52.8142
+debt,EMs,2019,55.4377
+debt,EMs,2020,65.5018
+debt,EMs,2021,64.9025
+debt,EMs,2022,64.7864
 debt,EMs,2023,68.974
+debt,EMs,2024,70.9233
+debt,EMs,2025,75.2756
 debt,SSA,2000,58.1237
+debt,SSA,2001,54.9078
+debt,SSA,2002,48.1293
+debt,SSA,2003,44.0121
+debt,SSA,2004,40.164
+debt,SSA,2005,32.3903
+debt,SSA,2006,24.4464
+debt,SSA,2007,21.636
+debt,SSA,2008,20.995
+debt,SSA,2009,23.6596
+debt,SSA,2010,22.7646
+debt,SSA,2011,24.5236
+debt,SSA,2012,24.3292
+debt,SSA,2013,26.0305
+debt,SSA,2014,28.8945
+debt,SSA,2015,32.9718
+debt,SSA,2016,37.5762
+debt,SSA,2017,39.7957
+debt,SSA,2018,42.2364
+debt,SSA,2019,44.5711
+debt,SSA,2020,51.5797
+debt,SSA,2021,51.5125
+debt,SSA,2022,52.0782
 debt,SSA,2023,56.8165
+debt,SSA,2024,58.7363
+debt,SSA,2025,56.9649
 debt,Botswana,2000,8.1608
+debt,Botswana,2001,7.475
+debt,Botswana,2002,8.3718
+debt,Botswana,2003,7.0772
+debt,Botswana,2004,10.7493
+debt,Botswana,2005,7.4599
+debt,Botswana,2006,6.136
+debt,Botswana,2007,5.931
+debt,Botswana,2008,7.7949
+debt,Botswana,2009,22.4272
+debt,Botswana,2010,26.5474
+debt,Botswana,2011,27.8919
+debt,Botswana,2012,26.448
+debt,Botswana,2013,23.7736
+debt,Botswana,2014,23.9363
+debt,Botswana,2015,24.4531
+debt,Botswana,2016,22.3408
+debt,Botswana,2017,19.5906
+debt,Botswana,2018,19.6424
+debt,Botswana,2019,21.5109
+debt,Botswana,2020,23.5081
+debt,Botswana,2021,22.2815
+debt,Botswana,2022,20.9892
 debt,Botswana,2023,22.5054
+debt,Botswana,2024,33.1819
+debt,Botswana,2025,38.64
 debt,Eswatini,2000,18.2445
+debt,Eswatini,2001,21.6693
+debt,Eswatini,2002,17.2164
+debt,Eswatini,2003,17.6697
+debt,Eswatini,2004,14.9944
+debt,Eswatini,2005,13.5581
+debt,Eswatini,2006,14.6733
+debt,Eswatini,2007,16.1465
+debt,Eswatini,2008,14.6148
+debt,Eswatini,2009,10.6132
+debt,Eswatini,2010,14.2449
+debt,Eswatini,2011,14.5935
+debt,Eswatini,2012,14.8146
+debt,Eswatini,2013,15.1571
+debt,Eswatini,2014,14.0584
+debt,Eswatini,2015,15.9887
+debt,Eswatini,2016,20.1116
+debt,Eswatini,2017,21.704
+debt,Eswatini,2018,26.4595
+debt,Eswatini,2019,30.4962
+debt,Eswatini,2020,37.6868
+debt,Eswatini,2021,37.3471
+debt,Eswatini,2022,39.4565
 debt,Eswatini,2023,39.4482
+debt,Eswatini,2024,40.0955
+debt,Eswatini,2025,44.8509
 debt,Lesotho,2000,88.4799
+debt,Lesotho,2001,108.6784
+debt,Lesotho,2002,79.6204
+debt,Lesotho,2003,52.6329
+debt,Lesotho,2004,49.4333
+debt,Lesotho,2005,40.9684
+debt,Lesotho,2006,43.7291
+debt,Lesotho,2007,49.6208
+debt,Lesotho,2008,47.0272
+debt,Lesotho,2009,35.8702
+debt,Lesotho,2010,33.8095
+debt,Lesotho,2011,36.1714
+debt,Lesotho,2012,39.8462
+debt,Lesotho,2013,41.1923
+debt,Lesotho,2014,41.5066
+debt,Lesotho,2015,45.812
+debt,Lesotho,2016,41.45
+debt,Lesotho,2017,40.9919
+debt,Lesotho,2018,48.1913
+debt,Lesotho,2019,58.219
+debt,Lesotho,2020,54.6899
+debt,Lesotho,2021,57.9909
+debt,Lesotho,2022,64.3695
 debt,Lesotho,2023,61.1276
+debt,Lesotho,2024,52.8267
+debt,Lesotho,2025,49.1451
 debt,Namibia,2000,20.8588
+debt,Namibia,2001,24.3932
+debt,Namibia,2002,22.1874
+debt,Namibia,2003,27.1457
+debt,Namibia,2004,29.1792
+debt,Namibia,2005,26.8974
+debt,Namibia,2006,26.1356
+debt,Namibia,2007,19.3641
+debt,Namibia,2008,19.097
+debt,Namibia,2009,15.8507
+debt,Namibia,2010,16.3282
+debt,Namibia,2011,27.4496
+debt,Namibia,2012,24.6278
+debt,Namibia,2013,26.1134
+debt,Namibia,2014,27.5716
+debt,Namibia,2015,42.09
+debt,Namibia,2016,45.8329
+debt,Namibia,2017,43.8293
+debt,Namibia,2018,48.7445
+debt,Namibia,2019,57.5684
+debt,Namibia,2020,64.2967
+debt,Namibia,2021,69.6038
+debt,Namibia,2022,70.0526
 debt,Namibia,2023,67.8601
+debt,Namibia,2024,69.8369
+debt,Namibia,2025,70.2472
 debt,South Africa,2000,37.929
+debt,South Africa,2001,38.0451
+debt,South Africa,2002,31.8007
+debt,South Africa,2003,31.5141
+debt,South Africa,2004,30.7335
+debt,South Africa,2005,29.6371
+debt,South Africa,2006,28.0301
+debt,South Africa,2007,24.326
+debt,South Africa,2008,24.0448
+debt,South Africa,2009,26.9946
+debt,South Africa,2010,31.1854
+debt,South Africa,2011,34.742
+debt,South Africa,2012,37.4079
+debt,South Africa,2013,40.3559
+debt,South Africa,2014,43.2534
+debt,South Africa,2015,45.1955
+debt,South Africa,2016,47.134
+debt,South Africa,2017,48.5882
+debt,South Africa,2018,51.5363
+debt,South Africa,2019,56.1013
+debt,South Africa,2020,68.9271
+debt,South Africa,2021,68.819
+debt,South Africa,2022,70.715
 debt,South Africa,2023,73.2203
+debt,South Africa,2024,75.9629
+debt,South Africa,2025,78.6421
 debt,SACU,2000,36.5401
+debt,SACU,2001,36.7565
+debt,SACU,2002,30.7936
+debt,SACU,2003,30.5133
+debt,SACU,2004,29.9741
+debt,SACU,2005,28.7452
+debt,SACU,2006,27.2499
+debt,SACU,2007,23.6889
+debt,SACU,2008,23.4313
+debt,SACU,2009,26.4648
+debt,SACU,2010,30.5224
+debt,SACU,2011,34.1567
+debt,SACU,2012,36.4962
+debt,SACU,2013,39.132
+debt,SACU,2014,41.7516
+debt,SACU,2015,44.0178
+debt,SACU,2016,45.7145
+debt,SACU,2017,46.9764
+debt,SACU,2018,49.927
+debt,SACU,2019,54.5348
+debt,SACU,2020,66.4328
+debt,SACU,2021,66.4468
+debt,SACU,2022,68.0394
 debt,SACU,2023,70.2816
+debt,SACU,2024,73.3681
+debt,SACU,2025,76.1261
 spending,AEs,2000,39.5838
+spending,AEs,2001,36.9547
+spending,AEs,2002,37.6305
+spending,AEs,2003,38.3633
+spending,AEs,2004,37.9971
+spending,AEs,2005,37.8666
+spending,AEs,2006,37.4919
+spending,AEs,2007,37.7732
+spending,AEs,2008,39.6182
+spending,AEs,2009,43.3594
+spending,AEs,2010,42.132
+spending,AEs,2011,41.3304
+spending,AEs,2012,40.7043
+spending,AEs,2013,40.1064
+spending,AEs,2014,39.4952
+spending,AEs,2015,38.5684
+spending,AEs,2016,38.437
+spending,AEs,2017,38.106
+spending,AEs,2018,38.1595
+spending,AEs,2019,38.4473
+spending,AEs,2020,46.0774
+spending,AEs,2021,44.0163
+spending,AEs,2022,40.0645
 spending,AEs,2023,40.2682
+spending,AEs,2024,40.4805
+spending,AEs,2025,40.7031
 spending,EMs,2000,23.0836
+spending,EMs,2001,25.6334
+spending,EMs,2002,26.6442
+spending,EMs,2003,26.3153
+spending,EMs,2004,25.728
+spending,EMs,2005,25.89
+spending,EMs,2006,26.2251
+spending,EMs,2007,26.4389
+spending,EMs,2008,28.5755
+spending,EMs,2009,30.3547
+spending,EMs,2010,29.2586
+spending,EMs,2011,29.3982
+spending,EMs,2012,29.9376
+spending,EMs,2013,30.1741
+spending,EMs,2014,30.3346
+spending,EMs,2015,31.244
+spending,EMs,2016,31.2134
+spending,EMs,2017,30.8496
+spending,EMs,2018,31.0337
+spending,EMs,2019,31.5294
+spending,EMs,2020,33.9172
+spending,EMs,2021,31.1845
+spending,EMs,2022,31.2391
 spending,EMs,2023,31.884
+spending,EMs,2024,32.1148
+spending,EMs,2025,32.3552
 spending,SSA,2000,19.1718
+spending,SSA,2001,20.5099
+spending,SSA,2002,17.9702
+spending,SSA,2003,19.372
+spending,SSA,2004,18.5353
+spending,SSA,2005,18.7925
+spending,SSA,2006,17.4627
+spending,SSA,2007,19.1487
+spending,SSA,2008,19.3443
+spending,SSA,2009,20.2758
+spending,SSA,2010,20.4155
+spending,SSA,2011,20.4855
+spending,SSA,2012,20.0185
+spending,SSA,2013,19.6627
+spending,SSA,2014,19.2286
+spending,SSA,2015,18.1862
+spending,SSA,2016,17.8429
+spending,SSA,2017,18.9824
+spending,SSA,2018,18.6261
+spending,SSA,2019,18.7373
+spending,SSA,2020,20.0055
+spending,SSA,2021,20.0698
+spending,SSA,2022,20.3337
 spending,SSA,2023,20.3641
+spending,SSA,2024,21.7755
+spending,SSA,2025,22.1592
 spending,Botswana,2000,38.8188
+spending,Botswana,2001,42.1191
+spending,Botswana,2002,45.0821
+spending,Botswana,2003,42.7456
+spending,Botswana,2004,39.8471
+spending,Botswana,2005,33.7834
+spending,Botswana,2006,33.1213
+spending,Botswana,2007,37.0669
+spending,Botswana,2008,48.1224
+spending,Botswana,2009,52.1231
+spending,Botswana,2010,42.5809
+spending,Botswana,2011,37.158
+spending,Botswana,2012,37.147
+spending,Botswana,2013,33.4868
+spending,Botswana,2014,36.5324
+spending,Botswana,2015,37.8133
+spending,Botswana,2016,34.1111
+spending,Botswana,2017,34.6717
+spending,Botswana,2018,35.5909
+spending,Botswana,2019,36.861
+spending,Botswana,2020,36.5348
+spending,Botswana,2021,31.4063
+spending,Botswana,2022,29.0771
 spending,Botswana,2023,32.3562
+spending,Botswana,2024,33.7178
+spending,Botswana,2025,35.0109
 spending,Eswatini,2000,24.7262
+spending,Eswatini,2001,25.5722
+spending,Eswatini,2002,26.4889
+spending,Eswatini,2003,25.8707
+spending,Eswatini,2004,30.9694
+spending,Eswatini,2005,28.9865
+spending,Eswatini,2006,27.5687
+spending,Eswatini,2007,30.3917
+spending,Eswatini,2008,33.4256
+spending,Eswatini,2009,33.8681
+spending,Eswatini,2010,31.0591
+spending,Eswatini,2011,25.1382
+spending,Eswatini,2012,27.0624
+spending,Eswatini,2013,28.8029
+spending,Eswatini,2014,32.6838
+spending,Eswatini,2015,34.4753
+spending,Eswatini,2016,33.988
+spending,Eswatini,2017,33.6185
+spending,Eswatini,2018,31.5623
+spending,Eswatini,2019,32.7583
+spending,Eswatini,2020,32.228
+spending,Eswatini,2021,29.2636
+spending,Eswatini,2022,28.9008
 spending,Eswatini,2023,31.519
+spending,Eswatini,2024,33.5592
+spending,Eswatini,2025,35.7154
 spending,Lesotho,2000,39.2648
+spending,Lesotho,2001,41.4463
+spending,Lesotho,2002,41.2281
+spending,Lesotho,2003,39.7577
+spending,Lesotho,2004,36.2535
+spending,Lesotho,2005,37.6146
+spending,Lesotho,2006,43.2184
+spending,Lesotho,2007,48.1174
+spending,Lesotho,2008,54.071
+spending,Lesotho,2009,66.4421
+spending,Lesotho,2010,55.3179
+spending,Lesotho,2011,60.1725
+spending,Lesotho,2012,58.148
+spending,Lesotho,2013,58.3571
+spending,Lesotho,2014,50.1029
+spending,Lesotho,2015,51.7489
+spending,Lesotho,2016,54.1131
+spending,Lesotho,2017,50.4401
+spending,Lesotho,2018,51.916
+spending,Lesotho,2019,52.9301
+spending,Lesotho,2020,54.1734
+spending,Lesotho,2021,53.6488
+spending,Lesotho,2022,50.7782
 spending,Lesotho,2023,48.9953
+spending,Lesotho,2024,52.4741
+spending,Lesotho,2025,54.2284
 spending,Namibia,2000,30.1222
+spending,Namibia,2001,30.726
+spending,Namibia,2002,29.841
+spending,Namibia,2003,31.0897
+spending,Namibia,2004,28.3927
+spending,Namibia,2005,27.6977
+spending,Namibia,2006,27.3756
+spending,Namibia,2007,26.0801
+spending,Namibia,2008,28.3938
+spending,Namibia,2009,31.9622
+spending,Namibia,2010,33.4687
+spending,Namibia,2011,38.4722
+spending,Namibia,2012,35.0413
+spending,Namibia,2013,38.3081
+spending,Namibia,2014,41.7921
+spending,Namibia,2015,43.6736
+spending,Namibia,2016,41.7623
+spending,Namibia,2017,38.0931
+spending,Namibia,2018,36.3296
+spending,Namibia,2019,37.4149
+spending,Namibia,2020,41.4769
+spending,Namibia,2021,39.2616
+spending,Namibia,2022,36.5579
 spending,Namibia,2023,37.006
+spending,Namibia,2024,39.6221
+spending,Namibia,2025,39.4167
 spending,South Africa,2000,22.6464
+spending,South Africa,2001,22.6202
+spending,South Africa,2002,22.2133
+spending,South Africa,2003,22.6188
+spending,South Africa,2004,22.7077
+spending,South Africa,2005,25.1404
+spending,South Africa,2006,24.6666
+spending,South Africa,2007,24.4286
+spending,South Africa,2008,26.0085
+spending,South Africa,2009,28.4574
+spending,South Africa,2010,28.3405
+spending,South Africa,2011,28.0795
+spending,South Africa,2012,28.6187
+spending,South Africa,2013,28.9101
+spending,South Africa,2014,29.3211
+spending,South Africa,2015,30.1641
+spending,South Africa,2016,29.9086
+spending,South Africa,2017,29.86
+spending,South Africa,2018,30.1523
+spending,South Africa,2019,31.3938
+spending,South Africa,2020,34.6157
+spending,South Africa,2021,32.6539
+spending,South Africa,2022,31.889
 spending,South Africa,2023,32.511
+spending,South Africa,2024,32.9719
+spending,South Africa,2025,34.1593
 spending,SACU,2000,23.5144
+spending,SACU,2001,23.6848
+spending,SACU,2002,23.4528
+spending,SACU,2003,23.6772
+spending,SACU,2004,23.5822
+spending,SACU,2005,25.5923
+spending,SACU,2006,25.1214
+spending,SACU,2007,25.0287
+spending,SACU,2008,26.9704
+spending,SACU,2009,29.5092
+spending,SACU,2010,29.0593
+spending,SACU,2011,28.759
+spending,SACU,2012,29.1968
+spending,SACU,2013,29.487
+spending,SACU,2014,30.1203
+spending,SACU,2015,31.031
+spending,SACU,2016,30.639
+spending,SACU,2017,30.4618
+spending,SACU,2018,30.6902
+spending,SACU,2019,31.916
+spending,SACU,2020,34.9768
+spending,SACU,2021,32.854
+spending,SACU,2022,31.9543
 spending,SACU,2023,32.7129
+spending,SACU,2024,33.3238
+spending,SACU,2025,34.5004

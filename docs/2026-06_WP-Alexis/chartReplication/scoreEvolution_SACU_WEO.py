@@ -56,8 +56,8 @@ BORDER_COLOR = (100, 181, 246)  # #64B5F6
 def load_data():
     df = pd.read_stata(DB_PATH)
     df['year'] = df['year'].astype(int)
-    # Filter for the snapshot years
-    df = df[df['year'].isin([2000, 2023])]
+    # Filter for years 2000 to 2025 (inclusive)
+    df = df[(df['year'] >= 2000) & (df['year'] <= 2025)]
     return df
 
 
@@ -78,7 +78,7 @@ def build_series(df):
         
         # 3. SSA (weighted by ngdpd)
         ssa_series = {}
-        for y in [2000, 2023]:
+        for y in sorted(df['year'].unique()):
             sub = df[(df['regionShort'] == 'SSA') & (df['year'] == y)]
             sub = sub.dropna(subset=[var, 'ngdpd'])
             if len(sub) > 0:
@@ -172,8 +172,9 @@ def make_figure(series):
     # X-axes configurations
     for col in [1, 2]:
         fig.update_xaxes(showgrid=False, linecolor='black', linewidth=1.5, ticks='inside',
-                         tickfont=dict(size=10.5), tickvals=[2000, 2023], ticktext=['2000', '23'],
-                         range=[1998, 2025], row=1, col=col)
+                         tickfont=dict(size=10.5), tickvals=[2000, 2005, 2010, 2015, 2020, 2025],
+                         ticktext=['2000', '05', '10', '15', '20', '25'],
+                         range=[1999, 2026], row=1, col=col)
 
     return fig
 
