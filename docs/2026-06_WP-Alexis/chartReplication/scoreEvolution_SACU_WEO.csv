@@ -1,0 +1,37 @@
+variable,entity,year,value
+debt,AEs,2000,76.179
+debt,AEs,2023,107.0623
+debt,EMs,2000,44.8876
+debt,EMs,2023,68.974
+debt,SSA,2000,58.1237
+debt,SSA,2023,56.8165
+debt,Botswana,2000,8.1608
+debt,Botswana,2023,22.5054
+debt,Eswatini,2000,18.2445
+debt,Eswatini,2023,39.4482
+debt,Lesotho,2000,88.4799
+debt,Lesotho,2023,61.1276
+debt,Namibia,2000,20.8588
+debt,Namibia,2023,67.8601
+debt,South Africa,2000,37.929
+debt,South Africa,2023,73.2203
+debt,SACU,2000,36.5401
+debt,SACU,2023,70.2816
+spending,AEs,2000,39.5838
+spending,AEs,2023,40.2682
+spending,EMs,2000,23.0836
+spending,EMs,2023,31.884
+spending,SSA,2000,19.1718
+spending,SSA,2023,20.3641
+spending,Botswana,2000,38.8188
+spending,Botswana,2023,32.3562
+spending,Eswatini,2000,24.7262
+spending,Eswatini,2023,31.519
+spending,Lesotho,2000,39.2648
+spending,Lesotho,2023,48.9953
+spending,Namibia,2000,30.1222
+spending,Namibia,2023,37.006
+spending,South Africa,2000,22.6464
+spending,South Africa,2023,32.511
+spending,SACU,2000,23.5144
+spending,SACU,2023,32.7129
