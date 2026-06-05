@@ -68,12 +68,12 @@ def build_series(df):
     for var in variables:
         d = {}
         
-        # 1. AEs (ADV_ALL)
-        ae = df[df['isocode'] == 'ADV_ALL'].set_index('year')[var]
+        # 1. AEs (median of Advanced Countries)
+        ae = df[df['devClass'] == 'Advanced'].groupby('year')[var].median()
         d['AEs'] = ae
         
-        # 2. EMs (EME_ALL)
-        em = df[df['isocode'] == 'EME_ALL'].set_index('year')[var]
+        # 2. EMs (median of Emerging Countries)
+        em = df[df['devClass'] == 'Emerging'].groupby('year')[var].median()
         d['EMs'] = em
         
         # 3. SSA (weighted by ngdpd)
@@ -91,9 +91,10 @@ def build_series(df):
             sub = df[df['isocode'] == iso].set_index('year')[var]
             d[name] = sub
             
-        # 5. SACU Aggregate (SECU_GRP)
-        secu = df[df['isocode'] == 'SECU_GRP'].set_index('year')[var]
-        d['SACU'] = secu
+        # 5. SACU Aggregate (unweighted simple average of the 5 SACU countries)
+        sacu_countries = list(SACU_NAMES.keys())
+        sacu_mean = df[df['isocode'].isin(sacu_countries)].groupby('year')[var].mean()
+        d['SACU'] = sacu_mean
         
         series[var] = d
         
