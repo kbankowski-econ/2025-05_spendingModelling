@@ -76,15 +76,9 @@ def build_series(df):
         em = df[df['devClass'] == 'Emerging'].groupby('year')[var].median()
         d['EMs'] = em
         
-        # 3. SSA (weighted by ngdpd)
-        ssa_series = {}
-        for y in sorted(df['year'].unique()):
-            sub = df[(df['regionShort'] == 'SSA') & (df['year'] == y)]
-            sub = sub.dropna(subset=[var, 'ngdpd'])
-            if len(sub) > 0:
-                weighted_mean = (sub[var] * sub['ngdpd']).sum() / sub['ngdpd'].sum()
-                ssa_series[y] = weighted_mean
-        d['SSA'] = pd.Series(ssa_series)
+        # 3. SSA (median of Sub-Saharan African countries)
+        ssa = df[df['regionShort'] == 'SSA'].groupby('year')[var].median()
+        d['SSA'] = ssa
         
         # 4. SACU Countries
         for iso, name in SACU_NAMES.items():
@@ -165,10 +159,10 @@ def make_figure(series):
                      tickvals=[0, 20, 40, 60, 80, 100, 120], row=1, col=1)
 
     # Right subplot: Total Expenditure (% of GDP)
-    fig.update_yaxes(range=[0, 60], showgrid=True, gridcolor='rgba(0,0,0,0.1)', gridwidth=0.5,
+    fig.update_yaxes(range=[0, 70], showgrid=True, gridcolor='rgba(0,0,0,0.1)', gridwidth=0.5,
                      zeroline=True, zerolinecolor='black', zerolinewidth=1.5,
                      linecolor='black', linewidth=1.5, ticks='inside', tickfont=dict(size=10.5),
-                     tickvals=[0, 10, 20, 30, 40, 50, 60], row=1, col=2)
+                     tickvals=[0, 10, 20, 30, 40, 50, 60, 70], row=1, col=2)
 
     # X-axes configurations
     for col in [1, 2]:
