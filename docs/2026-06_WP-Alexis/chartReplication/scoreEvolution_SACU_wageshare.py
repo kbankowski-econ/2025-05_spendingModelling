@@ -50,7 +50,7 @@ REFERENCES = {
     'SSA': {'color': '#5D4037', 'dash': 'dash'},  # brown
 }
 
-WIDTH, HEIGHT = 600, 250
+WIDTH, HEIGHT = 300, 250
 SCALE = 2
 BORDER_PX = 1                 # light-blue frame thickness (px) on the final PNG
 BORDER_COLOR = (100, 181, 246)  # #64B5F6
@@ -131,8 +131,8 @@ def make_figure(series):
 
     # General Layout
     fig.update_layout(template='simple_white', height=HEIGHT, width=WIDTH, font={'size': 10.5},
-                      margin=dict(l=30, r=8, t=58, b=28),
-                      legend=dict(orientation='h', yanchor='bottom', y=1.16,
+                      margin=dict(l=30, r=8, t=75, b=28),
+                      legend=dict(orientation='h', yanchor='bottom', y=1.22,
                                   xanchor='center', x=0.5, font=dict(size=10.5)))
     # Subplot-style title sitting just above the plot area, below the legend
     fig.add_annotation(text='Wage Bill (% of Total Expenditure)', xref='paper', yref='paper',
