@@ -8,6 +8,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[a4paper,margin=2.5cm]{geometry}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{booktabs}
 \usepackage{caption}
 \usepackage{amsmath}
@@ -72,35 +73,41 @@ This section documents three features of SACU public spending that together moti
 
 Across the five SACU members, general government expenditure averages between 31 and 52 percent of GDP (Figure~\ref{fig:debt-dynamics})---a level comparable to advanced economies and substantially above most peer emerging markets. The composition, however, is heavily tilted toward current spending. The public-sector wage bill is the dominant single line in every SACU budget: it averaged 33 percent of total expenditure in Lesotho during 2017--22, 34 percent in South Africa, 38 percent in Eswatini, 42 percent in Namibia, and 40 percent in Botswana (Figure~\ref{fig:wage-bill}). These shares are well above the 24 percent average in advanced economies and the 28 percent average in sub-Saharan Africa.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
-  \caption{Public-Sector Debt, Expenditure and Revenue Dynamics in SACU}
+  \caption{Public-Sector Debt and Expenditure Dynamics in SACU}
   \label{fig:debt-dynamics}
-  \subcap{New Version (Plotly replication)}
+  \subcap{General government gross debt and total expenditure, percent of GDP, 2000--25}
   \vspace{4pt}
   \includegraphics[width=\textwidth]{figure_debt_dynamics.png}
-  
-  \vspace{12pt}
-  \subcap{Old Version (Original document snapshot)}
-  \vspace{4pt}
-  \includegraphics[width=\textwidth]{figure_debt_dynamics.jpeg}
-  \figsource{Reproduced from \textcite{imf2026sacu}.}
+  \figsource{IMF staff estimates based on the IMF World Economic Outlook database.}
   \fignote{General government expenditure and debt profiles. SACU represents the simple (unweighted) average of the five member countries. The members differ greatly in size: measured by nominal GDP in US dollars (2025), South Africa accounts for about 91 percent of SACU GDP, followed by Botswana (4 percent), Namibia (3 percent), Eswatini (1 percent), and Lesotho (under 1 percent). AEs, EMs, and SSA represent the medians of advanced economies, emerging market economies, and Sub-Saharan African countries, respectively.}
 \end{figure}
 
 The level of the wage bill matters because it displaces discretionary spending on growth-enhancing categories. In Lesotho, the wage bill averaged 17 percent of GDP over the last fifteen years, reaching 18 percent in 2018--23---far above the 11.7 percent average for SACU countries and the 8 percent average for lower-middle-income countries \parencite{wb2025lesotho}. In Eswatini, the wage bill reached 10.4 percent of GDP in 2023, against 7.0 percent for regional comparators and 6.9 percent for aspirational peers \parencite{wb2025eswatini}. South Africa's public wage bill has risen by 2.5 percentage points of GDP over two decades and now represents about a third of public spending and 40 percent of total revenue \parencite{imf2025sa}.
 
-A second feature compounds the level effect: the public-private wage premium. The right panel of Figure~\ref{fig:wage-bill} plots, for each country in the IMF Government-Private Sector Compensation Premium Dataset, the percentage by which public-sector compensation exceeds private-sector compensation for workers of comparable qualifications. In SACU, the premium ranges between about 30 percent (Lesotho) and around 50 percent (South Africa, Eswatini, Botswana). These are among the highest premia observed globally. The combination of a large public payroll and a high premium implies that the fiscal envelope devoted to wages does less work per currency unit than it would in a better-calibrated system.
-
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
-  \caption{Public-Sector Wage Bill and Public Wage Premium in SACU}
+  \caption{Public-Sector Wage Bill in SACU}
   \label{fig:wage-bill}
-  \subcap{SACU wage bills are well above peer groups, and public wage premia are among the largest observed}
+  \subcap{SACU wage bills are well above peer groups}
   \vspace{4pt}
-  \includegraphics[width=\textwidth]{figure_wage_bill.jpeg}
-  \figsource{Reproduced from \textcite{imf2026sacu}.}
-  \fignote{\emph{Left panel}: wage bill share of total expenditure, national authorities and IMF staff estimates. \emph{Right panel}: IMF Government-Private Sector Compensation Premium Dataset.}
+  \includegraphics[width=\textwidth]{figure_wage_share.png}
+  \figsource{IMF staff estimates based on the IMF FAD Government Compensation and Employment Dataset.}
+  \fignote{Wage bill as a share of total expenditure. SACU represents the simple (unweighted) average of the five member countries; thin solid lines show the individual countries. AEs, EMs, and SSA represent the medians of advanced economies, emerging market economies, and Sub-Saharan African countries, respectively. Hollow circles mark 2000 and 2022.}
+\end{figure}
+
+A second feature compounds the level effect: the public-private wage premium. Figure~\ref{fig:wage-premium} plots, for each country in the IMF Government-Private Sector Compensation Premium Dataset, the percentage by which public-sector compensation exceeds private-sector compensation for workers of comparable qualifications. In SACU, the premium ranges between about 30 percent (Lesotho) and around 50 percent (South Africa, Eswatini, Botswana). These are among the highest premia observed globally. The combination of a large public payroll and a high premium implies that the fiscal envelope devoted to wages does less work per currency unit than it would in a better-calibrated system.
+
+\begin{figure}[H]
+  \centering
+  \caption{Public Wage Premium in SACU}
+  \label{fig:wage-premium}
+  \subcap{Public wage premia in SACU are among the largest observed}
+  \vspace{4pt}
+  \includegraphics[width=\textwidth,height=6.68cm]{figure_wage_bill_premiumOnly.png}
+  \figsource{Reproduced from \textcite{imf2026sacu}, based on the IMF Government-Private Sector Compensation Premium Dataset.}
+  \fignote{Percentage by which public-sector compensation exceeds private-sector compensation for workers of comparable qualifications. Each point is one country; horizontal bars mark group means. SACU members are labelled individually.}
 \end{figure}
 
 \subsection{Spending is Rigid and Procyclical with SACU Revenue}
