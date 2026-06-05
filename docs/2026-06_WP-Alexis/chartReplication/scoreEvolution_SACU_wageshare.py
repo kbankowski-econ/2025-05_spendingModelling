@@ -80,7 +80,12 @@ def build_series(df):
         d[name] = df[df['isocode'] == iso].set_index('year')[VAR]
 
     # 5. SACU aggregate (unweighted simple average of the 5 SACU countries)
-    d['SACU'] = df[df['isocode'].isin(SACU_NAMES.keys())].groupby('year')[VAR].mean()
+    sacu_df = df[df['isocode'].isin(SACU_NAMES.keys())]
+    d['SACU'] = sacu_df.groupby('year')[VAR].mean()
+
+    # 6. SACU min/max envelope across the 5 member countries (for the grey band)
+    d['SACU_min'] = sacu_df.groupby('year')[VAR].min()
+    d['SACU_max'] = sacu_df.groupby('year')[VAR].max()
 
     return d
 
@@ -89,12 +94,16 @@ def make_figure(series):
     fig = go.Figure()
 
     def add_markers(ser, color):
-        yrs = [y for y in MARKER_YEARS if y in ser.index]
-        if yrs:
-            fig.add_trace(go.Scatter(x=yrs, y=[ser.loc[y] for y in yrs], mode='markers',
-                                     marker=dict(color=color, size=7, symbol='circle-open',
-                                                 line=dict(color=color, width=1.6)),
-                                     showlegend=False))
+        pass  # endpoint circle markers removed
+
+    # Layer 0: grey transparent band spanning min-max across the 5 SACU countries
+    lo = series['SACU_min'].sort_index()
+    hi = series['SACU_max'].sort_index()
+    fig.add_trace(go.Scatter(x=lo.index, y=lo.values, mode='lines', line=dict(width=0),
+                             legendrank=0, showlegend=False, hoverinfo='skip'))
+    fig.add_trace(go.Scatter(x=hi.index, y=hi.values, mode='lines', fill='tonexty',
+                             fillcolor='rgba(120,120,120,0.18)', line=dict(width=0),
+                             legendrank=0, showlegend=False, hoverinfo='skip'))
 
     # Layer 1: AE and EM (lines first, then markers)
     for ref in ['AEs', 'EMs']:
@@ -132,7 +141,7 @@ def make_figure(series):
     # General Layout
     fig.update_layout(template='simple_white', height=HEIGHT, width=WIDTH, font={'size': 10.5},
                       margin=dict(l=30, r=8, t=58, b=28),
-                      legend=dict(orientation='h', yanchor='bottom', y=1.16,
+                      legend=dict(orientation='h', yanchor='bottom', y=1.16, traceorder='normal',
                                   xanchor='center', x=0.5, font=dict(size=10.5)))
     # Subplot-style title sitting just above the plot area, below the legend
     fig.add_annotation(text='Wage Bill (% of Total Expenditure)', xref='paper', yref='paper',

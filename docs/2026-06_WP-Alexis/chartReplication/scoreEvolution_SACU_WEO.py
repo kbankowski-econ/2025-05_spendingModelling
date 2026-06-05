@@ -87,8 +87,12 @@ def build_series(df):
             
         # 5. SACU Aggregate (unweighted simple average of the 5 SACU countries)
         sacu_countries = list(SACU_NAMES.keys())
-        sacu_mean = df[df['isocode'].isin(sacu_countries)].groupby('year')[var].mean()
-        d['SACU'] = sacu_mean
+        sacu_df = df[df['isocode'].isin(sacu_countries)]
+        d['SACU'] = sacu_df.groupby('year')[var].mean()
+
+        # 6. SACU min/max envelope across the 5 member countries (for the grey band)
+        d['SACU_min'] = sacu_df.groupby('year')[var].min()
+        d['SACU_max'] = sacu_df.groupby('year')[var].max()
         
         series[var] = d
         
@@ -101,15 +105,19 @@ def make_figure(series):
                         shared_yaxes=False, horizontal_spacing=0.08)
     
     def add_markers(ser, color, col):
-        yrs = [y for y in [2000, 2023] if y in ser.index]
-        if yrs:
-            fig.add_trace(go.Scatter(x=yrs, y=[ser.loc[y] for y in yrs], mode='markers',
-                                     marker=dict(color=color, size=7, symbol='circle-open',
-                                                 line=dict(color=color, width=1.6)),
-                                     showlegend=False), row=1, col=col)
+        pass  # endpoint circle markers removed
 
     vars_list = ['ggxwdg_gdp', 'ggx_gdp']
     for i, var in enumerate(vars_list, 1):
+        # Layer 0: grey transparent band spanning min-max across the 5 SACU countries
+        lo = series[var]['SACU_min'].sort_index()
+        hi = series[var]['SACU_max'].sort_index()
+        fig.add_trace(go.Scatter(x=lo.index, y=lo.values, mode='lines', line=dict(width=0),
+                                 legendrank=0, showlegend=False, hoverinfo='skip'), row=1, col=i)
+        fig.add_trace(go.Scatter(x=hi.index, y=hi.values, mode='lines', fill='tonexty',
+                                 fillcolor='rgba(120,120,120,0.18)', line=dict(width=0),
+                                 legendrank=0, showlegend=False, hoverinfo='skip'), row=1, col=i)
+
         # Layer 1: AE and EM (lines first, then markers)
         for ref in ['AEs', 'EMs']:
             st = REFERENCES[ref]
@@ -147,7 +155,7 @@ def make_figure(series):
     # General Layout
     fig.update_layout(template='simple_white', height=HEIGHT, width=WIDTH, font={'size': 10.5},
                       margin=dict(l=28, r=8, t=55, b=28),
-                      legend=dict(orientation='h', yanchor='bottom', y=1.15,
+                      legend=dict(orientation='h', yanchor='bottom', y=1.15, traceorder='normal',
                                   xanchor='center', x=0.5, font=dict(size=10.5)))
     fig.update_annotations(font_size=10.5)
 
