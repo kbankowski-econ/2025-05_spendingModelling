@@ -10,11 +10,13 @@ function canonicalizeResults(searchRoot)
     %      canonical string. The binary data and the version/endianness bytes
     %      (offsets 116-127) are left untouched, so the files still load.
     %
-    % IMPORTANT: run this in its OWN clean MATLAB process, NOT at the end of
-    % runModel.m. When Dynare is on the path / its globals are live, `save`
-    % serialises function-handle workspaces into the MAT subsystem block,
-    % producing different bytes for identical data. A clean session (project
-    % root on the path, Dynare NOT loaded) strips them deterministically. Run:
+    % IMPORTANT: run this in its OWN clean MATLAB process, never as a direct
+    % call from a Dynare-loaded session. When Dynare is on the path / its
+    % globals are live, `save` serialises function-handle workspaces into the
+    % MAT subsystem block, producing different bytes for identical data. A
+    % clean process (project root on the path, Dynare NOT loaded) strips them
+    % deterministically. runModel.m spawns such a child process automatically
+    % at the end via system(); to run it standalone:
     %   matlab -batch "addpath('<project_root>'); utils.subroutines.canonicalizeResults()"
     %
     % Inputs:

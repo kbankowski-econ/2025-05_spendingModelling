@@ -144,7 +144,15 @@ dynare('Model_HumanCapital_epsicgrd_cge_adt.mod', 'savemacro', sprintf('-I%s/%s/
 utils.subroutines.generateShockFile('Model_HumanCapital_epsicgrd_cge_limt.shockValues', -0.03, 10);
 dynare('Model_HumanCapital_epsicgrd_cge_limt.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
 
-% NOTE: run utils.subroutines.canonicalizeResults in a SEPARATE clean MATLAB
-% process afterwards to make the results byte-reproducible. It must not run
-% here: with Dynare loaded, save() bloats the MAT subsystem and the bytes
-% differ run-to-run even for identical data. See canonicalizeResults.m.
+%% Canonicalize results in a clean child MATLAB process.
+% Must be a separate process, not a call in this session: with Dynare
+% loaded, save() writes nondeterministic function-handle context into the
+% MAT subsystem and the bytes differ run-to-run even for identical data.
+% See canonicalizeResults.m.
+matlabBin = fullfile(matlabroot, 'bin', 'matlab');
+cmd = sprintf('"%s" -batch "addpath(''%s''); utils.subroutines.canonicalizeResults()"', ...
+        matlabBin, project_path);
+status = system(cmd);
+if status ~= 0
+    warning('runModel:canonicalize', 'canonicalizeResults child process failed (exit %d).', status);
+end
