@@ -32,22 +32,7 @@ check;
 
 
 shocks;
-
-var epsi_cgrd;
-periods 1:1000  ;
-values 
-0.005;
-
-
-var epsi_cge;
-periods 1:1000  ;
-values 
-0.005;
-
-% 10 percent of the original values
-var epsirhoadopt;
 @#include "Model_HumanCapital_epsicgrd_cge_limt.shockValues"
-
 end;
 
 

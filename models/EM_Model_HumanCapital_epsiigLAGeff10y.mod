@@ -30,15 +30,7 @@ check;
 
 
 shocks;
-
-var epsi_ig;
-periods 40:1000  ;
-values 
-0.01;
-
-
-var epsi_eff;
-@#include  "EM_Model_HumanCapital_epsiigLAGeff10y.shockValues"
+@#include "EM_Model_HumanCapital_epsiigLAGeff10y.shockValues"
 end;
 
 

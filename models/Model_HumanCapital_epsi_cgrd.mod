@@ -1,8 +1,7 @@
 @#include "modEq.mod"
 
 shocks;
-    var epsi_cgrd;
-    @#include "shockStandardVal.mod"
+@#include "Model_HumanCapital_epsi_cgrd.shockValues"
 end;
 
 @#include "simulSpec.mod"

@@ -30,14 +30,7 @@ check;
 
 
 shocks;
-
-var epsi_cge;
-periods 1:1000  ;
-values 
-0.01;
-
-var epsi_effge;
-@#include  "EM_Model_HumanCapital_epsicgeeff25ylow.shockValues"
+@#include "EM_Model_HumanCapital_epsicgeeff25ylow.shockValues"
 end;
 
 

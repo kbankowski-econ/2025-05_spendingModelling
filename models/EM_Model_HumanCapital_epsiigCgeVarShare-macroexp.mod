@@ -417,9 +417,9 @@ end;
 steady;
 check;
 shocks;
-    var epsi_cge;
-    periods 1:40 41 42 43 44 45 46 47 48 49 50:1000;
-    values 
+var epsi_cge;
+periods 1:40 41 42 43 44 45 46 47 48 49 50:1000 ;
+values
     0.005
     0.0052
     0.0054
@@ -430,10 +430,11 @@ shocks;
     0.0064
     0.0066
     0.0068
-    0.007;
-    var epsi_ig;
-    periods 1:40 41 42 43 44 45 46 47 48 49 50:1000;
-    values 
+    0.007
+;
+var epsi_ig;
+periods 1:40 41 42 43 44 45 46 47 48 49 50:1000 ;
+values
     0.005
     0.0048
     0.0046
@@ -444,7 +445,8 @@ shocks;
     0.0036
     0.0034
     0.0032
-    0.003;
+    0.003
+;
 end;
 perfect_foresight_setup(periods=2000);%options_.debug
 perfect_foresight_solver(maxit=20); %maxit=10 linear_approximation, endogenous_terminal_period

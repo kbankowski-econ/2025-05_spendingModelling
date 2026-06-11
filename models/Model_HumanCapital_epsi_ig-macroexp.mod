@@ -420,7 +420,7 @@ end;
 steady;
 check;
 shocks;
-    var epsi_ig;
+var epsi_ig;
 periods 1:1000 ;
 values
     0.01

@@ -30,14 +30,7 @@ check;
 
 
 shocks;
-    var epsi_ig;
-    periods 1:1000  ;
-    values 
-    0.005;
-    var epsi_cge;
-    periods 1:1000  ;
-    values 
-    0.005;
+@#include "EM_Model_HumanCapital_epsiigCge.shockValues"
 end;
 
 perfect_foresight_setup(periods=2000);%options_.debug

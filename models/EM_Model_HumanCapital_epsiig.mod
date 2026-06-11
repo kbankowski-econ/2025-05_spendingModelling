@@ -30,12 +30,7 @@ check;
 
 
 shocks;
-
-var epsi_ig;
-periods 1:1000  ;
-values 
-0.01;
-
+@#include "EM_Model_HumanCapital_epsiig.shockValues"
 end;
 
 

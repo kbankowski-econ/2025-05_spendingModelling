@@ -30,9 +30,7 @@ check;
 
 
 shocks;
-
-var epsi_eff;
-@#include  "EM_Model_HumanCapital_epsieff30y.shockValues"
+@#include "EM_Model_HumanCapital_epsieff30y.shockValues"
 end;
 
 

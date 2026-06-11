@@ -1,4 +1,4 @@
-var epsi_ig;
+var epsi_cgrd;
 periods 1:1000 ;
 values
     0.01

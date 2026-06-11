@@ -420,11 +420,12 @@ end;
 steady;
 check;
 shocks;
-    var epsi_cge;
-periods 1:1000  ;
-values 
-0.01;
-    var epsi_effge;
+var epsi_cge;
+periods 1:1000 ;
+values
+    0.01
+;
+var epsi_effge;
 periods 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21:1000 ;
 values
     0.01475
