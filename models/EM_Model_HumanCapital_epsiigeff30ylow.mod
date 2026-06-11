@@ -38,7 +38,7 @@ values
 
 
 var epsi_eff;
-@#include  "EM_Model_HumanCapital_epsiigeff30y.shockValues"
+@#include  "EM_Model_HumanCapital_epsiigeff30ylow.shockValues"
 end;
 
 

@@ -26,8 +26,8 @@ cd(fullfile(project_path, 'models'));
 % +---------+------------------------------+----------------------------------------------------+
 
 %% model list: {name, shock gap, shock horizon}
-% A non-empty gap generates <name>.shockValues before the dynare run; the
-% "low" variants reuse the shock file generated for the row above them.
+% A non-empty gap generates <name>.shockValues before the dynare run; each
+% model includes its own shock file, so the rows are order-independent.
 % The submodules include directory is additive and harmless for models
 % that do not include from it, so all models share one dynare call.
 modelList = {
@@ -58,19 +58,19 @@ modelList = {
     'EM_Model_HumanCapital_epsieff30y',         0.415,  20
     'EM_Model_HumanCapital_epsieffcge30y',      0.320,  20
     'EM_Model_HumanCapital_epsiigeff30y',       0.415,  15
-    'EM_Model_HumanCapital_epsiigeff30ylow',    [],     []
+    'EM_Model_HumanCapital_epsiigeff30ylow',    0.415,  15
     'EM_Model_HumanCapital_epsiigeff25y',       0.415,  25
-    'EM_Model_HumanCapital_epsiigeff25ylow',    [],     []
+    'EM_Model_HumanCapital_epsiigeff25ylow',    0.415,  25
     'EM_Model_HumanCapital_epsiigeff10y',       0.415,  10
-    'EM_Model_HumanCapital_epsiigeff10ylow',    [],     []
+    'EM_Model_HumanCapital_epsiigeff10ylow',    0.415,  10
     'EM_Model_HumanCapital_epsiigeff5y',        0.415,  5
     'EM_Model_HumanCapital_epsiigLAGeff10y',    0.415,  10
     'EM_Model_HumanCapital_epsicgeeff30y',      0.320,  15
-    'EM_Model_HumanCapital_epsicgeeff30ylow',   [],     []
+    'EM_Model_HumanCapital_epsicgeeff30ylow',   0.320,  15
     'EM_Model_HumanCapital_epsicgeeff25y',      0.320,  25
-    'EM_Model_HumanCapital_epsicgeeff25ylow',   [],     []
+    'EM_Model_HumanCapital_epsicgeeff25ylow',   0.320,  25
     'EM_Model_HumanCapital_epsicgeeff10y',      0.320,  10
-    'EM_Model_HumanCapital_epsicgeeff10ylow',   [],     []
+    'EM_Model_HumanCapital_epsicgeeff10ylow',   0.320,  10
     'EM_Model_HumanCapital_epsicgeeff5y',       0.320,  5
     'EM_Model_HumanCapital_epsicgeLAGeff10y',   0.320,  10
     'EM_Model_HumanCapital_epsiigeff25y_al',    0.415,  25

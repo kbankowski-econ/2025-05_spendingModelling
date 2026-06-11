@@ -37,7 +37,7 @@ values
 0.01;
 
 var epsi_effge;
-@#include  "EM_Model_HumanCapital_epsicgeeff10y.shockValues"
+@#include  "EM_Model_HumanCapital_epsicgeeff10ylow.shockValues"
 end;
 
 
