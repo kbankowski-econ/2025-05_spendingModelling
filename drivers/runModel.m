@@ -137,3 +137,7 @@ dynare('Model_HumanCapital_epsicgrd_cge_adt.mod', 'savemacro', sprintf('-I%s/%s/
 
 utils.subroutines.generateShockFile('Model_HumanCapital_epsicgrd_cge_limt.shockValues', -0.03, 10);
 dynare('Model_HumanCapital_epsicgrd_cge_limt.mod', 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+
+% Strip volatile timestamps from results headers so byte-identical results
+% don't show up as git/LFS changes.
+utils.subroutines.canonicalizeResults();
