@@ -84,6 +84,11 @@ run('drivers/runModel.m')
 This runs 48 Dynare models (`Model_HumanCapital_*` and `EM_Model_HumanCapital_*`)
 and writes `_results.mat` into each model's `Output/` directory.
 
+As a final step it calls `utils.subroutines.canonicalizeResults`, which strips the
+volatile "Created on" timestamp from each `_results.mat` header. This keeps
+byte-identical results from showing up as changes in git/LFS, so a rerun only
+produces a diff when the numbers actually change.
+
 #### 2. Export simulation results
 
 ```matlab
