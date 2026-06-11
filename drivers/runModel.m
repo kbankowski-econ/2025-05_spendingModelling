@@ -7,6 +7,12 @@ clc;
 % recalling the paths
 utils.call.paths;
 
+% start the overall execution timer; the guard reports elapsed time on
+% normal completion and on error/exit
+runTimer = tic;
+timerGuard = onCleanup(@() fprintf('\nrunModel total execution time: %s (%.0f s)\n', ...
+        string(duration(0, 0, toc(runTimer))), toc(runTimer)));
+
 % Cding to a relevant directory
 cd(fullfile(project_path, 'models'));
 
