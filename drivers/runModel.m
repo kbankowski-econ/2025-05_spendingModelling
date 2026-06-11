@@ -28,7 +28,8 @@ cd(fullfile(project_path, 'models'));
 %% model list: {name, shock gap, shock horizon}
 % A non-empty gap generates <name>.shockValues before the dynare run; the
 % "low" variants reuse the shock file generated for the row above them.
-% EM_* models are run without the submodules include directory.
+% The submodules include directory is additive and harmless for models
+% that do not include from it, so all models share one dynare call.
 modelList = {
     'Model_HumanCapital_epsi_ig',               [],     []
     'Model_HumanCapital_epsi_cge',              [],     []
@@ -90,11 +91,7 @@ for iModel = 1:size(modelList, 1)
         utils.subroutines.generateShockFile([thisModel '.shockValues'], thisGap, thisHorizon);
     end
 
-    if startsWith(thisModel, 'EM_')
-        dynare([thisModel '.mod'], 'savemacro', 'json=compute');
-    else
-        dynare([thisModel '.mod'], 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
-    end
+    dynare([thisModel '.mod'], 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
 end
 
 %% Canonicalize all results in a clean child MATLAB process.
