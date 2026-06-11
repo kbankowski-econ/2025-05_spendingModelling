@@ -28,11 +28,13 @@ cd(fullfile(project_path, 'models'));
 %% model list: {name, shock gap, shock horizon}
 % A non-empty gap generates <name>.shockValues before the dynare run; each
 % model includes its own shock file, so the rows are order-independent.
+% Horizon 0 means a constant shock of size gap from period 1 (the former
+% shockStandardVal.mod).
 % The submodules include directory is additive and harmless for models
 % that do not include from it, so all models share one dynare call.
 modelList = {
-    'Model_HumanCapital_epsi_ig',               [],     []
-    'Model_HumanCapital_epsi_cge',              [],     []
+    'Model_HumanCapital_epsi_ig',               0.01,   0
+    'Model_HumanCapital_epsi_cge',              0.01,   0
     'Model_HumanCapital_epsi_cgrd',             [],     []
     'Model_HumanCapital_epsi_igCgrd',           [],     []
     'Model_HumanCapital_epsi_igCge',            [],     []

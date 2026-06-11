@@ -2,7 +2,7 @@
 
 shocks;
     var epsi_cge;
-    @#include "shockStandardVal.mod"
+    @#include "Model_HumanCapital_epsi_cge.shockValues"
 end;
 
 @#include "simulSpec.mod"
