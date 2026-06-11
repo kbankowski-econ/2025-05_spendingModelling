@@ -89,11 +89,11 @@ and writes `_results.mat` into each model's `Output/` directory.
 The `_results.mat` files are tracked via Git LFS but otherwise churn on every
 run: MATLAB stamps a fresh "Created on" timestamp into each header, and Dynare
 stores its per-model compute time in `oo_.time`. `runModel.m` normalizes both
-automatically straight after each model: every `dynare` call is followed by
-`utils.subroutines.spawnCanonicalize('<model>')`, which spawns a clean child
-MATLAB process (via `system`/`matlab -batch`) running
-`utils.subroutines.canonicalizeResults()` on that model's `Output/` directory.
-Each spawn costs ~5 s of MATLAB startup, ~4–5 min over the 48 models.
+automatically at the end via `utils.subroutines.spawnCanonicalize()`, which
+spawns a clean child MATLAB process (via `system`/`matlab -batch`) running
+`utils.subroutines.canonicalizeResults()` over the whole `models/` tree.
+The files therefore look modified while a run is in progress; the final
+sweep (~10 s) restores byte-identity for results whose numbers did not change.
 
 Why a separate, Dynare-free process: with Dynare loaded, `save` serialises
 function-handle workspaces into the MAT subsystem block, so identical results

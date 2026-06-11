@@ -16,8 +16,8 @@ function canonicalizeResults(searchRoot)
     % MAT subsystem block, producing different bytes for identical data. A
     % clean process (project root on the path, Dynare NOT loaded) strips them
     % deterministically. runModel.m spawns such a child process automatically
-    % after every dynare call via utils.subroutines.spawnCanonicalize; to run
-    % a full sweep standalone:
+    % at the end via utils.subroutines.spawnCanonicalize; to run a full
+    % sweep standalone:
     %   matlab -batch "addpath('<project_root>'); utils.subroutines.canonicalizeResults()"
     %
     % Inputs:
