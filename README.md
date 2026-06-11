@@ -84,10 +84,21 @@ run('drivers/runModel.m')
 This runs 48 Dynare models (`Model_HumanCapital_*` and `EM_Model_HumanCapital_*`)
 and writes `_results.mat` into each model's `Output/` directory.
 
-As a final step it calls `utils.subroutines.canonicalizeResults`, which strips the
-volatile "Created on" timestamp from each `_results.mat` header. This keeps
-byte-identical results from showing up as changes in git/LFS, so a rerun only
-produces a diff when the numbers actually change.
+##### Make the results reproducible (run separately)
+
+The `_results.mat` files are tracked via Git LFS but otherwise churn on every
+run: MATLAB stamps a fresh "Created on" timestamp into each header, and Dynare
+stores its per-model compute time in `oo_.time`. Normalize both with:
+
+```bash
+matlab -batch "addpath('<project_root>'); utils.subroutines.canonicalizeResults()"
+```
+
+Run this in a **separate, clean MATLAB process** — not from the session that
+ran the models. With Dynare loaded, `save` serialises function-handle
+workspaces into the MAT subsystem block, so identical results would still
+differ byte-for-byte. A clean session strips that deterministically; afterwards
+a rerun only produces a git diff when the numbers actually change.
 
 #### 2. Export simulation results
 

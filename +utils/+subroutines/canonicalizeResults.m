@@ -10,6 +10,13 @@ function canonicalizeResults(searchRoot)
     %      canonical string. The binary data and the version/endianness bytes
     %      (offsets 116-127) are left untouched, so the files still load.
     %
+    % IMPORTANT: run this in its OWN clean MATLAB process, NOT at the end of
+    % runModel.m. When Dynare is on the path / its globals are live, `save`
+    % serialises function-handle workspaces into the MAT subsystem block,
+    % producing different bytes for identical data. A clean session (project
+    % root on the path, Dynare NOT loaded) strips them deterministically. Run:
+    %   matlab -batch "addpath('<project_root>'); utils.subroutines.canonicalizeResults()"
+    %
     % Inputs:
     %   searchRoot - folder to scan recursively (string). Defaults to the
     %                project's `models` directory.
@@ -32,13 +39,15 @@ function canonicalizeResults(searchRoot)
         fpath = fullfile(files(k).folder, files(k).name);
         changed = false;
 
-        % 1. Zero Dynare's per-model timing and re-save if needed.
+        % 1. Zero Dynare's per-model timing and always re-save. Re-saving
+        %    in a clean session also strips any subsystem bloat written by
+        %    a Dynare-loaded session.
         S = load(fpath);
-        if isfield(S, 'oo_') && isfield(S.oo_, 'time') && ~isequal(S.oo_.time, 0)
+        if isfield(S, 'oo_') && isfield(S.oo_, 'time')
             S.oo_.time = 0;
-            save(fpath, '-struct', 'S', '-v7');
-            changed = true;
         end
+        save(fpath, '-struct', 'S', '-v7');
+        changed = true;
 
         % 2. Canonicalize the text header (also fixes the fresh timestamp
         %    written by the save above).
