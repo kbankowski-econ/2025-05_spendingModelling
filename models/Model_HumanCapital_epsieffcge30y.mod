@@ -19,7 +19,7 @@ steady;
 check;
 
 shocks;
-@#include "Model_HumanCapital_epsieffcge30y.shockValues"
+@#include shockFile
 end;
 
 @#include "postSimul.mod"

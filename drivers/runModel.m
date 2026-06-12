@@ -34,7 +34,11 @@ cd(fullfile(project_path, 'models'));
 % its specific values.
 % Each shocks entry is a cell of {var, kind, value, periods} specs that is
 % written to <name>.shockValues (the sole content of the model's shocks
-% block), so the rows are fully self-contained and order-independent.
+% block, selected via -DshockFile), so the rows are fully self-contained
+% and order-independent.
+% The per-model <name>.mod file is a copy of models/modelTemplate.mod made
+% by the loop below and left on disk untracked; the template is the only
+% tracked model definition.
 %   kind 'const'  - constant value over the periods range (quarters)
 %   kind 'ramp'   - linear increase from 0 to value over '1:N', then held
 %                   constant through period 1000
@@ -148,10 +152,12 @@ for iModel = 1:size(modelList, 1)
     thisShocks = modelList{iModel, 4};
 
     utils.subroutines.generateShocksFile([thisModel '.shockValues'], thisShocks);
+    copyfile('modelTemplate.mod', [thisModel '.mod']);
 
     dynare([thisModel '.mod'], 'savemacro', 'json=compute', ...
         sprintf('-DparamFile="%s_parameters.macro"', thisParams), ...
-        sprintf('-DeffFile="%s_efficiency.macro"', thisEff));
+        sprintf('-DeffFile="%s_efficiency.macro"', thisEff), ...
+        sprintf('-DshockFile="%s.shockValues"', thisModel));
 end
 
 %% Canonicalize all results in a clean child MATLAB process.

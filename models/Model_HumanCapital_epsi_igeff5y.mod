@@ -19,7 +19,7 @@ steady;
 check;
 
 shocks;
-@#include "Model_HumanCapital_epsi_igeff5y.shockValues"
+@#include shockFile
 end;
 
 @#include "postSimul.mod"

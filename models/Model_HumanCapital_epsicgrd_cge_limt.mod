@@ -19,7 +19,7 @@ steady;
 check;
 
 shocks;
-@#include "Model_HumanCapital_epsicgrd_cge_limt.shockValues"
+@#include shockFile
 end;
 
 @#include "postSimul.mod"

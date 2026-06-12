@@ -19,7 +19,7 @@ steady;
 check;
 
 shocks;
-@#include "EM_Model_HumanCapital_epsiigCgeVarShare.shockValues"
+@#include shockFile
 end;
 
 @#include "postSimul.mod"
