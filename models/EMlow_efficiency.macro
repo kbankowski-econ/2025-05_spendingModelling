@@ -1,0 +1,3 @@
+% EM efficiency gaps lowered by 0.1
+eff=1-0.415-0.1;
+effge=1-0.320-0.1;

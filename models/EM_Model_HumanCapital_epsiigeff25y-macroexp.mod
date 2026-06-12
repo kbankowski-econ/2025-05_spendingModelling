@@ -203,8 +203,6 @@ taucss=0.15;
 tauwss=0.10;
 byss=0.6*4;
 ZZss=1.0075;
-eff=1-0.415;
-effge=1-0.320;
 eff_cgrd=0.8;
 alphaHA=0;
 Cgrdy=0.001;
@@ -215,6 +213,9 @@ alphaH=0.25;
 rhoSADOPT=0.1;
 alphaSRD=0;
 alphaRD=0;
+% EM efficiency gaps
+eff=1-0.415;
+effge=1-0.320;
 % gammaa uses the set-specific ZZss, so it must come after it
 gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
 model;
