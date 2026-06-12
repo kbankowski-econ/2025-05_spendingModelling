@@ -1,14 +1,3 @@
-% ANH NGUYEN (FAD FP)
-% This model is a standard macro-fiscal model
-% A representative HH 
-% Public expenditure: public consumption, pubic investment
-% Public revenue: consumption tax, income tax, lump-sum transfer
-% Price stickiness
-% Public investment is modelled as in Drautzburg and Uhlig (2015)
-% June 23: 
-% revise the debt equation: R(-1)/PI
-% revise the gov expenditure equation in terms of GDP
-% revsie the transfer adjustment equation
 var 
 C               % HH consumption
 lambda          % Marginal Utility
@@ -166,7 +155,6 @@ rho_Cgrd
 rho_ZZRD
 eff_cgrd
 ;
-% Include AE parameters
 betta=0.9985;    
 phi= 1.2 ;       
 chi =0.6;        
@@ -234,8 +222,6 @@ alphaSRD=0.1;
 rhoshockchit=1;
 rho_ZZRD=0.79;
 alphaRD=0.09*(1-rho_ZZRD);
-%alphaSRD=0;% NO learning by doing
-%alphaRD=0.09/2*(1-rho_ZZRD);
 model;
 //********************************************************
 //HOUSEHOLD DECISIONS-10
@@ -479,22 +465,16 @@ values
     0.03
 ;
 end;
-perfect_foresight_setup(periods=2000);%options_.debug
-perfect_foresight_solver(maxit=20); %maxit=10 linear_approximation, endogenous_terminal_period
+perfect_foresight_setup(periods=2000);
+perfect_foresight_solver(maxit=20);
 fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;
 ped=1*4;
-multiplier_1y=sum((yd(2:ped+1)-yd(1)))/sum((fiscalchange(2:ped+1)))
+multiplier_1y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
 ped=5*4;
-multiplier_5y=sum((yd(2:ped+1)-yd(1)))/sum((fiscalchange(2:ped+1)))
+multiplier_5y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
 ped=10*4;
-multiplier_10y=sum((yd(2:ped+1)-yd(1)))/sum((fiscalchange(2:ped+1)))
+multiplier_10y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
 ped=20*4;
-multiplier_20y=sum((yd(2:ped+1)-yd(1)))/sum((fiscalchange(2:ped+1)))
+multiplier_20y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
 ped=25*4;
-multiplier_25y=sum((yd(2:ped+1)-yd(1)))/sum((fiscalchange(2:ped+1)))
-multiplier_all=[ multiplier_1y  multiplier_5y multiplier_10y multiplier_20y multiplier_25y]
-/*
-num=[1:40]
-v1=[0:1/40:1]
-v2=v1(2:end)'*0.03
-*/
+multiplier_25y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))

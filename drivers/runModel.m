@@ -41,8 +41,9 @@ cd(fullfile(project_path, 'models'));
 % An optional 5th element sets the sprintf format of the written values
 % (default '%g'); 'roundtrip' writes the shortest decimal that parses back
 % to the exact double, where the historical files carried full precision.
-% The submodules include directory is additive and harmless for models
-% that do not include from it, so all models share one dynare call.
+% The post-simulation commands (solver plus display-only multiplier
+% reporting) are identical for all models and live in the shared
+% models/postSimul.mod.
 
 % EM parameter set with the efficiency gaps lowered by 0.1
 lowEff = {'EM', {'eff', '1-0.415-0.1'; 'effge', '1-0.320-0.1'}};
@@ -150,7 +151,7 @@ for iModel = 1:size(modelList, 1)
     utils.subroutines.generateParamsFile([thisModel '.paramValues'], thisParams);
     utils.subroutines.generateShocksFile([thisModel '.shockValues'], thisShocks);
 
-    dynare([thisModel '.mod'], 'savemacro', sprintf('-I%s/%s/submodules', project_path, 'models'), 'json=compute');
+    dynare([thisModel '.mod'], 'savemacro', 'json=compute');
 end
 
 %% Canonicalize all results in a clean child MATLAB process.

@@ -137,5 +137,16 @@
 {"statementName": "check"},
 {"statementName": "shocks", "overwrite": false, "deterministic_shocks": [{"var": "epsi_cgrd", "values": [{"period1": 1, "period2": 1000, "value": "0.01"}]}], "variance": [], "stderr": [], "covariance": [], "correlation": []},
 {"statementName": "perfect_foresight_setup", "options": {"periods": 2000}},
-{"statementName": "perfect_foresight_solver", "options": {"simul.maxit": 20}}]
+{"statementName": "perfect_foresight_solver", "options": {"simul.maxit": 20}},
+{"statementName": "native", "string": "fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;"},
+{"statementName": "native", "string": "ped=1*4;"},
+{"statementName": "native", "string": "multiplier_1y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))"},
+{"statementName": "native", "string": "ped=5*4;"},
+{"statementName": "native", "string": "multiplier_5y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))"},
+{"statementName": "native", "string": "ped=10*4;"},
+{"statementName": "native", "string": "multiplier_10y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))"},
+{"statementName": "native", "string": "ped=20*4;"},
+{"statementName": "native", "string": "multiplier_20y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))"},
+{"statementName": "native", "string": "ped=25*4;"},
+{"statementName": "native", "string": "multiplier_25y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))"}]
 }
