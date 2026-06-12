@@ -36,9 +36,10 @@ cd(fullfile(project_path, 'models'));
 % written to <name>.shockValues (the sole content of the model's shocks
 % block, selected via -DshockFile), so the rows are fully self-contained
 % and order-independent.
-% The per-model <name>.mod file is a copy of models/modelTemplate.mod made
-% by the loop below; the copies are tracked but always regenerate
-% byte-identical, so the template is the source of truth.
+% The per-model <name>.mod and <name>_steadystate.m files are copies of
+% models/modelTemplate.mod and models/modelTemplate_steadystate.m made by
+% the loop below; the copies are tracked but always regenerate
+% byte-identical, so the templates are the source of truth.
 %   kind 'const'  - constant value over the periods range (quarters)
 %   kind 'ramp'   - linear increase from 0 to value over '1:N', then held
 %                   constant through period 1000
@@ -153,6 +154,7 @@ for iModel = 1:size(modelList, 1)
 
     utils.subroutines.generateShocksFile([thisModel '.shockValues'], thisShocks);
     copyfile('modelTemplate.mod', [thisModel '.mod']);
+    copyfile('modelTemplate_steadystate.m', [thisModel '_steadystate.m']);
 
     dynare([thisModel '.mod'], 'savemacro', 'json=compute', ...
         sprintf('-DparamFile="%s_parameters.macro"', thisParams), ...

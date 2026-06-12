@@ -1,7 +1,6 @@
-function [ys,params,check] = Model_HumanCapital_steadystate(ys,exo,M_,options_)
-% function [ys,params,check] = NK_baseline_steadystate(ys,exo,M_,options_)
-% computes the steady state for the NK_baseline.mod and uses a numerical
-% solver to do so
+function [ys,params,check] = modelTemplate_steadystate(ys,exo,M_,options_)
+% computes the steady state, using Steady_states_solution.m for the model
+% equations
 % Inputs:
 %   - ys        [vector] vector of initial values for the steady state of
 %                   the endogenous variables
@@ -14,23 +13,6 @@ function [ys,params,check] = Model_HumanCapital_steadystate(ys,exo,M_,options_)
 %   - params    [vector] vector of parameter values
 %   - check     [scalar] set to 0 if steady state computation worked and to
 %                    1 of not (allows to impose restrictions on parameters)
-
-% Copyright (C) 2013-2020 Dynare Team
-%
-% This file is part of Dynare.
-%
-% Dynare is free software: you can redistribute it and/or modify
-% it under the terms of the GNU General Public License as published by
-% the Free Software Foundation, either version 3 of the License, or
-% (at your option) any later version.
-%
-% Dynare is distributed in the hope that it will be useful,
-% but WITHOUT ANY WARRANTY; without even the implied warranty of
-% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-% GNU General Public License for more details.
-%
-% You should have received a copy of the GNU General Public License
-% along with Dynare.  If not, see <https://www.gnu.org/licenses/>.
 
 % read out parameters to access them with their name
 NumberOfParameters = M_.param_nbr;
@@ -48,7 +30,7 @@ Steady_states_solution;
 
 %% DO NOT CHANGE THIS PART.
 %%
-%% Here we define the steady state vZNues of the endogenous variables of
+%% Here we define the steady state values of the endogenous variables of
 %% the model.
 %%
 %% end own model equations
