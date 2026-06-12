@@ -37,13 +37,13 @@
 % --- Figure paths ---
 \graphicspath{{./}{figures/}}
 
-% --- Placeholder box for material to be added ---
-\newcommand{\placeholder}[1]{%
+% --- Placeholder box for material to be added (optional arg: box height) ---
+\newcommand{\placeholder}[2][0.52\textheight]{%
     \begin{center}
     \setlength{\fboxsep}{8pt}%
     \fcolorbox{gray}{BoxGrey}{%
-        \begin{minipage}[c][0.52\textheight][c]{0.95\textwidth}
-            \centering\itshape\color{gray} #1
+        \begin{minipage}[c][#1][c]{0.95\textwidth}
+            \centering\itshape\color{gray} #2
         \end{minipage}}%
     \end{center}}
 
@@ -107,6 +107,29 @@
     {\fontsize{5pt}{6pt}\selectfont
         Sources: IMF staff estimates. \\
         Notes: Additional gains in output from gradually closing gaps in spending efficiency, by 2040 and 2050, relative to the reallocation-only baseline. The left panel also shows gains from different initial efficiency levels, as described in its legend; the right panel shows the baseline case over time, with blue lines for infrastructure and purple lines for human capital investment. \\
+    }
+\end{frame}
+
+% --- Slide: reallocation and efficiency combined ---
+\begin{frame}{Emerging Market and Developing Economies: Reallocation and Efficiency Combined}
+    \vspace{0.3em}
+    \begin{columns}[T]
+        \begin{column}{0.49\textwidth}
+            \raggedright
+            \captionof{figure}{Gains in output over time (percent deviation from steady state)}\label{fig:combinedEM}
+            {\centering\includegraphics[width=\textwidth]{combinedEM_yd_lines.png}\par}
+        \end{column}
+        \begin{column}{0.49\textwidth}
+            \raggedright
+            \captionof{figure}{[Caption to be added]}\label{fig:combinedEMPlaceholder}
+            \placeholder[0.38\textheight]{Figure / material\\to be added.}
+        \end{column}
+    \end{columns}
+
+    \vspace{1em}
+    {\fontsize{5pt}{6pt}\selectfont
+        Sources: IMF staff estimates. \\
+        Notes: Solid lines show output responses to a permanent reallocation of 1 percent of GDP in 2025 towards the expenditure category indicated by the color (blue: infrastructure investment; purple: human capital investment), funded by a cut in public consumption. Dashed lines show the overall effect when, in addition, the corresponding spending-efficiency gap is gradually closed by 2040. \\
     }
 \end{frame}
 
