@@ -28,8 +28,9 @@ cd(fullfile(project_path, 'models'));
 %% model list: {name, params, shocks}
 % Each params entry names a parameter set: the model is preprocessed with
 % -DparamFile="<set>_parameters.macro", which the shared template includes
-% via "@#include paramFile". AE and EM are static macro files; lowEff is
-% generated below from lowEffSpec.
+% via "@#include paramFile" after parameters_common.macro, so the set files
+% hold only the set-specific values. AE and EM are static macro files;
+% lowEff is generated below from lowEffSpec.
 % Each shocks entry is a cell of {var, kind, value, periods} specs that is
 % written to <name>.shockValues (the sole content of the model's shocks
 % block), so the rows are fully self-contained and order-independent.

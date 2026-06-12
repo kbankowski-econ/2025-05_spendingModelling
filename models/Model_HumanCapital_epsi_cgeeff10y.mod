@@ -1,5 +1,7 @@
 @#include "declare_all.macro"
 
+@#include "parameters_common.macro"
+
 @#include paramFile
 
 model;

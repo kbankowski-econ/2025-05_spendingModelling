@@ -1,5 +1,3 @@
-@#include "parameters_common.macro"
-
 % EM-specific calibration
 zeta=0.2;
 taucss=0.15;

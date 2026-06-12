@@ -1,5 +1,3 @@
-@#include "parameters_common.macro"
-
 % AE-specific calibration
 zeta=0.054;
 taucss=0.18;
