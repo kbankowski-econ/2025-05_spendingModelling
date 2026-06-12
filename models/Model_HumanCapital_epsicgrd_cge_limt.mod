@@ -1,6 +1,6 @@
 @#include "declare_all.macro"
 
-@#include "Model_HumanCapital_epsicgrd_cge_limt.paramValues"
+@#include paramFile
 
 model;
 

@@ -1,8 +1,9 @@
 function generateParamsFile(fileName, paramSpec)
-    % Write a model's parameter include file to fileName.
+    % Write a parameter-set macro file to fileName.
     %
-    % The generated file is meant to be the sole parameter content of a
-    % model:   @#include "<model>.paramValues"
+    % The generated file defines one named parameter set (e.g.
+    % lowEff_parameters.macro); models select their set via the
+    % -DparamFile define passed to dynare.
     %
     % Inputs:
     %   fileName  - name of the output file (string)

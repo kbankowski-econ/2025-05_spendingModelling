@@ -1,6 +1,6 @@
 @#include "declare_all.macro"
 
-@#include "Model_HumanCapital_epsi_cgrd.paramValues"
+@#include paramFile
 
 model;
 

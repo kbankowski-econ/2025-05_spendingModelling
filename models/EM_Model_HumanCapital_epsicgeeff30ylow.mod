@@ -1,6 +1,6 @@
 @#include "declare_all.macro"
 
-@#include "EM_Model_HumanCapital_epsicgeeff30ylow.paramValues"
+@#include paramFile
 
 model;
 
