@@ -16,6 +16,3 @@ alphaH=0.25;
 rhoSADOPT=0.1;
 alphaSRD=0;
 alphaRD=0;
-
-% gammaa uses the set-specific ZZss, so it must come after it
-gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;

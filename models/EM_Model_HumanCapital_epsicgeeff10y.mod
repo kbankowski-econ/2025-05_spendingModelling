@@ -4,6 +4,9 @@
 
 @#include paramFile
 
+% gammaa uses the set-specific ZZss, so it must come after it
+gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
+
 model;
 
 @#include "model_block.modpart"
