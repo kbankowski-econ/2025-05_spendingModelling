@@ -37,8 +37,8 @@ cd(fullfile(project_path, 'models'));
 % block, selected via -DshockFile), so the rows are fully self-contained
 % and order-independent.
 % The per-model <name>.mod file is a copy of models/modelTemplate.mod made
-% by the loop below and left on disk untracked; the template is the only
-% tracked model definition.
+% by the loop below; the copies are tracked but always regenerate
+% byte-identical, so the template is the source of truth.
 %   kind 'const'  - constant value over the periods range (quarters)
 %   kind 'ramp'   - linear increase from 0 to value over '1:N', then held
 %                   constant through period 1000

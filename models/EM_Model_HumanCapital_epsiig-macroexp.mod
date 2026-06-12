@@ -197,22 +197,27 @@ varthetaat=1.35;
 probadoptss=0.2/4;
 rhoshockchit=1;
 rho_ZZRD=0.79;
-% EM-specific calibration
-zeta=0.2;
-taucss=0.15;
-tauwss=0.10;
-byss=0.6*4;
-ZZss=1.0075;
-eff_cgrd=0.8;
-alphaHA=0;
-Cgrdy=0.001;
-Igy=0.05;
-Cgy=0.14;
-Cgey=0.02;
-alphaH=0.25;
-rhoSADOPT=0.1;
-alphaSRD=0;
-alphaRD=0;
+% EM-specific calibration            (definition                                    | AE value)
+% production and growth
+zeta=0.2;                            % share of public capital in production         | AE: 0.054
+ZZss=1.0075;                         % steady-state gross quarterly growth           | AE: 1.004
+% taxes and debt
+taucss=0.15;                         % steady-state consumption tax rate             | AE: 0.18
+tauwss=0.10;                         % steady-state income tax rate                  | AE: 0.25
+byss=0.6*4;                          % steady-state debt to quarterly GDP (annual x4)| AE: 1*4
+% public spending shares of GDP
+Igy=0.05;                            % public investment                             | AE: 0.03
+Cgy=0.14;                            % public consumption                            | AE: 0.18
+Cgey=0.02;                           % human-capital-related spending                | AE: 0.0145
+Cgrdy=0.001;                         % R&D spending                                  | AE: 0.006
+% human capital
+alphaH=0.25;                         % elasticity of HC formation w.r.t. public HRC  | AE: 0.1
+alphaHA=0;                           % feedback of human capital to TFP              | AE: 0.05
+% R&D and technology adoption
+eff_cgrd=0.8;                        % efficiency of public R&D spending             | AE: 1-0.41
+alphaRD=0;                           % effect of R&D on TFP                          | AE: 0.09*(1-rho_ZZRD)
+alphaSRD=0;                          % R&D elasticity                                | AE: 0.1
+rhoSADOPT=0.1;                       % adoption elasticity                           | AE: 0.8
 % EM efficiency gaps
 eff=1-0.415;
 effge=1-0.320;

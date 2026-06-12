@@ -197,22 +197,27 @@ varthetaat=1.35;
 probadoptss=0.2/4;
 rhoshockchit=1;
 rho_ZZRD=0.79;
-% AE-specific calibration
-zeta=0.054;
-taucss=0.18;
-tauwss=0.25;
-byss=1*4;
-ZZss=1.004;
-eff_cgrd=1-0.41;
-alphaHA=0.05;
-Cgrdy=0.006;
-Igy=0.03;
-Cgy=0.18;
-Cgey=0.0145;
-alphaH=0.1;
-rhoSADOPT=0.8;
-alphaSRD=0.1;
-alphaRD=0.09*(1-rho_ZZRD);
+% AE-specific calibration            (definition                                    | EM value)
+% production and growth
+zeta=0.054;                          % share of public capital in production         | EM: 0.2
+ZZss=1.004;                          % steady-state gross quarterly growth           | EM: 1.0075
+% taxes and debt
+taucss=0.18;                         % steady-state consumption tax rate             | EM: 0.15
+tauwss=0.25;                         % steady-state income tax rate                  | EM: 0.10
+byss=1*4;                            % steady-state debt to quarterly GDP (annual x4)| EM: 0.6*4
+% public spending shares of GDP
+Igy=0.03;                            % public investment                             | EM: 0.05
+Cgy=0.18;                            % public consumption                            | EM: 0.14
+Cgey=0.0145;                         % human-capital-related spending                | EM: 0.02
+Cgrdy=0.006;                         % R&D spending                                  | EM: 0.001
+% human capital
+alphaH=0.1;                          % elasticity of HC formation w.r.t. public HRC  | EM: 0.25
+alphaHA=0.05;                        % feedback of human capital to TFP              | EM: 0
+% R&D and technology adoption
+eff_cgrd=1-0.41;                     % efficiency of public R&D spending             | EM: 0.8
+alphaRD=0.09*(1-rho_ZZRD);           % effect of R&D on TFP                          | EM: 0
+alphaSRD=0.1;                        % R&D elasticity                                | EM: 0
+rhoSADOPT=0.8;                       % adoption elasticity                           | EM: 0.1
 % AE efficiency gaps
 eff=1-0.35;
 effge=1-0.295;
