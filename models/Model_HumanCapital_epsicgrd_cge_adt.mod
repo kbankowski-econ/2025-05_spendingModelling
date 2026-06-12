@@ -15,7 +15,7 @@
 @#include "declare_all.macro"
 
 % Include AE parameters
-@#include  "AE_parameters.macro"
+@#include "Model_HumanCapital_epsicgrd_cge_adt.paramValues"
 
 %alphaSRD=0;% NO learning by doing
 %alphaRD=0.09/2*(1-rho_ZZRD);

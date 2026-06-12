@@ -15,7 +15,7 @@
 @#include "declare_all.macro"
 
 % Include EM parameters
-@#include  "EM_parameters.macro"
+@#include "EM_Model_HumanCapital_epsiigeff25y_al.paramValues"
 
 
 model;
