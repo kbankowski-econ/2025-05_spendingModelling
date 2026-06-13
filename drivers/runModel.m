@@ -27,7 +27,7 @@ cd(fullfile(project_path, 'models'));
 
 %% model list: {name, params, efficiency, shocks}
 % The params entry names a parameter set ('AE' or 'EM') and the efficiency
-% entry an efficiency-gap set ('AE', 'EMnorm' or 'EMlow'). The model is
+% entry an efficiency-gap set ('AE', 'EMnorm', 'EMlow' or 'JAM'). The model is
 % preprocessed with -DparamFile="<params>_parameters.macro" and
 % -DeffFile="<efficiency>_efficiency.macro", which the shared template
 % includes after parameters_common.macro, so each macro file holds only
@@ -143,6 +143,12 @@ modelList = {
     'Model_HumanCapital_epsicgrd_cge_limt',     'AE', 'AE',     {{'epsi_cgrd',    'const', 0.005, '1:1000'}
                                                                  {'epsi_cge',     'const', 0.005, '1:1000'}
                                                                  {'epsirhoadopt', 'ramp',  -0.03, '1:40'}}
+    'JAM_Model_HumanCapital_epsiig',            'EM', 'JAM',    {{'epsi_ig',      'const', 0.01,  '1:1000'}}
+    'JAM_Model_HumanCapital_epsicge',           'EM', 'JAM',    {{'epsi_cge',     'const', 0.01,  '1:1000'}}
+    'JAM_Model_HumanCapital_epsiigeff30y',      'EM', 'JAM',    {{'epsi_ig',      'const', 0.01,  '1:1000'}
+                                                                 {'epsi_eff',     'ramp',  0.415, '1:60'}}
+    'JAM_Model_HumanCapital_epsicgeeff30y',     'EM', 'JAM',    {{'epsi_cge',     'const', 0.01,  '1:1000'}
+                                                                 {'epsi_effge',   'ramp',  0.3665, '1:60'}}
     };
 
 %% run all models

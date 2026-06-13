@@ -1,0 +1,6 @@
+% Jamaica efficiency gaps, sourced from the 2025-04-14 efficiency estimates
+% ([sector]_inefficiency-scores.csv, eff_gap column):
+%   INF: no Jamaica estimate available; EM average (0.415) used instead
+%   HLT 2023: 0.36166763; EDU 2024: 0.37131396; averaged to 0.3665
+eff=1-0.415;
+effge=1-0.3665;

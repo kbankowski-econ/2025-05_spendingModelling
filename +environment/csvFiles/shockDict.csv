@@ -47,3 +47,7 @@ EM_Model_HumanCapital_epsicgeeff5y,Human capital: investment + efficiency (5y)
 EM_Model_HumanCapital_epsicgeLAGeff10y,Human capital: investment (delayed) + efficiency (10y)
 EM_Model_HumanCapital_epsiigeff25y_al,Infrastructure: investment + efficiency (25y) + allocation
 EM_Model_HumanCapital_epsicgeeff25y_al,Human capital: investment + efficiency (25y) + allocation
+JAM_Model_HumanCapital_epsiig,Jamaica infrastructure investment shock
+JAM_Model_HumanCapital_epsicge,Jamaica human capital investment shock
+JAM_Model_HumanCapital_epsiigeff30y,Jamaica infrastructure: investment + efficiency (by 2040)
+JAM_Model_HumanCapital_epsicgeeff30y,Jamaica human capital: investment + efficiency (by 2040)
