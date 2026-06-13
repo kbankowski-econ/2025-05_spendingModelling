@@ -33,9 +33,10 @@
 \usepackage{float}
 \usepackage{titletoc}
 \usepackage{xcolor}
-\definecolor{accent}{HTML}{6A1B9A} % project purple
+\definecolor{accent}{HTML}{6A1B9A} % project purple (section numbers, title rule)
+\definecolor{linkcol}{HTML}{003366} % dark blue (links, citations, cross-refs)
 \usepackage[unicode=true,pdfusetitle,bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,breaklinks=false,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=true]{hyperref}
-\hypersetup{urlcolor=accent, citecolor=accent, linkcolor=accent}
+\hypersetup{urlcolor=linkcol, citecolor=linkcol, linkcolor=linkcol}
 \usepackage{lettrine}
 \usepackage{paralist}
 \usepackage{abstract} % Allows abstract customization
@@ -84,7 +85,7 @@
 
 \begin{center}
     \vspace{-6mm}
-    \textcolor{accent}{\rule{0.32\textwidth}{1pt}}
+    \textcolor{linkcol}{\rule{0.32\textwidth}{1pt}}
 \end{center}
 
 \begin{center}
