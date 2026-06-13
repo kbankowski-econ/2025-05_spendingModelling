@@ -1,0 +1,373 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Working paper draft
+% Model documentation: efficient and well-allocated public spending and growth
+% Formatting adapted from the EAGLE working-paper template.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------------------------------
+%       PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass[a4paper,11pt]{article}
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{nicefrac}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{subcaption}
+
+\newcommand{\source}[1]{\vspace{2mm} \small \begin{minipage}{0.9\textwidth} \emph{Sources: }{#1} \end{minipage}}
+\newcommand{\desc}[1]{\vspace{0mm} \small \begin{minipage}{0.9\textwidth} \emph{Notes: }{#1} \end{minipage}}
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage{setspace}
+\setstretch{1.5}
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage[hmargin=2.5cm,vmargin=2.5cm]{geometry}
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float}
+\usepackage{titletoc}
+\usepackage[unicode=true,pdfusetitle,bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,breaklinks=false,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=true]{hyperref}
+\hypersetup{urlcolor=blue, citecolor=blue, linkcolor=red}
+\usepackage{lettrine}
+\usepackage{paralist}
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\usepackage{titlesec} % Allows customization of titles
+\usepackage{colortbl}
+\definecolor{grey}{cmyk}{0, 0, 0, 0.17}
+\usepackage{appendix}
+\usepackage{eurosym}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage{adjustbox}
+\usetikzlibrary{positioning}
+
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}}
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[C]{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[R]{\thepage}
+\usepackage{natbib}
+
+% Equation numbering tied to section numbers
+\numberwithin{equation}{section}
+
+%----------------------------------------------------------------------------------------
+%       TITLE SECTION
+%----------------------------------------------------------------------------------------
+\title{\texorpdfstring{\vspace{-15mm}\fontsize{20pt}{18pt}\selectfont\textbf{Spending Smarter: A Model of Public Spending Efficiency, Allocation, and Long-Run Growth}}{Spending Smarter: A Model of Public Spending Efficiency, Allocation, and Long-Run Growth}}
+\author{
+\large {\textsc{\texorpdfstring{Krzysztof~Ba\'nkowski}{Krzysztof Bankowski}\footnote{International Monetary Fund. The model documented here underpins Online Annex 1.6 of the October 2025 \emph{Fiscal Monitor}, ``Spending Smarter: How Efficient and Well-Allocated Public Spending Can Boost Economic Growth.'' The views expressed are those of the authors and do not necessarily represent the views of the IMF, its Executive Board, or IMF management.}}}\\[2mm]
+{\textsc{\texorpdfstring{Anh Dinh Minh Nguyen}{Anh Dinh Minh Nguyen}\footnote{International Monetary Fund.}}}\\[2mm]
+}
+\date{June 2026}
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+\maketitle % Insert title
+
+\begin{center}
+    \textbf{\Large{Preliminary Draft}}
+
+    \textit{This paper is a preliminary version. Please do not quote or cite without the authors' permission.}
+\end{center}
+
+\begin{abstract}
+This paper presents a model used to analyze the long-term output effects of closing public spending efficiency gaps and of reallocating public spending toward more growth-friendly uses.
+The framework integrates expenditure-side fiscal policy and human capital formation within an endogenous growth model.
+It builds on three strands of the literature: public infrastructure investment, human capital development, and endogenous growth through technology creation and adoption.
+The accumulation of public capital is adjusted for efficiency, so that only a fraction of each unit of spending is converted into productive capital.
+The model is parameterized separately for a representative advanced economy and a representative emerging market and developing economy.
+Simulations show that reallocating spending toward human capital and infrastructure investment, and closing efficiency gaps, deliver sizable long-run output gains, with effects materializing over different horizons across spending categories and country groups.
+The implied cumulative public-investment multipliers over 25 years are about 1 for advanced economies and 2.5 for emerging market and developing economies.
+
+\bigskip
+
+\noindent\textbf{Keywords:} Public spending, Spending efficiency, Public investment, Human capital, Endogenous growth, Fiscal multipliers
+
+\bigskip
+
+\noindent\textbf{JEL Codes:} E62, H54, O41, O47
+
+\bigskip
+
+\clearpage
+\pagebreak
+
+\end{abstract}
+
+\startcontents
+\pdfbookmark[1]{Table of content}{toc}
+\printcontents{ }{1}{\section*{Table of content}}
+
+\vspace{1em}
+\listoffigures
+\vspace{1em}
+\listoftables
+
+\thispagestyle{fancy}
+
+%========================================================================
+\section{Introduction and motivation}
+%========================================================================
+
+Public spending is a central lever of economic policy.
+Yet the same headline level of spending can deliver very different economic returns.
+Two features of public budgets matter for long-run output.
+The first is \emph{allocation}: how spending is split between current consumption and growth-enhancing investment in infrastructure, human capital, and innovation.
+The second is \emph{efficiency}: how much of each dollar spent is actually converted into productive capital, as opposed to being lost to weak project selection, governance gaps, and implementation slippage.
+
+This paper documents a model designed to quantify both channels.
+The framework analyzes the long-term output effects of closing public spending efficiency gaps and of reallocating public spending toward more growth-friendly areas.
+Its novelty lies in integrating expenditure-side fiscal policy components and human capital development within an endogenous growth framework.
+It brings together three strands of the literature.
+
+\emph{Public infrastructure investment.} The framework builds on the literature on public infrastructure investment and output multipliers, as in \citet{TraumYang2015}, \citet{DrautzburgUhlig2015}, and \citet{IMF2020FM}.
+Government investment adds to the stock of productive public capital---such as roads or communication networks---which in turn raises private-sector productivity.
+
+\emph{Human capital development.} Building on \citet{BlankenauSimpson2004}, \citet{Dissouetal2016}, and \citet{Atoliaetal2021}, private human capital is modeled as the outcome of households' allocation of time to education and health.
+This process is complemented by public investment in human capital, which adds to the stock of public human capital---such as schools and hospitals---that enhances the effectiveness of private efforts.
+
+\emph{Endogenous growth.} Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model distinguishes between the stock of created technologies, $Z_t$, that is available for adoption, and the stock of adopted technologies, $A_t$.
+Public R\&D expenditure contributes to the creation of new technologies by increasing $Z_t$, while private adoption efforts expand $A_t$.
+This distinction between creation and adoption allows for realistic delays in technology diffusion.
+It thus more accurately reflects the dynamic impact of public R\&D spending. The gap $Z_t - A_t$ represents the stock of unadopted technologies.
+
+A fourth feature cuts across all three channels.
+\emph{Efficiency-adjusted public expenditure.} The accumulation of infrastructure and human capital stocks is adjusted for inefficiencies, as in \citet{Bergetal2019}.
+This implies that only a fraction of public investment is transformed into productive capital.
+A similar adjustment applies to public R\&D spending, reflecting inefficiencies in translating expenditure into technological advancement.
+
+The remainder of the paper is organized as follows.
+Section~\ref{sec:model} sets out the model.
+Section~\ref{sec:parameterization} describes the parameterization for the representative advanced economy and emerging market and developing economy.
+Section~\ref{sec:properties} presents the model's properties through a set of policy experiments.
+Section~\ref{sec:conclusions} concludes.
+
+%========================================================================
+\section{The model} \label{sec:model}
+%========================================================================
+
+\subsection{Overall setup}
+
+The model is based on a New Keynesian framework, extended to explicitly incorporate human capital accumulation and endogenous growth through technology adoption.
+The economy is populated by a representative household, a government, and a multi-tiered production sector.
+
+The representative household makes optimal decisions regarding consumption, labor supply, private physical investment, and savings in government bonds.
+Departing from the standard framework, the household also invests in human capital through time spent on education and health.
+
+The government comprises a fiscal authority and a central bank.
+The fiscal authority's role includes expenditures on public infrastructure, public human capital, and public R\&D, in addition to standard government consumption, lump-sum transfers, and taxes levied on consumption and income.
+The central bank sets the nominal interest rate according to a Taylor rule.
+
+The production structure follows \citet{CominGertler2006} and \citet{Anzoateguietal2019}, comprising three tiers.
+
+\begin{compactitem}
+    \item \emph{Final goods.} A monopolistically competitive sector produces differentiated goods and sets nominal prices according to a Calvo-style staggered pricing mechanism.
+    \item \emph{Intermediate goods.} This sector consists of a continuum of firms, each operating Cobb--Douglas production functions using effective labor (defined as the product of private human capital and hours worked) and private capital, with public infrastructure capital entering as a positive externality.
+    \item \emph{Technology adopters.} A competitive set of ``adopters'' converts unadopted technologies $Z_t - A_t$ for use in production. The probability of successful adoption in a given period depends positively on the adopter's level of adoption expenditure, measured in units of the final consumption goods composite. Adoption success is modeled as a probabilistic process: if unsuccessful, the adopter may attempt conversion again in subsequent periods. Once a technology is successfully adopted, the adopter sells the rights to use the technology to intermediate-goods producers.
+\end{compactitem}
+
+\subsection{Key equations}
+
+\paragraph{Production.} The aggregate production function in the economy is given by:
+\begin{equation} \label{eq:production}
+    Y_t = A_t^{\vartheta-1} K_t^{\alpha} \left(H_t L_t\right)^{1-\alpha} \left(K_t^{GI}\right)^{\alpha_G},
+\end{equation}
+where $Y_t$ denotes output, $A_t$ is the stock of adopted technologies, $K_t$ is the private capital stock, $H_t L_t$ is effective labor---the product of private human capital $H_t$ and hours worked $L_t$---and $K_t^{GI}$ is the stock of public infrastructure capital.
+The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{As shown in \citet{Anzoateguietal2019}, $\vartheta$ reflects the intermediate-goods elasticity of substitution.}
+
+\paragraph{Private human capital accumulation.} Households divide their unit time endowment among time spent on human capital accumulation ($E_t$), labor supply ($L_t$), and leisure ($1 - E_t - L_t$).
+The evolution of private human capital $H_t$ is described by the following law of motion:
+\begin{equation} \label{eq:humancapital}
+    H_{t+1} = \left(1 - \delta^{h}\right) H_t + \lambda \left(E_t\right)^{\gamma} \left(\frac{K_t^{GE}}{\Lambda_t}\right)^{\mu},
+\end{equation}
+where $\delta^{h}$ is the depreciation rate of human capital, $E_t$ denotes the time spent by the household on human capital development, and $K_t^{GE}$ represents the stock of public human capital (e.g., schools and hospitals).
+The term $\Lambda_t$ is a scaling factor ensuring consistency with balanced growth.
+The cost of time spent working and on human capital development is a reduction in leisure, which lowers utility.
+
+\paragraph{Public capital accumulation and efficiency.} The accumulation of public infrastructure capital $K_t^{GI}$ and public human capital $K_t^{GE}$, adjusted for the corresponding inefficiencies $e^{GI}$ and $e^{GE}$, is expressed as follows:
+\begin{align}
+    K_t^{GI} &= \left(1 - \delta^{GI}\right) K_{t-1}^{GI} + \left(1 - e^{GI}\right) I_t^{GI}, \label{eq:kgi} \\
+    K_t^{GE} &= \left(1 - \delta^{GE}\right) K_{t-1}^{GE} + \left(1 - e^{GE}\right) I_t^{GE}. \label{eq:kge}
+\end{align}
+The inefficiency parameters $e^{GI}$ and $e^{GE}$ capture the concept of technical efficiency---that is, only a fraction $1 - e^{x}$ of each unit spent contributes to the respective capital stock.\footnote{Another dimension of efficiency relates to the allocation of resources toward higher-return investment projects, referred to as allocative efficiency. Section~\ref{sec:properties} also considers an extended scenario that incorporates both technical and allocative efficiency improvements.}
+
+\paragraph{Technological development.} The model distinguishes between the stock of available technologies $Z_t$ and the stock of adopted technologies $A_t$.
+The evolution of $Z_t$ depends on two main factors.
+First, higher levels of human capital are assumed to foster technological innovation---that is, an increase in skilled labor leads to more ideas and innovations, reflecting a learning-by-doing channel as discussed in \citet{ChangGomesSchorfheide2002}.
+Second, public R\&D spending $\left(G_t^{RD}\right)$ contributes directly to the creation of new technologies:
+\begin{equation} \label{eq:Z}
+    \log\!\left(\frac{Z_t}{Z^{SS}}\right) = \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right) + \left(1 - \rho_A\right)\left(\alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) + \alpha_{RD} \log\!\left(\frac{G_t^{RD}}{G^{RD,SS}}\right)\right).
+\end{equation}
+To capture the lags between creation and adoption, the evolution of adopted technologies $A_t$ is modeled as:
+\begin{equation} \label{eq:A}
+    A_{t+1} = \lambda_t \phi \left[Z_t - A_t\right] + \phi A_t,
+\end{equation}
+where the time-varying probability of adoption is given by $\lambda_t = \lambda_0 \left(\frac{S_t}{\Lambda_t}\right)^{\varsigma}$ and depends positively on adopters' expenditure $S_t$, scaled by the balanced-growth trend $\Lambda_t$.
+Adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, taking into account the associated cost.
+
+%========================================================================
+\section{Model parameterization} \label{sec:parameterization}
+%========================================================================
+
+The model is parameterized for a representative advanced economy (AE) and a representative emerging market and developing economy (EMDE), separately.
+Key structural parameters are summarized in Table~\ref{tab:parameters} and described below.
+
+\begin{compactitem}
+    \item \emph{Elasticity of output with respect to infrastructure ($\alpha_G$).} It is set at 0.05 for AEs, following \citet{TraumYang2015}, and 0.17 for EMDEs, based on \citet{BornLigthart2014} and \citet{Buffieetal2012}. The higher value for EMDEs reflects the larger contribution of public infrastructure investment to output in these economies.
+    \item \emph{Private human capital accumulation.} The elasticity of human capital accumulation with respect to the public human capital stock ($\mu$) is set at 0.25 for EMDEs and 0.1 for AEs, which is in the range documented in \citet{GlommRavikumar1998}, \citet{Blankenau2005}, and \citet{Atoliaetal2021}. The lower value for AEs reflects the empirical finding that the marginal impact of government investment on human capital formation is moderate, given already well-developed education and health infrastructure. The elasticity with respect to the time spent on human capital accumulation is set to $\gamma = 0.5$ for both country groups, consistent with \citet{Atoliaetal2021} and \citet{Dissouetal2016}.
+    \item \emph{Inefficiency parameters.} The efficiency gaps are set based on empirical estimates in the chapter. For infrastructure investment, the average gap is set at 0.35 for AEs and 0.42 for EMDEs. For human capital investment, they are 0.30 and 0.32 for AEs and EMDEs, respectively. For public R\&D spending, the inefficiency parameter is set at 0.4 for AEs, while this innovation channel is shut down in EMDEs due to their reliance on technology adoption rather than innovation.
+    \item \emph{Depreciation of public capital ($\delta^{GI}$, $\delta^{GE}$).} Both depreciation rates are set at the standard value of 0.025, corresponding to an annual depreciation rate of 10 percent.
+    \item \emph{Technology innovation parameters.} The AR(1) coefficient for the stock of technologies ($\rho_A$) is set at 0.79 (quarterly), as in \citet{ChangGomesSchorfheide2002}. For AEs, the elasticity of human capital with respect to technology development ($\alpha_{HA}$) is set at 0.45, capturing the learning-by-doing channel, as in \citet{ChangGomesSchorfheide2002}. The elasticity of public R\&D spending ($\alpha_{RD}$) is calibrated at 0.1, consistent with the R\&D impact estimates in \citet{FieldhouseMertens2023}.
+    \item \emph{Technology adoption parameters.} Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the elasticity of the probability of adoption with respect to adoption spending ($\varsigma$) is set at 0.8, and $\lambda_0$ is set at 0.1, implying an average lag of approximately ten years.
+\end{compactitem}
+
+\begin{table}[H]
+    \centering
+    \caption{Selected model parameters \label{tab:parameters}}
+    \begin{tabular}{llcc}
+        \toprule
+        & Description & AE & EMDE \\
+        \midrule
+        $\alpha_G$            & Output elasticity, infrastructure        & 0.05  & 0.17 \\
+        $\alpha_{HA}$         & Human capital elasticity, innovation     & 0.45  & --   \\
+        $\alpha_{RD}$         & Public R\&D elasticity, innovation       & 0.10  & --   \\
+        $\rho_A$              & AR(1) coefficient, technology stock      & 0.79  & 0.79 \\
+        $\phi$                & Survival rate of adopted technologies    & 0.97  & 0.97 \\
+        $e^{GI}$              & Inefficiency, infrastructure investment  & 0.35  & 0.42 \\
+        $e^{GE}$              & Inefficiency, human capital investment   & 0.30  & 0.32 \\
+        $e^{GRD}$             & Inefficiency, public R\&D spending       & 0.41  & --   \\
+        $\varsigma$           & Elasticity, adoption probability         & 0.80  & 0.80 \\
+        $\lambda_0$           & Scale, adoption probability              & 0.10  & 0.10 \\
+        $\delta^{GI},\delta^{GE}$ & Depreciation, public capital         & 0.025 & 0.025 \\
+        $\mu$                 & Human capital elasticity, public stock   & 0.10  & 0.25 \\
+        $\gamma$              & Human capital elasticity, time input     & 0.50  & 0.50 \\
+        \bottomrule
+    \end{tabular}
+    \source{IMF staff estimates; see references in the text.}
+\end{table}
+
+In addition, the steady states of fiscal variables are set as follows.
+
+\begin{compactitem}
+    \item \emph{Public consumption-to-GDP ratio.} Set to standard values for each country group: 18 percent of GDP for AEs and 14 percent of GDP for EMDEs, based on \citet{IMF2023FM} and the World Bank's World Development Indicators database. Public consumption includes wages of teachers, doctors, and nurses, other public workers employed in education and health care, and other government final consumption.
+    \item \emph{Public investment-to-GDP ratio.} Infrastructure investment is set at 3 percent of GDP for AEs and 5 percent of GDP for EMDEs (excluding public education and health investment, like building schools and hospitals). Public human capital spending (investing in public education and health) is calibrated at 1.5 percent of GDP for AEs and 2 percent of GDP for EMDEs, based on the share of these items in public investment of the OECD income group \citep{OECD2025Glance} due to limited data availability of public investment composition.
+    \item \emph{Effective tax rates.} Effective tax rates are set at standard levels for each country group, following \citet{IMF2023FM}, \citet{Benitezetal2023}, and \citet{OECD2025Taxing}. The consumption tax rate is set at 18 percent for AEs and 15 percent for EMDEs. The income tax rate is 25 percent for AEs and 10 percent for EMDEs.
+\end{compactitem}
+
+%========================================================================
+\section{Model properties} \label{sec:properties}
+%========================================================================
+
+This section illustrates the model's properties through a set of policy experiments.
+Each experiment is a permanent, budget-neutral reform: an increase in a growth-enhancing spending category is financed by an equivalent cut in public consumption.
+Output responses are reported as percent deviations from the steady state.
+Unless stated otherwise, the experiments start in 2025 and the horizon extends to 2050.
+
+\subsection{Reallocating expenditure toward investment}
+
+Figures~\ref{fig:reallocationAE} and~\ref{fig:reallocationEM} show output responses to a permanent increase of 1 percent of GDP in each expenditure category, funded by a cut in public consumption.
+Reallocating toward infrastructure investment raises output relatively quickly, since infrastructure capital feeds directly into the production function (Eq.~\ref{eq:production}).
+Reallocating toward human capital investment delivers gains that build up more slowly, reflecting the gradual accumulation of human capital (Eq.~\ref{eq:humancapital}).
+The gains are larger for EMDEs, consistent with the higher output elasticity of infrastructure and the higher marginal product of public human capital in these economies.
+
+\begin{figure}[H]
+    \centering
+    \caption{Advanced Economies: reallocation of expenditure \label{fig:reallocationAE}}
+    \includegraphics[width=110mm]{figures/reallocationAE_yd.png}
+    \source{IMF staff estimates.}
+    \desc{Output responses (percent deviation from steady state) to a permanent increase of 1 percent of GDP in the expenditure categories listed in the legend, funded by a cut in public consumption.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \caption{Emerging Market and Developing Economies: reallocation of expenditure \label{fig:reallocationEM}}
+    \includegraphics[width=110mm]{figures/reallocationEM_yd.png}
+    \source{IMF staff estimates.}
+    \desc{Output responses (percent deviation from steady state) to a permanent increase of 1 percent of GDP in the expenditure categories listed in the legend, funded by a cut in public consumption.}
+\end{figure}
+
+\subsection{Closing spending efficiency gaps}
+
+Figures~\ref{fig:efficiencyAE} and~\ref{fig:efficiencyEM} show the additional output gains from gradually closing the efficiency gaps $e^{GI}$ and $e^{GE}$.
+As the gaps close, a larger share of each unit of public investment is converted into productive capital (Eqs.~\ref{eq:kgi} and~\ref{eq:kge}).
+The gains depend on both the speed at which gaps are closed and the initial level of efficiency: economies starting further from the efficiency frontier have more to gain.
+
+\begin{figure}[H]
+    \centering
+    \caption{Advanced Economies: increase in spending efficiency \label{fig:efficiencyAE}}
+    \includegraphics[width=110mm]{figures/efficiencyAE_yd.png}
+    \source{IMF staff estimates.}
+    \desc{Additional output gains (percent deviation from steady state) when gaps in spending efficiency are gradually closed by 2050.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \caption{Emerging Market and Developing Economies: increase in spending efficiency \label{fig:efficiencyEM}}
+    \includegraphics[width=110mm]{figures/efficiencyEM_yd.png}
+    \source{IMF staff estimates.}
+    \desc{Additional output gains (percent deviation from steady state) from gradually closing gaps in spending efficiency by 2040 and 2050, as indicated on the horizontal axis, and from different initial efficiency levels, as described in the legend.}
+\end{figure}
+
+\subsection{Human capital, R\&D, and technology diffusion}
+
+In advanced economies, the innovation channel is active: public R\&D spending raises the stock of created technologies (Eq.~\ref{eq:Z}), which is then adopted with a lag (Eq.~\ref{eq:A}).
+Figure~\ref{fig:humanCapital} shows output gains from increasing public investment in human capital, public R\&D spending, and a 50/50 mix of both, financed by cutting public consumption.
+Figure~\ref{fig:diffusion} shows how the gains from the 50/50 mix depend on the speed of technology diffusion, governed by the adoption probability $\lambda_t$.
+
+\begin{figure}[H]
+    \centering
+    \caption{Advanced Economies: combining human capital and R\&D \label{fig:humanCapital}}
+    \includegraphics[width=110mm]{figures/humanCapital_yd_IRF.png}
+    \source{IMF staff estimates.}
+    \desc{Output gains (percent deviation from steady state) from increasing public investment in human capital, public spending on research and development (R\&D), and a 50/50 mix of both, financed by cutting public consumption.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \caption{Advanced Economies: high versus low levels of technology diffusion, 2050 \label{fig:diffusion}}
+    \includegraphics[width=110mm]{figures/diffusionAE_yd.png}
+    \source{IMF staff estimates.}
+    \desc{Output gains (percent deviation from steady state) from the 50/50 mix in Figure~\ref{fig:humanCapital} for different levels of technology diffusion.}
+\end{figure}
+
+\subsection{Implied multipliers}
+
+The implied cumulative multipliers over 25 years for public investment in human capital and infrastructure are about 1 for AEs and 2.5 for EMDEs.
+These are in the range of the long-run multipliers reported by \citet{Ramey2020}.
+\citet{AfonsoRodrigues2024} also document that the multiplier of public investment is 0.9 for advanced economies and 2.3 for emerging economies.
+The cumulative multiplier for R\&D expenditure is about 1.8, in line with \citet{FieldhouseMertens2023}.
+
+For EMDEs, reorienting resources toward human capital and infrastructure investment can deliver long-term gains, though over different time horizons.
+A combination of the two is a viable option.
+This policy mix results in a more balanced outcome by combining the short-term gains from infrastructure investment with the longer-term gains from human capital investment.
+While this option delivers a slightly lower output gain by 2050 than investing more heavily in human capital alone, it yields higher output in the shorter term.
+
+%========================================================================
+\section{Conclusions} \label{sec:conclusions}
+%========================================================================
+
+This paper has documented a model that quantifies two distinct levers of public spending policy: the allocation of spending across categories and the efficiency with which spending is converted into productive capital.
+By embedding expenditure-side fiscal policy and human capital formation in an endogenous growth framework, the model captures the different horizons over which infrastructure, human capital, and innovation pay off.
+The simulations show that reallocating spending toward investment, and closing efficiency gaps, can raise output materially over the long run.
+The gains are larger for emerging market and developing economies, which start further from the efficiency frontier and feature a higher marginal product of public capital.
+The framework can be used to assess the long-run output consequences of country-specific spending reforms, and applications to individual economies are a natural next step.
+
+%========================================================================
+\bibliographystyle{ecta}
+\bibliography{references}
+%========================================================================
+
+\end{document}
