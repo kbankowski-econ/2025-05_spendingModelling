@@ -150,79 +150,146 @@ A similar adjustment applies to public R\&D spending, reflecting inefficiencies 
 
 The remainder of the paper is organized as follows.
 Section~\ref{sec:model} sets out the model.
-Section~\ref{sec:parameterization} describes the parameterization for the representative advanced economy and emerging market and developing economy.
-Section~\ref{sec:properties} presents the model's properties through a set of policy experiments.
+Section~\ref{sec:calibration} describes the calibration for the representative advanced economy and emerging market and developing economy.
+Section~\ref{sec:results} presents results from a set of policy experiments.
 Section~\ref{sec:conclusions} concludes.
+Appendix~\ref{app:equilibrium} collects the full set of equilibrium conditions.
 
 %========================================================================
 \section{The model} \label{sec:model}
 %========================================================================
 
-\subsection{Overall setup}
-
 The model is based on a New Keynesian framework, extended to explicitly incorporate human capital accumulation and endogenous growth through technology adoption.
 The economy is populated by a representative household, a government, and a multi-tiered production sector.
-
-The representative household makes optimal decisions regarding consumption, labor supply, private physical investment, and savings in government bonds.
-Departing from the standard framework, the household also invests in human capital through time spent on education and health.
-
+The household chooses consumption, labor supply, private investment, holdings of government debt, and---departing from the standard framework---time devoted to human capital accumulation.
 The government comprises a fiscal authority and a central bank.
-The fiscal authority's role includes expenditures on public infrastructure, public human capital, and public R\&D, in addition to standard government consumption, lump-sum transfers, and taxes levied on consumption and income.
-The central bank sets the nominal interest rate according to a Taylor rule.
+The fiscal authority spends on public infrastructure, public human capital, and public R\&D, in addition to government consumption and lump-sum transfers, and levies taxes on consumption and labor income.
+The central bank sets the policy rate according to a Taylor rule.
+The production structure follows \citet{CominGertler2006} and \citet{Anzoateguietal2019}, with final-good firms that set prices à la Calvo, intermediate-good firms operating Cobb--Douglas technologies, and technology adopters that convert created but unadopted technologies into usable ones.
+The economy grows along a balanced-growth path driven by technology; the trend level is denoted $\Lambda_t$ and grows at the gross rate $g_t$.
+The remainder of this section presents the model by agent. The complete set of stationarized equilibrium conditions is collected in Appendix~\ref{app:equilibrium}.
 
-The production structure follows \citet{CominGertler2006} and \citet{Anzoateguietal2019}, comprising three tiers.
+\subsection{Households}
 
-\begin{compactitem}
-    \item \emph{Final goods.} A monopolistically competitive sector produces differentiated goods and sets nominal prices according to a Calvo-style staggered pricing mechanism.
-    \item \emph{Intermediate goods.} This sector consists of a continuum of firms, each operating Cobb--Douglas production functions using effective labor (defined as the product of private human capital and hours worked) and private capital, with public infrastructure capital entering as a positive externality.
-    \item \emph{Technology adopters.} A competitive set of ``adopters'' converts unadopted technologies $Z_t - A_t$ for use in production. The probability of successful adoption in a given period depends positively on the adopter's level of adoption expenditure, measured in units of the final consumption goods composite. Adoption success is modeled as a probabilistic process: if unsuccessful, the adopter may attempt conversion again in subsequent periods. Once a technology is successfully adopted, the adopter sells the rights to use the technology to intermediate-goods producers.
-\end{compactitem}
-
-\subsection{Key equations}
-
-\paragraph{Production.} The aggregate production function in the economy is given by:
-\begin{equation} \label{eq:production}
-    Y_t = A_t^{\vartheta-1} K_t^{\alpha} \left(H_t L_t\right)^{1-\alpha} \left(K_t^{GI}\right)^{\alpha_G},
+The representative household maximizes expected lifetime utility,
+\begin{equation} \label{eq:utility}
+    \mathbb{E}_0 \sum_{t=0}^{\infty} \beta^t \left[\ln C_t - \omega \frac{\left(L_t + E_t\right)^{1+\varphi}}{1+\varphi}\right],
 \end{equation}
-where $Y_t$ denotes output, $A_t$ is the stock of adopted technologies, $K_t$ is the private capital stock, $H_t L_t$ is effective labor---the product of private human capital $H_t$ and hours worked $L_t$---and $K_t^{GI}$ is the stock of public infrastructure capital.
-The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{As shown in \citet{Anzoateguietal2019}, $\vartheta$ reflects the intermediate-goods elasticity of substitution.}
+where $C_t$ is consumption, $\beta \in (0,1)$ is the discount factor, $\varphi$ is the inverse Frisch elasticity, and $\omega$ scales the disutility of time spent away from leisure.
+The household's unit time endowment is split between labor supply $L_t$, time devoted to human capital accumulation $E_t$, and leisure $1 - L_t - E_t$.
+The flow budget constraint, in real terms, is
+\begin{equation} \label{eq:hhbudget}
+    \left(1+\tau_t^{c}\right) C_t + I_t + D_t = \left(1-\tau_t^{w}\right) w_t N_t + r_t^{k} K_{t-1} + \frac{R_{t-1}}{\Pi_t} D_{t-1} + T_t + \Omega_t,
+\end{equation}
+where $\tau_t^{c}$ and $\tau_t^{w}$ are the consumption and labor income tax rates, $I_t$ is private investment, $D_t$ is real holdings of government debt paying the gross return $R_{t-1}$, $\Pi_t$ is gross inflation, $w_t$ is the real wage, $N_t \equiv H_t L_t$ is effective labor, $r_t^{k}$ is the rental rate of private capital $K_t$, $T_t$ are lump-sum transfers, and $\Omega_t$ are profits rebated by firms and technology adopters.
 
-\paragraph{Private human capital accumulation.} Households divide their unit time endowment among time spent on human capital accumulation ($E_t$), labor supply ($L_t$), and leisure ($1 - E_t - L_t$).
-The evolution of private human capital $H_t$ is described by the following law of motion:
+Let $\xi_t$ denote the marginal utility of consumption. Optimal choices over consumption, debt, and private capital imply
+\begin{align}
+    \xi_t &= \frac{1}{\left(1+\tau_t^{c}\right) C_t}, \label{eq:mu}\\
+    \xi_t &= \beta\, \mathbb{E}_t\!\left[\xi_{t+1}\frac{R_t}{\Pi_{t+1}}\right], \label{eq:euler}\\
+    \xi_t &= \beta\, \mathbb{E}_t\!\left[\xi_{t+1}\left(r_{t+1}^{k} + 1 - \delta\right)\right], \qquad K_t = (1-\delta) K_{t-1} + I_t, \label{eq:capital}
+\end{align}
+where $\delta$ is the depreciation rate of private capital.
+
+The novel block concerns human capital. Private human capital $H_t$ evolves according to
 \begin{equation} \label{eq:humancapital}
-    H_{t+1} = \left(1 - \delta^{h}\right) H_t + \lambda \left(E_t\right)^{\gamma} \left(\frac{K_t^{GE}}{\Lambda_t}\right)^{\mu},
+    H_{t+1} = \left(1 - \delta^{h}\right) H_t + \chi \left(E_t\right)^{\gamma} \left(\frac{K_t^{GE}}{\Lambda_t}\right)^{\mu},
 \end{equation}
-where $\delta^{h}$ is the depreciation rate of human capital, $E_t$ denotes the time spent by the household on human capital development, and $K_t^{GE}$ represents the stock of public human capital (e.g., schools and hospitals).
-The term $\Lambda_t$ is a scaling factor ensuring consistency with balanced growth.
-The cost of time spent working and on human capital development is a reduction in leisure, which lowers utility.
+where $\delta^{h}$ is the depreciation rate of human capital, $\chi$ is a scale parameter, $K_t^{GE}$ is the stock of public human capital (e.g., schools and hospitals), and $\Lambda_t$ scales public human capital to keep the relationship consistent with balanced growth.
+The elasticities $\gamma$ and $\mu$ govern the response of human capital formation to the household's time input and to the public human capital stock, respectively.
+Letting $\xi_t^{H}$ be the shadow value of human capital, the choices of labor and education time satisfy
+\begin{align}
+    \omega \left(L_t + E_t\right)^{\varphi} &= \xi_t \left(1-\tau_t^{w}\right) w_t H_t, \label{eq:labor}\\
+    \omega \left(L_t + E_t\right)^{\varphi} &= \xi_t^{H}\, \chi \gamma \left(E_t\right)^{\gamma-1} \left(\frac{K_t^{GE}}{\Lambda_t}\right)^{\mu}, \label{eq:edutime}\\
+    \xi_t^{H} &= \beta\, \mathbb{E}_t\!\left[\xi_{t+1}\left(1-\tau_{t+1}^{w}\right) w_{t+1} L_{t+1} + \xi_{t+1}^{H}\left(1-\delta^{h}\right)\right]. \label{eq:hcvalue}
+\end{align}
+Equation~\eqref{eq:labor} is the standard labor-supply condition; equation~\eqref{eq:edutime} equates the marginal disutility of time to the value of the human capital it builds; and equation~\eqref{eq:hcvalue} prices human capital by its discounted contribution to future labor income.
 
-\paragraph{Public capital accumulation and efficiency.} The accumulation of public infrastructure capital $K_t^{GI}$ and public human capital $K_t^{GE}$, adjusted for the corresponding inefficiencies $e^{GI}$ and $e^{GE}$, is expressed as follows:
+\subsection{Production}
+
+\paragraph{Final goods.} A competitive final good $Y_t^{d}$ is a CES aggregate of a continuum of intermediate varieties with elasticity of substitution $\epsilon$. Cost minimization yields the demand for variety $i$, $y_t(i) = \left(P_t(i)/P_t\right)^{-\epsilon} Y_t^{d}$, and the price index $P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}$.
+
+\paragraph{Intermediate goods.} A continuum of monopolistically competitive firms produces the varieties. Output of a firm is given by the aggregate production function
+\begin{equation} \label{eq:production}
+    Y_t = A_t^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha} \left(K_{t-1}^{GI}\right)^{\alpha_G} - \Theta,
+\end{equation}
+where $A_t$ is the stock of adopted technologies, $K_{t-1}$ is private capital, $N_t = H_t L_t$ is effective labor, $K_{t-1}^{GI}$ is the stock of public infrastructure capital entering as a positive externality, and $\Theta$ is a fixed cost.
+The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{As shown in \citet{Anzoateguietal2019}, $\vartheta$ reflects the intermediate-goods elasticity of substitution.}
+Cost minimization implies a common real marginal cost $mc_t$ and the factor-demand conditions
+\begin{equation} \label{eq:factordemand}
+    r_t^{k} = \alpha\, mc_t \frac{Y_t}{K_{t-1}}, \qquad w_t = (1-\alpha)\, mc_t \frac{Y_t}{N_t}, \qquad \frac{K_{t-1}}{N_t} = \frac{\alpha}{1-\alpha}\frac{w_t}{r_t^{k}}.
+\end{equation}
+
+\paragraph{Price setting.} Each period a fraction $1-\theta_p$ of firms reoptimizes, while the remainder index their price to past inflation with elasticity $\chi_p$. The reset price $\Pi_t^{*}$ solves the recursive system
+\begin{align}
+    g_{1,t} &= \xi_t\, mc_t\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{-\epsilon} g_{1,t+1}\right], \label{eq:g1}\\
+    g_{2,t} &= \xi_t\, \Pi_t^{*}\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon} \frac{\Pi_t^{*}}{\Pi_{t+1}^{*}} g_{2,t+1}\right], \qquad \epsilon\, g_{1,t} = (\epsilon-1)\, g_{2,t}, \label{eq:g2}
+\end{align}
+together with the aggregate price law of motion $1 = \theta_p\left(\Pi_{t-1}^{\chi_p}/\Pi_t\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}$.
+
+\subsection{Technology creation and adoption}
+
+Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model distinguishes between the stock of created technologies $Z_t$, available for adoption, and the stock of adopted technologies $A_t$ that enters production. The gap $Z_t - A_t$ is the stock of unadopted technologies.
+
+The creation of new technologies depends on two factors.
+First, higher human capital fosters innovation, reflecting a learning-by-doing channel as in \citet{ChangGomesSchorfheide2002}.
+Second, public R\&D spending $G_t^{RD}$ contributes directly to creation:
+\begin{equation} \label{eq:Z}
+    \log\!\left(\frac{Z_t}{Z^{SS}}\right) = \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right) + \left(1 - \rho_A\right)\left(\alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) + \alpha_{RD} \log\!\left(\frac{G_t^{RD}}{G^{RD,SS}}\right)\right),
+\end{equation}
+where public R\&D enters in efficiency-adjusted form, as discussed below.
+To capture the lag between creation and adoption, the stock of adopted technologies evolves as
+\begin{equation} \label{eq:A}
+    A_{t+1} = \lambda_t\, \phi \left[Z_t - A_t\right] + \phi A_t,
+\end{equation}
+where $\phi$ is the survival rate of technologies and the time-varying probability of adoption is $\lambda_t = \lambda_0 \left(S_t/\Lambda_t\right)^{\varsigma}$, increasing in adopters' real expenditure $S_t$ scaled by the trend $\Lambda_t$.
+Competitive adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, equating the marginal cost of adoption effort to its discounted marginal value.
+The associated value functions and the optimality condition for $S_t$, together with the stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, \xi_{t+1}/\xi_t$ used to value these flows, are reported in Appendix~\ref{app:equilibrium}.
+
+\subsection{Government and monetary policy}
+
+\paragraph{Public capital and efficiency.} The fiscal authority builds public infrastructure capital $K_t^{GI}$ and public human capital $K_t^{GE}$ through investment flows $I_t^{GI}$ and $I_t^{GE}$, adjusted for technical inefficiencies $e^{GI}$ and $e^{GE}$:
 \begin{align}
     K_t^{GI} &= \left(1 - \delta^{GI}\right) K_{t-1}^{GI} + \left(1 - e^{GI}\right) I_t^{GI}, \label{eq:kgi} \\
     K_t^{GE} &= \left(1 - \delta^{GE}\right) K_{t-1}^{GE} + \left(1 - e^{GE}\right) I_t^{GE}. \label{eq:kge}
 \end{align}
-The inefficiency parameters $e^{GI}$ and $e^{GE}$ capture the concept of technical efficiency---that is, only a fraction $1 - e^{x}$ of each unit spent contributes to the respective capital stock.\footnote{Another dimension of efficiency relates to the allocation of resources toward higher-return investment projects, referred to as allocative efficiency. Section~\ref{sec:properties} also considers an extended scenario that incorporates both technical and allocative efficiency improvements.}
+Only a fraction $1 - e^{x}$ of each unit spent is converted into productive capital. An analogous wedge $e^{GRD}$ applies to public R\&D, so that effective R\&D in equation~\eqref{eq:Z} is $\left(1 - e^{GRD}\right) G_t^{RD}$.\footnote{A second dimension of efficiency relates to allocating resources toward higher-return projects, referred to as allocative efficiency. Section~\ref{sec:results} also considers an extended scenario that incorporates both technical and allocative efficiency improvements.}
 
-\paragraph{Technological development.} The model distinguishes between the stock of available technologies $Z_t$ and the stock of adopted technologies $A_t$.
-The evolution of $Z_t$ depends on two main factors.
-First, higher levels of human capital are assumed to foster technological innovation---that is, an increase in skilled labor leads to more ideas and innovations, reflecting a learning-by-doing channel as discussed in \citet{ChangGomesSchorfheide2002}.
-Second, public R\&D spending $\left(G_t^{RD}\right)$ contributes directly to the creation of new technologies:
-\begin{equation} \label{eq:Z}
-    \log\!\left(\frac{Z_t}{Z^{SS}}\right) = \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right) + \left(1 - \rho_A\right)\left(\alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) + \alpha_{RD} \log\!\left(\frac{G_t^{RD}}{G^{RD,SS}}\right)\right).
+\paragraph{Budget and instruments.} Let $D_t$ denote real public debt and $d_t = D_t/Y_t$ the debt-to-GDP ratio. The government budget constraint is
+\begin{equation} \label{eq:govbudget}
+    D_t = \frac{R_{t-1}}{\Pi_t} D_{t-1} + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + T_t - \tau_t^{w} w_t N_t - \tau_t^{c} C_t,
 \end{equation}
-To capture the lags between creation and adoption, the evolution of adopted technologies $A_t$ is modeled as:
-\begin{equation} \label{eq:A}
-    A_{t+1} = \lambda_t \phi \left[Z_t - A_t\right] + \phi A_t,
+where $G_t^{C}$ is government consumption. The four expenditure instruments---$G_t^{C}$, $I_t^{GI}$, $I_t^{GE}$, and $G_t^{RD}$---can be moved independently. In the policy experiments of Section~\ref{sec:results}, an increase in one growth-enhancing category is financed by an equal cut in government consumption, keeping the reform budget-neutral on impact. The tax rates and transfers adjust gradually to stabilize debt, responding to the deviation of the debt-to-GDP ratio from its target $d^{*}$.
+
+\paragraph{Monetary policy and sovereign borrowing cost.} The central bank sets the policy rate $R_t^{mp}$ according to a Taylor rule,
+\begin{equation} \label{eq:taylor}
+    \frac{R_t^{mp}}{R^{mp}} = \left(\frac{R_{t-1}^{mp}}{R^{mp}}\right)^{\rho_R}\left[\left(\frac{\Pi_t}{\Pi}\right)^{\gamma_\pi}\left(\frac{Y_t^{d}}{Y^{d}}\right)^{\gamma_y}\right]^{1-\rho_R} e^{\varepsilon_t^{mp}}.
 \end{equation}
-where the time-varying probability of adoption is given by $\lambda_t = \lambda_0 \left(\frac{S_t}{\Lambda_t}\right)^{\varsigma}$ and depends positively on adopters' expenditure $S_t$, scaled by the balanced-growth trend $\Lambda_t$.
-Adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, taking into account the associated cost.
+The government borrowing rate $R_t$ tracks the policy rate plus a sovereign spread that rises with debt,
+\begin{equation} \label{eq:spread}
+    \log R_t = \rho_{RG} R_{t-1} + \left(1-\rho_{RG}\right)\left[\log R_t^{mp} + \Delta_t\left(d_{t-1} - d^{*}\right)\right] + \varepsilon_t^{spr},
+\end{equation}
+where $\Delta_t$ is the product of a debt-dependent default probability and the associated loss, with the default probability a logistic function of the debt ratio.
+
+\subsection{Market clearing and equilibrium}
+
+Goods-market clearing equates aggregate demand to its uses,
+\begin{equation} \label{eq:resource}
+    Y_t^{d} = C_t + I_t + I_t^{GI} + G_t^{C} + I_t^{GE} + G_t^{RD} + \mathcal{R}_t,
+\end{equation}
+where $\mathcal{R}_t$ collects the resources devoted to technology creation and adoption. Gross output exceeds value added by the price-dispersion wedge $v_t^{p}$ generated by staggered pricing, $Y_t = v_t^{p} Y_t^{d}$. A competitive equilibrium is a sequence of quantities and prices such that households and firms optimize, the government budget constraint and policy rules hold, and the goods, labor, capital, and bond markets clear, given the paths of the policy instruments and exogenous processes.
+
+\subsection{Balanced growth and solution}
+
+The economy follows a balanced-growth path along which real quantities grow at the gross trend rate $g_t$, driven by the trend $\Lambda_t$ in technology. All trending variables are stationarized by $\Lambda_t$ prior to solution; this is the role of the scaling terms in equations~\eqref{eq:humancapital} and~\eqref{eq:A}. The model is implemented in Dynare and solved as a deterministic, perfect-foresight system. The policy experiments in Section~\ref{sec:results} are permanent reforms introduced in 2025, with responses traced out to 2050 around the balanced-growth steady state.
 
 %========================================================================
-\section{Model parameterization} \label{sec:parameterization}
+\section{Calibration} \label{sec:calibration}
 %========================================================================
 
-The model is parameterized for a representative advanced economy (AE) and a representative emerging market and developing economy (EMDE), separately.
-Key structural parameters are summarized in Table~\ref{tab:parameters} and described below.
+The model is calibrated for a representative advanced economy (AE) and a representative emerging market and developing economy (EMDE), separately, at a quarterly frequency.
+Conventional parameters governing preferences, pricing, and policy take standard values from the literature.
+The parameters specific to the public-spending and growth channels, which are central to the experiments, are summarized in Table~\ref{tab:parameters} and described below; the steady-state fiscal ratios that follow are set to match observed spending shares and effective tax rates for each country group.
 
 \begin{compactitem}
     \item \emph{Elasticity of output with respect to infrastructure ($\alpha_G$).} It is set at 0.05 for AEs, following \citet{TraumYang2015}, and 0.17 for EMDEs, based on \citet{BornLigthart2014} and \citet{Buffieetal2012}. The higher value for EMDEs reflects the larger contribution of public infrastructure investment to output in these economies.
@@ -269,7 +336,7 @@ In addition, the steady states of fiscal variables are set as follows.
 \end{compactitem}
 
 %========================================================================
-\section{Model properties} \label{sec:properties}
+\section{Results} \label{sec:results}
 %========================================================================
 
 This section illustrates the model's properties through a set of policy experiments.
@@ -370,5 +437,97 @@ The framework can be used to assess the long-run output consequences of country-
 \bibliographystyle{ecta}
 \bibliography{references}
 %========================================================================
+
+\clearpage
+\appendix
+
+%========================================================================
+\section{Equilibrium conditions} \label{app:equilibrium}
+%========================================================================
+
+This appendix collects the equilibrium conditions not stated in the main text. The system is solved in stationarized form: trending variables are scaled by $\Lambda_t$, and $g$ denotes the gross trend growth rate along the balanced-growth path. The complete model is implemented in the accompanying Dynare files.
+
+\subsection{Technology adoption}
+
+Competitive adopters value an adopted technology at $\mathcal{V}_t$ and an unadopted one at $\mathcal{J}_t$, discount with the household stochastic discount factor $\mathit{SDF}_{t+1}$, and choose adoption expenditure $S_t$. The optimality conditions are
+\begin{align}
+    \mathit{SDF}_{t+1} &= \beta\, \frac{C_t}{C_{t+1}}, \label{eq:sdf}\\
+    \lambda_t &= \lambda_0\, \left(S_t\right)^{\varsigma}, \label{eq:probadopt}\\
+    g\, A_{t+1} &= \lambda_t\, \phi\left(Z_t - A_t\right) + \phi A_t, \label{eq:Astat}\\
+    \mathcal{V}_t &= \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \mathcal{V}_{t+1}\, \frac{A_{t}}{A_{t+1}}\, \frac{1}{g}\right], \label{eq:VA}\\
+    \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t}}{A_{t+1}}\, \frac{1}{g}\left(\lambda_t\, \mathcal{V}_{t+1} + \left(1-\lambda_t\right)\mathcal{J}_{t+1}\right)\right], \label{eq:JZ}\\
+    S_t &= \varsigma\, \lambda_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{1}{g}\, \frac{A_{t}}{A_{t+1}}\left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right], \label{eq:SAfoc}\end{align}
+where $\mu^{p}$ is the steady-state gross markup of intermediate-goods producers. Equation~\eqref{eq:Astat} is the stationarized counterpart of equation~\eqref{eq:A}.
+
+\subsection{Fiscal rules}
+
+The expenditure instruments follow
+\begin{align}
+    I_t^{GI} &= I^{GI} + Y^{d}\,\varepsilon_t^{gi}, \qquad
+    I_t^{GE} = I^{GE} + Y^{d}\,\varepsilon_t^{ge}, \\
+    G_t^{RD} - G^{RD} &= \rho_{RD}\left(G_{t-1}^{RD} - G^{RD}\right) + Y^{d}\,\varepsilon_t^{rd}, \\
+    G_t^{C} - G^{C} &= -\left(I_t^{GI} - I^{GI} + I_t^{GE} - I^{GE} + G_t^{RD} - G^{RD}\right) + Y^{d}\,\varepsilon_t^{c},
+\end{align}
+where unstarred steady-state values carry no time index and $Y^{d}$ is steady-state demand. The last line implements the budget-neutral financing rule: any rise in investment or R\&D is offset one-for-one by government consumption, unless the consumption shock $\varepsilon_t^{c}$ is itself activated. Taxes and transfers stabilize debt,
+\begin{align}
+    \tau_t^{c} - \tau^{c} &= \rho_{\tau c}\left(\tau_{t-1}^{c} - \tau^{c}\right) + \left(1-\rho_{\tau c}\right)\gamma_{d}^{\tau c}\left(d_{t-1} - d^{*}\right) + \varepsilon_t^{\tau c}, \\
+    \tau_t^{w} - \tau^{w} &= \rho_{\tau w}\left(\tau_{t-1}^{w} - \tau^{w}\right) + \left(1-\rho_{\tau w}\right)\gamma_{d}^{\tau w}\left(d_{t-1} - d^{*}\right) + \varepsilon_t^{\tau w}, \\
+    T_t - T &= \rho_{T}\left(T_{t-1} - T\right) - \left(1-\rho_{T}\right)\gamma_{d}^{T}\left(d_{t-1} - d^{*}\right) Y^{d},
+\end{align}
+with $d_t = D_t / Y_t$ the debt-to-GDP ratio and $d^{*}$ its target.
+
+\subsection{Monetary policy and sovereign spread}
+
+The policy rate follows the Taylor rule~\eqref{eq:taylor}. The government borrowing rate and the debt-dependent spread are
+\begin{align}
+    \log R_t &= \rho_{RG} R_{t-1} + \left(1-\rho_{RG}\right)\left[\log R_t^{mp} + \Delta_t\left(d_{t-1} - d^{*}\right)\right] + \varepsilon_t^{spr}, \\
+    \Delta_t &= p_t^{def}\, \Delta^{cost}, \qquad
+    p_t^{def} = \frac{\exp\!\left(\eta_1 + \eta_2\, d_{t-1}\right)}{1 + \exp\!\left(\eta_1 + \eta_2\, d_{t-1}\right)},
+\end{align}
+where $p_t^{def}$ is the default probability and $\Delta^{cost}$ the associated unit loss.
+
+\subsection{Market clearing and pricing}
+
+Aggregate demand, the gross-output wedge, and the price-dispersion term satisfy
+\begin{align}
+    Y_t^{d} &= C_t + I_t + I_t^{GI} + G_t^{C} + I_t^{GE} + G_t^{RD} + S_t + \left(\frac{Z_{t-1}}{A_{t-1}} - 1\right) S_t, \\
+    Y_t &= v_t^{p}\, Y_t^{d}, \qquad
+    v_t^{p} = \theta_p\left(\frac{\Pi_{t-1}^{\chi_p}}{\Pi_t}\right)^{-\epsilon} v_{t-1}^{p} + \left(1-\theta_p\right)\left(\Pi_t^{*}\right)^{-\epsilon},
+\end{align}
+where the technology terms collect the resources $\mathcal{R}_t$ used in creation and adoption.
+
+\subsection{Notation}
+
+Table~\ref{tab:notation} summarizes the main endogenous variables.
+
+\begin{table}[H]
+    \centering
+    \caption{Main endogenous variables \label{tab:notation}}
+    \footnotesize
+    \begin{tabular}{ll@{\qquad}ll}
+        \toprule
+        Symbol & Description & Symbol & Description \\
+        \midrule
+        $C_t$        & Consumption                  & $A_t$          & Adopted technologies \\
+        $L_t$        & Labor supply                 & $Z_t$          & Created technologies \\
+        $E_t$        & Time in human capital        & $S_t$          & Adoption expenditure \\
+        $N_t$        & Effective labor $H_t L_t$    & $\lambda_t$    & Adoption probability \\
+        $H_t$        & Private human capital        & $\mathcal{V}_t$& Value of adopted tech. \\
+        $I_t$        & Private investment           & $\mathcal{J}_t$& Value of unadopted tech. \\
+        $K_t$        & Private capital              & $G_t^{C}$      & Government consumption \\
+        $w_t$        & Real wage                    & $I_t^{GI}$     & Public infrastructure inv. \\
+        $r_t^{k}$    & Rental rate of capital       & $I_t^{GE}$     & Public human capital inv. \\
+        $\xi_t$      & Marginal utility             & $G_t^{RD}$     & Public R\&D spending \\
+        $\xi_t^{H}$  & Shadow value of $H_t$        & $K_t^{GI}$     & Public infrastructure capital \\
+        $Y_t^{d}$    & Aggregate demand             & $K_t^{GE}$     & Public human capital \\
+        $Y_t$        & Gross output                 & $D_t$          & Public debt \\
+        $mc_t$       & Real marginal cost           & $d_t$          & Debt-to-GDP ratio \\
+        $\Pi_t$      & Gross inflation              & $T_t$          & Lump-sum transfers \\
+        $\Pi_t^{*}$  & Reset inflation              & $\tau_t^{c},\tau_t^{w}$ & Consumption, labor tax \\
+        $v_t^{p}$    & Price dispersion             & $R_t^{mp}$     & Policy rate \\
+        $\Lambda_t$  & Balanced-growth trend        & $R_t$          & Government borrowing rate \\
+        \bottomrule
+    \end{tabular}
+\end{table}
 
 \end{document}
