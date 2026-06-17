@@ -51,6 +51,10 @@ OUTPUT_STEM = "efficiencyBandsJAM"
 # Reference year highlighted as the intended calibration period.
 REF_YEAR = 2023
 
+# Open the interactive HTML in the browser after generating (overrides the
+# shared fiscal_config auto_open_html flag, for this chart only).
+AUTO_OPEN = True
+
 
 def rgba(hexcol, alpha):
     h = hexcol.lstrip("#")
@@ -188,7 +192,7 @@ def main():
     png_path = figures_dir / f"{OUTPUT_STEM}.png"
     html_path = figures_dir / f"{OUTPUT_STEM}.html"
     fig.write_image(str(png_path), width=1000, height=340, scale=2)
-    fig.write_html(str(html_path), auto_open=config["output_settings"].get("auto_open_html", False))
+    fig.write_html(str(html_path), auto_open=AUTO_OPEN)
     print(f"  Saved {png_path.name} and {html_path.name}")
 
     csv_path = figures_dir / f"{OUTPUT_STEM}.csv"
