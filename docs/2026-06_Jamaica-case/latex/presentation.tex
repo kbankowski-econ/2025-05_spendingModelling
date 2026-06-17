@@ -69,6 +69,45 @@
     \titlepage
 \end{frame}
 
+% --- Slide: region-specific structural (non-efficiency) parameters ---
+\begin{frame}{Model Calibration: Region-Specific Parameters}
+    \vspace{-0.4em}
+    \begin{center}
+    \footnotesize
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabular}{l c c c}
+        \toprule
+        Parameter & Advanced & EMDEs & Jamaica \\
+        \midrule
+        \multicolumn{4}{l}{\textit{Production and growth}} \\
+        \quad Output elasticity of public capital ($\zeta$) & 0.054 & 0.20 & 0.20 \\
+        \quad Trend growth (annual) & 1.6\% & 3.0\% & 3.0\% \\
+        \addlinespace[0.1em]
+        \multicolumn{4}{l}{\textit{Fiscal}} \\
+        \quad Consumption tax rate & 18\% & 15\% & 15\% \\
+        \quad Labour-income tax rate & 25\% & 10\% & 10\% \\
+        \quad Public debt (\% of GDP) & 100 & 60 & 60 \\
+        \addlinespace[0.1em]
+        \multicolumn{4}{l}{\textit{Public spending (\% of GDP)}} \\
+        \quad Investment & 3.0 & 5.0 & 5.0 \\
+        \quad Consumption & 18.0 & 14.0 & 14.0 \\
+        \quad Human capital & 1.45 & 2.0 & 2.0 \\
+        \quad R\&D & 0.6 & 0.1 & 0.1 \\
+        \addlinespace[0.1em]
+        \multicolumn{4}{l}{\textit{Human capital}} \\
+        \quad HC-formation elasticity ($\alpha_H$) & 0.10 & 0.25 & 0.25 \\
+        \quad HC-to-TFP feedback ($\alpha_{HA}$) & 0.05 & 0 & 0 \\
+        \bottomrule
+    \end{tabular}
+    \end{center}
+
+    \vspace{0.3em}
+    {\fontsize{6pt}{7.5pt}\selectfont
+        Sources: model calibration (AE\_parameters.macro, EM\_parameters.macro). \\
+        Notes: Region-specific structural parameters. Jamaica uses the EMDE parameter set, so its column repeats the EMDE values; the two differ only in the spending-efficiency gaps (calibrated separately, next slides). R\&D is largely switched off for EMDEs. \\
+    }
+\end{frame}
+
 % --- Slide: spending-efficiency gaps, Jamaica versus emerging markets ---
 \begin{frame}{Spending Efficiency Gaps: Jamaica versus Emerging Markets}
     \vspace{0.3em}
