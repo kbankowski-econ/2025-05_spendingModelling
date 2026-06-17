@@ -5,9 +5,9 @@ education (3x1 panel).
 
 For each sector the shaded band is the 25th-75th percentile of the eff_gap
 across all emerging-market (EM) economies in each year, with the EM median as
-the centre line; the blue line is Jamaica, and its latest available estimate
-(the value entering the model calibration) is marked. This is the "bands +
-country" companion to scoreEvolution.py in the efficiency project.
+the centre line; the blue line is Jamaica. Circles mark the 2023 values (the
+reference year intended for the calibration) on the EM median and on Jamaica;
+only Jamaica's value is labelled. Companion to scoreEvolution.py.
 
 Data: IMF staff efficiency estimates (2025-04-14),
 [SECTOR]_inefficiency-scores.csv, eff_gap column.
@@ -38,6 +38,9 @@ Y_RANGE = [0.0, 0.7]
 Y_TICKS = [0.0, 0.2, 0.4, 0.6]
 
 OUTPUT_STEM = "efficiencyBandsJAM"
+
+# Reference year highlighted as the intended calibration period.
+REF_YEAR = 2023
 
 
 def sector_frames(sector):
@@ -117,18 +120,28 @@ def main():
             showlegend=first_panel,
         ), row=1, col=col)
 
-        # Mark Jamaica's latest available estimate (the calibration input)
-        if not jam.empty:
-            last = jam.iloc[-1]
+        # Circle the 2023 value on the EM median (grey, unlabelled).
+        bref = band[band["year"] == REF_YEAR]
+        if not bref.empty:
             fig.add_trace(go.Scatter(
-                x=[last["year"]], y=[last["eff_gap"]],
+                x=[REF_YEAR], y=[float(bref["p50"].iloc[0])],
+                mode="markers",
+                marker=dict(color=band_color, size=8),
+                showlegend=False, hoverinfo="skip",
+            ), row=1, col=col)
+
+        # Circle the 2023 value on Jamaica (blue, labelled).
+        jref = jam[jam["year"] == REF_YEAR]
+        if not jref.empty:
+            v = float(jref["eff_gap"].iloc[0])
+            fig.add_trace(go.Scatter(
+                x=[REF_YEAR], y=[v],
                 mode="markers+text",
-                marker=dict(color=jam_color, size=9),
-                text=[f"{last['eff_gap']:.2f}"],
+                marker=dict(color=jam_color, size=8),
+                text=[f"{v:.2f}"],
                 textposition="top center",
                 textfont=dict(size=12, color=jam_color),
-                showlegend=False,
-                hoverinfo="skip",
+                showlegend=False, hoverinfo="skip",
             ), row=1, col=col)
 
         # collect tidy CSV
