@@ -28,7 +28,10 @@ YEARS = [2026, 2030, 2040, 2050]
 # Convention: first label as full yyyy, the rest as two-digit yy.
 YEAR_LABELS = [str(YEARS[0])] + [f"{y % 100:02d}" for y in YEARS[1:]]
 
-INPUT_CSV = "../../csvFiles/figureNumbers_yearly.csv"
+# Frozen Fiscal Monitor (Oct 2025) snapshot — this published figure must NOT
+# change when the model is re-calibrated, so it reads a pinned data copy rather
+# than the live ../../csvFiles/figureNumbers_yearly.csv.
+INPUT_CSV = "../csvFiles/figureNumbers_yearly_fm2025.csv"
 OUTPUT_STEM = "reallocationEM_yd"
 WATERMARK = "Fiscal Monitor, October 2025"
 

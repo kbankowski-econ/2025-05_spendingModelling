@@ -58,7 +58,10 @@ BAR_NAME = "Closing the gap in the baseline"
 MARKER_NAME = "Efficiency improvement from a higher initial gap"
 
 TARGET_YEAR = 2050
-INPUT_CSV = "../../csvFiles/figureNumbers_yearly.csv"
+# Frozen Fiscal Monitor (Oct 2025) snapshot — this published figure must NOT
+# change when the model is re-calibrated, so it reads a pinned data copy rather
+# than the live ../../csvFiles/figureNumbers_yearly.csv.
+INPUT_CSV = "../csvFiles/figureNumbers_yearly_fm2025.csv"
 OUTPUT_STEM = "efficiencyEM_yd"
 WATERMARK = "Fiscal Monitor, October 2025"
 
