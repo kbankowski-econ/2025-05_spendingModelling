@@ -364,7 +364,7 @@
 {"statementName": "param_init", "name": "alphaSRD", "value": "0"}, 
 {"statementName": "param_init", "name": "rhoSADOPT", "value": "0.1"}, 
 {"statementName": "param_init", "name": "eff", "value": "0.8641"}, 
-{"statementName": "param_init", "name": "effge", "value": "0.6335"}, 
+{"statementName": "param_init", "name": "effge", "value": "0.643"}, 
 {"statementName": "param_init", "name": "gammaa", "value": "ZZss^((1-alppha)/(varthetaat-1))-1"}, 
 {"statementName": "steady"}, 
 {"statementName": "check"}, 

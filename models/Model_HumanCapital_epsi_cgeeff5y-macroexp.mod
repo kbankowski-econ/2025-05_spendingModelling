@@ -218,9 +218,9 @@ eff_cgrd=1-0.41;                     % efficiency of public R&D spending        
 alphaRD=0.09*(1-rho_ZZRD);           % effect of R&D on TFP                          | EM: 0
 alphaSRD=0.1;                        % R&D elasticity                                | EM: 0
 rhoSADOPT=0.8;                       % adoption elasticity                           | EM: 0.1
-% AE efficiency gaps
-eff=1-0.35;
-effge=1-0.295;
+% AE efficiency gaps (2023 medians)
+eff=1-0.351;
+effge=1-0.306;
 % gammaa uses the set-specific ZZss, so it must come after it
 gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
 model;
@@ -418,27 +418,27 @@ values
 var epsi_effge;
 periods 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21:1000 ;
 values
-    0.01475
-    0.0295
-    0.04425
-    0.059
-    0.07375
-    0.0885
-    0.10325
-    0.118
-    0.13275
-    0.1475
-    0.16225
-    0.177
-    0.19175
-    0.2065
-    0.22125
-    0.236
-    0.25075
-    0.2655
-    0.28025
-    0.295
-    0.295
+    0.0153
+    0.0306
+    0.0459
+    0.0612
+    0.0765
+    0.0918
+    0.1071
+    0.1224
+    0.1377
+    0.153
+    0.1683
+    0.1836
+    0.1989
+    0.2142
+    0.2295
+    0.2448
+    0.2601
+    0.2754
+    0.2907
+    0.306
+    0.306
 ;
 end;
 perfect_foresight_setup(periods=2000);

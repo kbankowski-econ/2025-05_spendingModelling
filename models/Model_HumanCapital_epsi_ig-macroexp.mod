@@ -218,9 +218,9 @@ eff_cgrd=1-0.41;                     % efficiency of public R&D spending        
 alphaRD=0.09*(1-rho_ZZRD);           % effect of R&D on TFP                          | EM: 0
 alphaSRD=0.1;                        % R&D elasticity                                | EM: 0
 rhoSADOPT=0.8;                       % adoption elasticity                           | EM: 0.1
-% AE efficiency gaps
-eff=1-0.35;
-effge=1-0.295;
+% AE efficiency gaps (2023 medians)
+eff=1-0.351;
+effge=1-0.306;
 % gammaa uses the set-specific ZZss, so it must come after it
 gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
 model;
