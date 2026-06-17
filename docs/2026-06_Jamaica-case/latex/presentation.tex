@@ -19,6 +19,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
 \usepackage{booktabs}
+\usepackage{colortbl}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -134,11 +135,11 @@
         \toprule
         Efficiency gap ($1-$ efficiency) & Advanced & EMDEs & Jamaica \\
         \midrule
-        Infrastructure & 0.350 & 0.415 & 0.136 \\
+        Infrastructure & 0.350 & \cellcolor{gray!20}$(0.37+0.46)/2 = 0.415$ & \cellcolor{gray!20}0.136 \\
         \addlinespace[0.4em]
-        \quad Health    & 0.280 & 0.295 & 0.362 \\
-        \quad Education  & 0.310 & 0.345 & 0.371 \\
-        \textbf{Human capital} (average) & \textbf{0.295} & \textbf{0.320} & \textbf{0.366} \\
+        \quad {\small Health}   & {\small 0.280} & {\small $(0.30+0.29)/2 = 0.295$} & {\small 0.362} \\
+        \quad {\small Education} & {\small 0.310} & {\small $(0.34+0.35)/2 = 0.345$} & {\small 0.371} \\
+        Human capital (average) & 0.295 & \cellcolor{gray!20}0.320 & \cellcolor{gray!20}0.366 \\
         \bottomrule
     \end{tabular}
     \end{center}
@@ -146,7 +147,7 @@
     \vspace{1.2em}
     {\fontsize{6pt}{7.5pt}\selectfont
         Sources: IMF staff efficiency estimates. \\
-        Notes: Spending-efficiency gaps (one minus the efficiency score) entering the model calibration. The human-capital gap is the simple average of the health and education gaps. EMDE figures are themselves averages across emerging-market and low-income economies (e.g.\ infrastructure $0.415 = (0.37+0.46)/2$). Jamaica uses its latest available estimates: infrastructure and health from 2023, education from 2024. \\
+        Notes: Spending-efficiency gaps (one minus the efficiency score) entering the model calibration. Each EMDE cell is the average of the emerging-market and low-income group values (the two numbers shown), which match the group medians in the previous chart. The human-capital gap is the average of health and education. Jamaica uses its latest available estimates: infrastructure and health from 2023, education from 2024. \\
     }
 \end{frame}
 
