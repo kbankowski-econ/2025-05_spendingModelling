@@ -30,6 +30,7 @@ YEAR_LABELS = [str(YEARS[0])] + [f"{y % 100:02d}" for y in YEARS[1:]]
 
 INPUT_CSV = "../../csvFiles/figureNumbers_yearly.csv"
 OUTPUT_STEM = "reallocationEM_yd"
+WATERMARK = "Fiscal Monitor, October 2025"
 
 
 def load_data():
@@ -101,6 +102,13 @@ def main():
         ticks=axes["ticks"],
         tickfont=dict(size=axes["tickfont_size"]),
         title=None,
+    )
+
+    # Source watermark (faint diagonal overlay).
+    fig.add_annotation(
+        text=WATERMARK, xref="paper", yref="paper", x=0.5, y=0.45,
+        showarrow=False, textangle=-20,
+        font=dict(size=40, color="#9E9E9E"), opacity=0.25,
     )
 
     figures_dir = output_dir / "figures"

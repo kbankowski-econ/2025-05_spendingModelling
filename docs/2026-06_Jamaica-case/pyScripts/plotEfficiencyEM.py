@@ -60,6 +60,7 @@ MARKER_NAME = "Efficiency improvement from a higher initial gap"
 TARGET_YEAR = 2050
 INPUT_CSV = "../../csvFiles/figureNumbers_yearly.csv"
 OUTPUT_STEM = "efficiencyEM_yd"
+WATERMARK = "Fiscal Monitor, October 2025"
 
 
 def load_data():
@@ -206,6 +207,14 @@ def main():
             title=None,
             row=1, col=col,
         )
+
+    # Source watermark (faint diagonal overlay), added after the subplot-title
+    # loop so it is not resized/moved with the titles.
+    fig.add_annotation(
+        text=WATERMARK, xref="paper", yref="paper", x=0.5, y=0.38,
+        showarrow=False, textangle=-20,
+        font=dict(size=40, color="#9E9E9E"), opacity=0.25,
+    )
 
     figures_dir = output_dir / "figures"
     figures_dir.mkdir(parents=True, exist_ok=True)
