@@ -16,6 +16,8 @@ __pycache__/
 *.toc
 *.fdb_latexmk
 *.fls
+*.nav
+*.snm
 *.synctex.gz
 *.bbl
 *.blg
