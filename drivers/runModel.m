@@ -146,7 +146,7 @@ modelList = {
     'JAM_Model_HumanCapital_epsiig',            'EM', 'JAM',    {{'epsi_ig',      'const', 0.01,  '1:1000'}}
     'JAM_Model_HumanCapital_epsicge',           'EM', 'JAM',    {{'epsi_cge',     'const', 0.01,  '1:1000'}}
     'JAM_Model_HumanCapital_epsiigeff30y',      'EM', 'JAM',    {{'epsi_ig',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.415, '1:60'}}
+                                                                 {'epsi_eff',     'ramp',  0.1359, '1:60'}}
     'JAM_Model_HumanCapital_epsicgeeff30y',     'EM', 'JAM',    {{'epsi_cge',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.3665, '1:60'}}
     };
