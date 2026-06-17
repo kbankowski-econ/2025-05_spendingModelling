@@ -67,6 +67,7 @@ def main():
     df = df[(df["year"] >= FIRST_YEAR) & (df["year"] <= LAST_YEAR)].sort_values("year")
 
     fig = go.Figure()
+    last = df[df["year"] == LAST_YEAR].iloc[0]
     for label, scenario_col, base_col, color, dash in SERIES:
         fig.add_trace(
             go.Scatter(
@@ -76,6 +77,18 @@ def main():
                 mode="lines",
                 line=dict(color=color, width=chart_cfg["line_widths"]["standard"], dash=dash),
                 showlegend=False,
+            )
+        )
+        # Mark the 2050 value (the same point shown as a bar in Figure 3).
+        v = last[scenario_col] - last[base_col]
+        fig.add_trace(
+            go.Scatter(
+                x=[LAST_YEAR], y=[v],
+                mode="markers+text",
+                marker=dict(color=color, size=7),
+                text=[f"{v:.1f}"], textposition="middle right",
+                textfont=dict(size=chart_cfg["legend"]["font_size"], color=color),
+                showlegend=False, hoverinfo="skip", cliponaxis=False,
             )
         )
 
@@ -112,6 +125,7 @@ def main():
 
     axes = chart_cfg["axes"]
     fig.update_xaxes(
+        range=[FIRST_YEAR, LAST_YEAR + 2],
         showgrid=False,
         linecolor=axes["linecolor"],
         linewidth=axes["linewidth"],

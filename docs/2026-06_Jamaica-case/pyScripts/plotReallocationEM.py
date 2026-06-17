@@ -50,12 +50,17 @@ def main():
 
     fig = go.Figure()
     for col, label, color in SERIES:
+        yvals = df.set_index("year").loc[YEARS, col].values
         fig.add_trace(
             go.Bar(
                 x=YEAR_LABELS,
-                y=df.set_index("year").loc[YEARS, col].values,
+                y=yvals,
                 name=label,
                 marker_color=color,
+                text=[f"{v:.1f}" for v in yvals],
+                textposition="outside",
+                textfont=dict(size=chart_cfg["legend"]["font_size"]),
+                cliponaxis=False,
             )
         )
 

@@ -100,6 +100,10 @@ def main():
                 y=values,
                 marker_color=color,
                 showlegend=False,
+                text=[f"{v:.1f}" for v in values],
+                textposition="inside",
+                insidetextanchor="end",
+                textfont=dict(size=chart_cfg["legend"]["font_size"], color="white"),
             ),
             row=1, col=col_idx,
         )

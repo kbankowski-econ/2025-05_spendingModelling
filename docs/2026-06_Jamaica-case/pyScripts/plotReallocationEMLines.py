@@ -25,6 +25,9 @@ SERIES = [
 
 FIRST_YEAR = 2025
 LAST_YEAR = 2050
+# Horizons shown as bars in Figure 1 (plotReallocationEM.py), marked here with
+# value labels to make the bar/line correspondence explicit.
+MARK_YEARS = [2026, 2030, 2040, 2050]
 # Convention: first label as full yyyy, the rest as two-digit yy.
 TICK_YEARS = [2030, 2035, 2040, 2045, 2050]
 TICK_LABELS = [str(TICK_YEARS[0])] + [f"{y % 100:02d}" for y in TICK_YEARS[1:]]
@@ -49,7 +52,8 @@ def main():
     df = df[(df["year"] >= FIRST_YEAR) & (df["year"] <= LAST_YEAR)].sort_values("year")
 
     fig = go.Figure()
-    for col, label, color in SERIES:
+    mk = df[df["year"].isin(MARK_YEARS)]
+    for i, (col, label, color) in enumerate(SERIES):
         fig.add_trace(
             go.Scatter(
                 x=df["year"],
@@ -57,6 +61,18 @@ def main():
                 name=label,
                 mode="lines",
                 line=dict(color=color, width=chart_cfg["line_widths"]["standard"]),
+            )
+        )
+        # Markers + value labels at the Figure 1 horizons (same points).
+        fig.add_trace(
+            go.Scatter(
+                x=mk["year"], y=mk[col],
+                mode="markers+text",
+                marker=dict(color=color, size=7),
+                text=[f"{v:.1f}" for v in mk[col]],
+                textposition="bottom center" if i == 0 else "top center",
+                textfont=dict(size=chart_cfg["legend"]["font_size"], color=color),
+                showlegend=False, hoverinfo="skip", cliponaxis=False,
             )
         )
 
