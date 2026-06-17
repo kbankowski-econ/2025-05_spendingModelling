@@ -117,6 +117,7 @@ def main():
         title=None,
     )
     fig.update_yaxes(
+        range=[-1, 14],  # fixed range shared with combinedEM so the slide's two panels align
         showgrid=axes["showgrid"],
         gridcolor=axes["gridcolor"],
         gridwidth=axes["gridwidth"],
