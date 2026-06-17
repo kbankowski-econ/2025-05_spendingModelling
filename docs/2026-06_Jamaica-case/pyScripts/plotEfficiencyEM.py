@@ -100,13 +100,16 @@ def main():
                 y=values,
                 marker_color=color,
                 showlegend=False,
-                text=[f"{v:.1f}" for v in values],
-                textposition="inside",
-                insidetextanchor="end",
-                textfont=dict(size=chart_cfg["legend"]["font_size"], color="white"),
             ),
             row=1, col=col_idx,
         )
+        # Value labels on a light-yellow background, just inside the bar top.
+        for lbl, v in zip(labels, values):
+            fig.add_annotation(
+                x=lbl, y=v, text=f"{v:.1f}", showarrow=False, yshift=-14,
+                font=dict(size=chart_cfg["legend"]["font_size"], color=color),
+                bgcolor="#FFF9C4", borderpad=2, row=1, col=col_idx,
+            )
         fig.add_trace(
             go.Scatter(
                 x=labels,
@@ -181,9 +184,11 @@ def main():
 
     # Subplot titles use the regular tick font size; nudge them up to open
     # a little more breathing room between the title and the subplot.
+    title_texts = {sp["title"] for sp in SUBPLOTS}
     for annotation in fig["layout"]["annotations"]:
-        annotation["font"] = dict(size=chart_cfg["axes"]["tickfont_size"])
-        annotation["y"] = annotation["y"] + 0.11
+        if annotation.text in title_texts:
+            annotation["font"] = dict(size=chart_cfg["axes"]["tickfont_size"])
+            annotation["y"] = annotation["y"] + 0.11
 
     axes = chart_cfg["axes"]
     for col in (1, 2):

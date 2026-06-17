@@ -63,18 +63,23 @@ def main():
                 line=dict(color=color, width=chart_cfg["line_widths"]["standard"]),
             )
         )
-        # Markers + value labels at the Figure 1 horizons (same points).
+        # Markers at the Figure 1 horizons (same points), with value labels on
+        # a light-yellow background.
         fig.add_trace(
             go.Scatter(
                 x=mk["year"], y=mk[col],
-                mode="markers+text",
+                mode="markers",
                 marker=dict(color=color, size=7),
-                text=[f"{v:.1f}" for v in mk[col]],
-                textposition="bottom center" if i == 0 else "top center",
-                textfont=dict(size=chart_cfg["legend"]["font_size"], color=color),
-                showlegend=False, hoverinfo="skip", cliponaxis=False,
+                showlegend=False, hoverinfo="skip",
             )
         )
+        ysh = -14 if i == 0 else 14
+        for yr, v in zip(mk["year"], mk[col]):
+            fig.add_annotation(
+                x=yr, y=v, text=f"{v:.1f}", showarrow=False, yshift=ysh,
+                font=dict(size=chart_cfg["legend"]["font_size"], color=color),
+                bgcolor="#FFF9C4", borderpad=2,
+            )
 
     margins = dict(chart_cfg["margins"])
     margins["t"] = 60

@@ -79,17 +79,21 @@ def main():
                 showlegend=False,
             )
         )
-        # Mark the 2050 value (the same point shown as a bar in Figure 3).
+        # Mark the 2050 value (same point shown as a bar in Figure 3), with a
+        # value label on a light-yellow background.
         v = last[scenario_col] - last[base_col]
         fig.add_trace(
             go.Scatter(
                 x=[LAST_YEAR], y=[v],
-                mode="markers+text",
+                mode="markers",
                 marker=dict(color=color, size=7),
-                text=[f"{v:.1f}"], textposition="middle right",
-                textfont=dict(size=chart_cfg["legend"]["font_size"], color=color),
-                showlegend=False, hoverinfo="skip", cliponaxis=False,
+                showlegend=False, hoverinfo="skip",
             )
+        )
+        fig.add_annotation(
+            x=LAST_YEAR, y=v, text=f"{v:.1f}", showarrow=False, xshift=16,
+            font=dict(size=chart_cfg["legend"]["font_size"], color=color),
+            bgcolor="#FFF9C4", borderpad=2,
         )
 
     legend_color = chart_cfg["colors"].get("neutral", "#757575")

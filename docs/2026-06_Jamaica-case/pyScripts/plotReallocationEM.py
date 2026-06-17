@@ -49,7 +49,8 @@ def main():
     df = df[df["year"].isin(YEARS)].sort_values("year")
 
     fig = go.Figure()
-    for col, label, color in SERIES:
+    label_font = chart_cfg["legend"]["font_size"]
+    for s, (col, label, color) in enumerate(SERIES):
         yvals = df.set_index("year").loc[YEARS, col].values
         fig.add_trace(
             go.Bar(
@@ -57,12 +58,17 @@ def main():
                 y=yvals,
                 name=label,
                 marker_color=color,
-                text=[f"{v:.1f}" for v in yvals],
-                textposition="outside",
-                textfont=dict(size=chart_cfg["legend"]["font_size"]),
-                cliponaxis=False,
             )
         )
+        # Value labels on a light-yellow background. Grouped bars sit at the
+        # category index, offset by +/-0.2 for the two series.
+        xoff = -0.2 if s == 0 else 0.2
+        for i, v in enumerate(yvals):
+            fig.add_annotation(
+                x=i + xoff, y=v, text=f"{v:.1f}", showarrow=False, yshift=10,
+                font=dict(size=label_font, color=color),
+                bgcolor="#FFF9C4", borderpad=2,
+            )
 
     margins = dict(chart_cfg["margins"])
     margins["t"] = 60
