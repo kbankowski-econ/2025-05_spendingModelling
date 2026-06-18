@@ -258,9 +258,9 @@ The creation of new technologies depends on two factors.
 First, higher human capital fosters innovation, reflecting a learning-by-doing channel as in \citet{ChangGomesSchorfheide2002}.
 Second, public R\&D spending $G_t^{RD}$ contributes directly to creation:
 \begin{equation} \label{eq:Z}
-    \log\!\left(\frac{Z_t}{Z^{SS}}\right) = \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right) + \left(1 - \rho_A\right)\left(\alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) + \alpha_{RD} \log\!\left(\frac{G_t^{RD}}{G^{RD,SS}}\right)\right),
+    \log\!\left(\frac{Z_t}{Z^{SS}}\right) = \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right) + \left(1 - \rho_A\right)\left(\alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) + \alpha_{RD} \log\!\left(\frac{\left(1-e_t^{GRD}\right) G_t^{RD}}{\left(1-e^{GRD}\right) G^{RD,SS}}\right)\right),
 \end{equation}
-where public R\&D enters in efficiency-adjusted form, as discussed below.
+where only the productive fraction $\left(1-e_t^{GRD}\right)$ of R\&D spending drives innovation: $e_t^{GRD}$ is the R\&D inefficiency wedge, equal to its steady-state value $e^{GRD}$ in the baseline and reduced when the R\&D efficiency gap is closed (Section~\ref{sec:results}). The raw spending $G_t^{RD}$ enters the government budget constraint~\eqref{eq:govbudget}.
 To capture the lag between creation and adoption, the stock of adopted technologies evolves as
 \begin{equation} \label{eq:A}
     A_{t+1} = \lambda_t\, \phi \left[Z_t - A_t\right] + \phi A_t,
@@ -393,8 +393,8 @@ The gains are larger for EMDEs, consistent with the higher output elasticity of 
 
 \subsection{Closing spending efficiency gaps}
 
-Figures~\ref{fig:efficiencyAE} and~\ref{fig:efficiencyEM} show the additional output gains from gradually closing the efficiency gaps $e^{GI}$ and $e^{GE}$.
-As the gaps close, a larger share of each unit of public investment is converted into productive capital (Eqs.~\ref{eq:kgi} and~\ref{eq:kge}).
+Figures~\ref{fig:efficiencyAE} and~\ref{fig:efficiencyEM} show the additional output gains from gradually closing the efficiency gaps $e^{GI}$, $e^{GE}$, and $e^{GRD}$ in infrastructure, human-capital, and R\&D spending, respectively.
+As the gaps close, a larger share of each unit of public spending becomes productive---raising effective public investment in equations~\eqref{eq:kgi} and~\eqref{eq:kge} and effective R\&D in equation~\eqref{eq:Z}.
 The gains depend on both the speed at which gaps are closed and the initial level of efficiency: economies starting further from the efficiency frontier have more to gain.
 
 \begin{figure}[H]
