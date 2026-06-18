@@ -12,10 +12,12 @@ endogenous simulation oo_.endo_simul (column 1 = pre-shock steady state), and
 applies the postSimul.mod formula
 
     fiscalchange = (Ig-Igss) + (Cge-Cgess) + (Cgrd-Cgrdss)
-    multiplier_Ny = sum(yd(2:N*4) - yd(1)) / sum(fiscalchange(2:N*4))
+    multiplier_Ny = sum(yd(2:N*4+1) - yd(1)) / sum(fiscalchange(2:N*4+1))
 
-i.e. the cumulative output gain over the cumulative fiscal injection from
-period 2 through the N-year horizon (quarters). The experiments are the pure
+i.e. the cumulative output gain over the cumulative fiscal injection. Period 1
+(endo_simul column 1) is the pre-shock steady state and is excluded; the shock
+is active from period 2, so an N-year horizon spans the 4N quarters in indices
+2:(N*4+1). The experiments are the pure
 1%-of-GDP permanent spending shocks: infrastructure (epsi_ig) and human-capital
 (epsi_cge) spending, for the advanced, EMDE and Jamaica calibrations.
 
@@ -61,7 +63,7 @@ def multipliers(model):
           + (sim[idx["Cgrd"]] - ss[idx["Cgrd"]]))
     out = {}
     for h in HORIZONS:
-        ped = h * 4                                    # yd(2:ped) / fc(2:ped)
+        ped = h * 4 + 1                                # MATLAB yd(2:ped); period 1 = SS, excluded
         out[h] = float(np.sum(yd[1:ped] - yd[0]) / np.sum(fc[1:ped]))
     return out
 
