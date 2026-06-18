@@ -218,8 +218,8 @@ eff_cgrd=0.8;                        % efficiency of public R&D spending        
 alphaRD=0;                           % effect of R&D on TFP                          | AE: 0.09*(1-rho_ZZRD)
 alphaSRD=0;                          % R&D elasticity                                | AE: 0.1
 rhoSADOPT=0.1;                       % adoption elasticity                           | AE: 0.8
-% EMDE efficiency gaps (2023; average of emerging-market and low-income medians)
-eff=1-0.399;
+% EMDE efficiency gaps (2023; average of emerging-market and low-income medians; INF re-estimated 2026-06)
+eff=1-0.406;
 effge=1-0.329;
 % gammaa uses the set-specific ZZss, so it must come after it
 gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
@@ -418,39 +418,42 @@ values
 var epsi_eff;
 periods 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21:1000 ;
 values
-    0.01995
-    0.0399
-    0.05985
-    0.0798
-    0.09975
-    0.1197
-    0.13965
-    0.1596
-    0.17955
-    0.1995
-    0.21945
-    0.2394
-    0.25935
-    0.2793
-    0.29925
-    0.3192
-    0.33915
-    0.3591
-    0.37905
-    0.399
-    0.399
+    0.0203
+    0.0406
+    0.0609
+    0.0812
+    0.1015
+    0.1218
+    0.1421
+    0.1624
+    0.1827
+    0.203
+    0.2233
+    0.2436
+    0.2639
+    0.2842
+    0.3045
+    0.3248
+    0.3451
+    0.3654
+    0.3857
+    0.406
+    0.406
 ;
 end;
 perfect_foresight_setup(periods=2000);
 perfect_foresight_solver(maxit=20);
 fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;
-ped=1*4;
+% Period 1 is the pre-shock steady state (the baseline, subtracted as yd(1));
+% the shock is active from period 2 on. An N-year horizon is the 4N quarters in
+% indices 2:(N*4+1), so ped=N*4+1 (the slice 2:ped is inclusive of both ends).
+ped=1*4+1;
 multiplier_1y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=5*4;
+ped=5*4+1;
 multiplier_5y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=10*4;
+ped=10*4+1;
 multiplier_10y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=20*4;
+ped=20*4+1;
 multiplier_20y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=25*4;
+ped=25*4+1;
 multiplier_25y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))

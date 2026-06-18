@@ -218,8 +218,8 @@ eff_cgrd=0.8;                        % efficiency of public R&D spending        
 alphaRD=0;                           % effect of R&D on TFP                          | AE: 0.09*(1-rho_ZZRD)
 alphaSRD=0;                          % R&D elasticity                                | AE: 0.1
 rhoSADOPT=0.1;                       % adoption elasticity                           | AE: 0.8
-% EMDE efficiency gaps (2023; average of emerging-market and low-income medians)
-eff=1-0.399;
+% EMDE efficiency gaps (2023; average of emerging-market and low-income medians; INF re-estimated 2026-06)
+eff=1-0.406;
 effge=1-0.329;
 % gammaa uses the set-specific ZZss, so it must come after it
 gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
@@ -418,79 +418,82 @@ values
 var epsi_eff;
 periods 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61:1000 ;
 values
-    0.00665
-    0.0133
-    0.01995
-    0.0266
-    0.03325
-    0.0399
-    0.04655
-    0.0532
-    0.05985
-    0.0665
-    0.07315
-    0.0798
-    0.08645
-    0.0931
-    0.09975
-    0.1064
-    0.11305
-    0.1197
-    0.12635
-    0.133
-    0.13965
-    0.1463
-    0.15295
-    0.1596
-    0.16625
-    0.1729
-    0.17955
-    0.1862
-    0.19285
-    0.1995
-    0.20615
-    0.2128
-    0.21945
-    0.2261
-    0.23275
-    0.2394
-    0.24605
-    0.2527
-    0.25935
-    0.266
-    0.27265
-    0.2793
-    0.28595
-    0.2926
-    0.29925
-    0.3059
-    0.31255
-    0.3192
-    0.32585
-    0.3325
-    0.33915
-    0.3458
-    0.35245
-    0.3591
-    0.36575
-    0.3724
-    0.37905
+    0.00676667
+    0.0135333
+    0.0203
+    0.0270667
+    0.0338333
+    0.0406
+    0.0473667
+    0.0541333
+    0.0609
+    0.0676667
+    0.0744333
+    0.0812
+    0.0879667
+    0.0947333
+    0.1015
+    0.108267
+    0.115033
+    0.1218
+    0.128567
+    0.135333
+    0.1421
+    0.148867
+    0.155633
+    0.1624
+    0.169167
+    0.175933
+    0.1827
+    0.189467
+    0.196233
+    0.203
+    0.209767
+    0.216533
+    0.2233
+    0.230067
+    0.236833
+    0.2436
+    0.250367
+    0.257133
+    0.2639
+    0.270667
+    0.277433
+    0.2842
+    0.290967
+    0.297733
+    0.3045
+    0.311267
+    0.318033
+    0.3248
+    0.331567
+    0.338333
+    0.3451
+    0.351867
+    0.358633
+    0.3654
+    0.372167
+    0.378933
     0.3857
-    0.39235
-    0.399
-    0.399
+    0.392467
+    0.399233
+    0.406
+    0.406
 ;
 end;
 perfect_foresight_setup(periods=2000);
 perfect_foresight_solver(maxit=20);
 fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;
-ped=1*4;
+% Period 1 is the pre-shock steady state (the baseline, subtracted as yd(1));
+% the shock is active from period 2 on. An N-year horizon is the 4N quarters in
+% indices 2:(N*4+1), so ped=N*4+1 (the slice 2:ped is inclusive of both ends).
+ped=1*4+1;
 multiplier_1y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=5*4;
+ped=5*4+1;
 multiplier_5y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=10*4;
+ped=10*4+1;
 multiplier_10y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=20*4;
+ped=20*4+1;
 multiplier_20y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=25*4;
+ped=25*4+1;
 multiplier_25y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))

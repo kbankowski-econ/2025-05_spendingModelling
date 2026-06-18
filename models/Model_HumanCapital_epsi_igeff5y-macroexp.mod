@@ -218,8 +218,8 @@ eff_cgrd=1-0.41;                     % efficiency of public R&D spending        
 alphaRD=0.09*(1-rho_ZZRD);           % effect of R&D on TFP                          | EM: 0
 alphaSRD=0.1;                        % R&D elasticity                                | EM: 0
 rhoSADOPT=0.8;                       % adoption elasticity                           | EM: 0.1
-% AE efficiency gaps (2023 medians)
-eff=1-0.351;
+% AE efficiency gaps (2023 medians; INF re-estimated 2026-06)
+eff=1-0.359;
 effge=1-0.306;
 % gammaa uses the set-specific ZZss, so it must come after it
 gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
@@ -418,39 +418,42 @@ values
 var epsi_eff;
 periods 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21:1000 ;
 values
-    0.01755
-    0.0351
-    0.05265
-    0.0702
-    0.08775
-    0.1053
-    0.12285
-    0.1404
-    0.15795
-    0.1755
-    0.19305
-    0.2106
-    0.22815
-    0.2457
-    0.26325
-    0.2808
-    0.29835
-    0.3159
-    0.33345
-    0.351
-    0.351
+    0.01795
+    0.0359
+    0.05385
+    0.0718
+    0.08975
+    0.1077
+    0.12565
+    0.1436
+    0.16155
+    0.1795
+    0.19745
+    0.2154
+    0.23335
+    0.2513
+    0.26925
+    0.2872
+    0.30515
+    0.3231
+    0.34105
+    0.359
+    0.359
 ;
 end;
 perfect_foresight_setup(periods=2000);
 perfect_foresight_solver(maxit=20);
 fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;
-ped=1*4;
+% Period 1 is the pre-shock steady state (the baseline, subtracted as yd(1));
+% the shock is active from period 2 on. An N-year horizon is the 4N quarters in
+% indices 2:(N*4+1), so ped=N*4+1 (the slice 2:ped is inclusive of both ends).
+ped=1*4+1;
 multiplier_1y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=5*4;
+ped=5*4+1;
 multiplier_5y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=10*4;
+ped=10*4+1;
 multiplier_10y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=20*4;
+ped=20*4+1;
 multiplier_20y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=25*4;
+ped=25*4+1;
 multiplier_25y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
