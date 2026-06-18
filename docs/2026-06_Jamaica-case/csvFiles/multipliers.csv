@@ -1,7 +1,7 @@
 spending,region,model,mult_1y,mult_5y,mult_10y,mult_20y,mult_25y
 Infrastructure investment,Advanced,Model_HumanCapital_epsi_ig,-0.1194,0.1659,0.4599,0.8635,1.0058
 Infrastructure investment,EMDEs,EM_Model_HumanCapital_epsiig,-0.3122,0.5845,1.3476,2.2478,2.5174
-Infrastructure investment,Jamaica,JAM_Model_HumanCapital_epsiig,-0.3122,0.5845,1.3476,2.2478,2.5174
+Infrastructure investment,Jamaica,JAM_Model_HumanCapital_epsiig,-0.5054,0.8191,1.9707,3.3758,3.8121
 Human capital,Advanced,Model_HumanCapital_epsi_cge,0.1657,-0.1447,-0.0457,0.6895,1.1098
 Human capital,EMDEs,EM_Model_HumanCapital_epsicge,0.2488,-0.0590,0.3422,1.8250,2.5136
-Human capital,Jamaica,JAM_Model_HumanCapital_epsicge,0.2488,-0.0590,0.3422,1.8250,2.5136
+Human capital,Jamaica,JAM_Model_HumanCapital_epsicge,0.2381,-0.0895,0.2702,1.6998,2.3860

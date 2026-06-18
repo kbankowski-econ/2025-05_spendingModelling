@@ -143,13 +143,25 @@ modelList = {
     'Model_HumanCapital_epsicgrd_cge_limt',     'AE', 'AE',     {{'epsi_cgrd',    'const', 0.005, '1:1000'}
                                                                  {'epsi_cge',     'const', 0.005, '1:1000'}
                                                                  {'epsirhoadopt', 'ramp',  -0.03, '1:40'}}
-    'JAM_Model_HumanCapital_epsiig',            'EM', 'JAM',    {{'epsi_ig',      'const', 0.01,  '1:1000'}}
-    'JAM_Model_HumanCapital_epsicge',           'EM', 'JAM',    {{'epsi_cge',     'const', 0.01,  '1:1000'}}
-    'JAM_Model_HumanCapital_epsiigeff30y',      'EM', 'JAM',    {{'epsi_ig',      'const', 0.01,  '1:1000'}
+    'JAM_Model_HumanCapital_epsiig',            'JAM', 'JAM',    {{'epsi_ig',      'const', 0.01,  '1:1000'}}
+    'JAM_Model_HumanCapital_epsicge',           'JAM', 'JAM',    {{'epsi_cge',     'const', 0.01,  '1:1000'}}
+    'JAM_Model_HumanCapital_epsiigeff30y',      'JAM', 'JAM',    {{'epsi_ig',      'const', 0.01,  '1:1000'}
                                                                  {'epsi_eff',     'ramp',  0.1359, '1:60'}}
-    'JAM_Model_HumanCapital_epsicgeeff30y',     'EM', 'JAM',    {{'epsi_cge',     'const', 0.01,  '1:1000'}
+    'JAM_Model_HumanCapital_epsicgeeff30y',     'JAM', 'JAM',    {{'epsi_cge',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.357, '1:60'}}
     };
+
+%% optional subset: set the MODEL_FILTER environment variable to a substring
+% and only matching model names are run (e.g. MODEL_FILTER=JAM re-runs just the
+% Jamaica models after a Jamaica-specific recalibration). Read from the process
+% environment so it survives the clear all in the preamble.
+modelFilter = getenv('MODEL_FILTER');
+if ~isempty(modelFilter)
+    keepRows = contains(modelList(:, 1), modelFilter);
+    fprintf('MODEL_FILTER="%s": running %d of %d models.\n', ...
+            modelFilter, nnz(keepRows), numel(keepRows));
+    modelList = modelList(keepRows, :);
+end
 
 %% run all models
 for iModel = 1:size(modelList, 1)

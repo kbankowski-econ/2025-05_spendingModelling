@@ -197,27 +197,31 @@ varthetaat=1.35;
 probadoptss=0.2/4;
 rhoshockchit=1;
 rho_ZZRD=0.79;
-% EM-specific calibration            (definition                                    | AE value)
+% Jamaica-specific calibration. EM base, with trend growth, public debt and the
+% public-investment share replaced by the Bank of Jamaica's small-open-economy
+% DSGE (Brown-Thompson et al. 2025): 1.6% trend growth, 75% debt/GDP, 3% public
+% investment. All other values follow the EM (emerging-market) set.
+%                                    (definition                                    | EM value)
 % production and growth
-zeta=0.2;                            % share of public capital in production         | AE: 0.054
-ZZss=1.0075;                         % steady-state gross quarterly growth           | AE: 1.004
+zeta=0.2;                            % share of public capital in production         | EM: 0.2
+ZZss=1.004;                          % steady-state gross quarterly growth (1.6%/yr) | EM: 1.0075
 % taxes and debt
-taucss=0.15;                         % steady-state consumption tax rate             | AE: 0.18
-tauwss=0.10;                         % steady-state income tax rate                  | AE: 0.25
-byss=0.6*4;                          % steady-state debt to quarterly GDP (annual x4)| AE: 1*4
+taucss=0.15;                         % steady-state consumption tax rate (GCT 15%)   | EM: 0.15
+tauwss=0.10;                         % steady-state income tax rate                  | EM: 0.10
+byss=0.75*4;                         % steady-state debt to quarterly GDP (annual x4)| EM: 0.6*4
 % public spending shares of GDP
-Igy=0.05;                            % public investment                             | AE: 0.03
-Cgy=0.14;                            % public consumption                            | AE: 0.18
-Cgey=0.02;                           % human-capital-related spending                | AE: 0.0145
-Cgrdy=0.001;                         % R&D spending                                  | AE: 0.006
+Igy=0.03;                            % public investment                             | EM: 0.05
+Cgy=0.14;                            % public consumption                            | EM: 0.14
+Cgey=0.02;                           % human-capital-related spending                | EM: 0.02
+Cgrdy=0.001;                         % R&D spending                                  | EM: 0.001
 % human capital
-alphaH=0.25;                         % elasticity of HC formation w.r.t. public HRC  | AE: 0.1
-alphaHA=0;                           % feedback of human capital to TFP              | AE: 0.05
+alphaH=0.25;                         % elasticity of HC formation w.r.t. public HRC  | EM: 0.25
+alphaHA=0;                           % feedback of human capital to TFP              | EM: 0
 % R&D and technology adoption
-eff_cgrd=0.8;                        % efficiency of public R&D spending             | AE: 1-0.41
-alphaRD=0;                           % effect of R&D on TFP                          | AE: 0.09*(1-rho_ZZRD)
-alphaSRD=0;                          % R&D elasticity                                | AE: 0.1
-rhoSADOPT=0.1;                       % adoption elasticity                           | AE: 0.8
+eff_cgrd=0.8;                        % efficiency of public R&D spending             | EM: 0.8
+alphaRD=0;                           % effect of R&D on TFP                          | EM: 0
+alphaSRD=0;                          % R&D elasticity                                | EM: 0
+rhoSADOPT=0.1;                       % adoption elasticity                           | EM: 0.1
 % Jamaica efficiency gaps, sourced from the 2025-04-14 efficiency estimates
 % ([sector]_inefficiency-scores.csv, eff_gap column):
 %   INF 2023: 0.13591462 (Jamaica estimate; was EM average 0.415 when unavailable)
@@ -422,13 +426,16 @@ end;
 perfect_foresight_setup(periods=2000);
 perfect_foresight_solver(maxit=20);
 fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;
-ped=1*4;
+% Period 1 is the pre-shock steady state (the baseline, subtracted as yd(1));
+% the shock is active from period 2 on. An N-year horizon is the 4N quarters in
+% indices 2:(N*4+1), so ped=N*4+1 (the slice 2:ped is inclusive of both ends).
+ped=1*4+1;
 multiplier_1y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=5*4;
+ped=5*4+1;
 multiplier_5y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=10*4;
+ped=10*4+1;
 multiplier_10y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=20*4;
+ped=20*4+1;
 multiplier_20y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))
-ped=25*4;
+ped=25*4+1;
 multiplier_25y=sum((yd(2:ped)-yd(1)))/sum((fiscalchange(2:ped)))

@@ -17,16 +17,18 @@ from fiscal_common import (
 )
 
 
-# (label, scenario column, color, dash)
+# (label, scenario column, color, dash, label_yshift). The two reallocation
+# endpoints nearly coincide under the Jamaica calibration (~5.7 vs ~5.6), so
+# their value labels are nudged apart vertically.
 SERIES = [
     ("Infrastructure: reallocation",
-     "JAM_Model_HumanCapital_epsiig___yd", "#1565C0", "solid"),
+     "JAM_Model_HumanCapital_epsiig___yd", "#1565C0", "solid", 9),
     ("Human capital: reallocation",
-     "JAM_Model_HumanCapital_epsicge___yd", "#6A1B9A", "solid"),
+     "JAM_Model_HumanCapital_epsicge___yd", "#6A1B9A", "solid", -9),
     ("Infrastructure: reallocation and efficiency by 2040",
-     "JAM_Model_HumanCapital_epsiigeff30y___yd", "#1565C0", "dash"),
+     "JAM_Model_HumanCapital_epsiigeff30y___yd", "#1565C0", "dash", 0),
     ("Human capital: reallocation and efficiency by 2040",
-     "JAM_Model_HumanCapital_epsicgeeff30y___yd", "#6A1B9A", "dash"),
+     "JAM_Model_HumanCapital_epsicgeeff30y___yd", "#6A1B9A", "dash", 0),
 ]
 
 # Legend shows the dash styles only (grey); colors follow the deck's
@@ -63,7 +65,7 @@ def main():
 
     fig = go.Figure()
     last = df[df["year"] == LAST_YEAR].iloc[0]
-    for label, col, color, dash in SERIES:
+    for label, col, color, dash, yshift in SERIES:
         fig.add_trace(
             go.Scatter(
                 x=df["year"],
@@ -86,7 +88,7 @@ def main():
             )
         )
         fig.add_annotation(
-            x=LAST_YEAR, y=v, text=f"{v:.1f}", showarrow=False, xshift=16,
+            x=LAST_YEAR, y=v, text=f"{v:.1f}", showarrow=False, xshift=16, yshift=yshift,
             font=dict(size=chart_cfg["legend"]["font_size"], color=color),
             bgcolor="#FFF9C4", borderpad=2,
         )
@@ -158,7 +160,7 @@ def main():
     print(f"  Saved {png_path.name} and {html_path.name}")
 
     csv_data = pd.DataFrame({"year": df["year"].values})
-    for label, col, _, _ in SERIES:
+    for label, col, _, _, _ in SERIES:
         csv_data[label] = df[col].round(3).values
     csv_path = figures_dir / f"{OUTPUT_STEM}.csv"
     csv_data.to_csv(csv_path, index=False)

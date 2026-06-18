@@ -81,15 +81,15 @@
         \midrule
         \multicolumn{4}{l}{\textit{Production and growth}} \\
         \quad Output elasticity of public capital ($\zeta$) & 0.054 & 0.20 & 0.20 \\
-        \quad Trend growth (annual in \%) & 1.6 & 3.0 & 3.0 \\
+        \quad Trend growth (annual in \%) & 1.6 & 3.0 & 1.6 \\
         \addlinespace[0.1em]
         \multicolumn{4}{l}{\textit{Fiscal}} \\
         \quad Consumption tax rate (\%) & 18 & 15 & 15 \\
         \quad Labour-income tax rate (\%) & 25 & 10 & 10 \\
-        \quad Public debt (\% of GDP) & 100 & 60 & 60 \\
+        \quad Public debt (\% of GDP) & 100 & 60 & 75 \\
         \addlinespace[0.1em]
         \multicolumn{4}{l}{\textit{Public spending (\% of GDP)}} \\
-        \quad Investment & 3.0 & 5.0 & 5.0 \\
+        \quad Investment & 3.0 & 5.0 & 3.0 \\
         \quad Consumption & 18.0 & 14.0 & 14.0 \\
         \quad Human capital & 1.45 & 2.0 & 2.0 \\
         \quad R\&D & 0.6 & 0.1 & 0.1 \\
@@ -103,8 +103,8 @@
 
     \vspace{0.3em}
     {\fontsize{6pt}{7.5pt}\selectfont
-        Sources: model calibration (AE\_parameters.macro, EM\_parameters.macro). \\
-        Notes: Region-specific structural parameters. Jamaica uses the EMDE parameter set, so its column repeats the EMDE values; the two differ only in the spending-efficiency gaps (calibrated separately, next slides). R\&D is largely switched off for EMDEs. \\
+        Sources: model calibration (AE\_parameters.macro, EM\_parameters.macro, JAM\_parameters.macro). \\
+        Notes: Region-specific structural parameters. Jamaica largely follows the EMDE set, but takes its trend growth (1.6\%), public debt (75\% of GDP) and public investment (3\% of GDP) from the Bank of Jamaica DSGE (Brown-Thompson et al.\ 2025); the remaining values and the spending-efficiency gaps are calibrated separately (next slides). R\&D is largely switched off for EMDEs. \\
     }
 \end{frame}
 
@@ -201,7 +201,7 @@
         Sources: IMF staff estimates (model simulations). \\
         Notes: Cumulative output multiplier over $N$ years ($4N$ quarters):
         $\; m_N = \sum_{t=1}^{4N}(y_t-y_0)\big/\sum_{t=1}^{4N}\Delta G_t$,
-        where $t$ indexes quarters from the first period the shock is active, $y_0$ is the pre-shock steady state, and $\Delta G_t = (I_{g,t}-I_g^{*}) + (C_{ge,t}-C_{ge}^{*}) + (C_{grd,t}-C_{grd}^{*})$ is the spending increase, for a permanent rise of 1 percent of GDP in the category funded by cutting public consumption. Multipliers build over time as public capital accumulates. EMDEs and Jamaica coincide (shared parameters) until Jamaica's efficiency gaps are added (next slides). \\
+        where $t$ indexes quarters from the first period the shock is active, $y_0$ is the pre-shock steady state, and $\Delta G_t = (I_{g,t}-I_g^{*}) + (C_{ge,t}-C_{ge}^{*}) + (C_{grd,t}-C_{grd}^{*})$ is the spending increase, for a permanent rise of 1 percent of GDP in the category funded by cutting public consumption. Multipliers build over time as public capital accumulates. Jamaica differs from EMDEs through its lower trend growth, higher debt and smaller public-investment share (Bank of Jamaica calibration), which lift its infrastructure multiplier in particular. \\
     }
 \end{frame}
 
@@ -247,7 +247,7 @@
     \vspace{1em}
     {\fontsize{5pt}{6pt}\selectfont
         Sources: IMF staff estimates. \\
-        Notes: Solid lines show output responses to a permanent reallocation of 1 percent of GDP in 2025 towards the expenditure category indicated by the color (blue: infrastructure investment; purple: human capital investment), funded by a cut in public consumption. Dashed lines show the overall effect when, in addition, the corresponding spending-efficiency gap is gradually closed by 2040. The Jamaica panel uses emerging-market parameters with Jamaica's own 2023 spending-efficiency gaps from IMF staff estimates (infrastructure, and human capital as the average of health and education). \\
+        Notes: Solid lines show output responses to a permanent reallocation of 1 percent of GDP in 2025 towards the expenditure category indicated by the color (blue: infrastructure investment; purple: human capital investment), funded by a cut in public consumption. Dashed lines show the overall effect when, in addition, the corresponding spending-efficiency gap is gradually closed by 2040. The Jamaica panel uses the Jamaica calibration (EMDE base with Bank of Jamaica trend growth, debt and public investment) together with Jamaica's own 2023 spending-efficiency gaps from IMF staff estimates (infrastructure, and human capital as the average of health and education). \\
     }
 \end{frame}
 
