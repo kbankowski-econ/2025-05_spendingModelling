@@ -109,9 +109,10 @@ The implied cumulative public-investment multipliers over 25 years are about 1 f
 \begin{center}
 \fcolorbox{linkcol}{white}{\begin{minipage}{0.9\textwidth}
 \small\textbf{TODO (temporary --- remove before circulation)}
-\begin{itemize}\setlength{\itemsep}{0pt}
-  \item Fine-tune the notation: is $\Lambda$ optimal as the rescaling (trend) parameter, and is $g$ optimal as the growth parameter? Ensure no other $g$ appears in the model (note the Calvo pricing auxiliaries $g_{1,t}$, $g_{2,t}$).
-\end{itemize}
+% Open items go here, e.g.:
+% \begin{itemize}\setlength{\itemsep}{0pt}
+%   \item ...
+% \end{itemize}
 \end{minipage}}
 \end{center}
 
@@ -189,8 +190,8 @@ The government comprises a fiscal authority and a central bank.
 The fiscal authority spends on public infrastructure, public human capital, and public R\&D, in addition to government consumption and lump-sum transfers, and levies taxes on consumption and labor income.
 The central bank sets the policy rate according to a Taylor rule.
 
-The economy grows along a balanced-growth path driven by technology; the trend level is denoted $\Lambda_t$ and grows at the gross rate $g_t$.
-The remainder of this section presents the model by agent. The complete set of stationarized equilibrium conditions is collected in Appendix~\ref{app:equilibrium}.
+The economy grows along a balanced-growth path driven by technology; the trend level is denoted $\Lambda_t$ and grows at the constant gross rate $g$.
+The remainder of this section sets out the model's building blocks in turn, starting from households. The complete set of stationarized equilibrium conditions is collected in Appendix~\ref{app:equilibrium}.
 
 \subsection{Households}
 
@@ -228,7 +229,7 @@ Letting $\xi_t^{H}$ be the shadow value of human capital, the choices of labor a
 \end{align}
 Equation~\eqref{eq:labor} is the standard labor-supply condition; equation~\eqref{eq:edutime} equates the marginal disutility of time to the value of the human capital it builds; and equation~\eqref{eq:hcvalue} prices human capital by its discounted contribution to future labor income.
 
-\subsection{Production}
+\subsection{Production and technology}
 
 \paragraph{Final goods.} A competitive final good $Y_t^{d}$ is a CES aggregate of a continuum of intermediate varieties with elasticity of substitution $\epsilon$. Cost minimization yields the demand for variety $i$, $y_t(i) = \left(P_t(i)/P_t\right)^{-\epsilon} Y_t^{d}$, and the price index $P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}$.
 
@@ -245,13 +246,12 @@ Cost minimization implies a common real marginal cost $mc_t$ and the factor-dema
 
 \paragraph{Price setting.} Each period a fraction $1-\theta_p$ of firms reoptimizes, while the remainder index their price to past inflation with elasticity $\chi_p$. The reset price $\Pi_t^{*}$ solves the recursive system
 \begin{align}
-    g_{1,t} &= \xi_t\, mc_t\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{-\epsilon} g_{1,t+1}\right], \label{eq:g1}\\
-    g_{2,t} &= \xi_t\, \Pi_t^{*}\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon} \frac{\Pi_t^{*}}{\Pi_{t+1}^{*}} g_{2,t+1}\right], \qquad \epsilon\, g_{1,t} = (\epsilon-1)\, g_{2,t}, \label{eq:g2}
+    x_{1,t} &= \xi_t\, mc_t\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{-\epsilon} x_{1,t+1}\right], \label{eq:g1}\\
+    x_{2,t} &= \xi_t\, \Pi_t^{*}\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon} \frac{\Pi_t^{*}}{\Pi_{t+1}^{*}} x_{2,t+1}\right], \qquad \epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}, \label{eq:g2}
 \end{align}
 together with the aggregate price law of motion $1 = \theta_p\left(\Pi_{t-1}^{\chi_p}/\Pi_t\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}$.
 
-\subsection{Technology creation and adoption}
-
+\paragraph{Technology creation and adoption.}
 Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model distinguishes between the stock of created technologies $Z_t$, available for adoption, and the stock of adopted technologies $A_t$ that enters production. The gap $Z_t - A_t$ is the stock of unadopted technologies.
 
 The creation of new technologies depends on two factors.
@@ -269,7 +269,7 @@ where $\phi$ is the survival rate of technologies and the time-varying probabili
 Competitive adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, equating the marginal cost of adoption effort to its discounted marginal value.
 The associated value functions and the optimality condition for $S_t$, together with the stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, \xi_{t+1}/\xi_t$ used to value these flows, are reported in Appendix~\ref{app:equilibrium}.
 
-\subsection{Government and monetary policy}
+\subsection{Government: fiscal and monetary policy}
 
 \paragraph{Public capital and efficiency.} The fiscal authority builds public infrastructure capital $K_t^{GI}$ and public human capital $K_t^{GE}$ through investment flows $I_t^{GI}$ and $I_t^{GE}$, adjusted for technical inefficiencies $e^{GI}$ and $e^{GE}$:
 \begin{align}
@@ -304,7 +304,7 @@ where $\mathcal{R}_t$ collects the resources devoted to technology creation and 
 
 \subsection{Balanced growth and solution}
 
-The economy follows a balanced-growth path along which real quantities grow at the gross trend rate $g_t$, driven by the trend $\Lambda_t$ in technology. All trending variables are stationarized by $\Lambda_t$ prior to solution; this is the role of the scaling terms in equations~\eqref{eq:humancapital} and~\eqref{eq:A}. The model is implemented in Dynare and solved as a deterministic, perfect-foresight system. The policy experiments in Section~\ref{sec:results} are permanent reforms introduced in 2025, with responses traced out to 2050 around the balanced-growth steady state.
+The economy follows a balanced-growth path along which real quantities grow at the constant gross trend rate $g$, driven by the trend $\Lambda_t$ in technology. All trending variables are stationarized by $\Lambda_t$ prior to solution; this is the role of the scaling terms in equations~\eqref{eq:humancapital} and~\eqref{eq:A}. The model is implemented in Dynare and solved as a deterministic, perfect-foresight system. The policy experiments in Section~\ref{sec:results} are permanent reforms introduced in 2025, with responses traced out to 2050 around the balanced-growth steady state.
 
 %========================================================================
 \section{Calibration} \label{sec:calibration}
