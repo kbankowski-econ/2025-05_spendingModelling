@@ -17,24 +17,17 @@ single reference-year marker is drawn; the lines simply show what exists.
 
 Data: IMF staff SFA input file (2025-04-14), data/sfa_input_data.csv.
 """
-import sys
 import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from fiscal_common import load_config, load_chart_config, ensure_output_dir
 
-# Raw input/output series feeding the SFA (the Developer copy, kept in sync with
-# the efficiency estimates used elsewhere in the deck).
+# Estimation-ready input/output series feeding the SFA. Jamaica's public-
+# investment input is the desk reconstruction (2003-2024) spliced into
+# FM2025_data_transformed.csv by the efficiency project (commit 47ddb3f4) and
+# re-exported here via saveSfaInputData.py.
 DATA_FILE = "/Users/kk/Developer/2025-05_fmEfficiencyScores/data/sfa_input_data.csv"
-
-# sfa_input_data.csv predates the Jamaica public-investment reconstruction and
-# carries only Jamaica's 1990-92 panel anchors. The infrastructure SFA was
-# actually re-estimated on a desk-reconstructed pubinv_ppp_pc for 2003-2024
-# (efficiency project commit 661828fa); that reconstruction lives only in the
-# do-file and in plotJamaicaPubinvPPP.py, never in the exported CSV. We import
-# the authoritative routine and splice Jamaica's series in below.
-RECON_DIR = "/Users/kk/Developer/2025-05_fmEfficiencyScores/data/2026-06_Jamaica-data-append"
 
 # Infrastructure variables in dashboard order: the input first, then outputs.
 # (column, short panel title with units)
@@ -84,21 +77,6 @@ def rgba(hexcol, alpha):
     return f"rgba({int(h[0:2],16)},{int(h[2:4],16)},{int(h[4:6],16)},{alpha})"
 
 
-def jamaica_pubinv_ma5():
-    """Reconstructed Jamaica pubinv_ppp_pc_ma5 (2003-2024) — the series the
-    infrastructure frontier actually used. Built from the desk fiscal sample via
-    the efficiency project's reconstruct_jamaica(), then 5-year trailing MA to
-    match saveSfaInputData.py (rolling 5, min_periods=1 on a gap-free index)."""
-    sys.path.insert(0, RECON_DIR)
-    import plotJamaicaPubinvPPP as P
-    desk = P.reconstruct_jamaica(P.load_panel())
-    full = (desk[~desk["partial"]].dropna(subset=["pubinv_ppp_pc_desk"])
-            .sort_values("year"))
-    s = full.set_index("year")["pubinv_ppp_pc_desk"]
-    s = s.reindex(range(int(s.index.min()), int(s.index.max()) + 1))
-    return {int(y): v for y, v in s.rolling(5, min_periods=1).mean().items()}
-
-
 def group_band(df, var, code):
     """Per-year 25/50/75 percentiles of `var` for one income group, where the
     group has at least MIN_PEERS countries reporting that year."""
@@ -123,14 +101,6 @@ def main():
     cols = ["iso3c", "year", "income"] + [v for v, _ in VARS]
     df = pd.read_csv(DATA_FILE, usecols=cols)
     df = df[(df["year"] >= FIRST_YEAR) & (df["year"] <= LAST_YEAR)]
-
-    # Splice in the reconstructed Jamaica investment input (overwrites the stale
-    # 1990-92 anchors), so both the band and Jamaica's line reflect what the SFA
-    # actually estimated on.
-    recon = jamaica_pubinv_ma5()
-    jmask = df["iso3c"] == JAM_ISO
-    df.loc[jmask, "pubinv_ppp_pc_ma5"] = df.loc[jmask, "year"].map(recon)
-
     jam_all = df[df["iso3c"] == JAM_ISO]
 
     titles = [t for _, t in VARS] + [""] * (NROWS * NCOLS - len(VARS))
