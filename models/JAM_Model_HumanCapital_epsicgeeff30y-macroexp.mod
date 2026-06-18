@@ -224,9 +224,9 @@ alphaSRD=0;                          % R&D elasticity                           
 rhoSADOPT=0.1;                       % adoption elasticity                           | EM: 0.1
 % Jamaica efficiency gaps, sourced from the 2025-04-14 efficiency estimates
 % ([sector]_inefficiency-scores.csv, eff_gap column):
-%   INF 2023: 0.13591462 (Jamaica estimate; was EM average 0.415 when unavailable)
+%   INF 2023: 0.16814770 (re-estimated on total public investment, col F)
 %   HLT 2023: 0.36166763; EDU 2023: 0.35159856; averaged to 0.357
-eff=1-0.1359;
+eff=1-0.1681;
 effge=1-0.357;
 % gammaa uses the set-specific ZZss, so it must come after it
 gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;

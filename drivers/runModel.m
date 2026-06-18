@@ -23,7 +23,7 @@ cd(fullfile(project_path, 'models'));
 %   EDU:     AE 0.318   EMDE (0.347 + 0.350) / 2 = 0.348
 %   HLT/EDU: AE 0.306   EMDE 0.329   (human capital = average of HLT and EDU)
 %   RND:     AE 0.41    EMDE -       (unchanged; no 2023 estimate)
-%   JAM:     INF 0.1359 (2023);  HC = avg(HLT 0.3617, EDU 0.3516) = 0.357
+%   JAM:     INF 0.1681 (2023, total public investment);  HC = avg(HLT 0.3617, EDU 0.3516) = 0.357
 
 %% model list: {name, params, efficiency, shocks}
 % The params entry names a parameter set ('AE' or 'EM') and the efficiency
@@ -146,7 +146,7 @@ modelList = {
     'JAM_Model_HumanCapital_epsiig',            'JAM', 'JAM',    {{'epsi_ig',      'const', 0.01,  '1:1000'}}
     'JAM_Model_HumanCapital_epsicge',           'JAM', 'JAM',    {{'epsi_cge',     'const', 0.01,  '1:1000'}}
     'JAM_Model_HumanCapital_epsiigeff30y',      'JAM', 'JAM',    {{'epsi_ig',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.1359, '1:60'}}
+                                                                 {'epsi_eff',     'ramp',  0.1681, '1:60'}}
     'JAM_Model_HumanCapital_epsicgeeff30y',     'JAM', 'JAM',    {{'epsi_cge',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.357, '1:60'}}
     };
