@@ -162,30 +162,30 @@ def main():
     fig.update_xaxes(
         range=[FIRST_YEAR, LAST_YEAR + 1], tickvals=TICK_YEARS, ticktext=TICK_LABELS,
         showgrid=False, linecolor=axes["linecolor"], linewidth=1,
-        ticks=axes["ticks"], tickfont=dict(size=9),
+        ticks=axes["ticks"], tickfont=dict(size=12),
     )
     fig.update_yaxes(
         nticks=4, showgrid=True, gridcolor=axes["gridcolor"], gridwidth=axes["gridwidth"],
         linecolor=axes["linecolor"], linewidth=1,
-        ticks=axes["ticks"], tickfont=dict(size=9),
+        ticks=axes["ticks"], tickfont=dict(size=12),
     )
 
     fig.update_layout(
-        template=cfg["template"], width=1100, height=560,
-        margin=dict(l=30, r=12, t=70, b=22), font=dict(size=12),
-        legend=dict(orientation="h", yanchor="bottom", y=1.045,
-                    xanchor="center", x=0.5, font=dict(size=13)),
+        template=cfg["template"], width=1340, height=470,
+        margin=dict(l=30, r=12, t=70, b=22), font=dict(size=13),
+        legend=dict(orientation="h", yanchor="bottom", y=1.05,
+                    xanchor="center", x=0.5, font=dict(size=14)),
     )
-    # Shrink the per-panel titles for the dense grid.
+    # Per-panel (subplot) titles.
     for annot in fig.layout.annotations:
         if annot.text in titles:
-            annot.font.size = 11
+            annot.font.size = 14
 
     figures_dir = output_dir / "figures"
     figures_dir.mkdir(parents=True, exist_ok=True)
     png_path = figures_dir / f"{OUTPUT_STEM}.png"
     html_path = figures_dir / f"{OUTPUT_STEM}.html"
-    fig.write_image(str(png_path), width=1100, height=560, scale=2)
+    fig.write_image(str(png_path), width=1340, height=470, scale=2)
     fig.write_html(str(html_path), auto_open=AUTO_OPEN)
     print(f"  Saved {png_path.name} and {html_path.name}")
 
