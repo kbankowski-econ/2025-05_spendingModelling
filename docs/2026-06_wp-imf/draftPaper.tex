@@ -237,8 +237,8 @@ Equation~\eqref{eq:labor} is the standard labor-supply condition; equation~\eqre
 \begin{equation} \label{eq:production}
     Y_t = A_t^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha} \left(K_{t-1}^{GI}\right)^{\alpha_G} - \Theta,
 \end{equation}
-where $A_t$ is the stock of adopted technologies, $K_{t-1}$ is private capital, $N_t = H_t L_t$ is effective labor, $K_{t-1}^{GI}$ is the stock of public infrastructure capital entering as a positive externality, and $\Theta$ is a fixed cost.
-The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{As shown in \citet{Anzoateguietal2019}, $\vartheta$ reflects the intermediate-goods elasticity of substitution.}
+where $A_t$ is the stock of adopted technologies, $K_{t-1}$ is private capital, $N_t = H_t L_t$ is effective labor, $K_{t-1}^{GI}$ is the stock of public infrastructure capital, which augments private production as a positive externality, and $\Theta$ is a fixed cost.
+The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{In \citet{Anzoateguietal2019} a single intermediate-goods elasticity of substitution sets both the markup and the returns to variety. Here the markup is governed separately by $\epsilon$; $\vartheta$ retains only the latter role, mapping the stock of adopted technologies into TFP through the love-of-variety term $A_t^{\vartheta-1}$.}
 Cost minimization implies a common real marginal cost $mc_t$ and the factor-demand conditions
 \begin{equation} \label{eq:factordemand}
     r_t^{k} = \alpha\, mc_t \frac{Y_t}{K_{t-1}}, \qquad w_t = (1-\alpha)\, mc_t \frac{Y_t}{N_t}, \qquad \frac{K_{t-1}}{N_t} = \frac{\alpha}{1-\alpha}\frac{w_t}{r_t^{k}}.
@@ -268,6 +268,7 @@ To capture the lag between creation and adoption, the stock of adopted technolog
 where $\phi$ is the survival rate of technologies and the time-varying probability of adoption is $\lambda_t = \lambda_0 \left(S_t/\Lambda_t\right)^{\varsigma}$, increasing in adopters' real expenditure $S_t$ scaled by the trend $\Lambda_t$.
 Competitive adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, equating the marginal cost of adoption effort to its discounted marginal value.
 The associated value functions and the optimality condition for $S_t$, together with the stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, \xi_{t+1}/\xi_t$ used to value these flows, are reported in Appendix~\ref{app:equilibrium}.
+The productivity payoff of the adopted-technology stock $A_t$ is realized in the production function~\eqref{eq:production}, with strength governed by $\vartheta$.
 
 \subsection{Government: fiscal and monetary policy}
 
