@@ -147,7 +147,9 @@ function vertModelComparison(resultsProc, VarListToPlot, modelList, outputFileNa
     leg.Layout.Tile = 'north';
     leg.NumColumns = 2;    
     
-    fullFileName = fullfile(project_path, 'docs', [outputFileName '.png']);
+    chartsDir = fullfile(project_path, 'docs', 'modelCharts');
+    if ~exist(chartsDir, 'dir'); mkdir(chartsDir); end
+    fullFileName = fullfile(chartsDir, [outputFileName '.png']);
     exportgraphics(t, fullFileName, 'BackgroundColor', 'none');
     fprintf('Graph saved as: %s\n', fullFileName);
 end
