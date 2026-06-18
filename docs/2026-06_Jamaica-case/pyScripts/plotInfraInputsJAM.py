@@ -172,8 +172,8 @@ def main():
 
     fig.update_layout(
         template=cfg["template"], width=1340, height=470,
-        margin=dict(l=30, r=12, t=70, b=22), font=dict(size=13),
-        legend=dict(orientation="h", yanchor="bottom", y=1.05,
+        margin=dict(l=30, r=12, t=84, b=22), font=dict(size=13),
+        legend=dict(orientation="h", yanchor="bottom", y=1.11,
                     xanchor="center", x=0.5, font=dict(size=14)),
     )
     # Per-panel (subplot) titles.
