@@ -303,7 +303,7 @@ by = Dt/yt;
 Cg-Cgss = -(Ig-Igss+Ige-Igess+Cgrd-Cgrdss)+ydss*epsi_cg;   // consumption (residual, budget-neutral)
 Ig = Igss+ydss*epsi_ig;                                     // infrastructure investment
 Ige = Igess+ydss*epsi_ige;                                  // human-capital investment
-Cgrd-Cgrdss = rho_Cgrd*(Cgrd(-1)-Cgrdss)+ydss*epsi_cgrd;    // R&D spending
+Cgrd = Cgrdss+ydss*epsi_cgrd;                               // R&D spending
 // Consumption tax rule
 tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss))+epsi_tauc;
 // Income tax rule
