@@ -299,22 +299,17 @@ Dt = (R(-1)/PI)*Dt(-1)/ZZ+Cg+Ig+Ige+Cgrd+Trans-tauw*W_real*N-tauc*C;
 Trans-STEADY_STATE(Trans) = rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_trans)*(-gamma_d_trans*(by(-1)-byss)*ydss);
 // Debt to GDP
 by = Dt/yt;
-// Government investment dynamics
-Ig = Igss+ydss*epsi_ig;
-// Government consumption dynamics
-Cg-Cgss = -(Ig-Igss+Ige-Igess+Cgrd-Cgrdss)+ydss*epsi_cg;
+// Government spending instruments (subject to expenditure shocks)
+Cg-Cgss = -(Ig-Igss+Ige-Igess+Cgrd-Cgrdss)+ydss*epsi_cg;   // consumption (residual, budget-neutral)
+Ig = Igss+ydss*epsi_ig;                                     // infrastructure investment
+Ige = Igess+ydss*epsi_ige;                                  // human-capital investment
+Cgrd-Cgrdss = rho_Cgrd*(Cgrd(-1)-Cgrdss)+ydss*epsi_cgrd;    // R&D spending
 // Consumption tax rule
 tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss))+epsi_tauc;
 // Income tax rule
 tauw-tauwss = rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_d_tauw*(by(-1)-byss))+epsi_tauw;
 // Public human-capital stock
 Kge*ZZ = (1-delta)*Kge(-1)+effgeshock*Ige;
-// Human-capital spending dynamics
-Ige = Igess+ydss*epsi_ige;
-// R&D spending dynamics
-Cgrd-Cgrdss = rho_Cgrd*(Cgrd(-1)-Cgrdss)+ydss*epsi_cgrd;
-ln_Cgrd = log(Cgrd);
-Cgrd_ydss_ratio = Cgrd/ydss;
 //********************************************************
 // MARKET CLEARING
 //********************************************************
@@ -343,6 +338,8 @@ pdef = (Cg+Ig+Ige+Cgrd+Trans-tauw*W_real*N-tauc*C)/yt*100;
 Ig_ys = Ig/ydss*100;
 by_ann = by/4*100;
 lnPI = log(PI)*100;
+ln_Cgrd = log(Cgrd);
+Cgrd_ydss_ratio = Cgrd/ydss;
 // Output growth
 ygrowth = log(yd/yd(-1))*100+log(ZZ)*100;
 //********************************************************
