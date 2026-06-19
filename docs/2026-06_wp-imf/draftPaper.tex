@@ -359,15 +359,7 @@ The inefficiency parameters deserve separate treatment, as they are central to t
     \item \emph{Public R\&D ($e^{GRD}$).} The inefficiency parameter is set at 0.4 for AEs, while this innovation channel is shut down in EMDEs due to their reliance on technology adoption rather than innovation.
 \end{compactitem}
 
-These values sit within the empirical distribution of estimated efficiency gaps across income groups (Figure~\ref{fig:efficiencyBands}), and are constructed from the corresponding 2023 medians as set out in Table~\ref{tab:efficiencyGaps}: the advanced-economy gap uses the advanced-economy median, the EMDE gap averages the emerging-market and low-income medians, and the human-capital gap averages the health and education gaps.
-
-\begin{figure}[H]
-    \centering
-    \caption{Estimated spending-efficiency gaps by income group, 2000--23 \label{fig:efficiencyBands}}
-    \includegraphics[width=\textwidth]{figures/efficiencyBands.png}
-    \source{\citet{Bankowskietal2026}.}
-    \desc{Efficiency gap (one minus the spending efficiency score) for infrastructure, health, education, and R\&D. Shaded areas show the 25th--75th percentile range across economies within each income group; lines are group medians; circles mark the 2023 value, the calibration reference. R\&D is shown for advanced economies only, as the innovation channel is shut down for EMDEs. The paper's human capital gap $e^{GE}$ combines the health and education categories.}
-\end{figure}
+Table~\ref{tab:efficiencyGaps} reports how these gaps are constructed from the underlying 2023 efficiency estimates.
 
 \begin{table}[H]
     \centering
@@ -390,7 +382,7 @@ These values sit within the empirical distribution of estimated efficiency gaps 
 
     \vspace{1mm}
     \source{\citet{Bankowskietal2026}.}
-    \desc{Spending-efficiency gaps (one minus the efficiency score), 2023 values. The infrastructure, health, education, and R\&D gaps are the income-group medians shown in Figure~\ref{fig:efficiencyBands} (R\&D for advanced economies only). The advanced-economy column uses the advanced-economy median; the EMDE column averages the emerging-market and low-income medians. The human-capital gap is the average of the health and education gaps. R\&D is an advanced-economy channel only and is shut down for EMDEs. These estimates underpin the calibrated gaps in Table~\ref{tab:parameters}.}
+    \desc{Spending-efficiency gaps (one minus the efficiency score), 2023 values. The advanced-economy column uses the advanced-economy median across economies; the EMDE column averages the emerging-market and low-income medians; the human-capital gap is the average of the health and education gaps. R\&D is an advanced-economy channel only and is shut down for EMDEs. Figure~\ref{fig:efficiencyBands} in the appendix plots these gaps over time by income group, from which the 2023 medians used here are taken. These estimates underpin the calibrated gaps in Table~\ref{tab:parameters}.}
 \end{table}
 
 In addition, the steady states of fiscal variables are set as follows.
@@ -638,5 +630,19 @@ Table~\ref{tab:notation} summarizes the main endogenous variables.
         \bottomrule
     \end{tabular}
 \end{table}
+
+%========================================================================
+\section{Spending-efficiency estimates} \label{app:efficiency}
+%========================================================================
+
+Figure~\ref{fig:efficiencyBands} plots the estimated spending-efficiency gaps over time by income group, underlying the calibration of Section~\ref{sec:calibration} (Table~\ref{tab:efficiencyGaps}).
+
+\begin{figure}[H]
+    \centering
+    \caption{Estimated spending-efficiency gaps by income group, 2000--23 \label{fig:efficiencyBands}}
+    \includegraphics[width=\textwidth]{figures/efficiencyBands.png}
+    \source{\citet{Bankowskietal2026}.}
+    \desc{Efficiency gap (one minus the spending efficiency score) for infrastructure, health, education, and R\&D. Shaded areas show the 25th--75th percentile range across economies within each income group; lines are group medians; circles mark the 2023 value, the calibration reference. R\&D is shown for advanced economies only, as the innovation channel is shut down for EMDEs. The paper's human capital gap $e^{GE}$ combines the health and education categories.}
+\end{figure}
 
 \end{document}
