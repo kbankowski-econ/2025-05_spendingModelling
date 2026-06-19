@@ -170,7 +170,8 @@ The implied cumulative public-investment multipliers over 25 years are about 1 f
 The remainder of the paper is organized as follows.
 Section~\ref{sec:model} sets out the model.
 Section~\ref{sec:calibration} describes the calibration for the representative advanced economy and emerging market and developing economy.
-Section~\ref{sec:results} presents results from a set of policy experiments.
+Section~\ref{sec:properties} examines the model's properties, including the implied fiscal multipliers and their sensitivity to key parameters.
+Section~\ref{sec:results} presents a set of policy experiments.
 Section~\ref{sec:conclusions} concludes.
 Appendix~\ref{app:equilibrium} collects the full set of equilibrium conditions.
 
@@ -360,10 +361,67 @@ In addition, the steady states of fiscal variables are set as follows.
 \end{compactitem}
 
 %========================================================================
-\section{Results} \label{sec:results}
+\section{Model properties} \label{sec:properties}
 %========================================================================
 
-This section illustrates the model's properties through a set of policy experiments.
+This section documents the model's quantitative properties before turning to the policy reforms of Section~\ref{sec:results}.
+It first reports the implied fiscal multipliers---explaining how each productive spending category transmits to output---and benchmarks them against the empirical literature.
+It then examines how the responses depend on the model's key structural parameters.
+Output responses are reported as percent deviations from the steady state.
+
+\subsection{Fiscal multipliers}
+
+The three productive spending instruments transmit to output over different horizons.
+Infrastructure investment raises output relatively quickly, since public infrastructure capital feeds directly into the production function~\eqref{eq:production}.
+Investment in human capital pays off more gradually, reflecting the slow accumulation of the human capital stock~\eqref{eq:humancapital}.
+Public R\&D operates with the longest lag: it raises the stock of created technologies, which is adopted---and so reaches production---only over time (Eqs.~\ref{eq:Z}--\ref{eq:A}).
+These differing horizons are summarized by the cumulative fiscal multipliers, which measure the discounted output gain per unit of additional spending.
+
+The implied cumulative multipliers over 25 years for public investment in human capital and infrastructure are about 1 for AEs and 2.5 for EMDEs (Table~\ref{tab:multipliers}).
+These are in the range of the long-run multipliers reported by \citet{Ramey2020}.
+\citet{AfonsoRodrigues2024} also document that the multiplier of public investment is 0.9 for advanced economies and 2.3 for emerging economies.
+The cumulative multiplier for R\&D expenditure is about 1.8, in line with \citet{FieldhouseMertens2023}.
+The larger multipliers for EMDEs reflect the higher output elasticity of infrastructure and the higher marginal product of public capital in these economies.
+
+\begin{table}[H]
+    \centering
+    \footnotesize
+    \caption{Implied cumulative public-spending multipliers (25-year horizon) \label{tab:multipliers}}
+    \begin{tabular}{lcc}
+        \toprule
+        Spending category & AE & EMDE \\
+        \midrule
+        Public investment (infrastructure and human capital) & $\approx$1.0 & $\approx$2.5 \\
+        Public R\&D                                          & $\approx$1.8 & --           \\
+        \bottomrule
+    \end{tabular}
+    % TODO: split infrastructure vs human-capital multipliers into separate rows once pulled from model output.
+
+    \vspace{1mm}
+    \source{IMF staff estimates.}
+    \desc{Cumulative output gain per unit of additional spending over a 25-year horizon. Benchmarks: public-investment multipliers of 0.9 (AE) and 2.3 (EMDE) in \citet{AfonsoRodrigues2024} and long-run multipliers in \citet{Ramey2020}; an R\&D multiplier of about 1.8 in \citet{FieldhouseMertens2023}.}
+\end{table}
+
+\subsection{Sensitivity}
+
+The output responses depend on the model's key structural parameters.
+The most consequential is the speed of technology diffusion, governed by the adoption probability $\lambda_t$.
+Figure~\ref{fig:diffusion} shows how the output gains from a 50/50 human-capital/R\&D spending mix depend on this speed: faster diffusion brings the productivity payoff of R\&D forward, raising gains at every horizon.
+The responses are similarly sensitive to the output elasticity of infrastructure ($\alpha_G$), the elasticity of human capital formation with respect to the public stock ($\mu$), and the efficiency wedges $e^{GI}$, $e^{GE}$, and $e^{GRD}$, each of which scales the productive payoff of the corresponding spending category.
+
+\begin{figure}[H]
+    \centering
+    \caption{Advanced Economies: high versus low levels of technology diffusion, 2050 \label{fig:diffusion}}
+    \includegraphics[width=0.78\textwidth]{figures/diffusionAE_yd.png}
+    \source{IMF staff estimates.}
+    \desc{Output gains (percent deviation from steady state) from a 50/50 human-capital/R\&D spending mix for different levels of technology diffusion.}
+\end{figure}
+
+%========================================================================
+\section{Policy experiments} \label{sec:results}
+%========================================================================
+
+This section illustrates the model through a set of policy experiments.
 Each experiment is a permanent, budget-neutral reform: an increase in a growth-enhancing spending category is financed by an equivalent cut in public consumption.
 Output responses are reported as percent deviations from the steady state.
 Unless stated otherwise, the experiments start in 2025 and the horizon extends to 2050.
@@ -413,11 +471,15 @@ The gains depend on both the speed at which gaps are closed and the initial leve
     \desc{Additional output gains (percent deviation from steady state) from gradually closing gaps in spending efficiency by 2040 and 2050, as indicated on the horizontal axis, and from different initial efficiency levels, as described in the legend.}
 \end{figure}
 
-\subsection{Human capital, R\&D, and technology diffusion}
+\subsection{Combining human capital and R\&D}
 
 In advanced economies, the innovation channel is active: public R\&D spending raises the stock of created technologies (Eq.~\ref{eq:Z}), which is then adopted with a lag (Eq.~\ref{eq:A}).
 Figure~\ref{fig:humanCapital} shows output gains from increasing public investment in human capital, public R\&D spending, and a 50/50 mix of both, financed by cutting public consumption.
-Figure~\ref{fig:diffusion} shows how the gains from the 50/50 mix depend on the speed of technology diffusion, governed by the adoption probability $\lambda_t$.
+
+For EMDEs, reorienting resources toward human capital and infrastructure investment can deliver long-term gains, though over different time horizons.
+A combination of the two is a viable option.
+This policy mix results in a more balanced outcome by combining the short-term gains from infrastructure investment with the longer-term gains from human capital investment.
+While this option delivers a slightly lower output gain by 2050 than investing more heavily in human capital alone, it yields higher output in the shorter term.
 
 \begin{figure}[H]
     \centering
@@ -426,26 +488,6 @@ Figure~\ref{fig:diffusion} shows how the gains from the 50/50 mix depend on the 
     \source{IMF staff estimates.}
     \desc{Output gains (percent deviation from steady state) from increasing public investment in human capital, public spending on research and development (R\&D), and a 50/50 mix of both, financed by cutting public consumption.}
 \end{figure}
-
-\begin{figure}[H]
-    \centering
-    \caption{Advanced Economies: high versus low levels of technology diffusion, 2050 \label{fig:diffusion}}
-    \includegraphics[width=0.78\textwidth]{figures/diffusionAE_yd.png}
-    \source{IMF staff estimates.}
-    \desc{Output gains (percent deviation from steady state) from the 50/50 mix in Figure~\ref{fig:humanCapital} for different levels of technology diffusion.}
-\end{figure}
-
-\subsection{Implied multipliers}
-
-The implied cumulative multipliers over 25 years for public investment in human capital and infrastructure are about 1 for AEs and 2.5 for EMDEs.
-These are in the range of the long-run multipliers reported by \citet{Ramey2020}.
-\citet{AfonsoRodrigues2024} also document that the multiplier of public investment is 0.9 for advanced economies and 2.3 for emerging economies.
-The cumulative multiplier for R\&D expenditure is about 1.8, in line with \citet{FieldhouseMertens2023}.
-
-For EMDEs, reorienting resources toward human capital and infrastructure investment can deliver long-term gains, though over different time horizons.
-A combination of the two is a viable option.
-This policy mix results in a more balanced outcome by combining the short-term gains from infrastructure investment with the longer-term gains from human capital investment.
-While this option delivers a slightly lower output gain by 2050 than investing more heavily in human capital alone, it yields higher output in the shorter term.
 
 %========================================================================
 \section{Conclusions} \label{sec:conclusions}
