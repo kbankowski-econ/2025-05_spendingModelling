@@ -33,10 +33,7 @@ muy=0.5;
 
 rho_Ige=0.9;
 alphaZZ1=0.2;
-rhoeffge =0;
-rhoeff =0;
 rho_AAt=0.0;
-rho_Cgrd=0;
 
 markupss=1.18;
 phiob=1-0.08/4;   % obsolescence rate: 0.08/4

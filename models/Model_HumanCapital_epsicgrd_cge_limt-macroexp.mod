@@ -137,8 +137,6 @@ effge           % Efficiency of public HRC
 Igey            % Share of goevrnment expenditure to human capital
 alphaZZ1        % Learning by doing off HHon ZZ
 rho_Ige         % Persistence of human-related spending
-rhoeffge
-rhoeff
 rho_AAt         % Persistence of staionary tech process
 alphaHA         % feed back of Human cpital to TFP
 alphaRD         % R&D on TFP
@@ -150,8 +148,7 @@ gammaa         % Gorwth of tech
 probadoptss    % Probability of adoption
 rhoSADOPT      % Adoption elasticity
 alphaSRD       % R&D elasticity
-rhoshockchit    % AR (1) or shock to r&D 
-rho_Cgrd
+rhoshockchit    % AR (1) or shock to r&D
 rho_ZZRD
 eff_cgrd
 ;
@@ -187,10 +184,7 @@ deltaH=0.025;
 muy=0.5;
 rho_Ige=0.9;
 alphaZZ1=0.2;
-rhoeffge =0;
-rhoeff =0;
 rho_AAt=0.0;
-rho_Cgrd=0;
 markupss=1.18;
 phiob=1-0.08/4;   % obsolescence rate: 0.08/4
 varthetaat=1.35;
@@ -325,11 +319,11 @@ vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 // Trend growth
 log(ZZ) = (1-rho_ZZ)*log(ZZ(-1))+rho_ZZ*(log(ZZss))+epsi_ZZ;
 // Efficiency of human-capital spending
-effgeshock-effge = rhoeffge*(effgeshock(-1)-effge)+epsi_effge;
+effgeshock = effge+epsi_effge;
 // Efficiency of infrastructure spending
-effshock-eff = rhoeff*(effshock(-1)-eff)+epsi_eff;
+effshock = eff+epsi_eff;
 // Efficiency of R&D spending
-effcgrdshock-eff_cgrd = 0*(effcgrdshock(-1)-eff_cgrd)+epsi_effcgrd;
+effcgrdshock = eff_cgrd+epsi_effcgrd;
 //********************************************************
 // VARIABLES OF INTEREST
 //********************************************************

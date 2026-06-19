@@ -140,8 +140,6 @@ effge           % Efficiency of public HRC
 Igey            % Share of goevrnment expenditure to human capital
 alphaZZ1        % Learning by doing off HHon ZZ
 rho_Ige         % Persistence of human-related spending
-rhoeffge
-rhoeff
 rho_AAt         % Persistence of staionary tech process
 alphaHA         % feed back of Human cpital to TFP
 alphaRD         % R&D on TFP
@@ -153,8 +151,7 @@ gammaa         % Gorwth of tech
 probadoptss    % Probability of adoption
 rhoSADOPT      % Adoption elasticity
 alphaSRD       % R&D elasticity
-rhoshockchit    % AR (1) or shock to r&D 
-rho_Cgrd
+rhoshockchit    % AR (1) or shock to r&D
 rho_ZZRD
 eff_cgrd
 ;
