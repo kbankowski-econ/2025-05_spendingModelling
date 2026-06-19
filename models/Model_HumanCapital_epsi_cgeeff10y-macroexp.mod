@@ -8,14 +8,14 @@ W_real          % Real wages
 Ip              % Private investment
 Kp              % Private capital
 rk              % Return on private investment
-g1              % Price setting 1
-g2              % Price setting 2
+x1              % Price setting 1
+x2              % Price setting 2
 mc              % Marginal cost
 PIstar          % Optimnal gross inflation 
 yt              % Production
 Kg              % Public capital
 Rmp             % Policy rate
-Bt              % Debt level
+Dt              % Debt level
 by              % Debt/GDP
 Ig              % Public investment
 Cg              % Public consumption
@@ -40,10 +40,10 @@ by_ann          % Debt to GDP
 lnPI            % Log of Prince index
 H               % Human capital
 Kge             % Public Human-related Capital Stock (HCS)
-Cge             % Public spending in public humand-related capital stock
+Ige             % Public spending in public humand-related capital stock
 E               % Time for schooling and taking care of health (building capital)
 lambda_HC        % Lagrangian of the Human capital formation
-Cgess           % Steady state of public spending on Public human-capital related stock
+Igess           % Steady state of public spending on Public human-capital related stock
 Lab             % Labor supply 
 muyH            % Adjuster so that E=0.1
 ygrowth          % econonmic growth
@@ -54,7 +54,7 @@ Cgrd            % R&D spending
 Cgrdss          % R&D spending SS
 shockchit       % R&D process productivity shock SS
 SDF             % Stochastic discount factor
-SAt             % Effective labor demand for tech adoption
+St             % Effective labor demand for tech adoption
 VA              % Value of tech adoption
 probadopt       % Probability of adoption
 JZt             % Value of unadopted Intermediate
@@ -80,7 +80,7 @@ epsi_spread     % Shock to Spread
 epsi_MP         % Monetary Policy Shocks
 epsi_tauc       % Consumption income tax shock 
 epsi_tauw       % Labor income tax shock
-epsi_cge        % Public HC spending shock
+epsi_ige        % Public HC spending shock
 epsi_effge  
 epsi_eff
 epsi_cgrd       % Shock to R&D spending
@@ -88,7 +88,7 @@ epsi_shockchit  % Shock to the R&D process
 epsirhoadopt
 epsi_effcgrd
 epsiallo_ig        % shock to elasticity wrt public infrastructure capital
-epsiallo_cge       % Shock to elasticity wrt public human capital 
+epsiallo_ige       % Shock to elasticity wrt public human capital 
 ;
 %--------------------------
 % Define parameters
@@ -134,9 +134,9 @@ deltaH          % Depreciation of Labor
 muy             % Effectiveness of education investment.
 alphaH          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
 effge           % Efficiency of public HRC 
-Cgey            % Share of goevrnment expenditure to human capital
+Igey            % Share of goevrnment expenditure to human capital
 alphaZZ1        % Learning by doing off HHon ZZ
-rho_Cge         % Persistence of human-related spending
+rho_Ige         % Persistence of human-related spending
 rhoeffge
 rhoeff
 rho_AAt         % Persistence of staionary tech process
@@ -185,7 +185,7 @@ gamma_d_trans=0.5;
 rho_trans=0;
 deltaH=0.025;
 muy=0.5;
-rho_Cge=0.9;
+rho_Ige=0.9;
 alphaZZ1=0.2;
 rhoeffge =0;
 rhoeff =0;
@@ -208,7 +208,7 @@ byss=1*4;                            % steady-state debt to quarterly GDP (annua
 % public spending shares of GDP
 Igy=0.03;                            % public investment                             | EM: 0.05
 Cgy=0.18;                            % public consumption                            | EM: 0.14
-Cgey=0.0145;                         % human-capital-related spending                | EM: 0.02
+Igey=0.0145;                         % human-capital-related spending                | EM: 0.02
 Cgrdy=0.006;                         % R&D spending                                  | EM: 0.001
 % human capital
 alphaH=0.1;                          % elasticity of HC formation w.r.t. public HRC  | EM: 0.25
@@ -231,7 +231,7 @@ model;
 omega = STEADY_STATE(omega);
 Cgss = Cgy*STEADY_STATE(yt);
 Igss = Igy*STEADY_STATE(yt);
-Cgess = Cgey*STEADY_STATE(yt);
+Igess = Igey*STEADY_STATE(yt);
 Cgrdss = Cgrdy*STEADY_STATE(yt);
 Rss = STEADY_STATE(R);
 ydss = STEADY_STATE(yd);
@@ -249,9 +249,9 @@ Kp*ZZ = (1-delta)*Kp(-1)+Ip;
 // Return on private investment
 1 = betta*(lambda(+1)/lambda/ZZ(+1)*(1-delta+rk(+1)));
 // Human capital of the household
-H = (1-deltaH)*H(-1)+muyH*E^muy*(Kge(-1))^(alphaH*(1+epsiallo_cge));
+H = (1-deltaH)*H(-1)+muyH*E^muy*(Kge(-1))^(alphaH*(1+epsiallo_ige));
 // Time devoted to building human capital (E)
-omega*(Lab+E)^phi = lambda_HC*muyH*muy*E^(muy-1)*(Kge(-1))^(alphaH*(1+epsiallo_cge));
+omega*(Lab+E)^phi = lambda_HC*muyH*muy*E^(muy-1)*(Kge(-1))^(alphaH*(1+epsiallo_ige));
 // Shadow value of human capital
 lambda_HC = betta*(lambda(+1)*(1-tauw(+1))*W_real(+1)*Lab(+1)+lambda_HC(+1)*(1-deltaH));
 // Effective labor
@@ -262,9 +262,9 @@ Ns = STEADY_STATE(Ns);
 // FIRMS DECISIONS
 //********************************************************
 // Price setting
-g1 = lambda*mc*yd+betta*thetap*(PI^chi/PI(+1))^(-epsilon)*g1(+1);
-g2 = lambda*PIstar*yd+betta*thetap*(PI^chi/PI(+1))^(1-epsilon)*PIstar/PIstar(+1)*g2(+1);
-epsilon*g1 = (epsilon-1)*g2;
+x1 = lambda*mc*yd+betta*thetap*(PI^chi/PI(+1))^(-epsilon)*x1(+1);
+x2 = lambda*PIstar*yd+betta*thetap*(PI^chi/PI(+1))^(1-epsilon)*PIstar/PIstar(+1)*x2(+1);
+epsilon*x1 = (epsilon-1)*x2;
 // Optimal factor mix
 Kp(-1)/N = alppha/(1-alppha)*W_real/rk;
 // Marginal cost
@@ -280,15 +280,15 @@ SSt = STEADY_STATE(SSt);
 // Effective R&D = efficiency wedge times R&D spending
 Cgrdeff = effcgrdshock*Cgrd;
 // Value of an unadopted technology
-JZt = -SAt+phiob*(SDF(+1)*AAt(-1)/AAt*1/(1+gammaa)*(probadopt*VA(+1)+(1-probadopt)*JZt(+1)));
+JZt = -St+phiob*(SDF(+1)*AAt(-1)/AAt*1/(1+gammaa)*(probadopt*VA(+1)+(1-probadopt)*JZt(+1)));
 // Probability of adoption
-probadopt = (kappaprob+epsirhoadopt)*(SAt)^(rhoSADOPT);
+probadopt = (kappaprob+epsirhoadopt)*(St)^(rhoSADOPT);
 // Adoption
 (1+gammaa)*AAt = probadopt*phiob*(ZZRD(-1)-AAt(-1))+phiob*AAt(-1);
 // Value of an adopted technology
 VA = (markupss-1)/(markupss)*mc*yt + phiob*SDF(+1)*VA(+1)*AAt(-1)/AAt/(1+gammaa);
 // FOC for adoption effort
-rhoSADOPT*probadopt*phiob*SDF(+1)/(1+gammaa)*AAt(-1)/AAt*(VA(+1)-JZt(+1)) = SAt;
+rhoSADOPT*probadopt*phiob*SDF(+1)/(1+gammaa)*AAt(-1)/AAt*(VA(+1)-JZt(+1)) = St;
 // Stochastic discount factor (detrended)
 SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)));
 // Shock to the R&D technology
@@ -308,23 +308,23 @@ prob_def = exp(eta1 + eta2*by(-1))/(1+exp(eta1 + eta2*by(-1)));
 // Public infrastructure capital
 Kg*ZZ = (1-delta)*Kg(-1)+effshock*Ig;
 // Government debt
-Bt = (R(-1)/PI)*Bt(-1)/ZZ+Cg+Ig+Cge+Cgrd+Trans-tauw*W_real*N-tauc*C;
+Dt = (R(-1)/PI)*Dt(-1)/ZZ+Cg+Ig+Ige+Cgrd+Trans-tauw*W_real*N-tauc*C;
 // Lump-sum transfers
 Trans-STEADY_STATE(Trans) = rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_trans)*(-gamma_d_trans*(by(-1)-byss)*ydss);
 // Debt to GDP
-by = Bt/yt;
+by = Dt/yt;
 // Government investment dynamics
 Ig = Igss+ydss*epsi_ig;
 // Government consumption dynamics
-Cg-Cgss = -(Ig-Igss+Cge-Cgess+Cgrd-Cgrdss)+ydss*epsi_cg;
+Cg-Cgss = -(Ig-Igss+Ige-Igess+Cgrd-Cgrdss)+ydss*epsi_cg;
 // Consumption tax rule
 tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss))+epsi_tauc;
 // Income tax rule
 tauw-tauwss = rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_d_tauw*(by(-1)-byss))+epsi_tauw;
 // Public human-capital stock
-Kge*ZZ = (1-delta)*Kge(-1)+effgeshock*Cge;
+Kge*ZZ = (1-delta)*Kge(-1)+effgeshock*Ige;
 // Human-capital spending dynamics
-Cge = Cgess+ydss*epsi_cge;
+Ige = Igess+ydss*epsi_ige;
 // R&D spending dynamics
 Cgrd-Cgrdss = rho_Cgrd*(Cgrd(-1)-Cgrdss)+ydss*epsi_cgrd;
 ln_Cgrd = log(Cgrd);
@@ -333,7 +333,7 @@ Cgrd_ydss_ratio = Cgrd/ydss;
 // MARKET CLEARING
 //********************************************************
 // Aggregate demand
-yd = C+Ip+Ig+Cg+Cge+Cgrd+SSt+(ZZRD(-1)/AAt(-1)-1)*SAt;
+yd = C+Ip+Ig+Cg+Ige+Cgrd+SSt+(ZZRD(-1)/AAt(-1)-1)*St;
 // Aggregate production
 yt = vp*yd;
 // Price dispersion
@@ -353,7 +353,7 @@ effcgrdshock-eff_cgrd = 0*(effcgrdshock(-1)-eff_cgrd)+epsi_effcgrd;
 // VARIABLES OF INTEREST
 //********************************************************
 lnyd = log(yd)*100;
-pdef = (Cg+Ig+Cge+Cgrd+Trans-tauw*W_real*N-tauc*C)/yt*100;
+pdef = (Cg+Ig+Ige+Cgrd+Trans-tauw*W_real*N-tauc*C)/yt*100;
 Ig_ys = Ig/ydss*100;
 by_ann = by/4*100;
 lnPI = log(PI)*100;
@@ -363,7 +363,7 @@ end;
 steady;
 check;
 shocks;
-var epsi_cge;
+var epsi_ige;
 periods 1:1000 ;
 values
     0.01
@@ -416,7 +416,7 @@ values
 end;
 perfect_foresight_setup(periods=2000);
 perfect_foresight_solver(maxit=20);
-fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;
+fiscalchange=Ig-Igss+Ige-Igess+Cgrd-Cgrdss;
 % Period 1 is the pre-shock steady state (the baseline, subtracted as yd(1));
 % the shock is active from period 2 on. An N-year horizon is the 4N quarters in
 % indices 2:(N*4+1), so ped=N*4+1 (the slice 2:ped is inclusive of both ends).
