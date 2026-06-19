@@ -208,11 +208,11 @@ The flow budget constraint, in real terms, is
 \end{equation}
 where $\tau_t^{c}$ and $\tau_t^{w}$ are the consumption and labor income tax rates, $I_t$ is private investment, $D_t$ is real holdings of government debt paying the gross return $R_{t-1}$, $\Pi_t$ is gross inflation, $w_t$ is the real wage, $N_t \equiv H_t L_t$ is effective labor, $r_t^{k}$ is the rental rate of private capital $K_t$, $T_t$ are lump-sum transfers, and $\Omega_t$ are profits rebated by firms and technology adopters.
 
-Let $\xi_t$ denote the marginal utility of consumption. Optimal choices over consumption, debt, and private capital imply
+Let $\lambda_t$ denote the marginal utility of consumption. Optimal choices over consumption, debt, and private capital imply
 \begin{align}
-    \xi_t &= \frac{1}{\left(1+\tau_t^{c}\right) C_t}, \label{eq:mu}\\
-    \xi_t &= \beta\, \mathbb{E}_t\!\left[\xi_{t+1}\frac{R_t}{\Pi_{t+1}}\right], \label{eq:euler}\\
-    \xi_t &= \beta\, \mathbb{E}_t\!\left[\xi_{t+1}\left(r_{t+1}^{k} + 1 - \delta\right)\right], \qquad K_t = (1-\delta) K_{t-1} + I_t, \label{eq:capital}
+    \lambda_t &= \frac{1}{\left(1+\tau_t^{c}\right) C_t}, \label{eq:mu}\\
+    \lambda_t &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\frac{R_t}{\Pi_{t+1}}\right], \label{eq:euler}\\
+    \lambda_t &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\left(r_{t+1}^{k} + 1 - \delta\right)\right], \qquad K_t = (1-\delta) K_{t-1} + I_t, \label{eq:capital}
 \end{align}
 where $\delta$ is the depreciation rate of private capital.
 
@@ -222,11 +222,11 @@ The novel block concerns human capital. Private human capital $H_t$ evolves acco
 \end{equation}
 where $\delta^{h}$ is the depreciation rate of human capital, $\chi$ is a scale parameter, $K_t^{GE}$ is the stock of public human capital (e.g., schools and hospitals), and $\Lambda_t$ scales public human capital to keep the relationship consistent with balanced growth.
 The elasticities $\gamma$ and $\mu$ govern the response of human capital formation to the household's time input and to the public human capital stock, respectively.
-Letting $\xi_t^{H}$ be the shadow value of human capital, the choices of labor and education time satisfy
+Letting $\lambda_t^{H}$ be the shadow value of human capital, the choices of labor and education time satisfy
 \begin{align}
-    \omega \left(L_t + E_t\right)^{\varphi} &= \xi_t \left(1-\tau_t^{w}\right) w_t H_t, \label{eq:labor}\\
-    \omega \left(L_t + E_t\right)^{\varphi} &= \xi_t^{H}\, \chi \gamma \left(E_t\right)^{\gamma-1} \left(\frac{K_t^{GE}}{\Lambda_t}\right)^{\mu}, \label{eq:edutime}\\
-    \xi_t^{H} &= \beta\, \mathbb{E}_t\!\left[\xi_{t+1}\left(1-\tau_{t+1}^{w}\right) w_{t+1} L_{t+1} + \xi_{t+1}^{H}\left(1-\delta^{h}\right)\right]. \label{eq:hcvalue}
+    \omega \left(L_t + E_t\right)^{\varphi} &= \lambda_t \left(1-\tau_t^{w}\right) w_t H_t, \label{eq:labor}\\
+    \omega \left(L_t + E_t\right)^{\varphi} &= \lambda_t^{H}\, \chi \gamma \left(E_t\right)^{\gamma-1} \left(\frac{K_t^{GE}}{\Lambda_t}\right)^{\mu}, \label{eq:edutime}\\
+    \lambda_t^{H} &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\left(1-\tau_{t+1}^{w}\right) w_{t+1} L_{t+1} + \lambda_{t+1}^{H}\left(1-\delta^{h}\right)\right]. \label{eq:hcvalue}
 \end{align}
 Equation~\eqref{eq:labor} is the standard labor-supply condition; equation~\eqref{eq:edutime} equates the marginal disutility of time to the value of the human capital it builds; and equation~\eqref{eq:hcvalue} prices human capital by its discounted contribution to future labor income.
 
@@ -247,8 +247,8 @@ Cost minimization implies a common real marginal cost $mc_t$ and the factor-dema
 
 \paragraph{Price setting.} Each period a fraction $1-\theta_p$ of firms reoptimizes, while the remainder index their price to past inflation with elasticity $\chi_p$. The reset price $\Pi_t^{*}$ solves the recursive system
 \begin{align}
-    x_{1,t} &= \xi_t\, mc_t\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{-\epsilon} x_{1,t+1}\right], \label{eq:g1}\\
-    x_{2,t} &= \xi_t\, \Pi_t^{*}\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon} \frac{\Pi_t^{*}}{\Pi_{t+1}^{*}} x_{2,t+1}\right], \qquad \epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}, \label{eq:g2}
+    x_{1,t} &= \lambda_t\, mc_t\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{-\epsilon} x_{1,t+1}\right], \label{eq:g1}\\
+    x_{2,t} &= \lambda_t\, \Pi_t^{*}\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon} \frac{\Pi_t^{*}}{\Pi_{t+1}^{*}} x_{2,t+1}\right], \qquad \epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}, \label{eq:g2}
 \end{align}
 together with the aggregate price law of motion $1 = \theta_p\left(\Pi_{t-1}^{\chi_p}/\Pi_t\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}$.
 
@@ -264,11 +264,11 @@ Second, public R\&D spending $G_t^{RD}$ contributes directly to creation:
 where only the productive fraction $\left(1-e_t^{GRD}\right)$ of R\&D spending drives innovation: $e_t^{GRD}$ is the R\&D inefficiency wedge, equal to its steady-state value $e^{GRD}$ in the baseline and reduced when the R\&D efficiency gap is closed (Section~\ref{sec:results}). The raw spending $G_t^{RD}$ enters the government budget constraint~\eqref{eq:govbudget}.
 To capture the lag between creation and adoption, the stock of adopted technologies evolves as
 \begin{equation} \label{eq:A}
-    A_{t+1} = \lambda_t\, \phi \left[Z_t - A_t\right] + \phi A_t,
+    A_{t+1} = q_t\, \phi \left[Z_t - A_t\right] + \phi A_t,
 \end{equation}
-where $\phi$ is the survival rate of technologies and the time-varying probability of adoption is $\lambda_t = \lambda_0 \left(S_t/\Lambda_t\right)^{\varsigma}$, increasing in adopters' real expenditure $S_t$ scaled by the trend $\Lambda_t$.
+where $\phi$ is the survival rate of technologies and the time-varying probability of adoption is $q_t = q_0 \left(S_t/\Lambda_t\right)^{\varsigma}$, increasing in adopters' real expenditure $S_t$ scaled by the trend $\Lambda_t$.
 Competitive adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, equating the marginal cost of adoption effort to its discounted marginal value.
-The associated value functions and the optimality condition for $S_t$, together with the stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, \xi_{t+1}/\xi_t$ used to value these flows, are reported in Appendix~\ref{app:equilibrium}.
+The associated value functions and the optimality condition for $S_t$, together with the stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, \lambda_{t+1}/\lambda_t$ used to value these flows, are reported in Appendix~\ref{app:equilibrium}.
 The productivity payoff of the adopted-technology stock $A_t$ is realized in the production function~\eqref{eq:production}, with strength governed by $\vartheta$.
 
 \subsection{Government: fiscal and monetary policy}
@@ -322,7 +322,7 @@ The parameters specific to the public-spending and growth channels, which are ce
     \item \emph{Inefficiency parameters.} The efficiency gaps are set based on empirical estimates of spending efficiency. For infrastructure investment, the average gap is set at 0.35 for AEs and 0.42 for EMDEs. For human capital investment, they are 0.30 and 0.32 for AEs and EMDEs, respectively. For public R\&D spending, the inefficiency parameter is set at 0.4 for AEs, while this innovation channel is shut down in EMDEs due to their reliance on technology adoption rather than innovation. These values sit within the empirical distribution of estimated efficiency gaps across income groups (Figure~\ref{fig:efficiencyBands}): the AE gaps track the advanced-economy medians, while the EMDE gaps lie between the emerging-market and low-income medians, consistent with EMDEs spanning both groups.
     \item \emph{Depreciation of public capital ($\delta^{GI}$, $\delta^{GE}$).} Both depreciation rates are set at the standard value of 0.025, corresponding to an annual depreciation rate of 10 percent.
     \item \emph{Technology innovation parameters.} The AR(1) coefficient for the stock of technologies ($\rho_A$) is set at 0.79 (quarterly), as in \citet{ChangGomesSchorfheide2002}. For AEs, the elasticity of human capital with respect to technology development ($\alpha_{HA}$) is set at 0.45, capturing the learning-by-doing channel, as in \citet{ChangGomesSchorfheide2002}. The elasticity of public R\&D spending ($\alpha_{RD}$) is calibrated at 0.1, consistent with the R\&D impact estimates in \citet{FieldhouseMertens2023}.
-    \item \emph{Technology adoption parameters.} Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the elasticity of the probability of adoption with respect to adoption spending ($\varsigma$) is set at 0.8, and $\lambda_0$ is set at 0.1, implying an average lag of approximately ten years.
+    \item \emph{Technology adoption parameters.} Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the elasticity of the probability of adoption with respect to adoption spending ($\varsigma$) is set at 0.8, and $q_0$ is set at 0.1, implying an average lag of approximately ten years.
 \end{compactitem}
 
 \begin{table}[H]
@@ -341,7 +341,7 @@ The parameters specific to the public-spending and growth channels, which are ce
         $e^{GE}$              & Inefficiency, human capital investment   & 0.30  & 0.32 \\
         $e^{GRD}$             & Inefficiency, public R\&D spending       & 0.41  & --   \\
         $\varsigma$           & Elasticity, adoption probability         & 0.80  & 0.80 \\
-        $\lambda_0$           & Scale, adoption probability              & 0.10  & 0.10 \\
+        $q_0$           & Scale, adoption probability              & 0.10  & 0.10 \\
         $\delta^{GI},\delta^{GE}$ & Depreciation, public capital         & 0.025 & 0.025 \\
         $\mu$                 & Human capital elasticity, public stock   & 0.10  & 0.25 \\
         $\gamma$              & Human capital elasticity, time input     & 0.50  & 0.50 \\
@@ -483,6 +483,7 @@ The gains depend on both the speed at which gaps are closed and the initial leve
 
 In advanced economies, the innovation channel is active: public R\&D spending raises the stock of created technologies (Eq.~\ref{eq:Z}), which is then adopted with a lag (Eq.~\ref{eq:A}).
 Figure~\ref{fig:humanCapital} shows output gains from increasing public investment in human capital, public R\&D spending, and a 50/50 mix of both, financed by cutting public consumption.
+Figure~\ref{fig:diffusion} shows how the gains from the 50/50 mix depend on the speed of technology diffusion, governed by the adoption probability $q_t$.
 
 For EMDEs, reorienting resources toward human capital and infrastructure investment can deliver long-term gains, though over different time horizons.
 A combination of the two is a viable option.
@@ -526,11 +527,11 @@ This appendix collects the equilibrium conditions not stated in the main text. T
 Competitive adopters value an adopted technology at $\mathcal{V}_t$ and an unadopted one at $\mathcal{J}_t$, discount with the household stochastic discount factor $\mathit{SDF}_{t+1}$, and choose adoption expenditure $S_t$. The optimality conditions are
 \begin{align}
     \mathit{SDF}_{t+1} &= \beta\, \frac{C_t}{C_{t+1}}, \label{eq:sdf}\\
-    \lambda_t &= \lambda_0\, \left(S_t\right)^{\varsigma}, \label{eq:probadopt}\\
-    g\, A_{t+1} &= \lambda_t\, \phi\left(Z_t - A_t\right) + \phi A_t, \label{eq:Astat}\\
+    q_t &= q_0\, \left(S_t\right)^{\varsigma}, \label{eq:probadopt}\\
+    g\, A_{t+1} &= q_t\, \phi\left(Z_t - A_t\right) + \phi A_t, \label{eq:Astat}\\
     \mathcal{V}_t &= \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \mathcal{V}_{t+1}\, \frac{A_{t}}{A_{t+1}}\, \frac{1}{g}\right], \label{eq:VA}\\
-    \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t}}{A_{t+1}}\, \frac{1}{g}\left(\lambda_t\, \mathcal{V}_{t+1} + \left(1-\lambda_t\right)\mathcal{J}_{t+1}\right)\right], \label{eq:JZ}\\
-    S_t &= \varsigma\, \lambda_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{1}{g}\, \frac{A_{t}}{A_{t+1}}\left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right], \label{eq:SAfoc}\end{align}
+    \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t}}{A_{t+1}}\, \frac{1}{g}\left(q_t\, \mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right], \label{eq:JZ}\\
+    S_t &= \varsigma\, q_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{1}{g}\, \frac{A_{t}}{A_{t+1}}\left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right], \label{eq:SAfoc}\end{align}
 where $\mu^{p}$ is the steady-state gross markup of intermediate-goods producers. Equation~\eqref{eq:Astat} is the stationarized counterpart of equation~\eqref{eq:A}.
 
 \subsection{Fiscal rules}
@@ -585,14 +586,14 @@ Table~\ref{tab:notation} summarizes the main endogenous variables.
         $C_t$        & Consumption                  & $A_t$          & Adopted technologies \\
         $L_t$        & Labor supply                 & $Z_t$          & Created technologies \\
         $E_t$        & Time in human capital        & $S_t$          & Adoption expenditure \\
-        $N_t$        & Effective labor $H_t L_t$    & $\lambda_t$    & Adoption probability \\
+        $N_t$        & Effective labor $H_t L_t$    & $q_t$    & Adoption probability \\
         $H_t$        & Private human capital        & $\mathcal{V}_t$& Value of adopted tech. \\
         $I_t$        & Private investment           & $\mathcal{J}_t$& Value of unadopted tech. \\
         $K_t$        & Private capital              & $G_t^{C}$      & Government consumption \\
         $w_t$        & Real wage                    & $I_t^{GI}$     & Public infrastructure inv. \\
         $r_t^{k}$    & Rental rate of capital       & $I_t^{GE}$     & Public human capital inv. \\
-        $\xi_t$      & Marginal utility             & $G_t^{RD}$     & Public R\&D spending \\
-        $\xi_t^{H}$  & Shadow value of $H_t$        & $K_t^{GI}$     & Public infrastructure capital \\
+        $\lambda_t$      & Marginal utility             & $G_t^{RD}$     & Public R\&D spending \\
+        $\lambda_t^{H}$  & Shadow value of $H_t$        & $K_t^{GI}$     & Public infrastructure capital \\
         $Y_t^{d}$    & Aggregate demand             & $K_t^{GE}$     & Public human capital \\
         $Y_t$        & Gross output                 & $D_t$          & Public debt \\
         $mc_t$       & Real marginal cost           & $d_t$          & Debt-to-GDP ratio \\
