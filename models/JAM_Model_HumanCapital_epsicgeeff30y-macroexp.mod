@@ -232,187 +232,140 @@ effge=1-0.357;
 gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
 model;
 //********************************************************
-//HOUSEHOLD DECISIONS-10
+// HOUSEHOLD DECISIONS
 //********************************************************
-omega=STEADY_STATE(omega);
-Cgss=Cgy*STEADY_STATE(yt);
-Igss=Igy*STEADY_STATE(yt);
-Cgess=Cgey*STEADY_STATE(yt);
-Cgrdss=Cgrdy*STEADY_STATE(yt);
-Rss=STEADY_STATE(R);
-ydss=STEADY_STATE(yd);
-muyH=STEADY_STATE(muyH);
-% Exogenous disturbance to teh R&D Tech
-shockchitss=STEADY_STATE(shockchit);
-kappaprob=STEADY_STATE(kappaprob);
-//Marginal Utility
-1/C=lambda*(1+tauc);
-// Euler equation 
-lambda=betta*(lambda(+1)/ZZ(+1)*R/PI(+1));
+// Steady-state values carried into the model block.
+omega = STEADY_STATE(omega);
+Cgss = Cgy*STEADY_STATE(yt);
+Igss = Igy*STEADY_STATE(yt);
+Cgess = Cgey*STEADY_STATE(yt);
+Cgrdss = Cgrdy*STEADY_STATE(yt);
+Rss = STEADY_STATE(R);
+ydss = STEADY_STATE(yd);
+muyH = STEADY_STATE(muyH);
+shockchitss = STEADY_STATE(shockchit);   // exogenous disturbance to the R&D technology
+kappaprob = STEADY_STATE(kappaprob);
+// Marginal utility
+1/C = lambda*(1+tauc);
+// Euler equation
+lambda = betta*(lambda(+1)/ZZ(+1)*R/PI(+1));
 // Labor decision
-omega*(Lab+E)^phi=lambda*W_real*H(-1)*(1-tauw);
+omega*(Lab+E)^phi = lambda*W_real*H(-1)*(1-tauw);
 // Law of motion of private capital
-%Kp=(1-delta)*Kp(-1)/ZZ+Ip;
-Kp*ZZ=(1-delta)*Kp(-1)+Ip;
-// Return on investment- Choose private 
-1=betta*(lambda(+1)/lambda/ZZ(+1)*(1-delta+rk(+1)));
-//NEW PATH 
-//Human capital of Household:  H=(1-delta)*H(-1)+E^muy (Kge/At)^alphaH; 
-%H=(1-deltaH)*H(-1)+muyH*E^muy*(Kge(-1)/ZZ)^alphaH; 
-H=(1-deltaH)*H(-1)+muyH*E^muy*(Kge(-1))^(alphaH*(1+epsiallo_cge)); 
-// Time for human capital build: E 
-%omega*(Lab+E)^phi=lambda_HC*muyH*muy*E^(muy-1)* (Kge(-1)/ZZ)^alphaH;
-omega*(Lab+E)^phi=lambda_HC*muyH*muy*E^(muy-1)* (Kge(-1))^(alphaH*(1+epsiallo_cge));
-// Human capital 
-lambda_HC=betta*(lambda(+1)*(1-tauw(+1))*W_real(+1)*Lab(+1)+lambda_HC(+1)*(1-deltaH));
-//Effective labor
-%N+Ns=Lab*H(-1);
-N=Lab*H(-1);
-// Effective labor in the R&D
-%Ns=(1-AAt(-1)/ZZRD(-1))*SAt+SSt;
-Ns=STEADY_STATE(Ns);
+Kp*ZZ = (1-delta)*Kp(-1)+Ip;
+// Return on private investment
+1 = betta*(lambda(+1)/lambda/ZZ(+1)*(1-delta+rk(+1)));
+// Human capital of the household
+H = (1-deltaH)*H(-1)+muyH*E^muy*(Kge(-1))^(alphaH*(1+epsiallo_cge));
+// Time devoted to building human capital (E)
+omega*(Lab+E)^phi = lambda_HC*muyH*muy*E^(muy-1)*(Kge(-1))^(alphaH*(1+epsiallo_cge));
+// Shadow value of human capital
+lambda_HC = betta*(lambda(+1)*(1-tauw(+1))*W_real(+1)*Lab(+1)+lambda_HC(+1)*(1-deltaH));
+// Effective labor
+N = Lab*H(-1);
+// Effective labor in R&D
+Ns = STEADY_STATE(Ns);
 //********************************************************
-// FIRMS DECISIONS-17
+// FIRMS DECISIONS
 //********************************************************
-// firm's price setting
-g1=lambda*mc*yd+betta*thetap*(PI^chi/PI(+1))^(-epsilon)*g1(+1);
-g2=lambda*PIstar*yd+betta*thetap*(PI^chi/PI(+1))^(1-epsilon)*PIstar/PIstar(+1)*g2(+1);
-epsilon*g1=(epsilon-1)*g2;
-// optimal inputs
-%Kp(-1)/N=alppha/(1-alppha)*W_real/rk*ZZ;
-Kp(-1)/N=alppha/(1-alppha)*W_real/rk;
-//Marginal cost
-%mc=(1/(1-alppha))^(1-alppha)*(1/alppha)^alppha*W_real^(1-alppha)*rk^alppha/(Kg(-1)/(yt+Bigtheta)*1/ZZ)^(zeta/(1-zeta))*1/AAt;
-(1-alppha)*mc*yt/N=markupss*W_real; 
-// law of motion prices
-1=thetap*(PI(-1)^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon);
+// Price setting
+g1 = lambda*mc*yd+betta*thetap*(PI^chi/PI(+1))^(-epsilon)*g1(+1);
+g2 = lambda*PIstar*yd+betta*thetap*(PI^chi/PI(+1))^(1-epsilon)*PIstar/PIstar(+1)*g2(+1);
+epsilon*g1 = (epsilon-1)*g2;
+// Optimal factor mix
+Kp(-1)/N = alppha/(1-alppha)*W_real/rk;
+// Marginal cost
+(1-alppha)*mc*yt/N = markupss*W_real;
+// Law of motion of prices
+1 = thetap*(PI(-1)^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon);
 // Production
-%yt=1/ZZ^(zeta+alppha-zeta*alppha)*(Kg(-1)^zeta)*(Kp(-1)^(alppha*(1-zeta)))*(N^((1-alppha)*(1-zeta)))-Bigtheta_y*STEADY_STATES(yt);
-%yt=AAt*1/ZZ^(zeta+alppha-zeta*alppha)*(Kg(-1)^zeta)*(Kp(-1)^(alppha*(1-zeta)))*((N)^((1-alppha)*(1-zeta)))-Bigtheta;
-yt=AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*(Kp(-1)^alppha)*(N^(1-alppha))-Bigtheta;
-TFP=AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*H(-1)^(1-alppha);
-//Stationary tech process
-%log(AAt)=rho_AAt*log(AAt(-1))+alphaHA*log(H(-1)/STEADY_STATE(H))+alphaRD*log(Cgrd(-1)/Cgrdss);
-/*
-% Ideas development 
-(1+gammaa)*ZZRD=(shockchit*Cgrd^alphaRD)*ZZRD(-1)*SSt^alphaSRD+phiob*ZZRD(-1); 
-% How much labor to use in research
-SDF(+1)*JZt(+1)*(ZZRD/AAt-phiob*ZZRD(-1)/AAt/(1+gammaa))=SSt ;
-% How much labor to use in adoption
-JZt=-SAt+phiob*(SDF(+1)*AAt(-1)/AAt*1/(1+gammaa)*(probadopt*VA(+1)+(1-probadopt)*JZt(+1)));
-% Probability of Adoption
-probadopt=kappaprob*(SAt)^rhoSADOPT;
-% Adoption 
-(1+gammaa)*AAt=probadopt*phiob*(ZZRD(-1)-AAt(-1))+phiob*AAt(-1);
-% Value of Adoption
-VA=(markupss-1)/(markupss)*mc*yt + phiob*SDF(+1)*VA(+1)*AAt(-1)/AAt/(1+gammaa);
-%% FOC adoption
-rhoSADOPT*probadopt*phiob*SDF(+1)/(1+gammaa)*AAt(-1)/AAt*(VA(+1)-JZt(+1))=SAt;
-*/
-%(1+gammaa)*ZZRD=(shockchit)*ZZRD(-1)*SSt^alphaSRD+phiob*ZZRD(-1);
-ln(ZZRD/STEADY_STATE(ZZRD))=rho_ZZRD*ln(ZZRD(-1)/STEADY_STATE(ZZRD))+alphaRD*1/(1+0*(eff_cgrd-effcgrdshock))*ln(Cgrdeff(-1)/STEADY_STATE(Cgrdeff))+alphaSRD*ln(H(-1)/STEADY_STATE(H))+log(shockchit);
-SSt=STEADY_STATE(SSt);
-% ADDED JUly September
-Cgrdeff=effcgrdshock*Cgrd;
-% OLD; How much labor to use in research
-%SDF(+1)*JZt(+1)*shockchit*ZZRD(-1)/AAt/(1+gammaa)*SSt^(alphaSRD-1)*Cgrd^alphaRD=1 ;
-%SDF(+1)*JZt(+1)*(shockchit)*ZZRD(-1)/AAt/(1+gammaa)=SSt^(1-alphaSRD);
-JZt=-SAt+phiob*(SDF(+1)*AAt(-1)/AAt*1/(1+gammaa)*(probadopt*VA(+1)+(1-probadopt)*JZt(+1)));
-probadopt=(kappaprob+epsirhoadopt)*(SAt)^(rhoSADOPT);
-(1+gammaa)*AAt=probadopt*phiob*(ZZRD(-1)-AAt(-1))+phiob*AAt(-1);
-VA=(markupss-1)/(markupss)*mc*yt + phiob*SDF(+1)*VA(+1)*AAt(-1)/AAt/(1+gammaa);
-rhoSADOPT*probadopt*phiob*SDF(+1)/(1+gammaa)*AAt(-1)/AAt*(VA(+1)-JZt(+1))=SAt;
-/*
-ZZRD=STEADY_STATE(ZZRD);
-SSt=STEADY_STATE(SSt);
-JZt=STEADY_STATE(JZt);
-probadopt=STEADY_STATE(probadopt);
-(1+gammaa)*AAt=probadopt*phiob*(ZZRD(-1)-AAt(-1))+phiob*AAt(-1);
-VA=STEADY_STATE(VA);
-SAt=STEADY_STATE(SAt);
-*/
-%  Stochastic Discount factor (After detrend)
-SDF=betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)));
-% Shock to the R&D
-log(shockchit)=(1-rhoshockchit)*log(shockchitss)+rhoshockchit*log(shockchit(-1))+epsi_shockchit;
+yt = AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*(Kp(-1)^alppha)*(N^(1-alppha))-Bigtheta;
+TFP = AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*H(-1)^(1-alppha);
+// Technology creation (R&D enters in efficiency-adjusted form via Cgrdeff)
+ln(ZZRD/STEADY_STATE(ZZRD)) = rho_ZZRD*ln(ZZRD(-1)/STEADY_STATE(ZZRD))+alphaRD*1/(1+0*(eff_cgrd-effcgrdshock))*ln(Cgrdeff(-1)/STEADY_STATE(Cgrdeff))+alphaSRD*ln(H(-1)/STEADY_STATE(H))+log(shockchit);
+SSt = STEADY_STATE(SSt);
+// Effective R&D = efficiency wedge times R&D spending
+Cgrdeff = effcgrdshock*Cgrd;
+// Value of an unadopted technology
+JZt = -SAt+phiob*(SDF(+1)*AAt(-1)/AAt*1/(1+gammaa)*(probadopt*VA(+1)+(1-probadopt)*JZt(+1)));
+// Probability of adoption
+probadopt = (kappaprob+epsirhoadopt)*(SAt)^(rhoSADOPT);
+// Adoption
+(1+gammaa)*AAt = probadopt*phiob*(ZZRD(-1)-AAt(-1))+phiob*AAt(-1);
+// Value of an adopted technology
+VA = (markupss-1)/(markupss)*mc*yt + phiob*SDF(+1)*VA(+1)*AAt(-1)/AAt/(1+gammaa);
+// FOC for adoption effort
+rhoSADOPT*probadopt*phiob*SDF(+1)/(1+gammaa)*AAt(-1)/AAt*(VA(+1)-JZt(+1)) = SAt;
+// Stochastic discount factor (detrended)
+SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)));
+// Shock to the R&D technology
+log(shockchit) = (1-rhoshockchit)*log(shockchitss)+rhoshockchit*log(shockchit(-1))+epsi_shockchit;
 //********************************************************
-//Monetary Authority-2
+// MONETARY AUTHORITY
 //********************************************************
 // Taylor rule
-%Rmp/Rss=(Rmp(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/yd(-1)*ZZ/ZZss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
-Rmp/Rss=(Rmp(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
-// Link between borrowing cost of goverment and policy rate
-log(R)=rho_RG*R(-1)+ (1-rho_RG)*(log(Rmp) + Delta_G*(by(-1)-byss)) + epsi_spread;
-Delta_G=prob_def*Deltacost;
-prob_def=exp(eta1 + eta2*by(-1))/(1+exp(eta1 + eta2*by(-1)));
+Rmp/Rss = (Rmp(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
+// Government borrowing cost vs. policy rate (sovereign spread)
+log(R) = rho_RG*R(-1)+ (1-rho_RG)*(log(Rmp) + Delta_G*(by(-1)-byss)) + epsi_spread;
+Delta_G = prob_def*Deltacost;
+prob_def = exp(eta1 + eta2*by(-1))/(1+exp(eta1 + eta2*by(-1)));
 //********************************************************
-//GOVERNMENT DECISIONS-7
+// GOVERNMENT DECISIONS
 //********************************************************
-// Public capital
-%Kg=(1-delta)*Kg(-1)/ZZ+effshock*Ig;
-Kg*ZZ=(1-delta)*Kg(-1)+effshock*Ig;
-//Debt equation
-%Bt=(R/PI(+1))*Bt(-1)/ZZ+Cg+Ig+Trans-tauw*W_real*N-tauc*C;
-Bt=(R(-1)/PI)*Bt(-1)/ZZ+Cg+Ig+Cge+Cgrd+Trans-tauw*W_real*N-tauc*C;
-//Lump-sum Transfer 
-%Trans-STEADY_STATE(Trans)=rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_trans)*(gamma_d_trans*(by(-1)-byss)); 
-Trans-STEADY_STATE(Trans)=rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_trans)*(-gamma_d_trans*(by(-1)-byss)*ydss); 
+// Public infrastructure capital
+Kg*ZZ = (1-delta)*Kg(-1)+effshock*Ig;
+// Government debt
+Bt = (R(-1)/PI)*Bt(-1)/ZZ+Cg+Ig+Cge+Cgrd+Trans-tauw*W_real*N-tauc*C;
+// Lump-sum transfers
+Trans-STEADY_STATE(Trans) = rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_trans)*(-gamma_d_trans*(by(-1)-byss)*ydss);
 // Debt to GDP
-by=Bt/yt;
-// Gov Investment dynamics
-%log(Ig/Igss)=rho_Ig*log(Ig(-1)/Igss)+epsi_ig;
-Ig=Igss+ydss*epsi_ig;
-// Gov Consumption dynamics
-%log(Cg/Cgss)=rho_Cg*log(Cg(-1)/Cgss)+epsi_cg;
-Cg-Cgss=-(Ig-Igss+Cge-Cgess+Cgrd-Cgrdss)+ydss*epsi_cg;
-// Consumption tax
-%tauc-taucss=rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_y_tauc*log(yd/ydss)+gamma_d_tauc*(by-byss));
-tauc-taucss=rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss))+epsi_tauc;
-// Income tax 
-%tauw-tauwss=rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_y_tauw*log(yd/ydss)+gamma_d_tauw*(by(-1)-byss))+epsi_tauw;
-%(tauw-tauwss)*W_real*N/yt=gamma_d_tauw*(by(-1)-byss)+epsi_tauw;
-tauw-tauwss=rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_d_tauw*(by(-1)-byss))+epsi_tauw;
-//Public Human-related capital stock
-%Kge=(1-delta)*Kge(-1)/ZZ+effgeshock*Cge;
-Kge*ZZ=(1-delta)*Kge(-1)+effgeshock*Cge;
-%Kge=0*Kge(-1)+effgeshock*Cge;
-// Gov Consumption dynamics
-%log(Cge/Cgess)=rho_Cge*log(Cge(-1)/Cgess)+epsi_cge;
-Cge=Cgess+ydss*epsi_cge;
-// R&D Spending
-Cgrd-Cgrdss=rho_Cgrd*(Cgrd(-1)-Cgrdss)+ydss*epsi_cgrd;
-ln_Cgrd=log(Cgrd);
-Cgrd_ydss_ratio=Cgrd/ydss;
+by = Bt/yt;
+// Government investment dynamics
+Ig = Igss+ydss*epsi_ig;
+// Government consumption dynamics
+Cg-Cgss = -(Ig-Igss+Cge-Cgess+Cgrd-Cgrdss)+ydss*epsi_cg;
+// Consumption tax rule
+tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss))+epsi_tauc;
+// Income tax rule
+tauw-tauwss = rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_d_tauw*(by(-1)-byss))+epsi_tauw;
+// Public human-capital stock
+Kge*ZZ = (1-delta)*Kge(-1)+effgeshock*Cge;
+// Human-capital spending dynamics
+Cge = Cgess+ydss*epsi_cge;
+// R&D spending dynamics
+Cgrd-Cgrdss = rho_Cgrd*(Cgrd(-1)-Cgrdss)+ydss*epsi_cgrd;
+ln_Cgrd = log(Cgrd);
+Cgrd_ydss_ratio = Cgrd/ydss;
 //********************************************************
-//MARKET CLEARING-3
+// MARKET CLEARING
 //********************************************************
-// Aggregate Demand
-%yd=C+Ip+Ig+Cg+Cge+Cgrd;
-yd=C+Ip+Ig+Cg+Cge+Cgrd+SSt+(ZZRD(-1)/AAt(-1)-1)*SAt;
-//Aggregate production
-yt=vp*yd;
-//Price dispersion
-vp=thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
+// Aggregate demand
+yd = C+Ip+Ig+Cg+Cge+Cgrd+SSt+(ZZRD(-1)/AAt(-1)-1)*SAt;
+// Aggregate production
+yt = vp*yd;
+// Price dispersion
+vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 //********************************************************
-//Shock dynamic-2
+// SHOCK DYNAMICS
 //********************************************************
-log(ZZ)=(1-rho_ZZ)*log(ZZ(-1))+rho_ZZ*(log(ZZss))+epsi_ZZ;
-%ZZ=ZZ(-1)^(1-rho_ZZ)* (ZZss H^alphaZZ)^rho_ZZ
-%Efficiency of human-related spending
-effgeshock-effge=rhoeffge*(effgeshock(-1)-effge)+epsi_effge;
-%Efficiency of infrastructure spending
-effshock-eff=rhoeff*(effshock(-1)-eff)+epsi_eff;
-effcgrdshock-eff_cgrd=0*(effcgrdshock(-1)-eff_cgrd)+epsi_effcgrd;
+// Trend growth
+log(ZZ) = (1-rho_ZZ)*log(ZZ(-1))+rho_ZZ*(log(ZZss))+epsi_ZZ;
+// Efficiency of human-capital spending
+effgeshock-effge = rhoeffge*(effgeshock(-1)-effge)+epsi_effge;
+// Efficiency of infrastructure spending
+effshock-eff = rhoeff*(effshock(-1)-eff)+epsi_eff;
+// Efficiency of R&D spending
+effcgrdshock-eff_cgrd = 0*(effcgrdshock(-1)-eff_cgrd)+epsi_effcgrd;
 //********************************************************
-//Variables of interest
+// VARIABLES OF INTEREST
 //********************************************************
-lnyd=log(yd)*100;
-pdef=(Cg+Ig+Cge+Cgrd+Trans-tauw*W_real*N-tauc*C)/yt*100;
-Ig_ys=Ig/ydss*100;
-by_ann=by/4*100;
-lnPI=log(PI)*100;
-% Output growth
-ygrowth=log(yd/yd(-1))*100+log(ZZ)*100; 
+lnyd = log(yd)*100;
+pdef = (Cg+Ig+Cge+Cgrd+Trans-tauw*W_real*N-tauc*C)/yt*100;
+Ig_ys = Ig/ydss*100;
+by_ann = by/4*100;
+lnPI = log(PI)*100;
+// Output growth
+ygrowth = log(yd/yd(-1))*100+log(ZZ)*100;
 end;
 steady;
 check;
