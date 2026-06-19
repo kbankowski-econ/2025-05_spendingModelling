@@ -8,8 +8,8 @@ W_real          % Real wages
 Ip              % Private investment
 Kp              % Private capital
 rk              % Return on private investment
-g1              % Price setting 1
-g2              % Price setting 2
+x1              % Price setting 1
+x2              % Price setting 2
 mc              % Marginal cost
 PIstar          % Optimnal gross inflation 
 yt              % Production

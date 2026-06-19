@@ -16,8 +16,8 @@ var
     Ip              % Private investment
     Kp              % Private capital
     rk              % Return on private investment
-    g1              % Price setting 1
-    g2              % Price setting 2
+    x1              % Price setting 1
+    x2              % Price setting 2
     mc              % Marginal cost
     PIstar          % Optimal gross inflation 
     yt              % Production
@@ -173,9 +173,9 @@ Kp = (1 - delta) * Kp(-1)/ZZ + Ip;
 // FIRMS' DECISIONS
 //********************************************************
 
-g1 = lambda * mc * yd + betta * thetap * (PI^chi / PI(+1))^(-epsilon) * g1(+1);
-g2 = lambda * PIstar * yd + betta * thetap * (PI^chi / PI(+1))^(1 - epsilon) * PIstar / PIstar(+1) * g2(+1);
-epsilon * g1 = (epsilon - 1) * g2;
+x1 = lambda * mc * yd + betta * thetap * (PI^chi / PI(+1))^(-epsilon) * x1(+1);
+x2 = lambda * PIstar * yd + betta * thetap * (PI^chi / PI(+1))^(1 - epsilon) * PIstar / PIstar(+1) * x2(+1);
+epsilon * x1 = (epsilon - 1) * x2;
 
 Kp(-1)/N = alppha / (1 - alppha) * W_real / rk * ZZ;
 

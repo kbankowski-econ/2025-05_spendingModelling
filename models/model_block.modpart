@@ -47,9 +47,9 @@ Ns = STEADY_STATE(Ns);
 // FIRMS DECISIONS
 //********************************************************
 // Price setting
-g1 = lambda*mc*yd+betta*thetap*(PI^chi/PI(+1))^(-epsilon)*g1(+1);
-g2 = lambda*PIstar*yd+betta*thetap*(PI^chi/PI(+1))^(1-epsilon)*PIstar/PIstar(+1)*g2(+1);
-epsilon*g1 = (epsilon-1)*g2;
+x1 = lambda*mc*yd+betta*thetap*(PI^chi/PI(+1))^(-epsilon)*x1(+1);
+x2 = lambda*PIstar*yd+betta*thetap*(PI^chi/PI(+1))^(1-epsilon)*PIstar/PIstar(+1)*x2(+1);
+epsilon*x1 = (epsilon-1)*x2;
 
 // Optimal factor mix
 Kp(-1)/N = alppha/(1-alppha)*W_real/rk;

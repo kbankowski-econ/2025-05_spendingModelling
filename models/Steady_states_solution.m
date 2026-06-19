@@ -117,8 +117,8 @@ C=yd-(Ip+Ig+Cg+Cge+Cgrd+SSt+(ZZRD/AAt-1)*SAt);
 lambda=1/C/(1+tauc);
 
 Cy=1-Ip_y-Igy-Cgy-Cgey-Cgrdy-(SSt+(ZZRD/AAt-1)*SAt)/yd;
-g2=1/(1+tauc)*1/Cy/(1-betta*thetap);  % g2=lambda*y/(1-betta*thetap)= 1/(1+tauc)*y/c/(1-betta*thetap)
-g1=mc*g2;
+x2=1/(1+tauc)*1/Cy/(1-betta*thetap);  % x2=lambda*y/(1-betta*thetap)= 1/(1+tauc)*y/c/(1-betta*thetap)
+x1=mc*x2;
 
 Bt=yt*by;
 Trans=Bt-((1-0*Delta_G)*(R/PI)*Bt/ZZ+Cg+Ig+Cge+Cgrd-tauw*W_real*N-tauc*C);
