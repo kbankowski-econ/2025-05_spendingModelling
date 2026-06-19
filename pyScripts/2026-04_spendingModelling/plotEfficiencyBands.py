@@ -22,8 +22,12 @@ from fiscal_common import load_chart_config, get_project_root
 # Updated efficiency estimates (the Developer copy; the Documents copy is stale).
 DATA_DIR = "/Users/kk/Developer/2025-05_fmEfficiencyScores/code-output/2025-04-14-efficiency-estimates"
 
-SECTORS = ["INF", "HLT", "EDU"]
-SECTOR_TITLES = {"INF": "Infrastructure", "HLT": "Health", "EDU": "Education"}
+SECTORS = ["INF", "HLT", "EDU", "RND"]
+SECTOR_TITLES = {"INF": "Infrastructure", "HLT": "Health", "EDU": "Education", "RND": "R&D"}
+
+# Sectors plotted for advanced economies only (the innovation channel is an
+# AE-only channel in the model; R&D is shut down for EMDEs).
+AE_ONLY_SECTORS = {"RND"}
 
 # Income groups: (label, income code, colour). Colours follow the project's
 # income-group palette (CLAUDE.md): AE blue, EM orange, LIDC brown. The band is
@@ -103,20 +107,22 @@ def main():
     axes = cfg["axes"]
 
     fig = make_subplots(
-        rows=1, cols=3,
+        rows=1, cols=len(SECTORS),
         subplot_titles=tuple(SECTOR_TITLES[s] for s in SECTORS),
         shared_yaxes=True,
-        horizontal_spacing=0.035,
+        horizontal_spacing=0.028,
     )
 
     csv_rows = []
     for col, sector in enumerate(SECTORS, start=1):
         df = load_sector(sector)
         first_panel = (col == 1)
-        bands = {code: group_band(df, code) for _, code, _ in GROUPS}
+        # R&D is plotted for advanced economies only.
+        groups = [g for g in GROUPS if sector not in AE_ONLY_SECTORS or g[1] == "AE"]
+        bands = {code: group_band(df, code) for _, code, _ in groups}
 
         # Shaded IQR bands (background, no legend entry).
-        for _, code, colr in GROUPS:
+        for _, code, colr in groups:
             b = bands[code]
             yrs = b["year"].tolist()
             fig.add_trace(go.Scatter(
@@ -128,7 +134,7 @@ def main():
             ), row=1, col=col)
 
         # Group medians (legend carries the group name).
-        for name, code, colr in GROUPS:
+        for name, code, colr in groups:
             b = bands[code]
             fig.add_trace(go.Scatter(
                 x=b["year"], y=b["p50"], mode="lines",
@@ -138,7 +144,7 @@ def main():
 
         # 2023 circle + decluttered value label for each group.
         ref_vals = []
-        for name, code, colr in GROUPS:
+        for name, code, colr in groups:
             bref = bands[code][bands[code]["year"] == REF_YEAR]
             v = float(bref["p50"].iloc[0]) if not bref.empty else None
             ref_vals.append((v, colr, name))
@@ -158,7 +164,7 @@ def main():
             ), row=1, col=col)
 
         # tidy CSV: one row per group/year
-        for name, code, _ in GROUPS:
+        for name, code, _ in groups:
             for _, r in bands[code].iterrows():
                 csv_rows.append({"sector": sector, "series": name, "year": int(r["year"]),
                                  "p25": round(r["p25"], 4), "p50": round(r["p50"], 4),
@@ -178,7 +184,7 @@ def main():
     )
 
     fig.update_layout(
-        template=cfg["template"], width=1000, height=340,
+        template=cfg["template"], width=1320, height=340,
         margin=dict(l=30, r=12, t=58, b=24), font=dict(size=14),
         legend=dict(orientation="h", yanchor="bottom", y=1.12,
                     xanchor="center", x=0.5, font=dict(size=13)),
@@ -191,7 +197,7 @@ def main():
     figures_dir.mkdir(parents=True, exist_ok=True)
     png_path = figures_dir / f"{OUTPUT_STEM}.png"
     html_path = figures_dir / f"{OUTPUT_STEM}.html"
-    fig.write_image(str(png_path), width=1000, height=340, scale=2)
+    fig.write_image(str(png_path), width=1320, height=340, scale=2)
     fig.write_html(str(html_path), auto_open=False)
     print(f"  Saved {png_path.name} and {html_path.name}")
 
