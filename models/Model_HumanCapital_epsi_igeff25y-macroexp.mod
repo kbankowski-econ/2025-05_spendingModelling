@@ -227,17 +227,6 @@ model;
 //********************************************************
 // HOUSEHOLD DECISIONS
 //********************************************************
-// Steady-state values carried into the model block.
-omega = STEADY_STATE(omega);
-Cgss = Cgy*STEADY_STATE(yt);
-Igss = Igy*STEADY_STATE(yt);
-Igess = Igey*STEADY_STATE(yt);
-Cgrdss = Cgrdy*STEADY_STATE(yt);
-Rss = STEADY_STATE(R);
-ydss = STEADY_STATE(yd);
-muyH = STEADY_STATE(muyH);
-shockchitss = STEADY_STATE(shockchit);   // exogenous disturbance to the R&D technology
-kappaprob = STEADY_STATE(kappaprob);
 // Marginal utility
 1/C = lambda*(1+tauc);
 // Euler equation
@@ -256,8 +245,6 @@ omega*(Lab+E)^phi = lambda_HC*muyH*muy*E^(muy-1)*(Kge(-1))^(alphaH*(1+epsiallo_i
 lambda_HC = betta*(lambda(+1)*(1-tauw(+1))*W_real(+1)*Lab(+1)+lambda_HC(+1)*(1-deltaH));
 // Effective labor
 N = Lab*H(-1);
-// Effective labor in R&D
-Ns = STEADY_STATE(Ns);
 //********************************************************
 // FIRMS DECISIONS
 //********************************************************
@@ -276,7 +263,6 @@ yt = AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*(Kp(-1)^alppha)*(N^(
 TFP = AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*H(-1)^(1-alppha);
 // Technology creation (R&D enters in efficiency-adjusted form via Cgrdeff)
 ln(ZZRD/STEADY_STATE(ZZRD)) = rho_ZZRD*ln(ZZRD(-1)/STEADY_STATE(ZZRD))+alphaRD*1/(1+0*(eff_cgrd-effcgrdshock))*ln(Cgrdeff(-1)/STEADY_STATE(Cgrdeff))+alphaSRD*ln(H(-1)/STEADY_STATE(H))+log(shockchit);
-SSt = STEADY_STATE(SSt);
 // Effective R&D = efficiency wedge times R&D spending
 Cgrdeff = effcgrdshock*Cgrd;
 // Value of an unadopted technology
@@ -359,6 +345,24 @@ by_ann = by/4*100;
 lnPI = log(PI)*100;
 // Output growth
 ygrowth = log(yd/yd(-1))*100+log(ZZ)*100;
+//********************************************************
+// STEADY-STATE VALUES CARRIED INTO THE MODEL BLOCK
+//********************************************************
+// Auxiliary variables pinned to their steady-state values; used as constants
+// in the rules above. Collected here for clarity — in Dynare the order of
+// equations within the model block does not affect the solution.
+omega       = STEADY_STATE(omega);
+Rss         = STEADY_STATE(R);
+ydss        = STEADY_STATE(yd);
+muyH        = STEADY_STATE(muyH);
+kappaprob   = STEADY_STATE(kappaprob);
+shockchitss = STEADY_STATE(shockchit);   // exogenous disturbance to the R&D technology
+Ns          = STEADY_STATE(Ns);
+SSt         = STEADY_STATE(SSt);
+Cgss        = Cgy*STEADY_STATE(yt);
+Igss        = Igy*STEADY_STATE(yt);
+Igess       = Igey*STEADY_STATE(yt);
+Cgrdss      = Cgrdy*STEADY_STATE(yt);
 end;
 steady;
 check;
