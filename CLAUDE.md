@@ -10,6 +10,13 @@
 - Split independent operations into separate tool calls.
 - Always run commands from the repo root or use absolute paths.
 
+## Git Worktrees (parallel work)
+- Use `bashScripts/wt-new.sh <name> [base-branch]` to create a worktree on a new branch (forks from `main` by default).
+- Worktrees live as siblings under `../sm-worktrees/<name>` (override with `SM_WT_DIR`); they share the main repo's LFS object store.
+- `wt-new.sh` rewrites the gitignored `+utils/+call/paths.m` so `project_path` points at the worktree — MATLAB/Dynare write into the worktree, not the main checkout. It also copies `.claude/settings.local.json`.
+- Each worktree must use its own branch (git forbids checking out the same branch twice).
+- Each worktree materializes ~1.5 GB of LFS-smudged files; remove with `bashScripts/wt-rm.sh <name>` (add `--keep-branch` to keep the branch) when done.
+
 ## Chart Conventions
 
 ### Dimensions (cm)
