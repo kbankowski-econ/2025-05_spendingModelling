@@ -46,8 +46,8 @@ Igess,Steady-state gov. spending on human capital infrastructure,pctDev,\% devia
 Lab,Total labor supply,pctDev,\% deviation
 muyH,Adjustment parameter for time allocation (E=0.1),pctDev,\% deviation
 ygrowth,Economic growth rate,pctDev,\% deviation
-effgeshock,Efficiency of human capital spending,dev,abs. deviation
-effshock,Efficiency of infrastructure spending,dev,abs. deviation
+effgegap,Gap in human capital spending efficiency,dev,abs. deviation
+effgap,Gap in infrastructure spending efficiency,dev,abs. deviation
 AAt,Stationary technology process,pctDev,\% deviation
 Cgrd,Gov. R and D expenditure,pctDev,\% deviation
 Cgrdss,Steady-state R&D expenditure,pctDev,\% deviation

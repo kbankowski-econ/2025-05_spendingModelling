@@ -48,8 +48,8 @@ Igess           % Steady state of public spending on Public human-capital relate
 Lab             % Labor supply 
 muyH            % Adjuster so that E=0.1
 ygrowth          % econonmic growth
-effgeshock
-effshock
+effgegap        % Gap in public human-capital efficiency (e^GE)
+effgap          % Gap in public infrastructure efficiency (e^GI)
 AAt             % Aoption Tech Process
 Cgrd            % R&D spending
 Cgrdss          % R&D spending SS
@@ -68,7 +68,7 @@ TFP             % TFP
 Cgrd_ydss_ratio
 ln_Cgrd
 Cgrdeff
-effcgrdshock
+effcgrdgap      % Gap in public R&D efficiency (e^GRD)
 ;
 
 %-----------------------------
@@ -132,11 +132,11 @@ rho_Cg          % AR(1) process for public consumption
 rho_Ig          % AR(1) process for public investment  
 gamma_d_trans   % Response of lump sum transfer to debt
 rho_trans
-eff            % Efficiency of public investment
+effgap_ss       % SS gap in public infrastructure efficiency (e^GI)
 deltaH          % Depreciation of Labor
 muy             % Effectiveness of education investment.
 alphaH          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
-effge           % Efficiency of public HRC 
+effgegap_ss     % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
 alphaZZ1        % Learning by doing off HHon ZZ
 rho_Ige         % Persistence of human-related spending
@@ -153,5 +153,5 @@ rhoSADOPT      % Adoption elasticity
 alphaSRD       % R&D elasticity
 rhoshockchit    % AR (1) or shock to r&D
 rho_ZZRD
-eff_cgrd
+effcgrdgap_ss   % SS gap in public R&D efficiency (e^GRD)
 ;

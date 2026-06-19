@@ -24,7 +24,7 @@ N=1/3;                    % Effective Labor supply
 mc=(epsilon-1)/epsilon;
 
 %kG_y=eff*Igy/(1-(1-delta)/ZZ);
-kG_y=eff*Igy/(ZZ-(1-delta));
+kG_y=(1-effgap_ss)*Igy/(ZZ-(1-delta));
 
 Kp_y=(1+Bigtheta_y)*alppha*mc/(markupss*rk);
 
@@ -63,7 +63,7 @@ Bigtheta=Bigtheta_y*yt;
 %kGe_y=effge*Igey/(1-(1-delta)/ZZ);
 % Human capital
 %kGe_y=effge*Igey/(ZZ-(1-delta));
-kGe_y=effge*Igey/(ZZ-(1-delta));
+kGe_y=(1-effgegap_ss)*Igey/(ZZ-(1-delta));
 Kge=kGe_y*yt;
 Ige=Igey*yt;
 Igess=Ige;
@@ -162,13 +162,13 @@ muyH=omega*(Lab+E)^phi/(lambda_HC*muy*E^(muy-1)* (Kge)^alphaH);
 
 
 ygrowth=log(ZZ)*100;
-effgeshock=effge;
-effshock=eff;
+effgegap=effgegap_ss;
+effgap=effgap_ss;
 
 TFP=AAt^(varthetaat-1)*(Kg^zeta)*H^(1-alppha);
 ln_Cgrd=log(Cgrd);
 Cgrd_ydss_ratio=Cgrd/ydss;
-Cgrdeff=eff_cgrd*Cgrd;
+Cgrdeff=(1-effcgrdgap_ss)*Cgrd;
 
-effcgrdshock=eff_cgrd;
+effcgrdgap=effcgrdgap_ss;
 %AAt=1;

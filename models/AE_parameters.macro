@@ -20,7 +20,7 @@ alphaH=0.1;                          % elasticity of HC formation w.r.t. public 
 alphaHA=0.05;                        % feedback of human capital to TFP              | EM: 0
 
 % R&D and technology adoption
-eff_cgrd=1-0.41;                     % efficiency of public R&D spending             | EM: 0.8
+effcgrdgap_ss=0.41;                  % public R&D efficiency gap (e^GRD)              | EM: 0.2
 alphaRD=0.09*(1-rho_ZZRD);           % effect of R&D on TFP                          | EM: 0
 alphaSRD=0.1;                        % R&D elasticity                                | EM: 0
 rhoSADOPT=0.8;                       % adoption elasticity                           | EM: 0.1

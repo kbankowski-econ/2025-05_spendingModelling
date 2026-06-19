@@ -47,8 +47,8 @@ Igess           % Steady state of public spending on Public human-capital relate
 Lab             % Labor supply 
 muyH            % Adjuster so that E=0.1
 ygrowth          % econonmic growth
-effgeshock
-effshock
+effgegap        % Gap in public human-capital efficiency (e^GE)
+effgap          % Gap in public infrastructure efficiency (e^GI)
 AAt             % Aoption Tech Process
 Cgrd            % R&D spending
 Cgrdss          % R&D spending SS
@@ -67,7 +67,7 @@ TFP             % TFP
 Cgrd_ydss_ratio
 ln_Cgrd
 Cgrdeff
-effcgrdshock
+effcgrdgap      % Gap in public R&D efficiency (e^GRD)
 ;
 %-----------------------------
 % Define exogenous variables
@@ -129,11 +129,11 @@ rho_Cg          % AR(1) process for public consumption
 rho_Ig          % AR(1) process for public investment  
 gamma_d_trans   % Response of lump sum transfer to debt
 rho_trans
-eff            % Efficiency of public investment
+effgap_ss       % SS gap in public infrastructure efficiency (e^GI)
 deltaH          % Depreciation of Labor
 muy             % Effectiveness of education investment.
 alphaH          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
-effge           % Efficiency of public HRC 
+effgegap_ss     % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
 alphaZZ1        % Learning by doing off HHon ZZ
 rho_Ige         % Persistence of human-related spending
@@ -150,7 +150,7 @@ rhoSADOPT      % Adoption elasticity
 alphaSRD       % R&D elasticity
 rhoshockchit    % AR (1) or shock to r&D
 rho_ZZRD
-eff_cgrd
+effcgrdgap_ss   % SS gap in public R&D efficiency (e^GRD)
 ;
 betta=0.9985;
 phi= 1.2 ;
@@ -208,13 +208,13 @@ Cgrdy=0.006;                         % R&D spending                             
 alphaH=0.1;                          % elasticity of HC formation w.r.t. public HRC  | EM: 0.25
 alphaHA=0.05;                        % feedback of human capital to TFP              | EM: 0
 % R&D and technology adoption
-eff_cgrd=1-0.41;                     % efficiency of public R&D spending             | EM: 0.8
+effcgrdgap_ss=0.41;                  % public R&D efficiency gap (e^GRD)              | EM: 0.2
 alphaRD=0.09*(1-rho_ZZRD);           % effect of R&D on TFP                          | EM: 0
 alphaSRD=0.1;                        % R&D elasticity                                | EM: 0
 rhoSADOPT=0.8;                       % adoption elasticity                           | EM: 0.1
 % AE efficiency gaps (2023 medians; INF re-estimated 2026-06)
-eff=1-0.359;
-effge=1-0.306;
+effgap_ss=0.359;
+effgegap_ss=0.306;
 % gammaa uses the set-specific ZZss, so it must come after it
 gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
 model;
@@ -256,9 +256,9 @@ Kp(-1)/N = alppha/(1-alppha)*W_real/rk;
 yt = AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*(Kp(-1)^alppha)*(N^(1-alppha))-Bigtheta;
 TFP = AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*H(-1)^(1-alppha);
 // Technology creation (R&D enters in efficiency-adjusted form via Cgrdeff)
-ln(ZZRD/STEADY_STATE(ZZRD)) = rho_ZZRD*ln(ZZRD(-1)/STEADY_STATE(ZZRD))+alphaRD*1/(1+0*(eff_cgrd-effcgrdshock))*ln(Cgrdeff(-1)/STEADY_STATE(Cgrdeff))+alphaSRD*ln(H(-1)/STEADY_STATE(H))+log(shockchit);
+ln(ZZRD/STEADY_STATE(ZZRD)) = rho_ZZRD*ln(ZZRD(-1)/STEADY_STATE(ZZRD))+alphaRD*ln(Cgrdeff(-1)/STEADY_STATE(Cgrdeff))+alphaSRD*ln(H(-1)/STEADY_STATE(H))+log(shockchit);
 // Effective R&D = efficiency wedge times R&D spending
-Cgrdeff = effcgrdshock*Cgrd;
+Cgrdeff = (1-effcgrdgap)*Cgrd;
 // Value of an unadopted technology
 JZt = -St+phiob*(SDF(+1)*AAt(-1)/AAt*1/(1+gammaa)*(probadopt*VA(+1)+(1-probadopt)*JZt(+1)));
 // Probability of adoption
@@ -286,7 +286,7 @@ prob_def = exp(eta1 + eta2*by(-1))/(1+exp(eta1 + eta2*by(-1)));
 // GOVERNMENT DECISIONS
 //********************************************************
 // Public infrastructure capital
-Kg*ZZ = (1-delta)*Kg(-1)+effshock*Ig;
+Kg*ZZ = (1-delta)*Kg(-1)+(1-effgap)*Ig;
 // Government debt
 Dt = (R(-1)/PI)*Dt(-1)/ZZ+Cg+Ig+Ige+Cgrd+Trans-tauw*W_real*N-tauc*C;
 // Lump-sum transfers
@@ -303,7 +303,7 @@ tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss
 // Income tax rule
 tauw-tauwss = rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_d_tauw*(by(-1)-byss))+epsi_tauw;
 // Public human-capital stock
-Kge*ZZ = (1-delta)*Kge(-1)+effgeshock*Ige;
+Kge*ZZ = (1-delta)*Kge(-1)+(1-effgegap)*Ige;
 //********************************************************
 // MARKET CLEARING
 //********************************************************
@@ -318,12 +318,12 @@ vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 //********************************************************
 // Trend growth
 log(ZZ) = (1-rho_ZZ)*log(ZZ(-1))+rho_ZZ*(log(ZZss))+epsi_ZZ;
-// Efficiency of human-capital spending
-effgeshock = effge+epsi_effge;
-// Efficiency of infrastructure spending
-effshock = eff+epsi_eff;
-// Efficiency of R&D spending
-effcgrdshock = eff_cgrd+epsi_effcgrd;
+// Gap in human-capital spending efficiency (e^GE; positive shock closes the gap)
+effgegap = effgegap_ss-epsi_effge;
+// Gap in infrastructure spending efficiency (e^GI)
+effgap = effgap_ss-epsi_eff;
+// Gap in R&D spending efficiency (e^GRD)
+effcgrdgap = effcgrdgap_ss-epsi_effcgrd;
 //********************************************************
 // VARIABLES OF INTEREST
 //********************************************************
