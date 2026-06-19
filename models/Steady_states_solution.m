@@ -60,13 +60,13 @@ Bigtheta=Bigtheta_y*yt;
 %(Bigtheta_test-Bigtheta).^2
 
 % NEW PATH
-%kGe_y=effge*Cgey/(1-(1-delta)/ZZ);
+%kGe_y=effge*Igey/(1-(1-delta)/ZZ);
 % Human capital
-%kGe_y=effge*Cgey/(ZZ-(1-delta));
-kGe_y=effge*Cgey/(ZZ-(1-delta));
+%kGe_y=effge*Igey/(ZZ-(1-delta));
+kGe_y=effge*Igey/(ZZ-(1-delta));
 Kge=kGe_y*yt;
-Cge=Cgey*yt;
-Cgess=Cge;
+Ige=Igey*yt;
+Igess=Ige;
 Cgrd=Cgrdy*yt;
 Cgrdss=Cgrd;
 
@@ -83,7 +83,7 @@ ZZRD=(1+gammaa-phiob)/(probadopt*phiob)+AAt;
 
 JZt=(1-rhoSADOPT)*probadopt*phiob*SDF/(1+gammaa-(1-probadopt+rhoSADOPT*probadopt)*phiob*betta)*VA;
 
-SAt=rhoSADOPT*probadopt*phiob*SDF/(1+gammaa)*(VA-JZt);
+St=rhoSADOPT*probadopt*phiob*SDF/(1+gammaa)*(VA-JZt);
 
 %SSt=SDF*JZt*(ZZRD/AAt-phiob*ZZRD/AAt*1/(1+gammaa));
 SSt=0;
@@ -93,15 +93,15 @@ shockchit=1;
 
 
 
-kappaprob=probadopt/((SAt)^rhoSADOPT);
+kappaprob=probadopt/((St)^rhoSADOPT);
 
 
-Ns=(1-1/ZZRD)*SAt+SSt;
+Ns=(1-1/ZZRD)*St+SSt;
 
 shockchitss=shockchit;
 
-share_in_RD=(SSt+(ZZRD/AAt-1)*SAt)/yt;
-(ZZRD/AAt-1)*SAt/yt
+share_in_RD=(SSt+(ZZRD/AAt-1)*St)/yt;
+(ZZRD/AAt-1)*St/yt
 Ip_y=Ip/yt;
 %Ip_y=(1-(1-delta)/ZZ)*Kp_y;
 Ip_y=(ZZ-(1-delta))*Kp_y;
@@ -113,21 +113,21 @@ yd=yt;
 Ig=Igy*yt;
 Cg=Cgy*yt;
 
-C=yd-(Ip+Ig+Cg+Cge+Cgrd+SSt+(ZZRD/AAt-1)*SAt);
+C=yd-(Ip+Ig+Cg+Ige+Cgrd+SSt+(ZZRD/AAt-1)*St);
 lambda=1/C/(1+tauc);
 
-Cy=1-Ip_y-Igy-Cgy-Cgey-Cgrdy-(SSt+(ZZRD/AAt-1)*SAt)/yd;
+Cy=1-Ip_y-Igy-Cgy-Igey-Cgrdy-(SSt+(ZZRD/AAt-1)*St)/yd;
 x2=1/(1+tauc)*1/Cy/(1-betta*thetap);  % x2=lambda*y/(1-betta*thetap)= 1/(1+tauc)*y/c/(1-betta*thetap)
 x1=mc*x2;
 
-Bt=yt*by;
-Trans=Bt-((1-0*Delta_G)*(R/PI)*Bt/ZZ+Cg+Ig+Cge+Cgrd-tauw*W_real*N-tauc*C);
+Dt=yt*by;
+Trans=Dt-((1-0*Delta_G)*(R/PI)*Dt/ZZ+Cg+Ig+Ige+Cgrd-tauw*W_real*N-tauc*C);
 Cgss=Cgy*(yt);
 Igss=Igy*(yt);
 
 %Variables of interest
 lnyd=log(yd)*100;
-pdef=(Cg+Ig+Cge+Cgrd+Trans-tauw*W_real*N-tauc*C)/yt*100;
+pdef=(Cg+Ig+Ige+Cgrd+Trans-tauw*W_real*N-tauc*C)/yt*100;
 Ig_ys=Ig/ydss*100;
 by_ann=by/4*100;
 lnPI=log(PI)*100;

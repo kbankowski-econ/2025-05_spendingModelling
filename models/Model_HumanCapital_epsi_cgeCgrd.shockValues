@@ -1,4 +1,4 @@
-var epsi_cge;
+var epsi_ige;
 periods 1:1000 ;
 values
     0.005

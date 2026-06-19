@@ -1,7 +1,7 @@
 perfect_foresight_setup(periods=2000);
 perfect_foresight_solver(maxit=20);
 
-fiscalchange=Ig-Igss+Cge-Cgess+Cgrd-Cgrdss;
+fiscalchange=Ig-Igss+Ige-Igess+Cgrd-Cgrdss;
 % Period 1 is the pre-shock steady state (the baseline, subtracted as yd(1));
 % the shock is active from period 2 on. An N-year horizon is the 4N quarters in
 % indices 2:(N*4+1), so ped=N*4+1 (the slice 2:ped is inclusive of both ends).

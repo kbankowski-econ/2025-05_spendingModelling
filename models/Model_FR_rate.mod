@@ -23,7 +23,7 @@ var
     yt              % Production
     Kg              % Public capital
     Rmp             % Policy rate
-    Bt              % Debt level
+    Dt              % Debt level
     by              % Debt/GDP
     Ig              % Public investment
     Cg              % Public consumption
@@ -212,12 +212,12 @@ prob_def = exp(eta1 + eta2 * by(-1)) / (1 + exp(eta1 + eta2 * by(-1)));
 
 Kg = (1 - delta) * Kg(-1) / ZZ + eff * Ig;
 
-Bt = (R / PI(+1)) * Bt(-1) / ZZ + Cg + Ig + Trans - tauw * W_real * N - tauc * C;
+Dt = (R / PI(+1)) * Dt(-1) / ZZ + Cg + Ig + Trans - tauw * W_real * N - tauc * C;
 
 Trans - STEADY_STATE(Trans) = rho_trans * (Trans(-1) - STEADY_STATE(Trans)) +
                               (1 - rho_trans) * gamma_d_trans * (by(-1) - byss);
 
-by = Bt / yt;
+by = Dt / yt;
 
 log(Cg / Cgss) = rho_Cg * log(Cg(-1) / Cgss) + epsi_cg;
 log(Ig / Igss) = rho_Ig * log(Ig(-1) / Igss) + epsi_ig;

@@ -87,8 +87,8 @@ Cy=1-Ip_y-Igy-Cgy;
 x2=1/(1+tauc)*1/Cy/(1-betta*thetap);  % x2=lambda*y/(1-betta*thetap)= 1/(1+tauc)*y/c/(1-betta*thetap)
 x1=mc*x2;
 
-Bt=yt*by;
-Trans=Bt-((1-0*Delta_G)*(R/PI)*Bt/ZZ+Cg+Ig-tauw*W_real*N-tauc*C);
+Dt=yt*by;
+Trans=Dt-((1-0*Delta_G)*(R/PI)*Dt/ZZ+Cg+Ig-tauw*W_real*N-tauc*C);
 Cgss=Cgy*(yt);
 Igss=Igy*(yt);
 

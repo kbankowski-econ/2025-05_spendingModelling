@@ -31,7 +31,7 @@ rho_trans=0;
 deltaH=0.025;
 muy=0.5;
 
-rho_Cge=0.9;
+rho_Ige=0.9;
 alphaZZ1=0.2;
 rhoeffge =0;
 rhoeff =0;

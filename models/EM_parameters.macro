@@ -12,7 +12,7 @@ byss=0.6*4;                          % steady-state debt to quarterly GDP (annua
 % public spending shares of GDP
 Igy=0.05;                            % public investment                             | AE: 0.03
 Cgy=0.14;                            % public consumption                            | AE: 0.18
-Cgey=0.02;                           % human-capital-related spending                | AE: 0.0145
+Igey=0.02;                           % human-capital-related spending                | AE: 0.0145
 Cgrdy=0.001;                         % R&D spending                                  | AE: 0.006
 
 % human capital

@@ -11,7 +11,7 @@ For each scenario it loads <model>/Output/<model>_results.mat, takes the
 endogenous simulation oo_.endo_simul (column 1 = pre-shock steady state), and
 applies the postSimul.mod formula
 
-    fiscalchange = (Ig-Igss) + (Cge-Cgess) + (Cgrd-Cgrdss)
+    fiscalchange = (Ig-Igss) + (Ige-Igess) + (Cgrd-Cgrdss)
     multiplier_Ny = sum(yd(2:N*4+1) - yd(1)) / sum(fiscalchange(2:N*4+1))
 
 i.e. the cumulative output gain over the cumulative fiscal injection. Period 1
@@ -19,7 +19,7 @@ i.e. the cumulative output gain over the cumulative fiscal injection. Period 1
 is active from period 2, so an N-year horizon spans the 4N quarters in indices
 2:(N*4+1). The experiments are the pure
 1%-of-GDP permanent spending shocks: infrastructure (epsi_ig) and human-capital
-(epsi_cge) spending, for the advanced, EMDE and Jamaica calibrations.
+(epsi_ige) spending, for the advanced, EMDE and Jamaica calibrations.
 
 Writes:
   ../csvFiles/multipliers.csv      (one row per scenario, all horizons)
@@ -59,7 +59,7 @@ def multipliers(model):
 
     yd = sim[idx["yd"]]
     fc = ((sim[idx["Ig"]] - ss[idx["Ig"]])
-          + (sim[idx["Cge"]] - ss[idx["Cge"]])
+          + (sim[idx["Ige"]] - ss[idx["Ige"]])
           + (sim[idx["Cgrd"]] - ss[idx["Cgrd"]]))
     out = {}
     for h in HORIZONS:
