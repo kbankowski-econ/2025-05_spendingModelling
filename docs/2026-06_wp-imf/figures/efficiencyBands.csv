@@ -1,0 +1,220 @@
+sector,series,year,p25,p50,p75
+INF,Advanced Economies,2000,0.3372,0.3523,0.3734
+INF,Advanced Economies,2001,0.3334,0.3471,0.3688
+INF,Advanced Economies,2002,0.334,0.3485,0.3637
+INF,Advanced Economies,2003,0.333,0.3443,0.3602
+INF,Advanced Economies,2004,0.3244,0.341,0.3592
+INF,Advanced Economies,2005,0.3268,0.3464,0.3609
+INF,Advanced Economies,2006,0.3227,0.3418,0.3566
+INF,Advanced Economies,2007,0.3262,0.3408,0.3517
+INF,Advanced Economies,2008,0.3201,0.3373,0.35
+INF,Advanced Economies,2009,0.3158,0.3321,0.3477
+INF,Advanced Economies,2010,0.3149,0.3333,0.3471
+INF,Advanced Economies,2011,0.3117,0.3315,0.3409
+INF,Advanced Economies,2012,0.3122,0.3286,0.3367
+INF,Advanced Economies,2013,0.3122,0.3276,0.3363
+INF,Advanced Economies,2014,0.3079,0.3269,0.3373
+INF,Advanced Economies,2015,0.3101,0.3292,0.3391
+INF,Advanced Economies,2016,0.3128,0.3331,0.3469
+INF,Advanced Economies,2017,0.3232,0.3373,0.3566
+INF,Advanced Economies,2018,0.3261,0.3423,0.3664
+INF,Advanced Economies,2019,0.327,0.3475,0.3706
+INF,Advanced Economies,2020,0.3313,0.3516,0.3741
+INF,Advanced Economies,2021,0.3362,0.3592,0.3935
+INF,Advanced Economies,2022,0.3313,0.3559,0.3819
+INF,Advanced Economies,2023,0.3331,0.3595,0.3789
+INF,Emerging Markets,2000,0.3465,0.3968,0.4556
+INF,Emerging Markets,2001,0.3409,0.377,0.4342
+INF,Emerging Markets,2002,0.3272,0.368,0.4221
+INF,Emerging Markets,2003,0.3211,0.3577,0.4114
+INF,Emerging Markets,2004,0.3102,0.3473,0.3869
+INF,Emerging Markets,2005,0.3143,0.3496,0.3855
+INF,Emerging Markets,2006,0.317,0.3481,0.3806
+INF,Emerging Markets,2007,0.3184,0.3496,0.3783
+INF,Emerging Markets,2008,0.3186,0.3451,0.3747
+INF,Emerging Markets,2009,0.3096,0.3428,0.3711
+INF,Emerging Markets,2010,0.3112,0.3408,0.3705
+INF,Emerging Markets,2011,0.3089,0.3354,0.3669
+INF,Emerging Markets,2012,0.3111,0.333,0.367
+INF,Emerging Markets,2013,0.3077,0.332,0.363
+INF,Emerging Markets,2014,0.3054,0.333,0.3683
+INF,Emerging Markets,2015,0.3082,0.3388,0.3671
+INF,Emerging Markets,2016,0.3088,0.3419,0.3723
+INF,Emerging Markets,2017,0.313,0.3504,0.374
+INF,Emerging Markets,2018,0.313,0.3543,0.3726
+INF,Emerging Markets,2019,0.3196,0.3576,0.3804
+INF,Emerging Markets,2020,0.3204,0.3568,0.3879
+INF,Emerging Markets,2021,0.3213,0.3593,0.3971
+INF,Emerging Markets,2022,0.3094,0.3599,0.4045
+INF,Emerging Markets,2023,0.3282,0.3707,0.4209
+INF,Low-Income Developing Countries,2000,0.4884,0.5809,0.6263
+INF,Low-Income Developing Countries,2001,0.48,0.5685,0.608
+INF,Low-Income Developing Countries,2002,0.4489,0.5496,0.59
+INF,Low-Income Developing Countries,2003,0.4348,0.5323,0.5862
+INF,Low-Income Developing Countries,2004,0.4231,0.5156,0.5795
+INF,Low-Income Developing Countries,2005,0.4052,0.5065,0.5575
+INF,Low-Income Developing Countries,2006,0.4003,0.475,0.5379
+INF,Low-Income Developing Countries,2007,0.4044,0.4685,0.5263
+INF,Low-Income Developing Countries,2008,0.3767,0.4672,0.5195
+INF,Low-Income Developing Countries,2009,0.3762,0.4543,0.4934
+INF,Low-Income Developing Countries,2010,0.3765,0.4291,0.4784
+INF,Low-Income Developing Countries,2011,0.3667,0.424,0.4777
+INF,Low-Income Developing Countries,2012,0.3763,0.4187,0.463
+INF,Low-Income Developing Countries,2013,0.3739,0.421,0.4622
+INF,Low-Income Developing Countries,2014,0.3804,0.4167,0.4565
+INF,Low-Income Developing Countries,2015,0.383,0.413,0.4777
+INF,Low-Income Developing Countries,2016,0.3926,0.4321,0.472
+INF,Low-Income Developing Countries,2017,0.3868,0.4372,0.4737
+INF,Low-Income Developing Countries,2018,0.3787,0.4423,0.4748
+INF,Low-Income Developing Countries,2019,0.3781,0.4437,0.4745
+INF,Low-Income Developing Countries,2020,0.3718,0.4389,0.4781
+INF,Low-Income Developing Countries,2021,0.3818,0.4437,0.4946
+INF,Low-Income Developing Countries,2022,0.3832,0.4316,0.5078
+INF,Low-Income Developing Countries,2023,0.3824,0.4409,0.4937
+HLT,Advanced Economies,2000,0.247,0.2632,0.2795
+HLT,Advanced Economies,2001,0.2449,0.2584,0.2716
+HLT,Advanced Economies,2002,0.2435,0.2576,0.2693
+HLT,Advanced Economies,2003,0.2439,0.2554,0.27
+HLT,Advanced Economies,2004,0.242,0.2551,0.2675
+HLT,Advanced Economies,2005,0.2431,0.2547,0.2665
+HLT,Advanced Economies,2006,0.2436,0.2556,0.267
+HLT,Advanced Economies,2007,0.2414,0.2542,0.2671
+HLT,Advanced Economies,2008,0.2377,0.2498,0.2636
+HLT,Advanced Economies,2009,0.2372,0.2476,0.2633
+HLT,Advanced Economies,2010,0.2353,0.2472,0.2613
+HLT,Advanced Economies,2011,0.2324,0.2472,0.2584
+HLT,Advanced Economies,2012,0.2337,0.2476,0.2595
+HLT,Advanced Economies,2013,0.2339,0.2448,0.2604
+HLT,Advanced Economies,2014,0.2336,0.2442,0.2617
+HLT,Advanced Economies,2015,0.2331,0.2461,0.2646
+HLT,Advanced Economies,2016,0.2332,0.2484,0.2675
+HLT,Advanced Economies,2017,0.2366,0.2562,0.2717
+HLT,Advanced Economies,2018,0.2404,0.2602,0.2769
+HLT,Advanced Economies,2019,0.2423,0.2632,0.2813
+HLT,Advanced Economies,2020,0.2469,0.2659,0.281
+HLT,Advanced Economies,2021,0.2546,0.2695,0.2859
+HLT,Advanced Economies,2022,0.264,0.2861,0.3037
+HLT,Advanced Economies,2023,0.2699,0.2946,0.311
+HLT,Emerging Markets,2000,0.2286,0.2674,0.2946
+HLT,Emerging Markets,2001,0.2298,0.2659,0.2919
+HLT,Emerging Markets,2002,0.2331,0.2599,0.2919
+HLT,Emerging Markets,2003,0.2325,0.2621,0.2879
+HLT,Emerging Markets,2004,0.2327,0.2601,0.2899
+HLT,Emerging Markets,2005,0.2325,0.2573,0.2893
+HLT,Emerging Markets,2006,0.2369,0.2556,0.2893
+HLT,Emerging Markets,2007,0.2361,0.2557,0.2871
+HLT,Emerging Markets,2008,0.2358,0.2565,0.2842
+HLT,Emerging Markets,2009,0.2368,0.2565,0.2877
+HLT,Emerging Markets,2010,0.2361,0.2568,0.2867
+HLT,Emerging Markets,2011,0.2364,0.2605,0.2881
+HLT,Emerging Markets,2012,0.2357,0.2638,0.2883
+HLT,Emerging Markets,2013,0.2373,0.266,0.2909
+HLT,Emerging Markets,2014,0.2413,0.2695,0.2952
+HLT,Emerging Markets,2015,0.2422,0.2717,0.295
+HLT,Emerging Markets,2016,0.243,0.2746,0.3014
+HLT,Emerging Markets,2017,0.2484,0.2808,0.3074
+HLT,Emerging Markets,2018,0.2525,0.2828,0.3137
+HLT,Emerging Markets,2019,0.2541,0.283,0.3194
+HLT,Emerging Markets,2020,0.2612,0.2889,0.3303
+HLT,Emerging Markets,2021,0.2689,0.2984,0.333
+HLT,Emerging Markets,2022,0.2681,0.3043,0.3402
+HLT,Emerging Markets,2023,0.2718,0.3115,0.3422
+HLT,Low-Income Developing Countries,2000,0.288,0.3334,0.3891
+HLT,Low-Income Developing Countries,2001,0.2848,0.3253,0.3839
+HLT,Low-Income Developing Countries,2002,0.2738,0.3142,0.3748
+HLT,Low-Income Developing Countries,2003,0.2667,0.3121,0.3723
+HLT,Low-Income Developing Countries,2004,0.258,0.3101,0.3661
+HLT,Low-Income Developing Countries,2005,0.2579,0.3016,0.3571
+HLT,Low-Income Developing Countries,2006,0.2554,0.3008,0.3447
+HLT,Low-Income Developing Countries,2007,0.2589,0.3045,0.3394
+HLT,Low-Income Developing Countries,2008,0.2594,0.3019,0.3322
+HLT,Low-Income Developing Countries,2009,0.2468,0.2982,0.3286
+HLT,Low-Income Developing Countries,2010,0.2495,0.2969,0.3278
+HLT,Low-Income Developing Countries,2011,0.2497,0.2993,0.3253
+HLT,Low-Income Developing Countries,2012,0.2443,0.2951,0.3309
+HLT,Low-Income Developing Countries,2013,0.25,0.2896,0.3233
+HLT,Low-Income Developing Countries,2014,0.249,0.2907,0.3235
+HLT,Low-Income Developing Countries,2015,0.2485,0.2881,0.3254
+HLT,Low-Income Developing Countries,2016,0.2526,0.2902,0.3226
+HLT,Low-Income Developing Countries,2017,0.2523,0.2976,0.3257
+HLT,Low-Income Developing Countries,2018,0.2534,0.2937,0.3245
+HLT,Low-Income Developing Countries,2019,0.2554,0.2931,0.328
+HLT,Low-Income Developing Countries,2020,0.2611,0.298,0.3368
+HLT,Low-Income Developing Countries,2021,0.2637,0.3009,0.3364
+HLT,Low-Income Developing Countries,2022,0.2676,0.3,0.341
+HLT,Low-Income Developing Countries,2023,0.2726,0.3075,0.3498
+EDU,Advanced Economies,2000,0.2516,0.2727,0.2946
+EDU,Advanced Economies,2001,0.2517,0.2723,0.2932
+EDU,Advanced Economies,2002,0.2524,0.2731,0.2923
+EDU,Advanced Economies,2003,0.2523,0.2715,0.2905
+EDU,Advanced Economies,2004,0.2508,0.2713,0.2907
+EDU,Advanced Economies,2005,0.2518,0.2697,0.29
+EDU,Advanced Economies,2006,0.2521,0.2706,0.2935
+EDU,Advanced Economies,2007,0.2518,0.2701,0.2967
+EDU,Advanced Economies,2008,0.2493,0.2694,0.2983
+EDU,Advanced Economies,2009,0.2475,0.2684,0.2992
+EDU,Advanced Economies,2010,0.2486,0.2697,0.3003
+EDU,Advanced Economies,2011,0.2518,0.2699,0.3007
+EDU,Advanced Economies,2012,0.2542,0.2735,0.302
+EDU,Advanced Economies,2013,0.2562,0.2761,0.3081
+EDU,Advanced Economies,2014,0.2568,0.2787,0.3103
+EDU,Advanced Economies,2015,0.2605,0.2771,0.3117
+EDU,Advanced Economies,2016,0.2619,0.2789,0.314
+EDU,Advanced Economies,2017,0.2698,0.2848,0.3209
+EDU,Advanced Economies,2018,0.2738,0.2939,0.3254
+EDU,Advanced Economies,2019,0.2759,0.2979,0.3287
+EDU,Advanced Economies,2020,0.2781,0.2972,0.3308
+EDU,Advanced Economies,2021,0.2767,0.2962,0.337
+EDU,Advanced Economies,2022,0.2803,0.3053,0.3404
+EDU,Advanced Economies,2023,0.3007,0.3177,0.3567
+EDU,Advanced Economies,2024,0.3257,0.338,0.3732
+EDU,Emerging Markets,2000,0.2805,0.3141,0.3523
+EDU,Emerging Markets,2001,0.2778,0.3112,0.3531
+EDU,Emerging Markets,2002,0.275,0.3105,0.3473
+EDU,Emerging Markets,2003,0.2752,0.305,0.3426
+EDU,Emerging Markets,2004,0.2746,0.3079,0.3426
+EDU,Emerging Markets,2005,0.2747,0.3065,0.3379
+EDU,Emerging Markets,2006,0.274,0.3052,0.3338
+EDU,Emerging Markets,2007,0.2744,0.3053,0.332
+EDU,Emerging Markets,2008,0.2763,0.3025,0.3324
+EDU,Emerging Markets,2009,0.2752,0.3014,0.33
+EDU,Emerging Markets,2010,0.2753,0.3024,0.3276
+EDU,Emerging Markets,2011,0.2747,0.3037,0.3251
+EDU,Emerging Markets,2012,0.2831,0.3083,0.3257
+EDU,Emerging Markets,2013,0.2861,0.3106,0.3294
+EDU,Emerging Markets,2014,0.2885,0.311,0.3357
+EDU,Emerging Markets,2015,0.2929,0.3132,0.3361
+EDU,Emerging Markets,2016,0.2954,0.3157,0.3394
+EDU,Emerging Markets,2017,0.297,0.3227,0.3447
+EDU,Emerging Markets,2018,0.2943,0.3256,0.3454
+EDU,Emerging Markets,2019,0.2976,0.3284,0.3455
+EDU,Emerging Markets,2020,0.3034,0.3285,0.353
+EDU,Emerging Markets,2021,0.3041,0.333,0.3576
+EDU,Emerging Markets,2022,0.3083,0.3366,0.3636
+EDU,Emerging Markets,2023,0.3078,0.3475,0.3661
+EDU,Emerging Markets,2024,0.3308,0.3653,0.3845
+EDU,Low-Income Developing Countries,2000,0.3286,0.3892,0.4546
+EDU,Low-Income Developing Countries,2001,0.3321,0.3697,0.451
+EDU,Low-Income Developing Countries,2002,0.326,0.3707,0.4443
+EDU,Low-Income Developing Countries,2003,0.3214,0.3619,0.4498
+EDU,Low-Income Developing Countries,2004,0.316,0.3618,0.4419
+EDU,Low-Income Developing Countries,2005,0.3083,0.3599,0.437
+EDU,Low-Income Developing Countries,2006,0.3058,0.3664,0.4317
+EDU,Low-Income Developing Countries,2007,0.3035,0.3586,0.4229
+EDU,Low-Income Developing Countries,2008,0.2998,0.3552,0.4173
+EDU,Low-Income Developing Countries,2009,0.3001,0.3552,0.401
+EDU,Low-Income Developing Countries,2010,0.294,0.3502,0.384
+EDU,Low-Income Developing Countries,2011,0.2959,0.3442,0.378
+EDU,Low-Income Developing Countries,2012,0.2994,0.3418,0.3801
+EDU,Low-Income Developing Countries,2013,0.3002,0.3462,0.3831
+EDU,Low-Income Developing Countries,2014,0.2931,0.3339,0.3774
+EDU,Low-Income Developing Countries,2015,0.2962,0.3364,0.3732
+EDU,Low-Income Developing Countries,2016,0.2908,0.3399,0.3712
+EDU,Low-Income Developing Countries,2017,0.2938,0.3361,0.3757
+EDU,Low-Income Developing Countries,2018,0.2969,0.336,0.3727
+EDU,Low-Income Developing Countries,2019,0.2938,0.3399,0.3779
+EDU,Low-Income Developing Countries,2020,0.2994,0.3391,0.3777
+EDU,Low-Income Developing Countries,2021,0.2948,0.3457,0.3761
+EDU,Low-Income Developing Countries,2022,0.2928,0.3533,0.3883
+EDU,Low-Income Developing Countries,2023,0.2923,0.3499,0.394
+EDU,Low-Income Developing Countries,2024,0.3009,0.3585,0.4008
