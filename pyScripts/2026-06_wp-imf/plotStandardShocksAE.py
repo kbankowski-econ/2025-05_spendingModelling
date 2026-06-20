@@ -11,14 +11,14 @@ increase in one spending instrument with no offsetting cut.
 Reads the yearly export docs/csvFiles/figureNumbers_yearly.csv (2025-2050) and
 writes a 3x4 grid of % deviations to the working-paper figures directory.
 """
-import re
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from fiscal_common import (
+    load_config,
     load_chart_config,
+    ensure_output_dir,
     resolve_from_config,
-    resolve_project_path,
     smart_save_image,
 )
 
@@ -64,6 +64,7 @@ def load_data():
 
 
 def main():
+    config = load_config()
     chart_cfg = load_chart_config()["styling"]
     axes = chart_cfg["axes"]
     df = load_data()
@@ -115,7 +116,7 @@ def main():
         ticks=axes["ticks"], tickfont=dict(size=11),
     )
 
-    figures_dir = resolve_project_path("docs", "2026-06_wp-imf", "figures")
+    figures_dir = ensure_output_dir(config) / "figures"
     figures_dir.mkdir(parents=True, exist_ok=True)
     png_path = figures_dir / f"{OUTPUT_STEM}.png"
     smart_save_image(fig, png_path)
