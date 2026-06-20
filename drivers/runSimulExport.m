@@ -41,7 +41,7 @@ for aModel = modelList
     end
     
     % Calculate IRF transformations
-    serIndex = cellfun(@(x) any(endsWith(x, {'effgap', 'effgegap'})), resultsRaw.M_.endo_names);
+    serIndex = cellfun(@(x) any(endsWith(x, {'eGI', 'eGE'})), resultsRaw.M_.endo_names);
     
     resultsProc.(aModel).irf = databank.copy( ...
         resultsProc.(aModel).endo, ...
@@ -61,7 +61,7 @@ end
 
 tempDatabank = struct();
 
-varList = ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "effgap", "effgegap", "TFP", "ZZRD", "AAt"]
+varList = ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "eGI", "eGE", "TFP", "ZZRD", "AAt"]
 
 for aVar = varList
 

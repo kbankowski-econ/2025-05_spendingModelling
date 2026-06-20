@@ -2,5 +2,5 @@
 % ([sector]_inefficiency-scores.csv, eff_gap column):
 %   INF 2023: 0.16814770 (re-estimated on total public investment, col F)
 %   HLT 2023: 0.36166763; EDU 2023: 0.35159856; averaged to 0.357
-effgap_ss=0.1681;
-effgegap_ss=0.357;
+eGI_ss=0.1681;
+eGE_ss=0.357;

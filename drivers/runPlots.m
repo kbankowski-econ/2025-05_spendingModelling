@@ -41,7 +41,7 @@ for aModel = modelList
     end
     
     % Calculate IRF transformations
-    serIndex = cellfun(@(x) any(endsWith(x, {'effgap', 'effgegap'})), resultsRaw.M_.endo_names);
+    serIndex = cellfun(@(x) any(endsWith(x, {'eGI', 'eGE'})), resultsRaw.M_.endo_names);
     
     resultsProc.(aModel).irf = databank.copy( ...
         resultsProc.(aModel).endo, ...
@@ -59,18 +59,18 @@ end
 
 
 %% Plot comparison
-%vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "effgap", "effgegap"], ["Model_HumanCapital_epsi_ig" , "Model_HumanCapital_epsi_cge" , "Model_HumanCapital_epsi_cgrd", "Model_HumanCapital_epsieff30y", "Model_HumanCapital_epsieffcge30y"], 'epsiall_AE');
+%vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "eGI", "eGE"], ["Model_HumanCapital_epsi_ig" , "Model_HumanCapital_epsi_cge" , "Model_HumanCapital_epsi_cgrd", "Model_HumanCapital_epsieff30y", "Model_HumanCapital_epsieffcge30y"], 'epsiall_AE');
 % (diagnostic comparison disabled — EM_Model_HumanCapital_epsieff30y / epsieffcge30y were purged as non-paper models)
-%vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "effgap", "effgegap", "TFP"], ["EM_Model_HumanCapital_epsieff30y", "EM_Model_HumanCapital_epsieffcge30y"], 'epsiall_AE');
-% vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "effgap", "effgegap", "TFP"], ["EM_Model_HumanCapital_epsiigeff25y", "EM_Model_HumanCapital_epsiigeff25y_al"], 'epsiall_EM');
+%vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "eGI", "eGE", "TFP"], ["EM_Model_HumanCapital_epsieff30y", "EM_Model_HumanCapital_epsieffcge30y"], 'epsiall_AE');
+% vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "eGI", "eGE", "TFP"], ["EM_Model_HumanCapital_epsiigeff25y", "EM_Model_HumanCapital_epsiigeff25y_al"], 'epsiall_EM');
 
-%vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "effgap", "effgegap"], ["Model_HumanCapital_epsi_ig", "EM_Model_HumanCapital_epsiig"], 'epsi_ig');;
-%vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "effgap", "effgegap"], ["Model_HumanCapital_epsi_cge", "EM_Model_HumanCapital_epsicge"], 'epsi_ige');;
+%vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "eGI", "eGE"], ["Model_HumanCapital_epsi_ig", "EM_Model_HumanCapital_epsiig"], 'epsi_ig');;
+%vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "eGI", "eGE"], ["Model_HumanCapital_epsi_cge", "EM_Model_HumanCapital_epsicge"], 'epsi_ige');;
 
 %%
 
 for aModel = modelList
-    vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "effgap", "effgegap"], [aModel], char(aModel));
+    vertModelComparison(resultsProc, ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "eGI", "eGE"], [aModel], char(aModel));
 end
 
 
@@ -78,7 +78,7 @@ end
 
 tempDatabank = struct();
 
-varList = ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "effgap", "effgegap", "TFP", "ZZRD", "AAt"]
+varList = ["yd", "C", "Ip", "Ig", "Cg", "Ige", "Cgrd", "H", "Lab", "E", "eGI", "eGE", "TFP", "ZZRD", "AAt"]
 
 for aVar = varList
 

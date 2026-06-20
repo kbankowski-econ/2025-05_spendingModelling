@@ -49,7 +49,7 @@ for aModel = modelList
     end
     
     % Calculate IRF transformations
-    serIndex = cellfun(@(x) any(endsWith(x, {'effgap', 'effgegap'})), resultsRaw.M_.endo_names);
+    serIndex = cellfun(@(x) any(endsWith(x, {'eGI', 'eGE'})), resultsRaw.M_.endo_names);
     
     resultsProc.(aModel).irf = databank.copy( ...
         resultsProc.(aModel).endo, ...

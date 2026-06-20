@@ -46,15 +46,15 @@ Kp(-1)/N = alppha/(1-alppha)*W_real/rk;
 1 = thetap*(PI(-1)^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon);
 
 // Production
-yt = AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*(Kp(-1)^alppha)*(N^(1-alppha))-Bigtheta;
+yt = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*(Kp(-1)^alppha)*(N^(1-alppha))-Bigtheta;
 
-TFP = AAt(-1)^(varthetaat-1)*(Kg(-1)^(zeta*(1+epsiallo_ig)))*H(-1)^(1-alppha);
+TFP = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*H(-1)^(1-alppha);
 
 // Technology creation (R&D enters in efficiency-adjusted form via Cgrdeff)
-ln(ZZRD/STEADY_STATE(ZZRD)) = rho_ZZRD*ln(ZZRD(-1)/STEADY_STATE(ZZRD))+alphaRD*ln(Cgrdeff(-1)/STEADY_STATE(Cgrdeff))+alphaSRD*ln(H(-1)/STEADY_STATE(H))+log(shockchit);
+ln(ZZRD/STEADY_STATE(ZZRD)) = rho_ZZRD*ln(ZZRD(-1)/STEADY_STATE(ZZRD))+alphaRD*ln(Cgrdeff(-1)/STEADY_STATE(Cgrdeff))+alphaHA*ln(H(-1)/STEADY_STATE(H))+log(shockchit);
 
 // Effective R&D = efficiency wedge times R&D spending
-Cgrdeff = (1-effcgrdgap)*Cgrd;
+Cgrdeff = (1-eGRD)*Cgrd;
 
 // Value of an unadopted technology
 JZt = -St+phiob*(SDF(+1)*AAt(-1)/AAt*1/(1+gammaa)*(probadopt*VA(+1)+(1-probadopt)*JZt(+1)));
@@ -92,7 +92,7 @@ prob_def = exp(eta1 + eta2*by(-1))/(1+exp(eta1 + eta2*by(-1)));
 // GOVERNMENT DECISIONS
 //********************************************************
 // Public infrastructure capital
-Kg*ZZ = (1-delta)*Kg(-1)+(1-effgap)*Ig;
+Kg*ZZ = (1-delta)*Kg(-1)+(1-eGI)*Ig;
 
 // Government debt
 Dt = (R(-1)/PI)*Dt(-1)/ZZ+Cg+Ig+Ige+Cgrd+Trans-tauw*W_real*N-tauc*C;
@@ -116,7 +116,7 @@ tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss
 tauw-tauwss = rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_d_tauw*(by(-1)-byss))+epsi_tauw;
 
 // Public human-capital stock
-Kge*ZZ = (1-delta)*Kge(-1)+(1-effgegap)*Ige;
+Kge*ZZ = (1-delta)*Kge(-1)+(1-eGE)*Ige;
 
 //********************************************************
 // MARKET CLEARING
@@ -137,13 +137,13 @@ vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 log(ZZ) = (1-rho_ZZ)*log(ZZ(-1))+rho_ZZ*(log(ZZss))+epsi_ZZ;
 
 // Gap in human-capital spending efficiency (e^GE; positive shock closes the gap)
-effgegap = effgegap_ss-epsi_effge;
+eGE = eGE_ss-epsi_effge;
 
 // Gap in infrastructure spending efficiency (e^GI)
-effgap = effgap_ss-epsi_eff;
+eGI = eGI_ss-epsi_eff;
 
 // Gap in R&D spending efficiency (e^GRD)
-effcgrdgap = effcgrdgap_ss-epsi_effcgrd;
+eGRD = eGRD_ss-epsi_effcgrd;
 
 //********************************************************
 // VARIABLES OF INTEREST
