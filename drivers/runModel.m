@@ -36,6 +36,10 @@ cd(fullfile(project_path, 'models'));
 % written to <name>.shockValues (the sole content of the model's shocks
 % block, selected via -DshockFile), so the rows are fully self-contained
 % and order-independent.
+% Government consumption is an explicit instrument (Cg = Cgss + ydss*epsi_cg),
+% so every experiment carries its own epsi_cg row. For a budget-neutral reform
+% set it to minus the sum of the spending shocks (epsi_ig + epsi_ige +
+% epsi_cgrd); change it freely to run a non-budget-neutral configuration.
 % The per-model <name>.mod and <name>_steadystate.m files are copies of
 % models/modelTemplate.mod and models/modelTemplate_steadystate.m made by
 % the loop below; the copies are tracked but always regenerate
@@ -52,49 +56,74 @@ cd(fullfile(project_path, 'models'));
 % models/postSimul.mod.
 
 modelList = {
-    'Model_HumanCapital_epsi_ig',               'AE', 'AE',     {{'epsi_ig',      'const', 0.01,  '1:1000'}}
-    'Model_HumanCapital_epsi_cge',              'AE', 'AE',     {{'epsi_ige',     'const', 0.01,  '1:1000'}}
-    'Model_HumanCapital_epsi_cgrd',             'AE', 'AE',     {{'epsi_cgrd',    'const', 0.01,  '1:1000'}}
+    'Model_HumanCapital_epsi_ig',               'AE', 'AE',     {{'epsi_ig',      'const', 0.01,  '1:1000'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
+    'Model_HumanCapital_epsi_cge',              'AE', 'AE',     {{'epsi_ige',     'const', 0.01,  '1:1000'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
+    'Model_HumanCapital_epsi_cgrd',             'AE', 'AE',     {{'epsi_cgrd',    'const', 0.01,  '1:1000'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'Model_HumanCapital_epsi_cgeCgrd',          'AE', 'AE',     {{'epsi_ige',     'const', 0.005, '1:1000'}
-                                                                 {'epsi_cgrd',    'const', 0.005, '1:1000'}}
+                                                                 {'epsi_cgrd',    'const', 0.005, '1:1000'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'Model_HumanCapital_epsi_igeff25y',         'AE', 'AE',     {{'epsi_ig',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.359,  '1:100'}}
+                                                                 {'epsi_eff',     'ramp',  0.359,  '1:100'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'Model_HumanCapital_epsi_cgeeff25y',        'AE', 'AE',     {{'epsi_ige',     'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effge',   'ramp',  0.306, '1:100'}}
-    'EM_Model_HumanCapital_epsiig',             'EM', 'EMnorm', {{'epsi_ig',      'const', 0.01,  '1:1000'}}
-    'EM_Model_HumanCapital_epsiiglow',          'EM', 'EMlow',  {{'epsi_ig',      'const', 0.01,  '1:1000'}}
-    'EM_Model_HumanCapital_epsicge',            'EM', 'EMnorm', {{'epsi_ige',     'const', 0.01,  '1:1000'}}
-    'EM_Model_HumanCapital_epsicgelow',         'EM', 'EMlow',  {{'epsi_ige',     'const', 0.01,  '1:1000'}}
+                                                                 {'epsi_effge',   'ramp',  0.306, '1:100'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
+    'EM_Model_HumanCapital_epsiig',             'EM', 'EMnorm', {{'epsi_ig',      'const', 0.01,  '1:1000'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
+    'EM_Model_HumanCapital_epsiiglow',          'EM', 'EMlow',  {{'epsi_ig',      'const', 0.01,  '1:1000'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
+    'EM_Model_HumanCapital_epsicge',            'EM', 'EMnorm', {{'epsi_ige',     'const', 0.01,  '1:1000'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
+    'EM_Model_HumanCapital_epsicgelow',         'EM', 'EMlow',  {{'epsi_ige',     'const', 0.01,  '1:1000'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiigeff30y',       'EM', 'EMnorm', {{'epsi_ig',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.406, '1:60'}}
+                                                                 {'epsi_eff',     'ramp',  0.406, '1:60'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiigeff30ylow',    'EM', 'EMlow',  {{'epsi_ig',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.399, '1:60'}}
+                                                                 {'epsi_eff',     'ramp',  0.399, '1:60'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiigeff25y',       'EM', 'EMnorm', {{'epsi_ig',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.406, '1:100'}}
+                                                                 {'epsi_eff',     'ramp',  0.406, '1:100'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiigeff25ylow',    'EM', 'EMlow',  {{'epsi_ig',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.399, '1:100'}}
+                                                                 {'epsi_eff',     'ramp',  0.399, '1:100'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsicgeeff30y',      'EM', 'EMnorm', {{'epsi_ige',     'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effge',   'ramp',  0.329, '1:60'}}
+                                                                 {'epsi_effge',   'ramp',  0.329, '1:60'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsicgeeff30ylow',   'EM', 'EMlow',  {{'epsi_ige',     'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effge',   'ramp',  0.329, '1:60'}}
+                                                                 {'epsi_effge',   'ramp',  0.329, '1:60'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsicgeeff25y',      'EM', 'EMnorm', {{'epsi_ige',     'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effge',   'ramp',  0.329, '1:100'}}
+                                                                 {'epsi_effge',   'ramp',  0.329, '1:100'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsicgeeff25ylow',   'EM', 'EMlow',  {{'epsi_ige',     'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effge',   'ramp',  0.329, '1:100'}}
+                                                                 {'epsi_effge',   'ramp',  0.329, '1:100'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'Model_HumanCapital_epsi_cgrd_eff25y',      'AE', 'AE',     {{'epsi_cgrd',    'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effcgrd', 'ramp',  0.41,  '1:100'}}
+                                                                 {'epsi_effcgrd', 'ramp',  0.41,  '1:100'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'Model_HumanCapital_epsicgrd_cge_adt',      'AE', 'AE',     {{'epsi_cgrd',    'const', 0.005, '1:1000'}
                                                                  {'epsi_ige',     'const', 0.005, '1:1000'}
-                                                                 {'epsirhoadopt', 'ramp',  0.03,  '1:40'}}
+                                                                 {'epsirhoadopt', 'ramp',  0.03,  '1:40'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'Model_HumanCapital_epsicgrd_cge_limt',     'AE', 'AE',     {{'epsi_cgrd',    'const', 0.005, '1:1000'}
                                                                  {'epsi_ige',     'const', 0.005, '1:1000'}
-                                                                 {'epsirhoadopt', 'ramp',  -0.03, '1:40'}}
-    'JAM_Model_HumanCapital_epsiig',            'JAM', 'JAM',    {{'epsi_ig',      'const', 0.01,  '1:1000'}}
-    'JAM_Model_HumanCapital_epsicge',           'JAM', 'JAM',    {{'epsi_ige',     'const', 0.01,  '1:1000'}}
+                                                                 {'epsirhoadopt', 'ramp',  -0.03, '1:40'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
+    'JAM_Model_HumanCapital_epsiig',            'JAM', 'JAM',    {{'epsi_ig',      'const', 0.01,  '1:1000'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
+    'JAM_Model_HumanCapital_epsicge',           'JAM', 'JAM',    {{'epsi_ige',     'const', 0.01,  '1:1000'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'JAM_Model_HumanCapital_epsiigeff30y',      'JAM', 'JAM',    {{'epsi_ig',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.1681, '1:60'}}
+                                                                 {'epsi_eff',     'ramp',  0.1681, '1:60'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     'JAM_Model_HumanCapital_epsicgeeff30y',     'JAM', 'JAM',    {{'epsi_ige',     'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effge',   'ramp',  0.357, '1:60'}}
+                                                                 {'epsi_effge',   'ramp',  0.357, '1:60'}
+                                                                 {'epsi_cg',      'const', -0.01, '1:1000'}}
     };
 
 %% optional subset: set the MODEL_FILTER environment variable to a substring

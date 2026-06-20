@@ -8,3 +8,8 @@ periods 1:1000 ;
 values
     0.005
 ;
+var epsi_cg;
+periods 1:1000 ;
+values
+    -0.01
+;
