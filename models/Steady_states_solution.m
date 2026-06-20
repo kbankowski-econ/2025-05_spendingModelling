@@ -23,8 +23,8 @@ N=1/3;                    % Effective Labor supply
 % Marginal cost 
 mc=(epsilon-1)/epsilon;
 
-%kG_y=eff*Igy/(1-(1-delta)/ZZ);
-kG_y=(1-eGI_ss)*Igy/(ZZ-(1-delta));
+%kG_y=eff*Igiy/(1-(1-delta)/ZZ);
+kG_y=(1-eGI_ss)*Igiy/(ZZ-(1-delta));
 
 Kp_y=(1+Bigtheta_y)*alppha*mc/(markupss*rk);
 
@@ -67,8 +67,8 @@ kGe_y=(1-eGE_ss)*Igey/(ZZ-(1-delta));
 Kge=kGe_y*yt;
 Ige=Igey*yt;
 Igess=Ige;
-Cgrd=Cgrdy*yt;
-Cgrdss=Cgrd;
+Grd=Grdy*yt;
+Grdss=Grd;
 
 
 
@@ -87,7 +87,7 @@ St=rhoSADOPT*probadopt*phiob*SDF/(1+gammaa)*(VA-JZt);
 
 %SSt=SDF*JZt*(ZZRD/AAt-phiob*ZZRD/AAt*1/(1+gammaa));
 SSt=0;
-%shockchit=(1+gammaa-phiob)/(SSt^alphaHA*Cgrd^alphaRD);
+%shockchit=(1+gammaa-phiob)/(SSt^alphaHA*Grd^alphaRD);
 %shockchit=(1+gammaa-phiob)/(SSt^alphaHA);
 shockchit=1;
 
@@ -110,25 +110,25 @@ Rss=R;
 ydss=yt;
 
 yd=yt;
-Ig=Igy*yt;
-Cg=Cgy*yt;
+Igi=Igiy*yt;
+Gc=Gcy*yt;
 
-C=yd-(Ip+Ig+Cg+Ige+Cgrd+SSt+(ZZRD/AAt-1)*St);
+C=yd-(Ip+Igi+Gc+Ige+Grd+SSt+(ZZRD/AAt-1)*St);
 lambda=1/C/(1+tauc);
 
-Cy=1-Ip_y-Igy-Cgy-Igey-Cgrdy-(SSt+(ZZRD/AAt-1)*St)/yd;
+Cy=1-Ip_y-Igiy-Gcy-Igey-Grdy-(SSt+(ZZRD/AAt-1)*St)/yd;
 x2=1/(1+tauc)*1/Cy/(1-betta*thetap);  % x2=lambda*y/(1-betta*thetap)= 1/(1+tauc)*y/c/(1-betta*thetap)
 x1=mc*x2;
 
 Dt=yt*by;
-Trans=Dt-((1-0*Delta_G)*(R/PI)*Dt/ZZ+Cg+Ig+Ige+Cgrd-tauw*W_real*N-tauc*C);
-Cgss=Cgy*(yt);
-Igss=Igy*(yt);
+Trans=Dt-((1-0*Delta_G)*(R/PI)*Dt/ZZ+Gc+Igi+Ige+Grd-tauw*W_real*N-tauc*C);
+Gcss=Gcy*(yt);
+Igiss=Igiy*(yt);
 
 %Variables of interest
 lnyd=log(yd)*100;
-pdef=(Cg+Ig+Ige+Cgrd+Trans-tauw*W_real*N-tauc*C)/yt*100;
-Ig_ys=Ig/ydss*100;
+pdef=(Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/yt*100;
+Igi_ys=Igi/ydss*100;
 by_ann=by/4*100;
 lnPI=log(PI)*100;
 
@@ -166,9 +166,9 @@ eGE=eGE_ss;
 eGI=eGI_ss;
 
 TFP=AAt^(varthetaat-1)*(Kg^alphaG)*H^(1-alppha);
-ln_Cgrd=log(Cgrd);
-Cgrd_ydss_ratio=Cgrd/ydss;
-Cgrdeff=(1-eGRD_ss)*Cgrd;
+ln_Grd=log(Grd);
+Grd_ydss_ratio=Grd/ydss;
+Grdeff=(1-eGRD_ss)*Grd;
 
 eGRD=eGRD_ss;
 %AAt=1;

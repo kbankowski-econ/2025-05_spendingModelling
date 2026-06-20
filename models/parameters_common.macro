@@ -23,8 +23,8 @@ eta1=-18.12;
 eta2=3.12;
 Deltacost=0;  % Shutting down the feedback of debt on rate
 
-rho_Cg=0.9;
-rho_Ig=0.9;
+rho_Gc=0.9;
+rho_Igi=0.9;
 gamma_d_trans=0.5;
 rho_trans=0;
 

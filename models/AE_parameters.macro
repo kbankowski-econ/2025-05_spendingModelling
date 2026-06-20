@@ -10,10 +10,10 @@ tauwss=0.25;                         % steady-state income tax rate             
 byss=1*4;                            % steady-state debt to quarterly GDP (annual x4)| EM: 0.6*4
 
 % public spending shares of GDP
-Igy=0.03;                            % public investment                             | EM: 0.05
-Cgy=0.18;                            % public consumption                            | EM: 0.14
+Igiy=0.03;                            % public investment                             | EM: 0.05
+Gcy=0.18;                            % public consumption                            | EM: 0.14
 Igey=0.0145;                         % human-capital-related spending                | EM: 0.02
-Cgrdy=0.006;                         % R&D spending                                  | EM: 0.001
+Grdy=0.006;                         % R&D spending                                  | EM: 0.001
 
 % human capital
 alphaH=0.1;                          % elasticity of HC formation w.r.t. public HRC  | EM: 0.25
