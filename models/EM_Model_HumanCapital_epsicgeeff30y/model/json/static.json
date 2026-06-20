@@ -61,10 +61,10 @@
 , {"residual": {"lhs": "Dt", "rhs": "Grd+Igi+Dt*R/PI/ZZ+Gc+Ige+Trans-N*W_real*tauw-C*tauc"}}
 , {"residual": {"lhs": "Trans-(Trans)", "rhs": "(Trans-(Trans))*rho_trans+(1-rho_trans)*ydss*(by-byss)*(-gamma_d_trans)"}}
 , {"residual": {"lhs": "by", "rhs": "Dt/yt"}}
-, {"residual": {"lhs": "Gc", "rhs": "Gcss+ydss*epsi_c"}}
-, {"residual": {"lhs": "Igi", "rhs": "Igiss+ydss*epsi_gi"}}
-, {"residual": {"lhs": "Ige", "rhs": "Igess+ydss*epsi_ge"}}
-, {"residual": {"lhs": "Grd", "rhs": "Grdss+ydss*epsi_rd"}}
+, {"residual": {"lhs": "Gc", "rhs": "Gcss+ydss*epsi_gc"}}
+, {"residual": {"lhs": "Igi", "rhs": "Igiss+ydss*epsi_igi"}}
+, {"residual": {"lhs": "Ige", "rhs": "Igess+ydss*epsi_ige"}}
+, {"residual": {"lhs": "Grd", "rhs": "Grdss+ydss*epsi_grd"}}
 , {"residual": {"lhs": "tauc-taucss", "rhs": "(tauc-taucss)*rho_tauc+(1-rho_tauc)*(by-byss)*gamma_d_tauc+epsi_tauc"}}
 , {"residual": {"lhs": "tauw-tauwss", "rhs": "(tauw-tauwss)*rho_tauw+(1-rho_tauw)*(by-byss)*gamma_d_tauw+epsi_tauw"}}
 , {"residual": {"lhs": "ZZ*Kge", "rhs": "(1-delta)*Kge+Ige*(1-eGE)"}}
@@ -247,14 +247,14 @@
 , {"eq": 34, "col": 18, "var": "by", "val": "1"}
 , {"eq": 35, "col": 20, "var": "Gc", "val": "1"}
 , {"eq": 35, "col": 30, "var": "Gcss", "val": "(-1)"}
-, {"eq": 35, "col": 32, "var": "ydss", "val": "(-epsi_c)"}
+, {"eq": 35, "col": 32, "var": "ydss", "val": "(-epsi_gc)"}
 , {"eq": 36, "col": 19, "var": "Igi", "val": "1"}
 , {"eq": 36, "col": 29, "var": "Igiss", "val": "(-1)"}
-, {"eq": 36, "col": 32, "var": "ydss", "val": "(-epsi_gi)"}
-, {"eq": 37, "col": 32, "var": "ydss", "val": "(-epsi_ge)"}
+, {"eq": 36, "col": 32, "var": "ydss", "val": "(-epsi_igi)"}
+, {"eq": 37, "col": 32, "var": "ydss", "val": "(-epsi_ige)"}
 , {"eq": 37, "col": 41, "var": "Ige", "val": "1"}
 , {"eq": 37, "col": 44, "var": "Igess", "val": "(-1)"}
-, {"eq": 38, "col": 32, "var": "ydss", "val": "(-epsi_rd)"}
+, {"eq": 38, "col": 32, "var": "ydss", "val": "(-epsi_grd)"}
 , {"eq": 38, "col": 51, "var": "Grd", "val": "1"}
 , {"eq": 38, "col": 52, "var": "Grdss", "val": "(-1)"}
 , {"eq": 39, "col": 18, "var": "by", "val": "(-((1-rho_tauc)*gamma_d_tauc))"}

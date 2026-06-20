@@ -65,10 +65,10 @@
 , {"residual": {"lhs": "Dt", "rhs": "Grd+Igi+R(-1)/PI*Dt(-1)/ZZ+Gc+Ige+Trans-N*W_real*tauw-C*tauc"}}
 , {"residual": {"lhs": "Trans-(Trans)", "rhs": "rho_trans*(Trans(-1)-(Trans))+(1-rho_trans)*ydss*(by(-1)-byss)*(-gamma_d_trans)"}}
 , {"residual": {"lhs": "by", "rhs": "Dt/yt"}}
-, {"residual": {"lhs": "Gc", "rhs": "Gcss+ydss*epsi_c"}}
-, {"residual": {"lhs": "Igi", "rhs": "Igiss+ydss*epsi_gi"}}
-, {"residual": {"lhs": "Ige", "rhs": "Igess+ydss*epsi_ge"}}
-, {"residual": {"lhs": "Grd", "rhs": "Grdss+ydss*epsi_rd"}}
+, {"residual": {"lhs": "Gc", "rhs": "Gcss+ydss*epsi_gc"}}
+, {"residual": {"lhs": "Igi", "rhs": "Igiss+ydss*epsi_igi"}}
+, {"residual": {"lhs": "Ige", "rhs": "Igess+ydss*epsi_ige"}}
+, {"residual": {"lhs": "Grd", "rhs": "Grdss+ydss*epsi_grd"}}
 , {"residual": {"lhs": "tauc-taucss", "rhs": "rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(by(-1)-byss)*gamma_d_tauc+epsi_tauc"}}
 , {"residual": {"lhs": "tauw-tauwss", "rhs": "rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(by(-1)-byss)*gamma_d_tauw+epsi_tauw"}}
 , {"residual": {"lhs": "ZZ*Kge", "rhs": "(1-delta)*Kge(-1)+Ige*(1-eGE)"}}
@@ -292,20 +292,20 @@
 , {"eq": 34, "col": 38, "var": "by", "shift": 0, "val": "1"}
 , {"eq": 35, "col": 40, "var": "Gc", "shift": 0, "val": "1"}
 , {"eq": 35, "col": 50, "var": "Gcss", "shift": 0, "val": "(-1)"}
-, {"eq": 35, "col": 52, "var": "ydss", "shift": 0, "val": "(-epsi_c)"}
-, {"eq": 35, "col": 103, "var": "epsi_c", "shift": 0, "val": "(-ydss)"}
+, {"eq": 35, "col": 52, "var": "ydss", "shift": 0, "val": "(-epsi_gc)"}
+, {"eq": 35, "col": 103, "var": "epsi_gc", "shift": 0, "val": "(-ydss)"}
 , {"eq": 36, "col": 39, "var": "Igi", "shift": 0, "val": "1"}
 , {"eq": 36, "col": 49, "var": "Igiss", "shift": 0, "val": "(-1)"}
-, {"eq": 36, "col": 52, "var": "ydss", "shift": 0, "val": "(-epsi_gi)"}
-, {"eq": 36, "col": 104, "var": "epsi_gi", "shift": 0, "val": "(-ydss)"}
-, {"eq": 37, "col": 52, "var": "ydss", "shift": 0, "val": "(-epsi_ge)"}
+, {"eq": 36, "col": 52, "var": "ydss", "shift": 0, "val": "(-epsi_igi)"}
+, {"eq": 36, "col": 104, "var": "epsi_igi", "shift": 0, "val": "(-ydss)"}
+, {"eq": 37, "col": 52, "var": "ydss", "shift": 0, "val": "(-epsi_ige)"}
 , {"eq": 37, "col": 61, "var": "Ige", "shift": 0, "val": "1"}
 , {"eq": 37, "col": 64, "var": "Igess", "shift": 0, "val": "(-1)"}
-, {"eq": 37, "col": 110, "var": "epsi_ge", "shift": 0, "val": "(-ydss)"}
-, {"eq": 38, "col": 52, "var": "ydss", "shift": 0, "val": "(-epsi_rd)"}
+, {"eq": 37, "col": 110, "var": "epsi_ige", "shift": 0, "val": "(-ydss)"}
+, {"eq": 38, "col": 52, "var": "ydss", "shift": 0, "val": "(-epsi_grd)"}
 , {"eq": 38, "col": 71, "var": "Grd", "shift": 0, "val": "1"}
 , {"eq": 38, "col": 72, "var": "Grdss", "shift": 0, "val": "(-1)"}
-, {"eq": 38, "col": 113, "var": "epsi_rd", "shift": 0, "val": "(-ydss)"}
+, {"eq": 38, "col": 113, "var": "epsi_grd", "shift": 0, "val": "(-ydss)"}
 , {"eq": 39, "col": 8, "var": "by", "shift": -1, "val": "(-((1-rho_tauc)*gamma_d_tauc))"}
 , {"eq": 39, "col": 9, "var": "tauc", "shift": -1, "val": "(-rho_tauc)"}
 , {"eq": 39, "col": 41, "var": "tauc", "shift": 0, "val": "1"}

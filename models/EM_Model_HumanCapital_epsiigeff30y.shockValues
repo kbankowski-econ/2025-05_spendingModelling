@@ -1,4 +1,4 @@
-var epsi_gi;
+var epsi_igi;
 periods 1:1000 ;
 values
     0.01
@@ -68,7 +68,7 @@ values
     0.406
     0.406
 ;
-var epsi_c;
+var epsi_gc;
 periods 1:1000 ;
 values
     -0.01

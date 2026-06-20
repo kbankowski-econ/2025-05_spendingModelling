@@ -64,8 +64,8 @@ end
 %vertModelComparison(resultsProc, ["yd", "C", "Ip", "Igi", "Gc", "Ige", "Grd", "H", "Lab", "E", "eGI", "eGE", "TFP"], ["EM_Model_HumanCapital_epsieff30y", "EM_Model_HumanCapital_epsieffcge30y"], 'epsiall_AE');
 % vertModelComparison(resultsProc, ["yd", "C", "Ip", "Igi", "Gc", "Ige", "Grd", "H", "Lab", "E", "eGI", "eGE", "TFP"], ["EM_Model_HumanCapital_epsiigeff25y", "EM_Model_HumanCapital_epsiigeff25y_al"], 'epsiall_EM');
 
-%vertModelComparison(resultsProc, ["yd", "C", "Ip", "Igi", "Gc", "Ige", "Grd", "H", "Lab", "E", "eGI", "eGE"], ["Model_HumanCapital_epsi_ig", "EM_Model_HumanCapital_epsiig"], 'epsi_gi');;
-%vertModelComparison(resultsProc, ["yd", "C", "Ip", "Igi", "Gc", "Ige", "Grd", "H", "Lab", "E", "eGI", "eGE"], ["Model_HumanCapital_epsi_cge", "EM_Model_HumanCapital_epsicge"], 'epsi_ge');;
+%vertModelComparison(resultsProc, ["yd", "C", "Ip", "Igi", "Gc", "Ige", "Grd", "H", "Lab", "E", "eGI", "eGE"], ["Model_HumanCapital_epsi_ig", "EM_Model_HumanCapital_epsiig"], 'epsi_igi');;
+%vertModelComparison(resultsProc, ["yd", "C", "Ip", "Igi", "Gc", "Ige", "Grd", "H", "Lab", "E", "eGI", "eGE"], ["Model_HumanCapital_epsi_cge", "EM_Model_HumanCapital_epsicge"], 'epsi_ige');;
 
 %%
 
