@@ -1,0 +1,5 @@
+category,model,mult_1y,mult_5y,mult_10y,mult_20y,mult_25y
+Government consumption,Model_HumanCapital_exp_gc,-0.0115,0.5599,0.7225,0.9063,0.9685
+Infrastructure investment,Model_HumanCapital_exp_igi,-0.1289,0.7098,1.1523,1.7170,1.9122
+Human capital investment,Model_HumanCapital_exp_ige,0.1526,0.4291,0.6776,1.5552,2.0184
+Research and development,Model_HumanCapital_exp_grd,-0.0996,0.5489,1.2810,2.3284,2.6897
