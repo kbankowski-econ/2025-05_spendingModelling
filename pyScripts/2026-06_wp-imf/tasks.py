@@ -34,12 +34,12 @@ PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 - plotDiffusionAE:      Fig 6 - Technology diffusion-speed sensitivity
                         Out: figures/diffusionAE_yd.png/.html/.csv
 
-EXTRA (not in the paper):
+APPENDIX FIGURE:
 --------------------------------------------------------------------------------
-- plotEfficiencyBands:  Efficiency uncertainty bands (sibling script; not one of
-                        the six paper figures). Out: figures/efficiencyBands.png
+- plotEfficiencyBands:  Efficiency uncertainty bands (appendix figure, not one of
+                        the six main-text figures). Out: figures/efficiencyBands.png
 
-- run-all:              exportData, then regenerate all six paper figures.
+- run-all:              exportData, then regenerate all six main-text figures.
 
 Main entry point: invoke run-all
 """
@@ -164,16 +164,16 @@ def plotDiffusionAE(c):
 
 
 # =============================================================================
-# EXTRA (not one of the six paper figures)
+# APPENDIX FIGURE (not one of the six main-text figures)
 # =============================================================================
 
 @task
 def plotEfficiencyBands(c):
     """
-    Efficiency uncertainty bands (sibling script; not a paper figure).
+    Efficiency uncertainty bands (appendix figure).
     Out: figures/efficiencyBands.png
     """
-    _run_plot(c, "plotEfficiencyBands.py", "Generating Efficiency Bands (extra)")
+    _run_plot(c, "plotEfficiencyBands.py", "Generating Efficiency Bands (appendix)")
 
 
 @task(pre=[
