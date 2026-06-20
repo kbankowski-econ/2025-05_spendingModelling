@@ -1,9 +1,9 @@
-var epsi_ige;
+var epsi_ge;
 periods 1:1000 ;
 values
     0.01
 ;
-var epsi_cg;
+var epsi_c;
 periods 1:1000 ;
 values
     -0.01

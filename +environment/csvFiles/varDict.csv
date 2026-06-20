@@ -17,8 +17,8 @@ Kg,Gov. capital stock,pctDev,\% deviation
 Rmp,Monetary policy interest rate,pctDev,\% deviation
 Dt,Government debt level,pctDev,\% deviation
 by,Debt-to-GDP ratio,pctDev,\% deviation
-Ig,Gov. investment,pctDev,\% deviation
-Cg,Gov. consumption,pctDev,\% deviation
+Igi,Gov. investment,pctDev,\% deviation
+Gc,Gov. consumption,pctDev,\% deviation
 tauc,Consumption tax rate,pctDev,\% deviation
 tauw,Labor income tax rate,pctDev,\% deviation
 yd,Aggregate demand,pctDev,\% deviation
@@ -27,14 +27,14 @@ ZZ,Gross economic growth rate,pctDev,\% deviation
 Delta_G,Expected utility loss,pctDev,\% deviation
 prob_def,Probability of sovereign default,pctDev,\% deviation
 omega,Scaling parameter,pctDev,\% deviation
-Igss,Steady-state gov. investment,pctDev,\% deviation
-Cgss,Steady-state gov. consumption,pctDev,\% deviation
+Igiss,Steady-state gov. investment,pctDev,\% deviation
+Gcss,Steady-state gov. consumption,pctDev,\% deviation
 Rss,Steady-state interest rate,pctDev,\% deviation
 ydss,Steady-state aggregate output,pctDev,\% deviation
 Trans,Government transfers to households,pctDev,\% deviation
 lnyd,Natural logarithm of output,pctDev,\% deviation
 pdef,Primary fiscal deficit,pctDev,\% deviation
-Ig_ys,Gov. investment as percentage of GDP,pctDev,\% deviation
+Igi_ys,Gov. investment as percentage of GDP,pctDev,\% deviation
 by_ann,Annualized debt-to-GDP ratio,pctDev,\% deviation
 lnPI,Natural logarithm of price index,pctDev,\% deviation
 H,Human capital stock,pctDev,\% deviation
@@ -49,6 +49,6 @@ ygrowth,Economic growth rate,pctDev,\% deviation
 eGE,Gap in human capital spending efficiency,dev,abs. deviation
 eGI,Gap in infrastructure spending efficiency,dev,abs. deviation
 AAt,Stationary technology process,pctDev,\% deviation
-Cgrd,Gov. R and D expenditure,pctDev,\% deviation
-Cgrdss,Steady-state R&D expenditure,pctDev,\% deviation
+Grd,Gov. R and D expenditure,pctDev,\% deviation
+Grdss,Steady-state R&D expenditure,pctDev,\% deviation
 TFP,TFP,pctDev,\% deviation

@@ -17,8 +17,8 @@ Kg              % Public capital
 Rmp             % Policy rate
 Dt              % Debt level
 by              % Debt/GDP
-Ig              % Public investment
-Cg              % Public consumption
+Igi              % Public investment
+Gc              % Public consumption
 tauc            % Consumption tax
 tauw            % Income tax
 yd              % Aggregate demand
@@ -28,14 +28,14 @@ ZZ              % Gross growth rate
 Delta_G         % Expected loss 
 prob_def        % probability of default
 omega           % Scaling
-Igss            % Steady state of Investment
-Cgss            % Steady state of Consumption
+Igiss            % Steady state of Investment
+Gcss            % Steady state of Consumption
 Rss             % Steady state interest rate   
 ydss            % Steady state output
 Trans           % Transfer
 lnyd            % Log of Output
 pdef            % Primary Deficit 
-Ig_ys           % Public Investment as percent of GDP
+Igi_ys           % Public Investment as percent of GDP
 by_ann          % Debt to GDP 
 lnPI            % Log of Prince index
 H               % Human capital
@@ -50,8 +50,8 @@ ygrowth          % econonmic growth
 eGE             % Gap in public human-capital efficiency (e^GE)
 eGI             % Gap in public infrastructure efficiency (e^GI)
 AAt             % Aoption Tech Process
-Cgrd            % R&D spending
-Cgrdss          % R&D spending SS
+Grd            % R&D spending
+Grdss          % R&D spending SS
 shockchit       % R&D process productivity shock SS
 SDF             % Stochastic discount factor
 St             % Effective labor demand for tech adoption
@@ -64,26 +64,26 @@ kappaprob       % Parameter in the probability for scaling
 shockchitss     %% SS of shockchit 
 Ns              % Labor in R&D
 TFP             % TFP
-Cgrd_ydss_ratio
-ln_Cgrd
-Cgrdeff
+Grd_ydss_ratio
+ln_Grd
+Grdeff
 eGRD            % Gap in public R&D efficiency (e^GRD)
 ;
 %-----------------------------
 % Define exogenous variables
 %-----------------------------
 varexo
-epsi_cg         % Shock to government consumption
-epsi_ig         % Shock to government investment  
+epsi_c         % Shock to government consumption
+epsi_gi         % Shock to government investment  
 epsi_ZZ         % Shock to trend
 epsi_spread     % Shock to Spread
 epsi_MP         % Monetary Policy Shocks
 epsi_tauc       % Consumption income tax shock 
 epsi_tauw       % Labor income tax shock
-epsi_ige        % Public HC spending shock
+epsi_ge        % Public HC spending shock
 epsi_effge  
 epsi_eff
-epsi_cgrd       % Shock to R&D spending
+epsi_rd       % Shock to R&D spending
 epsi_shockchit  % Shock to the R&D process 
 epsirhoadopt
 epsi_effcgrd
@@ -123,10 +123,10 @@ ZZss            % SS of growth
 eta1            % Prof default param 1
 eta2            % Prof default param 2 
 Deltacost       % Feed back of debt on rate
-Igy             % Public investment/GDP
-Cgy             % Public consumption/GDP
-rho_Cg          % AR(1) process for public consumption
-rho_Ig          % AR(1) process for public investment  
+Igiy             % Public investment/GDP
+Gcy             % Public consumption/GDP
+rho_Gc          % AR(1) process for public consumption
+rho_Igi          % AR(1) process for public investment  
 gamma_d_trans   % Response of lump sum transfer to debt
 rho_trans
 eGI_ss          % SS gap in public infrastructure efficiency (e^GI)
@@ -139,7 +139,7 @@ alphaZZ1        % Learning by doing off HHon ZZ
 rho_Ige         % Persistence of human-related spending
 rho_AAt         % Persistence of staionary tech process
 alphaRD         % R&D on TFP
-Cgrdy           % share of expenditure for R&D
+Grdy           % share of expenditure for R&D
 markupss        % SS markup of Intermediate goods 
 phiob           % obsolescence rate: 0.08/4
 varthetaat      % Intermediate goods elasticity of substitution
@@ -175,8 +175,8 @@ rho_ZZ= 0.24 ;
 eta1=-18.12;
 eta2=3.12;
 Deltacost=0;  % Shutting down the feedback of debt on rate
-rho_Cg=0.9;
-rho_Ig=0.9;
+rho_Gc=0.9;
+rho_Igi=0.9;
 gamma_d_trans=0.5;
 rho_trans=0;
 deltaH=0.025;
@@ -199,10 +199,10 @@ taucss=0.18;                         % steady-state consumption tax rate        
 tauwss=0.25;                         % steady-state income tax rate                  | EM: 0.10
 byss=1*4;                            % steady-state debt to quarterly GDP (annual x4)| EM: 0.6*4
 % public spending shares of GDP
-Igy=0.03;                            % public investment                             | EM: 0.05
-Cgy=0.18;                            % public consumption                            | EM: 0.14
+Igiy=0.03;                            % public investment                             | EM: 0.05
+Gcy=0.18;                            % public consumption                            | EM: 0.14
 Igey=0.0145;                         % human-capital-related spending                | EM: 0.02
-Cgrdy=0.006;                         % R&D spending                                  | EM: 0.001
+Grdy=0.006;                         % R&D spending                                  | EM: 0.001
 % human capital
 alphaH=0.1;                          % elasticity of HC formation w.r.t. public HRC  | EM: 0.25
 % R&D and technology adoption
@@ -253,10 +253,10 @@ Kp(-1)/N = alppha/(1-alppha)*W_real/rk;
 // Production
 yt = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*(Kp(-1)^alppha)*(N^(1-alppha))-Bigtheta;
 TFP = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*H(-1)^(1-alppha);
-// Technology creation (R&D enters in efficiency-adjusted form via Cgrdeff)
-ln(ZZRD/STEADY_STATE(ZZRD)) = rho_ZZRD*ln(ZZRD(-1)/STEADY_STATE(ZZRD))+alphaRD*ln(Cgrdeff(-1)/STEADY_STATE(Cgrdeff))+alphaHA*ln(H(-1)/STEADY_STATE(H))+log(shockchit);
+// Technology creation (R&D enters in efficiency-adjusted form via Grdeff)
+ln(ZZRD/STEADY_STATE(ZZRD)) = rho_ZZRD*ln(ZZRD(-1)/STEADY_STATE(ZZRD))+alphaRD*ln(Grdeff(-1)/STEADY_STATE(Grdeff))+alphaHA*ln(H(-1)/STEADY_STATE(H))+log(shockchit);
 // Effective R&D = efficiency wedge times R&D spending
-Cgrdeff = (1-eGRD)*Cgrd;
+Grdeff = (1-eGRD)*Grd;
 // Value of an unadopted technology
 JZt = -St+phiob*(SDF(+1)*AAt(-1)/AAt*1/(1+gammaa)*(probadopt*VA(+1)+(1-probadopt)*JZt(+1)));
 // Probability of adoption
@@ -284,18 +284,18 @@ prob_def = exp(eta1 + eta2*by(-1))/(1+exp(eta1 + eta2*by(-1)));
 // GOVERNMENT DECISIONS
 //********************************************************
 // Public infrastructure capital
-Kg*ZZ = (1-delta)*Kg(-1)+(1-eGI)*Ig;
+Kg*ZZ = (1-delta)*Kg(-1)+(1-eGI)*Igi;
 // Government debt
-Dt = (R(-1)/PI)*Dt(-1)/ZZ+Cg+Ig+Ige+Cgrd+Trans-tauw*W_real*N-tauc*C;
+Dt = (R(-1)/PI)*Dt(-1)/ZZ+Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C;
 // Lump-sum transfers
 Trans-STEADY_STATE(Trans) = rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_trans)*(-gamma_d_trans*(by(-1)-byss)*ydss);
 // Debt to GDP
 by = Dt/yt;
 // Government spending instruments (subject to expenditure shocks)
-Cg = Cgss+ydss*epsi_cg;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_cg shock)
-Ig = Igss+ydss*epsi_ig;                                     // infrastructure investment
-Ige = Igess+ydss*epsi_ige;                                  // human-capital investment
-Cgrd = Cgrdss+ydss*epsi_cgrd;                               // R&D spending
+Gc = Gcss+ydss*epsi_c;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_c shock)
+Igi = Igiss+ydss*epsi_gi;                                     // infrastructure investment
+Ige = Igess+ydss*epsi_ge;                                  // human-capital investment
+Grd = Grdss+ydss*epsi_rd;                               // R&D spending
 // Consumption tax rule
 tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss))+epsi_tauc;
 // Income tax rule
@@ -306,7 +306,7 @@ Kge*ZZ = (1-delta)*Kge(-1)+(1-eGE)*Ige;
 // MARKET CLEARING
 //********************************************************
 // Aggregate demand
-yd = C+Ip+Ig+Cg+Ige+Cgrd+SSt+(ZZRD(-1)/AAt(-1)-1)*St;
+yd = C+Ip+Igi+Gc+Ige+Grd+SSt+(ZZRD(-1)/AAt(-1)-1)*St;
 // Aggregate production
 yt = vp*yd;
 // Price dispersion
@@ -326,12 +326,12 @@ eGRD = eGRD_ss-epsi_effcgrd;
 // VARIABLES OF INTEREST
 //********************************************************
 lnyd = log(yd)*100;
-pdef = (Cg+Ig+Ige+Cgrd+Trans-tauw*W_real*N-tauc*C)/yt*100;
-Ig_ys = Ig/ydss*100;
+pdef = (Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/yt*100;
+Igi_ys = Igi/ydss*100;
 by_ann = by/4*100;
 lnPI = log(PI)*100;
-ln_Cgrd = log(Cgrd);
-Cgrd_ydss_ratio = Cgrd/ydss;
+ln_Grd = log(Grd);
+Grd_ydss_ratio = Grd/ydss;
 // Output growth
 ygrowth = log(yd/yd(-1))*100+log(ZZ)*100;
 //********************************************************
@@ -348,25 +348,25 @@ kappaprob   = STEADY_STATE(kappaprob);
 shockchitss = STEADY_STATE(shockchit);   // exogenous disturbance to the R&D technology
 Ns          = STEADY_STATE(Ns);
 SSt         = STEADY_STATE(SSt);
-Cgss        = Cgy*STEADY_STATE(yt);
-Igss        = Igy*STEADY_STATE(yt);
+Gcss        = Gcy*STEADY_STATE(yt);
+Igiss        = Igiy*STEADY_STATE(yt);
 Igess       = Igey*STEADY_STATE(yt);
-Cgrdss      = Cgrdy*STEADY_STATE(yt);
+Grdss      = Grdy*STEADY_STATE(yt);
 end;
 steady;
 check;
 shocks;
-var epsi_ige;
+var epsi_ge;
 periods 1:1000 ;
 values
     0.005
 ;
-var epsi_cgrd;
+var epsi_rd;
 periods 1:1000 ;
 values
     0.005
 ;
-var epsi_cg;
+var epsi_c;
 periods 1:1000 ;
 values
     -0.01
@@ -374,7 +374,7 @@ values
 end;
 perfect_foresight_setup(periods=2000);
 perfect_foresight_solver(maxit=20);
-fiscalchange=Ig-Igss+Ige-Igess+Cgrd-Cgrdss;
+fiscalchange=Igi-Igiss+Ige-Igess+Grd-Grdss;
 % Period 1 is the pre-shock steady state (the baseline, subtracted as yd(1));
 % the shock is active from period 2 on. An N-year horizon is the 4N quarters in
 % indices 2:(N*4+1), so ped=N*4+1 (the slice 2:ped is inclusive of both ends).

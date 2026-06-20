@@ -1,14 +1,14 @@
-var epsi_ige;
+var epsi_ge;
 periods 1:1000 ;
 values
     0.005
 ;
-var epsi_cgrd;
+var epsi_rd;
 periods 1:1000 ;
 values
     0.005
 ;
-var epsi_cg;
+var epsi_c;
 periods 1:1000 ;
 values
     -0.01
