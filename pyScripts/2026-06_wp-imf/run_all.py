@@ -1,0 +1,39 @@
+"""
+Convenience runner: regenerate every working-paper figure.
+
+Each plot script is fully self-contained and can be run on its own
+(`python plotReallocationAE.py`). This runner just invokes them in turn via
+subprocess, so it adds no import-time coupling between the scripts.
+"""
+import subprocess
+import sys
+from pathlib import Path
+
+SCRIPT_DIR = Path(__file__).resolve().parent
+
+SCRIPTS = [
+    "plotDiffusionAE.py",       # Fig: technology diffusion
+    "plotReallocationAE.py",    # Fig: reallocation (a) AE
+    "plotReallocationEM.py",    # Fig: reallocation (b) EMDE
+    "plotEfficiencyAE.py",      # Fig: spending efficiency (a) AE
+    "plotEfficiencyEM.py",      # Fig: spending efficiency (b) EMDE
+    "plotHumanCapitalIRFs.py",  # Fig: human capital + R&D mix
+    "plotEfficiencyBands.py",   # Fig: efficiency bands by income group (App. B)
+]
+
+
+def main():
+    failures = []
+    for script in SCRIPTS:
+        print(f"=== {script} ===")
+        result = subprocess.run([sys.executable, str(SCRIPT_DIR / script)])
+        if result.returncode != 0:
+            failures.append(script)
+    if failures:
+        print(f"\nFAILED: {', '.join(failures)}")
+        sys.exit(1)
+    print("\nAll figures regenerated.")
+
+
+if __name__ == "__main__":
+    main()
