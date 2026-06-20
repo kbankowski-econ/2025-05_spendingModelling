@@ -564,12 +564,12 @@ where $\mu^{p}$ is the steady-state gross markup of intermediate-goods producers
 
 The expenditure instruments follow
 \begin{align}
-    I_t^{GI} &= I^{GI} + Y^{d}\,\varepsilon_t^{gi}, \qquad
-    I_t^{GE} = I^{GE} + Y^{d}\,\varepsilon_t^{ge}, \\
-    G_t^{RD} - G^{RD} &= \rho_{RD}\left(G_{t-1}^{RD} - G^{RD}\right) + Y^{d}\,\varepsilon_t^{rd}, \\
-    G_t^{C} - G^{C} &= -\left(I_t^{GI} - I^{GI} + I_t^{GE} - I^{GE} + G_t^{RD} - G^{RD}\right) + Y^{d}\,\varepsilon_t^{c},
+    I_t^{GI} &= I^{GI} + Y^{d}\,\varepsilon_t^{igi}, \qquad
+    I_t^{GE} = I^{GE} + Y^{d}\,\varepsilon_t^{ige}, \\
+    G_t^{RD} - G^{RD} &= \rho_{RD}\left(G_{t-1}^{RD} - G^{RD}\right) + Y^{d}\,\varepsilon_t^{grd}, \\
+    G_t^{C} - G^{C} &= Y^{d}\,\varepsilon_t^{gc},
 \end{align}
-where unstarred steady-state values carry no time index and $Y^{d}$ is steady-state demand. The last line implements the budget-neutral financing rule: any rise in investment or R\&D is offset one-for-one by government consumption, unless the consumption shock $\varepsilon_t^{c}$ is itself activated. Taxes and transfers stabilize debt,
+where unstarred steady-state values carry no time index and $Y^{d}$ is steady-state demand. Government consumption is an ordinary instrument with its own innovation $\varepsilon_t^{gc}$. The budget-neutral experiments of Section~\ref{sec:results} finance a rise in investment or R\&D with an equal cut in consumption by setting $\varepsilon_t^{gc} = -\left(\varepsilon_t^{igi} + \varepsilon_t^{ige} + \varepsilon_t^{grd}\right)$; a non-neutral experiment sets it freely. Taxes and transfers stabilize debt,
 \begin{align}
     \tau_t^{c} - \tau^{c} &= \rho_{\tau c}\left(\tau_{t-1}^{c} - \tau^{c}\right) + \left(1-\rho_{\tau c}\right)\gamma_{d}^{\tau c}\left(d_{t-1} - d^{*}\right) + \varepsilon_t^{\tau c}, \\
     \tau_t^{w} - \tau^{w} &= \rho_{\tau w}\left(\tau_{t-1}^{w} - \tau^{w}\right) + \left(1-\rho_{\tau w}\right)\gamma_{d}^{\tau w}\left(d_{t-1} - d^{*}\right) + \varepsilon_t^{\tau w}, \\
