@@ -15,7 +15,7 @@ from pathlib import Path
 import pandas as pd
 import plotly.graph_objects as go
 
-from wp_charts import chart_render_px, chart_display_cm, smart_save_image
+from wp_charts import chart_render_px, chart_display_cm, font_px_for_pt, smart_save_image, write_pdf
 
 # --- Paths (resolved from this file; the data CSV is the only external input) -
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -57,6 +57,12 @@ OUTPUT_STEM = "efficiencyAE_yd"
 WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (14.82, 9.53))
 DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (14.82, 9.53))
 
+# Font matching the paper: Palatino (the paper's mathpazo), sized so the chart
+# text renders at a fixed point size on the page (recomputed from render/display).
+TARGET_FONT_PT = 8
+FONT_FAMILY = "Palatino, 'Palatino Linotype', 'Book Antiqua', serif"
+FONT_PX = font_px_for_pt(TARGET_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
+
 
 def load_data():
     df = pd.read_csv(INPUT_CSV)
@@ -93,7 +99,7 @@ def main():
         width=WIDTH_PX,
         height=HEIGHT_PX,
         margin=STYLE["margins"],
-        font=dict(size=STYLE["font_size"]),
+        font=dict(family=FONT_FAMILY, size=FONT_PX),
         bargap=0.35,
     )
 
@@ -104,7 +110,7 @@ def main():
         linewidth=axes["linewidth"],
         ticks=axes["ticks"],
         tickangle=0,
-        tickfont=dict(size=axes["tickfont_size"]),
+        tickfont=dict(size=FONT_PX),
         title=None,
     )
     fig.update_yaxes(
@@ -117,16 +123,18 @@ def main():
         linecolor=axes["linecolor"],
         linewidth=axes["linewidth"],
         ticks=axes["ticks"],
-        tickfont=dict(size=axes["tickfont_size"]),
+        tickfont=dict(size=FONT_PX),
         title=None,
     )
 
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
     png_path = FIGURES_DIR / f"{OUTPUT_STEM}.png"
+    pdf_path = FIGURES_DIR / f"{OUTPUT_STEM}.pdf"
     html_path = FIGURES_DIR / f"{OUTPUT_STEM}.html"
     smart_save_image(fig, png_path, DISPLAY_CM)
+    write_pdf(fig, pdf_path, WIDTH_PX, DISPLAY_CM[0])  # vector PDF at the display size
     fig.write_html(html_path, auto_open=True)
-    print(f"  Saved {png_path.name} and {html_path.name}")
+    print(f"  Saved {png_path.name}, {pdf_path.name} and {html_path.name}")
 
     csv_data = pd.DataFrame({"category": labels, "additional_gain_2050": [round(v, 3) for v in values]})
     csv_path = FIGURES_DIR / f"{OUTPUT_STEM}.csv"

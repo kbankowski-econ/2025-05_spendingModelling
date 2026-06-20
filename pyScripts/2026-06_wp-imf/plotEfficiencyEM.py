@@ -18,7 +18,7 @@ import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-from wp_charts import chart_render_px, chart_display_cm, smart_save_image
+from wp_charts import chart_render_px, chart_display_cm, font_px_for_pt, smart_save_image, write_pdf
 
 # --- Paths (resolved from this file; the data CSV is the only external input) -
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -84,6 +84,16 @@ OUTPUT_STEM = "efficiencyEM_yd"
 # controls fonts/quality); display = size shown in the paper (aspect preserved).
 WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (14.82, 9.53))
 DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (14.82, 9.53))
+
+# Font matching the paper: Palatino (the paper's mathpazo), sized so the chart
+# text renders at a fixed point size on the page (recomputed from render/display).
+TARGET_FONT_PT = 8
+FONT_FAMILY = "Palatino, 'Palatino Linotype', 'Book Antiqua', serif"
+FONT_PX = font_px_for_pt(TARGET_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
+LEGEND_FONT_PT = 7   # legend smaller than the 8pt tick labels
+LEGEND_FONT_PX = font_px_for_pt(LEGEND_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
+TITLE_FONT_PT = 9    # subplot titles a touch larger than the tick labels
+TITLE_FONT_PX = font_px_for_pt(TITLE_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
 
 
 def load_data():
@@ -179,7 +189,7 @@ def main():
         width=WIDTH_PX,
         height=HEIGHT_PX,
         margin=STYLE["margins"],
-        font=dict(size=STYLE["font_size"]),
+        font=dict(family=FONT_FAMILY, size=FONT_PX),
         bargap=0.45,
         legend=dict(
             orientation=STYLE["legend"]["orientation"],
@@ -187,14 +197,14 @@ def main():
             y=1.32,
             xanchor=STYLE["legend"]["xanchor"],
             x=STYLE["legend"]["x"],
-            font=dict(size=STYLE["legend"]["font_size"]),
+            font=dict(size=LEGEND_FONT_PX),
         ),
     )
 
     # Subplot titles use the regular tick font size; nudge them up to open
     # a little more breathing room between the title and the subplot.
     for annotation in fig["layout"]["annotations"]:
-        annotation["font"] = dict(size=STYLE["axes"]["tickfont_size"])
+        annotation["font"] = dict(size=TITLE_FONT_PX)
         annotation["y"] = annotation["y"] + 0.11
 
     axes = STYLE["axes"]
@@ -205,7 +215,7 @@ def main():
             linewidth=axes["linewidth"],
             ticks=axes["ticks"],
             tickangle=0,
-            tickfont=dict(size=axes["tickfont_size"]),
+            tickfont=dict(size=FONT_PX),
             title=None,
             row=1, col=col,
         )
@@ -219,17 +229,19 @@ def main():
             linecolor=axes["linecolor"],
             linewidth=axes["linewidth"],
             ticks=axes["ticks"],
-            tickfont=dict(size=axes["tickfont_size"]),
+            tickfont=dict(size=FONT_PX),
             title=None,
             row=1, col=col,
         )
 
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
     png_path = FIGURES_DIR / f"{OUTPUT_STEM}.png"
+    pdf_path = FIGURES_DIR / f"{OUTPUT_STEM}.pdf"
     html_path = FIGURES_DIR / f"{OUTPUT_STEM}.html"
     smart_save_image(fig, png_path, DISPLAY_CM)
+    write_pdf(fig, pdf_path, WIDTH_PX, DISPLAY_CM[0])  # vector PDF at the display size
     fig.write_html(html_path, auto_open=True)
-    print(f"  Saved {png_path.name} and {html_path.name}")
+    print(f"  Saved {png_path.name}, {pdf_path.name} and {html_path.name}")
 
     csv_data = pd.DataFrame(csv_rows)
     csv_path = FIGURES_DIR / f"{OUTPUT_STEM}.csv"

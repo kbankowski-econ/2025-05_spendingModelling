@@ -22,7 +22,7 @@ import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-from wp_charts import chart_render_px, chart_display_cm, smart_save_image
+from wp_charts import chart_render_px, chart_display_cm, font_px_for_pt, smart_save_image, write_pdf
 
 # --- Paths --------------------------------------------------------------------
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -76,6 +76,16 @@ OUTPUT_STEM = "efficiencyBands"
 # controls fonts/quality); display = size shown in the paper (aspect preserved).
 WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (23.81, 16.40))
 DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (23.81, 16.40))
+
+# Font matching the paper: Palatino (the paper's mathpazo), sized so the chart
+# text renders at a fixed point size on the page (recomputed from render/display).
+TARGET_FONT_PT = 8
+FONT_FAMILY = "Palatino, 'Palatino Linotype', 'Book Antiqua', serif"
+FONT_PX = font_px_for_pt(TARGET_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
+LEGEND_FONT_PT = 7   # legend / in-plot value labels smaller than the tick labels
+LEGEND_FONT_PX = font_px_for_pt(LEGEND_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
+TITLE_FONT_PT = 9    # subplot titles a touch larger than the tick labels
+TITLE_FONT_PX = font_px_for_pt(TITLE_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
 
 # Reference year highlighted as the calibration period.
 REF_YEAR = 2023
@@ -184,7 +194,7 @@ def main():
             fig.add_trace(go.Scatter(
                 x=[REF_YEAR + 0.8], y=[ly], mode="text",
                 text=[f"{v:.2f}"], textposition="middle right",
-                textfont=dict(size=STYLE["legend_font_size"], color=colr),
+                textfont=dict(size=LEGEND_FONT_PX, color=colr),
                 showlegend=False, hoverinfo="skip", cliponaxis=False,
             ), row=row, col=col)
 
@@ -198,32 +208,34 @@ def main():
     fig.update_xaxes(
         range=[FIRST_YEAR, LAST_YEAR + 3], tickvals=TICK_YEARS, ticktext=TICK_LABELS,
         showgrid=False, linecolor=axes["linecolor"], linewidth=axes["linewidth"],
-        ticks=axes["ticks"], tickfont=dict(size=13),
+        ticks=axes["ticks"], tickfont=dict(size=FONT_PX),
     )
     fig.update_yaxes(
         range=Y_RANGE, tickvals=Y_TICKS,
         showgrid=True, gridcolor=axes["gridcolor"], gridwidth=axes["gridwidth"],
         zeroline=True, zerolinewidth=axes["zerolinewidth"], zerolinecolor="black",
         linecolor=axes["linecolor"], linewidth=axes["linewidth"],
-        ticks=axes["ticks"], tickfont=dict(size=13),
+        ticks=axes["ticks"], tickfont=dict(size=FONT_PX),
     )
 
     fig.update_layout(
         template=STYLE["template"], width=WIDTH_PX, height=HEIGHT_PX,
-        margin=dict(l=30, r=12, t=64, b=24), font=dict(size=14),
+        margin=dict(l=30, r=12, t=64, b=24), font=dict(family=FONT_FAMILY, size=FONT_PX),
         legend=dict(orientation="h", yanchor="bottom", y=1.06,
-                    xanchor="center", x=0.5, font=dict(size=13)),
+                    xanchor="center", x=0.5, font=dict(size=LEGEND_FONT_PX)),
     )
     for annot in fig.layout.annotations:
         if annot.text in SECTOR_TITLES.values():
-            annot.font.size = 15
+            annot.font.size = TITLE_FONT_PX
 
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
     png_path = FIGURES_DIR / f"{OUTPUT_STEM}.png"
+    pdf_path = FIGURES_DIR / f"{OUTPUT_STEM}.pdf"
     html_path = FIGURES_DIR / f"{OUTPUT_STEM}.html"
     smart_save_image(fig, png_path, DISPLAY_CM)
+    write_pdf(fig, pdf_path, WIDTH_PX, DISPLAY_CM[0])  # vector PDF at the display size
     fig.write_html(str(html_path), auto_open=True)
-    print(f"  Saved {png_path.name} and {html_path.name}")
+    print(f"  Saved {png_path.name}, {pdf_path.name} and {html_path.name}")
 
     csv_path = FIGURES_DIR / f"{OUTPUT_STEM}.csv"
     pd.DataFrame(csv_rows).to_csv(csv_path, index=False)
