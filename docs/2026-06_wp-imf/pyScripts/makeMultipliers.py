@@ -38,12 +38,25 @@ TEX_OUT = HERE.parent / "multipliersTable.tex"
 
 HORIZONS = [1, 5, 10, 20, 25]                  # years; quarter window is N*4
 
-# (row label, model directory, instrument variable shocked)
-SCENARIOS = [
-    ("Government consumption",    "Model_HumanCapital_exp_gc",  "Gc"),
-    ("Infrastructure investment", "Model_HumanCapital_exp_igi", "Igi"),
-    ("Human capital investment",  "Model_HumanCapital_exp_ige", "Ige"),
-    ("Research and development",  "Model_HumanCapital_exp_grd", "Grd"),
+# Spending type -> list of (region label, model directory or None, instrument).
+# A None model emits dashes (R&D is shut down for EMDEs: alphaRD = alphaHA = 0).
+GROUPS = [
+    ("Government consumption", [
+        ("Advanced economies", "Model_HumanCapital_exp_gc",    "Gc"),
+        ("Emerging markets",   "EM_Model_HumanCapital_exp_gc", "Gc"),
+    ]),
+    ("Infrastructure investment", [
+        ("Advanced economies", "Model_HumanCapital_exp_igi",    "Igi"),
+        ("Emerging markets",   "EM_Model_HumanCapital_exp_igi", "Igi"),
+    ]),
+    ("Human capital investment", [
+        ("Advanced economies", "Model_HumanCapital_exp_ige",    "Ige"),
+        ("Emerging markets",   "EM_Model_HumanCapital_exp_ige", "Ige"),
+    ]),
+    ("Research and development", [
+        ("Advanced economies", "Model_HumanCapital_exp_grd", "Grd"),
+        ("Emerging markets",   None,                         None),
+    ]),
 ]
 
 
@@ -66,19 +79,23 @@ def multipliers(model, inst):
 
 
 def main():
-    rows = []
-    for label, model, inst in SCENARIOS:
-        mult = multipliers(model, inst)
-        rows.append((label, model, mult))
-        vals = "  ".join(f"{h}y={mult[h]:.2f}" for h in HORIZONS)
-        print(f"  {label:26s} {vals}")
+    # Compute every (type, region) cell.
+    data = []   # (stype, region, model, mult-or-None)
+    for stype, regions in GROUPS:
+        for region, model, inst in regions:
+            mult = multipliers(model, inst) if model else None
+            data.append((stype, region, model, mult))
+            shown = ("  ".join(f"{h}y={mult[h]:.2f}" for h in HORIZONS)
+                     if mult else "  (n/a)")
+            print(f"  {stype:26s} {region:20s} {shown}")
 
     CSV_OUT.parent.mkdir(parents=True, exist_ok=True)
     with CSV_OUT.open("w", encoding="utf-8") as f:
-        f.write("category,model," + ",".join(f"mult_{h}y" for h in HORIZONS) + "\n")
-        for label, model, mult in rows:
-            f.write(f"{label},{model}," +
-                    ",".join(f"{mult[h]:.4f}" for h in HORIZONS) + "\n")
+        f.write("category,region,model," + ",".join(f"mult_{h}y" for h in HORIZONS) + "\n")
+        for stype, region, model, mult in data:
+            cells = (",".join(f"{mult[h]:.4f}" for h in HORIZONS)
+                     if mult else ",".join([""] * len(HORIZONS)))
+            f.write(f"{stype},{region},{model or ''},{cells}\n")
     print(f"  Wrote {CSV_OUT.name}")
 
     lines = [
@@ -89,9 +106,16 @@ def main():
         "    Cumulative output multiplier & 1y & 5y & 10y & 20y & 25y \\\\",
         "    \\midrule",
     ]
-    for label, model, mult in rows:
-        lines.append("    " + label + " & "
-                     + " & ".join(f"{mult[h]:.2f}" for h in HORIZONS) + " \\\\")
+    for gi, (stype, regions) in enumerate(GROUPS):
+        if gi > 0:
+            lines.append("    \\addlinespace[0.3em]")
+        lines.append(f"    \\multicolumn{{6}}{{l}}{{\\textit{{{stype}}}}} \\\\")
+        for region, model, inst in regions:
+            mult = multipliers(model, inst) if model else None
+            cells = (" & ".join(f"{mult[h] + 0.0:.2f}".replace("-0.00", "0.00")
+                                 for h in HORIZONS)
+                     if mult else " & ".join(["--"] * len(HORIZONS)))
+            lines.append(f"    \\quad {region} & {cells} \\\\")
     lines += ["    \\bottomrule", "\\end{tabular}"]
     TEX_OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"  Wrote {TEX_OUT.name}")

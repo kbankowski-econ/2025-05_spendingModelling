@@ -1,5 +1,9 @@
-category,model,mult_1y,mult_5y,mult_10y,mult_20y,mult_25y
-Government consumption,Model_HumanCapital_exp_gc,-0.0115,0.5599,0.7225,0.9063,0.9685
-Infrastructure investment,Model_HumanCapital_exp_igi,-0.1289,0.7098,1.1523,1.7170,1.9122
-Human capital investment,Model_HumanCapital_exp_ige,0.1526,0.4291,0.6776,1.5552,2.0184
-Research and development,Model_HumanCapital_exp_grd,-0.0996,0.5489,1.2810,2.3284,2.6897
+category,region,model,mult_1y,mult_5y,mult_10y,mult_20y,mult_25y
+Government consumption,Advanced economies,Model_HumanCapital_exp_gc,-0.0115,0.5599,0.7225,0.9063,0.9685
+Government consumption,Emerging markets,EM_Model_HumanCapital_exp_gc,-0.0022,0.5186,0.6494,0.7636,0.7944
+Infrastructure investment,Advanced economies,Model_HumanCapital_exp_igi,-0.1289,0.7098,1.1523,1.7170,1.9122
+Infrastructure investment,Emerging markets,EM_Model_HumanCapital_exp_igi,-0.3001,1.0597,1.9290,2.9184,3.2119
+Human capital investment,Advanced economies,Model_HumanCapital_exp_ige,0.1526,0.4291,0.6776,1.5552,2.0184
+Human capital investment,Emerging markets,EM_Model_HumanCapital_exp_ige,0.2616,0.4579,0.9581,2.5074,3.2122
+Research and development,Advanced economies,Model_HumanCapital_exp_grd,-0.0996,0.5489,1.2810,2.3284,2.6897
+Research and development,Emerging markets,,,,,,

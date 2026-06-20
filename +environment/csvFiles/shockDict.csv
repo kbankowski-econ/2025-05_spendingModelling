@@ -3,6 +3,9 @@ Model_HumanCapital_exp_gc,Government consumption expansion (1% of GDP; debt-fina
 Model_HumanCapital_exp_igi,Infrastructure investment expansion (1% of GDP; debt-financed)
 Model_HumanCapital_exp_ige,Human capital investment expansion (1% of GDP; debt-financed)
 Model_HumanCapital_exp_grd,R&D expansion (1% of GDP; debt-financed)
+EM_Model_HumanCapital_exp_gc,EMDE government consumption expansion (1% of GDP; debt-financed)
+EM_Model_HumanCapital_exp_igi,EMDE infrastructure investment expansion (1% of GDP; debt-financed)
+EM_Model_HumanCapital_exp_ige,EMDE human capital investment expansion (1% of GDP; debt-financed)
 Model_HumanCapital_epsi_ig,Infrastructure investment shock
 Model_HumanCapital_epsi_cge,Human capital investment shock
 Model_HumanCapital_epsi_cgrd,R&D investment shock
