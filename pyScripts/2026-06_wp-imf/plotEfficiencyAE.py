@@ -14,7 +14,8 @@ from pathlib import Path
 
 import pandas as pd
 import plotly.graph_objects as go
-import plotly.io as pio
+
+from wp_charts import chart_dims_px, smart_save_image
 
 # --- Paths (resolved from this file; the data CSV is the only external input) -
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -26,8 +27,6 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 STYLE = {
     "template": "simple_white",
     "font_size": 22,
-    "width": 560,
-    "height": 360,
     "margins": {"t": 60, "b": 30, "l": 25, "r": 25},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
@@ -53,16 +52,9 @@ SERIES = [
 TARGET_YEAR = 2050
 OUTPUT_STEM = "efficiencyAE_yd"
 
-
-def smart_save_image(fig, output_path, scale=2):
-    """Write the PNG only if its bytes changed (avoids needless churn)."""
-    new_bytes = pio.to_image(fig, format="png", scale=scale)
-    if output_path.exists() and output_path.read_bytes() == new_bytes:
-        print(f"  [SmartSave] Skipping {output_path.name} (no changes)")
-        return False
-    output_path.write_bytes(new_bytes)
-    print(f"  [SmartSave] Updating {output_path.name}")
-    return True
+# Chart size comes from chartTable.csv (cm); fall back to this if it is absent.
+DEFAULT_CM = (14.82, 9.53)
+WIDTH_PX, HEIGHT_PX = chart_dims_px(OUTPUT_STEM, DEFAULT_CM)
 
 
 def load_data():
@@ -97,8 +89,8 @@ def main():
 
     fig.update_layout(
         template=STYLE["template"],
-        width=STYLE["width"],
-        height=STYLE["height"],
+        width=WIDTH_PX,
+        height=HEIGHT_PX,
         margin=STYLE["margins"],
         font=dict(size=STYLE["font_size"]),
         bargap=0.35,

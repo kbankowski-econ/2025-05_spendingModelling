@@ -22,6 +22,8 @@ import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
+from wp_charts import chart_dims_px
+
 # --- Paths --------------------------------------------------------------------
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parents[1]
@@ -69,6 +71,10 @@ Y_RANGE = [0.0, 0.7]
 Y_TICKS = [0.0, 0.2, 0.4, 0.6]
 
 OUTPUT_STEM = "efficiencyBands"
+
+# Chart size comes from chartTable.csv (cm); fall back to this if it is absent.
+DEFAULT_CM = (23.81, 16.40)
+WIDTH_PX, HEIGHT_PX = chart_dims_px(OUTPUT_STEM, DEFAULT_CM)
 
 # Reference year highlighted as the calibration period.
 REF_YEAR = 2023
@@ -202,7 +208,7 @@ def main():
     )
 
     fig.update_layout(
-        template=STYLE["template"], width=900, height=620,
+        template=STYLE["template"], width=WIDTH_PX, height=HEIGHT_PX,
         margin=dict(l=30, r=12, t=64, b=24), font=dict(size=14),
         legend=dict(orientation="h", yanchor="bottom", y=1.06,
                     xanchor="center", x=0.5, font=dict(size=13)),
@@ -214,7 +220,7 @@ def main():
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
     png_path = FIGURES_DIR / f"{OUTPUT_STEM}.png"
     html_path = FIGURES_DIR / f"{OUTPUT_STEM}.html"
-    fig.write_image(str(png_path), width=900, height=620, scale=2)
+    fig.write_image(str(png_path), width=WIDTH_PX, height=HEIGHT_PX, scale=2)
     fig.write_html(str(html_path), auto_open=False)
     print(f"  Saved {png_path.name} and {html_path.name}")
 
