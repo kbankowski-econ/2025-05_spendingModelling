@@ -56,6 +56,10 @@ cd(fullfile(project_path, 'models'));
 % models/postSimul.mod.
 
 modelList = {
+    'Model_HumanCapital_exp_gc',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
+    'Model_HumanCapital_exp_igi',               'AE', 'AE',     {{'epsi_igi',      'const', 0.01,  '1:1000'}}
+    'Model_HumanCapital_exp_ige',               'AE', 'AE',     {{'epsi_ige',      'const', 0.01,  '1:1000'}}
+    'Model_HumanCapital_exp_grd',               'AE', 'AE',     {{'epsi_grd',      'const', 0.01,  '1:1000'}}
     'Model_HumanCapital_epsi_ig',               'AE', 'AE',     {{'epsi_igi',      'const', 0.01,  '1:1000'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'Model_HumanCapital_epsi_cge',              'AE', 'AE',     {{'epsi_ige',     'const', 0.01,  '1:1000'}
