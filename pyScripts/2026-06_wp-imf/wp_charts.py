@@ -23,6 +23,16 @@ _THIS_DIR = Path(__file__).resolve().parent
 CONFIG_CSV = _THIS_DIR / "chartTable.csv"
 _CM_PER_INCH = 2.54
 _CM_TO_PX = 37.795275591  # 1 cm at 96 DPI (the render canvas's logical DPI)
+_PT_PER_INCH = 72.27       # TeX points per inch (LaTeX's "pt")
+
+
+def font_px_for_pt(target_pt, render_width_px, display_width_cm):
+    """Canvas font size (px) so chart text renders at `target_pt` points on the
+    page, given the render width (px) and the on-page display width (cm). Keeps
+    figure text at a fixed point size however the chart is scaled into the paper:
+    a chart shown at half its render width needs double the canvas font px."""
+    render_width_cm = render_width_px / _CM_TO_PX
+    return round(target_pt * (96.0 / _PT_PER_INCH) * render_width_cm / display_width_cm, 1)
 
 
 def _read_cm(stem, width_col, height_col, default_cm):
@@ -82,3 +92,13 @@ def smart_save_image(fig, output_path, display_cm, scale=2):
     output_path.write_bytes(new_bytes)
     print(f"  [SmartSave] Updating {output_path.name}")
     return True
+
+
+def write_pdf(fig, output_path, render_width_px, display_width_cm):
+    """Write a vector PDF sized to the display width (cm), matching the PNG. The
+    figure is laid out on the (high-resolution) render canvas; scaling the PDF
+    page by display/render makes its natural size equal the display size, so a
+    bare \\includegraphics{...pdf} renders it at the paper size. Assumes the
+    display and render aspect ratios match (height follows from the scale)."""
+    scale = display_width_cm * _CM_TO_PX / render_width_px
+    fig.write_image(str(output_path), format="pdf", scale=scale)
