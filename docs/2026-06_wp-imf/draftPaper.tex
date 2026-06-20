@@ -409,50 +409,26 @@ Investment in human capital pays off more gradually, reflecting the slow accumul
 Public R\&D operates with the longest lag: it raises the stock of created technologies, which is adopted---and so reaches production---only over time (equations~\ref{eq:Z} and~\ref{eq:A}).
 These differing horizons are summarized by the cumulative fiscal multipliers, which measure the discounted output gain per unit of additional spending.
 
-The implied cumulative multipliers over 25 years for public investment in human capital and infrastructure are about 1 for AEs and 2.5 for EMDEs (Table~\ref{tab:multipliers}).
-These are in the range of the long-run multipliers reported by \citet{Ramey2020}.
-\citet{AfonsoRodrigues2024} also document that the multiplier of public investment is 0.9 for advanced economies and 2.3 for emerging market economies.
-The cumulative multiplier for R\&D expenditure is about 1.8, in line with \citet{FieldhouseMertens2023}.
-The larger multipliers for EMDEs reflect the higher output elasticity of infrastructure and the higher marginal product of public capital in these economies.
+Table~\ref{tab:multipliers} reports the implied cumulative multipliers for the advanced-economy and emerging-market calibrations, computed from permanent debt-financed expansions of 1 percent of GDP in each spending category, with no offsetting cut to other spending.
+Infrastructure pays off fastest, while human capital and---in advanced economies---R\&D build up more slowly but catch up to or exceed infrastructure by the 25-year horizon; government consumption, being unproductive, yields a long-run multiplier below one.
+The investment multipliers are larger for emerging market and developing economies, reflecting the higher output elasticity of infrastructure and the higher marginal product of public capital in these economies; the R\&D channel is shut down there, as these economies grow mainly by adopting existing technologies rather than creating them.
+These long-run magnitudes are comparable to the public-investment and R\&D multipliers documented in the empirical literature \citep{Ramey2020, AfonsoRodrigues2024, FieldhouseMertens2023}.
 
 \begin{table}[H]
     \centering
     \footnotesize
-    \caption{Implied Cumulative Public-Spending Multipliers (25-Year Horizon) \label{tab:multipliers}}
-    \begin{tabular}{lcc}
-        \toprule
-        Spending category & AE & EMDE \\
-        \midrule
-        Public investment (infrastructure and human capital) & $\approx$1.0 & $\approx$2.5 \\
-        Public R\&D                                          & $\approx$1.8 & --           \\
-        \bottomrule
-    \end{tabular}
-    % TODO: split infrastructure vs human-capital multipliers into separate rows once pulled from model output.
-
-    \vspace{1mm}
-    \source{IMF staff estimates.}
-    \desc{Cumulative output gain per unit of additional spending over a 25-year horizon. Benchmarks: public-investment multipliers of 0.9 (AE) and 2.3 (EMDE) in \citet{AfonsoRodrigues2024} and long-run multipliers in \citet{Ramey2020}; an R\&D multiplier of about 1.8 in \citet{FieldhouseMertens2023}.}
-\end{table}
-
-Table~\ref{tab:multipliersHorizon} reports the full horizon profile of these multipliers for the advanced-economy calibration, computed from permanent debt-financed expansions of 1 percent of GDP in each spending category, with no offsetting cut to other spending.
-Infrastructure investment pays off fastest, human capital builds up more gradually, and R\&D---though slow at first---delivers the largest cumulative gain by the 25-year horizon.
-Government consumption, which is unproductive, yields a long-run multiplier of about one.
-
-\begin{table}[H]
-    \centering
-    \footnotesize
-    \caption{Cumulative Output Multipliers by Horizon (Advanced Economy) \label{tab:multipliersHorizon}}
+    \caption{Implied Cumulative Public-Spending Multipliers by Horizon \label{tab:multipliers}}
     \input{multipliersTable.tex}
 
     \vspace{1mm}
     \source{IMF staff estimates.}
-    \desc{Cumulative output gain per unit of additional spending at the 1-, 5-, 10-, 20-, and 25-year horizons, for a permanent increase of 1 percent of GDP in each spending category under the advanced-economy calibration, financed by debt with no offsetting cut to other spending. Each multiplier divides the cumulative output gain by the cumulative increase in the corresponding category.}
+    \desc{Cumulative output gain per unit of additional spending at the 1-, 5-, 10-, 20-, and 25-year horizons, for a permanent increase of 1 percent of GDP in each spending category, financed by debt with no offsetting cut to other spending. Each multiplier divides the cumulative output gain by the cumulative increase in the corresponding category. The R\&D innovation channel is shut down for emerging market and developing economies.}
 \end{table}
 
 \subsection{Sensitivity}
 
 The output responses depend on the model's key structural parameters.
-The most consequential is the speed of technology diffusion, governed by the adoption probability $\lambda_t$.
+The most consequential is the speed of technology diffusion, governed by the adoption probability $q_t$.
 Figure~\ref{fig:diffusion} shows how the output gains from a 50/50 human-capital/R\&D spending mix depend on this speed: faster diffusion brings the productivity payoff of R\&D forward, raising gains at every horizon.
 The responses are similarly sensitive to the output elasticity of infrastructure ($\alpha_G$), the elasticity of human capital formation with respect to the public stock ($\mu$), and the efficiency wedges $e^{GI}$, $e^{GE}$, and $e^{GRD}$, each of which scales the productive payoff of the corresponding spending category.
 
