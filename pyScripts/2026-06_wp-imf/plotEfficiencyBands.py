@@ -22,7 +22,7 @@ import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-from wp_charts import chart_dims_px
+from wp_charts import chart_dims_px, smart_save_image
 
 # --- Paths --------------------------------------------------------------------
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -220,7 +220,7 @@ def main():
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
     png_path = FIGURES_DIR / f"{OUTPUT_STEM}.png"
     html_path = FIGURES_DIR / f"{OUTPUT_STEM}.html"
-    fig.write_image(str(png_path), width=WIDTH_PX, height=HEIGHT_PX, scale=2)
+    smart_save_image(fig, png_path)
     fig.write_html(str(html_path), auto_open=False)
     print(f"  Saved {png_path.name} and {html_path.name}")
 
