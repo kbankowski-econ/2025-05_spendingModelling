@@ -14,7 +14,7 @@ from pathlib import Path
 import pandas as pd
 import plotly.graph_objects as go
 
-from wp_charts import chart_dims_px, smart_save_image
+from wp_charts import chart_size_cm, smart_save_image
 
 # --- Paths (resolved from this file; the data CSV is the only external input) -
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -46,9 +46,10 @@ BAR_COLOR = "#1565C0"  # blue
 TARGET_YEAR = 2050
 OUTPUT_STEM = "diffusionAE_yd"
 
-# Chart size comes from chartTable.csv (cm); fall back to this if it is absent.
-DEFAULT_CM = (14.82, 9.53)
-WIDTH_PX, HEIGHT_PX = chart_dims_px(OUTPUT_STEM, DEFAULT_CM)
+# Internal render canvas (px): controls font sizes and quality — keep fixed.
+WIDTH_PX, HEIGHT_PX = 560, 360
+# Display size in the paper (cm), from chartTable.csv; aspect preserved.
+DISPLAY_CM = chart_size_cm(OUTPUT_STEM, (14.82, 9.53))
 
 
 def load_data():
@@ -113,7 +114,7 @@ def main():
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
     png_path = FIGURES_DIR / f"{OUTPUT_STEM}.png"
     html_path = FIGURES_DIR / f"{OUTPUT_STEM}.html"
-    smart_save_image(fig, png_path)
+    smart_save_image(fig, png_path, DISPLAY_CM)
     fig.write_html(html_path, auto_open=False)
     print(f"  Saved {png_path.name} and {html_path.name}")
 

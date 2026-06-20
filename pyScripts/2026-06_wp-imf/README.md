@@ -20,12 +20,19 @@ sizes). Each script's only data input is its source CSV.
 
 ## Chart dimensions (`chartTable.csv`)
 
-Chart sizes live in `chartTable.csv` — the config "database" the scripts read at
-run time. The `Width` and `Height` columns are in **centimetres**; each script
-matches its own row by `pngFile` and converts cm → pixels (96 DPI, then rendered
-at `scale=2` → 192 DPI effective). Edit the cm values there and rerun to resize
-a chart; no code change needed. If the CSV (or a row) is missing, each script
-falls back to a built-in `DEFAULT_CM`.
+The `Width` and `Height` columns (in **centimetres**) set each figure's **display
+size in the paper** — the size a bare `\includegraphics{...}` renders it at, with
+aspect preserved (the image fits inside that box). Edit a row's cm and rerun to
+resize that figure; no `.tex` or code change needed.
+
+This is purely a display change. Each chart is rendered at a **fixed internal
+canvas** (`WIDTH_PX, HEIGHT_PX` in the script — 560×360 for the panels, 900×620
+for the bands), which is what controls font sizes and quality. The PNG is then
+tagged (via a `pHYs` chunk in `wp_charts.smart_save_image`) with the DPI that
+makes that high-resolution bitmap appear at the requested cm size. So shrinking a
+figure leaves its fonts and layout untouched — it just scales the whole image
+down. If the CSV (or a row) is missing, each script falls back to a built-in
+default cm.
 
 ## Output
 
