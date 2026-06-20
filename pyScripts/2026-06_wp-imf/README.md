@@ -20,19 +20,21 @@ sizes). Each script's only data input is its source CSV.
 
 ## Chart dimensions (`chartTable.csv`)
 
-The `Width` and `Height` columns (in **centimetres**) set each figure's **display
-size in the paper** — the size a bare `\includegraphics{...}` renders it at, with
-aspect preserved (the image fits inside that box). Edit a row's cm and rerun to
-resize that figure; no `.tex` or code change needed.
+Each figure has **two independent sizes** in `chartTable.csv`, both in
+**centimetres**:
 
-This is purely a display change. Each chart is rendered at a **fixed internal
-canvas** (`WIDTH_PX, HEIGHT_PX` in the script — 560×360 for the panels, 900×620
-for the bands), which is what controls font sizes and quality. The PNG is then
-tagged (via a `pHYs` chunk in `wp_charts.smart_save_image`) with the DPI that
-makes that high-resolution bitmap appear at the requested cm size. So shrinking a
-figure leaves its fonts and layout untouched — it just scales the whole image
-down. If the CSV (or a row) is missing, each script falls back to a built-in
-default cm.
+- **`RenderWidth` / `RenderHeight`** — the *original chart size*: the plotly
+  canvas the chart is drawn on, which controls font sizes and resolution. The
+  script converts this to pixels (cm × 96 DPI, then `scale=2`).
+- **`DisplayWidth` / `DisplayHeight`** — the size the figure appears at in the
+  paper. Applied via a `pHYs` DPI tag (in `wp_charts.smart_save_image`) so a bare
+  `\includegraphics{...}` renders it there, aspect preserved.
+
+The two are independent. To make a figure **smaller in the paper without changing
+its fonts**, lower only `DisplayWidth`/`DisplayHeight`. To give a chart **more
+drawing room** (e.g. so a crowded legend fits), raise `RenderWidth`/`RenderHeight`.
+Edit a row and rerun; no `.tex` or code change needed. If the CSV (or a column) is
+missing, each script falls back to built-in defaults.
 
 ## Output
 

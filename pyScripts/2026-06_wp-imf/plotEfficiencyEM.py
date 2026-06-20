@@ -18,7 +18,7 @@ import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-from wp_charts import chart_size_cm, smart_save_image
+from wp_charts import chart_render_px, chart_display_cm, smart_save_image
 
 # --- Paths (resolved from this file; the data CSV is the only external input) -
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -80,10 +80,10 @@ MARKER_NAME = "Efficiency improvement from a higher initial gap"
 TARGET_YEAR = 2050
 OUTPUT_STEM = "efficiencyEM_yd"
 
-# Internal render canvas (px): controls font sizes and quality — keep fixed.
-WIDTH_PX, HEIGHT_PX = 560, 360
-# Display size in the paper (cm), from chartTable.csv; aspect preserved.
-DISPLAY_CM = chart_size_cm(OUTPUT_STEM, (14.82, 9.53))
+# Both sizes come from chartTable.csv: render = original chart size (canvas,
+# controls fonts/quality); display = size shown in the paper (aspect preserved).
+WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (14.82, 9.53))
+DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (14.82, 9.53))
 
 
 def load_data():

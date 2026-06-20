@@ -1,15 +1,16 @@
 """
 Shared helpers for the working-paper figure scripts in this folder.
 
-  - chart_size_cm:    read a chart's *display* size (cm) from chartTable.csv
+  - chart_render_px:  read a chart's *render* (original) size (cm) -> pixels
+  - chart_display_cm: read a chart's *display* size (cm) shown in the paper
   - smart_save_image: write a PNG, tagged so its natural size in LaTeX equals the
                       requested display size, only when its bytes change
 
-Each chart is rendered at a fixed internal canvas (set in the script — this is
-what controls font sizes and quality), then tagged with a DPI chosen so a bare
-\\includegraphics renders it at the display size from chartTable.csv. Shrinking a
-chart in the paper is therefore a pure display change: edit Width/Height in
-chartTable.csv and the canvas/fonts are untouched. chartTable.csv is expected
+Both sizes live in chartTable.csv. RenderWidth/RenderHeight set the plotly canvas
+(hence font sizes and resolution); DisplayWidth/DisplayHeight set the size the
+figure appears at in the paper, applied via a DPI tag so a bare \\includegraphics
+renders it there. The two are independent: shrink DisplayWidth to make a figure
+smaller in the paper without touching its fonts. chartTable.csv is expected
 alongside this module. Depends only on the standard library and plotly.
 """
 import struct
@@ -21,20 +22,37 @@ import plotly.io as pio
 _THIS_DIR = Path(__file__).resolve().parent
 CONFIG_CSV = _THIS_DIR / "chartTable.csv"
 _CM_PER_INCH = 2.54
+_CM_TO_PX = 37.795275591  # 1 cm at 96 DPI (the render canvas's logical DPI)
 
 
-def chart_size_cm(stem, default_cm):
-    """Display size (width_cm, height_cm) for a chart, read from chartTable.csv by
-    matching pngFile. Falls back to default_cm if the file or row is missing."""
+def _read_cm(stem, width_col, height_col, default_cm):
+    """Read a (width_cm, height_cm) pair from chartTable.csv by matching pngFile.
+    Falls back to default_cm if the file, row, or columns are missing/blank."""
     import csv
     width_cm, height_cm = default_cm
     if CONFIG_CSV.exists():
         with CONFIG_CSV.open(newline="", encoding="utf-8") as handle:
             for row in csv.DictReader(handle):
                 if Path(row.get("pngFile", "")).name == f"{stem}.png":
-                    width_cm, height_cm = float(row["Width"]), float(row["Height"])
+                    if row.get(width_col) and row.get(height_col):
+                        width_cm, height_cm = float(row[width_col]), float(row[height_col])
                     break
     return width_cm, height_cm
+
+
+def chart_render_px(stem, default_cm):
+    """Original chart (render canvas) size in pixels, from RenderWidth/RenderHeight
+    (cm) in chartTable.csv. This is the plotly canvas, so it sets font sizes and
+    resolution. Falls back to default_cm if the row/columns are missing."""
+    width_cm, height_cm = _read_cm(stem, "RenderWidth", "RenderHeight", default_cm)
+    return round(width_cm * _CM_TO_PX), round(height_cm * _CM_TO_PX)
+
+
+def chart_display_cm(stem, default_cm):
+    """Display size (width_cm, height_cm) shown in the paper, from DisplayWidth/
+    DisplayHeight (cm) in chartTable.csv. Applied via the DPI tag, not the canvas.
+    Falls back to default_cm if the row/columns are missing."""
+    return _read_cm(stem, "DisplayWidth", "DisplayHeight", default_cm)
 
 
 def _png_with_dpi(png_bytes, dpi):

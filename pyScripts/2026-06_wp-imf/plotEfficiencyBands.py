@@ -22,7 +22,7 @@ import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-from wp_charts import chart_size_cm, smart_save_image
+from wp_charts import chart_render_px, chart_display_cm, smart_save_image
 
 # --- Paths --------------------------------------------------------------------
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -72,10 +72,10 @@ Y_TICKS = [0.0, 0.2, 0.4, 0.6]
 
 OUTPUT_STEM = "efficiencyBands"
 
-# Internal render canvas (px): controls font sizes and quality — keep fixed.
-WIDTH_PX, HEIGHT_PX = 900, 620
-# Display size in the paper (cm), from chartTable.csv; aspect preserved.
-DISPLAY_CM = chart_size_cm(OUTPUT_STEM, (23.81, 16.40))
+# Both sizes come from chartTable.csv: render = original chart size (canvas,
+# controls fonts/quality); display = size shown in the paper (aspect preserved).
+WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (23.81, 16.40))
+DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (23.81, 16.40))
 
 # Reference year highlighted as the calibration period.
 REF_YEAR = 2023
