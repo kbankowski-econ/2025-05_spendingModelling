@@ -110,6 +110,15 @@ def exportData(c):
 # =============================================================================
 
 @task
+def plotStandardShocksAE(c):
+    """
+    Overview panel: AE responses to the four standard expansion shocks.
+    Out: figures/standardShocksAE.png
+    """
+    _run_plot(c, "plotStandardShocksAE.py", "Generating Overview: Standard Expansion Shocks")
+
+
+@task
 def plotReallocationAE(c):
     """
     Fig 1: AE output response to three expenditure-reallocation shocks.
@@ -178,6 +187,7 @@ def plotEfficiencyBands(c):
 
 @task(pre=[
     exportData,
+    plotStandardShocksAE,
     plotReallocationAE,
     plotReallocationEM,
     plotEfficiencyAE,
