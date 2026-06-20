@@ -30,8 +30,6 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 STYLE = {
     "template": "simple_white",
     "font_size": 22,
-    "width": 560,
-    "height": 360,
     "margins": {"t": 60, "b": 30, "l": 25, "r": 25},
     "legend": {"orientation": "h", "yanchor": "bottom", "y": 1.02,
                "xanchor": "center", "x": 0.5, "font_size": 14},
@@ -52,6 +50,29 @@ X_TICKS = [2026, 2031, 2036, 2041, 2046, 2050]
 # Show the first tick as full 4-digit year, abbreviate the rest to 2 digits.
 X_TICK_LABELS = [str(X_TICKS[0])] + [f"{y % 100:02d}" for y in X_TICKS[1:]]
 OUTPUT_STEM = "humanCapital_yd_IRF"
+
+# --- Chart dimensions from the config database (chartTable.csv, in cm) --------
+CONFIG_CSV = SCRIPT_DIR / "chartTable.csv"
+_CM_TO_PX = 37.795275591  # 1 cm at 96 DPI; rendered at scale=2 -> 192 DPI
+DEFAULT_CM = (14.82, 9.53)
+
+
+def chart_dims_px(stem, default_cm):
+    """Return (width_px, height_px) for a chart, reading Width/Height (in cm)
+    from chartTable.csv by matching pngFile. Falls back to default_cm if the
+    config file or row is missing, so the script still runs standalone."""
+    import csv
+    width_cm, height_cm = default_cm
+    if CONFIG_CSV.exists():
+        with CONFIG_CSV.open(newline="", encoding="utf-8") as handle:
+            for row in csv.DictReader(handle):
+                if Path(row.get("pngFile", "")).name == f"{stem}.png":
+                    width_cm, height_cm = float(row["Width"]), float(row["Height"])
+                    break
+    return round(width_cm * _CM_TO_PX), round(height_cm * _CM_TO_PX)
+
+
+WIDTH_PX, HEIGHT_PX = chart_dims_px(OUTPUT_STEM, DEFAULT_CM)
 
 
 def smart_save_image(fig, output_path, scale=2):
@@ -90,8 +111,8 @@ def main():
 
     fig.update_layout(
         template=STYLE["template"],
-        width=STYLE["width"],
-        height=STYLE["height"],
+        width=WIDTH_PX,
+        height=HEIGHT_PX,
         margin=STYLE["margins"],
         font=dict(size=STYLE["font_size"]),
         legend=dict(

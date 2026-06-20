@@ -1,0 +1,8 @@
+id,pngFile,task,Title,Subtitle,Sources,Notes,Width,Height
+diffusionAE,diffusionAE_yd.png,plotDiffusionAE,,,,,14.82,9.53
+reallocationAE,reallocationAE_yd.png,plotReallocationAE,,,,,14.82,9.53
+reallocationEM,reallocationEM_yd.png,plotReallocationEM,,,,,14.82,9.53
+efficiencyAE,efficiencyAE_yd.png,plotEfficiencyAE,,,,,14.82,9.53
+efficiencyEM,efficiencyEM_yd.png,plotEfficiencyEM,,,,,14.82,9.53
+humanCapital,humanCapital_yd_IRF.png,plotHumanCapitalIRFs,,,,,14.82,9.53
+efficiencyBands,efficiencyBands.png,plotEfficiencyBands,,,,,23.81,16.40

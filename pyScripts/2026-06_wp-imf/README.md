@@ -16,6 +16,15 @@ external input is the data file (no local-module imports).
 | `plotHumanCapitalIRFs.py` | Human capital + R&D mix (`fig:humanCapital`) | `docs/csvFiles/figureNumbers_yearly.csv` |
 | `plotEfficiencyBands.py` | Efficiency bands by income group (App. B, `fig:efficiencyBands`) | IMF staff efficiency estimates (`DATA_DIR` in the script) |
 
+## Chart dimensions (`chartTable.csv`)
+
+Chart sizes live in `chartTable.csv` — the config "database" the scripts read at
+run time. The `Width` and `Height` columns are in **centimetres**; each script
+matches its own row by `pngFile` and converts cm → pixels (96 DPI, then rendered
+at `scale=2` → 192 DPI effective). Edit the cm values there and rerun to resize
+a chart; no code change needed. If the CSV (or a row) is missing, each script
+falls back to a built-in `DEFAULT_CM`, so it still runs standalone.
+
 ## Output
 
 All scripts write `<stem>.png`, `<stem>.html`, and `<stem>.csv` into
