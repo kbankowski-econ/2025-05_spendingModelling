@@ -1,9 +1,9 @@
 """
 Convenience runner: regenerate every working-paper figure.
 
-Each plot script is fully self-contained and can be run on its own
-(`python plotReallocationAE.py`). This runner just invokes them in turn via
-subprocess, so it adds no import-time coupling between the scripts.
+Each plot script can be run on its own (`python plotReallocationAE.py`); it
+imports the shared helpers from wp_charts.py in this folder. This runner just
+invokes the scripts in turn via subprocess.
 """
 import subprocess
 import sys
