@@ -7,12 +7,8 @@ model data they read.
 The plotting scripts themselves live in the sibling project
 pyScripts/2026-04_spendingModelling/ (referenced via APR26_SCRIPT_DIR). This
 runner points their output at docs/2026-06_wp-imf/figures by setting
-FISCAL_CONFIG_PATH to this folder's fiscal_config.json.
-
-Every figure task (and `run-all`) accepts `--open-html`: pass it to auto-open each
-chart's interactive .html in the browser after it is written, e.g.
-    invoke run-all --open-html
-    invoke plot-reallocation-ae --open-html
+FISCAL_CONFIG_PATH to this folder's fiscal_config.json, which has
+auto_open_html=true so every chart's .html opens in the browser when built.
 
 DATA PIPELINE (MATLAB / Dynare):
 --------------------------------------------------------------------------------
@@ -50,10 +46,8 @@ Main entry point: invoke run-all
 """
 
 from invoke import task
-import json
 import os
 import sys
-import tempfile
 
 # This project (holds fiscal_config.json pointing output at docs/2026-06_wp-imf)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -65,37 +59,17 @@ APR26_SCRIPT_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "2026-04_spendingMo
 REPO_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
 MATLAB = "/Applications/MATLAB_R2024b.app/bin/matlab"
 
-# Redirect the sibling scripts' output to this paper's figures/ folder
+# Redirect the sibling scripts' output to this paper's figures/ folder. The
+# config has auto_open_html=true, so each chart's .html opens in the browser.
 LOCAL_CONFIG = os.path.join(SCRIPT_DIR, "fiscal_config.json")
+PLOT_ENV = {"FISCAL_CONFIG_PATH": LOCAL_CONFIG}
 
 
-def _plot_env(open_html):
-    """Environment for the plot scripts. By default they use this folder's
-    fiscal_config.json. With open_html=True, point them at an override config
-    (auto_open_html on) so each chart's .html opens in the browser; the scripts
-    read auto_open_html from FISCAL_CONFIG_PATH."""
-    if not open_html:
-        return {"FISCAL_CONFIG_PATH": LOCAL_CONFIG}
-    with open(LOCAL_CONFIG) as handle:
-        cfg = json.load(handle)
-    settings = cfg["output_settings"]
-    # base_path is resolved relative to the config file; make it absolute so the
-    # override can live in a temp dir and still write to the same figures folder.
-    settings["base_path"] = os.path.normpath(
-        os.path.join(os.path.dirname(LOCAL_CONFIG), settings["base_path"])
-    )
-    settings["auto_open_html"] = True
-    override = os.path.join(tempfile.gettempdir(), "fiscal_config_autoopen.json")
-    with open(override, "w") as handle:
-        json.dump(cfg, handle)
-    return {"FISCAL_CONFIG_PATH": override}
-
-
-def _run_plot(c, script, label, open_html=False):
+def _run_plot(c, script, label):
     """Run a plotting script from the sibling project, output to this paper."""
     path = os.path.join(APR26_SCRIPT_DIR, script)
     print(f"--- {label} ---")
-    c.run(f"{sys.executable} {path}", env=_plot_env(open_html))
+    c.run(f"{sys.executable} {path}", env=PLOT_ENV)
 
 
 # =============================================================================
@@ -137,95 +111,95 @@ def exportData(c):
 # PAPER FIGURES
 # =============================================================================
 
-@task(help={"open_html": "Open each chart's .html in the browser after writing it."})
-def plotStandardShocksAE(c, open_html=False):
+@task
+def plotStandardShocksAE(c):
     """
     Overview panel: AE responses to the four standard expansion shocks.
     Out: figures/standardShocksAE.png
     """
-    _run_plot(c, "plotStandardShocksAE.py", "Generating Overview: Standard Expansion Shocks", open_html)
+    _run_plot(c, "plotStandardShocksAE.py", "Generating Overview: Standard Expansion Shocks")
 
 
-@task(help={"open_html": "Open each chart's .html in the browser after writing it."})
-def plotReallocationAE(c, open_html=False):
+@task
+def plotReallocationAE(c):
     """
     Fig 1: AE output response to three expenditure-reallocation shocks.
     Out: figures/reallocationAE_yd.png/.html/.csv
     """
-    _run_plot(c, "plotReallocationAE.py", "Generating Fig 1: AE Reallocation", open_html)
+    _run_plot(c, "plotReallocationAE.py", "Generating Fig 1: AE Reallocation")
 
 
-@task(help={"open_html": "Open each chart's .html in the browser after writing it."})
-def plotReallocationEM(c, open_html=False):
+@task
+def plotReallocationEM(c):
     """
     Fig 2: EMDE output response (infrastructure + human capital; no R&D).
     Out: figures/reallocationEM_yd.png/.html/.csv
     """
-    _run_plot(c, "plotReallocationEM.py", "Generating Fig 2: EMDE Reallocation", open_html)
+    _run_plot(c, "plotReallocationEM.py", "Generating Fig 2: EMDE Reallocation")
 
 
-@task(help={"open_html": "Open each chart's .html in the browser after writing it."})
-def plotEfficiencyAE(c, open_html=False):
+@task
+def plotEfficiencyAE(c):
     """
     Fig 3: AE 2050 output gain from gradually closing spending-efficiency gaps.
     Out: figures/efficiencyAE_yd.png/.html/.csv
     """
-    _run_plot(c, "plotEfficiencyAE.py", "Generating Fig 3: AE Spending Efficiency", open_html)
+    _run_plot(c, "plotEfficiencyAE.py", "Generating Fig 3: AE Spending Efficiency")
 
 
-@task(help={"open_html": "Open each chart's .html in the browser after writing it."})
-def plotEfficiencyEM(c, open_html=False):
+@task
+def plotEfficiencyEM(c):
     """
     Fig 4: EMDE output gain from gradually closing spending-efficiency gaps.
     Out: figures/efficiencyEM_yd.png/.html/.csv
     """
-    _run_plot(c, "plotEfficiencyEM.py", "Generating Fig 4: EMDE Spending Efficiency", open_html)
+    _run_plot(c, "plotEfficiencyEM.py", "Generating Fig 4: EMDE Spending Efficiency")
 
 
-@task(help={"open_html": "Open each chart's .html in the browser after writing it."})
-def plotHumanCapital(c, open_html=False):
+@task
+def plotHumanCapital(c):
     """
     Fig 5: Human capital + R&D mix IRFs.
     Out: figures/humanCapital_yd_IRF.png/.html/.csv
     """
-    _run_plot(c, "plotHumanCapitalIRFs.py", "Generating Fig 5: Human Capital + R&D", open_html)
+    _run_plot(c, "plotHumanCapitalIRFs.py", "Generating Fig 5: Human Capital + R&D")
 
 
-@task(help={"open_html": "Open each chart's .html in the browser after writing it."})
-def plotDiffusionAE(c, open_html=False):
+@task
+def plotDiffusionAE(c):
     """
     Fig 6: Technology diffusion-speed sensitivity.
     Out: figures/diffusionAE_yd.png/.html/.csv
     """
-    _run_plot(c, "plotDiffusionAE.py", "Generating Fig 6: Technology Diffusion", open_html)
+    _run_plot(c, "plotDiffusionAE.py", "Generating Fig 6: Technology Diffusion")
 
 
 # =============================================================================
 # APPENDIX FIGURE (not one of the six main-text figures)
 # =============================================================================
 
-@task(help={"open_html": "Open each chart's .html in the browser after writing it."})
-def plotEfficiencyBands(c, open_html=False):
+@task
+def plotEfficiencyBands(c):
     """
     Efficiency uncertainty bands (appendix figure).
     Out: figures/efficiencyBands.png
     """
-    _run_plot(c, "plotEfficiencyBands.py", "Generating Efficiency Bands (appendix)", open_html)
+    _run_plot(c, "plotEfficiencyBands.py", "Generating Efficiency Bands (appendix)")
 
 
-@task(help={"open_html": "Open each chart's .html in the browser after writing it."})
-def run_all(c, open_html=False):
+@task(pre=[
+    exportData,
+    plotStandardShocksAE,
+    plotReallocationAE,
+    plotReallocationEM,
+    plotEfficiencyAE,
+    plotEfficiencyEM,
+    plotHumanCapital,
+    plotDiffusionAE,
+])
+def run_all(c):
     """
     Export model data, then regenerate all six paper figures.
     (Does not re-solve the models; run `runModels` first if the model changed.)
-    Pass --open-html to open every chart's .html in the browser.
     """
-    exportData(c)
-    plotStandardShocksAE(c, open_html)
-    plotReallocationAE(c, open_html)
-    plotReallocationEM(c, open_html)
-    plotEfficiencyAE(c, open_html)
-    plotEfficiencyEM(c, open_html)
-    plotHumanCapital(c, open_html)
-    plotDiffusionAE(c, open_html)
     print("Full figure workflow complete.")
