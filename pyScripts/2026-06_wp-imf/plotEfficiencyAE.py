@@ -27,7 +27,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 STYLE = {
     "template": "simple_white",
     "font_size": 22,
-    "margins": {"t": 60, "b": 30, "l": 25, "r": 25},
+    "margins": {"t": 20, "b": 30, "l": 25, "r": 25},  # no legend: trim top space
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
              "zeroline": True, "zerolinewidth": 1.5, "tickfont_size": 16},

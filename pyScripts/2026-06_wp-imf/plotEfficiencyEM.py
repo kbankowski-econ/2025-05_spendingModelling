@@ -30,7 +30,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 STYLE = {
     "template": "simple_white",
     "font_size": 22,
-    "margins": {"t": 140, "b": 30, "l": 25, "r": 25},  # headroom for legend+titles
+    "margins": {"t": 90, "b": 30, "l": 25, "r": 25},  # headroom for legend+titles
     "legend": {"orientation": "h", "xanchor": "center", "x": 0.5, "font_size": 14},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
@@ -194,7 +194,7 @@ def main():
         legend=dict(
             orientation=STYLE["legend"]["orientation"],
             yanchor="bottom",
-            y=1.32,
+            y=1.30,
             xanchor=STYLE["legend"]["xanchor"],
             x=STYLE["legend"]["x"],
             font=dict(size=LEGEND_FONT_PX),

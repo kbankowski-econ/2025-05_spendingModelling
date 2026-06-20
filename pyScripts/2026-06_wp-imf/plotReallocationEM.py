@@ -30,7 +30,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 STYLE = {
     "template": "simple_white",
     "font_size": 22,
-    "margins": {"t": 60, "b": 30, "l": 25, "r": 25},
+    "margins": {"t": 40, "b": 30, "l": 25, "r": 25},  # snug to the legend
     "legend": {"orientation": "h", "yanchor": "bottom", "y": 1.02,
                "xanchor": "center", "x": 0.5, "font_size": 14},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
@@ -96,8 +96,7 @@ def main():
         bargroupgap=0.05,
         legend=dict(
             orientation=STYLE["legend"]["orientation"],
-            yanchor=STYLE["legend"]["yanchor"],
-            y=STYLE["legend"]["y"],
+            yref="container", yanchor="top", y=0.99,  # pin to figure top, no blank band
             xanchor=STYLE["legend"]["xanchor"],
             x=STYLE["legend"]["x"],
             font=dict(size=LEGEND_FONT_PX),
