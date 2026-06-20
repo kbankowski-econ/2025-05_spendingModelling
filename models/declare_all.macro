@@ -75,17 +75,17 @@ eGRD            % Gap in public R&D efficiency (e^GRD)
 % Define exogenous variables
 %-----------------------------
 varexo
-epsi_c         % Shock to government consumption
-epsi_gi         % Shock to government investment  
+epsi_gc         % Shock to government consumption
+epsi_igi         % Shock to government investment  
 epsi_ZZ         % Shock to trend
 epsi_spread     % Shock to Spread
 epsi_MP         % Monetary Policy Shocks
 epsi_tauc       % Consumption income tax shock 
 epsi_tauw       % Labor income tax shock
-epsi_ge        % Public HC spending shock
+epsi_ige        % Public HC spending shock
 epsi_effge  
 epsi_eff
-epsi_rd       % Shock to R&D spending
+epsi_grd       % Shock to R&D spending
 epsi_shockchit  % Shock to the R&D process 
 epsirhoadopt
 epsi_effcgrd

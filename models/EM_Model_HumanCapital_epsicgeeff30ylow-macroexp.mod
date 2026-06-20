@@ -73,17 +73,17 @@ eGRD            % Gap in public R&D efficiency (e^GRD)
 % Define exogenous variables
 %-----------------------------
 varexo
-epsi_c         % Shock to government consumption
-epsi_gi         % Shock to government investment  
+epsi_gc         % Shock to government consumption
+epsi_igi         % Shock to government investment  
 epsi_ZZ         % Shock to trend
 epsi_spread     % Shock to Spread
 epsi_MP         % Monetary Policy Shocks
 epsi_tauc       % Consumption income tax shock 
 epsi_tauw       % Labor income tax shock
-epsi_ge        % Public HC spending shock
+epsi_ige        % Public HC spending shock
 epsi_effge  
 epsi_eff
-epsi_rd       % Shock to R&D spending
+epsi_grd       % Shock to R&D spending
 epsi_shockchit  % Shock to the R&D process 
 epsirhoadopt
 epsi_effcgrd
@@ -292,10 +292,10 @@ Trans-STEADY_STATE(Trans) = rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_tra
 // Debt to GDP
 by = Dt/yt;
 // Government spending instruments (subject to expenditure shocks)
-Gc = Gcss+ydss*epsi_c;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_c shock)
-Igi = Igiss+ydss*epsi_gi;                                     // infrastructure investment
-Ige = Igess+ydss*epsi_ge;                                  // human-capital investment
-Grd = Grdss+ydss*epsi_rd;                               // R&D spending
+Gc = Gcss+ydss*epsi_gc;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_gc shock)
+Igi = Igiss+ydss*epsi_igi;                                     // infrastructure investment
+Ige = Igess+ydss*epsi_ige;                                  // human-capital investment
+Grd = Grdss+ydss*epsi_grd;                               // R&D spending
 // Consumption tax rule
 tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss))+epsi_tauc;
 // Income tax rule
@@ -356,7 +356,7 @@ end;
 steady;
 check;
 shocks;
-var epsi_ge;
+var epsi_ige;
 periods 1:1000 ;
 values
     0.01
@@ -426,7 +426,7 @@ values
     0.329
     0.329
 ;
-var epsi_c;
+var epsi_gc;
 periods 1:1000 ;
 values
     -0.01
