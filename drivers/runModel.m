@@ -109,6 +109,26 @@ if ~isempty(modelFilter)
     modelList = modelList(keepRows, :);
 end
 
+%% budget-neutral financing
+% Cg is modelled as an ordinary instrument (Cg = Cgss + ydss*epsi_cg) rather
+% than the budget residual, so each experiment must explicitly finance its rise
+% in growth-enhancing spending with an equal cut in government consumption.
+% Append an offsetting epsi_cg shock equal to minus the sum of the
+% spending-instrument shocks (epsi_ig + epsi_ige + epsi_cgrd), which reproduces
+% the old residual rule exactly. Efficiency/adoption shocks do not enter the
+% budget and so are excluded.
+spendingVars = {'epsi_ig', 'epsi_ige', 'epsi_cgrd'};
+for iModel = 1:size(modelList, 1)
+    theseShocks = modelList{iModel, 4};
+    offset = 0;
+    for iShock = 1:numel(theseShocks)
+        if ismember(theseShocks{iShock}{1}, spendingVars)
+            offset = offset + theseShocks{iShock}{3};
+        end
+    end
+    modelList{iModel, 4} = [theseShocks; {{'epsi_cg', 'const', -offset, '1:1000'}}];
+end
+
 %% run all models
 for iModel = 1:size(modelList, 1)
     thisModel  = modelList{iModel, 1};

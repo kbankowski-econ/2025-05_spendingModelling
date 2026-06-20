@@ -292,7 +292,7 @@ Trans-STEADY_STATE(Trans) = rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_tra
 // Debt to GDP
 by = Dt/yt;
 // Government spending instruments (subject to expenditure shocks)
-Cg-Cgss = -(Ig-Igss+Ige-Igess+Cgrd-Cgrdss)+ydss*epsi_cg;   // consumption (residual, budget-neutral)
+Cg = Cgss+ydss*epsi_cg;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_cg shock)
 Ig = Igss+ydss*epsi_ig;                                     // infrastructure investment
 Ige = Igess+ydss*epsi_ige;                                  // human-capital investment
 Cgrd = Cgrdss+ydss*epsi_cgrd;                               // R&D spending
@@ -465,6 +465,11 @@ values
     0.4059
     0.41
     0.41
+;
+var epsi_cg;
+periods 1:1000 ;
+values
+    -0.01
 ;
 end;
 perfect_foresight_setup(periods=2000);

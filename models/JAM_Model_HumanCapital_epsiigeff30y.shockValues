@@ -68,3 +68,8 @@ values
     0.1681
     0.1681
 ;
+var epsi_cg;
+periods 1:1000 ;
+values
+    -0.01
+;
