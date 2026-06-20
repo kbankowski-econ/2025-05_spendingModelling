@@ -122,7 +122,7 @@ def main():
     png_path = FIGURES_DIR / f"{OUTPUT_STEM}.png"
     html_path = FIGURES_DIR / f"{OUTPUT_STEM}.html"
     smart_save_image(fig, png_path, DISPLAY_CM)
-    fig.write_html(html_path, auto_open=False)
+    fig.write_html(html_path, auto_open=True)
     print(f"  Saved {png_path.name} and {html_path.name}")
 
     csv_cols = ["year"] + [c for c, _, _ in SERIES]

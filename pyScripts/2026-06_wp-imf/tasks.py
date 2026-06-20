@@ -1,14 +1,13 @@
 """
 IMF Working Paper - "Spending Smarter" - Figure & Data Task Runner
 ================================================================================
-Generates the six figures used in docs/2026-06_wp-imf/draftPaper.tex and the
-model data they read.
+Generates the figures used in docs/2026-06_wp-imf/draftPaper.tex and the model
+data they read.
 
-The plotting scripts themselves live in the sibling project
-pyScripts/2026-04_spendingModelling/ (referenced via APR26_SCRIPT_DIR). This
-runner points their output at docs/2026-06_wp-imf/figures by setting
-FISCAL_CONFIG_PATH to this folder's fiscal_config.json, which has
-auto_open_html=true so every chart's .html opens in the browser when built.
+The plotting scripts live in this folder (the self-contained 2026-06_wp-imf
+scripts). They read their sizes from chartTable.csv (RenderWidth/RenderHeight =
+canvas, DisplayWidth/DisplayHeight = size in the paper), write into
+docs/2026-06_wp-imf/figures, and auto-open each chart's .html in the browser.
 
 DATA PIPELINE (MATLAB / Dynare):
 --------------------------------------------------------------------------------
@@ -22,25 +21,15 @@ DATA PIPELINE (MATLAB / Dynare):
 
 PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 --------------------------------------------------------------------------------
-- plotReallocationAE:   Fig 1 - AE output response to three reallocation shocks
-                        Out: figures/reallocationAE_yd.png/.html/.csv
-- plotReallocationEM:   Fig 2 - EMDE output response (infra + human capital; no R&D)
-                        Out: figures/reallocationEM_yd.png/.html/.csv
-- plotEfficiencyAE:     Fig 3 - AE 2050 output gain from closing efficiency gaps
-                        Out: figures/efficiencyAE_yd.png/.html/.csv
-- plotEfficiencyEM:     Fig 4 - EMDE output gain from closing efficiency gaps
-                        Out: figures/efficiencyEM_yd.png/.html/.csv
-- plotHumanCapital:     Fig 5 - Human capital + R&D mix IRFs
-                        Out: figures/humanCapital_yd_IRF.png/.html/.csv
-- plotDiffusionAE:      Fig 6 - Technology diffusion-speed sensitivity
-                        Out: figures/diffusionAE_yd.png/.html/.csv
+- plotReallocationAE:   AE output response to three reallocation shocks
+- plotReallocationEM:   EMDE output response (infra + human capital; no R&D)
+- plotEfficiencyAE:     AE 2050 output gain from closing efficiency gaps
+- plotEfficiencyEM:     EMDE output gain from closing efficiency gaps
+- plotHumanCapital:     Human capital + R&D mix IRFs
+- plotDiffusionAE:      Technology diffusion-speed sensitivity
+- plotEfficiencyBands:  Spending-efficiency gaps by income group (appendix)
 
-APPENDIX FIGURE:
---------------------------------------------------------------------------------
-- plotEfficiencyBands:  Efficiency uncertainty bands (appendix figure, not one of
-                        the six main-text figures). Out: figures/efficiencyBands.png
-
-- run-all:              exportData, then regenerate all six main-text figures.
+- run-all:              exportData, then regenerate every figure.
 
 Main entry point: invoke run-all
 """
@@ -49,27 +38,20 @@ from invoke import task
 import os
 import sys
 
-# This project (holds fiscal_config.json pointing output at docs/2026-06_wp-imf)
+# This folder holds the plotting scripts (and chartTable.csv they read).
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# Sibling project that holds the actual plotting scripts + fiscal_common.py
-APR26_SCRIPT_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "2026-04_spendingModelling")
 
 # Repository root and MATLAB binary for the data-pipeline tasks
 REPO_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
 MATLAB = "/Applications/MATLAB_R2024b.app/bin/matlab"
 
-# Redirect the sibling scripts' output to this paper's figures/ folder. The
-# config has auto_open_html=true, so each chart's .html opens in the browser.
-LOCAL_CONFIG = os.path.join(SCRIPT_DIR, "fiscal_config.json")
-PLOT_ENV = {"FISCAL_CONFIG_PATH": LOCAL_CONFIG}
-
 
 def _run_plot(c, script, label):
-    """Run a plotting script from the sibling project, output to this paper."""
-    path = os.path.join(APR26_SCRIPT_DIR, script)
+    """Run one of this folder's plotting scripts (it reads chartTable.csv and
+    auto-opens the chart's .html)."""
+    path = os.path.join(SCRIPT_DIR, script)
     print(f"--- {label} ---")
-    c.run(f"{sys.executable} {path}", env=PLOT_ENV)
+    c.run(f"{sys.executable} {path}")
 
 
 # =============================================================================
@@ -112,94 +94,81 @@ def exportData(c):
 # =============================================================================
 
 @task
-def plotStandardShocksAE(c):
-    """
-    Overview panel: AE responses to the four standard expansion shocks.
-    Out: figures/standardShocksAE.png
-    """
-    _run_plot(c, "plotStandardShocksAE.py", "Generating Overview: Standard Expansion Shocks")
-
-
-@task
 def plotReallocationAE(c):
     """
-    Fig 1: AE output response to three expenditure-reallocation shocks.
+    AE output response to three expenditure-reallocation shocks.
     Out: figures/reallocationAE_yd.png/.html/.csv
     """
-    _run_plot(c, "plotReallocationAE.py", "Generating Fig 1: AE Reallocation")
+    _run_plot(c, "plotReallocationAE.py", "Generating: AE Reallocation")
 
 
 @task
 def plotReallocationEM(c):
     """
-    Fig 2: EMDE output response (infrastructure + human capital; no R&D).
+    EMDE output response (infrastructure + human capital; no R&D).
     Out: figures/reallocationEM_yd.png/.html/.csv
     """
-    _run_plot(c, "plotReallocationEM.py", "Generating Fig 2: EMDE Reallocation")
+    _run_plot(c, "plotReallocationEM.py", "Generating: EMDE Reallocation")
 
 
 @task
 def plotEfficiencyAE(c):
     """
-    Fig 3: AE 2050 output gain from gradually closing spending-efficiency gaps.
+    AE 2050 output gain from gradually closing spending-efficiency gaps.
     Out: figures/efficiencyAE_yd.png/.html/.csv
     """
-    _run_plot(c, "plotEfficiencyAE.py", "Generating Fig 3: AE Spending Efficiency")
+    _run_plot(c, "plotEfficiencyAE.py", "Generating: AE Spending Efficiency")
 
 
 @task
 def plotEfficiencyEM(c):
     """
-    Fig 4: EMDE output gain from gradually closing spending-efficiency gaps.
+    EMDE output gain from gradually closing spending-efficiency gaps.
     Out: figures/efficiencyEM_yd.png/.html/.csv
     """
-    _run_plot(c, "plotEfficiencyEM.py", "Generating Fig 4: EMDE Spending Efficiency")
+    _run_plot(c, "plotEfficiencyEM.py", "Generating: EMDE Spending Efficiency")
 
 
 @task
 def plotHumanCapital(c):
     """
-    Fig 5: Human capital + R&D mix IRFs.
+    Human capital + R&D mix IRFs.
     Out: figures/humanCapital_yd_IRF.png/.html/.csv
     """
-    _run_plot(c, "plotHumanCapitalIRFs.py", "Generating Fig 5: Human Capital + R&D")
+    _run_plot(c, "plotHumanCapitalIRFs.py", "Generating: Human Capital + R&D")
 
 
 @task
 def plotDiffusionAE(c):
     """
-    Fig 6: Technology diffusion-speed sensitivity.
+    Technology diffusion-speed sensitivity.
     Out: figures/diffusionAE_yd.png/.html/.csv
     """
-    _run_plot(c, "plotDiffusionAE.py", "Generating Fig 6: Technology Diffusion")
+    _run_plot(c, "plotDiffusionAE.py", "Generating: Technology Diffusion")
 
-
-# =============================================================================
-# APPENDIX FIGURE (not one of the six main-text figures)
-# =============================================================================
 
 @task
 def plotEfficiencyBands(c):
     """
-    Efficiency uncertainty bands (appendix figure).
-    Out: figures/efficiencyBands.png
+    Spending-efficiency gaps by income group (appendix figure).
+    Out: figures/efficiencyBands.png/.html/.csv
     """
-    _run_plot(c, "plotEfficiencyBands.py", "Generating Efficiency Bands (appendix)")
+    _run_plot(c, "plotEfficiencyBands.py", "Generating: Efficiency Bands (appendix)")
 
 
 @task(pre=[
     exportData,
-    plotStandardShocksAE,
     plotReallocationAE,
     plotReallocationEM,
     plotEfficiencyAE,
     plotEfficiencyEM,
     plotHumanCapital,
     plotDiffusionAE,
+    plotEfficiencyBands,
 ])
 def run_all(c):
     """
-    Export model data, then regenerate all six paper figures.
+    Export model data, then regenerate every figure.
     (Does not re-solve the models; run `runModels` first if the model changed.)
     """
     print("Full figure workflow complete.")

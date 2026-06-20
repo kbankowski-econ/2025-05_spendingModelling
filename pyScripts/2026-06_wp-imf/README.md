@@ -45,13 +45,18 @@ they work regardless of the current working directory.
 
 ## Running
 
+`tasks.py` (invoke) is the single entry point; it runs the scripts in this
+folder, which read `chartTable.csv`:
+
 ```bash
-python plotReallocationAE.py     # one figure (run from this folder)
-python run_all.py                # all seven (via subprocess)
+invoke run-all                   # exportData (MATLAB) + regenerate every figure
+invoke plot-reallocation-ae      # one figure
+invoke --list                    # all tasks
 ```
 
-Run scripts from this folder (or otherwise keep `wp_charts.py` and
-`chartTable.csv` alongside them) so the shared helpers import.
+You can also run a script directly: `python plotReallocationAE.py` (run from this
+folder, or otherwise keep `wp_charts.py` and `chartTable.csv` alongside it so the
+shared helpers import). Either way each chart's `.html` auto-opens in the browser.
 
-Requires `pandas`, `numpy`, `plotly`, and a Kaleido backend for PNG export.
-PNGs are written only when their bytes change (to avoid needless churn).
+Requires `invoke`, `pandas`, `numpy`, `plotly`, and a Kaleido backend for PNG
+export. PNGs are written only when their bytes change (to avoid needless churn).
