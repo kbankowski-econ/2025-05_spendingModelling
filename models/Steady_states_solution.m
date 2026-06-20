@@ -24,21 +24,21 @@ N=1/3;                    % Effective Labor supply
 mc=(epsilon-1)/epsilon;
 
 %kG_y=eff*Igy/(1-(1-delta)/ZZ);
-kG_y=(1-effgap_ss)*Igy/(ZZ-(1-delta));
+kG_y=(1-eGI_ss)*Igy/(ZZ-(1-delta));
 
 Kp_y=(1+Bigtheta_y)*alppha*mc/(markupss*rk);
 
-yt_proxy=(kG_y^zeta)*(Kp_y^alppha)*(N^(1-alppha));
+yt_proxy=(kG_y^alphaG)*(Kp_y^alppha)*(N^(1-alppha));
 
-yt=yt_proxy^(1/(1-zeta-alppha));
+yt=yt_proxy^(1/(1-alphaG-alppha));
 
 
 W_real=(1-alppha)*mc*yt/N/markupss;
 
 
 % Real wage
-%W_real=(mc/((1/(1-alppha))^(1-alppha)*(1/alppha)^alppha*rk^alppha/(kG_y/(1+Bigtheta_y)*1/ZZ)^(zeta/(1-zeta))))^(1/(1-alppha));
-%mc=(1/(1-alppha))^(1-alppha)*(1/alppha)^alppha*W_real^(1-alppha)*rk^alppha/(kG_y/(1+Bigtheta_y)*1/ZZ)^(zeta/(1-zeta));
+%W_real=(mc/((1/(1-alppha))^(1-alppha)*(1/alppha)^alppha*rk^alppha/(kG_y/(1+Bigtheta_y)*1/ZZ)^(alphaG/(1-alphaG))))^(1/(1-alppha));
+%mc=(1/(1-alppha))^(1-alppha)*(1/alppha)^alppha*W_real^(1-alppha)*rk^alppha/(kG_y/(1+Bigtheta_y)*1/ZZ)^(alphaG/(1-alphaG));
 
 %Kp=alppha/(1-alppha)*W_real/rk*ZZ*N;
 
@@ -48,22 +48,22 @@ Kp=alppha/(1-alppha)*W_real/rk*N;
 % Private investment
 Ip=Kp*(ZZ-(1-delta));
 
-%Param_1=1/ZZ^(zeta+alppha-zeta*alppha)*(Kp^(alppha*(1-zeta)))*(N^((1-alppha)*(1-zeta)));
-%yt=((Param_1*kG_y^zeta)/(1+Bigtheta_y))^(1/(1-zeta));
+%Param_1=1/ZZ^(alphaG+alppha-alphaG*alppha)*(Kp^(alppha*(1-alphaG)))*(N^((1-alppha)*(1-alphaG)));
+%yt=((Param_1*kG_y^alphaG)/(1+Bigtheta_y))^(1/(1-alphaG));
 
 % Public capital
 Kg=kG_y*yt;
 
 % Fixed cost
 Bigtheta=Bigtheta_y*yt;
-%Bigtheta_test=1/ZZ^(zeta+alppha-zeta*alppha)*(Kg^zeta)*(Kp^(alppha*(1-zeta)))*(N^((1-alppha)*(1-zeta)))-yt
+%Bigtheta_test=1/ZZ^(alphaG+alppha-alphaG*alppha)*(Kg^alphaG)*(Kp^(alppha*(1-alphaG)))*(N^((1-alppha)*(1-alphaG)))-yt
 %(Bigtheta_test-Bigtheta).^2
 
 % NEW PATH
 %kGe_y=effge*Igey/(1-(1-delta)/ZZ);
 % Human capital
 %kGe_y=effge*Igey/(ZZ-(1-delta));
-kGe_y=(1-effgegap_ss)*Igey/(ZZ-(1-delta));
+kGe_y=(1-eGE_ss)*Igey/(ZZ-(1-delta));
 Kge=kGe_y*yt;
 Ige=Igey*yt;
 Igess=Ige;
@@ -87,8 +87,8 @@ St=rhoSADOPT*probadopt*phiob*SDF/(1+gammaa)*(VA-JZt);
 
 %SSt=SDF*JZt*(ZZRD/AAt-phiob*ZZRD/AAt*1/(1+gammaa));
 SSt=0;
-%shockchit=(1+gammaa-phiob)/(SSt^alphaSRD*Cgrd^alphaRD);
-%shockchit=(1+gammaa-phiob)/(SSt^alphaSRD);
+%shockchit=(1+gammaa-phiob)/(SSt^alphaHA*Cgrd^alphaRD);
+%shockchit=(1+gammaa-phiob)/(SSt^alphaHA);
 shockchit=1;
 
 
@@ -162,13 +162,13 @@ muyH=omega*(Lab+E)^phi/(lambda_HC*muy*E^(muy-1)* (Kge)^alphaH);
 
 
 ygrowth=log(ZZ)*100;
-effgegap=effgegap_ss;
-effgap=effgap_ss;
+eGE=eGE_ss;
+eGI=eGI_ss;
 
-TFP=AAt^(varthetaat-1)*(Kg^zeta)*H^(1-alppha);
+TFP=AAt^(varthetaat-1)*(Kg^alphaG)*H^(1-alppha);
 ln_Cgrd=log(Cgrd);
 Cgrd_ydss_ratio=Cgrd/ydss;
-Cgrdeff=(1-effcgrdgap_ss)*Cgrd;
+Cgrdeff=(1-eGRD_ss)*Cgrd;
 
-effcgrdgap=effcgrdgap_ss;
+eGRD=eGRD_ss;
 %AAt=1;

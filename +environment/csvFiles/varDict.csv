@@ -8,8 +8,8 @@ W_real,Real wage rate,pctDev,\% deviation
 Ip,Private investment,pctDev,\% deviation
 Kp,Private capital stock,pctDev,\% deviation
 rk,Rate of return on private capital,pctDev,\% deviation
-g1,Price-setting auxiliary variable 1,pctDev,\% deviation
-g2,Price-setting auxiliary variable 2,pctDev,\% deviation
+x1,Price-setting auxiliary variable 1,pctDev,\% deviation
+x2,Price-setting auxiliary variable 2,pctDev,\% deviation
 mc,Marginal cost of production,pctDev,\% deviation
 PIstar,Optimal gross inflation rate,pctDev,\% deviation
 yt,Total production output,pctDev,\% deviation
@@ -46,8 +46,8 @@ Igess,Steady-state gov. spending on human capital infrastructure,pctDev,\% devia
 Lab,Total labor supply,pctDev,\% deviation
 muyH,Adjustment parameter for time allocation (E=0.1),pctDev,\% deviation
 ygrowth,Economic growth rate,pctDev,\% deviation
-effgegap,Gap in human capital spending efficiency,dev,abs. deviation
-effgap,Gap in infrastructure spending efficiency,dev,abs. deviation
+eGE,Gap in human capital spending efficiency,dev,abs. deviation
+eGI,Gap in infrastructure spending efficiency,dev,abs. deviation
 AAt,Stationary technology process,pctDev,\% deviation
 Cgrd,Gov. R and D expenditure,pctDev,\% deviation
 Cgrdss,Steady-state R&D expenditure,pctDev,\% deviation

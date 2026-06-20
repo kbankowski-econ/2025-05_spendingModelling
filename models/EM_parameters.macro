@@ -1,7 +1,7 @@
 % EM-specific calibration            (definition                                    | AE value)
 
 % production and growth
-zeta=0.2;                            % share of public capital in production         | AE: 0.054
+alphaG=0.2;                          % share of public capital in production         | AE: 0.054
 ZZss=1.0075;                         % steady-state gross quarterly growth           | AE: 1.004
 
 % taxes and debt
@@ -17,10 +17,9 @@ Cgrdy=0.001;                         % R&D spending                             
 
 % human capital
 alphaH=0.25;                         % elasticity of HC formation w.r.t. public HRC  | AE: 0.1
-alphaHA=0;                           % feedback of human capital to TFP              | AE: 0.05
 
 % R&D and technology adoption
-effcgrdgap_ss=0.2;                   % public R&D efficiency gap (e^GRD)              | AE: 0.41
+eGRD_ss=0.2;                         % public R&D efficiency gap (e^GRD)              | AE: 0.41
 alphaRD=0;                           % effect of R&D on TFP                          | AE: 0.09*(1-rho_ZZRD)
-alphaSRD=0;                          % R&D elasticity                                | AE: 0.1
+alphaHA=0;                           % HC elasticity in tech creation (paper a_HA)   | AE: 0.1
 rhoSADOPT=0.1;                       % adoption elasticity                           | AE: 0.8

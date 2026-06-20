@@ -48,8 +48,8 @@ Igess           % Steady state of public spending on Public human-capital relate
 Lab             % Labor supply 
 muyH            % Adjuster so that E=0.1
 ygrowth          % econonmic growth
-effgegap        % Gap in public human-capital efficiency (e^GE)
-effgap          % Gap in public infrastructure efficiency (e^GI)
+eGE             % Gap in public human-capital efficiency (e^GE)
+eGI             % Gap in public infrastructure efficiency (e^GI)
 AAt             % Aoption Tech Process
 Cgrd            % R&D spending
 Cgrdss          % R&D spending SS
@@ -68,7 +68,7 @@ TFP             % TFP
 Cgrd_ydss_ratio
 ln_Cgrd
 Cgrdeff
-effcgrdgap      % Gap in public R&D efficiency (e^GRD)
+eGRD            % Gap in public R&D efficiency (e^GRD)
 ;
 
 %-----------------------------
@@ -106,7 +106,7 @@ epsilon         % elasticity of substitution
 alppha          % share of capital in intermediate firms production
 Bigtheta        % Fixed cost
 Bigtheta_y      % Fixed cost to GDP
-zeta            % Share of public capital in teh production
+alphaG          % Share of public capital in the production (paper alpha_G)
 rho_R           % Persistence of policy rate
 gamma_pi        % Reponse of MP to inflation
 gamma_y         % Reponse of MP to OG
@@ -132,16 +132,15 @@ rho_Cg          % AR(1) process for public consumption
 rho_Ig          % AR(1) process for public investment  
 gamma_d_trans   % Response of lump sum transfer to debt
 rho_trans
-effgap_ss       % SS gap in public infrastructure efficiency (e^GI)
+eGI_ss          % SS gap in public infrastructure efficiency (e^GI)
 deltaH          % Depreciation of Labor
 muy             % Effectiveness of education investment.
 alphaH          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
-effgegap_ss     % SS gap in public human-capital efficiency (e^GE)
+eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
 alphaZZ1        % Learning by doing off HHon ZZ
 rho_Ige         % Persistence of human-related spending
 rho_AAt         % Persistence of staionary tech process
-alphaHA         % feed back of Human cpital to TFP
 alphaRD         % R&D on TFP
 Cgrdy           % share of expenditure for R&D
 markupss        % SS markup of Intermediate goods 
@@ -150,8 +149,8 @@ varthetaat      % Intermediate goods elasticity of substitution
 gammaa         % Gorwth of tech
 probadoptss    % Probability of adoption
 rhoSADOPT      % Adoption elasticity
-alphaSRD       % R&D elasticity
+alphaHA        % HC elasticity in tech creation (paper alpha_HA)
 rhoshockchit    % AR (1) or shock to r&D
 rho_ZZRD
-effcgrdgap_ss   % SS gap in public R&D efficiency (e^GRD)
+eGRD_ss         % SS gap in public R&D efficiency (e^GRD)
 ;
