@@ -61,7 +61,7 @@ end
 
 tempDatabank = struct();
 
-varList = ["yd", "C", "Ip", "Igi", "Gc", "Ige", "Grd", "H", "Lab", "E", "eGI", "eGE", "TFP", "ZZRD", "AAt"]
+varList = ["yd", "C", "Ip", "Igi", "Gc", "Ige", "Grd", "G", "H", "Lab", "E", "eGI", "eGE", "TFP", "ZZRD", "AAt"]
 
 for aVar = varList
 
