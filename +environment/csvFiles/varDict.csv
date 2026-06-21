@@ -1,54 +1,58 @@
-﻿,description,diffTransf,diffDesc
-C,Household consumption,pctDev,\% deviation
-lambda,Marginal utility of consumption,pctDev,\% deviation
-R,Nominal interest rate on gov. bonds,pctDev,\% deviation
-PI,Gross inflation rate,pctDev,\% deviation
-N,Effective labor supply,pctDev,\% deviation
-W_real,Real wage rate,pctDev,\% deviation
-Ip,Private investment,pctDev,\% deviation
-Kp,Private capital stock,pctDev,\% deviation
-rk,Rate of return on private capital,pctDev,\% deviation
-x1,Price-setting auxiliary variable 1,pctDev,\% deviation
-x2,Price-setting auxiliary variable 2,pctDev,\% deviation
-mc,Marginal cost of production,pctDev,\% deviation
-PIstar,Optimal gross inflation rate,pctDev,\% deviation
-yt,Total production output,pctDev,\% deviation
-Kg,Gov. capital stock,pctDev,\% deviation
-Rmp,Monetary policy interest rate,pctDev,\% deviation
-Dt,Government debt level,pctDev,\% deviation
-by,Debt-to-GDP ratio,pctDev,\% deviation
-Igi,Gov. investment,pctDev,\% deviation
-Gc,Gov. consumption,pctDev,\% deviation
-tauc,Consumption tax rate,pctDev,\% deviation
-tauw,Labor income tax rate,pctDev,\% deviation
-yd,Aggregate demand,pctDev,\% deviation
-vp,Price dispersion measure,pctDev,\% deviation
-ZZ,Gross economic growth rate,pctDev,\% deviation
-Delta_G,Expected utility loss,pctDev,\% deviation
-prob_def,Probability of sovereign default,pctDev,\% deviation
-omega,Scaling parameter,pctDev,\% deviation
-Igiss,Steady-state gov. investment,pctDev,\% deviation
-Gcss,Steady-state gov. consumption,pctDev,\% deviation
-Rss,Steady-state interest rate,pctDev,\% deviation
-ydss,Steady-state aggregate output,pctDev,\% deviation
-Trans,Government transfers to households,pctDev,\% deviation
-lnyd,Natural logarithm of output,pctDev,\% deviation
-pdef,Primary fiscal deficit,pctDev,\% deviation
-Igi_ys,Gov. investment as percentage of GDP,pctDev,\% deviation
-by_ann,Annualized debt-to-GDP ratio,pctDev,\% deviation
-lnPI,Natural logarithm of price index,pctDev,\% deviation
-H,Human capital stock,pctDev,\% deviation
-Kge,Gov. human capital-related infrastructure stock,pctDev,\% deviation
-Ige,Gov. exp. on human capital,pctDev,\% deviation
-E,Time allocated to education,pctDev,\% deviation
-lambda_HC,Lagrange multiplier for human capital constraint,pctDev,\% deviation
-Igess,Steady-state gov. spending on human capital infrastructure,pctDev,\% deviation
-Lab,Total labor supply,pctDev,\% deviation
-muyH,Adjustment parameter for time allocation (E=0.1),pctDev,\% deviation
-ygrowth,Economic growth rate,pctDev,\% deviation
-eGE,Gap in human capital spending efficiency,dev,abs. deviation
-eGI,Gap in infrastructure spending efficiency,dev,abs. deviation
-AAt,Stationary technology process,pctDev,\% deviation
-Grd,Gov. R and D expenditure,pctDev,\% deviation
-Grdss,Steady-state R&D expenditure,pctDev,\% deviation
-TFP,TFP,pctDev,\% deviation
+,description,diffTransf,diffDesc
+C,Household consumption,(x./y-1)*100,\% deviation
+lambda,Marginal utility of consumption,(x./y-1)*100,\% deviation
+R,Nominal interest rate on gov. bonds,(x./y-1)*100,\% deviation
+PI,Gross inflation rate,(x-y)*400,ann. ppt deviation
+N,Effective labor supply,(x./y-1)*100,\% deviation
+W_real,Real wage rate,(x./y-1)*100,\% deviation
+Ip,Private investment,(x./y-1)*100,\% deviation
+Kp,Private capital stock,(x./y-1)*100,\% deviation
+rk,Rate of return on private capital,(x./y-1)*100,\% deviation
+x1,Price-setting auxiliary variable 1,(x./y-1)*100,\% deviation
+x2,Price-setting auxiliary variable 2,(x./y-1)*100,\% deviation
+mc,Marginal cost of production,(x./y-1)*100,\% deviation
+PIstar,Optimal gross inflation rate,(x./y-1)*100,\% deviation
+yt,Total production output,(x./y-1)*100,\% deviation
+Kg,Gov. capital stock,(x./y-1)*100,\% deviation
+Rmp,Monetary policy interest rate,(x-y)*400,ann. ppt deviation
+Dt,Government debt level,(x./y-1)*100,\% deviation
+by,Debt-to-GDP ratio,(x-y)*100,ppt of GDP
+Igi,Gov. investment,(x./y-1)*100,\% deviation
+Gc,Gov. consumption,(x./y-1)*100,\% deviation
+tauc,Consumption tax rate,(x./y-1)*100,\% deviation
+tauw,Labor income tax rate,(x./y-1)*100,\% deviation
+yd,Aggregate demand,(x./y-1)*100,\% deviation
+vp,Price dispersion measure,(x./y-1)*100,\% deviation
+ZZ,Gross economic growth rate,(x./y-1)*100,\% deviation
+Delta_G,Expected utility loss,(x./y-1)*100,\% deviation
+prob_def,Probability of sovereign default,(x./y-1)*100,\% deviation
+omega,Scaling parameter,(x./y-1)*100,\% deviation
+Igiss,Steady-state gov. investment,(x./y-1)*100,\% deviation
+Gcss,Steady-state gov. consumption,(x./y-1)*100,\% deviation
+Rss,Steady-state interest rate,(x./y-1)*100,\% deviation
+ydss,Steady-state aggregate output,(x./y-1)*100,\% deviation
+Trans,Government transfers to households,(x./y-1)*100,\% deviation
+lnyd,Natural logarithm of output,(x./y-1)*100,\% deviation
+pdef,Primary fiscal deficit,x-y,ppt of GDP
+Igi_ys,Gov. investment as percentage of GDP,(x./y-1)*100,\% deviation
+by_ann,Annualized debt-to-GDP ratio,(x./y-1)*100,\% deviation
+lnPI,Natural logarithm of price index,(x./y-1)*100,\% deviation
+H,Human capital stock,(x./y-1)*100,\% deviation
+Kge,Gov. human capital-related infrastructure stock,(x./y-1)*100,\% deviation
+Ige,Gov. exp. on human capital,(x./y-1)*100,\% deviation
+E,Time allocated to education,(x./y-1)*100,\% deviation
+lambda_HC,Lagrange multiplier for human capital constraint,(x./y-1)*100,\% deviation
+Igess,Steady-state gov. spending on human capital infrastructure,(x./y-1)*100,\% deviation
+Lab,Total labor supply,(x./y-1)*100,\% deviation
+muyH,Adjustment parameter for time allocation (E=0.1),(x./y-1)*100,\% deviation
+ygrowth,Economic growth rate,(x./y-1)*100,\% deviation
+eGE,Gap in human capital spending efficiency,x-y,abs. deviation
+eGI,Gap in infrastructure spending efficiency,x-y,abs. deviation
+AAt,Stationary technology process,(x./y-1)*100,\% deviation
+Grd,Gov. R and D expenditure,(x./y-1)*100,\% deviation
+Grdss,Steady-state R&D expenditure,(x./y-1)*100,\% deviation
+TFP,TFP,(x./y-1)*100,\% deviation
+G,Total gov. spending,(x./y-1)*100,\% deviation
+ZZRD,Gross R&D-augmented growth rate,(x./y-1)*100,\% deviation
+rreal,Ex-post real interest rate (R/PI),(x-y)*400,ann. ppt deviation
+G_ys,Total gov. spending-to-GDP ratio,(x-y)*100,ppt of GDP

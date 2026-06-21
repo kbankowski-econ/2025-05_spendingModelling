@@ -12,6 +12,15 @@ envi = environment.setup();
 % Declaring model names
 modelList = string(reshape(envi.shockDict.Properties.RowNames, 1, []));
 
+% Deviation transforms come straight from varDict.diffTransf: each entry is an
+% expression in x (simulated level path) and y (steady-state path). Compile one
+% @(x,y) handle per variable once, then reuse across all models.
+varNames = string(envi.varDict.Properties.RowNames).';
+transfFuncs = struct();
+for aVar = varNames
+    transfFuncs.(char(aVar)) = str2func("@(x,y) " + string(envi.varDict{aVar, "diffTransf"}));
+end
+
 % Initialize an empty structure to hold results
 resultsProc = struct();
 
@@ -20,41 +29,36 @@ for aModel = modelList
     % Load the model data
     resultsRaw = load(fullfile(project_path, 'models', aModel, 'Output', [char(aModel) '_results.mat']));
     dataRange = qq(0, 4): qq(0, 4) + size(resultsRaw.oo_.endo_simul', 1) - 1;
-    
+
     % Store endogenous and steady state variables
     resultsProc.(aModel).endo = databank.fromArray( ...
         resultsRaw.oo_.endo_simul', ...
         resultsRaw.M_.endo_names, ...
         dataRange(1) ...
     );
-    
+
     % Handle SS values
     resultsProc.(aModel).ss = databank.fromArray( ...
         repmat(resultsRaw.oo_.steady_state', numel(dataRange), 1), ...
         resultsRaw.M_.endo_names, ...
         dataRange(1) ...
     );
-    
+
     % Handle parameters
     for aParam = string(reshape(resultsRaw.M_.param_names, 1, []))
         resultsProc.(aModel).param.(aParam) = resultsRaw.M_.params(strcmp(aParam, resultsRaw.M_.param_names));
     end
-    
-    % Calculate IRF transformations
-    serIndex = cellfun(@(x) any(endsWith(x, {'eGI', 'eGE'})), resultsRaw.M_.endo_names);
-    
-    resultsProc.(aModel).irf = databank.copy( ...
-        resultsProc.(aModel).endo, ...
-        "Transform", @(x) (x/x(qq(0, 4))-1)*100, ...
-        "SourceNames", resultsRaw.M_.endo_names(~serIndex) ...
-    );
-    
-    resultsProc.(aModel).irf = databank.copy( ...
-        resultsProc.(aModel).endo, ...
-        "SourceNames", resultsRaw.M_.endo_names(serIndex), ...
-        "Transform", @(x) (x-x(qq(0, 4))), ...
-        "TargetDb", resultsProc.(aModel).irf ...
-    );
+
+    % Calculate IRF transformations by evaluating each variable's varDict formula
+    % against its level (x) and steady-state (y) path.
+    e = resultsProc.(aModel).endo;
+    s = resultsProc.(aModel).ss;
+    resultsProc.(aModel).irf = struct();
+    for aVar = varNames
+        f = char(aVar);
+        if ~isfield(e, f); continue; end
+        resultsProc.(aModel).irf.(f) = transfFuncs.(f)(e.(f), s.(f));
+    end
 end
 
 
