@@ -48,7 +48,7 @@ SHOCKS = [
     ("Model_HumanCapital_exp_gc",  "Government consumption",     "#757575"),
 ]
 
-# (variable suffix, panel title); laid out row-major in a 4x3 grid, one thematic
+# (variable suffix, panel title); laid out row-major in a 4x4 grid, one thematic
 # block per row. Units differ by row (see ROW_UNITS): the demand and supply rows
 # are percent deviations; the nominal row is annualized percentage points; the
 # fiscal row is percentage points of GDP. The y-axis of the first panel in each
@@ -58,21 +58,25 @@ PANELS = [
     ("yd",        "Output"),
     ("C",         "Consumption"),
     ("Ip",        "Private investment"),
+    ("G",         "Government spending"),
     # Row 2 - production / supply (percent deviation)
     ("Lab",       "Labor supply"),
     ("H",         "Human capital stock"),
     ("TFP",       "Total factor productivity"),
+    ("Kp",        "Private capital stock"),
     # Row 3 - nominal block (annualized percentage points)
     ("PI_ann",    "Inflation"),
     ("Rmp_ann",   "Policy rate"),
+    ("R_ann",     "Nominal bond rate"),
     ("rreal_ann", "Real interest rate"),
     # Row 4 - fiscal block (percentage points of GDP)
     ("pdef_pp",   "Primary deficit"),
+    ("Trans_pp",  "Transfers"),
+    ("dserv_pp",  "Debt service"),
     ("by_pp",     "Debt-to-GDP ratio"),
-    ("G_pp",      "Government spending"),
 ]
 
-NCOLS = 3
+NCOLS = 4
 NROWS = 4
 
 # Unit label printed on the y-axis of each row's first panel (row-major order).
@@ -85,8 +89,8 @@ OUTPUT_STEM = "standardShocksAE"
 
 # Both sizes come from chartTable.csv: render = original chart size (canvas,
 # controls fonts/quality); display = size shown in the paper (aspect preserved).
-WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (15.0, 16.0))
-DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (15.0, 16.0))
+WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (15.0, 15.0))
+DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (15.0, 15.0))
 
 # Font matching the paper: Palatino (the paper's mathpazo), sized so the chart
 # text renders at a fixed point size on the page (recomputed from render/display).
@@ -114,7 +118,7 @@ def main():
     fig = make_subplots(
         rows=NROWS, cols=NCOLS,
         subplot_titles=[title for _, title in PANELS],
-        horizontal_spacing=0.075, vertical_spacing=0.085,
+        horizontal_spacing=0.06, vertical_spacing=0.085,
     )
 
     for idx, (var, _title) in enumerate(PANELS):

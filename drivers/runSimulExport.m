@@ -61,7 +61,7 @@ end
 
 tempDatabank = struct();
 
-varList = ["yd", "C", "Ip", "Igi", "Gc", "Ige", "Grd", "G", "H", "Lab", "E", "eGI", "eGE", "TFP", "ZZRD", "AAt"]
+varList = ["yd", "C", "Ip", "Kp", "Igi", "Gc", "Ige", "Grd", "G", "H", "Lab", "E", "eGI", "eGE", "TFP", "ZZRD", "AAt"]
 
 for aVar = varList
 
@@ -83,10 +83,12 @@ for aModel = modelList
     s = resultsProc.(aModel).ss;
     tempDatabank.(aModel+"___PI_ann")    = (e.PI  - s.PI ) * 400;             % inflation, ann. ppt
     tempDatabank.(aModel+"___Rmp_ann")   = (e.Rmp - s.Rmp) * 400;             % policy rate, ann. ppt
+    tempDatabank.(aModel+"___R_ann")     = (e.R   - s.R  ) * 400;             % nominal bond rate, ann. ppt
     tempDatabank.(aModel+"___rreal_ann") = (e.R ./ e.PI - s.R ./ s.PI) * 400; % ex-post real rate, ann. ppt
     tempDatabank.(aModel+"___pdef_pp")   = (e.pdef - s.pdef);                 % primary deficit, ppt of GDP (pdef is already x100)
     tempDatabank.(aModel+"___by_pp")     = (e.by  - s.by ) * 100;            % debt-to-GDP, ppt of GDP
-    tempDatabank.(aModel+"___G_pp")      = (e.G ./ e.yt - s.G ./ s.yt) * 100; % total gov spending, ppt of GDP
+    tempDatabank.(aModel+"___Trans_pp")  = (e.Trans ./ e.yt - s.Trans ./ s.yt) * 100; % transfers, ppt of GDP
+    tempDatabank.(aModel+"___dserv_pp")  = ((e.R - 1) .* e.Dt ./ e.yt - (s.R - 1) .* s.Dt ./ s.yt) * 100; % debt service (interest), ppt of GDP
 end
 
 % Shift the whole databank onto a real calendar: the simulation is built on
