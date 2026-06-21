@@ -32,7 +32,8 @@ PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 
 DIAGNOSTICS (read *_results.mat directly):
 --------------------------------------------------------------------------------
-- plotContributions:    Output (yd) contribution decomposition panels (drivers/plotContributions.m)
+- plotContributions:        yd contribution decomposition across models (drivers/plotContributions.m)
+- investigateContributions: contribution decomposition across variables, one shock (drivers/investigateContributions.m)
 
 - run-all:              exportData, then regenerate every figure and the
                         contribution panels.
@@ -187,6 +188,22 @@ def plotContributions(c):
     c.run(cmd, warn=True)
 
 
+@task
+def investigateContributions(c):
+    """
+    Diagnostic: across-variables contribution decomposition for one shock
+    (drivers/investigateContributions.m). One panel per target variable
+    (currently yd; extend aItemList once more equations are name-tagged).
+    In: *_results.mat | Out: docs/contributions/contribByVariable_*.png
+    """
+    print("--- Investigating contributions (investigateContributions.m) ---")
+    cmd = (
+        f"{MATLAB} -batch "
+        f"\"cd('{REPO_ROOT}'); iniProject; run('drivers/investigateContributions.m')\""
+    )
+    c.run(cmd, warn=True)
+
+
 @task(pre=[
     exportData,
     plotStandardShocksAE,
@@ -198,6 +215,7 @@ def plotContributions(c):
     plotDiffusionAE,
     plotEfficiencyBands,
     plotContributions,
+    investigateContributions,
 ])
 def run_all(c):
     """
