@@ -54,18 +54,10 @@ for aModel = modelList
     e = resultsProc.(aModel).endo;
     s = resultsProc.(aModel).ss;
 
-    % Composite series consumed only in derived form: ex-post real rate R/PI,
-    % transfers-to-GDP Trans/yt, and debt service (R-1)*Dt/yt. Inject into both
-    % the level and steady-state databanks so they flow through the same varDict
-    % formula machinery.
-    e.rreal    = e.R ./ e.PI;                s.rreal    = s.R ./ s.PI;
-    e.Trans_ys = e.Trans ./ e.yt;            s.Trans_ys = s.Trans ./ s.yt;
-    e.dserv    = (e.R - 1) .* e.Dt ./ e.yt;  s.dserv    = (s.R - 1) .* s.Dt ./ s.yt;
-    resultsProc.(aModel).endo = e;
-    resultsProc.(aModel).ss   = s;
-
     % Calculate IRF transformations by evaluating each variable's varDict formula
-    % against its level (x) and steady-state (y) path.
+    % against its level (x) and steady-state (y) path. Every plotted series
+    % (including rreal, Trans_ys and dserv) is now a genuine model variable
+    % computed in the model block, so nothing is constructed here.
     resultsProc.(aModel).irf = struct();
     for aVar = varNames
         f = char(aVar);

@@ -36,8 +36,11 @@ Trans           % Transfer
 lnyd            % Log of Output
 G               % Total government spending (Gc+Igi+Ige+Grd)
 pdef            % Primary Deficit
+rreal           % Ex-post real interest rate (R/PI)
+Trans_ys        % Transfers-to-GDP ratio
+dserv           % Debt service (interest)-to-GDP ratio
 Igi_ys           % Public Investment as percent of GDP
-by_ann          % Debt to GDP 
+by_ann          % Debt to GDP
 lnPI            % Log of Prince index
 
 H               % Human capital
