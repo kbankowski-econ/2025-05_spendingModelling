@@ -34,7 +34,8 @@ Rss             % Steady state interest rate
 ydss            % Steady state output
 Trans           % Transfer
 lnyd            % Log of Output
-pdef            % Primary Deficit 
+G               % Total government spending (Gc+Igi+Ige+Grd)
+pdef            % Primary Deficit
 Igi_ys           % Public Investment as percent of GDP
 by_ann          % Debt to GDP 
 lnPI            % Log of Prince index
@@ -326,6 +327,7 @@ eGRD = eGRD_ss-epsi_effcgrd;
 // VARIABLES OF INTEREST
 //********************************************************
 lnyd = log(yd)*100;
+G = Gc+Igi+Ige+Grd;                                        // total government spending (sum of the four instruments)
 pdef = (Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/yt*100;
 Igi_ys = Igi/ydss*100;
 by_ann = by/4*100;
