@@ -21,6 +21,7 @@ DATA PIPELINE (MATLAB / Dynare):
 
 PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 --------------------------------------------------------------------------------
+- plotStandardShocksAE: AE transmission of the four standard debt-financed shocks
 - plotReallocationAE:   AE output response to three reallocation shocks
 - plotReallocationEM:   EMDE output response (infra + human capital; no R&D)
 - plotEfficiencyAE:     AE 2050 output gain from closing efficiency gaps
@@ -94,6 +95,16 @@ def exportData(c):
 # =============================================================================
 
 @task
+def plotStandardShocksAE(c):
+    """
+    AE transmission overview: IRFs of main variables to the four standard
+    debt-financed expansion shocks (3x4 grid).
+    Out: figures/standardShocksAE.png/.pdf/.html/.csv
+    """
+    _run_plot(c, "plotStandardShocksAE.py", "Generating: AE Standard-Shock Transmission")
+
+
+@task
 def plotReallocationAE(c):
     """
     AE output response to three expenditure-reallocation shocks.
@@ -127,16 +138,6 @@ def plotEfficiencyEM(c):
     Out: figures/efficiencyEM_yd.png/.html/.csv
     """
     _run_plot(c, "plotEfficiencyEM.py", "Generating: EMDE Spending Efficiency")
-
-
-@task
-def plotStandardShocksAE(c):
-    """
-    AE transmission overview: IRFs of main variables to the four standard
-    debt-financed expansion shocks (3x4 grid).
-    Out: figures/standardShocksAE.png/.pdf/.html/.csv
-    """
-    _run_plot(c, "plotStandardShocksAE.py", "Generating: AE Standard-Shock Transmission")
 
 
 @task
