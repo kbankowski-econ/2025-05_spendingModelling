@@ -184,3 +184,18 @@ def run_all(c):
     (Does not re-solve the models; run `runModels` first if the model changed.)
     """
     print("Full figure workflow complete.")
+
+
+@task
+def plotContributions(c):
+    """
+    Diagnostic: output (yd) contribution decompositions (drivers/plotContributions.m).
+    Reads the solved models and writes barcon panels into docs/contributions/.
+    In: *_results.mat | Out: docs/contributions/*.png
+    """
+    print("--- Plotting contributions (plotContributions.m) ---")
+    cmd = (
+        f"{MATLAB} -batch "
+        f"\"cd('{REPO_ROOT}'); iniProject; run('drivers/plotContributions.m')\""
+    )
+    c.run(cmd, warn=True)
