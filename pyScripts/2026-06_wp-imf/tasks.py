@@ -30,7 +30,12 @@ PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 - plotDiffusionAE:      Technology diffusion-speed sensitivity
 - plotEfficiencyBands:  Spending-efficiency gaps by income group (appendix)
 
-- run-all:              exportData, then regenerate every figure.
+DIAGNOSTICS (read *_results.mat directly):
+--------------------------------------------------------------------------------
+- plotContributions:    Output (yd) contribution decomposition panels (drivers/plotContributions.m)
+
+- run-all:              exportData, then regenerate every figure and the
+                        contribution panels.
 
 Main entry point: invoke run-all
 """
@@ -167,25 +172,6 @@ def plotEfficiencyBands(c):
     _run_plot(c, "plotEfficiencyBands.py", "Generating: Efficiency Bands (appendix)")
 
 
-@task(pre=[
-    exportData,
-    plotStandardShocksAE,
-    plotReallocationAE,
-    plotReallocationEM,
-    plotEfficiencyAE,
-    plotEfficiencyEM,
-    plotHumanCapital,
-    plotDiffusionAE,
-    plotEfficiencyBands,
-])
-def run_all(c):
-    """
-    Export model data, then regenerate every figure.
-    (Does not re-solve the models; run `runModels` first if the model changed.)
-    """
-    print("Full figure workflow complete.")
-
-
 @task
 def plotContributions(c):
     """
@@ -199,3 +185,23 @@ def plotContributions(c):
         f"\"cd('{REPO_ROOT}'); iniProject; run('drivers/plotContributions.m')\""
     )
     c.run(cmd, warn=True)
+
+
+@task(pre=[
+    exportData,
+    plotStandardShocksAE,
+    plotReallocationAE,
+    plotReallocationEM,
+    plotEfficiencyAE,
+    plotEfficiencyEM,
+    plotHumanCapital,
+    plotDiffusionAE,
+    plotEfficiencyBands,
+    plotContributions,
+])
+def run_all(c):
+    """
+    Export model data, then regenerate every figure.
+    (Does not re-solve the models; run `runModels` first if the model changed.)
+    """
+    print("Full figure workflow complete.")
