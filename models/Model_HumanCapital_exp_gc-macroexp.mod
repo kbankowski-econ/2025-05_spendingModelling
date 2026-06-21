@@ -255,6 +255,7 @@ Kp(-1)/N = alppha/(1-alppha)*W_real/rk;
 // Law of motion of prices
 1 = thetap*(PI(-1)^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon);
 // Production
+[name='yt']
 yt = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*(Kp(-1)^alppha)*(N^(1-alppha))-Bigtheta;
 TFP = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*H(-1)^(1-alppha);
 // Technology creation (R&D enters in efficiency-adjusted form via Grdeff)

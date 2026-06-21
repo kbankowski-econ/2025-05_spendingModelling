@@ -15,8 +15,8 @@ cd(fullfile(project_path, 'models'));
 % equation must carry a [name='...'] tag in models/model_block.modpart (and the
 % models re-solved) for utils.subroutines.createContributions to find it; add
 % more variables to aItemList once their equations are tagged.
-aModel = "Model_HumanCapital_epsi_ig";   % infrastructure-investment shock
-aItemList = ["yd"];                       % target variables (one panel each)
+aModel = "Model_HumanCapital_exp_gc";    % government-consumption expansion shock
+aItemList = ["yd", "yt"];                 % target variables (one panel each)
 
 %% ----------------
 % Loading the database
@@ -26,6 +26,16 @@ dataRange = qq(0, 4): qq(0, 4) + size(resultsRaw.oo_.endo_simul', 1) - 1;
 
 endo = databank.fromArray(resultsRaw.oo_.endo_simul', resultsRaw.M_.endo_names, dataRange(1));
 ss   = databank.fromArray(repmat(resultsRaw.oo_.steady_state', numel(dataRange), 1), resultsRaw.M_.endo_names, dataRange(1));
+
+% Append exogenous paths so equations referencing shocks (e.g. the allocative
+% epsiallo_ig in the production function) can be decomposed; their steady state
+% is zero. oo_.exo_simul is already (periods x nexo), aligned with the endo range.
+exoActual = databank.fromArray(resultsRaw.oo_.exo_simul, resultsRaw.M_.exo_names, dataRange(1));
+exoSS     = databank.fromArray(zeros(numel(dataRange), numel(resultsRaw.M_.exo_names)), resultsRaw.M_.exo_names, dataRange(1));
+for aExo = string(fieldnames(exoActual)).'
+    endo.(char(aExo)) = exoActual.(char(aExo));
+    ss.(char(aExo))   = exoSS.(char(aExo));
+end
 
 %% calculating the contributions
 contributionSeries = struct();

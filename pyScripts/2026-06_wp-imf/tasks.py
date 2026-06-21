@@ -193,7 +193,8 @@ def investigateContributions(c):
     """
     Diagnostic: across-variables contribution decomposition for one shock
     (drivers/investigateContributions.m). One panel per target variable
-    (currently yd; extend aItemList once more equations are name-tagged).
+    (currently yd and yt for the gov-consumption shock; extend aItemList once
+    more equations are name-tagged in model_block.modpart).
     In: *_results.mat | Out: docs/contributions/contribByVariable_*.png
     """
     print("--- Investigating contributions (investigateContributions.m) ---")
