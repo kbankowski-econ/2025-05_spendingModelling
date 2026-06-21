@@ -34,7 +34,8 @@ Rss             % Steady state interest rate
 ydss            % Steady state output
 Trans           % Transfer
 lnyd            % Log of Output
-pdef            % Primary Deficit 
+G               % Total government spending (Gc+Igi+Ige+Grd)
+pdef            % Primary Deficit
 Igi_ys           % Public Investment as percent of GDP
 by_ann          % Debt to GDP 
 lnPI            % Log of Prince index

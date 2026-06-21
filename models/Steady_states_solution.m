@@ -127,6 +127,7 @@ Igiss=Igiy*(yt);
 
 %Variables of interest
 lnyd=log(yd)*100;
+G=Gc+Igi+Ige+Grd;
 pdef=(Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/yt*100;
 Igi_ys=Igi/ydss*100;
 by_ann=by/4*100;
