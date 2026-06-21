@@ -130,6 +130,16 @@ def plotEfficiencyEM(c):
 
 
 @task
+def plotStandardShocksAE(c):
+    """
+    AE transmission overview: IRFs of main variables to the four standard
+    debt-financed expansion shocks (3x4 grid).
+    Out: figures/standardShocksAE.png/.pdf/.html/.csv
+    """
+    _run_plot(c, "plotStandardShocksAE.py", "Generating: AE Standard-Shock Transmission")
+
+
+@task
 def plotHumanCapital(c):
     """
     Human capital + R&D mix IRFs.
@@ -158,6 +168,7 @@ def plotEfficiencyBands(c):
 
 @task(pre=[
     exportData,
+    plotStandardShocksAE,
     plotReallocationAE,
     plotReallocationEM,
     plotEfficiencyAE,

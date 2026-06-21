@@ -1,0 +1,1201 @@
+year,shock,variable,pct_dev
+2026,Infrastructure investment,Output,0.498
+2027,Infrastructure investment,Output,0.714
+2028,Infrastructure investment,Output,0.909
+2029,Infrastructure investment,Output,1.084
+2030,Infrastructure investment,Output,1.245
+2031,Infrastructure investment,Output,1.391
+2032,Infrastructure investment,Output,1.526
+2033,Infrastructure investment,Output,1.651
+2034,Infrastructure investment,Output,1.765
+2035,Infrastructure investment,Output,1.871
+2036,Infrastructure investment,Output,1.97
+2037,Infrastructure investment,Output,2.061
+2038,Infrastructure investment,Output,2.145
+2039,Infrastructure investment,Output,2.223
+2040,Infrastructure investment,Output,2.295
+2041,Infrastructure investment,Output,2.362
+2042,Infrastructure investment,Output,2.424
+2043,Infrastructure investment,Output,2.482
+2044,Infrastructure investment,Output,2.535
+2045,Infrastructure investment,Output,2.584
+2046,Infrastructure investment,Output,2.63
+2047,Infrastructure investment,Output,2.672
+2048,Infrastructure investment,Output,2.71
+2049,Infrastructure investment,Output,2.746
+2050,Infrastructure investment,Output,2.78
+2026,Human capital investment,Output,0.646
+2027,Human capital investment,Output,0.507
+2028,Human capital investment,Output,0.454
+2029,Human capital investment,Output,0.471
+2030,Human capital investment,Output,0.543
+2031,Human capital investment,Output,0.657
+2032,Human capital investment,Output,0.802
+2033,Human capital investment,Output,0.971
+2034,Human capital investment,Output,1.158
+2035,Human capital investment,Output,1.357
+2036,Human capital investment,Output,1.564
+2037,Human capital investment,Output,1.776
+2038,Human capital investment,Output,1.991
+2039,Human capital investment,Output,2.206
+2040,Human capital investment,Output,2.419
+2041,Human capital investment,Output,2.629
+2042,Human capital investment,Output,2.834
+2043,Human capital investment,Output,3.035
+2044,Human capital investment,Output,3.229
+2045,Human capital investment,Output,3.418
+2046,Human capital investment,Output,3.599
+2047,Human capital investment,Output,3.773
+2048,Human capital investment,Output,3.94
+2049,Human capital investment,Output,4.1
+2050,Human capital investment,Output,4.252
+2026,R&D investment,Output,0.237
+2027,R&D investment,Output,0.359
+2028,R&D investment,Output,0.644
+2029,R&D investment,Output,0.97
+2030,R&D investment,Output,1.292
+2031,R&D investment,Output,1.595
+2032,R&D investment,Output,1.874
+2033,R&D investment,Output,2.129
+2034,R&D investment,Output,2.364
+2035,R&D investment,Output,2.578
+2036,R&D investment,Output,2.774
+2037,R&D investment,Output,2.954
+2038,R&D investment,Output,3.119
+2039,R&D investment,Output,3.269
+2040,R&D investment,Output,3.408
+2041,R&D investment,Output,3.534
+2042,R&D investment,Output,3.65
+2043,R&D investment,Output,3.756
+2044,R&D investment,Output,3.853
+2045,R&D investment,Output,3.942
+2046,R&D investment,Output,4.024
+2047,R&D investment,Output,4.098
+2048,R&D investment,Output,4.166
+2049,R&D investment,Output,4.228
+2050,R&D investment,Output,4.285
+2026,Government consumption,Output,0.598
+2027,Government consumption,Output,0.651
+2028,Government consumption,Output,0.699
+2029,Government consumption,Output,0.744
+2030,Government consumption,Output,0.786
+2031,Government consumption,Output,0.827
+2032,Government consumption,Output,0.865
+2033,Government consumption,Output,0.901
+2034,Government consumption,Output,0.934
+2035,Government consumption,Output,0.966
+2036,Government consumption,Output,0.995
+2037,Government consumption,Output,1.022
+2038,Government consumption,Output,1.048
+2039,Government consumption,Output,1.072
+2040,Government consumption,Output,1.094
+2041,Government consumption,Output,1.115
+2042,Government consumption,Output,1.134
+2043,Government consumption,Output,1.151
+2044,Government consumption,Output,1.168
+2045,Government consumption,Output,1.183
+2046,Government consumption,Output,1.197
+2047,Government consumption,Output,1.21
+2048,Government consumption,Output,1.223
+2049,Government consumption,Output,1.234
+2050,Government consumption,Output,1.244
+2026,Infrastructure investment,Household consumption,-0.723
+2027,Infrastructure investment,Household consumption,-0.586
+2028,Infrastructure investment,Household consumption,-0.43
+2029,Infrastructure investment,Household consumption,-0.263
+2030,Infrastructure investment,Household consumption,-0.093
+2031,Infrastructure investment,Household consumption,0.078
+2032,Infrastructure investment,Household consumption,0.247
+2033,Infrastructure investment,Household consumption,0.411
+2034,Infrastructure investment,Household consumption,0.568
+2035,Infrastructure investment,Household consumption,0.72
+2036,Infrastructure investment,Household consumption,0.864
+2037,Infrastructure investment,Household consumption,1.0
+2038,Infrastructure investment,Household consumption,1.129
+2039,Infrastructure investment,Household consumption,1.251
+2040,Infrastructure investment,Household consumption,1.365
+2041,Infrastructure investment,Household consumption,1.473
+2042,Infrastructure investment,Household consumption,1.574
+2043,Infrastructure investment,Household consumption,1.668
+2044,Infrastructure investment,Household consumption,1.756
+2045,Infrastructure investment,Household consumption,1.838
+2046,Infrastructure investment,Household consumption,1.914
+2047,Infrastructure investment,Household consumption,1.986
+2048,Infrastructure investment,Household consumption,2.052
+2049,Infrastructure investment,Household consumption,2.114
+2050,Infrastructure investment,Household consumption,2.171
+2026,Human capital investment,Household consumption,-0.833
+2027,Human capital investment,Household consumption,-0.743
+2028,Human capital investment,Household consumption,-0.653
+2029,Human capital investment,Household consumption,-0.55
+2030,Human capital investment,Household consumption,-0.427
+2031,Human capital investment,Household consumption,-0.281
+2032,Human capital investment,Household consumption,-0.112
+2033,Human capital investment,Household consumption,0.08
+2034,Human capital investment,Household consumption,0.291
+2035,Human capital investment,Household consumption,0.52
+2036,Human capital investment,Household consumption,0.763
+2037,Human capital investment,Household consumption,1.018
+2038,Human capital investment,Household consumption,1.282
+2039,Human capital investment,Household consumption,1.551
+2040,Human capital investment,Household consumption,1.824
+2041,Human capital investment,Household consumption,2.099
+2042,Human capital investment,Household consumption,2.373
+2043,Human capital investment,Household consumption,2.645
+2044,Human capital investment,Household consumption,2.914
+2045,Human capital investment,Household consumption,3.178
+2046,Human capital investment,Household consumption,3.436
+2047,Human capital investment,Household consumption,3.687
+2048,Human capital investment,Household consumption,3.931
+2049,Human capital investment,Household consumption,4.167
+2050,Human capital investment,Household consumption,4.395
+2026,R&D investment,Household consumption,-0.808
+2027,R&D investment,Household consumption,-0.719
+2028,R&D investment,Household consumption,-0.568
+2029,R&D investment,Household consumption,-0.355
+2030,R&D investment,Household consumption,-0.094
+2031,R&D investment,Household consumption,0.199
+2032,R&D investment,Household consumption,0.509
+2033,R&D investment,Household consumption,0.826
+2034,R&D investment,Household consumption,1.141
+2035,R&D investment,Household consumption,1.45
+2036,R&D investment,Household consumption,1.748
+2037,R&D investment,Household consumption,2.032
+2038,R&D investment,Household consumption,2.302
+2039,R&D investment,Household consumption,2.555
+2040,R&D investment,Household consumption,2.793
+2041,R&D investment,Household consumption,3.016
+2042,R&D investment,Household consumption,3.222
+2043,R&D investment,Household consumption,3.414
+2044,R&D investment,Household consumption,3.592
+2045,R&D investment,Household consumption,3.756
+2046,R&D investment,Household consumption,3.907
+2047,R&D investment,Household consumption,4.047
+2048,R&D investment,Household consumption,4.175
+2049,R&D investment,Household consumption,4.293
+2050,R&D investment,Household consumption,4.402
+2026,Government consumption,Household consumption,-1.302
+2027,Government consumption,Household consumption,-1.205
+2028,Government consumption,Household consumption,-1.117
+2029,Government consumption,Household consumption,-1.037
+2030,Government consumption,Household consumption,-0.963
+2031,Government consumption,Household consumption,-0.894
+2032,Government consumption,Household consumption,-0.83
+2033,Government consumption,Household consumption,-0.77
+2034,Government consumption,Household consumption,-0.714
+2035,Government consumption,Household consumption,-0.662
+2036,Government consumption,Household consumption,-0.613
+2037,Government consumption,Household consumption,-0.567
+2038,Government consumption,Household consumption,-0.524
+2039,Government consumption,Household consumption,-0.484
+2040,Government consumption,Household consumption,-0.447
+2041,Government consumption,Household consumption,-0.412
+2042,Government consumption,Household consumption,-0.379
+2043,Government consumption,Household consumption,-0.348
+2044,Government consumption,Household consumption,-0.32
+2045,Government consumption,Household consumption,-0.293
+2046,Government consumption,Household consumption,-0.269
+2047,Government consumption,Household consumption,-0.246
+2048,Government consumption,Household consumption,-0.224
+2049,Government consumption,Household consumption,-0.205
+2050,Government consumption,Household consumption,-0.186
+2026,Infrastructure investment,Private investment,-0.717
+2027,Infrastructure investment,Private investment,-0.072
+2028,Infrastructure investment,Private investment,0.425
+2029,Infrastructure investment,Private investment,0.815
+2030,Infrastructure investment,Private investment,1.126
+2031,Infrastructure investment,Private investment,1.377
+2032,Infrastructure investment,Private investment,1.584
+2033,Infrastructure investment,Private investment,1.757
+2034,Infrastructure investment,Private investment,1.904
+2035,Infrastructure investment,Private investment,2.03
+2036,Infrastructure investment,Private investment,2.14
+2037,Infrastructure investment,Private investment,2.236
+2038,Infrastructure investment,Private investment,2.321
+2039,Infrastructure investment,Private investment,2.397
+2040,Infrastructure investment,Private investment,2.465
+2041,Infrastructure investment,Private investment,2.526
+2042,Infrastructure investment,Private investment,2.581
+2043,Infrastructure investment,Private investment,2.632
+2044,Infrastructure investment,Private investment,2.677
+2045,Infrastructure investment,Private investment,2.719
+2046,Infrastructure investment,Private investment,2.756
+2047,Infrastructure investment,Private investment,2.791
+2048,Infrastructure investment,Private investment,2.822
+2049,Infrastructure investment,Private investment,2.851
+2050,Infrastructure investment,Private investment,2.877
+2026,Human capital investment,Private investment,0.244
+2027,Human capital investment,Private investment,-0.56
+2028,Human capital investment,Private investment,-0.977
+2029,Human capital investment,Private investment,-1.119
+2030,Human capital investment,Private investment,-1.079
+2031,Human capital investment,Private investment,-0.916
+2032,Human capital investment,Private investment,-0.674
+2033,Human capital investment,Private investment,-0.38
+2034,Human capital investment,Private investment,-0.057
+2035,Human capital investment,Private investment,0.281
+2036,Human capital investment,Private investment,0.625
+2037,Human capital investment,Private investment,0.967
+2038,Human capital investment,Private investment,1.301
+2039,Human capital investment,Private investment,1.627
+2040,Human capital investment,Private investment,1.94
+2041,Human capital investment,Private investment,2.24
+2042,Human capital investment,Private investment,2.526
+2043,Human capital investment,Private investment,2.797
+2044,Human capital investment,Private investment,3.055
+2045,Human capital investment,Private investment,3.298
+2046,Human capital investment,Private investment,3.528
+2047,Human capital investment,Private investment,3.744
+2048,Human capital investment,Private investment,3.947
+2049,Human capital investment,Private investment,4.137
+2050,Human capital investment,Private investment,4.315
+2026,R&D investment,Private investment,-1.181
+2027,R&D investment,Private investment,-2.853
+2028,R&D investment,Private investment,-2.461
+2029,R&D investment,Private investment,-1.501
+2030,R&D investment,Private investment,-0.5
+2031,R&D investment,Private investment,0.383
+2032,R&D investment,Private investment,1.118
+2033,R&D investment,Private investment,1.716
+2034,R&D investment,Private investment,2.2
+2035,R&D investment,Private investment,2.594
+2036,R&D investment,Private investment,2.916
+2037,R&D investment,Private investment,3.182
+2038,R&D investment,Private investment,3.402
+2039,R&D investment,Private investment,3.587
+2040,R&D investment,Private investment,3.744
+2041,R&D investment,Private investment,3.877
+2042,R&D investment,Private investment,3.992
+2043,R&D investment,Private investment,4.09
+2044,R&D investment,Private investment,4.176
+2045,R&D investment,Private investment,4.251
+2046,R&D investment,Private investment,4.316
+2047,R&D investment,Private investment,4.373
+2048,R&D investment,Private investment,4.424
+2049,R&D investment,Private investment,4.469
+2050,R&D investment,Private investment,4.509
+2026,Government consumption,Private investment,0.936
+2027,Government consumption,Private investment,0.925
+2028,Government consumption,Private investment,0.918
+2029,Government consumption,Private investment,0.922
+2030,Government consumption,Private investment,0.934
+2031,Government consumption,Private investment,0.952
+2032,Government consumption,Private investment,0.974
+2033,Government consumption,Private investment,0.997
+2034,Government consumption,Private investment,1.02
+2035,Government consumption,Private investment,1.044
+2036,Government consumption,Private investment,1.067
+2037,Government consumption,Private investment,1.089
+2038,Government consumption,Private investment,1.11
+2039,Government consumption,Private investment,1.13
+2040,Government consumption,Private investment,1.148
+2041,Government consumption,Private investment,1.165
+2042,Government consumption,Private investment,1.181
+2043,Government consumption,Private investment,1.196
+2044,Government consumption,Private investment,1.21
+2045,Government consumption,Private investment,1.222
+2046,Government consumption,Private investment,1.234
+2047,Government consumption,Private investment,1.244
+2048,Government consumption,Private investment,1.254
+2049,Government consumption,Private investment,1.263
+2050,Government consumption,Private investment,1.271
+2026,Infrastructure investment,Public infrastructure,33.333
+2027,Infrastructure investment,Public infrastructure,33.333
+2028,Infrastructure investment,Public infrastructure,33.333
+2029,Infrastructure investment,Public infrastructure,33.333
+2030,Infrastructure investment,Public infrastructure,33.333
+2031,Infrastructure investment,Public infrastructure,33.333
+2032,Infrastructure investment,Public infrastructure,33.333
+2033,Infrastructure investment,Public infrastructure,33.333
+2034,Infrastructure investment,Public infrastructure,33.333
+2035,Infrastructure investment,Public infrastructure,33.333
+2036,Infrastructure investment,Public infrastructure,33.333
+2037,Infrastructure investment,Public infrastructure,33.333
+2038,Infrastructure investment,Public infrastructure,33.333
+2039,Infrastructure investment,Public infrastructure,33.333
+2040,Infrastructure investment,Public infrastructure,33.333
+2041,Infrastructure investment,Public infrastructure,33.333
+2042,Infrastructure investment,Public infrastructure,33.333
+2043,Infrastructure investment,Public infrastructure,33.333
+2044,Infrastructure investment,Public infrastructure,33.333
+2045,Infrastructure investment,Public infrastructure,33.333
+2046,Infrastructure investment,Public infrastructure,33.333
+2047,Infrastructure investment,Public infrastructure,33.333
+2048,Infrastructure investment,Public infrastructure,33.333
+2049,Infrastructure investment,Public infrastructure,33.333
+2050,Infrastructure investment,Public infrastructure,33.333
+2026,Human capital investment,Public infrastructure,0.0
+2027,Human capital investment,Public infrastructure,0.0
+2028,Human capital investment,Public infrastructure,0.0
+2029,Human capital investment,Public infrastructure,0.0
+2030,Human capital investment,Public infrastructure,0.0
+2031,Human capital investment,Public infrastructure,0.0
+2032,Human capital investment,Public infrastructure,0.0
+2033,Human capital investment,Public infrastructure,0.0
+2034,Human capital investment,Public infrastructure,0.0
+2035,Human capital investment,Public infrastructure,0.0
+2036,Human capital investment,Public infrastructure,0.0
+2037,Human capital investment,Public infrastructure,0.0
+2038,Human capital investment,Public infrastructure,0.0
+2039,Human capital investment,Public infrastructure,0.0
+2040,Human capital investment,Public infrastructure,0.0
+2041,Human capital investment,Public infrastructure,0.0
+2042,Human capital investment,Public infrastructure,0.0
+2043,Human capital investment,Public infrastructure,0.0
+2044,Human capital investment,Public infrastructure,0.0
+2045,Human capital investment,Public infrastructure,0.0
+2046,Human capital investment,Public infrastructure,0.0
+2047,Human capital investment,Public infrastructure,0.0
+2048,Human capital investment,Public infrastructure,0.0
+2049,Human capital investment,Public infrastructure,0.0
+2050,Human capital investment,Public infrastructure,0.0
+2026,R&D investment,Public infrastructure,0.0
+2027,R&D investment,Public infrastructure,0.0
+2028,R&D investment,Public infrastructure,0.0
+2029,R&D investment,Public infrastructure,0.0
+2030,R&D investment,Public infrastructure,0.0
+2031,R&D investment,Public infrastructure,0.0
+2032,R&D investment,Public infrastructure,0.0
+2033,R&D investment,Public infrastructure,0.0
+2034,R&D investment,Public infrastructure,0.0
+2035,R&D investment,Public infrastructure,0.0
+2036,R&D investment,Public infrastructure,0.0
+2037,R&D investment,Public infrastructure,0.0
+2038,R&D investment,Public infrastructure,0.0
+2039,R&D investment,Public infrastructure,0.0
+2040,R&D investment,Public infrastructure,0.0
+2041,R&D investment,Public infrastructure,0.0
+2042,R&D investment,Public infrastructure,0.0
+2043,R&D investment,Public infrastructure,0.0
+2044,R&D investment,Public infrastructure,0.0
+2045,R&D investment,Public infrastructure,0.0
+2046,R&D investment,Public infrastructure,0.0
+2047,R&D investment,Public infrastructure,0.0
+2048,R&D investment,Public infrastructure,0.0
+2049,R&D investment,Public infrastructure,0.0
+2050,R&D investment,Public infrastructure,0.0
+2026,Government consumption,Public infrastructure,0.0
+2027,Government consumption,Public infrastructure,0.0
+2028,Government consumption,Public infrastructure,0.0
+2029,Government consumption,Public infrastructure,0.0
+2030,Government consumption,Public infrastructure,0.0
+2031,Government consumption,Public infrastructure,0.0
+2032,Government consumption,Public infrastructure,0.0
+2033,Government consumption,Public infrastructure,0.0
+2034,Government consumption,Public infrastructure,0.0
+2035,Government consumption,Public infrastructure,0.0
+2036,Government consumption,Public infrastructure,0.0
+2037,Government consumption,Public infrastructure,0.0
+2038,Government consumption,Public infrastructure,0.0
+2039,Government consumption,Public infrastructure,0.0
+2040,Government consumption,Public infrastructure,0.0
+2041,Government consumption,Public infrastructure,0.0
+2042,Government consumption,Public infrastructure,0.0
+2043,Government consumption,Public infrastructure,0.0
+2044,Government consumption,Public infrastructure,0.0
+2045,Government consumption,Public infrastructure,0.0
+2046,Government consumption,Public infrastructure,0.0
+2047,Government consumption,Public infrastructure,0.0
+2048,Government consumption,Public infrastructure,0.0
+2049,Government consumption,Public infrastructure,0.0
+2050,Government consumption,Public infrastructure,0.0
+2026,Infrastructure investment,Public consumption,0.0
+2027,Infrastructure investment,Public consumption,0.0
+2028,Infrastructure investment,Public consumption,0.0
+2029,Infrastructure investment,Public consumption,0.0
+2030,Infrastructure investment,Public consumption,0.0
+2031,Infrastructure investment,Public consumption,0.0
+2032,Infrastructure investment,Public consumption,0.0
+2033,Infrastructure investment,Public consumption,0.0
+2034,Infrastructure investment,Public consumption,0.0
+2035,Infrastructure investment,Public consumption,0.0
+2036,Infrastructure investment,Public consumption,0.0
+2037,Infrastructure investment,Public consumption,0.0
+2038,Infrastructure investment,Public consumption,0.0
+2039,Infrastructure investment,Public consumption,0.0
+2040,Infrastructure investment,Public consumption,0.0
+2041,Infrastructure investment,Public consumption,0.0
+2042,Infrastructure investment,Public consumption,0.0
+2043,Infrastructure investment,Public consumption,0.0
+2044,Infrastructure investment,Public consumption,0.0
+2045,Infrastructure investment,Public consumption,0.0
+2046,Infrastructure investment,Public consumption,0.0
+2047,Infrastructure investment,Public consumption,0.0
+2048,Infrastructure investment,Public consumption,0.0
+2049,Infrastructure investment,Public consumption,0.0
+2050,Infrastructure investment,Public consumption,0.0
+2026,Human capital investment,Public consumption,0.0
+2027,Human capital investment,Public consumption,0.0
+2028,Human capital investment,Public consumption,0.0
+2029,Human capital investment,Public consumption,0.0
+2030,Human capital investment,Public consumption,0.0
+2031,Human capital investment,Public consumption,0.0
+2032,Human capital investment,Public consumption,0.0
+2033,Human capital investment,Public consumption,0.0
+2034,Human capital investment,Public consumption,0.0
+2035,Human capital investment,Public consumption,0.0
+2036,Human capital investment,Public consumption,0.0
+2037,Human capital investment,Public consumption,0.0
+2038,Human capital investment,Public consumption,0.0
+2039,Human capital investment,Public consumption,0.0
+2040,Human capital investment,Public consumption,0.0
+2041,Human capital investment,Public consumption,0.0
+2042,Human capital investment,Public consumption,0.0
+2043,Human capital investment,Public consumption,0.0
+2044,Human capital investment,Public consumption,0.0
+2045,Human capital investment,Public consumption,0.0
+2046,Human capital investment,Public consumption,0.0
+2047,Human capital investment,Public consumption,0.0
+2048,Human capital investment,Public consumption,0.0
+2049,Human capital investment,Public consumption,0.0
+2050,Human capital investment,Public consumption,0.0
+2026,R&D investment,Public consumption,0.0
+2027,R&D investment,Public consumption,0.0
+2028,R&D investment,Public consumption,0.0
+2029,R&D investment,Public consumption,0.0
+2030,R&D investment,Public consumption,0.0
+2031,R&D investment,Public consumption,0.0
+2032,R&D investment,Public consumption,0.0
+2033,R&D investment,Public consumption,0.0
+2034,R&D investment,Public consumption,0.0
+2035,R&D investment,Public consumption,0.0
+2036,R&D investment,Public consumption,0.0
+2037,R&D investment,Public consumption,0.0
+2038,R&D investment,Public consumption,0.0
+2039,R&D investment,Public consumption,0.0
+2040,R&D investment,Public consumption,0.0
+2041,R&D investment,Public consumption,0.0
+2042,R&D investment,Public consumption,0.0
+2043,R&D investment,Public consumption,0.0
+2044,R&D investment,Public consumption,0.0
+2045,R&D investment,Public consumption,0.0
+2046,R&D investment,Public consumption,0.0
+2047,R&D investment,Public consumption,0.0
+2048,R&D investment,Public consumption,0.0
+2049,R&D investment,Public consumption,0.0
+2050,R&D investment,Public consumption,0.0
+2026,Government consumption,Public consumption,5.556
+2027,Government consumption,Public consumption,5.556
+2028,Government consumption,Public consumption,5.556
+2029,Government consumption,Public consumption,5.556
+2030,Government consumption,Public consumption,5.556
+2031,Government consumption,Public consumption,5.556
+2032,Government consumption,Public consumption,5.556
+2033,Government consumption,Public consumption,5.556
+2034,Government consumption,Public consumption,5.556
+2035,Government consumption,Public consumption,5.556
+2036,Government consumption,Public consumption,5.556
+2037,Government consumption,Public consumption,5.556
+2038,Government consumption,Public consumption,5.556
+2039,Government consumption,Public consumption,5.556
+2040,Government consumption,Public consumption,5.556
+2041,Government consumption,Public consumption,5.556
+2042,Government consumption,Public consumption,5.556
+2043,Government consumption,Public consumption,5.556
+2044,Government consumption,Public consumption,5.556
+2045,Government consumption,Public consumption,5.556
+2046,Government consumption,Public consumption,5.556
+2047,Government consumption,Public consumption,5.556
+2048,Government consumption,Public consumption,5.556
+2049,Government consumption,Public consumption,5.556
+2050,Government consumption,Public consumption,5.556
+2026,Infrastructure investment,Public human capital,0.0
+2027,Infrastructure investment,Public human capital,0.0
+2028,Infrastructure investment,Public human capital,0.0
+2029,Infrastructure investment,Public human capital,0.0
+2030,Infrastructure investment,Public human capital,0.0
+2031,Infrastructure investment,Public human capital,0.0
+2032,Infrastructure investment,Public human capital,0.0
+2033,Infrastructure investment,Public human capital,0.0
+2034,Infrastructure investment,Public human capital,0.0
+2035,Infrastructure investment,Public human capital,0.0
+2036,Infrastructure investment,Public human capital,0.0
+2037,Infrastructure investment,Public human capital,0.0
+2038,Infrastructure investment,Public human capital,0.0
+2039,Infrastructure investment,Public human capital,0.0
+2040,Infrastructure investment,Public human capital,0.0
+2041,Infrastructure investment,Public human capital,0.0
+2042,Infrastructure investment,Public human capital,0.0
+2043,Infrastructure investment,Public human capital,0.0
+2044,Infrastructure investment,Public human capital,0.0
+2045,Infrastructure investment,Public human capital,0.0
+2046,Infrastructure investment,Public human capital,0.0
+2047,Infrastructure investment,Public human capital,0.0
+2048,Infrastructure investment,Public human capital,0.0
+2049,Infrastructure investment,Public human capital,0.0
+2050,Infrastructure investment,Public human capital,0.0
+2026,Human capital investment,Public human capital,68.966
+2027,Human capital investment,Public human capital,68.966
+2028,Human capital investment,Public human capital,68.966
+2029,Human capital investment,Public human capital,68.966
+2030,Human capital investment,Public human capital,68.966
+2031,Human capital investment,Public human capital,68.966
+2032,Human capital investment,Public human capital,68.966
+2033,Human capital investment,Public human capital,68.966
+2034,Human capital investment,Public human capital,68.966
+2035,Human capital investment,Public human capital,68.966
+2036,Human capital investment,Public human capital,68.966
+2037,Human capital investment,Public human capital,68.966
+2038,Human capital investment,Public human capital,68.966
+2039,Human capital investment,Public human capital,68.966
+2040,Human capital investment,Public human capital,68.966
+2041,Human capital investment,Public human capital,68.966
+2042,Human capital investment,Public human capital,68.966
+2043,Human capital investment,Public human capital,68.966
+2044,Human capital investment,Public human capital,68.966
+2045,Human capital investment,Public human capital,68.966
+2046,Human capital investment,Public human capital,68.966
+2047,Human capital investment,Public human capital,68.966
+2048,Human capital investment,Public human capital,68.966
+2049,Human capital investment,Public human capital,68.966
+2050,Human capital investment,Public human capital,68.966
+2026,R&D investment,Public human capital,0.0
+2027,R&D investment,Public human capital,0.0
+2028,R&D investment,Public human capital,0.0
+2029,R&D investment,Public human capital,0.0
+2030,R&D investment,Public human capital,0.0
+2031,R&D investment,Public human capital,0.0
+2032,R&D investment,Public human capital,0.0
+2033,R&D investment,Public human capital,0.0
+2034,R&D investment,Public human capital,0.0
+2035,R&D investment,Public human capital,0.0
+2036,R&D investment,Public human capital,0.0
+2037,R&D investment,Public human capital,0.0
+2038,R&D investment,Public human capital,0.0
+2039,R&D investment,Public human capital,0.0
+2040,R&D investment,Public human capital,0.0
+2041,R&D investment,Public human capital,0.0
+2042,R&D investment,Public human capital,0.0
+2043,R&D investment,Public human capital,0.0
+2044,R&D investment,Public human capital,0.0
+2045,R&D investment,Public human capital,0.0
+2046,R&D investment,Public human capital,0.0
+2047,R&D investment,Public human capital,0.0
+2048,R&D investment,Public human capital,0.0
+2049,R&D investment,Public human capital,0.0
+2050,R&D investment,Public human capital,0.0
+2026,Government consumption,Public human capital,0.0
+2027,Government consumption,Public human capital,0.0
+2028,Government consumption,Public human capital,0.0
+2029,Government consumption,Public human capital,0.0
+2030,Government consumption,Public human capital,0.0
+2031,Government consumption,Public human capital,0.0
+2032,Government consumption,Public human capital,0.0
+2033,Government consumption,Public human capital,0.0
+2034,Government consumption,Public human capital,0.0
+2035,Government consumption,Public human capital,0.0
+2036,Government consumption,Public human capital,0.0
+2037,Government consumption,Public human capital,0.0
+2038,Government consumption,Public human capital,0.0
+2039,Government consumption,Public human capital,0.0
+2040,Government consumption,Public human capital,0.0
+2041,Government consumption,Public human capital,0.0
+2042,Government consumption,Public human capital,0.0
+2043,Government consumption,Public human capital,0.0
+2044,Government consumption,Public human capital,0.0
+2045,Government consumption,Public human capital,0.0
+2046,Government consumption,Public human capital,0.0
+2047,Government consumption,Public human capital,0.0
+2048,Government consumption,Public human capital,0.0
+2049,Government consumption,Public human capital,0.0
+2050,Government consumption,Public human capital,0.0
+2026,Infrastructure investment,Public R&D spending,0.0
+2027,Infrastructure investment,Public R&D spending,0.0
+2028,Infrastructure investment,Public R&D spending,0.0
+2029,Infrastructure investment,Public R&D spending,0.0
+2030,Infrastructure investment,Public R&D spending,0.0
+2031,Infrastructure investment,Public R&D spending,0.0
+2032,Infrastructure investment,Public R&D spending,0.0
+2033,Infrastructure investment,Public R&D spending,0.0
+2034,Infrastructure investment,Public R&D spending,0.0
+2035,Infrastructure investment,Public R&D spending,0.0
+2036,Infrastructure investment,Public R&D spending,0.0
+2037,Infrastructure investment,Public R&D spending,0.0
+2038,Infrastructure investment,Public R&D spending,0.0
+2039,Infrastructure investment,Public R&D spending,0.0
+2040,Infrastructure investment,Public R&D spending,0.0
+2041,Infrastructure investment,Public R&D spending,0.0
+2042,Infrastructure investment,Public R&D spending,0.0
+2043,Infrastructure investment,Public R&D spending,0.0
+2044,Infrastructure investment,Public R&D spending,0.0
+2045,Infrastructure investment,Public R&D spending,0.0
+2046,Infrastructure investment,Public R&D spending,0.0
+2047,Infrastructure investment,Public R&D spending,0.0
+2048,Infrastructure investment,Public R&D spending,0.0
+2049,Infrastructure investment,Public R&D spending,0.0
+2050,Infrastructure investment,Public R&D spending,0.0
+2026,Human capital investment,Public R&D spending,0.0
+2027,Human capital investment,Public R&D spending,0.0
+2028,Human capital investment,Public R&D spending,0.0
+2029,Human capital investment,Public R&D spending,0.0
+2030,Human capital investment,Public R&D spending,0.0
+2031,Human capital investment,Public R&D spending,0.0
+2032,Human capital investment,Public R&D spending,0.0
+2033,Human capital investment,Public R&D spending,0.0
+2034,Human capital investment,Public R&D spending,0.0
+2035,Human capital investment,Public R&D spending,0.0
+2036,Human capital investment,Public R&D spending,0.0
+2037,Human capital investment,Public R&D spending,0.0
+2038,Human capital investment,Public R&D spending,0.0
+2039,Human capital investment,Public R&D spending,0.0
+2040,Human capital investment,Public R&D spending,0.0
+2041,Human capital investment,Public R&D spending,0.0
+2042,Human capital investment,Public R&D spending,0.0
+2043,Human capital investment,Public R&D spending,0.0
+2044,Human capital investment,Public R&D spending,0.0
+2045,Human capital investment,Public R&D spending,0.0
+2046,Human capital investment,Public R&D spending,0.0
+2047,Human capital investment,Public R&D spending,0.0
+2048,Human capital investment,Public R&D spending,0.0
+2049,Human capital investment,Public R&D spending,0.0
+2050,Human capital investment,Public R&D spending,0.0
+2026,R&D investment,Public R&D spending,166.667
+2027,R&D investment,Public R&D spending,166.667
+2028,R&D investment,Public R&D spending,166.667
+2029,R&D investment,Public R&D spending,166.667
+2030,R&D investment,Public R&D spending,166.667
+2031,R&D investment,Public R&D spending,166.667
+2032,R&D investment,Public R&D spending,166.667
+2033,R&D investment,Public R&D spending,166.667
+2034,R&D investment,Public R&D spending,166.667
+2035,R&D investment,Public R&D spending,166.667
+2036,R&D investment,Public R&D spending,166.667
+2037,R&D investment,Public R&D spending,166.667
+2038,R&D investment,Public R&D spending,166.667
+2039,R&D investment,Public R&D spending,166.667
+2040,R&D investment,Public R&D spending,166.667
+2041,R&D investment,Public R&D spending,166.667
+2042,R&D investment,Public R&D spending,166.667
+2043,R&D investment,Public R&D spending,166.667
+2044,R&D investment,Public R&D spending,166.667
+2045,R&D investment,Public R&D spending,166.667
+2046,R&D investment,Public R&D spending,166.667
+2047,R&D investment,Public R&D spending,166.667
+2048,R&D investment,Public R&D spending,166.667
+2049,R&D investment,Public R&D spending,166.667
+2050,R&D investment,Public R&D spending,166.667
+2026,Government consumption,Public R&D spending,0.0
+2027,Government consumption,Public R&D spending,0.0
+2028,Government consumption,Public R&D spending,0.0
+2029,Government consumption,Public R&D spending,0.0
+2030,Government consumption,Public R&D spending,0.0
+2031,Government consumption,Public R&D spending,0.0
+2032,Government consumption,Public R&D spending,0.0
+2033,Government consumption,Public R&D spending,0.0
+2034,Government consumption,Public R&D spending,0.0
+2035,Government consumption,Public R&D spending,0.0
+2036,Government consumption,Public R&D spending,0.0
+2037,Government consumption,Public R&D spending,0.0
+2038,Government consumption,Public R&D spending,0.0
+2039,Government consumption,Public R&D spending,0.0
+2040,Government consumption,Public R&D spending,0.0
+2041,Government consumption,Public R&D spending,0.0
+2042,Government consumption,Public R&D spending,0.0
+2043,Government consumption,Public R&D spending,0.0
+2044,Government consumption,Public R&D spending,0.0
+2045,Government consumption,Public R&D spending,0.0
+2046,Government consumption,Public R&D spending,0.0
+2047,Government consumption,Public R&D spending,0.0
+2048,Government consumption,Public R&D spending,0.0
+2049,Government consumption,Public R&D spending,0.0
+2050,Government consumption,Public R&D spending,0.0
+2026,Infrastructure investment,Human capital stock,0.065
+2027,Infrastructure investment,Human capital stock,0.086
+2028,Infrastructure investment,Human capital stock,0.102
+2029,Infrastructure investment,Human capital stock,0.114
+2030,Infrastructure investment,Human capital stock,0.122
+2031,Infrastructure investment,Human capital stock,0.127
+2032,Infrastructure investment,Human capital stock,0.131
+2033,Infrastructure investment,Human capital stock,0.133
+2034,Infrastructure investment,Human capital stock,0.134
+2035,Infrastructure investment,Human capital stock,0.134
+2036,Infrastructure investment,Human capital stock,0.133
+2037,Infrastructure investment,Human capital stock,0.131
+2038,Infrastructure investment,Human capital stock,0.13
+2039,Infrastructure investment,Human capital stock,0.127
+2040,Infrastructure investment,Human capital stock,0.125
+2041,Infrastructure investment,Human capital stock,0.122
+2042,Infrastructure investment,Human capital stock,0.119
+2043,Infrastructure investment,Human capital stock,0.117
+2044,Infrastructure investment,Human capital stock,0.114
+2045,Infrastructure investment,Human capital stock,0.111
+2046,Infrastructure investment,Human capital stock,0.108
+2047,Infrastructure investment,Human capital stock,0.106
+2048,Infrastructure investment,Human capital stock,0.103
+2049,Infrastructure investment,Human capital stock,0.101
+2050,Infrastructure investment,Human capital stock,0.098
+2026,Human capital investment,Human capital stock,-0.008
+2027,Human capital investment,Human capital stock,0.051
+2028,Human capital investment,Human capital stock,0.187
+2029,Human capital investment,Human capital stock,0.375
+2030,Human capital investment,Human capital stock,0.599
+2031,Human capital investment,Human capital stock,0.845
+2032,Human capital investment,Human capital stock,1.102
+2033,Human capital investment,Human capital stock,1.363
+2034,Human capital investment,Human capital stock,1.623
+2035,Human capital investment,Human capital stock,1.876
+2036,Human capital investment,Human capital stock,2.121
+2037,Human capital investment,Human capital stock,2.355
+2038,Human capital investment,Human capital stock,2.577
+2039,Human capital investment,Human capital stock,2.785
+2040,Human capital investment,Human capital stock,2.981
+2041,Human capital investment,Human capital stock,3.163
+2042,Human capital investment,Human capital stock,3.333
+2043,Human capital investment,Human capital stock,3.489
+2044,Human capital investment,Human capital stock,3.634
+2045,Human capital investment,Human capital stock,3.766
+2046,Human capital investment,Human capital stock,3.888
+2047,Human capital investment,Human capital stock,3.999
+2048,Human capital investment,Human capital stock,4.101
+2049,Human capital investment,Human capital stock,4.194
+2050,Human capital investment,Human capital stock,4.278
+2026,R&D investment,Human capital stock,0.053
+2027,R&D investment,Human capital stock,0.075
+2028,R&D investment,Human capital stock,0.09
+2029,R&D investment,Human capital stock,0.096
+2030,R&D investment,Human capital stock,0.097
+2031,R&D investment,Human capital stock,0.092
+2032,R&D investment,Human capital stock,0.085
+2033,R&D investment,Human capital stock,0.075
+2034,R&D investment,Human capital stock,0.064
+2035,R&D investment,Human capital stock,0.052
+2036,R&D investment,Human capital stock,0.04
+2037,R&D investment,Human capital stock,0.028
+2038,R&D investment,Human capital stock,0.016
+2039,R&D investment,Human capital stock,0.004
+2040,R&D investment,Human capital stock,-0.007
+2041,R&D investment,Human capital stock,-0.018
+2042,R&D investment,Human capital stock,-0.028
+2043,R&D investment,Human capital stock,-0.037
+2044,R&D investment,Human capital stock,-0.046
+2045,R&D investment,Human capital stock,-0.054
+2046,R&D investment,Human capital stock,-0.062
+2047,R&D investment,Human capital stock,-0.069
+2048,R&D investment,Human capital stock,-0.076
+2049,R&D investment,Human capital stock,-0.082
+2050,R&D investment,Human capital stock,-0.088
+2026,Government consumption,Human capital stock,0.078
+2027,Government consumption,Human capital stock,0.11
+2028,Government consumption,Human capital stock,0.138
+2029,Government consumption,Human capital stock,0.162
+2030,Government consumption,Human capital stock,0.183
+2031,Government consumption,Human capital stock,0.202
+2032,Government consumption,Human capital stock,0.217
+2033,Government consumption,Human capital stock,0.231
+2034,Government consumption,Human capital stock,0.242
+2035,Government consumption,Human capital stock,0.252
+2036,Government consumption,Human capital stock,0.261
+2037,Government consumption,Human capital stock,0.268
+2038,Government consumption,Human capital stock,0.274
+2039,Government consumption,Human capital stock,0.279
+2040,Government consumption,Human capital stock,0.283
+2041,Government consumption,Human capital stock,0.287
+2042,Government consumption,Human capital stock,0.29
+2043,Government consumption,Human capital stock,0.293
+2044,Government consumption,Human capital stock,0.295
+2045,Government consumption,Human capital stock,0.296
+2046,Government consumption,Human capital stock,0.298
+2047,Government consumption,Human capital stock,0.299
+2048,Government consumption,Human capital stock,0.3
+2049,Government consumption,Human capital stock,0.301
+2050,Government consumption,Human capital stock,0.301
+2026,Infrastructure investment,Labor supply,0.62
+2027,Infrastructure investment,Labor supply,0.668
+2028,Infrastructure investment,Labor supply,0.693
+2029,Infrastructure investment,Labor supply,0.701
+2030,Infrastructure investment,Labor supply,0.696
+2031,Infrastructure investment,Labor supply,0.684
+2032,Infrastructure investment,Labor supply,0.665
+2033,Infrastructure investment,Labor supply,0.644
+2034,Infrastructure investment,Labor supply,0.62
+2035,Infrastructure investment,Labor supply,0.595
+2036,Infrastructure investment,Labor supply,0.57
+2037,Infrastructure investment,Labor supply,0.545
+2038,Infrastructure investment,Labor supply,0.52
+2039,Infrastructure investment,Labor supply,0.496
+2040,Infrastructure investment,Labor supply,0.472
+2041,Infrastructure investment,Labor supply,0.45
+2042,Infrastructure investment,Labor supply,0.429
+2043,Infrastructure investment,Labor supply,0.409
+2044,Infrastructure investment,Labor supply,0.389
+2045,Infrastructure investment,Labor supply,0.371
+2046,Infrastructure investment,Labor supply,0.354
+2047,Infrastructure investment,Labor supply,0.338
+2048,Infrastructure investment,Labor supply,0.323
+2049,Infrastructure investment,Labor supply,0.309
+2050,Infrastructure investment,Labor supply,0.296
+2026,Human capital investment,Labor supply,1.045
+2027,Human capital investment,Labor supply,0.809
+2028,Human capital investment,Labor supply,0.65
+2029,Human capital investment,Labor supply,0.547
+2030,Human capital investment,Labor supply,0.482
+2031,Human capital investment,Labor supply,0.44
+2032,Human capital investment,Labor supply,0.411
+2033,Human capital investment,Labor supply,0.391
+2034,Human capital investment,Labor supply,0.375
+2035,Human capital investment,Labor supply,0.359
+2036,Human capital investment,Labor supply,0.344
+2037,Human capital investment,Labor supply,0.326
+2038,Human capital investment,Labor supply,0.307
+2039,Human capital investment,Labor supply,0.286
+2040,Human capital investment,Labor supply,0.263
+2041,Human capital investment,Labor supply,0.238
+2042,Human capital investment,Labor supply,0.212
+2043,Human capital investment,Labor supply,0.183
+2044,Human capital investment,Labor supply,0.154
+2045,Human capital investment,Labor supply,0.124
+2046,Human capital investment,Labor supply,0.093
+2047,Human capital investment,Labor supply,0.061
+2048,Human capital investment,Labor supply,0.029
+2049,Human capital investment,Labor supply,-0.002
+2050,Human capital investment,Labor supply,-0.034
+2026,R&D investment,Labor supply,0.549
+2027,R&D investment,Labor supply,0.601
+2028,R&D investment,Labor supply,0.694
+2029,R&D investment,Labor supply,0.768
+2030,R&D investment,Labor supply,0.809
+2031,R&D investment,Labor supply,0.818
+2032,R&D investment,Labor supply,0.803
+2033,R&D investment,Labor supply,0.77
+2034,R&D investment,Labor supply,0.725
+2035,R&D investment,Labor supply,0.673
+2036,R&D investment,Labor supply,0.617
+2037,R&D investment,Labor supply,0.56
+2038,R&D investment,Labor supply,0.502
+2039,R&D investment,Labor supply,0.445
+2040,R&D investment,Labor supply,0.391
+2041,R&D investment,Labor supply,0.339
+2042,R&D investment,Labor supply,0.289
+2043,R&D investment,Labor supply,0.243
+2044,R&D investment,Labor supply,0.2
+2045,R&D investment,Labor supply,0.159
+2046,R&D investment,Labor supply,0.121
+2047,R&D investment,Labor supply,0.087
+2048,R&D investment,Labor supply,0.054
+2049,R&D investment,Labor supply,0.024
+2050,R&D investment,Labor supply,-0.003
+2026,Government consumption,Labor supply,0.897
+2027,Government consumption,Labor supply,0.876
+2028,Government consumption,Labor supply,0.856
+2029,Government consumption,Labor supply,0.838
+2030,Government consumption,Labor supply,0.823
+2031,Government consumption,Labor supply,0.808
+2032,Government consumption,Labor supply,0.795
+2033,Government consumption,Labor supply,0.783
+2034,Government consumption,Labor supply,0.772
+2035,Government consumption,Labor supply,0.761
+2036,Government consumption,Labor supply,0.751
+2037,Government consumption,Labor supply,0.742
+2038,Government consumption,Labor supply,0.733
+2039,Government consumption,Labor supply,0.724
+2040,Government consumption,Labor supply,0.716
+2041,Government consumption,Labor supply,0.709
+2042,Government consumption,Labor supply,0.701
+2043,Government consumption,Labor supply,0.695
+2044,Government consumption,Labor supply,0.688
+2045,Government consumption,Labor supply,0.682
+2046,Government consumption,Labor supply,0.676
+2047,Government consumption,Labor supply,0.671
+2048,Government consumption,Labor supply,0.666
+2049,Government consumption,Labor supply,0.661
+2050,Government consumption,Labor supply,0.656
+2026,Infrastructure investment,Time in education,0.621
+2027,Infrastructure investment,Time in education,0.541
+2028,Infrastructure investment,Time in education,0.477
+2029,Infrastructure investment,Time in education,0.426
+2030,Infrastructure investment,Time in education,0.384
+2031,Infrastructure investment,Time in education,0.35
+2032,Infrastructure investment,Time in education,0.321
+2033,Infrastructure investment,Time in education,0.297
+2034,Infrastructure investment,Time in education,0.276
+2035,Infrastructure investment,Time in education,0.259
+2036,Infrastructure investment,Time in education,0.244
+2037,Infrastructure investment,Time in education,0.23
+2038,Infrastructure investment,Time in education,0.219
+2039,Infrastructure investment,Time in education,0.209
+2040,Infrastructure investment,Time in education,0.2
+2041,Infrastructure investment,Time in education,0.192
+2042,Infrastructure investment,Time in education,0.185
+2043,Infrastructure investment,Time in education,0.179
+2044,Infrastructure investment,Time in education,0.174
+2045,Infrastructure investment,Time in education,0.169
+2046,Infrastructure investment,Time in education,0.164
+2047,Infrastructure investment,Time in education,0.161
+2048,Infrastructure investment,Time in education,0.157
+2049,Infrastructure investment,Time in education,0.154
+2050,Infrastructure investment,Time in education,0.151
+2026,Human capital investment,Time in education,-1.186
+2027,Human capital investment,Time in education,-0.519
+2028,Human capital investment,Time in education,-0.039
+2029,Human capital investment,Time in education,0.295
+2030,Human capital investment,Time in education,0.52
+2031,Human capital investment,Time in education,0.662
+2032,Human capital investment,Time in education,0.743
+2033,Human capital investment,Time in education,0.779
+2034,Human capital investment,Time in education,0.781
+2035,Human capital investment,Time in education,0.758
+2036,Human capital investment,Time in education,0.718
+2037,Human capital investment,Time in education,0.665
+2038,Human capital investment,Time in education,0.603
+2039,Human capital investment,Time in education,0.536
+2040,Human capital investment,Time in education,0.467
+2041,Human capital investment,Time in education,0.396
+2042,Human capital investment,Time in education,0.326
+2043,Human capital investment,Time in education,0.257
+2044,Human capital investment,Time in education,0.19
+2045,Human capital investment,Time in education,0.126
+2046,Human capital investment,Time in education,0.065
+2047,Human capital investment,Time in education,0.007
+2048,Human capital investment,Time in education,-0.048
+2049,Human capital investment,Time in education,-0.1
+2050,Human capital investment,Time in education,-0.148
+2026,R&D investment,Time in education,0.604
+2027,R&D investment,Time in education,0.527
+2028,R&D investment,Time in education,0.4
+2029,R&D investment,Time in education,0.273
+2030,R&D investment,Time in education,0.164
+2031,R&D investment,Time in education,0.075
+2032,R&D investment,Time in education,0.004
+2033,R&D investment,Time in education,-0.052
+2034,R&D investment,Time in education,-0.096
+2035,R&D investment,Time in education,-0.131
+2036,R&D investment,Time in education,-0.159
+2037,R&D investment,Time in education,-0.182
+2038,R&D investment,Time in education,-0.2
+2039,R&D investment,Time in education,-0.215
+2040,R&D investment,Time in education,-0.228
+2041,R&D investment,Time in education,-0.238
+2042,R&D investment,Time in education,-0.247
+2043,R&D investment,Time in education,-0.254
+2044,R&D investment,Time in education,-0.26
+2045,R&D investment,Time in education,-0.265
+2046,R&D investment,Time in education,-0.27
+2047,R&D investment,Time in education,-0.274
+2048,R&D investment,Time in education,-0.277
+2049,R&D investment,Time in education,-0.28
+2050,R&D investment,Time in education,-0.282
+2026,Government consumption,Time in education,0.845
+2027,Government consumption,Time in education,0.817
+2028,Government consumption,Time in education,0.795
+2029,Government consumption,Time in education,0.775
+2030,Government consumption,Time in education,0.756
+2031,Government consumption,Time in education,0.739
+2032,Government consumption,Time in education,0.724
+2033,Government consumption,Time in education,0.71
+2034,Government consumption,Time in education,0.698
+2035,Government consumption,Time in education,0.687
+2036,Government consumption,Time in education,0.677
+2037,Government consumption,Time in education,0.668
+2038,Government consumption,Time in education,0.66
+2039,Government consumption,Time in education,0.653
+2040,Government consumption,Time in education,0.647
+2041,Government consumption,Time in education,0.642
+2042,Government consumption,Time in education,0.637
+2043,Government consumption,Time in education,0.632
+2044,Government consumption,Time in education,0.629
+2045,Government consumption,Time in education,0.625
+2046,Government consumption,Time in education,0.622
+2047,Government consumption,Time in education,0.62
+2048,Government consumption,Time in education,0.617
+2049,Government consumption,Time in education,0.615
+2050,Government consumption,Time in education,0.613
+2026,Infrastructure investment,Total factor productivity,0.189
+2027,Infrastructure investment,Total factor productivity,0.38
+2028,Infrastructure investment,Total factor productivity,0.549
+2029,Infrastructure investment,Total factor productivity,0.699
+2030,Infrastructure investment,Total factor productivity,0.835
+2031,Infrastructure investment,Total factor productivity,0.957
+2032,Infrastructure investment,Total factor productivity,1.069
+2033,Infrastructure investment,Total factor productivity,1.171
+2034,Infrastructure investment,Total factor productivity,1.265
+2035,Infrastructure investment,Total factor productivity,1.352
+2036,Infrastructure investment,Total factor productivity,1.432
+2037,Infrastructure investment,Total factor productivity,1.506
+2038,Infrastructure investment,Total factor productivity,1.575
+2039,Infrastructure investment,Total factor productivity,1.639
+2040,Infrastructure investment,Total factor productivity,1.698
+2041,Infrastructure investment,Total factor productivity,1.752
+2042,Infrastructure investment,Total factor productivity,1.803
+2043,Infrastructure investment,Total factor productivity,1.85
+2044,Infrastructure investment,Total factor productivity,1.893
+2045,Infrastructure investment,Total factor productivity,1.933
+2046,Infrastructure investment,Total factor productivity,1.97
+2047,Infrastructure investment,Total factor productivity,2.005
+2048,Infrastructure investment,Total factor productivity,2.036
+2049,Infrastructure investment,Total factor productivity,2.066
+2050,Infrastructure investment,Total factor productivity,2.093
+2026,Human capital investment,Total factor productivity,-0.008
+2027,Human capital investment,Total factor productivity,0.011
+2028,Human capital investment,Total factor productivity,0.086
+2029,Human capital investment,Total factor productivity,0.203
+2030,Human capital investment,Total factor productivity,0.348
+2031,Human capital investment,Total factor productivity,0.516
+2032,Human capital investment,Total factor productivity,0.699
+2033,Human capital investment,Total factor productivity,0.894
+2034,Human capital investment,Total factor productivity,1.095
+2035,Human capital investment,Total factor productivity,1.301
+2036,Human capital investment,Total factor productivity,1.509
+2037,Human capital investment,Total factor productivity,1.717
+2038,Human capital investment,Total factor productivity,1.924
+2039,Human capital investment,Total factor productivity,2.127
+2040,Human capital investment,Total factor productivity,2.327
+2041,Human capital investment,Total factor productivity,2.522
+2042,Human capital investment,Total factor productivity,2.712
+2043,Human capital investment,Total factor productivity,2.896
+2044,Human capital investment,Total factor productivity,3.073
+2045,Human capital investment,Total factor productivity,3.244
+2046,Human capital investment,Total factor productivity,3.408
+2047,Human capital investment,Total factor productivity,3.565
+2048,Human capital investment,Total factor productivity,3.715
+2049,Human capital investment,Total factor productivity,3.857
+2050,Human capital investment,Total factor productivity,3.993
+2026,R&D investment,Total factor productivity,-0.105
+2027,R&D investment,Total factor productivity,0.051
+2028,R&D investment,Total factor productivity,0.364
+2029,R&D investment,Total factor productivity,0.704
+2030,R&D investment,Total factor productivity,1.029
+2031,R&D investment,Total factor productivity,1.326
+2032,R&D investment,Total factor productivity,1.593
+2033,R&D investment,Total factor productivity,1.833
+2034,R&D investment,Total factor productivity,2.049
+2035,R&D investment,Total factor productivity,2.243
+2036,R&D investment,Total factor productivity,2.419
+2037,R&D investment,Total factor productivity,2.578
+2038,R&D investment,Total factor productivity,2.722
+2039,R&D investment,Total factor productivity,2.853
+2040,R&D investment,Total factor productivity,2.973
+2041,R&D investment,Total factor productivity,3.081
+2042,R&D investment,Total factor productivity,3.18
+2043,R&D investment,Total factor productivity,3.27
+2044,R&D investment,Total factor productivity,3.353
+2045,R&D investment,Total factor productivity,3.428
+2046,R&D investment,Total factor productivity,3.496
+2047,R&D investment,Total factor productivity,3.559
+2048,R&D investment,Total factor productivity,3.616
+2049,R&D investment,Total factor productivity,3.668
+2050,R&D investment,Total factor productivity,3.715
+2026,Government consumption,Total factor productivity,0.05
+2027,Government consumption,Total factor productivity,0.08
+2028,Government consumption,Total factor productivity,0.11
+2029,Government consumption,Total factor productivity,0.139
+2030,Government consumption,Total factor productivity,0.168
+2031,Government consumption,Total factor productivity,0.196
+2032,Government consumption,Total factor productivity,0.223
+2033,Government consumption,Total factor productivity,0.249
+2034,Government consumption,Total factor productivity,0.273
+2035,Government consumption,Total factor productivity,0.296
+2036,Government consumption,Total factor productivity,0.318
+2037,Government consumption,Total factor productivity,0.338
+2038,Government consumption,Total factor productivity,0.357
+2039,Government consumption,Total factor productivity,0.375
+2040,Government consumption,Total factor productivity,0.392
+2041,Government consumption,Total factor productivity,0.408
+2042,Government consumption,Total factor productivity,0.422
+2043,Government consumption,Total factor productivity,0.435
+2044,Government consumption,Total factor productivity,0.448
+2045,Government consumption,Total factor productivity,0.46
+2046,Government consumption,Total factor productivity,0.47
+2047,Government consumption,Total factor productivity,0.48
+2048,Government consumption,Total factor productivity,0.49
+2049,Government consumption,Total factor productivity,0.498
+2050,Government consumption,Total factor productivity,0.506
+2026,Infrastructure investment,Adopted technology,-0.007
+2027,Infrastructure investment,Adopted technology,-0.001
+2028,Infrastructure investment,Adopted technology,0.018
+2029,Infrastructure investment,Adopted technology,0.05
+2030,Infrastructure investment,Adopted technology,0.093
+2031,Infrastructure investment,Adopted technology,0.147
+2032,Infrastructure investment,Adopted technology,0.21
+2033,Infrastructure investment,Adopted technology,0.279
+2034,Infrastructure investment,Adopted technology,0.354
+2035,Infrastructure investment,Adopted technology,0.433
+2036,Infrastructure investment,Adopted technology,0.514
+2037,Infrastructure investment,Adopted technology,0.597
+2038,Infrastructure investment,Adopted technology,0.68
+2039,Infrastructure investment,Adopted technology,0.762
+2040,Infrastructure investment,Adopted technology,0.844
+2041,Infrastructure investment,Adopted technology,0.924
+2042,Infrastructure investment,Adopted technology,1.001
+2043,Infrastructure investment,Adopted technology,1.076
+2044,Infrastructure investment,Adopted technology,1.149
+2045,Infrastructure investment,Adopted technology,1.218
+2046,Infrastructure investment,Adopted technology,1.285
+2047,Infrastructure investment,Adopted technology,1.348
+2048,Infrastructure investment,Adopted technology,1.408
+2049,Infrastructure investment,Adopted technology,1.465
+2050,Infrastructure investment,Adopted technology,1.519
+2026,Human capital investment,Adopted technology,-0.012
+2027,Human capital investment,Adopted technology,-0.03
+2028,Human capital investment,Adopted technology,-0.053
+2029,Human capital investment,Adopted technology,-0.074
+2030,Human capital investment,Adopted technology,-0.087
+2031,Human capital investment,Adopted technology,-0.086
+2032,Human capital investment,Adopted technology,-0.066
+2033,Human capital investment,Adopted technology,-0.025
+2034,Human capital investment,Adopted technology,0.038
+2035,Human capital investment,Adopted technology,0.123
+2036,Human capital investment,Adopted technology,0.229
+2037,Human capital investment,Adopted technology,0.356
+2038,Human capital investment,Adopted technology,0.501
+2039,Human capital investment,Adopted technology,0.663
+2040,Human capital investment,Adopted technology,0.839
+2041,Human capital investment,Adopted technology,1.027
+2042,Human capital investment,Adopted technology,1.225
+2043,Human capital investment,Adopted technology,1.432
+2044,Human capital investment,Adopted technology,1.644
+2045,Human capital investment,Adopted technology,1.86
+2046,Human capital investment,Adopted technology,2.078
+2047,Human capital investment,Adopted technology,2.296
+2048,Human capital investment,Adopted technology,2.514
+2049,Human capital investment,Adopted technology,2.73
+2050,Human capital investment,Adopted technology,2.942
+2026,R&D investment,Adopted technology,-0.374
+2027,R&D investment,Adopted technology,0.198
+2028,R&D investment,Adopted technology,1.106
+2029,R&D investment,Adopted technology,2.07
+2030,R&D investment,Adopted technology,2.994
+2031,R&D investment,Adopted technology,3.847
+2032,R&D investment,Adopted technology,4.626
+2033,R&D investment,Adopted technology,5.335
+2034,R&D investment,Adopted technology,5.98
+2035,R&D investment,Adopted technology,6.568
+2036,R&D investment,Adopted technology,7.105
+2037,R&D investment,Adopted technology,7.595
+2038,R&D investment,Adopted technology,8.043
+2039,R&D investment,Adopted technology,8.454
+2040,R&D investment,Adopted technology,8.83
+2041,R&D investment,Adopted technology,9.174
+2042,R&D investment,Adopted technology,9.488
+2043,R&D investment,Adopted technology,9.777
+2044,R&D investment,Adopted technology,10.041
+2045,R&D investment,Adopted technology,10.282
+2046,R&D investment,Adopted technology,10.503
+2047,R&D investment,Adopted technology,10.705
+2048,R&D investment,Adopted technology,10.89
+2049,R&D investment,Adopted technology,11.059
+2050,R&D investment,Adopted technology,11.213
+2026,Government consumption,Adopted technology,0.008
+2027,Government consumption,Adopted technology,0.029
+2028,Government consumption,Adopted technology,0.058
+2029,Government consumption,Adopted technology,0.094
+2030,Government consumption,Adopted technology,0.134
+2031,Government consumption,Adopted technology,0.177
+2032,Government consumption,Adopted technology,0.222
+2033,Government consumption,Adopted technology,0.267
+2034,Government consumption,Adopted technology,0.313
+2035,Government consumption,Adopted technology,0.358
+2036,Government consumption,Adopted technology,0.402
+2037,Government consumption,Adopted technology,0.445
+2038,Government consumption,Adopted technology,0.487
+2039,Government consumption,Adopted technology,0.527
+2040,Government consumption,Adopted technology,0.565
+2041,Government consumption,Adopted technology,0.601
+2042,Government consumption,Adopted technology,0.636
+2043,Government consumption,Adopted technology,0.669
+2044,Government consumption,Adopted technology,0.7
+2045,Government consumption,Adopted technology,0.729
+2046,Government consumption,Adopted technology,0.756
+2047,Government consumption,Adopted technology,0.782
+2048,Government consumption,Adopted technology,0.806
+2049,Government consumption,Adopted technology,0.829
+2050,Government consumption,Adopted technology,0.85
