@@ -314,6 +314,7 @@ Kge*ZZ = (1-delta)*Kge(-1)+(1-eGE)*Ige;
 // MARKET CLEARING
 //********************************************************
 // Aggregate demand
+[name='yd']
 yd = C+Ip+Igi+Gc+Ige+Grd+SSt+(ZZRD(-1)/AAt(-1)-1)*St;
 // Aggregate production
 yt = vp*yd;
