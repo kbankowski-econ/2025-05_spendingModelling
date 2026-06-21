@@ -31,7 +31,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 # --- Styling (inlined; matches the other working-paper figures) ---------------
 STYLE = {
     "template": "simple_white",
-    "margins": {"t": 58, "b": 22, "l": 28, "r": 12},  # top room for 2-row legend + titles
+    "margins": {"t": 58, "b": 22, "l": 48, "r": 12},  # top room for legend; left room for unit labels
     "legend": {"orientation": "h", "xanchor": "center", "x": 0.5},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
@@ -48,25 +48,35 @@ SHOCKS = [
     ("Model_HumanCapital_exp_gc",  "Government consumption",     "#757575"),
 ]
 
-# (variable suffix, panel title); laid out row-major in a 3x4 grid. Titles are
-# clean and self-contained; the note states all panels are percent deviations.
+# (variable suffix, panel title); laid out row-major in a 4x3 grid, one thematic
+# block per row. Units differ by row (see ROW_UNITS): the demand and supply rows
+# are percent deviations; the nominal row is annualized percentage points; the
+# fiscal row is percentage points of GDP. The y-axis of the first panel in each
+# row carries the unit label, and the note spells the units out.
 PANELS = [
-    ("yd",  "Output"),
-    ("C",   "Household consumption"),
-    ("Ip",  "Private investment"),
-    ("Igi", "Public infrastructure"),
-    ("Gc",  "Public consumption"),
-    ("Ige", "Public human capital"),
-    ("Grd", "Public R&D spending"),
-    ("H",   "Human capital stock"),
-    ("Lab", "Labor supply"),
-    ("E",   "Time in education"),
-    ("TFP", "Total factor productivity"),
-    ("AAt", "Adopted technology"),
+    # Row 1 - demand components (percent deviation)
+    ("yd",        "Output"),
+    ("C",         "Consumption"),
+    ("Ip",        "Private investment"),
+    # Row 2 - production / supply (percent deviation)
+    ("Lab",       "Labor supply"),
+    ("H",         "Human capital stock"),
+    ("TFP",       "Total factor productivity"),
+    # Row 3 - nominal block (annualized percentage points)
+    ("PI_ann",    "Inflation"),
+    ("Rmp_ann",   "Policy rate"),
+    ("rreal_ann", "Real interest rate"),
+    # Row 4 - fiscal block (percentage points of GDP)
+    ("pdef_pp",   "Primary deficit"),
+    ("by_pp",     "Debt-to-GDP ratio"),
+    ("G_pp",      "Government spending"),
 ]
 
-NCOLS = 4
-NROWS = 3
+NCOLS = 3
+NROWS = 4
+
+# Unit label printed on the y-axis of each row's first panel (row-major order).
+ROW_UNITS = ["Percent", "Percent", "Ann. ppt", "Ppt of GDP"]
 PLOT_START_YEAR = 2026
 X_TICKS = [2026, 2038, 2050]
 # Show the first tick as full 4-digit year, abbreviate the rest to 2 digits.
@@ -75,8 +85,8 @@ OUTPUT_STEM = "standardShocksAE"
 
 # Both sizes come from chartTable.csv: render = original chart size (canvas,
 # controls fonts/quality); display = size shown in the paper (aspect preserved).
-WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (29.6, 19.0))
-DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (29.6, 19.0))
+WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (15.0, 16.0))
+DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (15.0, 16.0))
 
 # Font matching the paper: Palatino (the paper's mathpazo), sized so the chart
 # text renders at a fixed point size on the page (recomputed from render/display).
@@ -104,7 +114,7 @@ def main():
     fig = make_subplots(
         rows=NROWS, cols=NCOLS,
         subplot_titles=[title for _, title in PANELS],
-        horizontal_spacing=0.055, vertical_spacing=0.11,
+        horizontal_spacing=0.075, vertical_spacing=0.085,
     )
 
     for idx, (var, _title) in enumerate(PANELS):
@@ -126,6 +136,13 @@ def main():
     # Subplot titles: Palatino at the title point size.
     for annotation in fig["layout"]["annotations"]:
         annotation["font"] = dict(family=FONT_FAMILY, size=TITLE_FONT_PX)
+
+    # Per-row unit label on the first column's y-axis (units differ by block).
+    for r, unit in enumerate(ROW_UNITS, start=1):
+        fig.update_yaxes(
+            title_text=unit, title_font=dict(family=FONT_FAMILY, size=TITLE_FONT_PX),
+            title_standoff=3, row=r, col=1,
+        )
 
     fig.update_layout(
         template=STYLE["template"],

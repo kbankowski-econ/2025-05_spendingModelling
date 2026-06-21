@@ -73,6 +73,22 @@ end
 
 end
 
+% Derived series for the transmission panel (fig:standardShocks): units differ
+% by block, so these are built from levels + steady states rather than the plain
+% %-deviation transform above. Nominal block -> annualized percentage points
+% (gross-rate deviation x400); fiscal block -> percentage points of GDP. The
+% %-deviation columns above are left untouched, so the other figures are unaffected.
+for aModel = modelList
+    e = resultsProc.(aModel).endo;
+    s = resultsProc.(aModel).ss;
+    tempDatabank.(aModel+"___PI_ann")    = (e.PI  - s.PI ) * 400;             % inflation, ann. ppt
+    tempDatabank.(aModel+"___Rmp_ann")   = (e.Rmp - s.Rmp) * 400;             % policy rate, ann. ppt
+    tempDatabank.(aModel+"___rreal_ann") = (e.R ./ e.PI - s.R ./ s.PI) * 400; % ex-post real rate, ann. ppt
+    tempDatabank.(aModel+"___pdef_pp")   = (e.pdef - s.pdef);                 % primary deficit, ppt of GDP (pdef is already x100)
+    tempDatabank.(aModel+"___by_pp")     = (e.by  - s.by ) * 100;            % debt-to-GDP, ppt of GDP
+    tempDatabank.(aModel+"___G_pp")      = (e.G ./ e.yt - s.G ./ s.yt) * 100; % total gov spending, ppt of GDP
+end
+
 % Shift the whole databank onto a real calendar: the simulation is built on
 % a synthetic date axis starting at qq(0,4); we anchor period 25Q4 to 2050Q1
 % so that calendar dates in the exported CSV match the shock horizon.
