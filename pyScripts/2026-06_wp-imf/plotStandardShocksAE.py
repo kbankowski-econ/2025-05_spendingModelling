@@ -31,7 +31,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 # --- Styling (inlined; matches the other working-paper figures) ---------------
 STYLE = {
     "template": "simple_white",
-    "margins": {"t": 58, "b": 22, "l": 28, "r": 12},  # top room for 2-row legend + titles
+    "margins": {"t": 82, "b": 22, "l": 28, "r": 12},  # top room for 2-row legend + titles
     "legend": {"orientation": "h", "xanchor": "center", "x": 0.5},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
@@ -139,7 +139,7 @@ def main():
             xanchor=STYLE["legend"]["xanchor"],
             x=STYLE["legend"]["x"],
             font=dict(size=LEGEND_FONT_PX),
-            tracegroupgap=2,  # tighten the gap between (wrapped) legend rows
+            tracegroupgap=0,  # tighten the gap between (wrapped) legend rows
         ),
     )
 
