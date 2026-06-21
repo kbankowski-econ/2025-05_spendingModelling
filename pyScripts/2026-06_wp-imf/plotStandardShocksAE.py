@@ -156,7 +156,6 @@ def main():
             xanchor=STYLE["legend"]["xanchor"],
             x=STYLE["legend"]["x"],
             font=dict(size=LEGEND_FONT_PX),
-            tracegroupgap=2,  # tighten the gap between (wrapped) legend rows
         ),
     )
 
