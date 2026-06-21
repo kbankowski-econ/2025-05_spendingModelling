@@ -36,8 +36,11 @@ Trans           % Transfer
 lnyd            % Log of Output
 G               % Total government spending (Gc+Igi+Ige+Grd)
 pdef            % Primary Deficit
+rreal           % Ex-post real interest rate (R/PI)
+Trans_ys        % Transfers-to-GDP ratio
+dserv           % Debt service (interest)-to-GDP ratio
 Igi_ys           % Public Investment as percent of GDP
-by_ann          % Debt to GDP 
+by_ann          % Debt to GDP
 lnPI            % Log of Prince index
 H               % Human capital
 Kge             % Public Human-related Capital Stock (HCS)
@@ -337,6 +340,9 @@ eGRD = eGRD_ss-epsi_effcgrd;
 lnyd = log(yd)*100;
 G = Gc+Igi+Ige+Grd;                                        // total government spending (sum of the four instruments)
 pdef = (Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/yt*100;
+rreal = R/PI;                                              // ex-post real interest rate
+Trans_ys = Trans/yt;                                       // transfers as a share of GDP
+dserv = (R-1)*Dt/yt;                                       // debt service (interest) as a share of GDP
 Igi_ys = Igi/ydss*100;
 by_ann = by/4*100;
 lnPI = log(PI)*100;
