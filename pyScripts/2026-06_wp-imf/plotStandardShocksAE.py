@@ -31,7 +31,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 # --- Styling (inlined; matches the other working-paper figures) ---------------
 STYLE = {
     "template": "simple_white",
-    "margins": {"t": 70, "b": 22, "l": 54, "r": 12},  # top room for legend + gap to plots; left room for tick labels + block names
+    "margins": {"t": 86, "b": 22, "l": 54, "r": 12},  # top room for legend + gap to plots; left room for tick labels + block names
     "legend": {"orientation": "h", "xanchor": "center", "x": 0.5},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
