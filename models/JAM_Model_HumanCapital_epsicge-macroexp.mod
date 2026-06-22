@@ -266,7 +266,6 @@ Kp(-1)/N = alppha/(1-alppha)*W_real/rk;
 // Production
 [name='yt']
 yt = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*(Kp(-1)^alppha)*(N^(1-alppha))-Bigtheta;
-TFP = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*H(-1)^(1-alppha);
 // Technology creation (R&D enters in efficiency-adjusted form via Grdeff)
 ln(ZZRD/STEADY_STATE(ZZRD)) = rho_ZZRD*ln(ZZRD(-1)/STEADY_STATE(ZZRD))+alphaRD*ln(Grdeff(-1)/STEADY_STATE(Grdeff))+alphaHA*ln(H(-1)/STEADY_STATE(H))+log(shockchit);
 // Effective R&D = efficiency wedge times R&D spending
@@ -341,6 +340,7 @@ eGRD = eGRD_ss-epsi_effcgrd;
 // VARIABLES OF INTEREST
 //********************************************************
 lnyd = log(yd)*100;
+TFP = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*H(-1)^(1-alppha);
 G = Gc+Igi+Ige+Grd;                                        // total government spending (sum of the four instruments)
 pdef = (Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/yt*100;
 rreal = R/PI;                                              // ex-post real interest rate
