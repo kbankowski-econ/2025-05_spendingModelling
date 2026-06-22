@@ -31,7 +31,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 # --- Styling (inlined; matches the other working-paper figures) ---------------
 STYLE = {
     "template": "simple_white",
-    "margins": {"t": 58, "b": 22, "l": 30, "r": 12},  # top room for legend; left room for tick labels
+    "margins": {"t": 70, "b": 22, "l": 54, "r": 12},  # top room for legend + gap to plots; left room for tick labels + block names
     "legend": {"orientation": "h", "xanchor": "center", "x": 0.5},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
@@ -87,6 +87,9 @@ PANELS = [
 NCOLS = 4
 NROWS = 5
 
+# Block name printed vertically on the left of each row (top to bottom).
+BLOCKS = ["Demand", "Supply", "Labor", "Nominal", "Fiscal"]
+
 PLOT_START_YEAR = 2026
 X_TICKS = [2026, 2038, 2050]
 # Show the first tick as full 4-digit year, abbreviate the rest to 2 digits.
@@ -107,6 +110,8 @@ LEGEND_FONT_PT = 8
 LEGEND_FONT_PX = font_px_for_pt(LEGEND_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
 TITLE_FONT_PT = 8    # subplot titles
 TITLE_FONT_PX = font_px_for_pt(TITLE_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
+BLOCK_FONT_PT = 10   # left-side block names
+BLOCK_FONT_PX = font_px_for_pt(BLOCK_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
 
 
 def load_data():
@@ -151,6 +156,20 @@ def main():
     # Subplot titles: Palatino at the title point size.
     for annotation in fig["layout"]["annotations"]:
         annotation["font"] = dict(family=FONT_FAMILY, size=TITLE_FONT_PX)
+
+    # Block name down the left of each row: vertical, uppercase, on a grey chip,
+    # centered on the row band and set close to the charts.
+    for r, block in enumerate(BLOCKS, start=1):
+        idx = (r - 1) * NCOLS + 1
+        axis_name = "yaxis" + ("" if idx == 1 else str(idx))
+        y0, y1 = fig.layout[axis_name].domain
+        fig.add_annotation(
+            text=block.upper(), textangle=-90,
+            xref="paper", yref="paper", x=0, y=(y0 + y1) / 2,
+            xshift=-40, showarrow=False, xanchor="center", yanchor="middle",
+            font=dict(family=FONT_FAMILY, size=BLOCK_FONT_PX, color="#424242"),
+            bgcolor="#E6E6E6", borderpad=2,
+        )
 
     fig.update_layout(
         template=STYLE["template"],
