@@ -65,21 +65,27 @@ PANELS = [
     ("Kg",        "Public infrastructure (K<sup>GI</sup><sub>t</sub>)"),
     ("Kp",        "Private capital (K<sub>t</sub>)"),
     ("N",         "Effective labor (N<sub>t</sub>)"),
-    # Row 3 - nominal block (annualized percentage points)
+    # Row 3 - labor decomposition (percent deviation): effective labor N = H * L.
+    # Only two panels; the rest of the row is intentionally left blank (None).
+    ("Lab",       "Labor supply (L<sub>t</sub>)"),
+    ("H",         "Human capital stock (H<sub>t</sub>)"),
+    None,
+    None,
+    # Row 4 - nominal block (annualized percentage points)
     ("PI_ann",    "Inflation (Π<sub>t</sub>)"),
     ("Rmp_ann",   "Policy rate (R<sup>mp</sup><sub>t</sub>)"),
     ("R_ann",     "Nominal bond rate (R<sub>t</sub>)"),
     ("rreal_ann", "Real interest rate (R<sub>t</sub>/Π<sub>t</sub>)"),
-    # Row 4 - fiscal block (percentage points of GDP); primary deficit and debt
-    # service are composite budget flows with no single paper symbol (see eq:govbudget).
+    # Row 5 - fiscal block (percentage points of GDP); primary deficit is a
+    # composite budget flow with no single paper symbol (see eq:govbudget).
     ("pdef_pp",   "Primary deficit"),
     ("Trans_pp",  "Transfers (T<sub>t</sub>)"),
-    ("dserv_pp",  "Debt service"),
     ("by_pp",     "Debt-to-GDP ratio (d<sub>t</sub>)"),
+    None,
 ]
 
 NCOLS = 4
-NROWS = 4
+NROWS = 5
 
 PLOT_START_YEAR = 2026
 X_TICKS = [2026, 2038, 2050]
@@ -89,8 +95,8 @@ OUTPUT_STEM = "standardShocksAE"
 
 # Both sizes come from chartTable.csv: render = original chart size (canvas,
 # controls fonts/quality); display = size shown in the paper (aspect preserved).
-WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (15.0, 15.0))
-DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (15.0, 15.0))
+WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (15.0, 18.75))
+DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (15.0, 18.75))
 
 # Font matching the paper: Palatino (the paper's mathpazo), sized so the chart
 # text renders at a fixed point size on the page (recomputed from render/display).
@@ -117,12 +123,17 @@ def main():
 
     fig = make_subplots(
         rows=NROWS, cols=NCOLS,
-        subplot_titles=[title for _, title in PANELS],
-        horizontal_spacing=0.06, vertical_spacing=0.085,
+        subplot_titles=[(panel[1] if panel else "") for panel in PANELS],
+        horizontal_spacing=0.06, vertical_spacing=0.075,
     )
 
-    for idx, (var, _title) in enumerate(PANELS):
+    for idx, panel in enumerate(PANELS):
         row, col = idx // NCOLS + 1, idx % NCOLS + 1
+        if panel is None:  # intentionally blank slot — hide its empty axes
+            fig.update_xaxes(visible=False, row=row, col=col)
+            fig.update_yaxes(visible=False, row=row, col=col)
+            continue
+        var = panel[0]
         for model, label, color in SHOCKS:
             colname = f"{model}___{var}"
             if colname not in df.columns:
@@ -181,7 +192,7 @@ def main():
 
     # Tidy long-format export: one row per (year, shock, variable).
     records = []
-    for var, title in PANELS:
+    for var, title in (panel for panel in PANELS if panel is not None):
         for model, label, _ in SHOCKS:
             colname = f"{model}___{var}"
             if colname not in df.columns:
