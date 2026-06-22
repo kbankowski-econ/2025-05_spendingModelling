@@ -51,8 +51,8 @@ SHOCKS = [
 # (variable suffix, panel title); laid out row-major in a 4x4 grid, one thematic
 # block per row. Units differ by row: the demand and supply rows are percent
 # deviations; the nominal row is annualized percentage points; the fiscal row is
-# percentage points of GDP. There are no y-axis unit labels by design -- the
-# figure note spells out how each block's deviations are calculated.
+# percentage points of steady-state GDP. There are no y-axis unit labels by
+# design -- the figure note spells out how each block's deviations are calculated.
 PANELS = [
     # Row 1 - demand components (percent deviation)
     ("yd",        "Output (Y<sup>d</sup><sub>t</sub>)"),
@@ -76,11 +76,13 @@ PANELS = [
     ("Rmp_ann",   "Policy rate (R<sup>mp</sup><sub>t</sub>)"),
     ("R_ann",     "Nominal bond rate (R<sub>t</sub>)"),
     ("rreal_ann", "Real interest rate (R<sub>t</sub>/Π<sub>t</sub>)"),
-    # Row 5 - fiscal block (percentage points of GDP); primary deficit is a
-    # composite budget flow with no single paper symbol (see eq:govbudget).
-    ("pdef_pp",   "Primary deficit"),
-    ("Trans_pp",  "Transfers (T<sub>t</sub>)"),
-    ("by_pp",     "Debt-to-GDP ratio (d<sub>t</sub>)"),
+    # Row 5 - fiscal block (percentage points of steady-state GDP); primary
+    # deficit is a composite budget flow with no single paper symbol (see
+    # eq:govbudget). Debt service (dserv_yss) is computed and exported but not
+    # plotted here.
+    ("pdef_yss",  "Primary deficit"),
+    ("Trans_yss", "Transfers (T<sub>t</sub>)"),
+    ("by_yss",    "Debt-to-GDP ratio (d<sub>t</sub>)"),
     None,
 ]
 
