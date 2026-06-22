@@ -26,7 +26,7 @@ Deltacost=0;  % Shutting down the feedback of debt on rate
 rho_Gc=0.9;
 rho_Igi=0.9;
 gamma_d_trans=0.5;
-rho_trans=0;
+rho_trans=0.9;
 
 deltaH=0.025;
 muy=0.5;

@@ -347,7 +347,7 @@
 {"statementName": "param_init", "name": "rho_Gc", "value": "0.9"}, 
 {"statementName": "param_init", "name": "rho_Igi", "value": "0.9"}, 
 {"statementName": "param_init", "name": "gamma_d_trans", "value": "0.5"}, 
-{"statementName": "param_init", "name": "rho_trans", "value": "0"}, 
+{"statementName": "param_init", "name": "rho_trans", "value": "0.9"}, 
 {"statementName": "param_init", "name": "deltaH", "value": "0.025"}, 
 {"statementName": "param_init", "name": "muy", "value": "0.5"}, 
 {"statementName": "param_init", "name": "rho_Ige", "value": "0.9"}, 
