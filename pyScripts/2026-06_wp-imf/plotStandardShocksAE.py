@@ -55,25 +55,27 @@ SHOCKS = [
 # row carries the unit label, and the note spells the units out.
 PANELS = [
     # Row 1 - demand components (percent deviation)
-    ("yd",        "Output"),
-    ("C",         "Consumption"),
-    ("Ip",        "Private investment"),
-    ("G",         "Government spending"),
-    # Row 2 - production / supply (percent deviation)
-    ("Lab",       "Labor supply"),
-    ("H",         "Human capital stock"),
-    ("TFP",       "Total factor productivity"),
-    ("Kp",        "Private capital stock"),
+    ("yd",        "Output (Y<sup>d</sup><sub>t</sub>)"),
+    ("C",         "Consumption (C<sub>t</sub>)"),
+    ("Ip",        "Private investment (I<sub>t</sub>)"),
+    ("G",         "Government spending (G<sub>t</sub>)"),
+    # Row 2 - production factors (percent deviation); the inputs to the output
+    # equation Y = A^(vartheta-1) * Kg^aG * Kp^a * N^(1-a).
+    ("AAt",       "Adopted technology (A<sub>t</sub>)"),
+    ("Kg",        "Public infrastructure (K<sup>GI</sup><sub>t</sub>)"),
+    ("Kp",        "Private capital (K<sub>t</sub>)"),
+    ("N",         "Effective labor (N<sub>t</sub>)"),
     # Row 3 - nominal block (annualized percentage points)
-    ("PI_ann",    "Inflation"),
-    ("Rmp_ann",   "Policy rate"),
-    ("R_ann",     "Nominal bond rate"),
-    ("rreal_ann", "Real interest rate"),
-    # Row 4 - fiscal block (percentage points of GDP)
+    ("PI_ann",    "Inflation (Π<sub>t</sub>)"),
+    ("Rmp_ann",   "Policy rate (R<sup>mp</sup><sub>t</sub>)"),
+    ("R_ann",     "Nominal bond rate (R<sub>t</sub>)"),
+    ("rreal_ann", "Real interest rate (R<sub>t</sub>/Π<sub>t</sub>)"),
+    # Row 4 - fiscal block (percentage points of GDP); primary deficit and debt
+    # service are composite budget flows with no single paper symbol (see eq:govbudget).
     ("pdef_pp",   "Primary deficit"),
-    ("Trans_pp",  "Transfers"),
+    ("Trans_pp",  "Transfers (T<sub>t</sub>)"),
     ("dserv_pp",  "Debt service"),
-    ("by_pp",     "Debt-to-GDP ratio"),
+    ("by_pp",     "Debt-to-GDP ratio (d<sub>t</sub>)"),
 ]
 
 NCOLS = 4

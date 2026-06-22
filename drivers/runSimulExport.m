@@ -72,7 +72,7 @@ tempDatabank = struct();
 
 % Percent-deviation block consumed by every figure (the deviation formula now
 % lives in varDict.diffTransf; this just selects which variables to export).
-varList = ["yd", "C", "Ip", "Kp", "Igi", "Gc", "Ige", "Grd", "G", "H", "Lab", "E", "eGI", "eGE", "TFP", "ZZRD", "AAt"]
+varList = ["yd", "C", "Ip", "Kp", "Kg", "Igi", "Gc", "Ige", "Grd", "G", "H", "Lab", "N", "E", "eGI", "eGE", "TFP", "ZZRD", "AAt"]
 
 for aVar = varList
 

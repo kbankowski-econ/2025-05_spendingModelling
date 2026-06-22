@@ -1,1204 +1,1204 @@
 year,shock,variable,pct_dev
-2026,Infrastructure investment,Output,0.498
-2027,Infrastructure investment,Output,0.714
-2028,Infrastructure investment,Output,0.909
-2029,Infrastructure investment,Output,1.084
-2030,Infrastructure investment,Output,1.245
-2031,Infrastructure investment,Output,1.391
-2032,Infrastructure investment,Output,1.526
-2033,Infrastructure investment,Output,1.651
-2034,Infrastructure investment,Output,1.765
-2035,Infrastructure investment,Output,1.871
-2036,Infrastructure investment,Output,1.97
-2037,Infrastructure investment,Output,2.061
-2038,Infrastructure investment,Output,2.145
-2039,Infrastructure investment,Output,2.223
-2040,Infrastructure investment,Output,2.295
-2041,Infrastructure investment,Output,2.362
-2042,Infrastructure investment,Output,2.424
-2043,Infrastructure investment,Output,2.482
-2044,Infrastructure investment,Output,2.535
-2045,Infrastructure investment,Output,2.584
-2046,Infrastructure investment,Output,2.63
-2047,Infrastructure investment,Output,2.672
-2048,Infrastructure investment,Output,2.71
-2049,Infrastructure investment,Output,2.746
-2050,Infrastructure investment,Output,2.78
-2026,Human capital investment,Output,0.646
-2027,Human capital investment,Output,0.507
-2028,Human capital investment,Output,0.454
-2029,Human capital investment,Output,0.471
-2030,Human capital investment,Output,0.543
-2031,Human capital investment,Output,0.657
-2032,Human capital investment,Output,0.802
-2033,Human capital investment,Output,0.971
-2034,Human capital investment,Output,1.158
-2035,Human capital investment,Output,1.357
-2036,Human capital investment,Output,1.564
-2037,Human capital investment,Output,1.776
-2038,Human capital investment,Output,1.991
-2039,Human capital investment,Output,2.206
-2040,Human capital investment,Output,2.419
-2041,Human capital investment,Output,2.629
-2042,Human capital investment,Output,2.834
-2043,Human capital investment,Output,3.035
-2044,Human capital investment,Output,3.229
-2045,Human capital investment,Output,3.418
-2046,Human capital investment,Output,3.599
-2047,Human capital investment,Output,3.773
-2048,Human capital investment,Output,3.94
-2049,Human capital investment,Output,4.1
-2050,Human capital investment,Output,4.252
-2026,R&D investment,Output,0.237
-2027,R&D investment,Output,0.359
-2028,R&D investment,Output,0.644
-2029,R&D investment,Output,0.97
-2030,R&D investment,Output,1.292
-2031,R&D investment,Output,1.595
-2032,R&D investment,Output,1.874
-2033,R&D investment,Output,2.129
-2034,R&D investment,Output,2.364
-2035,R&D investment,Output,2.578
-2036,R&D investment,Output,2.774
-2037,R&D investment,Output,2.954
-2038,R&D investment,Output,3.119
-2039,R&D investment,Output,3.269
-2040,R&D investment,Output,3.408
-2041,R&D investment,Output,3.534
-2042,R&D investment,Output,3.65
-2043,R&D investment,Output,3.756
-2044,R&D investment,Output,3.853
-2045,R&D investment,Output,3.942
-2046,R&D investment,Output,4.024
-2047,R&D investment,Output,4.098
-2048,R&D investment,Output,4.166
-2049,R&D investment,Output,4.228
-2050,R&D investment,Output,4.285
-2026,Government consumption,Output,0.598
-2027,Government consumption,Output,0.651
-2028,Government consumption,Output,0.699
-2029,Government consumption,Output,0.744
-2030,Government consumption,Output,0.786
-2031,Government consumption,Output,0.827
-2032,Government consumption,Output,0.865
-2033,Government consumption,Output,0.901
-2034,Government consumption,Output,0.934
-2035,Government consumption,Output,0.966
-2036,Government consumption,Output,0.995
-2037,Government consumption,Output,1.022
-2038,Government consumption,Output,1.048
-2039,Government consumption,Output,1.072
-2040,Government consumption,Output,1.094
-2041,Government consumption,Output,1.115
-2042,Government consumption,Output,1.134
-2043,Government consumption,Output,1.151
-2044,Government consumption,Output,1.168
-2045,Government consumption,Output,1.183
-2046,Government consumption,Output,1.197
-2047,Government consumption,Output,1.21
-2048,Government consumption,Output,1.223
-2049,Government consumption,Output,1.234
-2050,Government consumption,Output,1.244
-2026,Infrastructure investment,Consumption,-0.723
-2027,Infrastructure investment,Consumption,-0.586
-2028,Infrastructure investment,Consumption,-0.43
-2029,Infrastructure investment,Consumption,-0.263
-2030,Infrastructure investment,Consumption,-0.093
-2031,Infrastructure investment,Consumption,0.078
-2032,Infrastructure investment,Consumption,0.247
-2033,Infrastructure investment,Consumption,0.411
-2034,Infrastructure investment,Consumption,0.568
-2035,Infrastructure investment,Consumption,0.72
-2036,Infrastructure investment,Consumption,0.864
-2037,Infrastructure investment,Consumption,1.0
-2038,Infrastructure investment,Consumption,1.129
-2039,Infrastructure investment,Consumption,1.251
-2040,Infrastructure investment,Consumption,1.365
-2041,Infrastructure investment,Consumption,1.473
-2042,Infrastructure investment,Consumption,1.574
-2043,Infrastructure investment,Consumption,1.668
-2044,Infrastructure investment,Consumption,1.756
-2045,Infrastructure investment,Consumption,1.838
-2046,Infrastructure investment,Consumption,1.914
-2047,Infrastructure investment,Consumption,1.986
-2048,Infrastructure investment,Consumption,2.052
-2049,Infrastructure investment,Consumption,2.114
-2050,Infrastructure investment,Consumption,2.171
-2026,Human capital investment,Consumption,-0.833
-2027,Human capital investment,Consumption,-0.743
-2028,Human capital investment,Consumption,-0.653
-2029,Human capital investment,Consumption,-0.55
-2030,Human capital investment,Consumption,-0.427
-2031,Human capital investment,Consumption,-0.281
-2032,Human capital investment,Consumption,-0.112
-2033,Human capital investment,Consumption,0.08
-2034,Human capital investment,Consumption,0.291
-2035,Human capital investment,Consumption,0.52
-2036,Human capital investment,Consumption,0.763
-2037,Human capital investment,Consumption,1.018
-2038,Human capital investment,Consumption,1.282
-2039,Human capital investment,Consumption,1.551
-2040,Human capital investment,Consumption,1.824
-2041,Human capital investment,Consumption,2.099
-2042,Human capital investment,Consumption,2.373
-2043,Human capital investment,Consumption,2.645
-2044,Human capital investment,Consumption,2.914
-2045,Human capital investment,Consumption,3.178
-2046,Human capital investment,Consumption,3.436
-2047,Human capital investment,Consumption,3.687
-2048,Human capital investment,Consumption,3.931
-2049,Human capital investment,Consumption,4.167
-2050,Human capital investment,Consumption,4.395
-2026,R&D investment,Consumption,-0.808
-2027,R&D investment,Consumption,-0.719
-2028,R&D investment,Consumption,-0.568
-2029,R&D investment,Consumption,-0.355
-2030,R&D investment,Consumption,-0.094
-2031,R&D investment,Consumption,0.199
-2032,R&D investment,Consumption,0.509
-2033,R&D investment,Consumption,0.826
-2034,R&D investment,Consumption,1.141
-2035,R&D investment,Consumption,1.45
-2036,R&D investment,Consumption,1.748
-2037,R&D investment,Consumption,2.032
-2038,R&D investment,Consumption,2.302
-2039,R&D investment,Consumption,2.555
-2040,R&D investment,Consumption,2.793
-2041,R&D investment,Consumption,3.016
-2042,R&D investment,Consumption,3.222
-2043,R&D investment,Consumption,3.414
-2044,R&D investment,Consumption,3.592
-2045,R&D investment,Consumption,3.756
-2046,R&D investment,Consumption,3.907
-2047,R&D investment,Consumption,4.047
-2048,R&D investment,Consumption,4.175
-2049,R&D investment,Consumption,4.293
-2050,R&D investment,Consumption,4.402
-2026,Government consumption,Consumption,-1.302
-2027,Government consumption,Consumption,-1.205
-2028,Government consumption,Consumption,-1.117
-2029,Government consumption,Consumption,-1.037
-2030,Government consumption,Consumption,-0.963
-2031,Government consumption,Consumption,-0.894
-2032,Government consumption,Consumption,-0.83
-2033,Government consumption,Consumption,-0.77
-2034,Government consumption,Consumption,-0.714
-2035,Government consumption,Consumption,-0.662
-2036,Government consumption,Consumption,-0.613
-2037,Government consumption,Consumption,-0.567
-2038,Government consumption,Consumption,-0.524
-2039,Government consumption,Consumption,-0.484
-2040,Government consumption,Consumption,-0.447
-2041,Government consumption,Consumption,-0.412
-2042,Government consumption,Consumption,-0.379
-2043,Government consumption,Consumption,-0.348
-2044,Government consumption,Consumption,-0.32
-2045,Government consumption,Consumption,-0.293
-2046,Government consumption,Consumption,-0.269
-2047,Government consumption,Consumption,-0.246
-2048,Government consumption,Consumption,-0.224
-2049,Government consumption,Consumption,-0.205
-2050,Government consumption,Consumption,-0.186
-2026,Infrastructure investment,Private investment,-0.717
-2027,Infrastructure investment,Private investment,-0.072
-2028,Infrastructure investment,Private investment,0.425
-2029,Infrastructure investment,Private investment,0.815
-2030,Infrastructure investment,Private investment,1.126
-2031,Infrastructure investment,Private investment,1.377
-2032,Infrastructure investment,Private investment,1.584
-2033,Infrastructure investment,Private investment,1.757
-2034,Infrastructure investment,Private investment,1.904
-2035,Infrastructure investment,Private investment,2.03
-2036,Infrastructure investment,Private investment,2.14
-2037,Infrastructure investment,Private investment,2.236
-2038,Infrastructure investment,Private investment,2.321
-2039,Infrastructure investment,Private investment,2.397
-2040,Infrastructure investment,Private investment,2.465
-2041,Infrastructure investment,Private investment,2.526
-2042,Infrastructure investment,Private investment,2.581
-2043,Infrastructure investment,Private investment,2.632
-2044,Infrastructure investment,Private investment,2.677
-2045,Infrastructure investment,Private investment,2.719
-2046,Infrastructure investment,Private investment,2.756
-2047,Infrastructure investment,Private investment,2.791
-2048,Infrastructure investment,Private investment,2.822
-2049,Infrastructure investment,Private investment,2.851
-2050,Infrastructure investment,Private investment,2.877
-2026,Human capital investment,Private investment,0.244
-2027,Human capital investment,Private investment,-0.56
-2028,Human capital investment,Private investment,-0.977
-2029,Human capital investment,Private investment,-1.119
-2030,Human capital investment,Private investment,-1.079
-2031,Human capital investment,Private investment,-0.916
-2032,Human capital investment,Private investment,-0.674
-2033,Human capital investment,Private investment,-0.38
-2034,Human capital investment,Private investment,-0.057
-2035,Human capital investment,Private investment,0.281
-2036,Human capital investment,Private investment,0.625
-2037,Human capital investment,Private investment,0.967
-2038,Human capital investment,Private investment,1.301
-2039,Human capital investment,Private investment,1.627
-2040,Human capital investment,Private investment,1.94
-2041,Human capital investment,Private investment,2.24
-2042,Human capital investment,Private investment,2.526
-2043,Human capital investment,Private investment,2.797
-2044,Human capital investment,Private investment,3.055
-2045,Human capital investment,Private investment,3.298
-2046,Human capital investment,Private investment,3.528
-2047,Human capital investment,Private investment,3.744
-2048,Human capital investment,Private investment,3.947
-2049,Human capital investment,Private investment,4.137
-2050,Human capital investment,Private investment,4.315
-2026,R&D investment,Private investment,-1.181
-2027,R&D investment,Private investment,-2.853
-2028,R&D investment,Private investment,-2.461
-2029,R&D investment,Private investment,-1.501
-2030,R&D investment,Private investment,-0.5
-2031,R&D investment,Private investment,0.383
-2032,R&D investment,Private investment,1.118
-2033,R&D investment,Private investment,1.716
-2034,R&D investment,Private investment,2.2
-2035,R&D investment,Private investment,2.594
-2036,R&D investment,Private investment,2.916
-2037,R&D investment,Private investment,3.182
-2038,R&D investment,Private investment,3.402
-2039,R&D investment,Private investment,3.587
-2040,R&D investment,Private investment,3.744
-2041,R&D investment,Private investment,3.877
-2042,R&D investment,Private investment,3.992
-2043,R&D investment,Private investment,4.09
-2044,R&D investment,Private investment,4.176
-2045,R&D investment,Private investment,4.251
-2046,R&D investment,Private investment,4.316
-2047,R&D investment,Private investment,4.373
-2048,R&D investment,Private investment,4.424
-2049,R&D investment,Private investment,4.469
-2050,R&D investment,Private investment,4.509
-2026,Government consumption,Private investment,0.936
-2027,Government consumption,Private investment,0.925
-2028,Government consumption,Private investment,0.918
-2029,Government consumption,Private investment,0.922
-2030,Government consumption,Private investment,0.934
-2031,Government consumption,Private investment,0.952
-2032,Government consumption,Private investment,0.974
-2033,Government consumption,Private investment,0.997
-2034,Government consumption,Private investment,1.02
-2035,Government consumption,Private investment,1.044
-2036,Government consumption,Private investment,1.067
-2037,Government consumption,Private investment,1.089
-2038,Government consumption,Private investment,1.11
-2039,Government consumption,Private investment,1.13
-2040,Government consumption,Private investment,1.148
-2041,Government consumption,Private investment,1.165
-2042,Government consumption,Private investment,1.181
-2043,Government consumption,Private investment,1.196
-2044,Government consumption,Private investment,1.21
-2045,Government consumption,Private investment,1.222
-2046,Government consumption,Private investment,1.234
-2047,Government consumption,Private investment,1.244
-2048,Government consumption,Private investment,1.254
-2049,Government consumption,Private investment,1.263
-2050,Government consumption,Private investment,1.271
-2026,Infrastructure investment,Government spending,4.338
-2027,Infrastructure investment,Government spending,4.338
-2028,Infrastructure investment,Government spending,4.338
-2029,Infrastructure investment,Government spending,4.338
-2030,Infrastructure investment,Government spending,4.338
-2031,Infrastructure investment,Government spending,4.338
-2032,Infrastructure investment,Government spending,4.338
-2033,Infrastructure investment,Government spending,4.338
-2034,Infrastructure investment,Government spending,4.338
-2035,Infrastructure investment,Government spending,4.338
-2036,Infrastructure investment,Government spending,4.338
-2037,Infrastructure investment,Government spending,4.338
-2038,Infrastructure investment,Government spending,4.338
-2039,Infrastructure investment,Government spending,4.338
-2040,Infrastructure investment,Government spending,4.338
-2041,Infrastructure investment,Government spending,4.338
-2042,Infrastructure investment,Government spending,4.338
-2043,Infrastructure investment,Government spending,4.338
-2044,Infrastructure investment,Government spending,4.338
-2045,Infrastructure investment,Government spending,4.338
-2046,Infrastructure investment,Government spending,4.338
-2047,Infrastructure investment,Government spending,4.338
-2048,Infrastructure investment,Government spending,4.338
-2049,Infrastructure investment,Government spending,4.338
-2050,Infrastructure investment,Government spending,4.338
-2026,Human capital investment,Government spending,4.338
-2027,Human capital investment,Government spending,4.338
-2028,Human capital investment,Government spending,4.338
-2029,Human capital investment,Government spending,4.338
-2030,Human capital investment,Government spending,4.338
-2031,Human capital investment,Government spending,4.338
-2032,Human capital investment,Government spending,4.338
-2033,Human capital investment,Government spending,4.338
-2034,Human capital investment,Government spending,4.338
-2035,Human capital investment,Government spending,4.338
-2036,Human capital investment,Government spending,4.338
-2037,Human capital investment,Government spending,4.338
-2038,Human capital investment,Government spending,4.338
-2039,Human capital investment,Government spending,4.338
-2040,Human capital investment,Government spending,4.338
-2041,Human capital investment,Government spending,4.338
-2042,Human capital investment,Government spending,4.338
-2043,Human capital investment,Government spending,4.338
-2044,Human capital investment,Government spending,4.338
-2045,Human capital investment,Government spending,4.338
-2046,Human capital investment,Government spending,4.338
-2047,Human capital investment,Government spending,4.338
-2048,Human capital investment,Government spending,4.338
-2049,Human capital investment,Government spending,4.338
-2050,Human capital investment,Government spending,4.338
-2026,R&D investment,Government spending,4.338
-2027,R&D investment,Government spending,4.338
-2028,R&D investment,Government spending,4.338
-2029,R&D investment,Government spending,4.338
-2030,R&D investment,Government spending,4.338
-2031,R&D investment,Government spending,4.338
-2032,R&D investment,Government spending,4.338
-2033,R&D investment,Government spending,4.338
-2034,R&D investment,Government spending,4.338
-2035,R&D investment,Government spending,4.338
-2036,R&D investment,Government spending,4.338
-2037,R&D investment,Government spending,4.338
-2038,R&D investment,Government spending,4.338
-2039,R&D investment,Government spending,4.338
-2040,R&D investment,Government spending,4.338
-2041,R&D investment,Government spending,4.338
-2042,R&D investment,Government spending,4.338
-2043,R&D investment,Government spending,4.338
-2044,R&D investment,Government spending,4.338
-2045,R&D investment,Government spending,4.338
-2046,R&D investment,Government spending,4.338
-2047,R&D investment,Government spending,4.338
-2048,R&D investment,Government spending,4.338
-2049,R&D investment,Government spending,4.338
-2050,R&D investment,Government spending,4.338
-2026,Government consumption,Government spending,4.338
-2027,Government consumption,Government spending,4.338
-2028,Government consumption,Government spending,4.338
-2029,Government consumption,Government spending,4.338
-2030,Government consumption,Government spending,4.338
-2031,Government consumption,Government spending,4.338
-2032,Government consumption,Government spending,4.338
-2033,Government consumption,Government spending,4.338
-2034,Government consumption,Government spending,4.338
-2035,Government consumption,Government spending,4.338
-2036,Government consumption,Government spending,4.338
-2037,Government consumption,Government spending,4.338
-2038,Government consumption,Government spending,4.338
-2039,Government consumption,Government spending,4.338
-2040,Government consumption,Government spending,4.338
-2041,Government consumption,Government spending,4.338
-2042,Government consumption,Government spending,4.338
-2043,Government consumption,Government spending,4.338
-2044,Government consumption,Government spending,4.338
-2045,Government consumption,Government spending,4.338
-2046,Government consumption,Government spending,4.338
-2047,Government consumption,Government spending,4.338
-2048,Government consumption,Government spending,4.338
-2049,Government consumption,Government spending,4.338
-2050,Government consumption,Government spending,4.338
-2026,Infrastructure investment,Labor supply,0.62
-2027,Infrastructure investment,Labor supply,0.668
-2028,Infrastructure investment,Labor supply,0.693
-2029,Infrastructure investment,Labor supply,0.701
-2030,Infrastructure investment,Labor supply,0.696
-2031,Infrastructure investment,Labor supply,0.684
-2032,Infrastructure investment,Labor supply,0.665
-2033,Infrastructure investment,Labor supply,0.644
-2034,Infrastructure investment,Labor supply,0.62
-2035,Infrastructure investment,Labor supply,0.595
-2036,Infrastructure investment,Labor supply,0.57
-2037,Infrastructure investment,Labor supply,0.545
-2038,Infrastructure investment,Labor supply,0.52
-2039,Infrastructure investment,Labor supply,0.496
-2040,Infrastructure investment,Labor supply,0.472
-2041,Infrastructure investment,Labor supply,0.45
-2042,Infrastructure investment,Labor supply,0.429
-2043,Infrastructure investment,Labor supply,0.409
-2044,Infrastructure investment,Labor supply,0.389
-2045,Infrastructure investment,Labor supply,0.371
-2046,Infrastructure investment,Labor supply,0.354
-2047,Infrastructure investment,Labor supply,0.338
-2048,Infrastructure investment,Labor supply,0.323
-2049,Infrastructure investment,Labor supply,0.309
-2050,Infrastructure investment,Labor supply,0.296
-2026,Human capital investment,Labor supply,1.045
-2027,Human capital investment,Labor supply,0.809
-2028,Human capital investment,Labor supply,0.65
-2029,Human capital investment,Labor supply,0.547
-2030,Human capital investment,Labor supply,0.482
-2031,Human capital investment,Labor supply,0.44
-2032,Human capital investment,Labor supply,0.411
-2033,Human capital investment,Labor supply,0.391
-2034,Human capital investment,Labor supply,0.375
-2035,Human capital investment,Labor supply,0.359
-2036,Human capital investment,Labor supply,0.344
-2037,Human capital investment,Labor supply,0.326
-2038,Human capital investment,Labor supply,0.307
-2039,Human capital investment,Labor supply,0.286
-2040,Human capital investment,Labor supply,0.263
-2041,Human capital investment,Labor supply,0.238
-2042,Human capital investment,Labor supply,0.212
-2043,Human capital investment,Labor supply,0.183
-2044,Human capital investment,Labor supply,0.154
-2045,Human capital investment,Labor supply,0.124
-2046,Human capital investment,Labor supply,0.093
-2047,Human capital investment,Labor supply,0.061
-2048,Human capital investment,Labor supply,0.029
-2049,Human capital investment,Labor supply,-0.002
-2050,Human capital investment,Labor supply,-0.034
-2026,R&D investment,Labor supply,0.549
-2027,R&D investment,Labor supply,0.601
-2028,R&D investment,Labor supply,0.694
-2029,R&D investment,Labor supply,0.768
-2030,R&D investment,Labor supply,0.809
-2031,R&D investment,Labor supply,0.818
-2032,R&D investment,Labor supply,0.803
-2033,R&D investment,Labor supply,0.77
-2034,R&D investment,Labor supply,0.725
-2035,R&D investment,Labor supply,0.673
-2036,R&D investment,Labor supply,0.617
-2037,R&D investment,Labor supply,0.56
-2038,R&D investment,Labor supply,0.502
-2039,R&D investment,Labor supply,0.445
-2040,R&D investment,Labor supply,0.391
-2041,R&D investment,Labor supply,0.339
-2042,R&D investment,Labor supply,0.289
-2043,R&D investment,Labor supply,0.243
-2044,R&D investment,Labor supply,0.2
-2045,R&D investment,Labor supply,0.159
-2046,R&D investment,Labor supply,0.121
-2047,R&D investment,Labor supply,0.087
-2048,R&D investment,Labor supply,0.054
-2049,R&D investment,Labor supply,0.024
-2050,R&D investment,Labor supply,-0.003
-2026,Government consumption,Labor supply,0.897
-2027,Government consumption,Labor supply,0.876
-2028,Government consumption,Labor supply,0.856
-2029,Government consumption,Labor supply,0.838
-2030,Government consumption,Labor supply,0.823
-2031,Government consumption,Labor supply,0.808
-2032,Government consumption,Labor supply,0.795
-2033,Government consumption,Labor supply,0.783
-2034,Government consumption,Labor supply,0.772
-2035,Government consumption,Labor supply,0.761
-2036,Government consumption,Labor supply,0.751
-2037,Government consumption,Labor supply,0.742
-2038,Government consumption,Labor supply,0.733
-2039,Government consumption,Labor supply,0.724
-2040,Government consumption,Labor supply,0.716
-2041,Government consumption,Labor supply,0.709
-2042,Government consumption,Labor supply,0.701
-2043,Government consumption,Labor supply,0.695
-2044,Government consumption,Labor supply,0.688
-2045,Government consumption,Labor supply,0.682
-2046,Government consumption,Labor supply,0.676
-2047,Government consumption,Labor supply,0.671
-2048,Government consumption,Labor supply,0.666
-2049,Government consumption,Labor supply,0.661
-2050,Government consumption,Labor supply,0.656
-2026,Infrastructure investment,Human capital stock,0.065
-2027,Infrastructure investment,Human capital stock,0.086
-2028,Infrastructure investment,Human capital stock,0.102
-2029,Infrastructure investment,Human capital stock,0.114
-2030,Infrastructure investment,Human capital stock,0.122
-2031,Infrastructure investment,Human capital stock,0.127
-2032,Infrastructure investment,Human capital stock,0.131
-2033,Infrastructure investment,Human capital stock,0.133
-2034,Infrastructure investment,Human capital stock,0.134
-2035,Infrastructure investment,Human capital stock,0.134
-2036,Infrastructure investment,Human capital stock,0.133
-2037,Infrastructure investment,Human capital stock,0.131
-2038,Infrastructure investment,Human capital stock,0.13
-2039,Infrastructure investment,Human capital stock,0.127
-2040,Infrastructure investment,Human capital stock,0.125
-2041,Infrastructure investment,Human capital stock,0.122
-2042,Infrastructure investment,Human capital stock,0.119
-2043,Infrastructure investment,Human capital stock,0.117
-2044,Infrastructure investment,Human capital stock,0.114
-2045,Infrastructure investment,Human capital stock,0.111
-2046,Infrastructure investment,Human capital stock,0.108
-2047,Infrastructure investment,Human capital stock,0.106
-2048,Infrastructure investment,Human capital stock,0.103
-2049,Infrastructure investment,Human capital stock,0.101
-2050,Infrastructure investment,Human capital stock,0.098
-2026,Human capital investment,Human capital stock,-0.008
-2027,Human capital investment,Human capital stock,0.051
-2028,Human capital investment,Human capital stock,0.187
-2029,Human capital investment,Human capital stock,0.375
-2030,Human capital investment,Human capital stock,0.599
-2031,Human capital investment,Human capital stock,0.845
-2032,Human capital investment,Human capital stock,1.102
-2033,Human capital investment,Human capital stock,1.363
-2034,Human capital investment,Human capital stock,1.623
-2035,Human capital investment,Human capital stock,1.876
-2036,Human capital investment,Human capital stock,2.121
-2037,Human capital investment,Human capital stock,2.355
-2038,Human capital investment,Human capital stock,2.577
-2039,Human capital investment,Human capital stock,2.785
-2040,Human capital investment,Human capital stock,2.981
-2041,Human capital investment,Human capital stock,3.163
-2042,Human capital investment,Human capital stock,3.333
-2043,Human capital investment,Human capital stock,3.489
-2044,Human capital investment,Human capital stock,3.634
-2045,Human capital investment,Human capital stock,3.766
-2046,Human capital investment,Human capital stock,3.888
-2047,Human capital investment,Human capital stock,3.999
-2048,Human capital investment,Human capital stock,4.101
-2049,Human capital investment,Human capital stock,4.194
-2050,Human capital investment,Human capital stock,4.278
-2026,R&D investment,Human capital stock,0.053
-2027,R&D investment,Human capital stock,0.075
-2028,R&D investment,Human capital stock,0.09
-2029,R&D investment,Human capital stock,0.096
-2030,R&D investment,Human capital stock,0.097
-2031,R&D investment,Human capital stock,0.092
-2032,R&D investment,Human capital stock,0.085
-2033,R&D investment,Human capital stock,0.075
-2034,R&D investment,Human capital stock,0.064
-2035,R&D investment,Human capital stock,0.052
-2036,R&D investment,Human capital stock,0.04
-2037,R&D investment,Human capital stock,0.028
-2038,R&D investment,Human capital stock,0.016
-2039,R&D investment,Human capital stock,0.004
-2040,R&D investment,Human capital stock,-0.007
-2041,R&D investment,Human capital stock,-0.018
-2042,R&D investment,Human capital stock,-0.028
-2043,R&D investment,Human capital stock,-0.037
-2044,R&D investment,Human capital stock,-0.046
-2045,R&D investment,Human capital stock,-0.054
-2046,R&D investment,Human capital stock,-0.062
-2047,R&D investment,Human capital stock,-0.069
-2048,R&D investment,Human capital stock,-0.076
-2049,R&D investment,Human capital stock,-0.082
-2050,R&D investment,Human capital stock,-0.088
-2026,Government consumption,Human capital stock,0.078
-2027,Government consumption,Human capital stock,0.11
-2028,Government consumption,Human capital stock,0.138
-2029,Government consumption,Human capital stock,0.162
-2030,Government consumption,Human capital stock,0.183
-2031,Government consumption,Human capital stock,0.202
-2032,Government consumption,Human capital stock,0.217
-2033,Government consumption,Human capital stock,0.231
-2034,Government consumption,Human capital stock,0.242
-2035,Government consumption,Human capital stock,0.252
-2036,Government consumption,Human capital stock,0.261
-2037,Government consumption,Human capital stock,0.268
-2038,Government consumption,Human capital stock,0.274
-2039,Government consumption,Human capital stock,0.279
-2040,Government consumption,Human capital stock,0.283
-2041,Government consumption,Human capital stock,0.287
-2042,Government consumption,Human capital stock,0.29
-2043,Government consumption,Human capital stock,0.293
-2044,Government consumption,Human capital stock,0.295
-2045,Government consumption,Human capital stock,0.296
-2046,Government consumption,Human capital stock,0.298
-2047,Government consumption,Human capital stock,0.299
-2048,Government consumption,Human capital stock,0.3
-2049,Government consumption,Human capital stock,0.301
-2050,Government consumption,Human capital stock,0.301
-2026,Infrastructure investment,Total factor productivity,0.189
-2027,Infrastructure investment,Total factor productivity,0.38
-2028,Infrastructure investment,Total factor productivity,0.549
-2029,Infrastructure investment,Total factor productivity,0.699
-2030,Infrastructure investment,Total factor productivity,0.835
-2031,Infrastructure investment,Total factor productivity,0.957
-2032,Infrastructure investment,Total factor productivity,1.069
-2033,Infrastructure investment,Total factor productivity,1.171
-2034,Infrastructure investment,Total factor productivity,1.265
-2035,Infrastructure investment,Total factor productivity,1.352
-2036,Infrastructure investment,Total factor productivity,1.432
-2037,Infrastructure investment,Total factor productivity,1.506
-2038,Infrastructure investment,Total factor productivity,1.575
-2039,Infrastructure investment,Total factor productivity,1.639
-2040,Infrastructure investment,Total factor productivity,1.698
-2041,Infrastructure investment,Total factor productivity,1.752
-2042,Infrastructure investment,Total factor productivity,1.803
-2043,Infrastructure investment,Total factor productivity,1.85
-2044,Infrastructure investment,Total factor productivity,1.893
-2045,Infrastructure investment,Total factor productivity,1.933
-2046,Infrastructure investment,Total factor productivity,1.97
-2047,Infrastructure investment,Total factor productivity,2.005
-2048,Infrastructure investment,Total factor productivity,2.036
-2049,Infrastructure investment,Total factor productivity,2.066
-2050,Infrastructure investment,Total factor productivity,2.093
-2026,Human capital investment,Total factor productivity,-0.008
-2027,Human capital investment,Total factor productivity,0.011
-2028,Human capital investment,Total factor productivity,0.086
-2029,Human capital investment,Total factor productivity,0.203
-2030,Human capital investment,Total factor productivity,0.348
-2031,Human capital investment,Total factor productivity,0.516
-2032,Human capital investment,Total factor productivity,0.699
-2033,Human capital investment,Total factor productivity,0.894
-2034,Human capital investment,Total factor productivity,1.095
-2035,Human capital investment,Total factor productivity,1.301
-2036,Human capital investment,Total factor productivity,1.509
-2037,Human capital investment,Total factor productivity,1.717
-2038,Human capital investment,Total factor productivity,1.924
-2039,Human capital investment,Total factor productivity,2.127
-2040,Human capital investment,Total factor productivity,2.327
-2041,Human capital investment,Total factor productivity,2.522
-2042,Human capital investment,Total factor productivity,2.712
-2043,Human capital investment,Total factor productivity,2.896
-2044,Human capital investment,Total factor productivity,3.073
-2045,Human capital investment,Total factor productivity,3.244
-2046,Human capital investment,Total factor productivity,3.408
-2047,Human capital investment,Total factor productivity,3.565
-2048,Human capital investment,Total factor productivity,3.715
-2049,Human capital investment,Total factor productivity,3.857
-2050,Human capital investment,Total factor productivity,3.993
-2026,R&D investment,Total factor productivity,-0.105
-2027,R&D investment,Total factor productivity,0.051
-2028,R&D investment,Total factor productivity,0.364
-2029,R&D investment,Total factor productivity,0.704
-2030,R&D investment,Total factor productivity,1.029
-2031,R&D investment,Total factor productivity,1.326
-2032,R&D investment,Total factor productivity,1.593
-2033,R&D investment,Total factor productivity,1.833
-2034,R&D investment,Total factor productivity,2.049
-2035,R&D investment,Total factor productivity,2.243
-2036,R&D investment,Total factor productivity,2.419
-2037,R&D investment,Total factor productivity,2.578
-2038,R&D investment,Total factor productivity,2.722
-2039,R&D investment,Total factor productivity,2.853
-2040,R&D investment,Total factor productivity,2.973
-2041,R&D investment,Total factor productivity,3.081
-2042,R&D investment,Total factor productivity,3.18
-2043,R&D investment,Total factor productivity,3.27
-2044,R&D investment,Total factor productivity,3.353
-2045,R&D investment,Total factor productivity,3.428
-2046,R&D investment,Total factor productivity,3.496
-2047,R&D investment,Total factor productivity,3.559
-2048,R&D investment,Total factor productivity,3.616
-2049,R&D investment,Total factor productivity,3.668
-2050,R&D investment,Total factor productivity,3.715
-2026,Government consumption,Total factor productivity,0.05
-2027,Government consumption,Total factor productivity,0.08
-2028,Government consumption,Total factor productivity,0.11
-2029,Government consumption,Total factor productivity,0.139
-2030,Government consumption,Total factor productivity,0.168
-2031,Government consumption,Total factor productivity,0.196
-2032,Government consumption,Total factor productivity,0.223
-2033,Government consumption,Total factor productivity,0.249
-2034,Government consumption,Total factor productivity,0.273
-2035,Government consumption,Total factor productivity,0.296
-2036,Government consumption,Total factor productivity,0.318
-2037,Government consumption,Total factor productivity,0.338
-2038,Government consumption,Total factor productivity,0.357
-2039,Government consumption,Total factor productivity,0.375
-2040,Government consumption,Total factor productivity,0.392
-2041,Government consumption,Total factor productivity,0.408
-2042,Government consumption,Total factor productivity,0.422
-2043,Government consumption,Total factor productivity,0.435
-2044,Government consumption,Total factor productivity,0.448
-2045,Government consumption,Total factor productivity,0.46
-2046,Government consumption,Total factor productivity,0.47
-2047,Government consumption,Total factor productivity,0.48
-2048,Government consumption,Total factor productivity,0.49
-2049,Government consumption,Total factor productivity,0.498
-2050,Government consumption,Total factor productivity,0.506
-2026,Infrastructure investment,Private capital stock,-0.374
-2027,Infrastructure investment,Private capital stock,-0.365
-2028,Infrastructure investment,Private capital stock,-0.297
-2029,Infrastructure investment,Private capital stock,-0.189
-2030,Infrastructure investment,Private capital stock,-0.055
-2031,Infrastructure investment,Private capital stock,0.094
-2032,Infrastructure investment,Private capital stock,0.25
-2033,Infrastructure investment,Private capital stock,0.41
-2034,Infrastructure investment,Private capital stock,0.57
-2035,Infrastructure investment,Private capital stock,0.727
-2036,Infrastructure investment,Private capital stock,0.879
-2037,Infrastructure investment,Private capital stock,1.025
-2038,Infrastructure investment,Private capital stock,1.165
-2039,Infrastructure investment,Private capital stock,1.298
-2040,Infrastructure investment,Private capital stock,1.425
-2041,Infrastructure investment,Private capital stock,1.544
-2042,Infrastructure investment,Private capital stock,1.657
-2043,Infrastructure investment,Private capital stock,1.762
-2044,Infrastructure investment,Private capital stock,1.862
-2045,Infrastructure investment,Private capital stock,1.955
-2046,Infrastructure investment,Private capital stock,2.042
-2047,Infrastructure investment,Private capital stock,2.124
-2048,Infrastructure investment,Private capital stock,2.2
-2049,Infrastructure investment,Private capital stock,2.271
-2050,Infrastructure investment,Private capital stock,2.337
-2026,Human capital investment,Private capital stock,-0.204
-2027,Human capital investment,Private capital stock,-0.215
-2028,Human capital investment,Private capital stock,-0.285
-2029,Human capital investment,Private capital stock,-0.373
-2030,Human capital investment,Private capital stock,-0.454
-2031,Human capital investment,Private capital stock,-0.513
-2032,Human capital investment,Private capital stock,-0.541
-2033,Human capital investment,Private capital stock,-0.535
-2034,Human capital investment,Private capital stock,-0.496
-2035,Human capital investment,Private capital stock,-0.424
-2036,Human capital investment,Private capital stock,-0.321
-2037,Human capital investment,Private capital stock,-0.193
-2038,Human capital investment,Private capital stock,-0.041
-2039,Human capital investment,Private capital stock,0.13
-2040,Human capital investment,Private capital stock,0.318
-2041,Human capital investment,Private capital stock,0.519
-2042,Human capital investment,Private capital stock,0.729
-2043,Human capital investment,Private capital stock,0.947
-2044,Human capital investment,Private capital stock,1.17
-2045,Human capital investment,Private capital stock,1.396
-2046,Human capital investment,Private capital stock,1.622
-2047,Human capital investment,Private capital stock,1.848
-2048,Human capital investment,Private capital stock,2.073
-2049,Human capital investment,Private capital stock,2.293
-2050,Human capital investment,Private capital stock,2.51
-2026,R&D investment,Private capital stock,-0.148
-2027,R&D investment,Private capital stock,-0.408
-2028,R&D investment,Private capital stock,-0.66
-2029,R&D investment,Private capital stock,-0.794
-2030,R&D investment,Private capital stock,-0.801
-2031,R&D investment,Private capital stock,-0.705
-2032,R&D investment,Private capital stock,-0.531
-2033,R&D investment,Private capital stock,-0.306
-2034,R&D investment,Private capital stock,-0.047
-2035,R&D investment,Private capital stock,0.23
-2036,R&D investment,Private capital stock,0.514
-2037,R&D investment,Private capital stock,0.799
-2038,R&D investment,Private capital stock,1.078
-2039,R&D investment,Private capital stock,1.349
-2040,R&D investment,Private capital stock,1.608
-2041,R&D investment,Private capital stock,1.853
-2042,R&D investment,Private capital stock,2.086
-2043,R&D investment,Private capital stock,2.303
-2044,R&D investment,Private capital stock,2.507
-2045,R&D investment,Private capital stock,2.697
-2046,R&D investment,Private capital stock,2.874
-2047,R&D investment,Private capital stock,3.037
-2048,R&D investment,Private capital stock,3.189
-2049,R&D investment,Private capital stock,3.329
-2050,R&D investment,Private capital stock,3.458
-2026,Government consumption,Private capital stock,-0.182
-2027,Government consumption,Private capital stock,-0.059
-2028,Government consumption,Private capital stock,0.049
-2029,Government consumption,Private capital stock,0.145
-2030,Government consumption,Private capital stock,0.232
-2031,Government consumption,Private capital stock,0.311
-2032,Government consumption,Private capital stock,0.383
-2033,Government consumption,Private capital stock,0.45
-2034,Government consumption,Private capital stock,0.512
-2035,Government consumption,Private capital stock,0.57
-2036,Government consumption,Private capital stock,0.624
-2037,Government consumption,Private capital stock,0.675
-2038,Government consumption,Private capital stock,0.722
-2039,Government consumption,Private capital stock,0.766
-2040,Government consumption,Private capital stock,0.808
-2041,Government consumption,Private capital stock,0.847
-2042,Government consumption,Private capital stock,0.883
-2043,Government consumption,Private capital stock,0.917
-2044,Government consumption,Private capital stock,0.949
-2045,Government consumption,Private capital stock,0.979
-2046,Government consumption,Private capital stock,1.006
-2047,Government consumption,Private capital stock,1.032
-2048,Government consumption,Private capital stock,1.057
-2049,Government consumption,Private capital stock,1.079
-2050,Government consumption,Private capital stock,1.1
-2026,Infrastructure investment,Inflation,-1.307
-2027,Infrastructure investment,Inflation,-1.661
-2028,Infrastructure investment,Inflation,-1.989
-2029,Infrastructure investment,Inflation,-2.294
-2030,Infrastructure investment,Inflation,-2.577
-2031,Infrastructure investment,Inflation,-2.841
-2032,Infrastructure investment,Inflation,-3.087
-2033,Infrastructure investment,Inflation,-3.316
-2034,Infrastructure investment,Inflation,-3.528
-2035,Infrastructure investment,Inflation,-3.726
-2036,Infrastructure investment,Inflation,-3.91
-2037,Infrastructure investment,Inflation,-4.081
-2038,Infrastructure investment,Inflation,-4.24
-2039,Infrastructure investment,Inflation,-4.387
-2040,Infrastructure investment,Inflation,-4.524
-2041,Infrastructure investment,Inflation,-4.651
-2042,Infrastructure investment,Inflation,-4.769
-2043,Infrastructure investment,Inflation,-4.878
-2044,Infrastructure investment,Inflation,-4.979
-2045,Infrastructure investment,Inflation,-5.073
-2046,Infrastructure investment,Inflation,-5.159
-2047,Infrastructure investment,Inflation,-5.239
-2048,Infrastructure investment,Inflation,-5.313
-2049,Infrastructure investment,Inflation,-5.382
-2050,Infrastructure investment,Inflation,-5.445
-2026,Human capital investment,Inflation,-0.904
-2027,Human capital investment,Inflation,-0.821
-2028,Human capital investment,Inflation,-0.854
-2029,Human capital investment,Inflation,-0.982
-2030,Human capital investment,Inflation,-1.185
-2031,Human capital investment,Inflation,-1.448
-2032,Human capital investment,Inflation,-1.758
-2033,Human capital investment,Inflation,-2.102
-2034,Human capital investment,Inflation,-2.472
-2035,Human capital investment,Inflation,-2.86
-2036,Human capital investment,Inflation,-3.259
-2037,Human capital investment,Inflation,-3.665
-2038,Human capital investment,Inflation,-4.073
-2039,Human capital investment,Inflation,-4.479
-2040,Human capital investment,Inflation,-4.88
-2041,Human capital investment,Inflation,-5.274
-2042,Human capital investment,Inflation,-5.659
-2043,Human capital investment,Inflation,-6.033
-2044,Human capital investment,Inflation,-6.396
-2045,Human capital investment,Inflation,-6.746
-2046,Human capital investment,Inflation,-7.082
-2047,Human capital investment,Inflation,-7.405
-2048,Human capital investment,Inflation,-7.714
-2049,Human capital investment,Inflation,-8.008
-2050,Human capital investment,Inflation,-8.288
-2026,R&D investment,Inflation,-0.822
-2027,R&D investment,Inflation,-1.22
-2028,R&D investment,Inflation,-1.745
-2029,R&D investment,Inflation,-2.298
-2030,R&D investment,Inflation,-2.84
-2031,R&D investment,Inflation,-3.356
-2032,R&D investment,Inflation,-3.84
-2033,R&D investment,Inflation,-4.292
-2034,R&D investment,Inflation,-4.712
-2035,R&D investment,Inflation,-5.1
-2036,R&D investment,Inflation,-5.46
-2037,R&D investment,Inflation,-5.791
-2038,R&D investment,Inflation,-6.097
-2039,R&D investment,Inflation,-6.378
-2040,R&D investment,Inflation,-6.636
-2041,R&D investment,Inflation,-6.874
-2042,R&D investment,Inflation,-7.092
-2043,R&D investment,Inflation,-7.292
-2044,R&D investment,Inflation,-7.475
-2045,R&D investment,Inflation,-7.643
-2046,R&D investment,Inflation,-7.796
-2047,R&D investment,Inflation,-7.937
-2048,R&D investment,Inflation,-8.065
-2049,R&D investment,Inflation,-8.183
-2050,R&D investment,Inflation,-8.29
-2026,Government consumption,Inflation,-1.184
-2027,Government consumption,Inflation,-1.29
-2028,Government consumption,Inflation,-1.388
-2029,Government consumption,Inflation,-1.479
-2030,Government consumption,Inflation,-1.565
-2031,Government consumption,Inflation,-1.646
-2032,Government consumption,Inflation,-1.721
-2033,Government consumption,Inflation,-1.792
-2034,Government consumption,Inflation,-1.858
-2035,Government consumption,Inflation,-1.919
-2036,Government consumption,Inflation,-1.977
-2037,Government consumption,Inflation,-2.03
-2038,Government consumption,Inflation,-2.08
-2039,Government consumption,Inflation,-2.127
-2040,Government consumption,Inflation,-2.17
-2041,Government consumption,Inflation,-2.21
-2042,Government consumption,Inflation,-2.248
-2043,Government consumption,Inflation,-2.283
-2044,Government consumption,Inflation,-2.315
-2045,Government consumption,Inflation,-2.345
-2046,Government consumption,Inflation,-2.372
-2047,Government consumption,Inflation,-2.398
-2048,Government consumption,Inflation,-2.422
-2049,Government consumption,Inflation,-2.444
-2050,Government consumption,Inflation,-2.464
-2026,Infrastructure investment,Policy rate,-1.276
-2027,Infrastructure investment,Policy rate,-1.603
-2028,Infrastructure investment,Policy rate,-1.914
-2029,Infrastructure investment,Policy rate,-2.209
-2030,Infrastructure investment,Policy rate,-2.488
-2031,Infrastructure investment,Policy rate,-2.751
-2032,Infrastructure investment,Policy rate,-2.998
-2033,Infrastructure investment,Policy rate,-3.23
-2034,Infrastructure investment,Policy rate,-3.446
-2035,Infrastructure investment,Policy rate,-3.649
-2036,Infrastructure investment,Policy rate,-3.838
-2037,Infrastructure investment,Policy rate,-4.015
-2038,Infrastructure investment,Policy rate,-4.179
-2039,Infrastructure investment,Policy rate,-4.332
-2040,Infrastructure investment,Policy rate,-4.474
-2041,Infrastructure investment,Policy rate,-4.606
-2042,Infrastructure investment,Policy rate,-4.729
-2043,Infrastructure investment,Policy rate,-4.843
-2044,Infrastructure investment,Policy rate,-4.948
-2045,Infrastructure investment,Policy rate,-5.046
-2046,Infrastructure investment,Policy rate,-5.137
-2047,Infrastructure investment,Policy rate,-5.221
-2048,Infrastructure investment,Policy rate,-5.299
-2049,Infrastructure investment,Policy rate,-5.371
-2050,Infrastructure investment,Policy rate,-5.437
-2026,Human capital investment,Policy rate,-0.782
-2027,Human capital investment,Policy rate,-0.736
-2028,Human capital investment,Policy rate,-0.785
-2029,Human capital investment,Policy rate,-0.916
-2030,Human capital investment,Policy rate,-1.115
-2031,Human capital investment,Policy rate,-1.369
-2032,Human capital investment,Policy rate,-1.667
-2033,Human capital investment,Policy rate,-2.0
-2034,Human capital investment,Policy rate,-2.36
-2035,Human capital investment,Policy rate,-2.739
-2036,Human capital investment,Policy rate,-3.131
-2037,Human capital investment,Policy rate,-3.531
-2038,Human capital investment,Policy rate,-3.935
-2039,Human capital investment,Policy rate,-4.338
-2040,Human capital investment,Policy rate,-4.739
-2041,Human capital investment,Policy rate,-5.134
-2042,Human capital investment,Policy rate,-5.521
-2043,Human capital investment,Policy rate,-5.898
-2044,Human capital investment,Policy rate,-6.264
-2045,Human capital investment,Policy rate,-6.619
-2046,Human capital investment,Policy rate,-6.961
-2047,Human capital investment,Policy rate,-7.29
-2048,Human capital investment,Policy rate,-7.605
-2049,Human capital investment,Policy rate,-7.906
-2050,Human capital investment,Policy rate,-8.193
-2026,R&D investment,Policy rate,-0.834
-2027,R&D investment,Policy rate,-1.225
-2028,R&D investment,Policy rate,-1.7
-2029,R&D investment,Policy rate,-2.203
-2030,R&D investment,Policy rate,-2.706
-2031,R&D investment,Policy rate,-3.196
-2032,R&D investment,Policy rate,-3.665
-2033,R&D investment,Policy rate,-4.111
-2034,R&D investment,Policy rate,-4.532
-2035,R&D investment,Policy rate,-4.926
-2036,R&D investment,Policy rate,-5.293
-2037,R&D investment,Policy rate,-5.635
-2038,R&D investment,Policy rate,-5.952
-2039,R&D investment,Policy rate,-6.245
-2040,R&D investment,Policy rate,-6.515
-2041,R&D investment,Policy rate,-6.765
-2042,R&D investment,Policy rate,-6.994
-2043,R&D investment,Policy rate,-7.205
-2044,R&D investment,Policy rate,-7.399
-2045,R&D investment,Policy rate,-7.576
-2046,R&D investment,Policy rate,-7.739
-2047,R&D investment,Policy rate,-7.888
-2048,R&D investment,Policy rate,-8.025
-2049,R&D investment,Policy rate,-8.15
-2050,R&D investment,Policy rate,-8.264
-2026,Government consumption,Policy rate,-1.117
-2027,Government consumption,Policy rate,-1.23
-2028,Government consumption,Policy rate,-1.335
-2029,Government consumption,Policy rate,-1.432
-2030,Government consumption,Policy rate,-1.523
-2031,Government consumption,Policy rate,-1.608
-2032,Government consumption,Policy rate,-1.687
-2033,Government consumption,Policy rate,-1.761
-2034,Government consumption,Policy rate,-1.83
-2035,Government consumption,Policy rate,-1.894
-2036,Government consumption,Policy rate,-1.954
-2037,Government consumption,Policy rate,-2.01
-2038,Government consumption,Policy rate,-2.063
-2039,Government consumption,Policy rate,-2.111
-2040,Government consumption,Policy rate,-2.157
-2041,Government consumption,Policy rate,-2.199
-2042,Government consumption,Policy rate,-2.238
-2043,Government consumption,Policy rate,-2.274
-2044,Government consumption,Policy rate,-2.308
-2045,Government consumption,Policy rate,-2.339
-2046,Government consumption,Policy rate,-2.369
-2047,Government consumption,Policy rate,-2.396
-2048,Government consumption,Policy rate,-2.421
-2049,Government consumption,Policy rate,-2.444
-2050,Government consumption,Policy rate,-2.465
-2026,Infrastructure investment,Nominal bond rate,-1.276
-2027,Infrastructure investment,Nominal bond rate,-1.603
-2028,Infrastructure investment,Nominal bond rate,-1.914
-2029,Infrastructure investment,Nominal bond rate,-2.209
-2030,Infrastructure investment,Nominal bond rate,-2.488
-2031,Infrastructure investment,Nominal bond rate,-2.751
-2032,Infrastructure investment,Nominal bond rate,-2.998
-2033,Infrastructure investment,Nominal bond rate,-3.23
-2034,Infrastructure investment,Nominal bond rate,-3.446
-2035,Infrastructure investment,Nominal bond rate,-3.649
-2036,Infrastructure investment,Nominal bond rate,-3.838
-2037,Infrastructure investment,Nominal bond rate,-4.015
-2038,Infrastructure investment,Nominal bond rate,-4.179
-2039,Infrastructure investment,Nominal bond rate,-4.332
-2040,Infrastructure investment,Nominal bond rate,-4.474
-2041,Infrastructure investment,Nominal bond rate,-4.606
-2042,Infrastructure investment,Nominal bond rate,-4.729
-2043,Infrastructure investment,Nominal bond rate,-4.843
-2044,Infrastructure investment,Nominal bond rate,-4.948
-2045,Infrastructure investment,Nominal bond rate,-5.046
-2046,Infrastructure investment,Nominal bond rate,-5.137
-2047,Infrastructure investment,Nominal bond rate,-5.221
-2048,Infrastructure investment,Nominal bond rate,-5.299
-2049,Infrastructure investment,Nominal bond rate,-5.371
-2050,Infrastructure investment,Nominal bond rate,-5.437
-2026,Human capital investment,Nominal bond rate,-0.782
-2027,Human capital investment,Nominal bond rate,-0.736
-2028,Human capital investment,Nominal bond rate,-0.785
-2029,Human capital investment,Nominal bond rate,-0.916
-2030,Human capital investment,Nominal bond rate,-1.115
-2031,Human capital investment,Nominal bond rate,-1.369
-2032,Human capital investment,Nominal bond rate,-1.667
-2033,Human capital investment,Nominal bond rate,-2.0
-2034,Human capital investment,Nominal bond rate,-2.36
-2035,Human capital investment,Nominal bond rate,-2.739
-2036,Human capital investment,Nominal bond rate,-3.131
-2037,Human capital investment,Nominal bond rate,-3.531
-2038,Human capital investment,Nominal bond rate,-3.935
-2039,Human capital investment,Nominal bond rate,-4.338
-2040,Human capital investment,Nominal bond rate,-4.739
-2041,Human capital investment,Nominal bond rate,-5.134
-2042,Human capital investment,Nominal bond rate,-5.521
-2043,Human capital investment,Nominal bond rate,-5.898
-2044,Human capital investment,Nominal bond rate,-6.264
-2045,Human capital investment,Nominal bond rate,-6.619
-2046,Human capital investment,Nominal bond rate,-6.961
-2047,Human capital investment,Nominal bond rate,-7.29
-2048,Human capital investment,Nominal bond rate,-7.605
-2049,Human capital investment,Nominal bond rate,-7.906
-2050,Human capital investment,Nominal bond rate,-8.193
-2026,R&D investment,Nominal bond rate,-0.834
-2027,R&D investment,Nominal bond rate,-1.225
-2028,R&D investment,Nominal bond rate,-1.7
-2029,R&D investment,Nominal bond rate,-2.203
-2030,R&D investment,Nominal bond rate,-2.706
-2031,R&D investment,Nominal bond rate,-3.196
-2032,R&D investment,Nominal bond rate,-3.665
-2033,R&D investment,Nominal bond rate,-4.111
-2034,R&D investment,Nominal bond rate,-4.532
-2035,R&D investment,Nominal bond rate,-4.926
-2036,R&D investment,Nominal bond rate,-5.293
-2037,R&D investment,Nominal bond rate,-5.635
-2038,R&D investment,Nominal bond rate,-5.952
-2039,R&D investment,Nominal bond rate,-6.245
-2040,R&D investment,Nominal bond rate,-6.515
-2041,R&D investment,Nominal bond rate,-6.765
-2042,R&D investment,Nominal bond rate,-6.994
-2043,R&D investment,Nominal bond rate,-7.205
-2044,R&D investment,Nominal bond rate,-7.399
-2045,R&D investment,Nominal bond rate,-7.576
-2046,R&D investment,Nominal bond rate,-7.739
-2047,R&D investment,Nominal bond rate,-7.888
-2048,R&D investment,Nominal bond rate,-8.025
-2049,R&D investment,Nominal bond rate,-8.15
-2050,R&D investment,Nominal bond rate,-8.264
-2026,Government consumption,Nominal bond rate,-1.117
-2027,Government consumption,Nominal bond rate,-1.23
-2028,Government consumption,Nominal bond rate,-1.335
-2029,Government consumption,Nominal bond rate,-1.432
-2030,Government consumption,Nominal bond rate,-1.523
-2031,Government consumption,Nominal bond rate,-1.608
-2032,Government consumption,Nominal bond rate,-1.687
-2033,Government consumption,Nominal bond rate,-1.761
-2034,Government consumption,Nominal bond rate,-1.83
-2035,Government consumption,Nominal bond rate,-1.894
-2036,Government consumption,Nominal bond rate,-1.954
-2037,Government consumption,Nominal bond rate,-2.01
-2038,Government consumption,Nominal bond rate,-2.063
-2039,Government consumption,Nominal bond rate,-2.111
-2040,Government consumption,Nominal bond rate,-2.157
-2041,Government consumption,Nominal bond rate,-2.199
-2042,Government consumption,Nominal bond rate,-2.238
-2043,Government consumption,Nominal bond rate,-2.274
-2044,Government consumption,Nominal bond rate,-2.308
-2045,Government consumption,Nominal bond rate,-2.339
-2046,Government consumption,Nominal bond rate,-2.369
-2047,Government consumption,Nominal bond rate,-2.396
-2048,Government consumption,Nominal bond rate,-2.421
-2049,Government consumption,Nominal bond rate,-2.444
-2050,Government consumption,Nominal bond rate,-2.465
-2026,Infrastructure investment,Real interest rate,0.038
-2027,Infrastructure investment,Real interest rate,0.067
-2028,Infrastructure investment,Real interest rate,0.086
-2029,Infrastructure investment,Real interest rate,0.098
-2030,Infrastructure investment,Real interest rate,0.104
-2031,Infrastructure investment,Real interest rate,0.107
-2032,Infrastructure investment,Real interest rate,0.107
-2033,Infrastructure investment,Real interest rate,0.105
-2034,Infrastructure investment,Real interest rate,0.102
-2035,Infrastructure investment,Real interest rate,0.099
-2036,Infrastructure investment,Real interest rate,0.094
-2037,Infrastructure investment,Real interest rate,0.09
-2038,Infrastructure investment,Real interest rate,0.085
-2039,Infrastructure investment,Real interest rate,0.081
-2040,Infrastructure investment,Real interest rate,0.076
-2041,Infrastructure investment,Real interest rate,0.071
-2042,Infrastructure investment,Real interest rate,0.067
-2043,Infrastructure investment,Real interest rate,0.063
-2044,Infrastructure investment,Real interest rate,0.059
-2045,Infrastructure investment,Real interest rate,0.055
-2046,Infrastructure investment,Real interest rate,0.051
-2047,Infrastructure investment,Real interest rate,0.048
-2048,Infrastructure investment,Real interest rate,0.044
-2049,Infrastructure investment,Real interest rate,0.041
-2050,Infrastructure investment,Real interest rate,0.038
-2026,Human capital investment,Real interest rate,0.128
-2027,Human capital investment,Real interest rate,0.091
-2028,Human capital investment,Real interest rate,0.074
-2029,Human capital investment,Real interest rate,0.071
-2030,Human capital investment,Real interest rate,0.077
-2031,Human capital investment,Real interest rate,0.088
-2032,Human capital investment,Real interest rate,0.101
-2033,Human capital investment,Real interest rate,0.114
-2034,Human capital investment,Real interest rate,0.127
-2035,Human capital investment,Real interest rate,0.138
-2036,Human capital investment,Real interest rate,0.148
-2037,Human capital investment,Real interest rate,0.156
-2038,Human capital investment,Real interest rate,0.162
-2039,Human capital investment,Real interest rate,0.167
-2040,Human capital investment,Real interest rate,0.17
-2041,Human capital investment,Real interest rate,0.171
-2042,Human capital investment,Real interest rate,0.172
-2043,Human capital investment,Real interest rate,0.171
-2044,Human capital investment,Real interest rate,0.169
-2045,Human capital investment,Real interest rate,0.166
-2046,Human capital investment,Real interest rate,0.163
-2047,Human capital investment,Real interest rate,0.159
-2048,Human capital investment,Real interest rate,0.154
-2049,Human capital investment,Real interest rate,0.149
-2050,Human capital investment,Real interest rate,0.144
-2026,R&D investment,Real interest rate,-0.007
-2027,R&D investment,Real interest rate,0.002
-2028,R&D investment,Real interest rate,0.054
-2029,R&D investment,Real interest rate,0.109
-2030,R&D investment,Real interest rate,0.151
-2031,R&D investment,Real interest rate,0.18
-2032,R&D investment,Real interest rate,0.198
-2033,R&D investment,Real interest rate,0.206
-2034,R&D investment,Real interest rate,0.208
-2035,R&D investment,Real interest rate,0.205
-2036,R&D investment,Real interest rate,0.199
-2037,R&D investment,Real interest rate,0.191
-2038,R&D investment,Real interest rate,0.181
-2039,R&D investment,Real interest rate,0.171
-2040,R&D investment,Real interest rate,0.16
-2041,R&D investment,Real interest rate,0.15
-2042,R&D investment,Real interest rate,0.139
-2043,R&D investment,Real interest rate,0.129
-2044,R&D investment,Real interest rate,0.12
-2045,R&D investment,Real interest rate,0.111
-2046,R&D investment,Real interest rate,0.102
-2047,R&D investment,Real interest rate,0.094
-2048,R&D investment,Real interest rate,0.086
-2049,R&D investment,Real interest rate,0.079
-2050,R&D investment,Real interest rate,0.073
-2026,Government consumption,Real interest rate,0.074
-2027,Government consumption,Real interest rate,0.067
-2028,Government consumption,Real interest rate,0.061
-2029,Government consumption,Real interest rate,0.056
-2030,Government consumption,Real interest rate,0.051
-2031,Government consumption,Real interest rate,0.047
-2032,Government consumption,Real interest rate,0.044
-2033,Government consumption,Real interest rate,0.041
-2034,Government consumption,Real interest rate,0.038
-2035,Government consumption,Real interest rate,0.036
-2036,Government consumption,Real interest rate,0.034
-2037,Government consumption,Real interest rate,0.031
-2038,Government consumption,Real interest rate,0.029
-2039,Government consumption,Real interest rate,0.028
-2040,Government consumption,Real interest rate,0.026
-2041,Government consumption,Real interest rate,0.024
-2042,Government consumption,Real interest rate,0.023
-2043,Government consumption,Real interest rate,0.021
-2044,Government consumption,Real interest rate,0.02
-2045,Government consumption,Real interest rate,0.018
-2046,Government consumption,Real interest rate,0.017
-2047,Government consumption,Real interest rate,0.016
-2048,Government consumption,Real interest rate,0.015
-2049,Government consumption,Real interest rate,0.014
-2050,Government consumption,Real interest rate,0.013
+2026,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.498
+2027,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.714
+2028,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.909
+2029,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),1.084
+2030,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),1.245
+2031,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),1.391
+2032,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),1.526
+2033,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),1.651
+2034,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),1.765
+2035,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),1.871
+2036,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),1.97
+2037,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.061
+2038,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.145
+2039,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.223
+2040,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.295
+2041,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.362
+2042,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.424
+2043,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.482
+2044,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.535
+2045,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.584
+2046,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.63
+2047,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.672
+2048,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.71
+2049,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.746
+2050,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.78
+2026,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.646
+2027,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.507
+2028,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.454
+2029,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.471
+2030,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.543
+2031,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.657
+2032,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.802
+2033,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.971
+2034,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),1.158
+2035,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),1.357
+2036,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),1.564
+2037,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),1.776
+2038,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),1.991
+2039,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),2.206
+2040,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),2.419
+2041,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),2.629
+2042,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),2.834
+2043,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),3.035
+2044,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),3.229
+2045,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),3.418
+2046,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),3.599
+2047,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),3.773
+2048,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),3.94
+2049,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),4.1
+2050,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),4.252
+2026,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),0.237
+2027,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),0.359
+2028,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),0.644
+2029,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),0.97
+2030,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),1.292
+2031,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),1.595
+2032,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),1.874
+2033,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),2.129
+2034,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),2.364
+2035,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),2.578
+2036,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),2.774
+2037,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),2.954
+2038,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),3.119
+2039,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),3.269
+2040,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),3.408
+2041,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),3.534
+2042,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),3.65
+2043,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),3.756
+2044,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),3.853
+2045,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),3.942
+2046,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),4.024
+2047,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),4.098
+2048,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),4.166
+2049,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),4.228
+2050,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),4.285
+2026,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.598
+2027,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.651
+2028,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.699
+2029,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.744
+2030,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.786
+2031,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.827
+2032,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.865
+2033,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.901
+2034,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.934
+2035,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.966
+2036,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.995
+2037,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.022
+2038,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.048
+2039,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.072
+2040,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.094
+2041,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.115
+2042,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.134
+2043,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.151
+2044,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.168
+2045,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.183
+2046,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.197
+2047,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.21
+2048,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.223
+2049,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.234
+2050,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.244
+2026,Infrastructure investment,Consumption (C<sub>t</sub>),-0.723
+2027,Infrastructure investment,Consumption (C<sub>t</sub>),-0.586
+2028,Infrastructure investment,Consumption (C<sub>t</sub>),-0.43
+2029,Infrastructure investment,Consumption (C<sub>t</sub>),-0.263
+2030,Infrastructure investment,Consumption (C<sub>t</sub>),-0.093
+2031,Infrastructure investment,Consumption (C<sub>t</sub>),0.078
+2032,Infrastructure investment,Consumption (C<sub>t</sub>),0.247
+2033,Infrastructure investment,Consumption (C<sub>t</sub>),0.411
+2034,Infrastructure investment,Consumption (C<sub>t</sub>),0.568
+2035,Infrastructure investment,Consumption (C<sub>t</sub>),0.72
+2036,Infrastructure investment,Consumption (C<sub>t</sub>),0.864
+2037,Infrastructure investment,Consumption (C<sub>t</sub>),1.0
+2038,Infrastructure investment,Consumption (C<sub>t</sub>),1.129
+2039,Infrastructure investment,Consumption (C<sub>t</sub>),1.251
+2040,Infrastructure investment,Consumption (C<sub>t</sub>),1.365
+2041,Infrastructure investment,Consumption (C<sub>t</sub>),1.473
+2042,Infrastructure investment,Consumption (C<sub>t</sub>),1.574
+2043,Infrastructure investment,Consumption (C<sub>t</sub>),1.668
+2044,Infrastructure investment,Consumption (C<sub>t</sub>),1.756
+2045,Infrastructure investment,Consumption (C<sub>t</sub>),1.838
+2046,Infrastructure investment,Consumption (C<sub>t</sub>),1.914
+2047,Infrastructure investment,Consumption (C<sub>t</sub>),1.986
+2048,Infrastructure investment,Consumption (C<sub>t</sub>),2.052
+2049,Infrastructure investment,Consumption (C<sub>t</sub>),2.114
+2050,Infrastructure investment,Consumption (C<sub>t</sub>),2.171
+2026,Human capital investment,Consumption (C<sub>t</sub>),-0.833
+2027,Human capital investment,Consumption (C<sub>t</sub>),-0.743
+2028,Human capital investment,Consumption (C<sub>t</sub>),-0.653
+2029,Human capital investment,Consumption (C<sub>t</sub>),-0.55
+2030,Human capital investment,Consumption (C<sub>t</sub>),-0.427
+2031,Human capital investment,Consumption (C<sub>t</sub>),-0.281
+2032,Human capital investment,Consumption (C<sub>t</sub>),-0.112
+2033,Human capital investment,Consumption (C<sub>t</sub>),0.08
+2034,Human capital investment,Consumption (C<sub>t</sub>),0.291
+2035,Human capital investment,Consumption (C<sub>t</sub>),0.52
+2036,Human capital investment,Consumption (C<sub>t</sub>),0.763
+2037,Human capital investment,Consumption (C<sub>t</sub>),1.018
+2038,Human capital investment,Consumption (C<sub>t</sub>),1.282
+2039,Human capital investment,Consumption (C<sub>t</sub>),1.551
+2040,Human capital investment,Consumption (C<sub>t</sub>),1.824
+2041,Human capital investment,Consumption (C<sub>t</sub>),2.099
+2042,Human capital investment,Consumption (C<sub>t</sub>),2.373
+2043,Human capital investment,Consumption (C<sub>t</sub>),2.645
+2044,Human capital investment,Consumption (C<sub>t</sub>),2.914
+2045,Human capital investment,Consumption (C<sub>t</sub>),3.178
+2046,Human capital investment,Consumption (C<sub>t</sub>),3.436
+2047,Human capital investment,Consumption (C<sub>t</sub>),3.687
+2048,Human capital investment,Consumption (C<sub>t</sub>),3.931
+2049,Human capital investment,Consumption (C<sub>t</sub>),4.167
+2050,Human capital investment,Consumption (C<sub>t</sub>),4.395
+2026,R&D investment,Consumption (C<sub>t</sub>),-0.808
+2027,R&D investment,Consumption (C<sub>t</sub>),-0.719
+2028,R&D investment,Consumption (C<sub>t</sub>),-0.568
+2029,R&D investment,Consumption (C<sub>t</sub>),-0.355
+2030,R&D investment,Consumption (C<sub>t</sub>),-0.094
+2031,R&D investment,Consumption (C<sub>t</sub>),0.199
+2032,R&D investment,Consumption (C<sub>t</sub>),0.509
+2033,R&D investment,Consumption (C<sub>t</sub>),0.826
+2034,R&D investment,Consumption (C<sub>t</sub>),1.141
+2035,R&D investment,Consumption (C<sub>t</sub>),1.45
+2036,R&D investment,Consumption (C<sub>t</sub>),1.748
+2037,R&D investment,Consumption (C<sub>t</sub>),2.032
+2038,R&D investment,Consumption (C<sub>t</sub>),2.302
+2039,R&D investment,Consumption (C<sub>t</sub>),2.555
+2040,R&D investment,Consumption (C<sub>t</sub>),2.793
+2041,R&D investment,Consumption (C<sub>t</sub>),3.016
+2042,R&D investment,Consumption (C<sub>t</sub>),3.222
+2043,R&D investment,Consumption (C<sub>t</sub>),3.414
+2044,R&D investment,Consumption (C<sub>t</sub>),3.592
+2045,R&D investment,Consumption (C<sub>t</sub>),3.756
+2046,R&D investment,Consumption (C<sub>t</sub>),3.907
+2047,R&D investment,Consumption (C<sub>t</sub>),4.047
+2048,R&D investment,Consumption (C<sub>t</sub>),4.175
+2049,R&D investment,Consumption (C<sub>t</sub>),4.293
+2050,R&D investment,Consumption (C<sub>t</sub>),4.402
+2026,Government consumption,Consumption (C<sub>t</sub>),-1.302
+2027,Government consumption,Consumption (C<sub>t</sub>),-1.205
+2028,Government consumption,Consumption (C<sub>t</sub>),-1.117
+2029,Government consumption,Consumption (C<sub>t</sub>),-1.037
+2030,Government consumption,Consumption (C<sub>t</sub>),-0.963
+2031,Government consumption,Consumption (C<sub>t</sub>),-0.894
+2032,Government consumption,Consumption (C<sub>t</sub>),-0.83
+2033,Government consumption,Consumption (C<sub>t</sub>),-0.77
+2034,Government consumption,Consumption (C<sub>t</sub>),-0.714
+2035,Government consumption,Consumption (C<sub>t</sub>),-0.662
+2036,Government consumption,Consumption (C<sub>t</sub>),-0.613
+2037,Government consumption,Consumption (C<sub>t</sub>),-0.567
+2038,Government consumption,Consumption (C<sub>t</sub>),-0.524
+2039,Government consumption,Consumption (C<sub>t</sub>),-0.484
+2040,Government consumption,Consumption (C<sub>t</sub>),-0.447
+2041,Government consumption,Consumption (C<sub>t</sub>),-0.412
+2042,Government consumption,Consumption (C<sub>t</sub>),-0.379
+2043,Government consumption,Consumption (C<sub>t</sub>),-0.348
+2044,Government consumption,Consumption (C<sub>t</sub>),-0.32
+2045,Government consumption,Consumption (C<sub>t</sub>),-0.293
+2046,Government consumption,Consumption (C<sub>t</sub>),-0.269
+2047,Government consumption,Consumption (C<sub>t</sub>),-0.246
+2048,Government consumption,Consumption (C<sub>t</sub>),-0.224
+2049,Government consumption,Consumption (C<sub>t</sub>),-0.205
+2050,Government consumption,Consumption (C<sub>t</sub>),-0.186
+2026,Infrastructure investment,Private investment (I<sub>t</sub>),-0.717
+2027,Infrastructure investment,Private investment (I<sub>t</sub>),-0.072
+2028,Infrastructure investment,Private investment (I<sub>t</sub>),0.425
+2029,Infrastructure investment,Private investment (I<sub>t</sub>),0.815
+2030,Infrastructure investment,Private investment (I<sub>t</sub>),1.126
+2031,Infrastructure investment,Private investment (I<sub>t</sub>),1.377
+2032,Infrastructure investment,Private investment (I<sub>t</sub>),1.584
+2033,Infrastructure investment,Private investment (I<sub>t</sub>),1.757
+2034,Infrastructure investment,Private investment (I<sub>t</sub>),1.904
+2035,Infrastructure investment,Private investment (I<sub>t</sub>),2.03
+2036,Infrastructure investment,Private investment (I<sub>t</sub>),2.14
+2037,Infrastructure investment,Private investment (I<sub>t</sub>),2.236
+2038,Infrastructure investment,Private investment (I<sub>t</sub>),2.321
+2039,Infrastructure investment,Private investment (I<sub>t</sub>),2.397
+2040,Infrastructure investment,Private investment (I<sub>t</sub>),2.465
+2041,Infrastructure investment,Private investment (I<sub>t</sub>),2.526
+2042,Infrastructure investment,Private investment (I<sub>t</sub>),2.581
+2043,Infrastructure investment,Private investment (I<sub>t</sub>),2.632
+2044,Infrastructure investment,Private investment (I<sub>t</sub>),2.677
+2045,Infrastructure investment,Private investment (I<sub>t</sub>),2.719
+2046,Infrastructure investment,Private investment (I<sub>t</sub>),2.756
+2047,Infrastructure investment,Private investment (I<sub>t</sub>),2.791
+2048,Infrastructure investment,Private investment (I<sub>t</sub>),2.822
+2049,Infrastructure investment,Private investment (I<sub>t</sub>),2.851
+2050,Infrastructure investment,Private investment (I<sub>t</sub>),2.877
+2026,Human capital investment,Private investment (I<sub>t</sub>),0.244
+2027,Human capital investment,Private investment (I<sub>t</sub>),-0.56
+2028,Human capital investment,Private investment (I<sub>t</sub>),-0.977
+2029,Human capital investment,Private investment (I<sub>t</sub>),-1.119
+2030,Human capital investment,Private investment (I<sub>t</sub>),-1.079
+2031,Human capital investment,Private investment (I<sub>t</sub>),-0.916
+2032,Human capital investment,Private investment (I<sub>t</sub>),-0.674
+2033,Human capital investment,Private investment (I<sub>t</sub>),-0.38
+2034,Human capital investment,Private investment (I<sub>t</sub>),-0.057
+2035,Human capital investment,Private investment (I<sub>t</sub>),0.281
+2036,Human capital investment,Private investment (I<sub>t</sub>),0.625
+2037,Human capital investment,Private investment (I<sub>t</sub>),0.967
+2038,Human capital investment,Private investment (I<sub>t</sub>),1.301
+2039,Human capital investment,Private investment (I<sub>t</sub>),1.627
+2040,Human capital investment,Private investment (I<sub>t</sub>),1.94
+2041,Human capital investment,Private investment (I<sub>t</sub>),2.24
+2042,Human capital investment,Private investment (I<sub>t</sub>),2.526
+2043,Human capital investment,Private investment (I<sub>t</sub>),2.797
+2044,Human capital investment,Private investment (I<sub>t</sub>),3.055
+2045,Human capital investment,Private investment (I<sub>t</sub>),3.298
+2046,Human capital investment,Private investment (I<sub>t</sub>),3.528
+2047,Human capital investment,Private investment (I<sub>t</sub>),3.744
+2048,Human capital investment,Private investment (I<sub>t</sub>),3.947
+2049,Human capital investment,Private investment (I<sub>t</sub>),4.137
+2050,Human capital investment,Private investment (I<sub>t</sub>),4.315
+2026,R&D investment,Private investment (I<sub>t</sub>),-1.181
+2027,R&D investment,Private investment (I<sub>t</sub>),-2.853
+2028,R&D investment,Private investment (I<sub>t</sub>),-2.461
+2029,R&D investment,Private investment (I<sub>t</sub>),-1.501
+2030,R&D investment,Private investment (I<sub>t</sub>),-0.5
+2031,R&D investment,Private investment (I<sub>t</sub>),0.383
+2032,R&D investment,Private investment (I<sub>t</sub>),1.118
+2033,R&D investment,Private investment (I<sub>t</sub>),1.716
+2034,R&D investment,Private investment (I<sub>t</sub>),2.2
+2035,R&D investment,Private investment (I<sub>t</sub>),2.594
+2036,R&D investment,Private investment (I<sub>t</sub>),2.916
+2037,R&D investment,Private investment (I<sub>t</sub>),3.182
+2038,R&D investment,Private investment (I<sub>t</sub>),3.402
+2039,R&D investment,Private investment (I<sub>t</sub>),3.587
+2040,R&D investment,Private investment (I<sub>t</sub>),3.744
+2041,R&D investment,Private investment (I<sub>t</sub>),3.877
+2042,R&D investment,Private investment (I<sub>t</sub>),3.992
+2043,R&D investment,Private investment (I<sub>t</sub>),4.09
+2044,R&D investment,Private investment (I<sub>t</sub>),4.176
+2045,R&D investment,Private investment (I<sub>t</sub>),4.251
+2046,R&D investment,Private investment (I<sub>t</sub>),4.316
+2047,R&D investment,Private investment (I<sub>t</sub>),4.373
+2048,R&D investment,Private investment (I<sub>t</sub>),4.424
+2049,R&D investment,Private investment (I<sub>t</sub>),4.469
+2050,R&D investment,Private investment (I<sub>t</sub>),4.509
+2026,Government consumption,Private investment (I<sub>t</sub>),0.936
+2027,Government consumption,Private investment (I<sub>t</sub>),0.925
+2028,Government consumption,Private investment (I<sub>t</sub>),0.918
+2029,Government consumption,Private investment (I<sub>t</sub>),0.922
+2030,Government consumption,Private investment (I<sub>t</sub>),0.934
+2031,Government consumption,Private investment (I<sub>t</sub>),0.952
+2032,Government consumption,Private investment (I<sub>t</sub>),0.974
+2033,Government consumption,Private investment (I<sub>t</sub>),0.997
+2034,Government consumption,Private investment (I<sub>t</sub>),1.02
+2035,Government consumption,Private investment (I<sub>t</sub>),1.044
+2036,Government consumption,Private investment (I<sub>t</sub>),1.067
+2037,Government consumption,Private investment (I<sub>t</sub>),1.089
+2038,Government consumption,Private investment (I<sub>t</sub>),1.11
+2039,Government consumption,Private investment (I<sub>t</sub>),1.13
+2040,Government consumption,Private investment (I<sub>t</sub>),1.148
+2041,Government consumption,Private investment (I<sub>t</sub>),1.165
+2042,Government consumption,Private investment (I<sub>t</sub>),1.181
+2043,Government consumption,Private investment (I<sub>t</sub>),1.196
+2044,Government consumption,Private investment (I<sub>t</sub>),1.21
+2045,Government consumption,Private investment (I<sub>t</sub>),1.222
+2046,Government consumption,Private investment (I<sub>t</sub>),1.234
+2047,Government consumption,Private investment (I<sub>t</sub>),1.244
+2048,Government consumption,Private investment (I<sub>t</sub>),1.254
+2049,Government consumption,Private investment (I<sub>t</sub>),1.263
+2050,Government consumption,Private investment (I<sub>t</sub>),1.271
+2026,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2027,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2028,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2029,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2030,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2031,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2032,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2033,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2034,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2035,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2036,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2037,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2038,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2039,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2040,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2041,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2042,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2043,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2044,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2045,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2046,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2047,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2048,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2049,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2050,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2026,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2027,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2028,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2029,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2030,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2031,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2032,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2033,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2034,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2035,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2036,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2037,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2038,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2039,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2040,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2041,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2042,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2043,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2044,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2045,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2046,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2047,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2048,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2049,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2050,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2026,R&D investment,Government spending (G<sub>t</sub>),4.338
+2027,R&D investment,Government spending (G<sub>t</sub>),4.338
+2028,R&D investment,Government spending (G<sub>t</sub>),4.338
+2029,R&D investment,Government spending (G<sub>t</sub>),4.338
+2030,R&D investment,Government spending (G<sub>t</sub>),4.338
+2031,R&D investment,Government spending (G<sub>t</sub>),4.338
+2032,R&D investment,Government spending (G<sub>t</sub>),4.338
+2033,R&D investment,Government spending (G<sub>t</sub>),4.338
+2034,R&D investment,Government spending (G<sub>t</sub>),4.338
+2035,R&D investment,Government spending (G<sub>t</sub>),4.338
+2036,R&D investment,Government spending (G<sub>t</sub>),4.338
+2037,R&D investment,Government spending (G<sub>t</sub>),4.338
+2038,R&D investment,Government spending (G<sub>t</sub>),4.338
+2039,R&D investment,Government spending (G<sub>t</sub>),4.338
+2040,R&D investment,Government spending (G<sub>t</sub>),4.338
+2041,R&D investment,Government spending (G<sub>t</sub>),4.338
+2042,R&D investment,Government spending (G<sub>t</sub>),4.338
+2043,R&D investment,Government spending (G<sub>t</sub>),4.338
+2044,R&D investment,Government spending (G<sub>t</sub>),4.338
+2045,R&D investment,Government spending (G<sub>t</sub>),4.338
+2046,R&D investment,Government spending (G<sub>t</sub>),4.338
+2047,R&D investment,Government spending (G<sub>t</sub>),4.338
+2048,R&D investment,Government spending (G<sub>t</sub>),4.338
+2049,R&D investment,Government spending (G<sub>t</sub>),4.338
+2050,R&D investment,Government spending (G<sub>t</sub>),4.338
+2026,Government consumption,Government spending (G<sub>t</sub>),4.338
+2027,Government consumption,Government spending (G<sub>t</sub>),4.338
+2028,Government consumption,Government spending (G<sub>t</sub>),4.338
+2029,Government consumption,Government spending (G<sub>t</sub>),4.338
+2030,Government consumption,Government spending (G<sub>t</sub>),4.338
+2031,Government consumption,Government spending (G<sub>t</sub>),4.338
+2032,Government consumption,Government spending (G<sub>t</sub>),4.338
+2033,Government consumption,Government spending (G<sub>t</sub>),4.338
+2034,Government consumption,Government spending (G<sub>t</sub>),4.338
+2035,Government consumption,Government spending (G<sub>t</sub>),4.338
+2036,Government consumption,Government spending (G<sub>t</sub>),4.338
+2037,Government consumption,Government spending (G<sub>t</sub>),4.338
+2038,Government consumption,Government spending (G<sub>t</sub>),4.338
+2039,Government consumption,Government spending (G<sub>t</sub>),4.338
+2040,Government consumption,Government spending (G<sub>t</sub>),4.338
+2041,Government consumption,Government spending (G<sub>t</sub>),4.338
+2042,Government consumption,Government spending (G<sub>t</sub>),4.338
+2043,Government consumption,Government spending (G<sub>t</sub>),4.338
+2044,Government consumption,Government spending (G<sub>t</sub>),4.338
+2045,Government consumption,Government spending (G<sub>t</sub>),4.338
+2046,Government consumption,Government spending (G<sub>t</sub>),4.338
+2047,Government consumption,Government spending (G<sub>t</sub>),4.338
+2048,Government consumption,Government spending (G<sub>t</sub>),4.338
+2049,Government consumption,Government spending (G<sub>t</sub>),4.338
+2050,Government consumption,Government spending (G<sub>t</sub>),4.338
+2026,Infrastructure investment,Adopted technology (A<sub>t</sub>),-0.007
+2027,Infrastructure investment,Adopted technology (A<sub>t</sub>),-0.001
+2028,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.018
+2029,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.05
+2030,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.093
+2031,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.147
+2032,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.21
+2033,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.279
+2034,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.354
+2035,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.433
+2036,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.514
+2037,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.597
+2038,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.68
+2039,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.762
+2040,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.844
+2041,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.924
+2042,Infrastructure investment,Adopted technology (A<sub>t</sub>),1.001
+2043,Infrastructure investment,Adopted technology (A<sub>t</sub>),1.076
+2044,Infrastructure investment,Adopted technology (A<sub>t</sub>),1.149
+2045,Infrastructure investment,Adopted technology (A<sub>t</sub>),1.218
+2046,Infrastructure investment,Adopted technology (A<sub>t</sub>),1.285
+2047,Infrastructure investment,Adopted technology (A<sub>t</sub>),1.348
+2048,Infrastructure investment,Adopted technology (A<sub>t</sub>),1.408
+2049,Infrastructure investment,Adopted technology (A<sub>t</sub>),1.465
+2050,Infrastructure investment,Adopted technology (A<sub>t</sub>),1.519
+2026,Human capital investment,Adopted technology (A<sub>t</sub>),-0.012
+2027,Human capital investment,Adopted technology (A<sub>t</sub>),-0.03
+2028,Human capital investment,Adopted technology (A<sub>t</sub>),-0.053
+2029,Human capital investment,Adopted technology (A<sub>t</sub>),-0.074
+2030,Human capital investment,Adopted technology (A<sub>t</sub>),-0.087
+2031,Human capital investment,Adopted technology (A<sub>t</sub>),-0.086
+2032,Human capital investment,Adopted technology (A<sub>t</sub>),-0.066
+2033,Human capital investment,Adopted technology (A<sub>t</sub>),-0.025
+2034,Human capital investment,Adopted technology (A<sub>t</sub>),0.038
+2035,Human capital investment,Adopted technology (A<sub>t</sub>),0.123
+2036,Human capital investment,Adopted technology (A<sub>t</sub>),0.229
+2037,Human capital investment,Adopted technology (A<sub>t</sub>),0.356
+2038,Human capital investment,Adopted technology (A<sub>t</sub>),0.501
+2039,Human capital investment,Adopted technology (A<sub>t</sub>),0.663
+2040,Human capital investment,Adopted technology (A<sub>t</sub>),0.839
+2041,Human capital investment,Adopted technology (A<sub>t</sub>),1.027
+2042,Human capital investment,Adopted technology (A<sub>t</sub>),1.225
+2043,Human capital investment,Adopted technology (A<sub>t</sub>),1.432
+2044,Human capital investment,Adopted technology (A<sub>t</sub>),1.644
+2045,Human capital investment,Adopted technology (A<sub>t</sub>),1.86
+2046,Human capital investment,Adopted technology (A<sub>t</sub>),2.078
+2047,Human capital investment,Adopted technology (A<sub>t</sub>),2.296
+2048,Human capital investment,Adopted technology (A<sub>t</sub>),2.514
+2049,Human capital investment,Adopted technology (A<sub>t</sub>),2.73
+2050,Human capital investment,Adopted technology (A<sub>t</sub>),2.942
+2026,R&D investment,Adopted technology (A<sub>t</sub>),-0.374
+2027,R&D investment,Adopted technology (A<sub>t</sub>),0.198
+2028,R&D investment,Adopted technology (A<sub>t</sub>),1.106
+2029,R&D investment,Adopted technology (A<sub>t</sub>),2.07
+2030,R&D investment,Adopted technology (A<sub>t</sub>),2.994
+2031,R&D investment,Adopted technology (A<sub>t</sub>),3.847
+2032,R&D investment,Adopted technology (A<sub>t</sub>),4.626
+2033,R&D investment,Adopted technology (A<sub>t</sub>),5.335
+2034,R&D investment,Adopted technology (A<sub>t</sub>),5.98
+2035,R&D investment,Adopted technology (A<sub>t</sub>),6.568
+2036,R&D investment,Adopted technology (A<sub>t</sub>),7.105
+2037,R&D investment,Adopted technology (A<sub>t</sub>),7.595
+2038,R&D investment,Adopted technology (A<sub>t</sub>),8.043
+2039,R&D investment,Adopted technology (A<sub>t</sub>),8.454
+2040,R&D investment,Adopted technology (A<sub>t</sub>),8.83
+2041,R&D investment,Adopted technology (A<sub>t</sub>),9.174
+2042,R&D investment,Adopted technology (A<sub>t</sub>),9.488
+2043,R&D investment,Adopted technology (A<sub>t</sub>),9.777
+2044,R&D investment,Adopted technology (A<sub>t</sub>),10.041
+2045,R&D investment,Adopted technology (A<sub>t</sub>),10.282
+2046,R&D investment,Adopted technology (A<sub>t</sub>),10.503
+2047,R&D investment,Adopted technology (A<sub>t</sub>),10.705
+2048,R&D investment,Adopted technology (A<sub>t</sub>),10.89
+2049,R&D investment,Adopted technology (A<sub>t</sub>),11.059
+2050,R&D investment,Adopted technology (A<sub>t</sub>),11.213
+2026,Government consumption,Adopted technology (A<sub>t</sub>),0.008
+2027,Government consumption,Adopted technology (A<sub>t</sub>),0.029
+2028,Government consumption,Adopted technology (A<sub>t</sub>),0.058
+2029,Government consumption,Adopted technology (A<sub>t</sub>),0.094
+2030,Government consumption,Adopted technology (A<sub>t</sub>),0.134
+2031,Government consumption,Adopted technology (A<sub>t</sub>),0.177
+2032,Government consumption,Adopted technology (A<sub>t</sub>),0.222
+2033,Government consumption,Adopted technology (A<sub>t</sub>),0.267
+2034,Government consumption,Adopted technology (A<sub>t</sub>),0.313
+2035,Government consumption,Adopted technology (A<sub>t</sub>),0.358
+2036,Government consumption,Adopted technology (A<sub>t</sub>),0.402
+2037,Government consumption,Adopted technology (A<sub>t</sub>),0.445
+2038,Government consumption,Adopted technology (A<sub>t</sub>),0.487
+2039,Government consumption,Adopted technology (A<sub>t</sub>),0.527
+2040,Government consumption,Adopted technology (A<sub>t</sub>),0.565
+2041,Government consumption,Adopted technology (A<sub>t</sub>),0.601
+2042,Government consumption,Adopted technology (A<sub>t</sub>),0.636
+2043,Government consumption,Adopted technology (A<sub>t</sub>),0.669
+2044,Government consumption,Adopted technology (A<sub>t</sub>),0.7
+2045,Government consumption,Adopted technology (A<sub>t</sub>),0.729
+2046,Government consumption,Adopted technology (A<sub>t</sub>),0.756
+2047,Government consumption,Adopted technology (A<sub>t</sub>),0.782
+2048,Government consumption,Adopted technology (A<sub>t</sub>),0.806
+2049,Government consumption,Adopted technology (A<sub>t</sub>),0.829
+2050,Government consumption,Adopted technology (A<sub>t</sub>),0.85
+2026,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.688
+2027,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.967
+2028,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),9.884
+2029,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),12.478
+2030,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),14.785
+2031,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),16.837
+2032,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),18.662
+2033,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),20.285
+2034,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),21.729
+2035,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),23.012
+2036,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),24.154
+2037,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),25.17
+2038,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),26.073
+2039,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),26.876
+2040,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),27.59
+2041,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),28.226
+2042,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),28.791
+2043,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),29.293
+2044,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),29.74
+2045,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),30.138
+2046,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),30.491
+2047,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),30.806
+2048,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),31.085
+2049,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),31.334
+2050,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),31.555
+2026,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2027,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2028,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2029,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2030,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2031,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2032,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2033,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2034,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2035,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2036,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2037,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2038,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2039,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2040,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2041,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2042,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2043,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2044,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2045,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2046,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2047,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2048,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2049,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2050,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2026,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2027,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2028,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2029,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2030,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2031,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2032,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2033,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2034,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2035,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2036,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2037,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2038,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2039,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2040,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2041,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2042,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2043,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2044,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2045,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2046,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2047,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2048,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2049,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2050,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2026,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2027,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2028,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2029,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2030,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2031,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2032,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2033,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2034,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2035,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2036,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2037,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2038,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2039,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2040,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2041,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2042,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2043,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2044,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2045,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2046,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2047,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2048,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2049,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2050,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2026,Infrastructure investment,Private capital (K<sub>t</sub>),-0.374
+2027,Infrastructure investment,Private capital (K<sub>t</sub>),-0.365
+2028,Infrastructure investment,Private capital (K<sub>t</sub>),-0.297
+2029,Infrastructure investment,Private capital (K<sub>t</sub>),-0.189
+2030,Infrastructure investment,Private capital (K<sub>t</sub>),-0.055
+2031,Infrastructure investment,Private capital (K<sub>t</sub>),0.094
+2032,Infrastructure investment,Private capital (K<sub>t</sub>),0.25
+2033,Infrastructure investment,Private capital (K<sub>t</sub>),0.41
+2034,Infrastructure investment,Private capital (K<sub>t</sub>),0.57
+2035,Infrastructure investment,Private capital (K<sub>t</sub>),0.727
+2036,Infrastructure investment,Private capital (K<sub>t</sub>),0.879
+2037,Infrastructure investment,Private capital (K<sub>t</sub>),1.025
+2038,Infrastructure investment,Private capital (K<sub>t</sub>),1.165
+2039,Infrastructure investment,Private capital (K<sub>t</sub>),1.298
+2040,Infrastructure investment,Private capital (K<sub>t</sub>),1.425
+2041,Infrastructure investment,Private capital (K<sub>t</sub>),1.544
+2042,Infrastructure investment,Private capital (K<sub>t</sub>),1.657
+2043,Infrastructure investment,Private capital (K<sub>t</sub>),1.762
+2044,Infrastructure investment,Private capital (K<sub>t</sub>),1.862
+2045,Infrastructure investment,Private capital (K<sub>t</sub>),1.955
+2046,Infrastructure investment,Private capital (K<sub>t</sub>),2.042
+2047,Infrastructure investment,Private capital (K<sub>t</sub>),2.124
+2048,Infrastructure investment,Private capital (K<sub>t</sub>),2.2
+2049,Infrastructure investment,Private capital (K<sub>t</sub>),2.271
+2050,Infrastructure investment,Private capital (K<sub>t</sub>),2.337
+2026,Human capital investment,Private capital (K<sub>t</sub>),-0.204
+2027,Human capital investment,Private capital (K<sub>t</sub>),-0.215
+2028,Human capital investment,Private capital (K<sub>t</sub>),-0.285
+2029,Human capital investment,Private capital (K<sub>t</sub>),-0.373
+2030,Human capital investment,Private capital (K<sub>t</sub>),-0.454
+2031,Human capital investment,Private capital (K<sub>t</sub>),-0.513
+2032,Human capital investment,Private capital (K<sub>t</sub>),-0.541
+2033,Human capital investment,Private capital (K<sub>t</sub>),-0.535
+2034,Human capital investment,Private capital (K<sub>t</sub>),-0.496
+2035,Human capital investment,Private capital (K<sub>t</sub>),-0.424
+2036,Human capital investment,Private capital (K<sub>t</sub>),-0.321
+2037,Human capital investment,Private capital (K<sub>t</sub>),-0.193
+2038,Human capital investment,Private capital (K<sub>t</sub>),-0.041
+2039,Human capital investment,Private capital (K<sub>t</sub>),0.13
+2040,Human capital investment,Private capital (K<sub>t</sub>),0.318
+2041,Human capital investment,Private capital (K<sub>t</sub>),0.519
+2042,Human capital investment,Private capital (K<sub>t</sub>),0.729
+2043,Human capital investment,Private capital (K<sub>t</sub>),0.947
+2044,Human capital investment,Private capital (K<sub>t</sub>),1.17
+2045,Human capital investment,Private capital (K<sub>t</sub>),1.396
+2046,Human capital investment,Private capital (K<sub>t</sub>),1.622
+2047,Human capital investment,Private capital (K<sub>t</sub>),1.848
+2048,Human capital investment,Private capital (K<sub>t</sub>),2.073
+2049,Human capital investment,Private capital (K<sub>t</sub>),2.293
+2050,Human capital investment,Private capital (K<sub>t</sub>),2.51
+2026,R&D investment,Private capital (K<sub>t</sub>),-0.148
+2027,R&D investment,Private capital (K<sub>t</sub>),-0.408
+2028,R&D investment,Private capital (K<sub>t</sub>),-0.66
+2029,R&D investment,Private capital (K<sub>t</sub>),-0.794
+2030,R&D investment,Private capital (K<sub>t</sub>),-0.801
+2031,R&D investment,Private capital (K<sub>t</sub>),-0.705
+2032,R&D investment,Private capital (K<sub>t</sub>),-0.531
+2033,R&D investment,Private capital (K<sub>t</sub>),-0.306
+2034,R&D investment,Private capital (K<sub>t</sub>),-0.047
+2035,R&D investment,Private capital (K<sub>t</sub>),0.23
+2036,R&D investment,Private capital (K<sub>t</sub>),0.514
+2037,R&D investment,Private capital (K<sub>t</sub>),0.799
+2038,R&D investment,Private capital (K<sub>t</sub>),1.078
+2039,R&D investment,Private capital (K<sub>t</sub>),1.349
+2040,R&D investment,Private capital (K<sub>t</sub>),1.608
+2041,R&D investment,Private capital (K<sub>t</sub>),1.853
+2042,R&D investment,Private capital (K<sub>t</sub>),2.086
+2043,R&D investment,Private capital (K<sub>t</sub>),2.303
+2044,R&D investment,Private capital (K<sub>t</sub>),2.507
+2045,R&D investment,Private capital (K<sub>t</sub>),2.697
+2046,R&D investment,Private capital (K<sub>t</sub>),2.874
+2047,R&D investment,Private capital (K<sub>t</sub>),3.037
+2048,R&D investment,Private capital (K<sub>t</sub>),3.189
+2049,R&D investment,Private capital (K<sub>t</sub>),3.329
+2050,R&D investment,Private capital (K<sub>t</sub>),3.458
+2026,Government consumption,Private capital (K<sub>t</sub>),-0.182
+2027,Government consumption,Private capital (K<sub>t</sub>),-0.059
+2028,Government consumption,Private capital (K<sub>t</sub>),0.049
+2029,Government consumption,Private capital (K<sub>t</sub>),0.145
+2030,Government consumption,Private capital (K<sub>t</sub>),0.232
+2031,Government consumption,Private capital (K<sub>t</sub>),0.311
+2032,Government consumption,Private capital (K<sub>t</sub>),0.383
+2033,Government consumption,Private capital (K<sub>t</sub>),0.45
+2034,Government consumption,Private capital (K<sub>t</sub>),0.512
+2035,Government consumption,Private capital (K<sub>t</sub>),0.57
+2036,Government consumption,Private capital (K<sub>t</sub>),0.624
+2037,Government consumption,Private capital (K<sub>t</sub>),0.675
+2038,Government consumption,Private capital (K<sub>t</sub>),0.722
+2039,Government consumption,Private capital (K<sub>t</sub>),0.766
+2040,Government consumption,Private capital (K<sub>t</sub>),0.808
+2041,Government consumption,Private capital (K<sub>t</sub>),0.847
+2042,Government consumption,Private capital (K<sub>t</sub>),0.883
+2043,Government consumption,Private capital (K<sub>t</sub>),0.917
+2044,Government consumption,Private capital (K<sub>t</sub>),0.949
+2045,Government consumption,Private capital (K<sub>t</sub>),0.979
+2046,Government consumption,Private capital (K<sub>t</sub>),1.006
+2047,Government consumption,Private capital (K<sub>t</sub>),1.032
+2048,Government consumption,Private capital (K<sub>t</sub>),1.057
+2049,Government consumption,Private capital (K<sub>t</sub>),1.079
+2050,Government consumption,Private capital (K<sub>t</sub>),1.1
+2026,Infrastructure investment,Effective labor (N<sub>t</sub>),0.679
+2027,Infrastructure investment,Effective labor (N<sub>t</sub>),0.751
+2028,Infrastructure investment,Effective labor (N<sub>t</sub>),0.792
+2029,Infrastructure investment,Effective labor (N<sub>t</sub>),0.812
+2030,Infrastructure investment,Effective labor (N<sub>t</sub>),0.817
+2031,Infrastructure investment,Effective labor (N<sub>t</sub>),0.811
+2032,Infrastructure investment,Effective labor (N<sub>t</sub>),0.797
+2033,Infrastructure investment,Effective labor (N<sub>t</sub>),0.777
+2034,Infrastructure investment,Effective labor (N<sub>t</sub>),0.755
+2035,Infrastructure investment,Effective labor (N<sub>t</sub>),0.73
+2036,Infrastructure investment,Effective labor (N<sub>t</sub>),0.704
+2037,Infrastructure investment,Effective labor (N<sub>t</sub>),0.677
+2038,Infrastructure investment,Effective labor (N<sub>t</sub>),0.65
+2039,Infrastructure investment,Effective labor (N<sub>t</sub>),0.624
+2040,Infrastructure investment,Effective labor (N<sub>t</sub>),0.598
+2041,Infrastructure investment,Effective labor (N<sub>t</sub>),0.573
+2042,Infrastructure investment,Effective labor (N<sub>t</sub>),0.549
+2043,Infrastructure investment,Effective labor (N<sub>t</sub>),0.526
+2044,Infrastructure investment,Effective labor (N<sub>t</sub>),0.504
+2045,Infrastructure investment,Effective labor (N<sub>t</sub>),0.484
+2046,Infrastructure investment,Effective labor (N<sub>t</sub>),0.464
+2047,Infrastructure investment,Effective labor (N<sub>t</sub>),0.445
+2048,Infrastructure investment,Effective labor (N<sub>t</sub>),0.427
+2049,Infrastructure investment,Effective labor (N<sub>t</sub>),0.411
+2050,Infrastructure investment,Effective labor (N<sub>t</sub>),0.395
+2026,Human capital investment,Effective labor (N<sub>t</sub>),1.037
+2027,Human capital investment,Effective labor (N<sub>t</sub>),0.837
+2028,Human capital investment,Effective labor (N<sub>t</sub>),0.797
+2029,Human capital investment,Effective labor (N<sub>t</sub>),0.873
+2030,Human capital investment,Effective labor (N<sub>t</sub>),1.025
+2031,Human capital investment,Effective labor (N<sub>t</sub>),1.225
+2032,Human capital investment,Effective labor (N<sub>t</sub>),1.453
+2033,Human capital investment,Effective labor (N<sub>t</sub>),1.694
+2034,Human capital investment,Effective labor (N<sub>t</sub>),1.939
+2035,Human capital investment,Effective labor (N<sub>t</sub>),2.18
+2036,Human capital investment,Effective labor (N<sub>t</sub>),2.411
+2037,Human capital investment,Effective labor (N<sub>t</sub>),2.631
+2038,Human capital investment,Effective labor (N<sub>t</sub>),2.838
+2039,Human capital investment,Effective labor (N<sub>t</sub>),3.029
+2040,Human capital investment,Effective labor (N<sub>t</sub>),3.204
+2041,Human capital investment,Effective labor (N<sub>t</sub>),3.365
+2042,Human capital investment,Effective labor (N<sub>t</sub>),3.51
+2043,Human capital investment,Effective labor (N<sub>t</sub>),3.641
+2044,Human capital investment,Effective labor (N<sub>t</sub>),3.758
+2045,Human capital investment,Effective labor (N<sub>t</sub>),3.862
+2046,Human capital investment,Effective labor (N<sub>t</sub>),3.955
+2047,Human capital investment,Effective labor (N<sub>t</sub>),4.036
+2048,Human capital investment,Effective labor (N<sub>t</sub>),4.107
+2049,Human capital investment,Effective labor (N<sub>t</sub>),4.169
+2050,Human capital investment,Effective labor (N<sub>t</sub>),4.222
+2026,R&D investment,Effective labor (N<sub>t</sub>),0.596
+2027,R&D investment,Effective labor (N<sub>t</sub>),0.672
+2028,R&D investment,Effective labor (N<sub>t</sub>),0.781
+2029,R&D investment,Effective labor (N<sub>t</sub>),0.864
+2030,R&D investment,Effective labor (N<sub>t</sub>),0.907
+2031,R&D investment,Effective labor (N<sub>t</sub>),0.913
+2032,R&D investment,Effective labor (N<sub>t</sub>),0.891
+2033,R&D investment,Effective labor (N<sub>t</sub>),0.849
+2034,R&D investment,Effective labor (N<sub>t</sub>),0.793
+2035,R&D investment,Effective labor (N<sub>t</sub>),0.729
+2036,R&D investment,Effective labor (N<sub>t</sub>),0.661
+2037,R&D investment,Effective labor (N<sub>t</sub>),0.59
+2038,R&D investment,Effective labor (N<sub>t</sub>),0.521
+2039,R&D investment,Effective labor (N<sub>t</sub>),0.452
+2040,R&D investment,Effective labor (N<sub>t</sub>),0.386
+2041,R&D investment,Effective labor (N<sub>t</sub>),0.324
+2042,R&D investment,Effective labor (N<sub>t</sub>),0.264
+2043,R&D investment,Effective labor (N<sub>t</sub>),0.208
+2044,R&D investment,Effective labor (N<sub>t</sub>),0.156
+2045,R&D investment,Effective labor (N<sub>t</sub>),0.107
+2046,R&D investment,Effective labor (N<sub>t</sub>),0.061
+2047,R&D investment,Effective labor (N<sub>t</sub>),0.019
+2048,R&D investment,Effective labor (N<sub>t</sub>),-0.02
+2049,R&D investment,Effective labor (N<sub>t</sub>),-0.056
+2050,R&D investment,Effective labor (N<sub>t</sub>),-0.089
+2026,Government consumption,Effective labor (N<sub>t</sub>),0.966
+2027,Government consumption,Effective labor (N<sub>t</sub>),0.98
+2028,Government consumption,Effective labor (N<sub>t</sub>),0.989
+2029,Government consumption,Effective labor (N<sub>t</sub>),0.996
+2030,Government consumption,Effective labor (N<sub>t</sub>),1.003
+2031,Government consumption,Effective labor (N<sub>t</sub>),1.007
+2032,Government consumption,Effective labor (N<sub>t</sub>),1.011
+2033,Government consumption,Effective labor (N<sub>t</sub>),1.013
+2034,Government consumption,Effective labor (N<sub>t</sub>),1.013
+2035,Government consumption,Effective labor (N<sub>t</sub>),1.013
+2036,Government consumption,Effective labor (N<sub>t</sub>),1.012
+2037,Government consumption,Effective labor (N<sub>t</sub>),1.01
+2038,Government consumption,Effective labor (N<sub>t</sub>),1.007
+2039,Government consumption,Effective labor (N<sub>t</sub>),1.004
+2040,Government consumption,Effective labor (N<sub>t</sub>),1.001
+2041,Government consumption,Effective labor (N<sub>t</sub>),0.997
+2042,Government consumption,Effective labor (N<sub>t</sub>),0.993
+2043,Government consumption,Effective labor (N<sub>t</sub>),0.988
+2044,Government consumption,Effective labor (N<sub>t</sub>),0.984
+2045,Government consumption,Effective labor (N<sub>t</sub>),0.98
+2046,Government consumption,Effective labor (N<sub>t</sub>),0.976
+2047,Government consumption,Effective labor (N<sub>t</sub>),0.971
+2048,Government consumption,Effective labor (N<sub>t</sub>),0.967
+2049,Government consumption,Effective labor (N<sub>t</sub>),0.963
+2050,Government consumption,Effective labor (N<sub>t</sub>),0.96
+2026,Infrastructure investment,Inflation (Π<sub>t</sub>),-1.307
+2027,Infrastructure investment,Inflation (Π<sub>t</sub>),-1.661
+2028,Infrastructure investment,Inflation (Π<sub>t</sub>),-1.989
+2029,Infrastructure investment,Inflation (Π<sub>t</sub>),-2.294
+2030,Infrastructure investment,Inflation (Π<sub>t</sub>),-2.577
+2031,Infrastructure investment,Inflation (Π<sub>t</sub>),-2.841
+2032,Infrastructure investment,Inflation (Π<sub>t</sub>),-3.087
+2033,Infrastructure investment,Inflation (Π<sub>t</sub>),-3.316
+2034,Infrastructure investment,Inflation (Π<sub>t</sub>),-3.528
+2035,Infrastructure investment,Inflation (Π<sub>t</sub>),-3.726
+2036,Infrastructure investment,Inflation (Π<sub>t</sub>),-3.91
+2037,Infrastructure investment,Inflation (Π<sub>t</sub>),-4.081
+2038,Infrastructure investment,Inflation (Π<sub>t</sub>),-4.24
+2039,Infrastructure investment,Inflation (Π<sub>t</sub>),-4.387
+2040,Infrastructure investment,Inflation (Π<sub>t</sub>),-4.524
+2041,Infrastructure investment,Inflation (Π<sub>t</sub>),-4.651
+2042,Infrastructure investment,Inflation (Π<sub>t</sub>),-4.769
+2043,Infrastructure investment,Inflation (Π<sub>t</sub>),-4.878
+2044,Infrastructure investment,Inflation (Π<sub>t</sub>),-4.979
+2045,Infrastructure investment,Inflation (Π<sub>t</sub>),-5.073
+2046,Infrastructure investment,Inflation (Π<sub>t</sub>),-5.159
+2047,Infrastructure investment,Inflation (Π<sub>t</sub>),-5.239
+2048,Infrastructure investment,Inflation (Π<sub>t</sub>),-5.313
+2049,Infrastructure investment,Inflation (Π<sub>t</sub>),-5.382
+2050,Infrastructure investment,Inflation (Π<sub>t</sub>),-5.445
+2026,Human capital investment,Inflation (Π<sub>t</sub>),-0.904
+2027,Human capital investment,Inflation (Π<sub>t</sub>),-0.821
+2028,Human capital investment,Inflation (Π<sub>t</sub>),-0.854
+2029,Human capital investment,Inflation (Π<sub>t</sub>),-0.982
+2030,Human capital investment,Inflation (Π<sub>t</sub>),-1.185
+2031,Human capital investment,Inflation (Π<sub>t</sub>),-1.448
+2032,Human capital investment,Inflation (Π<sub>t</sub>),-1.758
+2033,Human capital investment,Inflation (Π<sub>t</sub>),-2.102
+2034,Human capital investment,Inflation (Π<sub>t</sub>),-2.472
+2035,Human capital investment,Inflation (Π<sub>t</sub>),-2.86
+2036,Human capital investment,Inflation (Π<sub>t</sub>),-3.259
+2037,Human capital investment,Inflation (Π<sub>t</sub>),-3.665
+2038,Human capital investment,Inflation (Π<sub>t</sub>),-4.073
+2039,Human capital investment,Inflation (Π<sub>t</sub>),-4.479
+2040,Human capital investment,Inflation (Π<sub>t</sub>),-4.88
+2041,Human capital investment,Inflation (Π<sub>t</sub>),-5.274
+2042,Human capital investment,Inflation (Π<sub>t</sub>),-5.659
+2043,Human capital investment,Inflation (Π<sub>t</sub>),-6.033
+2044,Human capital investment,Inflation (Π<sub>t</sub>),-6.396
+2045,Human capital investment,Inflation (Π<sub>t</sub>),-6.746
+2046,Human capital investment,Inflation (Π<sub>t</sub>),-7.082
+2047,Human capital investment,Inflation (Π<sub>t</sub>),-7.405
+2048,Human capital investment,Inflation (Π<sub>t</sub>),-7.714
+2049,Human capital investment,Inflation (Π<sub>t</sub>),-8.008
+2050,Human capital investment,Inflation (Π<sub>t</sub>),-8.288
+2026,R&D investment,Inflation (Π<sub>t</sub>),-0.822
+2027,R&D investment,Inflation (Π<sub>t</sub>),-1.22
+2028,R&D investment,Inflation (Π<sub>t</sub>),-1.745
+2029,R&D investment,Inflation (Π<sub>t</sub>),-2.298
+2030,R&D investment,Inflation (Π<sub>t</sub>),-2.84
+2031,R&D investment,Inflation (Π<sub>t</sub>),-3.356
+2032,R&D investment,Inflation (Π<sub>t</sub>),-3.84
+2033,R&D investment,Inflation (Π<sub>t</sub>),-4.292
+2034,R&D investment,Inflation (Π<sub>t</sub>),-4.712
+2035,R&D investment,Inflation (Π<sub>t</sub>),-5.1
+2036,R&D investment,Inflation (Π<sub>t</sub>),-5.46
+2037,R&D investment,Inflation (Π<sub>t</sub>),-5.791
+2038,R&D investment,Inflation (Π<sub>t</sub>),-6.097
+2039,R&D investment,Inflation (Π<sub>t</sub>),-6.378
+2040,R&D investment,Inflation (Π<sub>t</sub>),-6.636
+2041,R&D investment,Inflation (Π<sub>t</sub>),-6.874
+2042,R&D investment,Inflation (Π<sub>t</sub>),-7.092
+2043,R&D investment,Inflation (Π<sub>t</sub>),-7.292
+2044,R&D investment,Inflation (Π<sub>t</sub>),-7.475
+2045,R&D investment,Inflation (Π<sub>t</sub>),-7.643
+2046,R&D investment,Inflation (Π<sub>t</sub>),-7.796
+2047,R&D investment,Inflation (Π<sub>t</sub>),-7.937
+2048,R&D investment,Inflation (Π<sub>t</sub>),-8.065
+2049,R&D investment,Inflation (Π<sub>t</sub>),-8.183
+2050,R&D investment,Inflation (Π<sub>t</sub>),-8.29
+2026,Government consumption,Inflation (Π<sub>t</sub>),-1.184
+2027,Government consumption,Inflation (Π<sub>t</sub>),-1.29
+2028,Government consumption,Inflation (Π<sub>t</sub>),-1.388
+2029,Government consumption,Inflation (Π<sub>t</sub>),-1.479
+2030,Government consumption,Inflation (Π<sub>t</sub>),-1.565
+2031,Government consumption,Inflation (Π<sub>t</sub>),-1.646
+2032,Government consumption,Inflation (Π<sub>t</sub>),-1.721
+2033,Government consumption,Inflation (Π<sub>t</sub>),-1.792
+2034,Government consumption,Inflation (Π<sub>t</sub>),-1.858
+2035,Government consumption,Inflation (Π<sub>t</sub>),-1.919
+2036,Government consumption,Inflation (Π<sub>t</sub>),-1.977
+2037,Government consumption,Inflation (Π<sub>t</sub>),-2.03
+2038,Government consumption,Inflation (Π<sub>t</sub>),-2.08
+2039,Government consumption,Inflation (Π<sub>t</sub>),-2.127
+2040,Government consumption,Inflation (Π<sub>t</sub>),-2.17
+2041,Government consumption,Inflation (Π<sub>t</sub>),-2.21
+2042,Government consumption,Inflation (Π<sub>t</sub>),-2.248
+2043,Government consumption,Inflation (Π<sub>t</sub>),-2.283
+2044,Government consumption,Inflation (Π<sub>t</sub>),-2.315
+2045,Government consumption,Inflation (Π<sub>t</sub>),-2.345
+2046,Government consumption,Inflation (Π<sub>t</sub>),-2.372
+2047,Government consumption,Inflation (Π<sub>t</sub>),-2.398
+2048,Government consumption,Inflation (Π<sub>t</sub>),-2.422
+2049,Government consumption,Inflation (Π<sub>t</sub>),-2.444
+2050,Government consumption,Inflation (Π<sub>t</sub>),-2.464
+2026,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.276
+2027,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.603
+2028,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.914
+2029,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.209
+2030,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.488
+2031,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.751
+2032,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.998
+2033,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.23
+2034,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.446
+2035,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.649
+2036,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.838
+2037,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.015
+2038,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.179
+2039,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.332
+2040,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.474
+2041,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.606
+2042,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.729
+2043,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.843
+2044,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.948
+2045,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.046
+2046,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.137
+2047,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.221
+2048,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.299
+2049,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.371
+2050,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.437
+2026,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.782
+2027,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.736
+2028,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.785
+2029,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.916
+2030,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.115
+2031,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.369
+2032,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.667
+2033,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.0
+2034,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.36
+2035,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.739
+2036,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.131
+2037,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.531
+2038,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.935
+2039,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.338
+2040,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.739
+2041,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.134
+2042,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.521
+2043,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.898
+2044,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.264
+2045,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.619
+2046,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.961
+2047,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.29
+2048,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.605
+2049,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.906
+2050,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-8.193
+2026,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.834
+2027,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.225
+2028,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.7
+2029,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.203
+2030,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.706
+2031,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.196
+2032,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.665
+2033,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.111
+2034,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.532
+2035,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.926
+2036,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.293
+2037,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.635
+2038,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.952
+2039,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.245
+2040,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.515
+2041,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.765
+2042,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.994
+2043,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.205
+2044,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.399
+2045,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.576
+2046,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.739
+2047,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.888
+2048,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-8.025
+2049,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-8.15
+2050,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-8.264
+2026,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.117
+2027,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.23
+2028,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.335
+2029,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.432
+2030,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.523
+2031,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.608
+2032,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.687
+2033,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.761
+2034,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.83
+2035,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.894
+2036,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.954
+2037,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.01
+2038,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.063
+2039,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.111
+2040,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.157
+2041,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.199
+2042,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.238
+2043,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.274
+2044,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.308
+2045,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.339
+2046,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.369
+2047,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.396
+2048,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.421
+2049,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.444
+2050,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.465
+2026,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-1.276
+2027,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-1.603
+2028,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-1.914
+2029,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-2.209
+2030,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-2.488
+2031,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-2.751
+2032,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-2.998
+2033,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-3.23
+2034,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-3.446
+2035,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-3.649
+2036,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-3.838
+2037,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.015
+2038,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.179
+2039,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.332
+2040,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.474
+2041,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.606
+2042,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.729
+2043,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.843
+2044,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.948
+2045,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-5.046
+2046,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-5.137
+2047,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-5.221
+2048,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-5.299
+2049,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-5.371
+2050,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-5.437
+2026,Human capital investment,Nominal bond rate (R<sub>t</sub>),-0.782
+2027,Human capital investment,Nominal bond rate (R<sub>t</sub>),-0.736
+2028,Human capital investment,Nominal bond rate (R<sub>t</sub>),-0.785
+2029,Human capital investment,Nominal bond rate (R<sub>t</sub>),-0.916
+2030,Human capital investment,Nominal bond rate (R<sub>t</sub>),-1.115
+2031,Human capital investment,Nominal bond rate (R<sub>t</sub>),-1.369
+2032,Human capital investment,Nominal bond rate (R<sub>t</sub>),-1.667
+2033,Human capital investment,Nominal bond rate (R<sub>t</sub>),-2.0
+2034,Human capital investment,Nominal bond rate (R<sub>t</sub>),-2.36
+2035,Human capital investment,Nominal bond rate (R<sub>t</sub>),-2.739
+2036,Human capital investment,Nominal bond rate (R<sub>t</sub>),-3.131
+2037,Human capital investment,Nominal bond rate (R<sub>t</sub>),-3.531
+2038,Human capital investment,Nominal bond rate (R<sub>t</sub>),-3.935
+2039,Human capital investment,Nominal bond rate (R<sub>t</sub>),-4.338
+2040,Human capital investment,Nominal bond rate (R<sub>t</sub>),-4.739
+2041,Human capital investment,Nominal bond rate (R<sub>t</sub>),-5.134
+2042,Human capital investment,Nominal bond rate (R<sub>t</sub>),-5.521
+2043,Human capital investment,Nominal bond rate (R<sub>t</sub>),-5.898
+2044,Human capital investment,Nominal bond rate (R<sub>t</sub>),-6.264
+2045,Human capital investment,Nominal bond rate (R<sub>t</sub>),-6.619
+2046,Human capital investment,Nominal bond rate (R<sub>t</sub>),-6.961
+2047,Human capital investment,Nominal bond rate (R<sub>t</sub>),-7.29
+2048,Human capital investment,Nominal bond rate (R<sub>t</sub>),-7.605
+2049,Human capital investment,Nominal bond rate (R<sub>t</sub>),-7.906
+2050,Human capital investment,Nominal bond rate (R<sub>t</sub>),-8.193
+2026,R&D investment,Nominal bond rate (R<sub>t</sub>),-0.834
+2027,R&D investment,Nominal bond rate (R<sub>t</sub>),-1.225
+2028,R&D investment,Nominal bond rate (R<sub>t</sub>),-1.7
+2029,R&D investment,Nominal bond rate (R<sub>t</sub>),-2.203
+2030,R&D investment,Nominal bond rate (R<sub>t</sub>),-2.706
+2031,R&D investment,Nominal bond rate (R<sub>t</sub>),-3.196
+2032,R&D investment,Nominal bond rate (R<sub>t</sub>),-3.665
+2033,R&D investment,Nominal bond rate (R<sub>t</sub>),-4.111
+2034,R&D investment,Nominal bond rate (R<sub>t</sub>),-4.532
+2035,R&D investment,Nominal bond rate (R<sub>t</sub>),-4.926
+2036,R&D investment,Nominal bond rate (R<sub>t</sub>),-5.293
+2037,R&D investment,Nominal bond rate (R<sub>t</sub>),-5.635
+2038,R&D investment,Nominal bond rate (R<sub>t</sub>),-5.952
+2039,R&D investment,Nominal bond rate (R<sub>t</sub>),-6.245
+2040,R&D investment,Nominal bond rate (R<sub>t</sub>),-6.515
+2041,R&D investment,Nominal bond rate (R<sub>t</sub>),-6.765
+2042,R&D investment,Nominal bond rate (R<sub>t</sub>),-6.994
+2043,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.205
+2044,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.399
+2045,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.576
+2046,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.739
+2047,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.888
+2048,R&D investment,Nominal bond rate (R<sub>t</sub>),-8.025
+2049,R&D investment,Nominal bond rate (R<sub>t</sub>),-8.15
+2050,R&D investment,Nominal bond rate (R<sub>t</sub>),-8.264
+2026,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.117
+2027,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.23
+2028,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.335
+2029,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.432
+2030,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.523
+2031,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.608
+2032,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.687
+2033,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.761
+2034,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.83
+2035,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.894
+2036,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.954
+2037,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.01
+2038,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.063
+2039,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.111
+2040,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.157
+2041,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.199
+2042,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.238
+2043,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.274
+2044,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.308
+2045,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.339
+2046,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.369
+2047,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.396
+2048,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.421
+2049,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.444
+2050,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.465
+2026,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.038
+2027,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.067
+2028,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.086
+2029,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.098
+2030,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.104
+2031,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.107
+2032,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.107
+2033,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.105
+2034,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.102
+2035,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.099
+2036,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.094
+2037,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.09
+2038,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.085
+2039,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.081
+2040,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.076
+2041,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.071
+2042,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.067
+2043,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.063
+2044,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.059
+2045,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.055
+2046,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.051
+2047,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.048
+2048,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.044
+2049,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.041
+2050,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.038
+2026,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.128
+2027,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.091
+2028,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.074
+2029,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.071
+2030,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.077
+2031,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.088
+2032,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.101
+2033,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.114
+2034,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.127
+2035,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.138
+2036,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.148
+2037,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.156
+2038,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.162
+2039,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.167
+2040,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.17
+2041,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.171
+2042,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.172
+2043,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.171
+2044,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.169
+2045,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.166
+2046,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.163
+2047,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.159
+2048,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.154
+2049,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.149
+2050,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.144
+2026,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.007
+2027,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+2028,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.054
+2029,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.109
+2030,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.151
+2031,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.18
+2032,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.198
+2033,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.206
+2034,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.208
+2035,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.205
+2036,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.199
+2037,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.191
+2038,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.181
+2039,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.171
+2040,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.16
+2041,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.15
+2042,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.139
+2043,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.129
+2044,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.12
+2045,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.111
+2046,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.102
+2047,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.094
+2048,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.086
+2049,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.079
+2050,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.073
+2026,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.074
+2027,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.067
+2028,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.061
+2029,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.056
+2030,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.051
+2031,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.047
+2032,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.044
+2033,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.041
+2034,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.038
+2035,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.036
+2036,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.034
+2037,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.031
+2038,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.029
+2039,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.028
+2040,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.026
+2041,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.024
+2042,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.023
+2043,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.021
+2044,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.02
+2045,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.018
+2046,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.017
+2047,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.016
+2048,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.015
+2049,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.014
+2050,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.013
 2026,Infrastructure investment,Primary deficit,1.269
 2027,Infrastructure investment,Primary deficit,0.143
 2028,Infrastructure investment,Primary deficit,0.034
@@ -1299,106 +1299,106 @@ year,shock,variable,pct_dev
 2048,Government consumption,Primary deficit,-0.013
 2049,Government consumption,Primary deficit,-0.012
 2050,Government consumption,Primary deficit,-0.011
-2026,Infrastructure investment,Transfers,0.303
-2027,Infrastructure investment,Transfers,-0.78
-2028,Infrastructure investment,Transfers,-0.848
-2029,Infrastructure investment,Transfers,-0.842
-2030,Infrastructure investment,Transfers,-0.824
-2031,Infrastructure investment,Transfers,-0.802
-2032,Infrastructure investment,Transfers,-0.777
-2033,Infrastructure investment,Transfers,-0.75
-2034,Infrastructure investment,Transfers,-0.724
-2035,Infrastructure investment,Transfers,-0.697
-2036,Infrastructure investment,Transfers,-0.671
-2037,Infrastructure investment,Transfers,-0.646
-2038,Infrastructure investment,Transfers,-0.622
-2039,Infrastructure investment,Transfers,-0.599
-2040,Infrastructure investment,Transfers,-0.577
-2041,Infrastructure investment,Transfers,-0.557
-2042,Infrastructure investment,Transfers,-0.537
-2043,Infrastructure investment,Transfers,-0.519
-2044,Infrastructure investment,Transfers,-0.502
-2045,Infrastructure investment,Transfers,-0.486
-2046,Infrastructure investment,Transfers,-0.472
-2047,Infrastructure investment,Transfers,-0.458
-2048,Infrastructure investment,Transfers,-0.445
-2049,Infrastructure investment,Transfers,-0.433
-2050,Infrastructure investment,Transfers,-0.422
-2026,Human capital investment,Transfers,0.265
-2027,Human capital investment,Transfers,-1.127
-2028,Human capital investment,Transfers,-1.134
-2029,Human capital investment,Transfers,-1.066
-2030,Human capital investment,Transfers,-1.007
-2031,Human capital investment,Transfers,-0.955
-2032,Human capital investment,Transfers,-0.909
-2033,Human capital investment,Transfers,-0.863
-2034,Human capital investment,Transfers,-0.818
-2035,Human capital investment,Transfers,-0.772
-2036,Human capital investment,Transfers,-0.725
-2037,Human capital investment,Transfers,-0.677
-2038,Human capital investment,Transfers,-0.628
-2039,Human capital investment,Transfers,-0.579
-2040,Human capital investment,Transfers,-0.529
-2041,Human capital investment,Transfers,-0.479
-2042,Human capital investment,Transfers,-0.429
-2043,Human capital investment,Transfers,-0.38
-2044,Human capital investment,Transfers,-0.332
-2045,Human capital investment,Transfers,-0.284
-2046,Human capital investment,Transfers,-0.237
-2047,Human capital investment,Transfers,-0.192
-2048,Human capital investment,Transfers,-0.148
-2049,Human capital investment,Transfers,-0.106
-2050,Human capital investment,Transfers,-0.065
-2026,R&D investment,Transfers,-0.25
-2027,R&D investment,Transfers,-0.92
-2028,R&D investment,Transfers,-0.811
-2029,R&D investment,Transfers,-0.758
-2030,R&D investment,Transfers,-0.737
-2031,R&D investment,Transfers,-0.718
-2032,R&D investment,Transfers,-0.692
-2033,R&D investment,Transfers,-0.657
-2034,R&D investment,Transfers,-0.617
-2035,R&D investment,Transfers,-0.573
-2036,R&D investment,Transfers,-0.527
-2037,R&D investment,Transfers,-0.48
-2038,R&D investment,Transfers,-0.434
-2039,R&D investment,Transfers,-0.39
-2040,R&D investment,Transfers,-0.347
-2041,R&D investment,Transfers,-0.307
-2042,R&D investment,Transfers,-0.268
-2043,R&D investment,Transfers,-0.233
-2044,R&D investment,Transfers,-0.199
-2045,R&D investment,Transfers,-0.168
-2046,R&D investment,Transfers,-0.14
-2047,R&D investment,Transfers,-0.113
-2048,R&D investment,Transfers,-0.089
-2049,R&D investment,Transfers,-0.066
-2050,R&D investment,Transfers,-0.045
-2026,Government consumption,Transfers,0.337
-2027,Government consumption,Transfers,-0.96
-2028,Government consumption,Transfers,-1.027
-2029,Government consumption,Transfers,-1.013
-2030,Government consumption,Transfers,-0.996
-2031,Government consumption,Transfers,-0.981
-2032,Government consumption,Transfers,-0.967
-2033,Government consumption,Transfers,-0.954
-2034,Government consumption,Transfers,-0.942
-2035,Government consumption,Transfers,-0.931
-2036,Government consumption,Transfers,-0.921
-2037,Government consumption,Transfers,-0.912
-2038,Government consumption,Transfers,-0.903
-2039,Government consumption,Transfers,-0.895
-2040,Government consumption,Transfers,-0.888
-2041,Government consumption,Transfers,-0.881
-2042,Government consumption,Transfers,-0.874
-2043,Government consumption,Transfers,-0.868
-2044,Government consumption,Transfers,-0.862
-2045,Government consumption,Transfers,-0.857
-2046,Government consumption,Transfers,-0.852
-2047,Government consumption,Transfers,-0.847
-2048,Government consumption,Transfers,-0.843
-2049,Government consumption,Transfers,-0.839
-2050,Government consumption,Transfers,-0.835
+2026,Infrastructure investment,Transfers (T<sub>t</sub>),0.303
+2027,Infrastructure investment,Transfers (T<sub>t</sub>),-0.78
+2028,Infrastructure investment,Transfers (T<sub>t</sub>),-0.848
+2029,Infrastructure investment,Transfers (T<sub>t</sub>),-0.842
+2030,Infrastructure investment,Transfers (T<sub>t</sub>),-0.824
+2031,Infrastructure investment,Transfers (T<sub>t</sub>),-0.802
+2032,Infrastructure investment,Transfers (T<sub>t</sub>),-0.777
+2033,Infrastructure investment,Transfers (T<sub>t</sub>),-0.75
+2034,Infrastructure investment,Transfers (T<sub>t</sub>),-0.724
+2035,Infrastructure investment,Transfers (T<sub>t</sub>),-0.697
+2036,Infrastructure investment,Transfers (T<sub>t</sub>),-0.671
+2037,Infrastructure investment,Transfers (T<sub>t</sub>),-0.646
+2038,Infrastructure investment,Transfers (T<sub>t</sub>),-0.622
+2039,Infrastructure investment,Transfers (T<sub>t</sub>),-0.599
+2040,Infrastructure investment,Transfers (T<sub>t</sub>),-0.577
+2041,Infrastructure investment,Transfers (T<sub>t</sub>),-0.557
+2042,Infrastructure investment,Transfers (T<sub>t</sub>),-0.537
+2043,Infrastructure investment,Transfers (T<sub>t</sub>),-0.519
+2044,Infrastructure investment,Transfers (T<sub>t</sub>),-0.502
+2045,Infrastructure investment,Transfers (T<sub>t</sub>),-0.486
+2046,Infrastructure investment,Transfers (T<sub>t</sub>),-0.472
+2047,Infrastructure investment,Transfers (T<sub>t</sub>),-0.458
+2048,Infrastructure investment,Transfers (T<sub>t</sub>),-0.445
+2049,Infrastructure investment,Transfers (T<sub>t</sub>),-0.433
+2050,Infrastructure investment,Transfers (T<sub>t</sub>),-0.422
+2026,Human capital investment,Transfers (T<sub>t</sub>),0.265
+2027,Human capital investment,Transfers (T<sub>t</sub>),-1.127
+2028,Human capital investment,Transfers (T<sub>t</sub>),-1.134
+2029,Human capital investment,Transfers (T<sub>t</sub>),-1.066
+2030,Human capital investment,Transfers (T<sub>t</sub>),-1.007
+2031,Human capital investment,Transfers (T<sub>t</sub>),-0.955
+2032,Human capital investment,Transfers (T<sub>t</sub>),-0.909
+2033,Human capital investment,Transfers (T<sub>t</sub>),-0.863
+2034,Human capital investment,Transfers (T<sub>t</sub>),-0.818
+2035,Human capital investment,Transfers (T<sub>t</sub>),-0.772
+2036,Human capital investment,Transfers (T<sub>t</sub>),-0.725
+2037,Human capital investment,Transfers (T<sub>t</sub>),-0.677
+2038,Human capital investment,Transfers (T<sub>t</sub>),-0.628
+2039,Human capital investment,Transfers (T<sub>t</sub>),-0.579
+2040,Human capital investment,Transfers (T<sub>t</sub>),-0.529
+2041,Human capital investment,Transfers (T<sub>t</sub>),-0.479
+2042,Human capital investment,Transfers (T<sub>t</sub>),-0.429
+2043,Human capital investment,Transfers (T<sub>t</sub>),-0.38
+2044,Human capital investment,Transfers (T<sub>t</sub>),-0.332
+2045,Human capital investment,Transfers (T<sub>t</sub>),-0.284
+2046,Human capital investment,Transfers (T<sub>t</sub>),-0.237
+2047,Human capital investment,Transfers (T<sub>t</sub>),-0.192
+2048,Human capital investment,Transfers (T<sub>t</sub>),-0.148
+2049,Human capital investment,Transfers (T<sub>t</sub>),-0.106
+2050,Human capital investment,Transfers (T<sub>t</sub>),-0.065
+2026,R&D investment,Transfers (T<sub>t</sub>),-0.25
+2027,R&D investment,Transfers (T<sub>t</sub>),-0.92
+2028,R&D investment,Transfers (T<sub>t</sub>),-0.811
+2029,R&D investment,Transfers (T<sub>t</sub>),-0.758
+2030,R&D investment,Transfers (T<sub>t</sub>),-0.737
+2031,R&D investment,Transfers (T<sub>t</sub>),-0.718
+2032,R&D investment,Transfers (T<sub>t</sub>),-0.692
+2033,R&D investment,Transfers (T<sub>t</sub>),-0.657
+2034,R&D investment,Transfers (T<sub>t</sub>),-0.617
+2035,R&D investment,Transfers (T<sub>t</sub>),-0.573
+2036,R&D investment,Transfers (T<sub>t</sub>),-0.527
+2037,R&D investment,Transfers (T<sub>t</sub>),-0.48
+2038,R&D investment,Transfers (T<sub>t</sub>),-0.434
+2039,R&D investment,Transfers (T<sub>t</sub>),-0.39
+2040,R&D investment,Transfers (T<sub>t</sub>),-0.347
+2041,R&D investment,Transfers (T<sub>t</sub>),-0.307
+2042,R&D investment,Transfers (T<sub>t</sub>),-0.268
+2043,R&D investment,Transfers (T<sub>t</sub>),-0.233
+2044,R&D investment,Transfers (T<sub>t</sub>),-0.199
+2045,R&D investment,Transfers (T<sub>t</sub>),-0.168
+2046,R&D investment,Transfers (T<sub>t</sub>),-0.14
+2047,R&D investment,Transfers (T<sub>t</sub>),-0.113
+2048,R&D investment,Transfers (T<sub>t</sub>),-0.089
+2049,R&D investment,Transfers (T<sub>t</sub>),-0.066
+2050,R&D investment,Transfers (T<sub>t</sub>),-0.045
+2026,Government consumption,Transfers (T<sub>t</sub>),0.337
+2027,Government consumption,Transfers (T<sub>t</sub>),-0.96
+2028,Government consumption,Transfers (T<sub>t</sub>),-1.027
+2029,Government consumption,Transfers (T<sub>t</sub>),-1.013
+2030,Government consumption,Transfers (T<sub>t</sub>),-0.996
+2031,Government consumption,Transfers (T<sub>t</sub>),-0.981
+2032,Government consumption,Transfers (T<sub>t</sub>),-0.967
+2033,Government consumption,Transfers (T<sub>t</sub>),-0.954
+2034,Government consumption,Transfers (T<sub>t</sub>),-0.942
+2035,Government consumption,Transfers (T<sub>t</sub>),-0.931
+2036,Government consumption,Transfers (T<sub>t</sub>),-0.921
+2037,Government consumption,Transfers (T<sub>t</sub>),-0.912
+2038,Government consumption,Transfers (T<sub>t</sub>),-0.903
+2039,Government consumption,Transfers (T<sub>t</sub>),-0.895
+2040,Government consumption,Transfers (T<sub>t</sub>),-0.888
+2041,Government consumption,Transfers (T<sub>t</sub>),-0.881
+2042,Government consumption,Transfers (T<sub>t</sub>),-0.874
+2043,Government consumption,Transfers (T<sub>t</sub>),-0.868
+2044,Government consumption,Transfers (T<sub>t</sub>),-0.862
+2045,Government consumption,Transfers (T<sub>t</sub>),-0.857
+2046,Government consumption,Transfers (T<sub>t</sub>),-0.852
+2047,Government consumption,Transfers (T<sub>t</sub>),-0.847
+2048,Government consumption,Transfers (T<sub>t</sub>),-0.843
+2049,Government consumption,Transfers (T<sub>t</sub>),-0.839
+2050,Government consumption,Transfers (T<sub>t</sub>),-0.835
 2026,Infrastructure investment,Debt service,-1.275
 2027,Infrastructure investment,Debt service,-1.601
 2028,Infrastructure investment,Debt service,-1.913
@@ -1499,103 +1499,103 @@ year,shock,variable,pct_dev
 2048,Government consumption,Debt service,-2.422
 2049,Government consumption,Debt service,-2.445
 2050,Government consumption,Debt service,-2.466
-2026,Infrastructure investment,Debt-to-GDP ratio,0.564
-2027,Infrastructure investment,Debt-to-GDP ratio,1.677
-2028,Infrastructure investment,Debt-to-GDP ratio,1.749
-2029,Infrastructure investment,Debt-to-GDP ratio,1.737
-2030,Infrastructure investment,Debt-to-GDP ratio,1.707
-2031,Infrastructure investment,Debt-to-GDP ratio,1.668
-2032,Infrastructure investment,Debt-to-GDP ratio,1.624
-2033,Infrastructure investment,Debt-to-GDP ratio,1.577
-2034,Infrastructure investment,Debt-to-GDP ratio,1.529
-2035,Infrastructure investment,Debt-to-GDP ratio,1.48
-2036,Infrastructure investment,Debt-to-GDP ratio,1.433
-2037,Infrastructure investment,Debt-to-GDP ratio,1.387
-2038,Infrastructure investment,Debt-to-GDP ratio,1.343
-2039,Infrastructure investment,Debt-to-GDP ratio,1.301
-2040,Infrastructure investment,Debt-to-GDP ratio,1.26
-2041,Infrastructure investment,Debt-to-GDP ratio,1.222
-2042,Infrastructure investment,Debt-to-GDP ratio,1.187
-2043,Infrastructure investment,Debt-to-GDP ratio,1.153
-2044,Infrastructure investment,Debt-to-GDP ratio,1.121
-2045,Infrastructure investment,Debt-to-GDP ratio,1.092
-2046,Infrastructure investment,Debt-to-GDP ratio,1.064
-2047,Infrastructure investment,Debt-to-GDP ratio,1.038
-2048,Infrastructure investment,Debt-to-GDP ratio,1.014
-2049,Infrastructure investment,Debt-to-GDP ratio,0.992
-2050,Infrastructure investment,Debt-to-GDP ratio,0.971
-2026,Human capital investment,Debt-to-GDP ratio,0.996
-2027,Human capital investment,Debt-to-GDP ratio,2.34
-2028,Human capital investment,Debt-to-GDP ratio,2.26
-2029,Human capital investment,Debt-to-GDP ratio,2.128
-2030,Human capital investment,Debt-to-GDP ratio,2.019
-2031,Human capital investment,Debt-to-GDP ratio,1.926
-2032,Human capital investment,Debt-to-GDP ratio,1.841
-2033,Human capital investment,Debt-to-GDP ratio,1.759
-2034,Human capital investment,Debt-to-GDP ratio,1.678
-2035,Human capital investment,Debt-to-GDP ratio,1.596
-2036,Human capital investment,Debt-to-GDP ratio,1.512
-2037,Human capital investment,Debt-to-GDP ratio,1.425
-2038,Human capital investment,Debt-to-GDP ratio,1.336
-2039,Human capital investment,Debt-to-GDP ratio,1.246
-2040,Human capital investment,Debt-to-GDP ratio,1.155
-2041,Human capital investment,Debt-to-GDP ratio,1.063
-2042,Human capital investment,Debt-to-GDP ratio,0.971
-2043,Human capital investment,Debt-to-GDP ratio,0.88
-2044,Human capital investment,Debt-to-GDP ratio,0.789
-2045,Human capital investment,Debt-to-GDP ratio,0.7
-2046,Human capital investment,Debt-to-GDP ratio,0.613
-2047,Human capital investment,Debt-to-GDP ratio,0.527
-2048,Human capital investment,Debt-to-GDP ratio,0.444
-2049,Human capital investment,Debt-to-GDP ratio,0.363
-2050,Human capital investment,Debt-to-GDP ratio,0.285
-2026,R&D investment,Debt-to-GDP ratio,1.396
-2027,R&D investment,Debt-to-GDP ratio,1.811
-2028,R&D investment,Debt-to-GDP ratio,1.622
-2029,R&D investment,Debt-to-GDP ratio,1.558
-2030,R&D investment,Debt-to-GDP ratio,1.537
-2031,R&D investment,Debt-to-GDP ratio,1.511
-2032,R&D investment,Debt-to-GDP ratio,1.469
-2033,R&D investment,Debt-to-GDP ratio,1.409
-2034,R&D investment,Debt-to-GDP ratio,1.336
-2035,R&D investment,Debt-to-GDP ratio,1.255
-2036,R&D investment,Debt-to-GDP ratio,1.17
-2037,R&D investment,Debt-to-GDP ratio,1.083
-2038,R&D investment,Debt-to-GDP ratio,0.997
-2039,R&D investment,Debt-to-GDP ratio,0.913
-2040,R&D investment,Debt-to-GDP ratio,0.833
-2041,R&D investment,Debt-to-GDP ratio,0.756
-2042,R&D investment,Debt-to-GDP ratio,0.683
-2043,R&D investment,Debt-to-GDP ratio,0.615
-2044,R&D investment,Debt-to-GDP ratio,0.551
-2045,R&D investment,Debt-to-GDP ratio,0.492
-2046,R&D investment,Debt-to-GDP ratio,0.437
-2047,R&D investment,Debt-to-GDP ratio,0.386
-2048,R&D investment,Debt-to-GDP ratio,0.338
-2049,R&D investment,Debt-to-GDP ratio,0.295
-2050,R&D investment,Debt-to-GDP ratio,0.255
-2026,Government consumption,Debt-to-GDP ratio,0.721
-2027,Government consumption,Debt-to-GDP ratio,2.04
-2028,Government consumption,Debt-to-GDP ratio,2.09
-2029,Government consumption,Debt-to-GDP ratio,2.06
-2030,Government consumption,Debt-to-GDP ratio,2.03
-2031,Government consumption,Debt-to-GDP ratio,2.002
-2032,Government consumption,Debt-to-GDP ratio,1.976
-2033,Government consumption,Debt-to-GDP ratio,1.953
-2034,Government consumption,Debt-to-GDP ratio,1.932
-2035,Government consumption,Debt-to-GDP ratio,1.912
-2036,Government consumption,Debt-to-GDP ratio,1.894
-2037,Government consumption,Debt-to-GDP ratio,1.877
-2038,Government consumption,Debt-to-GDP ratio,1.861
-2039,Government consumption,Debt-to-GDP ratio,1.846
-2040,Government consumption,Debt-to-GDP ratio,1.833
-2041,Government consumption,Debt-to-GDP ratio,1.82
-2042,Government consumption,Debt-to-GDP ratio,1.808
-2043,Government consumption,Debt-to-GDP ratio,1.797
-2044,Government consumption,Debt-to-GDP ratio,1.786
-2045,Government consumption,Debt-to-GDP ratio,1.776
-2046,Government consumption,Debt-to-GDP ratio,1.767
-2047,Government consumption,Debt-to-GDP ratio,1.759
-2048,Government consumption,Debt-to-GDP ratio,1.751
-2049,Government consumption,Debt-to-GDP ratio,1.744
-2050,Government consumption,Debt-to-GDP ratio,1.737
+2026,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),0.564
+2027,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.677
+2028,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.749
+2029,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.737
+2030,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.707
+2031,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.668
+2032,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.624
+2033,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.577
+2034,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.529
+2035,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.48
+2036,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.433
+2037,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.387
+2038,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.343
+2039,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.301
+2040,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.26
+2041,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.222
+2042,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.187
+2043,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.153
+2044,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.121
+2045,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.092
+2046,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.064
+2047,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.038
+2048,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),1.014
+2049,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),0.992
+2050,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),0.971
+2026,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),0.996
+2027,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),2.34
+2028,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),2.26
+2029,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),2.128
+2030,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),2.019
+2031,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),1.926
+2032,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),1.841
+2033,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),1.759
+2034,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),1.678
+2035,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),1.596
+2036,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),1.512
+2037,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),1.425
+2038,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),1.336
+2039,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),1.246
+2040,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),1.155
+2041,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),1.063
+2042,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),0.971
+2043,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),0.88
+2044,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),0.789
+2045,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),0.7
+2046,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),0.613
+2047,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),0.527
+2048,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),0.444
+2049,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),0.363
+2050,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),0.285
+2026,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),1.396
+2027,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),1.811
+2028,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),1.622
+2029,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),1.558
+2030,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),1.537
+2031,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),1.511
+2032,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),1.469
+2033,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),1.409
+2034,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),1.336
+2035,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),1.255
+2036,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),1.17
+2037,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),1.083
+2038,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.997
+2039,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.913
+2040,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.833
+2041,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.756
+2042,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.683
+2043,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.615
+2044,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.551
+2045,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.492
+2046,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.437
+2047,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.386
+2048,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.338
+2049,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.295
+2050,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.255
+2026,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),0.721
+2027,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),2.04
+2028,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),2.09
+2029,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),2.06
+2030,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),2.03
+2031,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),2.002
+2032,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.976
+2033,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.953
+2034,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.932
+2035,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.912
+2036,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.894
+2037,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.877
+2038,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.861
+2039,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.846
+2040,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.833
+2041,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.82
+2042,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.808
+2043,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.797
+2044,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.786
+2045,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.776
+2046,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.767
+2047,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.759
+2048,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.751
+2049,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.744
+2050,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),1.737
