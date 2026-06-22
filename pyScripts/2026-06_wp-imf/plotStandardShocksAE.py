@@ -51,8 +51,8 @@ SHOCKS = [
 # (variable suffix, panel title); laid out row-major in a 4x4 grid, one thematic
 # block per row. Units differ by row (see ROW_UNITS): the demand and supply rows
 # are percent deviations; the nominal row is annualized percentage points; the
-# fiscal row is percentage points of GDP. The y-axis of the first panel in each
-# row carries the unit label, and the note spells the units out.
+# fiscal row is percentage points of steady-state GDP. The y-axis of the first
+# panel in each row carries the unit label, and the note spells the units out.
 PANELS = [
     # Row 1 - demand components (percent deviation)
     ("yd",        "Output"),
@@ -69,18 +69,18 @@ PANELS = [
     ("Rmp_ann",   "Policy rate"),
     ("R_ann",     "Nominal bond rate"),
     ("rreal_ann", "Real interest rate"),
-    # Row 4 - fiscal block (percentage points of GDP)
-    ("pdef_pp",   "Primary deficit"),
-    ("Trans_pp",  "Transfers"),
-    ("dserv_pp",  "Debt service"),
-    ("by_pp",     "Debt-to-GDP ratio"),
+    # Row 4 - fiscal block (percentage points of steady-state GDP)
+    ("pdef_yss",  "Primary deficit"),
+    ("Trans_yss", "Transfers"),
+    ("dserv_yss", "Debt service"),
+    ("by_yss",    "Debt-to-GDP ratio"),
 ]
 
 NCOLS = 4
 NROWS = 4
 
 # Unit label printed on the y-axis of each row's first panel (row-major order).
-ROW_UNITS = ["Percent", "Percent", "Ann. ppt", "Ppt of GDP"]
+ROW_UNITS = ["Percent", "Percent", "Ann. ppt", "Ppt of ss GDP"]
 PLOT_START_YEAR = 2026
 X_TICKS = [2026, 2038, 2050]
 # Show the first tick as full 4-digit year, abbreviate the rest to 2 digits.

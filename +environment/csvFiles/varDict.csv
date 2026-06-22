@@ -55,5 +55,7 @@ TFP,TFP,(x./y-1)*100,\% deviation
 G,Total gov. spending,(x./y-1)*100,\% deviation
 ZZRD,Gross R&D-augmented growth rate,(x./y-1)*100,\% deviation
 rreal,Ex-post real interest rate (R/PI),(x-y)*400,ann. ppt deviation
-Trans_ys,Transfers-to-GDP ratio,(x-y)*100,ppt of GDP
-dserv,Debt service (interest)-to-GDP ratio,(x-y)*100,ppt of GDP
+pdef_yss,Primary deficit (share of steady-state GDP),(x-y)*100,ppt of ss GDP
+Trans_yss,Transfers (share of steady-state GDP),(x-y)*100,ppt of ss GDP
+dserv_yss,Debt service (share of steady-state GDP),(x-y)*100,ppt of ss GDP
+by_yss,Government debt (share of steady-state GDP),(x-y)*100,ppt of ss GDP

@@ -37,8 +37,10 @@ lnyd            % Log of Output
 G               % Total government spending (Gc+Igi+Ige+Grd)
 pdef            % Primary Deficit
 rreal           % Ex-post real interest rate (R/PI)
-Trans_ys        % Transfers-to-GDP ratio
-dserv           % Debt service (interest)-to-GDP ratio
+pdef_yss        % Primary deficit, share of steady-state GDP
+Trans_yss       % Transfers, share of steady-state GDP
+dserv_yss       % Debt service (interest), share of steady-state GDP
+by_yss          % Government debt, share of steady-state GDP
 Igi_ys           % Public Investment as percent of GDP
 by_ann          % Debt to GDP
 lnPI            % Log of Prince index

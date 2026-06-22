@@ -37,8 +37,10 @@ lnyd            % Log of Output
 G               % Total government spending (Gc+Igi+Ige+Grd)
 pdef            % Primary Deficit
 rreal           % Ex-post real interest rate (R/PI)
-Trans_ys        % Transfers-to-GDP ratio
-dserv           % Debt service (interest)-to-GDP ratio
+pdef_yss        % Primary deficit, share of steady-state GDP
+Trans_yss       % Transfers, share of steady-state GDP
+dserv_yss       % Debt service (interest), share of steady-state GDP
+by_yss          % Government debt, share of steady-state GDP
 Igi_ys           % Public Investment as percent of GDP
 by_ann          % Debt to GDP
 lnPI            % Log of Prince index
@@ -335,8 +337,11 @@ lnyd = log(yd)*100;
 G = Gc+Igi+Ige+Grd;                                        // total government spending (sum of the four instruments)
 pdef = (Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/yt*100;
 rreal = R/PI;                                              // ex-post real interest rate
-Trans_ys = Trans/yt;                                       // transfers as a share of GDP
-dserv = (R-1)*Dt/yt;                                       // debt service (interest) as a share of GDP
+// Fiscal aggregates as a share of steady-state GDP (ydss)
+pdef_yss  = (Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/ydss;  // primary deficit
+Trans_yss = Trans/ydss;                                       // transfers
+dserv_yss = (R-1)*Dt/ydss;                                    // debt service (interest)
+by_yss    = Dt/ydss;                                          // government debt
 Igi_ys = Igi/ydss*100;
 by_ann = by/4*100;
 lnPI = log(PI)*100;
