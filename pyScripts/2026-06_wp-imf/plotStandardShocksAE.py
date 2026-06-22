@@ -31,7 +31,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 # --- Styling (inlined; matches the other working-paper figures) ---------------
 STYLE = {
     "template": "simple_white",
-    "margins": {"t": 58, "b": 22, "l": 48, "r": 12},  # top room for legend; left room for unit labels
+    "margins": {"t": 58, "b": 22, "l": 30, "r": 12},  # top room for legend; left room for tick labels
     "legend": {"orientation": "h", "xanchor": "center", "x": 0.5},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
@@ -49,10 +49,10 @@ SHOCKS = [
 ]
 
 # (variable suffix, panel title); laid out row-major in a 4x4 grid, one thematic
-# block per row. Units differ by row (see ROW_UNITS): the demand and supply rows
-# are percent deviations; the nominal row is annualized percentage points; the
-# fiscal row is percentage points of GDP. The y-axis of the first panel in each
-# row carries the unit label, and the note spells the units out.
+# block per row. Units differ by row: the demand and supply rows are percent
+# deviations; the nominal row is annualized percentage points; the fiscal row is
+# percentage points of GDP. There are no y-axis unit labels by design -- the
+# figure note spells out how each block's deviations are calculated.
 PANELS = [
     # Row 1 - demand components (percent deviation)
     ("yd",        "Output (Y<sup>d</sup><sub>t</sub>)"),
@@ -81,8 +81,6 @@ PANELS = [
 NCOLS = 4
 NROWS = 4
 
-# Unit label printed on the y-axis of each row's first panel (row-major order).
-ROW_UNITS = ["Percent", "Percent", "Ann. ppt", "Ppt of GDP"]
 PLOT_START_YEAR = 2026
 X_TICKS = [2026, 2038, 2050]
 # Show the first tick as full 4-digit year, abbreviate the rest to 2 digits.
@@ -142,13 +140,6 @@ def main():
     # Subplot titles: Palatino at the title point size.
     for annotation in fig["layout"]["annotations"]:
         annotation["font"] = dict(family=FONT_FAMILY, size=TITLE_FONT_PX)
-
-    # Per-row unit label on the first column's y-axis (units differ by block).
-    for r, unit in enumerate(ROW_UNITS, start=1):
-        fig.update_yaxes(
-            title_text=unit, title_font=dict(family=FONT_FAMILY, size=TITLE_FONT_PX),
-            title_standoff=3, row=r, col=1,
-        )
 
     fig.update_layout(
         template=STYLE["template"],
