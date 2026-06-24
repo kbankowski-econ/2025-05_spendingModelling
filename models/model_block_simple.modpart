@@ -13,8 +13,15 @@ omega*(Lab+E)^phi = lambda*W_real*H(-1)*(1-tauw);
 // Law of motion of private capital
 Kp*ZZ = (1-delta)*Kp(-1)+Ip;
 
+@#if SIMPLIFY_LEVEL < 4
 // Return on private investment
 1 = betta*(lambda(+1)/lambda/ZZ(+1)*(1-delta+rk(+1)));
+@#else
+// SIMPLIFY >= 4: capital fixed (no investment margin). Kp pinned to steady state,
+// so the capital law of motion holds Ip at its steady state and production is
+// labor-only (Y = const * N^(1-alppha)) -- the textbook NK structure.
+Kp = STEADY_STATE(Kp);
+@#endif
 
 @#if SIMPLIFY_LEVEL < 2
 // Human capital of the household

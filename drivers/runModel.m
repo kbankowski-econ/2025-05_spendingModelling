@@ -138,6 +138,7 @@ modelList = {
     'Model_Simple1_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     'Model_Simple2_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     'Model_Simple3_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
+    'Model_Simple4_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     };
 
 %% optional subset: set the MODEL_FILTER environment variable to a substring
