@@ -96,11 +96,12 @@ BLOCKS = ["Demand", "Supply", "Labor", "Nominal", "Fiscal"]
 # every deviation is zero; the shock is active from 2026 onward.
 PLOT_START_YEAR = 2025
 # Label the x-axis by horizon (years since the shock), consistent with the
-# multiplier table's 1y/5y/10y/20y/25y columns. Period one (2025) is 0y, so
-# 2026 = 1y ... 2050 = 25y. Show a subset of horizons to keep the dense grid
+# multiplier table's 1y/5y/10y/20y/25y columns. Period one (2025) is the
+# zero-deviation steady state where the lines start; the first labelled tick is
+# 1y (2026) ... 2050 = 25y. Show a subset of horizons to keep the dense grid
 # legible.
 SHOCK_BASE_YEAR = 2025
-X_TICK_HORIZONS = [0, 10, 25]
+X_TICK_HORIZONS = [1, 10, 25]
 X_TICKS = [SHOCK_BASE_YEAR + h for h in X_TICK_HORIZONS]
 X_TICK_LABELS = [f"{h}y" for h in X_TICK_HORIZONS]
 OUTPUT_STEM = "standardShocksAE"
