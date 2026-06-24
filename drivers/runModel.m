@@ -131,6 +131,13 @@ modelList = {
     'JAM_Model_HumanCapital_epsicgeeff30y',     'JAM', 'JAM',    {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.357, '1:60'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
+    % --- Step-by-step simplified variants (AE params, gov-consumption shock).
+    % Names contain SimpleN -> built from modelTemplateSimple.mod with
+    % -DSIMPLIFY_LEVEL=N, which pins progressively more channels to steady state:
+    %   1 = no R&D/technology, 2 = + no human capital, 3 = + no public infra (NK).
+    'Model_Simple1_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
+    'Model_Simple2_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
+    'Model_Simple3_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     };
 
 %% optional subset: set the MODEL_FILTER environment variable to a substring
@@ -153,13 +160,27 @@ for iModel = 1:size(modelList, 1)
     thisShocks = modelList{iModel, 4};
 
     utils.subroutines.generateShocksFile([thisModel '.shockValues'], thisShocks);
-    copyfile('modelTemplate.mod', [thisModel '.mod']);
+
+    % Simplified variants (named ...SimpleN...) build from modelTemplateSimple.mod
+    % with -DSIMPLIFY_LEVEL=N (channels pinned to steady state); everything else
+    % (steady state, declarations, parameters) is shared with the full model.
+    simpTok = regexp(thisModel, 'Simple(\d)', 'tokens', 'once');
+    if isempty(simpTok)
+        copyfile('modelTemplate.mod', [thisModel '.mod']);
+        extraDefs = {};
+    else
+        copyfile('modelTemplateSimple.mod', [thisModel '.mod']);
+        % nostrict: pinning channels leaves some declared shocks unused (e.g.
+        % epsirhoadopt once R&D is off); they are zero in these experiments anyway.
+        extraDefs = {sprintf('-DSIMPLIFY_LEVEL=%s', simpTok{1}), 'nostrict'};
+    end
     copyfile('modelTemplate_steadystate.m', [thisModel '_steadystate.m']);
 
     dynare([thisModel '.mod'], 'savemacro', 'json=compute', ...
         sprintf('-DparamFile="%s_parameters.macro"', thisParams), ...
         sprintf('-DeffFile="%s_efficiency.macro"', thisEff), ...
-        sprintf('-DshockFile="%s.shockValues"', thisModel));
+        sprintf('-DshockFile="%s.shockValues"', thisModel), ...
+        extraDefs{:});
 end
 
 %% Canonicalize all results in a clean child MATLAB process.
