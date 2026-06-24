@@ -111,6 +111,16 @@ def plotStandardShocksAE(c):
 
 
 @task
+def plotSimplifiedGcAE(c):
+    """
+    Appendix: the government-consumption shock under progressive model
+    simplification (full vs Simple1/2/3), same 5x4 block layout.
+    Out: figures/simplifiedGcAE.png/.pdf/.html/.csv
+    """
+    _run_plot(c, "plotSimplifiedGcAE.py", "Generating: AE Simplified-Model Gc Shock")
+
+
+@task
 def plotReallocationAE(c):
     """
     AE output response to three expenditure-reallocation shocks.
@@ -208,6 +218,7 @@ def investigateContributions(c):
 @task(pre=[
     exportData,
     plotStandardShocksAE,
+    plotSimplifiedGcAE,
     plotReallocationAE,
     plotReallocationEM,
     plotEfficiencyAE,
