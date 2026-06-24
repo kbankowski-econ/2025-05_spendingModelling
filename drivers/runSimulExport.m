@@ -15,7 +15,7 @@ modelList = string(reshape(envi.shockDict.Properties.RowNames, 1, []));
 % Append the step-by-step simplified Gc-shock variants (not in shockDict; added
 % directly in runModel.m). They share all variables with the full model, so they
 % flow through the same export machinery.
-modelList = [modelList, "Model_Simple1_exp_gc", "Model_Simple2_exp_gc", "Model_Simple3_exp_gc", "Model_Simple4_exp_gc"];
+modelList = [modelList, "Model_Simple1_exp_gc", "Model_Simple2_exp_gc", "Model_Simple3_exp_gc", "Model_Simple4_exp_gc", "Model_NK_exp_gc"];
 
 % Deviation transforms come straight from varDict.diffTransf: each entry is an
 % expression in x (simulated level path) and y (steady-state path), e.g.
@@ -83,7 +83,11 @@ for aVar = varList
 
 for aModel = modelList
 
-tempDatabank.(aModel+"___"+aVar) = resultsProc.(aModel).irf.(aVar);
+% Skip variables a model does not have (e.g. the canonical NK benchmark lacks
+% Ip/Kp/Kg/...); its column is simply absent and the figure leaves it blank.
+if isfield(resultsProc.(aModel).irf, char(aVar))
+    tempDatabank.(aModel+"___"+aVar) = resultsProc.(aModel).irf.(aVar);
+end
 
 end
 
@@ -107,7 +111,9 @@ derivedMap = [ ...
 
 for aModel = modelList
     for k = 1:size(derivedMap, 1)
-        tempDatabank.(aModel+"___"+derivedMap(k, 2)) = resultsProc.(aModel).irf.(derivedMap(k, 1));
+        if isfield(resultsProc.(aModel).irf, char(derivedMap(k, 1)))
+            tempDatabank.(aModel+"___"+derivedMap(k, 2)) = resultsProc.(aModel).irf.(derivedMap(k, 1));
+        end
     end
 end
 

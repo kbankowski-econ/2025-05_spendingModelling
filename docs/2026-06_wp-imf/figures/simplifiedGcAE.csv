@@ -129,6 +129,32 @@ year,model,variable,pct_dev
 2048,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
 2049,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
 2050,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2025,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.0
+2026,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.436
+2027,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.46
+2028,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2029,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2030,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2031,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2032,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2033,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2034,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2035,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2036,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2037,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2038,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2039,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2040,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2041,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2042,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2043,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2044,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2045,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2046,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2047,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2048,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2049,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
+2050,Canonical NK (from scratch),Output (Y<sup>d</sup><sub>t</sub>),0.461
 2025,Full model,Consumption (C<sub>t</sub>),0.0
 2026,Full model,Consumption (C<sub>t</sub>),-1.302
 2027,Full model,Consumption (C<sub>t</sub>),-1.205
@@ -259,6 +285,32 @@ year,model,variable,pct_dev
 2048,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
 2049,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
 2050,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2025,Canonical NK (from scratch),Consumption (C<sub>t</sub>),0.0
+2026,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.688
+2027,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2028,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.657
+2029,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.657
+2030,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2031,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2032,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2033,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2034,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2035,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2036,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2037,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2038,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2039,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2040,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2041,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2042,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2043,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2044,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2045,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2046,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2047,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2048,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2049,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
+2050,Canonical NK (from scratch),Consumption (C<sub>t</sub>),-0.658
 2025,Full model,Private investment (I<sub>t</sub>),0.0
 2026,Full model,Private investment (I<sub>t</sub>),0.936
 2027,Full model,Private investment (I<sub>t</sub>),0.925
@@ -1039,6 +1091,32 @@ year,model,variable,pct_dev
 2048,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
 2049,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
 2050,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2025,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.0
+2026,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.473
+2027,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.504
+2028,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.507
+2029,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.507
+2030,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.507
+2031,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2032,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2033,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2034,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2035,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2036,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2037,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2038,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2039,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2040,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2041,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2042,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2043,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2044,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2045,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2046,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2047,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2048,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2049,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
+2050,Canonical NK (from scratch),Effective labor (N<sub>t</sub>),0.508
 2025,Full model,Labor supply (L<sub>t</sub>),0.0
 2026,Full model,Labor supply (L<sub>t</sub>),0.897
 2027,Full model,Labor supply (L<sub>t</sub>),0.876
@@ -1169,6 +1247,32 @@ year,model,variable,pct_dev
 2048,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
 2049,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
 2050,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2025,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.0
+2026,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.473
+2027,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.504
+2028,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.507
+2029,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.507
+2030,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.507
+2031,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2032,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2033,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2034,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2035,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2036,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2037,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2038,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2039,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2040,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2041,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2042,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2043,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2044,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2045,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2046,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2047,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2048,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2049,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
+2050,Canonical NK (from scratch),Labor supply (L<sub>t</sub>),0.508
 2025,Full model,Human capital stock (H<sub>t</sub>),0.0
 2026,Full model,Human capital stock (H<sub>t</sub>),0.078
 2027,Full model,Human capital stock (H<sub>t</sub>),0.11
@@ -1429,6 +1533,32 @@ year,model,variable,pct_dev
 2048,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
 2049,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
 2050,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2025,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),0.0
+2026,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.954
+2027,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.921
+2028,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.919
+2029,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2030,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2031,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2032,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2033,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2034,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2035,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2036,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2037,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2038,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2039,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2040,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2041,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2042,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2043,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2044,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2045,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2046,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2047,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2048,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2049,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
+2050,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),-0.918
 2025,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
 2026,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.117
 2027,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.23
@@ -1559,6 +1689,32 @@ year,model,variable,pct_dev
 2048,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
 2049,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
 2050,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2025,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2026,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.872
+2027,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.919
+2028,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2029,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2030,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2031,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2032,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2033,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2034,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2035,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2036,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2037,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2038,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2039,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2040,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2041,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2042,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2043,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2044,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2045,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2046,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2047,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2048,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2049,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2050,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
 2025,Full model,Nominal bond rate (R<sub>t</sub>),0.0
 2026,Full model,Nominal bond rate (R<sub>t</sub>),-1.117
 2027,Full model,Nominal bond rate (R<sub>t</sub>),-1.23
@@ -1689,6 +1845,32 @@ year,model,variable,pct_dev
 2048,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
 2049,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
 2050,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2025,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.0
+2026,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.872
+2027,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.919
+2028,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2029,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2030,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2031,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2032,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2033,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2034,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2035,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2036,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2037,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2038,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2039,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2040,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2041,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2042,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2043,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2044,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2045,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2046,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2047,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2048,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2049,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
+2050,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),-0.92
 2025,Full model,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2026,Full model,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.074
 2027,Full model,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.067
@@ -1819,6 +2001,32 @@ year,model,variable,pct_dev
 2048,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2049,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2050,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2025,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2026,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.084
+2027,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.004
+2028,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2029,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2030,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2031,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2032,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2033,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2034,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2035,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2036,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2037,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2038,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2039,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2040,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2041,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2042,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2043,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2044,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2045,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2046,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2047,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2048,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2049,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+2050,Canonical NK (from scratch),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
 2025,Full model,Primary deficit,0.0
 2026,Full model,Primary deficit,1.001
 2027,Full model,Primary deficit,0.945

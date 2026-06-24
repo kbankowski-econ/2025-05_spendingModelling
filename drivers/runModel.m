@@ -139,6 +139,8 @@ modelList = {
     'Model_Simple2_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     'Model_Simple3_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     'Model_Simple4_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
+    % From-scratch canonical NK benchmark (own .mod; param/eff columns ignored).
+    'Model_NK_exp_gc',                          'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     };
 
 %% optional subset: set the MODEL_FILTER environment variable to a substring
@@ -162,26 +164,35 @@ for iModel = 1:size(modelList, 1)
 
     utils.subroutines.generateShocksFile([thisModel '.shockValues'], thisShocks);
 
-    % Simplified variants (named ...SimpleN...) build from modelTemplateSimple.mod
-    % with -DSIMPLIFY_LEVEL=N (channels pinned to steady state); everything else
-    % (steady state, declarations, parameters) is shared with the full model.
-    simpTok = regexp(thisModel, 'Simple(\d)', 'tokens', 'once');
-    if isempty(simpTok)
-        copyfile('modelTemplate.mod', [thisModel '.mod']);
-        extraDefs = {};
+    if contains(thisModel, 'Model_NK')
+        % Self-contained canonical NK benchmark: its own declarations, parameters,
+        % equations and steady_state_model block. Reuses only the shock file; no
+        % shared template, parameter/efficiency macros, or external steady state.
+        copyfile('modelTemplateNK.mod', [thisModel '.mod']);
+        dynare([thisModel '.mod'], 'savemacro', 'json=compute', ...
+            sprintf('-DshockFile="%s.shockValues"', thisModel));
     else
-        copyfile('modelTemplateSimple.mod', [thisModel '.mod']);
-        % nostrict: pinning channels leaves some declared shocks unused (e.g.
-        % epsirhoadopt once R&D is off); they are zero in these experiments anyway.
-        extraDefs = {sprintf('-DSIMPLIFY_LEVEL=%s', simpTok{1}), 'nostrict'};
-    end
-    copyfile('modelTemplate_steadystate.m', [thisModel '_steadystate.m']);
+        % Simplified variants (named ...SimpleN...) build from modelTemplateSimple.mod
+        % with -DSIMPLIFY_LEVEL=N (channels pinned to steady state); everything else
+        % (steady state, declarations, parameters) is shared with the full model.
+        simpTok = regexp(thisModel, 'Simple(\d)', 'tokens', 'once');
+        if isempty(simpTok)
+            copyfile('modelTemplate.mod', [thisModel '.mod']);
+            extraDefs = {};
+        else
+            copyfile('modelTemplateSimple.mod', [thisModel '.mod']);
+            % nostrict: pinning channels leaves some declared shocks unused (e.g.
+            % epsirhoadopt once R&D is off); they are zero in these experiments anyway.
+            extraDefs = {sprintf('-DSIMPLIFY_LEVEL=%s', simpTok{1}), 'nostrict'};
+        end
+        copyfile('modelTemplate_steadystate.m', [thisModel '_steadystate.m']);
 
-    dynare([thisModel '.mod'], 'savemacro', 'json=compute', ...
-        sprintf('-DparamFile="%s_parameters.macro"', thisParams), ...
-        sprintf('-DeffFile="%s_efficiency.macro"', thisEff), ...
-        sprintf('-DshockFile="%s.shockValues"', thisModel), ...
-        extraDefs{:});
+        dynare([thisModel '.mod'], 'savemacro', 'json=compute', ...
+            sprintf('-DparamFile="%s_parameters.macro"', thisParams), ...
+            sprintf('-DeffFile="%s_efficiency.macro"', thisEff), ...
+            sprintf('-DshockFile="%s.shockValues"', thisModel), ...
+            extraDefs{:});
+    end
 end
 
 %% Canonicalize all results in a clean child MATLAB process.
