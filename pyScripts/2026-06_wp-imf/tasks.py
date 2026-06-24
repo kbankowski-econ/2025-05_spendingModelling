@@ -34,8 +34,10 @@ PAPER TABLES (\\input by draftPaper.tex):
 --------------------------------------------------------------------------------
 - makeMultipliers:  Table 3, multipliers by horizon (docs/.../makeMultipliers.py)
                     In: *_results.mat | Out: docs/2026-06_wp-imf/multipliersTable.tex
-- makeTables:       Tables 1/2/4 - parameters, efficiency-gap derivation, notation
-                    (docs/.../makeTables.py); calibration/notation values, not model output.
+- makeParametersTable:      Table 1, parameters (docs/.../makeParametersTable.py)
+- makeEfficiencyGapsTable:  Table 2, efficiency-gap derivation (docs/.../makeEfficiencyGapsTable.py)
+- makeNotationTable:        Table 4, notation (docs/.../makeNotationTable.py)
+                    Calibration/notation values, not model output.
                     Out: docs/2026-06_wp-imf/{parameters,efficiencyGaps,notation}Table.tex
 
 DIAGNOSTICS (read *_results.mat directly):
@@ -193,16 +195,39 @@ def makeMultipliers(c):
     c.run(f"{sys.executable} {path}")
 
 
-@task
-def makeTables(c):
-    """
-    Regenerate the hand-calibrated paper tables (parameters, efficiency-gap
-    derivation, notation) from docs/2026-06_wp-imf/pyScripts/makeTables.py.
-    Out: docs/2026-06_wp-imf/{parameters,efficiencyGaps,notation}Table.tex (\\input by the paper)
-    """
-    path = os.path.join(REPO_ROOT, "docs", "2026-06_wp-imf", "pyScripts", "makeTables.py")
-    print("--- Generating: Calibration/notation tables (makeTables.py) ---")
+def _run_table(c, script, label):
+    """Run one of the docs/2026-06_wp-imf/pyScripts table generators."""
+    path = os.path.join(REPO_ROOT, "docs", "2026-06_wp-imf", "pyScripts", script)
+    print(f"--- Generating: {label} ---")
     c.run(f"{sys.executable} {path}")
+
+
+@task
+def makeParametersTable(c):
+    """
+    Regenerate Table 1, Selected Model Parameters (makeParametersTable.py).
+    Out: docs/2026-06_wp-imf/parametersTable.tex (\\input by the paper)
+    """
+    _run_table(c, "makeParametersTable.py", "Parameters table (Table 1)")
+
+
+@task
+def makeEfficiencyGapsTable(c):
+    """
+    Regenerate Table 2, Derivation of the Spending-Efficiency Gaps
+    (makeEfficiencyGapsTable.py).
+    Out: docs/2026-06_wp-imf/efficiencyGapsTable.tex (\\input by the paper)
+    """
+    _run_table(c, "makeEfficiencyGapsTable.py", "Efficiency-gap table (Table 2)")
+
+
+@task
+def makeNotationTable(c):
+    """
+    Regenerate Table 4, Main Endogenous Variables (makeNotationTable.py).
+    Out: docs/2026-06_wp-imf/notationTable.tex (\\input by the paper)
+    """
+    _run_table(c, "makeNotationTable.py", "Notation table (Table 4)")
 
 
 @task
@@ -248,7 +273,9 @@ def investigateContributions(c):
     plotDiffusionAE,
     plotEfficiencyBands,
     makeMultipliers,
-    makeTables,
+    makeParametersTable,
+    makeEfficiencyGapsTable,
+    makeNotationTable,
     plotContributions,
     investigateContributions,
 ])
