@@ -77,32 +77,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Output (Y<sup>d</sup><sub>t</sub>),0.826
 2049,"No R&D, no human capital",Output (Y<sup>d</sup><sub>t</sub>),0.826
 2050,"No R&D, no human capital",Output (Y<sup>d</sup><sub>t</sub>),0.826
-2025,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.0
-2026,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.718
-2027,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.732
-2028,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.75
-2029,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.764
-2030,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.775
-2031,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.785
-2032,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.792
-2033,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.798
-2034,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.804
-2035,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.808
-2036,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.811
-2037,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.814
-2038,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.817
-2039,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.819
-2040,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.82
-2041,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.821
-2042,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.822
-2043,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.823
-2044,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.824
-2045,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.825
-2046,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.825
-2047,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.826
-2048,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.826
-2049,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.826
-2050,Standard NK (Gc only),Output (Y<sup>d</sup><sub>t</sub>),0.826
+2025,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.0
+2026,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.718
+2027,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.732
+2028,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.75
+2029,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.764
+2030,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.775
+2031,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.785
+2032,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.792
+2033,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.798
+2034,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.804
+2035,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.808
+2036,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.811
+2037,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.814
+2038,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.817
+2039,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.819
+2040,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.82
+2041,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.821
+2042,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.822
+2043,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.823
+2044,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.824
+2045,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.825
+2046,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.825
+2047,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.826
+2048,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.826
+2049,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.826
+2050,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.826
+2025,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.0
+2026,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.528
+2027,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.564
+2028,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2029,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2030,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2031,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2032,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2033,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2034,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2035,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2036,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2037,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2038,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2039,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2040,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2041,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2042,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2043,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2044,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2045,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2046,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2047,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2048,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2049,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
+2050,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.562
 2025,Full model,Consumption (C<sub>t</sub>),0.0
 2026,Full model,Consumption (C<sub>t</sub>),-1.302
 2027,Full model,Consumption (C<sub>t</sub>),-1.205
@@ -181,32 +207,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Consumption (C<sub>t</sub>),-0.749
 2049,"No R&D, no human capital",Consumption (C<sub>t</sub>),-0.748
 2050,"No R&D, no human capital",Consumption (C<sub>t</sub>),-0.747
-2025,Standard NK (Gc only),Consumption (C<sub>t</sub>),0.0
-2026,Standard NK (Gc only),Consumption (C<sub>t</sub>),-1.28
-2027,Standard NK (Gc only),Consumption (C<sub>t</sub>),-1.184
-2028,Standard NK (Gc only),Consumption (C<sub>t</sub>),-1.106
-2029,Standard NK (Gc only),Consumption (C<sub>t</sub>),-1.041
-2030,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.988
-2031,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.944
-2032,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.908
-2033,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.879
-2034,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.855
-2035,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.835
-2036,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.818
-2037,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.805
-2038,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.794
-2039,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.784
-2040,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.777
-2041,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.771
-2042,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.766
-2043,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.761
-2044,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.758
-2045,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.755
-2046,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.753
-2047,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.751
-2048,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.749
-2049,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.748
-2050,Standard NK (Gc only),Consumption (C<sub>t</sub>),-0.747
+2025,NK with capital,Consumption (C<sub>t</sub>),0.0
+2026,NK with capital,Consumption (C<sub>t</sub>),-1.28
+2027,NK with capital,Consumption (C<sub>t</sub>),-1.184
+2028,NK with capital,Consumption (C<sub>t</sub>),-1.106
+2029,NK with capital,Consumption (C<sub>t</sub>),-1.041
+2030,NK with capital,Consumption (C<sub>t</sub>),-0.988
+2031,NK with capital,Consumption (C<sub>t</sub>),-0.944
+2032,NK with capital,Consumption (C<sub>t</sub>),-0.908
+2033,NK with capital,Consumption (C<sub>t</sub>),-0.879
+2034,NK with capital,Consumption (C<sub>t</sub>),-0.855
+2035,NK with capital,Consumption (C<sub>t</sub>),-0.835
+2036,NK with capital,Consumption (C<sub>t</sub>),-0.818
+2037,NK with capital,Consumption (C<sub>t</sub>),-0.805
+2038,NK with capital,Consumption (C<sub>t</sub>),-0.794
+2039,NK with capital,Consumption (C<sub>t</sub>),-0.784
+2040,NK with capital,Consumption (C<sub>t</sub>),-0.777
+2041,NK with capital,Consumption (C<sub>t</sub>),-0.771
+2042,NK with capital,Consumption (C<sub>t</sub>),-0.766
+2043,NK with capital,Consumption (C<sub>t</sub>),-0.761
+2044,NK with capital,Consumption (C<sub>t</sub>),-0.758
+2045,NK with capital,Consumption (C<sub>t</sub>),-0.755
+2046,NK with capital,Consumption (C<sub>t</sub>),-0.753
+2047,NK with capital,Consumption (C<sub>t</sub>),-0.751
+2048,NK with capital,Consumption (C<sub>t</sub>),-0.749
+2049,NK with capital,Consumption (C<sub>t</sub>),-0.748
+2050,NK with capital,Consumption (C<sub>t</sub>),-0.747
+2025,Textbook NK (no capital),Consumption (C<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.996
+2027,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.92
+2028,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2029,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2030,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2031,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2032,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2033,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2034,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2035,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2036,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2037,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2038,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2039,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2040,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2041,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2042,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2043,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2044,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2045,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2046,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2047,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2048,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2049,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
+2050,Textbook NK (no capital),Consumption (C<sub>t</sub>),-0.924
 2025,Full model,Private investment (I<sub>t</sub>),0.0
 2026,Full model,Private investment (I<sub>t</sub>),0.936
 2027,Full model,Private investment (I<sub>t</sub>),0.925
@@ -285,32 +337,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Private investment (I<sub>t</sub>),0.832
 2049,"No R&D, no human capital",Private investment (I<sub>t</sub>),0.83
 2050,"No R&D, no human capital",Private investment (I<sub>t</sub>),0.829
-2025,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.0
-2026,Standard NK (Gc only),Private investment (I<sub>t</sub>),1.49
-2027,Standard NK (Gc only),Private investment (I<sub>t</sub>),1.349
-2028,Standard NK (Gc only),Private investment (I<sub>t</sub>),1.258
-2029,Standard NK (Gc only),Private investment (I<sub>t</sub>),1.182
-2030,Standard NK (Gc only),Private investment (I<sub>t</sub>),1.119
-2031,Standard NK (Gc only),Private investment (I<sub>t</sub>),1.066
-2032,Standard NK (Gc only),Private investment (I<sub>t</sub>),1.023
-2033,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.988
-2034,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.959
-2035,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.934
-2036,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.915
-2037,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.898
-2038,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.885
-2039,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.874
-2040,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.865
-2041,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.858
-2042,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.851
-2043,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.846
-2044,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.842
-2045,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.839
-2046,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.836
-2047,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.834
-2048,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.832
-2049,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.83
-2050,Standard NK (Gc only),Private investment (I<sub>t</sub>),0.829
+2025,NK with capital,Private investment (I<sub>t</sub>),0.0
+2026,NK with capital,Private investment (I<sub>t</sub>),1.49
+2027,NK with capital,Private investment (I<sub>t</sub>),1.349
+2028,NK with capital,Private investment (I<sub>t</sub>),1.258
+2029,NK with capital,Private investment (I<sub>t</sub>),1.182
+2030,NK with capital,Private investment (I<sub>t</sub>),1.119
+2031,NK with capital,Private investment (I<sub>t</sub>),1.066
+2032,NK with capital,Private investment (I<sub>t</sub>),1.023
+2033,NK with capital,Private investment (I<sub>t</sub>),0.988
+2034,NK with capital,Private investment (I<sub>t</sub>),0.959
+2035,NK with capital,Private investment (I<sub>t</sub>),0.934
+2036,NK with capital,Private investment (I<sub>t</sub>),0.915
+2037,NK with capital,Private investment (I<sub>t</sub>),0.898
+2038,NK with capital,Private investment (I<sub>t</sub>),0.885
+2039,NK with capital,Private investment (I<sub>t</sub>),0.874
+2040,NK with capital,Private investment (I<sub>t</sub>),0.865
+2041,NK with capital,Private investment (I<sub>t</sub>),0.858
+2042,NK with capital,Private investment (I<sub>t</sub>),0.851
+2043,NK with capital,Private investment (I<sub>t</sub>),0.846
+2044,NK with capital,Private investment (I<sub>t</sub>),0.842
+2045,NK with capital,Private investment (I<sub>t</sub>),0.839
+2046,NK with capital,Private investment (I<sub>t</sub>),0.836
+2047,NK with capital,Private investment (I<sub>t</sub>),0.834
+2048,NK with capital,Private investment (I<sub>t</sub>),0.832
+2049,NK with capital,Private investment (I<sub>t</sub>),0.83
+2050,NK with capital,Private investment (I<sub>t</sub>),0.829
+2025,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2027,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2028,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2029,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2030,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2031,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2032,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2033,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2034,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2035,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2036,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2037,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2038,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2039,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2040,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2041,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2042,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2043,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2044,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2045,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2046,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2047,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2048,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2049,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
+2050,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
 2025,Full model,Government spending (G<sub>t</sub>),0.0
 2026,Full model,Government spending (G<sub>t</sub>),4.338
 2027,Full model,Government spending (G<sub>t</sub>),4.338
@@ -389,32 +467,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Government spending (G<sub>t</sub>),4.338
 2049,"No R&D, no human capital",Government spending (G<sub>t</sub>),4.338
 2050,"No R&D, no human capital",Government spending (G<sub>t</sub>),4.338
-2025,Standard NK (Gc only),Government spending (G<sub>t</sub>),0.0
-2026,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2027,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2028,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2029,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2030,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2031,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2032,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2033,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2034,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2035,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2036,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2037,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2038,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2039,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2040,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2041,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2042,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2043,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2044,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2045,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2046,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2047,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2048,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2049,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
-2050,Standard NK (Gc only),Government spending (G<sub>t</sub>),4.338
+2025,NK with capital,Government spending (G<sub>t</sub>),0.0
+2026,NK with capital,Government spending (G<sub>t</sub>),4.338
+2027,NK with capital,Government spending (G<sub>t</sub>),4.338
+2028,NK with capital,Government spending (G<sub>t</sub>),4.338
+2029,NK with capital,Government spending (G<sub>t</sub>),4.338
+2030,NK with capital,Government spending (G<sub>t</sub>),4.338
+2031,NK with capital,Government spending (G<sub>t</sub>),4.338
+2032,NK with capital,Government spending (G<sub>t</sub>),4.338
+2033,NK with capital,Government spending (G<sub>t</sub>),4.338
+2034,NK with capital,Government spending (G<sub>t</sub>),4.338
+2035,NK with capital,Government spending (G<sub>t</sub>),4.338
+2036,NK with capital,Government spending (G<sub>t</sub>),4.338
+2037,NK with capital,Government spending (G<sub>t</sub>),4.338
+2038,NK with capital,Government spending (G<sub>t</sub>),4.338
+2039,NK with capital,Government spending (G<sub>t</sub>),4.338
+2040,NK with capital,Government spending (G<sub>t</sub>),4.338
+2041,NK with capital,Government spending (G<sub>t</sub>),4.338
+2042,NK with capital,Government spending (G<sub>t</sub>),4.338
+2043,NK with capital,Government spending (G<sub>t</sub>),4.338
+2044,NK with capital,Government spending (G<sub>t</sub>),4.338
+2045,NK with capital,Government spending (G<sub>t</sub>),4.338
+2046,NK with capital,Government spending (G<sub>t</sub>),4.338
+2047,NK with capital,Government spending (G<sub>t</sub>),4.338
+2048,NK with capital,Government spending (G<sub>t</sub>),4.338
+2049,NK with capital,Government spending (G<sub>t</sub>),4.338
+2050,NK with capital,Government spending (G<sub>t</sub>),4.338
+2025,Textbook NK (no capital),Government spending (G<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2027,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2028,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2029,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2030,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2031,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2032,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2033,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2034,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2035,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2036,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2037,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2038,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2039,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2040,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2041,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2042,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2043,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2044,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2045,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2046,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2047,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2048,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2049,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
+2050,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
 2025,Full model,Adopted technology (A<sub>t</sub>),0.0
 2026,Full model,Adopted technology (A<sub>t</sub>),0.008
 2027,Full model,Adopted technology (A<sub>t</sub>),0.029
@@ -493,32 +597,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Adopted technology (A<sub>t</sub>),0.0
 2049,"No R&D, no human capital",Adopted technology (A<sub>t</sub>),0.0
 2050,"No R&D, no human capital",Adopted technology (A<sub>t</sub>),0.0
-2025,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2026,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2027,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2028,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2029,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2030,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2031,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2032,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2033,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2034,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2035,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2036,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2037,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2038,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2039,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2040,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2041,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2042,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2043,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2044,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2045,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2046,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2047,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2048,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2049,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
-2050,Standard NK (Gc only),Adopted technology (A<sub>t</sub>),0.0
+2025,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2026,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2027,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2028,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2029,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2030,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2031,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2032,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2033,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2034,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2035,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2036,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2037,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2038,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2039,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2040,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2041,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2042,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2043,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2044,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2045,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2046,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2047,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2048,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2049,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2050,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+2025,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2027,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2028,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2029,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2030,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2031,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2032,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2033,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2034,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2035,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2036,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2037,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2038,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2039,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2040,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2041,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2042,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2043,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2044,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2045,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2046,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2047,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2048,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2049,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
+2050,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
 2025,Full model,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2026,Full model,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2027,Full model,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
@@ -597,32 +727,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2049,"No R&D, no human capital",Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2050,"No R&D, no human capital",Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2025,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2026,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2027,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2028,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2029,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2030,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2031,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2032,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2033,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2034,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2035,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2036,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2037,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2038,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2039,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2040,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2041,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2042,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2043,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2044,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2045,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2046,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2047,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2048,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2049,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2050,Standard NK (Gc only),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2025,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2026,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2027,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2028,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2029,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2030,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2031,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2032,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2033,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2034,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2035,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2036,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2037,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2038,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2039,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2040,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2041,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2042,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2043,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2044,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2045,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2046,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2047,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2048,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2049,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2050,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2025,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2026,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2027,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2028,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2029,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2030,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2031,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2032,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2033,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2034,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2035,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2036,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2037,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2038,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2039,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2040,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2041,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2042,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2043,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2044,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2045,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2046,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2047,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2048,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2049,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2050,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2025,Full model,Private capital (K<sub>t</sub>),0.0
 2026,Full model,Private capital (K<sub>t</sub>),-0.182
 2027,Full model,Private capital (K<sub>t</sub>),-0.059
@@ -701,32 +857,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Private capital (K<sub>t</sub>),0.81
 2049,"No R&D, no human capital",Private capital (K<sub>t</sub>),0.813
 2050,"No R&D, no human capital",Private capital (K<sub>t</sub>),0.814
-2025,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.0
-2026,Standard NK (Gc only),Private capital (K<sub>t</sub>),-0.121
-2027,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.046
-2028,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.184
-2029,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.297
-2030,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.39
-2031,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.467
-2032,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.53
-2033,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.582
-2034,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.625
-2035,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.66
-2036,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.689
-2037,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.713
-2038,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.733
-2039,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.749
-2040,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.762
-2041,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.773
-2042,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.782
-2043,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.789
-2044,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.795
-2045,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.8
-2046,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.804
-2047,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.808
-2048,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.81
-2049,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.813
-2050,Standard NK (Gc only),Private capital (K<sub>t</sub>),0.814
+2025,NK with capital,Private capital (K<sub>t</sub>),0.0
+2026,NK with capital,Private capital (K<sub>t</sub>),-0.121
+2027,NK with capital,Private capital (K<sub>t</sub>),0.046
+2028,NK with capital,Private capital (K<sub>t</sub>),0.184
+2029,NK with capital,Private capital (K<sub>t</sub>),0.297
+2030,NK with capital,Private capital (K<sub>t</sub>),0.39
+2031,NK with capital,Private capital (K<sub>t</sub>),0.467
+2032,NK with capital,Private capital (K<sub>t</sub>),0.53
+2033,NK with capital,Private capital (K<sub>t</sub>),0.582
+2034,NK with capital,Private capital (K<sub>t</sub>),0.625
+2035,NK with capital,Private capital (K<sub>t</sub>),0.66
+2036,NK with capital,Private capital (K<sub>t</sub>),0.689
+2037,NK with capital,Private capital (K<sub>t</sub>),0.713
+2038,NK with capital,Private capital (K<sub>t</sub>),0.733
+2039,NK with capital,Private capital (K<sub>t</sub>),0.749
+2040,NK with capital,Private capital (K<sub>t</sub>),0.762
+2041,NK with capital,Private capital (K<sub>t</sub>),0.773
+2042,NK with capital,Private capital (K<sub>t</sub>),0.782
+2043,NK with capital,Private capital (K<sub>t</sub>),0.789
+2044,NK with capital,Private capital (K<sub>t</sub>),0.795
+2045,NK with capital,Private capital (K<sub>t</sub>),0.8
+2046,NK with capital,Private capital (K<sub>t</sub>),0.804
+2047,NK with capital,Private capital (K<sub>t</sub>),0.808
+2048,NK with capital,Private capital (K<sub>t</sub>),0.81
+2049,NK with capital,Private capital (K<sub>t</sub>),0.813
+2050,NK with capital,Private capital (K<sub>t</sub>),0.814
+2025,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2027,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2028,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2029,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2030,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2031,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2032,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2033,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2034,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2035,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2036,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2037,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2038,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2039,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2040,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2041,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2042,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2043,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2044,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2045,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2046,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2047,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2048,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2049,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
+2050,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
 2025,Full model,Effective labor (N<sub>t</sub>),0.0
 2026,Full model,Effective labor (N<sub>t</sub>),0.966
 2027,Full model,Effective labor (N<sub>t</sub>),0.98
@@ -805,32 +987,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Effective labor (N<sub>t</sub>),0.868
 2049,"No R&D, no human capital",Effective labor (N<sub>t</sub>),0.868
 2050,"No R&D, no human capital",Effective labor (N<sub>t</sub>),0.867
-2025,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.0
-2026,Standard NK (Gc only),Effective labor (N<sub>t</sub>),1.129
-2027,Standard NK (Gc only),Effective labor (N<sub>t</sub>),1.072
-2028,Standard NK (Gc only),Effective labor (N<sub>t</sub>),1.035
-2029,Standard NK (Gc only),Effective labor (N<sub>t</sub>),1.004
-2030,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.979
-2031,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.959
-2032,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.942
-2033,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.929
-2034,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.917
-2035,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.908
-2036,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.9
-2037,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.894
-2038,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.889
-2039,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.885
-2040,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.881
-2041,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.878
-2042,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.876
-2043,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.874
-2044,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.872
-2045,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.871
-2046,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.87
-2047,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.869
-2048,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.868
-2049,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.868
-2050,Standard NK (Gc only),Effective labor (N<sub>t</sub>),0.867
+2025,NK with capital,Effective labor (N<sub>t</sub>),0.0
+2026,NK with capital,Effective labor (N<sub>t</sub>),1.129
+2027,NK with capital,Effective labor (N<sub>t</sub>),1.072
+2028,NK with capital,Effective labor (N<sub>t</sub>),1.035
+2029,NK with capital,Effective labor (N<sub>t</sub>),1.004
+2030,NK with capital,Effective labor (N<sub>t</sub>),0.979
+2031,NK with capital,Effective labor (N<sub>t</sub>),0.959
+2032,NK with capital,Effective labor (N<sub>t</sub>),0.942
+2033,NK with capital,Effective labor (N<sub>t</sub>),0.929
+2034,NK with capital,Effective labor (N<sub>t</sub>),0.917
+2035,NK with capital,Effective labor (N<sub>t</sub>),0.908
+2036,NK with capital,Effective labor (N<sub>t</sub>),0.9
+2037,NK with capital,Effective labor (N<sub>t</sub>),0.894
+2038,NK with capital,Effective labor (N<sub>t</sub>),0.889
+2039,NK with capital,Effective labor (N<sub>t</sub>),0.885
+2040,NK with capital,Effective labor (N<sub>t</sub>),0.881
+2041,NK with capital,Effective labor (N<sub>t</sub>),0.878
+2042,NK with capital,Effective labor (N<sub>t</sub>),0.876
+2043,NK with capital,Effective labor (N<sub>t</sub>),0.874
+2044,NK with capital,Effective labor (N<sub>t</sub>),0.872
+2045,NK with capital,Effective labor (N<sub>t</sub>),0.871
+2046,NK with capital,Effective labor (N<sub>t</sub>),0.87
+2047,NK with capital,Effective labor (N<sub>t</sub>),0.869
+2048,NK with capital,Effective labor (N<sub>t</sub>),0.868
+2049,NK with capital,Effective labor (N<sub>t</sub>),0.868
+2050,NK with capital,Effective labor (N<sub>t</sub>),0.867
+2025,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.775
+2027,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.825
+2028,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.822
+2029,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2030,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2031,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2032,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2033,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2034,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2035,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2036,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2037,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2038,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2039,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2040,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2041,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2042,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2043,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2044,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2045,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2046,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2047,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2048,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2049,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
+2050,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.821
 2025,Full model,Labor supply (L<sub>t</sub>),0.0
 2026,Full model,Labor supply (L<sub>t</sub>),0.897
 2027,Full model,Labor supply (L<sub>t</sub>),0.876
@@ -909,32 +1117,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Labor supply (L<sub>t</sub>),0.868
 2049,"No R&D, no human capital",Labor supply (L<sub>t</sub>),0.868
 2050,"No R&D, no human capital",Labor supply (L<sub>t</sub>),0.867
-2025,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.0
-2026,Standard NK (Gc only),Labor supply (L<sub>t</sub>),1.129
-2027,Standard NK (Gc only),Labor supply (L<sub>t</sub>),1.072
-2028,Standard NK (Gc only),Labor supply (L<sub>t</sub>),1.035
-2029,Standard NK (Gc only),Labor supply (L<sub>t</sub>),1.004
-2030,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.979
-2031,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.959
-2032,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.942
-2033,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.929
-2034,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.917
-2035,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.908
-2036,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.9
-2037,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.894
-2038,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.889
-2039,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.885
-2040,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.881
-2041,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.878
-2042,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.876
-2043,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.874
-2044,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.872
-2045,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.871
-2046,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.87
-2047,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.869
-2048,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.868
-2049,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.868
-2050,Standard NK (Gc only),Labor supply (L<sub>t</sub>),0.867
+2025,NK with capital,Labor supply (L<sub>t</sub>),0.0
+2026,NK with capital,Labor supply (L<sub>t</sub>),1.129
+2027,NK with capital,Labor supply (L<sub>t</sub>),1.072
+2028,NK with capital,Labor supply (L<sub>t</sub>),1.035
+2029,NK with capital,Labor supply (L<sub>t</sub>),1.004
+2030,NK with capital,Labor supply (L<sub>t</sub>),0.979
+2031,NK with capital,Labor supply (L<sub>t</sub>),0.959
+2032,NK with capital,Labor supply (L<sub>t</sub>),0.942
+2033,NK with capital,Labor supply (L<sub>t</sub>),0.929
+2034,NK with capital,Labor supply (L<sub>t</sub>),0.917
+2035,NK with capital,Labor supply (L<sub>t</sub>),0.908
+2036,NK with capital,Labor supply (L<sub>t</sub>),0.9
+2037,NK with capital,Labor supply (L<sub>t</sub>),0.894
+2038,NK with capital,Labor supply (L<sub>t</sub>),0.889
+2039,NK with capital,Labor supply (L<sub>t</sub>),0.885
+2040,NK with capital,Labor supply (L<sub>t</sub>),0.881
+2041,NK with capital,Labor supply (L<sub>t</sub>),0.878
+2042,NK with capital,Labor supply (L<sub>t</sub>),0.876
+2043,NK with capital,Labor supply (L<sub>t</sub>),0.874
+2044,NK with capital,Labor supply (L<sub>t</sub>),0.872
+2045,NK with capital,Labor supply (L<sub>t</sub>),0.871
+2046,NK with capital,Labor supply (L<sub>t</sub>),0.87
+2047,NK with capital,Labor supply (L<sub>t</sub>),0.869
+2048,NK with capital,Labor supply (L<sub>t</sub>),0.868
+2049,NK with capital,Labor supply (L<sub>t</sub>),0.868
+2050,NK with capital,Labor supply (L<sub>t</sub>),0.867
+2025,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.775
+2027,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.825
+2028,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.822
+2029,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2030,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2031,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2032,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2033,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2034,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2035,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2036,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2037,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2038,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2039,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2040,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2041,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2042,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2043,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2044,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2045,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2046,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2047,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2048,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2049,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
+2050,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.821
 2025,Full model,Human capital stock (H<sub>t</sub>),0.0
 2026,Full model,Human capital stock (H<sub>t</sub>),0.078
 2027,Full model,Human capital stock (H<sub>t</sub>),0.11
@@ -1013,32 +1247,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Human capital stock (H<sub>t</sub>),0.0
 2049,"No R&D, no human capital",Human capital stock (H<sub>t</sub>),0.0
 2050,"No R&D, no human capital",Human capital stock (H<sub>t</sub>),0.0
-2025,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2026,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2027,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2028,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2029,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2030,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2031,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2032,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2033,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2034,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2035,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2036,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2037,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2038,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2039,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2040,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2041,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2042,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2043,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2044,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2045,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2046,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2047,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2048,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2049,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
-2050,Standard NK (Gc only),Human capital stock (H<sub>t</sub>),0.0
+2025,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2026,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2027,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2028,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2029,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2030,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2031,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2032,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2033,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2034,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2035,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2036,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2037,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2038,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2039,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2040,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2041,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2042,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2043,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2044,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2045,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2046,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2047,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2048,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2049,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2050,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+2025,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2027,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2028,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2029,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2030,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2031,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2032,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2033,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2034,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2035,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2036,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2037,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2038,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2039,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2040,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2041,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2042,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2043,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2044,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2045,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2046,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2047,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2048,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2049,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2050,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
 2025,Full model,Inflation (Π<sub>t</sub>),0.0
 2026,Full model,Inflation (Π<sub>t</sub>),-1.184
 2027,Full model,Inflation (Π<sub>t</sub>),-1.29
@@ -1117,32 +1377,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Inflation (Π<sub>t</sub>),-1.641
 2049,"No R&D, no human capital",Inflation (Π<sub>t</sub>),-1.641
 2050,"No R&D, no human capital",Inflation (Π<sub>t</sub>),-1.642
-2025,Standard NK (Gc only),Inflation (Π<sub>t</sub>),0.0
-2026,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.336
-2027,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.389
-2028,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.435
-2029,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.473
-2030,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.503
-2031,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.528
-2032,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.549
-2033,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.566
-2034,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.58
-2035,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.592
-2036,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.601
-2037,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.609
-2038,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.615
-2039,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.62
-2040,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.625
-2041,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.628
-2042,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.631
-2043,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.634
-2044,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.636
-2045,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.637
-2046,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.639
-2047,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.64
-2048,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.641
-2049,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.641
-2050,Standard NK (Gc only),Inflation (Π<sub>t</sub>),-1.642
+2025,NK with capital,Inflation (Π<sub>t</sub>),0.0
+2026,NK with capital,Inflation (Π<sub>t</sub>),-1.336
+2027,NK with capital,Inflation (Π<sub>t</sub>),-1.389
+2028,NK with capital,Inflation (Π<sub>t</sub>),-1.435
+2029,NK with capital,Inflation (Π<sub>t</sub>),-1.473
+2030,NK with capital,Inflation (Π<sub>t</sub>),-1.503
+2031,NK with capital,Inflation (Π<sub>t</sub>),-1.528
+2032,NK with capital,Inflation (Π<sub>t</sub>),-1.549
+2033,NK with capital,Inflation (Π<sub>t</sub>),-1.566
+2034,NK with capital,Inflation (Π<sub>t</sub>),-1.58
+2035,NK with capital,Inflation (Π<sub>t</sub>),-1.592
+2036,NK with capital,Inflation (Π<sub>t</sub>),-1.601
+2037,NK with capital,Inflation (Π<sub>t</sub>),-1.609
+2038,NK with capital,Inflation (Π<sub>t</sub>),-1.615
+2039,NK with capital,Inflation (Π<sub>t</sub>),-1.62
+2040,NK with capital,Inflation (Π<sub>t</sub>),-1.625
+2041,NK with capital,Inflation (Π<sub>t</sub>),-1.628
+2042,NK with capital,Inflation (Π<sub>t</sub>),-1.631
+2043,NK with capital,Inflation (Π<sub>t</sub>),-1.634
+2044,NK with capital,Inflation (Π<sub>t</sub>),-1.636
+2045,NK with capital,Inflation (Π<sub>t</sub>),-1.637
+2046,NK with capital,Inflation (Π<sub>t</sub>),-1.639
+2047,NK with capital,Inflation (Π<sub>t</sub>),-1.64
+2048,NK with capital,Inflation (Π<sub>t</sub>),-1.641
+2049,NK with capital,Inflation (Π<sub>t</sub>),-1.641
+2050,NK with capital,Inflation (Π<sub>t</sub>),-1.642
+2025,Textbook NK (no capital),Inflation (Π<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.24
+2027,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.128
+2028,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.119
+2029,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2030,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2031,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2032,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2033,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2034,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2035,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2036,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2037,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2038,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2039,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2040,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2041,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2042,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2043,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2044,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2045,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2046,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2047,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2048,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2049,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
+2050,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-1.12
 2025,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
 2026,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.117
 2027,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.23
@@ -1221,32 +1507,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),-1.648
 2049,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),-1.649
 2050,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),-1.65
-2025,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2026,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.251
-2027,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.323
-2028,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.383
-2029,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.431
-2030,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.471
-2031,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.503
-2032,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.53
-2033,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.552
-2034,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.57
-2035,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.585
-2036,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.597
-2037,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.607
-2038,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.616
-2039,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.622
-2040,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.628
-2041,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.633
-2042,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.636
-2043,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.639
-2044,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.642
-2045,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.644
-2046,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.646
-2047,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.647
-2048,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.648
-2049,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.649
-2050,Standard NK (Gc only),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.65
+2025,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2026,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.251
+2027,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.323
+2028,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.383
+2029,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.431
+2030,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.471
+2031,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.503
+2032,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.53
+2033,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.552
+2034,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.57
+2035,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.585
+2036,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.597
+2037,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.607
+2038,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.616
+2039,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.622
+2040,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.628
+2041,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.633
+2042,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.636
+2043,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.639
+2044,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.642
+2045,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.644
+2046,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.646
+2047,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.647
+2048,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.648
+2049,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.649
+2050,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.65
+2025,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2026,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.014
+2027,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.131
+2028,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.127
+2029,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2030,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2031,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2032,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2033,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2034,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2035,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2036,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2037,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2038,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2039,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2040,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2041,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2042,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2043,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2044,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2045,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2046,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2047,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2048,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2049,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
+2050,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),-1.126
 2025,Full model,Nominal bond rate (R<sub>t</sub>),0.0
 2026,Full model,Nominal bond rate (R<sub>t</sub>),-1.117
 2027,Full model,Nominal bond rate (R<sub>t</sub>),-1.23
@@ -1325,32 +1637,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),-1.648
 2049,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),-1.649
 2050,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),-1.65
-2025,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),0.0
-2026,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.251
-2027,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.323
-2028,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.383
-2029,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.431
-2030,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.471
-2031,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.503
-2032,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.53
-2033,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.552
-2034,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.57
-2035,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.585
-2036,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.597
-2037,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.607
-2038,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.616
-2039,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.622
-2040,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.628
-2041,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.633
-2042,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.636
-2043,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.639
-2044,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.642
-2045,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.644
-2046,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.646
-2047,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.647
-2048,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.648
-2049,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.649
-2050,Standard NK (Gc only),Nominal bond rate (R<sub>t</sub>),-1.65
+2025,NK with capital,Nominal bond rate (R<sub>t</sub>),0.0
+2026,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.251
+2027,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.323
+2028,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.383
+2029,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.431
+2030,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.471
+2031,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.503
+2032,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.53
+2033,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.552
+2034,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.57
+2035,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.585
+2036,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.597
+2037,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.607
+2038,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.616
+2039,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.622
+2040,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.628
+2041,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.633
+2042,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.636
+2043,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.639
+2044,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.642
+2045,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.644
+2046,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.646
+2047,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.647
+2048,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.648
+2049,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.649
+2050,NK with capital,Nominal bond rate (R<sub>t</sub>),-1.65
+2025,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.014
+2027,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.131
+2028,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.127
+2029,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2030,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2031,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2032,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2033,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2034,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2035,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2036,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2037,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2038,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2039,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2040,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2041,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2042,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2043,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2044,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2045,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2046,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2047,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2048,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2049,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
+2050,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),-1.126
 2025,Full model,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2026,Full model,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.074
 2027,Full model,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.067
@@ -1429,32 +1767,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
 2049,"No R&D, no human capital",Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
 2050,"No R&D, no human capital",Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
-2025,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
-2026,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.093
-2027,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.073
-2028,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.06
-2029,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.05
-2030,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.041
-2031,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.034
-2032,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.028
-2033,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.023
-2034,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.019
-2035,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.015
-2036,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.013
-2037,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.01
-2038,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.009
-2039,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.007
-2040,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.006
-2041,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.005
-2042,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.004
-2043,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
-2044,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
-2045,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
-2046,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
-2047,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
-2048,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
-2049,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
-2050,Standard NK (Gc only),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+2025,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2026,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.093
+2027,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.073
+2028,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.06
+2029,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.05
+2030,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.041
+2031,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.034
+2032,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.028
+2033,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.023
+2034,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.019
+2035,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.015
+2036,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.013
+2037,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.01
+2038,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.009
+2039,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.007
+2040,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.006
+2041,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.005
+2042,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.004
+2043,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
+2044,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
+2045,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+2046,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+2047,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+2048,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+2049,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+2050,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+2025,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.233
+2027,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
+2028,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.001
+2029,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2030,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2031,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2032,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2033,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2034,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2035,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2036,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2037,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2038,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2039,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2040,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2041,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2042,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2043,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2044,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2045,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2046,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2047,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2048,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2049,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2050,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2025,Full model,Primary deficit,0.0
 2026,Full model,Primary deficit,1.001
 2027,Full model,Primary deficit,0.945
@@ -1533,32 +1897,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Primary deficit,0.332
 2049,"No R&D, no human capital",Primary deficit,0.315
 2050,"No R&D, no human capital",Primary deficit,0.298
-2025,Standard NK (Gc only),Primary deficit,0.0
-2026,Standard NK (Gc only),Primary deficit,0.984
-2027,Standard NK (Gc only),Primary deficit,0.933
-2028,Standard NK (Gc only),Primary deficit,0.885
-2029,Standard NK (Gc only),Primary deficit,0.841
-2030,Standard NK (Gc only),Primary deficit,0.799
-2031,Standard NK (Gc only),Primary deficit,0.76
-2032,Standard NK (Gc only),Primary deficit,0.724
-2033,Standard NK (Gc only),Primary deficit,0.69
-2034,Standard NK (Gc only),Primary deficit,0.658
-2035,Standard NK (Gc only),Primary deficit,0.627
-2036,Standard NK (Gc only),Primary deficit,0.598
-2037,Standard NK (Gc only),Primary deficit,0.57
-2038,Standard NK (Gc only),Primary deficit,0.544
-2039,Standard NK (Gc only),Primary deficit,0.519
-2040,Standard NK (Gc only),Primary deficit,0.494
-2041,Standard NK (Gc only),Primary deficit,0.471
-2042,Standard NK (Gc only),Primary deficit,0.449
-2043,Standard NK (Gc only),Primary deficit,0.428
-2044,Standard NK (Gc only),Primary deficit,0.407
-2045,Standard NK (Gc only),Primary deficit,0.387
-2046,Standard NK (Gc only),Primary deficit,0.368
-2047,Standard NK (Gc only),Primary deficit,0.35
-2048,Standard NK (Gc only),Primary deficit,0.332
-2049,Standard NK (Gc only),Primary deficit,0.315
-2050,Standard NK (Gc only),Primary deficit,0.298
+2025,NK with capital,Primary deficit,0.0
+2026,NK with capital,Primary deficit,0.984
+2027,NK with capital,Primary deficit,0.933
+2028,NK with capital,Primary deficit,0.885
+2029,NK with capital,Primary deficit,0.841
+2030,NK with capital,Primary deficit,0.799
+2031,NK with capital,Primary deficit,0.76
+2032,NK with capital,Primary deficit,0.724
+2033,NK with capital,Primary deficit,0.69
+2034,NK with capital,Primary deficit,0.658
+2035,NK with capital,Primary deficit,0.627
+2036,NK with capital,Primary deficit,0.598
+2037,NK with capital,Primary deficit,0.57
+2038,NK with capital,Primary deficit,0.544
+2039,NK with capital,Primary deficit,0.519
+2040,NK with capital,Primary deficit,0.494
+2041,NK with capital,Primary deficit,0.471
+2042,NK with capital,Primary deficit,0.449
+2043,NK with capital,Primary deficit,0.428
+2044,NK with capital,Primary deficit,0.407
+2045,NK with capital,Primary deficit,0.387
+2046,NK with capital,Primary deficit,0.368
+2047,NK with capital,Primary deficit,0.35
+2048,NK with capital,Primary deficit,0.332
+2049,NK with capital,Primary deficit,0.315
+2050,NK with capital,Primary deficit,0.298
+2025,Textbook NK (no capital),Primary deficit,0.0
+2026,Textbook NK (no capital),Primary deficit,0.993
+2027,Textbook NK (no capital),Primary deficit,0.922
+2028,Textbook NK (no capital),Primary deficit,0.887
+2029,Textbook NK (no capital),Primary deficit,0.851
+2030,Textbook NK (no capital),Primary deficit,0.817
+2031,Textbook NK (no capital),Primary deficit,0.784
+2032,Textbook NK (no capital),Primary deficit,0.751
+2033,Textbook NK (no capital),Primary deficit,0.72
+2034,Textbook NK (no capital),Primary deficit,0.69
+2035,Textbook NK (no capital),Primary deficit,0.661
+2036,Textbook NK (no capital),Primary deficit,0.633
+2037,Textbook NK (no capital),Primary deficit,0.606
+2038,Textbook NK (no capital),Primary deficit,0.579
+2039,Textbook NK (no capital),Primary deficit,0.554
+2040,Textbook NK (no capital),Primary deficit,0.529
+2041,Textbook NK (no capital),Primary deficit,0.506
+2042,Textbook NK (no capital),Primary deficit,0.483
+2043,Textbook NK (no capital),Primary deficit,0.461
+2044,Textbook NK (no capital),Primary deficit,0.439
+2045,Textbook NK (no capital),Primary deficit,0.418
+2046,Textbook NK (no capital),Primary deficit,0.398
+2047,Textbook NK (no capital),Primary deficit,0.379
+2048,Textbook NK (no capital),Primary deficit,0.36
+2049,Textbook NK (no capital),Primary deficit,0.342
+2050,Textbook NK (no capital),Primary deficit,0.325
 2025,Full model,Transfers (T<sub>t</sub>),0.0
 2026,Full model,Transfers (T<sub>t</sub>),-0.026
 2027,Full model,Transfers (T<sub>t</sub>),-0.066
@@ -1637,32 +2027,58 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Transfers (T<sub>t</sub>),-0.622
 2049,"No R&D, no human capital",Transfers (T<sub>t</sub>),-0.639
 2050,"No R&D, no human capital",Transfers (T<sub>t</sub>),-0.656
-2025,Standard NK (Gc only),Transfers (T<sub>t</sub>),0.0
-2026,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.025
-2027,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.068
-2028,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.108
-2029,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.145
-2030,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.181
-2031,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.215
-2032,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.247
-2033,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.278
-2034,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.308
-2035,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.336
-2036,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.364
-2037,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.39
-2038,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.415
-2039,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.439
-2040,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.463
-2041,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.485
-2042,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.507
-2043,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.528
-2044,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.548
-2045,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.568
-2046,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.586
-2047,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.605
-2048,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.622
-2049,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.639
-2050,Standard NK (Gc only),Transfers (T<sub>t</sub>),-0.656
+2025,NK with capital,Transfers (T<sub>t</sub>),0.0
+2026,NK with capital,Transfers (T<sub>t</sub>),-0.025
+2027,NK with capital,Transfers (T<sub>t</sub>),-0.068
+2028,NK with capital,Transfers (T<sub>t</sub>),-0.108
+2029,NK with capital,Transfers (T<sub>t</sub>),-0.145
+2030,NK with capital,Transfers (T<sub>t</sub>),-0.181
+2031,NK with capital,Transfers (T<sub>t</sub>),-0.215
+2032,NK with capital,Transfers (T<sub>t</sub>),-0.247
+2033,NK with capital,Transfers (T<sub>t</sub>),-0.278
+2034,NK with capital,Transfers (T<sub>t</sub>),-0.308
+2035,NK with capital,Transfers (T<sub>t</sub>),-0.336
+2036,NK with capital,Transfers (T<sub>t</sub>),-0.364
+2037,NK with capital,Transfers (T<sub>t</sub>),-0.39
+2038,NK with capital,Transfers (T<sub>t</sub>),-0.415
+2039,NK with capital,Transfers (T<sub>t</sub>),-0.439
+2040,NK with capital,Transfers (T<sub>t</sub>),-0.463
+2041,NK with capital,Transfers (T<sub>t</sub>),-0.485
+2042,NK with capital,Transfers (T<sub>t</sub>),-0.507
+2043,NK with capital,Transfers (T<sub>t</sub>),-0.528
+2044,NK with capital,Transfers (T<sub>t</sub>),-0.548
+2045,NK with capital,Transfers (T<sub>t</sub>),-0.568
+2046,NK with capital,Transfers (T<sub>t</sub>),-0.586
+2047,NK with capital,Transfers (T<sub>t</sub>),-0.605
+2048,NK with capital,Transfers (T<sub>t</sub>),-0.622
+2049,NK with capital,Transfers (T<sub>t</sub>),-0.639
+2050,NK with capital,Transfers (T<sub>t</sub>),-0.656
+2025,Textbook NK (no capital),Transfers (T<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.038
+2027,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.08
+2028,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.117
+2029,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.153
+2030,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.187
+2031,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.221
+2032,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.253
+2033,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.284
+2034,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.314
+2035,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.343
+2036,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.371
+2037,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.398
+2038,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.425
+2039,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.45
+2040,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.475
+2041,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.498
+2042,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.521
+2043,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.544
+2044,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.565
+2045,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.586
+2046,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.606
+2047,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.625
+2048,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.644
+2049,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.662
+2050,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.68
 2025,Full model,Debt-to-GDP ratio (d<sub>t</sub>),0.0
 2026,Full model,Debt-to-GDP ratio (d<sub>t</sub>),6.051
 2027,Full model,Debt-to-GDP ratio (d<sub>t</sub>),10.358
@@ -1741,29 +2157,55 @@ year,model,variable,pct_dev
 2048,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),66.585
 2049,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),68.28
 2050,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),69.918
-2025,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),0.0
-2026,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),6.613
-2027,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),10.869
-2028,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),14.884
-2029,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),18.682
-2030,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),22.287
-2031,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),25.715
-2032,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),28.982
-2033,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),32.102
-2034,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),35.086
-2035,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),37.945
-2036,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),40.687
-2037,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),43.32
-2038,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),45.85
-2039,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),48.284
-2040,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),50.627
-2041,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),52.884
-2042,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),55.058
-2043,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),57.155
-2044,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),59.177
-2045,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),61.129
-2046,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),63.012
-2047,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),64.83
-2048,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),66.585
-2049,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),68.28
-2050,Standard NK (Gc only),Debt-to-GDP ratio (d<sub>t</sub>),69.918
+2025,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),0.0
+2026,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),6.613
+2027,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),10.869
+2028,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),14.884
+2029,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),18.682
+2030,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),22.287
+2031,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),25.715
+2032,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),28.982
+2033,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),32.102
+2034,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),35.086
+2035,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),37.945
+2036,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),40.687
+2037,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),43.32
+2038,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),45.85
+2039,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),48.284
+2040,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),50.627
+2041,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),52.884
+2042,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),55.058
+2043,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),57.155
+2044,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),59.177
+2045,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),61.129
+2046,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),63.012
+2047,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),64.83
+2048,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),66.585
+2049,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),68.28
+2050,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),69.918
+2025,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),7.197
+2027,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),11.324
+2028,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),14.987
+2029,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),18.542
+2030,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),21.981
+2031,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),25.304
+2032,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),28.517
+2033,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),31.622
+2034,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),34.624
+2035,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),37.526
+2036,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),40.331
+2037,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),43.043
+2038,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),45.664
+2039,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),48.198
+2040,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),50.647
+2041,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),53.015
+2042,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),55.304
+2043,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),57.516
+2044,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),59.655
+2045,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),61.722
+2046,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),63.721
+2047,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),65.653
+2048,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),67.52
+2049,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),69.325
+2050,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),71.07
