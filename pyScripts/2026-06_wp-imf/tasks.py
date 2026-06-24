@@ -30,13 +30,23 @@ PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 - plotDiffusionAE:      Technology diffusion-speed sensitivity
 - plotEfficiencyBands:  Spending-efficiency gaps by income group (appendix)
 
+PAPER TABLES (\\input by draftPaper.tex):
+--------------------------------------------------------------------------------
+- makeMultipliers:  Table 3, multipliers by horizon (docs/.../makeMultipliers.py)
+                    In: *_results.mat | Out: docs/2026-06_wp-imf/multipliersTable.tex
+- makeParametersTable:      Table 1, parameters (docs/.../makeParametersTable.py)
+- makeEfficiencyGapsTable:  Table 2, efficiency-gap derivation (docs/.../makeEfficiencyGapsTable.py)
+- makeNotationTable:        Table 4, notation (docs/.../makeNotationTable.py)
+                    Calibration/notation values, not model output.
+                    Out: docs/2026-06_wp-imf/{parameters,efficiencyGaps,notation}Table.tex
+
 DIAGNOSTICS (read *_results.mat directly):
 --------------------------------------------------------------------------------
 - plotContributions:        yd contribution decomposition across models (drivers/plotContributions.m)
 - investigateContributions: contribution decomposition across variables, one shock (drivers/investigateContributions.m)
 
-- run-all:              exportData, then regenerate every figure and the
-                        contribution panels.
+- run-all:              exportData, then regenerate every figure, every \\input
+                        table, and the contribution panels.
 
 Main entry point: invoke run-all
 """
@@ -184,6 +194,53 @@ def plotEfficiencyBands(c):
 
 
 @task
+def makeMultipliers(c):
+    """
+    Regenerate the multiplier table (Table 3) from the solved models.
+    Runs docs/2026-06_wp-imf/pyScripts/makeMultipliers.py.
+    In: *_results.mat | Out: docs/2026-06_wp-imf/multipliersTable.tex (\\input by the paper)
+    """
+    path = os.path.join(REPO_ROOT, "docs", "2026-06_wp-imf", "pyScripts", "makeMultipliers.py")
+    print("--- Generating: Multiplier table (makeMultipliers.py) ---")
+    c.run(f"{sys.executable} {path}")
+
+
+def _run_table(c, script, label):
+    """Run one of the docs/2026-06_wp-imf/pyScripts table generators."""
+    path = os.path.join(REPO_ROOT, "docs", "2026-06_wp-imf", "pyScripts", script)
+    print(f"--- Generating: {label} ---")
+    c.run(f"{sys.executable} {path}")
+
+
+@task
+def makeParametersTable(c):
+    """
+    Regenerate Table 1, Selected Model Parameters (makeParametersTable.py).
+    Out: docs/2026-06_wp-imf/parametersTable.tex (\\input by the paper)
+    """
+    _run_table(c, "makeParametersTable.py", "Parameters table (Table 1)")
+
+
+@task
+def makeEfficiencyGapsTable(c):
+    """
+    Regenerate Table 2, Derivation of the Spending-Efficiency Gaps
+    (makeEfficiencyGapsTable.py).
+    Out: docs/2026-06_wp-imf/efficiencyGapsTable.tex (\\input by the paper)
+    """
+    _run_table(c, "makeEfficiencyGapsTable.py", "Efficiency-gap table (Table 2)")
+
+
+@task
+def makeNotationTable(c):
+    """
+    Regenerate Table 4, Main Endogenous Variables (makeNotationTable.py).
+    Out: docs/2026-06_wp-imf/notationTable.tex (\\input by the paper)
+    """
+    _run_table(c, "makeNotationTable.py", "Notation table (Table 4)")
+
+
+@task
 def plotContributions(c):
     """
     Diagnostic: output (yd) contribution decompositions (drivers/plotContributions.m).
@@ -226,12 +283,17 @@ def investigateContributions(c):
     plotHumanCapital,
     plotDiffusionAE,
     plotEfficiencyBands,
+    makeMultipliers,
+    makeParametersTable,
+    makeEfficiencyGapsTable,
+    makeNotationTable,
     plotContributions,
     investigateContributions,
 ])
 def run_all(c):
     """
-    Export model data, then regenerate every figure.
+    Export model data, then regenerate every figure and every \\input table
+    (multipliers, parameters, efficiency gaps, notation).
     (Does not re-solve the models; run `runModels` first if the model changed.)
     """
-    print("Full figure workflow complete.")
+    print("Full figure and table workflow complete.")
