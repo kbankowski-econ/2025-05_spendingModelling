@@ -328,25 +328,7 @@ The parameters specific to the public-spending and growth channels, which are ce
     \caption{Selected Model Parameters \label{tab:parameters}}
     \footnotesize
     \renewcommand{\arraystretch}{1.2}
-    \begin{tabular}{llcc}
-        \toprule
-        & Description & AE & EMDE \\
-        \midrule
-        $\alpha_G$            & Output elasticity, infrastructure        & 0.05  & 0.17 \\
-        $\alpha_{HA}$         & Human capital elasticity, innovation     & 0.45  & --   \\
-        $\alpha_{RD}$         & Public R\&D elasticity, innovation       & 0.10  & --   \\
-        $\rho_A$              & AR(1) coefficient, technology stock      & 0.79  & 0.79 \\
-        $\phi$                & Survival rate of adopted technologies    & 0.97  & 0.97 \\
-        $e^{GI}$              & Inefficiency, infrastructure investment  & 0.35  & 0.42 \\
-        $e^{GE}$              & Inefficiency, human capital investment   & 0.30  & 0.32 \\
-        $e^{GRD}$             & Inefficiency, public R\&D spending       & 0.41  & --   \\
-        $\varsigma$           & Elasticity, adoption probability         & 0.80  & 0.80 \\
-        $q_0$           & Scale, adoption probability              & 0.10  & 0.10 \\
-        $\delta^{GI},\delta^{GE}$ & Depreciation, public capital         & 0.025 & 0.025 \\
-        $\mu$                 & Human capital elasticity, public stock   & 0.10  & 0.25 \\
-        $\gamma$              & Human capital elasticity, time input     & 0.50  & 0.50 \\
-        \bottomrule
-    \end{tabular}
+    \input{parametersTable.tex}
 
     \vspace{1mm}
     \source{IMF staff estimates; see references in the text.}
@@ -367,20 +349,7 @@ Table~\ref{tab:efficiencyGaps} reports how these gaps are constructed from the u
     \caption{Derivation of the Spending-Efficiency Gaps \label{tab:efficiencyGaps}}
     \footnotesize
     \renewcommand{\arraystretch}{1.2}
-    \begin{tabular}{lcc}
-        \toprule
-        Efficiency gap ($1-$ efficiency) & AE & EMDE \\
-        \midrule
-        Infrastructure          & 0.359 & $(0.371+0.441)/2 = 0.406$ \\
-        \addlinespace[0.3em]
-        \quad Health            & 0.295 & $(0.311+0.307)/2 = 0.309$ \\
-        \quad Education         & 0.318 & $(0.347+0.350)/2 = 0.348$ \\
-        \addlinespace[0.3em]
-        Human capital (average)  & 0.306 & 0.329 \\
-        \addlinespace[0.3em]
-        R\&D                     & 0.399 & -- \\
-        \bottomrule
-    \end{tabular}
+    \input{efficiencyGapsTable.tex}
 
     \vspace{1mm}
     \source{\citet{Bankowskietal2026}.}
@@ -619,30 +588,7 @@ Table~\ref{tab:notation} summarizes the main endogenous variables.
     \caption{Main Endogenous Variables \label{tab:notation}}
     \footnotesize
     \renewcommand{\arraystretch}{1.2}
-    \begin{tabular}{ll@{\qquad}ll}
-        \toprule
-        Symbol & Description & Symbol & Description \\
-        \midrule
-        $C_t$        & Consumption                  & $A_t$          & Adopted technologies \\
-        $L_t$        & Labor supply                 & $Z_t$          & Created technologies \\
-        $E_t$        & Time in human capital        & $S_t$          & Adoption expenditure \\
-        $N_t$        & Effective labor $H_t L_t$    & $q_t$    & Adoption probability \\
-        $H_t$        & Private human capital        & $\mathcal{V}_t$& Value of adopted tech. \\
-        $I_t$        & Private investment           & $\mathcal{J}_t$& Value of unadopted tech. \\
-        $K_t$        & Private capital              & $G_t^{C}$      & Government consumption \\
-        $w_t$        & Real wage                    & $I_t^{GI}$     & Public infrastructure inv. \\
-        $r_t^{k}$    & Rental rate of capital       & $I_t^{GE}$     & Public human capital inv. \\
-        $\lambda_t$      & Marginal utility             & $G_t^{RD}$     & Public R\&D spending \\
-        $\lambda_t^{H}$  & Shadow value of $H_t$        & $K_t^{GI}$     & Public infrastructure capital \\
-        $Y_t^{d}$    & Aggregate demand             & $K_t^{GE}$     & Public human capital \\
-        $Y_t$        & Gross output                 & $D_t$          & Public debt \\
-        $mc_t$       & Real marginal cost           & $d_t$          & Debt-to-GDP ratio \\
-        $\Pi_t$      & Gross inflation              & $T_t$          & Lump-sum transfers \\
-        $\Pi_t^{*}$  & Reset inflation              & $\tau_t^{c},\tau_t^{w}$ & Consumption, labor tax \\
-        $v_t^{p}$    & Price dispersion             & $R_t^{mp}$     & Policy rate \\
-        $\Lambda_t$  & Balanced-growth trend        & $R_t$          & Government borrowing rate \\
-        \bottomrule
-    \end{tabular}
+    \input{notationTable.tex}
 \end{table}
 
 %========================================================================

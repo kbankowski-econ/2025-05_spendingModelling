@@ -30,13 +30,21 @@ PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 - plotDiffusionAE:      Technology diffusion-speed sensitivity
 - plotEfficiencyBands:  Spending-efficiency gaps by income group (appendix)
 
+PAPER TABLES (\\input by draftPaper.tex):
+--------------------------------------------------------------------------------
+- makeMultipliers:  Table 3, multipliers by horizon (docs/.../makeMultipliers.py)
+                    In: *_results.mat | Out: docs/2026-06_wp-imf/multipliersTable.tex
+- makeTables:       Tables 1/2/4 - parameters, efficiency-gap derivation, notation
+                    (docs/.../makeTables.py); calibration/notation values, not model output.
+                    Out: docs/2026-06_wp-imf/{parameters,efficiencyGaps,notation}Table.tex
+
 DIAGNOSTICS (read *_results.mat directly):
 --------------------------------------------------------------------------------
 - plotContributions:        yd contribution decomposition across models (drivers/plotContributions.m)
 - investigateContributions: contribution decomposition across variables, one shock (drivers/investigateContributions.m)
 
-- run-all:              exportData, then regenerate every figure and the
-                        contribution panels.
+- run-all:              exportData, then regenerate every figure, every \\input
+                        table, and the contribution panels.
 
 Main entry point: invoke run-all
 """
@@ -174,6 +182,30 @@ def plotEfficiencyBands(c):
 
 
 @task
+def makeMultipliers(c):
+    """
+    Regenerate the multiplier table (Table 3) from the solved models.
+    Runs docs/2026-06_wp-imf/pyScripts/makeMultipliers.py.
+    In: *_results.mat | Out: docs/2026-06_wp-imf/multipliersTable.tex (\\input by the paper)
+    """
+    path = os.path.join(REPO_ROOT, "docs", "2026-06_wp-imf", "pyScripts", "makeMultipliers.py")
+    print("--- Generating: Multiplier table (makeMultipliers.py) ---")
+    c.run(f"{sys.executable} {path}")
+
+
+@task
+def makeTables(c):
+    """
+    Regenerate the hand-calibrated paper tables (parameters, efficiency-gap
+    derivation, notation) from docs/2026-06_wp-imf/pyScripts/makeTables.py.
+    Out: docs/2026-06_wp-imf/{parameters,efficiencyGaps,notation}Table.tex (\\input by the paper)
+    """
+    path = os.path.join(REPO_ROOT, "docs", "2026-06_wp-imf", "pyScripts", "makeTables.py")
+    print("--- Generating: Calibration/notation tables (makeTables.py) ---")
+    c.run(f"{sys.executable} {path}")
+
+
+@task
 def plotContributions(c):
     """
     Diagnostic: output (yd) contribution decompositions (drivers/plotContributions.m).
@@ -215,12 +247,15 @@ def investigateContributions(c):
     plotHumanCapital,
     plotDiffusionAE,
     plotEfficiencyBands,
+    makeMultipliers,
+    makeTables,
     plotContributions,
     investigateContributions,
 ])
 def run_all(c):
     """
-    Export model data, then regenerate every figure.
+    Export model data, then regenerate every figure and every \\input table
+    (multipliers, parameters, efficiency gaps, notation).
     (Does not re-solve the models; run `runModels` first if the model changed.)
     """
-    print("Full figure workflow complete.")
+    print("Full figure and table workflow complete.")
