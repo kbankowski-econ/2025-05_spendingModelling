@@ -93,9 +93,14 @@ NROWS = 5
 BLOCKS = ["Demand", "Supply", "Labor", "Nominal", "Fiscal"]
 
 PLOT_START_YEAR = 2026
-X_TICKS = [2026, 2038, 2050]
-# Show the first tick as full 4-digit year, abbreviate the rest to 2 digits.
-X_TICK_LABELS = [str(X_TICKS[0])] + [f"{y % 100:02d}" for y in X_TICKS[1:]]
+# Label the x-axis by horizon (years since the shock), consistent with the
+# multiplier table's 1y/5y/10y/20y/25y columns. The shock is active from the
+# first plotted year, so 2026 = 1y ... 2050 = 25y. Show a subset of the table's
+# horizons to keep the dense grid legible.
+SHOCK_BASE_YEAR = PLOT_START_YEAR - 1
+X_TICK_HORIZONS = [1, 10, 25]
+X_TICKS = [SHOCK_BASE_YEAR + h for h in X_TICK_HORIZONS]
+X_TICK_LABELS = [f"{h}y" for h in X_TICK_HORIZONS]
 OUTPUT_STEM = "standardShocksAE"
 
 # Both sizes come from chartTable.csv: render = original chart size (canvas,
