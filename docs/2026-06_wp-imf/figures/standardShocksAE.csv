@@ -1,4 +1,5 @@
 year,shock,variable,pct_dev
+2025,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.0
 2026,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.498
 2027,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.714
 2028,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.909
@@ -24,6 +25,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.71
 2049,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.746
 2050,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),2.78
+2025,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.0
 2026,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.646
 2027,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.507
 2028,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.454
@@ -49,6 +51,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),3.94
 2049,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),4.1
 2050,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),4.252
+2025,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),0.0
 2026,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),0.237
 2027,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),0.359
 2028,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),0.644
@@ -74,6 +77,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),4.166
 2049,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),4.228
 2050,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),4.285
+2025,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.0
 2026,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.598
 2027,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.651
 2028,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.699
@@ -99,6 +103,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.223
 2049,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.234
 2050,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),1.244
+2025,Infrastructure investment,Consumption (C<sub>t</sub>),0.0
 2026,Infrastructure investment,Consumption (C<sub>t</sub>),-0.723
 2027,Infrastructure investment,Consumption (C<sub>t</sub>),-0.586
 2028,Infrastructure investment,Consumption (C<sub>t</sub>),-0.43
@@ -124,6 +129,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Consumption (C<sub>t</sub>),2.052
 2049,Infrastructure investment,Consumption (C<sub>t</sub>),2.114
 2050,Infrastructure investment,Consumption (C<sub>t</sub>),2.171
+2025,Human capital investment,Consumption (C<sub>t</sub>),0.0
 2026,Human capital investment,Consumption (C<sub>t</sub>),-0.833
 2027,Human capital investment,Consumption (C<sub>t</sub>),-0.743
 2028,Human capital investment,Consumption (C<sub>t</sub>),-0.653
@@ -149,6 +155,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Consumption (C<sub>t</sub>),3.931
 2049,Human capital investment,Consumption (C<sub>t</sub>),4.167
 2050,Human capital investment,Consumption (C<sub>t</sub>),4.395
+2025,R&D investment,Consumption (C<sub>t</sub>),0.0
 2026,R&D investment,Consumption (C<sub>t</sub>),-0.808
 2027,R&D investment,Consumption (C<sub>t</sub>),-0.719
 2028,R&D investment,Consumption (C<sub>t</sub>),-0.568
@@ -174,6 +181,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Consumption (C<sub>t</sub>),4.175
 2049,R&D investment,Consumption (C<sub>t</sub>),4.293
 2050,R&D investment,Consumption (C<sub>t</sub>),4.402
+2025,Government consumption,Consumption (C<sub>t</sub>),0.0
 2026,Government consumption,Consumption (C<sub>t</sub>),-1.302
 2027,Government consumption,Consumption (C<sub>t</sub>),-1.205
 2028,Government consumption,Consumption (C<sub>t</sub>),-1.117
@@ -199,6 +207,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Consumption (C<sub>t</sub>),-0.224
 2049,Government consumption,Consumption (C<sub>t</sub>),-0.205
 2050,Government consumption,Consumption (C<sub>t</sub>),-0.186
+2025,Infrastructure investment,Private investment (I<sub>t</sub>),0.0
 2026,Infrastructure investment,Private investment (I<sub>t</sub>),-0.717
 2027,Infrastructure investment,Private investment (I<sub>t</sub>),-0.072
 2028,Infrastructure investment,Private investment (I<sub>t</sub>),0.425
@@ -224,6 +233,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Private investment (I<sub>t</sub>),2.822
 2049,Infrastructure investment,Private investment (I<sub>t</sub>),2.851
 2050,Infrastructure investment,Private investment (I<sub>t</sub>),2.877
+2025,Human capital investment,Private investment (I<sub>t</sub>),0.0
 2026,Human capital investment,Private investment (I<sub>t</sub>),0.244
 2027,Human capital investment,Private investment (I<sub>t</sub>),-0.56
 2028,Human capital investment,Private investment (I<sub>t</sub>),-0.977
@@ -249,6 +259,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Private investment (I<sub>t</sub>),3.947
 2049,Human capital investment,Private investment (I<sub>t</sub>),4.137
 2050,Human capital investment,Private investment (I<sub>t</sub>),4.315
+2025,R&D investment,Private investment (I<sub>t</sub>),0.0
 2026,R&D investment,Private investment (I<sub>t</sub>),-1.181
 2027,R&D investment,Private investment (I<sub>t</sub>),-2.853
 2028,R&D investment,Private investment (I<sub>t</sub>),-2.461
@@ -274,6 +285,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Private investment (I<sub>t</sub>),4.424
 2049,R&D investment,Private investment (I<sub>t</sub>),4.469
 2050,R&D investment,Private investment (I<sub>t</sub>),4.509
+2025,Government consumption,Private investment (I<sub>t</sub>),0.0
 2026,Government consumption,Private investment (I<sub>t</sub>),0.936
 2027,Government consumption,Private investment (I<sub>t</sub>),0.925
 2028,Government consumption,Private investment (I<sub>t</sub>),0.918
@@ -299,6 +311,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Private investment (I<sub>t</sub>),1.254
 2049,Government consumption,Private investment (I<sub>t</sub>),1.263
 2050,Government consumption,Private investment (I<sub>t</sub>),1.271
+2025,Infrastructure investment,Government spending (G<sub>t</sub>),0.0
 2026,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
 2027,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
 2028,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
@@ -324,6 +337,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
 2049,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
 2050,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
+2025,Human capital investment,Government spending (G<sub>t</sub>),0.0
 2026,Human capital investment,Government spending (G<sub>t</sub>),4.338
 2027,Human capital investment,Government spending (G<sub>t</sub>),4.338
 2028,Human capital investment,Government spending (G<sub>t</sub>),4.338
@@ -349,6 +363,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Government spending (G<sub>t</sub>),4.338
 2049,Human capital investment,Government spending (G<sub>t</sub>),4.338
 2050,Human capital investment,Government spending (G<sub>t</sub>),4.338
+2025,R&D investment,Government spending (G<sub>t</sub>),0.0
 2026,R&D investment,Government spending (G<sub>t</sub>),4.338
 2027,R&D investment,Government spending (G<sub>t</sub>),4.338
 2028,R&D investment,Government spending (G<sub>t</sub>),4.338
@@ -374,6 +389,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Government spending (G<sub>t</sub>),4.338
 2049,R&D investment,Government spending (G<sub>t</sub>),4.338
 2050,R&D investment,Government spending (G<sub>t</sub>),4.338
+2025,Government consumption,Government spending (G<sub>t</sub>),0.0
 2026,Government consumption,Government spending (G<sub>t</sub>),4.338
 2027,Government consumption,Government spending (G<sub>t</sub>),4.338
 2028,Government consumption,Government spending (G<sub>t</sub>),4.338
@@ -399,6 +415,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Government spending (G<sub>t</sub>),4.338
 2049,Government consumption,Government spending (G<sub>t</sub>),4.338
 2050,Government consumption,Government spending (G<sub>t</sub>),4.338
+2025,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.0
 2026,Infrastructure investment,Adopted technology (A<sub>t</sub>),-0.007
 2027,Infrastructure investment,Adopted technology (A<sub>t</sub>),-0.001
 2028,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.018
@@ -424,6 +441,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Adopted technology (A<sub>t</sub>),1.408
 2049,Infrastructure investment,Adopted technology (A<sub>t</sub>),1.465
 2050,Infrastructure investment,Adopted technology (A<sub>t</sub>),1.519
+2025,Human capital investment,Adopted technology (A<sub>t</sub>),0.0
 2026,Human capital investment,Adopted technology (A<sub>t</sub>),-0.012
 2027,Human capital investment,Adopted technology (A<sub>t</sub>),-0.03
 2028,Human capital investment,Adopted technology (A<sub>t</sub>),-0.053
@@ -449,6 +467,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Adopted technology (A<sub>t</sub>),2.514
 2049,Human capital investment,Adopted technology (A<sub>t</sub>),2.73
 2050,Human capital investment,Adopted technology (A<sub>t</sub>),2.942
+2025,R&D investment,Adopted technology (A<sub>t</sub>),0.0
 2026,R&D investment,Adopted technology (A<sub>t</sub>),-0.374
 2027,R&D investment,Adopted technology (A<sub>t</sub>),0.198
 2028,R&D investment,Adopted technology (A<sub>t</sub>),1.106
@@ -474,6 +493,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Adopted technology (A<sub>t</sub>),10.89
 2049,R&D investment,Adopted technology (A<sub>t</sub>),11.059
 2050,R&D investment,Adopted technology (A<sub>t</sub>),11.213
+2025,Government consumption,Adopted technology (A<sub>t</sub>),0.0
 2026,Government consumption,Adopted technology (A<sub>t</sub>),0.008
 2027,Government consumption,Adopted technology (A<sub>t</sub>),0.029
 2028,Government consumption,Adopted technology (A<sub>t</sub>),0.058
@@ -499,6 +519,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Adopted technology (A<sub>t</sub>),0.806
 2049,Government consumption,Adopted technology (A<sub>t</sub>),0.829
 2050,Government consumption,Adopted technology (A<sub>t</sub>),0.85
+2025,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2026,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.688
 2027,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.967
 2028,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),9.884
@@ -524,6 +545,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),31.085
 2049,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),31.334
 2050,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),31.555
+2025,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2026,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2027,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2028,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
@@ -549,6 +571,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2049,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2050,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2025,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2026,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2027,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2028,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
@@ -574,6 +597,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2049,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2050,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2025,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2026,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2027,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2028,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
@@ -599,6 +623,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2049,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2050,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2025,Infrastructure investment,Private capital (K<sub>t</sub>),0.0
 2026,Infrastructure investment,Private capital (K<sub>t</sub>),-0.374
 2027,Infrastructure investment,Private capital (K<sub>t</sub>),-0.365
 2028,Infrastructure investment,Private capital (K<sub>t</sub>),-0.297
@@ -624,6 +649,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Private capital (K<sub>t</sub>),2.2
 2049,Infrastructure investment,Private capital (K<sub>t</sub>),2.271
 2050,Infrastructure investment,Private capital (K<sub>t</sub>),2.337
+2025,Human capital investment,Private capital (K<sub>t</sub>),0.0
 2026,Human capital investment,Private capital (K<sub>t</sub>),-0.204
 2027,Human capital investment,Private capital (K<sub>t</sub>),-0.215
 2028,Human capital investment,Private capital (K<sub>t</sub>),-0.285
@@ -649,6 +675,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Private capital (K<sub>t</sub>),2.073
 2049,Human capital investment,Private capital (K<sub>t</sub>),2.293
 2050,Human capital investment,Private capital (K<sub>t</sub>),2.51
+2025,R&D investment,Private capital (K<sub>t</sub>),0.0
 2026,R&D investment,Private capital (K<sub>t</sub>),-0.148
 2027,R&D investment,Private capital (K<sub>t</sub>),-0.408
 2028,R&D investment,Private capital (K<sub>t</sub>),-0.66
@@ -674,6 +701,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Private capital (K<sub>t</sub>),3.189
 2049,R&D investment,Private capital (K<sub>t</sub>),3.329
 2050,R&D investment,Private capital (K<sub>t</sub>),3.458
+2025,Government consumption,Private capital (K<sub>t</sub>),0.0
 2026,Government consumption,Private capital (K<sub>t</sub>),-0.182
 2027,Government consumption,Private capital (K<sub>t</sub>),-0.059
 2028,Government consumption,Private capital (K<sub>t</sub>),0.049
@@ -699,6 +727,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Private capital (K<sub>t</sub>),1.057
 2049,Government consumption,Private capital (K<sub>t</sub>),1.079
 2050,Government consumption,Private capital (K<sub>t</sub>),1.1
+2025,Infrastructure investment,Effective labor (N<sub>t</sub>),0.0
 2026,Infrastructure investment,Effective labor (N<sub>t</sub>),0.679
 2027,Infrastructure investment,Effective labor (N<sub>t</sub>),0.751
 2028,Infrastructure investment,Effective labor (N<sub>t</sub>),0.792
@@ -724,6 +753,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Effective labor (N<sub>t</sub>),0.427
 2049,Infrastructure investment,Effective labor (N<sub>t</sub>),0.411
 2050,Infrastructure investment,Effective labor (N<sub>t</sub>),0.395
+2025,Human capital investment,Effective labor (N<sub>t</sub>),0.0
 2026,Human capital investment,Effective labor (N<sub>t</sub>),1.037
 2027,Human capital investment,Effective labor (N<sub>t</sub>),0.837
 2028,Human capital investment,Effective labor (N<sub>t</sub>),0.797
@@ -749,6 +779,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Effective labor (N<sub>t</sub>),4.107
 2049,Human capital investment,Effective labor (N<sub>t</sub>),4.169
 2050,Human capital investment,Effective labor (N<sub>t</sub>),4.222
+2025,R&D investment,Effective labor (N<sub>t</sub>),0.0
 2026,R&D investment,Effective labor (N<sub>t</sub>),0.596
 2027,R&D investment,Effective labor (N<sub>t</sub>),0.672
 2028,R&D investment,Effective labor (N<sub>t</sub>),0.781
@@ -774,6 +805,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Effective labor (N<sub>t</sub>),-0.02
 2049,R&D investment,Effective labor (N<sub>t</sub>),-0.056
 2050,R&D investment,Effective labor (N<sub>t</sub>),-0.089
+2025,Government consumption,Effective labor (N<sub>t</sub>),0.0
 2026,Government consumption,Effective labor (N<sub>t</sub>),0.966
 2027,Government consumption,Effective labor (N<sub>t</sub>),0.98
 2028,Government consumption,Effective labor (N<sub>t</sub>),0.989
@@ -799,6 +831,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Effective labor (N<sub>t</sub>),0.967
 2049,Government consumption,Effective labor (N<sub>t</sub>),0.963
 2050,Government consumption,Effective labor (N<sub>t</sub>),0.96
+2025,Infrastructure investment,Labor supply (L<sub>t</sub>),0.0
 2026,Infrastructure investment,Labor supply (L<sub>t</sub>),0.62
 2027,Infrastructure investment,Labor supply (L<sub>t</sub>),0.668
 2028,Infrastructure investment,Labor supply (L<sub>t</sub>),0.693
@@ -824,6 +857,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Labor supply (L<sub>t</sub>),0.323
 2049,Infrastructure investment,Labor supply (L<sub>t</sub>),0.309
 2050,Infrastructure investment,Labor supply (L<sub>t</sub>),0.296
+2025,Human capital investment,Labor supply (L<sub>t</sub>),0.0
 2026,Human capital investment,Labor supply (L<sub>t</sub>),1.045
 2027,Human capital investment,Labor supply (L<sub>t</sub>),0.809
 2028,Human capital investment,Labor supply (L<sub>t</sub>),0.65
@@ -849,6 +883,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Labor supply (L<sub>t</sub>),0.029
 2049,Human capital investment,Labor supply (L<sub>t</sub>),-0.002
 2050,Human capital investment,Labor supply (L<sub>t</sub>),-0.034
+2025,R&D investment,Labor supply (L<sub>t</sub>),0.0
 2026,R&D investment,Labor supply (L<sub>t</sub>),0.549
 2027,R&D investment,Labor supply (L<sub>t</sub>),0.601
 2028,R&D investment,Labor supply (L<sub>t</sub>),0.694
@@ -874,6 +909,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Labor supply (L<sub>t</sub>),0.054
 2049,R&D investment,Labor supply (L<sub>t</sub>),0.024
 2050,R&D investment,Labor supply (L<sub>t</sub>),-0.003
+2025,Government consumption,Labor supply (L<sub>t</sub>),0.0
 2026,Government consumption,Labor supply (L<sub>t</sub>),0.897
 2027,Government consumption,Labor supply (L<sub>t</sub>),0.876
 2028,Government consumption,Labor supply (L<sub>t</sub>),0.856
@@ -899,6 +935,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Labor supply (L<sub>t</sub>),0.666
 2049,Government consumption,Labor supply (L<sub>t</sub>),0.661
 2050,Government consumption,Labor supply (L<sub>t</sub>),0.656
+2025,Infrastructure investment,Human capital stock (H<sub>t</sub>),0.0
 2026,Infrastructure investment,Human capital stock (H<sub>t</sub>),0.065
 2027,Infrastructure investment,Human capital stock (H<sub>t</sub>),0.086
 2028,Infrastructure investment,Human capital stock (H<sub>t</sub>),0.102
@@ -924,6 +961,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Human capital stock (H<sub>t</sub>),0.103
 2049,Infrastructure investment,Human capital stock (H<sub>t</sub>),0.101
 2050,Infrastructure investment,Human capital stock (H<sub>t</sub>),0.098
+2025,Human capital investment,Human capital stock (H<sub>t</sub>),0.0
 2026,Human capital investment,Human capital stock (H<sub>t</sub>),-0.008
 2027,Human capital investment,Human capital stock (H<sub>t</sub>),0.051
 2028,Human capital investment,Human capital stock (H<sub>t</sub>),0.187
@@ -949,6 +987,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Human capital stock (H<sub>t</sub>),4.101
 2049,Human capital investment,Human capital stock (H<sub>t</sub>),4.194
 2050,Human capital investment,Human capital stock (H<sub>t</sub>),4.278
+2025,R&D investment,Human capital stock (H<sub>t</sub>),0.0
 2026,R&D investment,Human capital stock (H<sub>t</sub>),0.053
 2027,R&D investment,Human capital stock (H<sub>t</sub>),0.075
 2028,R&D investment,Human capital stock (H<sub>t</sub>),0.09
@@ -974,6 +1013,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Human capital stock (H<sub>t</sub>),-0.076
 2049,R&D investment,Human capital stock (H<sub>t</sub>),-0.082
 2050,R&D investment,Human capital stock (H<sub>t</sub>),-0.088
+2025,Government consumption,Human capital stock (H<sub>t</sub>),0.0
 2026,Government consumption,Human capital stock (H<sub>t</sub>),0.078
 2027,Government consumption,Human capital stock (H<sub>t</sub>),0.11
 2028,Government consumption,Human capital stock (H<sub>t</sub>),0.138
@@ -999,6 +1039,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Human capital stock (H<sub>t</sub>),0.3
 2049,Government consumption,Human capital stock (H<sub>t</sub>),0.301
 2050,Government consumption,Human capital stock (H<sub>t</sub>),0.301
+2025,Infrastructure investment,Inflation (Π<sub>t</sub>),0.0
 2026,Infrastructure investment,Inflation (Π<sub>t</sub>),-1.307
 2027,Infrastructure investment,Inflation (Π<sub>t</sub>),-1.661
 2028,Infrastructure investment,Inflation (Π<sub>t</sub>),-1.989
@@ -1024,6 +1065,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Inflation (Π<sub>t</sub>),-5.314
 2049,Infrastructure investment,Inflation (Π<sub>t</sub>),-5.382
 2050,Infrastructure investment,Inflation (Π<sub>t</sub>),-5.445
+2025,Human capital investment,Inflation (Π<sub>t</sub>),0.0
 2026,Human capital investment,Inflation (Π<sub>t</sub>),-0.904
 2027,Human capital investment,Inflation (Π<sub>t</sub>),-0.821
 2028,Human capital investment,Inflation (Π<sub>t</sub>),-0.854
@@ -1049,6 +1091,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Inflation (Π<sub>t</sub>),-7.714
 2049,Human capital investment,Inflation (Π<sub>t</sub>),-8.008
 2050,Human capital investment,Inflation (Π<sub>t</sub>),-8.288
+2025,R&D investment,Inflation (Π<sub>t</sub>),0.0
 2026,R&D investment,Inflation (Π<sub>t</sub>),-0.822
 2027,R&D investment,Inflation (Π<sub>t</sub>),-1.22
 2028,R&D investment,Inflation (Π<sub>t</sub>),-1.745
@@ -1074,6 +1117,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Inflation (Π<sub>t</sub>),-8.065
 2049,R&D investment,Inflation (Π<sub>t</sub>),-8.183
 2050,R&D investment,Inflation (Π<sub>t</sub>),-8.29
+2025,Government consumption,Inflation (Π<sub>t</sub>),0.0
 2026,Government consumption,Inflation (Π<sub>t</sub>),-1.184
 2027,Government consumption,Inflation (Π<sub>t</sub>),-1.29
 2028,Government consumption,Inflation (Π<sub>t</sub>),-1.388
@@ -1099,6 +1143,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Inflation (Π<sub>t</sub>),-2.422
 2049,Government consumption,Inflation (Π<sub>t</sub>),-2.444
 2050,Government consumption,Inflation (Π<sub>t</sub>),-2.464
+2025,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
 2026,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.276
 2027,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.603
 2028,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.914
@@ -1124,6 +1169,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.299
 2049,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.371
 2050,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.437
+2025,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
 2026,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.782
 2027,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.736
 2028,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.785
@@ -1149,6 +1195,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.605
 2049,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.906
 2050,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-8.193
+2025,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
 2026,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.834
 2027,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.225
 2028,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.7
@@ -1174,6 +1221,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-8.025
 2049,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-8.15
 2050,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-8.264
+2025,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
 2026,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.117
 2027,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.23
 2028,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.335
@@ -1199,6 +1247,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.421
 2049,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.444
 2050,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.465
+2025,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),0.0
 2026,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-1.276
 2027,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-1.603
 2028,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-1.914
@@ -1224,6 +1273,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-5.299
 2049,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-5.371
 2050,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-5.437
+2025,Human capital investment,Nominal bond rate (R<sub>t</sub>),0.0
 2026,Human capital investment,Nominal bond rate (R<sub>t</sub>),-0.782
 2027,Human capital investment,Nominal bond rate (R<sub>t</sub>),-0.736
 2028,Human capital investment,Nominal bond rate (R<sub>t</sub>),-0.785
@@ -1249,6 +1299,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Nominal bond rate (R<sub>t</sub>),-7.605
 2049,Human capital investment,Nominal bond rate (R<sub>t</sub>),-7.906
 2050,Human capital investment,Nominal bond rate (R<sub>t</sub>),-8.193
+2025,R&D investment,Nominal bond rate (R<sub>t</sub>),0.0
 2026,R&D investment,Nominal bond rate (R<sub>t</sub>),-0.834
 2027,R&D investment,Nominal bond rate (R<sub>t</sub>),-1.225
 2028,R&D investment,Nominal bond rate (R<sub>t</sub>),-1.7
@@ -1274,6 +1325,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Nominal bond rate (R<sub>t</sub>),-8.025
 2049,R&D investment,Nominal bond rate (R<sub>t</sub>),-8.15
 2050,R&D investment,Nominal bond rate (R<sub>t</sub>),-8.264
+2025,Government consumption,Nominal bond rate (R<sub>t</sub>),0.0
 2026,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.117
 2027,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.23
 2028,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.335
@@ -1299,6 +1351,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.421
 2049,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.444
 2050,Government consumption,Nominal bond rate (R<sub>t</sub>),-2.465
+2025,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2026,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.038
 2027,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.067
 2028,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.086
@@ -1324,6 +1377,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.044
 2049,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.041
 2050,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.038
+2025,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2026,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.128
 2027,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.091
 2028,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.074
@@ -1349,6 +1403,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.154
 2049,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.149
 2050,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.144
+2025,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2026,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.007
 2027,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
 2028,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.054
@@ -1374,6 +1429,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.086
 2049,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.079
 2050,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.073
+2025,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2026,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.074
 2027,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.067
 2028,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.061
@@ -1399,6 +1455,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.015
 2049,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.014
 2050,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.013
+2025,Infrastructure investment,Primary deficit,0.0
 2026,Infrastructure investment,Primary deficit,0.948
 2027,Infrastructure investment,Primary deficit,0.877
 2028,Infrastructure investment,Primary deficit,0.807
@@ -1424,6 +1481,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Primary deficit,0.036
 2049,Infrastructure investment,Primary deficit,0.021
 2050,Infrastructure investment,Primary deficit,0.007
+2025,Human capital investment,Primary deficit,0.0
 2026,Human capital investment,Primary deficit,0.972
 2027,Human capital investment,Primary deficit,0.926
 2028,Human capital investment,Primary deficit,0.877
@@ -1449,6 +1507,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Primary deficit,-0.273
 2049,Human capital investment,Primary deficit,-0.309
 2050,Human capital investment,Primary deficit,-0.341
+2025,R&D investment,Primary deficit,0.0
 2026,R&D investment,Primary deficit,0.982
 2027,R&D investment,Primary deficit,0.914
 2028,R&D investment,Primary deficit,0.834
@@ -1474,6 +1533,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Primary deficit,-0.228
 2049,R&D investment,Primary deficit,-0.242
 2050,R&D investment,Primary deficit,-0.254
+2025,Government consumption,Primary deficit,0.0
 2026,Government consumption,Primary deficit,1.001
 2027,Government consumption,Primary deficit,0.945
 2028,Government consumption,Primary deficit,0.892
@@ -1499,6 +1559,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Primary deficit,0.265
 2049,Government consumption,Primary deficit,0.247
 2050,Government consumption,Primary deficit,0.231
+2025,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
 2026,Infrastructure investment,Transfers (T<sub>t</sub>),-0.029
 2027,Infrastructure investment,Transfers (T<sub>t</sub>),-0.062
 2028,Infrastructure investment,Transfers (T<sub>t</sub>),-0.094
@@ -1524,6 +1585,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Transfers (T<sub>t</sub>),-0.427
 2049,Infrastructure investment,Transfers (T<sub>t</sub>),-0.432
 2050,Infrastructure investment,Transfers (T<sub>t</sub>),-0.437
+2025,Human capital investment,Transfers (T<sub>t</sub>),0.0
 2026,Human capital investment,Transfers (T<sub>t</sub>),-0.019
 2027,Human capital investment,Transfers (T<sub>t</sub>),-0.068
 2028,Human capital investment,Transfers (T<sub>t</sub>),-0.111
@@ -1549,6 +1611,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Transfers (T<sub>t</sub>),-0.409
 2049,Human capital investment,Transfers (T<sub>t</sub>),-0.403
 2050,Human capital investment,Transfers (T<sub>t</sub>),-0.396
+2025,R&D investment,Transfers (T<sub>t</sub>),0.0
 2026,R&D investment,Transfers (T<sub>t</sub>),-0.032
 2027,R&D investment,Transfers (T<sub>t</sub>),-0.071
 2028,R&D investment,Transfers (T<sub>t</sub>),-0.102
@@ -1574,6 +1637,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Transfers (T<sub>t</sub>),-0.315
 2049,R&D investment,Transfers (T<sub>t</sub>),-0.311
 2050,R&D investment,Transfers (T<sub>t</sub>),-0.307
+2025,Government consumption,Transfers (T<sub>t</sub>),0.0
 2026,Government consumption,Transfers (T<sub>t</sub>),-0.026
 2027,Government consumption,Transfers (T<sub>t</sub>),-0.066
 2028,Government consumption,Transfers (T<sub>t</sub>),-0.106
@@ -1599,6 +1663,7 @@ year,shock,variable,pct_dev
 2048,Government consumption,Transfers (T<sub>t</sub>),-0.591
 2049,Government consumption,Transfers (T<sub>t</sub>),-0.605
 2050,Government consumption,Transfers (T<sub>t</sub>),-0.619
+2025,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),0.0
 2026,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),5.809
 2027,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),10.031
 2028,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),14.08
@@ -1624,6 +1689,7 @@ year,shock,variable,pct_dev
 2048,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),55.818
 2049,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),56.536
 2050,Infrastructure investment,Debt-to-GDP ratio (d<sub>t</sub>),57.181
+2025,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),0.0
 2026,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),5.799
 2027,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),9.988
 2028,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),14.014
@@ -1649,6 +1715,7 @@ year,shock,variable,pct_dev
 2048,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),59.954
 2049,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),60.177
 2050,Human capital investment,Debt-to-GDP ratio (d<sub>t</sub>),60.227
+2025,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),0.0
 2026,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),5.27
 2027,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),9.438
 2028,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),13.589
@@ -1674,6 +1741,7 @@ year,shock,variable,pct_dev
 2048,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),51.399
 2049,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),51.272
 2050,R&D investment,Debt-to-GDP ratio (d<sub>t</sub>),51.052
+2025,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),0.0
 2026,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),6.051
 2027,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),10.358
 2028,Government consumption,Debt-to-GDP ratio (d<sub>t</sub>),14.442
