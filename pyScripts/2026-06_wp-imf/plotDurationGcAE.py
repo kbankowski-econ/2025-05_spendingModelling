@@ -2,19 +2,24 @@
 Appendix figure: the government-consumption shock under different shock
 DURATIONS in the canonical New Keynesian benchmark (fig:durationGc).
 
-Companion to plotSimplifiedGcAE: there the lines were models (full -> canonical
-NK) under one permanent shock; here the model is fixed (the from-scratch
-canonical NK, Model_NK) and the lines are three shock durations of the SAME
-+1 percent of GDP government-consumption impulse:
+Companion to plotSimplifiedGcAE, and using the IDENTICAL 5x4 block layout
+(Demand / Supply / Labor / Nominal / Fiscal): there the lines were models
+(full -> canonical NK) under one permanent shock; here the model is fixed (the
+from-scratch canonical NK, Model_NK) and the lines are three shock durations of
+the SAME +1 percent of GDP government-consumption impulse:
 
   - 1-year shock (4 quarters)   -> Model_NK_exp_gc_d4
   - 5-year shock (20 quarters)  -> Model_NK_exp_gc_d20
   - Permanent shock             -> Model_NK_exp_gc
 
+The textbook NK model has no capital, technology, human-capital or fiscal-detail
+variables, so the panels for those variables are left as blank space (their axes
+and titles are hidden), exactly mirroring the simplification figure's grid.
+
 The point is the wealth-effect mechanism behind the deflation: a shorter shock
-carries a smaller negative wealth effect on labor supply, so the real wage (=
-marginal cost) and inflation RISE on impact for the 1-year shock but FALL for
-longer-lived shocks. The deflation is increasing in the shock's persistence.
+carries a smaller negative wealth effect on labor supply, so inflation and the
+real wage RISE on impact for the 1-year shock but FALL for longer-lived shocks.
+The deflation is increasing in the shock's persistence.
 
 Unlike the yearly simplified figure, this reads the QUARTERLY export
 (docs/csvFiles/figureNumbers.csv): the 1-year shock's impact dynamics live
@@ -39,7 +44,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 # --- Styling (inlined; matches the other working-paper figures) ---------------
 STYLE = {
     "template": "simple_white",
-    "margins": {"t": 70, "b": 22, "l": 54, "r": 12},  # top room for legend; left room for tick labels + block names
+    "margins": {"t": 86, "b": 22, "l": 54, "r": 12},  # top room for legend + gap to plots; left room for tick labels + block names
     "legend": {"orientation": "h", "xanchor": "center", "x": 0.5},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
@@ -55,31 +60,45 @@ SERIES = [
     ("Model_NK_exp_gc",     "Permanent shock",            "#6A1B9A"),
 ]
 
-# (variable suffix, panel title); laid out row-major in a 2x4 grid, one block per
-# row. The canonical NK has no capital/technology/fiscal-detail variables, so the
-# panels are the ones the textbook model actually has. Top row is percent
-# deviations; bottom row mixes the real wage (percent) with annualized
-# percentage-point rates -- units are spelled out in the figure note.
+# IDENTICAL grid to plotSimplifiedGcAE: (variable suffix, panel title), row-major
+# in a 5x4 grid, one thematic block per row. The canonical NK lacks most of these
+# variables (no capital, technology, human capital, or fiscal detail); those
+# panels are left as blank space. Units differ by row: demand/supply/labor are
+# percent deviations, the nominal row annualized percentage points, the fiscal
+# row percentage points of steady-state GDP.
 PANELS = [
-    # Row 1 - quantities (percent deviation)
+    # Row 1 - demand components (percent deviation)
     ("yd",        "Output (Y<sup>d</sup><sub>t</sub>)"),
     ("C",         "Consumption (C<sub>t</sub>)"),
-    ("Gc",        "Government consumption (G<sup>c</sup><sub>t</sub>)"),
+    ("Ip",        "Private investment (I<sub>t</sub>)"),
+    ("G",         "Government spending (G<sub>t</sub>)"),
+    # Row 2 - production factors (percent deviation)
+    ("AAt",       "Adopted technology (A<sub>t</sub>)"),
+    ("Kg",        "Public infrastructure (K<sup>GI</sup><sub>t</sub>)"),
+    ("Kp",        "Private capital (K<sub>t</sub>)"),
     ("N",         "Effective labor (N<sub>t</sub>)"),
-    # Row 2 - prices and rates: the real wage equals marginal cost in this model
-    # (constant returns), so it is the Phillips-curve driver; inflation and the
-    # two rates are annualized percentage points.
-    ("W_real",    "Real wage = marginal cost (W<sub>t</sub>)"),
+    # Row 3 - labor decomposition (percent deviation): effective labor N = H * L.
+    ("Lab",       "Labor supply (L<sub>t</sub>)"),
+    ("H",         "Human capital stock (H<sub>t</sub>)"),
+    None,
+    None,
+    # Row 4 - nominal block (annualized percentage points)
     ("PI_ann",    "Inflation (Π<sub>t</sub>)"),
     ("Rmp_ann",   "Policy rate (R<sup>mp</sup><sub>t</sub>)"),
+    ("R_ann",     "Nominal bond rate (R<sub>t</sub>)"),
     ("rreal_ann", "Real interest rate (R<sub>t</sub>/Π<sub>t</sub>)"),
+    # Row 5 - fiscal block (percentage points of steady-state GDP)
+    ("pdef_yss",  "Primary deficit"),
+    ("Trans_yss", "Transfers (T<sub>t</sub>)"),
+    ("by_yss",    "Debt-to-GDP ratio (d<sub>t</sub>)"),
+    None,
 ]
 
 NCOLS = 4
-NROWS = 2
+NROWS = 5
 
 # Block name printed vertically on the left of each row (top to bottom).
-BLOCKS = ["Quantities", "Prices"]
+BLOCKS = ["Demand", "Supply", "Labor", "Nominal", "Fiscal"]
 
 # Quarterly window: start at the pre-shock steady state and run ~12 years, long
 # enough for the permanent line to settle and the temporary lines to revert.
@@ -91,12 +110,12 @@ OUTPUT_STEM = "durationGcAE"
 
 # Both sizes come from chartTable.csv: render = original chart size (canvas,
 # controls fonts/quality); display = size shown in the paper (aspect preserved).
-WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (15.0, 9.0))
-DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (15.0, 9.0))
+WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (15.0, 18.75))
+DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (15.0, 18.75))
 
 # Font matching the paper: Palatino (the paper's mathpazo), sized so the chart
 # text renders at a fixed point size on the page (recomputed from render/display).
-TARGET_FONT_PT = 7   # axis ticks
+TARGET_FONT_PT = 7   # axis ticks; a touch smaller given the dense grid
 FONT_FAMILY = "Palatino, 'Palatino Linotype', 'Book Antiqua', serif"
 FONT_PX = font_px_for_pt(TARGET_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
 LEGEND_FONT_PT = 8
@@ -117,18 +136,38 @@ def load_data():
     return df[(df["year"] >= PLOT_START_YEAR) & (df["year"] <= PLOT_END_YEAR)]
 
 
+def _panel_has_data(df, var):
+    """True if any duration series has this variable (the canonical NK lacks
+    most of the full model's variables; those panels are left blank)."""
+    return any(f"{model}___{var}" in df.columns for model, _, _ in SERIES)
+
+
 def main():
     df = load_data()
     years = df["year"].values
 
+    # Titles only on panels that exist AND have data; blank everywhere else so
+    # the missing-variable cells read as clean blank space.
+    titles = []
+    for panel in PANELS:
+        if panel is None or not _panel_has_data(df, panel[0]):
+            titles.append("")
+        else:
+            titles.append(panel[1])
+
     fig = make_subplots(
         rows=NROWS, cols=NCOLS,
-        subplot_titles=[panel[1] for panel in PANELS],
-        horizontal_spacing=0.06, vertical_spacing=0.14,
+        subplot_titles=titles,
+        horizontal_spacing=0.06, vertical_spacing=0.075,
     )
 
     for idx, panel in enumerate(PANELS):
         row, col = idx // NCOLS + 1, idx % NCOLS + 1
+        # Blank slot: intentionally empty (None) or a variable the model lacks.
+        if panel is None or not _panel_has_data(df, panel[0]):
+            fig.update_xaxes(visible=False, row=row, col=col)
+            fig.update_yaxes(visible=False, row=row, col=col)
+            continue
         var = panel[0]
         for model, label, color in SERIES:
             colname = f"{model}___{var}"
@@ -190,6 +229,12 @@ def main():
         linecolor=axes["linecolor"], linewidth=axes["linewidth"],
         ticks=axes["ticks"], tickfont=dict(size=FONT_PX),
     )
+    # Re-hide the blank cells: the global update_*axes above re-enabled them.
+    for idx, panel in enumerate(PANELS):
+        if panel is None or not _panel_has_data(df, panel[0]):
+            row, col = idx // NCOLS + 1, idx % NCOLS + 1
+            fig.update_xaxes(visible=False, row=row, col=col)
+            fig.update_yaxes(visible=False, row=row, col=col)
 
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
     png_path = FIGURES_DIR / f"{OUTPUT_STEM}.png"
@@ -202,7 +247,7 @@ def main():
 
     # Tidy long-format export: one row per (year, duration, variable).
     records = []
-    for var, title in PANELS:
+    for var, title in (panel for panel in PANELS if panel is not None):
         for model, label, _ in SERIES:
             colname = f"{model}___{var}"
             if colname not in df.columns:
