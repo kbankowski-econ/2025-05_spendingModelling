@@ -71,7 +71,9 @@ PANELS = [
     ("yd",        "Output (Y<sup>d</sup><sub>t</sub>)"),
     ("C",         "Consumption (C<sub>t</sub>)"),
     ("Ip",        "Private investment (I<sub>t</sub>)"),
-    ("G",         "Government spending (G<sub>t</sub>)"),
+    # The textbook NK has no aggregate G; its only spending is consumption, so
+    # map Gc into the government-spending panel (the shock itself, by duration).
+    ("Gc",        "Government spending (G<sub>t</sub>)"),
     # Row 2 - production factors (percent deviation)
     ("AAt",       "Adopted technology (A<sub>t</sub>)"),
     ("Kg",        "Public infrastructure (K<sup>GI</sup><sub>t</sub>)"),

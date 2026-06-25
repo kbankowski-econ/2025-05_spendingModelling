@@ -293,6 +293,153 @@ year,duration,variable,pct_dev
 2036.5,Permanent shock,Consumption (C<sub>t</sub>),-0.658
 2036.75,Permanent shock,Consumption (C<sub>t</sub>),-0.658
 2037.0,Permanent shock,Consumption (C<sub>t</sub>),-0.658
+2025.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2025.25,1-year shock (4 quarters),Government spending (G<sub>t</sub>),5.556
+2025.5,1-year shock (4 quarters),Government spending (G<sub>t</sub>),5.556
+2025.75,1-year shock (4 quarters),Government spending (G<sub>t</sub>),5.556
+2026.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),5.556
+2026.25,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2026.5,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2026.75,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2027.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2027.25,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2027.5,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2027.75,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2028.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2028.25,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2028.5,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2028.75,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2029.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2029.25,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2029.5,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2029.75,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2030.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2030.25,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2030.5,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2030.75,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2031.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2031.25,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2031.5,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2031.75,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2032.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2032.25,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2032.5,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2032.75,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2033.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2033.25,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2033.5,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2033.75,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2034.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2034.25,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2034.5,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2034.75,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2035.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2035.25,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2035.5,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2035.75,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2036.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2036.25,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2036.5,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2036.75,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2037.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
+2025.0,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2025.25,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2025.5,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2025.75,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2026.0,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2026.25,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2026.5,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2026.75,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2027.0,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2027.25,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2027.5,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2027.75,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2028.0,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2028.25,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2028.5,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2028.75,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2029.0,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2029.25,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2029.5,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2029.75,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2030.0,5-year shock (20 quarters),Government spending (G<sub>t</sub>),5.556
+2030.25,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2030.5,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2030.75,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2031.0,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2031.25,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2031.5,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2031.75,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2032.0,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2032.25,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2032.5,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2032.75,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2033.0,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2033.25,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2033.5,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2033.75,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2034.0,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2034.25,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2034.5,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2034.75,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2035.0,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2035.25,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2035.5,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2035.75,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2036.0,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2036.25,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2036.5,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2036.75,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2037.0,5-year shock (20 quarters),Government spending (G<sub>t</sub>),0.0
+2025.0,Permanent shock,Government spending (G<sub>t</sub>),0.0
+2025.25,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2025.5,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2025.75,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2026.0,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2026.25,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2026.5,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2026.75,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2027.0,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2027.25,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2027.5,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2027.75,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2028.0,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2028.25,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2028.5,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2028.75,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2029.0,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2029.25,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2029.5,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2029.75,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2030.0,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2030.25,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2030.5,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2030.75,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2031.0,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2031.25,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2031.5,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2031.75,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2032.0,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2032.25,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2032.5,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2032.75,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2033.0,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2033.25,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2033.5,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2033.75,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2034.0,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2034.25,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2034.5,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2034.75,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2035.0,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2035.25,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2035.5,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2035.75,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2036.0,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2036.25,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2036.5,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2036.75,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2037.0,Permanent shock,Government spending (G<sub>t</sub>),5.556
 2025.0,1-year shock (4 quarters),Effective labor (N<sub>t</sub>),0.0
 2025.25,1-year shock (4 quarters),Effective labor (N<sub>t</sub>),0.544
 2025.5,1-year shock (4 quarters),Effective labor (N<sub>t</sub>),0.571
