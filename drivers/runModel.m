@@ -142,8 +142,9 @@ modelList = {
     % From-scratch canonical NK benchmark (own .mod; param/eff columns ignored).
     'Model_NK_exp_gc',                          'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     % Canonical NK under gov-consumption shocks of different DURATION (same +1% of
-    % GDP impulse, temporary): 4 quarters (1y) and 20 quarters (5y). The permanent
-    % case is Model_NK_exp_gc above. Feeds the appendix duration figure.
+    % GDP impulse, temporary): 1 quarter, 4 quarters (1y) and 20 quarters (5y).
+    % The permanent case is Model_NK_exp_gc above. Feeds the appendix duration figure.
+    'Model_NK_exp_gc_d1',                       'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1'}}
     'Model_NK_exp_gc_d4',                       'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:4'}}
     'Model_NK_exp_gc_d20',                      'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:20'}}
     };

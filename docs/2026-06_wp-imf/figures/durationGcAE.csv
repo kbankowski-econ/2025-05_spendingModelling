@@ -1,4 +1,53 @@
 year,duration,variable,pct_dev
+2025.0,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),0.0
+2025.25,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),0.847
+2025.5,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.077
+2025.75,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.039
+2026.0,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.02
+2026.25,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.01
+2026.5,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.005
+2026.75,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.003
+2027.0,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.001
+2027.25,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.001
+2027.5,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2027.75,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2028.0,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2028.25,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2028.5,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2028.75,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2029.0,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2029.25,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2029.5,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2029.75,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2030.0,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2030.25,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2030.5,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2030.75,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2031.0,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2031.25,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2031.5,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2031.75,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2032.0,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2032.25,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2032.5,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2032.75,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2033.0,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2033.25,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2033.5,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2033.75,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2034.0,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2034.25,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2034.5,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2034.75,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2035.0,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2035.25,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2035.5,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2035.75,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2036.0,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2036.25,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2036.5,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2036.75,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
+2037.0,1-quarter shock,Output (Y<sup>d</sup><sub>t</sub>),-0.0
 2025.0,1-year shock (4 quarters),Output (Y<sup>d</sup><sub>t</sub>),0.0
 2025.25,1-year shock (4 quarters),Output (Y<sup>d</sup><sub>t</sub>),0.544
 2025.5,1-year shock (4 quarters),Output (Y<sup>d</sup><sub>t</sub>),0.57
@@ -146,6 +195,55 @@ year,duration,variable,pct_dev
 2036.5,Permanent shock,Output (Y<sup>d</sup><sub>t</sub>),0.461
 2036.75,Permanent shock,Output (Y<sup>d</sup><sub>t</sub>),0.461
 2037.0,Permanent shock,Output (Y<sup>d</sup><sub>t</sub>),0.461
+2025.0,1-quarter shock,Consumption (C<sub>t</sub>),0.0
+2025.25,1-quarter shock,Consumption (C<sub>t</sub>),-0.187
+2025.5,1-quarter shock,Consumption (C<sub>t</sub>),-0.094
+2025.75,1-quarter shock,Consumption (C<sub>t</sub>),-0.048
+2026.0,1-quarter shock,Consumption (C<sub>t</sub>),-0.024
+2026.25,1-quarter shock,Consumption (C<sub>t</sub>),-0.012
+2026.5,1-quarter shock,Consumption (C<sub>t</sub>),-0.006
+2026.75,1-quarter shock,Consumption (C<sub>t</sub>),-0.003
+2027.0,1-quarter shock,Consumption (C<sub>t</sub>),-0.002
+2027.25,1-quarter shock,Consumption (C<sub>t</sub>),-0.001
+2027.5,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2027.75,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2028.0,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2028.25,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2028.5,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2028.75,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2029.0,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2029.25,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2029.5,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2029.75,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2030.0,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2030.25,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2030.5,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2030.75,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2031.0,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2031.25,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2031.5,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2031.75,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2032.0,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2032.25,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2032.5,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2032.75,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2033.0,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2033.25,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2033.5,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2033.75,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2034.0,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2034.25,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2034.5,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2034.75,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2035.0,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2035.25,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2035.5,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2035.75,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2036.0,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2036.25,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2036.5,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2036.75,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
+2037.0,1-quarter shock,Consumption (C<sub>t</sub>),-0.0
 2025.0,1-year shock (4 quarters),Consumption (C<sub>t</sub>),0.0
 2025.25,1-year shock (4 quarters),Consumption (C<sub>t</sub>),-0.557
 2025.5,1-year shock (4 quarters),Consumption (C<sub>t</sub>),-0.524
@@ -293,6 +391,55 @@ year,duration,variable,pct_dev
 2036.5,Permanent shock,Consumption (C<sub>t</sub>),-0.658
 2036.75,Permanent shock,Consumption (C<sub>t</sub>),-0.658
 2037.0,Permanent shock,Consumption (C<sub>t</sub>),-0.658
+2025.0,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2025.25,1-quarter shock,Government spending (G<sub>t</sub>),5.556
+2025.5,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2025.75,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2026.0,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2026.25,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2026.5,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2026.75,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2027.0,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2027.25,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2027.5,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2027.75,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2028.0,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2028.25,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2028.5,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2028.75,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2029.0,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2029.25,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2029.5,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2029.75,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2030.0,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2030.25,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2030.5,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2030.75,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2031.0,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2031.25,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2031.5,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2031.75,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2032.0,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2032.25,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2032.5,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2032.75,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2033.0,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2033.25,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2033.5,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2033.75,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2034.0,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2034.25,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2034.5,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2034.75,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2035.0,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2035.25,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2035.5,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2035.75,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2036.0,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2036.25,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2036.5,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2036.75,1-quarter shock,Government spending (G<sub>t</sub>),0.0
+2037.0,1-quarter shock,Government spending (G<sub>t</sub>),0.0
 2025.0,1-year shock (4 quarters),Government spending (G<sub>t</sub>),0.0
 2025.25,1-year shock (4 quarters),Government spending (G<sub>t</sub>),5.556
 2025.5,1-year shock (4 quarters),Government spending (G<sub>t</sub>),5.556
@@ -440,6 +587,55 @@ year,duration,variable,pct_dev
 2036.5,Permanent shock,Government spending (G<sub>t</sub>),5.556
 2036.75,Permanent shock,Government spending (G<sub>t</sub>),5.556
 2037.0,Permanent shock,Government spending (G<sub>t</sub>),5.556
+2025.0,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2025.25,1-quarter shock,Effective labor (N<sub>t</sub>),0.847
+2025.5,1-quarter shock,Effective labor (N<sub>t</sub>),-0.077
+2025.75,1-quarter shock,Effective labor (N<sub>t</sub>),-0.039
+2026.0,1-quarter shock,Effective labor (N<sub>t</sub>),-0.02
+2026.25,1-quarter shock,Effective labor (N<sub>t</sub>),-0.01
+2026.5,1-quarter shock,Effective labor (N<sub>t</sub>),-0.005
+2026.75,1-quarter shock,Effective labor (N<sub>t</sub>),-0.002
+2027.0,1-quarter shock,Effective labor (N<sub>t</sub>),-0.001
+2027.25,1-quarter shock,Effective labor (N<sub>t</sub>),-0.001
+2027.5,1-quarter shock,Effective labor (N<sub>t</sub>),-0.0
+2027.75,1-quarter shock,Effective labor (N<sub>t</sub>),-0.0
+2028.0,1-quarter shock,Effective labor (N<sub>t</sub>),-0.0
+2028.25,1-quarter shock,Effective labor (N<sub>t</sub>),-0.0
+2028.5,1-quarter shock,Effective labor (N<sub>t</sub>),-0.0
+2028.75,1-quarter shock,Effective labor (N<sub>t</sub>),-0.0
+2029.0,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2029.25,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2029.5,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2029.75,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2030.0,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2030.25,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2030.5,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2030.75,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2031.0,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2031.25,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2031.5,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2031.75,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2032.0,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2032.25,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2032.5,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2032.75,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2033.0,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2033.25,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2033.5,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2033.75,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2034.0,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2034.25,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2034.5,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2034.75,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2035.0,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2035.25,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2035.5,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2035.75,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2036.0,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2036.25,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2036.5,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2036.75,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
+2037.0,1-quarter shock,Effective labor (N<sub>t</sub>),0.0
 2025.0,1-year shock (4 quarters),Effective labor (N<sub>t</sub>),0.0
 2025.25,1-year shock (4 quarters),Effective labor (N<sub>t</sub>),0.544
 2025.5,1-year shock (4 quarters),Effective labor (N<sub>t</sub>),0.571
@@ -587,6 +783,55 @@ year,duration,variable,pct_dev
 2036.5,Permanent shock,Effective labor (N<sub>t</sub>),0.508
 2036.75,Permanent shock,Effective labor (N<sub>t</sub>),0.508
 2037.0,Permanent shock,Effective labor (N<sub>t</sub>),0.508
+2025.0,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2025.25,1-quarter shock,Labor supply (L<sub>t</sub>),0.847
+2025.5,1-quarter shock,Labor supply (L<sub>t</sub>),-0.077
+2025.75,1-quarter shock,Labor supply (L<sub>t</sub>),-0.039
+2026.0,1-quarter shock,Labor supply (L<sub>t</sub>),-0.02
+2026.25,1-quarter shock,Labor supply (L<sub>t</sub>),-0.01
+2026.5,1-quarter shock,Labor supply (L<sub>t</sub>),-0.005
+2026.75,1-quarter shock,Labor supply (L<sub>t</sub>),-0.002
+2027.0,1-quarter shock,Labor supply (L<sub>t</sub>),-0.001
+2027.25,1-quarter shock,Labor supply (L<sub>t</sub>),-0.001
+2027.5,1-quarter shock,Labor supply (L<sub>t</sub>),-0.0
+2027.75,1-quarter shock,Labor supply (L<sub>t</sub>),-0.0
+2028.0,1-quarter shock,Labor supply (L<sub>t</sub>),-0.0
+2028.25,1-quarter shock,Labor supply (L<sub>t</sub>),-0.0
+2028.5,1-quarter shock,Labor supply (L<sub>t</sub>),-0.0
+2028.75,1-quarter shock,Labor supply (L<sub>t</sub>),-0.0
+2029.0,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2029.25,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2029.5,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2029.75,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2030.0,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2030.25,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2030.5,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2030.75,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2031.0,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2031.25,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2031.5,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2031.75,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2032.0,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2032.25,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2032.5,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2032.75,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2033.0,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2033.25,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2033.5,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2033.75,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2034.0,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2034.25,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2034.5,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2034.75,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2035.0,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2035.25,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2035.5,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2035.75,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2036.0,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2036.25,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2036.5,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2036.75,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
+2037.0,1-quarter shock,Labor supply (L<sub>t</sub>),0.0
 2025.0,1-year shock (4 quarters),Labor supply (L<sub>t</sub>),0.0
 2025.25,1-year shock (4 quarters),Labor supply (L<sub>t</sub>),0.544
 2025.5,1-year shock (4 quarters),Labor supply (L<sub>t</sub>),0.571
@@ -734,6 +979,55 @@ year,duration,variable,pct_dev
 2036.5,Permanent shock,Labor supply (L<sub>t</sub>),0.508
 2036.75,Permanent shock,Labor supply (L<sub>t</sub>),0.508
 2037.0,Permanent shock,Labor supply (L<sub>t</sub>),0.508
+2025.0,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2025.25,1-quarter shock,Inflation (Π<sub>t</sub>),0.092
+2025.5,1-quarter shock,Inflation (Π<sub>t</sub>),-0.076
+2025.75,1-quarter shock,Inflation (Π<sub>t</sub>),-0.038
+2026.0,1-quarter shock,Inflation (Π<sub>t</sub>),-0.019
+2026.25,1-quarter shock,Inflation (Π<sub>t</sub>),-0.01
+2026.5,1-quarter shock,Inflation (Π<sub>t</sub>),-0.005
+2026.75,1-quarter shock,Inflation (Π<sub>t</sub>),-0.002
+2027.0,1-quarter shock,Inflation (Π<sub>t</sub>),-0.001
+2027.25,1-quarter shock,Inflation (Π<sub>t</sub>),-0.001
+2027.5,1-quarter shock,Inflation (Π<sub>t</sub>),-0.0
+2027.75,1-quarter shock,Inflation (Π<sub>t</sub>),-0.0
+2028.0,1-quarter shock,Inflation (Π<sub>t</sub>),-0.0
+2028.25,1-quarter shock,Inflation (Π<sub>t</sub>),-0.0
+2028.5,1-quarter shock,Inflation (Π<sub>t</sub>),-0.0
+2028.75,1-quarter shock,Inflation (Π<sub>t</sub>),-0.0
+2029.0,1-quarter shock,Inflation (Π<sub>t</sub>),-0.0
+2029.25,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2029.5,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2029.75,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2030.0,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2030.25,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2030.5,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2030.75,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2031.0,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2031.25,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2031.5,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2031.75,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2032.0,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2032.25,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2032.5,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2032.75,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2033.0,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2033.25,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2033.5,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2033.75,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2034.0,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2034.25,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2034.5,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2034.75,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2035.0,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2035.25,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2035.5,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2035.75,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2036.0,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2036.25,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2036.5,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2036.75,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
+2037.0,1-quarter shock,Inflation (Π<sub>t</sub>),0.0
 2025.0,1-year shock (4 quarters),Inflation (Π<sub>t</sub>),0.0
 2025.25,1-year shock (4 quarters),Inflation (Π<sub>t</sub>),0.089
 2025.5,1-year shock (4 quarters),Inflation (Π<sub>t</sub>),0.071
@@ -881,6 +1175,55 @@ year,duration,variable,pct_dev
 2036.5,Permanent shock,Inflation (Π<sub>t</sub>),-0.918
 2036.75,Permanent shock,Inflation (Π<sub>t</sub>),-0.918
 2037.0,Permanent shock,Inflation (Π<sub>t</sub>),-0.918
+2025.0,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2025.25,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.295
+2025.5,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.149
+2025.75,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.075
+2026.0,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.038
+2026.25,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.019
+2026.5,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.01
+2026.75,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.005
+2027.0,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.002
+2027.25,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.001
+2027.5,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.001
+2027.75,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2028.0,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2028.25,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2028.5,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2028.75,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2029.0,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2029.25,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2029.5,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2029.75,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2030.0,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2030.25,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2030.5,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2030.75,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2031.0,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2031.25,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2031.5,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2031.75,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2032.0,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2032.25,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2032.5,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2032.75,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2033.0,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2033.25,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2033.5,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2033.75,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2034.0,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2034.25,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2034.5,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2034.75,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2035.0,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2035.25,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2035.5,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2035.75,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2036.0,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2036.25,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2036.5,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2036.75,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2037.0,1-quarter shock,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
 2025.0,1-year shock (4 quarters),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
 2025.25,1-year shock (4 quarters),Policy rate (R<sup>mp</sup><sub>t</sub>),0.203
 2025.5,1-year shock (4 quarters),Policy rate (R<sup>mp</sup><sub>t</sub>),0.345
@@ -1028,6 +1371,55 @@ year,duration,variable,pct_dev
 2036.5,Permanent shock,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
 2036.75,Permanent shock,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
 2037.0,Permanent shock,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.92
+2025.0,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2025.25,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.295
+2025.5,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.149
+2025.75,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.075
+2026.0,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.038
+2026.25,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.019
+2026.5,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.01
+2026.75,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.005
+2027.0,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.002
+2027.25,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.001
+2027.5,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.001
+2027.75,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2028.0,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2028.25,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2028.5,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2028.75,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2029.0,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2029.25,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2029.5,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2029.75,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2030.0,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2030.25,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2030.5,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2030.75,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2031.0,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2031.25,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2031.5,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2031.75,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2032.0,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2032.25,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2032.5,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2032.75,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2033.0,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2033.25,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2033.5,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2033.75,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2034.0,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2034.25,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2034.5,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2034.75,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2035.0,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2035.25,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2035.5,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2035.75,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2036.0,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2036.25,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2036.5,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2036.75,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
+2037.0,1-quarter shock,Nominal bond rate (R<sub>t</sub>),0.0
 2025.0,1-year shock (4 quarters),Nominal bond rate (R<sub>t</sub>),0.0
 2025.25,1-year shock (4 quarters),Nominal bond rate (R<sub>t</sub>),0.203
 2025.5,1-year shock (4 quarters),Nominal bond rate (R<sub>t</sub>),0.345
@@ -1175,6 +1567,55 @@ year,duration,variable,pct_dev
 2036.5,Permanent shock,Nominal bond rate (R<sub>t</sub>),-0.92
 2036.75,Permanent shock,Nominal bond rate (R<sub>t</sub>),-0.92
 2037.0,Permanent shock,Nominal bond rate (R<sub>t</sub>),-0.92
+2025.0,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2025.25,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.203
+2025.5,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.225
+2025.75,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.114
+2026.0,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.057
+2026.25,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.029
+2026.5,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.015
+2026.75,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.007
+2027.0,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.004
+2027.25,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+2027.5,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+2027.75,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2028.0,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2028.25,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2028.5,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2028.75,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2029.0,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2029.25,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2029.5,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2029.75,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2030.0,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2030.25,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2030.5,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2030.75,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2031.0,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2031.25,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2031.5,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2031.75,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2032.0,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2032.25,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2032.5,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2032.75,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2033.0,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2033.25,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2033.5,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2033.75,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2034.0,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2034.25,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2034.5,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2034.75,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2035.0,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2035.25,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2035.5,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2035.75,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2036.0,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2036.25,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2036.5,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2036.75,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2037.0,1-quarter shock,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2025.0,1-year shock (4 quarters),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2025.25,1-year shock (4 quarters),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.114
 2025.5,1-year shock (4 quarters),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.274

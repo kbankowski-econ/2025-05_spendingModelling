@@ -5,9 +5,10 @@ DURATIONS in the canonical New Keynesian benchmark (fig:durationGc).
 Companion to plotSimplifiedGcAE, and using the IDENTICAL 5x4 block layout
 (Demand / Supply / Labor / Nominal / Fiscal): there the lines were models
 (full -> canonical NK) under one permanent shock; here the model is fixed (the
-from-scratch canonical NK, Model_NK) and the lines are three shock durations of
+from-scratch canonical NK, Model_NK) and the lines are four shock durations of
 the SAME +1 percent of GDP government-consumption impulse:
 
+  - 1-quarter shock             -> Model_NK_exp_gc_d1
   - 1-year shock (4 quarters)   -> Model_NK_exp_gc_d4
   - 5-year shock (20 quarters)  -> Model_NK_exp_gc_d20
   - Permanent shock             -> Model_NK_exp_gc
@@ -55,6 +56,7 @@ STYLE = {
 # (model directory, legend label, colour) -- one fixed model (the canonical NK),
 # three shock DURATIONS, ordered short -> permanent.
 SERIES = [
+    ("Model_NK_exp_gc_d1",  "1-quarter shock",            "#00897B"),
     ("Model_NK_exp_gc_d4",  "1-year shock (4 quarters)",  "#1E88E5"),
     ("Model_NK_exp_gc_d20", "5-year shock (20 quarters)", "#E65100"),
     ("Model_NK_exp_gc",     "Permanent shock",            "#6A1B9A"),
