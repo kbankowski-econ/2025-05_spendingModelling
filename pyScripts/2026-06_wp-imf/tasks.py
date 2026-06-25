@@ -142,6 +142,17 @@ def plotDurationGcAE(c):
 
 
 @task
+def plotPersistenceGcAE(c):
+    """
+    Appendix: the government-consumption shock under four AR(1) persistences
+    (rho = 0, 0.5, 0.9, 0.99) in the canonical NK benchmark, 5x4 block layout.
+    Reads the quarterly export.
+    Out: figures/persistenceGcAE.png/.pdf/.html/.csv
+    """
+    _run_plot(c, "plotPersistenceGcAE.py", "Generating: AE Gc-Shock Persistence Comparison")
+
+
+@task
 def plotReallocationAE(c):
     """
     AE output response to three expenditure-reallocation shocks.
@@ -288,6 +299,7 @@ def investigateContributions(c):
     plotStandardShocksAE,
     plotSimplifiedGcAE,
     plotDurationGcAE,
+    plotPersistenceGcAE,
     plotReallocationAE,
     plotReallocationEM,
     plotEfficiencyAE,

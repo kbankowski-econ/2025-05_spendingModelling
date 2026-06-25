@@ -147,6 +147,14 @@ modelList = {
     'Model_NK_exp_gc_d1',                       'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1'}}
     'Model_NK_exp_gc_d4',                       'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:4'}}
     'Model_NK_exp_gc_d20',                      'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:20'}}
+    % Canonical NK under AR(1) gov-consumption shocks of different PERSISTENCE:
+    % epsi_gc follows impact*rho.^(0:N-1) with the same 1%-of-GDP impact, rho from
+    % 0 (one-period) to 0.99 (effectively permanent). Feeds the appendix
+    % persistence figure. Sequence specified here, not in the model's rules.
+    'Model_NK_exp_gc_ar0',                      'AE', 'AE',     {{'epsi_gc',       'ar1',   [0.01 0.0],  '1:1000'}}
+    'Model_NK_exp_gc_ar50',                     'AE', 'AE',     {{'epsi_gc',       'ar1',   [0.01 0.5],  '1:1000'}}
+    'Model_NK_exp_gc_ar90',                     'AE', 'AE',     {{'epsi_gc',       'ar1',   [0.01 0.9],  '1:1000'}}
+    'Model_NK_exp_gc_ar99',                     'AE', 'AE',     {{'epsi_gc',       'ar1',   [0.01 0.99], '1:1000'}}
     };
 
 %% optional subset: set the MODEL_FILTER environment variable to a substring

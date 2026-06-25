@@ -13,6 +13,13 @@ function generateShocksFile(fileName, shockSpecs)
     %                kind 'ramp'   - linear increase from 0 to value over
     %                                the quarters in '1:N', then held
     %                                constant through period 1000
+    %                kind 'ar1'    - AR(1)-decaying path: value is a two-element
+    %                                vector [impact, rho]; the shock follows
+    %                                impact * rho.^(0:N-1) over the quarters in
+    %                                '1:N' (periods enumerated individually so
+    %                                each quarter gets its own value). rho = 0
+    %                                is a single-period shock; rho -> 1 is
+    %                                effectively permanent.
     %                kind 'custom' - explicit values vector, periods string
     %                                written verbatim
     %                valueFormat   - sprintf format for the values; default
@@ -48,6 +55,19 @@ function generateShocksFile(fileName, shockSpecs)
                 fprintf(fid, '%d:1000 ;\n', numQuarters + 1);
                 increment = value / numQuarters;
                 writeValues(fid, [(1:numQuarters) * increment, value], valueFormat);
+
+            case 'ar1'
+                bounds = sscanf(periods, '%d:%d');
+                assert(bounds(1) == 1, 'generateShocksFile:ar1', ...
+                       'ar1 paths must start at period 1');
+                numQuarters = bounds(2);
+                impact = value(1);
+                rho    = value(2);
+                seq = impact * rho .^ (0:numQuarters - 1);
+                fprintf(fid, 'periods ');
+                fprintf(fid, '%d ', 1:numQuarters);
+                fprintf(fid, ';\n');
+                writeValues(fid, seq, valueFormat);
 
             case 'custom'
                 fprintf(fid, 'periods %s ;\n', periods);

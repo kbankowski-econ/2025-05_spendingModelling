@@ -15,7 +15,8 @@ modelList = string(reshape(envi.shockDict.Properties.RowNames, 1, []));
 % Append the step-by-step simplified Gc-shock variants (not in shockDict; added
 % directly in runModel.m). They share all variables with the full model, so they
 % flow through the same export machinery.
-modelList = [modelList, "Model_Simple1_exp_gc", "Model_Simple2_exp_gc", "Model_Simple3_exp_gc", "Model_Simple4_exp_gc", "Model_NK_exp_gc", "Model_NK_exp_gc_d1", "Model_NK_exp_gc_d4", "Model_NK_exp_gc_d20"];
+modelList = [modelList, "Model_Simple1_exp_gc", "Model_Simple2_exp_gc", "Model_Simple3_exp_gc", "Model_Simple4_exp_gc", "Model_NK_exp_gc", "Model_NK_exp_gc_d1", "Model_NK_exp_gc_d4", "Model_NK_exp_gc_d20", ...
+    "Model_NK_exp_gc_ar0", "Model_NK_exp_gc_ar50", "Model_NK_exp_gc_ar90", "Model_NK_exp_gc_ar99"];
 
 % Deviation transforms come straight from varDict.diffTransf: each entry is an
 % expression in x (simulated level path) and y (steady-state path), e.g.
