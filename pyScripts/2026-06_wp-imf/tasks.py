@@ -131,6 +131,17 @@ def plotSimplifiedGcAE(c):
 
 
 @task
+def plotDurationGcAE(c):
+    """
+    Appendix: the government-consumption shock under three SHOCK DURATIONS
+    (1-year, 5-year, permanent) in the canonical NK benchmark, 2x4 block layout.
+    Reads the quarterly export (the 1-year shock lives inside one year).
+    Out: figures/durationGcAE.png/.pdf/.html/.csv
+    """
+    _run_plot(c, "plotDurationGcAE.py", "Generating: AE Gc-Shock Duration Comparison")
+
+
+@task
 def plotReallocationAE(c):
     """
     AE output response to three expenditure-reallocation shocks.
@@ -276,6 +287,7 @@ def investigateContributions(c):
     exportData,
     plotStandardShocksAE,
     plotSimplifiedGcAE,
+    plotDurationGcAE,
     plotReallocationAE,
     plotReallocationEM,
     plotEfficiencyAE,

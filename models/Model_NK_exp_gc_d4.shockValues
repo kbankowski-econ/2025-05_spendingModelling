@@ -1,0 +1,5 @@
+var epsi_gc;
+periods 1:4 ;
+values
+    0.01
+;
