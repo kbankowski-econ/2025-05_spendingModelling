@@ -22,9 +22,15 @@ appendix deflation figures (`fig:simplifiedGc`, `fig:durationGc`,
   the max |percent-deviation difference| (ours vs Galí α=0) and saves the overlay
   `gali_compare.png`.
 - `phi_sweep.m` — sweeps the Frisch elasticity (`phi` = inverse Frisch) in the
-  verified-equivalent model at `ρ ∈ {0.9, 0.99}`, printing impact inflation / real
-  wage / output. This isolates the Frisch dependence of the deflation's sign.
-- `gali_compare.png` — committed reference output of `compare.m`.
+  verified-equivalent model **at Galí's calibration**, `ρ ∈ {0.9, 0.99}`. Isolates
+  the Frisch dependence of the deflation's sign.
+- `ours_paper.mod` — our canonical NK with the **paper's own calibration**
+  (β=0.9985, φ=1.2, ε=10, θ=0.8, γπ=1.5, γy=0.25, ρ_R=0.7), i.e. the model behind
+  `fig:persistenceGc`; AR(1) `Gc` shock via `g_ar`.
+- `frisch_rho09.m` — runs `ours_paper` at `ρ ∈ {0.9, 0.99}`, sweeping φ from the
+  paper's 1.2 up to Galí's 5; saves the IRF overlay `frisch_rho09.png`. Answers
+  "does our deflation survive a Galí-like Frisch?".
+- `gali_compare.png`, `frisch_rho09.png` — committed reference outputs.
 
 ## How to run
 
@@ -60,8 +66,26 @@ mods; these are gitignored.
 | 1.2 (0.83) — ours | −0.003 | −0.108 |
 | 0.2 (5.0) | −0.110 | −0.195 |
 
-## Next step (TODO)
+- **In the PAPER's calibration (`frisch_rho09.m`), the ρ=0.9 deflation is driven by
+  the high Frisch elasticity.** Swapping φ=1.2 (Frisch 0.83) → φ=5 (Galí's Frisch
+  0.2) flips the impact inflation from **−0.29 to +0.35 annualized pp** (the real
+  wage flips −0.14 → +0.79). The sign crosses zero around Frisch ≈ 0.4 (φ between 2
+  and 3). The φ=1.2 run reproduces `fig:persistenceGc`'s ρ=0.9 inflation (−0.29)
+  exactly, validating the standalone. **But a near-permanent ρ=0.99 shock stays
+  deflationary even at Galí's Frisch** (−0.41 ann pp). So the deflation needs *both*
+  elastic labor *and/or* high persistence; the permanent-shock result is robust, the
+  ρ=0.9 result is not.
 
-Run `ρ=0.9` under a Galí-like Frisch (φ≈5) to map where the inflation sign flips
-and to decompose the paper-calibration deflation into Frisch vs persistence vs the
-Taylor `γy` / `θ` contributions. `phi_sweep.m` is the quick path.
+  | OUR calibration | impact inflation (ann pp), ρ=0.9 | ρ=0.99 |
+  |---|---|---|
+  | φ=1.2 (Frisch 0.83) — paper | −0.288 | −1.045 |
+  | φ=2.0 (Frisch 0.50) | −0.083 | −0.805 |
+  | φ=3.0 (Frisch 0.33) | +0.102 | −0.618 |
+  | φ=5.0 (Frisch 0.20) — Galí | +0.352 | −0.405 |
+
+## Possible follow-ups
+
+- Decompose the remaining gap between our and Galí's ρ=0.9 results into the Taylor
+  `γy` (0.25 vs 0.125) and `θ` (0.8 vs 0.75) contributions.
+- Decide whether to fold a Frisch (and/or persistence) sensitivity panel into the
+  paper alongside `fig:persistenceGc`.
