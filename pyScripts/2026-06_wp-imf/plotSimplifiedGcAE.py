@@ -49,7 +49,7 @@ SERIES = [
     ("Model_Simple2_exp_gc",      "No R&D, no human capital",   "#00897B"),
     ("Model_Simple3_exp_gc",      "NK with capital",            "#E65100"),
     ("Model_Simple4_exp_gc",      "Textbook NK (no capital)",   "#C62828"),
-    ("Model_NK_exp_gc_ar90",      "Canonical NK (from scratch)","#212121"),
+    ("Model_NK_exp_gc",           "Canonical NK (from scratch)","#212121"),
 ]
 
 # (variable suffix, panel title); laid out row-major in a 4x4 grid, one thematic

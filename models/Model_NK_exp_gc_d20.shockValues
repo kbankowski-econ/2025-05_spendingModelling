@@ -1,5 +1,0 @@
-var epsi_gc;
-periods 1:20 ;
-values
-    0.01
-;

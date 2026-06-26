@@ -177,30 +177,15 @@ modelList = {
     % -DSIMPLIFY_LEVEL=N, which pins progressively more channels to steady state:
     %   1 = no R&D/technology, 2 = + no human capital, 3 = + no public infra (NK).
     % Enter Figure 8 (fig:simplifiedGc, Appendix C) as the full-model -> NK ladder;
-    % the canonical-NK end of that ladder is Model_NK_exp_gc_ar90 below (also AR(1)).
+    % the canonical-NK end of that ladder is Model_NK_exp_gc below (also AR(1) rho=0.9).
     'Model_Simple1_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_Simple2_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_Simple3_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_Simple4_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     % From-scratch canonical NK benchmark (own .mod; param/eff columns ignored).
-    % This permanent-shock case is the permanent-shock line in Figure 9 (fig:durationGc).
-    % (Figure 8's canonical-NK line uses the AR(1) rho=0.9 variant Model_NK_exp_gc_ar90.)
-    'Model_NK_exp_gc',                          'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
-    % Canonical NK under gov-consumption shocks of different DURATION (same +1% of
-    % GDP impulse, temporary): 1 quarter, 4 quarters (1y) and 20 quarters (5y).
-    % The permanent case is Model_NK_exp_gc above. Enter Figure 9 (fig:durationGc,
-    % Appendix C).
-    'Model_NK_exp_gc_d1',                       'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1'}}
-    'Model_NK_exp_gc_d4',                       'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:4'}}
-    'Model_NK_exp_gc_d20',                      'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:20'}}
-    % Canonical NK under AR(1) gov-consumption shocks of different PERSISTENCE:
-    % epsi_gc follows impact*rho.^(0:N-1) with the same 1%-of-GDP impact, rho from
-    % 0 (one-period) to 0.99 (effectively permanent). Enter Figure 10
-    % (fig:persistenceGc, Appendix C). Sequence specified here, not in the model's rules.
-    'Model_NK_exp_gc_ar0',                      'AE', 'AE',     {{'epsi_gc',       'ar1',   [0.01 0.0],  '1:1000'}}
-    'Model_NK_exp_gc_ar50',                     'AE', 'AE',     {{'epsi_gc',       'ar1',   [0.01 0.5],  '1:1000'}}
-    'Model_NK_exp_gc_ar90',                     'AE', 'AE',     {{'epsi_gc',       'ar1',   [0.01 0.9],  '1:1000'}}
-    'Model_NK_exp_gc_ar99',                     'AE', 'AE',     {{'epsi_gc',       'ar1',   [0.01 0.99], '1:1000'}}
+    % AR(1) rho=0.9 +1%-of-GDP gov-consumption shock (matching the rest of the ladder);
+    % the canonical-NK end of Figure 8 (fig:simplifiedGc).
+    'Model_NK_exp_gc',                          'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     };
 
 %% optional subset: set the MODEL_FILTER environment variable to a substring
