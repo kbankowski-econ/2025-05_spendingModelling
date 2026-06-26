@@ -19,8 +19,9 @@ applies
 i.e. the cumulative output gain over the cumulative own-spending injection.
 Period 1 (endo_simul column 1) is the pre-shock steady state and is excluded;
 the shock is active from period 2, so an N-year horizon spans the 4N quarters in
-indices 2:(N*4+1). All four are pure +1%-of-GDP permanent shocks under the
-advanced-economy calibration, financed by debt (no offsetting consumption cut).
+indices 2:(N*4+1). Each is a +1%-of-GDP debt-financed shock with no offsetting
+cut. The advanced-economy expansions follow an AR(1) path with persistence 0.9;
+the emerging-market expansions are permanent.
 
 Writes:
   ../csvFiles/multipliers.csv      (one row per scenario, all horizons)

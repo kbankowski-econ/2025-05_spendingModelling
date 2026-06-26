@@ -376,7 +376,7 @@ Output responses are reported as percent deviations from the steady state.
 \subsection{Transmission of Public Spending}
 
 Figure~\ref{fig:standardShocks} shows how the advanced-economy model transmits each public-spending instrument to the rest of the economy.
-Each line is the response to a permanent increase of 1 percent of GDP in one instrument, financed by debt with no offsetting cut.
+Each line is the response to a persistent increase in one instrument---an AR(1) shock with persistence 0.9 and an impact of 1 percent of GDP---financed by debt with no offsetting cut.
 The panels are arranged in rows by theme.
 Row 1 reports the demand side (output, consumption, private investment, and government spending) and row 2 the supply side---the four inputs to the production function: adopted technology, public infrastructure capital, private capital, and effective labor.
 Row 3 decomposes effective labor into labor supply and the human capital stock.
@@ -393,14 +393,14 @@ Government consumption, being unproductive, leaves the supply side largely uncha
     \caption{Transmission of Standard Public-Spending Shocks: Advanced Economies \label{fig:standardShocks}}
     \includegraphics{figures/standardShocksAE.pdf}
     \source{IMF staff estimates.}
-    \desc{Impulse responses to four standard debt-financed expansion shocks, each a permanent increase of 1 percent of GDP in one spending category with no offsetting cut, as listed in the legend. All panels report deviations from the steady state, calculated by block. Demand, supply, and labor panels (top three rows; the third row decomposes effective labor into labor supply and the human capital stock) are percent deviations from the steady-state level. Nominal panels (fourth row: inflation, policy rate, nominal bond rate, real rate) are annualized percentage-point deviations, the change in the gross quarterly rate multiplied by 400. Fiscal panels (bottom row: primary deficit, transfers, debt-to-GDP ratio) are deviations in percentage points of GDP. The real interest rate is the nominal government bond rate deflated by inflation.}
+    \desc{Impulse responses to four standard debt-financed expansion shocks, each a persistent (AR(1), persistence 0.9) increase in one spending category with an impact of 1 percent of GDP and no offsetting cut, as listed in the legend. All panels report deviations from the steady state, calculated by block. Demand, supply, and labor panels (top three rows; the third row decomposes effective labor into labor supply and the human capital stock) are percent deviations from the steady-state level. Nominal panels (fourth row: inflation, policy rate, nominal bond rate, real rate) are annualized percentage-point deviations, the change in the gross quarterly rate multiplied by 400. Fiscal panels (bottom row: primary deficit, transfers, debt-to-GDP ratio) are deviations in percentage points of GDP. The real interest rate is the nominal government bond rate deflated by inflation.}
 \end{figure}
 
 \subsection{Fiscal Multipliers}
 
 These differing horizons are summarized by the cumulative fiscal multipliers, which measure the discounted output gain per unit of additional spending.
 
-Table~\ref{tab:multipliers} reports the implied cumulative multipliers for the advanced-economy and emerging-market calibrations, computed from permanent debt-financed expansions of 1 percent of GDP in each spending category, with no offsetting cut to other spending.
+Table~\ref{tab:multipliers} reports the implied cumulative multipliers for the advanced-economy and emerging-market calibrations, computed from debt-financed expansions of 1 percent of GDP in each spending category, with no offsetting cut to other spending. The advanced-economy expansions follow an AR(1) process with persistence 0.9; the emerging-market expansions are permanent.
 Infrastructure pays off fastest, while human capital and---in advanced economies---R\&D build up more slowly but catch up to or exceed infrastructure by the 25-year horizon; government consumption, being unproductive, yields a long-run multiplier below one.
 The investment multipliers are larger for emerging market and developing economies, reflecting the higher output elasticity of infrastructure and the higher marginal product of public capital in these economies; the R\&D channel is shut down there, as these economies grow mainly by adopting existing technologies rather than creating them.
 These long-run magnitudes are comparable to the public-investment and R\&D multipliers documented in the empirical literature \citep{Ramey2020, AfonsoRodrigues2024, FieldhouseMertens2023}.
@@ -414,7 +414,7 @@ These long-run magnitudes are comparable to the public-investment and R\&D multi
 
     \vspace{1mm}
     \source{IMF staff estimates.}
-    \desc{Cumulative output gain per unit of additional spending at the 1-, 5-, 10-, 20-, and 25-year horizons, for a permanent increase of 1 percent of GDP in each spending category, financed by debt with no offsetting cut to other spending. Each multiplier divides the cumulative output gain by the cumulative increase in the corresponding category. The R\&D innovation channel is shut down for emerging market and developing economies.}
+    \desc{Cumulative output gain per unit of additional spending at the 1-, 5-, 10-, 20-, and 25-year horizons, for a 1-percent-of-GDP debt-financed increase in each spending category, with no offsetting cut to other spending. The advanced-economy expansions follow an AR(1) process with persistence 0.9; the emerging-market expansions are permanent. Each multiplier divides the cumulative output gain by the cumulative increase in the corresponding category. The R\&D innovation channel is shut down for emerging market and developing economies.}
 \end{table}
 
 \subsection{Sensitivity}

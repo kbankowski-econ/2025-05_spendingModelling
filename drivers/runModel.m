@@ -56,10 +56,12 @@ cd(fullfile(project_path, 'models'));
 % models/postSimul.mod.
 
 modelList = {
-    'Model_HumanCapital_exp_gc',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
-    'Model_HumanCapital_exp_igi',               'AE', 'AE',     {{'epsi_igi',      'const', 0.01,  '1:1000'}}
-    'Model_HumanCapital_exp_ige',               'AE', 'AE',     {{'epsi_ige',      'const', 0.01,  '1:1000'}}
-    'Model_HumanCapital_exp_grd',               'AE', 'AE',     {{'epsi_grd',      'const', 0.01,  '1:1000'}}
+    % AE standard expansions: AR(1) shocks with persistence 0.9 (1%-of-GDP impact),
+    % feeding the transmission figure (fig:standardShocks) and the AE multiplier rows.
+    'Model_HumanCapital_exp_gc',                'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
+    'Model_HumanCapital_exp_igi',               'AE', 'AE',     {{'epsi_igi',      'ar1', [0.01 0.9],  '1:1000'}}
+    'Model_HumanCapital_exp_ige',               'AE', 'AE',     {{'epsi_ige',      'ar1', [0.01 0.9],  '1:1000'}}
+    'Model_HumanCapital_exp_grd',               'AE', 'AE',     {{'epsi_grd',      'ar1', [0.01 0.9],  '1:1000'}}
     'EM_Model_HumanCapital_exp_gc',             'EM', 'EMnorm', {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     'EM_Model_HumanCapital_exp_igi',            'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01,  '1:1000'}}
     'EM_Model_HumanCapital_exp_ige',            'EM', 'EMnorm', {{'epsi_ige',      'const', 0.01,  '1:1000'}}
