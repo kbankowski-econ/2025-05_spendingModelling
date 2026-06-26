@@ -33,11 +33,11 @@ From the repo root, in MATLAB (the project's Dynare must be on the path via
 
 ```matlab
 iniProject;
-run('docs/2026-06_wp-imf/galiCheck/compare.m');     % equivalence + overlay
-run('docs/2026-06_wp-imf/galiCheck/phi_sweep.m');   % Frisch sensitivity
+run('docs/2026-06_wp-imf/investigations/galiCheck/compare.m');     % equivalence + overlay
+run('docs/2026-06_wp-imf/investigations/galiCheck/phi_sweep.m');   % Frisch sensitivity
 ```
 
-Headless: `matlab -sd <repo> -batch "iniProject; run('docs/2026-06_wp-imf/galiCheck/compare.m')"`.
+Headless: `matlab -sd <repo> -batch "iniProject; run('docs/2026-06_wp-imf/investigations/galiCheck/compare.m')"`.
 Dynare writes generated folders (`+gali_g/`, `gali_g/`, logs, …) next to the
 mods; these are gitignored.
 
