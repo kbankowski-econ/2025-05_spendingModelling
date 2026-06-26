@@ -77,7 +77,7 @@
 , {"name": "rreal", "equations":["rreal"]}
 , {"name": "epsi_gc", "equations":["Gc"]}
 ], "statements": [{"statementName": "param_init", "name": "betta", "value": "0.9985"}, 
-{"statementName": "param_init", "name": "phi", "value": "1.2"}, 
+{"statementName": "param_init", "name": "phi", "value": "5"}, 
 {"statementName": "param_init", "name": "epsilon", "value": "10"}, 
 {"statementName": "param_init", "name": "thetap", "value": "0.8"}, 
 {"statementName": "param_init", "name": "gamma_pi", "value": "1.5"}, 

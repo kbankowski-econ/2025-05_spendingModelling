@@ -158,7 +158,7 @@ rho_ZZRD
 eGRD_ss         % SS gap in public R&D efficiency (e^GRD)
 ;
 betta=0.9985;
-phi= 1.2 ;
+phi= 5 ;   % inverse Frisch elasticity (Frisch 0.2), as in Gali (2015, Ch. 3); was 1.2
 chi =0.6;
 delta =0.025;
 thetap = 0.8;

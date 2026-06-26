@@ -169,21 +169,22 @@ modelList = {
     'JAM_Model_HumanCapital_epsicgeeff30y',     'JAM', 'JAM',    {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.357, '1:60'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
-    % ============= GOV-CONSUMPTION DEFLATION BENCHMARKS (Appendix C) =============
-    % Permanent +1%-of-GDP gov-consumption shock through a sequence of model
-    % simplifications, used to show the deflation is a textbook-NK property.
+    % ============= GOV-CONSUMPTION TRANSMISSION BENCHMARKS (Appendix C) =============
+    % AR(1) rho=0.9 +1%-of-GDP gov-consumption shock (matching Figure 1) through a
+    % sequence of model simplifications, isolating which features drive the sign.
     % --- Step-by-step simplified variants (AE params, gov-consumption shock).
     % Names contain SimpleN -> built from modelTemplateSimple.mod with
     % -DSIMPLIFY_LEVEL=N, which pins progressively more channels to steady state:
     %   1 = no R&D/technology, 2 = + no human capital, 3 = + no public infra (NK).
-    % Enter Figure 8 (fig:simplifiedGc, Appendix C) as the full-model -> NK ladder.
-    'Model_Simple1_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
-    'Model_Simple2_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
-    'Model_Simple3_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
-    'Model_Simple4_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
+    % Enter Figure 8 (fig:simplifiedGc, Appendix C) as the full-model -> NK ladder;
+    % the canonical-NK end of that ladder is Model_NK_exp_gc_ar90 below (also AR(1)).
+    'Model_Simple1_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
+    'Model_Simple2_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
+    'Model_Simple3_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
+    'Model_Simple4_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     % From-scratch canonical NK benchmark (own .mod; param/eff columns ignored).
-    % The end of the ladder in Figure 8 (fig:simplifiedGc) and the permanent-shock
-    % line in both Figure 9 (fig:durationGc) and Figure 10 (fig:persistenceGc).
+    % This permanent-shock case is the permanent-shock line in Figure 9 (fig:durationGc).
+    % (Figure 8's canonical-NK line uses the AR(1) rho=0.9 variant Model_NK_exp_gc_ar90.)
     'Model_NK_exp_gc',                          'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     % Canonical NK under gov-consumption shocks of different DURATION (same +1% of
     % GDP impulse, temporary): 1 quarter, 4 quarters (1y) and 20 quarters (5y).

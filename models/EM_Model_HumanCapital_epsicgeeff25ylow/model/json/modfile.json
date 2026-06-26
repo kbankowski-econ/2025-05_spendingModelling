@@ -321,7 +321,7 @@
 , {"name": "epsiallo_ig", "equations":["yt", "TFP"]}
 , {"name": "epsiallo_ige", "equations":["H", "7"]}
 ], "statements": [{"statementName": "param_init", "name": "betta", "value": "0.9985"}, 
-{"statementName": "param_init", "name": "phi", "value": "1.2"}, 
+{"statementName": "param_init", "name": "phi", "value": "5"}, 
 {"statementName": "param_init", "name": "chi", "value": "0.6"}, 
 {"statementName": "param_init", "name": "delta", "value": "0.025"}, 
 {"statementName": "param_init", "name": "thetap", "value": "0.8"}, 
