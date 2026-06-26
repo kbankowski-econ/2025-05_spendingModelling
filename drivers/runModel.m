@@ -62,9 +62,11 @@ modelList = {
     'Model_HumanCapital_exp_igi',               'AE', 'AE',     {{'epsi_igi',      'ar1', [0.01 0.9],  '1:1000'}}
     'Model_HumanCapital_exp_ige',               'AE', 'AE',     {{'epsi_ige',      'ar1', [0.01 0.9],  '1:1000'}}
     'Model_HumanCapital_exp_grd',               'AE', 'AE',     {{'epsi_grd',      'ar1', [0.01 0.9],  '1:1000'}}
-    'EM_Model_HumanCapital_exp_gc',             'EM', 'EMnorm', {{'epsi_gc',       'const', 0.01,  '1:1000'}}
-    'EM_Model_HumanCapital_exp_igi',            'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01,  '1:1000'}}
-    'EM_Model_HumanCapital_exp_ige',            'EM', 'EMnorm', {{'epsi_ige',      'const', 0.01,  '1:1000'}}
+    % EMDE standard expansions: AR(1) shocks with persistence 0.9 (matching the AE
+    % expansions above), feeding the EMDE multiplier rows (tab:multipliers).
+    'EM_Model_HumanCapital_exp_gc',             'EM', 'EMnorm', {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
+    'EM_Model_HumanCapital_exp_igi',            'EM', 'EMnorm', {{'epsi_igi',      'ar1', [0.01 0.9],  '1:1000'}}
+    'EM_Model_HumanCapital_exp_ige',            'EM', 'EMnorm', {{'epsi_ige',      'ar1', [0.01 0.9],  '1:1000'}}
     'Model_HumanCapital_epsi_ig',               'AE', 'AE',     {{'epsi_igi',      'const', 0.01,  '1:1000'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'Model_HumanCapital_epsi_cge',              'AE', 'AE',     {{'epsi_ige',     'const', 0.01,  '1:1000'}
