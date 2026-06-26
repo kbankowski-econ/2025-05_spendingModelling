@@ -12,11 +12,21 @@ multiplier.
 
 For each scenario it loads <model>/Output/<model>_results.mat, takes the
 endogenous simulation oo_.endo_simul (column 1 = pre-shock steady state), and
-applies
+computes the PRESENT-VALUE cumulative multiplier
 
-    multiplier_Ny = sum(yd(2:N*4+1) - yd(1)) / sum(instrument(2:N*4+1) - instrument_ss)
+    M_Ny = sum_{t=1}^{4N} beta^(t-1) (yd_t - yd_ss)
+           ------------------------------------------------
+           sum_{t=1}^{4N} beta^(t-1) (instrument_t - instrument_ss)
 
-i.e. the cumulative output gain over the cumulative own-spending injection.
+i.e. output and own-spending are each discounted before summing, so flows
+arriving at different dates are compared on equal footing. beta is the model's
+own discount factor (read from M_.params), equivalently discounting at the
+steady-state real rate R_ss = 1/beta. (Because numerator and denominator share
+the same weights, the choice of starting exponent is immaterial to the ratio.)
+Without discounting the AR(1) spending injection saturates while productive
+output keeps accumulating, so the undiscounted cumulative multiplier rises
+mechanically with the horizon; discounting curbs that long-horizon drift.
+
 Period 1 (endo_simul column 1) is the pre-shock steady state and is excluded;
 the shock is active from period 2, so an N-year horizon spans the 4N quarters in
 indices 2:(N*4+1). Each is a +1%-of-GDP debt-financed AR(1) shock with
@@ -62,20 +72,24 @@ GROUPS = [
 
 
 def multipliers(model, inst):
-    """Cumulative output multipliers at each horizon, own-spending denominator."""
+    """Present-value cumulative output multipliers at each horizon (output and
+    own-spending discounted at the model's beta), own-spending denominator."""
     m = loadmat(MODELS / model / "Output" / f"{model}_results.mat")
     oo, M = m["oo_"], m["M_"]
     sim = oo["endo_simul"][0, 0]                       # n_endo x T
     names = [str(x[0]) for x in M["endo_names"][0, 0][:, 0]]
     idx = {n: i for i, n in enumerate(names)}
     ss = oo["steady_state"][0, 0].ravel()
+    pnames = [str(x[0]) for x in M["param_names"][0, 0][:, 0]]
+    beta = float(M["params"][0, 0].ravel()[pnames.index("betta")])
 
     yd = sim[idx["yd"]]
     fc = sim[idx[inst]] - ss[idx[inst]]               # own spending change
     out = {}
     for h in HORIZONS:
         ped = h * 4 + 1                                # MATLAB yd(2:ped); period 1 = SS, excluded
-        out[h] = float(np.sum(yd[1:ped] - yd[0]) / np.sum(fc[1:ped]))
+        disc = beta ** np.arange(ped - 1)             # beta^0 ... beta^(4N-1)
+        out[h] = float(np.sum(disc * (yd[1:ped] - yd[0])) / np.sum(disc * fc[1:ped]))
     return out
 
 
@@ -104,7 +118,7 @@ def main():
         "% _results.mat simulation paths. Do not edit by hand.",
         "\\begin{tabular}{l c c c c c}",
         "    \\toprule",
-        "    Cumulative output multiplier & 1y & 5y & 10y & 20y & 25y \\\\",
+        "    Present-value multiplier & 1y & 5y & 10y & 20y & 25y \\\\",
         "    \\midrule",
     ]
     for gi, (stype, regions) in enumerate(GROUPS):
