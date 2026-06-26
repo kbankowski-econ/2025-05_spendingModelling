@@ -56,17 +56,33 @@ cd(fullfile(project_path, 'models'));
 % models/postSimul.mod.
 
 modelList = {
-    % AE standard expansions: AR(1) shocks with persistence 0.9 (1%-of-GDP impact),
-    % feeding the transmission figure (fig:standardShocks) and the AE multiplier rows.
+    % =================== STANDARD EXPANSIONS (Sections 4.1-4.2) ===================
+    % Debt-financed expansions, no offsetting cut. AE standard expansions: AR(1)
+    % shocks, persistence 0.9 (1%-of-GDP impact). Enter the paper as the transmission
+    % figure (Figure 1, fig:standardShocks, Section 4.1, AE only) and the AE rows of
+    % the cumulative multiplier table (Table 3, tab:multipliers, Section 4.2).
     'Model_HumanCapital_exp_gc',                'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_HumanCapital_exp_igi',               'AE', 'AE',     {{'epsi_igi',      'ar1', [0.01 0.9],  '1:1000'}}
     'Model_HumanCapital_exp_ige',               'AE', 'AE',     {{'epsi_ige',      'ar1', [0.01 0.9],  '1:1000'}}
     'Model_HumanCapital_exp_grd',               'AE', 'AE',     {{'epsi_grd',      'ar1', [0.01 0.9],  '1:1000'}}
-    % EMDE standard expansions: AR(1) shocks with persistence 0.9 (matching the AE
-    % expansions above), feeding the EMDE multiplier rows (tab:multipliers).
+    % EMDE standard expansions: AR(1) shocks, persistence 0.9 (matching the AE
+    % expansions above). Enter the paper as the EMDE rows of the multiplier table
+    % (Table 3, tab:multipliers, Section 4.2). Not in Figure 1, which is AE only.
     'EM_Model_HumanCapital_exp_gc',             'EM', 'EMnorm', {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'EM_Model_HumanCapital_exp_igi',            'EM', 'EMnorm', {{'epsi_igi',      'ar1', [0.01 0.9],  '1:1000'}}
     'EM_Model_HumanCapital_exp_ige',            'EM', 'EMnorm', {{'epsi_ige',      'ar1', [0.01 0.9],  '1:1000'}}
+    % ====================== POLICY EXPERIMENTS (Section 5) ======================
+    % Budget-neutral reforms: a growth-enhancing spending increase financed by an
+    % equal cut in public consumption (epsi_gc -0.01). All permanent (const, 1:1000).
+    %
+    % --- AE reallocation + human-capital/R&D mix ---
+    % epsi_ig / epsi_cge / epsi_cgrd: reallocation toward infrastructure / human
+    % capital / R&D. Enter Figure 2 (fig:reallocation, panel a, Section 5.1) and are
+    % the no-efficiency baselines (denominators) for Figure 3 (fig:efficiencyAE,
+    % Section 5.2). epsi_cge and epsi_cgrd also enter the human-capital + R&D mix,
+    % Figure 5 (fig:humanCapital, Section 5.3). epsi_cgeCgrd is the combined HC+R&D
+    % experiment: Figure 5 and the baseline for the diffusion experiment, Figure 6
+    % (fig:diffusion, Section 5.3).
     'Model_HumanCapital_epsi_ig',               'AE', 'AE',     {{'epsi_igi',      'const', 0.01,  '1:1000'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'Model_HumanCapital_epsi_cge',              'AE', 'AE',     {{'epsi_ige',     'const', 0.01,  '1:1000'}
@@ -76,12 +92,21 @@ modelList = {
     'Model_HumanCapital_epsi_cgeCgrd',          'AE', 'AE',     {{'epsi_ige',     'const', 0.005, '1:1000'}
                                                                  {'epsi_grd',    'const', 0.005, '1:1000'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
+    % --- AE efficiency gains (reallocation + a 25-year ramp that closes the
+    % spending-efficiency gap) --- Enter Figure 3 (fig:efficiencyAE, Section 5.2),
+    % each shown against its no-efficiency baseline above. (The R&D counterpart,
+    % epsi_cgrd_eff25y, sits further below with the diffusion block.)
     'Model_HumanCapital_epsi_igeff25y',         'AE', 'AE',     {{'epsi_igi',      'const', 0.01,  '1:1000'}
                                                                  {'epsi_eff',     'ramp',  0.359,  '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'Model_HumanCapital_epsi_cgeeff25y',        'AE', 'AE',     {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.306, '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
+    % --- EMDE reallocation + efficiency gains --- The bare epsiig / epsicge
+    % reallocations enter Figure 2 (fig:reallocation, panel b, Section 5.1) and are
+    % the baselines for Figure 4. All the EMDE rows here (including the *low* central-
+    % calibration variants and the 25y/30y efficiency ramps) enter Figure 4
+    % (fig:efficiencyEM, Section 5.2). No EMDE R&D experiment (innovation channel off).
     'EM_Model_HumanCapital_epsiig',             'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01,  '1:1000'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiiglow',          'EM', 'EMlow',  {{'epsi_igi',      'const', 0.01,  '1:1000'}
@@ -114,9 +139,14 @@ modelList = {
     'EM_Model_HumanCapital_epsicgeeff25ylow',   'EM', 'EMlow',  {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.329, '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
+    % --- AE R&D efficiency gain --- The R&D counterpart of the AE efficiency block
+    % above; enters Figure 3 (fig:efficiencyAE, Section 5.2) as the R&D bars.
     'Model_HumanCapital_epsi_cgrd_eff25y',      'AE', 'AE',     {{'epsi_grd',    'const', 0.01,  '1:1000'}
                                                                  {'epsi_effcgrd', 'ramp',  0.41,  '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
+    % --- AE technology-diffusion experiments --- The combined HC+R&D reform under a
+    % faster (adt) and a slower/limited (limt) technology-adoption speed. Enter
+    % Figure 6 (fig:diffusion, Section 5.3), against the epsi_cgeCgrd baseline above.
     'Model_HumanCapital_epsicgrd_cge_adt',      'AE', 'AE',     {{'epsi_grd',    'const', 0.005, '1:1000'}
                                                                  {'epsi_ige',     'const', 0.005, '1:1000'}
                                                                  {'epsirhoadopt', 'ramp',  0.03,  '1:40'}
@@ -125,6 +155,10 @@ modelList = {
                                                                  {'epsi_ige',     'const', 0.005, '1:1000'}
                                                                  {'epsirhoadopt', 'ramp',  -0.03, '1:40'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
+    % ===================== JAMAICA (separate FM-panel project) =====================
+    % NOT used in this working paper. Kept for the separate Jamaica fiscal-multiplier
+    % deck; calibrated to Jamaica (JAM params/efficiency). Excluded from every paper
+    % figure and table here.
     'JAM_Model_HumanCapital_epsiig',            'JAM', 'JAM',    {{'epsi_igi',      'const', 0.01,  '1:1000'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'JAM_Model_HumanCapital_epsicge',           'JAM', 'JAM',    {{'epsi_ige',     'const', 0.01,  '1:1000'}
@@ -135,26 +169,33 @@ modelList = {
     'JAM_Model_HumanCapital_epsicgeeff30y',     'JAM', 'JAM',    {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.357, '1:60'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
+    % ============= GOV-CONSUMPTION DEFLATION BENCHMARKS (Appendix C) =============
+    % Permanent +1%-of-GDP gov-consumption shock through a sequence of model
+    % simplifications, used to show the deflation is a textbook-NK property.
     % --- Step-by-step simplified variants (AE params, gov-consumption shock).
     % Names contain SimpleN -> built from modelTemplateSimple.mod with
     % -DSIMPLIFY_LEVEL=N, which pins progressively more channels to steady state:
     %   1 = no R&D/technology, 2 = + no human capital, 3 = + no public infra (NK).
+    % Enter Figure 8 (fig:simplifiedGc, Appendix C) as the full-model -> NK ladder.
     'Model_Simple1_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     'Model_Simple2_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     'Model_Simple3_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     'Model_Simple4_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     % From-scratch canonical NK benchmark (own .mod; param/eff columns ignored).
+    % The end of the ladder in Figure 8 (fig:simplifiedGc) and the permanent-shock
+    % line in both Figure 9 (fig:durationGc) and Figure 10 (fig:persistenceGc).
     'Model_NK_exp_gc',                          'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1000'}}
     % Canonical NK under gov-consumption shocks of different DURATION (same +1% of
     % GDP impulse, temporary): 1 quarter, 4 quarters (1y) and 20 quarters (5y).
-    % The permanent case is Model_NK_exp_gc above. Feeds the appendix duration figure.
+    % The permanent case is Model_NK_exp_gc above. Enter Figure 9 (fig:durationGc,
+    % Appendix C).
     'Model_NK_exp_gc_d1',                       'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:1'}}
     'Model_NK_exp_gc_d4',                       'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:4'}}
     'Model_NK_exp_gc_d20',                      'AE', 'AE',     {{'epsi_gc',       'const', 0.01,  '1:20'}}
     % Canonical NK under AR(1) gov-consumption shocks of different PERSISTENCE:
     % epsi_gc follows impact*rho.^(0:N-1) with the same 1%-of-GDP impact, rho from
-    % 0 (one-period) to 0.99 (effectively permanent). Feeds the appendix
-    % persistence figure. Sequence specified here, not in the model's rules.
+    % 0 (one-period) to 0.99 (effectively permanent). Enter Figure 10
+    % (fig:persistenceGc, Appendix C). Sequence specified here, not in the model's rules.
     'Model_NK_exp_gc_ar0',                      'AE', 'AE',     {{'epsi_gc',       'ar1',   [0.01 0.0],  '1:1000'}}
     'Model_NK_exp_gc_ar50',                     'AE', 'AE',     {{'epsi_gc',       'ar1',   [0.01 0.5],  '1:1000'}}
     'Model_NK_exp_gc_ar90',                     'AE', 'AE',     {{'epsi_gc',       'ar1',   [0.01 0.9],  '1:1000'}}
