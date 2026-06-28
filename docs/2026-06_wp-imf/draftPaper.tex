@@ -417,19 +417,7 @@ These long-run magnitudes are comparable to the public-investment and R\&D multi
     \desc{Present-value cumulative output gain per unit of additional spending at horizons from 1 to 250 years, for a 1-percent-of-GDP debt-financed AR(1) increase (persistence 0.9) in each spending category, with no offsetting cut to other spending. Each multiplier divides the discounted cumulative output gain by the discounted cumulative increase in the corresponding category, with output and spending discounted at the model's steady-state real interest rate. The R\&D innovation channel is shut down for emerging market and developing economies.}
 \end{table}
 
-For comparison, Table~\ref{tab:multipliersPerm} reports the same multipliers under a \emph{permanent} 1-percent-of-GDP increase in each category. With a sustained increase the discounted spending in the denominator keeps growing with the horizon, so the cumulative multiplier converges to the long-run multiplier and is smaller at long horizons than its AR(1) counterpart; at 25 years, for example, the advanced-economy human-capital multiplier is 1.7 under a permanent increase versus 3.3 under the AR(1) shock.
-
-\begin{table}[H]
-    \centering
-    \caption{Implied Cumulative Public-Spending Multipliers by Horizon: Permanent Shocks \label{tab:multipliersPerm}}
-    \footnotesize
-    \renewcommand{\arraystretch}{1.2}
-    \input{multipliersTablePermanent.tex}
-
-    \vspace{1mm}
-    \source{IMF staff estimates.}
-    \desc{As Table~\ref{tab:multipliers}, but for a \emph{permanent} 1-percent-of-GDP debt-financed increase in each spending category (no decay), with no offsetting cut to other spending. Output and spending are discounted at the model's steady-state real interest rate before cumulating. The R\&D innovation channel is shut down for emerging market and developing economies.}
-\end{table}
+The same multipliers under a \emph{permanent} rather than AR(1) increase---which converge to the long-run multiplier and are smaller at intermediate horizons---are reported in Appendix~\ref{app:permmult}.
 
 \subsection{Sensitivity}
 
@@ -634,5 +622,22 @@ The sign of the response is robust across the simplification ladder: output rise
     \source{IMF staff estimates.}
     \desc{Impulse responses to the government-consumption shock (a persistent AR(1) increase, persistence 0.9, with an impact of 1 percent of GDP and no offsetting cut) in the full model, four step-by-step simplifications, and a from-scratch canonical New Keynesian benchmark, as listed in the legend. Each simplification pins additional channels to their steady state (the last pins private capital, leaving labor-only production); the canonical benchmark is an independently coded textbook model (no trend growth, no price indexation, constant returns, lump-sum financing). Pinned or absent channels appear as flat or missing lines. All panels report deviations from the steady state, calculated by block: the demand, supply, and labor panels (top three rows) are percent deviations from the steady-state level; the nominal panels (fourth row) are annualized percentage-point deviations; the fiscal panels (bottom row) are deviations in percentage points of steady-state GDP. The real interest rate is the nominal government bond rate deflated by inflation.}
 \end{figure}
+
+\section{Fiscal Multipliers under Permanent Shocks} \label{app:permmult}
+%========================================================================
+
+The multipliers in Table~\ref{tab:multipliers} are computed for AR(1) (persistence 0.9) spending shocks, matching the transmission experiment of Section~\ref{sec:properties}. Table~\ref{tab:multipliersPerm} reports the same present-value cumulative multipliers for a \emph{permanent} 1-percent-of-GDP increase in each category. Because a sustained increase keeps the discounted spending in the denominator growing with the horizon, the cumulative multiplier converges to the long-run (steady-state) multiplier and is smaller at intermediate horizons than its AR(1) counterpart---at 25 years, for example, the advanced-economy human-capital multiplier is 1.7 under a permanent increase versus 3.3 under the AR(1) shock.
+
+\begin{table}[H]
+    \centering
+    \caption{Implied Cumulative Public-Spending Multipliers by Horizon: Permanent Shocks \label{tab:multipliersPerm}}
+    \footnotesize
+    \renewcommand{\arraystretch}{1.2}
+    \input{multipliersTablePermanent.tex}
+
+    \vspace{1mm}
+    \source{IMF staff estimates.}
+    \desc{As Table~\ref{tab:multipliers}, but for a \emph{permanent} 1-percent-of-GDP debt-financed increase in each spending category (no decay), with no offsetting cut to other spending. Output and spending are discounted at the model's steady-state real interest rate before cumulating. The R\&D innovation channel is shut down for emerging market and developing economies.}
+\end{table}
 
 \end{document}
