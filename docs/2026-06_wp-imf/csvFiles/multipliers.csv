@@ -1,9 +1,9 @@
-category,region,model,mult_1y,mult_5y,mult_10y,mult_20y,mult_25y,mult_50y,mult_100y,mult_150y,mult_200y,mult_250y
-Government consumption,Advanced economies,Model_HumanCapital_exp_gc,0.1404,-0.0528,-0.3161,-0.7185,-0.8503,-1.1419,-1.2189,-1.2225,-1.2227,-1.2227
-Government consumption,Emerging markets,EM_Model_HumanCapital_exp_gc,0.1422,-0.0152,-0.1755,-0.3324,-0.3640,-0.4017,-0.4039,-0.4039,-0.4039,-0.4039
-Infrastructure investment,Advanced economies,Model_HumanCapital_exp_igi,0.0392,0.4634,0.9067,1.5599,1.7734,2.2493,2.3759,2.3818,2.3821,2.3821
-Infrastructure investment,Emerging markets,EM_Model_HumanCapital_exp_igi,-0.0809,1.2617,2.6357,4.1939,4.5374,4.9570,4.9813,4.9813,4.9813,4.9813
-Human capital investment,Advanced economies,Model_HumanCapital_exp_ige,0.2156,-0.2212,0.0291,2.1249,3.3078,6.9216,8.1272,8.1861,8.1889,8.1890
-Human capital investment,Emerging markets,EM_Model_HumanCapital_exp_ige,0.2683,-0.2255,0.8144,4.8517,6.4993,9.5751,9.8823,9.8836,9.8836,9.8836
-Research and development,Advanced economies,Model_HumanCapital_exp_grd,-0.0175,0.5442,2.0360,4.2306,4.8912,6.2869,6.6452,6.6618,6.6626,6.6626
-Research and development,Emerging markets,,,,,,,,,,,
+category,region,model,mult_1y,mult_5y,mult_10y,mult_20y,mult_25y,mult_longterm
+Government consumption,Advanced economies,Model_HumanCapital_exp_gc,0.1404,-0.0528,-0.3161,-0.7185,-0.8503,-1.2227
+Government consumption,Emerging markets,EM_Model_HumanCapital_exp_gc,0.1422,-0.0152,-0.1755,-0.3324,-0.3640,-0.4039
+Infrastructure investment,Advanced economies,Model_HumanCapital_exp_igi,0.0392,0.4634,0.9067,1.5599,1.7734,2.3821
+Infrastructure investment,Emerging markets,EM_Model_HumanCapital_exp_igi,-0.0809,1.2617,2.6357,4.1939,4.5374,4.9813
+Human capital investment,Advanced economies,Model_HumanCapital_exp_ige,0.2156,-0.2212,0.0291,2.1249,3.3078,8.1890
+Human capital investment,Emerging markets,EM_Model_HumanCapital_exp_ige,0.2683,-0.2255,0.8144,4.8517,6.4993,9.8836
+Research and development,Advanced economies,Model_HumanCapital_exp_grd,-0.0175,0.5442,2.0360,4.2306,4.8912,6.6626
+Research and development,Emerging markets,,,,,,,

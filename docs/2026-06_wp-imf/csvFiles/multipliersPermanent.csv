@@ -1,9 +1,9 @@
-category,region,model,mult_1y,mult_5y,mult_10y,mult_20y,mult_25y,mult_50y,mult_100y,mult_150y,mult_200y,mult_250y
-Government consumption,Advanced economies,Model_HumanCapital_exp_gc_perm,0.0166,0.2358,0.3044,0.3888,0.4195,0.5139,0.5829,0.6074,0.6192,0.6183
-Government consumption,Emerging markets,EM_Model_HumanCapital_exp_gc_perm,0.0170,0.2062,0.2591,0.3099,0.3246,0.3599,0.3792,0.3856,0.3886,0.3862
-Infrastructure investment,Advanced economies,Model_HumanCapital_exp_igi_perm,-0.0854,0.4824,0.8509,1.3560,1.5400,2.0917,2.4761,2.6089,2.6727,2.7047
-Infrastructure investment,Emerging markets,EM_Model_HumanCapital_exp_igi_perm,-0.2383,0.9031,1.7150,2.6867,2.9856,3.7129,4.1112,4.2407,4.3027,4.3377
-Human capital investment,Advanced economies,Model_HumanCapital_exp_ige_perm,0.2260,0.3055,0.4621,1.2438,1.6885,3.4577,4.9388,5.4619,5.7128,5.8488
-Human capital investment,Emerging markets,EM_Model_HumanCapital_exp_ige_perm,0.3856,0.4413,0.8194,2.2529,2.9419,5.1283,6.5387,7.0038,7.2263,7.3465
-Research and development,Advanced economies,Model_HumanCapital_exp_grd_perm,-0.0647,0.3275,0.9743,1.9774,2.3450,3.4199,4.1394,4.3844,4.5018,4.5651
-Research and development,Emerging markets,,,,,,,,,,,
+category,region,model,mult_1y,mult_5y,mult_10y,mult_20y,mult_25y,mult_longterm
+Government consumption,Advanced economies,Model_HumanCapital_exp_gc_perm,0.0166,0.2358,0.3044,0.3888,0.4195,0.6183
+Government consumption,Emerging markets,EM_Model_HumanCapital_exp_gc_perm,0.0170,0.2062,0.2591,0.3099,0.3246,0.3862
+Infrastructure investment,Advanced economies,Model_HumanCapital_exp_igi_perm,-0.0854,0.4824,0.8509,1.3560,1.5400,2.7047
+Infrastructure investment,Emerging markets,EM_Model_HumanCapital_exp_igi_perm,-0.2383,0.9031,1.7150,2.6867,2.9856,4.3377
+Human capital investment,Advanced economies,Model_HumanCapital_exp_ige_perm,0.2260,0.3055,0.4621,1.2438,1.6885,5.8488
+Human capital investment,Emerging markets,EM_Model_HumanCapital_exp_ige_perm,0.3856,0.4413,0.8194,2.2529,2.9419,7.3465
+Research and development,Advanced economies,Model_HumanCapital_exp_grd_perm,-0.0647,0.3275,0.9743,1.9774,2.3450,4.5651
+Research and development,Emerging markets,,,,,,,
