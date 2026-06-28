@@ -71,6 +71,18 @@ modelList = {
     'EM_Model_HumanCapital_exp_gc',             'EM', 'EMnorm', {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'EM_Model_HumanCapital_exp_igi',            'EM', 'EMnorm', {{'epsi_igi',      'ar1', [0.01 0.9],  '1:1000'}}
     'EM_Model_HumanCapital_exp_ige',            'EM', 'EMnorm', {{'epsi_ige',      'ar1', [0.01 0.9],  '1:1000'}}
+    % Permanent-shock counterparts of the seven expansions (const +1% of GDP,
+    % no decay). Feed the comparison multiplier table (tab:multipliersPerm,
+    % Section 4.2); not used in any figure. Under a permanent shock the cumulative
+    % multiplier converges to the long-run multiplier (denominator grows with the
+    % horizon), unlike the AR(1) version whose denominator saturates.
+    'Model_HumanCapital_exp_gc_perm',           'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'Model_HumanCapital_exp_igi_perm',          'AE', 'AE',     {{'epsi_igi',      'const', 0.01, '1:1000'}}
+    'Model_HumanCapital_exp_ige_perm',          'AE', 'AE',     {{'epsi_ige',      'const', 0.01, '1:1000'}}
+    'Model_HumanCapital_exp_grd_perm',          'AE', 'AE',     {{'epsi_grd',      'const', 0.01, '1:1000'}}
+    'EM_Model_HumanCapital_exp_gc_perm',        'EM', 'EMnorm', {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'EM_Model_HumanCapital_exp_igi_perm',       'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01, '1:1000'}}
+    'EM_Model_HumanCapital_exp_ige_perm',       'EM', 'EMnorm', {{'epsi_ige',      'const', 0.01, '1:1000'}}
     % ====================== POLICY EXPERIMENTS (Section 5) ======================
     % Budget-neutral reforms: a growth-enhancing spending increase financed by an
     % equal cut in public consumption (epsi_gc -0.01). All permanent (const, 1:1000).

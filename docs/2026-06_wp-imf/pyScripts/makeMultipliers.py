@@ -46,6 +46,8 @@ REPO = HERE.parents[2]                        # repo root (.../wp-equations)
 MODELS = REPO / "models"
 CSV_OUT = HERE.parent / "csvFiles" / "multipliers.csv"
 TEX_OUT = HERE.parent / "multipliersTable.tex"
+CSV_OUT_PERM = HERE.parent / "csvFiles" / "multipliersPermanent.csv"
+TEX_OUT_PERM = HERE.parent / "multipliersTablePermanent.tex"
 
 HORIZONS = [1, 5, 10, 20, 25, 50, 100, 150, 200, 250]   # years; quarter window is N*4
 
@@ -70,6 +72,10 @@ GROUPS = [
     ]),
 ]
 
+# Permanent-shock counterparts: same instruments, model dirs suffixed "_perm".
+PERM_GROUPS = [(stype, [(r, (m + "_perm") if m else None, i) for r, m, i in regs])
+               for stype, regs in GROUPS]
+
 
 def multipliers(model, inst):
     """Present-value cumulative output multipliers at each horizon (output and
@@ -93,10 +99,11 @@ def multipliers(model, inst):
     return out
 
 
-def main():
-    # Compute every (type, region) cell.
+def emit(groups, csv_out, tex_out, label):
+    """Compute every (type, region) cell for one shock set and write its CSV + TeX."""
+    print(f"--- {label} ---")
     data = []   # (stype, region, model, mult-or-None)
-    for stype, regions in GROUPS:
+    for stype, regions in groups:
         for region, model, inst in regions:
             mult = multipliers(model, inst) if model else None
             data.append((stype, region, model, mult))
@@ -104,14 +111,14 @@ def main():
                      if mult else "  (n/a)")
             print(f"  {stype:26s} {region:20s} {shown}")
 
-    CSV_OUT.parent.mkdir(parents=True, exist_ok=True)
-    with CSV_OUT.open("w", encoding="utf-8") as f:
+    csv_out.parent.mkdir(parents=True, exist_ok=True)
+    with csv_out.open("w", encoding="utf-8") as f:
         f.write("category,region,model," + ",".join(f"mult_{h}y" for h in HORIZONS) + "\n")
         for stype, region, model, mult in data:
             cells = (",".join(f"{mult[h]:.4f}" for h in HORIZONS)
                      if mult else ",".join([""] * len(HORIZONS)))
             f.write(f"{stype},{region},{model or ''},{cells}\n")
-    print(f"  Wrote {CSV_OUT.name}")
+    print(f"  Wrote {csv_out.name}")
 
     ncol = len(HORIZONS)
     header = "    Present-value multiplier & " + " & ".join(f"{h}y" for h in HORIZONS) + " \\\\"
@@ -124,7 +131,7 @@ def main():
         header,
         "    \\midrule",
     ]
-    for gi, (stype, regions) in enumerate(GROUPS):
+    for gi, (stype, regions) in enumerate(groups):
         if gi > 0:
             lines.append("    \\addlinespace[0.3em]")
         lines.append(f"    \\multicolumn{{{ncol + 1}}}{{l}}{{\\textit{{{stype}}}}} \\\\")
@@ -135,8 +142,13 @@ def main():
                      if mult else " & ".join(["--"] * ncol))
             lines.append(f"    \\quad {region} & {cells} \\\\")
     lines += ["    \\bottomrule", "\\end{tabular}%", "}"]
-    TEX_OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"  Wrote {TEX_OUT.name}")
+    tex_out.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"  Wrote {tex_out.name}")
+
+
+def main():
+    emit(GROUPS,      CSV_OUT,      TEX_OUT,      "AR(1), persistence 0.9")
+    emit(PERM_GROUPS, CSV_OUT_PERM, TEX_OUT_PERM, "Permanent shocks")
 
 
 if __name__ == "__main__":
