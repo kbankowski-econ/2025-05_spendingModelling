@@ -16,18 +16,22 @@ spread + default probability, public-capital LoMs (`Kg`,`Kge`), government budge
 tax rules, transfer rule, debt-to-GDP, gross-output wedge, price dispersion, and the
 technology-creation eq (Z) (reconciled earlier: loadings, lagged R&D).
 
-## ⚠ Timing-convention mismatch (paper writes stocks contemporaneously; model uses predetermined/lagged stocks)
-A pervasive difference — not an error in the model (it is internally consistent with
-predetermined stocks), but the paper's dating does not match the code. A replicator
-comparing them would be misled. Needs an author decision on which dating is intended
-(then fix the other side):
+## ⚠ Timing-convention mismatch — FIXED 2026-07 (paper aligned to the model)
+The model uses predetermined (lagged) stocks; the paper wrote some contemporaneously.
+**Fixed in the paper** (paper-only, no model change) so all stocks entering production
+and the FOCs are predetermined, matching the code:
 
-1. **Production** (eq. 242): paper $A_t$, model `A(-1)`. (Capital $K_{t-1}$, $K^{GI}_{t-1}$ already match — both lagged.)
-2. **Effective labor** (212/244): paper $N_t = H_t L_t$, model `N = Lab*H(-1)`.
-3. **Labor FOC** (230): paper $H_t$, model `H(-1)` (follows from 2).
-4. **HC accumulation** (224) and the **schooling FOC** (231): paper $K_t^{GE}$, model `Kge(-1)`; the relative timing of $E$ and $K^{GE}$ also differs (paper same period; model `E` with `Kge(-1)`).
-5. **Adoption** (eq. 555): paper $q_t\phi(Z_t-A_t)+\phi A_t$, model `q*phi*(Z(-1)-A(-1))+phi*A(-1)` (model pairs current `q` with lagged `Z`,`A`).
-6. **Adoption value functions** $\mathcal V$, $\mathcal J$, and the $S$-FOC (556–558): paper detrends with $A_t/A_{t+1}$, model with `A(-1)/A` (= $A_{t-1}/A_t$).
+1. **Production** (eq. 2.10): $A_t \to A_{t-1}$. (Capital $K_{t-1}$, $K^{GI}_{t-1}$ already lagged.)
+2. **Effective labor** (prose 212/244): $N_t = H_t L_t \to N_t = H_{t-1}L_t$.
+3. **Labor FOC** (eq. 2.6): $w_t H_t \to w_t H_{t-1}$.
+4. **HC accumulation** (eq. 2.4) → $H_t = (1-\delta^h)H_{t-1} + \chi E_t^\gamma (K_{t-1}^{GE}/\Lambda_{t-1})^\mu$; **schooling FOC** (eq. 2.7) $K_t^{GE} \to K_{t-1}^{GE}$.
+5. **Adoption** (eq. A and the stationarized eq. Astat): $\to A_t = q_t\phi(Z_{t-1}-A_{t-1})+\phi A_{t-1}$.
+6. **Adoption value functions** $\mathcal V$, $\mathcal J$, $S$-FOC: detrending ratio $A_t/A_{t+1} \to A_{t-1}/A_t$.
+
+Verified each against `model_block.modpart`; the paper's equation block now matches
+the code line-for-line. The only intentional presentation difference that remains is
+the `g`-detrending (paper main text in levels, model/appendix stationarized), which
+the appendix states.
 
 ## ⚠ Substantive discrepancies (beyond dating) — FIXED 2026-07
 **Items 7 and 8 fixed in the paper** (commit below) to match the model; no model change.

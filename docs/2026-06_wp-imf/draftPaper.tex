@@ -209,7 +209,7 @@ The flow budget constraint, in real terms, is
 \begin{equation} \label{eq:hhbudget}
     \left(1+\tau_t^{c}\right) C_t + I_t + D_t = \left(1-\tau_t^{w}\right) w_t N_t + r_t^{k} K_{t-1} + \frac{R_{t-1}}{\Pi_t} D_{t-1} + T_t + \Omega_t,
 \end{equation}
-where $\tau_t^{c}$ and $\tau_t^{w}$ are the consumption and labor income tax rates, $I_t$ is private investment, $D_t$ is real holdings of government debt paying the gross return $R_{t-1}$, $\Pi_t$ is gross inflation, $w_t$ is the real wage, $N_t \equiv H_t L_t$ is effective labor, $r_t^{k}$ is the rental rate of private capital $K_t$, $T_t$ are lump-sum transfers, and $\Omega_t$ are profits rebated by firms and technology adopters.
+where $\tau_t^{c}$ and $\tau_t^{w}$ are the consumption and labor income tax rates, $I_t$ is private investment, $D_t$ is real holdings of government debt paying the gross return $R_{t-1}$, $\Pi_t$ is gross inflation, $w_t$ is the real wage, $N_t \equiv H_{t-1} L_t$ is effective labor (the human-capital stock enters predetermined), $r_t^{k}$ is the rental rate of private capital $K_t$, $T_t$ are lump-sum transfers, and $\Omega_t$ are profits rebated by firms and technology adopters.
 
 Let $\lambda_t$ denote the marginal utility of consumption. Optimal choices over consumption, debt, and private capital imply
 \begin{align}
@@ -221,14 +221,14 @@ where $\delta$ is the depreciation rate of private capital.
 
 The novel block concerns human capital. Private human capital $H_t$ evolves according to
 \begin{equation} \label{eq:humancapital}
-    H_{t+1} = \left(1 - \delta^{h}\right) H_t + \chi \left(E_t\right)^{\gamma} \left(\frac{K_t^{GE}}{\Lambda_t}\right)^{\mu},
+    H_{t} = \left(1 - \delta^{h}\right) H_{t-1} + \chi \left(E_t\right)^{\gamma} \left(\frac{K_{t-1}^{GE}}{\Lambda_{t-1}}\right)^{\mu},
 \end{equation}
 where $\delta^{h}$ is the depreciation rate of human capital, $\chi$ is a scale parameter, $K_t^{GE}$ is the stock of public human capital (e.g., schools and hospitals), and $\Lambda_t$ scales public human capital to keep the relationship consistent with balanced growth.
 The elasticities $\gamma$ and $\mu$ govern the response of human capital formation to the household's time input and to the public human capital stock, respectively.
 Letting $\lambda_t^{H}$ be the shadow value of human capital, the choices of labor and education time satisfy
 \begin{align}
-    \omega \left(L_t + E_t\right)^{\varphi} &= \lambda_t \left(1-\tau_t^{w}\right) w_t H_t, \label{eq:labor}\\
-    \omega \left(L_t + E_t\right)^{\varphi} &= \lambda_t^{H}\, \chi \gamma \left(E_t\right)^{\gamma-1} \left(\frac{K_t^{GE}}{\Lambda_t}\right)^{\mu}, \label{eq:edutime}\\
+    \omega \left(L_t + E_t\right)^{\varphi} &= \lambda_t \left(1-\tau_t^{w}\right) w_t H_{t-1}, \label{eq:labor}\\
+    \omega \left(L_t + E_t\right)^{\varphi} &= \lambda_t^{H}\, \chi \gamma \left(E_t\right)^{\gamma-1} \left(\frac{K_{t-1}^{GE}}{\Lambda_{t-1}}\right)^{\mu}, \label{eq:edutime}\\
     \lambda_t^{H} &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\left(1-\tau_{t+1}^{w}\right) w_{t+1} L_{t+1} + \lambda_{t+1}^{H}\left(1-\delta^{h}\right)\right]. \label{eq:hcvalue}
 \end{align}
 Equation~\eqref{eq:labor} is the standard labor-supply condition; equation~\eqref{eq:edutime} equates the marginal disutility of time to the value of the human capital it builds; and equation~\eqref{eq:hcvalue} prices human capital by its discounted contribution to future labor income.
@@ -239,9 +239,9 @@ Equation~\eqref{eq:labor} is the standard labor-supply condition; equation~\eqre
 
 \paragraph{Intermediate goods.} A continuum of monopolistically competitive firms produces the varieties. Output of a firm is given by the aggregate production function
 \begin{equation} \label{eq:production}
-    Y_t = A_t^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha} \left(K_{t-1}^{GI}\right)^{\alpha_G} - \Theta,
+    Y_t = A_{t-1}^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha} \left(K_{t-1}^{GI}\right)^{\alpha_G} - \Theta,
 \end{equation}
-where $A_t$ is the stock of adopted technologies, $K_{t-1}$ is private capital, $N_t = H_t L_t$ is effective labor, $K_{t-1}^{GI}$ is the stock of public infrastructure capital, which augments private production as a positive externality, and $\Theta$ is a fixed cost.
+where $A_{t-1}$ is the stock of adopted technologies, $K_{t-1}$ is private capital, $N_t = H_{t-1} L_t$ is effective labor, $K_{t-1}^{GI}$ is the stock of public infrastructure capital, which augments private production as a positive externality, and $\Theta$ is a fixed cost.
 The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{In \citet{Anzoateguietal2019} a single intermediate-goods elasticity of substitution sets both the markup and the returns to variety. Here the markup is governed separately by $\epsilon$; $\vartheta$ retains only the latter role, mapping the stock of adopted technologies into TFP through the love-of-variety term $A_t^{\vartheta-1}$.}
 Cost minimization implies a common real marginal cost $mc_t$ and the factor-demand conditions
 \begin{equation} \label{eq:factordemand}
@@ -267,7 +267,7 @@ Second, public R\&D spending $G_t^{RD}$ contributes directly to creation:
 where only the productive fraction $\left(1-e_{t-1}^{GRD}\right)$ of (lagged) R\&D spending drives innovation: $e_t^{GRD}$ is the R\&D inefficiency wedge, equal to its steady-state value $e^{GRD}$ in the baseline and reduced when the R\&D efficiency gap is closed (Section~\ref{sec:results}). The raw spending $G_t^{RD}$ enters the government budget constraint~\eqref{eq:govbudget}. The coefficients $\alpha_{HA}$ and $\alpha_{RD}$ are the per-period loadings reported in Table~\ref{tab:parameters}; the implied long-run elasticities of created technology are $\alpha_{HA}/(1-\rho_A)$ and $\alpha_{RD}/(1-\rho_A)$.
 To capture the lag between creation and adoption, the stock of adopted technologies evolves as
 \begin{equation} \label{eq:A}
-    A_{t+1} = q_t\, \phi \left[Z_t - A_t\right] + \phi A_t,
+    A_{t} = q_t\, \phi \left[Z_{t-1} - A_{t-1}\right] + \phi A_{t-1},
 \end{equation}
 where $\phi$ is the survival rate of technologies and the time-varying probability of adoption is $q_t = q_0 \left(S_t/\Lambda_t\right)^{\varsigma}$, increasing in adopters' real expenditure $S_t$ scaled by the trend $\Lambda_t$.
 Competitive adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, equating the marginal cost of adoption effort to its discounted marginal value.
@@ -552,10 +552,10 @@ Competitive adopters value an adopted technology at $\mathcal{V}_t$ and an unado
 \begin{align}
     \mathit{SDF}_{t+1} &= \beta\, \frac{C_t}{C_{t+1}}, \label{eq:sdf}\\
     q_t &= q_0\, \left(S_t\right)^{\varsigma}, \label{eq:probadopt}\\
-    g\, A_{t+1} &= q_t\, \phi\left(Z_t - A_t\right) + \phi A_t, \label{eq:Astat}\\
-    \mathcal{V}_t &= \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \mathcal{V}_{t+1}\, \frac{A_{t}}{A_{t+1}}\, \frac{1}{g}\right], \label{eq:VA}\\
-    \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t}}{A_{t+1}}\, \frac{1}{g}\left(q_t\, \mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right], \label{eq:JZ}\\
-    S_t &= \varsigma\, q_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{1}{g}\, \frac{A_{t}}{A_{t+1}}\left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right], \label{eq:SAfoc}\end{align}
+    g\, A_{t} &= q_t\, \phi\left(Z_{t-1} - A_{t-1}\right) + \phi A_{t-1}, \label{eq:Astat}\\
+    \mathcal{V}_t &= \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \mathcal{V}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{g}\right], \label{eq:VA}\\
+    \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{g}\left(q_t\, \mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right], \label{eq:JZ}\\
+    S_t &= \varsigma\, q_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{1}{g}\, \frac{A_{t-1}}{A_{t}}\left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right], \label{eq:SAfoc}\end{align}
 where $\mu^{p}$ is the steady-state gross markup of intermediate-goods producers. Equation~\eqref{eq:Astat} is the stationarized counterpart of equation~\eqref{eq:A}.
 
 \subsection{Fiscal Rules}
