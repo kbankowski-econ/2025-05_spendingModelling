@@ -262,9 +262,9 @@ The creation of new technologies depends on two factors.
 First, higher human capital fosters innovation, reflecting a learning-by-doing channel as in \citet{ChangGomesSchorfheide2002}.
 Second, public R\&D spending $G_t^{RD}$ contributes directly to creation:
 \begin{equation} \label{eq:Z}
-    \log\!\left(\frac{Z_t}{Z^{SS}}\right) = \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right) + \left(1 - \rho_A\right)\left(\alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) + \alpha_{RD} \log\!\left(\frac{\left(1-e_t^{GRD}\right) G_t^{RD}}{\left(1-e^{GRD}\right) G^{RD,SS}}\right)\right),
+    \log\!\left(\frac{Z_t}{Z^{SS}}\right) = \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right) + \alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) + \alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) G_{t-1}^{RD}}{\left(1-e^{GRD}\right) G^{RD,SS}}\right),
 \end{equation}
-where only the productive fraction $\left(1-e_t^{GRD}\right)$ of R\&D spending drives innovation: $e_t^{GRD}$ is the R\&D inefficiency wedge, equal to its steady-state value $e^{GRD}$ in the baseline and reduced when the R\&D efficiency gap is closed (Section~\ref{sec:results}). The raw spending $G_t^{RD}$ enters the government budget constraint~\eqref{eq:govbudget}.
+where only the productive fraction $\left(1-e_{t-1}^{GRD}\right)$ of (lagged) R\&D spending drives innovation: $e_t^{GRD}$ is the R\&D inefficiency wedge, equal to its steady-state value $e^{GRD}$ in the baseline and reduced when the R\&D efficiency gap is closed (Section~\ref{sec:results}). The raw spending $G_t^{RD}$ enters the government budget constraint~\eqref{eq:govbudget}. The coefficients $\alpha_{HA}$ and $\alpha_{RD}$ are the per-period loadings reported in Table~\ref{tab:parameters}; the implied long-run elasticities of created technology are $\alpha_{HA}/(1-\rho_A)$ and $\alpha_{RD}/(1-\rho_A)$.
 To capture the lag between creation and adoption, the stock of adopted technologies evolves as
 \begin{equation} \label{eq:A}
     A_{t+1} = q_t\, \phi \left[Z_t - A_t\right] + \phi A_t,
