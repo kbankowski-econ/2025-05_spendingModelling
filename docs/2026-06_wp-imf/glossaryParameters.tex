@@ -32,41 +32,36 @@
 15 & $\rho_{RG}$ & Government-bond-rate persistence (maturity) & \texttt{rho\_RG} \\
 16 & $\rho_{\tau c}$ & Consumption-tax persistence & \texttt{rho\_tauc} \\
 17 & $\tau^c$ & Steady-state consumption-tax rate & \texttt{taucss} \\
-18 & -- & Consumption-tax response to the output gap & \texttt{gamma\_y\_tauc} \\
-19 & $\gamma^{\tau c}_d$ & Consumption-tax response to debt & \texttt{gamma\_d\_tauc} \\
-20 & $\rho_{\tau w}$ & Labor-tax persistence & \texttt{rho\_tauw} \\
-21 & $\tau^w$ & Steady-state labor-tax rate & \texttt{tauwss} \\
-22 & -- & Labor-tax response to the output gap & \texttt{gamma\_y\_tauw} \\
-23 & $\gamma^{\tau w}_d$ & Labor-tax response to debt & \texttt{gamma\_d\_tauw} \\
-24 & $d^*$ & Steady-state debt-to-GDP ratio & \texttt{byss} \\
-25 & -- & Trend-growth shock persistence & \texttt{rho\_g} \\
-26 & $g$ & Steady-state gross growth & \texttt{gss} \\
-27 & $\eta_1$ & Sovereign-default parameter 1 & \texttt{eta1} \\
-28 & $\eta_2$ & Sovereign-default parameter 2 & \texttt{eta2} \\
-29 & $\Delta$ & Debt feedback on the borrowing rate & \texttt{Deltacost} \\
-30 & -- & Infrastructure investment, share of GDP & \texttt{Igiy} \\
-31 & -- & Government consumption, share of GDP & \texttt{Gcy} \\
-32 & -- & Government-consumption persistence & \texttt{rho\_Gc} \\
-33 & -- & Infrastructure-investment persistence & \texttt{rho\_Igi} \\
-34 & $\gamma^{T}_d$ & Transfer response to debt & \texttt{gamma\_d\_trans} \\
-35 & $\rho_T$ & Transfer persistence & \texttt{rho\_trans} \\
-36 & $e^{GI}$ & Steady-state infrastructure efficiency gap & \texttt{eGI\_ss} \\
-37 & $\delta^h$ & Human-capital depreciation & \texttt{deltaH} \\
-38 & $\gamma$ & Human-capital elasticity, time input & \texttt{gamma} \\
-39 & $\mu$ & Human-capital elasticity, public stock & \texttt{mu} \\
-40 & $e^{GE}$ & Steady-state human-capital efficiency gap & \texttt{eGE\_ss} \\
-41 & -- & Human-capital investment, share of GDP & \texttt{Igey} \\
-42 & -- & Human-capital-spending persistence & \texttt{rho\_Ige} \\
-43 & $\alpha_{RD}$ & Public-R\&D loading in tech creation & \texttt{alphaRD} \\
-44 & -- & R\&D spending, share of GDP & \texttt{Grdy} \\
-45 & -- & Steady-state gross markup & \texttt{markupss} \\
-46 & $\phi$ & Survival rate of adopted technologies & \texttt{phi} \\
-47 & $\vartheta$ & Love-of-variety / TFP exponent & \texttt{vartheta} \\
-48 & -- & Net trend growth of technology & \texttt{gammaa} \\
-49 & -- & Steady-state adoption probability & \texttt{qss} \\
-50 & $\varsigma$ & Adoption-probability elasticity & \texttt{varsigma} \\
-51 & $\alpha_{HA}$ & Human-capital loading in tech creation & \texttt{alphaHA} \\
-52 & -- & R\&D-process shock persistence & \texttt{rhoshockchi} \\
-53 & $\rho_A$ & Persistence of created technology & \texttt{rho\_A} \\
-54 & $e^{GRD}$ & Steady-state R\&D efficiency gap & \texttt{eGRD\_ss} \\
+18 & $\gamma^{\tau c}_d$ & Consumption-tax response to debt & \texttt{gamma\_d\_tauc} \\
+19 & $\rho_{\tau w}$ & Labor-tax persistence & \texttt{rho\_tauw} \\
+20 & $\tau^w$ & Steady-state labor-tax rate & \texttt{tauwss} \\
+21 & $\gamma^{\tau w}_d$ & Labor-tax response to debt & \texttt{gamma\_d\_tauw} \\
+22 & $d^*$ & Steady-state debt-to-GDP ratio & \texttt{byss} \\
+23 & -- & Trend-growth shock persistence & \texttt{rho\_g} \\
+24 & $g$ & Steady-state gross growth & \texttt{gss} \\
+25 & $\eta_1$ & Sovereign-default parameter 1 & \texttt{eta1} \\
+26 & $\eta_2$ & Sovereign-default parameter 2 & \texttt{eta2} \\
+27 & $\Delta$ & Debt feedback on the borrowing rate & \texttt{Deltacost} \\
+28 & -- & Infrastructure investment, share of GDP & \texttt{Igiy} \\
+29 & -- & Government consumption, share of GDP & \texttt{Gcy} \\
+30 & $\gamma^{T}_d$ & Transfer response to debt & \texttt{gamma\_d\_trans} \\
+31 & $\rho_T$ & Transfer persistence & \texttt{rho\_trans} \\
+32 & $e^{GI}$ & Steady-state infrastructure efficiency gap & \texttt{eGI\_ss} \\
+33 & $\delta^h$ & Human-capital depreciation & \texttt{deltaH} \\
+34 & $\gamma$ & Human-capital elasticity, time input & \texttt{gamma} \\
+35 & $\mu$ & Human-capital elasticity, public stock & \texttt{mu} \\
+36 & $e^{GE}$ & Steady-state human-capital efficiency gap & \texttt{eGE\_ss} \\
+37 & -- & Human-capital investment, share of GDP & \texttt{Igey} \\
+38 & $\alpha_{RD}$ & Public-R\&D loading in tech creation & \texttt{alphaRD} \\
+39 & -- & R\&D spending, share of GDP & \texttt{Grdy} \\
+40 & -- & Steady-state gross markup & \texttt{markupss} \\
+41 & $\phi$ & Survival rate of adopted technologies & \texttt{phi} \\
+42 & $\vartheta$ & Love-of-variety / TFP exponent & \texttt{vartheta} \\
+43 & -- & Net trend growth of technology & \texttt{gammaa} \\
+44 & -- & Steady-state adoption probability & \texttt{qss} \\
+45 & $\varsigma$ & Adoption-probability elasticity & \texttt{varsigma} \\
+46 & $\alpha_{HA}$ & Human-capital loading in tech creation & \texttt{alphaHA} \\
+47 & -- & R\&D-process shock persistence & \texttt{rhoshockchi} \\
+48 & $\rho_A$ & Persistence of created technology & \texttt{rho\_A} \\
+49 & $e^{GRD}$ & Steady-state R\&D efficiency gap & \texttt{eGRD\_ss} \\
 \end{longtable}

@@ -13,25 +13,20 @@ gamma_y=0.25;
 Piss=1;
 rho_RG=0;
 rho_tauc=0.9;
-gamma_y_tauc=0;
 gamma_d_tauc=0.0;
 rho_tauw=0.9;
-gamma_y_tauw=0;
 gamma_d_tauw=0;
 rho_g= 0.24 ;
 eta1=-18.12;
 eta2=3.12;
 Deltacost=0;  % Shutting down the feedback of debt on rate
 
-rho_Gc=0.9;
-rho_Igi=0.9;
 gamma_d_trans=0.01;
 rho_trans=0;
 
 deltaH=0.025;
 gamma=0.5;
 
-rho_Ige=0.9;
 
 markupss=1.18;
 phi=1-0.08/4;   % obsolescence rate: 0.08/4

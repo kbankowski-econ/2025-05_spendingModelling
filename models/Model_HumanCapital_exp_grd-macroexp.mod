@@ -117,11 +117,9 @@ Piss            % SS of gross inflation
 rho_RG          % Persistence of goverment bond rate capturing the maturity (1/(1-rho_RG)) s the average maturity
 rho_tauc        % AR(1) of consumption tax rate
 taucss          % Consumption tax rate SS
-gamma_y_tauc    % Response of consumption tax to OG
 gamma_d_tauc    % Response of consumption tax to debt
 rho_tauw        % AR(1) of income tax rate
 tauwss          % Income tax rate SS
-gamma_y_tauw    % Response of consumption tax to OG
 gamma_d_tauw    % Response of consumption tax to debt
 byss            % Steady state of debt
 rho_g          % AR(1) of growth shock 
@@ -131,8 +129,6 @@ eta2            % Prof default param 2
 Deltacost       % Feed back of debt on rate
 Igiy             % Public investment/GDP
 Gcy             % Public consumption/GDP
-rho_Gc          % AR(1) process for public consumption
-rho_Igi          % AR(1) process for public investment  
 gamma_d_trans   % Response of lump sum transfer to debt
 rho_trans
 eGI_ss          % SS gap in public infrastructure efficiency (e^GI)
@@ -141,7 +137,6 @@ gamma             % Effectiveness of education investment.
 mu          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
 eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
-rho_Ige         % Persistence of human-related spending
 alphaRD         % R&D on TFP
 Grdy           % share of expenditure for R&D
 markupss        % SS markup of Intermediate goods 
@@ -170,22 +165,17 @@ gamma_y=0.25;
 Piss=1;
 rho_RG=0;
 rho_tauc=0.9;
-gamma_y_tauc=0;
 gamma_d_tauc=0.0;
 rho_tauw=0.9;
-gamma_y_tauw=0;
 gamma_d_tauw=0;
 rho_g= 0.24 ;
 eta1=-18.12;
 eta2=3.12;
 Deltacost=0;  % Shutting down the feedback of debt on rate
-rho_Gc=0.9;
-rho_Igi=0.9;
 gamma_d_trans=0.01;
 rho_trans=0;
 deltaH=0.025;
 gamma=0.5;
-rho_Ige=0.9;
 markupss=1.18;
 phi=1-0.08/4;   % obsolescence rate: 0.08/4
 vartheta=1.35;

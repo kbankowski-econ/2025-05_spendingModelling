@@ -47,10 +47,14 @@ comparing them would be misled. Needs an author decision on which dating is inte
    $S^{R}$ (the steady-state R&D-development resource, = model `Srd`), with $\left(Z_{t-1}/A_{t-1}-1\right)S_t$
    the adoption cost; glossary maps `Srd` → $S^{R}$ (was "--").
 
-## 🧹 Dead parameters (declared, never used in any equation) — candidates for deletion
-`rho_Gc`, `rho_Igi`, `rho_Ige` (=0.9 in the macros, but the instrument equations are
-`X = Xss + ydss*epsi_X`, with no persistence term). Same situation as the already-deleted
-`alphaZZ1`/`rho_AAt`. (These are already shown "--" in the glossary.)
+## 🧹 Dead parameters — DELETED 2026-07
+Removed 5 declared-but-never-used parameters (a full scan of all equation/SS files
+confirmed none are referenced): `rho_Gc`, `rho_Igi`, `rho_Ige` (the instrument
+equations are `X = Xss + ydss*epsi_X`, no persistence term) and `gamma_y_tauc`,
+`gamma_y_tauw` (the tax rules respond to debt only, not the output gap). Deleted from
+`declare_all.macro`, `declare_all_ext.macro`, `parameters_common.macro`, and the glossary;
+re-ran 44 models (values identical). Parameter count 54 → 49. (Same situation as the
+earlier `alphaZZ1`/`rho_AAt` deletions.)
 
 ## Direction
 The timing items (1–6) need the author's call on the intended dating; the cleanest

@@ -109,11 +109,9 @@
 , {"name":"rho_RG", "texName":"rho\\_RG", "longName":"rho_RG"}
 , {"name":"rho_tauc", "texName":"rho\\_tauc", "longName":"rho_tauc"}
 , {"name":"taucss", "texName":"taucss", "longName":"taucss"}
-, {"name":"gamma_y_tauc", "texName":"gamma\\_y\\_tauc", "longName":"gamma_y_tauc"}
 , {"name":"gamma_d_tauc", "texName":"gamma\\_d\\_tauc", "longName":"gamma_d_tauc"}
 , {"name":"rho_tauw", "texName":"rho\\_tauw", "longName":"rho_tauw"}
 , {"name":"tauwss", "texName":"tauwss", "longName":"tauwss"}
-, {"name":"gamma_y_tauw", "texName":"gamma\\_y\\_tauw", "longName":"gamma_y_tauw"}
 , {"name":"gamma_d_tauw", "texName":"gamma\\_d\\_tauw", "longName":"gamma_d_tauw"}
 , {"name":"byss", "texName":"byss", "longName":"byss"}
 , {"name":"rho_g", "texName":"rho\\_g", "longName":"rho_g"}
@@ -123,8 +121,6 @@
 , {"name":"Deltacost", "texName":"Deltacost", "longName":"Deltacost"}
 , {"name":"Igiy", "texName":"Igiy", "longName":"Igiy"}
 , {"name":"Gcy", "texName":"Gcy", "longName":"Gcy"}
-, {"name":"rho_Gc", "texName":"rho\\_Gc", "longName":"rho_Gc"}
-, {"name":"rho_Igi", "texName":"rho\\_Igi", "longName":"rho_Igi"}
 , {"name":"gamma_d_trans", "texName":"gamma\\_d\\_trans", "longName":"gamma_d_trans"}
 , {"name":"rho_trans", "texName":"rho\\_trans", "longName":"rho_trans"}
 , {"name":"eGI_ss", "texName":"eGI\\_ss", "longName":"eGI_ss"}
@@ -133,7 +129,6 @@
 , {"name":"mu", "texName":"mu", "longName":"mu"}
 , {"name":"eGE_ss", "texName":"eGE\\_ss", "longName":"eGE_ss"}
 , {"name":"Igey", "texName":"Igey", "longName":"Igey"}
-, {"name":"rho_Ige", "texName":"rho\\_Ige", "longName":"rho_Ige"}
 , {"name":"alphaRD", "texName":"alphaRD", "longName":"alphaRD"}
 , {"name":"Grdy", "texName":"Grdy", "longName":"Grdy"}
 , {"name":"markupss", "texName":"markupss", "longName":"markupss"}
@@ -331,22 +326,17 @@
 {"statementName": "param_init", "name": "Piss", "value": "1"}, 
 {"statementName": "param_init", "name": "rho_RG", "value": "0"}, 
 {"statementName": "param_init", "name": "rho_tauc", "value": "0.9"}, 
-{"statementName": "param_init", "name": "gamma_y_tauc", "value": "0"}, 
 {"statementName": "param_init", "name": "gamma_d_tauc", "value": "0.0"}, 
 {"statementName": "param_init", "name": "rho_tauw", "value": "0.9"}, 
-{"statementName": "param_init", "name": "gamma_y_tauw", "value": "0"}, 
 {"statementName": "param_init", "name": "gamma_d_tauw", "value": "0"}, 
 {"statementName": "param_init", "name": "rho_g", "value": "0.24"}, 
 {"statementName": "param_init", "name": "eta1", "value": "(-18.12)"}, 
 {"statementName": "param_init", "name": "eta2", "value": "3.12"}, 
 {"statementName": "param_init", "name": "Deltacost", "value": "0"}, 
-{"statementName": "param_init", "name": "rho_Gc", "value": "0.9"}, 
-{"statementName": "param_init", "name": "rho_Igi", "value": "0.9"}, 
 {"statementName": "param_init", "name": "gamma_d_trans", "value": "0.01"}, 
 {"statementName": "param_init", "name": "rho_trans", "value": "0"}, 
 {"statementName": "param_init", "name": "deltaH", "value": "0.025"}, 
 {"statementName": "param_init", "name": "gamma", "value": "0.5"}, 
-{"statementName": "param_init", "name": "rho_Ige", "value": "0.9"}, 
 {"statementName": "param_init", "name": "markupss", "value": "1.18"}, 
 {"statementName": "param_init", "name": "phi", "value": "0.98"}, 
 {"statementName": "param_init", "name": "vartheta", "value": "1.35"}, 
