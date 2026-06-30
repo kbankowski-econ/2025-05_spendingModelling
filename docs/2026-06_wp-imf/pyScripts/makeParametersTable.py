@@ -16,6 +16,7 @@ recalibration of any of them flows into the table automatically:
     rho_A   <- rho_ZZRD    (AR(1) coefficient, technology stock)
     alpha_HA <- alphaHA    (HC loading in tech creation; EMDE "--", channel off)
     alpha_RD <- alphaRD    (R&D loading in tech creation; EMDE "--", channel off)
+    phi     <- phiob       (survival rate of adopted technologies, 1 - 0.08/4)
     e_GI    <- eGI_ss      (inefficiency, infrastructure investment)
     e_GE    <- eGE_ss      (inefficiency, human capital investment)
     e_GRD   <- eGRD_ss     (inefficiency, public R&D; EMDE shown "--", channel off)
@@ -37,9 +38,9 @@ of 0.42 -> 0.41 and the AE e_GRD of 0.41 -> 0.40, recalibrated to the 0.399 data
 median). The EMDE e_GRD is reported "--" because the R&D channel is shut down there
 (alphaRD=0), even though the model still carries eGRD_ss=0.2.
 
-The remaining literal rows are curated/rounded presentation values: survival rate
-0.97 vs code phiob=0.98; EMDE adoption elasticity shown at the AE value rather than
-the raw EMDE code value; q_0 has no standalone param.
+The remaining literal rows are curated/rounded presentation values: EMDE adoption
+elasticity (varsigma) shown at the AE value rather than the raw EMDE code value;
+q_0 has no standalone param.
 
 Writes (\\input by draftPaper.tex):
   ../parametersTable.tex
@@ -90,7 +91,7 @@ def build_parameters():
         (r"$\alpha_{HA}$",           "Human capital loading, innovation",       fmt(ae["alphaHA"], 2),        "--"),      # READ AE: alphaHA (per-quarter loading); EMDE "--" (channel off)
         (r"$\alpha_{RD}$",           r"Public R\&D loading, innovation",        fmt(ae["alphaRD"], 4),        "--"),      # READ AE: alphaRD = 0.09*(1-rho_A); EMDE "--" (channel off)
         (r"$\rho_A$",                "AR(1) coefficient, technology stock",     fmt(ae["rho_ZZRD"], 2),       fmt(em["rho_ZZRD"], 2)),   # READ: rho_ZZRD
-        (r"$\phi$",                  "Survival rate of adopted technologies",   "0.97",                       "0.97"),    # curated: vs code phiob=0.98
+        (r"$\phi$",                  "Survival rate of adopted technologies",   fmt(ae["phiob"], 2),          fmt(em["phiob"], 2)),      # READ: phiob = 1 - 0.08/4 (8%/yr obsolescence)
         (r"$e^{GI}$",                "Inefficiency, infrastructure investment", fmt(ae["eGI_ss"], 2),         fmt(em["eGI_ss"], 2)),     # READ: eGI_ss
         (r"$e^{GE}$",                "Inefficiency, human capital investment",  fmt(ae["eGE_ss"], 2),         fmt(em["eGE_ss"], 2)),     # READ: eGE_ss
         (r"$e^{GRD}$",               r"Inefficiency, public R\&D spending",     fmt(ae["eGRD_ss"], 2),        "--"),      # READ AE: eGRD_ss; EMDE "--" (R&D channel off)
