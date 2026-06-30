@@ -26,31 +26,34 @@ Note: `phi`/`phiob` were swapped carefully (`phi`→`varphi` first, then `phiob`
 The paper prose uses the Greek symbols (unchanged), so no draft-text edit was needed.
 `alpha`/`gamma` shadow MATLAB builtins but the rename solves cleanly (standard DSGE usage).
 
-## Decided — applied in the glossary; model + draft propagation PENDING
+## DONE — Redundant trailing `t`: applied to the MODEL, glossary, varDict, and scripts
 
-Redundant trailing `t` (mirrored the paper time subscript; no other model variable carries one):
+Renamed in the model source (declares, `model_block(_simple).modpart`, the three
+templates, `Steady_states_solution.m`), in `+environment/csvFiles/varDict.csv`, and
+in the export/plot scripts (`runSimulExport.m`, `runPlots.m`,
+`investigateContributions.m`, `plotStandardShocksAE{,Perm}.py`, `plotSimplifiedGcAE.py`)
+and the glossary. Re-ran all 44 models (rank condition verified) and re-exported;
+values **identical** (pure rename). `figureNumbers` columns renamed (`…___AAt` → `…___A`).
 
 | paper | concept | old model code | new model code |
 |---|---|---|---|
 | $Y_t$ | gross output ($Y_t = v_t^p Y_t^d$) | `yt` | `y` |
 | $D_t$ | public debt | `Dt` | `D` |
-| $A_t$ | adopted technology | `AAt` | `A` (also drops doubled `AA`) |
+| $A_t$ | adopted technology | `AAt` | `A` |
 | $S_t$ | adoption expenditure | `St` | `S` |
 | $\mathcal{J}_t$ | value of unadopted tech | `JZt` | `J` |
-| $\vartheta$ | love-of-variety exponent (constant) | `varthetaat` | `vartheta` |
+| — | effective labor for R&D | `SSt` | `Srd` (not `SS` — clashes with `*ss`) |
+| $\chi_t$ | R&D-process disturbance | `shockchit` | `shockchi` (also `shockchitss`→`shockchiss`) |
+| $\vartheta$ | love-of-variety exponent | `varthetaat` | `vartheta` |
 | $\varepsilon_t^{\chi}$ | R&D-process shock | `epsi_shockchit` | `epsi_shockchi` |
 | $\rho_\chi$ | R&D-process shock persistence | `rhoshockchit` | `rhoshockchi` |
 
-Not in the glossary but to rename in the model during propagation:
-- `SSt` → `Srd` (effective labor for R&D). NOT `SS` — that clashes with the steady-state `*ss`/`STEADY_STATE` convention.
-- `shockchit` → `shockchi` (the R&D-process disturbance variable; drives the two renamed items above).
+Deleted: `rho_AAt` — dead parameter (`=0`, unused), removed from `declare_all.macro`,
+`declare_all_ext.macro`, `parameters_common.macro`, and the glossary. Parameter count
+56 → 55.
 
-Dead parameter to delete in the model pass:
-- `rho_AAt` — **declared but dead** (`rho_AAt=0.0` in parameters_common.macro, never
-  referenced in any equation). It is now listed in the (complete) glossary with a "--"
-  paper symbol and an "unused" note. Delete it from
-  `declare_all.macro`/`declare_all_ext.macro`/`parameters_common.macro` in the model pass.
-  (A rename to `rho_A` would also have collided with `rho_ZZRD` = paper $\rho_A$.)
+After this pass the model and the glossary match exactly with **no rename map**:
+endogenous 74, parameters 55, exogenous 16.
 
 ## Completeness
 

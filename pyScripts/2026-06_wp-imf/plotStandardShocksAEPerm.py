@@ -64,7 +64,7 @@ PANELS = [
     ("G",         "Government spending (G<sub>t</sub>)"),
     # Row 2 - production factors (percent deviation); the inputs to the output
     # equation Y = A^(vartheta-1) * Kg^aG * Kp^a * N^(1-a).
-    ("AAt",       "Adopted technology (A<sub>t</sub>)"),
+    ("A",         "Adopted technology (A<sub>t</sub>)"),
     ("Kg",        "Public infrastructure (K<sup>GI</sup><sub>t</sub>)"),
     ("Kp",        "Private capital (K<sub>t</sub>)"),
     ("N",         "Effective labor (N<sub>t</sub>)"),

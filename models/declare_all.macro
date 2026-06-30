@@ -12,10 +12,10 @@ x1              % Price setting 1
 x2              % Price setting 2
 mc              % Marginal cost
 PIstar          % Optimnal gross inflation 
-yt              % Production
+y              % Production
 Kg              % Public capital
 Rmp             % Policy rate
-Dt              % Debt level
+D              % Debt level
 by              % Debt/GDP
 Igi              % Public investment
 Gc              % Public consumption
@@ -56,19 +56,19 @@ muyH            % Adjuster so that E=0.1
 ygrowth          % econonmic growth
 eGE             % Gap in public human-capital efficiency (e^GE)
 eGI             % Gap in public infrastructure efficiency (e^GI)
-AAt             % Aoption Tech Process
+A             % Aoption Tech Process
 Grd            % R&D spending
 Grdss          % R&D spending SS
-shockchit       % R&D process productivity shock SS
+shockchi       % R&D process productivity shock SS
 SDF             % Stochastic discount factor
-St             % Effective labor demand for tech adoption
+S             % Effective labor demand for tech adoption
 VA              % Value of tech adoption
 probadopt       % Probability of adoption
-JZt             % Value of unadopted Intermediate
-SSt             % Effective labor demand for R&D development
+J             % Value of unadopted Intermediate
+Srd             % Effective labor demand for R&D development
 ZZRD            % R&D product
 kappaprob       % Parameter in the probability for scaling
-shockchitss     %% SS of shockchit 
+shockchiss     %% SS of shockchi 
 Ns              % Labor in R&D
 TFP             % TFP
 Grd_ydss_ratio
@@ -92,7 +92,7 @@ epsi_ige        % Public HC spending shock
 epsi_effge  
 epsi_eff
 epsi_grd       % Shock to R&D spending
-epsi_shockchit  % Shock to the R&D process 
+epsi_shockchi  % Shock to the R&D process 
 epsirhoadopt
 epsi_effcgrd
 epsiallo_ig        % shock to elasticity wrt public infrastructure capital
@@ -146,17 +146,16 @@ eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
 alphaZZ1        % Learning by doing off HHon ZZ
 rho_Ige         % Persistence of human-related spending
-rho_AAt         % Persistence of staionary tech process
 alphaRD         % R&D on TFP
 Grdy           % share of expenditure for R&D
 markupss        % SS markup of Intermediate goods 
 phi           % obsolescence rate: 0.08/4
-varthetaat      % Intermediate goods elasticity of substitution
+vartheta      % Intermediate goods elasticity of substitution
 gammaa         % Gorwth of tech
 probadoptss    % Probability of adoption
 varsigma      % Adoption elasticity
 alphaHA        % HC elasticity in tech creation (paper alpha_HA)
-rhoshockchit    % AR (1) or shock to r&D
+rhoshockchi    % AR (1) or shock to r&D
 rho_ZZRD
 eGRD_ss         % SS gap in public R&D efficiency (e^GRD)
 ;

@@ -20,10 +20,10 @@ x1              % Price setting 1
 x2              % Price setting 2
 mc              % Marginal cost
 PIstar          % Optimnal gross inflation 
-yt              % Production
+y              % Production
 Kg              % Public capital
 Rmp             % Policy rate
-Dt              % Debt level
+D              % Debt level
 by              % Debt/GDP
 Igi              % Public investment
 Gc              % Public consumption
@@ -63,19 +63,19 @@ muyH            % Adjuster so that E=0.1
 ygrowth          % econonmic growth
 eGE             % Gap in public human-capital efficiency (e^GE)
 eGI             % Gap in public infrastructure efficiency (e^GI)
-AAt             % Aoption Tech Process
+A             % Aoption Tech Process
 Grd            % R&D spending
 Grdss          % R&D spending SS
-shockchit       % R&D process productivity shock SS
+shockchi       % R&D process productivity shock SS
 SDF             % Stochastic discount factor
-St             % Effective labor demand for tech adoption
+S             % Effective labor demand for tech adoption
 VA              % Value of tech adoption
 probadopt       % Probability of adoption
-JZt             % Value of unadopted Intermediate
-SSt             % Effective labor demand for R&D development
+J             % Value of unadopted Intermediate
+Srd             % Effective labor demand for R&D development
 ZZRD            % R&D product
 kappaprob       % Parameter in the probability for scaling
-shockchitss     %% SS of shockchit 
+shockchiss     %% SS of shockchi 
 Ns              % Labor in R&D
 TFP             % TFP
 Grd_ydss_ratio
@@ -98,7 +98,7 @@ epsi_ige        % Public HC spending shock
 epsi_effge  
 epsi_eff
 epsi_grd       % Shock to R&D spending
-epsi_shockchit  % Shock to the R&D process 
+epsi_shockchi  % Shock to the R&D process 
 epsirhoadopt
 epsi_effcgrd
 epsiallo_ig        % shock to elasticity wrt public infrastructure capital
@@ -151,17 +151,16 @@ eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
 alphaZZ1        % Learning by doing off HHon ZZ
 rho_Ige         % Persistence of human-related spending
-rho_AAt         % Persistence of staionary tech process
 alphaRD         % R&D on TFP
 Grdy           % share of expenditure for R&D
 markupss        % SS markup of Intermediate goods 
 phi           % obsolescence rate: 0.08/4
-varthetaat      % Intermediate goods elasticity of substitution
+vartheta      % Intermediate goods elasticity of substitution
 gammaa         % Gorwth of tech
 probadoptss    % Probability of adoption
 varsigma      % Adoption elasticity
 alphaHA        % HC elasticity in tech creation (paper alpha_HA)
-rhoshockchit    % AR (1) or shock to r&D
+rhoshockchi    % AR (1) or shock to r&D
 rho_ZZRD
 eGRD_ss         % SS gap in public R&D efficiency (e^GRD)
 ;
@@ -197,12 +196,11 @@ deltaH=0.025;
 gamma=0.5;
 rho_Ige=0.9;
 alphaZZ1=0.2;
-rho_AAt=0.0;
 markupss=1.18;
 phi=1-0.08/4;   % obsolescence rate: 0.08/4
-varthetaat=1.35;
+vartheta=1.35;
 probadoptss=0.2/4;
-rhoshockchit=1;
+rhoshockchi=1;
 rho_ZZRD=0.79;
 % AE-specific calibration            (definition                                    | EM value)
 % production and growth
@@ -228,7 +226,7 @@ varsigma=0.8;                       % adoption elasticity                       
 eGI_ss=0.359;
 eGE_ss=0.306;
 % gammaa uses the set-specific ZZss, so it must come after it
-gammaa=ZZss^((1-alpha)/(varthetaat-1))-1;
+gammaa=ZZss^((1-alpha)/(vartheta-1))-1;
 model;
 //********************************************************
 // HOUSEHOLD DECISIONS
@@ -259,24 +257,24 @@ epsilon*x1 = (epsilon-1)*x2;
 // Optimal factor mix
 Kp(-1)/N = alpha/(1-alpha)*W_real/rk;
 // Marginal cost
-(1-alpha)*mc*yt/N = markupss*W_real;
+(1-alpha)*mc*y/N = markupss*W_real;
 // Law of motion of prices
 1 = thetap*(PI(-1)^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon);
 // Production
-[name='yt']
-yt = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*(Kp(-1)^alpha)*(N^(1-alpha))-Bigtheta;
+[name='y']
+y = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*(Kp(-1)^alpha)*(N^(1-alpha))-Bigtheta;
 // Stochastic discount factor (detrended)
 SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)));
 // Effective R&D = efficiency wedge times R&D spending
 Grdeff = (1-eGRD)*Grd;
 // SIMPLIFY >= 1: R&D / endogenous-technology channel off (exogenous technology)
 ZZRD = STEADY_STATE(ZZRD);
-JZt = STEADY_STATE(JZt);
+J = STEADY_STATE(J);
 probadopt = STEADY_STATE(probadopt);
-AAt = STEADY_STATE(AAt);
+A = STEADY_STATE(A);
 VA = STEADY_STATE(VA);
-St = STEADY_STATE(St);
-log(shockchit) = (1-rhoshockchit)*log(shockchitss)+rhoshockchit*log(shockchit(-1))+epsi_shockchit;
+S = STEADY_STATE(S);
+log(shockchi) = (1-rhoshockchi)*log(shockchiss)+rhoshockchi*log(shockchi(-1))+epsi_shockchi;
 //********************************************************
 // MONETARY AUTHORITY
 //********************************************************
@@ -293,11 +291,11 @@ prob_def = exp(eta1 + eta2*by(-1))/(1+exp(eta1 + eta2*by(-1)));
 // SIMPLIFY >= 3: public-infrastructure channel off (Kg pinned to steady state)
 Kg = STEADY_STATE(Kg);
 // Government debt
-Dt = (R(-1)/PI)*Dt(-1)/ZZ+Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C;
+D = (R(-1)/PI)*D(-1)/ZZ+Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C;
 // Lump-sum transfers
 Trans-STEADY_STATE(Trans) = rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_trans)*(-gamma_d_trans*(by(-1)-byss)*ydss);
 // Debt to GDP
-by = Dt/yt;
+by = D/y;
 // Government spending instruments (subject to expenditure shocks)
 Gc = Gcss+ydss*epsi_gc;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_gc shock)
 Igi = Igiss+ydss*epsi_igi;                                     // infrastructure investment
@@ -315,9 +313,9 @@ Kge = STEADY_STATE(Kge);
 //********************************************************
 // Aggregate demand
 [name='yd']
-yd = C+Ip+Igi+Gc+Ige+Grd+SSt+(ZZRD(-1)/AAt(-1)-1)*St;
+yd = C+Ip+Igi+Gc+Ige+Grd+Srd+(ZZRD(-1)/A(-1)-1)*S;
 // Aggregate production
-yt = vp*yd;
+y = vp*yd;
 // Price dispersion
 vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 //********************************************************
@@ -335,15 +333,15 @@ eGRD = eGRD_ss-epsi_effcgrd;
 // VARIABLES OF INTEREST
 //********************************************************
 lnyd = log(yd)*100;
-TFP = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*H(-1)^(1-alpha);
+TFP = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*H(-1)^(1-alpha);
 G = Gc+Igi+Ige+Grd;                                        // total government spending (sum of the four instruments)
-pdef = (Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/yt*100;
+pdef = (Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/y*100;
 rreal = R/PI;                                              // ex-post real interest rate
 // Fiscal aggregates as a share of steady-state GDP (ydss)
 pdef_yss  = (Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/ydss;  // primary deficit
 Trans_yss = Trans/ydss;                                       // transfers
-dserv_yss = (R-1)*Dt/ydss;                                    // debt service (interest)
-by_yss    = Dt/ydss;                                          // government debt
+dserv_yss = (R-1)*D/ydss;                                    // debt service (interest)
+by_yss    = D/ydss;                                          // government debt
 Igi_ys = Igi/ydss*100;
 by_ann = by/4*100;
 lnPI = log(PI)*100;
@@ -362,13 +360,13 @@ Rss         = STEADY_STATE(R);
 ydss        = STEADY_STATE(yd);
 muyH        = STEADY_STATE(muyH);
 kappaprob   = STEADY_STATE(kappaprob);
-shockchitss = STEADY_STATE(shockchit);   // exogenous disturbance to the R&D technology
+shockchiss = STEADY_STATE(shockchi);   // exogenous disturbance to the R&D technology
 Ns          = STEADY_STATE(Ns);
-SSt         = STEADY_STATE(SSt);
-Gcss        = Gcy*STEADY_STATE(yt);
-Igiss        = Igiy*STEADY_STATE(yt);
-Igess       = Igey*STEADY_STATE(yt);
-Grdss      = Grdy*STEADY_STATE(yt);
+Srd         = STEADY_STATE(Srd);
+Gcss        = Gcy*STEADY_STATE(y);
+Igiss        = Igiy*STEADY_STATE(y);
+Igess       = Igey*STEADY_STATE(y);
+Grdss      = Grdy*STEADY_STATE(y);
 end;
 steady;
 check;

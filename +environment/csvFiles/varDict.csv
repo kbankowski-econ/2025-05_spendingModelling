@@ -12,10 +12,10 @@ x1,Price-setting auxiliary variable 1,(x./y-1)*100,\% deviation
 x2,Price-setting auxiliary variable 2,(x./y-1)*100,\% deviation
 mc,Marginal cost of production,(x./y-1)*100,\% deviation
 PIstar,Optimal gross inflation rate,(x./y-1)*100,\% deviation
-yt,Total production output,(x./y-1)*100,\% deviation
+y,Total production output,(x./y-1)*100,\% deviation
 Kg,Gov. capital stock,(x./y-1)*100,\% deviation
 Rmp,Monetary policy interest rate,(x-y)*400,ann. ppt deviation
-Dt,Government debt level,(x./y-1)*100,\% deviation
+D,Government debt level,(x./y-1)*100,\% deviation
 by,Debt-to-GDP ratio,(x-y)*100,ppt of GDP
 Igi,Gov. investment,(x./y-1)*100,\% deviation
 Gc,Gov. consumption,(x./y-1)*100,\% deviation
@@ -48,7 +48,7 @@ muyH,Adjustment parameter for time allocation (E=0.1),(x./y-1)*100,\% deviation
 ygrowth,Economic growth rate,(x./y-1)*100,\% deviation
 eGE,Gap in human capital spending efficiency,x-y,abs. deviation
 eGI,Gap in infrastructure spending efficiency,x-y,abs. deviation
-AAt,Stationary technology process,(x./y-1)*100,\% deviation
+A,Stationary technology process,(x./y-1)*100,\% deviation
 Grd,Gov. R and D expenditure,(x./y-1)*100,\% deviation
 Grdss,Steady-state R&D expenditure,(x./y-1)*100,\% deviation
 TFP,TFP,(x./y-1)*100,\% deviation

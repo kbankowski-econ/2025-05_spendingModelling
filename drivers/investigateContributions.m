@@ -16,7 +16,7 @@ cd(fullfile(project_path, 'models'));
 % models re-solved) for utils.subroutines.createContributions to find it; add
 % more variables to aItemList once their equations are tagged.
 aModel = "Model_HumanCapital_exp_gc";    % government-consumption expansion shock
-aItemList = ["yd", "yt"];                 % target variables (one panel each)
+aItemList = ["yd", "y"];                 % target variables (one panel each)
 
 %% ----------------
 % Loading the database

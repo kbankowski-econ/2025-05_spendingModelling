@@ -13,8 +13,8 @@
 , {"residual": {"lhs": "omega*N^varphi", "rhs": "lambda*W_real"}}
 , {"residual": {"lhs": "Lab", "rhs": "N"}}
 , {"residual": {"lhs": "mc", "rhs": "W_real"}}
-, {"residual": {"lhs": "yt", "rhs": "N"}}
-, {"residual": {"lhs": "yt", "rhs": "vp*yd"}}
+, {"residual": {"lhs": "y", "rhs": "N"}}
+, {"residual": {"lhs": "y", "rhs": "vp*yd"}}
 , {"residual": {"lhs": "x1", "rhs": "yd*lambda*mc+x1*betta*thetap*(1/PI)^(-epsilon)"}}
 , {"residual": {"lhs": "x2", "rhs": "yd*lambda*PIstar+x2*betta*thetap*(1/PI)^(1-epsilon)"}}
 , {"residual": {"lhs": "x1*epsilon", "rhs": "x2*(epsilon-1)"}}
@@ -43,10 +43,10 @@
 , {"eq": 5, "col": 5, "var": "W_real", "val": "(-1)"}
 , {"eq": 5, "col": 6, "var": "mc", "val": "1"}
 , {"eq": 6, "col": 2, "var": "N", "val": "(-1)"}
-, {"eq": 6, "col": 13, "var": "yt", "val": "1"}
+, {"eq": 6, "col": 13, "var": "y", "val": "1"}
 , {"eq": 7, "col": 11, "var": "vp", "val": "(-yd)"}
 , {"eq": 7, "col": 12, "var": "yd", "val": "(-vp)"}
-, {"eq": 7, "col": 13, "var": "yt", "val": "1"}
+, {"eq": 7, "col": 13, "var": "y", "val": "1"}
 , {"eq": 8, "col": 4, "var": "lambda", "val": "(-(mc*yd))"}
 , {"eq": 8, "col": 6, "var": "mc", "val": "(-(lambda*yd))"}
 , {"eq": 8, "col": 7, "var": "PI", "val": "(-(x1*betta*thetap*T130))"}

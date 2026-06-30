@@ -7,8 +7,8 @@
 ,{"lhs": "Rmp", "rhs":"Rss"}
 ,{"lhs": "Gc", "rhs":"Gcss"}
 ,{"lhs": "yd", "rhs":"ydss"}
-,{"lhs": "yt", "rhs":"yd"}
-,{"lhs": "N", "rhs":"yt"}
+,{"lhs": "y", "rhs":"yd"}
+,{"lhs": "N", "rhs":"y"}
 ,{"lhs": "Lab", "rhs":"N"}
 ,{"lhs": "C", "rhs":"yd-Gc"}
 ,{"lhs": "lambda", "rhs":"1/C"}

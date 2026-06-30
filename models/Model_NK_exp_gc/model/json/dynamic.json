@@ -15,8 +15,8 @@
 , {"residual": {"lhs": "omega*N^varphi", "rhs": "lambda*W_real"}}
 , {"residual": {"lhs": "Lab", "rhs": "N"}}
 , {"residual": {"lhs": "mc", "rhs": "W_real"}}
-, {"residual": {"lhs": "yt", "rhs": "N"}}
-, {"residual": {"lhs": "yt", "rhs": "vp*yd"}}
+, {"residual": {"lhs": "y", "rhs": "N"}}
+, {"residual": {"lhs": "y", "rhs": "vp*yd"}}
 , {"residual": {"lhs": "x1", "rhs": "yd*lambda*mc+betta*thetap*(1/PI(1))^(-epsilon)*x1(1)"}}
 , {"residual": {"lhs": "x2", "rhs": "yd*lambda*PIstar+PIstar*betta*thetap*(1/PI(1))^(1-epsilon)/PIstar(1)*x2(1)"}}
 , {"residual": {"lhs": "x1*epsilon", "rhs": "x2*(epsilon-1)"}}
@@ -44,10 +44,10 @@
 , {"eq": 5, "col": 7, "var": "W_real", "shift": 0, "val": "(-1)"}
 , {"eq": 5, "col": 8, "var": "mc", "shift": 0, "val": "1"}
 , {"eq": 6, "col": 4, "var": "N", "shift": 0, "val": "(-1)"}
-, {"eq": 6, "col": 15, "var": "yt", "shift": 0, "val": "1"}
+, {"eq": 6, "col": 15, "var": "y", "shift": 0, "val": "1"}
 , {"eq": 7, "col": 13, "var": "vp", "shift": 0, "val": "(-yd)"}
 , {"eq": 7, "col": 14, "var": "yd", "shift": 0, "val": "(-vp)"}
-, {"eq": 7, "col": 15, "var": "yt", "shift": 0, "val": "1"}
+, {"eq": 7, "col": 15, "var": "y", "shift": 0, "val": "1"}
 , {"eq": 8, "col": 6, "var": "lambda", "shift": 0, "val": "(-(mc*yd))"}
 , {"eq": 8, "col": 8, "var": "mc", "shift": 0, "val": "(-(lambda*yd))"}
 , {"eq": 8, "col": 21, "var": "PI", "shift": 1, "val": "(-(x1(1)*betta*thetap*(-1)/(PI(1)*PI(1))*get_power_deriv(T44,(-epsilon),1)))"}

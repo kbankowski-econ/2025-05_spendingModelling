@@ -30,10 +30,10 @@ Kp_y=(1+Bigtheta_y)*alpha*mc/(markupss*rk);
 
 yt_proxy=(kG_y^alphaG)*(Kp_y^alpha)*(N^(1-alpha));
 
-yt=yt_proxy^(1/(1-alphaG-alpha));
+y=yt_proxy^(1/(1-alphaG-alpha));
 
 
-W_real=(1-alpha)*mc*yt/N/markupss;
+W_real=(1-alpha)*mc*y/N/markupss;
 
 
 % Real wage
@@ -49,14 +49,14 @@ Kp=alpha/(1-alpha)*W_real/rk*N;
 Ip=Kp*(ZZ-(1-delta));
 
 %Param_1=1/ZZ^(alphaG+alpha-alphaG*alpha)*(Kp^(alpha*(1-alphaG)))*(N^((1-alpha)*(1-alphaG)));
-%yt=((Param_1*kG_y^alphaG)/(1+Bigtheta_y))^(1/(1-alphaG));
+%y=((Param_1*kG_y^alphaG)/(1+Bigtheta_y))^(1/(1-alphaG));
 
 % Public capital
-Kg=kG_y*yt;
+Kg=kG_y*y;
 
 % Fixed cost
-Bigtheta=Bigtheta_y*yt;
-%Bigtheta_test=1/ZZ^(alphaG+alpha-alphaG*alpha)*(Kg^alphaG)*(Kp^(alpha*(1-alphaG)))*(N^((1-alpha)*(1-alphaG)))-yt
+Bigtheta=Bigtheta_y*y;
+%Bigtheta_test=1/ZZ^(alphaG+alpha-alphaG*alpha)*(Kg^alphaG)*(Kp^(alpha*(1-alphaG)))*(N^((1-alpha)*(1-alphaG)))-y
 %(Bigtheta_test-Bigtheta).^2
 
 % NEW PATH
@@ -64,10 +64,10 @@ Bigtheta=Bigtheta_y*yt;
 % Human capital
 %kGe_y=effge*Igey/(ZZ-(1-delta));
 kGe_y=(1-eGE_ss)*Igey/(ZZ-(1-delta));
-Kge=kGe_y*yt;
-Ige=Igey*yt;
+Kge=kGe_y*y;
+Ige=Igey*y;
 Igess=Ige;
-Grd=Grdy*yt;
+Grd=Grdy*y;
 Grdss=Grd;
 
 
@@ -75,65 +75,65 @@ Grdss=Grd;
 
 % R&D path
 %markupss=1.015;
-AAt=1;
+A=1;
 probadopt=probadoptss;
 SDF=betta;
-VA=(1+gammaa)/(1+gammaa-phi*SDF)*(markupss-1)/(markupss/mc)*yt;
-ZZRD=(1+gammaa-phi)/(probadopt*phi)+AAt;
+VA=(1+gammaa)/(1+gammaa-phi*SDF)*(markupss-1)/(markupss/mc)*y;
+ZZRD=(1+gammaa-phi)/(probadopt*phi)+A;
 
-JZt=(1-varsigma)*probadopt*phi*SDF/(1+gammaa-(1-probadopt+varsigma*probadopt)*phi*betta)*VA;
+J=(1-varsigma)*probadopt*phi*SDF/(1+gammaa-(1-probadopt+varsigma*probadopt)*phi*betta)*VA;
 
-St=varsigma*probadopt*phi*SDF/(1+gammaa)*(VA-JZt);
+S=varsigma*probadopt*phi*SDF/(1+gammaa)*(VA-J);
 
-%SSt=SDF*JZt*(ZZRD/AAt-phi*ZZRD/AAt*1/(1+gammaa));
-SSt=0;
-%shockchit=(1+gammaa-phi)/(SSt^alphaHA*Grd^alphaRD);
-%shockchit=(1+gammaa-phi)/(SSt^alphaHA);
-shockchit=1;
-
-
-
-kappaprob=probadopt/((St)^varsigma);
+%Srd=SDF*J*(ZZRD/A-phi*ZZRD/A*1/(1+gammaa));
+Srd=0;
+%shockchi=(1+gammaa-phi)/(Srd^alphaHA*Grd^alphaRD);
+%shockchi=(1+gammaa-phi)/(Srd^alphaHA);
+shockchi=1;
 
 
-Ns=(1-1/ZZRD)*St+SSt;
 
-shockchitss=shockchit;
+kappaprob=probadopt/((S)^varsigma);
 
-share_in_RD=(SSt+(ZZRD/AAt-1)*St)/yt;
-(ZZRD/AAt-1)*St/yt
-Ip_y=Ip/yt;
+
+Ns=(1-1/ZZRD)*S+Srd;
+
+shockchiss=shockchi;
+
+share_in_RD=(Srd+(ZZRD/A-1)*S)/y;
+(ZZRD/A-1)*S/y
+Ip_y=Ip/y;
 %Ip_y=(1-(1-delta)/ZZ)*Kp_y;
 Ip_y=(ZZ-(1-delta))*Kp_y;
 
 Rss=R;
-ydss=yt;
+ydss=y;
 
-yd=yt;
-Igi=Igiy*yt;
-Gc=Gcy*yt;
+yd=y;
+Igi=Igiy*y;
+Gc=Gcy*y;
 
-C=yd-(Ip+Igi+Gc+Ige+Grd+SSt+(ZZRD/AAt-1)*St);
+C=yd-(Ip+Igi+Gc+Ige+Grd+Srd+(ZZRD/A-1)*S);
 lambda=1/C/(1+tauc);
 
-Cy=1-Ip_y-Igiy-Gcy-Igey-Grdy-(SSt+(ZZRD/AAt-1)*St)/yd;
+Cy=1-Ip_y-Igiy-Gcy-Igey-Grdy-(Srd+(ZZRD/A-1)*S)/yd;
 x2=1/(1+tauc)*1/Cy/(1-betta*thetap);  % x2=lambda*y/(1-betta*thetap)= 1/(1+tauc)*y/c/(1-betta*thetap)
 x1=mc*x2;
 
-Dt=yt*by;
-Trans=Dt-((1-0*Delta_G)*(R/PI)*Dt/ZZ+Gc+Igi+Ige+Grd-tauw*W_real*N-tauc*C);
-Gcss=Gcy*(yt);
-Igiss=Igiy*(yt);
+D=y*by;
+Trans=D-((1-0*Delta_G)*(R/PI)*D/ZZ+Gc+Igi+Ige+Grd-tauw*W_real*N-tauc*C);
+Gcss=Gcy*(y);
+Igiss=Igiy*(y);
 
 %Variables of interest
 lnyd=log(yd)*100;
 G=Gc+Igi+Ige+Grd;
-pdef=(Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/yt*100;
+pdef=(Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/y*100;
 rreal=R/PI;
 pdef_yss=(Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/ydss;
 Trans_yss=Trans/ydss;
-dserv_yss=(R-1)*Dt/ydss;
-by_yss=Dt/ydss;
+dserv_yss=(R-1)*D/ydss;
+by_yss=D/ydss;
 Igi_ys=Igi/ydss*100;
 by_ann=by/4*100;
 lnPI=log(PI)*100;
@@ -171,10 +171,10 @@ ygrowth=log(ZZ)*100;
 eGE=eGE_ss;
 eGI=eGI_ss;
 
-TFP=AAt^(varthetaat-1)*(Kg^alphaG)*H^(1-alpha);
+TFP=A^(vartheta-1)*(Kg^alphaG)*H^(1-alpha);
 ln_Grd=log(Grd);
 Grd_ydss_ratio=Grd/ydss;
 Grdeff=(1-eGRD_ss)*Grd;
 
 eGRD=eGRD_ss;
-%AAt=1;
+%A=1;
