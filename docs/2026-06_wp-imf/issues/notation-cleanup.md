@@ -55,6 +55,29 @@ Deleted: `rho_AAt` — dead parameter (`=0`, unused), removed from `declare_all.
 After this pass the model and the glossary match exactly with **no rename map**:
 endogenous 74, parameters 55, exogenous 16.
 
+## DONE — Tier 2 (opaque encoded names): applied to the MODEL, glossary, varDict, scripts
+
+Renamed across the model source, `varDict.csv`, the export scripts (`runSimulExport.m`,
+`runPlots.m`), the glossary, and `makeParametersTable.py`. Re-ran all 44 models (rank
+condition verified) and re-exported; values **identical** (`parametersTable.tex`
+byte-unchanged, since `rho_A`=`rho_ZZRD`=0.79). `figureNumbers` columns `…___ZZRD` → `…___Z`.
+
+| paper | concept | old model code | new model code |
+|---|---|---|---|
+| $Z_t$ | created technology | `ZZRD` | `Z` |
+| $\rho_A$ | persistence of created technology | `rho_ZZRD` | `rho_A` |
+| $g_t$ | gross growth rate (variable) | `ZZ` | `g` |
+| $g$ | steady-state gross growth | `ZZss` | `gss` |
+| $\rho_g$ | trend-growth shock persistence | `rho_ZZ` | `rho_g` |
+| $\varepsilon_t^{g}$ | trend-growth shock | `epsi_ZZ` | `epsi_g` |
+
+No paper-symbol changes (code renamed to the existing symbols). No plot scripts reference
+`ZZ`/`ZZRD`, so no figures needed regenerating. Model and glossary still match exactly:
+74 / 55 / 16.
+
+All notation-cleanup tiers are now applied to the model. Optional remaining cosmetics
+(not done): `Kg`→`Kgi`, `by`→`d`, `W_real`→`w`; and `betta` left as-is (MATLAB `beta` clash).
+
 ## Completeness
 
 The glossary tables now list **every** declared model object and the row counts match

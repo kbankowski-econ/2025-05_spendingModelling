@@ -5,16 +5,16 @@
 1/C = lambda*(1+tauc);
 
 // Euler equation
-lambda = betta*(lambda(+1)/ZZ(+1)*R/PI(+1));
+lambda = betta*(lambda(+1)/g(+1)*R/PI(+1));
 
 // Labor decision
 omega*(Lab+E)^varphi = lambda*W_real*H(-1)*(1-tauw);
 
 // Law of motion of private capital
-Kp*ZZ = (1-delta)*Kp(-1)+Ip;
+Kp*g = (1-delta)*Kp(-1)+Ip;
 
 // Return on private investment
-1 = betta*(lambda(+1)/lambda/ZZ(+1)*(1-delta+rk(+1)));
+1 = betta*(lambda(+1)/lambda/g(+1)*(1-delta+rk(+1)));
 
 // Human capital of the household
 H = (1-deltaH)*H(-1)+muyH*E^gamma*(Kge(-1))^(mu*(1+epsiallo_ige));
@@ -50,7 +50,7 @@ Kp(-1)/N = alpha/(1-alpha)*W_real/rk;
 y = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*(Kp(-1)^alpha)*(N^(1-alpha))-Bigtheta;
 
 // Technology creation (R&D enters in efficiency-adjusted form via Grdeff)
-ln(ZZRD/STEADY_STATE(ZZRD)) = rho_ZZRD*ln(ZZRD(-1)/STEADY_STATE(ZZRD))+alphaRD*ln(Grdeff(-1)/STEADY_STATE(Grdeff))+alphaHA*ln(H(-1)/STEADY_STATE(H))+log(shockchi);
+ln(Z/STEADY_STATE(Z)) = rho_A*ln(Z(-1)/STEADY_STATE(Z))+alphaRD*ln(Grdeff(-1)/STEADY_STATE(Grdeff))+alphaHA*ln(H(-1)/STEADY_STATE(H))+log(shockchi);
 
 // Effective R&D = efficiency wedge times R&D spending
 Grdeff = (1-eGRD)*Grd;
@@ -62,7 +62,7 @@ J = -S+phi*(SDF(+1)*A(-1)/A*1/(1+gammaa)*(probadopt*VA(+1)+(1-probadopt)*J(+1)))
 probadopt = (kappaprob+epsirhoadopt)*(S)^(varsigma);
 
 // Adoption
-(1+gammaa)*A = probadopt*phi*(ZZRD(-1)-A(-1))+phi*A(-1);
+(1+gammaa)*A = probadopt*phi*(Z(-1)-A(-1))+phi*A(-1);
 
 // Value of an adopted technology
 VA = (markupss-1)/(markupss)*mc*y + phi*SDF(+1)*VA(+1)*A(-1)/A/(1+gammaa);
@@ -91,10 +91,10 @@ prob_def = exp(eta1 + eta2*by(-1))/(1+exp(eta1 + eta2*by(-1)));
 // GOVERNMENT DECISIONS
 //********************************************************
 // Public infrastructure capital
-Kg*ZZ = (1-delta)*Kg(-1)+(1-eGI)*Igi;
+Kg*g = (1-delta)*Kg(-1)+(1-eGI)*Igi;
 
 // Government debt
-D = (R(-1)/PI)*D(-1)/ZZ+Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C;
+D = (R(-1)/PI)*D(-1)/g+Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C;
 
 // Lump-sum transfers
 Trans-STEADY_STATE(Trans) = rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_trans)*(-gamma_d_trans*(by(-1)-byss)*ydss);
@@ -115,14 +115,14 @@ tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss
 tauw-tauwss = rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_d_tauw*(by(-1)-byss))+epsi_tauw;
 
 // Public human-capital stock
-Kge*ZZ = (1-delta)*Kge(-1)+(1-eGE)*Ige;
+Kge*g = (1-delta)*Kge(-1)+(1-eGE)*Ige;
 
 //********************************************************
 // MARKET CLEARING
 //********************************************************
 // Aggregate demand
 [name='yd']
-yd = C+Ip+Igi+Gc+Ige+Grd+Srd+(ZZRD(-1)/A(-1)-1)*S;
+yd = C+Ip+Igi+Gc+Ige+Grd+Srd+(Z(-1)/A(-1)-1)*S;
 
 // Aggregate production
 y = vp*yd;
@@ -134,7 +134,7 @@ vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 // SHOCK DYNAMICS
 //********************************************************
 // Trend growth
-log(ZZ) = (1-rho_ZZ)*log(ZZ(-1))+rho_ZZ*(log(ZZss))+epsi_ZZ;
+log(g) = (1-rho_g)*log(g(-1))+rho_g*(log(gss))+epsi_g;
 
 // Gap in human-capital spending efficiency (e^GE; positive shock closes the gap)
 eGE = eGE_ss-epsi_effge;
@@ -165,7 +165,7 @@ ln_Grd = log(Grd);
 Grd_ydss_ratio = Grd/ydss;
 
 // Output growth
-ygrowth = log(yd/yd(-1))*100+log(ZZ)*100;
+ygrowth = log(yd/yd(-1))*100+log(g)*100;
 
 //********************************************************
 // STEADY-STATE VALUES CARRIED INTO THE MODEL BLOCK

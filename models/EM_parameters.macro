@@ -2,7 +2,7 @@
 
 % production and growth
 alphaG=0.17;                         % share of public capital in production         | AE: 0.054
-ZZss=1.0075;                         % steady-state gross quarterly growth           | AE: 1.004
+gss=1.0075;                         % steady-state gross quarterly growth           | AE: 1.004
 
 % taxes and debt
 taucss=0.15;                         % steady-state consumption tax rate             | AE: 0.18
@@ -20,6 +20,6 @@ mu=0.25;                         % elasticity of HC formation w.r.t. public HRC 
 
 % R&D and technology adoption
 eGRD_ss=0.2;                         % public R&D efficiency gap (e^GRD)              | AE: 0.41
-alphaRD=0;                           % effect of R&D on TFP                          | AE: 0.09*(1-rho_ZZRD)
+alphaRD=0;                           % effect of R&D on TFP                          | AE: 0.09*(1-rho_A)
 alphaHA=0;                           % HC elasticity in tech creation (paper a_HA)   | AE: 0.1
 varsigma=0.1;                       % adoption elasticity                           | AE: 0.8

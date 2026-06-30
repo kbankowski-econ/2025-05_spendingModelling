@@ -2,7 +2,7 @@
 // Canonical New Keynesian model with WASTEFUL government consumption.
 // Written from scratch (NOT derived from the main model_block) as a textbook
 // benchmark. Deliberately strips the non-standard features of the main model:
-//   - stationary: no trend growth (no ZZ);
+//   - stationary: no trend growth (no g);
 //   - no price indexation (chi = 0, purely forward-looking Calvo);
 //   - constant returns Y = N (no capital), single markup -- mc = real wage;
 //   - lump-sum-financed wasteful G (enters only the resource constraint);

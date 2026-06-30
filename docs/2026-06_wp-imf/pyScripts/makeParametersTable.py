@@ -13,7 +13,7 @@ Model_HumanCapital_exp_gc, EMDE = EM_Model_HumanCapital_exp_gc), so a
 recalibration of any of them flows into the table automatically:
 
     alpha_G <- alphaG      (output elasticity, infrastructure)
-    rho_A   <- rho_ZZRD    (AR(1) coefficient, technology stock)
+    rho_A   <- rho_A         (AR(1) coefficient, technology stock)
     alpha_HA <- alphaHA    (HC loading in tech creation; EMDE "--", channel off)
     alpha_RD <- alphaRD    (R&D loading in tech creation; EMDE "--", channel off)
     varsigma <- varsigma  (adoption-probability elasticity, AE; EMDE "--", dormant)
@@ -111,7 +111,7 @@ def build_groups():
         ("Technology creation and adoption", [
             (r"$\alpha_{HA}$", "Human-capital loading in creation",       fmt(ae["alphaHA"], 2),    "--"),
             (r"$\alpha_{RD}$", r"Public-R\&D loading in creation",        fmt(ae["alphaRD"], 4),    "--"),
-            (r"$\rho_A$",      "Persistence of created technology",       fmt(ae["rho_ZZRD"], 2),   fmt(em["rho_ZZRD"], 2)),
+            (r"$\rho_A$",      "Persistence of created technology",       fmt(ae["rho_A"], 2),   fmt(em["rho_A"], 2)),
             (r"$\phi$",        "Survival rate of adopted technologies",   fmt(ae["phi"], 2),      fmt(em["phi"], 2)),
             (r"$\varsigma$",   "Elasticity of the adoption probability",  fmt(ae["varsigma"], 2),  "--"),
         ]),

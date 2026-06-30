@@ -23,8 +23,8 @@ tauc            % Consumption tax
 tauw            % Income tax
 yd              % Aggregate demand
 vp              % Price dispersion
-ZZ              % Gross growth rate
-%shock_ZZ        % shock to the ZZ process  
+g              % Gross growth rate
+%shock_ZZ        % shock to the g process  
 Delta_G         % Expected loss 
 prob_def        % probability of default
 omega           % Scaling
@@ -60,7 +60,7 @@ VA              % Value of tech adoption
 probadopt       % Probability of adoption
 J             % Value of unadopted Intermediate
 Srd             % Effective labor demand for R&D development
-ZZRD            % R&D product
+Z            % R&D product
 kappaprob       % Parameter in the probability for scaling
 shockchiss     %% SS of shockchi 
 Ns              % Labor in R&D
@@ -77,7 +77,7 @@ effcgrdgap      % Gap in public R&D efficiency (e^GRD)
 varexo
 epsi_cg         % Shock to government consumption
 epsi_ig         % Shock to government investment  
-epsi_ZZ         % Shock to trend
+epsi_g         % Shock to trend
 epsi_spread     % Shock to Spread
 epsi_MP         % Monetary Policy Shocks
 epsi_tauc       % Consumption income tax shock 
@@ -121,8 +121,8 @@ tauwss          % Income tax rate SS
 gamma_y_tauw    % Response of consumption tax to OG
 gamma_d_tauw    % Response of consumption tax to debt
 byss            % Steady state of debt
-rho_ZZ          % AR(1) of growth shock 
-ZZss            % SS of growth
+rho_g          % AR(1) of growth shock 
+gss            % SS of growth
 eta1            % Prof default param 1
 eta2            % Prof default param 2 
 Deltacost       % Feed back of debt on rate
@@ -138,7 +138,7 @@ gamma             % Effectiveness of education investment.
 mu          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
 effgegap_ss     % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
-alphaZZ1        % Learning by doing off HHon ZZ
+alphaZZ1        % Learning by doing off HHon g
 rho_Ige         % Persistence of human-related spending
 alphaHA         % feed back of Human cpital to TFP
 alphaRD         % R&D on TFP
@@ -151,6 +151,6 @@ probadoptss    % Probability of adoption
 varsigma      % Adoption elasticity
 alphaSRD       % R&D elasticity
 rhoshockchi    % AR (1) or shock to r&D
-rho_ZZRD
+rho_A
 effcgrdgap_ss   % SS gap in public R&D efficiency (e^GRD)
 ;

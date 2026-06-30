@@ -23,8 +23,8 @@ tauc            % Consumption tax
 tauw            % Income tax
 yd              % Aggregate demand
 vp              % Price dispersion
-ZZ              % Gross growth rate
-%shock_ZZ        % shock to the ZZ process  
+g              % Gross growth rate
+%shock_ZZ        % shock to the g process  
 Delta_G         % Expected loss 
 prob_def        % probability of default
 omega           % Scaling
@@ -65,7 +65,7 @@ VA              % Value of tech adoption
 probadopt       % Probability of adoption
 J             % Value of unadopted Intermediate
 Srd             % Effective labor demand for R&D development
-ZZRD            % R&D product
+Z            % R&D product
 kappaprob       % Parameter in the probability for scaling
 shockchiss     %% SS of shockchi 
 Ns              % Labor in R&D
@@ -81,7 +81,7 @@ eGRD            % Gap in public R&D efficiency (e^GRD)
 varexo
 epsi_gc         % Shock to government consumption
 epsi_igi         % Shock to government investment  
-epsi_ZZ         % Shock to trend
+epsi_g         % Shock to trend
 epsi_spread     % Shock to Spread
 epsi_MP         % Monetary Policy Shocks
 epsi_tauc       % Consumption income tax shock 
@@ -124,8 +124,8 @@ tauwss          % Income tax rate SS
 gamma_y_tauw    % Response of consumption tax to OG
 gamma_d_tauw    % Response of consumption tax to debt
 byss            % Steady state of debt
-rho_ZZ          % AR(1) of growth shock 
-ZZss            % SS of growth
+rho_g          % AR(1) of growth shock 
+gss            % SS of growth
 eta1            % Prof default param 1
 eta2            % Prof default param 2 
 Deltacost       % Feed back of debt on rate
@@ -141,7 +141,7 @@ gamma             % Effectiveness of education investment.
 mu          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
 eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
-alphaZZ1        % Learning by doing off HHon ZZ
+alphaZZ1        % Learning by doing off HHon g
 rho_Ige         % Persistence of human-related spending
 alphaRD         % R&D on TFP
 Grdy           % share of expenditure for R&D
@@ -153,7 +153,7 @@ probadoptss    % Probability of adoption
 varsigma      % Adoption elasticity
 alphaHA        % HC elasticity in tech creation (paper alpha_HA)
 rhoshockchi    % AR (1) or shock to r&D
-rho_ZZRD
+rho_A
 eGRD_ss         % SS gap in public R&D efficiency (e^GRD)
 ;
 betta=0.9985;
@@ -176,7 +176,7 @@ gamma_d_tauc=0.0;
 rho_tauw=0.9;
 gamma_y_tauw=0;
 gamma_d_tauw=0;
-rho_ZZ= 0.24 ;
+rho_g= 0.24 ;
 eta1=-18.12;
 eta2=3.12;
 Deltacost=0;  % Shutting down the feedback of debt on rate
@@ -193,11 +193,11 @@ phi=1-0.08/4;   % obsolescence rate: 0.08/4
 vartheta=1.35;
 probadoptss=0.2/4;
 rhoshockchi=1;
-rho_ZZRD=0.79;
+rho_A=0.79;
 % AE-specific calibration            (definition                                    | EM value)
 % production and growth
 alphaG=0.054;                        % share of public capital in production         | EM: 0.17
-ZZss=1.004;                          % steady-state gross quarterly growth           | EM: 1.0075
+gss=1.004;                          % steady-state gross quarterly growth           | EM: 1.0075
 % taxes and debt
 taucss=0.18;                         % steady-state consumption tax rate             | EM: 0.15
 tauwss=0.25;                         % steady-state income tax rate                  | EM: 0.10
@@ -211,14 +211,14 @@ Grdy=0.006;                         % R&D spending                              
 mu=0.1;                          % elasticity of HC formation w.r.t. public HRC  | EM: 0.25
 % R&D and technology adoption
 eGRD_ss=0.399;                       % public R&D efficiency gap (e^GRD)              | EM: 0.2
-alphaRD=0.09*(1-rho_ZZRD);           % effect of R&D on TFP                          | EM: 0
+alphaRD=0.09*(1-rho_A);           % effect of R&D on TFP                          | EM: 0
 alphaHA=0.1;                         % HC elasticity in tech creation (paper a_HA)   | EM: 0
 varsigma=0.8;                       % adoption elasticity                           | EM: 0.1
 % AE efficiency gaps (2023 medians; INF re-estimated 2026-06)
 eGI_ss=0.359;
 eGE_ss=0.306;
-% gammaa uses the set-specific ZZss, so it must come after it
-gammaa=ZZss^((1-alpha)/(vartheta-1))-1;
+% gammaa uses the set-specific gss, so it must come after it
+gammaa=gss^((1-alpha)/(vartheta-1))-1;
 model;
 //********************************************************
 // HOUSEHOLD DECISIONS
@@ -226,13 +226,13 @@ model;
 // Marginal utility
 1/C = lambda*(1+tauc);
 // Euler equation
-lambda = betta*(lambda(+1)/ZZ(+1)*R/PI(+1));
+lambda = betta*(lambda(+1)/g(+1)*R/PI(+1));
 // Labor decision
 omega*(Lab+E)^varphi = lambda*W_real*H(-1)*(1-tauw);
 // Law of motion of private capital
-Kp*ZZ = (1-delta)*Kp(-1)+Ip;
+Kp*g = (1-delta)*Kp(-1)+Ip;
 // Return on private investment
-1 = betta*(lambda(+1)/lambda/ZZ(+1)*(1-delta+rk(+1)));
+1 = betta*(lambda(+1)/lambda/g(+1)*(1-delta+rk(+1)));
 // Human capital of the household
 H = (1-deltaH)*H(-1)+muyH*E^gamma*(Kge(-1))^(mu*(1+epsiallo_ige));
 // Time devoted to building human capital (E)
@@ -258,7 +258,7 @@ Kp(-1)/N = alpha/(1-alpha)*W_real/rk;
 [name='y']
 y = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*(Kp(-1)^alpha)*(N^(1-alpha))-Bigtheta;
 // Technology creation (R&D enters in efficiency-adjusted form via Grdeff)
-ln(ZZRD/STEADY_STATE(ZZRD)) = rho_ZZRD*ln(ZZRD(-1)/STEADY_STATE(ZZRD))+alphaRD*ln(Grdeff(-1)/STEADY_STATE(Grdeff))+alphaHA*ln(H(-1)/STEADY_STATE(H))+log(shockchi);
+ln(Z/STEADY_STATE(Z)) = rho_A*ln(Z(-1)/STEADY_STATE(Z))+alphaRD*ln(Grdeff(-1)/STEADY_STATE(Grdeff))+alphaHA*ln(H(-1)/STEADY_STATE(H))+log(shockchi);
 // Effective R&D = efficiency wedge times R&D spending
 Grdeff = (1-eGRD)*Grd;
 // Value of an unadopted technology
@@ -266,7 +266,7 @@ J = -S+phi*(SDF(+1)*A(-1)/A*1/(1+gammaa)*(probadopt*VA(+1)+(1-probadopt)*J(+1)))
 // Probability of adoption
 probadopt = (kappaprob+epsirhoadopt)*(S)^(varsigma);
 // Adoption
-(1+gammaa)*A = probadopt*phi*(ZZRD(-1)-A(-1))+phi*A(-1);
+(1+gammaa)*A = probadopt*phi*(Z(-1)-A(-1))+phi*A(-1);
 // Value of an adopted technology
 VA = (markupss-1)/(markupss)*mc*y + phi*SDF(+1)*VA(+1)*A(-1)/A/(1+gammaa);
 // FOC for adoption effort
@@ -288,9 +288,9 @@ prob_def = exp(eta1 + eta2*by(-1))/(1+exp(eta1 + eta2*by(-1)));
 // GOVERNMENT DECISIONS
 //********************************************************
 // Public infrastructure capital
-Kg*ZZ = (1-delta)*Kg(-1)+(1-eGI)*Igi;
+Kg*g = (1-delta)*Kg(-1)+(1-eGI)*Igi;
 // Government debt
-D = (R(-1)/PI)*D(-1)/ZZ+Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C;
+D = (R(-1)/PI)*D(-1)/g+Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C;
 // Lump-sum transfers
 Trans-STEADY_STATE(Trans) = rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_trans)*(-gamma_d_trans*(by(-1)-byss)*ydss);
 // Debt to GDP
@@ -305,13 +305,13 @@ tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss
 // Income tax rule
 tauw-tauwss = rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_d_tauw*(by(-1)-byss))+epsi_tauw;
 // Public human-capital stock
-Kge*ZZ = (1-delta)*Kge(-1)+(1-eGE)*Ige;
+Kge*g = (1-delta)*Kge(-1)+(1-eGE)*Ige;
 //********************************************************
 // MARKET CLEARING
 //********************************************************
 // Aggregate demand
 [name='yd']
-yd = C+Ip+Igi+Gc+Ige+Grd+Srd+(ZZRD(-1)/A(-1)-1)*S;
+yd = C+Ip+Igi+Gc+Ige+Grd+Srd+(Z(-1)/A(-1)-1)*S;
 // Aggregate production
 y = vp*yd;
 // Price dispersion
@@ -320,7 +320,7 @@ vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 // SHOCK DYNAMICS
 //********************************************************
 // Trend growth
-log(ZZ) = (1-rho_ZZ)*log(ZZ(-1))+rho_ZZ*(log(ZZss))+epsi_ZZ;
+log(g) = (1-rho_g)*log(g(-1))+rho_g*(log(gss))+epsi_g;
 // Gap in human-capital spending efficiency (e^GE; positive shock closes the gap)
 eGE = eGE_ss-epsi_effge;
 // Gap in infrastructure spending efficiency (e^GI)
@@ -346,7 +346,7 @@ lnPI = log(PI)*100;
 ln_Grd = log(Grd);
 Grd_ydss_ratio = Grd/ydss;
 // Output growth
-ygrowth = log(yd/yd(-1))*100+log(ZZ)*100;
+ygrowth = log(yd/yd(-1))*100+log(g)*100;
 //********************************************************
 // STEADY-STATE VALUES CARRIED INTO THE MODEL BLOCK
 //********************************************************
