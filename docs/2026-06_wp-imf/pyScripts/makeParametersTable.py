@@ -14,17 +14,26 @@ recalibration of any of them flows into the table automatically:
 
     alpha_G <- alphaG      (output elasticity, infrastructure)
     rho_A   <- rho_ZZRD    (AR(1) coefficient, technology stock)
+    e_GI    <- eGI_ss      (inefficiency, infrastructure investment)
+    e_GE    <- eGE_ss      (inefficiency, human capital investment)
+    e_GRD   <- eGRD_ss     (inefficiency, public R&D; EMDE shown "--", channel off)
     delta   <- delta/deltaH (depreciation, public capital; the two are equal)
     mu      <- alphaH      (human capital elasticity, public stock)
     gamma   <- muy         (human capital elasticity, time input)
+
+The efficiency gaps e_GI/e_GE equal Table 2's data-derived (EM+LIC)/2 averages for
+EMDEs and the AE median for advanced economies, so reading them here keeps Table 1
+and Table 2 consistent (and corrects a stale EMDE e_GI value of 0.42 -> 0.41). The
+EMDE e_GRD is reported "--" because the R&D channel is shut down there (alphaRD=0),
+even though the model still carries eGRD_ss=0.2; the AE e_GRD is the model's 0.41
+(slightly above the 0.399 data median, a deliberate calibration choice).
 
 The other rows are kept as literals on purpose. The most important are the
 (1-rho_A)-normalized innovation elasticities alpha_HA (0.45 vs code alphaHA=0.10)
 and alpha_RD (0.10 vs code alphaRD=0.0189) -- see memory `alphaHA-normalization`;
 do NOT "fix" these to the raw params. Others are curated/rounded presentation
-values (e.g. EMDE alpha_G shown 0.17 vs code 0.20; survival rate 0.97 vs code
-phiob=0.98; the efficiency gaps truncated; EMDE adoption elasticity and R&D
-inefficiency shown at the AE/"--" convention rather than the raw EMDE code value).
+values (e.g. survival rate 0.97 vs code phiob=0.98; EMDE adoption elasticity shown
+at the AE value rather than the raw EMDE code value; q_0 has no standalone param).
 
 Writes (\\input by draftPaper.tex):
   ../parametersTable.tex
@@ -76,9 +85,9 @@ def build_parameters():
         (r"$\alpha_{RD}$",           r"Public R\&D elasticity, innovation",     "0.10",                       "--"),      # curated: (1-rho_A)-normalized vs code 0.0189
         (r"$\rho_A$",                "AR(1) coefficient, technology stock",     fmt(ae["rho_ZZRD"], 2),       fmt(em["rho_ZZRD"], 2)),   # READ: rho_ZZRD
         (r"$\phi$",                  "Survival rate of adopted technologies",   "0.97",                       "0.97"),    # curated: vs code phiob=0.98
-        (r"$e^{GI}$",                "Inefficiency, infrastructure investment", "0.35",                       "0.42"),    # curated: truncated eGI_ss
-        (r"$e^{GE}$",                "Inefficiency, human capital investment",  "0.30",                       "0.32"),    # curated: truncated eGE_ss
-        (r"$e^{GRD}$",               r"Inefficiency, public R\&D spending",     "0.41",                       "--"),      # curated: R&D channel off for EMDEs
+        (r"$e^{GI}$",                "Inefficiency, infrastructure investment", fmt(ae["eGI_ss"], 2),         fmt(em["eGI_ss"], 2)),     # READ: eGI_ss
+        (r"$e^{GE}$",                "Inefficiency, human capital investment",  fmt(ae["eGE_ss"], 2),         fmt(em["eGE_ss"], 2)),     # READ: eGE_ss
+        (r"$e^{GRD}$",               r"Inefficiency, public R\&D spending",     fmt(ae["eGRD_ss"], 2),        "--"),      # READ AE: eGRD_ss; EMDE "--" (R&D channel off)
         (r"$\varsigma$",             "Elasticity, adoption probability",        "0.80",                       "0.80"),    # curated: EMDE shown at AE value vs code rhoSADOPT=0.10
         (r"$q_0$",                   "Scale, adoption probability",             "0.10",                       "0.10"),    # curated: not a standalone model param
         (r"$\delta^{GI},\delta^{GE}$", "Depreciation, public capital",          fmt(ae["delta"], 3),          fmt(em["delta"], 3)),      # READ: delta (= deltaH)
