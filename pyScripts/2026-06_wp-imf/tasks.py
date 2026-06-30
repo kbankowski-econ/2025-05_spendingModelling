@@ -185,6 +185,18 @@ def plotDiffusionAE(c):
 
 
 @task
+def plotSensitivityIRF(c):
+    """
+    AE output-IRF sensitivity to the structural parameters alpha_G, mu, alpha_RD
+    (1x3 fan). Reads the parameter sweep
+    docs/2026-06_wp-imf/investigations/sensitivity/results/sweep_AE_irf.csv
+    (produced by investigations/sensitivity/sweep.m, MATLAB), not figureNumbers.
+    Out: figures/sensitivityIRF_AE.png/.pdf/.html/.csv
+    """
+    _run_plot(c, "plotSensitivityIRF.py", "Generating: AE Parameter Sensitivity (IRF)")
+
+
+@task
 def plotEfficiencyBands(c):
     """
     Spending-efficiency gaps by income group (appendix figure).
@@ -282,6 +294,7 @@ def investigateContributions(c):
     plotEfficiencyEM,
     plotHumanCapital,
     plotDiffusionAE,
+    plotSensitivityIRF,
     plotEfficiencyBands,
     makeMultipliers,
     makeParametersTable,
