@@ -1,0 +1,443 @@
+panel,param,param_value,year,pct_dev
+Infrastructure (α<sub>G</sub>),alphaG,0.02,0,0.0
+Infrastructure (α<sub>G</sub>),alphaG,0.02,1,0.088
+Infrastructure (α<sub>G</sub>),alphaG,0.02,2,0.091
+Infrastructure (α<sub>G</sub>),alphaG,0.02,3,0.062
+Infrastructure (α<sub>G</sub>),alphaG,0.02,4,0.041
+Infrastructure (α<sub>G</sub>),alphaG,0.02,5,0.027
+Infrastructure (α<sub>G</sub>),alphaG,0.02,6,0.017
+Infrastructure (α<sub>G</sub>),alphaG,0.02,7,0.011
+Infrastructure (α<sub>G</sub>),alphaG,0.02,8,0.006
+Infrastructure (α<sub>G</sub>),alphaG,0.02,9,0.003
+Infrastructure (α<sub>G</sub>),alphaG,0.02,10,0.001
+Infrastructure (α<sub>G</sub>),alphaG,0.02,11,0.0
+Infrastructure (α<sub>G</sub>),alphaG,0.02,12,-0.001
+Infrastructure (α<sub>G</sub>),alphaG,0.02,13,-0.001
+Infrastructure (α<sub>G</sub>),alphaG,0.02,14,-0.002
+Infrastructure (α<sub>G</sub>),alphaG,0.02,15,-0.002
+Infrastructure (α<sub>G</sub>),alphaG,0.02,16,-0.002
+Infrastructure (α<sub>G</sub>),alphaG,0.02,17,-0.002
+Infrastructure (α<sub>G</sub>),alphaG,0.02,18,-0.002
+Infrastructure (α<sub>G</sub>),alphaG,0.02,19,-0.002
+Infrastructure (α<sub>G</sub>),alphaG,0.02,20,-0.002
+Infrastructure (α<sub>G</sub>),alphaG,0.02,21,-0.002
+Infrastructure (α<sub>G</sub>),alphaG,0.02,22,-0.001
+Infrastructure (α<sub>G</sub>),alphaG,0.02,23,-0.001
+Infrastructure (α<sub>G</sub>),alphaG,0.02,24,-0.001
+Infrastructure (α<sub>G</sub>),alphaG,0.02,25,-0.001
+Infrastructure (α<sub>G</sub>),alphaG,0.054,0,0.0
+Infrastructure (α<sub>G</sub>),alphaG,0.054,1,0.034
+Infrastructure (α<sub>G</sub>),alphaG,0.054,2,0.213
+Infrastructure (α<sub>G</sub>),alphaG,0.054,3,0.248
+Infrastructure (α<sub>G</sub>),alphaG,0.054,4,0.263
+Infrastructure (α<sub>G</sub>),alphaG,0.054,5,0.268
+Infrastructure (α<sub>G</sub>),alphaG,0.054,6,0.266
+Infrastructure (α<sub>G</sub>),alphaG,0.054,7,0.26
+Infrastructure (α<sub>G</sub>),alphaG,0.054,8,0.251
+Infrastructure (α<sub>G</sub>),alphaG,0.054,9,0.242
+Infrastructure (α<sub>G</sub>),alphaG,0.054,10,0.232
+Infrastructure (α<sub>G</sub>),alphaG,0.054,11,0.222
+Infrastructure (α<sub>G</sub>),alphaG,0.054,12,0.211
+Infrastructure (α<sub>G</sub>),alphaG,0.054,13,0.201
+Infrastructure (α<sub>G</sub>),alphaG,0.054,14,0.191
+Infrastructure (α<sub>G</sub>),alphaG,0.054,15,0.182
+Infrastructure (α<sub>G</sub>),alphaG,0.054,16,0.173
+Infrastructure (α<sub>G</sub>),alphaG,0.054,17,0.164
+Infrastructure (α<sub>G</sub>),alphaG,0.054,18,0.156
+Infrastructure (α<sub>G</sub>),alphaG,0.054,19,0.148
+Infrastructure (α<sub>G</sub>),alphaG,0.054,20,0.141
+Infrastructure (α<sub>G</sub>),alphaG,0.054,21,0.134
+Infrastructure (α<sub>G</sub>),alphaG,0.054,22,0.127
+Infrastructure (α<sub>G</sub>),alphaG,0.054,23,0.12
+Infrastructure (α<sub>G</sub>),alphaG,0.054,24,0.114
+Infrastructure (α<sub>G</sub>),alphaG,0.054,25,0.108
+Infrastructure (α<sub>G</sub>),alphaG,0.08,0,0.0
+Infrastructure (α<sub>G</sub>),alphaG,0.08,1,-0.007
+Infrastructure (α<sub>G</sub>),alphaG,0.08,2,0.305
+Infrastructure (α<sub>G</sub>),alphaG,0.08,3,0.388
+Infrastructure (α<sub>G</sub>),alphaG,0.08,4,0.431
+Infrastructure (α<sub>G</sub>),alphaG,0.08,5,0.449
+Infrastructure (α<sub>G</sub>),alphaG,0.08,6,0.453
+Infrastructure (α<sub>G</sub>),alphaG,0.08,7,0.447
+Infrastructure (α<sub>G</sub>),alphaG,0.08,8,0.436
+Infrastructure (α<sub>G</sub>),alphaG,0.08,9,0.422
+Infrastructure (α<sub>G</sub>),alphaG,0.08,10,0.405
+Infrastructure (α<sub>G</sub>),alphaG,0.08,11,0.388
+Infrastructure (α<sub>G</sub>),alphaG,0.08,12,0.371
+Infrastructure (α<sub>G</sub>),alphaG,0.08,13,0.354
+Infrastructure (α<sub>G</sub>),alphaG,0.08,14,0.337
+Infrastructure (α<sub>G</sub>),alphaG,0.08,15,0.32
+Infrastructure (α<sub>G</sub>),alphaG,0.08,16,0.305
+Infrastructure (α<sub>G</sub>),alphaG,0.08,17,0.289
+Infrastructure (α<sub>G</sub>),alphaG,0.08,18,0.275
+Infrastructure (α<sub>G</sub>),alphaG,0.08,19,0.261
+Infrastructure (α<sub>G</sub>),alphaG,0.08,20,0.248
+Infrastructure (α<sub>G</sub>),alphaG,0.08,21,0.235
+Infrastructure (α<sub>G</sub>),alphaG,0.08,22,0.223
+Infrastructure (α<sub>G</sub>),alphaG,0.08,23,0.211
+Infrastructure (α<sub>G</sub>),alphaG,0.08,24,0.2
+Infrastructure (α<sub>G</sub>),alphaG,0.08,25,0.19
+Infrastructure (α<sub>G</sub>),alphaG,0.12,0,0.0
+Infrastructure (α<sub>G</sub>),alphaG,0.12,1,-0.069
+Infrastructure (α<sub>G</sub>),alphaG,0.12,2,0.443
+Infrastructure (α<sub>G</sub>),alphaG,0.12,3,0.6
+Infrastructure (α<sub>G</sub>),alphaG,0.12,4,0.684
+Infrastructure (α<sub>G</sub>),alphaG,0.12,5,0.724
+Infrastructure (α<sub>G</sub>),alphaG,0.12,6,0.737
+Infrastructure (α<sub>G</sub>),alphaG,0.12,7,0.732
+Infrastructure (α<sub>G</sub>),alphaG,0.12,8,0.716
+Infrastructure (α<sub>G</sub>),alphaG,0.12,9,0.694
+Infrastructure (α<sub>G</sub>),alphaG,0.12,10,0.668
+Infrastructure (α<sub>G</sub>),alphaG,0.12,11,0.641
+Infrastructure (α<sub>G</sub>),alphaG,0.12,12,0.613
+Infrastructure (α<sub>G</sub>),alphaG,0.12,13,0.584
+Infrastructure (α<sub>G</sub>),alphaG,0.12,14,0.557
+Infrastructure (α<sub>G</sub>),alphaG,0.12,15,0.53
+Infrastructure (α<sub>G</sub>),alphaG,0.12,16,0.503
+Infrastructure (α<sub>G</sub>),alphaG,0.12,17,0.478
+Infrastructure (α<sub>G</sub>),alphaG,0.12,18,0.454
+Infrastructure (α<sub>G</sub>),alphaG,0.12,19,0.431
+Infrastructure (α<sub>G</sub>),alphaG,0.12,20,0.409
+Infrastructure (α<sub>G</sub>),alphaG,0.12,21,0.388
+Infrastructure (α<sub>G</sub>),alphaG,0.12,22,0.368
+Infrastructure (α<sub>G</sub>),alphaG,0.12,23,0.349
+Infrastructure (α<sub>G</sub>),alphaG,0.12,24,0.331
+Infrastructure (α<sub>G</sub>),alphaG,0.12,25,0.313
+Infrastructure (α<sub>G</sub>),alphaG,0.17,0,0.0
+Infrastructure (α<sub>G</sub>),alphaG,0.17,1,-0.146
+Infrastructure (α<sub>G</sub>),alphaG,0.17,2,0.611
+Infrastructure (α<sub>G</sub>),alphaG,0.17,3,0.859
+Infrastructure (α<sub>G</sub>),alphaG,0.17,4,0.996
+Infrastructure (α<sub>G</sub>),alphaG,0.17,5,1.063
+Infrastructure (α<sub>G</sub>),alphaG,0.17,6,1.086
+Infrastructure (α<sub>G</sub>),alphaG,0.17,7,1.081
+Infrastructure (α<sub>G</sub>),alphaG,0.17,8,1.06
+Infrastructure (α<sub>G</sub>),alphaG,0.17,9,1.029
+Infrastructure (α<sub>G</sub>),alphaG,0.17,10,0.991
+Infrastructure (α<sub>G</sub>),alphaG,0.17,11,0.951
+Infrastructure (α<sub>G</sub>),alphaG,0.17,12,0.909
+Infrastructure (α<sub>G</sub>),alphaG,0.17,13,0.867
+Infrastructure (α<sub>G</sub>),alphaG,0.17,14,0.826
+Infrastructure (α<sub>G</sub>),alphaG,0.17,15,0.786
+Infrastructure (α<sub>G</sub>),alphaG,0.17,16,0.747
+Infrastructure (α<sub>G</sub>),alphaG,0.17,17,0.709
+Infrastructure (α<sub>G</sub>),alphaG,0.17,18,0.673
+Infrastructure (α<sub>G</sub>),alphaG,0.17,19,0.639
+Infrastructure (α<sub>G</sub>),alphaG,0.17,20,0.606
+Infrastructure (α<sub>G</sub>),alphaG,0.17,21,0.575
+Infrastructure (α<sub>G</sub>),alphaG,0.17,22,0.545
+Infrastructure (α<sub>G</sub>),alphaG,0.17,23,0.517
+Infrastructure (α<sub>G</sub>),alphaG,0.17,24,0.49
+Infrastructure (α<sub>G</sub>),alphaG,0.17,25,0.464
+Infrastructure (α<sub>G</sub>),alphaG,0.2,0,0.0
+Infrastructure (α<sub>G</sub>),alphaG,0.2,1,-0.191
+Infrastructure (α<sub>G</sub>),alphaG,0.2,2,0.709
+Infrastructure (α<sub>G</sub>),alphaG,0.2,3,1.012
+Infrastructure (α<sub>G</sub>),alphaG,0.2,4,1.18
+Infrastructure (α<sub>G</sub>),alphaG,0.2,5,1.263
+Infrastructure (α<sub>G</sub>),alphaG,0.2,6,1.292
+Infrastructure (α<sub>G</sub>),alphaG,0.2,7,1.288
+Infrastructure (α<sub>G</sub>),alphaG,0.2,8,1.264
+Infrastructure (α<sub>G</sub>),alphaG,0.2,9,1.227
+Infrastructure (α<sub>G</sub>),alphaG,0.2,10,1.182
+Infrastructure (α<sub>G</sub>),alphaG,0.2,11,1.134
+Infrastructure (α<sub>G</sub>),alphaG,0.2,12,1.084
+Infrastructure (α<sub>G</sub>),alphaG,0.2,13,1.034
+Infrastructure (α<sub>G</sub>),alphaG,0.2,14,0.985
+Infrastructure (α<sub>G</sub>),alphaG,0.2,15,0.937
+Infrastructure (α<sub>G</sub>),alphaG,0.2,16,0.89
+Infrastructure (α<sub>G</sub>),alphaG,0.2,17,0.846
+Infrastructure (α<sub>G</sub>),alphaG,0.2,18,0.803
+Infrastructure (α<sub>G</sub>),alphaG,0.2,19,0.762
+Infrastructure (α<sub>G</sub>),alphaG,0.2,20,0.722
+Infrastructure (α<sub>G</sub>),alphaG,0.2,21,0.685
+Infrastructure (α<sub>G</sub>),alphaG,0.2,22,0.649
+Infrastructure (α<sub>G</sub>),alphaG,0.2,23,0.615
+Infrastructure (α<sub>G</sub>),alphaG,0.2,24,0.583
+Infrastructure (α<sub>G</sub>),alphaG,0.2,25,0.552
+Human Capital (μ),alphaH,0.05,0,0.0
+Human Capital (μ),alphaH,0.05,1,0.153
+Human Capital (μ),alphaH,0.05,2,-0.049
+Human Capital (μ),alphaH,0.05,3,-0.129
+Human Capital (μ),alphaH,0.05,4,-0.149
+Human Capital (μ),alphaH,0.05,5,-0.134
+Human Capital (μ),alphaH,0.05,6,-0.1
+Human Capital (μ),alphaH,0.05,7,-0.056
+Human Capital (μ),alphaH,0.05,8,-0.009
+Human Capital (μ),alphaH,0.05,9,0.037
+Human Capital (μ),alphaH,0.05,10,0.081
+Human Capital (μ),alphaH,0.05,11,0.121
+Human Capital (μ),alphaH,0.05,12,0.157
+Human Capital (μ),alphaH,0.05,13,0.189
+Human Capital (μ),alphaH,0.05,14,0.216
+Human Capital (μ),alphaH,0.05,15,0.238
+Human Capital (μ),alphaH,0.05,16,0.257
+Human Capital (μ),alphaH,0.05,17,0.272
+Human Capital (μ),alphaH,0.05,18,0.284
+Human Capital (μ),alphaH,0.05,19,0.292
+Human Capital (μ),alphaH,0.05,20,0.298
+Human Capital (μ),alphaH,0.05,21,0.302
+Human Capital (μ),alphaH,0.05,22,0.303
+Human Capital (μ),alphaH,0.05,23,0.303
+Human Capital (μ),alphaH,0.05,24,0.302
+Human Capital (μ),alphaH,0.05,25,0.299
+Human Capital (μ),alphaH,0.1,0,0.0
+Human Capital (μ),alphaH,0.1,1,0.185
+Human Capital (μ),alphaH,0.1,2,-0.113
+Human Capital (μ),alphaH,0.1,3,-0.208
+Human Capital (μ),alphaH,0.1,4,-0.206
+Human Capital (μ),alphaH,0.1,5,-0.151
+Human Capital (μ),alphaH,0.1,6,-0.069
+Human Capital (μ),alphaH,0.1,7,0.025
+Human Capital (μ),alphaH,0.1,8,0.12
+Human Capital (μ),alphaH,0.1,9,0.211
+Human Capital (μ),alphaH,0.1,10,0.296
+Human Capital (μ),alphaH,0.1,11,0.371
+Human Capital (μ),alphaH,0.1,12,0.437
+Human Capital (μ),alphaH,0.1,13,0.494
+Human Capital (μ),alphaH,0.1,14,0.542
+Human Capital (μ),alphaH,0.1,15,0.581
+Human Capital (μ),alphaH,0.1,16,0.612
+Human Capital (μ),alphaH,0.1,17,0.636
+Human Capital (μ),alphaH,0.1,18,0.654
+Human Capital (μ),alphaH,0.1,19,0.666
+Human Capital (μ),alphaH,0.1,20,0.674
+Human Capital (μ),alphaH,0.1,21,0.676
+Human Capital (μ),alphaH,0.1,22,0.675
+Human Capital (μ),alphaH,0.1,23,0.67
+Human Capital (μ),alphaH,0.1,24,0.663
+Human Capital (μ),alphaH,0.1,25,0.653
+Human Capital (μ),alphaH,0.15,0,0.0
+Human Capital (μ),alphaH,0.15,1,0.217
+Human Capital (μ),alphaH,0.15,2,-0.177
+Human Capital (μ),alphaH,0.15,3,-0.285
+Human Capital (μ),alphaH,0.15,4,-0.262
+Human Capital (μ),alphaH,0.15,5,-0.167
+Human Capital (μ),alphaH,0.15,6,-0.037
+Human Capital (μ),alphaH,0.15,7,0.106
+Human Capital (μ),alphaH,0.15,8,0.249
+Human Capital (μ),alphaH,0.15,9,0.384
+Human Capital (μ),alphaH,0.15,10,0.508
+Human Capital (μ),alphaH,0.15,11,0.618
+Human Capital (μ),alphaH,0.15,12,0.713
+Human Capital (μ),alphaH,0.15,13,0.795
+Human Capital (μ),alphaH,0.15,14,0.862
+Human Capital (μ),alphaH,0.15,15,0.918
+Human Capital (μ),alphaH,0.15,16,0.961
+Human Capital (μ),alphaH,0.15,17,0.994
+Human Capital (μ),alphaH,0.15,18,1.018
+Human Capital (μ),alphaH,0.15,19,1.033
+Human Capital (μ),alphaH,0.15,20,1.041
+Human Capital (μ),alphaH,0.15,21,1.043
+Human Capital (μ),alphaH,0.15,22,1.038
+Human Capital (μ),alphaH,0.15,23,1.029
+Human Capital (μ),alphaH,0.15,24,1.016
+Human Capital (μ),alphaH,0.15,25,1.0
+Human Capital (μ),alphaH,0.2,0,0.0
+Human Capital (μ),alphaH,0.2,1,0.249
+Human Capital (μ),alphaH,0.2,2,-0.241
+Human Capital (μ),alphaH,0.2,3,-0.362
+Human Capital (μ),alphaH,0.2,4,-0.316
+Human Capital (μ),alphaH,0.2,5,-0.182
+Human Capital (μ),alphaH,0.2,6,-0.005
+Human Capital (μ),alphaH,0.2,7,0.186
+Human Capital (μ),alphaH,0.2,8,0.376
+Human Capital (μ),alphaH,0.2,9,0.555
+Human Capital (μ),alphaH,0.2,10,0.717
+Human Capital (μ),alphaH,0.2,11,0.861
+Human Capital (μ),alphaH,0.2,12,0.986
+Human Capital (μ),alphaH,0.2,13,1.091
+Human Capital (μ),alphaH,0.2,14,1.179
+Human Capital (μ),alphaH,0.2,15,1.249
+Human Capital (μ),alphaH,0.2,16,1.305
+Human Capital (μ),alphaH,0.2,17,1.347
+Human Capital (μ),alphaH,0.2,18,1.376
+Human Capital (μ),alphaH,0.2,19,1.394
+Human Capital (μ),alphaH,0.2,20,1.403
+Human Capital (μ),alphaH,0.2,21,1.403
+Human Capital (μ),alphaH,0.2,22,1.395
+Human Capital (μ),alphaH,0.2,23,1.382
+Human Capital (μ),alphaH,0.2,24,1.363
+Human Capital (μ),alphaH,0.2,25,1.34
+Human Capital (μ),alphaH,0.25,0,0.0
+Human Capital (μ),alphaH,0.25,1,0.281
+Human Capital (μ),alphaH,0.25,2,-0.303
+Human Capital (μ),alphaH,0.25,3,-0.438
+Human Capital (μ),alphaH,0.25,4,-0.37
+Human Capital (μ),alphaH,0.25,5,-0.197
+Human Capital (μ),alphaH,0.25,6,0.027
+Human Capital (μ),alphaH,0.25,7,0.267
+Human Capital (μ),alphaH,0.25,8,0.503
+Human Capital (μ),alphaH,0.25,9,0.725
+Human Capital (μ),alphaH,0.25,10,0.925
+Human Capital (μ),alphaH,0.25,11,1.102
+Human Capital (μ),alphaH,0.25,12,1.255
+Human Capital (μ),alphaH,0.25,13,1.384
+Human Capital (μ),alphaH,0.25,14,1.491
+Human Capital (μ),alphaH,0.25,15,1.577
+Human Capital (μ),alphaH,0.25,16,1.644
+Human Capital (μ),alphaH,0.25,17,1.694
+Human Capital (μ),alphaH,0.25,18,1.729
+Human Capital (μ),alphaH,0.25,19,1.75
+Human Capital (μ),alphaH,0.25,20,1.759
+Human Capital (μ),alphaH,0.25,21,1.758
+Human Capital (μ),alphaH,0.25,22,1.747
+Human Capital (μ),alphaH,0.25,23,1.729
+Human Capital (μ),alphaH,0.25,24,1.704
+Human Capital (μ),alphaH,0.25,25,1.674
+Human Capital (μ),alphaH,0.3,0,0.0
+Human Capital (μ),alphaH,0.3,1,0.312
+Human Capital (μ),alphaH,0.3,2,-0.366
+Human Capital (μ),alphaH,0.3,3,-0.513
+Human Capital (μ),alphaH,0.3,4,-0.424
+Human Capital (μ),alphaH,0.3,5,-0.211
+Human Capital (μ),alphaH,0.3,6,0.06
+Human Capital (μ),alphaH,0.3,7,0.348
+Human Capital (μ),alphaH,0.3,8,0.63
+Human Capital (μ),alphaH,0.3,9,0.894
+Human Capital (μ),alphaH,0.3,10,1.132
+Human Capital (μ),alphaH,0.3,11,1.341
+Human Capital (μ),alphaH,0.3,12,1.522
+Human Capital (μ),alphaH,0.3,13,1.675
+Human Capital (μ),alphaH,0.3,14,1.801
+Human Capital (μ),alphaH,0.3,15,1.902
+Human Capital (μ),alphaH,0.3,16,1.981
+Human Capital (μ),alphaH,0.3,17,2.039
+Human Capital (μ),alphaH,0.3,18,2.079
+Human Capital (μ),alphaH,0.3,19,2.102
+Human Capital (μ),alphaH,0.3,20,2.112
+Human Capital (μ),alphaH,0.3,21,2.109
+Human Capital (μ),alphaH,0.3,22,2.095
+Human Capital (μ),alphaH,0.3,23,2.072
+Human Capital (μ),alphaH,0.3,24,2.041
+Human Capital (μ),alphaH,0.3,25,2.004
+R&D (α<sub>RD</sub>),alphaRD,0.005,0,0.0
+R&D (α<sub>RD</sub>),alphaRD,0.005,1,0.084
+R&D (α<sub>RD</sub>),alphaRD,0.005,2,0.015
+R&D (α<sub>RD</sub>),alphaRD,0.005,3,0.02
+R&D (α<sub>RD</sub>),alphaRD,0.005,4,0.051
+R&D (α<sub>RD</sub>),alphaRD,0.005,5,0.08
+R&D (α<sub>RD</sub>),alphaRD,0.005,6,0.102
+R&D (α<sub>RD</sub>),alphaRD,0.005,7,0.115
+R&D (α<sub>RD</sub>),alphaRD,0.005,8,0.12
+R&D (α<sub>RD</sub>),alphaRD,0.005,9,0.12
+R&D (α<sub>RD</sub>),alphaRD,0.005,10,0.117
+R&D (α<sub>RD</sub>),alphaRD,0.005,11,0.112
+R&D (α<sub>RD</sub>),alphaRD,0.005,12,0.106
+R&D (α<sub>RD</sub>),alphaRD,0.005,13,0.099
+R&D (α<sub>RD</sub>),alphaRD,0.005,14,0.093
+R&D (α<sub>RD</sub>),alphaRD,0.005,15,0.086
+R&D (α<sub>RD</sub>),alphaRD,0.005,16,0.08
+R&D (α<sub>RD</sub>),alphaRD,0.005,17,0.075
+R&D (α<sub>RD</sub>),alphaRD,0.005,18,0.069
+R&D (α<sub>RD</sub>),alphaRD,0.005,19,0.065
+R&D (α<sub>RD</sub>),alphaRD,0.005,20,0.06
+R&D (α<sub>RD</sub>),alphaRD,0.005,21,0.056
+R&D (α<sub>RD</sub>),alphaRD,0.005,22,0.053
+R&D (α<sub>RD</sub>),alphaRD,0.005,23,0.049
+R&D (α<sub>RD</sub>),alphaRD,0.005,24,0.046
+R&D (α<sub>RD</sub>),alphaRD,0.005,25,0.043
+R&D (α<sub>RD</sub>),alphaRD,0.0189,0,0.0
+R&D (α<sub>RD</sub>),alphaRD,0.0189,1,-0.015
+R&D (α<sub>RD</sub>),alphaRD,0.0189,2,0.002
+R&D (α<sub>RD</sub>),alphaRD,0.0189,3,0.198
+R&D (α<sub>RD</sub>),alphaRD,0.0189,4,0.423
+R&D (α<sub>RD</sub>),alphaRD,0.0189,5,0.603
+R&D (α<sub>RD</sub>),alphaRD,0.0189,6,0.723
+R&D (α<sub>RD</sub>),alphaRD,0.0189,7,0.79
+R&D (α<sub>RD</sub>),alphaRD,0.0189,8,0.817
+R&D (α<sub>RD</sub>),alphaRD,0.0189,9,0.815
+R&D (α<sub>RD</sub>),alphaRD,0.0189,10,0.795
+R&D (α<sub>RD</sub>),alphaRD,0.0189,11,0.764
+R&D (α<sub>RD</sub>),alphaRD,0.0189,12,0.727
+R&D (α<sub>RD</sub>),alphaRD,0.0189,13,0.688
+R&D (α<sub>RD</sub>),alphaRD,0.0189,14,0.648
+R&D (α<sub>RD</sub>),alphaRD,0.0189,15,0.61
+R&D (α<sub>RD</sub>),alphaRD,0.0189,16,0.573
+R&D (α<sub>RD</sub>),alphaRD,0.0189,17,0.538
+R&D (α<sub>RD</sub>),alphaRD,0.0189,18,0.505
+R&D (α<sub>RD</sub>),alphaRD,0.0189,19,0.475
+R&D (α<sub>RD</sub>),alphaRD,0.0189,20,0.446
+R&D (α<sub>RD</sub>),alphaRD,0.0189,21,0.42
+R&D (α<sub>RD</sub>),alphaRD,0.0189,22,0.395
+R&D (α<sub>RD</sub>),alphaRD,0.0189,23,0.371
+R&D (α<sub>RD</sub>),alphaRD,0.0189,24,0.35
+R&D (α<sub>RD</sub>),alphaRD,0.0189,25,0.329
+R&D (α<sub>RD</sub>),alphaRD,0.04,0,0.0
+R&D (α<sub>RD</sub>),alphaRD,0.04,1,-0.155
+R&D (α<sub>RD</sub>),alphaRD,0.04,2,-0.036
+R&D (α<sub>RD</sub>),alphaRD,0.04,3,0.429
+R&D (α<sub>RD</sub>),alphaRD,0.04,4,0.937
+R&D (α<sub>RD</sub>),alphaRD,0.04,5,1.341
+R&D (α<sub>RD</sub>),alphaRD,0.04,6,1.611
+R&D (α<sub>RD</sub>),alphaRD,0.04,7,1.761
+R&D (α<sub>RD</sub>),alphaRD,0.04,8,1.82
+R&D (α<sub>RD</sub>),alphaRD,0.04,9,1.814
+R&D (α<sub>RD</sub>),alphaRD,0.04,10,1.767
+R&D (α<sub>RD</sub>),alphaRD,0.04,11,1.696
+R&D (α<sub>RD</sub>),alphaRD,0.04,12,1.612
+R&D (α<sub>RD</sub>),alphaRD,0.04,13,1.523
+R&D (α<sub>RD</sub>),alphaRD,0.04,14,1.433
+R&D (α<sub>RD</sub>),alphaRD,0.04,15,1.347
+R&D (α<sub>RD</sub>),alphaRD,0.04,16,1.264
+R&D (α<sub>RD</sub>),alphaRD,0.04,17,1.186
+R&D (α<sub>RD</sub>),alphaRD,0.04,18,1.112
+R&D (α<sub>RD</sub>),alphaRD,0.04,19,1.044
+R&D (α<sub>RD</sub>),alphaRD,0.04,20,0.98
+R&D (α<sub>RD</sub>),alphaRD,0.04,21,0.921
+R&D (α<sub>RD</sub>),alphaRD,0.04,22,0.866
+R&D (α<sub>RD</sub>),alphaRD,0.04,23,0.814
+R&D (α<sub>RD</sub>),alphaRD,0.04,24,0.766
+R&D (α<sub>RD</sub>),alphaRD,0.04,25,0.721
+R&D (α<sub>RD</sub>),alphaRD,0.07,0,0.0
+R&D (α<sub>RD</sub>),alphaRD,0.07,1,-0.338
+R&D (α<sub>RD</sub>),alphaRD,0.07,2,-0.116
+R&D (α<sub>RD</sub>),alphaRD,0.07,3,0.695
+R&D (α<sub>RD</sub>),alphaRD,0.07,4,1.587
+R&D (α<sub>RD</sub>),alphaRD,0.07,5,2.306
+R&D (α<sub>RD</sub>),alphaRD,0.07,6,2.792
+R&D (α<sub>RD</sub>),alphaRD,0.07,7,3.065
+R&D (α<sub>RD</sub>),alphaRD,0.07,8,3.171
+R&D (α<sub>RD</sub>),alphaRD,0.07,9,3.159
+R&D (α<sub>RD</sub>),alphaRD,0.07,10,3.072
+R&D (α<sub>RD</sub>),alphaRD,0.07,11,2.941
+R&D (α<sub>RD</sub>),alphaRD,0.07,12,2.787
+R&D (α<sub>RD</sub>),alphaRD,0.07,13,2.625
+R&D (α<sub>RD</sub>),alphaRD,0.07,14,2.463
+R&D (α<sub>RD</sub>),alphaRD,0.07,15,2.307
+R&D (α<sub>RD</sub>),alphaRD,0.07,16,2.159
+R&D (α<sub>RD</sub>),alphaRD,0.07,17,2.021
+R&D (α<sub>RD</sub>),alphaRD,0.07,18,1.891
+R&D (α<sub>RD</sub>),alphaRD,0.07,19,1.771
+R&D (α<sub>RD</sub>),alphaRD,0.07,20,1.66
+R&D (α<sub>RD</sub>),alphaRD,0.07,21,1.557
+R&D (α<sub>RD</sub>),alphaRD,0.07,22,1.461
+R&D (α<sub>RD</sub>),alphaRD,0.07,23,1.372
+R&D (α<sub>RD</sub>),alphaRD,0.07,24,1.29
+R&D (α<sub>RD</sub>),alphaRD,0.07,25,1.213
+R&D (α<sub>RD</sub>),alphaRD,0.1,0,0.0
+R&D (α<sub>RD</sub>),alphaRD,0.1,1,-0.505
+R&D (α<sub>RD</sub>),alphaRD,0.1,2,-0.216
+R&D (α<sub>RD</sub>),alphaRD,0.1,3,0.909
+R&D (α<sub>RD</sub>),alphaRD,0.1,4,2.166
+R&D (α<sub>RD</sub>),alphaRD,0.1,5,3.197
+R&D (α<sub>RD</sub>),alphaRD,0.1,6,3.905
+R&D (α<sub>RD</sub>),alphaRD,0.1,7,4.307
+R&D (α<sub>RD</sub>),alphaRD,0.1,8,4.465
+R&D (α<sub>RD</sub>),alphaRD,0.1,9,4.447
+R&D (α<sub>RD</sub>),alphaRD,0.1,10,4.317
+R&D (α<sub>RD</sub>),alphaRD,0.1,11,4.121
+R&D (α<sub>RD</sub>),alphaRD,0.1,12,3.893
+R&D (α<sub>RD</sub>),alphaRD,0.1,13,3.655
+R&D (α<sub>RD</sub>),alphaRD,0.1,14,3.419
+R&D (α<sub>RD</sub>),alphaRD,0.1,15,3.193
+R&D (α<sub>RD</sub>),alphaRD,0.1,16,2.98
+R&D (α<sub>RD</sub>),alphaRD,0.1,17,2.781
+R&D (α<sub>RD</sub>),alphaRD,0.1,18,2.597
+R&D (α<sub>RD</sub>),alphaRD,0.1,19,2.428
+R&D (α<sub>RD</sub>),alphaRD,0.1,20,2.271
+R&D (α<sub>RD</sub>),alphaRD,0.1,21,2.126
+R&D (α<sub>RD</sub>),alphaRD,0.1,22,1.993
+R&D (α<sub>RD</sub>),alphaRD,0.1,23,1.869
+R&D (α<sub>RD</sub>),alphaRD,0.1,24,1.754
+R&D (α<sub>RD</sub>),alphaRD,0.1,25,1.647

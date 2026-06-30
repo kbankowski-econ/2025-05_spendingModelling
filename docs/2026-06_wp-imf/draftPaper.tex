@@ -423,9 +423,21 @@ The same multipliers under a \emph{permanent} rather than AR(1) increase---which
 \subsection{Sensitivity}
 
 The output responses depend on the model's key structural parameters.
-The most consequential is the speed of technology diffusion, governed by the adoption probability $q_t$: faster diffusion brings the productivity payoff of R\&D forward, raising the gains at every horizon.
-Section~\ref{subsec:hcrd} quantifies this sensitivity for the human-capital/R\&D policy mix (Figure~\ref{fig:diffusion}).
-The responses are similarly sensitive to the output elasticity of infrastructure ($\alpha_G$), the elasticity of human capital formation with respect to the public stock ($\mu$), and the efficiency wedges $e^{GI}$, $e^{GE}$, and $e^{GRD}$, each of which scales the productive payoff of the corresponding spending category.
+Figure~\ref{fig:sensitivity} traces the advanced-economy output response to each productive expansion as the elasticity that governs its channel is varied over a plausible range.
+Each spending category's response is driven primarily by its own elasticity: the infrastructure response scales with the output elasticity of public infrastructure ($\alpha_G$), the human-capital response with the elasticity of human capital formation with respect to the public stock ($\mu$), and the R\&D response with the elasticity of technology creation with respect to public R\&D ($\alpha_{RD}$).
+The level of these payoffs is sensitive to calibration: over the ranges considered, the implied long-run output multiplier spans from near zero to about 12 for infrastructure, from about 3 to 26 for human capital, and from about 1 to 34 for R\&D.
+The ordering of horizons is robust throughout, with infrastructure paying off first and human capital and R\&D later.
+The efficiency wedges $e^{GI}$, $e^{GE}$, and $e^{GRD}$ enter differently: they scale the steady-state stock of effective public capital, so they govern the gains from \emph{closing} efficiency gaps (Section~\ref{subsec:efficiency}) but leave the multiplier of an additional unit of spending essentially unchanged.
+A further key parameter is the speed of technology diffusion, governed by the adoption probability $q_t$: faster diffusion brings the productivity payoff of R\&D forward, raising the gains at every horizon.
+Section~\ref{subsec:hcrd} quantifies this for the human-capital/R\&D policy mix (Figure~\ref{fig:diffusion}).
+
+\begin{figure}[H]
+    \centering
+    \caption{Sensitivity of Output Responses to Structural Parameters: Advanced Economies \label{fig:sensitivity}}
+    \includegraphics{figures/sensitivityIRF_AE.pdf}
+    \source{IMF staff estimates.}
+    \desc{Output responses (percent deviation from steady state) to a debt-financed expansion of 1 percent of GDP (persistent AR(1), persistence 0.9, no offsetting cut) as one structural parameter is varied over a plausible range, one spending category per panel: the output elasticity of infrastructure ($\alpha_G$), the elasticity of human capital formation with respect to the public human capital stock ($\mu$), and the elasticity of technology creation with respect to public R\&D ($\alpha_{RD}$). In each panel the lines run from the low (light) to the high (dark) value of the parameter, with the swept range labeled at the right; the dashed line is the baseline calibration. The horizontal axis is the horizon in years after the shock.}
+\end{figure}
 
 %========================================================================
 \section{Policy Experiments} \label{sec:results}
@@ -460,7 +472,7 @@ The gains are larger for EMDEs, consistent with the higher output elasticity of 
     \desc{Output responses (percent deviation from steady state) to a permanent increase of 1 percent of GDP in the expenditure categories listed in the legend, funded by a cut in public consumption.}
 \end{figure}
 
-\subsection{Closing Spending Efficiency Gaps}
+\subsection{Closing Spending Efficiency Gaps} \label{subsec:efficiency}
 
 Figures~\ref{fig:efficiencyAE} and~\ref{fig:efficiencyEM} show the additional output gains from gradually closing the efficiency gaps $e^{GI}$, $e^{GE}$, and $e^{GRD}$ in infrastructure, human-capital, and R\&D spending, respectively, for advanced economies and for emerging market and developing economies.
 As the gaps close, a larger share of each unit of public spending becomes productive---raising effective public investment in equations~\eqref{eq:kgi} and~\eqref{eq:kge} and effective R\&D in equation~\eqref{eq:Z}.
