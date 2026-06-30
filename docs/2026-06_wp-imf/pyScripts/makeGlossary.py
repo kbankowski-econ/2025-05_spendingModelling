@@ -154,29 +154,29 @@ EXOGENOUS = [
 
 
 def longtable(rows, caption, label):
-    head = (r"Paper & Description & Model code \\")
+    head = (r"\# & Paper & Description & Model code \\")
     lines = [
         HEADER,
-        r"\begin{longtable}{@{}l >{\raggedright\arraybackslash}p{8.2cm} l@{}}",
+        r"\begin{longtable}{@{}r@{\hskip 10pt}l >{\raggedright\arraybackslash}p{7.6cm} l@{}}",
         rf"\caption{{{caption}}}\label{{{label}}}\\",
         r"\toprule",
         head,
         r"\midrule",
         r"\endfirsthead",
-        r"\multicolumn{3}{c}{{\tablename\ \thetable{} -- continued from previous page}}\\",
+        r"\multicolumn{4}{c}{{\tablename\ \thetable{} -- continued from previous page}}\\",
         r"\toprule",
         head,
         r"\midrule",
         r"\endhead",
         r"\midrule",
-        r"\multicolumn{3}{r}{\textit{continued on next page}}\\",
+        r"\multicolumn{4}{r}{\textit{continued on next page}}\\",
         r"\endfoot",
         r"\bottomrule",
         r"\endlastfoot",
     ]
-    for paper, desc, model in rows:
+    for i, (paper, desc, model) in enumerate(rows, start=1):
         code = model.replace("_", r"\_")
-        lines.append(rf"{paper} & {desc} & \texttt{{{code}}} \\")
+        lines.append(rf"{i} & {paper} & {desc} & \texttt{{{code}}} \\")
     lines.append(r"\end{longtable}")
     return "\n".join(lines) + "\n"
 
