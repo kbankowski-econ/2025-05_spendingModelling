@@ -16,6 +16,7 @@ recalibration of any of them flows into the table automatically:
     rho_A   <- rho_ZZRD    (AR(1) coefficient, technology stock)
     alpha_HA <- alphaHA    (HC loading in tech creation; EMDE "--", channel off)
     alpha_RD <- alphaRD    (R&D loading in tech creation; EMDE "--", channel off)
+    varsigma <- rhoSADOPT  (adoption-probability elasticity, AE; EMDE "--", dormant)
     phi     <- phiob       (survival rate of adopted technologies, 1 - 0.08/4)
     e_GI    <- eGI_ss      (inefficiency, infrastructure investment)
     e_GE    <- eGE_ss      (inefficiency, human capital investment)
@@ -38,9 +39,15 @@ of 0.42 -> 0.41 and the AE e_GRD of 0.41 -> 0.40, recalibrated to the 0.399 data
 median). The EMDE e_GRD is reported "--" because the R&D channel is shut down there
 (alphaRD=0), even though the model still carries eGRD_ss=0.2.
 
-The remaining literal rows are curated/rounded presentation values: EMDE adoption
-elasticity (varsigma) shown at the AE value rather than the raw EMDE code value;
-q_0 has no standalone param.
+The adoption block (varsigma and q_0) is reported AE-only ("--" for EMDEs): for
+EMDEs the endogenous innovation channel is off, so the spending-driven adoption
+response is dormant (verified: the adoption block does not move in EMDE
+experiments), exactly as for alpha_HA/alpha_RD. varsigma reads the AE rhoSADOPT
+(the nonzero EMDE 0.10 is dormant and not shown); q_0 stays an AE literal because
+it is not a standalone parameter (the code's kappaprob is solved in steady state
+and is region-specific, ~0.31 AE / ~0.08 EMDE, not 0.10).
+
+The only remaining curated literal is q_0 (AE), per the line above.
 
 Writes (\\input by draftPaper.tex):
   ../parametersTable.tex
@@ -95,8 +102,8 @@ def build_parameters():
         (r"$e^{GI}$",                "Inefficiency, infrastructure investment", fmt(ae["eGI_ss"], 2),         fmt(em["eGI_ss"], 2)),     # READ: eGI_ss
         (r"$e^{GE}$",                "Inefficiency, human capital investment",  fmt(ae["eGE_ss"], 2),         fmt(em["eGE_ss"], 2)),     # READ: eGE_ss
         (r"$e^{GRD}$",               r"Inefficiency, public R\&D spending",     fmt(ae["eGRD_ss"], 2),        "--"),      # READ AE: eGRD_ss; EMDE "--" (R&D channel off)
-        (r"$\varsigma$",             "Elasticity, adoption probability",        "0.80",                       "0.80"),    # curated: EMDE shown at AE value vs code rhoSADOPT=0.10
-        (r"$q_0$",                   "Scale, adoption probability",             "0.10",                       "0.10"),    # curated: not a standalone model param
+        (r"$\varsigma$",             "Elasticity, adoption probability",        fmt(ae["rhoSADOPT"], 2),      "--"),      # READ AE: rhoSADOPT; EMDE "--" (adoption response dormant, channel off)
+        (r"$q_0$",                   "Scale, adoption probability",             "0.10",                       "--"),      # AE literal (q_0 not a standalone param); EMDE "--" (adoption response dormant)
         (r"$\delta^{GI},\delta^{GE}$", "Depreciation, public capital",          fmt(ae["delta"], 3),          fmt(em["delta"], 3)),      # READ: delta (= deltaH)
         (r"$\mu$",                   "Human capital elasticity, public stock",  fmt(ae["alphaH"], 2),         fmt(em["alphaH"], 2)),     # READ: alphaH
         (r"$\gamma$",                "Human capital elasticity, time input",    fmt(ae["muy"], 2),            fmt(em["muy"], 2)),        # READ: muy
