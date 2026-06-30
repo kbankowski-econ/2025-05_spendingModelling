@@ -43,11 +43,16 @@ The adoption block (varsigma and q_0) is reported AE-only ("--" for EMDEs): for
 EMDEs the endogenous innovation channel is off, so the spending-driven adoption
 response is dormant (verified: the adoption block does not move in EMDE
 experiments), exactly as for alpha_HA/alpha_RD. varsigma reads the AE rhoSADOPT
-(the nonzero EMDE 0.10 is dormant and not shown); q_0 stays an AE literal because
-it is not a standalone parameter (the code's kappaprob is solved in steady state
-and is region-specific, ~0.31 AE / ~0.08 EMDE, not 0.10).
+(the nonzero EMDE 0.10 is dormant and not shown).
 
-The only remaining curated literal is q_0 (AE), per the line above.
+q_0 (AE) is the one cell kept as a literal. It IS a structural parameter -- the
+scale of the adoption probability q_t = q_0*(S_t/Lambda_t)^varsigma in the paper --
+but the code parameterizes the same scale as `kappaprob` on RAW (non-detrended)
+spending, and kappaprob is SOLVED in steady state to hit a target adoption
+probability (probadopt_ss=0.05, ~10yr lag): kappaprob = 0.05/S_ss^varsigma =
+0.309 (AE) / 0.084 (EMDE). q_0=0.10 is that same scale on detrended spending
+(normalization-independent), so it equals no single stored param and is reported
+as the literal the paper uses (draftPaper.tex calibration text).
 
 Writes (\\input by draftPaper.tex):
   ../parametersTable.tex
@@ -103,7 +108,7 @@ def build_parameters():
         (r"$e^{GE}$",                "Inefficiency, human capital investment",  fmt(ae["eGE_ss"], 2),         fmt(em["eGE_ss"], 2)),     # READ: eGE_ss
         (r"$e^{GRD}$",               r"Inefficiency, public R\&D spending",     fmt(ae["eGRD_ss"], 2),        "--"),      # READ AE: eGRD_ss; EMDE "--" (R&D channel off)
         (r"$\varsigma$",             "Elasticity, adoption probability",        fmt(ae["rhoSADOPT"], 2),      "--"),      # READ AE: rhoSADOPT; EMDE "--" (adoption response dormant, channel off)
-        (r"$q_0$",                   "Scale, adoption probability",             "0.10",                       "--"),      # AE literal (q_0 not a standalone param); EMDE "--" (adoption response dormant)
+        (r"$q_0$",                   "Scale, adoption probability",             "0.10",                       "--"),      # AE literal: scale on DETRENDED spending; code's kappaprob (on raw S) is SS-solved to probadopt_ss=0.05. EMDE "--" (dormant)
         (r"$\delta^{GI},\delta^{GE}$", "Depreciation, public capital",          fmt(ae["delta"], 3),          fmt(em["delta"], 3)),      # READ: delta (= deltaH)
         (r"$\mu$",                   "Human capital elasticity, public stock",  fmt(ae["alphaH"], 2),         fmt(em["alphaH"], 2)),     # READ: alphaH
         (r"$\gamma$",                "Human capital elasticity, time input",    fmt(ae["muy"], 2),            fmt(em["muy"], 2)),        # READ: muy
