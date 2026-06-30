@@ -10,7 +10,7 @@
 "residuals":[
 {"residual": {"lhs": "lambda", "rhs": "1/C"}}
 , {"residual": {"lhs": "lambda", "rhs": "lambda*betta*R/PI"}}
-, {"residual": {"lhs": "omega*N^phi", "rhs": "lambda*W_real"}}
+, {"residual": {"lhs": "omega*N^varphi", "rhs": "lambda*W_real"}}
 , {"residual": {"lhs": "Lab", "rhs": "N"}}
 , {"residual": {"lhs": "mc", "rhs": "W_real"}}
 , {"residual": {"lhs": "yt", "rhs": "N"}}
@@ -35,7 +35,7 @@
 , {"eq": 2, "col": 4, "var": "lambda", "val": "1-betta*R/PI"}
 , {"eq": 2, "col": 7, "var": "PI", "val": "(-((-(lambda*betta*R))/(PI*PI)))"}
 , {"eq": 2, "col": 15, "var": "R", "val": "(-(lambda*betta/PI))"}
-, {"eq": 3, "col": 2, "var": "N", "val": "omega*get_power_deriv(N,phi,1)"}
+, {"eq": 3, "col": 2, "var": "N", "val": "omega*get_power_deriv(N,varphi,1)"}
 , {"eq": 3, "col": 4, "var": "lambda", "val": "(-W_real)"}
 , {"eq": 3, "col": 5, "var": "W_real", "val": "(-lambda)"}
 , {"eq": 4, "col": 2, "var": "N", "val": "(-1)"}

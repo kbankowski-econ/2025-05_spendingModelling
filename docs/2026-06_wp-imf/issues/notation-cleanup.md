@@ -6,6 +6,26 @@ We are cleaning notation **in the LaTeX glossary tables first** (app:glossary,
 already shows the **target** names, which may run ahead of the actual model until
 we propagate.
 
+## DONE — Tier 1 (misleading names) + `alppha` typo: applied to the MODEL and glossary
+
+Renamed in the model source (declare/param macros, `model_block(_simple).modpart`,
+`modelTemplate{,NK,Simple}.mod`, `Steady_states_solution.m`) and in the glossary +
+`makeParametersTable.py`. Re-ran all 44 models: rank condition verified, values
+**identical** (a pure rename), `parametersTable.tex` byte-unchanged.
+
+| paper | concept | old model code | new model code |
+|---|---|---|---|
+| $\mu$ | HC elasticity w.r.t. public HC stock | `alphaH` | `mu` |
+| $\gamma$ | HC elasticity w.r.t. time input | `muy` | `gamma` |
+| $\varsigma$ | adoption-probability elasticity | `rhoSADOPT` | `varsigma` |
+| $\varphi$ | inverse Frisch elasticity | `phi` | `varphi` |
+| $\phi$ | survival rate of adopted tech | `phiob` | `phi` |
+| $\alpha$ | private capital share | `alppha` | `alpha` |
+
+Note: `phi`/`phiob` were swapped carefully (`phi`→`varphi` first, then `phiob`→`phi`).
+The paper prose uses the Greek symbols (unchanged), so no draft-text edit was needed.
+`alpha`/`gamma` shadow MATLAB builtins but the rename solves cleanly (standard DSGE usage).
+
 ## Decided — applied in the glossary; model + draft propagation PENDING
 
 Redundant trailing `t` (mirrored the paper time subscript; no other model variable carries one):

@@ -1,10 +1,10 @@
 betta=0.9985;
-phi= 5 ;   % inverse Frisch elasticity (Frisch 0.2), as in Gali (2015, Ch. 3); was 1.2
+varphi= 5 ;   % inverse Frisch elasticity (Frisch 0.2), as in Gali (2015, Ch. 3); was 1.2
 chi =0.6;
 delta =0.025;
 thetap = 0.8;
 epsilon =10;
-alppha=0.3;
+alpha=0.3;
 Bigtheta=0;
 Bigtheta_y=0;
 rho_R=0.7;
@@ -29,14 +29,14 @@ gamma_d_trans=0.01;
 rho_trans=0;
 
 deltaH=0.025;
-muy=0.5;
+gamma=0.5;
 
 rho_Ige=0.9;
 alphaZZ1=0.2;
 rho_AAt=0.0;
 
 markupss=1.18;
-phiob=1-0.08/4;   % obsolescence rate: 0.08/4
+phi=1-0.08/4;   % obsolescence rate: 0.08/4
 varthetaat=1.35;
 probadoptss=0.2/4;
 rhoshockchit=1;

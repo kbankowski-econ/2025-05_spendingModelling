@@ -26,29 +26,29 @@ mc=(epsilon-1)/epsilon;
 %kG_y=eff*Igiy/(1-(1-delta)/ZZ);
 kG_y=(1-eGI_ss)*Igiy/(ZZ-(1-delta));
 
-Kp_y=(1+Bigtheta_y)*alppha*mc/(markupss*rk);
+Kp_y=(1+Bigtheta_y)*alpha*mc/(markupss*rk);
 
-yt_proxy=(kG_y^alphaG)*(Kp_y^alppha)*(N^(1-alppha));
+yt_proxy=(kG_y^alphaG)*(Kp_y^alpha)*(N^(1-alpha));
 
-yt=yt_proxy^(1/(1-alphaG-alppha));
+yt=yt_proxy^(1/(1-alphaG-alpha));
 
 
-W_real=(1-alppha)*mc*yt/N/markupss;
+W_real=(1-alpha)*mc*yt/N/markupss;
 
 
 % Real wage
-%W_real=(mc/((1/(1-alppha))^(1-alppha)*(1/alppha)^alppha*rk^alppha/(kG_y/(1+Bigtheta_y)*1/ZZ)^(alphaG/(1-alphaG))))^(1/(1-alppha));
-%mc=(1/(1-alppha))^(1-alppha)*(1/alppha)^alppha*W_real^(1-alppha)*rk^alppha/(kG_y/(1+Bigtheta_y)*1/ZZ)^(alphaG/(1-alphaG));
+%W_real=(mc/((1/(1-alpha))^(1-alpha)*(1/alpha)^alpha*rk^alpha/(kG_y/(1+Bigtheta_y)*1/ZZ)^(alphaG/(1-alphaG))))^(1/(1-alpha));
+%mc=(1/(1-alpha))^(1-alpha)*(1/alpha)^alpha*W_real^(1-alpha)*rk^alpha/(kG_y/(1+Bigtheta_y)*1/ZZ)^(alphaG/(1-alphaG));
 
-%Kp=alppha/(1-alppha)*W_real/rk*ZZ*N;
+%Kp=alpha/(1-alpha)*W_real/rk*ZZ*N;
 
 % Private capital
-Kp=alppha/(1-alppha)*W_real/rk*N;
+Kp=alpha/(1-alpha)*W_real/rk*N;
 
 % Private investment
 Ip=Kp*(ZZ-(1-delta));
 
-%Param_1=1/ZZ^(alphaG+alppha-alphaG*alppha)*(Kp^(alppha*(1-alphaG)))*(N^((1-alppha)*(1-alphaG)));
+%Param_1=1/ZZ^(alphaG+alpha-alphaG*alpha)*(Kp^(alpha*(1-alphaG)))*(N^((1-alpha)*(1-alphaG)));
 %yt=((Param_1*kG_y^alphaG)/(1+Bigtheta_y))^(1/(1-alphaG));
 
 % Public capital
@@ -56,7 +56,7 @@ Kg=kG_y*yt;
 
 % Fixed cost
 Bigtheta=Bigtheta_y*yt;
-%Bigtheta_test=1/ZZ^(alphaG+alppha-alphaG*alppha)*(Kg^alphaG)*(Kp^(alppha*(1-alphaG)))*(N^((1-alppha)*(1-alphaG)))-yt
+%Bigtheta_test=1/ZZ^(alphaG+alpha-alphaG*alpha)*(Kg^alphaG)*(Kp^(alpha*(1-alphaG)))*(N^((1-alpha)*(1-alphaG)))-yt
 %(Bigtheta_test-Bigtheta).^2
 
 % NEW PATH
@@ -78,22 +78,22 @@ Grdss=Grd;
 AAt=1;
 probadopt=probadoptss;
 SDF=betta;
-VA=(1+gammaa)/(1+gammaa-phiob*SDF)*(markupss-1)/(markupss/mc)*yt;
-ZZRD=(1+gammaa-phiob)/(probadopt*phiob)+AAt;
+VA=(1+gammaa)/(1+gammaa-phi*SDF)*(markupss-1)/(markupss/mc)*yt;
+ZZRD=(1+gammaa-phi)/(probadopt*phi)+AAt;
 
-JZt=(1-rhoSADOPT)*probadopt*phiob*SDF/(1+gammaa-(1-probadopt+rhoSADOPT*probadopt)*phiob*betta)*VA;
+JZt=(1-varsigma)*probadopt*phi*SDF/(1+gammaa-(1-probadopt+varsigma*probadopt)*phi*betta)*VA;
 
-St=rhoSADOPT*probadopt*phiob*SDF/(1+gammaa)*(VA-JZt);
+St=varsigma*probadopt*phi*SDF/(1+gammaa)*(VA-JZt);
 
-%SSt=SDF*JZt*(ZZRD/AAt-phiob*ZZRD/AAt*1/(1+gammaa));
+%SSt=SDF*JZt*(ZZRD/AAt-phi*ZZRD/AAt*1/(1+gammaa));
 SSt=0;
-%shockchit=(1+gammaa-phiob)/(SSt^alphaHA*Grd^alphaRD);
-%shockchit=(1+gammaa-phiob)/(SSt^alphaHA);
+%shockchit=(1+gammaa-phi)/(SSt^alphaHA*Grd^alphaRD);
+%shockchit=(1+gammaa-phi)/(SSt^alphaHA);
 shockchit=1;
 
 
 
-kappaprob=probadopt/((St)^rhoSADOPT);
+kappaprob=probadopt/((St)^varsigma);
 
 
 Ns=(1-1/ZZRD)*St+SSt;
@@ -148,10 +148,10 @@ Ess=0.05
 muySS=(1/betta-1+deltaH)/(Lss/Ess)/deltaH
 %}
 
-Lab_E_ratio=(1/betta-1+deltaH)/(muy*deltaH);
+Lab_E_ratio=(1/betta-1+deltaH)/(gamma*deltaH);
 E=Lab/Lab_E_ratio;
 % Langangra of teh human capital equation
-lambda_HC=lambda*W_real*(1-tauw)/(muy*1/E*deltaH);
+lambda_HC=lambda*W_real*(1-tauw)/(gamma*1/E*deltaH);
 
 % Lab 
 %Lab=lambda_HC*(1/betta-1+deltaH)/(lambda*(1-tauw)*W_real);
@@ -162,16 +162,16 @@ lambda_HC=lambda*W_real*(1-tauw)/(muy*1/E*deltaH);
 H=(N+0*Ns)/Lab;
 
 % Adjustment parameter for N 
-omega=lambda*W_real*(1-tauw)*H/(Lab+E)^phi;
+omega=lambda*W_real*(1-tauw)*H/(Lab+E)^varphi;
 
-muyH=omega*(Lab+E)^phi/(lambda_HC*muy*E^(muy-1)* (Kge)^alphaH);
+muyH=omega*(Lab+E)^varphi/(lambda_HC*gamma*E^(gamma-1)* (Kge)^mu);
 
 
 ygrowth=log(ZZ)*100;
 eGE=eGE_ss;
 eGI=eGI_ss;
 
-TFP=AAt^(varthetaat-1)*(Kg^alphaG)*H^(1-alppha);
+TFP=AAt^(varthetaat-1)*(Kg^alphaG)*H^(1-alpha);
 ln_Grd=log(Grd);
 Grd_ydss_ratio=Grd/ydss;
 Grdeff=(1-eGRD_ss)*Grd;

@@ -109,12 +109,12 @@ epsiallo_ige       % Shock to elasticity wrt public human capital
 %--------------------------
 parameters 
 betta           % Discount value
-phi             % Frisch parameter
+varphi             % Frisch parameter
 chi             % indexation
 delta           % depreciationf
 thetap          % firsm cant change the price
 epsilon         % elasticity of substitution 
-alppha          % share of capital in intermediate firms production
+alpha          % share of capital in intermediate firms production
 Bigtheta        % Fixed cost
 Bigtheta_y      % Fixed cost to GDP
 alphaG          % Share of public capital in the production (paper alpha_G)
@@ -145,8 +145,8 @@ gamma_d_trans   % Response of lump sum transfer to debt
 rho_trans
 eGI_ss          % SS gap in public infrastructure efficiency (e^GI)
 deltaH          % Depreciation of Labor
-muy             % Effectiveness of education investment.
-alphaH          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
+gamma             % Effectiveness of education investment.
+mu          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
 eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
 alphaZZ1        % Learning by doing off HHon ZZ
@@ -155,23 +155,23 @@ rho_AAt         % Persistence of staionary tech process
 alphaRD         % R&D on TFP
 Grdy           % share of expenditure for R&D
 markupss        % SS markup of Intermediate goods 
-phiob           % obsolescence rate: 0.08/4
+phi           % obsolescence rate: 0.08/4
 varthetaat      % Intermediate goods elasticity of substitution
 gammaa         % Gorwth of tech
 probadoptss    % Probability of adoption
-rhoSADOPT      % Adoption elasticity
+varsigma      % Adoption elasticity
 alphaHA        % HC elasticity in tech creation (paper alpha_HA)
 rhoshockchit    % AR (1) or shock to r&D
 rho_ZZRD
 eGRD_ss         % SS gap in public R&D efficiency (e^GRD)
 ;
 betta=0.9985;
-phi= 5 ;   % inverse Frisch elasticity (Frisch 0.2), as in Gali (2015, Ch. 3); was 1.2
+varphi= 5 ;   % inverse Frisch elasticity (Frisch 0.2), as in Gali (2015, Ch. 3); was 1.2
 chi =0.6;
 delta =0.025;
 thetap = 0.8;
 epsilon =10;
-alppha=0.3;
+alpha=0.3;
 Bigtheta=0;
 Bigtheta_y=0;
 rho_R=0.7;
@@ -194,12 +194,12 @@ rho_Igi=0.9;
 gamma_d_trans=0.01;
 rho_trans=0;
 deltaH=0.025;
-muy=0.5;
+gamma=0.5;
 rho_Ige=0.9;
 alphaZZ1=0.2;
 rho_AAt=0.0;
 markupss=1.18;
-phiob=1-0.08/4;   % obsolescence rate: 0.08/4
+phi=1-0.08/4;   % obsolescence rate: 0.08/4
 varthetaat=1.35;
 probadoptss=0.2/4;
 rhoshockchit=1;
@@ -218,17 +218,17 @@ Gcy=0.18;                            % public consumption                       
 Igey=0.0145;                         % human-capital-related spending                | EM: 0.02
 Grdy=0.006;                         % R&D spending                                  | EM: 0.001
 % human capital
-alphaH=0.1;                          % elasticity of HC formation w.r.t. public HRC  | EM: 0.25
+mu=0.1;                          % elasticity of HC formation w.r.t. public HRC  | EM: 0.25
 % R&D and technology adoption
 eGRD_ss=0.399;                       % public R&D efficiency gap (e^GRD)              | EM: 0.2
 alphaRD=0.09*(1-rho_ZZRD);           % effect of R&D on TFP                          | EM: 0
 alphaHA=0.1;                         % HC elasticity in tech creation (paper a_HA)   | EM: 0
-rhoSADOPT=0.8;                       % adoption elasticity                           | EM: 0.1
+varsigma=0.8;                       % adoption elasticity                           | EM: 0.1
 % AE efficiency gaps (2023 medians; INF re-estimated 2026-06)
 eGI_ss=0.359;
 eGE_ss=0.306;
 % gammaa uses the set-specific ZZss, so it must come after it
-gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
+gammaa=ZZss^((1-alpha)/(varthetaat-1))-1;
 model;
 //********************************************************
 // HOUSEHOLD DECISIONS
@@ -238,7 +238,7 @@ model;
 // Euler equation
 lambda = betta*(lambda(+1)/ZZ(+1)*R/PI(+1));
 // Labor decision
-omega*(Lab+E)^phi = lambda*W_real*H(-1)*(1-tauw);
+omega*(Lab+E)^varphi = lambda*W_real*H(-1)*(1-tauw);
 // Law of motion of private capital
 Kp*ZZ = (1-delta)*Kp(-1)+Ip;
 // Return on private investment
@@ -257,14 +257,14 @@ x1 = lambda*mc*yd+betta*thetap*(PI^chi/PI(+1))^(-epsilon)*x1(+1);
 x2 = lambda*PIstar*yd+betta*thetap*(PI^chi/PI(+1))^(1-epsilon)*PIstar/PIstar(+1)*x2(+1);
 epsilon*x1 = (epsilon-1)*x2;
 // Optimal factor mix
-Kp(-1)/N = alppha/(1-alppha)*W_real/rk;
+Kp(-1)/N = alpha/(1-alpha)*W_real/rk;
 // Marginal cost
-(1-alppha)*mc*yt/N = markupss*W_real;
+(1-alpha)*mc*yt/N = markupss*W_real;
 // Law of motion of prices
 1 = thetap*(PI(-1)^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon);
 // Production
 [name='yt']
-yt = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*(Kp(-1)^alppha)*(N^(1-alppha))-Bigtheta;
+yt = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*(Kp(-1)^alpha)*(N^(1-alpha))-Bigtheta;
 // Stochastic discount factor (detrended)
 SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)));
 // Effective R&D = efficiency wedge times R&D spending
@@ -334,7 +334,7 @@ eGRD = eGRD_ss-epsi_effcgrd;
 // VARIABLES OF INTEREST
 //********************************************************
 lnyd = log(yd)*100;
-TFP = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*H(-1)^(1-alppha);
+TFP = AAt(-1)^(varthetaat-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*H(-1)^(1-alpha);
 G = Gc+Igi+Ige+Grd;                                        // total government spending (sum of the four instruments)
 pdef = (Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/yt*100;
 rreal = R/PI;                                              // ex-post real interest rate

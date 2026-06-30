@@ -12,7 +12,7 @@
 "residuals":[
 {"residual": {"lhs": "lambda", "rhs": "1/C"}}
 , {"residual": {"lhs": "lambda", "rhs": "betta*lambda(1)*R/PI(1)"}}
-, {"residual": {"lhs": "omega*N^phi", "rhs": "lambda*W_real"}}
+, {"residual": {"lhs": "omega*N^varphi", "rhs": "lambda*W_real"}}
 , {"residual": {"lhs": "Lab", "rhs": "N"}}
 , {"residual": {"lhs": "mc", "rhs": "W_real"}}
 , {"residual": {"lhs": "yt", "rhs": "N"}}
@@ -36,7 +36,7 @@
 , {"eq": 2, "col": 20, "var": "lambda", "shift": 1, "val": "(-(betta*R/PI(1)))"}
 , {"eq": 2, "col": 21, "var": "PI", "shift": 1, "val": "(-((-(betta*lambda(1)*R))/(PI(1)*PI(1))))"}
 , {"eq": 2, "col": 17, "var": "R", "shift": 0, "val": "(-(betta*lambda(1)/PI(1)))"}
-, {"eq": 3, "col": 4, "var": "N", "shift": 0, "val": "omega*get_power_deriv(N,phi,1)"}
+, {"eq": 3, "col": 4, "var": "N", "shift": 0, "val": "omega*get_power_deriv(N,varphi,1)"}
 , {"eq": 3, "col": 6, "var": "lambda", "shift": 0, "val": "(-W_real)"}
 , {"eq": 3, "col": 7, "var": "W_real", "shift": 0, "val": "(-lambda)"}
 , {"eq": 4, "col": 4, "var": "N", "shift": 0, "val": "(-1)"}

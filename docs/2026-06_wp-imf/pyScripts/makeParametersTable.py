@@ -16,14 +16,14 @@ recalibration of any of them flows into the table automatically:
     rho_A   <- rho_ZZRD    (AR(1) coefficient, technology stock)
     alpha_HA <- alphaHA    (HC loading in tech creation; EMDE "--", channel off)
     alpha_RD <- alphaRD    (R&D loading in tech creation; EMDE "--", channel off)
-    varsigma <- rhoSADOPT  (adoption-probability elasticity, AE; EMDE "--", dormant)
-    phi     <- phiob       (survival rate of adopted technologies, 1 - 0.08/4)
+    varsigma <- varsigma  (adoption-probability elasticity, AE; EMDE "--", dormant)
+    phi     <- phi               (survival rate of adopted technologies, 1 - 0.08/4)
     e_GI    <- eGI_ss      (inefficiency, infrastructure investment)
     e_GE    <- eGE_ss      (inefficiency, human capital investment)
     e_GRD   <- eGRD_ss     (inefficiency, public R&D; EMDE shown "--", channel off)
     delta   <- delta/deltaH (depreciation, public capital; the two are equal)
-    mu      <- alphaH      (human capital elasticity, public stock)
-    gamma   <- muy         (human capital elasticity, time input)
+    mu      <- mu              (human capital elasticity, public stock)
+    gamma   <- gamma              (human capital elasticity, time input)
 
 alpha_HA and alpha_RD are shown as their EXPLICIT model values (0.10 and 0.0189),
 i.e. the per-quarter loadings in the AR(1) law of motion for created technology
@@ -105,15 +105,15 @@ def build_groups():
             (r"$\delta^{GI},\delta^{GE}$", "Depreciation rate of public capital",        fmt(ae["delta"], 3),  fmt(em["delta"], 3)),
         ]),
         ("Human capital accumulation", [
-            (r"$\mu$",     "Elasticity w.r.t.\\ the public human-capital stock", fmt(ae["alphaH"], 2), fmt(em["alphaH"], 2)),
-            (r"$\gamma$",  "Elasticity w.r.t.\\ the time input",                 fmt(ae["muy"], 2),    fmt(em["muy"], 2)),
+            (r"$\mu$",     "Elasticity w.r.t.\\ the public human-capital stock", fmt(ae["mu"], 2), fmt(em["mu"], 2)),
+            (r"$\gamma$",  "Elasticity w.r.t.\\ the time input",                 fmt(ae["gamma"], 2),    fmt(em["gamma"], 2)),
         ]),
         ("Technology creation and adoption", [
             (r"$\alpha_{HA}$", "Human-capital loading in creation",       fmt(ae["alphaHA"], 2),    "--"),
             (r"$\alpha_{RD}$", r"Public-R\&D loading in creation",        fmt(ae["alphaRD"], 4),    "--"),
             (r"$\rho_A$",      "Persistence of created technology",       fmt(ae["rho_ZZRD"], 2),   fmt(em["rho_ZZRD"], 2)),
-            (r"$\phi$",        "Survival rate of adopted technologies",   fmt(ae["phiob"], 2),      fmt(em["phiob"], 2)),
-            (r"$\varsigma$",   "Elasticity of the adoption probability",  fmt(ae["rhoSADOPT"], 2),  "--"),
+            (r"$\phi$",        "Survival rate of adopted technologies",   fmt(ae["phi"], 2),      fmt(em["phi"], 2)),
+            (r"$\varsigma$",   "Elasticity of the adoption probability",  fmt(ae["varsigma"], 2),  "--"),
         ]),
         ("Spending-efficiency gaps", [
             (r"$e^{GI}$",  "Infrastructure investment", fmt(ae["eGI_ss"], 2),  fmt(em["eGI_ss"], 2)),

@@ -104,12 +104,12 @@ epsiallo_ige       % Shock to elasticity wrt public human capital
 %--------------------------
 parameters 
 betta           % Discount value
-phi             % Frisch parameter
+varphi             % Frisch parameter
 chi             % indexation
 delta           % depreciationf
 thetap          % firsm cant change the price
 epsilon         % elasticity of substitution 
-alppha          % share of capital in intermediate firms production
+alpha          % share of capital in intermediate firms production
 Bigtheta        % Fixed cost
 Bigtheta_y      % Fixed cost to GDP
 alphaG          % Share of public capital in the production (paper alpha_G)
@@ -140,8 +140,8 @@ gamma_d_trans   % Response of lump sum transfer to debt
 rho_trans
 eGI_ss          % SS gap in public infrastructure efficiency (e^GI)
 deltaH          % Depreciation of Labor
-muy             % Effectiveness of education investment.
-alphaH          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
+gamma             % Effectiveness of education investment.
+mu          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
 eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
 alphaZZ1        % Learning by doing off HHon ZZ
@@ -150,11 +150,11 @@ rho_AAt         % Persistence of staionary tech process
 alphaRD         % R&D on TFP
 Grdy           % share of expenditure for R&D
 markupss        % SS markup of Intermediate goods 
-phiob           % obsolescence rate: 0.08/4
+phi           % obsolescence rate: 0.08/4
 varthetaat      % Intermediate goods elasticity of substitution
 gammaa         % Gorwth of tech
 probadoptss    % Probability of adoption
-rhoSADOPT      % Adoption elasticity
+varsigma      % Adoption elasticity
 alphaHA        % HC elasticity in tech creation (paper alpha_HA)
 rhoshockchit    % AR (1) or shock to r&D
 rho_ZZRD

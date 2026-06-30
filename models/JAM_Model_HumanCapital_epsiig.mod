@@ -7,7 +7,7 @@
 @#include effFile
 
 % gammaa uses the set-specific ZZss, so it must come after it
-gammaa=ZZss^((1-alppha)/(varthetaat-1))-1;
+gammaa=ZZss^((1-alpha)/(varthetaat-1))-1;
 
 model;
 
