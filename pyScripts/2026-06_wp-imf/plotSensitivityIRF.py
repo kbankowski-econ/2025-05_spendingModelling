@@ -86,6 +86,18 @@ def main():
     ycols = [f"yd_y{y}" for y in range(HORIZON_YEARS + 1)]
     years = list(range(HORIZON_YEARS + 1))
 
+    # Common y-range (all panels share one vertical scale) and the minimum data
+    # gap two endpoint labels need to avoid overlapping, used to spread the
+    # crowded labels (chiefly the infrastructure panel, which the shared scale
+    # compresses) outward from the baseline.
+    panel_exps = [p[0] for p in PANELS]
+    pdata = irf[irf.experiment.isin(panel_exps)][ycols]   # only the plotted panels
+    ylo, yhi = float(pdata.min().min()), float(pdata.max().max())   # NaN-safe (skipna)
+    pad = 0.06 * (yhi - ylo)
+    ylo, yhi = ylo - pad, yhi + pad
+    panel_h_px = HEIGHT_PX - STYLE["margins"]["t"] - STYLE["margins"]["b"]
+    label_min_gap = LABEL_FONT_PX * 1.25 * (yhi - ylo) / panel_h_px
+
     fig = make_subplots(
         rows=1, cols=len(PANELS),
         subplot_titles=[p[2] for p in PANELS],
@@ -120,20 +132,31 @@ def main():
                 row=1, col=col,
             )
         # label every line with its parameter value, just past its right endpoint
-        # (the panel title carries the parameter symbol). The wider inter-panel
-        # spacing and right margin leave room for these labels. The baseline
-        # value's label is greyed to match the thick grey baseline line.
+        # (the panel title carries the parameter symbol). The baseline value's
+        # label is greyed to match the thick grey baseline line and stays at its
+        # endpoint; the others are spread vertically outward from it (up for
+        # higher values, down for lower) only where they would otherwise overlap.
         base_end = float(base.iloc[0][ycols[-1]]) if len(base) else None
+        items = []
         for _, r in sub.iterrows():
             frac = 0.0 if hi == lo else (r.param_value - lo) / (hi - lo)
             r_end = float(r[ycols[-1]])
             is_base = base_end is not None and abs(r_end - base_end) < 1e-9
-            color = "#757575" if is_base else _lerp_hex(c_lo, c_hi, frac)
+            items.append({"y": r_end, "label_y": r_end, "val": r.param_value,
+                          "is_base": is_base,
+                          "color": "#757575" if is_base else _lerp_hex(c_lo, c_hi, frac)})
+        items.sort(key=lambda d: d["y"])
+        anchor = next((k for k, d in enumerate(items) if d["is_base"]), len(items) // 2)
+        for k in range(anchor + 1, len(items)):              # push higher labels up
+            items[k]["label_y"] = max(items[k]["y"], items[k - 1]["label_y"] + label_min_gap)
+        for k in range(anchor - 1, -1, -1):                  # push lower labels down
+            items[k]["label_y"] = min(items[k]["y"], items[k + 1]["label_y"] - label_min_gap)
+        for d in items:
             fig.add_annotation(
-                row=1, col=col, x=HORIZON_YEARS, y=r_end,
-                text=f"{r.param_value:g}", showarrow=False,
+                row=1, col=col, x=HORIZON_YEARS, y=d["label_y"],
+                text=f"{d['val']:g}", showarrow=False,
                 xanchor="left", yanchor="middle", xshift=3,
-                font=dict(family=FONT_FAMILY, size=LABEL_FONT_PX, color=color),
+                font=dict(family=FONT_FAMILY, size=LABEL_FONT_PX, color=d["color"]),
             )
 
     # Subplot titles (the first len(PANELS) annotations, added by make_subplots
@@ -156,6 +179,7 @@ def main():
         ticks=axes["ticks"], tickfont=dict(size=FONT_PX),
     )
     fig.update_yaxes(
+        range=[ylo, yhi],
         showgrid=axes["showgrid"], gridcolor=axes["gridcolor"], gridwidth=axes["gridwidth"],
         zeroline=axes["zeroline"], zerolinewidth=axes["zerolinewidth"], zerolinecolor="black",
         linecolor=axes["linecolor"], linewidth=axes["linewidth"],
