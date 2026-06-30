@@ -12,10 +12,11 @@ solved model and are read live from the committed _results.mat (AE =
 Model_HumanCapital_exp_gc, EMDE = EM_Model_HumanCapital_exp_gc), so a
 recalibration of any of them flows into the table automatically:
 
-    rho_A  <- rho_ZZRD     (AR(1) coefficient, technology stock)
-    delta  <- delta/deltaH (depreciation, public capital; the two are equal)
-    mu     <- alphaH       (human capital elasticity, public stock)
-    gamma  <- muy          (human capital elasticity, time input)
+    alpha_G <- alphaG      (output elasticity, infrastructure)
+    rho_A   <- rho_ZZRD    (AR(1) coefficient, technology stock)
+    delta   <- delta/deltaH (depreciation, public capital; the two are equal)
+    mu      <- alphaH      (human capital elasticity, public stock)
+    gamma   <- muy         (human capital elasticity, time input)
 
 The other rows are kept as literals on purpose. The most important are the
 (1-rho_A)-normalized innovation elasticities alpha_HA (0.45 vs code alphaHA=0.10)
@@ -70,7 +71,7 @@ def build_parameters():
 
     return [
         # symbol                       description                                AE                            EMDE
-        (r"$\alpha_G$",              "Output elasticity, infrastructure",       "0.05",                       "0.17"),    # curated: AE rounds code 0.054; EMDE 0.17 shown vs code 0.20
+        (r"$\alpha_G$",              "Output elasticity, infrastructure",       fmt(ae["alphaG"], 3),         fmt(em["alphaG"], 2)),      # READ: alphaG (AE 0.054, EMDE 0.17)
         (r"$\alpha_{HA}$",           "Human capital elasticity, innovation",    "0.45",                       "--"),      # curated: (1-rho_A)-normalized vs code 0.10 (alphaHA-normalization)
         (r"$\alpha_{RD}$",           r"Public R\&D elasticity, innovation",     "0.10",                       "--"),      # curated: (1-rho_A)-normalized vs code 0.0189
         (r"$\rho_A$",                "AR(1) coefficient, technology stock",     fmt(ae["rho_ZZRD"], 2),       fmt(em["rho_ZZRD"], 2)),   # READ: rho_ZZRD

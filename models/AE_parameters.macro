@@ -1,7 +1,7 @@
 % AE-specific calibration            (definition                                    | EM value)
 
 % production and growth
-alphaG=0.054;                        % share of public capital in production         | EM: 0.2
+alphaG=0.054;                        % share of public capital in production         | EM: 0.17
 ZZss=1.004;                          % steady-state gross quarterly growth           | EM: 1.0075
 
 % taxes and debt

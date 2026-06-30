@@ -359,7 +359,7 @@
 {"statementName": "param_init", "name": "probadoptss", "value": "0.05"}, 
 {"statementName": "param_init", "name": "rhoshockchit", "value": "1"}, 
 {"statementName": "param_init", "name": "rho_ZZRD", "value": "0.79"}, 
-{"statementName": "param_init", "name": "alphaG", "value": "0.2"}, 
+{"statementName": "param_init", "name": "alphaG", "value": "0.17"}, 
 {"statementName": "param_init", "name": "ZZss", "value": "1.0075"}, 
 {"statementName": "param_init", "name": "taucss", "value": "0.15"}, 
 {"statementName": "param_init", "name": "tauwss", "value": "0.10"}, 

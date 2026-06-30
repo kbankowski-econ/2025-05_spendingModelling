@@ -9,10 +9,14 @@ headline table and a permanent shock for the appendix table.
 
 | Category | AE AR(1) | AE permanent | EMDE AR(1) | EMDE permanent |
 |---|---|---|---|---|
-| Government consumption | −0.85 / −1.22 | **0.42 / 0.62** | −0.36 / −0.40 | 0.31 / 0.32 |
-| Infrastructure | 1.77 / 2.38 | 1.54 / 2.70 | 4.54 / 4.98 | 2.99 / 4.34 |
+| Government consumption | −0.85 / −1.22 | **0.42 / 0.62** | −0.36 / −0.40 | 0.32 / 0.39 |
+| Infrastructure | 1.77 / 2.38 | 1.54 / 2.70 | 3.82 / 4.19 | 2.60 / 3.77 |
 | Human capital | 3.31 / 8.19 | 1.69 / 5.85 | 6.50 / 9.88 | 2.94 / 7.35 |
 | R&D | 4.89 / 6.66 | 2.35 / 4.57 | — | — |
+
+(EMDE infrastructure revised down after recalibrating the EMDE infrastructure
+output elasticity α_G from 0.20 to 0.17 on 2026-06-30, aligning the model with the
+paper's stated value.)
 
 ## Literature benchmarks
 
@@ -41,10 +45,11 @@ headline table and a permanent shock for the appendix table.
 - **Infrastructure, AE.** 1.5–2.7 (both shock types). Above Afonso–Rodrigues's 0.87 but within
   Ramey's "1 to >2" long-run range and close to the IMF's ≈1.5 medium-term figure. Reasonable,
   on the higher side. ✓ (borderline-high).
-- **Infrastructure, EMDE.** 3.0–5.0. The EM>AE ordering matches Afonso–Rodrigues (2.29 EM vs 0.87
-  AE), but our magnitudes are **above** their 2.29 and well above the IMF/recent-EM figures
-  (≈0.5–1.1). The permanent 25-year value (3.0) is the closest to the literature; the AR(1)
-  long-term (5.0) is high. ⚠ high.
+- **Infrastructure, EMDE.** 2.6–4.2 (after the α_G 0.20→0.17 recalibration; previously 3.0–5.0).
+  The EM>AE ordering matches Afonso–Rodrigues (2.29 EM vs 0.87 AE), and our magnitudes are now
+  closer to their 2.29, though still above the IMF/recent-EM figures (≈0.5–1.1). The permanent
+  25-year value (2.6) is the closest to the literature; the AR(1) long-term (4.2) is on the high
+  side. ✓ (borderline-high, improved).
 - **Human capital.** Not a standard "multiplier" object in the literature (education/health are
   usually studied as long-run growth). The 25-year permanent value (1.7 AE, 2.9 EMDE) is
   plausible; the AR(1) and long-term values (8–10) are very large and have no clean empirical

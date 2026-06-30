@@ -198,7 +198,7 @@ rhoshockchit=1;
 rho_ZZRD=0.79;
 % EM-specific calibration            (definition                                    | AE value)
 % production and growth
-alphaG=0.2;                          % share of public capital in production         | AE: 0.054
+alphaG=0.17;                         % share of public capital in production         | AE: 0.054
 ZZss=1.0075;                         % steady-state gross quarterly growth           | AE: 1.004
 % taxes and debt
 taucss=0.15;                         % steady-state consumption tax rate             | AE: 0.18
