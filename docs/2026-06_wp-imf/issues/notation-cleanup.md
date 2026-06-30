@@ -6,28 +6,31 @@ We are cleaning notation **in the LaTeX glossary tables first** (app:glossary,
 already shows the **target** names, which may run ahead of the actual model until
 we propagate.
 
-## Decided
+## Decided — applied in the glossary; model + draft propagation PENDING
 
-| paper | concept | old model code | new model code | status |
-|---|---|---|---|---|
-| $Y_t$ | gross output (production; $Y_t = v_t^p Y_t^d$) | `yt` | **`y`** | glossary updated; model/draft pending |
+Redundant trailing `t` (mirrored the paper time subscript; no other model variable carries one):
 
-## Candidates — redundant trailing `t` (mirrors the paper's time subscript; no other model variable carries one)
+| paper | concept | old model code | new model code |
+|---|---|---|---|
+| $Y_t$ | gross output ($Y_t = v_t^p Y_t^d$) | `yt` | `y` |
+| $D_t$ | public debt | `Dt` | `D` |
+| $A_t$ | adopted technology | `AAt` | `A` (also drops doubled `AA`) |
+| $S_t$ | adoption expenditure | `St` | `S` |
+| $\mathcal{J}_t$ | value of unadopted tech | `JZt` | `J` |
+| $\vartheta$ | love-of-variety exponent (constant) | `varthetaat` | `vartheta` |
+| $\varepsilon_t^{\chi}$ | R&D-process shock | `epsi_shockchit` | `epsi_shockchi` |
+| $\rho_\chi$ | R&D-process shock persistence | `rhoshockchit` | `rhoshockchi` |
 
-Endogenous:
-- `Dt` → `D` ($D_t$, public debt) — clean, no clash.
-- `AAt` → `A` ($A_t$, adopted technology) — clean; also drops the doubled `AA`.
-- `St` → `S` ($S_t$, adoption expenditure) — clean.
-- `JZt` → `J` or `JZ` ($\mathcal{J}_t$, value of unadopted tech) — decide letter.
-- `SSt` → NOT `SS` (clashes with the steady-state `*ss`/`STEADY_STATE` convention); use e.g. `Srd`/`Slab` (effective labor for R&D).
-- `shockchit` → `shockchi` (or `chi`; R&D-process productivity shock) — cascades below.
+Not in the glossary but to rename in the model during propagation:
+- `SSt` → `Srd` (effective labor for R&D). NOT `SS` — that clashes with the steady-state `*ss`/`STEADY_STATE` convention.
+- `shockchit` → `shockchi` (the R&D-process disturbance variable; drives the two renamed items above).
 
-Parameters / exogenous that inherit the `t`:
-- `varthetaat` → `vartheta` ($\vartheta$) — it is a constant, so the trailing `at`/`t` is spurious.
-- `rho_AAt` → renaming via `AAt`→`A` would give `rho_A`, which **clashes** with `rho_ZZRD` (= paper $\rho_A$). Needs a distinct name; clarify what `rho_AAt` (persistence of the adopted/stationary tech process) maps to in the paper first.
-- `epsi_shockchit` → `epsi_shockchi` (follows `shockchit`).
-- `rhoshockchit` → `rhoshockchi` (follows `shockchit`).
+Dropped:
+- `rho_AAt` — removed from the glossary. It is **declared but dead** (`rho_AAt=0.0` in
+  parameters_common.macro, never referenced in any equation). Delete it from
+  `declare_all.macro`/`declare_all_ext.macro`/`parameters_common.macro` in the model pass.
+  (Renaming it to `rho_A` would also have collided with `rho_ZZRD` = paper $\rho_A$.)
 
 False positives (the `t` is part of a word, leave as-is): `probadopt` (adopt), `Deltacost` (cost), `tauc`/`tauw` (tau).
 
-Related but separate (doubled letters, not a `t` issue): `AA` in `AAt`, `ZZ` in `ZZ`/`ZZRD`, `SS` in `SSt`.
+Related but separate (doubled letters, not a `t` issue), for the later optimization pass: `ZZ` in `ZZ`/`ZZRD`.
