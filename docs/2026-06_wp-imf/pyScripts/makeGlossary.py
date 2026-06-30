@@ -38,7 +38,7 @@ ENDOGENOUS = [
     (r"$w_t$",            "Real wage",                                "W_real"),
     (r"$\lambda_t$",      "Marginal utility of consumption",          "lambda"),
     (r"$\lambda_t^{H}$",  "Shadow value of human capital",            "lambda_HC"),
-    (r"$Y_t$",            "Gross output",                             "yt"),
+    (r"$Y_t$",            "Gross output",                             "y"),
     (r"$Y_t^{d}$",        "Aggregate demand",                         "yd"),
     (r"$mc_t$",           "Real marginal cost",                       "mc"),
     (r"$\Pi_t$",          "Gross inflation",                          "PI"),
