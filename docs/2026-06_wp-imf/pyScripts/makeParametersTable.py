@@ -84,11 +84,14 @@ def fmt(x, dp):
     return f"{float(x):.{dp}f}"
 
 
-def build_parameters():
-    """(symbol, description, AE value, EMDE value); "--" where a channel is off.
+def build_groups():
+    """Return [(group title, [(symbol, description, AE, EMDE), ...]), ...].
 
-    The four clean parameters are read from the AE/EMDE _results.mat; the rest are
-    curated literals (see module docstring for why each is not read from the mat)."""
+    Parameters are grouped by the model block they belong to (production, human
+    capital, technology creation/adoption, spending efficiency) so the table reads
+    as four short sections rather than one flat list. Every value is read from the
+    AE/EMDE _results.mat or is a documented "--" (innovation channel off for EMDEs);
+    see the module docstring for the param mapping and the q_0 omission."""
     ae = read_params(AE_MODEL)
     em = read_params(EM_MODEL)
 
@@ -97,33 +100,45 @@ def build_parameters():
     assert abs(em["delta"] - em["deltaH"]) < 1e-12, "delta != deltaH (EMDE)"
 
     return [
-        # symbol                       description                                AE                            EMDE
-        (r"$\alpha_G$",              "Output elasticity, infrastructure",       fmt(ae["alphaG"], 3),         fmt(em["alphaG"], 2)),      # READ: alphaG (AE 0.054, EMDE 0.17)
-        (r"$\alpha_{HA}$",           "Human capital loading, innovation",       fmt(ae["alphaHA"], 2),        "--"),      # READ AE: alphaHA (per-quarter loading); EMDE "--" (channel off)
-        (r"$\alpha_{RD}$",           r"Public R\&D loading, innovation",        fmt(ae["alphaRD"], 4),        "--"),      # READ AE: alphaRD = 0.09*(1-rho_A); EMDE "--" (channel off)
-        (r"$\rho_A$",                "AR(1) coefficient, technology stock",     fmt(ae["rho_ZZRD"], 2),       fmt(em["rho_ZZRD"], 2)),   # READ: rho_ZZRD
-        (r"$\phi$",                  "Survival rate of adopted technologies",   fmt(ae["phiob"], 2),          fmt(em["phiob"], 2)),      # READ: phiob = 1 - 0.08/4 (8%/yr obsolescence)
-        (r"$e^{GI}$",                "Inefficiency, infrastructure investment", fmt(ae["eGI_ss"], 2),         fmt(em["eGI_ss"], 2)),     # READ: eGI_ss
-        (r"$e^{GE}$",                "Inefficiency, human capital investment",  fmt(ae["eGE_ss"], 2),         fmt(em["eGE_ss"], 2)),     # READ: eGE_ss
-        (r"$e^{GRD}$",               r"Inefficiency, public R\&D spending",     fmt(ae["eGRD_ss"], 2),        "--"),      # READ AE: eGRD_ss; EMDE "--" (R&D channel off)
-        (r"$\varsigma$",             "Elasticity, adoption probability",        fmt(ae["rhoSADOPT"], 2),      "--"),      # READ AE: rhoSADOPT; EMDE "--" (adoption response dormant, channel off)
-        (r"$\delta^{GI},\delta^{GE}$", "Depreciation, public capital",          fmt(ae["delta"], 3),          fmt(em["delta"], 3)),      # READ: delta (= deltaH)
-        (r"$\mu$",                   "Human capital elasticity, public stock",  fmt(ae["alphaH"], 2),         fmt(em["alphaH"], 2)),     # READ: alphaH
-        (r"$\gamma$",                "Human capital elasticity, time input",    fmt(ae["muy"], 2),            fmt(em["muy"], 2)),        # READ: muy
+        ("Production and public capital", [
+            (r"$\alpha_G$",                "Output elasticity of public infrastructure", fmt(ae["alphaG"], 3), fmt(em["alphaG"], 2)),
+            (r"$\delta^{GI},\delta^{GE}$", "Depreciation rate of public capital",        fmt(ae["delta"], 3),  fmt(em["delta"], 3)),
+        ]),
+        ("Human capital accumulation", [
+            (r"$\mu$",     "Elasticity w.r.t.\\ the public human-capital stock", fmt(ae["alphaH"], 2), fmt(em["alphaH"], 2)),
+            (r"$\gamma$",  "Elasticity w.r.t.\\ the time input",                 fmt(ae["muy"], 2),    fmt(em["muy"], 2)),
+        ]),
+        ("Technology creation and adoption", [
+            (r"$\alpha_{HA}$", "Human-capital loading in creation",       fmt(ae["alphaHA"], 2),    "--"),
+            (r"$\alpha_{RD}$", r"Public-R\&D loading in creation",        fmt(ae["alphaRD"], 4),    "--"),
+            (r"$\rho_A$",      "Persistence of created technology",       fmt(ae["rho_ZZRD"], 2),   fmt(em["rho_ZZRD"], 2)),
+            (r"$\phi$",        "Survival rate of adopted technologies",   fmt(ae["phiob"], 2),      fmt(em["phiob"], 2)),
+            (r"$\varsigma$",   "Elasticity of the adoption probability",  fmt(ae["rhoSADOPT"], 2),  "--"),
+        ]),
+        ("Spending-efficiency gaps", [
+            (r"$e^{GI}$",  "Infrastructure investment", fmt(ae["eGI_ss"], 2),  fmt(em["eGI_ss"], 2)),
+            (r"$e^{GE}$",  "Human capital investment",  fmt(ae["eGE_ss"], 2),  fmt(em["eGE_ss"], 2)),
+            (r"$e^{GRD}$", r"Public R\&D spending",     fmt(ae["eGRD_ss"], 2), "--"),
+        ]),
     ]
 
 
 def main():
-    parameters = build_parameters()
+    groups = build_groups()
     lines = [
         HEADER,
         r"\begin{tabular}{llcc}",
         r"    \toprule",
-        r"    & Description & AE & EMDE \\",
+        r"    & & AE & EMDE \\",
         r"    \midrule",
     ]
-    for sym, desc, ae, emde in parameters:
-        lines.append(f"    {sym} & {desc} & {ae} & {emde} \\\\")
+    for gi, (title, rows) in enumerate(groups):
+        if gi > 0:
+            lines.append(r"    \addlinespace[0.4em]")
+        lines.append(rf"    \multicolumn{{4}}{{@{{}}l}}{{\textit{{{title}}}}} \\")
+        lines.append(r"    \addlinespace[0.1em]")
+        for sym, desc, ae, emde in rows:
+            lines.append(rf"    \quad {sym} & {desc} & {ae} & {emde} \\")
     lines += [r"    \bottomrule", r"\end{tabular}"]
     OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"  Wrote {OUT.name}")
