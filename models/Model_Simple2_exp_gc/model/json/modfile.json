@@ -367,7 +367,7 @@
 {"statementName": "param_init", "name": "Igey", "value": "0.0145"}, 
 {"statementName": "param_init", "name": "Grdy", "value": "0.006"}, 
 {"statementName": "param_init", "name": "alphaH", "value": "0.1"}, 
-{"statementName": "param_init", "name": "eGRD_ss", "value": "0.41"}, 
+{"statementName": "param_init", "name": "eGRD_ss", "value": "0.399"}, 
 {"statementName": "param_init", "name": "alphaRD", "value": "0.09*(1-rho_ZZRD)"}, 
 {"statementName": "param_init", "name": "alphaHA", "value": "0.1"}, 
 {"statementName": "param_init", "name": "rhoSADOPT", "value": "0.8"}, 

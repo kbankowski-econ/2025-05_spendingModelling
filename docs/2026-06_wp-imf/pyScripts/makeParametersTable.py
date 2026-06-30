@@ -21,12 +21,12 @@ recalibration of any of them flows into the table automatically:
     mu      <- alphaH      (human capital elasticity, public stock)
     gamma   <- muy         (human capital elasticity, time input)
 
-The efficiency gaps e_GI/e_GE equal Table 2's data-derived (EM+LIC)/2 averages for
-EMDEs and the AE median for advanced economies, so reading them here keeps Table 1
-and Table 2 consistent (and corrects a stale EMDE e_GI value of 0.42 -> 0.41). The
-EMDE e_GRD is reported "--" because the R&D channel is shut down there (alphaRD=0),
-even though the model still carries eGRD_ss=0.2; the AE e_GRD is the model's 0.41
-(slightly above the 0.399 data median, a deliberate calibration choice).
+The efficiency gaps e_GI/e_GE/e_GRD equal Table 2's data-derived medians (the AE
+median for advanced economies, the (EM+LIC)/2 average for EMDEs), so reading them
+here keeps Table 1 and Table 2 consistent (this also corrected a stale EMDE e_GI
+of 0.42 -> 0.41 and the AE e_GRD of 0.41 -> 0.40, recalibrated to the 0.399 data
+median). The EMDE e_GRD is reported "--" because the R&D channel is shut down there
+(alphaRD=0), even though the model still carries eGRD_ss=0.2.
 
 The other rows are kept as literals on purpose. The most important are the
 (1-rho_A)-normalized innovation elasticities alpha_HA (0.45 vs code alphaHA=0.10)

@@ -198,7 +198,7 @@ rhoshockchit=1;
 rho_ZZRD=0.79;
 % AE-specific calibration            (definition                                    | EM value)
 % production and growth
-alphaG=0.054;                        % share of public capital in production         | EM: 0.2
+alphaG=0.054;                        % share of public capital in production         | EM: 0.17
 ZZss=1.004;                          % steady-state gross quarterly growth           | EM: 1.0075
 % taxes and debt
 taucss=0.18;                         % steady-state consumption tax rate             | EM: 0.15
@@ -212,7 +212,7 @@ Grdy=0.006;                         % R&D spending                              
 % human capital
 alphaH=0.1;                          % elasticity of HC formation w.r.t. public HRC  | EM: 0.25
 % R&D and technology adoption
-eGRD_ss=0.41;                        % public R&D efficiency gap (e^GRD)              | EM: 0.2
+eGRD_ss=0.399;                       % public R&D efficiency gap (e^GRD)              | EM: 0.2
 alphaRD=0.09*(1-rho_ZZRD);           % effect of R&D on TFP                          | EM: 0
 alphaHA=0.1;                         % HC elasticity in tech creation (paper a_HA)   | EM: 0
 rhoSADOPT=0.8;                       % adoption elasticity                           | EM: 0.1
