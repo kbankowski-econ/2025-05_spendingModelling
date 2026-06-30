@@ -14,12 +14,21 @@ recalibration of any of them flows into the table automatically:
 
     alpha_G <- alphaG      (output elasticity, infrastructure)
     rho_A   <- rho_ZZRD    (AR(1) coefficient, technology stock)
+    alpha_HA <- alphaHA    (HC loading in tech creation; EMDE "--", channel off)
+    alpha_RD <- alphaRD    (R&D loading in tech creation; EMDE "--", channel off)
     e_GI    <- eGI_ss      (inefficiency, infrastructure investment)
     e_GE    <- eGE_ss      (inefficiency, human capital investment)
     e_GRD   <- eGRD_ss     (inefficiency, public R&D; EMDE shown "--", channel off)
     delta   <- delta/deltaH (depreciation, public capital; the two are equal)
     mu      <- alphaH      (human capital elasticity, public stock)
     gamma   <- muy         (human capital elasticity, time input)
+
+alpha_HA and alpha_RD are shown as their EXPLICIT model values (0.10 and 0.0189),
+i.e. the per-quarter loadings in the AR(1) law of motion for created technology
+(model_block.modpart:53). They are NOT normalized to the implied long-run
+elasticities alpha/(1-rho_A) ~ 0.45 and 0.10 here; the table NOTE in draftPaper.tex
+explains that long-run interpretation instead. (alphaRD is coded as
+0.09*(1-rho_ZZRD)=0.0189; alphaHA is stored directly as 0.10.)
 
 The efficiency gaps e_GI/e_GE/e_GRD equal Table 2's data-derived medians (the AE
 median for advanced economies, the (EM+LIC)/2 average for EMDEs), so reading them
@@ -28,12 +37,9 @@ of 0.42 -> 0.41 and the AE e_GRD of 0.41 -> 0.40, recalibrated to the 0.399 data
 median). The EMDE e_GRD is reported "--" because the R&D channel is shut down there
 (alphaRD=0), even though the model still carries eGRD_ss=0.2.
 
-The other rows are kept as literals on purpose. The most important are the
-(1-rho_A)-normalized innovation elasticities alpha_HA (0.45 vs code alphaHA=0.10)
-and alpha_RD (0.10 vs code alphaRD=0.0189) -- see memory `alphaHA-normalization`;
-do NOT "fix" these to the raw params. Others are curated/rounded presentation
-values (e.g. survival rate 0.97 vs code phiob=0.98; EMDE adoption elasticity shown
-at the AE value rather than the raw EMDE code value; q_0 has no standalone param).
+The remaining literal rows are curated/rounded presentation values: survival rate
+0.97 vs code phiob=0.98; EMDE adoption elasticity shown at the AE value rather than
+the raw EMDE code value; q_0 has no standalone param.
 
 Writes (\\input by draftPaper.tex):
   ../parametersTable.tex
@@ -81,8 +87,8 @@ def build_parameters():
     return [
         # symbol                       description                                AE                            EMDE
         (r"$\alpha_G$",              "Output elasticity, infrastructure",       fmt(ae["alphaG"], 3),         fmt(em["alphaG"], 2)),      # READ: alphaG (AE 0.054, EMDE 0.17)
-        (r"$\alpha_{HA}$",           "Human capital elasticity, innovation",    "0.45",                       "--"),      # curated: (1-rho_A)-normalized vs code 0.10 (alphaHA-normalization)
-        (r"$\alpha_{RD}$",           r"Public R\&D elasticity, innovation",     "0.10",                       "--"),      # curated: (1-rho_A)-normalized vs code 0.0189
+        (r"$\alpha_{HA}$",           "Human capital loading, innovation",       fmt(ae["alphaHA"], 2),        "--"),      # READ AE: alphaHA (per-quarter loading); EMDE "--" (channel off)
+        (r"$\alpha_{RD}$",           r"Public R\&D loading, innovation",        fmt(ae["alphaRD"], 4),        "--"),      # READ AE: alphaRD = 0.09*(1-rho_A); EMDE "--" (channel off)
         (r"$\rho_A$",                "AR(1) coefficient, technology stock",     fmt(ae["rho_ZZRD"], 2),       fmt(em["rho_ZZRD"], 2)),   # READ: rho_ZZRD
         (r"$\phi$",                  "Survival rate of adopted technologies",   "0.97",                       "0.97"),    # curated: vs code phiob=0.98
         (r"$e^{GI}$",                "Inefficiency, infrastructure investment", fmt(ae["eGI_ss"], 2),         fmt(em["eGI_ss"], 2)),     # READ: eGI_ss
