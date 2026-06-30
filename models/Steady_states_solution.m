@@ -120,8 +120,8 @@ Cy=1-Ip_y-Igiy-Gcy-Igey-Grdy-(Srd+(Z/A-1)*S)/yd;
 x2=1/(1+tauc)*1/Cy/(1-betta*thetap);  % x2=lambda*y/(1-betta*thetap)= 1/(1+tauc)*y/c/(1-betta*thetap)
 x1=mc*x2;
 
-D=y*by;
-T=D-((1-0*Delta_G)*(R/PI)*D/g+Gc+Igi+Ige+Grd-tauw*w*N-tauc*C);
+b=y*by;
+T=b-((1-0*Delta_G)*(R/PI)*b/g+Gc+Igi+Ige+Grd-tauw*w*N-tauc*C);
 Gcss=Gcy*(y);
 Igiss=Igiy*(y);
 
@@ -132,8 +132,8 @@ pdef=(Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/y*100;
 rreal=R/PI;
 pdef_yss=(Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;
 T_yss=T/ydss;
-dserv_yss=(R-1)*D/ydss;
-by_yss=D/ydss;
+dserv_yss=(R-1)*b/ydss;
+by_yss=b/ydss;
 Igi_ys=Igi/ydss*100;
 by_ann=by/4*100;
 lnPI=log(PI)*100;

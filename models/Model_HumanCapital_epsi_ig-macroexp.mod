@@ -15,7 +15,7 @@ PIstar          % Optimnal gross inflation
 y              % Production
 Kg              % Public capital
 Rmp             % Policy rate
-D              % Debt level
+b              % Debt level
 by              % Debt/GDP
 Igi              % Public investment
 Gc              % Public consumption
@@ -288,11 +288,11 @@ prob_def = exp(eta1 + eta2*by(-1))/(1+exp(eta1 + eta2*by(-1)));
 // Public infrastructure capital
 Kg*g = (1-delta)*Kg(-1)+(1-eGI)*Igi;
 // Government debt
-D = (R(-1)/PI)*D(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;
+b = (R(-1)/PI)*b(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;
 // Lump-sum transfers
 T-STEADY_STATE(T) = rho_trans*(T(-1)-STEADY_STATE(T))+(1-rho_trans)*(-gamma_d_trans*(by(-1)-byss)*ydss);
 // Debt to GDP
-by = D/y;
+by = b/y;
 // Government spending instruments (subject to expenditure shocks)
 Gc = Gcss+ydss*epsi_gc;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_gc shock)
 Igi = Igiss+ydss*epsi_igi;                                     // infrastructure investment
@@ -336,8 +336,8 @@ rreal = R/PI;                                              // ex-post real inter
 // Fiscal aggregates as a share of steady-state GDP (ydss)
 pdef_yss  = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;  // primary deficit
 T_yss = T/ydss;                                       // transfers
-dserv_yss = (R-1)*D/ydss;                                    // debt service (interest)
-by_yss    = D/ydss;                                          // government debt
+dserv_yss = (R-1)*b/ydss;                                    // debt service (interest)
+by_yss    = b/ydss;                                          // government debt
 Igi_ys = Igi/ydss*100;
 by_ann = by/4*100;
 lnPI = log(PI)*100;

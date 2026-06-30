@@ -15,7 +15,7 @@ PIstar          % Optimnal gross inflation
 y              % Production
 Kg              % Public capital
 Rmp             % Policy rate
-D              % Debt level
+b              % Debt level
 by              % Debt/GDP
 Igi              % Public investment
 Gc              % Public consumption

@@ -92,8 +92,16 @@ Model + glossary + varDict + scripts (re-ran 44 models, re-exported; values iden
 
 Model and glossary still match exactly: endogenous 74, parameters 54, exogenous 16.
 
-Not done (declined): `Kg`→`Kgi` (3), `by`→`d` (4), `Kp`/`Ip`→`K`/`I` (9), `betta`→`beta`
+Not done (declined): `Kg`→`Kgi` (3), `Kp`/`Ip`→`K`/`I` (9), `betta`→`beta`
 (10, MATLAB `beta` clash), `Bigtheta`→`Theta` (8).
+
+## DONE — Debt level `D`→`b`
+
+Renamed the public-debt level `D`→`b` (paper symbol $D_t$ unchanged) so debt and the
+debt-to-GDP ratio form the mnemonic pair `b` / `by` (= b/y). Used an `&`-safe regex so
+the `D` in "R\&D" comments was untouched. Model source + varDict + glossary; re-ran 44
+models (values identical), re-exported. Debt level is not an exported column, so no
+figure change. Model and glossary still match: 74 / 54 / 16.
 
 ## Completeness
 

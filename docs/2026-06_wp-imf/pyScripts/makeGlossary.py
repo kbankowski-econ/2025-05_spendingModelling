@@ -51,7 +51,7 @@ ENDOGENOUS = [
     (r"$R_t^{mp}$",       "Monetary-policy rate",                     "Rmp"),
     (r"$R_t$",            "Government borrowing rate",                "R"),
     (r"$R_t/\Pi_t$",      "Ex-post real interest rate",               "rreal"),
-    (r"$D_t$",            "Public debt",                              "D"),
+    (r"$D_t$",            "Public debt",                              "b"),
     (r"$d_t$",            "Debt-to-GDP ratio",                        "by"),
     (r"$T_t$",            "Lump-sum transfers",                       "T"),
     (r"$\tau_t^{c}$",     "Consumption-tax rate",                     "tauc"),

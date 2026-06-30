@@ -54,9 +54,9 @@
 , {"residual": {"lhs": "Delta_G", "rhs": "prob_def*Deltacost"}}
 , {"residual": {"lhs": "prob_def", "rhs": "exp(eta1+by*eta2)/(1+exp(eta1+by*eta2))"}}
 , {"residual": {"lhs": "g*Kg", "rhs": "(1-delta)*Kg+(1-eGI)*Igi"}}
-, {"residual": {"lhs": "D", "rhs": "Grd+Igi+D*R/PI/g+Gc+Ige+T-N*w*tauw-C*tauc"}}
+, {"residual": {"lhs": "b", "rhs": "Grd+Igi+b*R/PI/g+Gc+Ige+T-N*w*tauw-C*tauc"}}
 , {"residual": {"lhs": "T-(T)", "rhs": "(T-(T))*rho_trans+(1-rho_trans)*ydss*(by-byss)*(-gamma_d_trans)"}}
-, {"residual": {"lhs": "by", "rhs": "D/y"}}
+, {"residual": {"lhs": "by", "rhs": "b/y"}}
 , {"residual": {"lhs": "Gc", "rhs": "Gcss+ydss*epsi_gc"}}
 , {"residual": {"lhs": "Igi", "rhs": "Igiss+ydss*epsi_igi"}}
 , {"residual": {"lhs": "Ige", "rhs": "Igess+ydss*epsi_ige"}}
@@ -78,8 +78,8 @@
 , {"residual": {"lhs": "rreal", "rhs": "R/PI"}}
 , {"residual": {"lhs": "pdef_yss", "rhs": "(T+Grd+Ige+Igi+Gc-N*w*tauw-C*tauc)/ydss"}}
 , {"residual": {"lhs": "T_yss", "rhs": "T/ydss"}}
-, {"residual": {"lhs": "dserv_yss", "rhs": "D*(R-1)/ydss"}}
-, {"residual": {"lhs": "by_yss", "rhs": "D/ydss"}}
+, {"residual": {"lhs": "dserv_yss", "rhs": "b*(R-1)/ydss"}}
+, {"residual": {"lhs": "by_yss", "rhs": "b/ydss"}}
 , {"residual": {"lhs": "Igi_ys", "rhs": "100*Igi/ydss"}}
 , {"residual": {"lhs": "by_ann", "rhs": "100*by/4"}}
 , {"residual": {"lhs": "lnPI", "rhs": "100*log(PI)"}}
@@ -202,23 +202,23 @@
 , {"eq": 30, "col": 25, "var": "g", "val": "Kg"}
 , {"eq": 30, "col": 55, "var": "eGI", "val": "Igi"}
 , {"eq": 31, "col": 1, "var": "C", "val": "tauc"}
-, {"eq": 31, "col": 3, "var": "R", "val": "(-(D*1/PI/g))"}
-, {"eq": 31, "col": 4, "var": "PI", "val": "(-(D*(-R)/(PI*PI)/g))"}
+, {"eq": 31, "col": 3, "var": "R", "val": "(-(b*1/PI/g))"}
+, {"eq": 31, "col": 4, "var": "PI", "val": "(-(b*(-R)/(PI*PI)/g))"}
 , {"eq": 31, "col": 5, "var": "N", "val": "w*tauw"}
 , {"eq": 31, "col": 6, "var": "w", "val": "tauw*N"}
-, {"eq": 31, "col": 17, "var": "D", "val": "1-R/PI/g"}
+, {"eq": 31, "col": 17, "var": "b", "val": "1-R/PI/g"}
 , {"eq": 31, "col": 19, "var": "Igi", "val": "(-1)"}
 , {"eq": 31, "col": 20, "var": "Gc", "val": "(-1)"}
 , {"eq": 31, "col": 21, "var": "tauc", "val": "C"}
 , {"eq": 31, "col": 22, "var": "tauw", "val": "w*N"}
-, {"eq": 31, "col": 25, "var": "g", "val": "(-((-(D*R/PI))/(g*g)))"}
+, {"eq": 31, "col": 25, "var": "g", "val": "(-((-(b*R/PI))/(g*g)))"}
 , {"eq": 31, "col": 33, "var": "T", "val": "(-1)"}
 , {"eq": 31, "col": 47, "var": "Ige", "val": "(-1)"}
 , {"eq": 31, "col": 57, "var": "Grd", "val": "(-1)"}
 , {"eq": 32, "col": 18, "var": "by", "val": "(-((1-rho_trans)*ydss*(-gamma_d_trans)))"}
 , {"eq": 32, "col": 32, "var": "ydss", "val": "(-((1-rho_trans)*(by-byss)*(-gamma_d_trans)))"}
-, {"eq": 33, "col": 14, "var": "y", "val": "(-((-D)/(y*y)))"}
-, {"eq": 33, "col": 17, "var": "D", "val": "(-(1/y))"}
+, {"eq": 33, "col": 14, "var": "y", "val": "(-((-b)/(y*y)))"}
+, {"eq": 33, "col": 17, "var": "b", "val": "(-(1/y))"}
 , {"eq": 33, "col": 18, "var": "by", "val": "1"}
 , {"eq": 34, "col": 20, "var": "Gc", "val": "1"}
 , {"eq": 34, "col": 30, "var": "Gcss", "val": "(-1)"}
@@ -302,12 +302,12 @@
 , {"eq": 54, "col": 32, "var": "ydss", "val": "(-((-T)/(ydss*ydss)))"}
 , {"eq": 54, "col": 33, "var": "T", "val": "T646"}
 , {"eq": 54, "col": 39, "var": "T_yss", "val": "1"}
-, {"eq": 55, "col": 3, "var": "R", "val": "(-(D/ydss))"}
-, {"eq": 55, "col": 17, "var": "D", "val": "(-((R-1)/ydss))"}
-, {"eq": 55, "col": 32, "var": "ydss", "val": "(-((-(D*(R-1)))/(ydss*ydss)))"}
+, {"eq": 55, "col": 3, "var": "R", "val": "(-(b/ydss))"}
+, {"eq": 55, "col": 17, "var": "b", "val": "(-((R-1)/ydss))"}
+, {"eq": 55, "col": 32, "var": "ydss", "val": "(-((-(b*(R-1)))/(ydss*ydss)))"}
 , {"eq": 55, "col": 40, "var": "dserv_yss", "val": "1"}
-, {"eq": 56, "col": 17, "var": "D", "val": "T646"}
-, {"eq": 56, "col": 32, "var": "ydss", "val": "(-((-D)/(ydss*ydss)))"}
+, {"eq": 56, "col": 17, "var": "b", "val": "T646"}
+, {"eq": 56, "col": 32, "var": "ydss", "val": "(-((-b)/(ydss*ydss)))"}
 , {"eq": 56, "col": 41, "var": "by_yss", "val": "1"}
 , {"eq": 57, "col": 19, "var": "Igi", "val": "(-(100*1/ydss))"}
 , {"eq": 57, "col": 32, "var": "ydss", "val": "(-(100*(-Igi)/(ydss*ydss)))"}
