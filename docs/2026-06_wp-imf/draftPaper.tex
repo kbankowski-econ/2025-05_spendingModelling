@@ -636,8 +636,24 @@ The sign of the response is robust across the simplification ladder: output rise
     \desc{Impulse responses to the government-consumption shock (a persistent AR(1) increase, persistence 0.9, with an impact of 1 percent of GDP and no offsetting cut) in the full model, four step-by-step simplifications, and a from-scratch canonical New Keynesian benchmark, as listed in the legend. Each simplification pins additional channels to their steady state (the last pins private capital, leaving labor-only production); the canonical benchmark is an independently coded textbook model (no trend growth, no price indexation, constant returns, lump-sum financing). Pinned or absent channels appear as flat or missing lines. All panels report deviations from the steady state, calculated by block: the demand, supply, and labor panels (top three rows) are percent deviations from the steady-state level; the nominal panels (fourth row) are annualized percentage-point deviations; the fiscal panels (bottom row) are deviations in percentage points of steady-state GDP. The real interest rate is the nominal government bond rate deflated by inflation.}
 \end{figure}
 
-\section{Fiscal Multipliers under Permanent Shocks} \label{app:permmult}
+\section{Permanent Shocks} \label{app:permmult}
 %========================================================================
+
+The headline results in Section~\ref{sec:properties} use a persistent AR(1) (persistence 0.9) spending shock. This appendix reports the counterpart experiment in which each spending increase is \emph{permanent}---a step that stays at 1 percent of GDP indefinitely---covering both the transmission impulse responses and the implied fiscal multipliers.
+
+\subsection{Transmission}
+
+Figure~\ref{fig:standardShocksPerm} is the permanent-shock counterpart of Figure~\ref{fig:standardShocks}: it traces the same four debt-financed expansion shocks through the advanced-economy model when each is a permanent rather than a decaying increase. The supply-side channels (public infrastructure, the adopted-technology stock, and the human-capital stock) build up more fully and the stock variables settle at higher new steady states, while the transitory demand effects that dominate the early quarters of the AR(1) responses are correspondingly smaller relative to the long-run accumulation.
+
+\begin{figure}[H]
+    \centering
+    \caption{Transmission of Standard Public-Spending Shocks under Permanent Shocks: Advanced Economies \label{fig:standardShocksPerm}}
+    \includegraphics{figures/standardShocksAEPerm.pdf}
+    \source{IMF staff estimates.}
+    \desc{Permanent-shock counterpart of Figure~\ref{fig:standardShocks}. Impulse responses to four standard debt-financed expansion shocks, each a permanent increase of 1 percent of GDP in one spending category with no offsetting cut, as listed in the legend. Unlike the headline figure, which uses a persistent AR(1) (persistence 0.9) shock, here the spending increase is a step that stays at 1 percent of GDP indefinitely. All panels report deviations from the steady state, calculated by block. Demand, supply, and labor panels (top three rows; the third row decomposes effective labor into labor supply and the human capital stock) are percent deviations from the steady-state level. Nominal panels (fourth row: inflation, policy rate, nominal bond rate, real rate) are annualized percentage-point deviations, the change in the gross quarterly rate multiplied by 400. Fiscal panels (bottom row: primary deficit, transfers, debt-to-GDP ratio) are deviations in percentage points of GDP. The real interest rate is the nominal government bond rate deflated by inflation.}
+\end{figure}
+
+\subsection{Fiscal Multipliers}
 
 The multipliers in Table~\ref{tab:multipliers} are computed for AR(1) (persistence 0.9) spending shocks, matching the transmission experiment of Section~\ref{sec:properties}. Table~\ref{tab:multipliersPerm} reports the same present-value cumulative multipliers for a \emph{permanent} 1-percent-of-GDP increase in each category. Because a sustained increase keeps the discounted spending in the denominator growing with the horizon, the cumulative multiplier converges to the long-run (steady-state) multiplier and is smaller at intermediate horizons than its AR(1) counterpart---at 25 years, for example, the advanced-economy human-capital multiplier is 1.7 under a permanent increase versus 3.3 under the AR(1) shock.
 

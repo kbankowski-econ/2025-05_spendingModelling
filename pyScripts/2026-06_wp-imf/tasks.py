@@ -121,6 +121,17 @@ def plotStandardShocksAE(c):
 
 
 @task
+def plotStandardShocksAEPerm(c):
+    """
+    Appendix D: permanent-shock counterpart of plotStandardShocksAE -- AE
+    transmission of the four standard debt-financed shocks when each is a
+    permanent (step) increase rather than an AR(1) rho=0.9 shock.
+    Out: figures/standardShocksAEPerm.png/.pdf/.html/.csv
+    """
+    _run_plot(c, "plotStandardShocksAEPerm.py", "Generating: AE Standard-Shock Transmission (permanent)")
+
+
+@task
 def plotSimplifiedGcAE(c):
     """
     Appendix: the government-consumption shock under progressive model
@@ -287,6 +298,7 @@ def investigateContributions(c):
 @task(pre=[
     exportData,
     plotStandardShocksAE,
+    plotStandardShocksAEPerm,
     plotSimplifiedGcAE,
     plotReallocationAE,
     plotReallocationEM,
