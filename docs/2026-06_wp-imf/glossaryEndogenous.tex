@@ -15,9 +15,11 @@
 \endfoot
 \bottomrule
 \endlastfoot
+\multicolumn{4}{@{}l}{\textit{Households}} \\
+\addlinespace[0.1em]
 1 & $C_t$ & Consumption & \texttt{C} \\
 2 & $L_t$ & Labor supply (hours) & \texttt{Lab} \\
-3 & $N_t$ & Effective labor, $H_t L_t$ & \texttt{N} \\
+3 & $N_t$ & Effective labor, $H_{t-1} L_t$ & \texttt{N} \\
 4 & $H_t$ & Private human-capital stock & \texttt{H} \\
 5 & $E_t$ & Time in human-capital accumulation & \texttt{E} \\
 6 & $I_t$ & Private investment & \texttt{Ip} \\
@@ -26,50 +28,65 @@
 9 & $w_t$ & Real wage & \texttt{w} \\
 10 & $\lambda_t$ & Marginal utility of consumption & \texttt{lambda} \\
 11 & $\lambda_t^{H}$ & Shadow value of human capital & \texttt{lambda\_HC} \\
-12 & $Y_t$ & Gross output & \texttt{y} \\
-13 & $Y_t^{d}$ & Aggregate demand & \texttt{yd} \\
-14 & $mc_t$ & Real marginal cost & \texttt{mc} \\
-15 & $\Pi_t$ & Gross inflation & \texttt{PI} \\
-16 & $\Pi_t^{*}$ & Reset (optimal) inflation & \texttt{PIstar} \\
-17 & $x_{1,t}$ & Price-setting auxiliary & \texttt{x1} \\
-18 & $x_{2,t}$ & Price-setting auxiliary & \texttt{x2} \\
-19 & $v_t^{p}$ & Price dispersion & \texttt{vp} \\
-20 & $g_t$ & Gross growth rate & \texttt{g} \\
-21 & $R_t^{mp}$ & Monetary-policy rate & \texttt{Rmp} \\
-22 & $R_t$ & Government borrowing rate & \texttt{R} \\
-23 & $R_t/\Pi_t$ & Ex-post real interest rate & \texttt{rreal} \\
-24 & $D_t$ & Public debt & \texttt{b} \\
-25 & $d_t$ & Debt-to-GDP ratio & \texttt{by} \\
-26 & $T_t$ & Lump-sum transfers & \texttt{T} \\
-27 & $\tau_t^{c}$ & Consumption-tax rate & \texttt{tauc} \\
-28 & $\tau_t^{w}$ & Labor-income-tax rate & \texttt{tauw} \\
-29 & $G_t$ & Total government spending & \texttt{G} \\
-30 & $G_t^{C}$ & Government consumption & \texttt{Gc} \\
-31 & $I_t^{GI}$ & Public infrastructure investment & \texttt{Igi} \\
-32 & $K_t^{GI}$ & Public infrastructure capital & \texttt{Kg} \\
-33 & $I_t^{GE}$ & Public human-capital investment & \texttt{Ige} \\
-34 & $K_t^{GE}$ & Public human-capital stock & \texttt{Kge} \\
-35 & $G_t^{RD}$ & Public R\&D spending & \texttt{Grd} \\
-36 & $(1-e_t^{GRD})G_t^{RD}$ & Effective R\&D in creation & \texttt{Grdeff} \\
-37 & $A_t$ & Adopted technology & \texttt{A} \\
-38 & $Z_t$ & Created technology & \texttt{Z} \\
-39 & $S_t$ & Adoption expenditure & \texttt{S} \\
-40 & $q_t$ & Adoption probability & \texttt{q} \\
-41 & $\mathcal{V}_t$ & Value of an adopted technology & \texttt{VA} \\
-42 & $\mathcal{J}_t$ & Value of an unadopted technology & \texttt{J} \\
-43 & $TFP_t$ & Total factor productivity & \texttt{TFP} \\
-44 & $e_t^{GI}$ & Infrastructure efficiency gap & \texttt{eGI} \\
-45 & $e_t^{GE}$ & Human-capital efficiency gap & \texttt{eGE} \\
-46 & $e_t^{GRD}$ & R\&D efficiency gap & \texttt{eGRD} \\
-47 & -- & R\&D-process productivity disturbance & \texttt{shockchi} \\
-48 & -- & Stochastic discount factor & \texttt{SDF} \\
-49 & $S^{R}$ & R\&D-development resource (steady state) & \texttt{Srd} \\
-50 & -- & Labor in the R\&D sector & \texttt{Ns} \\
-51 & -- & Adoption-probability scale (steady state) & \texttt{kappaprob} \\
-52 & $\omega$ & Labor-disutility scaling & \texttt{omega} \\
-53 & $\chi$ & Scale in human-capital accumulation & \texttt{muyH} \\
-54 & -- & Expected default loss & \texttt{Delta\_G} \\
-55 & -- & Probability of default & \texttt{prob\_def} \\
+12 & $\mathit{SDF}_t$ & Stochastic discount factor & \texttt{SDF} \\
+13 & $\omega$ & Labor-disutility scaling & \texttt{omega} \\
+14 & $\chi$ & Scale in human-capital accumulation & \texttt{muyH} \\
+\addlinespace[0.4em]
+\multicolumn{4}{@{}l}{\textit{Production and technology}} \\
+\addlinespace[0.1em]
+15 & $Y_t$ & Gross output & \texttt{y} \\
+16 & $mc_t$ & Real marginal cost & \texttt{mc} \\
+17 & $\Pi_t$ & Gross inflation & \texttt{PI} \\
+18 & $\Pi_t^{*}$ & Reset (optimal) inflation & \texttt{PIstar} \\
+19 & $x_{1,t}$ & Price-setting auxiliary & \texttt{x1} \\
+20 & $x_{2,t}$ & Price-setting auxiliary & \texttt{x2} \\
+21 & $A_t$ & Adopted technology & \texttt{A} \\
+22 & $Z_t$ & Created technology & \texttt{Z} \\
+23 & $(1-e_t^{GRD})G_t^{RD}$ & Effective R\&D in creation & \texttt{Grdeff} \\
+24 & $S_t$ & Adoption expenditure & \texttt{S} \\
+25 & $q_t$ & Adoption probability & \texttt{q} \\
+26 & $\mathcal{V}_t$ & Value of an adopted technology & \texttt{VA} \\
+27 & $\mathcal{J}_t$ & Value of an unadopted technology & \texttt{J} \\
+28 & -- & R\&D-process productivity disturbance & \texttt{shockchi} \\
+29 & $S^{R}$ & R\&D-development resource (steady state) & \texttt{Srd} \\
+30 & -- & Labor in the R\&D sector & \texttt{Ns} \\
+\addlinespace[0.4em]
+\multicolumn{4}{@{}l}{\textit{Government: fiscal and monetary policy}} \\
+\addlinespace[0.1em]
+31 & $G_t^{C}$ & Government consumption & \texttt{Gc} \\
+32 & $I_t^{GI}$ & Public infrastructure investment & \texttt{Igi} \\
+33 & $K_t^{GI}$ & Public infrastructure capital & \texttt{Kg} \\
+34 & $I_t^{GE}$ & Public human-capital investment & \texttt{Ige} \\
+35 & $K_t^{GE}$ & Public human-capital stock & \texttt{Kge} \\
+36 & $G_t^{RD}$ & Public R\&D spending & \texttt{Grd} \\
+37 & $G_t$ & Total government spending & \texttt{G} \\
+38 & $D_t$ & Public debt & \texttt{b} \\
+39 & $d_t$ & Debt-to-GDP ratio & \texttt{by} \\
+40 & $T_t$ & Lump-sum transfers & \texttt{T} \\
+41 & $\tau_t^{c}$ & Consumption-tax rate & \texttt{tauc} \\
+42 & $\tau_t^{w}$ & Labor-income-tax rate & \texttt{tauw} \\
+43 & $R_t^{mp}$ & Monetary-policy rate & \texttt{Rmp} \\
+44 & $R_t$ & Government borrowing rate & \texttt{R} \\
+45 & -- & Expected default loss & \texttt{Delta\_G} \\
+46 & -- & Probability of default & \texttt{prob\_def} \\
+47 & $e_t^{GI}$ & Infrastructure efficiency gap & \texttt{eGI} \\
+48 & $e_t^{GE}$ & Human-capital efficiency gap & \texttt{eGE} \\
+49 & $e_t^{GRD}$ & R\&D efficiency gap & \texttt{eGRD} \\
+\addlinespace[0.4em]
+\multicolumn{4}{@{}l}{\textit{Market clearing and equilibrium}} \\
+\addlinespace[0.1em]
+50 & $Y_t^{d}$ & Aggregate demand & \texttt{yd} \\
+51 & $v_t^{p}$ & Price dispersion & \texttt{vp} \\
+\addlinespace[0.4em]
+\multicolumn{4}{@{}l}{\textit{Balanced growth}} \\
+\addlinespace[0.1em]
+52 & $g_t$ & Gross growth rate & \texttt{g} \\
+\addlinespace[0.4em]
+\multicolumn{4}{@{}l}{\textit{Auxiliary, steady-state, and reporting}} \\
+\addlinespace[0.1em]
+53 & $R_t/\Pi_t$ & Ex-post real interest rate & \texttt{rreal} \\
+54 & $TFP_t$ & Total factor productivity & \texttt{TFP} \\
+55 & -- & Adoption-probability scale (steady state) & \texttt{kappaprob} \\
 56 & -- & Output growth rate & \texttt{ygrowth} \\
 57 & -- & Primary deficit & \texttt{pdef} \\
 58 & -- & Steady-state output (value added) & \texttt{ydss} \\
