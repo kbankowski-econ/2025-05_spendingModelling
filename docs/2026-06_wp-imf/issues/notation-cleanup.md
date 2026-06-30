@@ -103,6 +103,33 @@ the `D` in "R\&D" comments was untouched. Model source + varDict + glossary; re-
 models (values identical), re-exported. Debt level is not an exported column, so no
 figure change. Model and glossary still match: 74 / 54 / 16.
 
+## DONE — Parameter-symbol verification against the paper (glossary-only)
+
+Cross-checked every glossary parameter symbol against the paper's actual equations.
+Corrections (the paper uses a different form):
+- `deltaH`: $\delta^H$ → **$\delta^h$** (paper line 224, lowercase).
+- Steady-state values now use the paper's no-subscript convention: `Piss` $\Pi_{ss}$→**$\Pi$**;
+  `taucss`/`tauwss` $\tau^c_{ss}$/$\tau^w_{ss}$→**$\tau^c$/$\tau^w$**; efficiency-gap SS
+  `eGI_ss`/`eGE_ss`/`eGRD_ss` →**$e^{GI}$/$e^{GE}$/$e^{GRD}$**.
+- `byss` $d_{ss}$ → **$d^*$** (the paper's debt target).
+- `rho_tauc`/`rho_tauw` → **$\rho_{\tau c}$/$\rho_{\tau w}$** (paper form).
+- `Deltacost` $\Delta^c$ → **$\Delta$** (paper $\Delta_t$, the debt-spread sensitivity).
+- `omega` (endogenous): "--" → **$\omega$** (paper line 206, disutility scale).
+
+Marked **"--"** (the paper assigns no formal symbol — calibration values described in
+prose): the spending shares `Igiy`/`Gcy`/`Igey`/`Grdy`, the spending-process persistences
+`rho_Gc`/`rho_Igi`/`rho_Ige`, the trend-growth-shock persistence `rho_g`, the tax-rule
+output-gap responses `gamma_y_tauc`/`gamma_y_tauw` (the paper's tax rules respond to debt
+only), and the derived `gammaa`/`markupss`/`Bigtheta_y`/`qss`. (15 "--" params total.)
+
+Verified correct against the paper (incl. brace/order forms that render identically):
+$\beta$, $\varphi$, $\chi_p$, $\delta$, $\theta_p$, $\epsilon$, $\alpha$, $\Theta$,
+$\alpha_G$, $\rho_R$, $\gamma_\pi$, $\gamma_y$, $\rho_{RG}$, $\gamma_d^{\tau c}$,
+$\gamma_d^{\tau w}$, $\gamma_d^{T}$, $\rho_T$, $\eta_1$, $\eta_2$, $g$, $\mu$, $\gamma$,
+$\vartheta$, $\phi$, $\varsigma$, $\alpha_{HA}$, $\alpha_{RD}$, $\rho_A$.
+
+Every glossary parameter symbol now matches the paper or is a documented "--".
+
 ## Completeness
 
 The glossary tables now list **every** declared model object and the row counts match
