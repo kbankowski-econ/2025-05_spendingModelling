@@ -38,8 +38,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 # --- Styling (inlined; matches the other working-paper figures) ---------------
 STYLE = {
     "template": "simple_white",
-    "margins": {"t": 72, "b": 28, "l": 40, "r": 14},
-    "legend": {"orientation": "h", "xanchor": "center", "x": 0.5},
+    "margins": {"t": 44, "b": 28, "l": 40, "r": 14},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
              "zeroline": True, "zerolinewidth": 1.5},
@@ -71,7 +70,6 @@ DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (15.0, 5.5))
 # text renders at a fixed point size on the page (recomputed from render/display).
 FONT_FAMILY = "Palatino, 'Palatino Linotype', 'Book Antiqua', serif"
 FONT_PX = font_px_for_pt(8, WIDTH_PX, DISPLAY_CM[0])         # axis ticks
-LEGEND_FONT_PX = font_px_for_pt(7, WIDTH_PX, DISPLAY_CM[0])
 TITLE_FONT_PX = font_px_for_pt(8.5, WIDTH_PX, DISPLAY_CM[0])  # subplot titles
 LABEL_FONT_PX = font_px_for_pt(6.5, WIDTH_PX, DISPLAY_CM[0])  # endpoint range labels
 
@@ -109,15 +107,14 @@ def main():
                 ),
                 row=1, col=col,
             )
-        # baseline calibration: bold dashed black, one shared legend entry
+        # baseline calibration: thick grey line (identified in the figure note)
         base = irf[(irf.experiment == ex) & (irf.is_baseline == 1)]
         if len(base):
             fig.add_trace(
                 go.Scatter(
                     x=years, y=base.iloc[0][ycols].to_numpy(dtype=float), mode="lines",
-                    name="Baseline calibration", legendgroup="baseline",
-                    line=dict(color="black", width=2.0, dash="dash"),
-                    showlegend=(j == 0),
+                    line=dict(color="#757575", width=5.0),
+                    showlegend=False, hoverinfo="skip",
                 ),
                 row=1, col=col,
             )
@@ -140,12 +137,7 @@ def main():
         template=STYLE["template"],
         width=WIDTH_PX, height=HEIGHT_PX, margin=STYLE["margins"],
         font=dict(family=FONT_FAMILY, size=FONT_PX),
-        legend=dict(
-            orientation=STYLE["legend"]["orientation"],
-            yref="container", yanchor="top", y=0.99,
-            xanchor=STYLE["legend"]["xanchor"], x=STYLE["legend"]["x"],
-            font=dict(size=LEGEND_FONT_PX),
-        ),
+        showlegend=False,
     )
 
     axes = STYLE["axes"]
