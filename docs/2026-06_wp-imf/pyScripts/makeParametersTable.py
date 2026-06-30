@@ -39,20 +39,19 @@ of 0.42 -> 0.41 and the AE e_GRD of 0.41 -> 0.40, recalibrated to the 0.399 data
 median). The EMDE e_GRD is reported "--" because the R&D channel is shut down there
 (alphaRD=0), even though the model still carries eGRD_ss=0.2.
 
-The adoption block (varsigma and q_0) is reported AE-only ("--" for EMDEs): for
-EMDEs the endogenous innovation channel is off, so the spending-driven adoption
+varsigma (adoption-probability elasticity) reads the AE rhoSADOPT and is "--" for
+EMDEs: their endogenous innovation channel is off, so the spending-driven adoption
 response is dormant (verified: the adoption block does not move in EMDE
-experiments), exactly as for alpha_HA/alpha_RD. varsigma reads the AE rhoSADOPT
-(the nonzero EMDE 0.10 is dormant and not shown).
+experiments), exactly as for alpha_HA/alpha_RD.
 
-q_0 (AE) is the one cell kept as a literal. It IS a structural parameter -- the
-scale of the adoption probability q_t = q_0*(S_t/Lambda_t)^varsigma in the paper --
-but the code parameterizes the same scale as `kappaprob` on RAW (non-detrended)
-spending, and kappaprob is SOLVED in steady state to hit a target adoption
-probability (probadopt_ss=0.05, ~10yr lag): kappaprob = 0.05/S_ss^varsigma =
-0.309 (AE) / 0.084 (EMDE). q_0=0.10 is that same scale on detrended spending
-(normalization-independent), so it equals no single stored param and is reported
-as the literal the paper uses (draftPaper.tex calibration text).
+The paper's adoption-probability SCALE q_0 is intentionally NOT a row here: it is
+not a model parameter. The code parameterizes the scale as `kappaprob` on RAW
+(non-detrended) spending, and kappaprob is SOLVED in steady state to hit the
+targeted adoption probability probadoptss=0.2/4=0.05 (kappaprob = 0.05/S_ss^rhoSADOPT
+= 0.309 AE / 0.084 EMDE). Since q_0 corresponds to no stored parameter, it is
+described in the calibration text (draftPaper.tex) rather than tabulated.
+
+Every row in this table is now read from _results.mat or is a documented "--".
 
 Writes (\\input by draftPaper.tex):
   ../parametersTable.tex
@@ -108,7 +107,6 @@ def build_parameters():
         (r"$e^{GE}$",                "Inefficiency, human capital investment",  fmt(ae["eGE_ss"], 2),         fmt(em["eGE_ss"], 2)),     # READ: eGE_ss
         (r"$e^{GRD}$",               r"Inefficiency, public R\&D spending",     fmt(ae["eGRD_ss"], 2),        "--"),      # READ AE: eGRD_ss; EMDE "--" (R&D channel off)
         (r"$\varsigma$",             "Elasticity, adoption probability",        fmt(ae["rhoSADOPT"], 2),      "--"),      # READ AE: rhoSADOPT; EMDE "--" (adoption response dormant, channel off)
-        (r"$q_0$",                   "Scale, adoption probability",             "0.10",                       "--"),      # AE literal: scale on DETRENDED spending; code's kappaprob (on raw S) is SS-solved to probadopt_ss=0.05. EMDE "--" (dormant)
         (r"$\delta^{GI},\delta^{GE}$", "Depreciation, public capital",          fmt(ae["delta"], 3),          fmt(em["delta"], 3)),      # READ: delta (= deltaH)
         (r"$\mu$",                   "Human capital elasticity, public stock",  fmt(ae["alphaH"], 2),         fmt(em["alphaH"], 2)),     # READ: alphaH
         (r"$\gamma$",                "Human capital elasticity, time input",    fmt(ae["muy"], 2),            fmt(em["muy"], 2)),        # READ: muy
