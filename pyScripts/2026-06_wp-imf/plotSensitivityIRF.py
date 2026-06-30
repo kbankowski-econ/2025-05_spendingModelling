@@ -89,6 +89,7 @@ def main():
     fig = make_subplots(
         rows=1, cols=len(PANELS),
         subplot_titles=[p[2] for p in PANELS],
+        shared_yaxes=True,            # common y-scale across all three panels
         horizontal_spacing=0.10,
     )
 
