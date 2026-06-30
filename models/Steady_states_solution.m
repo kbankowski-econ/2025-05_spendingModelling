@@ -33,17 +33,17 @@ yt_proxy=(kG_y^alphaG)*(Kp_y^alpha)*(N^(1-alpha));
 y=yt_proxy^(1/(1-alphaG-alpha));
 
 
-W_real=(1-alpha)*mc*y/N/markupss;
+w=(1-alpha)*mc*y/N/markupss;
 
 
 % Real wage
-%W_real=(mc/((1/(1-alpha))^(1-alpha)*(1/alpha)^alpha*rk^alpha/(kG_y/(1+Bigtheta_y)*1/g)^(alphaG/(1-alphaG))))^(1/(1-alpha));
-%mc=(1/(1-alpha))^(1-alpha)*(1/alpha)^alpha*W_real^(1-alpha)*rk^alpha/(kG_y/(1+Bigtheta_y)*1/g)^(alphaG/(1-alphaG));
+%w=(mc/((1/(1-alpha))^(1-alpha)*(1/alpha)^alpha*rk^alpha/(kG_y/(1+Bigtheta_y)*1/g)^(alphaG/(1-alphaG))))^(1/(1-alpha));
+%mc=(1/(1-alpha))^(1-alpha)*(1/alpha)^alpha*w^(1-alpha)*rk^alpha/(kG_y/(1+Bigtheta_y)*1/g)^(alphaG/(1-alphaG));
 
-%Kp=alpha/(1-alpha)*W_real/rk*g*N;
+%Kp=alpha/(1-alpha)*w/rk*g*N;
 
 % Private capital
-Kp=alpha/(1-alpha)*W_real/rk*N;
+Kp=alpha/(1-alpha)*w/rk*N;
 
 % Private investment
 Ip=Kp*(g-(1-delta));
@@ -76,14 +76,14 @@ Grdss=Grd;
 % R&D path
 %markupss=1.015;
 A=1;
-probadopt=probadoptss;
+q=qss;
 SDF=betta;
 VA=(1+gammaa)/(1+gammaa-phi*SDF)*(markupss-1)/(markupss/mc)*y;
-Z=(1+gammaa-phi)/(probadopt*phi)+A;
+Z=(1+gammaa-phi)/(q*phi)+A;
 
-J=(1-varsigma)*probadopt*phi*SDF/(1+gammaa-(1-probadopt+varsigma*probadopt)*phi*betta)*VA;
+J=(1-varsigma)*q*phi*SDF/(1+gammaa-(1-q+varsigma*q)*phi*betta)*VA;
 
-S=varsigma*probadopt*phi*SDF/(1+gammaa)*(VA-J);
+S=varsigma*q*phi*SDF/(1+gammaa)*(VA-J);
 
 %Srd=SDF*J*(Z/A-phi*Z/A*1/(1+gammaa));
 Srd=0;
@@ -93,7 +93,7 @@ shockchi=1;
 
 
 
-kappaprob=probadopt/((S)^varsigma);
+kappaprob=q/((S)^varsigma);
 
 
 Ns=(1-1/Z)*S+Srd;
@@ -121,17 +121,17 @@ x2=1/(1+tauc)*1/Cy/(1-betta*thetap);  % x2=lambda*y/(1-betta*thetap)= 1/(1+tauc)
 x1=mc*x2;
 
 D=y*by;
-Trans=D-((1-0*Delta_G)*(R/PI)*D/g+Gc+Igi+Ige+Grd-tauw*W_real*N-tauc*C);
+T=D-((1-0*Delta_G)*(R/PI)*D/g+Gc+Igi+Ige+Grd-tauw*w*N-tauc*C);
 Gcss=Gcy*(y);
 Igiss=Igiy*(y);
 
 %Variables of interest
 lnyd=log(yd)*100;
 G=Gc+Igi+Ige+Grd;
-pdef=(Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/y*100;
+pdef=(Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/y*100;
 rreal=R/PI;
-pdef_yss=(Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/ydss;
-Trans_yss=Trans/ydss;
+pdef_yss=(Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;
+T_yss=T/ydss;
 dserv_yss=(R-1)*D/ydss;
 by_yss=D/ydss;
 Igi_ys=Igi/ydss*100;
@@ -151,10 +151,10 @@ muySS=(1/betta-1+deltaH)/(Lss/Ess)/deltaH
 Lab_E_ratio=(1/betta-1+deltaH)/(gamma*deltaH);
 E=Lab/Lab_E_ratio;
 % Langangra of teh human capital equation
-lambda_HC=lambda*W_real*(1-tauw)/(gamma*1/E*deltaH);
+lambda_HC=lambda*w*(1-tauw)/(gamma*1/E*deltaH);
 
 % Lab 
-%Lab=lambda_HC*(1/betta-1+deltaH)/(lambda*(1-tauw)*W_real);
+%Lab=lambda_HC*(1/betta-1+deltaH)/(lambda*(1-tauw)*w);
 %deltaH=0.016
 %
 % Human capital
@@ -162,7 +162,7 @@ lambda_HC=lambda*W_real*(1-tauw)/(gamma*1/E*deltaH);
 H=(N+0*Ns)/Lab;
 
 % Adjustment parameter for N 
-omega=lambda*W_real*(1-tauw)*H/(Lab+E)^varphi;
+omega=lambda*w*(1-tauw)*H/(Lab+E)^varphi;
 
 muyH=omega*(Lab+E)^varphi/(lambda_HC*gamma*E^(gamma-1)* (Kge)^mu);
 

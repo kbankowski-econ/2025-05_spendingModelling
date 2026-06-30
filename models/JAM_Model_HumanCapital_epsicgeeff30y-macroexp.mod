@@ -4,7 +4,7 @@ lambda          % Marginal Utility
 R               % Interest rate on bond
 PI              % Gross inflation
 N               % (Effective) Labor supply
-W_real          % Real wages
+w          % Real wages
 Ip              % Private investment
 Kp              % Private capital
 rk              % Return on private investment
@@ -32,13 +32,13 @@ Igiss            % Steady state of Investment
 Gcss            % Steady state of Consumption
 Rss             % Steady state interest rate   
 ydss            % Steady state output
-Trans           % Transfer
+T           % Transfer
 lnyd            % Log of Output
 G               % Total government spending (Gc+Igi+Ige+Grd)
 pdef            % Primary Deficit
 rreal           % Ex-post real interest rate (R/PI)
 pdef_yss        % Primary deficit, share of steady-state GDP
-Trans_yss       % Transfers, share of steady-state GDP
+T_yss       % Transfers, share of steady-state GDP
 dserv_yss       % Debt service (interest), share of steady-state GDP
 by_yss          % Government debt, share of steady-state GDP
 Igi_ys           % Public Investment as percent of GDP
@@ -62,7 +62,7 @@ shockchi       % R&D process productivity shock SS
 SDF             % Stochastic discount factor
 S             % Effective labor demand for tech adoption
 VA              % Value of tech adoption
-probadopt       % Probability of adoption
+q       % Probability of adoption
 J             % Value of unadopted Intermediate
 Srd             % Effective labor demand for R&D development
 Z            % R&D product
@@ -141,7 +141,6 @@ gamma             % Effectiveness of education investment.
 mu          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
 eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
-alphaZZ1        % Learning by doing off HHon g
 rho_Ige         % Persistence of human-related spending
 alphaRD         % R&D on TFP
 Grdy           % share of expenditure for R&D
@@ -149,7 +148,7 @@ markupss        % SS markup of Intermediate goods
 phi           % obsolescence rate: 0.08/4
 vartheta      % Intermediate goods elasticity of substitution
 gammaa         % Gorwth of tech
-probadoptss    % Probability of adoption
+qss    % Probability of adoption
 varsigma      % Adoption elasticity
 alphaHA        % HC elasticity in tech creation (paper alpha_HA)
 rhoshockchi    % AR (1) or shock to r&D
@@ -187,11 +186,10 @@ rho_trans=0;
 deltaH=0.025;
 gamma=0.5;
 rho_Ige=0.9;
-alphaZZ1=0.2;
 markupss=1.18;
 phi=1-0.08/4;   % obsolescence rate: 0.08/4
 vartheta=1.35;
-probadoptss=0.2/4;
+qss=0.2/4;
 rhoshockchi=1;
 rho_A=0.79;
 % Jamaica-specific calibration. EM base, with trend growth, public debt and the
@@ -235,7 +233,7 @@ model;
 // Euler equation
 lambda = betta*(lambda(+1)/g(+1)*R/PI(+1));
 // Labor decision
-omega*(Lab+E)^varphi = lambda*W_real*H(-1)*(1-tauw);
+omega*(Lab+E)^varphi = lambda*w*H(-1)*(1-tauw);
 // Law of motion of private capital
 Kp*g = (1-delta)*Kp(-1)+Ip;
 // Return on private investment
@@ -245,7 +243,7 @@ H = (1-deltaH)*H(-1)+muyH*E^gamma*(Kge(-1))^(mu*(1+epsiallo_ige));
 // Time devoted to building human capital (E)
 omega*(Lab+E)^varphi = lambda_HC*muyH*gamma*E^(gamma-1)*(Kge(-1))^(mu*(1+epsiallo_ige));
 // Shadow value of human capital
-lambda_HC = betta*(lambda(+1)*(1-tauw(+1))*W_real(+1)*Lab(+1)+lambda_HC(+1)*(1-deltaH));
+lambda_HC = betta*(lambda(+1)*(1-tauw(+1))*w(+1)*Lab(+1)+lambda_HC(+1)*(1-deltaH));
 // Effective labor
 N = Lab*H(-1);
 //********************************************************
@@ -256,9 +254,9 @@ x1 = lambda*mc*yd+betta*thetap*(PI^chi/PI(+1))^(-epsilon)*x1(+1);
 x2 = lambda*PIstar*yd+betta*thetap*(PI^chi/PI(+1))^(1-epsilon)*PIstar/PIstar(+1)*x2(+1);
 epsilon*x1 = (epsilon-1)*x2;
 // Optimal factor mix
-Kp(-1)/N = alpha/(1-alpha)*W_real/rk;
+Kp(-1)/N = alpha/(1-alpha)*w/rk;
 // Marginal cost
-(1-alpha)*mc*y/N = markupss*W_real;
+(1-alpha)*mc*y/N = markupss*w;
 // Law of motion of prices
 1 = thetap*(PI(-1)^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon);
 // Production
@@ -269,15 +267,15 @@ ln(Z/STEADY_STATE(Z)) = rho_A*ln(Z(-1)/STEADY_STATE(Z))+alphaRD*ln(Grdeff(-1)/ST
 // Effective R&D = efficiency wedge times R&D spending
 Grdeff = (1-eGRD)*Grd;
 // Value of an unadopted technology
-J = -S+phi*(SDF(+1)*A(-1)/A*1/(1+gammaa)*(probadopt*VA(+1)+(1-probadopt)*J(+1)));
+J = -S+phi*(SDF(+1)*A(-1)/A*1/(1+gammaa)*(q*VA(+1)+(1-q)*J(+1)));
 // Probability of adoption
-probadopt = (kappaprob+epsirhoadopt)*(S)^(varsigma);
+q = (kappaprob+epsirhoadopt)*(S)^(varsigma);
 // Adoption
-(1+gammaa)*A = probadopt*phi*(Z(-1)-A(-1))+phi*A(-1);
+(1+gammaa)*A = q*phi*(Z(-1)-A(-1))+phi*A(-1);
 // Value of an adopted technology
 VA = (markupss-1)/(markupss)*mc*y + phi*SDF(+1)*VA(+1)*A(-1)/A/(1+gammaa);
 // FOC for adoption effort
-varsigma*probadopt*phi*SDF(+1)/(1+gammaa)*A(-1)/A*(VA(+1)-J(+1)) = S;
+varsigma*q*phi*SDF(+1)/(1+gammaa)*A(-1)/A*(VA(+1)-J(+1)) = S;
 // Stochastic discount factor (detrended)
 SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)));
 // Shock to the R&D technology
@@ -297,9 +295,9 @@ prob_def = exp(eta1 + eta2*by(-1))/(1+exp(eta1 + eta2*by(-1)));
 // Public infrastructure capital
 Kg*g = (1-delta)*Kg(-1)+(1-eGI)*Igi;
 // Government debt
-D = (R(-1)/PI)*D(-1)/g+Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C;
+D = (R(-1)/PI)*D(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;
 // Lump-sum transfers
-Trans-STEADY_STATE(Trans) = rho_trans*(Trans(-1)-STEADY_STATE(Trans))+(1-rho_trans)*(-gamma_d_trans*(by(-1)-byss)*ydss);
+T-STEADY_STATE(T) = rho_trans*(T(-1)-STEADY_STATE(T))+(1-rho_trans)*(-gamma_d_trans*(by(-1)-byss)*ydss);
 // Debt to GDP
 by = D/y;
 // Government spending instruments (subject to expenditure shocks)
@@ -340,11 +338,11 @@ eGRD = eGRD_ss-epsi_effcgrd;
 lnyd = log(yd)*100;
 TFP = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*H(-1)^(1-alpha);
 G = Gc+Igi+Ige+Grd;                                        // total government spending (sum of the four instruments)
-pdef = (Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/y*100;
+pdef = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/y*100;
 rreal = R/PI;                                              // ex-post real interest rate
 // Fiscal aggregates as a share of steady-state GDP (ydss)
-pdef_yss  = (Gc+Igi+Ige+Grd+Trans-tauw*W_real*N-tauc*C)/ydss;  // primary deficit
-Trans_yss = Trans/ydss;                                       // transfers
+pdef_yss  = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;  // primary deficit
+T_yss = T/ydss;                                       // transfers
 dserv_yss = (R-1)*D/ydss;                                    // debt service (interest)
 by_yss    = D/ydss;                                          // government debt
 Igi_ys = Igi/ydss*100;

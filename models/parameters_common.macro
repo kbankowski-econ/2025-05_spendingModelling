@@ -32,11 +32,10 @@ deltaH=0.025;
 gamma=0.5;
 
 rho_Ige=0.9;
-alphaZZ1=0.2;
 
 markupss=1.18;
 phi=1-0.08/4;   % obsolescence rate: 0.08/4
 vartheta=1.35;
-probadoptss=0.2/4;
+qss=0.2/4;
 rhoshockchi=1;
 rho_A=0.79;

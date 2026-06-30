@@ -4,7 +4,7 @@ lambda          % Marginal Utility
 R               % Interest rate on bond
 PI              % Gross inflation
 N               % (Effective) Labor supply
-W_real          % Real wages
+w          % Real wages
 Ip              % Private investment
 Kp              % Private capital
 rk              % Return on private investment
@@ -32,13 +32,13 @@ Igiss            % Steady state of Investment
 Gcss            % Steady state of Consumption
 Rss             % Steady state interest rate   
 ydss            % Steady state output
-Trans           % Transfer
+T           % Transfer
 lnyd            % Log of Output
 G               % Total government spending (Gc+Igi+Ige+Grd)
 pdef            % Primary Deficit
 rreal           % Ex-post real interest rate (R/PI)
 pdef_yss        % Primary deficit, share of steady-state GDP
-Trans_yss       % Transfers, share of steady-state GDP
+T_yss       % Transfers, share of steady-state GDP
 dserv_yss       % Debt service (interest), share of steady-state GDP
 by_yss          % Government debt, share of steady-state GDP
 Igi_ys           % Public Investment as percent of GDP
@@ -63,7 +63,7 @@ shockchi       % R&D process productivity shock SS
 SDF             % Stochastic discount factor
 S             % Effective labor demand for tech adoption
 VA              % Value of tech adoption
-probadopt       % Probability of adoption
+q       % Probability of adoption
 J             % Value of unadopted Intermediate
 Srd             % Effective labor demand for R&D development
 Z            % R&D product
@@ -144,7 +144,6 @@ gamma             % Effectiveness of education investment.
 mu          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
 eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
-alphaZZ1        % Learning by doing off HHon g
 rho_Ige         % Persistence of human-related spending
 alphaRD         % R&D on TFP
 Grdy           % share of expenditure for R&D
@@ -152,7 +151,7 @@ markupss        % SS markup of Intermediate goods
 phi           % obsolescence rate: 0.08/4
 vartheta      % Intermediate goods elasticity of substitution
 gammaa         % Gorwth of tech
-probadoptss    % Probability of adoption
+qss    % Probability of adoption
 varsigma      % Adoption elasticity
 alphaHA        % HC elasticity in tech creation (paper alpha_HA)
 rhoshockchi    % AR (1) or shock to r&D

@@ -11,7 +11,7 @@
 // difference in the Gc response isolates the non-standard ingredients.
 // Reuses only the shock file (epsi_gc) and the perfect-foresight solver.
 // =====================================================================
-var C N Lab lambda W_real mc PI PIstar x1 x2 vp yd y Rmp R Gc rreal;
+var C N Lab lambda w mc PI PIstar x1 x2 vp yd y Rmp R Gc rreal;
 varexo epsi_gc;
 parameters betta varphi epsilon thetap gamma_pi gamma_y rho_R Gcy omega Rss PIss ydss Gcss;
 betta    = 0.9985;
@@ -31,10 +31,10 @@ model;
 // --- Households (log consumption, separable labor) ---
 lambda = 1/C;
 lambda = betta*lambda(+1)*R/PI(+1);
-omega*N^varphi = lambda*W_real;
+omega*N^varphi = lambda*w;
 Lab = N;                                          // labor supply = effective labor (H = 1)
 // --- Firms: constant returns Y = N (so mc = real wage), Calvo, no indexation ---
-mc = W_real;
+mc = w;
 y = N;
 y = vp*yd;
 x1 = lambda*mc*yd + betta*thetap*(1/PI(+1))^(-epsilon)*x1(+1);
@@ -55,7 +55,7 @@ PI     = PIss;
 PIstar = 1;
 vp     = 1;
 mc     = (epsilon-1)/epsilon;
-W_real = mc;
+w = mc;
 R      = Rss;
 Rmp    = Rss;
 Gc     = Gcss;

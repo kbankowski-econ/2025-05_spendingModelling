@@ -4,7 +4,7 @@ lambda          % Marginal Utility
 R               % Interest rate on bond
 PI              % Gross inflation
 N               % (Effective) Labor supply
-W_real          % Real wages
+w          % Real wages
 Ip              % Private investment
 Kp              % Private capital
 rk              % Return on private investment
@@ -32,7 +32,7 @@ Igss            % Steady state of Investment
 Cgss            % Steady state of Consumption
 Rss             % Steady state interest rate   
 ydss            % Steady state output
-Trans           % Transfer
+T           % Transfer
 lnyd            % Log of Output
 pdef            % Primary Deficit 
 Ig_ys           % Public Investment as percent of GDP
@@ -57,7 +57,7 @@ shockchi       % R&D process productivity shock SS
 SDF             % Stochastic discount factor
 S             % Effective labor demand for tech adoption
 VA              % Value of tech adoption
-probadopt       % Probability of adoption
+q       % Probability of adoption
 J             % Value of unadopted Intermediate
 Srd             % Effective labor demand for R&D development
 Z            % R&D product
@@ -138,7 +138,6 @@ gamma             % Effectiveness of education investment.
 mu          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
 effgegap_ss     % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
-alphaZZ1        % Learning by doing off HHon g
 rho_Ige         % Persistence of human-related spending
 alphaHA         % feed back of Human cpital to TFP
 alphaRD         % R&D on TFP
@@ -147,7 +146,7 @@ markupss        % SS markup of Intermediate goods
 phi           % obsolescence rate: 0.08/4
 vartheta      % Intermediate goods elasticity of substitution
 gammaa         % Gorwth of tech
-probadoptss    % Probability of adoption
+qss    % Probability of adoption
 varsigma      % Adoption elasticity
 alphaSRD       % R&D elasticity
 rhoshockchi    % AR (1) or shock to r&D

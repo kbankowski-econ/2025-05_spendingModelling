@@ -2,7 +2,7 @@
 ,{"lhs": "PIstar", "rhs":"1"}
 ,{"lhs": "vp", "rhs":"1"}
 ,{"lhs": "mc", "rhs":"(epsilon-1)/epsilon"}
-,{"lhs": "W_real", "rhs":"mc"}
+,{"lhs": "w", "rhs":"mc"}
 ,{"lhs": "R", "rhs":"Rss"}
 ,{"lhs": "Rmp", "rhs":"Rss"}
 ,{"lhs": "Gc", "rhs":"Gcss"}

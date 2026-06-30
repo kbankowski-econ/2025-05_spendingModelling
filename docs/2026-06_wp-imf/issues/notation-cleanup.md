@@ -75,8 +75,25 @@ No paper-symbol changes (code renamed to the existing symbols). No plot scripts 
 `ZZ`/`ZZRD`, so no figures needed regenerating. Model and glossary still match exactly:
 74 / 55 / 16.
 
-All notation-cleanup tiers are now applied to the model. Optional remaining cosmetics
-(not done): `Kg`→`Kgi`, `by`→`d`, `W_real`→`w`; and `betta` left as-is (MATLAB `beta` clash).
+## DONE — Follow-up cleanups (2026-07)
+
+Model + glossary + varDict + scripts (re-ran 44 models, re-exported; values identical):
+- **χ symbol fix.** The paper uses `\chi_p` for price indexation (model `chi`) and bare
+  `\chi` for the human-capital-accumulation scale (model `muyH`, paper line 224). Glossary
+  corrected: `chi`→$\chi_p$, `muyH`→$\chi$ (was "--"). The model-only R&D disturbance
+  (`shockchi`/`epsi_shockchi`/`rhoshockchi`) is now "--" in the Paper column — the paper's
+  tech-creation equation is deterministic, so it carries no paper symbol (the earlier
+  $\chi_t$/$\varepsilon_t^\chi$/$\rho_\chi$ were dropped; no `\zeta` introduced).
+- **`alphaZZ1` deleted** — dead parameter (assigned 0.2, never used). Params 55 → 54.
+- **`W_real`→`w`** ($w_t$, real wage). varDict + export updated.
+- **`Trans`→`T`** ($T_t$) and **`Trans_yss`→`T_yss`** (reporting). varDict, export derivedMap,
+  and the three plot scripts' `Trans_yss` panel updated; figures regenerated.
+- **`probadopt`→`q`** ($q_t$), **`probadoptss`→`qss`** ($\bar q$).
+
+Model and glossary still match exactly: endogenous 74, parameters 54, exogenous 16.
+
+Not done (declined): `Kg`→`Kgi` (3), `by`→`d` (4), `Kp`/`Ip`→`K`/`I` (9), `betta`→`beta`
+(10, MATLAB `beta` clash), `Bigtheta`→`Theta` (8).
 
 ## Completeness
 

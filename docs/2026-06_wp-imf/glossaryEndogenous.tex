@@ -23,7 +23,7 @@
 6 & $I_t$ & Private investment & \texttt{Ip} \\
 7 & $K_t$ & Private capital & \texttt{Kp} \\
 8 & $r_t^{k}$ & Rental rate of private capital & \texttt{rk} \\
-9 & $w_t$ & Real wage & \texttt{W\_real} \\
+9 & $w_t$ & Real wage & \texttt{w} \\
 10 & $\lambda_t$ & Marginal utility of consumption & \texttt{lambda} \\
 11 & $\lambda_t^{H}$ & Shadow value of human capital & \texttt{lambda\_HC} \\
 12 & $Y_t$ & Gross output & \texttt{y} \\
@@ -40,7 +40,7 @@
 23 & $R_t/\Pi_t$ & Ex-post real interest rate & \texttt{rreal} \\
 24 & $D_t$ & Public debt & \texttt{D} \\
 25 & $d_t$ & Debt-to-GDP ratio & \texttt{by} \\
-26 & $T_t$ & Lump-sum transfers & \texttt{Trans} \\
+26 & $T_t$ & Lump-sum transfers & \texttt{T} \\
 27 & $\tau_t^{c}$ & Consumption-tax rate & \texttt{tauc} \\
 28 & $\tau_t^{w}$ & Labor-income-tax rate & \texttt{tauw} \\
 29 & $G_t$ & Total government spending & \texttt{G} \\
@@ -54,20 +54,20 @@
 37 & $A_t$ & Adopted technology & \texttt{A} \\
 38 & $Z_t$ & Created technology & \texttt{Z} \\
 39 & $S_t$ & Adoption expenditure & \texttt{S} \\
-40 & $q_t$ & Adoption probability & \texttt{probadopt} \\
+40 & $q_t$ & Adoption probability & \texttt{q} \\
 41 & $\mathcal{V}_t$ & Value of an adopted technology & \texttt{VA} \\
 42 & $\mathcal{J}_t$ & Value of an unadopted technology & \texttt{J} \\
 43 & $TFP_t$ & Total factor productivity & \texttt{TFP} \\
 44 & $e_t^{GI}$ & Infrastructure efficiency gap & \texttt{eGI} \\
 45 & $e_t^{GE}$ & Human-capital efficiency gap & \texttt{eGE} \\
 46 & $e_t^{GRD}$ & R\&D efficiency gap & \texttt{eGRD} \\
-47 & $\chi_t$ & R\&D-process productivity disturbance & \texttt{shockchi} \\
+47 & -- & R\&D-process productivity disturbance & \texttt{shockchi} \\
 48 & -- & Stochastic discount factor & \texttt{SDF} \\
 49 & -- & Effective labor for R\&D & \texttt{Srd} \\
 50 & -- & Labor in the R\&D sector & \texttt{Ns} \\
 51 & -- & Adoption-probability scale (steady state) & \texttt{kappaprob} \\
 52 & -- & Labor-disutility scaling & \texttt{omega} \\
-53 & -- & Scaling so steady-state schooling $E=0.1$ & \texttt{muyH} \\
+53 & $\chi$ & Scale in human-capital accumulation & \texttt{muyH} \\
 54 & -- & Expected default loss & \texttt{Delta\_G} \\
 55 & -- & Probability of default & \texttt{prob\_def} \\
 56 & -- & Output growth rate & \texttt{ygrowth} \\
@@ -85,7 +85,7 @@
 68 & -- & Debt-to-GDP, annualized & \texttt{by\_ann} \\
 69 & -- & Infrastructure investment, share of GDP & \texttt{Igi\_ys} \\
 70 & -- & Primary deficit, share of steady-state GDP & \texttt{pdef\_yss} \\
-71 & -- & Transfers, share of steady-state GDP & \texttt{Trans\_yss} \\
+71 & -- & Transfers, share of steady-state GDP & \texttt{T\_yss} \\
 72 & -- & Debt service, share of steady-state GDP & \texttt{dserv\_yss} \\
 73 & -- & Public debt, share of steady-state GDP & \texttt{by\_yss} \\
 74 & -- & R\&D spending, share of steady-state GDP & \texttt{Grd\_ydss\_ratio} \\

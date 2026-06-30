@@ -81,7 +81,7 @@ PANELS = [
     # eq:govbudget). Debt service (dserv_yss) is computed and exported but not
     # plotted here.
     ("pdef_yss",  "Primary deficit"),
-    ("Trans_yss", "Transfers (T<sub>t</sub>)"),
+    ("T_yss", "Transfers (T<sub>t</sub>)"),
     ("by_yss",    "Debt-to-GDP ratio (d<sub>t</sub>)"),
     None,
 ]
