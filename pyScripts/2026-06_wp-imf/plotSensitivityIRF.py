@@ -38,7 +38,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 # --- Styling (inlined; matches the other working-paper figures) ---------------
 STYLE = {
     "template": "simple_white",
-    "margins": {"t": 44, "b": 28, "l": 40, "r": 14},
+    "margins": {"t": 44, "b": 28, "l": 40, "r": 40},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
              "zeroline": True, "zerolinewidth": 1.5},
@@ -89,10 +89,10 @@ def main():
     fig = make_subplots(
         rows=1, cols=len(PANELS),
         subplot_titles=[p[2] for p in PANELS],
-        horizontal_spacing=0.055,
+        horizontal_spacing=0.10,
     )
 
-    for j, (ex, param, _title, psym, (c_lo, c_hi)) in enumerate(PANELS):
+    for j, (ex, param, _title, _psym, (c_lo, c_hi)) in enumerate(PANELS):
         col = j + 1
         sub = irf[(irf.experiment == ex) & (irf.param == param)].sort_values("param_value")
         vals = sub.param_value.to_numpy()
@@ -118,14 +118,21 @@ def main():
                 ),
                 row=1, col=col,
             )
-        # label the swept range at the endpoints of the extreme lines
-        lo_row, hi_row = sub.iloc[0], sub.iloc[-1]
-        for r, anchor in ((hi_row, "bottom"), (lo_row, "top")):
+        # label every line with its parameter value, just past its right endpoint
+        # (the panel title carries the parameter symbol). The wider inter-panel
+        # spacing and right margin leave room for these labels. The baseline
+        # value's label is greyed to match the thick grey baseline line.
+        base_end = float(base.iloc[0][ycols[-1]]) if len(base) else None
+        for _, r in sub.iterrows():
+            frac = 0.0 if hi == lo else (r.param_value - lo) / (hi - lo)
+            r_end = float(r[ycols[-1]])
+            is_base = base_end is not None and abs(r_end - base_end) < 1e-9
+            color = "#757575" if is_base else _lerp_hex(c_lo, c_hi, frac)
             fig.add_annotation(
-                row=1, col=col, x=HORIZON_YEARS, y=float(r[ycols[-1]]),
-                text=f"{psym}={r.param_value:g}", showarrow=False,
-                xanchor="right", yanchor=anchor,
-                font=dict(family=FONT_FAMILY, size=LABEL_FONT_PX, color=_lerp_hex(c_lo, c_hi, 1.0)),
+                row=1, col=col, x=HORIZON_YEARS, y=r_end,
+                text=f"{r.param_value:g}", showarrow=False,
+                xanchor="left", yanchor="middle", xshift=3,
+                font=dict(family=FONT_FAMILY, size=LABEL_FONT_PX, color=color),
             )
 
     # Subplot titles (the first len(PANELS) annotations, added by make_subplots
