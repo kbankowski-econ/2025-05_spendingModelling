@@ -3,12 +3,13 @@ Working paper: generate the symbol glossary in the appendix (app:glossary) —
 three `longtable`s mapping paper notation to the model-code names, with a short
 description: endogenous variables, parameters, and exogenous variables (shocks).
 
-The model-code column is the authoritative anchor (the exact `var`/`parameters`/
-`varexo` names in models/declare_all.macro). Paper symbols follow the notation in
-the model and calibration sections; where the paper introduces no explicit symbol,
-the description and model name identify the object. Steady-state constants, log
-levels, and pure reporting transforms (e.g. Igiss, lnyd, by_ann, *_yss) are
-omitted by design.
+The tables are COMPLETE: they list every `var`/`parameters`/`varexo` name declared
+in models/declare_all.macro (counts must match the model — endogenous, parameters,
+exogenous). The model-code column is the authoritative anchor. The Paper column
+shows the paper symbol, or "--" when the object has no paper symbol (steady-state
+constants, log levels, reporting transforms, and purely computational auxiliaries).
+Some model-code names shown here are the agreed cleaned-up targets (see
+issues/notation-cleanup.md), which run slightly ahead of the current model.
 
 Writes (\\input by draftPaper.tex):
   ../glossaryEndogenous.tex
@@ -73,6 +74,35 @@ ENDOGENOUS = [
     (r"$e_t^{GI}$",       "Infrastructure efficiency gap",            "eGI"),
     (r"$e_t^{GE}$",       "Human-capital efficiency gap",             "eGE"),
     (r"$e_t^{GRD}$",      r"R\&D efficiency gap",                     "eGRD"),
+    # --- Auxiliary, steady-state, and reporting variables (no paper symbol: "--") ---
+    (r"$\chi_t$",         r"R\&D-process productivity disturbance",   "shockchi"),
+    ("--",                "Stochastic discount factor",               "SDF"),
+    ("--",                r"Effective labor for R\&D",                "Srd"),
+    ("--",                r"Labor in the R\&D sector",                "Ns"),
+    ("--",                "Adoption-probability scale (steady state)", "kappaprob"),
+    ("--",                "Labor-disutility scaling",                 "omega"),
+    ("--",                r"Scaling so steady-state schooling $E=0.1$", "muyH"),
+    ("--",                "Expected default loss",                    "Delta_G"),
+    ("--",                "Probability of default",                   "prob_def"),
+    ("--",                "Output growth rate",                       "ygrowth"),
+    ("--",                "Primary deficit",                          "pdef"),
+    ("--",                "Steady-state output (value added)",        "ydss"),
+    ("--",                "Steady-state borrowing rate",              "Rss"),
+    ("--",                "Steady-state government consumption",       "Gcss"),
+    ("--",                "Steady-state infrastructure investment",   "Igiss"),
+    ("--",                "Steady-state human-capital investment",    "Igess"),
+    ("--",                r"Steady-state R\&D spending",              "Grdss"),
+    ("--",                r"Steady-state R\&D-process disturbance",   "shockchitss"),
+    ("--",                "Log of aggregate demand",                  "lnyd"),
+    ("--",                "Log of the price index",                   "lnPI"),
+    ("--",                r"Log of R\&D spending",                    "ln_Grd"),
+    ("--",                "Debt-to-GDP, annualized",                  "by_ann"),
+    ("--",                "Infrastructure investment, share of GDP",  "Igi_ys"),
+    ("--",                "Primary deficit, share of steady-state GDP", "pdef_yss"),
+    ("--",                "Transfers, share of steady-state GDP",     "Trans_yss"),
+    ("--",                "Debt service, share of steady-state GDP",  "dserv_yss"),
+    ("--",                "Public debt, share of steady-state GDP",   "by_yss"),
+    ("--",                r"R\&D spending, share of steady-state GDP", "Grd_ydss_ratio"),
 ]
 
 PARAMETERS = [
@@ -119,6 +149,7 @@ PARAMETERS = [
     (r"$s^{GE}$",           "Human-capital investment, share of GDP",       "Igey"),
     (r"$\alpha_{ZZ}$",      "Learning-by-doing in growth",                  "alphaZZ1"),
     (r"$\rho_{GE}$",        "Human-capital-spending persistence",           "rho_Ige"),
+    (r"--",                 "Adopted-technology-process persistence (unused, $=0$)", "rho_AAt"),
     (r"$\alpha_{RD}$",      "Public-R\\&D loading in tech creation",        "alphaRD"),
     (r"$s^{RD}$",           "R\\&D spending, share of GDP",                 "Grdy"),
     (r"$\mathcal{M}_{ss}$", "Steady-state gross markup",                    "markupss"),

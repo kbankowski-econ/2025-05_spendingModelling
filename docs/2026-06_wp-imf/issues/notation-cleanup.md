@@ -25,11 +25,19 @@ Not in the glossary but to rename in the model during propagation:
 - `SSt` → `Srd` (effective labor for R&D). NOT `SS` — that clashes with the steady-state `*ss`/`STEADY_STATE` convention.
 - `shockchit` → `shockchi` (the R&D-process disturbance variable; drives the two renamed items above).
 
-Dropped:
-- `rho_AAt` — removed from the glossary. It is **declared but dead** (`rho_AAt=0.0` in
-  parameters_common.macro, never referenced in any equation). Delete it from
+Dead parameter to delete in the model pass:
+- `rho_AAt` — **declared but dead** (`rho_AAt=0.0` in parameters_common.macro, never
+  referenced in any equation). It is now listed in the (complete) glossary with a "--"
+  paper symbol and an "unused" note. Delete it from
   `declare_all.macro`/`declare_all_ext.macro`/`parameters_common.macro` in the model pass.
-  (Renaming it to `rho_A` would also have collided with `rho_ZZRD` = paper $\rho_A$.)
+  (A rename to `rho_A` would also have collided with `rho_ZZRD` = paper $\rho_A$.)
+
+## Completeness
+
+The glossary tables now list **every** declared model object and the row counts match
+the model exactly: endogenous 74, parameters 56, exogenous 16. Objects with no paper
+symbol (steady-state constants, log levels, reporting transforms, computational
+auxiliaries) carry "--" in the Paper column.
 
 False positives (the `t` is part of a word, leave as-is): `probadopt` (adopt), `Deltacost` (cost), `tauc`/`tauw` (tau).
 
