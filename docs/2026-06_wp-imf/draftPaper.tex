@@ -16,6 +16,7 @@
 \usepackage{caption}
 \usepackage{booktabs}
 \usepackage{tabularx}
+\usepackage{longtable}
 \usepackage{makecell}
 \usepackage{multirow}
 \usepackage{array}
@@ -667,5 +668,20 @@ The multipliers in Table~\ref{tab:multipliers} are computed for AR(1) (persisten
     \vspace{1mm}
     \tabnote{IMF staff estimates.}{As Table~\ref{tab:multipliers}, but for a \emph{permanent} 1-percent-of-GDP debt-financed increase in each spending category (no decay), with no offsetting cut to other spending. Output and spending are discounted at the model's steady-state real interest rate before cumulating. The ``Long-term'' column reports the multiplier at a 250-year horizon; under a permanent increase the cumulative multiplier converges to its long-run value more gradually than under the AR(1) shock, so this column still slightly understates the eventual steady-state multiplier. The R\&D innovation channel is shut down for emerging market and developing economies.}
 \end{table}
+
+%========================================================================
+\section{Notation: Paper and Model Symbols} \label{app:glossary}
+%========================================================================
+
+This appendix maps the paper's notation to the variable and parameter names used in the model code (\texttt{models/}). The model-code column gives the exact name in the Dynare declarations; where the paper introduces no explicit symbol, the description and model name identify the object. Steady-state constants, log levels, and pure reporting transforms are omitted.
+
+\subsection{Endogenous Variables}
+\input{glossaryEndogenous.tex}
+
+\subsection{Parameters}
+\input{glossaryParameters.tex}
+
+\subsection{Exogenous Variables (Shocks)}
+\input{glossaryExogenous.tex}
 
 \end{document}

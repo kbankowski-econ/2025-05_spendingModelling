@@ -264,6 +264,16 @@ def makeNotationTable(c):
 
 
 @task
+def makeGlossary(c):
+    """
+    Regenerate the appendix symbol glossary (paper <-> model-code mapping):
+    endogenous variables, parameters, exogenous shocks (makeGlossary.py).
+    Out: docs/2026-06_wp-imf/glossary{Endogenous,Parameters,Exogenous}.tex
+    """
+    _run_table(c, "makeGlossary.py", "Symbol glossary (appendix)")
+
+
+@task
 def plotContributions(c):
     """
     Diagnostic: output (yd) contribution decompositions (drivers/plotContributions.m).
@@ -312,6 +322,7 @@ def investigateContributions(c):
     makeParametersTable,
     makeEfficiencyGapsTable,
     makeNotationTable,
+    makeGlossary,
     plotContributions,
     investigateContributions,
 ])
