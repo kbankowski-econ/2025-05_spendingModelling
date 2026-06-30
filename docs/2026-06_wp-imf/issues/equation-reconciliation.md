@@ -29,20 +29,23 @@ comparing them would be misled. Needs an author decision on which dating is inte
 5. **Adoption** (eq. 555): paper $q_t\phi(Z_t-A_t)+\phi A_t$, model `q*phi*(Z(-1)-A(-1))+phi*A(-1)` (model pairs current `q` with lagged `Z`,`A`).
 6. **Adoption value functions** $\mathcal V$, $\mathcal J$, and the $S$-FOC (556–558): paper detrends with $A_t/A_{t+1}$, model with `A(-1)/A` (= $A_{t-1}/A_t$).
 
-## ⚠ Substantive discrepancies (beyond dating)
+## ⚠ Substantive discrepancies (beyond dating) — FIXED 2026-07
+**Items 7 and 8 fixed in the paper** (commit below) to match the model; no model change.
+
 7. **R&D instrument persistence.** Appendix A (eq. 567) gives public R&D an AR(1) term,
    $G_t^{RD}-G^{RD}=\rho_{RD}(G_{t-1}^{RD}-G^{RD})+Y^d\varepsilon_t^{grd}$, but (a) the
    model's instrument is `Grd = Grdss + ydss*epsi_grd` with **no** AR term (persistence
    lives in the shock path), (b) $\rho_{RD}$ is **not a model parameter**, and (c) the
    paper applies it **only** to R&D — the other three instruments (565–568) have no
-   persistence term. → Recommend writing all four instruments uniformly as
-   $X_t = X^{SS} + Y^d\varepsilon_t$ (drop $\rho_{RD}$ from 567), and state the AR(1)
-   persistence as a property of the experiment's shock path.
+   persistence term. → **FIXED:** all four instruments now written uniformly as
+   $X_t = X^{SS} + Y^d\varepsilon_t$ ($\rho_{RD}$ dropped); a clause notes the innovations
+   follow a persistent AR(1) path in the experiments.
 8. **Market-clearing technology resources** (eq. 592). Model: `... + Srd + (Z(-1)/A(-1)-1)*S`;
    paper: `... + S_t + (Z_{t-1}/A_{t-1}-1)S_t`. The first term differs — the model adds
    `Srd` (steady-state R&D-development labor, a constant) whereas the paper adds the
-   adoption expenditure $S_t$ again. Confirm the intended resource cost of the
-   technology sector and align the two.
+   adoption expenditure $S_t$ again. → **FIXED:** the paper's first technology term is now
+   $S^{R}$ (the steady-state R&D-development resource, = model `Srd`), with $\left(Z_{t-1}/A_{t-1}-1\right)S_t$
+   the adoption cost; glossary maps `Srd` → $S^{R}$ (was "--").
 
 ## 🧹 Dead parameters (declared, never used in any equation) — candidates for deletion
 `rho_Gc`, `rho_Igi`, `rho_Ige` (=0.9 in the macros, but the instrument equations are

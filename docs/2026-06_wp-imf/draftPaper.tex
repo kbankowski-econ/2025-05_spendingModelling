@@ -564,10 +564,10 @@ The expenditure instruments follow
 \begin{align}
     I_t^{GI} &= I^{GI} + Y^{d}\,\varepsilon_t^{igi}, \qquad
     I_t^{GE} = I^{GE} + Y^{d}\,\varepsilon_t^{ige}, \\
-    G_t^{RD} - G^{RD} &= \rho_{RD}\left(G_{t-1}^{RD} - G^{RD}\right) + Y^{d}\,\varepsilon_t^{grd}, \\
-    G_t^{C} - G^{C} &= Y^{d}\,\varepsilon_t^{gc},
+    G_t^{RD} &= G^{RD} + Y^{d}\,\varepsilon_t^{grd}, \qquad
+    G_t^{C} = G^{C} + Y^{d}\,\varepsilon_t^{gc},
 \end{align}
-where unstarred steady-state values carry no time index and $Y^{d}$ is steady-state demand. Government consumption is an ordinary instrument with its own innovation $\varepsilon_t^{gc}$. The budget-neutral experiments of Section~\ref{sec:results} finance a rise in investment or R\&D with an equal cut in consumption by setting $\varepsilon_t^{gc} = -\left(\varepsilon_t^{igi} + \varepsilon_t^{ige} + \varepsilon_t^{grd}\right)$; a non-neutral experiment sets it freely. Taxes and transfers stabilize debt,
+where unstarred steady-state values carry no time index and $Y^{d}$ is steady-state demand. Each instrument is its steady-state level plus a scaled innovation; in the policy experiments these innovations follow a persistent path (AR(1), persistence 0.9; Section~\ref{sec:properties}). Government consumption is an ordinary instrument with its own innovation $\varepsilon_t^{gc}$. The budget-neutral experiments of Section~\ref{sec:results} finance a rise in investment or R\&D with an equal cut in consumption by setting $\varepsilon_t^{gc} = -\left(\varepsilon_t^{igi} + \varepsilon_t^{ige} + \varepsilon_t^{grd}\right)$; a non-neutral experiment sets it freely. Taxes and transfers stabilize debt,
 \begin{align}
     \tau_t^{c} - \tau^{c} &= \rho_{\tau c}\left(\tau_{t-1}^{c} - \tau^{c}\right) + \left(1-\rho_{\tau c}\right)\gamma_{d}^{\tau c}\left(d_{t-1} - d^{*}\right) + \varepsilon_t^{\tau c}, \\
     \tau_t^{w} - \tau^{w} &= \rho_{\tau w}\left(\tau_{t-1}^{w} - \tau^{w}\right) + \left(1-\rho_{\tau w}\right)\gamma_{d}^{\tau w}\left(d_{t-1} - d^{*}\right) + \varepsilon_t^{\tau w}, \\
@@ -589,11 +589,11 @@ where $p_t^{def}$ is the default probability and $\Delta^{cost}$ the associated 
 
 Aggregate demand, the gross-output wedge, and the price-dispersion term satisfy
 \begin{align}
-    Y_t^{d} &= C_t + I_t + I_t^{GI} + G_t^{C} + I_t^{GE} + G_t^{RD} + S_t + \left(\frac{Z_{t-1}}{A_{t-1}} - 1\right) S_t, \\
+    Y_t^{d} &= C_t + I_t + I_t^{GI} + G_t^{C} + I_t^{GE} + G_t^{RD} + S^{R} + \left(\frac{Z_{t-1}}{A_{t-1}} - 1\right) S_t, \\
     Y_t &= v_t^{p}\, Y_t^{d}, \qquad
     v_t^{p} = \theta_p\left(\frac{\Pi_{t-1}^{\chi_p}}{\Pi_t}\right)^{-\epsilon} v_{t-1}^{p} + \left(1-\theta_p\right)\left(\Pi_t^{*}\right)^{-\epsilon},
 \end{align}
-where the technology terms collect the resources $\mathcal{R}_t$ used in creation and adoption.
+where the last two terms are the resources $\mathcal{R}_t$ used in technology creation and adoption: $S^{R}$ is the (steady-state) resource cost of R\&D development and $\left(Z_{t-1}/A_{t-1}-1\right)S_t$ is the adoption cost, with $S_t$ the adoption expenditure.
 
 \subsection{Notation}
 

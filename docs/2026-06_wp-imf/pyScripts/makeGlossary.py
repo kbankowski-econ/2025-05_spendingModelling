@@ -77,7 +77,7 @@ ENDOGENOUS = [
     # --- Auxiliary, steady-state, and reporting variables (no paper symbol: "--") ---
     ("--",                r"R\&D-process productivity disturbance",   "shockchi"),
     ("--",                "Stochastic discount factor",               "SDF"),
-    ("--",                r"Effective labor for R\&D",                "Srd"),
+    (r"$S^{R}$",          r"R\&D-development resource (steady state)", "Srd"),
     ("--",                r"Labor in the R\&D sector",                "Ns"),
     ("--",                "Adoption-probability scale (steady state)", "kappaprob"),
     (r"$\omega$",         "Labor-disutility scaling",                 "omega"),
