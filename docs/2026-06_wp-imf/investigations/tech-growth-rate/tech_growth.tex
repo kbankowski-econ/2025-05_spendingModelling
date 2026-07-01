@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=2.5cm,vmargin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+
+\title{The technology growth rate $1+\gamma^{a}$ vs.\ the output growth rate $g$}
+\author{Spending-efficiency model --- internal note}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\noindent
+\textbf{Finding.} The model's technology block (adoption law of motion, the value
+functions $\mathcal V$ and $\mathcal J$, and the $S$ first-order condition) is detrended
+by \texttt{(1+gammaa)}, \emph{not} by the output growth rate $g$. The paper's appendix
+originally wrote those same equations with $g$, which does not match the solved model.
+This note records why the model is right and what was fixed.
+
+\section{$\gamma^{a}$ is derived from $g$}
+
+\texttt{gammaa} is not a free parameter. The code sets
+\begin{equation}
+    \texttt{gammaa = gss\^{}((1-alpha)/(vartheta-1)) - 1},
+    \qquad\text{i.e.}\qquad
+    1+\gamma^{a} = g^{\,(1-\alpha)/(\vartheta-1)} .
+\end{equation}
+With the calibration $\alpha = 0.3$ and $\vartheta = 1.35$ the exponent is exactly
+$0.7/0.35 = 2$, so
+\begin{equation}
+    1+\gamma^{a} = g^{2}.
+\end{equation}
+Technology therefore grows at the \emph{square} of the output growth factor: $1.008$
+versus $1.004$ (AE) and $1.015$ versus $1.0075$ (EMDE).
+
+\section{Why technology must grow faster than output}
+
+Technology enters production only through the love-of-variety term $A_t^{\vartheta-1}$:
+\begin{equation}
+    Y_t = A_{t-1}^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha}
+          \left(K^{GI}_{t-1}\right)^{\alpha_G} - \Theta .
+\end{equation}
+On the balanced-growth path output and capital grow at $g$ and labor is stationary, so
+\begin{equation}
+    g^{1-\alpha} = \left(1+\gamma^{a}\right)^{\vartheta-1}
+    \qquad\Longrightarrow\qquad
+    1+\gamma^{a} = g^{\,(1-\alpha)/(\vartheta-1)},
+\end{equation}
+exactly the code's formula (it ignores the small $\alpha_G$ term). Because the technology
+exponent $\vartheta-1 = 0.35$ is below the labor share $1-\alpha = 0.7$, the technology
+stock must grow faster than output for TFP to lift output at rate $g$. Equivalently, the
+real trend is $\Lambda_t = A_t^{(\vartheta-1)/(1-\alpha)} = A_t^{1/2}$: real quantities
+grow at $g$, the technology stock at $g^{2}$.
+
+\section{Consequence and fix}
+
+A single trend at $g$ for everything is \emph{not} innocuous: it would make the
+production function fail to balance (with $A$ growing at $g$, output would grow at
+$g^{\vartheta-1+\alpha} \neq g$). The model correctly runs two trends---$g$ for the real
+block, $1+\gamma^{a}$ for technology---so \texttt{(1+gammaa)} in the adoption block is the
+right factor, and the paper's $g$ there was the error.
+
+Fixed in the paper:
+\begin{itemize}
+    \item Appendix technology block---the adoption law of motion and the value/FOC
+          equations now carry $1+\gamma^{a}$ in place of $g$.
+    \item A sentence defines $1+\gamma^{a}$ and states
+          $1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$; Section~2.5 flags the two trends.
+    \item The glossary gives \texttt{gammaa} the symbol $\gamma^{a}$, and the endogenous
+          table's equations for $A$, $\mathcal V$, $\mathcal J$, $S$ use $1+\gamma^{a}$.
+\end{itemize}
+The model was not changed; this was a paper-side correction to match the code.
+
+\end{document}

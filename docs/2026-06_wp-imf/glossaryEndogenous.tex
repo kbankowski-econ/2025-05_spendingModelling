@@ -38,12 +38,12 @@
 16 & $\Pi_t^{*}$ & Reset (optimal) inflation \gloseq{\epsilon\,x_{1,t}=(\epsilon-1)\,x_{2,t}} & \texttt{PIstar} & 1 & 1 \\
 17 & $x_{1,t}$ & Price-setting auxiliary \gloseq{x_{1,t}=\lambda_t mc_t Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{-\epsilon}x_{1,t+1}} & \texttt{x1} & 8.001 & 6.892 \\
 18 & $x_{2,t}$ & Price-setting auxiliary \gloseq{x_{2,t}=\lambda_t\Pi^*_t Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{1-\epsilon}\tfrac{\Pi^*_t}{\Pi^*_{t+1}}x_{2,t+1}} & \texttt{x2} & 8.891 & 7.657 \\
-19 & $A_t$ & Adopted technology \gloseq{g_t A_t=q_t\phi(Z_{t-1}-A_{t-1})+\phi A_{t-1}} & \texttt{A} & 1 & 1 \\
+19 & $A_t$ & Adopted technology \gloseq{(1+\gamma^{a}) A_t=q_t\phi(Z_{t-1}-A_{t-1})+\phi A_{t-1}} & \texttt{A} & 1 & 1 \\
 20 & $Z_t$ & Created technology \gloseq{\log\tfrac{Z_t}{Z^{SS}}=\rho_A\log\tfrac{Z_{t-1}}{Z^{SS}}+\alpha_{HA}\log\tfrac{H_{t-1}}{H^{SS}}+\alpha_{RD}\log\tfrac{(1-e^{GRD}_{t-1})G^{RD}_{t-1}}{(1-e^{GRD})G^{RD,SS}}} & \texttt{Z} & 1.572 & 1.715 \\
-21 & $S_t$ & Adoption expenditure \gloseq{S_t=\varsigma q_t\phi\,\mathbb{E}_t\!\big[\mathit{SDF}_{t+1}\tfrac{1}{g}\tfrac{A_{t-1}}{A_t}(\mathcal{V}_{t+1}-\mathcal{J}_{t+1})\big]} & \texttt{S} & 0.102 & 0.006 \\
+21 & $S_t$ & Adoption expenditure \gloseq{S_t=\varsigma q_t\phi\,\mathbb{E}_t\!\big[\mathit{SDF}_{t+1}\tfrac{1}{1+\gamma^{a}}\tfrac{A_{t-1}}{A_t}(\mathcal{V}_{t+1}-\mathcal{J}_{t+1})\big]} & \texttt{S} & 0.102 & 0.006 \\
 22 & $q_t$ & Adoption probability \gloseq{q_t=q_0(S_t)^{\varsigma}} & \texttt{q} & 0.05 & 0.05 \\
-23 & $\mathcal{V}_t$ & Value of an adopted technology \gloseq{\mathcal{V}_t=\tfrac{\mu^p-1}{\mu^p}mc_t Y_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\mathcal{V}_{t+1}\tfrac{A_{t-1}}{A_t}\tfrac{1}{g}\big]} & \texttt{V} & 3.515 & 2.555 \\
-24 & $\mathcal{J}_t$ & Value of an unadopted technology \gloseq{\mathcal{J}_t=-S_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\tfrac{A_{t-1}}{A_t}\tfrac{1}{g}(q_t\mathcal{V}_{t+1}+(1-q_t)\mathcal{J}_{t+1})\big]} & \texttt{J} & 0.876 & 1.397 \\
+23 & $\mathcal{V}_t$ & Value of an adopted technology \gloseq{\mathcal{V}_t=\tfrac{\mu^p-1}{\mu^p}mc_t Y_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\mathcal{V}_{t+1}\tfrac{A_{t-1}}{A_t}\tfrac{1}{1+\gamma^{a}}\big]} & \texttt{V} & 3.515 & 2.555 \\
+24 & $\mathcal{J}_t$ & Value of an unadopted technology \gloseq{\mathcal{J}_t=-S_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\tfrac{A_{t-1}}{A_t}\tfrac{1}{1+\gamma^{a}}(q_t\mathcal{V}_{t+1}+(1-q_t)\mathcal{J}_{t+1})\big]} & \texttt{J} & 0.876 & 1.397 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Government: fiscal and monetary policy}} \\
 \addlinespace[0.1em]

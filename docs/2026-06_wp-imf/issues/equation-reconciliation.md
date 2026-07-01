@@ -93,6 +93,18 @@ Notation aligned with the paper: debt `D`/`d` → `b`/`by` (paper `B_t`/`b_t`/`b
 Counts after the pass: **57 endogenous, 45 parameters, 13 exogenous** — model and the
 appendix glossary match exactly.
 
+## 🔧 Technology-block detrending — FIXED 2026-07
+The appendix technology block (adoption LoM `eq:Astat`, value functions `eq:VA`/`eq:JZ`,
+and the `S`-FOC `eq:SAfoc`) wrote the growth factor as `g`, but the model detrends the
+technology stocks by their own rate `(1+gammaa)`, which is derived from output growth by
+`1+gammaa = gss^((1-alpha)/(vartheta-1))` (= `gss^2` at the calibration, since the exponent
+is 2). Technology grows faster than output because it enters production only via the
+love-of-variety term `A^(vartheta-1)`; a single trend at `g` would leave the production
+function unbalanced. **FIXED:** the four appendix equations, the glossary equations for
+A/V/J/S, and the §2.5 discussion now use `1+gamma^a` (the paper's new symbol for `gammaa`),
+with the relation `1+gamma^a = g^{(1-alpha)/(vartheta-1)}` stated. Paper-side only; the
+model was already correct. See `investigations/tech-growth-rate/`.
+
 ## Status
 All items above are resolved. Timing items 1–6 and item 7 were fixed in the paper
 (predetermined-stock dating; uniform instruments). Item 8 was superseded — the term was

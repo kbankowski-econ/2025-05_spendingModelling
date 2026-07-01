@@ -186,7 +186,7 @@ PARAMETERS = [
     ("Balanced growth", [
         (r"$g$",                "Steady-state gross growth",                    "gss"),
         ("--",                  "Trend-growth shock persistence",               "rho_g"),
-        ("--",                  "Net trend growth of technology",               "gammaa"),
+        (r"$\gamma^{a}$",         "Net trend growth of technology",               "gammaa"),
     ]),
 ]
 
@@ -238,12 +238,12 @@ EQNS = {
     "PIstar":   r"\epsilon\,x_{1,t}=(\epsilon-1)\,x_{2,t}",
     "x1":       r"x_{1,t}=\lambda_t mc_t Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{-\epsilon}x_{1,t+1}",
     "x2":       r"x_{2,t}=\lambda_t\Pi^*_t Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{1-\epsilon}\tfrac{\Pi^*_t}{\Pi^*_{t+1}}x_{2,t+1}",
-    "A":        r"g_t A_t=q_t\phi(Z_{t-1}-A_{t-1})+\phi A_{t-1}",
+    "A":        r"(1+\gamma^{a}) A_t=q_t\phi(Z_{t-1}-A_{t-1})+\phi A_{t-1}",
     "Z":        r"\log\tfrac{Z_t}{Z^{SS}}=\rho_A\log\tfrac{Z_{t-1}}{Z^{SS}}+\alpha_{HA}\log\tfrac{H_{t-1}}{H^{SS}}+\alpha_{RD}\log\tfrac{(1-e^{GRD}_{t-1})G^{RD}_{t-1}}{(1-e^{GRD})G^{RD,SS}}",
-    "S":        r"S_t=\varsigma q_t\phi\,\mathbb{E}_t\!\big[\mathit{SDF}_{t+1}\tfrac{1}{g}\tfrac{A_{t-1}}{A_t}(\mathcal{V}_{t+1}-\mathcal{J}_{t+1})\big]",
+    "S":        r"S_t=\varsigma q_t\phi\,\mathbb{E}_t\!\big[\mathit{SDF}_{t+1}\tfrac{1}{1+\gamma^{a}}\tfrac{A_{t-1}}{A_t}(\mathcal{V}_{t+1}-\mathcal{J}_{t+1})\big]",
     "q":        r"q_t=q_0(S_t)^{\varsigma}",
-    "V":        r"\mathcal{V}_t=\tfrac{\mu^p-1}{\mu^p}mc_t Y_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\mathcal{V}_{t+1}\tfrac{A_{t-1}}{A_t}\tfrac{1}{g}\big]",
-    "J":        r"\mathcal{J}_t=-S_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\tfrac{A_{t-1}}{A_t}\tfrac{1}{g}(q_t\mathcal{V}_{t+1}+(1-q_t)\mathcal{J}_{t+1})\big]",
+    "V":        r"\mathcal{V}_t=\tfrac{\mu^p-1}{\mu^p}mc_t Y_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\mathcal{V}_{t+1}\tfrac{A_{t-1}}{A_t}\tfrac{1}{1+\gamma^{a}}\big]",
+    "J":        r"\mathcal{J}_t=-S_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\tfrac{A_{t-1}}{A_t}\tfrac{1}{1+\gamma^{a}}(q_t\mathcal{V}_{t+1}+(1-q_t)\mathcal{J}_{t+1})\big]",
     # Government
     "Gc":       r"G^C_t=G^{C,SS}+Y^{d,SS}\varepsilon^{c}_t",
     "Igi":      r"I^{GI}_t=I^{GI,SS}+Y^{d,SS}\varepsilon^{gi}_t",
