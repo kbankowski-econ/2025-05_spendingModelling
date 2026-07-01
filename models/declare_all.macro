@@ -109,8 +109,8 @@ rho_g          % AR(1) of growth shock
 gss            % SS of growth
 Igiy             % Public investment/GDP
 Gcy             % Public consumption/GDP
-gamma_d_trans   % Response of lump sum transfer to debt
-rho_trans
+gamma_d_T   % Response of lump sum transfer to debt
+rho_T
 eGI_ss          % SS gap in public infrastructure efficiency (e^GI)
 deltaH          % Depreciation of Labor
 gamma             % Effectiveness of education investment.

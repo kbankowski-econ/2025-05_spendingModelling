@@ -114,8 +114,8 @@ rho_g          % AR(1) of growth shock
 gss            % SS of growth
 Igiy             % Public investment/GDP
 Gcy             % Public consumption/GDP
-gamma_d_trans   % Response of lump sum transfer to debt
-rho_trans
+gamma_d_T   % Response of lump sum transfer to debt
+rho_T
 eGI_ss          % SS gap in public infrastructure efficiency (e^GI)
 deltaH          % Depreciation of Labor
 gamma             % Effectiveness of education investment.
@@ -153,8 +153,8 @@ gamma_d_tauc=0.0;
 rho_tauw=0.9;
 gamma_d_tauw=0;
 rho_g= 0.24 ;
-gamma_d_trans=0.01;
-rho_trans=0;
+gamma_d_T=0.01;
+rho_T=0;
 deltaH=0.025;
 gamma=0.5;
 markupss=1.18;
@@ -247,7 +247,7 @@ Kg*g = (1-delta)*Kg(-1)+(1-eGI)*Igi;
 // Government debt
 b = (R(-1)/PI)*b(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;
 // Lump-sum transfers
-T-STEADY_STATE(T) = rho_trans*(T(-1)-STEADY_STATE(T))+(1-rho_trans)*(-gamma_d_trans*(by(-1)-byss)*ydss);
+T-STEADY_STATE(T) = rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*(by(-1)-byss)*ydss);
 // Debt to GDP
 by = b/y;
 // Government spending instruments (subject to expenditure shocks)

@@ -18,8 +18,8 @@ rho_tauw=0.9;
 gamma_d_tauw=0;
 rho_g= 0.24 ;
 
-gamma_d_trans=0.01;
-rho_trans=0;
+gamma_d_T=0.01;
+rho_T=0;
 
 deltaH=0.025;
 gamma=0.5;

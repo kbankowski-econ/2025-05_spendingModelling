@@ -54,7 +54,7 @@
 , {"residual": {"lhs": "log(R)", "rhs": "R*rho_RG+(1-rho_RG)*log(Rmp)+epsi_spread"}}
 , {"residual": {"lhs": "g*Kg", "rhs": "(1-delta)*Kg+(1-eGI)*Igi"}}
 , {"residual": {"lhs": "b", "rhs": "Grd+Igi+b*R/PI/g+Gc+Ige+T-N*w*tauw-C*tauc"}}
-, {"residual": {"lhs": "T-(T)", "rhs": "(T-(T))*rho_trans+(1-rho_trans)*ydss*(-gamma_d_trans)*(by-byss)"}}
+, {"residual": {"lhs": "T-(T)", "rhs": "(T-(T))*rho_T+(1-rho_T)*ydss*(-gamma_d_T)*(by-byss)"}}
 , {"residual": {"lhs": "by", "rhs": "b/y"}}
 , {"residual": {"lhs": "Gc", "rhs": "Gcss+ydss*epsi_gc"}}
 , {"residual": {"lhs": "Igi", "rhs": "Igiss+ydss*epsi_igi"}}
@@ -212,8 +212,8 @@
 , {"eq": 27, "col": 31, "var": "T", "val": "(-1)"}
 , {"eq": 27, "col": 39, "var": "Ige", "val": "(-1)"}
 , {"eq": 27, "col": 48, "var": "Grd", "val": "(-1)"}
-, {"eq": 28, "col": 18, "var": "by", "val": "(-((1-rho_trans)*ydss*(-gamma_d_trans)))"}
-, {"eq": 28, "col": 30, "var": "ydss", "val": "(-((1-rho_trans)*(-gamma_d_trans)*(by-byss)))"}
+, {"eq": 28, "col": 18, "var": "by", "val": "(-((1-rho_T)*ydss*(-gamma_d_T)))"}
+, {"eq": 28, "col": 30, "var": "ydss", "val": "(-((1-rho_T)*(-gamma_d_T)*(by-byss)))"}
 , {"eq": 29, "col": 14, "var": "y", "val": "(-((-b)/(y*y)))"}
 , {"eq": 29, "col": 17, "var": "b", "val": "(-(1/y))"}
 , {"eq": 29, "col": 18, "var": "by", "val": "1"}
