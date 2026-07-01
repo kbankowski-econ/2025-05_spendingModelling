@@ -49,7 +49,6 @@ eGI             % Gap in public infrastructure efficiency (e^GI)
 A             % Aoption Tech Process
 Grd            % R&D spending
 Grdss          % R&D spending SS
-shockchi       % R&D process productivity shock SS
 SDF             % Stochastic discount factor
 S             % Effective labor demand for tech adoption
 V              % Value of tech adoption
@@ -57,7 +56,6 @@ q       % Probability of adoption
 J             % Value of unadopted Intermediate
 Z            % R&D product
 kappaprob       % Parameter in the probability for scaling
-shockchiss     %% SS of shockchi 
 eGRD            % Gap in public R&D efficiency (e^GRD)
 ;
 %-----------------------------
@@ -75,11 +73,8 @@ epsi_ige        % Public HC spending shock
 epsi_effge  
 epsi_eff
 epsi_grd       % Shock to R&D spending
-epsi_shockchi  % Shock to the R&D process 
 epsirhoadopt
 epsi_effcgrd
-epsiallo_ig        % shock to elasticity wrt public infrastructure capital
-epsiallo_ige       % Shock to elasticity wrt public human capital 
 ;
 %--------------------------
 % Define parameters
@@ -128,7 +123,6 @@ gammaa         % Gorwth of tech
 qss    % Probability of adoption
 varsigma      % Adoption elasticity
 alphaHA        % HC elasticity in tech creation (paper alpha_HA)
-rhoshockchi    % AR (1) or shock to r&D
 rho_A
 eGRD_ss         % SS gap in public R&D efficiency (e^GRD)
 ;
@@ -159,7 +153,6 @@ markupss=1.18;
 phi=1-0.08/4;   % obsolescence rate: 0.08/4
 vartheta=1.35;
 qss=0.2/4;
-rhoshockchi=1;
 rho_A=0.79;
 % Jamaica-specific calibration. EM base, with trend growth, public debt and the
 % public-investment share replaced by the Bank of Jamaica's small-open-economy
@@ -208,9 +201,9 @@ Kp*g = (1-delta)*Kp(-1)+Ip;
 // Return on private investment
 1 = betta*(lambda(+1)/lambda/g(+1)*(1-delta+rk(+1)));
 // Human capital of the household
-H = (1-deltaH)*H(-1)+chiH*E^gamma*(Kge(-1))^(mu*(1+epsiallo_ige));
+H = (1-deltaH)*H(-1)+chiH*E^gamma*(Kge(-1))^(mu);
 // Time devoted to building human capital (E)
-omega*(L+E)^varphi = lambda_H*chiH*gamma*E^(gamma-1)*(Kge(-1))^(mu*(1+epsiallo_ige));
+omega*(L+E)^varphi = lambda_H*chiH*gamma*E^(gamma-1)*(Kge(-1))^(mu);
 // Shadow value of human capital
 lambda_H = betta*(lambda(+1)*(1-tauw(+1))*w(+1)*L(+1)+lambda_H(+1)*(1-deltaH));
 // Effective labor
@@ -230,9 +223,9 @@ Kp(-1)/N = alpha/(1-alpha)*w/rk;
 1 = thetap*(PI(-1)^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon);
 // Production
 [name='y']
-y = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*(Kp(-1)^alpha)*(N^(1-alpha))-Bigtheta;
+y = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG))*(Kp(-1)^alpha)*(N^(1-alpha))-Bigtheta;
 // Technology creation (R&D enters in efficiency-adjusted form)
-ln(Z/STEADY_STATE(Z)) = rho_A*ln(Z(-1)/STEADY_STATE(Z))+alphaRD*ln((1-eGRD(-1))*Grd(-1)/((1-eGRD_ss)*STEADY_STATE(Grd)))+alphaHA*ln(H(-1)/STEADY_STATE(H))+log(shockchi);
+ln(Z/STEADY_STATE(Z)) = rho_A*ln(Z(-1)/STEADY_STATE(Z))+alphaRD*ln((1-eGRD(-1))*Grd(-1)/((1-eGRD_ss)*STEADY_STATE(Grd)))+alphaHA*ln(H(-1)/STEADY_STATE(H));
 // Value of an unadopted technology
 J = -S+phi*(SDF(+1)*A(-1)/A*1/(1+gammaa)*(q*V(+1)+(1-q)*J(+1)));
 // Probability of adoption
@@ -246,7 +239,6 @@ varsigma*q*phi*SDF(+1)/(1+gammaa)*A(-1)/A*(V(+1)-J(+1)) = S;
 // Stochastic discount factor (detrended)
 SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)));
 // Shock to the R&D technology
-log(shockchi) = (1-rhoshockchi)*log(shockchiss)+rhoshockchi*log(shockchi(-1))+epsi_shockchi;
 //********************************************************
 // MONETARY AUTHORITY
 //********************************************************
@@ -318,7 +310,6 @@ Rss         = STEADY_STATE(R);
 ydss        = STEADY_STATE(yd);
 chiH        = STEADY_STATE(chiH);
 kappaprob   = STEADY_STATE(kappaprob);
-shockchiss = STEADY_STATE(shockchi);   // exogenous disturbance to the R&D technology
 Gcss        = Gcy*STEADY_STATE(y);
 Igiss        = Igiy*STEADY_STATE(y);
 Igess       = Igey*STEADY_STATE(y);

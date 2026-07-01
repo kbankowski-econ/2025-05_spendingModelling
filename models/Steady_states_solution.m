@@ -86,7 +86,6 @@ S=varsigma*q*phi*SDF/(1+gammaa)*(V-J);
 %Srd=SDF*J*(Z/A-phi*Z/A*1/(1+gammaa));
 %shockchi=(1+gammaa-phi)/(Srd^alphaHA*Grd^alphaRD);
 %shockchi=(1+gammaa-phi)/(Srd^alphaHA);
-shockchi=1;
 
 
 
@@ -94,7 +93,6 @@ kappaprob=q/((S)^varsigma);
 
 
 
-shockchiss=shockchi;
 
 share_in_RD=((Z/A-1)*S)/y;
 (Z/A-1)*S/y

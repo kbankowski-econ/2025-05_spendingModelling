@@ -57,7 +57,6 @@ ENDOGENOUS = [
         (r"$q_t$",            "Adoption probability",                     "q"),
         (r"$\mathcal{V}_t$",  "Value of an adopted technology",           "V"),
         (r"$\mathcal{J}_t$",  "Value of an unadopted technology",         "J"),
-        ("--",                r"R\&D-process productivity disturbance",   "shockchi"),
     ]),
     ("Government: fiscal and monetary policy", [
         (r"$G_t^{C}$",        "Government consumption",                   "Gc"),
@@ -94,7 +93,6 @@ ENDOGENOUS = [
         ("--",                "Steady-state infrastructure investment",   "Igiss"),
         ("--",                "Steady-state human-capital investment",    "Igess"),
         ("--",                r"Steady-state R\&D spending",              "Grdss"),
-        ("--",                r"Steady-state R\&D-process disturbance",   "shockchiss"),
         ("--",                "Primary deficit, share of steady-state GDP", "pdef_yss"),
         ("--",                "Transfers, share of steady-state GDP",     "T_yss"),
         ("--",                "Public debt, share of steady-state GDP",   "by_yss"),
@@ -126,7 +124,6 @@ PARAMETERS = [
         (r"$\phi$",             "Survival rate of adopted technologies",        "phi"),
         (r"$\varsigma$",        "Adoption-probability elasticity",              "varsigma"),
         ("--",                  "Steady-state adoption probability",            "qss"),
-        ("--",                  "R\\&D-process shock persistence",              "rhoshockchi"),
     ]),
     ("Government: fiscal and monetary policy", [
         (r"$\Pi$",              "Steady-state gross inflation",                 "Piss"),
@@ -160,10 +157,7 @@ PARAMETERS = [
 
 EXOGENOUS = [
     ("Production and technology", [
-        ("--",                          r"R\&D-process (productivity) shock",         "epsi_shockchi"),
         (r"$\varepsilon_t^{q}$",        "Adoption-probability shock",                 "epsirhoadopt"),
-        (r"$\varepsilon_t^{\alpha gi}$","Infrastructure-elasticity (allocative) shock", "epsiallo_ig"),
-        (r"$\varepsilon_t^{\alpha ge}$","Human-capital-elasticity (allocative) shock",  "epsiallo_ige"),
     ]),
     ("Government: fiscal and monetary policy", [
         (r"$\varepsilon_t^{c}$",        "Government-consumption shock",                "epsi_gc"),

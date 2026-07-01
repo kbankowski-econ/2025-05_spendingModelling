@@ -46,7 +46,6 @@ effgap          % Gap in public infrastructure efficiency (e^GI)
 A             % Aoption Tech Process
 Cgrd            % R&D spending
 Cgrdss          % R&D spending SS
-shockchi       % R&D process productivity shock SS
 SDF             % Stochastic discount factor
 S             % Effective labor demand for tech adoption
 V              % Value of tech adoption
@@ -54,7 +53,6 @@ q       % Probability of adoption
 J             % Value of unadopted Intermediate
 Z            % R&D product
 kappaprob       % Parameter in the probability for scaling
-shockchiss     %% SS of shockchi 
 Cgrd_ydss_ratio
 ln_Cgrd
 Cgrdeff
@@ -76,11 +74,8 @@ epsi_ige        % Public HC spending shock
 epsi_effge  
 epsi_eff
 epsi_cgrd       % Shock to R&D spending
-epsi_shockchi  % Shock to the R&D process 
 epsirhoadopt
 epsi_effcgrd
-epsiallo_ig        % shock to elasticity wrt public infrastructure capital
-epsiallo_ige       % Shock to elasticity wrt public human capital 
 ;
 
 %--------------------------
@@ -133,7 +128,6 @@ gammaa         % Gorwth of tech
 qss    % Probability of adoption
 varsigma      % Adoption elasticity
 alphaSRD       % R&D elasticity
-rhoshockchi    % AR (1) or shock to r&D
 rho_A
 effcgrdgap_ss   % SS gap in public R&D efficiency (e^GRD)
 ;

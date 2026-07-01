@@ -29,5 +29,4 @@ markupss=1.18;
 phi=1-0.08/4;   % obsolescence rate: 0.08/4
 vartheta=1.35;
 qss=0.2/4;
-rhoshockchi=1;
 rho_A=0.79;
