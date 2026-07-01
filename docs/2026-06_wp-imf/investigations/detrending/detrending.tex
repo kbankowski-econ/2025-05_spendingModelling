@@ -91,6 +91,41 @@ i.e.\ steady-state investment covers \emph{depreciation} ($\delta$) plus \emph{g
 the stock} ($g-1$). Numerically, $g-1+\delta = 0.004 + 0.025 = 0.029$, and the solved
 model has $\hat I/\hat K = 0.1629/5.617 = 0.029$. \checkmark
 
+\section{Why the human-capital stock carries no $g$: stationary vs.\ trending stocks}
+
+The private-capital stock trends, which is why $g_t$ appears in
+equation~\eqref{eq:model}. Not every accumulation equation does, though---only those
+whose stock \emph{grows} along the balanced-growth path. The human-capital stock is the
+telling counterexample. Its law of motion,
+\begin{equation}\label{eq:hc}
+    H_t = (1-\delta^h)H_{t-1}
+        + \chi\, E_t^{\gamma}\left(\frac{K^{GE}_{t-1}}{\Lambda_{t-1}}\right)^{\mu},
+\end{equation}
+relates a stock at $t$ and at $t-1$ in a single equation---yet it carries no growth
+factor (in the code, \texttt{H = (1-deltaH)*H(-1) + chiH*\dots}, there is no \texttt{g}).
+The reason is that $H_t$ is \emph{stationary}: it does not grow with the trend. Reading
+off the right-hand side,
+\begin{itemize}
+    \item $E_t$, the time devoted to schooling, is a share of the unit time endowment,
+          so it is bounded and stationary;
+    \item public human-capital capital $K^{GE}_{t-1}$ \emph{does} trend, but it enters
+          divided by $\Lambda_{t-1}$---that explicit scaling removes its trend, so the
+          whole flow $\chi E_t^{\gamma}(K^{GE}_{t-1}/\Lambda_{t-1})^{\mu}$ is stationary.
+\end{itemize}
+Hence $H_t$ is an AR(1) in stationary inputs, and is itself stationary (steady state
+$H=1$). Both $H_t$ and $H_{t-1}$ are already the same stationary object, so detrending
+leaves them untouched and no growth wedge---no $g_t$---appears between them.
+
+The contrast with private capital is exact. There $K_t$ and $K_{t-1}$ trend; expressed
+relative to their own-date trends, $\hat K_t = K_t/\Lambda_t$ and
+$\hat K_{t-1} = K_{t-1}/\Lambda_{t-1}$ differ by one period of growth, and that ratio
+$\Lambda_t/\Lambda_{t-1} = g_t$ is the factor on the current stock in
+equation~\eqref{eq:model}. The takeaway: the $g_t$ is triggered not by having stocks at
+$t$ and $t-1$ in one equation, but by whether those stocks \emph{grow}. Where a trending
+input would otherwise push a stationary stock off its steady level---as $K^{GE}$ would
+for $H$---its trend is stripped out by an explicit $\Lambda$ division inside the equation,
+which is exactly why that division has to be there.
+
 \section{A note on the investment convention}
 
 Above, investment was scaled by the incumbent trend, $\hat I_t = I_t/\Lambda_{t-1}$,
