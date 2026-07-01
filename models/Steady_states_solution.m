@@ -1,6 +1,4 @@
 by=byss;
-prob_def=exp(eta1 + eta2*by)/(1+exp(eta1 + eta2*by)); % probability of default
-Delta_G=prob_def*Deltacost;   % Expected loss
 g=gss;             % Gross growth
 shock_ZZ=0 ;         % shock to the g process  
 vp=1;                % Price dispersion
@@ -8,7 +6,7 @@ tauc=taucss;           % Consumption tax- https://www.oecd.org/en/publications/c
 tauw =tauwss;          % Income tax: https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/tax-policy/taxing-wages-united-states.pdf
 PIstar=1;            % Optimnal gross inflation 
 PI=1;                % Gross inflation
-R=g/betta/(1-0*Delta_G);  % interest rate
+R=g/betta;  % interest rate
 rk=g/betta-(1-delta);   % return on private investment
 Rmp=R;                   % Monetary policy rate
 %(R/g-1)*400 
@@ -119,22 +117,16 @@ x2=1/(1+tauc)*1/Cy/(1-betta*thetap);  % x2=lambda*y/(1-betta*thetap)= 1/(1+tauc)
 x1=mc*x2;
 
 b=y*by;
-T=b-((1-0*Delta_G)*(R/PI)*b/g+Gc+Igi+Ige+Grd-tauw*w*N-tauc*C);
+T=b-((R/PI)*b/g+Gc+Igi+Ige+Grd-tauw*w*N-tauc*C);
 Gcss=Gcy*(y);
 Igiss=Igiy*(y);
 
 %Variables of interest
-lnyd=log(yd)*100;
 G=Gc+Igi+Ige+Grd;
-pdef=(Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/y*100;
 rreal=R/PI;
 pdef_yss=(Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;
 T_yss=T/ydss;
-dserv_yss=(R-1)*b/ydss;
 by_yss=b/ydss;
-Igi_ys=Igi/ydss*100;
-by_ann=by/4*100;
-lnPI=log(PI)*100;
 
 
 
@@ -165,13 +157,9 @@ omega=lambda*w*(1-tauw)*H/(L+E)^varphi;
 chiH=omega*(L+E)^varphi/(lambda_H*gamma*E^(gamma-1)* (Kge)^mu);
 
 
-ygrowth=log(g)*100;
 eGE=eGE_ss;
 eGI=eGI_ss;
 
-TFP=A^(vartheta-1)*(Kg^alphaG)*H^(1-alpha);
-ln_Grd=log(Grd);
-Grd_ydss_ratio=Grd/ydss;
 
 eGRD=eGRD_ss;
 %A=1;

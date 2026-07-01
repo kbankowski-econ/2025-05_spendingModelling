@@ -24,19 +24,12 @@ tauw,Labor income tax rate,(x./y-1)*100,\% deviation
 yd,Aggregate demand,(x./y-1)*100,\% deviation
 vp,Price dispersion measure,(x./y-1)*100,\% deviation
 g,Gross economic growth rate,(x./y-1)*100,\% deviation
-Delta_G,Expected utility loss,(x./y-1)*100,\% deviation
-prob_def,Probability of sovereign default,(x./y-1)*100,\% deviation
 omega,Scaling parameter,(x./y-1)*100,\% deviation
 Igiss,Steady-state gov. investment,(x./y-1)*100,\% deviation
 Gcss,Steady-state gov. consumption,(x./y-1)*100,\% deviation
 Rss,Steady-state interest rate,(x./y-1)*100,\% deviation
 ydss,Steady-state aggregate output,(x./y-1)*100,\% deviation
 T,Government transfers to households,(x./y-1)*100,\% deviation
-lnyd,Natural logarithm of output,(x./y-1)*100,\% deviation
-pdef,Primary fiscal deficit,x-y,ppt of GDP
-Igi_ys,Gov. investment as percentage of GDP,(x./y-1)*100,\% deviation
-by_ann,Annualized debt-to-GDP ratio,(x./y-1)*100,\% deviation
-lnPI,Natural logarithm of price index,(x./y-1)*100,\% deviation
 H,Human capital stock,(x./y-1)*100,\% deviation
 Kge,Gov. human capital-related infrastructure stock,(x./y-1)*100,\% deviation
 Ige,Gov. exp. on human capital,(x./y-1)*100,\% deviation
@@ -45,17 +38,14 @@ lambda_H,Lagrange multiplier for human capital constraint,(x./y-1)*100,\% deviat
 Igess,Steady-state gov. spending on human capital infrastructure,(x./y-1)*100,\% deviation
 L,Total labor supply,(x./y-1)*100,\% deviation
 chiH,Adjustment parameter for time allocation (E=0.1),(x./y-1)*100,\% deviation
-ygrowth,Economic growth rate,(x./y-1)*100,\% deviation
 eGE,Gap in human capital spending efficiency,x-y,abs. deviation
 eGI,Gap in infrastructure spending efficiency,x-y,abs. deviation
 A,Stationary technology process,(x./y-1)*100,\% deviation
 Grd,Gov. R and D expenditure,(x./y-1)*100,\% deviation
 Grdss,Steady-state R&D expenditure,(x./y-1)*100,\% deviation
-TFP,TFP,(x./y-1)*100,\% deviation
 G,Total gov. spending,(x./y-1)*100,\% deviation
 Z,Gross R&D-augmented growth rate,(x./y-1)*100,\% deviation
 rreal,Ex-post real interest rate (R/PI),(x-y)*400,ann. ppt deviation
 pdef_yss,Primary deficit (share of steady-state GDP),(x-y)*100,ppt of ss GDP
 T_yss,Transfers (share of steady-state GDP),(x-y)*100,ppt of ss GDP
-dserv_yss,Debt service (share of steady-state GDP),(x-y)*100,ppt of ss GDP
 by_yss,Government debt (share of steady-state GDP),(x-y)*100,ppt of ss GDP

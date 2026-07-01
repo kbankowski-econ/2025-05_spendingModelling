@@ -25,19 +25,13 @@ yd              % Aggregate demand
 vp              % Price dispersion
 g              % Gross growth rate
 %shock_ZZ        % shock to the g process  
-Delta_G         % Expected loss 
-prob_def        % probability of default
 omega           % Scaling
 Igss            % Steady state of Investment
 Cgss            % Steady state of Consumption
 Rss             % Steady state interest rate   
 ydss            % Steady state output
 T           % Transfer
-lnyd            % Log of Output
-pdef            % Primary Deficit 
 Ig_ys           % Public Investment as percent of GDP
-by_ann          % Debt to GDP 
-lnPI            % Log of Prince index
 
 H               % Human capital
 Kge             % Public Human-related Capital Stock (HCS)
@@ -47,7 +41,6 @@ lambda_H        % Lagrangian of the Human capital formation
 Igess           % Steady state of public spending on Public human-capital related stock
 L             % Labor supply 
 chiH            % Adjuster so that E=0.1
-ygrowth          % econonmic growth
 effgegap        % Gap in public human-capital efficiency (e^GE)
 effgap          % Gap in public infrastructure efficiency (e^GI)
 A             % Aoption Tech Process
@@ -62,7 +55,6 @@ J             % Value of unadopted Intermediate
 Z            % R&D product
 kappaprob       % Parameter in the probability for scaling
 shockchiss     %% SS of shockchi 
-TFP             % TFP
 Cgrd_ydss_ratio
 ln_Cgrd
 Cgrdeff
@@ -119,9 +111,6 @@ gamma_d_tauw    % Response of consumption tax to debt
 byss            % Steady state of debt
 rho_g          % AR(1) of growth shock 
 gss            % SS of growth
-eta1            % Prof default param 1
-eta2            % Prof default param 2 
-Deltacost       % Feed back of debt on rate
 Igy             % Public investment/GDP
 Cgy             % Public consumption/GDP
 rho_Cg          % AR(1) process for public consumption

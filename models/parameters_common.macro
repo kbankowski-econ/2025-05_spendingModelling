@@ -17,9 +17,6 @@ gamma_d_tauc=0.0;
 rho_tauw=0.9;
 gamma_d_tauw=0;
 rho_g= 0.24 ;
-eta1=-18.12;
-eta2=3.12;
-Deltacost=0;  % Shutting down the feedback of debt on rate
 
 gamma_d_trans=0.01;
 rho_trans=0;

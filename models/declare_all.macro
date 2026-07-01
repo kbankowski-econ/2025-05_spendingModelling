@@ -25,25 +25,17 @@ yd              % Aggregate demand
 vp              % Price dispersion
 g              % Gross growth rate
 %shock_ZZ        % shock to the g process  
-Delta_G         % Expected loss 
-prob_def        % probability of default
 omega           % Scaling
 Igiss            % Steady state of Investment
 Gcss            % Steady state of Consumption
 Rss             % Steady state interest rate   
 ydss            % Steady state output
 T           % Transfer
-lnyd            % Log of Output
 G               % Total government spending (Gc+Igi+Ige+Grd)
-pdef            % Primary Deficit
 rreal           % Ex-post real interest rate (R/PI)
 pdef_yss        % Primary deficit, share of steady-state GDP
 T_yss       % Transfers, share of steady-state GDP
-dserv_yss       % Debt service (interest), share of steady-state GDP
 by_yss          % Government debt, share of steady-state GDP
-Igi_ys           % Public Investment as percent of GDP
-by_ann          % Debt to GDP
-lnPI            % Log of Prince index
 
 H               % Human capital
 Kge             % Public Human-related Capital Stock (HCS)
@@ -53,7 +45,6 @@ lambda_H        % Lagrangian of the Human capital formation
 Igess           % Steady state of public spending on Public human-capital related stock
 L             % Labor supply 
 chiH            % Adjuster so that E=0.1
-ygrowth          % econonmic growth
 eGE             % Gap in public human-capital efficiency (e^GE)
 eGI             % Gap in public infrastructure efficiency (e^GI)
 A             % Aoption Tech Process
@@ -68,9 +59,6 @@ J             % Value of unadopted Intermediate
 Z            % R&D product
 kappaprob       % Parameter in the probability for scaling
 shockchiss     %% SS of shockchi 
-TFP             % TFP
-Grd_ydss_ratio
-ln_Grd
 eGRD            % Gap in public R&D efficiency (e^GRD)
 ;
 
@@ -124,9 +112,6 @@ gamma_d_tauw    % Response of consumption tax to debt
 byss            % Steady state of debt
 rho_g          % AR(1) of growth shock 
 gss            % SS of growth
-eta1            % Prof default param 1
-eta2            % Prof default param 2 
-Deltacost       % Feed back of debt on rate
 Igiy             % Public investment/GDP
 Gcy             % Public consumption/GDP
 gamma_d_trans   % Response of lump sum transfer to debt

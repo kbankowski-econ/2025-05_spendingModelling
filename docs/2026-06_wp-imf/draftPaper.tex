@@ -293,11 +293,11 @@ where $G_t^{C}$ is government consumption. The four expenditure instruments---$G
 \begin{equation} \label{eq:taylor}
     \frac{R_t^{mp}}{R^{mp}} = \left(\frac{R_{t-1}^{mp}}{R^{mp}}\right)^{\rho_R}\left[\left(\frac{\Pi_t}{\Pi}\right)^{\gamma_\pi}\left(\frac{Y_t^{d}}{Y^{d}}\right)^{\gamma_y}\right]^{1-\rho_R} e^{\varepsilon_t^{mp}}.
 \end{equation}
-The government borrowing rate $R_t$ tracks the policy rate plus a sovereign spread that rises with debt,
+The government borrowing rate $R_t$ tracks the policy rate up to an exogenous shock,
 \begin{equation} \label{eq:spread}
-    \log R_t = \rho_{RG} R_{t-1} + \left(1-\rho_{RG}\right)\left[\log R_t^{mp} + \Delta_t\left(d_{t-1} - d^{*}\right)\right] + \varepsilon_t^{spr},
+    \log R_t = \rho_{RG} R_{t-1} + \left(1-\rho_{RG}\right)\log R_t^{mp} + \varepsilon_t^{spr},
 \end{equation}
-where $\Delta_t$ is the product of a debt-dependent default probability and the associated loss, with the default probability a logistic function of the debt ratio.
+where $\rho_{RG}$ reflects the average maturity of government debt and $\varepsilon_t^{spr}$ is an exogenous borrowing-cost shock.
 
 \subsection{Market Clearing and Equilibrium}
 
@@ -575,15 +575,9 @@ where unstarred steady-state values carry no time index and $Y^{d}$ is steady-st
 \end{align}
 with $d_t = D_t / Y_t$ the debt-to-GDP ratio and $d^{*}$ its target.
 
-\subsection{Monetary Policy and Sovereign Spread}
+\subsection{Monetary Policy and Government Borrowing Rate}
 
-The policy rate follows the Taylor rule~\eqref{eq:taylor}. The government borrowing rate and the debt-dependent spread are
-\begin{align}
-    \log R_t &= \rho_{RG} R_{t-1} + \left(1-\rho_{RG}\right)\left[\log R_t^{mp} + \Delta_t\left(d_{t-1} - d^{*}\right)\right] + \varepsilon_t^{spr}, \\
-    \Delta_t &= p_t^{def}\, \Delta^{cost}, \qquad
-    p_t^{def} = \frac{\exp\!\left(\eta_1 + \eta_2\, d_{t-1}\right)}{1 + \exp\!\left(\eta_1 + \eta_2\, d_{t-1}\right)},
-\end{align}
-where $p_t^{def}$ is the default probability and $\Delta^{cost}$ the associated unit loss.
+The policy rate follows the Taylor rule~\eqref{eq:taylor} and the government borrowing rate follows~\eqref{eq:spread}.
 
 \subsection{Market Clearing and Pricing}
 

@@ -25,25 +25,17 @@ yd              % Aggregate demand
 vp              % Price dispersion
 g              % Gross growth rate
 %shock_ZZ        % shock to the g process  
-Delta_G         % Expected loss 
-prob_def        % probability of default
 omega           % Scaling
 Igiss            % Steady state of Investment
 Gcss            % Steady state of Consumption
 Rss             % Steady state interest rate   
 ydss            % Steady state output
 T           % Transfer
-lnyd            % Log of Output
 G               % Total government spending (Gc+Igi+Ige+Grd)
-pdef            % Primary Deficit
 rreal           % Ex-post real interest rate (R/PI)
 pdef_yss        % Primary deficit, share of steady-state GDP
 T_yss       % Transfers, share of steady-state GDP
-dserv_yss       % Debt service (interest), share of steady-state GDP
 by_yss          % Government debt, share of steady-state GDP
-Igi_ys           % Public Investment as percent of GDP
-by_ann          % Debt to GDP
-lnPI            % Log of Prince index
 H               % Human capital
 Kge             % Public Human-related Capital Stock (HCS)
 Ige             % Public spending in public humand-related capital stock
@@ -52,7 +44,6 @@ lambda_H        % Lagrangian of the Human capital formation
 Igess           % Steady state of public spending on Public human-capital related stock
 L             % Labor supply 
 chiH            % Adjuster so that E=0.1
-ygrowth          % econonmic growth
 eGE             % Gap in public human-capital efficiency (e^GE)
 eGI             % Gap in public infrastructure efficiency (e^GI)
 A             % Aoption Tech Process
@@ -67,9 +58,6 @@ J             % Value of unadopted Intermediate
 Z            % R&D product
 kappaprob       % Parameter in the probability for scaling
 shockchiss     %% SS of shockchi 
-TFP             % TFP
-Grd_ydss_ratio
-ln_Grd
 eGRD            % Gap in public R&D efficiency (e^GRD)
 ;
 %-----------------------------
@@ -121,9 +109,6 @@ gamma_d_tauw    % Response of consumption tax to debt
 byss            % Steady state of debt
 rho_g          % AR(1) of growth shock 
 gss            % SS of growth
-eta1            % Prof default param 1
-eta2            % Prof default param 2 
-Deltacost       % Feed back of debt on rate
 Igiy             % Public investment/GDP
 Gcy             % Public consumption/GDP
 gamma_d_trans   % Response of lump sum transfer to debt
@@ -166,9 +151,6 @@ gamma_d_tauc=0.0;
 rho_tauw=0.9;
 gamma_d_tauw=0;
 rho_g= 0.24 ;
-eta1=-18.12;
-eta2=3.12;
-Deltacost=0;  % Shutting down the feedback of debt on rate
 gamma_d_trans=0.01;
 rho_trans=0;
 deltaH=0.025;
@@ -271,9 +253,7 @@ log(shockchi) = (1-rhoshockchi)*log(shockchiss)+rhoshockchi*log(shockchi(-1))+ep
 // Taylor rule
 Rmp/Rss = (Rmp(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
 // Government borrowing cost vs. policy rate (sovereign spread)
-log(R) = rho_RG*R(-1)+ (1-rho_RG)*(log(Rmp) + Delta_G*(by(-1)-byss)) + epsi_spread;
-Delta_G = prob_def*Deltacost;
-prob_def = exp(eta1 + eta2*by(-1))/(1+exp(eta1 + eta2*by(-1)));
+log(R) = rho_RG*R(-1)+ (1-rho_RG)*log(Rmp) + epsi_spread;
 //********************************************************
 // GOVERNMENT DECISIONS
 //********************************************************
@@ -320,23 +300,13 @@ eGRD = eGRD_ss-epsi_effcgrd;
 //********************************************************
 // VARIABLES OF INTEREST
 //********************************************************
-lnyd = log(yd)*100;
-TFP = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*H(-1)^(1-alpha);
 G = Gc+Igi+Ige+Grd;                                        // total government spending (sum of the four instruments)
-pdef = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/y*100;
 rreal = R/PI;                                              // ex-post real interest rate
 // Fiscal aggregates as a share of steady-state GDP (ydss)
 pdef_yss  = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;  // primary deficit
 T_yss = T/ydss;                                       // transfers
-dserv_yss = (R-1)*b/ydss;                                    // debt service (interest)
 by_yss    = b/ydss;                                          // government debt
-Igi_ys = Igi/ydss*100;
-by_ann = by/4*100;
-lnPI = log(PI)*100;
-ln_Grd = log(Grd);
-Grd_ydss_ratio = Grd/ydss;
 // Output growth
-ygrowth = log(yd/yd(-1))*100+log(g)*100;
 //********************************************************
 // STEADY-STATE VALUES CARRIED INTO THE MODEL BLOCK
 //********************************************************
