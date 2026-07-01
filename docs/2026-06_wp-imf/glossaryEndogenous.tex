@@ -25,7 +25,7 @@
 6 & $I_t$ & Private investment \gloseq{1=\beta\,\mathbb{E}_t\!\big[\tfrac{\lambda_{t+1}}{\lambda_t}(1-\delta+r^k_{t+1})/g_{t+1}\big]} & \texttt{Ip} \\
 7 & $K_t$ & Private capital \gloseq{g_t K_t=(1-\delta)K_{t-1}+I_t} & \texttt{Kp} \\
 8 & $r_t^{k}$ & Rental rate of private capital \gloseq{r^k_t=\alpha\,mc_t\,Y_t/K_{t-1}} & \texttt{rk} \\
-9 & $w_t$ & Real wage \gloseq{w_t=(1-\alpha)\,mc_t\,Y_t/N_t} & \texttt{w} \\
+9 & $w_t$ & Real wage \gloseq{\tfrac{K_{t-1}}{N_t}=\tfrac{\alpha}{1-\alpha}\tfrac{w_t}{r^k_t}} & \texttt{w} \\
 10 & $\lambda_t$ & Marginal utility of consumption \gloseq{\lambda_t=\beta\,\mathbb{E}_t\!\big[\lambda_{t+1}R_t/(g_{t+1}\Pi_{t+1})\big]} & \texttt{lambda} \\
 11 & $\lambda_t^{H}$ & Shadow value of human capital \gloseq{\lambda^H_t=\beta\,\mathbb{E}_t\!\big[\lambda_{t+1}(1-\tau^w_{t+1})w_{t+1}L_{t+1}+\lambda^H_{t+1}(1-\delta^h)\big]} & \texttt{lambda\_H} \\
 12 & $\mathit{SDF}_t$ & Stochastic discount factor \gloseq{\mathit{SDF}_t=\beta\lambda_t(1+\tau^c_t)/[\lambda_{t-1}(1+\tau^c_{t-1})]} & \texttt{SDF} \\
@@ -35,7 +35,7 @@
 \multicolumn{4}{@{}l}{\textit{Production and technology}} \\
 \addlinespace[0.1em]
 15 & $Y_t$ & Gross output \gloseq{Y_t=A_{t-1}^{\vartheta-1}K_{t-1}^{\alpha}N_t^{1-\alpha}(K^{GI}_{t-1})^{\alpha_G}-\Theta} & \texttt{y} \\
-16 & $mc_t$ & Real marginal cost \gloseq{\tfrac{K_{t-1}}{N_t}=\tfrac{\alpha}{1-\alpha}\tfrac{w_t}{r^k_t}} & \texttt{mc} \\
+16 & $mc_t$ & Real marginal cost \gloseq{w_t=(1-\alpha)\,mc_t\,Y_t/N_t} & \texttt{mc} \\
 17 & $\Pi_t$ & Gross inflation \gloseq{1=\theta_p(\Pi_{t-1}^{\chi_p}/\Pi_t)^{1-\epsilon}+(1-\theta_p)(\Pi^*_t)^{1-\epsilon}} & \texttt{PI} \\
 18 & $\Pi_t^{*}$ & Reset (optimal) inflation \gloseq{\epsilon\,x_{1,t}=(\epsilon-1)\,x_{2,t}} & \texttt{PIstar} \\
 19 & $x_{1,t}$ & Price-setting auxiliary \gloseq{x_{1,t}=\lambda_t mc_t Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{-\epsilon}x_{1,t+1}} & \texttt{x1} \\
