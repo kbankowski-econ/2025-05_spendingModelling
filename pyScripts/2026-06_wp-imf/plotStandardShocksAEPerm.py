@@ -85,7 +85,7 @@ PANELS = [
     # plotted here.
     ("pdef_yss",  "Primary deficit"),
     ("T_yss", "Transfers (T<sub>t</sub>)"),
-    ("by_yss",    "Debt-to-GDP ratio (d<sub>t</sub>)"),
+    ("by_yss",    "Debt-to-GDP ratio (b<sub>t</sub>)"),
     None,
 ]
 

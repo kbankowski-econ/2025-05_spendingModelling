@@ -2287,133 +2287,133 @@ year,model,variable,pct_dev
 2048,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.077
 2049,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.075
 2050,Textbook NK (no capital),Transfers (T<sub>t</sub>),-0.072
-2025,Full model,Debt-to-GDP ratio (d<sub>t</sub>),0.0
-2026,Full model,Debt-to-GDP ratio (d<sub>t</sub>),3.588
-2027,Full model,Debt-to-GDP ratio (d<sub>t</sub>),6.009
-2028,Full model,Debt-to-GDP ratio (d<sub>t</sub>),7.605
-2029,Full model,Debt-to-GDP ratio (d<sub>t</sub>),8.642
-2030,Full model,Debt-to-GDP ratio (d<sub>t</sub>),9.299
-2031,Full model,Debt-to-GDP ratio (d<sub>t</sub>),9.697
-2032,Full model,Debt-to-GDP ratio (d<sub>t</sub>),9.916
-2033,Full model,Debt-to-GDP ratio (d<sub>t</sub>),10.014
-2034,Full model,Debt-to-GDP ratio (d<sub>t</sub>),10.026
-2035,Full model,Debt-to-GDP ratio (d<sub>t</sub>),9.98
-2036,Full model,Debt-to-GDP ratio (d<sub>t</sub>),9.892
-2037,Full model,Debt-to-GDP ratio (d<sub>t</sub>),9.776
-2038,Full model,Debt-to-GDP ratio (d<sub>t</sub>),9.64
-2039,Full model,Debt-to-GDP ratio (d<sub>t</sub>),9.489
-2040,Full model,Debt-to-GDP ratio (d<sub>t</sub>),9.328
-2041,Full model,Debt-to-GDP ratio (d<sub>t</sub>),9.161
-2042,Full model,Debt-to-GDP ratio (d<sub>t</sub>),8.988
-2043,Full model,Debt-to-GDP ratio (d<sub>t</sub>),8.813
-2044,Full model,Debt-to-GDP ratio (d<sub>t</sub>),8.635
-2045,Full model,Debt-to-GDP ratio (d<sub>t</sub>),8.457
-2046,Full model,Debt-to-GDP ratio (d<sub>t</sub>),8.278
-2047,Full model,Debt-to-GDP ratio (d<sub>t</sub>),8.099
-2048,Full model,Debt-to-GDP ratio (d<sub>t</sub>),7.921
-2049,Full model,Debt-to-GDP ratio (d<sub>t</sub>),7.744
-2050,Full model,Debt-to-GDP ratio (d<sub>t</sub>),7.568
-2025,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),0.0
-2026,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),3.618
-2027,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),6.045
-2028,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),7.649
-2029,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),8.693
-2030,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),9.355
-2031,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),9.753
-2032,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),9.968
-2033,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),10.054
-2034,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),10.05
-2035,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),9.98
-2036,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),9.865
-2037,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),9.716
-2038,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),9.543
-2039,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),9.353
-2040,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),9.152
-2041,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),8.941
-2042,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),8.726
-2043,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),8.507
-2044,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),8.286
-2045,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),8.066
-2046,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),7.846
-2047,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),7.628
-2048,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),7.412
-2049,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),7.199
-2050,No R&D,Debt-to-GDP ratio (d<sub>t</sub>),6.989
-2025,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),0.0
-2026,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),3.391
-2027,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),5.837
-2028,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),7.468
-2029,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),8.544
-2030,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),9.236
-2031,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),9.662
-2032,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),9.9
-2033,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),10.006
-2034,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),10.017
-2035,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),9.959
-2036,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),9.85
-2037,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),9.705
-2038,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),9.533
-2039,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),9.341
-2040,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),9.135
-2041,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),8.919
-2042,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),8.697
-2043,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),8.47
-2044,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),8.241
-2045,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),8.012
-2046,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),7.783
-2047,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),7.557
-2048,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),7.333
-2049,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),7.112
-2050,"No R&D, no human capital",Debt-to-GDP ratio (d<sub>t</sub>),6.895
-2025,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),0.0
-2026,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),3.391
-2027,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),5.837
-2028,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),7.468
-2029,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),8.544
-2030,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),9.236
-2031,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),9.662
-2032,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),9.9
-2033,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),10.006
-2034,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),10.017
-2035,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),9.959
-2036,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),9.85
-2037,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),9.705
-2038,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),9.533
-2039,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),9.341
-2040,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),9.135
-2041,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),8.919
-2042,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),8.697
-2043,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),8.47
-2044,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),8.241
-2045,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),8.012
-2046,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),7.783
-2047,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),7.557
-2048,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),7.333
-2049,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),7.112
-2050,NK with capital,Debt-to-GDP ratio (d<sub>t</sub>),6.895
-2025,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),0.0
-2026,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),3.47
-2027,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),7.295
-2028,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),9.664
-2029,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),11.049
-2030,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),11.801
-2031,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),12.142
-2032,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),12.218
-2033,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),12.125
-2034,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),11.926
-2035,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),11.662
-2036,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),11.36
-2037,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),11.038
-2038,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),10.706
-2039,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),10.372
-2040,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),10.04
-2041,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),9.714
-2042,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),9.395
-2043,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),9.085
-2044,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),8.783
-2045,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),8.49
-2046,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),8.206
-2047,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),7.932
-2048,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),7.666
-2049,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),7.409
-2050,Textbook NK (no capital),Debt-to-GDP ratio (d<sub>t</sub>),7.161
+2025,Full model,Debt-to-GDP ratio (b<sub>t</sub>),0.0
+2026,Full model,Debt-to-GDP ratio (b<sub>t</sub>),3.588
+2027,Full model,Debt-to-GDP ratio (b<sub>t</sub>),6.009
+2028,Full model,Debt-to-GDP ratio (b<sub>t</sub>),7.605
+2029,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.642
+2030,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.299
+2031,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.697
+2032,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.916
+2033,Full model,Debt-to-GDP ratio (b<sub>t</sub>),10.014
+2034,Full model,Debt-to-GDP ratio (b<sub>t</sub>),10.026
+2035,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.98
+2036,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.892
+2037,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.776
+2038,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.64
+2039,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.489
+2040,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.328
+2041,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.161
+2042,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.988
+2043,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.813
+2044,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.635
+2045,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.457
+2046,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.278
+2047,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.099
+2048,Full model,Debt-to-GDP ratio (b<sub>t</sub>),7.921
+2049,Full model,Debt-to-GDP ratio (b<sub>t</sub>),7.744
+2050,Full model,Debt-to-GDP ratio (b<sub>t</sub>),7.568
+2025,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),0.0
+2026,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),3.618
+2027,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),6.045
+2028,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),7.649
+2029,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),8.693
+2030,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),9.355
+2031,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),9.753
+2032,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),9.968
+2033,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),10.054
+2034,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),10.05
+2035,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),9.98
+2036,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),9.865
+2037,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),9.716
+2038,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),9.543
+2039,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),9.353
+2040,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),9.152
+2041,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),8.941
+2042,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),8.726
+2043,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),8.507
+2044,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),8.286
+2045,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),8.066
+2046,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),7.846
+2047,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),7.628
+2048,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),7.412
+2049,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),7.199
+2050,No R&D,Debt-to-GDP ratio (b<sub>t</sub>),6.989
+2025,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),0.0
+2026,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),3.391
+2027,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),5.837
+2028,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),7.468
+2029,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),8.544
+2030,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),9.236
+2031,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),9.662
+2032,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),9.9
+2033,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),10.006
+2034,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),10.017
+2035,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),9.959
+2036,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),9.85
+2037,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),9.705
+2038,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),9.533
+2039,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),9.341
+2040,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),9.135
+2041,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),8.919
+2042,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),8.697
+2043,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),8.47
+2044,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),8.241
+2045,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),8.012
+2046,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),7.783
+2047,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),7.557
+2048,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),7.333
+2049,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),7.112
+2050,"No R&D, no human capital",Debt-to-GDP ratio (b<sub>t</sub>),6.895
+2025,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),0.0
+2026,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),3.391
+2027,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),5.837
+2028,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),7.468
+2029,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),8.544
+2030,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),9.236
+2031,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),9.662
+2032,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),9.9
+2033,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),10.006
+2034,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),10.017
+2035,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),9.959
+2036,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),9.85
+2037,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),9.705
+2038,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),9.533
+2039,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),9.341
+2040,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),9.135
+2041,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),8.919
+2042,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),8.697
+2043,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),8.47
+2044,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),8.241
+2045,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),8.012
+2046,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),7.783
+2047,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),7.557
+2048,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),7.333
+2049,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),7.112
+2050,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),6.895
+2025,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),3.47
+2027,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),7.295
+2028,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),9.664
+2029,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),11.049
+2030,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),11.801
+2031,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),12.142
+2032,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),12.218
+2033,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),12.125
+2034,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),11.926
+2035,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),11.662
+2036,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),11.36
+2037,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),11.038
+2038,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),10.706
+2039,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),10.372
+2040,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),10.04
+2041,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),9.714
+2042,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),9.395
+2043,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),9.085
+2044,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),8.783
+2045,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),8.49
+2046,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),8.206
+2047,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),7.932
+2048,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),7.666
+2049,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),7.409
+2050,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),7.161
