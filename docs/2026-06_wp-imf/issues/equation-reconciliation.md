@@ -9,12 +9,14 @@ Appendix A states this explicitly); and the model uses one `delta` (=0.025) wher
 the paper writes $\delta$, $\delta^{GI}$, $\delta^{GE}$ (all the same value) plus
 $\delta^h$.
 
-## ✅ Match (after the eq-Z fix)
+## ✅ Match (current, verified 2026-07 after the simplification pass)
 Marginal utility, both Euler equations, private-capital LoM, Calvo `x1`/`x2` + price
-LoM, marginal-cost/factor FOCs, shadow value of HC, SDF, Taylor rule, sovereign
-spread + default probability, public-capital LoMs (`Kg`,`Kge`), government budget,
-tax rules, transfer rule, debt-to-GDP, gross-output wedge, price dispersion, and the
-technology-creation eq (Z) (reconciled earlier: loadings, lagged R&D).
+LoM, marginal-cost/factor FOCs, shadow value of HC, SDF, Taylor rule, government
+borrowing rate (simplified — see the simplification pass below), public-capital LoMs
+(`Kg`,`Kge`), government budget, tax rules, transfer rule, debt-to-GDP, gross-output
+wedge, price dispersion, market clearing, production, HC accumulation, and the
+technology-creation eq (Z) (now deterministic, wedge inlined). All verified
+line-for-line against `model_block.modpart`.
 
 ## ⚠ Timing-convention mismatch — FIXED 2026-07 (paper aligned to the model)
 The model uses predetermined (lagged) stocks; the paper wrote some contemporaneously.
@@ -47,9 +49,9 @@ the appendix states.
 8. **Market-clearing technology resources** (eq. 592). Model: `... + Srd + (Z(-1)/A(-1)-1)*S`;
    paper: `... + S_t + (Z_{t-1}/A_{t-1}-1)S_t`. The first term differs — the model adds
    `Srd` (steady-state R&D-development labor, a constant) whereas the paper adds the
-   adoption expenditure $S_t$ again. → **FIXED:** the paper's first technology term is now
-   $S^{R}$ (the steady-state R&D-development resource, = model `Srd`), with $\left(Z_{t-1}/A_{t-1}-1\right)S_t$
-   the adoption cost; glossary maps `Srd` → $S^{R}$ (was "--").
+   adoption expenditure $S_t$ again. → **SUPERSEDED 2026-07:** `Srd` is pinned to zero,
+   so the term was vacuous; it was dropped from both the model and the paper entirely,
+   and `Srd` was later removed as a variable. See the simplification pass below.
 
 ## 🧹 Dead parameters — DELETED 2026-07
 Removed 5 declared-but-never-used parameters (a full scan of all equation/SS files
@@ -60,8 +62,40 @@ equations are `X = Xss + ydss*epsi_X`, no persistence term) and `gamma_y_tauc`,
 re-ran 44 models (values identical). Parameter count 54 → 49. (Same situation as the
 earlier `alphaZZ1`/`rho_AAt` deletions.)
 
-## Direction
-The timing items (1–6) need the author's call on the intended dating; the cleanest
-outcome is to make the paper adopt the model's predetermined-stock dating (lag the
-stocks), since the model is the solved/implemented version. Items 7–8 are clear
-paper-side simplifications to match the model. None of this changes model results.
+## 🧹 Model simplification pass — 2026-07 (supersedes item 8 and parts of the Match list)
+After the reconciliation above, the model was pruned so only live, paper-described objects
+remain. Every change was a numerical no-op (`figureNumbers` byte-identical each time) unless
+noted, each followed by a 44-model re-run.
+
+- **Dropped the `S^{R}` market-clearing term (supersedes item 8).** `Srd` is pinned to zero,
+  so the term was vacuous. Removed from model and paper; market clearing is now
+  `Y^d = C + I + I^{GI} + G^C + I^{GE} + G^{RD} + (Z_{t-1}/A_{t-1}-1)S_t`. Later removed the
+  `Srd` and `Ns` variables entirely (both identically zero).
+- **eq (Z) is now deterministic.** The inert R&D-process disturbance (`shockchi`≡1, never
+  shocked) and its `+log(shockchi)` term were removed, and the R&D efficiency wedge was
+  inlined (the `Grdeff` variable is gone). Model and paper eq (Z) match exactly:
+  `log(Z/Zss) = ρ_A·log(Z(-1)/Zss) + α_HA·log(H(-1)/Hss) + α_RD·log((1-e^{GRD}_{t-1})G^{RD}_{t-1}/((1-e^{GRD})G^{RD,SS}))`.
+- **Removed the dormant sovereign-risk block (supersedes "sovereign spread + default
+  probability" in the Match list).** `Deltacost=0`, so the debt-dependent spread was
+  identically zero. Dropped `Delta_G`, `prob_def`, `eta1`, `eta2`, `Deltacost`; the borrowing
+  rate simplified to `log(R) = ρ_RG·R(-1) + (1-ρ_RG)·log(R^{mp}) + ε^{spr}` (paper eq:spread
+  updated, appendix subsection retitled "Monetary Policy and Government Borrowing Rate").
+- **Removed inert allocative shocks** `epsiallo_ig`/`epsiallo_ige` (never set): production and
+  HC simplify to `Kg(-1)^{α_G}` and `Kge(-1)^μ`, matching the paper. (The paper's allocative-
+  efficiency scenario is the reallocation dimension, not these shocks.)
+- **Removed unused reporting variables** `lnyd`, `lnPI`, `ln_Grd`, `ygrowth`, `by_ann`,
+  `Igi_ys`, `Grd_ydss_ratio`, `pdef`, plus `TFP`/`dserv_yss` (exported but plotted nowhere).
+
+Notation aligned with the paper: debt `D`/`d` → `b`/`by` (paper `B_t`/`b_t`/`b^*`); shock
+`epsirhoadopt` → `epsi_q` (paper `ε^q`); transfer params `rho_trans`/`gamma_d_trans` →
+`rho_T`/`gamma_d_T` (paper `ρ_T`/`γ_d^T`); plus the earlier Tier-1/2 renames.
+
+Counts after the pass: **57 endogenous, 45 parameters, 13 exogenous** — model and the
+appendix glossary match exactly.
+
+## Status
+All items above are resolved. Timing items 1–6 and item 7 were fixed in the paper
+(predetermined-stock dating; uniform instruments). Item 8 was superseded — the term was
+dropped entirely. As of 2026-07 the model and paper are fully reconciled on equations and
+notation; the only intentional presentation difference is the `g`-detrending (paper main
+text in levels, model/appendix stationarized), which the appendix states.
