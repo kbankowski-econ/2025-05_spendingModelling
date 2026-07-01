@@ -126,6 +126,41 @@ input would otherwise push a stationary stock off its steady level---as $K^{GE}$
 for $H$---its trend is stripped out by an explicit $\Lambda$ division inside the equation,
 which is exactly why that division has to be there.
 
+\section{Where $g$ appears in the model---and why $\Lambda$ does not}
+
+Stationarization divides the trend out of every equation, so \textbf{the trend level
+$\Lambda_t$ never appears in the solved model}. The code contains only detrended
+variables and growth \emph{rates}; $\Lambda_t$ lives solely in the derivation above, as
+the object that is divided away. What remains is the gross growth factor $g_t$, and it
+shows up exactly where a level equation compares trending real quantities across dates:
+\begin{itemize}
+    \item the household Euler equation, \texttt{lambda = betta*(lambda(+1)/g(+1)*R/PI(+1))};
+    \item the return on private investment, \texttt{1 = betta*(lambda(+1)/lambda/g(+1)*(1-delta+rk(+1)))};
+    \item the three capital laws of motion---private, public infrastructure, and public
+          human capital: \texttt{Kp*g = \dots}, \texttt{Kg*g = \dots}, \texttt{Kge*g = \dots};
+    \item the government budget, where lagged debt is deflated by growth,
+          \texttt{b = (R(-1)/PI)*b(-1)/g + \dots};
+    \item and the trend process itself,
+          \texttt{log(g) = (1-rho\_g)*log(g(-1)) + rho\_g*log(gss) + epsi\_g}.
+\end{itemize}
+Everything else is stationary and carries no $g$: consumption, the labor and schooling
+first-order conditions, effective labor $N_t = H_{t-1}L_t$, the human-capital stock
+(previous section), the Calvo pricing block, the spending instruments, the tax and
+transfer rules, and market clearing.
+
+One block runs on a \emph{different} growth rate. The created- and adopted-technology
+stocks $Z_t$ and $A_t$ grow at their own gross rate $1+\gamma^a$ (net rate $\gamma^a$;
+the model parameter \texttt{gammaa}), not the output rate $g_t$. So the adoption law of
+motion, the two value functions, and the adoption first-order condition carry
+$1+\gamma^a$ in place of $g_t$:
+\begin{itemize}
+    \item \texttt{(1+gammaa)*A = q*phi*(Z(-1)-A(-1)) + phi*A(-1)};
+    \item \texttt{V = \dots + phi*SDF(+1)*V(+1)*A(-1)/A/(1+gammaa)}, and likewise for \texttt{J};
+    \item \texttt{varsigma*q*phi*SDF(+1)/(1+gammaa)*A(-1)/A*(V(+1)-J(+1)) = S}.
+\end{itemize}
+In sum, the solved model carries two trend growth \emph{rates}---$g_t$ for the real block
+and $1+\gamma^a$ for the technology block---and no trend \emph{level} $\Lambda_t$ at all.
+
 \section{A note on the investment convention}
 
 Above, investment was scaled by the incumbent trend, $\hat I_t = I_t/\Lambda_{t-1}$,
