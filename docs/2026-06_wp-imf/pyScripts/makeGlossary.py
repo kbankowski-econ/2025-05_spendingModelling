@@ -137,12 +137,12 @@ PARAMETERS = [
     ("Households", [
         (r"$\beta$",            "Discount factor",                              "betta"),
         (r"$\varphi$",          "Inverse Frisch elasticity",                    "varphi"),
-        (r"$\omega$",           r"Labor-disutility scaling\calibnote{Targets steady-state labor supply $L_t$}", "omega"),
+        (r"$\omega$",           r"Labor-disutility scaling\calibnote{targets steady-state labor supply $L_t$}", "omega"),
         (r"$\delta$",           "Depreciation rate of physical capital (private and public)", "delta"),
         (r"$\delta^h$",         "Depreciation rate of human capital",           "deltaH"),
         (r"$\gamma$",           "Human-capital elasticity, time input",         "gamma"),
         (r"$\mu$",              "Human-capital elasticity, public stock",       "mu"),
-        (r"$\chi$",             r"Scale in human-capital accumulation\calibnote{Targets steady-state education time $E_t$}", "chiH"),
+        (r"$\chi$",             r"Scale in human-capital accumulation\calibnote{targets steady-state education time $E_t$}", "chiH"),
     ]),
     ("Production and technology", [
         (r"$\alpha$",           "Private capital share",                        "alpha"),
@@ -159,7 +159,7 @@ PARAMETERS = [
         (r"$\alpha_{RD}$",      "Public-R\\&D loading in tech creation",        "alphaRD"),
         (r"$\phi$",             "Survival rate of adopted technologies",        "phi"),
         (r"$\varsigma$",        "Adoption-probability elasticity",              "varsigma"),
-        (r"$q_0$",              r"Adoption-probability scale\calibnote{Targets steady-state adoption probability $q_t$}", "kappaprob"),
+        (r"$q_0$",              r"Adoption-probability scale\calibnote{targets steady-state adoption probability $q_t$}", "kappaprob"),
         ("--",                  "Steady-state adoption probability",            "qss"),
     ]),
     ("Government: fiscal and monetary policy", [
