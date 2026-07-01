@@ -53,7 +53,7 @@
 , {"residual": {"lhs": "tauc-taucss", "rhs": "(tauc-taucss)*rho_tauc+(1-rho_tauc)*(by-byss)*gamma_d_tauc+epsi_tauc"}}
 , {"residual": {"lhs": "tauw-tauwss", "rhs": "(tauw-tauwss)*rho_tauw+(1-rho_tauw)*(by-byss)*gamma_d_tauw+epsi_tauw"}}
 , {"residual": {"lhs": "Kge", "rhs": "(Kge)"}}
-, {"residual": {"lhs": "yd", "rhs": "Grd+Ige+Gc+Igi+C+Ip+S*(Z/A-1)"}}
+, {"residual": {"lhs": "yd", "rhs": "Grd+Ige+Igi+Gc+C+Ip+S*(Z/A-1)"}}
 , {"residual": {"lhs": "y", "rhs": "yd*vp"}}
 , {"residual": {"lhs": "vp", "rhs": "vp*thetap*(PI^chi/PI)^(-epsilon)+(1-thetap)*PIstar^(-epsilon)"}}
 , {"residual": {"lhs": "log(g)", "rhs": "log(g)*(1-rho_g)+rho_g*log(gss)+epsi_g"}}
