@@ -161,11 +161,11 @@ modelList = {
     % Figure 6 (fig:diffusion, Section 5.3), against the epsi_cgeCgrd baseline above.
     'Model_HumanCapital_epsicgrd_cge_adt',      'AE', 'AE',     {{'epsi_grd',    'const', 0.005, '1:1000'}
                                                                  {'epsi_ige',     'const', 0.005, '1:1000'}
-                                                                 {'epsirhoadopt', 'ramp',  0.03,  '1:40'}
+                                                                 {'epsi_q', 'ramp',  0.03,  '1:40'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'Model_HumanCapital_epsicgrd_cge_limt',     'AE', 'AE',     {{'epsi_grd',    'const', 0.005, '1:1000'}
                                                                  {'epsi_ige',     'const', 0.005, '1:1000'}
-                                                                 {'epsirhoadopt', 'ramp',  -0.03, '1:40'}
+                                                                 {'epsi_q', 'ramp',  -0.03, '1:40'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     % ===================== JAMAICA (separate FM-panel project) =====================
     % NOT used in this working paper. Kept for the separate Jamaica fiscal-multiplier
@@ -239,7 +239,7 @@ for iModel = 1:size(modelList, 1)
         else
             copyfile('modelTemplateSimple.mod', [thisModel '.mod']);
             % nostrict: pinning channels leaves some declared shocks unused (e.g.
-            % epsirhoadopt once R&D is off); they are zero in these experiments anyway.
+            % epsi_q once R&D is off); they are zero in these experiments anyway.
             extraDefs = {sprintf('-DSIMPLIFY_LEVEL=%s', simpTok{1}), 'nostrict'};
         end
         copyfile('modelTemplate_steadystate.m', [thisModel '_steadystate.m']);

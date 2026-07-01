@@ -68,7 +68,7 @@
 , {"name":"epsi_effge", "texName":"epsi\\_effge", "longName":"epsi_effge"}
 , {"name":"epsi_eff", "texName":"epsi\\_eff", "longName":"epsi_eff"}
 , {"name":"epsi_grd", "texName":"epsi\\_grd", "longName":"epsi_grd"}
-, {"name":"epsirhoadopt", "texName":"epsirhoadopt", "longName":"epsirhoadopt"}
+, {"name":"epsi_q", "texName":"epsi\\_q", "longName":"epsi_q"}
 , {"name":"epsi_effcgrd", "texName":"epsi\\_effcgrd", "longName":"epsi_effcgrd"}
 ]
 , "exogenous_deterministic": []

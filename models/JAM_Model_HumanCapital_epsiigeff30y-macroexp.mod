@@ -73,7 +73,7 @@ epsi_ige        % Public HC spending shock
 epsi_effge  
 epsi_eff
 epsi_grd       % Shock to R&D spending
-epsirhoadopt
+epsi_q
 epsi_effcgrd
 ;
 %--------------------------
@@ -229,7 +229,7 @@ ln(Z/STEADY_STATE(Z)) = rho_A*ln(Z(-1)/STEADY_STATE(Z))+alphaRD*ln((1-eGRD(-1))*
 // Value of an unadopted technology
 J = -S+phi*(SDF(+1)*A(-1)/A*1/(1+gammaa)*(q*V(+1)+(1-q)*J(+1)));
 // Probability of adoption
-q = (kappaprob+epsirhoadopt)*(S)^(varsigma);
+q = (kappaprob+epsi_q)*(S)^(varsigma);
 // Adoption
 (1+gammaa)*A = q*phi*(Z(-1)-A(-1))+phi*A(-1);
 // Value of an adopted technology

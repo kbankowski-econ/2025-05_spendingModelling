@@ -74,7 +74,7 @@ epsi_ige        % Public HC spending shock
 epsi_effge  
 epsi_eff
 epsi_cgrd       % Shock to R&D spending
-epsirhoadopt
+epsi_q
 epsi_effcgrd
 ;
 

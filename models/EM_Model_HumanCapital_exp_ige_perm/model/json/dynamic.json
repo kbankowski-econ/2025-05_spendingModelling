@@ -49,7 +49,7 @@
 , {"residual": {"lhs": "y", "rhs": "A(-1)^(vartheta-1)*Kg(-1)^alphaG*Kp(-1)^alpha*N^(1-alpha)-Bigtheta"}}
 , {"residual": {"lhs": "log(Z/(Z))", "rhs": "rho_A*log(Z(-1)/(Z))+alphaRD*log((1-eGRD(-1))*Grd(-1)/((1-eGRD_ss)*(Grd)))+alphaHA*log(H(-1)/(H))"}}
 , {"residual": {"lhs": "J", "rhs": "phi*A(-1)*SDF(1)/A/(1+gammaa)*(q*V(1)+(1-q)*J(1))-S"}}
-, {"residual": {"lhs": "q", "rhs": "(kappaprob+epsirhoadopt)*S^varsigma"}}
+, {"residual": {"lhs": "q", "rhs": "(kappaprob+epsi_q)*S^varsigma"}}
 , {"residual": {"lhs": "A*(1+gammaa)", "rhs": "phi*q*(Z(-1)-A(-1))+A(-1)*phi"}}
 , {"residual": {"lhs": "V", "rhs": "y*mc*(markupss-1)/markupss+A(-1)*V(1)*phi*SDF(1)/A/(1+gammaa)"}}
 , {"residual": {"lhs": "A(-1)*SDF(1)*phi*q*varsigma/(1+gammaa)/A*(V(1)-J(1))", "rhs": "S"}}
@@ -191,10 +191,10 @@
 , {"eq": 18, "col": 72, "var": "q", "shift": 0, "val": "(-(phi*T212*(V(1)-J(1))))"}
 , {"eq": 18, "col": 73, "var": "J", "shift": 0, "val": "1"}
 , {"eq": 18, "col": 90, "var": "J", "shift": 1, "val": "(-(phi*T212*(1-q)))"}
-, {"eq": 19, "col": 70, "var": "S", "shift": 0, "val": "(-((kappaprob+epsirhoadopt)*get_power_deriv(S,varsigma,1)))"}
+, {"eq": 19, "col": 70, "var": "S", "shift": 0, "val": "(-((kappaprob+epsi_q)*get_power_deriv(S,varsigma,1)))"}
 , {"eq": 19, "col": 72, "var": "q", "shift": 0, "val": "1"}
 , {"eq": 19, "col": 75, "var": "kappaprob", "shift": 0, "val": "(-T228)"}
-, {"eq": 19, "col": 102, "var": "epsirhoadopt", "shift": 0, "val": "(-T228)"}
+, {"eq": 19, "col": 102, "var": "epsi_q", "shift": 0, "val": "(-T228)"}
 , {"eq": 20, "col": 16, "var": "A", "shift": -1, "val": "(-(phi-phi*q))"}
 , {"eq": 20, "col": 66, "var": "A", "shift": 0, "val": "1+gammaa"}
 , {"eq": 20, "col": 72, "var": "q", "shift": 0, "val": "(-(phi*(Z(-1)-A(-1))))"}

@@ -157,7 +157,7 @@ PARAMETERS = [
 
 EXOGENOUS = [
     ("Production and technology", [
-        (r"$\varepsilon_t^{q}$",        "Adoption-probability shock",                 "epsirhoadopt"),
+        (r"$\varepsilon_t^{q}$",        "Adoption-probability shock",                 "epsi_q"),
     ]),
     ("Government: fiscal and monetary policy", [
         (r"$\varepsilon_t^{c}$",        "Government-consumption shock",                "epsi_gc"),
