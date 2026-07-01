@@ -59,7 +59,7 @@ ENDOGENOUS = [
         (r"$\mathcal{V}_t$",  "Value of an adopted technology",           "VA"),
         (r"$\mathcal{J}_t$",  "Value of an unadopted technology",         "J"),
         ("--",                r"R\&D-process productivity disturbance",   "shockchi"),
-        (r"$S^{R}$",          r"R\&D-development resource (steady state)", "Srd"),
+        ("--",                r"R\&D-development resource (normalized to zero)", "Srd"),
         ("--",                r"Labor in the R\&D sector",                "Ns"),
     ]),
     ("Government: fiscal and monetary policy", [

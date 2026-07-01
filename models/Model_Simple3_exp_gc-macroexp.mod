@@ -301,7 +301,7 @@ Kge = STEADY_STATE(Kge);
 //********************************************************
 // Aggregate demand
 [name='yd']
-yd = C+Ip+Igi+Gc+Ige+Grd+Srd+(Z(-1)/A(-1)-1)*S;
+yd = C+Ip+Igi+Gc+Ige+Grd+(Z(-1)/A(-1)-1)*S;
 // Aggregate production
 y = vp*yd;
 // Price dispersion
