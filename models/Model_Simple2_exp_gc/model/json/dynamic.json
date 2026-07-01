@@ -62,7 +62,7 @@
 , {"residual": {"lhs": "vp", "rhs": "thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon)"}}
 , {"residual": {"lhs": "log(g)", "rhs": "(1-rho_g)*log(g(-1))+rho_g*log(gss)+epsi_g"}}
 , {"residual": {"lhs": "eGE", "rhs": "eGE_ss-epsi_effge"}}
-, {"residual": {"lhs": "eGI", "rhs": "eGI_ss-epsi_eff"}}
+, {"residual": {"lhs": "eGI", "rhs": "eGI_ss-epsi_effgi"}}
 , {"residual": {"lhs": "eGRD", "rhs": "eGRD_ss-epsi_effcgrd"}}
 , {"residual": {"lhs": "G", "rhs": "Grd+Ige+Igi+Gc"}}
 , {"residual": {"lhs": "rreal", "rhs": "R/PI"}}
@@ -251,7 +251,7 @@
 , {"eq": 41, "col": 61, "var": "eGE", "shift": 0, "val": "1"}
 , {"eq": 41, "col": 89, "var": "epsi_effge", "shift": 0, "val": "1"}
 , {"eq": 42, "col": 62, "var": "eGI", "shift": 0, "val": "1"}
-, {"eq": 42, "col": 90, "var": "epsi_eff", "shift": 0, "val": "1"}
+, {"eq": 42, "col": 90, "var": "epsi_effgi", "shift": 0, "val": "1"}
 , {"eq": 43, "col": 73, "var": "eGRD", "shift": 0, "val": "1"}
 , {"eq": 43, "col": 93, "var": "epsi_effcgrd", "shift": 0, "val": "1"}
 , {"eq": 44, "col": 35, "var": "Igi", "shift": 0, "val": "(-1)"}
