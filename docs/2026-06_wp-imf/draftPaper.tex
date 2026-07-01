@@ -568,17 +568,42 @@ The first-order conditions with respect to $C_t$, $B_t$, $K_t$, $L_t$, $E_t$, an
 \end{align*}
 The condition for $C_t$ identifies $\lambda_t$ as the marginal utility of wealth and gives~\eqref{eq:mu}; those for $B_t$ and $K_t$ are the bond and capital Euler equations~\eqref{eq:euler}--\eqref{eq:capital}, the latter equating the marginal cost of a unit of investment to its discounted rental plus undepreciated resale value. The condition for $L_t$ is the labor-supply schedule~\eqref{eq:labor}, equating the marginal disutility of time to the after-tax real wage per efficiency unit, $\lambda_t \left(1-\tau_t^{w}\right) w_t H_{t-1}$. The condition for $E_t$~\eqref{eq:edutime} equates that same marginal disutility to the shadow value of the human capital education builds, and the condition for $H_t$~\eqref{eq:hcvalue} prices human capital recursively: an extra unit raises next period's effective labor---and hence after-tax labor income $\lambda_{t+1}\left(1-\tau_{t+1}^{w}\right) w_{t+1} L_{t+1}$---and survives at rate $1-\delta^{h}$. Since $L_t$ and $E_t$ draw on the same time endowment, their marginal disutilities coincide; equating the two conditions balances the return to an hour of work against the return to an hour of schooling.
 
-\subsection{Technology Adoption}
+\subsection{Production and Technology}
 
-Competitive adopters value an adopted technology at $\mathcal{V}_t$ and an unadopted one at $\mathcal{J}_t$, discount with the household stochastic discount factor $\mathit{SDF}_{t+1}$, and choose adoption expenditure $S_t$. The optimality conditions are
+\paragraph{Final goods.} The competitive final-good producer combines intermediate varieties through the CES aggregator $Y_t^{d} = \left[\int_0^1 y_t(i)^{(\epsilon-1)/\epsilon}\, di\right]^{\epsilon/(\epsilon-1)}$ and chooses $y_t(i)$ to minimize expenditure $\int_0^1 P_t(i)\, y_t(i)\, di$ for a given $Y_t^{d}$. The first-order condition delivers the variety demand $y_t(i) = \left(P_t(i)/P_t\right)^{-\epsilon} Y_t^{d}$, and zero profits give the price index $P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}$.
+
+\paragraph{Intermediate goods.} Firm $i$ produces with the technology in~\eqref{eq:production}, taking the public-infrastructure stock $K_{t-1}^{GI}$ and the adopted-technology stock $A_{t-1}$ as given externalities, and renting private capital and hiring effective labor competitively. Minimizing cost $r_t^{k} K_{t-1}(i) + w_t N_t(i)$ subject to the production technology, with the multiplier on the output constraint equal to real marginal cost $mc_t$, equates each factor's marginal revenue product to its price and yields the factor-demand conditions~\eqref{eq:factordemand},
+\begin{equation*}
+    r_t^{k} = \alpha\, mc_t\, \frac{Y_t}{K_{t-1}}, \qquad
+    w_t = (1-\alpha)\, mc_t\, \frac{Y_t}{N_t}, \qquad
+    \frac{K_{t-1}}{N_t} = \frac{\alpha}{1-\alpha}\, \frac{w_t}{r_t^{k}},
+\end{equation*}
+the last of which follows from the first two and is common across firms, since all face the same factor prices and technology.
+
+\paragraph{Price setting.} Intermediate firms set prices \`a la Calvo: each period a fraction $1-\theta_p$ reoptimize, while the rest index to past inflation at rate $\chi_p$. A reoptimizing firm chooses the reset price $\Pi_t^{*}$ to maximize the expected discounted profit it earns while its price remains in force, weighting future dates by the household valuation $\beta^{s}\lambda_{t+s}/\lambda_t$ and the survival probability $\theta_p^{s}$. Its optimality condition is expressed recursively through the auxiliary variables~\eqref{eq:g1}--\eqref{eq:g2}: $x_{1,t}$ discounts marginal revenue, $x_{2,t}$ discounts marginal cost, and $\epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}$ sets the reset price as a markup over marginal cost. Aggregating over reoptimizing and indexing firms gives the price law of motion $1 = \theta_p\left(\Pi_{t-1}^{\chi_p}/\Pi_t\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}$.
+
+\paragraph{Technology creation and adoption.} Created technology $Z_t$ evolves according to~\eqref{eq:Z}. Its stationarized adoption law of motion is
+\begin{equation}
+    g\, A_{t} = q_t\, \phi\left(Z_{t-1} - A_{t-1}\right) + \phi A_{t-1}, \label{eq:Astat}
+\end{equation}
+the stationarized counterpart of~\eqref{eq:A}, where each unadopted technology is adopted next period with probability
+\begin{equation}
+    q_t = q_0\left(S_t\right)^{\varsigma}, \label{eq:probadopt}
+\end{equation}
+increasing in adoption expenditure $S_t$ with elasticity $\varsigma$. Adopters value these flows with the household stochastic discount factor
+\begin{equation}
+    \mathit{SDF}_{t+1} = \beta\, \frac{\lambda_{t+1}}{\lambda_t} = \beta\, \frac{C_t}{C_{t+1}}, \label{eq:sdf}
+\end{equation}
+where the second equality uses~\eqref{eq:mu} at a constant consumption-tax rate. The value of an adopted technology is its per-variety monopoly profit plus its discounted, survival-weighted continuation value; the value of an unadopted technology is the discounted option of adoption, net of the effort cost $S_t$:
 \begin{align}
-    \mathit{SDF}_{t+1} &= \beta\, \frac{C_t}{C_{t+1}}, \label{eq:sdf}\\
-    q_t &= q_0\, \left(S_t\right)^{\varsigma}, \label{eq:probadopt}\\
-    g\, A_{t} &= q_t\, \phi\left(Z_{t-1} - A_{t-1}\right) + \phi A_{t-1}, \label{eq:Astat}\\
     \mathcal{V}_t &= \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \mathcal{V}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{g}\right], \label{eq:VA}\\
-    \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{g}\left(q_t\, \mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right], \label{eq:JZ}\\
-    S_t &= \varsigma\, q_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{1}{g}\, \frac{A_{t-1}}{A_{t}}\left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right], \label{eq:SAfoc}\end{align}
-where $\mu^{p}$ is the steady-state gross markup of intermediate-goods producers. Equation~\eqref{eq:Astat} is the stationarized counterpart of equation~\eqref{eq:A}.
+    \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{g}\left(q_t\, \mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right], \label{eq:JZ}
+\end{align}
+where $\mu^{p}$ is the steady-state gross markup, so $(\mu^{p}-1)/\mu^{p}$ is the profit share of revenue, and $\phi$ is the survival rate of technologies. Choosing $S_t$ to maximize $\mathcal{J}_t$ and using $\partial q_t/\partial S_t = \varsigma\, q_t/S_t$ gives the adoption optimality condition
+\begin{equation}
+    S_t = \varsigma\, q_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{1}{g}\, \frac{A_{t-1}}{A_{t}}\left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right], \label{eq:SAfoc}
+\end{equation}
+which equates the marginal cost of adoption effort---one unit of the good---to its discounted marginal value: the probability gain $\varsigma\, q_t/S_t$ times the adoption surplus $\mathcal{V}_{t+1} - \mathcal{J}_{t+1}$.
 
 \subsection{Fiscal Rules}
 
