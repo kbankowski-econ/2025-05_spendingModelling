@@ -169,8 +169,8 @@ EXOGENOUS = [
         (r"$\varepsilon_t^{\tau c}$",   "Consumption-tax shock",                      "epsi_tauc"),
         (r"$\varepsilon_t^{\tau w}$",   "Labor-tax shock",                            "epsi_tauw"),
         (r"$\varepsilon_t^{ge,\mathit{eff}}$", "Human-capital-efficiency shock",      "epsi_effge"),
-        (r"$\varepsilon_t^{gi,\mathit{eff}}$", "Infrastructure-efficiency shock",     "epsi_eff"),
-        (r"$\varepsilon_t^{rd,\mathit{eff}}$", r"R\&D-efficiency shock",              "epsi_effcgrd"),
+        (r"$\varepsilon_t^{gi,\mathit{eff}}$", "Infrastructure-efficiency shock",     "epsi_effgi"),
+        (r"$\varepsilon_t^{rd,\mathit{eff}}$", r"R\&D-efficiency shock",              "epsi_effgrd"),
     ]),
     ("Balanced growth", [
         (r"$\varepsilon_t^{g}$",        "Trend-growth shock",                         "epsi_g"),

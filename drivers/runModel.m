@@ -109,7 +109,7 @@ modelList = {
     % each shown against its no-efficiency baseline above. (The R&D counterpart,
     % epsi_cgrd_eff25y, sits further below with the diffusion block.)
     'Model_HumanCapital_epsi_igeff25y',         'AE', 'AE',     {{'epsi_igi',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.359,  '1:100'}
+                                                                 {'epsi_effgi',   'ramp',  0.359,  '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'Model_HumanCapital_epsi_cgeeff25y',        'AE', 'AE',     {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.306, '1:100'}
@@ -128,16 +128,16 @@ modelList = {
     'EM_Model_HumanCapital_epsicgelow',         'EM', 'EMlow',  {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiigeff30y',       'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.406, '1:60'}
+                                                                 {'epsi_effgi',   'ramp',  0.406, '1:60'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiigeff30ylow',    'EM', 'EMlow',  {{'epsi_igi',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.399, '1:60'}
+                                                                 {'epsi_effgi',   'ramp',  0.399, '1:60'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiigeff25y',       'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.406, '1:100'}
+                                                                 {'epsi_effgi',   'ramp',  0.406, '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiigeff25ylow',    'EM', 'EMlow',  {{'epsi_igi',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.399, '1:100'}
+                                                                 {'epsi_effgi',   'ramp',  0.399, '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsicgeeff30y',      'EM', 'EMnorm', {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.329, '1:60'}
@@ -154,7 +154,7 @@ modelList = {
     % --- AE R&D efficiency gain --- The R&D counterpart of the AE efficiency block
     % above; enters Figure 3 (fig:efficiencyAE, Section 5.2) as the R&D bars.
     'Model_HumanCapital_epsi_cgrd_eff25y',      'AE', 'AE',     {{'epsi_grd',    'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effcgrd', 'ramp',  0.41,  '1:100'}
+                                                                 {'epsi_effgrd',  'ramp',  0.41,  '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     % --- AE technology-diffusion experiments --- The combined HC+R&D reform under a
     % faster (adt) and a slower/limited (limt) technology-adoption speed. Enter
@@ -176,7 +176,7 @@ modelList = {
     'JAM_Model_HumanCapital_epsicge',           'JAM', 'JAM',    {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'JAM_Model_HumanCapital_epsiigeff30y',      'JAM', 'JAM',    {{'epsi_igi',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_eff',     'ramp',  0.1681, '1:60'}
+                                                                 {'epsi_effgi',   'ramp',  0.1681, '1:60'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'JAM_Model_HumanCapital_epsicgeeff30y',     'JAM', 'JAM',    {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.357, '1:60'}

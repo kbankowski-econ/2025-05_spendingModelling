@@ -70,11 +70,11 @@ epsi_MP         % Monetary Policy Shocks
 epsi_tauc       % Consumption income tax shock 
 epsi_tauw       % Labor income tax shock
 epsi_ige        % Public HC spending shock
-epsi_effge  
-epsi_eff
+epsi_effge
+epsi_effgi
 epsi_grd       % Shock to R&D spending
 epsi_q
-epsi_effcgrd
+epsi_effgrd
 ;
 %--------------------------
 % Define parameters
@@ -265,11 +265,11 @@ tauw-tauwss = rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_d_tauw*(by(-1)-byss
 // Lump-sum transfers
 T-STEADY_STATE(T) = rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*(by(-1)-byss)*ydss);
 // Gap in infrastructure spending efficiency (e^GI)
-eGI = eGI_ss-epsi_eff;
+eGI = eGI_ss-epsi_effgi;
 // Gap in human-capital spending efficiency (e^GE; positive shock closes the gap)
 eGE = eGE_ss-epsi_effge;
 // Gap in R&D spending efficiency (e^GRD)
-eGRD = eGRD_ss-epsi_effcgrd;
+eGRD = eGRD_ss-epsi_effgrd;
 //********************************************************
 // MARKET CLEARING AND EQUILIBRIUM
 //********************************************************

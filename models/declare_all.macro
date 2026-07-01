@@ -72,11 +72,11 @@ epsi_MP         % Monetary Policy Shocks
 epsi_tauc       % Consumption income tax shock 
 epsi_tauw       % Labor income tax shock
 epsi_ige        % Public HC spending shock
-epsi_effge  
-epsi_eff
+epsi_effge
+epsi_effgi
 epsi_grd       % Shock to R&D spending
 epsi_q
-epsi_effcgrd
+epsi_effgrd
 ;
 
 %--------------------------

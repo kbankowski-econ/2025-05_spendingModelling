@@ -63,9 +63,9 @@
 , {"residual": {"lhs": "tauc-taucss", "rhs": "(tauc-taucss)*rho_tauc+(1-rho_tauc)*gamma_d_tauc*(by-byss)+epsi_tauc"}}
 , {"residual": {"lhs": "tauw-tauwss", "rhs": "(tauw-tauwss)*rho_tauw+(1-rho_tauw)*(by-byss)*gamma_d_tauw+epsi_tauw"}}
 , {"residual": {"lhs": "T-(T)", "rhs": "(T-(T))*rho_T+(1-rho_T)*ydss*(by-byss)*(-gamma_d_T)"}}
-, {"residual": {"lhs": "eGI", "rhs": "eGI_ss-epsi_eff"}}
+, {"residual": {"lhs": "eGI", "rhs": "eGI_ss-epsi_effgi"}}
 , {"residual": {"lhs": "eGE", "rhs": "eGE_ss-epsi_effge"}}
-, {"residual": {"lhs": "eGRD", "rhs": "eGRD_ss-epsi_effcgrd"}}
+, {"residual": {"lhs": "eGRD", "rhs": "eGRD_ss-epsi_effgrd"}}
 , {"residual": {"lhs": "yd", "rhs": "Grd+Ige+Gc+Igi+C+Ip+S*(Z/A-1)"}}
 , {"residual": {"lhs": "y", "rhs": "yd*vp"}}
 , {"residual": {"lhs": "vp", "rhs": "vp*thetap*(PI^chi/PI)^(-epsilon)+(1-thetap)*PIstar^(-epsilon)"}}
