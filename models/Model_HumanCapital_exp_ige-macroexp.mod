@@ -181,7 +181,7 @@ eGE_ss=0.306;
 gammaa=gss^((1-alpha)/(vartheta-1))-1;
 model;
 //********************************************************
-// HOUSEHOLD DECISIONS
+// HOUSEHOLDS
 //********************************************************
 // Marginal utility
 1/C = lambda*(1+tauc);
@@ -199,10 +199,12 @@ H = (1-deltaH)*H(-1)+chiH*E^gamma*(Kge(-1))^(mu);
 omega*(L+E)^varphi = lambda_H*chiH*gamma*E^(gamma-1)*(Kge(-1))^(mu);
 // Shadow value of human capital
 lambda_H = betta*(lambda(+1)*(1-tauw(+1))*w(+1)*L(+1)+lambda_H(+1)*(1-deltaH));
+// Stochastic discount factor (detrended)
+SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)));
 // Effective labor
 N = L*H(-1);
 //********************************************************
-// FIRMS DECISIONS
+// PRODUCTION AND TECHNOLOGY
 //********************************************************
 // Price setting
 x1 = lambda*mc*yd+betta*thetap*(PI^chi/PI(+1))^(-epsilon)*x1(+1);
@@ -229,25 +231,19 @@ q = (kappaprob+epsi_q)*(S)^(varsigma);
 V = (markupss-1)/(markupss)*mc*y + phi*SDF(+1)*V(+1)*A(-1)/A/(1+gammaa);
 // FOC for adoption effort
 varsigma*q*phi*SDF(+1)/(1+gammaa)*A(-1)/A*(V(+1)-J(+1)) = S;
-// Stochastic discount factor (detrended)
-SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)));
-// Shock to the R&D technology
 //********************************************************
-// MONETARY AUTHORITY
+// GOVERNMENT: FISCAL AND MONETARY POLICY
 //********************************************************
 // Taylor rule
 Rmp/Rss = (Rmp(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
-// Government borrowing cost vs. policy rate (sovereign spread)
+// Government borrowing rate (tracks the policy rate up to an exogenous shock)
 log(R) = rho_RG*R(-1)+ (1-rho_RG)*log(Rmp) + epsi_spread;
-//********************************************************
-// GOVERNMENT DECISIONS
-//********************************************************
 // Public infrastructure capital
 Kg*g = (1-delta)*Kg(-1)+(1-eGI)*Igi;
+// Public human-capital stock
+Kge*g = (1-delta)*Kge(-1)+(1-eGE)*Ige;
 // Government debt
 b = (R(-1)/PI)*b(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;
-// Lump-sum transfers
-T-STEADY_STATE(T) = rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*(by(-1)-byss)*ydss);
 // Debt to GDP
 by = b/y;
 // Government spending instruments (subject to expenditure shocks)
@@ -259,10 +255,16 @@ Grd = Grdss+ydss*epsi_grd;                               // R&D spending
 tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss))+epsi_tauc;
 // Income tax rule
 tauw-tauwss = rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_d_tauw*(by(-1)-byss))+epsi_tauw;
-// Public human-capital stock
-Kge*g = (1-delta)*Kge(-1)+(1-eGE)*Ige;
+// Lump-sum transfers
+T-STEADY_STATE(T) = rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*(by(-1)-byss)*ydss);
+// Gap in infrastructure spending efficiency (e^GI)
+eGI = eGI_ss-epsi_eff;
+// Gap in human-capital spending efficiency (e^GE; positive shock closes the gap)
+eGE = eGE_ss-epsi_effge;
+// Gap in R&D spending efficiency (e^GRD)
+eGRD = eGRD_ss-epsi_effcgrd;
 //********************************************************
-// MARKET CLEARING
+// MARKET CLEARING AND EQUILIBRIUM
 //********************************************************
 // Aggregate demand
 [name='yd']
@@ -272,18 +274,12 @@ y = vp*yd;
 // Price dispersion
 vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 //********************************************************
-// SHOCK DYNAMICS
+// BALANCED GROWTH
 //********************************************************
 // Trend growth
 log(g) = (1-rho_g)*log(g(-1))+rho_g*(log(gss))+epsi_g;
-// Gap in human-capital spending efficiency (e^GE; positive shock closes the gap)
-eGE = eGE_ss-epsi_effge;
-// Gap in infrastructure spending efficiency (e^GI)
-eGI = eGI_ss-epsi_eff;
-// Gap in R&D spending efficiency (e^GRD)
-eGRD = eGRD_ss-epsi_effcgrd;
 //********************************************************
-// VARIABLES OF INTEREST
+// AUXILIARY AND REPORTING
 //********************************************************
 G = Gc+Igi+Ige+Grd;                                        // total government spending (sum of the four instruments)
 rreal = R/PI;                                              // ex-post real interest rate
@@ -291,7 +287,6 @@ rreal = R/PI;                                              // ex-post real inter
 pdef_yss  = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;  // primary deficit
 T_yss = T/ydss;                                       // transfers
 by_yss    = b/ydss;                                          // government debt
-// Output growth
 //********************************************************
 // STEADY-STATE VALUES CARRIED INTO THE MODEL BLOCK
 //********************************************************
