@@ -47,6 +47,7 @@
 \usepackage{titlesec} % Allows customization of titles
 \usepackage{colortbl}
 \definecolor{grey}{cmyk}{0, 0, 0, 0.17}
+\definecolor{diffcell}{HTML}{EAE0F4} % light lavender: parameters that differ across AE/EMDE
 \usepackage{appendix}
 \usepackage{eurosym}
 \usepackage{array}
@@ -648,7 +649,7 @@ A few scale constants---the human-capital scale $\chi$, the labor-disutility sca
 
 \subsection{Parameters}
 
-The last two columns report the calibrated values for the representative advanced economy (AE) and emerging market and developing economy (EMDE), read from the solved model. A ``--'' in a value column marks a parameter of the endogenous-innovation channel, which is switched off for EMDEs (Section~\ref{sec:calibration}); a ``--'' in the Paper column instead marks an object with no paper symbol.
+The last two columns report the calibrated values for the representative advanced economy (AE) and emerging market and developing economy (EMDE), read from the solved model; \colorbox{diffcell}{shaded} cells mark parameters whose value differs between the two calibrations. A ``--'' in a value column marks a parameter of the endogenous-innovation channel, which is switched off for EMDEs (Section~\ref{sec:calibration}); a ``--'' in the Paper column instead marks an object with no paper symbol.
 
 \input{glossaryParameters.tex}
 

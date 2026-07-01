@@ -233,7 +233,10 @@ def longtable(groups, caption, label, values=None):
             n += 1
             code = model.replace("_", r"\_")
             if withval:
-                ae, em = values.get(model, ("", ""))
+                ae, em, differ = values.get(model, ("", "", False))
+                if differ:  # shade both value cells when AE and EMDE differ
+                    ae = r"\cellcolor{diffcell} " + ae
+                    em = r"\cellcolor{diffcell} " + em
                 lines.append(rf"{n} & {paper} & {desc} & \texttt{{{code}}} & {ae} & {em} \\")
             else:
                 lines.append(rf"{n} & {paper} & {desc} & \texttt{{{code}}} \\")
@@ -248,8 +251,9 @@ def main():
     for _, rows in PARAMETERS:
         for _paper, _desc, code in rows:
             if code in ae:
-                pvals[code] = (fmt_val(ae[code]),
-                               "--" if code in EMDE_DASH else fmt_val(em[code]))
+                a = fmt_val(ae[code])
+                e = "--" if code in EMDE_DASH else fmt_val(em[code])
+                pvals[code] = (a, e, a != e)  # third element: differs across AE/EMDE
     specs = [
         (ENDOGENOUS, "Endogenous Variables", "tab:glossEndo", "glossaryEndogenous.tex", None),
         (PARAMETERS, "Parameters",           "tab:glossParam", "glossaryParameters.tex", pvals),
