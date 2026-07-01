@@ -43,6 +43,13 @@ def read_params(model):
     return dict(zip(names, M["params"][0, 0].ravel()))
 
 
+def read_steady(model):
+    """Return {endo_name: steady-state value} from the committed <model>_results.mat."""
+    m = loadmat(MODELS_DIR / model / "Output" / f"{model}_results.mat")
+    names = [str(x[0]) for x in m["M_"]["endo_names"][0, 0][:, 0]]
+    return dict(zip(names, m["oo_"]["steady_state"][0, 0].ravel()))
+
+
 def fmt_val(x):
     """Format a parameter value at 5 significant figures (0 shown exactly)."""
     x = float(x)
@@ -270,15 +277,22 @@ EQNS = {
 
 def longtable(groups, caption, label, values=None, eqns=None):
     withval = values is not None
+    if withval and eqns:      # endogenous: equations + steady-state value columns
+        width = "7.7cm"
+    elif withval:             # parameters: value columns only
+        width = "5.8cm"
+    elif eqns:                # equations only
+        width = "9.3cm"
+    else:                     # exogenous
+        width = "7.6cm"
     if withval:
-        colspec = (r"@{}r@{\hskip 8pt}l >{\raggedright\arraybackslash}p{5.8cm} "
-                   r"l r@{\hskip 12pt}r@{}")
+        colspec = (r"@{}r@{\hskip 8pt}l >{\raggedright\arraybackslash}p{" + width
+                   + r"} l r@{\hskip 12pt}r@{}")
         head = r"\# & Paper & Description & Model code & AE & EMDE \\"
         ncol = 6
     else:
-        width = "9.3cm" if eqns else "7.6cm"
-        colspec = (r"@{}r@{\hskip 10pt}l >{\raggedright\arraybackslash}p{"
-                   + width + r"} l@{}")
+        colspec = (r"@{}r@{\hskip 10pt}l >{\raggedright\arraybackslash}p{" + width
+                   + r"} l@{}")
         head = r"\# & Paper & Description & Model code \\"
         ncol = 4
     lines = [
@@ -300,16 +314,17 @@ def longtable(groups, caption, label, values=None, eqns=None):
         for paper, desc, model in rows:
             n += 1
             code = model.replace("_", r"\_")
+            d = desc
+            if eqns and model in eqns:
+                d = desc + r" \gloseq{" + eqns[model] + "}"
             if withval:
-                ae, em, differ = values.get(model, ("", "", False))
-                if differ:  # shade both value cells when AE and EMDE differ
+                vt = values.get(model, ("", ""))
+                ae, em = vt[0], vt[1]
+                if len(vt) > 2 and vt[2]:  # shade cells that differ (parameters table)
                     ae = r"\cellcolor{diffcell} " + ae
                     em = r"\cellcolor{diffcell} " + em
-                lines.append(rf"{n} & {paper} & {desc} & \texttt{{{code}}} & {ae} & {em} \\")
+                lines.append(rf"{n} & {paper} & {d} & \texttt{{{code}}} & {ae} & {em} \\")
             else:
-                d = desc
-                if eqns and model in eqns:
-                    d = desc + r" \gloseq{" + eqns[model] + "}"
                 lines.append(rf"{n} & {paper} & {d} & \texttt{{{code}}} \\")
     lines.append(r"\end{longtable}")
     return "\n".join(lines) + "\n"
@@ -325,8 +340,15 @@ def main():
                 a = fmt_val(ae[code])
                 e = "--" if code in EMDE_DASH else fmt_val(em[code])
                 pvals[code] = (a, e, a != e)  # third element: differs across AE/EMDE
+    # AE/EMDE steady-state values for each endogenous variable (oo_.steady_state).
+    aess, emss = read_steady(AE_MODEL), read_steady(EM_MODEL)
+    svals = {}
+    for _, rows in ENDOGENOUS:
+        for _paper, _desc, code in rows:
+            if code in aess:
+                svals[code] = (fmt_val(aess[code]), fmt_val(emss[code]))
     specs = [
-        (ENDOGENOUS, "Endogenous Variables", "tab:glossEndo", "glossaryEndogenous.tex", None, EQNS),
+        (ENDOGENOUS, "Endogenous Variables", "tab:glossEndo", "glossaryEndogenous.tex", svals, EQNS),
         (PARAMETERS, "Parameters",           "tab:glossParam", "glossaryParameters.tex", pvals, None),
         (EXOGENOUS,  "Exogenous Variables (Shocks)", "tab:glossExo", "glossaryExogenous.tex", None, None),
     ]
