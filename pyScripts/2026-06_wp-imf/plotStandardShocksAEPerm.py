@@ -8,10 +8,10 @@ increase in one spending instrument with no offsetting cut. The headline figure
 uses an AR(1) (rho=0.9) shock; here the shock is a step that stays at +1 percent
 of GDP forever:
 
+  - Government consumption      -> Model_HumanCapital_exp_gc_perm
   - Infrastructure investment  -> Model_HumanCapital_exp_igi_perm
   - Human capital investment   -> Model_HumanCapital_exp_ige_perm
   - R&D investment             -> Model_HumanCapital_exp_grd_perm
-  - Government consumption      -> Model_HumanCapital_exp_gc_perm
 
 A 5x4 grid of percent deviations from steady state. Standalone: the only input
 is docs/csvFiles/figureNumbers_yearly.csv; it writes PNG/PDF/HTML/CSV into
@@ -45,10 +45,10 @@ STYLE = {
 # (model directory, legend label, colour) — colours match the reallocation/HC
 # figures: infra blue, human capital purple, R&D green, consumption neutral grey.
 SHOCKS = [
+    ("Model_HumanCapital_exp_gc_perm",  "Government consumption",     "#757575"),
     ("Model_HumanCapital_exp_igi_perm", "Infrastructure investment", "#1565C0"),
     ("Model_HumanCapital_exp_ige_perm", "Human capital investment",  "#6A1B9A"),
     ("Model_HumanCapital_exp_grd_perm", "R&D investment",            "#2E7D32"),
-    ("Model_HumanCapital_exp_gc_perm",  "Government consumption",     "#757575"),
 ]
 
 # (variable suffix, panel title); laid out row-major in a 4x4 grid, one thematic

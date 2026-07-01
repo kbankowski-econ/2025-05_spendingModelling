@@ -5,10 +5,10 @@ Advanced-economy impulse responses of the main model variables to the four
 standard debt-financed expansion shocks, each a permanent +1 percent of GDP
 increase in one spending instrument with no offsetting cut:
 
+  - Government consumption      -> Model_HumanCapital_exp_gc
   - Infrastructure investment  -> Model_HumanCapital_exp_igi
   - Human capital investment   -> Model_HumanCapital_exp_ige
   - R&D investment             -> Model_HumanCapital_exp_grd
-  - Government consumption      -> Model_HumanCapital_exp_gc
 
 A 3x4 grid of percent deviations from steady state. Standalone: the only input
 is docs/csvFiles/figureNumbers_yearly.csv; it writes PNG/PDF/HTML/CSV into
@@ -42,10 +42,10 @@ STYLE = {
 # (model directory, legend label, colour) — colours match the reallocation/HC
 # figures: infra blue, human capital purple, R&D green, consumption neutral grey.
 SHOCKS = [
+    ("Model_HumanCapital_exp_gc",  "Government consumption",     "#757575"),
     ("Model_HumanCapital_exp_igi", "Infrastructure investment", "#1565C0"),
     ("Model_HumanCapital_exp_ige", "Human capital investment",  "#6A1B9A"),
     ("Model_HumanCapital_exp_grd", "R&D investment",            "#2E7D32"),
-    ("Model_HumanCapital_exp_gc",  "Government consumption",     "#757575"),
 ]
 
 # (variable suffix, panel title); laid out row-major in a 4x4 grid, one thematic

@@ -1,4 +1,30 @@
 year,shock,variable,pct_dev
+2025,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.0
+2026,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.249
+2027,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.268
+2028,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.289
+2029,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.31
+2030,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.329
+2031,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.348
+2032,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.365
+2033,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.382
+2034,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.399
+2035,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.414
+2036,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.429
+2037,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.442
+2038,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.456
+2039,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.468
+2040,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.48
+2041,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.491
+2042,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.502
+2043,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.512
+2044,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.522
+2045,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.531
+2046,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.539
+2047,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.548
+2048,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.555
+2049,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.563
+2050,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.569
 2025,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.0
 2026,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.268
 2027,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.449
@@ -77,32 +103,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),3.97
 2049,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),4.051
 2050,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),4.126
-2025,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.0
-2026,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.249
-2027,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.268
-2028,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.289
-2029,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.31
-2030,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.329
-2031,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.348
-2032,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.365
-2033,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.382
-2034,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.399
-2035,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.414
-2036,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.429
-2037,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.442
-2038,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.456
-2039,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.468
-2040,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.48
-2041,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.491
-2042,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.502
-2043,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.512
-2044,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.522
-2045,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.531
-2046,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.539
-2047,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.548
-2048,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.555
-2049,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.563
-2050,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.569
+2025,Government consumption,Consumption (C<sub>t</sub>),0.0
+2026,Government consumption,Consumption (C<sub>t</sub>),-1.759
+2027,Government consumption,Consumption (C<sub>t</sub>),-1.72
+2028,Government consumption,Consumption (C<sub>t</sub>),-1.683
+2029,Government consumption,Consumption (C<sub>t</sub>),-1.649
+2030,Government consumption,Consumption (C<sub>t</sub>),-1.617
+2031,Government consumption,Consumption (C<sub>t</sub>),-1.587
+2032,Government consumption,Consumption (C<sub>t</sub>),-1.558
+2033,Government consumption,Consumption (C<sub>t</sub>),-1.531
+2034,Government consumption,Consumption (C<sub>t</sub>),-1.505
+2035,Government consumption,Consumption (C<sub>t</sub>),-1.48
+2036,Government consumption,Consumption (C<sub>t</sub>),-1.457
+2037,Government consumption,Consumption (C<sub>t</sub>),-1.435
+2038,Government consumption,Consumption (C<sub>t</sub>),-1.413
+2039,Government consumption,Consumption (C<sub>t</sub>),-1.393
+2040,Government consumption,Consumption (C<sub>t</sub>),-1.374
+2041,Government consumption,Consumption (C<sub>t</sub>),-1.356
+2042,Government consumption,Consumption (C<sub>t</sub>),-1.338
+2043,Government consumption,Consumption (C<sub>t</sub>),-1.322
+2044,Government consumption,Consumption (C<sub>t</sub>),-1.306
+2045,Government consumption,Consumption (C<sub>t</sub>),-1.291
+2046,Government consumption,Consumption (C<sub>t</sub>),-1.277
+2047,Government consumption,Consumption (C<sub>t</sub>),-1.264
+2048,Government consumption,Consumption (C<sub>t</sub>),-1.251
+2049,Government consumption,Consumption (C<sub>t</sub>),-1.239
+2050,Government consumption,Consumption (C<sub>t</sub>),-1.228
 2025,Infrastructure investment,Consumption (C<sub>t</sub>),0.0
 2026,Infrastructure investment,Consumption (C<sub>t</sub>),-1.023
 2027,Infrastructure investment,Consumption (C<sub>t</sub>),-0.925
@@ -181,32 +207,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Consumption (C<sub>t</sub>),3.899
 2049,R&D investment,Consumption (C<sub>t</sub>),4.041
 2050,R&D investment,Consumption (C<sub>t</sub>),4.174
-2025,Government consumption,Consumption (C<sub>t</sub>),0.0
-2026,Government consumption,Consumption (C<sub>t</sub>),-1.759
-2027,Government consumption,Consumption (C<sub>t</sub>),-1.72
-2028,Government consumption,Consumption (C<sub>t</sub>),-1.683
-2029,Government consumption,Consumption (C<sub>t</sub>),-1.649
-2030,Government consumption,Consumption (C<sub>t</sub>),-1.617
-2031,Government consumption,Consumption (C<sub>t</sub>),-1.587
-2032,Government consumption,Consumption (C<sub>t</sub>),-1.558
-2033,Government consumption,Consumption (C<sub>t</sub>),-1.531
-2034,Government consumption,Consumption (C<sub>t</sub>),-1.505
-2035,Government consumption,Consumption (C<sub>t</sub>),-1.48
-2036,Government consumption,Consumption (C<sub>t</sub>),-1.457
-2037,Government consumption,Consumption (C<sub>t</sub>),-1.435
-2038,Government consumption,Consumption (C<sub>t</sub>),-1.413
-2039,Government consumption,Consumption (C<sub>t</sub>),-1.393
-2040,Government consumption,Consumption (C<sub>t</sub>),-1.374
-2041,Government consumption,Consumption (C<sub>t</sub>),-1.356
-2042,Government consumption,Consumption (C<sub>t</sub>),-1.338
-2043,Government consumption,Consumption (C<sub>t</sub>),-1.322
-2044,Government consumption,Consumption (C<sub>t</sub>),-1.306
-2045,Government consumption,Consumption (C<sub>t</sub>),-1.291
-2046,Government consumption,Consumption (C<sub>t</sub>),-1.277
-2047,Government consumption,Consumption (C<sub>t</sub>),-1.264
-2048,Government consumption,Consumption (C<sub>t</sub>),-1.251
-2049,Government consumption,Consumption (C<sub>t</sub>),-1.239
-2050,Government consumption,Consumption (C<sub>t</sub>),-1.228
+2025,Government consumption,Private investment (I<sub>t</sub>),0.0
+2026,Government consumption,Private investment (I<sub>t</sub>),0.356
+2027,Government consumption,Private investment (I<sub>t</sub>),0.343
+2028,Government consumption,Private investment (I<sub>t</sub>),0.346
+2029,Government consumption,Private investment (I<sub>t</sub>),0.354
+2030,Government consumption,Private investment (I<sub>t</sub>),0.364
+2031,Government consumption,Private investment (I<sub>t</sub>),0.377
+2032,Government consumption,Private investment (I<sub>t</sub>),0.39
+2033,Government consumption,Private investment (I<sub>t</sub>),0.403
+2034,Government consumption,Private investment (I<sub>t</sub>),0.417
+2035,Government consumption,Private investment (I<sub>t</sub>),0.431
+2036,Government consumption,Private investment (I<sub>t</sub>),0.444
+2037,Government consumption,Private investment (I<sub>t</sub>),0.457
+2038,Government consumption,Private investment (I<sub>t</sub>),0.469
+2039,Government consumption,Private investment (I<sub>t</sub>),0.481
+2040,Government consumption,Private investment (I<sub>t</sub>),0.492
+2041,Government consumption,Private investment (I<sub>t</sub>),0.503
+2042,Government consumption,Private investment (I<sub>t</sub>),0.513
+2043,Government consumption,Private investment (I<sub>t</sub>),0.523
+2044,Government consumption,Private investment (I<sub>t</sub>),0.532
+2045,Government consumption,Private investment (I<sub>t</sub>),0.54
+2046,Government consumption,Private investment (I<sub>t</sub>),0.548
+2047,Government consumption,Private investment (I<sub>t</sub>),0.556
+2048,Government consumption,Private investment (I<sub>t</sub>),0.563
+2049,Government consumption,Private investment (I<sub>t</sub>),0.57
+2050,Government consumption,Private investment (I<sub>t</sub>),0.576
 2025,Infrastructure investment,Private investment (I<sub>t</sub>),0.0
 2026,Infrastructure investment,Private investment (I<sub>t</sub>),-1.106
 2027,Infrastructure investment,Private investment (I<sub>t</sub>),-0.516
@@ -285,32 +311,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Private investment (I<sub>t</sub>),4.164
 2049,R&D investment,Private investment (I<sub>t</sub>),4.235
 2050,R&D investment,Private investment (I<sub>t</sub>),4.301
-2025,Government consumption,Private investment (I<sub>t</sub>),0.0
-2026,Government consumption,Private investment (I<sub>t</sub>),0.356
-2027,Government consumption,Private investment (I<sub>t</sub>),0.343
-2028,Government consumption,Private investment (I<sub>t</sub>),0.346
-2029,Government consumption,Private investment (I<sub>t</sub>),0.354
-2030,Government consumption,Private investment (I<sub>t</sub>),0.364
-2031,Government consumption,Private investment (I<sub>t</sub>),0.377
-2032,Government consumption,Private investment (I<sub>t</sub>),0.39
-2033,Government consumption,Private investment (I<sub>t</sub>),0.403
-2034,Government consumption,Private investment (I<sub>t</sub>),0.417
-2035,Government consumption,Private investment (I<sub>t</sub>),0.431
-2036,Government consumption,Private investment (I<sub>t</sub>),0.444
-2037,Government consumption,Private investment (I<sub>t</sub>),0.457
-2038,Government consumption,Private investment (I<sub>t</sub>),0.469
-2039,Government consumption,Private investment (I<sub>t</sub>),0.481
-2040,Government consumption,Private investment (I<sub>t</sub>),0.492
-2041,Government consumption,Private investment (I<sub>t</sub>),0.503
-2042,Government consumption,Private investment (I<sub>t</sub>),0.513
-2043,Government consumption,Private investment (I<sub>t</sub>),0.523
-2044,Government consumption,Private investment (I<sub>t</sub>),0.532
-2045,Government consumption,Private investment (I<sub>t</sub>),0.54
-2046,Government consumption,Private investment (I<sub>t</sub>),0.548
-2047,Government consumption,Private investment (I<sub>t</sub>),0.556
-2048,Government consumption,Private investment (I<sub>t</sub>),0.563
-2049,Government consumption,Private investment (I<sub>t</sub>),0.57
-2050,Government consumption,Private investment (I<sub>t</sub>),0.576
+2025,Government consumption,Government spending (G<sub>t</sub>),0.0
+2026,Government consumption,Government spending (G<sub>t</sub>),4.338
+2027,Government consumption,Government spending (G<sub>t</sub>),4.338
+2028,Government consumption,Government spending (G<sub>t</sub>),4.338
+2029,Government consumption,Government spending (G<sub>t</sub>),4.338
+2030,Government consumption,Government spending (G<sub>t</sub>),4.338
+2031,Government consumption,Government spending (G<sub>t</sub>),4.338
+2032,Government consumption,Government spending (G<sub>t</sub>),4.338
+2033,Government consumption,Government spending (G<sub>t</sub>),4.338
+2034,Government consumption,Government spending (G<sub>t</sub>),4.338
+2035,Government consumption,Government spending (G<sub>t</sub>),4.338
+2036,Government consumption,Government spending (G<sub>t</sub>),4.338
+2037,Government consumption,Government spending (G<sub>t</sub>),4.338
+2038,Government consumption,Government spending (G<sub>t</sub>),4.338
+2039,Government consumption,Government spending (G<sub>t</sub>),4.338
+2040,Government consumption,Government spending (G<sub>t</sub>),4.338
+2041,Government consumption,Government spending (G<sub>t</sub>),4.338
+2042,Government consumption,Government spending (G<sub>t</sub>),4.338
+2043,Government consumption,Government spending (G<sub>t</sub>),4.338
+2044,Government consumption,Government spending (G<sub>t</sub>),4.338
+2045,Government consumption,Government spending (G<sub>t</sub>),4.338
+2046,Government consumption,Government spending (G<sub>t</sub>),4.338
+2047,Government consumption,Government spending (G<sub>t</sub>),4.338
+2048,Government consumption,Government spending (G<sub>t</sub>),4.338
+2049,Government consumption,Government spending (G<sub>t</sub>),4.338
+2050,Government consumption,Government spending (G<sub>t</sub>),4.338
 2025,Infrastructure investment,Government spending (G<sub>t</sub>),0.0
 2026,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
 2027,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
@@ -389,32 +415,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Government spending (G<sub>t</sub>),4.338
 2049,R&D investment,Government spending (G<sub>t</sub>),4.338
 2050,R&D investment,Government spending (G<sub>t</sub>),4.338
-2025,Government consumption,Government spending (G<sub>t</sub>),0.0
-2026,Government consumption,Government spending (G<sub>t</sub>),4.338
-2027,Government consumption,Government spending (G<sub>t</sub>),4.338
-2028,Government consumption,Government spending (G<sub>t</sub>),4.338
-2029,Government consumption,Government spending (G<sub>t</sub>),4.338
-2030,Government consumption,Government spending (G<sub>t</sub>),4.338
-2031,Government consumption,Government spending (G<sub>t</sub>),4.338
-2032,Government consumption,Government spending (G<sub>t</sub>),4.338
-2033,Government consumption,Government spending (G<sub>t</sub>),4.338
-2034,Government consumption,Government spending (G<sub>t</sub>),4.338
-2035,Government consumption,Government spending (G<sub>t</sub>),4.338
-2036,Government consumption,Government spending (G<sub>t</sub>),4.338
-2037,Government consumption,Government spending (G<sub>t</sub>),4.338
-2038,Government consumption,Government spending (G<sub>t</sub>),4.338
-2039,Government consumption,Government spending (G<sub>t</sub>),4.338
-2040,Government consumption,Government spending (G<sub>t</sub>),4.338
-2041,Government consumption,Government spending (G<sub>t</sub>),4.338
-2042,Government consumption,Government spending (G<sub>t</sub>),4.338
-2043,Government consumption,Government spending (G<sub>t</sub>),4.338
-2044,Government consumption,Government spending (G<sub>t</sub>),4.338
-2045,Government consumption,Government spending (G<sub>t</sub>),4.338
-2046,Government consumption,Government spending (G<sub>t</sub>),4.338
-2047,Government consumption,Government spending (G<sub>t</sub>),4.338
-2048,Government consumption,Government spending (G<sub>t</sub>),4.338
-2049,Government consumption,Government spending (G<sub>t</sub>),4.338
-2050,Government consumption,Government spending (G<sub>t</sub>),4.338
+2025,Government consumption,Adopted technology (A<sub>t</sub>),0.0
+2026,Government consumption,Adopted technology (A<sub>t</sub>),0.004
+2027,Government consumption,Adopted technology (A<sub>t</sub>),0.013
+2028,Government consumption,Adopted technology (A<sub>t</sub>),0.025
+2029,Government consumption,Adopted technology (A<sub>t</sub>),0.039
+2030,Government consumption,Adopted technology (A<sub>t</sub>),0.056
+2031,Government consumption,Adopted technology (A<sub>t</sub>),0.073
+2032,Government consumption,Adopted technology (A<sub>t</sub>),0.091
+2033,Government consumption,Adopted technology (A<sub>t</sub>),0.11
+2034,Government consumption,Adopted technology (A<sub>t</sub>),0.128
+2035,Government consumption,Adopted technology (A<sub>t</sub>),0.147
+2036,Government consumption,Adopted technology (A<sub>t</sub>),0.166
+2037,Government consumption,Adopted technology (A<sub>t</sub>),0.184
+2038,Government consumption,Adopted technology (A<sub>t</sub>),0.201
+2039,Government consumption,Adopted technology (A<sub>t</sub>),0.219
+2040,Government consumption,Adopted technology (A<sub>t</sub>),0.235
+2041,Government consumption,Adopted technology (A<sub>t</sub>),0.252
+2042,Government consumption,Adopted technology (A<sub>t</sub>),0.267
+2043,Government consumption,Adopted technology (A<sub>t</sub>),0.282
+2044,Government consumption,Adopted technology (A<sub>t</sub>),0.296
+2045,Government consumption,Adopted technology (A<sub>t</sub>),0.31
+2046,Government consumption,Adopted technology (A<sub>t</sub>),0.323
+2047,Government consumption,Adopted technology (A<sub>t</sub>),0.336
+2048,Government consumption,Adopted technology (A<sub>t</sub>),0.348
+2049,Government consumption,Adopted technology (A<sub>t</sub>),0.359
+2050,Government consumption,Adopted technology (A<sub>t</sub>),0.37
 2025,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.0
 2026,Infrastructure investment,Adopted technology (A<sub>t</sub>),-0.009
 2027,Infrastructure investment,Adopted technology (A<sub>t</sub>),-0.012
@@ -493,32 +519,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Adopted technology (A<sub>t</sub>),10.565
 2049,R&D investment,Adopted technology (A<sub>t</sub>),10.742
 2050,R&D investment,Adopted technology (A<sub>t</sub>),10.906
-2025,Government consumption,Adopted technology (A<sub>t</sub>),0.0
-2026,Government consumption,Adopted technology (A<sub>t</sub>),0.004
-2027,Government consumption,Adopted technology (A<sub>t</sub>),0.013
-2028,Government consumption,Adopted technology (A<sub>t</sub>),0.025
-2029,Government consumption,Adopted technology (A<sub>t</sub>),0.039
-2030,Government consumption,Adopted technology (A<sub>t</sub>),0.056
-2031,Government consumption,Adopted technology (A<sub>t</sub>),0.073
-2032,Government consumption,Adopted technology (A<sub>t</sub>),0.091
-2033,Government consumption,Adopted technology (A<sub>t</sub>),0.11
-2034,Government consumption,Adopted technology (A<sub>t</sub>),0.128
-2035,Government consumption,Adopted technology (A<sub>t</sub>),0.147
-2036,Government consumption,Adopted technology (A<sub>t</sub>),0.166
-2037,Government consumption,Adopted technology (A<sub>t</sub>),0.184
-2038,Government consumption,Adopted technology (A<sub>t</sub>),0.201
-2039,Government consumption,Adopted technology (A<sub>t</sub>),0.219
-2040,Government consumption,Adopted technology (A<sub>t</sub>),0.235
-2041,Government consumption,Adopted technology (A<sub>t</sub>),0.252
-2042,Government consumption,Adopted technology (A<sub>t</sub>),0.267
-2043,Government consumption,Adopted technology (A<sub>t</sub>),0.282
-2044,Government consumption,Adopted technology (A<sub>t</sub>),0.296
-2045,Government consumption,Adopted technology (A<sub>t</sub>),0.31
-2046,Government consumption,Adopted technology (A<sub>t</sub>),0.323
-2047,Government consumption,Adopted technology (A<sub>t</sub>),0.336
-2048,Government consumption,Adopted technology (A<sub>t</sub>),0.348
-2049,Government consumption,Adopted technology (A<sub>t</sub>),0.359
-2050,Government consumption,Adopted technology (A<sub>t</sub>),0.37
+2025,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2026,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2027,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2028,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2029,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2030,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2031,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2032,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2033,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2034,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2035,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2036,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2037,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2038,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2039,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2040,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2041,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2042,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2043,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2044,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2045,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2046,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2047,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2048,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2049,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2050,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2025,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2026,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.688
 2027,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.967
@@ -597,32 +623,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2049,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2050,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2025,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2026,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2027,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2028,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2029,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2030,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2031,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2032,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2033,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2034,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2035,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2036,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2037,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2038,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2039,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2040,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2041,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2042,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2043,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2044,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2045,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2046,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2047,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2048,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2049,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-2050,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2025,Government consumption,Private capital (K<sub>t</sub>),0.0
+2026,Government consumption,Private capital (K<sub>t</sub>),-0.069
+2027,Government consumption,Private capital (K<sub>t</sub>),-0.023
+2028,Government consumption,Private capital (K<sub>t</sub>),0.018
+2029,Government consumption,Private capital (K<sub>t</sub>),0.055
+2030,Government consumption,Private capital (K<sub>t</sub>),0.088
+2031,Government consumption,Private capital (K<sub>t</sub>),0.12
+2032,Government consumption,Private capital (K<sub>t</sub>),0.149
+2033,Government consumption,Private capital (K<sub>t</sub>),0.177
+2034,Government consumption,Private capital (K<sub>t</sub>),0.203
+2035,Government consumption,Private capital (K<sub>t</sub>),0.227
+2036,Government consumption,Private capital (K<sub>t</sub>),0.251
+2037,Government consumption,Private capital (K<sub>t</sub>),0.273
+2038,Government consumption,Private capital (K<sub>t</sub>),0.294
+2039,Government consumption,Private capital (K<sub>t</sub>),0.314
+2040,Government consumption,Private capital (K<sub>t</sub>),0.334
+2041,Government consumption,Private capital (K<sub>t</sub>),0.352
+2042,Government consumption,Private capital (K<sub>t</sub>),0.369
+2043,Government consumption,Private capital (K<sub>t</sub>),0.386
+2044,Government consumption,Private capital (K<sub>t</sub>),0.402
+2045,Government consumption,Private capital (K<sub>t</sub>),0.417
+2046,Government consumption,Private capital (K<sub>t</sub>),0.431
+2047,Government consumption,Private capital (K<sub>t</sub>),0.444
+2048,Government consumption,Private capital (K<sub>t</sub>),0.457
+2049,Government consumption,Private capital (K<sub>t</sub>),0.469
+2050,Government consumption,Private capital (K<sub>t</sub>),0.481
 2025,Infrastructure investment,Private capital (K<sub>t</sub>),0.0
 2026,Infrastructure investment,Private capital (K<sub>t</sub>),-0.287
 2027,Infrastructure investment,Private capital (K<sub>t</sub>),-0.335
@@ -701,32 +727,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Private capital (K<sub>t</sub>),2.808
 2049,R&D investment,Private capital (K<sub>t</sub>),2.963
 2050,R&D investment,Private capital (K<sub>t</sub>),3.108
-2025,Government consumption,Private capital (K<sub>t</sub>),0.0
-2026,Government consumption,Private capital (K<sub>t</sub>),-0.069
-2027,Government consumption,Private capital (K<sub>t</sub>),-0.023
-2028,Government consumption,Private capital (K<sub>t</sub>),0.018
-2029,Government consumption,Private capital (K<sub>t</sub>),0.055
-2030,Government consumption,Private capital (K<sub>t</sub>),0.088
-2031,Government consumption,Private capital (K<sub>t</sub>),0.12
-2032,Government consumption,Private capital (K<sub>t</sub>),0.149
-2033,Government consumption,Private capital (K<sub>t</sub>),0.177
-2034,Government consumption,Private capital (K<sub>t</sub>),0.203
-2035,Government consumption,Private capital (K<sub>t</sub>),0.227
-2036,Government consumption,Private capital (K<sub>t</sub>),0.251
-2037,Government consumption,Private capital (K<sub>t</sub>),0.273
-2038,Government consumption,Private capital (K<sub>t</sub>),0.294
-2039,Government consumption,Private capital (K<sub>t</sub>),0.314
-2040,Government consumption,Private capital (K<sub>t</sub>),0.334
-2041,Government consumption,Private capital (K<sub>t</sub>),0.352
-2042,Government consumption,Private capital (K<sub>t</sub>),0.369
-2043,Government consumption,Private capital (K<sub>t</sub>),0.386
-2044,Government consumption,Private capital (K<sub>t</sub>),0.402
-2045,Government consumption,Private capital (K<sub>t</sub>),0.417
-2046,Government consumption,Private capital (K<sub>t</sub>),0.431
-2047,Government consumption,Private capital (K<sub>t</sub>),0.444
-2048,Government consumption,Private capital (K<sub>t</sub>),0.457
-2049,Government consumption,Private capital (K<sub>t</sub>),0.469
-2050,Government consumption,Private capital (K<sub>t</sub>),0.481
+2025,Government consumption,Effective labor (N<sub>t</sub>),0.0
+2026,Government consumption,Effective labor (N<sub>t</sub>),0.393
+2027,Government consumption,Effective labor (N<sub>t</sub>),0.397
+2028,Government consumption,Effective labor (N<sub>t</sub>),0.404
+2029,Government consumption,Effective labor (N<sub>t</sub>),0.41
+2030,Government consumption,Effective labor (N<sub>t</sub>),0.416
+2031,Government consumption,Effective labor (N<sub>t</sub>),0.421
+2032,Government consumption,Effective labor (N<sub>t</sub>),0.425
+2033,Government consumption,Effective labor (N<sub>t</sub>),0.428
+2034,Government consumption,Effective labor (N<sub>t</sub>),0.431
+2035,Government consumption,Effective labor (N<sub>t</sub>),0.434
+2036,Government consumption,Effective labor (N<sub>t</sub>),0.436
+2037,Government consumption,Effective labor (N<sub>t</sub>),0.438
+2038,Government consumption,Effective labor (N<sub>t</sub>),0.439
+2039,Government consumption,Effective labor (N<sub>t</sub>),0.44
+2040,Government consumption,Effective labor (N<sub>t</sub>),0.441
+2041,Government consumption,Effective labor (N<sub>t</sub>),0.442
+2042,Government consumption,Effective labor (N<sub>t</sub>),0.442
+2043,Government consumption,Effective labor (N<sub>t</sub>),0.442
+2044,Government consumption,Effective labor (N<sub>t</sub>),0.442
+2045,Government consumption,Effective labor (N<sub>t</sub>),0.442
+2046,Government consumption,Effective labor (N<sub>t</sub>),0.442
+2047,Government consumption,Effective labor (N<sub>t</sub>),0.442
+2048,Government consumption,Effective labor (N<sub>t</sub>),0.442
+2049,Government consumption,Effective labor (N<sub>t</sub>),0.442
+2050,Government consumption,Effective labor (N<sub>t</sub>),0.441
 2025,Infrastructure investment,Effective labor (N<sub>t</sub>),0.0
 2026,Infrastructure investment,Effective labor (N<sub>t</sub>),0.294
 2027,Infrastructure investment,Effective labor (N<sub>t</sub>),0.339
@@ -805,32 +831,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Effective labor (N<sub>t</sub>),-0.029
 2049,R&D investment,Effective labor (N<sub>t</sub>),-0.045
 2050,R&D investment,Effective labor (N<sub>t</sub>),-0.06
-2025,Government consumption,Effective labor (N<sub>t</sub>),0.0
-2026,Government consumption,Effective labor (N<sub>t</sub>),0.393
-2027,Government consumption,Effective labor (N<sub>t</sub>),0.397
-2028,Government consumption,Effective labor (N<sub>t</sub>),0.404
-2029,Government consumption,Effective labor (N<sub>t</sub>),0.41
-2030,Government consumption,Effective labor (N<sub>t</sub>),0.416
-2031,Government consumption,Effective labor (N<sub>t</sub>),0.421
-2032,Government consumption,Effective labor (N<sub>t</sub>),0.425
-2033,Government consumption,Effective labor (N<sub>t</sub>),0.428
-2034,Government consumption,Effective labor (N<sub>t</sub>),0.431
-2035,Government consumption,Effective labor (N<sub>t</sub>),0.434
-2036,Government consumption,Effective labor (N<sub>t</sub>),0.436
-2037,Government consumption,Effective labor (N<sub>t</sub>),0.438
-2038,Government consumption,Effective labor (N<sub>t</sub>),0.439
-2039,Government consumption,Effective labor (N<sub>t</sub>),0.44
-2040,Government consumption,Effective labor (N<sub>t</sub>),0.441
-2041,Government consumption,Effective labor (N<sub>t</sub>),0.442
-2042,Government consumption,Effective labor (N<sub>t</sub>),0.442
-2043,Government consumption,Effective labor (N<sub>t</sub>),0.442
-2044,Government consumption,Effective labor (N<sub>t</sub>),0.442
-2045,Government consumption,Effective labor (N<sub>t</sub>),0.442
-2046,Government consumption,Effective labor (N<sub>t</sub>),0.442
-2047,Government consumption,Effective labor (N<sub>t</sub>),0.442
-2048,Government consumption,Effective labor (N<sub>t</sub>),0.442
-2049,Government consumption,Effective labor (N<sub>t</sub>),0.442
-2050,Government consumption,Effective labor (N<sub>t</sub>),0.441
+2025,Government consumption,Labor supply (L<sub>t</sub>),0.0
+2026,Government consumption,Labor supply (L<sub>t</sub>),0.357
+2027,Government consumption,Labor supply (L<sub>t</sub>),0.35
+2028,Government consumption,Labor supply (L<sub>t</sub>),0.347
+2029,Government consumption,Labor supply (L<sub>t</sub>),0.344
+2030,Government consumption,Labor supply (L<sub>t</sub>),0.342
+2031,Government consumption,Labor supply (L<sub>t</sub>),0.339
+2032,Government consumption,Labor supply (L<sub>t</sub>),0.337
+2033,Government consumption,Labor supply (L<sub>t</sub>),0.335
+2034,Government consumption,Labor supply (L<sub>t</sub>),0.333
+2035,Government consumption,Labor supply (L<sub>t</sub>),0.332
+2036,Government consumption,Labor supply (L<sub>t</sub>),0.33
+2037,Government consumption,Labor supply (L<sub>t</sub>),0.328
+2038,Government consumption,Labor supply (L<sub>t</sub>),0.326
+2039,Government consumption,Labor supply (L<sub>t</sub>),0.324
+2040,Government consumption,Labor supply (L<sub>t</sub>),0.323
+2041,Government consumption,Labor supply (L<sub>t</sub>),0.321
+2042,Government consumption,Labor supply (L<sub>t</sub>),0.319
+2043,Government consumption,Labor supply (L<sub>t</sub>),0.318
+2044,Government consumption,Labor supply (L<sub>t</sub>),0.316
+2045,Government consumption,Labor supply (L<sub>t</sub>),0.315
+2046,Government consumption,Labor supply (L<sub>t</sub>),0.314
+2047,Government consumption,Labor supply (L<sub>t</sub>),0.312
+2048,Government consumption,Labor supply (L<sub>t</sub>),0.311
+2049,Government consumption,Labor supply (L<sub>t</sub>),0.31
+2050,Government consumption,Labor supply (L<sub>t</sub>),0.309
 2025,Infrastructure investment,Labor supply (L<sub>t</sub>),0.0
 2026,Infrastructure investment,Labor supply (L<sub>t</sub>),0.254
 2027,Infrastructure investment,Labor supply (L<sub>t</sub>),0.295
@@ -909,32 +935,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Labor supply (L<sub>t</sub>),0.111
 2049,R&D investment,Labor supply (L<sub>t</sub>),0.093
 2050,R&D investment,Labor supply (L<sub>t</sub>),0.077
-2025,Government consumption,Labor supply (L<sub>t</sub>),0.0
-2026,Government consumption,Labor supply (L<sub>t</sub>),0.357
-2027,Government consumption,Labor supply (L<sub>t</sub>),0.35
-2028,Government consumption,Labor supply (L<sub>t</sub>),0.347
-2029,Government consumption,Labor supply (L<sub>t</sub>),0.344
-2030,Government consumption,Labor supply (L<sub>t</sub>),0.342
-2031,Government consumption,Labor supply (L<sub>t</sub>),0.339
-2032,Government consumption,Labor supply (L<sub>t</sub>),0.337
-2033,Government consumption,Labor supply (L<sub>t</sub>),0.335
-2034,Government consumption,Labor supply (L<sub>t</sub>),0.333
-2035,Government consumption,Labor supply (L<sub>t</sub>),0.332
-2036,Government consumption,Labor supply (L<sub>t</sub>),0.33
-2037,Government consumption,Labor supply (L<sub>t</sub>),0.328
-2038,Government consumption,Labor supply (L<sub>t</sub>),0.326
-2039,Government consumption,Labor supply (L<sub>t</sub>),0.324
-2040,Government consumption,Labor supply (L<sub>t</sub>),0.323
-2041,Government consumption,Labor supply (L<sub>t</sub>),0.321
-2042,Government consumption,Labor supply (L<sub>t</sub>),0.319
-2043,Government consumption,Labor supply (L<sub>t</sub>),0.318
-2044,Government consumption,Labor supply (L<sub>t</sub>),0.316
-2045,Government consumption,Labor supply (L<sub>t</sub>),0.315
-2046,Government consumption,Labor supply (L<sub>t</sub>),0.314
-2047,Government consumption,Labor supply (L<sub>t</sub>),0.312
-2048,Government consumption,Labor supply (L<sub>t</sub>),0.311
-2049,Government consumption,Labor supply (L<sub>t</sub>),0.31
-2050,Government consumption,Labor supply (L<sub>t</sub>),0.309
+2025,Government consumption,Human capital stock (H<sub>t</sub>),0.0
+2026,Government consumption,Human capital stock (H<sub>t</sub>),0.039
+2027,Government consumption,Human capital stock (H<sub>t</sub>),0.049
+2028,Government consumption,Human capital stock (H<sub>t</sub>),0.059
+2029,Government consumption,Human capital stock (H<sub>t</sub>),0.068
+2030,Government consumption,Human capital stock (H<sub>t</sub>),0.076
+2031,Government consumption,Human capital stock (H<sub>t</sub>),0.082
+2032,Government consumption,Human capital stock (H<sub>t</sub>),0.089
+2033,Government consumption,Human capital stock (H<sub>t</sub>),0.094
+2034,Government consumption,Human capital stock (H<sub>t</sub>),0.099
+2035,Government consumption,Human capital stock (H<sub>t</sub>),0.103
+2036,Government consumption,Human capital stock (H<sub>t</sub>),0.107
+2037,Government consumption,Human capital stock (H<sub>t</sub>),0.11
+2038,Government consumption,Human capital stock (H<sub>t</sub>),0.113
+2039,Government consumption,Human capital stock (H<sub>t</sub>),0.116
+2040,Government consumption,Human capital stock (H<sub>t</sub>),0.119
+2041,Government consumption,Human capital stock (H<sub>t</sub>),0.121
+2042,Government consumption,Human capital stock (H<sub>t</sub>),0.123
+2043,Government consumption,Human capital stock (H<sub>t</sub>),0.124
+2044,Government consumption,Human capital stock (H<sub>t</sub>),0.126
+2045,Government consumption,Human capital stock (H<sub>t</sub>),0.127
+2046,Government consumption,Human capital stock (H<sub>t</sub>),0.129
+2047,Government consumption,Human capital stock (H<sub>t</sub>),0.13
+2048,Government consumption,Human capital stock (H<sub>t</sub>),0.131
+2049,Government consumption,Human capital stock (H<sub>t</sub>),0.132
+2050,Government consumption,Human capital stock (H<sub>t</sub>),0.133
 2025,Infrastructure investment,Human capital stock (H<sub>t</sub>),0.0
 2026,Infrastructure investment,Human capital stock (H<sub>t</sub>),0.041
 2027,Infrastructure investment,Human capital stock (H<sub>t</sub>),0.044
@@ -1013,32 +1039,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Human capital stock (H<sub>t</sub>),-0.14
 2049,R&D investment,Human capital stock (H<sub>t</sub>),-0.138
 2050,R&D investment,Human capital stock (H<sub>t</sub>),-0.136
-2025,Government consumption,Human capital stock (H<sub>t</sub>),0.0
-2026,Government consumption,Human capital stock (H<sub>t</sub>),0.039
-2027,Government consumption,Human capital stock (H<sub>t</sub>),0.049
-2028,Government consumption,Human capital stock (H<sub>t</sub>),0.059
-2029,Government consumption,Human capital stock (H<sub>t</sub>),0.068
-2030,Government consumption,Human capital stock (H<sub>t</sub>),0.076
-2031,Government consumption,Human capital stock (H<sub>t</sub>),0.082
-2032,Government consumption,Human capital stock (H<sub>t</sub>),0.089
-2033,Government consumption,Human capital stock (H<sub>t</sub>),0.094
-2034,Government consumption,Human capital stock (H<sub>t</sub>),0.099
-2035,Government consumption,Human capital stock (H<sub>t</sub>),0.103
-2036,Government consumption,Human capital stock (H<sub>t</sub>),0.107
-2037,Government consumption,Human capital stock (H<sub>t</sub>),0.11
-2038,Government consumption,Human capital stock (H<sub>t</sub>),0.113
-2039,Government consumption,Human capital stock (H<sub>t</sub>),0.116
-2040,Government consumption,Human capital stock (H<sub>t</sub>),0.119
-2041,Government consumption,Human capital stock (H<sub>t</sub>),0.121
-2042,Government consumption,Human capital stock (H<sub>t</sub>),0.123
-2043,Government consumption,Human capital stock (H<sub>t</sub>),0.124
-2044,Government consumption,Human capital stock (H<sub>t</sub>),0.126
-2045,Government consumption,Human capital stock (H<sub>t</sub>),0.127
-2046,Government consumption,Human capital stock (H<sub>t</sub>),0.129
-2047,Government consumption,Human capital stock (H<sub>t</sub>),0.13
-2048,Government consumption,Human capital stock (H<sub>t</sub>),0.131
-2049,Government consumption,Human capital stock (H<sub>t</sub>),0.132
-2050,Government consumption,Human capital stock (H<sub>t</sub>),0.133
+2025,Government consumption,Inflation (Π<sub>t</sub>),0.0
+2026,Government consumption,Inflation (Π<sub>t</sub>),-0.492
+2027,Government consumption,Inflation (Π<sub>t</sub>),-0.536
+2028,Government consumption,Inflation (Π<sub>t</sub>),-0.579
+2029,Government consumption,Inflation (Π<sub>t</sub>),-0.62
+2030,Government consumption,Inflation (Π<sub>t</sub>),-0.659
+2031,Government consumption,Inflation (Π<sub>t</sub>),-0.696
+2032,Government consumption,Inflation (Π<sub>t</sub>),-0.731
+2033,Government consumption,Inflation (Π<sub>t</sub>),-0.765
+2034,Government consumption,Inflation (Π<sub>t</sub>),-0.797
+2035,Government consumption,Inflation (Π<sub>t</sub>),-0.827
+2036,Government consumption,Inflation (Π<sub>t</sub>),-0.856
+2037,Government consumption,Inflation (Π<sub>t</sub>),-0.884
+2038,Government consumption,Inflation (Π<sub>t</sub>),-0.91
+2039,Government consumption,Inflation (Π<sub>t</sub>),-0.935
+2040,Government consumption,Inflation (Π<sub>t</sub>),-0.958
+2041,Government consumption,Inflation (Π<sub>t</sub>),-0.98
+2042,Government consumption,Inflation (Π<sub>t</sub>),-1.001
+2043,Government consumption,Inflation (Π<sub>t</sub>),-1.021
+2044,Government consumption,Inflation (Π<sub>t</sub>),-1.04
+2045,Government consumption,Inflation (Π<sub>t</sub>),-1.058
+2046,Government consumption,Inflation (Π<sub>t</sub>),-1.075
+2047,Government consumption,Inflation (Π<sub>t</sub>),-1.091
+2048,Government consumption,Inflation (Π<sub>t</sub>),-1.106
+2049,Government consumption,Inflation (Π<sub>t</sub>),-1.121
+2050,Government consumption,Inflation (Π<sub>t</sub>),-1.134
 2025,Infrastructure investment,Inflation (Π<sub>t</sub>),0.0
 2026,Infrastructure investment,Inflation (Π<sub>t</sub>),-0.825
 2027,Infrastructure investment,Inflation (Π<sub>t</sub>),-1.123
@@ -1117,32 +1143,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Inflation (Π<sub>t</sub>),-7.708
 2049,R&D investment,Inflation (Π<sub>t</sub>),-7.86
 2050,R&D investment,Inflation (Π<sub>t</sub>),-8.002
-2025,Government consumption,Inflation (Π<sub>t</sub>),0.0
-2026,Government consumption,Inflation (Π<sub>t</sub>),-0.492
-2027,Government consumption,Inflation (Π<sub>t</sub>),-0.536
-2028,Government consumption,Inflation (Π<sub>t</sub>),-0.579
-2029,Government consumption,Inflation (Π<sub>t</sub>),-0.62
-2030,Government consumption,Inflation (Π<sub>t</sub>),-0.659
-2031,Government consumption,Inflation (Π<sub>t</sub>),-0.696
-2032,Government consumption,Inflation (Π<sub>t</sub>),-0.731
-2033,Government consumption,Inflation (Π<sub>t</sub>),-0.765
-2034,Government consumption,Inflation (Π<sub>t</sub>),-0.797
-2035,Government consumption,Inflation (Π<sub>t</sub>),-0.827
-2036,Government consumption,Inflation (Π<sub>t</sub>),-0.856
-2037,Government consumption,Inflation (Π<sub>t</sub>),-0.884
-2038,Government consumption,Inflation (Π<sub>t</sub>),-0.91
-2039,Government consumption,Inflation (Π<sub>t</sub>),-0.935
-2040,Government consumption,Inflation (Π<sub>t</sub>),-0.958
-2041,Government consumption,Inflation (Π<sub>t</sub>),-0.98
-2042,Government consumption,Inflation (Π<sub>t</sub>),-1.001
-2043,Government consumption,Inflation (Π<sub>t</sub>),-1.021
-2044,Government consumption,Inflation (Π<sub>t</sub>),-1.04
-2045,Government consumption,Inflation (Π<sub>t</sub>),-1.058
-2046,Government consumption,Inflation (Π<sub>t</sub>),-1.075
-2047,Government consumption,Inflation (Π<sub>t</sub>),-1.091
-2048,Government consumption,Inflation (Π<sub>t</sub>),-1.106
-2049,Government consumption,Inflation (Π<sub>t</sub>),-1.121
-2050,Government consumption,Inflation (Π<sub>t</sub>),-1.134
+2025,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
+2026,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.464
+2027,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.512
+2028,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.557
+2029,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.6
+2030,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.64
+2031,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.679
+2032,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.716
+2033,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.75
+2034,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.784
+2035,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.815
+2036,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.845
+2037,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.873
+2038,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.9
+2039,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.926
+2040,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.95
+2041,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.973
+2042,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.995
+2043,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.016
+2044,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.035
+2045,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.054
+2046,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.071
+2047,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.088
+2048,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.104
+2049,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.119
+2050,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.133
 2025,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
 2026,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.817
 2027,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.087
@@ -1221,32 +1247,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.651
 2049,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.811
 2050,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.96
-2025,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2026,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.464
-2027,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.512
-2028,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.557
-2029,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.6
-2030,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.64
-2031,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.679
-2032,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.716
-2033,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.75
-2034,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.784
-2035,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.815
-2036,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.845
-2037,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.873
-2038,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.9
-2039,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.926
-2040,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.95
-2041,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.973
-2042,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.995
-2043,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.016
-2044,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.035
-2045,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.054
-2046,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.071
-2047,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.088
-2048,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.104
-2049,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.119
-2050,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.133
+2025,Government consumption,Nominal bond rate (R<sub>t</sub>),0.0
+2026,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.464
+2027,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.512
+2028,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.557
+2029,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.6
+2030,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.64
+2031,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.679
+2032,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.716
+2033,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.75
+2034,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.784
+2035,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.815
+2036,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.845
+2037,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.873
+2038,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.9
+2039,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.926
+2040,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.95
+2041,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.973
+2042,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.995
+2043,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.016
+2044,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.035
+2045,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.054
+2046,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.071
+2047,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.088
+2048,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.104
+2049,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.119
+2050,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.133
 2025,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),0.0
 2026,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-0.817
 2027,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-1.087
@@ -1325,32 +1351,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.651
 2049,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.811
 2050,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.96
-2025,Government consumption,Nominal bond rate (R<sub>t</sub>),0.0
-2026,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.464
-2027,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.512
-2028,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.557
-2029,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.6
-2030,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.64
-2031,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.679
-2032,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.716
-2033,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.75
-2034,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.784
-2035,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.815
-2036,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.845
-2037,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.873
-2038,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.9
-2039,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.926
-2040,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.95
-2041,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.973
-2042,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.995
-2043,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.016
-2044,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.035
-2045,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.054
-2046,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.071
-2047,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.088
-2048,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.104
-2049,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.119
-2050,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.133
+2025,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+2026,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.031
+2027,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.027
+2028,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.025
+2029,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.024
+2030,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.022
+2031,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.021
+2032,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.02
+2033,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.019
+2034,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.018
+2035,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.017
+2036,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.016
+2037,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.015
+2038,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.015
+2039,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.014
+2040,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.013
+2041,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.013
+2042,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.012
+2043,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.011
+2044,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.011
+2045,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.01
+2046,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.01
+2047,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.009
+2048,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.009
+2049,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.008
+2050,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.008
 2025,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2026,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.013
 2027,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.042
@@ -1429,32 +1455,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.101
 2049,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.094
 2050,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.088
-2025,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
-2026,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.031
-2027,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.027
-2028,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.025
-2029,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.024
-2030,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.022
-2031,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.021
-2032,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.02
-2033,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.019
-2034,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.018
-2035,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.017
-2036,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.016
-2037,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.015
-2038,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.015
-2039,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.014
-2040,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.013
-2041,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.013
-2042,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.012
-2043,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.011
-2044,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.011
-2045,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.01
-2046,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.01
-2047,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.009
-2048,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.009
-2049,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.008
-2050,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.008
+2025,Government consumption,Primary deficit,0.0
+2026,Government consumption,Primary deficit,1.082
+2027,Government consumption,Primary deficit,1.033
+2028,Government consumption,Primary deficit,0.985
+2029,Government consumption,Primary deficit,0.94
+2030,Government consumption,Primary deficit,0.896
+2031,Government consumption,Primary deficit,0.854
+2032,Government consumption,Primary deficit,0.814
+2033,Government consumption,Primary deficit,0.775
+2034,Government consumption,Primary deficit,0.738
+2035,Government consumption,Primary deficit,0.703
+2036,Government consumption,Primary deficit,0.669
+2037,Government consumption,Primary deficit,0.636
+2038,Government consumption,Primary deficit,0.605
+2039,Government consumption,Primary deficit,0.575
+2040,Government consumption,Primary deficit,0.546
+2041,Government consumption,Primary deficit,0.518
+2042,Government consumption,Primary deficit,0.491
+2043,Government consumption,Primary deficit,0.465
+2044,Government consumption,Primary deficit,0.441
+2045,Government consumption,Primary deficit,0.417
+2046,Government consumption,Primary deficit,0.394
+2047,Government consumption,Primary deficit,0.373
+2048,Government consumption,Primary deficit,0.352
+2049,Government consumption,Primary deficit,0.332
+2050,Government consumption,Primary deficit,0.312
 2025,Infrastructure investment,Primary deficit,0.0
 2026,Infrastructure investment,Primary deficit,1.0
 2027,Infrastructure investment,Primary deficit,0.935
@@ -1533,32 +1559,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Primary deficit,-0.225
 2049,R&D investment,Primary deficit,-0.244
 2050,R&D investment,Primary deficit,-0.261
-2025,Government consumption,Primary deficit,0.0
-2026,Government consumption,Primary deficit,1.082
-2027,Government consumption,Primary deficit,1.033
-2028,Government consumption,Primary deficit,0.985
-2029,Government consumption,Primary deficit,0.94
-2030,Government consumption,Primary deficit,0.896
-2031,Government consumption,Primary deficit,0.854
-2032,Government consumption,Primary deficit,0.814
-2033,Government consumption,Primary deficit,0.775
-2034,Government consumption,Primary deficit,0.738
-2035,Government consumption,Primary deficit,0.703
-2036,Government consumption,Primary deficit,0.669
-2037,Government consumption,Primary deficit,0.636
-2038,Government consumption,Primary deficit,0.605
-2039,Government consumption,Primary deficit,0.575
-2040,Government consumption,Primary deficit,0.546
-2041,Government consumption,Primary deficit,0.518
-2042,Government consumption,Primary deficit,0.491
-2043,Government consumption,Primary deficit,0.465
-2044,Government consumption,Primary deficit,0.441
-2045,Government consumption,Primary deficit,0.417
-2046,Government consumption,Primary deficit,0.394
-2047,Government consumption,Primary deficit,0.373
-2048,Government consumption,Primary deficit,0.352
-2049,Government consumption,Primary deficit,0.332
-2050,Government consumption,Primary deficit,0.312
+2025,Government consumption,Transfers (T<sub>t</sub>),0.0
+2026,Government consumption,Transfers (T<sub>t</sub>),-0.032
+2027,Government consumption,Transfers (T<sub>t</sub>),-0.076
+2028,Government consumption,Transfers (T<sub>t</sub>),-0.117
+2029,Government consumption,Transfers (T<sub>t</sub>),-0.157
+2030,Government consumption,Transfers (T<sub>t</sub>),-0.196
+2031,Government consumption,Transfers (T<sub>t</sub>),-0.233
+2032,Government consumption,Transfers (T<sub>t</sub>),-0.268
+2033,Government consumption,Transfers (T<sub>t</sub>),-0.302
+2034,Government consumption,Transfers (T<sub>t</sub>),-0.335
+2035,Government consumption,Transfers (T<sub>t</sub>),-0.367
+2036,Government consumption,Transfers (T<sub>t</sub>),-0.397
+2037,Government consumption,Transfers (T<sub>t</sub>),-0.426
+2038,Government consumption,Transfers (T<sub>t</sub>),-0.454
+2039,Government consumption,Transfers (T<sub>t</sub>),-0.481
+2040,Government consumption,Transfers (T<sub>t</sub>),-0.507
+2041,Government consumption,Transfers (T<sub>t</sub>),-0.531
+2042,Government consumption,Transfers (T<sub>t</sub>),-0.555
+2043,Government consumption,Transfers (T<sub>t</sub>),-0.578
+2044,Government consumption,Transfers (T<sub>t</sub>),-0.6
+2045,Government consumption,Transfers (T<sub>t</sub>),-0.622
+2046,Government consumption,Transfers (T<sub>t</sub>),-0.642
+2047,Government consumption,Transfers (T<sub>t</sub>),-0.662
+2048,Government consumption,Transfers (T<sub>t</sub>),-0.681
+2049,Government consumption,Transfers (T<sub>t</sub>),-0.699
+2050,Government consumption,Transfers (T<sub>t</sub>),-0.716
 2025,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
 2026,Infrastructure investment,Transfers (T<sub>t</sub>),-0.033
 2027,Infrastructure investment,Transfers (T<sub>t</sub>),-0.069
@@ -1637,32 +1663,32 @@ year,shock,variable,pct_dev
 2048,R&D investment,Transfers (T<sub>t</sub>),-0.362
 2049,R&D investment,Transfers (T<sub>t</sub>),-0.358
 2050,R&D investment,Transfers (T<sub>t</sub>),-0.354
-2025,Government consumption,Transfers (T<sub>t</sub>),0.0
-2026,Government consumption,Transfers (T<sub>t</sub>),-0.032
-2027,Government consumption,Transfers (T<sub>t</sub>),-0.076
-2028,Government consumption,Transfers (T<sub>t</sub>),-0.117
-2029,Government consumption,Transfers (T<sub>t</sub>),-0.157
-2030,Government consumption,Transfers (T<sub>t</sub>),-0.196
-2031,Government consumption,Transfers (T<sub>t</sub>),-0.233
-2032,Government consumption,Transfers (T<sub>t</sub>),-0.268
-2033,Government consumption,Transfers (T<sub>t</sub>),-0.302
-2034,Government consumption,Transfers (T<sub>t</sub>),-0.335
-2035,Government consumption,Transfers (T<sub>t</sub>),-0.367
-2036,Government consumption,Transfers (T<sub>t</sub>),-0.397
-2037,Government consumption,Transfers (T<sub>t</sub>),-0.426
-2038,Government consumption,Transfers (T<sub>t</sub>),-0.454
-2039,Government consumption,Transfers (T<sub>t</sub>),-0.481
-2040,Government consumption,Transfers (T<sub>t</sub>),-0.507
-2041,Government consumption,Transfers (T<sub>t</sub>),-0.531
-2042,Government consumption,Transfers (T<sub>t</sub>),-0.555
-2043,Government consumption,Transfers (T<sub>t</sub>),-0.578
-2044,Government consumption,Transfers (T<sub>t</sub>),-0.6
-2045,Government consumption,Transfers (T<sub>t</sub>),-0.622
-2046,Government consumption,Transfers (T<sub>t</sub>),-0.642
-2047,Government consumption,Transfers (T<sub>t</sub>),-0.662
-2048,Government consumption,Transfers (T<sub>t</sub>),-0.681
-2049,Government consumption,Transfers (T<sub>t</sub>),-0.699
-2050,Government consumption,Transfers (T<sub>t</sub>),-0.716
+2025,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),0.0
+2026,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),5.323
+2027,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),9.733
+2028,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),13.966
+2029,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),18.03
+2030,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),21.934
+2031,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),25.684
+2032,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),29.287
+2033,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),32.75
+2034,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),36.077
+2035,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),39.276
+2036,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),42.349
+2037,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),45.304
+2038,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),48.145
+2039,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),50.875
+2040,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),53.5
+2041,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),56.024
+2042,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),58.45
+2043,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),60.783
+2044,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),63.026
+2045,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),65.184
+2046,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),67.258
+2047,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),69.253
+2048,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),71.171
+2049,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),73.017
+2050,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),74.792
 2025,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),0.0
 2026,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),5.36
 2027,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),9.643
@@ -1741,29 +1767,3 @@ year,shock,variable,pct_dev
 2048,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),55.268
 2049,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),55.275
 2050,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),55.17
-2025,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-2026,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),5.323
-2027,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),9.733
-2028,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),13.966
-2029,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),18.03
-2030,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),21.934
-2031,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),25.684
-2032,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),29.287
-2033,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),32.75
-2034,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),36.077
-2035,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),39.276
-2036,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),42.349
-2037,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),45.304
-2038,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),48.145
-2039,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),50.875
-2040,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),53.5
-2041,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),56.024
-2042,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),58.45
-2043,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),60.783
-2044,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),63.026
-2045,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),65.184
-2046,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),67.258
-2047,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),69.253
-2048,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),71.171
-2049,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),73.017
-2050,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),74.792
