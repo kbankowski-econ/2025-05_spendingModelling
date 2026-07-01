@@ -207,9 +207,9 @@ where $C_t$ is consumption, $\beta \in (0,1)$ is the discount factor, $\varphi$ 
 The household's unit time endowment is split between labor supply $L_t$, time devoted to human capital accumulation $E_t$, and leisure $1 - L_t - E_t$.
 The flow budget constraint, in real terms, is
 \begin{equation} \label{eq:hhbudget}
-    \left(1+\tau_t^{c}\right) C_t + I_t + D_t = \left(1-\tau_t^{w}\right) w_t N_t + r_t^{k} K_{t-1} + \frac{R_{t-1}}{\Pi_t} D_{t-1} + T_t + \Omega_t,
+    \left(1+\tau_t^{c}\right) C_t + I_t + B_t = \left(1-\tau_t^{w}\right) w_t N_t + r_t^{k} K_{t-1} + \frac{R_{t-1}}{\Pi_t} B_{t-1} + T_t + \Omega_t,
 \end{equation}
-where $\tau_t^{c}$ and $\tau_t^{w}$ are the consumption and labor income tax rates, $I_t$ is private investment, $D_t$ is real holdings of government debt paying the gross return $R_{t-1}$, $\Pi_t$ is gross inflation, $w_t$ is the real wage, $N_t \equiv H_{t-1} L_t$ is effective labor (the human-capital stock enters predetermined), $r_t^{k}$ is the rental rate of private capital $K_t$, $T_t$ are lump-sum transfers, and $\Omega_t$ are profits rebated by firms and technology adopters.
+where $\tau_t^{c}$ and $\tau_t^{w}$ are the consumption and labor income tax rates, $I_t$ is private investment, $B_t$ is real holdings of government debt paying the gross return $R_{t-1}$, $\Pi_t$ is gross inflation, $w_t$ is the real wage, $N_t \equiv H_{t-1} L_t$ is effective labor (the human-capital stock enters predetermined), $r_t^{k}$ is the rental rate of private capital $K_t$, $T_t$ are lump-sum transfers, and $\Omega_t$ are profits rebated by firms and technology adopters.
 
 Let $\lambda_t$ denote the marginal utility of consumption. Optimal choices over consumption, debt, and private capital imply
 \begin{align}
@@ -283,11 +283,11 @@ The productivity payoff of the adopted-technology stock $A_t$ is realized in the
 \end{align}
 Only a fraction $1 - e^{x}$ of each unit spent is converted into productive capital. An analogous wedge $e^{GRD}$ applies to public R\&D, so that effective R\&D in equation~\eqref{eq:Z} is $\left(1 - e^{GRD}\right) G_t^{RD}$.\footnote{A second dimension of efficiency relates to allocating resources toward higher-return projects, referred to as allocative efficiency. Section~\ref{sec:results} also considers an extended scenario that incorporates both technical and allocative efficiency improvements.}
 
-\paragraph{Budget and instruments.} Let $D_t$ denote real public debt and $d_t = D_t/Y_t$ the debt-to-GDP ratio. The government budget constraint is
+\paragraph{Budget and instruments.} Let $B_t$ denote real public debt and $b_t = B_t/Y_t$ the debt-to-GDP ratio. The government budget constraint is
 \begin{equation} \label{eq:govbudget}
-    D_t = \frac{R_{t-1}}{\Pi_t} D_{t-1} + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + T_t - \tau_t^{w} w_t N_t - \tau_t^{c} C_t,
+    B_t = \frac{R_{t-1}}{\Pi_t} B_{t-1} + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + T_t - \tau_t^{w} w_t N_t - \tau_t^{c} C_t,
 \end{equation}
-where $G_t^{C}$ is government consumption. The four expenditure instruments---$G_t^{C}$, $I_t^{GI}$, $I_t^{GE}$, and $G_t^{RD}$---can be moved independently. In the policy experiments of Section~\ref{sec:results}, an increase in one growth-enhancing category is financed by an equal cut in government consumption, keeping the reform budget-neutral on impact. The tax rates and transfers adjust gradually to stabilize debt, responding to the deviation of the debt-to-GDP ratio from its target $d^{*}$.
+where $G_t^{C}$ is government consumption. The four expenditure instruments---$G_t^{C}$, $I_t^{GI}$, $I_t^{GE}$, and $G_t^{RD}$---can be moved independently. In the policy experiments of Section~\ref{sec:results}, an increase in one growth-enhancing category is financed by an equal cut in government consumption, keeping the reform budget-neutral on impact. The tax rates and transfers adjust gradually to stabilize debt, responding to the deviation of the debt-to-GDP ratio from its target $b^{*}$.
 
 \paragraph{Monetary policy and sovereign borrowing cost.} The central bank sets the policy rate $R_t^{mp}$ according to a Taylor rule,
 \begin{equation} \label{eq:taylor}
@@ -569,11 +569,11 @@ The expenditure instruments follow
 \end{align}
 where unstarred steady-state values carry no time index and $Y^{d}$ is steady-state demand. Each instrument is its steady-state level plus a scaled innovation; in the policy experiments these innovations follow a persistent path (AR(1), persistence 0.9; Section~\ref{sec:properties}). Government consumption is an ordinary instrument with its own innovation $\varepsilon_t^{gc}$. The budget-neutral experiments of Section~\ref{sec:results} finance a rise in investment or R\&D with an equal cut in consumption by setting $\varepsilon_t^{gc} = -\left(\varepsilon_t^{igi} + \varepsilon_t^{ige} + \varepsilon_t^{grd}\right)$; a non-neutral experiment sets it freely. Taxes and transfers stabilize debt,
 \begin{align}
-    \tau_t^{c} - \tau^{c} &= \rho_{\tau c}\left(\tau_{t-1}^{c} - \tau^{c}\right) + \left(1-\rho_{\tau c}\right)\gamma_{d}^{\tau c}\left(d_{t-1} - d^{*}\right) + \varepsilon_t^{\tau c}, \\
-    \tau_t^{w} - \tau^{w} &= \rho_{\tau w}\left(\tau_{t-1}^{w} - \tau^{w}\right) + \left(1-\rho_{\tau w}\right)\gamma_{d}^{\tau w}\left(d_{t-1} - d^{*}\right) + \varepsilon_t^{\tau w}, \\
-    T_t - T &= \rho_{T}\left(T_{t-1} - T\right) - \left(1-\rho_{T}\right)\gamma_{d}^{T}\left(d_{t-1} - d^{*}\right) Y^{d},
+    \tau_t^{c} - \tau^{c} &= \rho_{\tau c}\left(\tau_{t-1}^{c} - \tau^{c}\right) + \left(1-\rho_{\tau c}\right)\gamma_{d}^{\tau c}\left(b_{t-1} - b^{*}\right) + \varepsilon_t^{\tau c}, \\
+    \tau_t^{w} - \tau^{w} &= \rho_{\tau w}\left(\tau_{t-1}^{w} - \tau^{w}\right) + \left(1-\rho_{\tau w}\right)\gamma_{d}^{\tau w}\left(b_{t-1} - b^{*}\right) + \varepsilon_t^{\tau w}, \\
+    T_t - T &= \rho_{T}\left(T_{t-1} - T\right) - \left(1-\rho_{T}\right)\gamma_{d}^{T}\left(b_{t-1} - b^{*}\right) Y^{d},
 \end{align}
-with $d_t = D_t / Y_t$ the debt-to-GDP ratio and $d^{*}$ its target.
+with $b_t = B_t / Y_t$ the debt-to-GDP ratio and $b^{*}$ its target.
 
 \subsection{Monetary Policy and Government Borrowing Rate}
 
