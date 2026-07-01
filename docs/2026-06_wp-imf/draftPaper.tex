@@ -602,6 +602,21 @@ Table~\ref{tab:notation} summarizes the main endogenous variables.
 \end{table}
 
 %========================================================================
+\section{Notation: Paper and Model Symbols} \label{app:glossary}
+%========================================================================
+
+This appendix maps the paper's notation to the variable and parameter names used in the model code (\texttt{models/}). The tables are complete: they list every endogenous variable, parameter, and exogenous shock declared in the model. The model-code column gives the exact name in the Dynare declarations; a dash (--) in the first column marks an object with no paper symbol---steady-state constants, log levels, reporting transforms, and purely computational auxiliaries.
+
+\subsection{Endogenous Variables}
+\input{glossaryEndogenous.tex}
+
+\subsection{Parameters}
+\input{glossaryParameters.tex}
+
+\subsection{Exogenous Variables (Shocks)}
+\input{glossaryExogenous.tex}
+
+%========================================================================
 \section{Spending-Efficiency Estimates} \label{app:efficiency}
 %========================================================================
 
@@ -662,20 +677,5 @@ The multipliers in Table~\ref{tab:multipliers} are computed for AR(1) (persisten
     \vspace{1mm}
     \tabnote{IMF staff estimates.}{As Table~\ref{tab:multipliers}, but for a \emph{permanent} 1-percent-of-GDP debt-financed increase in each spending category (no decay), with no offsetting cut to other spending. Output and spending are discounted at the model's steady-state real interest rate before cumulating. The ``Long-term'' column reports the multiplier at a 250-year horizon; under a permanent increase the cumulative multiplier converges to its long-run value more gradually than under the AR(1) shock, so this column still slightly understates the eventual steady-state multiplier. The R\&D innovation channel is shut down for emerging market and developing economies.}
 \end{table}
-
-%========================================================================
-\section{Notation: Paper and Model Symbols} \label{app:glossary}
-%========================================================================
-
-This appendix maps the paper's notation to the variable and parameter names used in the model code (\texttt{models/}). The tables are complete: they list every endogenous variable, parameter, and exogenous shock declared in the model. The model-code column gives the exact name in the Dynare declarations; a dash (--) in the first column marks an object with no paper symbol---steady-state constants, log levels, reporting transforms, and purely computational auxiliaries.
-
-\subsection{Endogenous Variables}
-\input{glossaryEndogenous.tex}
-
-\subsection{Parameters}
-\input{glossaryParameters.tex}
-
-\subsection{Exogenous Variables (Shocks)}
-\input{glossaryExogenous.tex}
 
 \end{document}
