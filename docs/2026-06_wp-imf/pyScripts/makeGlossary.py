@@ -119,13 +119,15 @@ ENDOGENOUS = [
     ("Balanced growth", [
         (r"$g_t$",            "Gross growth rate",                        "g"),
     ]),
-    ("Auxiliary, steady-state, and reporting", [
+    ("Auxiliary and steady state", [
         (r"$R_t/\Pi_t$",      "Ex-post real interest rate",               "rreal"),
         ("--",                "Steady-state output (value added)",        "ydss"),
         ("--",                "Steady-state borrowing rate",              "Rss"),
-        ("--",                "Primary deficit, share of steady-state GDP", "pdef_yss"),
-        ("--",                "Transfers, share of steady-state GDP",     "T_yss"),
-        ("--",                "Public debt, share of steady-state GDP",   "by_yss"),
+    ]),
+    ("Reporting (share of steady-state GDP)", [
+        ("--",                "Primary deficit",                          "pdef_yss"),
+        ("--",                "Transfers",                                "T_yss"),
+        ("--",                "Public debt",                              "by_yss"),
     ]),
 ]
 
