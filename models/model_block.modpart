@@ -113,7 +113,7 @@ eGI = eGI_ss-epsi_effgi;
 eGE = eGE_ss-epsi_effge;
 
 // Gap in R&D spending efficiency (e^GRD)
-eGRD = eGRD_ss-epsi_effcgrd;
+eGRD = eGRD_ss-epsi_effgrd;
 
 //********************************************************
 // MARKET CLEARING AND EQUILIBRIUM

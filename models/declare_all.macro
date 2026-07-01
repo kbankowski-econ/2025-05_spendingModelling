@@ -76,7 +76,7 @@ epsi_effge
 epsi_effgi
 epsi_grd       % Shock to R&D spending
 epsi_q
-epsi_effcgrd
+epsi_effgrd
 ;
 
 %--------------------------

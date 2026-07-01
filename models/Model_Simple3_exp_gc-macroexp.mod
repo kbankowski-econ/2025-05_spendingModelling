@@ -82,7 +82,7 @@ epsi_effge
 epsi_effgi
 epsi_grd       % Shock to R&D spending
 epsi_q
-epsi_effcgrd
+epsi_effgrd
 ;
 %--------------------------
 % Define parameters
@@ -283,7 +283,7 @@ eGE = eGE_ss-epsi_effge;
 // Gap in infrastructure spending efficiency (e^GI)
 eGI = eGI_ss-epsi_effgi;
 // Gap in R&D spending efficiency (e^GRD)
-eGRD = eGRD_ss-epsi_effcgrd;
+eGRD = eGRD_ss-epsi_effgrd;
 //********************************************************
 // VARIABLES OF INTEREST
 //********************************************************

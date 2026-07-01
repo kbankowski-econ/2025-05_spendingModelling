@@ -74,7 +74,7 @@ epsi_effge
 epsi_effgi
 epsi_grd       % Shock to R&D spending
 epsi_q
-epsi_effcgrd
+epsi_effgrd
 ;
 %--------------------------
 % Define parameters
@@ -262,7 +262,7 @@ eGI = eGI_ss-epsi_effgi;
 // Gap in human-capital spending efficiency (e^GE; positive shock closes the gap)
 eGE = eGE_ss-epsi_effge;
 // Gap in R&D spending efficiency (e^GRD)
-eGRD = eGRD_ss-epsi_effcgrd;
+eGRD = eGRD_ss-epsi_effgrd;
 //********************************************************
 // MARKET CLEARING AND EQUILIBRIUM
 //********************************************************

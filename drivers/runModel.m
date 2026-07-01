@@ -154,7 +154,7 @@ modelList = {
     % --- AE R&D efficiency gain --- The R&D counterpart of the AE efficiency block
     % above; enters Figure 3 (fig:efficiencyAE, Section 5.2) as the R&D bars.
     'Model_HumanCapital_epsi_cgrd_eff25y',      'AE', 'AE',     {{'epsi_grd',    'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effcgrd', 'ramp',  0.41,  '1:100'}
+                                                                 {'epsi_effgrd',  'ramp',  0.41,  '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     % --- AE technology-diffusion experiments --- The combined HC+R&D reform under a
     % faster (adt) and a slower/limited (limt) technology-adoption speed. Enter
