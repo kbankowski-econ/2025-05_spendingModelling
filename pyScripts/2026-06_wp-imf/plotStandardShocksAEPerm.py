@@ -70,7 +70,7 @@ PANELS = [
     ("N",         "Effective labor (N<sub>t</sub>)"),
     # Row 3 - labor decomposition (percent deviation): effective labor N = H * L.
     # Only two panels; the rest of the row is intentionally left blank (None).
-    ("Lab",       "Labor supply (L<sub>t</sub>)"),
+    ("L",         "Labor supply (L<sub>t</sub>)"),
     ("H",         "Human capital stock (H<sub>t</sub>)"),
     None,
     None,

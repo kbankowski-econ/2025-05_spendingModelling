@@ -9,7 +9,7 @@
 ,{"lhs": "yd", "rhs":"ydss"}
 ,{"lhs": "y", "rhs":"yd"}
 ,{"lhs": "N", "rhs":"y"}
-,{"lhs": "Lab", "rhs":"N"}
+,{"lhs": "L", "rhs":"N"}
 ,{"lhs": "C", "rhs":"yd-Gc"}
 ,{"lhs": "lambda", "rhs":"1/C"}
 ,{"lhs": "x2", "rhs":"yd*PIstar*lambda/(1-betta*thetap)"}

@@ -78,12 +78,12 @@ Grdss=Grd;
 A=1;
 q=qss;
 SDF=betta;
-VA=(1+gammaa)/(1+gammaa-phi*SDF)*(markupss-1)/(markupss/mc)*y;
+V=(1+gammaa)/(1+gammaa-phi*SDF)*(markupss-1)/(markupss/mc)*y;
 Z=(1+gammaa-phi)/(q*phi)+A;
 
-J=(1-varsigma)*q*phi*SDF/(1+gammaa-(1-q+varsigma*q)*phi*betta)*VA;
+J=(1-varsigma)*q*phi*SDF/(1+gammaa-(1-q+varsigma*q)*phi*betta)*V;
 
-S=varsigma*q*phi*SDF/(1+gammaa)*(VA-J);
+S=varsigma*q*phi*SDF/(1+gammaa)*(V-J);
 
 %Srd=SDF*J*(Z/A-phi*Z/A*1/(1+gammaa));
 Srd=0;
@@ -140,7 +140,7 @@ lnPI=log(PI)*100;
 
 
 
-Lab=N;
+L=N;
 
 %{
 Lss=0.3
@@ -149,22 +149,22 @@ muySS=(1/betta-1+deltaH)/(Lss/Ess)/deltaH
 %}
 
 Lab_E_ratio=(1/betta-1+deltaH)/(gamma*deltaH);
-E=Lab/Lab_E_ratio;
+E=L/Lab_E_ratio;
 % Langangra of teh human capital equation
-lambda_HC=lambda*w*(1-tauw)/(gamma*1/E*deltaH);
+lambda_H=lambda*w*(1-tauw)/(gamma*1/E*deltaH);
 
-% Lab 
-%Lab=lambda_HC*(1/betta-1+deltaH)/(lambda*(1-tauw)*w);
+% L 
+%L=lambda_H*(1/betta-1+deltaH)/(lambda*(1-tauw)*w);
 %deltaH=0.016
 %
 % Human capital
-%H=N/Lab;
-H=(N+0*Ns)/Lab;
+%H=N/L;
+H=(N+0*Ns)/L;
 
 % Adjustment parameter for N 
-omega=lambda*w*(1-tauw)*H/(Lab+E)^varphi;
+omega=lambda*w*(1-tauw)*H/(L+E)^varphi;
 
-muyH=omega*(Lab+E)^varphi/(lambda_HC*gamma*E^(gamma-1)* (Kge)^mu);
+chiH=omega*(L+E)^varphi/(lambda_H*gamma*E^(gamma-1)* (Kge)^mu);
 
 
 ygrowth=log(g)*100;
@@ -174,7 +174,6 @@ eGI=eGI_ss;
 TFP=A^(vartheta-1)*(Kg^alphaG)*H^(1-alpha);
 ln_Grd=log(Grd);
 Grd_ydss_ratio=Grd/ydss;
-Grdeff=(1-eGRD_ss)*Grd;
 
 eGRD=eGRD_ss;
 %A=1;

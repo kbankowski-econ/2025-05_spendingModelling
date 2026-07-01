@@ -56,10 +56,10 @@ H               % Human capital
 Kge             % Public Human-related Capital Stock (HCS)
 Ige             % Public spending in public humand-related capital stock
 E               % Time for schooling and taking care of health (building capital)
-lambda_HC        % Lagrangian of the Human capital formation
+lambda_H        % Lagrangian of the Human capital formation
 Igess           % Steady state of public spending on Public human-capital related stock
-Lab             % Labor supply 
-muyH            % Adjuster so that E=0.1
+L             % Labor supply 
+chiH            % Adjuster so that E=0.1
 ygrowth          % econonmic growth
 eGE             % Gap in public human-capital efficiency (e^GE)
 eGI             % Gap in public infrastructure efficiency (e^GI)
@@ -69,7 +69,7 @@ Grdss          % R&D spending SS
 shockchi       % R&D process productivity shock SS
 SDF             % Stochastic discount factor
 S             % Effective labor demand for tech adoption
-VA              % Value of tech adoption
+V              % Value of tech adoption
 q       % Probability of adoption
 J             % Value of unadopted Intermediate
 Srd             % Effective labor demand for R&D development
@@ -80,7 +80,6 @@ Ns              % Labor in R&D
 TFP             % TFP
 Grd_ydss_ratio
 ln_Grd
-Grdeff
 eGRD            % Gap in public R&D efficiency (e^GRD)
 ;
 %-----------------------------
@@ -224,19 +223,19 @@ model;
 // Euler equation
 lambda = betta*(lambda(+1)/g(+1)*R/PI(+1));
 // Labor decision
-omega*(Lab+E)^varphi = lambda*w*H(-1)*(1-tauw);
+omega*(L+E)^varphi = lambda*w*H(-1)*(1-tauw);
 // Law of motion of private capital
 Kp*g = (1-delta)*Kp(-1)+Ip;
 // Return on private investment
 1 = betta*(lambda(+1)/lambda/g(+1)*(1-delta+rk(+1)));
 // Human capital of the household
-H = (1-deltaH)*H(-1)+muyH*E^gamma*(Kge(-1))^(mu*(1+epsiallo_ige));
+H = (1-deltaH)*H(-1)+chiH*E^gamma*(Kge(-1))^(mu*(1+epsiallo_ige));
 // Time devoted to building human capital (E)
-omega*(Lab+E)^varphi = lambda_HC*muyH*gamma*E^(gamma-1)*(Kge(-1))^(mu*(1+epsiallo_ige));
+omega*(L+E)^varphi = lambda_H*chiH*gamma*E^(gamma-1)*(Kge(-1))^(mu*(1+epsiallo_ige));
 // Shadow value of human capital
-lambda_HC = betta*(lambda(+1)*(1-tauw(+1))*w(+1)*Lab(+1)+lambda_HC(+1)*(1-deltaH));
+lambda_H = betta*(lambda(+1)*(1-tauw(+1))*w(+1)*L(+1)+lambda_H(+1)*(1-deltaH));
 // Effective labor
-N = Lab*H(-1);
+N = L*H(-1);
 //********************************************************
 // FIRMS DECISIONS
 //********************************************************
@@ -255,14 +254,12 @@ Kp(-1)/N = alpha/(1-alpha)*w/rk;
 y = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG*(1+epsiallo_ig)))*(Kp(-1)^alpha)*(N^(1-alpha))-Bigtheta;
 // Stochastic discount factor (detrended)
 SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)));
-// Effective R&D = efficiency wedge times R&D spending
-Grdeff = (1-eGRD)*Grd;
 // SIMPLIFY >= 1: R&D / endogenous-technology channel off (exogenous technology)
 Z = STEADY_STATE(Z);
 J = STEADY_STATE(J);
 q = STEADY_STATE(q);
 A = STEADY_STATE(A);
-VA = STEADY_STATE(VA);
+V = STEADY_STATE(V);
 S = STEADY_STATE(S);
 log(shockchi) = (1-rhoshockchi)*log(shockchiss)+rhoshockchi*log(shockchi(-1))+epsi_shockchi;
 //********************************************************
@@ -346,7 +343,7 @@ ygrowth = log(yd/yd(-1))*100+log(g)*100;
 omega       = STEADY_STATE(omega);
 Rss         = STEADY_STATE(R);
 ydss        = STEADY_STATE(yd);
-muyH        = STEADY_STATE(muyH);
+chiH        = STEADY_STATE(chiH);
 kappaprob   = STEADY_STATE(kappaprob);
 shockchiss = STEADY_STATE(shockchi);   // exogenous disturbance to the R&D technology
 Ns          = STEADY_STATE(Ns);

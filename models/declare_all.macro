@@ -49,10 +49,10 @@ H               % Human capital
 Kge             % Public Human-related Capital Stock (HCS)
 Ige             % Public spending in public humand-related capital stock
 E               % Time for schooling and taking care of health (building capital)
-lambda_HC        % Lagrangian of the Human capital formation
+lambda_H        % Lagrangian of the Human capital formation
 Igess           % Steady state of public spending on Public human-capital related stock
-Lab             % Labor supply 
-muyH            % Adjuster so that E=0.1
+L             % Labor supply 
+chiH            % Adjuster so that E=0.1
 ygrowth          % econonmic growth
 eGE             % Gap in public human-capital efficiency (e^GE)
 eGI             % Gap in public infrastructure efficiency (e^GI)
@@ -62,7 +62,7 @@ Grdss          % R&D spending SS
 shockchi       % R&D process productivity shock SS
 SDF             % Stochastic discount factor
 S             % Effective labor demand for tech adoption
-VA              % Value of tech adoption
+V              % Value of tech adoption
 q       % Probability of adoption
 J             % Value of unadopted Intermediate
 Srd             % Effective labor demand for R&D development
@@ -73,7 +73,6 @@ Ns              % Labor in R&D
 TFP             % TFP
 Grd_ydss_ratio
 ln_Grd
-Grdeff
 eGRD            % Gap in public R&D efficiency (e^GRD)
 ;
 

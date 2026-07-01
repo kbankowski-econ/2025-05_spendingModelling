@@ -13,7 +13,7 @@
 {"residual": {"lhs": "lambda", "rhs": "1/C"}}
 , {"residual": {"lhs": "lambda", "rhs": "betta*lambda(1)*R/PI(1)"}}
 , {"residual": {"lhs": "omega*N^varphi", "rhs": "lambda*w"}}
-, {"residual": {"lhs": "Lab", "rhs": "N"}}
+, {"residual": {"lhs": "L", "rhs": "N"}}
 , {"residual": {"lhs": "mc", "rhs": "w"}}
 , {"residual": {"lhs": "y", "rhs": "N"}}
 , {"residual": {"lhs": "y", "rhs": "vp*yd"}}
@@ -40,7 +40,7 @@
 , {"eq": 3, "col": 6, "var": "lambda", "shift": 0, "val": "(-w)"}
 , {"eq": 3, "col": 7, "var": "w", "shift": 0, "val": "(-lambda)"}
 , {"eq": 4, "col": 4, "var": "N", "shift": 0, "val": "(-1)"}
-, {"eq": 4, "col": 5, "var": "Lab", "shift": 0, "val": "1"}
+, {"eq": 4, "col": 5, "var": "L", "shift": 0, "val": "1"}
 , {"eq": 5, "col": 7, "var": "w", "shift": 0, "val": "(-1)"}
 , {"eq": 5, "col": 8, "var": "mc", "shift": 0, "val": "1"}
 , {"eq": 6, "col": 4, "var": "N", "shift": 0, "val": "(-1)"}

@@ -41,10 +41,10 @@ H,Human capital stock,(x./y-1)*100,\% deviation
 Kge,Gov. human capital-related infrastructure stock,(x./y-1)*100,\% deviation
 Ige,Gov. exp. on human capital,(x./y-1)*100,\% deviation
 E,Time allocated to education,(x./y-1)*100,\% deviation
-lambda_HC,Lagrange multiplier for human capital constraint,(x./y-1)*100,\% deviation
+lambda_H,Lagrange multiplier for human capital constraint,(x./y-1)*100,\% deviation
 Igess,Steady-state gov. spending on human capital infrastructure,(x./y-1)*100,\% deviation
-Lab,Total labor supply,(x./y-1)*100,\% deviation
-muyH,Adjustment parameter for time allocation (E=0.1),(x./y-1)*100,\% deviation
+L,Total labor supply,(x./y-1)*100,\% deviation
+chiH,Adjustment parameter for time allocation (E=0.1),(x./y-1)*100,\% deviation
 ygrowth,Economic growth rate,(x./y-1)*100,\% deviation
 eGE,Gap in human capital spending efficiency,x-y,abs. deviation
 eGI,Gap in infrastructure spending efficiency,x-y,abs. deviation
