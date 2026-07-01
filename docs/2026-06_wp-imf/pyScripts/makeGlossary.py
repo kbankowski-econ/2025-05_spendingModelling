@@ -103,8 +103,8 @@ PARAMETERS = [
     ("Households", [
         (r"$\beta$",            "Discount factor",                              "betta"),
         (r"$\varphi$",          "Inverse Frisch elasticity",                    "varphi"),
-        (r"$\delta$",           "Depreciation rate of capital (private and public)", "delta"),
-        (r"$\delta^h$",         "Human-capital depreciation",                   "deltaH"),
+        (r"$\delta$",           "Depreciation rate of physical capital (private and public)", "delta"),
+        (r"$\delta^h$",         "Depreciation rate of human capital",           "deltaH"),
         (r"$\gamma$",           "Human-capital elasticity, time input",         "gamma"),
         (r"$\mu$",              "Human-capital elasticity, public stock",       "mu"),
     ]),
