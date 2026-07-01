@@ -78,8 +78,6 @@ ENDOGENOUS = [
         (r"$\lambda_t$",      "Marginal utility of consumption",          "lambda"),
         (r"$\lambda_t^{H}$",  "Shadow value of human capital",            "lambda_H"),
         (r"$\mathit{SDF}_t$", "Stochastic discount factor",               "SDF"),
-        (r"$\omega$",         "Labor-disutility scaling",                 "omega"),
-        (r"$\chi$",           r"Scale in human-capital accumulation",     "chiH"),
     ]),
     ("Production and technology", [
         (r"$Y_t$",            "Gross output",                             "y"),
@@ -123,7 +121,6 @@ ENDOGENOUS = [
     ]),
     ("Auxiliary, steady-state, and reporting", [
         (r"$R_t/\Pi_t$",      "Ex-post real interest rate",               "rreal"),
-        ("--",                "Adoption-probability scale (steady state)", "kappaprob"),
         ("--",                "Steady-state output (value added)",        "ydss"),
         ("--",                "Steady-state borrowing rate",              "Rss"),
         ("--",                "Steady-state government consumption",       "Gcss"),
@@ -140,10 +137,12 @@ PARAMETERS = [
     ("Households", [
         (r"$\beta$",            "Discount factor",                              "betta"),
         (r"$\varphi$",          "Inverse Frisch elasticity",                    "varphi"),
+        (r"$\omega$",           r"Labor-disutility scaling\calibnote{Targets steady-state labor supply $L_t$}", "omega"),
         (r"$\delta$",           "Depreciation rate of physical capital (private and public)", "delta"),
         (r"$\delta^h$",         "Depreciation rate of human capital",           "deltaH"),
         (r"$\gamma$",           "Human-capital elasticity, time input",         "gamma"),
         (r"$\mu$",              "Human-capital elasticity, public stock",       "mu"),
+        (r"$\chi$",             r"Scale in human-capital accumulation\calibnote{Targets steady-state education time $E_t$}", "chiH"),
     ]),
     ("Production and technology", [
         (r"$\alpha$",           "Private capital share",                        "alpha"),
@@ -160,6 +159,7 @@ PARAMETERS = [
         (r"$\alpha_{RD}$",      "Public-R\\&D loading in tech creation",        "alphaRD"),
         (r"$\phi$",             "Survival rate of adopted technologies",        "phi"),
         (r"$\varsigma$",        "Adoption-probability elasticity",              "varsigma"),
+        (r"$q_0$",              r"Adoption-probability scale\calibnote{Targets steady-state adoption probability $q_t$}", "kappaprob"),
         ("--",                  "Steady-state adoption probability",            "qss"),
     ]),
     ("Government: fiscal and monetary policy", [
@@ -337,8 +337,12 @@ def longtable(groups, caption, label, values=None, eqns=None):
 
 
 def main():
-    # AE/EMDE calibrated values for each parameter, read live from _results.mat.
-    ae, em = read_params(AE_MODEL), read_params(EM_MODEL)
+    # AE/EMDE steady-state values (endogenous variables) and calibrated parameters.
+    aess, emss = read_steady(AE_MODEL), read_steady(EM_MODEL)
+    # Parameter-table values: read from params, but the three endogenously-calibrated
+    # constants (omega, chiH, kappaprob) are model variables, so read their steady state.
+    ae = {**aess, **read_params(AE_MODEL)}
+    em = {**emss, **read_params(EM_MODEL)}
     pvals = {}
     for _, rows in PARAMETERS:
         for _paper, _desc, code in rows:
@@ -346,8 +350,6 @@ def main():
                 a = fmt_val(ae[code])
                 e = "--" if code in EMDE_DASH else fmt_val(em[code])
                 pvals[code] = (a, e, a != e)  # third element: differs across AE/EMDE
-    # AE/EMDE steady-state values for each endogenous variable (oo_.steady_state).
-    aess, emss = read_steady(AE_MODEL), read_steady(EM_MODEL)
     svals = {}
     for _, rows in ENDOGENOUS:
         for _paper, _desc, code in rows:

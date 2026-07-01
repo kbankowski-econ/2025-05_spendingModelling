@@ -19,56 +19,59 @@
 \addlinespace[0.1em]
 1 & $\beta$ & Discount factor & \texttt{betta} & 0.999 & 0.999 \\
 2 & $\varphi$ & Inverse Frisch elasticity & \texttt{varphi} & 5 & 5 \\
-3 & $\delta$ & Depreciation rate of physical capital (private and public) & \texttt{delta} & 0.025 & 0.025 \\
-4 & $\delta^h$ & Depreciation rate of human capital & \texttt{deltaH} & 0.025 & 0.025 \\
-5 & $\gamma$ & Human-capital elasticity, time input & \texttt{gamma} & 0.5 & 0.5 \\
-6 & $\mu$ & Human-capital elasticity, public stock & \texttt{mu} & \cellcolor{diffcell} 0.1 & \cellcolor{diffcell} 0.25 \\
+3 & $\omega$ & Labor-disutility scaling\calibnote{Targets steady-state labor supply $L_t$} & \texttt{omega} & \cellcolor{diffcell} 75.643 & \cellcolor{diffcell} 78.182 \\
+4 & $\delta$ & Depreciation rate of physical capital (private and public) & \texttt{delta} & 0.025 & 0.025 \\
+5 & $\delta^h$ & Depreciation rate of human capital & \texttt{deltaH} & 0.025 & 0.025 \\
+6 & $\gamma$ & Human-capital elasticity, time input & \texttt{gamma} & 0.5 & 0.5 \\
+7 & $\mu$ & Human-capital elasticity, public stock & \texttt{mu} & \cellcolor{diffcell} 0.1 & \cellcolor{diffcell} 0.25 \\
+8 & $\chi$ & Scale in human-capital accumulation\calibnote{Targets steady-state education time $E_t$} & \texttt{chiH} & \cellcolor{diffcell} 0.072 & \cellcolor{diffcell} 0.087 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Production and technology}} \\
 \addlinespace[0.1em]
-7 & $\alpha$ & Private capital share & \texttt{alpha} & 0.3 & 0.3 \\
-8 & $\alpha_G$ & Output elasticity of public infrastructure & \texttt{alphaG} & \cellcolor{diffcell} 0.054 & \cellcolor{diffcell} 0.17 \\
-9 & $\Theta$ & Fixed cost of production & \texttt{Bigtheta} & 0 & 0 \\
-10 & -- & Fixed cost, share of GDP & \texttt{Bigtheta\_y} & 0 & 0 \\
-11 & $\theta_p$ & Calvo non-reset probability & \texttt{thetap} & 0.8 & 0.8 \\
-12 & $\chi_p$ & Price indexation & \texttt{chi} & 0.6 & 0.6 \\
-13 & $\epsilon$ & Elasticity of substitution (sets the markup) & \texttt{epsilon} & 10 & 10 \\
-14 & $\vartheta$ & Love-of-variety / TFP exponent & \texttt{vartheta} & 1.35 & 1.35 \\
-15 & -- & Steady-state gross markup & \texttt{markupss} & 1.18 & 1.18 \\
-16 & $\rho_A$ & Persistence of created technology & \texttt{rho\_A} & 0.79 & 0.79 \\
-17 & $\alpha_{HA}$ & Human-capital loading in tech creation & \texttt{alphaHA} & \cellcolor{diffcell} 0.1 & \cellcolor{diffcell} -- \\
-18 & $\alpha_{RD}$ & Public-R\&D loading in tech creation & \texttt{alphaRD} & \cellcolor{diffcell} 0.019 & \cellcolor{diffcell} -- \\
-19 & $\phi$ & Survival rate of adopted technologies & \texttt{phi} & 0.98 & 0.98 \\
-20 & $\varsigma$ & Adoption-probability elasticity & \texttt{varsigma} & \cellcolor{diffcell} 0.8 & \cellcolor{diffcell} -- \\
-21 & -- & Steady-state adoption probability & \texttt{qss} & 0.05 & 0.05 \\
+9 & $\alpha$ & Private capital share & \texttt{alpha} & 0.3 & 0.3 \\
+10 & $\alpha_G$ & Output elasticity of public infrastructure & \texttt{alphaG} & \cellcolor{diffcell} 0.054 & \cellcolor{diffcell} 0.17 \\
+11 & $\Theta$ & Fixed cost of production & \texttt{Bigtheta} & 0 & 0 \\
+12 & -- & Fixed cost, share of GDP & \texttt{Bigtheta\_y} & 0 & 0 \\
+13 & $\theta_p$ & Calvo non-reset probability & \texttt{thetap} & 0.8 & 0.8 \\
+14 & $\chi_p$ & Price indexation & \texttt{chi} & 0.6 & 0.6 \\
+15 & $\epsilon$ & Elasticity of substitution (sets the markup) & \texttt{epsilon} & 10 & 10 \\
+16 & $\vartheta$ & Love-of-variety / TFP exponent & \texttt{vartheta} & 1.35 & 1.35 \\
+17 & -- & Steady-state gross markup & \texttt{markupss} & 1.18 & 1.18 \\
+18 & $\rho_A$ & Persistence of created technology & \texttt{rho\_A} & 0.79 & 0.79 \\
+19 & $\alpha_{HA}$ & Human-capital loading in tech creation & \texttt{alphaHA} & \cellcolor{diffcell} 0.1 & \cellcolor{diffcell} -- \\
+20 & $\alpha_{RD}$ & Public-R\&D loading in tech creation & \texttt{alphaRD} & \cellcolor{diffcell} 0.019 & \cellcolor{diffcell} -- \\
+21 & $\phi$ & Survival rate of adopted technologies & \texttt{phi} & 0.98 & 0.98 \\
+22 & $\varsigma$ & Adoption-probability elasticity & \texttt{varsigma} & \cellcolor{diffcell} 0.8 & \cellcolor{diffcell} -- \\
+23 & $q_0$ & Adoption-probability scale\calibnote{Targets steady-state adoption probability $q_t$} & \texttt{kappaprob} & \cellcolor{diffcell} 0.309 & \cellcolor{diffcell} 0.084 \\
+24 & -- & Steady-state adoption probability & \texttt{qss} & 0.05 & 0.05 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Government: fiscal and monetary policy}} \\
 \addlinespace[0.1em]
-22 & $\Pi$ & Steady-state gross inflation & \texttt{Piss} & 1 & 1 \\
-23 & $\rho_R$ & Policy-rate smoothing & \texttt{rho\_R} & 0.7 & 0.7 \\
-24 & $\gamma_\pi$ & Policy response to inflation & \texttt{gamma\_pi} & 1.5 & 1.5 \\
-25 & $\gamma_y$ & Policy response to the output gap & \texttt{gamma\_y} & 0.25 & 0.25 \\
-26 & $\rho_{RG}$ & Government-bond-rate persistence (maturity) & \texttt{rho\_RG} & 0 & 0 \\
-27 & $\rho_{\tau c}$ & Consumption-tax persistence & \texttt{rho\_tauc} & 0.9 & 0.9 \\
-28 & $\tau^c$ & Steady-state consumption-tax rate & \texttt{taucss} & \cellcolor{diffcell} 0.18 & \cellcolor{diffcell} 0.15 \\
-29 & $\gamma^{\tau c}_d$ & Consumption-tax response to debt & \texttt{gamma\_d\_tauc} & 0 & 0 \\
-30 & $\rho_{\tau w}$ & Labor-tax persistence & \texttt{rho\_tauw} & 0.9 & 0.9 \\
-31 & $\tau^w$ & Steady-state labor-tax rate & \texttt{tauwss} & \cellcolor{diffcell} 0.25 & \cellcolor{diffcell} 0.1 \\
-32 & $\gamma^{\tau w}_d$ & Labor-tax response to debt & \texttt{gamma\_d\_tauw} & 0 & 0 \\
-33 & $d^*$ & Steady-state debt-to-GDP ratio & \texttt{byss} & \cellcolor{diffcell} 4 & \cellcolor{diffcell} 2.4 \\
-34 & $\gamma^{T}_d$ & Transfer response to debt & \texttt{gamma\_d\_T} & 0.01 & 0.01 \\
-35 & $\rho_T$ & Transfer persistence & \texttt{rho\_T} & 0 & 0 \\
-36 & -- & Government consumption, share of GDP & \texttt{Gcy} & \cellcolor{diffcell} 0.18 & \cellcolor{diffcell} 0.14 \\
-37 & -- & Infrastructure investment, share of GDP & \texttt{Igiy} & \cellcolor{diffcell} 0.03 & \cellcolor{diffcell} 0.05 \\
-38 & -- & Human-capital investment, share of GDP & \texttt{Igey} & \cellcolor{diffcell} 0.015 & \cellcolor{diffcell} 0.02 \\
-39 & -- & R\&D spending, share of GDP & \texttt{Grdy} & \cellcolor{diffcell} 0.006 & \cellcolor{diffcell} 0.001 \\
-40 & $e^{GI}$ & Steady-state infrastructure efficiency gap & \texttt{eGI\_ss} & \cellcolor{diffcell} 0.359 & \cellcolor{diffcell} 0.406 \\
-41 & $e^{GE}$ & Steady-state human-capital efficiency gap & \texttt{eGE\_ss} & \cellcolor{diffcell} 0.306 & \cellcolor{diffcell} 0.329 \\
-42 & $e^{GRD}$ & Steady-state R\&D efficiency gap & \texttt{eGRD\_ss} & \cellcolor{diffcell} 0.399 & \cellcolor{diffcell} -- \\
+25 & $\Pi$ & Steady-state gross inflation & \texttt{Piss} & 1 & 1 \\
+26 & $\rho_R$ & Policy-rate smoothing & \texttt{rho\_R} & 0.7 & 0.7 \\
+27 & $\gamma_\pi$ & Policy response to inflation & \texttt{gamma\_pi} & 1.5 & 1.5 \\
+28 & $\gamma_y$ & Policy response to the output gap & \texttt{gamma\_y} & 0.25 & 0.25 \\
+29 & $\rho_{RG}$ & Government-bond-rate persistence (maturity) & \texttt{rho\_RG} & 0 & 0 \\
+30 & $\rho_{\tau c}$ & Consumption-tax persistence & \texttt{rho\_tauc} & 0.9 & 0.9 \\
+31 & $\tau^c$ & Steady-state consumption-tax rate & \texttt{taucss} & \cellcolor{diffcell} 0.18 & \cellcolor{diffcell} 0.15 \\
+32 & $\gamma^{\tau c}_d$ & Consumption-tax response to debt & \texttt{gamma\_d\_tauc} & 0 & 0 \\
+33 & $\rho_{\tau w}$ & Labor-tax persistence & \texttt{rho\_tauw} & 0.9 & 0.9 \\
+34 & $\tau^w$ & Steady-state labor-tax rate & \texttt{tauwss} & \cellcolor{diffcell} 0.25 & \cellcolor{diffcell} 0.1 \\
+35 & $\gamma^{\tau w}_d$ & Labor-tax response to debt & \texttt{gamma\_d\_tauw} & 0 & 0 \\
+36 & $d^*$ & Steady-state debt-to-GDP ratio & \texttt{byss} & \cellcolor{diffcell} 4 & \cellcolor{diffcell} 2.4 \\
+37 & $\gamma^{T}_d$ & Transfer response to debt & \texttt{gamma\_d\_T} & 0.01 & 0.01 \\
+38 & $\rho_T$ & Transfer persistence & \texttt{rho\_T} & 0 & 0 \\
+39 & -- & Government consumption, share of GDP & \texttt{Gcy} & \cellcolor{diffcell} 0.18 & \cellcolor{diffcell} 0.14 \\
+40 & -- & Infrastructure investment, share of GDP & \texttt{Igiy} & \cellcolor{diffcell} 0.03 & \cellcolor{diffcell} 0.05 \\
+41 & -- & Human-capital investment, share of GDP & \texttt{Igey} & \cellcolor{diffcell} 0.015 & \cellcolor{diffcell} 0.02 \\
+42 & -- & R\&D spending, share of GDP & \texttt{Grdy} & \cellcolor{diffcell} 0.006 & \cellcolor{diffcell} 0.001 \\
+43 & $e^{GI}$ & Steady-state infrastructure efficiency gap & \texttt{eGI\_ss} & \cellcolor{diffcell} 0.359 & \cellcolor{diffcell} 0.406 \\
+44 & $e^{GE}$ & Steady-state human-capital efficiency gap & \texttt{eGE\_ss} & \cellcolor{diffcell} 0.306 & \cellcolor{diffcell} 0.329 \\
+45 & $e^{GRD}$ & Steady-state R\&D efficiency gap & \texttt{eGRD\_ss} & \cellcolor{diffcell} 0.399 & \cellcolor{diffcell} -- \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Balanced growth}} \\
 \addlinespace[0.1em]
-43 & $g$ & Steady-state gross growth & \texttt{gss} & \cellcolor{diffcell} 1.004 & \cellcolor{diffcell} 1.008 \\
-44 & -- & Trend-growth shock persistence & \texttt{rho\_g} & 0.24 & 0.24 \\
-45 & -- & Net trend growth of technology & \texttt{gammaa} & \cellcolor{diffcell} 0.008 & \cellcolor{diffcell} 0.015 \\
+46 & $g$ & Steady-state gross growth & \texttt{gss} & \cellcolor{diffcell} 1.004 & \cellcolor{diffcell} 1.008 \\
+47 & -- & Trend-growth shock persistence & \texttt{rho\_g} & 0.24 & 0.24 \\
+48 & -- & Net trend growth of technology & \texttt{gammaa} & \cellcolor{diffcell} 0.008 & \cellcolor{diffcell} 0.015 \\
 \end{longtable}
