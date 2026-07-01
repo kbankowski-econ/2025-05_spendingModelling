@@ -64,9 +64,7 @@ Bigtheta=Bigtheta_y*y;
 kGe_y=(1-eGE_ss)*Igey/(g-(1-delta));
 Kge=kGe_y*y;
 Ige=Igey*y;
-Igess=Ige;
 Grd=Grdy*y;
-Grdss=Grd;
 
 
 
@@ -116,8 +114,6 @@ x1=mc*x2;
 
 b=y*by;
 T=b-((R/PI)*b/g+Gc+Igi+Ige+Grd-tauw*w*N-tauc*C);
-Gcss=Gcy*(y);
-Igiss=Igiy*(y);
 
 %Variables of interest
 G=Gc+Igi+Ige+Grd;

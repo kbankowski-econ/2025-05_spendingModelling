@@ -34,8 +34,6 @@ vp              % Price dispersion
 g              % Gross growth rate
 %shock_ZZ        % shock to the g process  
 omega           % Scaling
-Igiss            % Steady state of Investment
-Gcss            % Steady state of Consumption
 Rss             % Steady state interest rate   
 ydss            % Steady state output
 T           % Transfer
@@ -49,14 +47,12 @@ Kge             % Public Human-related Capital Stock (HCS)
 Ige             % Public spending in public humand-related capital stock
 E               % Time for schooling and taking care of health (building capital)
 lambda_H        % Lagrangian of the Human capital formation
-Igess           % Steady state of public spending on Public human-capital related stock
 L             % Labor supply 
 chiH            % Adjuster so that E=0.1
 eGE             % Gap in public human-capital efficiency (e^GE)
 eGI             % Gap in public infrastructure efficiency (e^GI)
 A             % Aoption Tech Process
 Grd            % R&D spending
-Grdss          % R&D spending SS
 SDF             % Stochastic discount factor
 S             % Effective labor demand for tech adoption
 V              % Value of tech adoption
@@ -252,10 +248,10 @@ T-STEADY_STATE(T) = rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*(by(-1)-
 // Debt to GDP
 by = b/y;
 // Government spending instruments (subject to expenditure shocks)
-Gc = Gcss+ydss*epsi_gc;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_gc shock)
-Igi = Igiss+ydss*epsi_igi;                                     // infrastructure investment
-Ige = Igess+ydss*epsi_ige;                                  // human-capital investment
-Grd = Grdss+ydss*epsi_grd;                               // R&D spending
+Gc = Gcy*ydss+ydss*epsi_gc;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_gc shock)
+Igi = Igiy*ydss+ydss*epsi_igi;                                     // infrastructure investment
+Ige = Igey*ydss+ydss*epsi_ige;                                  // human-capital investment
+Grd = Grdy*ydss+ydss*epsi_grd;                               // R&D spending
 // Consumption tax rule
 tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss))+epsi_tauc;
 // Income tax rule
@@ -305,10 +301,6 @@ Rss         = STEADY_STATE(R);
 ydss        = STEADY_STATE(yd);
 chiH        = STEADY_STATE(chiH);
 kappaprob   = STEADY_STATE(kappaprob);
-Gcss        = Gcy*STEADY_STATE(y);
-Igiss        = Igiy*STEADY_STATE(y);
-Igess       = Igey*STEADY_STATE(y);
-Grdss      = Grdy*STEADY_STATE(y);
 end;
 steady;
 check;
@@ -1320,7 +1312,7 @@ values
 end;
 perfect_foresight_setup(periods=2000);
 perfect_foresight_solver(maxit=20);
-fiscalchange=Igi-Igiss+Ige-Igess+Grd-Grdss;
+fiscalchange=(Igi-Igi(1))+(Ige-Ige(1))+(Grd-Grd(1));
 % Period 1 is the pre-shock steady state (the baseline, subtracted as yd(1));
 % the shock is active from period 2 on. An N-year horizon is the 4N quarters in
 % indices 2:(N*4+1), so ped=N*4+1 (the slice 2:ped is inclusive of both ends).

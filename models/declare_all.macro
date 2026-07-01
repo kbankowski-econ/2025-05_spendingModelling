@@ -26,8 +26,6 @@ vp              % Price dispersion
 g              % Gross growth rate
 %shock_ZZ        % shock to the g process  
 omega           % Scaling
-Igiss            % Steady state of Investment
-Gcss            % Steady state of Consumption
 Rss             % Steady state interest rate   
 ydss            % Steady state output
 T           % Transfer
@@ -42,14 +40,12 @@ Kge             % Public Human-related Capital Stock (HCS)
 Ige             % Public spending in public humand-related capital stock
 E               % Time for schooling and taking care of health (building capital)
 lambda_H        % Lagrangian of the Human capital formation
-Igess           % Steady state of public spending on Public human-capital related stock
 L             % Labor supply 
 chiH            % Adjuster so that E=0.1
 eGE             % Gap in public human-capital efficiency (e^GE)
 eGI             % Gap in public infrastructure efficiency (e^GI)
 A             % Aoption Tech Process
 Grd            % R&D spending
-Grdss          % R&D spending SS
 SDF             % Stochastic discount factor
 S             % Effective labor demand for tech adoption
 V              % Value of tech adoption

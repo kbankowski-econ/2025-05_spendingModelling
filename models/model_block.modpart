@@ -92,10 +92,10 @@ b = (R(-1)/PI)*b(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;
 by = b/y;
 
 // Government spending instruments (subject to expenditure shocks)
-Gc = Gcss+ydss*epsi_gc;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_gc shock)
-Igi = Igiss+ydss*epsi_igi;                                     // infrastructure investment
-Ige = Igess+ydss*epsi_ige;                                  // human-capital investment
-Grd = Grdss+ydss*epsi_grd;                               // R&D spending
+Gc = Gcy*ydss+ydss*epsi_gc;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_gc shock)
+Igi = Igiy*ydss+ydss*epsi_igi;                                     // infrastructure investment
+Ige = Igey*ydss+ydss*epsi_ige;                                  // human-capital investment
+Grd = Grdy*ydss+ydss*epsi_grd;                               // R&D spending
 
 // Consumption tax rule
 tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss))+epsi_tauc;
@@ -155,7 +155,3 @@ Rss         = STEADY_STATE(R);
 ydss        = STEADY_STATE(yd);
 chiH        = STEADY_STATE(chiH);
 kappaprob   = STEADY_STATE(kappaprob);
-Gcss        = Gcy*STEADY_STATE(y);
-Igiss        = Igiy*STEADY_STATE(y);
-Igess       = Igey*STEADY_STATE(y);
-Grdss      = Grdy*STEADY_STATE(y);

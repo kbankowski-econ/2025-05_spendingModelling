@@ -38,7 +38,6 @@ Kge             % Public Human-related Capital Stock (HCS)
 Ige             % Public spending in public humand-related capital stock
 E               % Time for schooling and taking care of health (building capital)
 lambda_H        % Lagrangian of the Human capital formation
-Igess           % Steady state of public spending on Public human-capital related stock
 L             % Labor supply 
 chiH            % Adjuster so that E=0.1
 effgegap        % Gap in public human-capital efficiency (e^GE)
