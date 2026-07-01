@@ -51,9 +51,15 @@ def read_steady(model):
 
 
 def fmt_val(x):
-    """Format a parameter value at 5 significant figures (0 shown exactly)."""
+    """Format at up to 3 decimal places (trailing zeros trimmed); fall back to
+    significant figures only when 3 dp would round the value to zero."""
     x = float(x)
-    return "0" if abs(x) < 1e-12 else f"{x:.5g}"
+    if abs(x) < 1e-12:
+        return "0"
+    s = f"{x:.3f}"
+    if float(s) == 0:            # too small for 3 dp -> keep significant figures
+        s = f"{x:.3g}"
+    return s.rstrip("0").rstrip(".") if "." in s else s
 
 # Each table is a list of (group title, [ (paper symbol, description, model code), ... ]).
 # Numbering is continuous across groups (so the last number is the total count).
