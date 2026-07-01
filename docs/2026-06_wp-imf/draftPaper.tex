@@ -51,7 +51,7 @@
 % Glossary helper: an equation below a variable's description, auto-shrunk to the column width.
 \newcommand{\gloseq}[1]{\newline\adjustbox{max width=\linewidth}{\footnotesize\ensuremath{\displaystyle #1}}}
 \definecolor{targetblue}{HTML}{1565C0} % blue: calibration-target notes in the parameter table
-\newcommand{\calibnote}[1]{~\textcolor{targetblue}{(#1)}}
+\newcommand{\calibnote}[1]{~{\footnotesize\textcolor{targetblue}{(#1)}}}
 \usepackage{appendix}
 \usepackage{eurosym}
 \usepackage{array}

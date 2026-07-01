@@ -137,12 +137,12 @@ PARAMETERS = [
     ("Households", [
         (r"$\beta$",            "Discount factor",                              "betta"),
         (r"$\varphi$",          "Inverse Frisch elasticity",                    "varphi"),
-        (r"$\omega$",           r"Labor-disutility scaling\calibnote{targets steady-state labor supply $L_t$}", "omega"),
+        (r"$\omega$",           "Labor-disutility scaling",                     "omega"),
         (r"$\delta$",           "Depreciation rate of physical capital (private and public)", "delta"),
         (r"$\delta^h$",         "Depreciation rate of human capital",           "deltaH"),
         (r"$\gamma$",           "Human-capital elasticity, time input",         "gamma"),
         (r"$\mu$",              "Human-capital elasticity, public stock",       "mu"),
-        (r"$\chi$",             r"Scale in human-capital accumulation\calibnote{targets steady-state education time $E_t$}", "chiH"),
+        (r"$\chi$",             r"Scale in human-capital accumulation",         "chiH"),
     ]),
     ("Production and technology", [
         (r"$\alpha$",           "Private capital share",                        "alpha"),
@@ -159,7 +159,7 @@ PARAMETERS = [
         (r"$\alpha_{RD}$",      "Public-R\\&D loading in tech creation",        "alphaRD"),
         (r"$\phi$",             "Survival rate of adopted technologies",        "phi"),
         (r"$\varsigma$",        "Adoption-probability elasticity",              "varsigma"),
-        (r"$q_0$",              r"Adoption-probability scale\calibnote{targets steady-state adoption probability $q_t$}", "kappaprob"),
+        (r"$q_0$",              "Adoption-probability scale",                   "kappaprob"),
         ("--",                  "Steady-state adoption probability",            "qss"),
     ]),
     ("Government: fiscal and monetary policy", [
@@ -281,7 +281,7 @@ EQNS = {
 }
 
 
-def longtable(groups, caption, label, values=None, eqns=None):
+def longtable(groups, caption, label, values=None, eqns=None, notes=None):
     withval = values is not None
     if withval and eqns:      # endogenous: equations + steady-state value columns
         width = "7.7cm"
@@ -321,8 +321,10 @@ def longtable(groups, caption, label, values=None, eqns=None):
             n += 1
             code = model.replace("_", r"\_")
             d = desc
+            if notes and model in notes:
+                d = d + notes[model]
             if eqns and model in eqns:
-                d = desc + r" \gloseq{" + eqns[model] + "}"
+                d = d + r" \gloseq{" + eqns[model] + "}"
             if withval:
                 vt = values.get(model, ("", ""))
                 ae, em = vt[0], vt[1]
@@ -355,13 +357,22 @@ def main():
         for _paper, _desc, code in rows:
             if code in aess:
                 svals[code] = (fmt_val(aess[code]), fmt_val(emss[code]))
+    # Blue parenthetical notes for the endogenously-calibrated parameters, giving the
+    # targeted variable and its (live) steady-state value: (param -> label, symbol, target var).
+    CALIB = {
+        "omega":     ("labor supply",         "L_t", "L"),
+        "chiH":      ("education time",        "E_t", "E"),
+        "kappaprob": ("adoption probability",  "q_t", "q"),
+    }
+    pnotes = {code: rf"\calibnote{{targets steady-state {label} ${sym}={fmt_val(aess[tgt])}$}}"
+              for code, (label, sym, tgt) in CALIB.items()}
     specs = [
-        (ENDOGENOUS, "Endogenous Variables", "tab:glossEndo", "glossaryEndogenous.tex", svals, EQNS),
-        (PARAMETERS, "Parameters",           "tab:glossParam", "glossaryParameters.tex", pvals, None),
-        (EXOGENOUS,  "Exogenous Variables (Shocks)", "tab:glossExo", "glossaryExogenous.tex", None, None),
+        (ENDOGENOUS, "Endogenous Variables", "tab:glossEndo", "glossaryEndogenous.tex", svals, EQNS, None),
+        (PARAMETERS, "Parameters",           "tab:glossParam", "glossaryParameters.tex", pvals, None, pnotes),
+        (EXOGENOUS,  "Exogenous Variables (Shocks)", "tab:glossExo", "glossaryExogenous.tex", None, None, None),
     ]
-    for groups, caption, label, fname, values, eqns in specs:
-        (OUT_DIR / fname).write_text(longtable(groups, caption, label, values, eqns), encoding="utf-8")
+    for groups, caption, label, fname, values, eqns, notes in specs:
+        (OUT_DIR / fname).write_text(longtable(groups, caption, label, values, eqns, notes), encoding="utf-8")
         nrows = sum(len(rows) for _, rows in groups)
         extra = "" if values is None else " + AE/EMDE values"
         print(f"  Wrote {fname} ({nrows} rows{extra})")
