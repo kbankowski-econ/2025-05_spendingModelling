@@ -86,7 +86,6 @@ J=(1-varsigma)*q*phi*SDF/(1+gammaa-(1-q+varsigma*q)*phi*betta)*V;
 S=varsigma*q*phi*SDF/(1+gammaa)*(V-J);
 
 %Srd=SDF*J*(Z/A-phi*Z/A*1/(1+gammaa));
-Srd=0;
 %shockchi=(1+gammaa-phi)/(Srd^alphaHA*Grd^alphaRD);
 %shockchi=(1+gammaa-phi)/(Srd^alphaHA);
 shockchi=1;
@@ -96,11 +95,10 @@ shockchi=1;
 kappaprob=q/((S)^varsigma);
 
 
-Ns=(1-1/Z)*S+Srd;
 
 shockchiss=shockchi;
 
-share_in_RD=(Srd+(Z/A-1)*S)/y;
+share_in_RD=((Z/A-1)*S)/y;
 (Z/A-1)*S/y
 Ip_y=Ip/y;
 %Ip_y=(1-(1-delta)/g)*Kp_y;
@@ -113,10 +111,10 @@ yd=y;
 Igi=Igiy*y;
 Gc=Gcy*y;
 
-C=yd-(Ip+Igi+Gc+Ige+Grd+Srd+(Z/A-1)*S);
+C=yd-(Ip+Igi+Gc+Ige+Grd+(Z/A-1)*S);
 lambda=1/C/(1+tauc);
 
-Cy=1-Ip_y-Igiy-Gcy-Igey-Grdy-(Srd+(Z/A-1)*S)/yd;
+Cy=1-Ip_y-Igiy-Gcy-Igey-Grdy-((Z/A-1)*S)/yd;
 x2=1/(1+tauc)*1/Cy/(1-betta*thetap);  % x2=lambda*y/(1-betta*thetap)= 1/(1+tauc)*y/c/(1-betta*thetap)
 x1=mc*x2;
 
@@ -159,7 +157,7 @@ lambda_H=lambda*w*(1-tauw)/(gamma*1/E*deltaH);
 %
 % Human capital
 %H=N/L;
-H=(N+0*Ns)/L;
+H=N/L;
 
 % Adjustment parameter for N 
 omega=lambda*w*(1-tauw)*H/(L+E)^varphi;

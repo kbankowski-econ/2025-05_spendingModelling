@@ -64,11 +64,9 @@ S             % Effective labor demand for tech adoption
 V              % Value of tech adoption
 q       % Probability of adoption
 J             % Value of unadopted Intermediate
-Srd             % Effective labor demand for R&D development
 Z            % R&D product
 kappaprob       % Parameter in the probability for scaling
 shockchiss     %% SS of shockchi 
-Ns              % Labor in R&D
 TFP             % TFP
 Grd_ydss_ratio
 ln_Grd
@@ -344,8 +342,6 @@ ydss        = STEADY_STATE(yd);
 chiH        = STEADY_STATE(chiH);
 kappaprob   = STEADY_STATE(kappaprob);
 shockchiss = STEADY_STATE(shockchi);   // exogenous disturbance to the R&D technology
-Ns          = STEADY_STATE(Ns);
-Srd         = STEADY_STATE(Srd);
 Gcss        = Gcy*STEADY_STATE(y);
 Igiss        = Igiy*STEADY_STATE(y);
 Igess       = Igey*STEADY_STATE(y);

@@ -1,4 +1,4 @@
-{"dynamic_model_params_derivative": {"model_local_variables": [], , "deriv_wrt_params": {  "neqs": 73, "nparamcols": 49, "entries": []}, "deriv_jacobian_wrt_params": {  "neqs": 73, "nvarcols": 114, "nparamcols": 49, "entries": []}, "second_deriv_residuals_wrt_params": {  "nrows": 73, "nparam1cols": 49, "nparam2cols": 49, "entries": []}, "second_deriv_jacobian_wrt_params": {  "neqs": 73, "nvarcols": 114, "nparam1cols": 49, "nparam2cols": 49, "entries": []}
-, "derivative_hessian_wrt_params": {  "neqs": 73, "nvar1cols": 114, "nvar2cols": 114, "nparamcols": 49, "entries": []}
-, "derivative_g3_wrt_params": {  "neqs": 73, "nvar1cols": 114, "nvar2cols": 114, "nvar3cols": 114, "nparamcols": 49, "entries": []}
+{"dynamic_model_params_derivative": {"model_local_variables": [], , "deriv_wrt_params": {  "neqs": 71, "nparamcols": 49, "entries": []}, "deriv_jacobian_wrt_params": {  "neqs": 71, "nvarcols": 112, "nparamcols": 49, "entries": []}, "second_deriv_residuals_wrt_params": {  "nrows": 71, "nparam1cols": 49, "nparam2cols": 49, "entries": []}, "second_deriv_jacobian_wrt_params": {  "neqs": 71, "nvarcols": 112, "nparam1cols": 49, "nparam2cols": 49, "entries": []}
+, "derivative_hessian_wrt_params": {  "neqs": 71, "nvar1cols": 112, "nvar2cols": 112, "nparamcols": 49, "entries": []}
+, "derivative_g3_wrt_params": {  "neqs": 71, "nvar1cols": 112, "nvar2cols": 112, "nvar3cols": 112, "nparamcols": 49, "entries": []}
 }}

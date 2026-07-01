@@ -47,62 +47,60 @@
 25 & $\mathcal{V}_t$ & Value of an adopted technology & \texttt{V} \\
 26 & $\mathcal{J}_t$ & Value of an unadopted technology & \texttt{J} \\
 27 & -- & R\&D-process productivity disturbance & \texttt{shockchi} \\
-28 & -- & R\&D-development resource (normalized to zero) & \texttt{Srd} \\
-29 & -- & Labor in the R\&D sector & \texttt{Ns} \\
 \addlinespace[0.4em]
 \multicolumn{4}{@{}l}{\textit{Government: fiscal and monetary policy}} \\
 \addlinespace[0.1em]
-30 & $G_t^{C}$ & Government consumption & \texttt{Gc} \\
-31 & $I_t^{GI}$ & Public infrastructure investment & \texttt{Igi} \\
-32 & $K_t^{GI}$ & Public infrastructure capital & \texttt{Kg} \\
-33 & $I_t^{GE}$ & Public human-capital investment & \texttt{Ige} \\
-34 & $K_t^{GE}$ & Public human-capital stock & \texttt{Kge} \\
-35 & $G_t^{RD}$ & Public R\&D spending & \texttt{Grd} \\
-36 & $G_t$ & Total government spending & \texttt{G} \\
-37 & $D_t$ & Public debt & \texttt{b} \\
-38 & $d_t$ & Debt-to-GDP ratio & \texttt{by} \\
-39 & $T_t$ & Lump-sum transfers & \texttt{T} \\
-40 & $\tau_t^{c}$ & Consumption-tax rate & \texttt{tauc} \\
-41 & $\tau_t^{w}$ & Labor-income-tax rate & \texttt{tauw} \\
-42 & $R_t^{mp}$ & Monetary-policy rate & \texttt{Rmp} \\
-43 & $R_t$ & Government borrowing rate & \texttt{R} \\
-44 & -- & Expected default loss & \texttt{Delta\_G} \\
-45 & -- & Probability of default & \texttt{prob\_def} \\
-46 & $e_t^{GI}$ & Infrastructure efficiency gap & \texttt{eGI} \\
-47 & $e_t^{GE}$ & Human-capital efficiency gap & \texttt{eGE} \\
-48 & $e_t^{GRD}$ & R\&D efficiency gap & \texttt{eGRD} \\
+28 & $G_t^{C}$ & Government consumption & \texttt{Gc} \\
+29 & $I_t^{GI}$ & Public infrastructure investment & \texttt{Igi} \\
+30 & $K_t^{GI}$ & Public infrastructure capital & \texttt{Kg} \\
+31 & $I_t^{GE}$ & Public human-capital investment & \texttt{Ige} \\
+32 & $K_t^{GE}$ & Public human-capital stock & \texttt{Kge} \\
+33 & $G_t^{RD}$ & Public R\&D spending & \texttt{Grd} \\
+34 & $G_t$ & Total government spending & \texttt{G} \\
+35 & $D_t$ & Public debt & \texttt{b} \\
+36 & $d_t$ & Debt-to-GDP ratio & \texttt{by} \\
+37 & $T_t$ & Lump-sum transfers & \texttt{T} \\
+38 & $\tau_t^{c}$ & Consumption-tax rate & \texttt{tauc} \\
+39 & $\tau_t^{w}$ & Labor-income-tax rate & \texttt{tauw} \\
+40 & $R_t^{mp}$ & Monetary-policy rate & \texttt{Rmp} \\
+41 & $R_t$ & Government borrowing rate & \texttt{R} \\
+42 & -- & Expected default loss & \texttt{Delta\_G} \\
+43 & -- & Probability of default & \texttt{prob\_def} \\
+44 & $e_t^{GI}$ & Infrastructure efficiency gap & \texttt{eGI} \\
+45 & $e_t^{GE}$ & Human-capital efficiency gap & \texttt{eGE} \\
+46 & $e_t^{GRD}$ & R\&D efficiency gap & \texttt{eGRD} \\
 \addlinespace[0.4em]
 \multicolumn{4}{@{}l}{\textit{Market clearing and equilibrium}} \\
 \addlinespace[0.1em]
-49 & $Y_t^{d}$ & Aggregate demand & \texttt{yd} \\
-50 & $v_t^{p}$ & Price dispersion & \texttt{vp} \\
+47 & $Y_t^{d}$ & Aggregate demand & \texttt{yd} \\
+48 & $v_t^{p}$ & Price dispersion & \texttt{vp} \\
 \addlinespace[0.4em]
 \multicolumn{4}{@{}l}{\textit{Balanced growth}} \\
 \addlinespace[0.1em]
-51 & $g_t$ & Gross growth rate & \texttt{g} \\
+49 & $g_t$ & Gross growth rate & \texttt{g} \\
 \addlinespace[0.4em]
 \multicolumn{4}{@{}l}{\textit{Auxiliary, steady-state, and reporting}} \\
 \addlinespace[0.1em]
-52 & $R_t/\Pi_t$ & Ex-post real interest rate & \texttt{rreal} \\
-53 & $TFP_t$ & Total factor productivity & \texttt{TFP} \\
-54 & -- & Adoption-probability scale (steady state) & \texttt{kappaprob} \\
-55 & -- & Output growth rate & \texttt{ygrowth} \\
-56 & -- & Primary deficit & \texttt{pdef} \\
-57 & -- & Steady-state output (value added) & \texttt{ydss} \\
-58 & -- & Steady-state borrowing rate & \texttt{Rss} \\
-59 & -- & Steady-state government consumption & \texttt{Gcss} \\
-60 & -- & Steady-state infrastructure investment & \texttt{Igiss} \\
-61 & -- & Steady-state human-capital investment & \texttt{Igess} \\
-62 & -- & Steady-state R\&D spending & \texttt{Grdss} \\
-63 & -- & Steady-state R\&D-process disturbance & \texttt{shockchiss} \\
-64 & -- & Log of aggregate demand & \texttt{lnyd} \\
-65 & -- & Log of the price index & \texttt{lnPI} \\
-66 & -- & Log of R\&D spending & \texttt{ln\_Grd} \\
-67 & -- & Debt-to-GDP, annualized & \texttt{by\_ann} \\
-68 & -- & Infrastructure investment, share of GDP & \texttt{Igi\_ys} \\
-69 & -- & Primary deficit, share of steady-state GDP & \texttt{pdef\_yss} \\
-70 & -- & Transfers, share of steady-state GDP & \texttt{T\_yss} \\
-71 & -- & Debt service, share of steady-state GDP & \texttt{dserv\_yss} \\
-72 & -- & Public debt, share of steady-state GDP & \texttt{by\_yss} \\
-73 & -- & R\&D spending, share of steady-state GDP & \texttt{Grd\_ydss\_ratio} \\
+50 & $R_t/\Pi_t$ & Ex-post real interest rate & \texttt{rreal} \\
+51 & $TFP_t$ & Total factor productivity & \texttt{TFP} \\
+52 & -- & Adoption-probability scale (steady state) & \texttt{kappaprob} \\
+53 & -- & Output growth rate & \texttt{ygrowth} \\
+54 & -- & Primary deficit & \texttt{pdef} \\
+55 & -- & Steady-state output (value added) & \texttt{ydss} \\
+56 & -- & Steady-state borrowing rate & \texttt{Rss} \\
+57 & -- & Steady-state government consumption & \texttt{Gcss} \\
+58 & -- & Steady-state infrastructure investment & \texttt{Igiss} \\
+59 & -- & Steady-state human-capital investment & \texttt{Igess} \\
+60 & -- & Steady-state R\&D spending & \texttt{Grdss} \\
+61 & -- & Steady-state R\&D-process disturbance & \texttt{shockchiss} \\
+62 & -- & Log of aggregate demand & \texttt{lnyd} \\
+63 & -- & Log of the price index & \texttt{lnPI} \\
+64 & -- & Log of R\&D spending & \texttt{ln\_Grd} \\
+65 & -- & Debt-to-GDP, annualized & \texttt{by\_ann} \\
+66 & -- & Infrastructure investment, share of GDP & \texttt{Igi\_ys} \\
+67 & -- & Primary deficit, share of steady-state GDP & \texttt{pdef\_yss} \\
+68 & -- & Transfers, share of steady-state GDP & \texttt{T\_yss} \\
+69 & -- & Debt service, share of steady-state GDP & \texttt{dserv\_yss} \\
+70 & -- & Public debt, share of steady-state GDP & \texttt{by\_yss} \\
+71 & -- & R\&D spending, share of steady-state GDP & \texttt{Grd\_ydss\_ratio} \\
 \end{longtable}

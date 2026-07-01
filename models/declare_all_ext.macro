@@ -59,11 +59,9 @@ S             % Effective labor demand for tech adoption
 V              % Value of tech adoption
 q       % Probability of adoption
 J             % Value of unadopted Intermediate
-Srd             % Effective labor demand for R&D development
 Z            % R&D product
 kappaprob       % Parameter in the probability for scaling
 shockchiss     %% SS of shockchi 
-Ns              % Labor in R&D
 TFP             % TFP
 Cgrd_ydss_ratio
 ln_Cgrd
