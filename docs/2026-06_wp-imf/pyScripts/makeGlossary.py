@@ -202,7 +202,73 @@ EXOGENOUS = [
 ]
 
 
-def longtable(groups, caption, label, values=None):
+# Defining/characteristic equation for each endogenous variable, in paper notation
+# (stationarized model form; g is the gross trend growth rate). The pinned scale
+# constants (omega, chiH, kappaprob) and pure steady-state values (ydss, Rss) carry no
+# illuminating equation and are left without one.
+EQNS = {
+    # Households
+    "C":        r"\tfrac{1}{C_t}=\lambda_t(1+\tau^c_t)",
+    "L":        r"\omega(L_t+E_t)^{\varphi}=\lambda_t(1-\tau^w_t)w_t H_{t-1}",
+    "N":        r"N_t=H_{t-1}L_t",
+    "H":        r"H_t=(1-\delta^h)H_{t-1}+\chi E_t^{\gamma}(K^{GE}_{t-1})^{\mu}",
+    "E":        r"\omega(L_t+E_t)^{\varphi}=\lambda^H_t\,\chi\gamma\,E_t^{\gamma-1}(K^{GE}_{t-1})^{\mu}",
+    "Ip":       r"1=\beta\,\mathbb{E}_t\!\big[\tfrac{\lambda_{t+1}}{\lambda_t}(1-\delta+r^k_{t+1})/g_{t+1}\big]",
+    "Kp":       r"g_t K_t=(1-\delta)K_{t-1}+I_t",
+    "rk":       r"r^k_t=\alpha\,mc_t\,Y_t/K_{t-1}",
+    "w":        r"w_t=(1-\alpha)\,mc_t\,Y_t/N_t",
+    "lambda":   r"\lambda_t=\beta\,\mathbb{E}_t\!\big[\lambda_{t+1}R_t/(g_{t+1}\Pi_{t+1})\big]",
+    "lambda_H": r"\lambda^H_t=\beta\,\mathbb{E}_t\!\big[\lambda_{t+1}(1-\tau^w_{t+1})w_{t+1}L_{t+1}+\lambda^H_{t+1}(1-\delta^h)\big]",
+    "SDF":      r"\mathit{SDF}_t=\beta\lambda_t(1+\tau^c_t)/[\lambda_{t-1}(1+\tau^c_{t-1})]",
+    # Production and technology
+    "y":        r"Y_t=A_{t-1}^{\vartheta-1}K_{t-1}^{\alpha}N_t^{1-\alpha}(K^{GI}_{t-1})^{\alpha_G}-\Theta",
+    "mc":       r"\tfrac{K_{t-1}}{N_t}=\tfrac{\alpha}{1-\alpha}\tfrac{w_t}{r^k_t}",
+    "PI":       r"1=\theta_p(\Pi_{t-1}^{\chi_p}/\Pi_t)^{1-\epsilon}+(1-\theta_p)(\Pi^*_t)^{1-\epsilon}",
+    "PIstar":   r"\epsilon\,x_{1,t}=(\epsilon-1)\,x_{2,t}",
+    "x1":       r"x_{1,t}=\lambda_t mc_t Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{-\epsilon}x_{1,t+1}",
+    "x2":       r"x_{2,t}=\lambda_t\Pi^*_t Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{1-\epsilon}\tfrac{\Pi^*_t}{\Pi^*_{t+1}}x_{2,t+1}",
+    "A":        r"g_t A_t=q_t\phi(Z_{t-1}-A_{t-1})+\phi A_{t-1}",
+    "Z":        r"\log\tfrac{Z_t}{Z^{SS}}=\rho_A\log\tfrac{Z_{t-1}}{Z^{SS}}+\alpha_{HA}\log\tfrac{H_{t-1}}{H^{SS}}+\alpha_{RD}\log\tfrac{(1-e^{GRD}_{t-1})G^{RD}_{t-1}}{(1-e^{GRD})G^{RD,SS}}",
+    "S":        r"S_t=\varsigma q_t\phi\,\mathbb{E}_t\!\big[\mathit{SDF}_{t+1}\tfrac{1}{g}\tfrac{A_{t-1}}{A_t}(\mathcal{V}_{t+1}-\mathcal{J}_{t+1})\big]",
+    "q":        r"q_t=q_0(S_t)^{\varsigma}",
+    "V":        r"\mathcal{V}_t=\tfrac{\mu^p-1}{\mu^p}mc_t Y_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\mathcal{V}_{t+1}\tfrac{A_{t-1}}{A_t}\tfrac{1}{g}\big]",
+    "J":        r"\mathcal{J}_t=-S_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\tfrac{A_{t-1}}{A_t}\tfrac{1}{g}(q_t\mathcal{V}_{t+1}+(1-q_t)\mathcal{J}_{t+1})\big]",
+    # Government
+    "Gc":       r"G^C_t=G^{C,SS}+Y^{d,SS}\varepsilon^{c}_t",
+    "Igi":      r"I^{GI}_t=I^{GI,SS}+Y^{d,SS}\varepsilon^{gi}_t",
+    "Kg":       r"g_t K^{GI}_t=(1-\delta)K^{GI}_{t-1}+(1-e^{GI}_t)I^{GI}_t",
+    "Ige":      r"I^{GE}_t=I^{GE,SS}+Y^{d,SS}\varepsilon^{ge}_t",
+    "Kge":      r"g_t K^{GE}_t=(1-\delta)K^{GE}_{t-1}+(1-e^{GE}_t)I^{GE}_t",
+    "Grd":      r"G^{RD}_t=G^{RD,SS}+Y^{d,SS}\varepsilon^{rd}_t",
+    "G":        r"G_t=G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t",
+    "b":        r"B_t=\tfrac{R_{t-1}}{\Pi_t}\tfrac{B_{t-1}}{g_t}+G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t+T_t-\tau^w_t w_t N_t-\tau^c_t C_t",
+    "by":       r"b_t=B_t/Y_t",
+    "T":        r"T_t-T^{SS}=\rho_T(T_{t-1}-T^{SS})-(1-\rho_T)\gamma^T_d(b_{t-1}-b^*)Y^{d,SS}",
+    "tauc":     r"\tau^c_t-\tau^c=\rho_{\tau c}(\tau^c_{t-1}-\tau^c)+(1-\rho_{\tau c})\gamma^{\tau c}_d(b_{t-1}-b^*)+\varepsilon^{\tau c}_t",
+    "tauw":     r"\tau^w_t-\tau^w=\rho_{\tau w}(\tau^w_{t-1}-\tau^w)+(1-\rho_{\tau w})\gamma^{\tau w}_d(b_{t-1}-b^*)+\varepsilon^{\tau w}_t",
+    "Rmp":      r"\tfrac{R^{mp}_t}{R^{SS}}=\big(\tfrac{R^{mp}_{t-1}}{R^{SS}}\big)^{\rho_R}\big[(\tfrac{\Pi_t}{\Pi})^{\gamma_\pi}(\tfrac{Y^d_t}{Y^{d,SS}})^{\gamma_y}\big]^{1-\rho_R}e^{\varepsilon^{mp}_t}",
+    "R":        r"\log R_t=\rho_{RG}R_{t-1}+(1-\rho_{RG})\log R^{mp}_t+\varepsilon^{spr}_t",
+    "eGI":      r"e^{GI}_t=e^{GI}-\varepsilon^{gi,\mathit{eff}}_t",
+    "eGE":      r"e^{GE}_t=e^{GE}-\varepsilon^{ge,\mathit{eff}}_t",
+    "eGRD":     r"e^{GRD}_t=e^{GRD}-\varepsilon^{rd,\mathit{eff}}_t",
+    # Market clearing and equilibrium
+    "yd":       r"Y^d_t=C_t+I_t+G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t+\big(\tfrac{Z_{t-1}}{A_{t-1}}-1\big)S_t",
+    "vp":       r"v^p_t=\theta_p(\Pi_{t-1}^{\chi_p}/\Pi_t)^{-\epsilon}v^p_{t-1}+(1-\theta_p)(\Pi^*_t)^{-\epsilon}",
+    # Balanced growth
+    "g":        r"\log g_t=(1-\rho_g)\log g_{t-1}+\rho_g\log g^{SS}+\varepsilon^{g}_t",
+    # Auxiliary and reporting
+    "rreal":    r"r^{\mathit{real}}_t=R_t/\Pi_t",
+    "Gcss":     r"G^{C,SS}=G^{C,y}Y^{SS}",
+    "Igiss":    r"I^{GI,SS}=I^{GI,y}Y^{SS}",
+    "Igess":    r"I^{GE,SS}=I^{GE,y}Y^{SS}",
+    "Grdss":    r"G^{RD,SS}=G^{RD,y}Y^{SS}",
+    "pdef_yss": r"(G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t+T_t-\tau^w_t w_t N_t-\tau^c_t C_t)/Y^{d,SS}",
+    "T_yss":    r"T_t/Y^{d,SS}",
+    "by_yss":   r"B_t/Y^{d,SS}",
+}
+
+
+def longtable(groups, caption, label, values=None, eqns=None):
     withval = values is not None
     if withval:
         colspec = (r"@{}r@{\hskip 8pt}l >{\raggedright\arraybackslash}p{5.8cm} "
@@ -210,7 +276,9 @@ def longtable(groups, caption, label, values=None):
         head = r"\# & Paper & Description & Model code & AE & EMDE \\"
         ncol = 6
     else:
-        colspec = r"@{}r@{\hskip 10pt}l >{\raggedright\arraybackslash}p{7.6cm} l@{}"
+        width = "9.3cm" if eqns else "7.6cm"
+        colspec = (r"@{}r@{\hskip 10pt}l >{\raggedright\arraybackslash}p{"
+                   + width + r"} l@{}")
         head = r"\# & Paper & Description & Model code \\"
         ncol = 4
     lines = [
@@ -239,7 +307,10 @@ def longtable(groups, caption, label, values=None):
                     em = r"\cellcolor{diffcell} " + em
                 lines.append(rf"{n} & {paper} & {desc} & \texttt{{{code}}} & {ae} & {em} \\")
             else:
-                lines.append(rf"{n} & {paper} & {desc} & \texttt{{{code}}} \\")
+                d = desc
+                if eqns and model in eqns:
+                    d = desc + r" \gloseq{" + eqns[model] + "}"
+                lines.append(rf"{n} & {paper} & {d} & \texttt{{{code}}} \\")
     lines.append(r"\end{longtable}")
     return "\n".join(lines) + "\n"
 
@@ -255,12 +326,12 @@ def main():
                 e = "--" if code in EMDE_DASH else fmt_val(em[code])
                 pvals[code] = (a, e, a != e)  # third element: differs across AE/EMDE
     specs = [
-        (ENDOGENOUS, "Endogenous Variables", "tab:glossEndo", "glossaryEndogenous.tex", None),
-        (PARAMETERS, "Parameters",           "tab:glossParam", "glossaryParameters.tex", pvals),
-        (EXOGENOUS,  "Exogenous Variables (Shocks)", "tab:glossExo", "glossaryExogenous.tex", None),
+        (ENDOGENOUS, "Endogenous Variables", "tab:glossEndo", "glossaryEndogenous.tex", None, EQNS),
+        (PARAMETERS, "Parameters",           "tab:glossParam", "glossaryParameters.tex", pvals, None),
+        (EXOGENOUS,  "Exogenous Variables (Shocks)", "tab:glossExo", "glossaryExogenous.tex", None, None),
     ]
-    for groups, caption, label, fname, values in specs:
-        (OUT_DIR / fname).write_text(longtable(groups, caption, label, values), encoding="utf-8")
+    for groups, caption, label, fname, values, eqns in specs:
+        (OUT_DIR / fname).write_text(longtable(groups, caption, label, values, eqns), encoding="utf-8")
         nrows = sum(len(rows) for _, rows in groups)
         extra = "" if values is None else " + AE/EMDE values"
         print(f"  Wrote {fname} ({nrows} rows{extra})")

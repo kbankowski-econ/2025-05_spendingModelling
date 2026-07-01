@@ -48,6 +48,8 @@
 \usepackage{colortbl}
 \definecolor{grey}{cmyk}{0, 0, 0, 0.17}
 \definecolor{diffcell}{HTML}{EAE0F4} % light lavender: parameters that differ across AE/EMDE
+% Glossary helper: an equation below a variable's description, auto-shrunk to the column width.
+\newcommand{\gloseq}[1]{\newline\adjustbox{max width=\linewidth}{\footnotesize\ensuremath{\displaystyle #1}}}
 \usepackage{appendix}
 \usepackage{eurosym}
 \usepackage{array}
@@ -643,7 +645,7 @@ This appendix maps the paper's notation to the variable and parameter names used
 
 \subsection{Endogenous Variables}
 
-A few scale constants---the human-capital scale $\chi$, the labor-disutility scale $\omega$, and the adoption-probability scale---are not calibrated directly but solved as part of the steady state, with the model pinning each to its steady-state value so that the corresponding steady-state target is matched. They therefore appear here among the endogenous variables rather than in the parameter table.
+Each variable's defining stationarized equilibrium equation is shown beneath its description ($g$ is the gross trend growth rate; superscript $SS$ denotes a steady-state value). A few scale constants---the human-capital scale $\chi$, the labor-disutility scale $\omega$, and the adoption-probability scale---are not calibrated directly but solved as part of the steady state, with the model pinning each to its steady-state value so that the corresponding steady-state target is matched; they therefore appear here among the endogenous variables rather than in the parameter table, and carry no equation.
 
 \input{glossaryEndogenous.tex}
 
