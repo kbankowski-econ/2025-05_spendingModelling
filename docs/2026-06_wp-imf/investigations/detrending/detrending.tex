@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=2.5cm,vmargin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\title{From Level to Stationarized Equations:\\ the Capital Accumulation Example}
+\author{Spending-efficiency model --- internal note}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\noindent
+The model's equations are the \emph{stationarized} counterparts of the level-form
+optimality and accounting conditions. This note works through the transformation for
+the private-capital law of motion, from un-detrended (level) variables to the detrended
+(stationary) variables the model actually solves. The same logic applies to every
+trending equation; the growth factors it produces are exactly the $g$ terms in the
+Dynare files.
+
+\section{Start: the level (un-detrended) equation}
+
+\begin{equation}\label{eq:level}
+    K_t = (1-\delta)K_{t-1} + I_t,
+\end{equation}
+where $K_t$ is the level of private capital and $I_t$ is level investment. Along the
+balanced-growth path both grow with the technology trend $\Lambda_t$, at the gross rate
+\begin{equation}
+    g_t \equiv \frac{\Lambda_t}{\Lambda_{t-1}}.
+\end{equation}
+
+\section{Define the detrended variables}
+
+Express each quantity relative to the trend, so that it is constant in steady state:
+\begin{equation}
+    \hat K_t \equiv \frac{K_t}{\Lambda_t}, \qquad
+    \hat I_t \equiv \frac{I_t}{\Lambda_{t-1}}.
+\end{equation}
+
+\section{Stationarize: divide \eqref{eq:level} by $\Lambda_{t-1}$}
+
+$\Lambda_{t-1}$ is the trend attached to the \emph{predetermined} stock $K_{t-1}$, so
+dividing the identity by it is the natural choice:
+\begin{equation}
+    \frac{K_t}{\Lambda_{t-1}}
+    = (1-\delta)\underbrace{\frac{K_{t-1}}{\Lambda_{t-1}}}_{=\,\hat K_{t-1}}
+    + \underbrace{\frac{I_t}{\Lambda_{t-1}}}_{=\,\hat I_t}.
+\end{equation}
+The two right-hand terms are already stationary. The left-hand term is the \emph{new}
+stock, one period of growth ``ahead,'' so it carries the growth factor:
+\begin{equation}
+    \frac{K_t}{\Lambda_{t-1}}
+    = \frac{K_t}{\Lambda_t}\cdot\frac{\Lambda_t}{\Lambda_{t-1}}
+    = g_t\,\hat K_t.
+\end{equation}
+
+\section{Result: the model equation}
+
+\begin{equation}\label{eq:model}
+    \boxed{\,g_t\,\hat K_t = (1-\delta)\hat K_{t-1} + \hat I_t\,}
+\end{equation}
+which is exactly the Dynare code \texttt{Kp*g = (1-delta)*Kp(-1) + Ip}.
+
+\section{Where the $g$ comes from}
+
+The factor $g_t$ is nothing but $\Lambda_t/\Lambda_{t-1}$---the \textbf{growth wedge}
+between the current stock ($\sim\Lambda_t$) and the predetermined stock and resources it
+is built from ($\sim\Lambda_{t-1}$). Detrending changes nothing economic; it simply
+relabels every variable relative to the trend, and the leftover $\Lambda$-ratios surface
+as the $g$ factors. As a rule:
+\begin{itemize}
+    \item wherever a level equation compares a date-$t$ quantity with a date-$(t{-}1)$
+          one (accumulation identities), a $g_t$ appears on the current variable;
+    \item wherever it compares date $t$ with date $t{+}1$ (Euler and asset-pricing
+          conditions), a $g_{t+1}$ appears in the discount factor---e.g.\ the bond Euler
+          equation $\lambda_t = \beta\,\mathbb{E}_t[\lambda_{t+1}R_t/\Pi_{t+1}]$ becomes
+          $\hat\lambda_t = \beta\,\mathbb{E}_t[\hat\lambda_{t+1}R_t/(g_{t+1}\Pi_{t+1})]$,
+          because $\lambda$ (marginal utility) falls with the trend and is rescaled
+          inversely.
+\end{itemize}
+
+\section{Steady-state check}
+
+With $g_t = g$ and $\hat K_t = \hat K_{t-1} = \hat K$, equation~\eqref{eq:model} gives
+\begin{equation}
+    g\hat K = (1-\delta)\hat K + \hat I
+    \quad\Longrightarrow\quad
+    \hat I = (g-1+\delta)\,\hat K,
+\end{equation}
+i.e.\ steady-state investment covers \emph{depreciation} ($\delta$) plus \emph{growth of
+the stock} ($g-1$). Numerically, $g-1+\delta = 0.004 + 0.025 = 0.029$, and the solved
+model has $\hat I/\hat K = 0.1629/5.617 = 0.029$. \checkmark
+
+\section{A note on the investment convention}
+
+Above, investment was scaled by the incumbent trend, $\hat I_t = I_t/\Lambda_{t-1}$,
+which is what delivers the clean \texttt{+Ip} in the code. Scaling it instead by the
+current trend, $I_t/\Lambda_t$, the identical algebra yields
+\begin{equation}
+    g_t\hat K_t = (1-\delta)\hat K_{t-1} + g_t\hat I_t,
+\end{equation}
+with the $g_t$ then sitting on the flow as well. This is only a labeling choice for the
+investment variable; the substantive content---the $g_t$ on the current stock---is
+unchanged.
+
+\end{document}
