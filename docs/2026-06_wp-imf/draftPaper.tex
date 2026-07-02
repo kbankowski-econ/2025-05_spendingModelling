@@ -200,7 +200,8 @@ The fiscal authority spends on government consumption, public infrastructure, pu
 The central bank sets the policy rate according to a Taylor rule.
 
 The economy grows along a balanced-growth path driven by technology; the trend level is denoted $\Lambda_t$ and grows at the constant gross rate $g$.
-The remainder of this section sets out the model's building blocks in turn, starting from households. The complete set of stationarized equilibrium conditions is collected in Appendix~\ref{app:equilibrium}.
+The remainder of this section sets out the model's building blocks in turn, starting from households.
+The complete set of stationarized equilibrium conditions is collected in Appendix~\ref{app:equilibrium}.
 
 \subsection{Households}
 
@@ -216,7 +217,8 @@ The flow budget constraint, in real terms, is
 \end{equation}
 where $\tau_t^{c}$ and $\tau_t^{w}$ are the consumption and labor income tax rates, $I_t$ is private investment, $B_t$ is real holdings of government debt paying the gross return $R_{t-1}$, $\Pi_t$ is gross inflation, $w_t$ is the real wage, $N_t \equiv H_{t-1} L_t$ is effective labor (the human-capital stock enters predetermined), $r_t^{k}$ is the rental rate of private capital $K_t$, $T_t$ are lump-sum transfers, and $\Omega_t$ are profits rebated by firms and technology adopters.
 
-Let $\lambda_t$ denote the marginal utility of consumption. Optimal choices over consumption, debt, and private capital imply
+Let $\lambda_t$ denote the marginal utility of consumption.
+Optimal choices over consumption, debt, and private capital imply
 \begin{align}
     \lambda_t &= \frac{1}{\left(1+\tau_t^{c}\right) C_t}, \label{eq:mu}\\
     \lambda_t &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\frac{R_t}{\Pi_{t+1}}\right], \label{eq:euler}\\
@@ -224,7 +226,8 @@ Let $\lambda_t$ denote the marginal utility of consumption. Optimal choices over
 \end{align}
 where $\delta$ is the depreciation rate of private capital.
 
-The novel block concerns human capital. Private human capital $H_t$ evolves according to
+The novel block concerns human capital.
+Private human capital $H_t$ evolves according to
 \begin{equation} \label{eq:humancapital}
     H_{t} = \left(1 - \delta^{h}\right) H_{t-1} + \chi \left(E_t\right)^{\gamma} \left(\frac{K_{t-1}^{GE}}{\Lambda_{t-1}}\right)^{\mu},
 \end{equation}
@@ -240,20 +243,27 @@ Equation~\eqref{eq:labor} is the standard labor-supply condition; equation~\eqre
 
 \subsection{Production and Technology}
 
-\paragraph{Final goods.} A competitive final good $Y_t^{d}$ is a CES aggregate of a continuum of intermediate varieties with elasticity of substitution $\epsilon$. Cost minimization yields the demand for variety $i$, $y_t(i) = \left(P_t(i)/P_t\right)^{-\epsilon} Y_t^{d}$, and the price index $P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}$.
+\paragraph{Final goods.}
+A competitive final good $Y_t^{d}$ is a CES aggregate of a continuum of intermediate varieties with elasticity of substitution $\epsilon$.
+Cost minimization yields the demand for variety $i$, $y_t(i) = \left(P_t(i)/P_t\right)^{-\epsilon} Y_t^{d}$, and the price index $P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}$.
 
-\paragraph{Intermediate goods.} A continuum of monopolistically competitive firms produces the varieties. Output of a firm is given by the aggregate production function
+\paragraph{Intermediate goods.}
+A continuum of monopolistically competitive firms produces the varieties.
+Output of a firm is given by the aggregate production function
 \begin{equation} \label{eq:production}
     Y_t = A_{t-1}^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha} \left(K_{t-1}^{GI}\right)^{\alpha_G} - \Theta,
 \end{equation}
 where $A_{t-1}$ is the stock of adopted technologies, $K_{t-1}$ is private capital, $N_t = H_{t-1} L_t$ is effective labor, $K_{t-1}^{GI}$ is the stock of public infrastructure capital, which augments private production as a positive externality, and $\Theta$ is a fixed cost.
-The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{In \citet{Anzoateguietal2019} a single intermediate-goods elasticity of substitution sets both the markup and the returns to variety. Here the markup is governed separately by $\epsilon$; $\vartheta$ retains only the latter role, mapping the stock of adopted technologies into TFP through the love-of-variety term $A_t^{\vartheta-1}$.}
+The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{In \citet{Anzoateguietal2019} a single intermediate-goods elasticity of substitution sets both the markup and the returns to variety.
+Here the markup is governed separately by $\epsilon$; $\vartheta$ retains only the latter role, mapping the stock of adopted technologies into TFP through the love-of-variety term $A_t^{\vartheta-1}$.}
 Cost minimization implies a common real marginal cost $mc_t$ and the factor-demand conditions
 \begin{equation} \label{eq:factordemand}
     r_t^{k} = \alpha\, mc_t \frac{Y_t}{K_{t-1}}, \qquad w_t = (1-\alpha)\, mc_t \frac{Y_t}{N_t}, \qquad \frac{K_{t-1}}{N_t} = \frac{\alpha}{1-\alpha}\frac{w_t}{r_t^{k}}.
 \end{equation}
 
-\paragraph{Price setting.} Each period a fraction $1-\theta_p$ of firms reoptimizes, while the remainder index their price to past inflation with elasticity $\chi_p$. The reset price $\Pi_t^{*}$ solves the recursive system
+\paragraph{Price setting.}
+Each period a fraction $1-\theta_p$ of firms reoptimizes, while the remainder index their price to past inflation with elasticity $\chi_p$.
+The reset price $\Pi_t^{*}$ solves the recursive system
 \begin{align}
     x_{1,t} &= \lambda_t\, mc_t\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{-\epsilon} x_{1,t+1}\right], \label{eq:g1}\\
     x_{2,t} &= \lambda_t\, \Pi_t^{*}\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon} \frac{\Pi_t^{*}}{\Pi_{t+1}^{*}} x_{2,t+1}\right], \qquad \epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}, \label{eq:g2}
@@ -261,7 +271,8 @@ Cost minimization implies a common real marginal cost $mc_t$ and the factor-dema
 together with the aggregate price law of motion $1 = \theta_p\left(\Pi_{t-1}^{\chi_p}/\Pi_t\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}$.
 
 \paragraph{Technology creation and adoption.}
-Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model distinguishes between the stock of created technologies $Z_t$, available for adoption, and the stock of adopted technologies $A_t$ that enters production. The gap $Z_t - A_t$ is the stock of unadopted technologies.
+Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model distinguishes between the stock of created technologies $Z_t$, available for adoption, and the stock of adopted technologies $A_t$ that enters production.
+The gap $Z_t - A_t$ is the stock of unadopted technologies.
 
 The creation of new technologies depends on two factors.
 First, higher human capital fosters innovation, reflecting a learning-by-doing channel as in \citet{ChangGomesSchorfheide2002}.
@@ -269,7 +280,9 @@ Second, public R\&D spending $G_t^{RD}$ contributes directly to creation:
 \begin{equation} \label{eq:Z}
     \log\!\left(\frac{Z_t}{Z^{SS}}\right) = \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right) + \alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) + \alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) G_{t-1}^{RD}}{\left(1-e^{GRD}\right) G^{RD,SS}}\right),
 \end{equation}
-where only the productive fraction $\left(1-e_{t-1}^{GRD}\right)$ of (lagged) R\&D spending drives innovation: $e_t^{GRD}$ is the R\&D inefficiency wedge, equal to its steady-state value $e^{GRD}$ in the baseline and reduced when the R\&D efficiency gap is closed (Section~\ref{sec:results}). The raw spending $G_t^{RD}$ enters the government budget constraint~\eqref{eq:govbudget}. The coefficients $\alpha_{HA}$ and $\alpha_{RD}$ are the per-period loadings reported in Table~\ref{tab:parameters}; the implied long-run elasticities of created technology are $\alpha_{HA}/(1-\rho_A)$ and $\alpha_{RD}/(1-\rho_A)$.
+where only the productive fraction $\left(1-e_{t-1}^{GRD}\right)$ of (lagged) R\&D spending drives innovation: $e_t^{GRD}$ is the R\&D inefficiency wedge, equal to its steady-state value $e^{GRD}$ in the baseline and reduced when the R\&D efficiency gap is closed (Section~\ref{sec:results}).
+The raw spending $G_t^{RD}$ enters the government budget constraint~\eqref{eq:govbudget}.
+The coefficients $\alpha_{HA}$ and $\alpha_{RD}$ are the per-period loadings reported in Table~\ref{tab:parameters}; the implied long-run elasticities of created technology are $\alpha_{HA}/(1-\rho_A)$ and $\alpha_{RD}/(1-\rho_A)$.
 To capture the lag between creation and adoption, the stock of adopted technologies evolves as
 \begin{equation} \label{eq:A}
     A_{t} = q_t\, \phi \left[Z_{t-1} - A_{t-1}\right] + \phi A_{t-1},
@@ -281,20 +294,29 @@ The productivity payoff of the adopted-technology stock $A_t$ is realized in the
 
 \subsection{Government: Fiscal and Monetary Policy}
 
-\paragraph{Public capital and efficiency.} The fiscal authority builds public infrastructure capital $K_t^{GI}$ and public human capital $K_t^{GE}$ through investment flows $I_t^{GI}$ and $I_t^{GE}$, adjusted for technical inefficiencies $e^{GI}$ and $e^{GE}$:
+\paragraph{Public capital and efficiency.}
+The fiscal authority builds public infrastructure capital $K_t^{GI}$ and public human capital $K_t^{GE}$ through investment flows $I_t^{GI}$ and $I_t^{GE}$, adjusted for technical inefficiencies $e^{GI}$ and $e^{GE}$:
 \begin{align}
     K_t^{GI} &= \left(1 - \delta^{GI}\right) K_{t-1}^{GI} + \left(1 - e^{GI}\right) I_t^{GI}, \label{eq:kgi} \\
     K_t^{GE} &= \left(1 - \delta^{GE}\right) K_{t-1}^{GE} + \left(1 - e^{GE}\right) I_t^{GE}. \label{eq:kge}
 \end{align}
-Only a fraction $1 - e^{x}$ of each unit spent is converted into productive capital. An analogous wedge $e^{GRD}$ applies to public R\&D, so that effective R\&D in equation~\eqref{eq:Z} is $\left(1 - e^{GRD}\right) G_t^{RD}$.\footnote{A second dimension of efficiency relates to allocating resources toward higher-return projects, referred to as allocative efficiency. Section~\ref{sec:results} also considers an extended scenario that incorporates both technical and allocative efficiency improvements.}
+Only a fraction $1 - e^{x}$ of each unit spent is converted into productive capital.
+An analogous wedge $e^{GRD}$ applies to public R\&D, so that effective R\&D in equation~\eqref{eq:Z} is $\left(1 - e^{GRD}\right) G_t^{RD}$.\footnote{A second dimension of efficiency relates to allocating resources toward higher-return projects, referred to as allocative efficiency.
+Section~\ref{sec:results} also considers an extended scenario that incorporates both technical and allocative efficiency improvements.}
 
-\paragraph{Budget and instruments.} Let $B_t$ denote real public debt and $b_t = B_t/Y_t$ the debt-to-GDP ratio. The government budget constraint is
+\paragraph{Budget and instruments.}
+Let $B_t$ denote real public debt and $b_t = B_t/Y_t$ the debt-to-GDP ratio.
+The government budget constraint is
 \begin{equation} \label{eq:govbudget}
     B_t = \frac{R_{t-1}}{\Pi_t} B_{t-1} + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + T_t - \tau_t^{w} w_t N_t - \tau_t^{c} C_t,
 \end{equation}
-where $G_t^{C}$ is government consumption. The four expenditure instruments---$G_t^{C}$, $I_t^{GI}$, $I_t^{GE}$, and $G_t^{RD}$---can be moved independently. In the policy experiments of Section~\ref{sec:results}, an increase in one growth-enhancing category is financed by an equal cut in government consumption, keeping the reform budget-neutral on impact. The tax rates and transfers adjust gradually to stabilize debt, responding to the deviation of the debt-to-GDP ratio from its target $b^{*}$.
+where $G_t^{C}$ is government consumption.
+The four expenditure instruments---$G_t^{C}$, $I_t^{GI}$, $I_t^{GE}$, and $G_t^{RD}$---can be moved independently.
+In the policy experiments of Section~\ref{sec:results}, an increase in one growth-enhancing category is financed by an equal cut in government consumption, keeping the reform budget-neutral on impact.
+The tax rates and transfers adjust gradually to stabilize debt, responding to the deviation of the debt-to-GDP ratio from its target $b^{*}$.
 
-\paragraph{Monetary policy and sovereign borrowing cost.} The central bank sets the policy rate $R_t^{mp}$ according to a Taylor rule,
+\paragraph{Monetary policy and sovereign borrowing cost.}
+The central bank sets the policy rate $R_t^{mp}$ according to a Taylor rule,
 \begin{equation} \label{eq:taylor}
     \frac{R_t^{mp}}{R^{mp}} = \left(\frac{R_{t-1}^{mp}}{R^{mp}}\right)^{\rho_R}\left[\left(\frac{\Pi_t}{\Pi}\right)^{\gamma_\pi}\left(\frac{Y_t^{d}}{Y^{d}}\right)^{\gamma_y}\right]^{1-\rho_R} e^{\varepsilon_t^{mp}}.
 \end{equation}
@@ -310,15 +332,25 @@ Goods-market clearing equates aggregate demand to its uses,
 \begin{equation} \label{eq:resource}
     Y_t^{d} = C_t + I_t + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + \mathcal{R}_t,
 \end{equation}
-where $\mathcal{R}_t$ collects the resources devoted to technology creation and adoption. Gross output exceeds value added by the price-dispersion wedge $v_t^{p}$ generated by staggered pricing, $Y_t = v_t^{p} Y_t^{d}$. A competitive equilibrium is a sequence of quantities and prices such that households and firms optimize, the government budget constraint and policy rules hold, and the goods, labor, capital, and bond markets clear, given the paths of the policy instruments and exogenous processes.
+where $\mathcal{R}_t$ collects the resources devoted to technology creation and adoption.
+Gross output exceeds value added by the price-dispersion wedge $v_t^{p}$ generated by staggered pricing, $Y_t = v_t^{p} Y_t^{d}$.
+A competitive equilibrium is a sequence of quantities and prices such that households and firms optimize, the government budget constraint and policy rules hold, and the goods, labor, capital, and bond markets clear, given the paths of the policy instruments and exogenous processes.
 
 \subsection{Balanced Growth and Solution}
 
-The economy follows a balanced-growth path along which real quantities grow at the constant gross trend rate $g$, driven by the trend $\Lambda_t$ in technology. All trending variables are stationarized by $\Lambda_t$ prior to solution; this is the role of the scaling terms in equations~\eqref{eq:humancapital} and~\eqref{eq:A}.
+The economy follows a balanced-growth path along which real quantities grow at the constant gross trend rate $g$, driven by the trend $\Lambda_t$ in technology.
+All trending variables are stationarized by $\Lambda_t$ prior to solution; this is the role of the scaling terms in equations~\eqref{eq:humancapital} and~\eqref{eq:A}.
 
-The optimality and accounting conditions above, and their counterparts in Appendix~\ref{app:equilibrium}, are written for the level variables; the equations actually solved are their stationarized versions. Because the real quantities---consumption, private and public capital, investment, output, the real wage, government spending, debt, and transfers---grow with the trend, each is rescaled by the trend, denoted $\hat{X}_t$, so that $\hat{X}_t$ is constant on the balanced-growth path: a date-$t$ quantity is divided by $\Lambda_t$, while investment, which augments a predetermined stock, is divided by the incumbent trend $\Lambda_{t-1}$, so that it is measured in the same units as the capital it builds. Multipliers and asset values move inversely: the marginal utility of consumption $\lambda_t$ and the adoption values $\mathcal{V}_t$ and $\mathcal{J}_t$ are rescaled by the reciprocal trend, since they fall as the economy grows. Substituting these definitions leaves the gross growth factor $g_t \equiv \Lambda_t/\Lambda_{t-1}$ wherever variables enter at different dates: an accumulation equation carries a $g_t$ on the current-period stock, and Euler and asset-pricing conditions carry an additional $g_{t+1}$ in the discount factor. The bond Euler equation, for instance, transforms from its level form $\lambda_t = \beta\,\mathbb{E}_t\!\left[\lambda_{t+1}R_t/\Pi_{t+1}\right]$ into $\hat{\lambda}_t = \beta\,\mathbb{E}_t\!\left[\hat{\lambda}_{t+1}R_t/(g_{t+1}\Pi_{t+1})\right]$, and the private-capital law of motion $K_t = (1-\delta)K_{t-1}+I_t$ into $g_t\hat{K}_t = (1-\delta)\hat{K}_{t-1} + \hat{I}_t$. The created- and adopted-technology stocks are the exception: they grow at their own gross rate $1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$---faster than output, since technology enters production only through the love-of-variety term---so their laws of motion and value functions carry $1+\gamma^{a}$ rather than $g_t$ (Appendix~\ref{app:equilibrium}). The steady state of this stationary system---with the hats suppressed, as in Appendix~\ref{app:equilibrium} and the Dynare files---is the balanced-growth path.
+The optimality and accounting conditions above, and their counterparts in Appendix~\ref{app:equilibrium}, are written for the level variables; the equations actually solved are their stationarized versions.
+Because the real quantities---consumption, private and public capital, investment, output, the real wage, government spending, debt, and transfers---grow with the trend, each is rescaled by the trend, denoted $\hat{X}_t$, so that $\hat{X}_t$ is constant on the balanced-growth path: a date-$t$ quantity is divided by $\Lambda_t$, while investment, which augments a predetermined stock, is divided by the incumbent trend $\Lambda_{t-1}$, so that it is measured in the same units as the capital it builds.
+Multipliers and asset values move inversely: the marginal utility of consumption $\lambda_t$ and the adoption values $\mathcal{V}_t$ and $\mathcal{J}_t$ are rescaled by the reciprocal trend, since they fall as the economy grows.
+Substituting these definitions leaves the gross growth factor $g_t \equiv \Lambda_t/\Lambda_{t-1}$ wherever variables enter at different dates: an accumulation equation carries a $g_t$ on the current-period stock, and Euler and asset-pricing conditions carry an additional $g_{t+1}$ in the discount factor.
+The bond Euler equation, for instance, transforms from its level form $\lambda_t = \beta\,\mathbb{E}_t\!\left[\lambda_{t+1}R_t/\Pi_{t+1}\right]$ into $\hat{\lambda}_t = \beta\,\mathbb{E}_t\!\left[\hat{\lambda}_{t+1}R_t/(g_{t+1}\Pi_{t+1})\right]$, and the private-capital law of motion $K_t = (1-\delta)K_{t-1}+I_t$ into $g_t\hat{K}_t = (1-\delta)\hat{K}_{t-1} + \hat{I}_t$.
+The created- and adopted-technology stocks are the exception: they grow at their own gross rate $1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$---faster than output, since technology enters production only through the love-of-variety term---so their laws of motion and value functions carry $1+\gamma^{a}$ rather than $g_t$ (Appendix~\ref{app:equilibrium}).
+The steady state of this stationary system---with the hats suppressed, as in Appendix~\ref{app:equilibrium} and the Dynare files---is the balanced-growth path.
 
-The model is implemented in Dynare and solved as a deterministic, perfect-foresight system. The policy experiments in Section~\ref{sec:results} are permanent reforms introduced in 2025, with responses traced out to 2050 around the balanced-growth steady state.
+The model is implemented in Dynare and solved as a deterministic, perfect-foresight system.
+The policy experiments in Section~\ref{sec:results} are permanent reforms introduced in 2025, with responses traced out to 2050 around the balanced-growth steady state.
 
 %========================================================================
 \section{Calibration} \label{sec:calibration}
@@ -329,11 +361,22 @@ Conventional parameters governing preferences, pricing, and policy take standard
 The parameters specific to the public-spending and growth channels, which are central to the experiments, are summarized in Table~\ref{tab:parameters} and described below; the steady-state fiscal ratios that follow are set to match observed spending shares and effective tax rates for each country group.
 
 \begin{compactitem}
-    \item \emph{Elasticity of output with respect to infrastructure ($\alpha_G$).} It is set at 0.05 for AEs, following \citet{TraumYang2015}, and 0.17 for EMDEs, based on \citet{BornLigthart2014} and \citet{Buffieetal2012}. The higher value for EMDEs reflects the larger contribution of public infrastructure investment to output in these economies.
-    \item \emph{Private human capital accumulation.} The elasticity of human capital accumulation with respect to the public human capital stock ($\mu$) is set at 0.25 for EMDEs and 0.1 for AEs, which is in the range documented in \citet{GlommRavikumar1998}, \citet{Blankenau2005}, and \citet{Atoliaetal2021}. The lower value for AEs reflects the empirical finding that the marginal impact of government investment on human capital formation is moderate, given already well-developed education and health infrastructure. The elasticity with respect to the time spent on human capital accumulation is set to $\gamma = 0.5$ for both country groups, consistent with \citet{Atoliaetal2021} and \citet{Dissouetal2016}.
-    \item \emph{Depreciation of public capital ($\delta^{GI}$, $\delta^{GE}$).} Both depreciation rates are set at the standard value of 0.025, corresponding to an annual depreciation rate of 10 percent.
-    \item \emph{Technology innovation parameters.} The AR(1) coefficient for the stock of technologies ($\rho_A$) is set at 0.79 (quarterly), as in \citet{ChangGomesSchorfheide2002}. For AEs, the elasticity of human capital with respect to technology development ($\alpha_{HA}$) is set at 0.45, capturing the learning-by-doing channel, as in \citet{ChangGomesSchorfheide2002}. The elasticity of public R\&D spending ($\alpha_{RD}$) is calibrated at 0.1, consistent with the R\&D impact estimates in \citet{FieldhouseMertens2023}.
-    \item \emph{Technology adoption parameters.} Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the elasticity of the adoption probability with respect to adoption spending ($\varsigma$) is set at 0.8 (Table~\ref{tab:parameters}). The scale of the adoption-probability function, $q_0$ in $q_t = q_0\left(S_t/\Lambda_t\right)^{\varsigma}$, is not calibrated directly; it is pinned in the steady state by the targeted probability of technology adoption, set to deliver an average adoption lag of approximately 10 years.
+    \item \emph{Elasticity of output with respect to infrastructure ($\alpha_G$).}
+It is set at 0.05 for AEs, following \citet{TraumYang2015}, and 0.17 for EMDEs, based on \citet{BornLigthart2014} and \citet{Buffieetal2012}.
+The higher value for EMDEs reflects the larger contribution of public infrastructure investment to output in these economies.
+    \item \emph{Private human capital accumulation.}
+The elasticity of human capital accumulation with respect to the public human capital stock ($\mu$) is set at 0.25 for EMDEs and 0.1 for AEs, which is in the range documented in \citet{GlommRavikumar1998}, \citet{Blankenau2005}, and \citet{Atoliaetal2021}.
+The lower value for AEs reflects the empirical finding that the marginal impact of government investment on human capital formation is moderate, given already well-developed education and health infrastructure.
+The elasticity with respect to the time spent on human capital accumulation is set to $\gamma = 0.5$ for both country groups, consistent with \citet{Atoliaetal2021} and \citet{Dissouetal2016}.
+    \item \emph{Depreciation of public capital ($\delta^{GI}$, $\delta^{GE}$).}
+Both depreciation rates are set at the standard value of 0.025, corresponding to an annual depreciation rate of 10 percent.
+    \item \emph{Technology innovation parameters.}
+The AR(1) coefficient for the stock of technologies ($\rho_A$) is set at 0.79 (quarterly), as in \citet{ChangGomesSchorfheide2002}.
+For AEs, the elasticity of human capital with respect to technology development ($\alpha_{HA}$) is set at 0.45, capturing the learning-by-doing channel, as in \citet{ChangGomesSchorfheide2002}.
+The elasticity of public R\&D spending ($\alpha_{RD}$) is calibrated at 0.1, consistent with the R\&D impact estimates in \citet{FieldhouseMertens2023}.
+    \item \emph{Technology adoption parameters.}
+Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the elasticity of the adoption probability with respect to adoption spending ($\varsigma$) is set at 0.8 (Table~\ref{tab:parameters}).
+The scale of the adoption-probability function, $q_0$ in $q_t = q_0\left(S_t/\Lambda_t\right)^{\varsigma}$, is not calibrated directly; it is pinned in the steady state by the targeted probability of technology adoption, set to deliver an average adoption lag of approximately 10 years.
 \end{compactitem}
 
 \begin{table}[H]
@@ -344,15 +387,21 @@ The parameters specific to the public-spending and growth channels, which are ce
     \input{parametersTable.tex}
 
     \vspace{1mm}
-    \tabnote{IMF staff estimates; see references in the text.}{Parameters for the representative advanced economy (AE) and emerging market and developing economy (EMDE). The innovation loadings $\alpha_{HA}$ and $\alpha_{RD}$ are the per-period coefficients in the AR(1) law of motion for created technology (Section~\ref{sec:model}); a permanent rise in the human-capital stock or in R\&D raises created technology by $\alpha_{HA}/(1-\rho_A)\approx 0.45$ and $\alpha_{RD}/(1-\rho_A)\approx 0.10$ in the long run. ``--'' marks the parameters of the endogenous-innovation channel---technology creation, public R\&D, and the spending-driven adoption response ($\varsigma$)---which is switched off for EMDEs, so these economies grow along the calibrated trend rather than through endogenous innovation.}
+    \tabnote{IMF staff estimates; see references in the text.}{Parameters for the representative advanced economy (AE) and emerging market and developing economy (EMDE).
+The innovation loadings $\alpha_{HA}$ and $\alpha_{RD}$ are the per-period coefficients in the AR(1) law of motion for created technology (Section~\ref{sec:model}); a permanent rise in the human-capital stock or in R\&D raises created technology by $\alpha_{HA}/(1-\rho_A)\approx 0.45$ and $\alpha_{RD}/(1-\rho_A)\approx 0.10$ in the long run.
+``--'' marks the parameters of the endogenous-innovation channel---technology creation, public R\&D, and the spending-driven adoption response ($\varsigma$)---which is switched off for EMDEs, so these economies grow along the calibrated trend rather than through endogenous innovation.}
 \end{table}
 
-The inefficiency parameters deserve separate treatment, as they are central to the spending-efficiency experiments. The efficiency gaps are set based on the empirical estimates of spending efficiency in \citet{Bankowskietal2026}, separately for each productive spending category.
+The inefficiency parameters deserve separate treatment, as they are central to the spending-efficiency experiments.
+The efficiency gaps are set based on the empirical estimates of spending efficiency in \citet{Bankowskietal2026}, separately for each productive spending category.
 
 \begin{compactitem}
-    \item \emph{Infrastructure investment ($e^{GI}$).} The average efficiency gap is set at 0.36 for AEs and 0.41 for EMDEs.
-    \item \emph{Human capital investment ($e^{GE}$).} The gap is set at 0.31 for AEs and 0.33 for EMDEs.
-    \item \emph{Public R\&D ($e^{GRD}$).} The inefficiency parameter is set at 0.40 for AEs, while this innovation channel is shut down in EMDEs due to their reliance on technology adoption rather than innovation.
+    \item \emph{Infrastructure investment ($e^{GI}$).}
+The average efficiency gap is set at 0.36 for AEs and 0.41 for EMDEs.
+    \item \emph{Human capital investment ($e^{GE}$).}
+The gap is set at 0.31 for AEs and 0.33 for EMDEs.
+    \item \emph{Public R\&D ($e^{GRD}$).}
+The inefficiency parameter is set at 0.40 for AEs, while this innovation channel is shut down in EMDEs due to their reliance on technology adoption rather than innovation.
 \end{compactitem}
 
 Table~\ref{tab:efficiencyGaps} reports how these gaps are constructed from the underlying 2023 efficiency estimates; Appendix~\ref{app:efficiency} plots their full time series by income group.
@@ -365,15 +414,26 @@ Table~\ref{tab:efficiencyGaps} reports how these gaps are constructed from the u
     \input{efficiencyGapsTable.tex}
 
     \vspace{1mm}
-    \tabnote{\citet{Bankowskietal2026}.}{Spending-efficiency gaps (one minus the efficiency score), 2023 values. The advanced-economy column uses the advanced-economy median across economies; the EMDE column averages the emerging-market and low-income medians; the human-capital gap is the average of the health and education gaps. R\&D is an advanced-economy channel only and is shut down for EMDEs. Figure~\ref{fig:efficiencyBands} in the appendix plots these gaps over time by income group, from which the 2023 medians used here are taken. These estimates underpin the calibrated gaps in Table~\ref{tab:parameters}.}
+    \tabnote{\citet{Bankowskietal2026}.}{Spending-efficiency gaps (one minus the efficiency score), 2023 values.
+The advanced-economy column uses the advanced-economy median across economies; the EMDE column averages the emerging-market and low-income medians; the human-capital gap is the average of the health and education gaps.
+R\&D is an advanced-economy channel only and is shut down for EMDEs.
+Figure~\ref{fig:efficiencyBands} in the appendix plots these gaps over time by income group, from which the 2023 medians used here are taken.
+These estimates underpin the calibrated gaps in Table~\ref{tab:parameters}.}
 \end{table}
 
 In addition, the steady states of fiscal variables are set as follows.
 
 \begin{compactitem}
-    \item \emph{Public consumption-to-GDP ratio.} Set to standard values for each country group: 18 percent of GDP for AEs and 14 percent of GDP for EMDEs, based on \citet{IMF2023FM} and the World Bank's World Development Indicators database. Public consumption includes wages of teachers, doctors, and nurses, other public workers employed in education and health care, and other government final consumption.
-    \item \emph{Public investment-to-GDP ratio.} Infrastructure investment is set at 3 percent of GDP for AEs and 5 percent of GDP for EMDEs (excluding public education and health investment, like building schools and hospitals). Public human capital spending (investing in public education and health) is calibrated at 1.5 percent of GDP for AEs and 2 percent of GDP for EMDEs, based on the share of these items in public investment of the OECD income group \citep{OECD2025Glance} due to limited data availability of public investment composition.
-    \item \emph{Effective tax rates.} Effective tax rates are set at standard levels for each country group, following \citet{IMF2023FM}, \citet{Benitezetal2023}, and \citet{OECD2025Taxing}. The consumption tax rate is set at 18 percent for AEs and 15 percent for EMDEs. The income tax rate is 25 percent for AEs and 10 percent for EMDEs.
+    \item \emph{Public consumption-to-GDP ratio.}
+Set to standard values for each country group: 18 percent of GDP for AEs and 14 percent of GDP for EMDEs, based on \citet{IMF2023FM} and the World Bank's World Development Indicators database.
+Public consumption includes wages of teachers, doctors, and nurses, other public workers employed in education and health care, and other government final consumption.
+    \item \emph{Public investment-to-GDP ratio.}
+Infrastructure investment is set at 3 percent of GDP for AEs and 5 percent of GDP for EMDEs (excluding public education and health investment, like building schools and hospitals).
+Public human capital spending (investing in public education and health) is calibrated at 1.5 percent of GDP for AEs and 2 percent of GDP for EMDEs, based on the share of these items in public investment of the OECD income group \citep{OECD2025Glance} due to limited data availability of public investment composition.
+    \item \emph{Effective tax rates.}
+Effective tax rates are set at standard levels for each country group, following \citet{IMF2023FM}, \citet{Benitezetal2023}, and \citet{OECD2025Taxing}.
+The consumption tax rate is set at 18 percent for AEs and 15 percent for EMDEs.
+The income tax rate is 25 percent for AEs and 10 percent for EMDEs.
 \end{compactitem}
 
 %========================================================================
@@ -405,14 +465,20 @@ Government consumption, being unproductive, leaves the supply side largely uncha
     \caption{Transmission of Standard Public-Spending Shocks: Advanced Economies \label{fig:standardShocks}}
     \includegraphics{figures/standardShocksAE.pdf}
     \source{IMF staff estimates.}
-    \desc{Impulse responses to four standard debt-financed expansion shocks, each a persistent (AR(1), persistence 0.9) increase in one spending category with an impact of 1 percent of GDP and no offsetting cut, as listed in the legend. All panels report deviations from the steady state, calculated by block. Demand, supply, and labor panels (top three rows; the third row decomposes effective labor into labor supply and the human capital stock) are percent deviations from the steady-state level. Nominal panels (fourth row: inflation, policy rate, nominal bond rate, real rate) are annualized percentage-point deviations, the change in the gross quarterly rate multiplied by 400. Fiscal panels (bottom row: primary deficit, transfers, debt-to-GDP ratio) are deviations in percentage points of GDP. The real interest rate is the nominal government bond rate deflated by inflation.}
+    \desc{Impulse responses to four standard debt-financed expansion shocks, each a persistent (AR(1), persistence 0.9) increase in one spending category with an impact of 1 percent of GDP and no offsetting cut, as listed in the legend.
+All panels report deviations from the steady state, calculated by block.
+Demand, supply, and labor panels (top three rows; the third row decomposes effective labor into labor supply and the human capital stock) are percent deviations from the steady-state level.
+Nominal panels (fourth row: inflation, policy rate, nominal bond rate, real rate) are annualized percentage-point deviations, the change in the gross quarterly rate multiplied by 400.
+Fiscal panels (bottom row: primary deficit, transfers, debt-to-GDP ratio) are deviations in percentage points of GDP.
+The real interest rate is the nominal government bond rate deflated by inflation.}
 \end{figure}
 
 \subsection{Fiscal Multipliers}
 
 These differing horizons are summarized by the cumulative fiscal multipliers, which measure the discounted output gain per unit of additional spending.
 
-Table~\ref{tab:multipliers} reports the implied present-value cumulative multipliers for the advanced-economy and emerging-market calibrations, computed from debt-financed AR(1) expansions (persistence 0.9) of 1 percent of GDP in each spending category, with no offsetting cut to other spending. Output and spending are discounted at the model's steady-state real interest rate before cumulating, so that gains and costs accruing at different dates are weighted consistently---without discounting, the transitory spending injection saturates while the output gain from productive spending keeps accruing, inflating the multiplier at long horizons.
+Table~\ref{tab:multipliers} reports the implied present-value cumulative multipliers for the advanced-economy and emerging-market calibrations, computed from debt-financed AR(1) expansions (persistence 0.9) of 1 percent of GDP in each spending category, with no offsetting cut to other spending.
+Output and spending are discounted at the model's steady-state real interest rate before cumulating, so that gains and costs accruing at different dates are weighted consistently---without discounting, the transitory spending injection saturates while the output gain from productive spending keeps accruing, inflating the multiplier at long horizons.
 Infrastructure pays off fastest, while human capital and---in advanced economies---R\&D build up more slowly but catch up to or exceed infrastructure by the 25-year horizon; government consumption, being unproductive, yields a long-run multiplier below one.
 The investment multipliers are larger for emerging market and developing economies, reflecting the higher output elasticity of infrastructure and the higher marginal product of public capital in these economies; the R\&D channel is shut down there, as these economies grow mainly by adopting existing technologies rather than creating them.
 At medium horizons these magnitudes are broadly in line with the public-investment and R\&D multipliers documented in the empirical literature \citep{Ramey2020, AfonsoRodrigues2024, FieldhouseMertens2023}, though the model's long-run values are larger, reflecting the durability of the public capital created.
@@ -425,7 +491,10 @@ At medium horizons these magnitudes are broadly in line with the public-investme
     \input{multipliersTable.tex}
 
     \vspace{1mm}
-    \tabnote{IMF staff estimates.}{Present-value cumulative output gain per unit of additional spending at the 1-, 5-, 10-, 20-, and 25-year horizons and in the long term, for a 1-percent-of-GDP debt-financed AR(1) increase (persistence 0.9) in each spending category, with no offsetting cut to other spending. Formally, the $N$-year multiplier is $\left(\sum_{t=1}^{4N}\beta^{t}\,\Delta Y_t\right)\big/\left(\sum_{t=1}^{4N}\beta^{t}\,\Delta G_t\right)$, where $\Delta Y_t$ and $\Delta G_t$ are the deviations of output and of the spending category from steady state and $\beta$ is the model's discount factor (so flows are discounted at the steady-state real interest rate). The ``Long-term'' column reports the multiplier at a 250-year horizon, beyond which it changes little---the present-value cumulative response has effectively converged. The R\&D innovation channel is shut down for emerging market and developing economies.}
+    \tabnote{IMF staff estimates.}{Present-value cumulative output gain per unit of additional spending at the 1-, 5-, 10-, 20-, and 25-year horizons and in the long term, for a 1-percent-of-GDP debt-financed AR(1) increase (persistence 0.9) in each spending category, with no offsetting cut to other spending.
+Formally, the $N$-year multiplier is $\left(\sum_{t=1}^{4N}\beta^{t}\,\Delta Y_t\right)\big/\left(\sum_{t=1}^{4N}\beta^{t}\,\Delta G_t\right)$, where $\Delta Y_t$ and $\Delta G_t$ are the deviations of output and of the spending category from steady state and $\beta$ is the model's discount factor (so flows are discounted at the steady-state real interest rate).
+The ``Long-term'' column reports the multiplier at a 250-year horizon, beyond which it changes little---the present-value cumulative response has effectively converged.
+The R\&D innovation channel is shut down for emerging market and developing economies.}
 \end{table}
 
 The same multipliers under a \emph{permanent} rather than AR(1) increase---which converge to the long-run multiplier and are smaller at intermediate horizons---are reported in Appendix~\ref{app:permmult}.
@@ -446,7 +515,9 @@ Section~\ref{subsec:hcrd} quantifies this for the human-capital/R\&D policy mix 
     \caption{Sensitivity of Output Responses to Structural Parameters: Advanced Economies \label{fig:sensitivity}}
     \includegraphics{figures/sensitivityIRF_AE.pdf}
     \source{IMF staff estimates.}
-    \desc{Output responses (percent deviation from steady state) to a debt-financed expansion of 1 percent of GDP (persistent AR(1), persistence 0.9, no offsetting cut) as one structural parameter is varied over a plausible range, one spending category per panel: the output elasticity of infrastructure ($\alpha_G$), the elasticity of human capital formation with respect to the public human capital stock ($\mu$), and the elasticity of technology creation with respect to public R\&D ($\alpha_{RD}$). In each panel the lines run from the low (light) to the high (dark) value of the parameter, with each line labeled by its parameter value at the right; the thick grey line is the baseline calibration. The horizontal axis is the horizon in years after the shock, and the three panels share a common vertical scale.}
+    \desc{Output responses (percent deviation from steady state) to a debt-financed expansion of 1 percent of GDP (persistent AR(1), persistence 0.9, no offsetting cut) as one structural parameter is varied over a plausible range, one spending category per panel: the output elasticity of infrastructure ($\alpha_G$), the elasticity of human capital formation with respect to the public human capital stock ($\mu$), and the elasticity of technology creation with respect to public R\&D ($\alpha_{RD}$).
+In each panel the lines run from the low (light) to the high (dark) value of the parameter, with each line labeled by its parameter value at the right; the thick grey line is the baseline calibration.
+The horizontal axis is the horizon in years after the shock, and the three panels share a common vertical scale.}
 \end{figure}
 
 %========================================================================
@@ -501,7 +572,8 @@ The gains depend on both the speed at which gaps are closed and the initial leve
     \caption{Increase in Spending Efficiency: Emerging Market and Developing Economies \label{fig:efficiencyEM}}
     \includegraphics{figures/efficiencyEM_yd.pdf}
     \source{IMF staff estimates.}
-    \desc{Additional output gains (percent deviation from steady state) from gradually closing gaps in spending efficiency in emerging market and developing economies. The gains are shown for closing gaps by 2040 and 2050, as indicated on the horizontal axis, and for different initial efficiency levels, as described in the legend.}
+    \desc{Additional output gains (percent deviation from steady state) from gradually closing gaps in spending efficiency in emerging market and developing economies.
+The gains are shown for closing gaps by 2040 and 2050, as indicated on the horizontal axis, and for different initial efficiency levels, as described in the legend.}
 \end{figure}
 
 \subsection{Combining Human Capital and R\&D} \label{subsec:hcrd}
@@ -553,11 +625,15 @@ The framework can be used to assess the long-run output consequences of country-
 \section{Equilibrium Conditions} \label{app:equilibrium}
 %========================================================================
 
-This appendix derives the model's optimality conditions block by block, in the order of Section~\ref{sec:model}, and collects the remaining equilibrium conditions not stated in the main text. Optimality conditions are derived in level form, matching the main text; the system is then solved in stationarized form, with trending variables scaled by $\Lambda_t$ and $g$ the gross trend growth rate along the balanced-growth path. The complete model is implemented in the accompanying Dynare files.
+This appendix derives the model's optimality conditions block by block, in the order of Section~\ref{sec:model}, and collects the remaining equilibrium conditions not stated in the main text.
+Optimality conditions are derived in level form, matching the main text; the system is then solved in stationarized form, with trending variables scaled by $\Lambda_t$ and $g$ the gross trend growth rate along the balanced-growth path.
+The complete model is implemented in the accompanying Dynare files.
 
 \subsection{Households}
 
-The representative household chooses $\{C_t, L_t, E_t, K_t, B_t, H_t\}_{t\ge 0}$ to maximize utility~\eqref{eq:utility} subject to the flow budget constraint~\eqref{eq:hhbudget}, the private-capital law of motion $K_t = (1-\delta) K_{t-1} + I_t$, and the human-capital law of motion~\eqref{eq:humancapital}, taking prices, taxes, transfers, and rebated profits $\Omega_t$ as given. Effective labor is $N_t = H_{t-1} L_t$. Substituting investment $I_t = K_t - (1-\delta) K_{t-1}$ out of the budget constraint and attaching the multiplier $\lambda_t$ to the budget constraint and $\lambda_t^{H}$ to the human-capital law of motion, the Lagrangian is
+The representative household chooses $\{C_t, L_t, E_t, K_t, B_t, H_t\}_{t\ge 0}$ to maximize utility~\eqref{eq:utility} subject to the flow budget constraint~\eqref{eq:hhbudget}, the private-capital law of motion $K_t = (1-\delta) K_{t-1} + I_t$, and the human-capital law of motion~\eqref{eq:humancapital}, taking prices, taxes, transfers, and rebated profits $\Omega_t$ as given.
+Effective labor is $N_t = H_{t-1} L_t$.
+Substituting investment $I_t = K_t - (1-\delta) K_{t-1}$ out of the budget constraint and attaching the multiplier $\lambda_t$ to the budget constraint and $\lambda_t^{H}$ to the human-capital law of motion, the Lagrangian is
 \begin{equation*}
 \begin{aligned}
 \mathcal{L} = \mathbb{E}_0 \sum_{t=0}^{\infty} \beta^t \Big\{\, & \ln C_t - \omega\,\frac{\left(L_t + E_t\right)^{1+\varphi}}{1+\varphi} \\[2pt]
@@ -575,13 +651,20 @@ The first-order conditions with respect to $C_t$, $B_t$, $K_t$, $L_t$, $E_t$, an
 [\,E_t\,]:&\quad \omega\left(L_t + E_t\right)^{\varphi} = \lambda_t^{H}\, \chi\gamma\, E_t^{\gamma-1} \big(K_{t-1}^{GE}/\Lambda_{t-1}\big)^{\mu}, \\
 [\,H_t\,]:&\quad \lambda_t^{H} = \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\left(1-\tau_{t+1}^{w}\right) w_{t+1} L_{t+1} + \lambda_{t+1}^{H}\left(1-\delta^{h}\right)\right].
 \end{align*}
-The condition for $C_t$ identifies $\lambda_t$ as the marginal utility of wealth and gives~\eqref{eq:mu}; those for $B_t$ and $K_t$ are the bond and capital Euler equations~\eqref{eq:euler}--\eqref{eq:capital}, the latter equating the marginal cost of a unit of investment to its discounted rental plus undepreciated resale value. The condition for $L_t$ is the labor-supply schedule~\eqref{eq:labor}, equating the marginal disutility of time to the after-tax real wage per efficiency unit, $\lambda_t \left(1-\tau_t^{w}\right) w_t H_{t-1}$. The condition for $E_t$~\eqref{eq:edutime} equates that same marginal disutility to the shadow value of the human capital education builds, and the condition for $H_t$~\eqref{eq:hcvalue} prices human capital recursively: an extra unit raises next period's effective labor---and hence after-tax labor income $\lambda_{t+1}\left(1-\tau_{t+1}^{w}\right) w_{t+1} L_{t+1}$---and survives at rate $1-\delta^{h}$. Since $L_t$ and $E_t$ draw on the same time endowment, their marginal disutilities coincide; equating the two conditions balances the return to an hour of work against the return to an hour of schooling.
+The condition for $C_t$ identifies $\lambda_t$ as the marginal utility of wealth and gives~\eqref{eq:mu}; those for $B_t$ and $K_t$ are the bond and capital Euler equations~\eqref{eq:euler}--\eqref{eq:capital}, the latter equating the marginal cost of a unit of investment to its discounted rental plus undepreciated resale value.
+The condition for $L_t$ is the labor-supply schedule~\eqref{eq:labor}, equating the marginal disutility of time to the after-tax real wage per efficiency unit, $\lambda_t \left(1-\tau_t^{w}\right) w_t H_{t-1}$.
+The condition for $E_t$~\eqref{eq:edutime} equates that same marginal disutility to the shadow value of the human capital education builds, and the condition for $H_t$~\eqref{eq:hcvalue} prices human capital recursively: an extra unit raises next period's effective labor---and hence after-tax labor income $\lambda_{t+1}\left(1-\tau_{t+1}^{w}\right) w_{t+1} L_{t+1}$---and survives at rate $1-\delta^{h}$.
+Since $L_t$ and $E_t$ draw on the same time endowment, their marginal disutilities coincide; equating the two conditions balances the return to an hour of work against the return to an hour of schooling.
 
 \subsection{Production and Technology}
 
-\paragraph{Final goods.} The competitive final-good producer combines intermediate varieties through the CES aggregator $Y_t^{d} = \left[\int_0^1 y_t(i)^{(\epsilon-1)/\epsilon}\, di\right]^{\epsilon/(\epsilon-1)}$ and chooses $y_t(i)$ to minimize expenditure $\int_0^1 P_t(i)\, y_t(i)\, di$ for a given $Y_t^{d}$. The first-order condition delivers the variety demand $y_t(i) = \left(P_t(i)/P_t\right)^{-\epsilon} Y_t^{d}$, and zero profits give the price index $P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}$.
+\paragraph{Final goods.}
+The competitive final-good producer combines intermediate varieties through the CES aggregator $Y_t^{d} = \left[\int_0^1 y_t(i)^{(\epsilon-1)/\epsilon}\, di\right]^{\epsilon/(\epsilon-1)}$ and chooses $y_t(i)$ to minimize expenditure $\int_0^1 P_t(i)\, y_t(i)\, di$ for a given $Y_t^{d}$.
+The first-order condition delivers the variety demand $y_t(i) = \left(P_t(i)/P_t\right)^{-\epsilon} Y_t^{d}$, and zero profits give the price index $P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}$.
 
-\paragraph{Intermediate goods.} Firm $i$ produces with the technology in~\eqref{eq:production}, taking the public-infrastructure stock $K_{t-1}^{GI}$ and the adopted-technology stock $A_{t-1}$ as given externalities, and renting private capital and hiring effective labor competitively. Minimizing cost $r_t^{k} K_{t-1}(i) + w_t N_t(i)$ subject to the production technology, with the multiplier on the output constraint equal to real marginal cost $mc_t$, equates each factor's marginal revenue product to its price and yields the factor-demand conditions~\eqref{eq:factordemand},
+\paragraph{Intermediate goods.}
+Firm $i$ produces with the technology in~\eqref{eq:production}, taking the public-infrastructure stock $K_{t-1}^{GI}$ and the adopted-technology stock $A_{t-1}$ as given externalities, and renting private capital and hiring effective labor competitively.
+Minimizing cost $r_t^{k} K_{t-1}(i) + w_t N_t(i)$ subject to the production technology, with the multiplier on the output constraint equal to real marginal cost $mc_t$, equates each factor's marginal revenue product to its price and yields the factor-demand conditions~\eqref{eq:factordemand},
 \begin{equation*}
     r_t^{k} = \alpha\, mc_t\, \frac{Y_t}{K_{t-1}}, \qquad
     w_t = (1-\alpha)\, mc_t\, \frac{Y_t}{N_t}, \qquad
@@ -589,26 +672,37 @@ The condition for $C_t$ identifies $\lambda_t$ as the marginal utility of wealth
 \end{equation*}
 the last of which follows from the first two and is common across firms, since all face the same factor prices and technology.
 
-\paragraph{Price setting.} Intermediate firms set prices \`a la Calvo: each period a fraction $1-\theta_p$ reoptimize, while the rest index to past inflation at rate $\chi_p$. A reoptimizing firm chooses the reset price $\Pi_t^{*}$ to maximize the expected discounted profit it earns while its price remains in force, weighting future dates by the household valuation $\beta^{s}\lambda_{t+s}/\lambda_t$ and the survival probability $\theta_p^{s}$. Its optimality condition is expressed recursively through the auxiliary variables~\eqref{eq:g1}--\eqref{eq:g2}: $x_{1,t}$ discounts marginal revenue, $x_{2,t}$ discounts marginal cost, and $\epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}$ sets the reset price as a markup over marginal cost. Aggregating over reoptimizing and indexing firms gives the price law of motion $1 = \theta_p\left(\Pi_{t-1}^{\chi_p}/\Pi_t\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}$.
+\paragraph{Price setting.}
+Intermediate firms set prices \`a la Calvo: each period a fraction $1-\theta_p$ reoptimize, while the rest index to past inflation at rate $\chi_p$.
+A reoptimizing firm chooses the reset price $\Pi_t^{*}$ to maximize the expected discounted profit it earns while its price remains in force, weighting future dates by the household valuation $\beta^{s}\lambda_{t+s}/\lambda_t$ and the survival probability $\theta_p^{s}$.
+Its optimality condition is expressed recursively through the auxiliary variables~\eqref{eq:g1}--\eqref{eq:g2}: $x_{1,t}$ discounts marginal revenue, $x_{2,t}$ discounts marginal cost, and $\epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}$ sets the reset price as a markup over marginal cost.
+Aggregating over reoptimizing and indexing firms gives the price law of motion $1 = \theta_p\left(\Pi_{t-1}^{\chi_p}/\Pi_t\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}$.
 
-\paragraph{Technology creation and adoption.} Created technology $Z_t$ evolves according to~\eqref{eq:Z}. Its stationarized adoption law of motion is
+\paragraph{Technology creation and adoption.}
+Created technology $Z_t$ evolves according to~\eqref{eq:Z}.
+Its stationarized adoption law of motion is
 \begin{equation}
     \left(1+\gamma^{a}\right) A_{t} = q_t\, \phi\left(Z_{t-1} - A_{t-1}\right) + \phi A_{t-1}, \label{eq:Astat}
 \end{equation}
-the stationarized counterpart of~\eqref{eq:A}. The created- and adopted-technology stocks $Z_t$ and $A_t$ are detrended by their own gross growth rate $1+\gamma^{a}$, which exceeds the output rate $g$ because technology enters production only through the love-of-variety term $A_t^{\vartheta-1}$; balanced growth then requires $1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$ (Section~\ref{sec:model}). Each unadopted technology is adopted next period with probability
+the stationarized counterpart of~\eqref{eq:A}.
+The created- and adopted-technology stocks $Z_t$ and $A_t$ are detrended by their own gross growth rate $1+\gamma^{a}$, which exceeds the output rate $g$ because technology enters production only through the love-of-variety term $A_t^{\vartheta-1}$; balanced growth then requires $1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$ (Section~\ref{sec:model}).
+Each unadopted technology is adopted next period with probability
 \begin{equation}
     q_t = q_0\left(S_t\right)^{\varsigma}, \label{eq:probadopt}
 \end{equation}
-increasing in adoption expenditure $S_t$ with elasticity $\varsigma$. Adopters value these flows with the household stochastic discount factor
+increasing in adoption expenditure $S_t$ with elasticity $\varsigma$.
+Adopters value these flows with the household stochastic discount factor
 \begin{equation}
     \mathit{SDF}_{t+1} = \beta\, \frac{\lambda_{t+1}}{\lambda_t} = \beta\, \frac{C_t}{C_{t+1}}, \label{eq:sdf}
 \end{equation}
-where the second equality uses~\eqref{eq:mu} at a constant consumption-tax rate. The value of an adopted technology is its per-variety monopoly profit plus its discounted, survival-weighted continuation value; the value of an unadopted technology is the discounted option of adoption, net of the effort cost $S_t$:
+where the second equality uses~\eqref{eq:mu} at a constant consumption-tax rate.
+The value of an adopted technology is its per-variety monopoly profit plus its discounted, survival-weighted continuation value; the value of an unadopted technology is the discounted option of adoption, net of the effort cost $S_t$:
 \begin{align}
     \mathcal{V}_t &= \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \mathcal{V}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\right], \label{eq:VA}\\
     \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\left(q_t\, \mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right], \label{eq:JZ}
 \end{align}
-where $\mu^{p}$ is the steady-state gross markup, so $(\mu^{p}-1)/\mu^{p}$ is the profit share of revenue, and $\phi$ is the survival rate of technologies. Choosing $S_t$ to maximize $\mathcal{J}_t$ and using $\partial q_t/\partial S_t = \varsigma\, q_t/S_t$ gives the adoption optimality condition
+where $\mu^{p}$ is the steady-state gross markup, so $(\mu^{p}-1)/\mu^{p}$ is the profit share of revenue, and $\phi$ is the survival rate of technologies.
+Choosing $S_t$ to maximize $\mathcal{J}_t$ and using $\partial q_t/\partial S_t = \varsigma\, q_t/S_t$ gives the adoption optimality condition
 \begin{equation}
     S_t = \varsigma\, q_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{1}{1+\gamma^{a}}\, \frac{A_{t-1}}{A_{t}}\left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right], \label{eq:SAfoc}
 \end{equation}
@@ -616,14 +710,19 @@ which equates the marginal cost of adoption effort---one unit of the good---to i
 
 \subsection{Government: Fiscal and Monetary Policy}
 
-\paragraph{Fiscal rules.} The expenditure instruments follow
+\paragraph{Fiscal rules.}
+The expenditure instruments follow
 \begin{align}
     G_t^{C} &= G^{C} + Y^{d}\,\varepsilon_t^{gc}, \qquad
     I_t^{GI} = I^{GI} + Y^{d}\,\varepsilon_t^{igi}, \\
     I_t^{GE} &= I^{GE} + Y^{d}\,\varepsilon_t^{ige}, \qquad
     G_t^{RD} = G^{RD} + Y^{d}\,\varepsilon_t^{grd},
 \end{align}
-where unstarred steady-state values carry no time index and $Y^{d}$ is steady-state demand. Each instrument is its steady-state level plus a scaled innovation; in the policy experiments these innovations follow a persistent path (AR(1), persistence 0.9; Section~\ref{sec:properties}). Government consumption is an ordinary instrument with its own innovation $\varepsilon_t^{gc}$. The budget-neutral experiments of Section~\ref{sec:results} finance a rise in investment or R\&D with an equal cut in consumption by setting $\varepsilon_t^{gc} = -\left(\varepsilon_t^{igi} + \varepsilon_t^{ige} + \varepsilon_t^{grd}\right)$; a non-neutral experiment sets it freely. Taxes and transfers stabilize debt,
+where unstarred steady-state values carry no time index and $Y^{d}$ is steady-state demand.
+Each instrument is its steady-state level plus a scaled innovation; in the policy experiments these innovations follow a persistent path (AR(1), persistence 0.9; Section~\ref{sec:properties}).
+Government consumption is an ordinary instrument with its own innovation $\varepsilon_t^{gc}$.
+The budget-neutral experiments of Section~\ref{sec:results} finance a rise in investment or R\&D with an equal cut in consumption by setting $\varepsilon_t^{gc} = -\left(\varepsilon_t^{igi} + \varepsilon_t^{ige} + \varepsilon_t^{grd}\right)$; a non-neutral experiment sets it freely.
+Taxes and transfers stabilize debt,
 \begin{align}
     \tau_t^{c} - \tau^{c} &= \rho_{\tau c}\left(\tau_{t-1}^{c} - \tau^{c}\right) + \left(1-\rho_{\tau c}\right)\gamma_{d}^{\tau c}\left(b_{t-1} - b^{*}\right) + \varepsilon_t^{\tau c}, \\
     \tau_t^{w} - \tau^{w} &= \rho_{\tau w}\left(\tau_{t-1}^{w} - \tau^{w}\right) + \left(1-\rho_{\tau w}\right)\gamma_{d}^{\tau w}\left(b_{t-1} - b^{*}\right) + \varepsilon_t^{\tau w}, \\
@@ -631,7 +730,8 @@ where unstarred steady-state values carry no time index and $Y^{d}$ is steady-st
 \end{align}
 with $b_t = B_t / Y_t$ the debt-to-GDP ratio and $b^{*}$ its target.
 
-\paragraph{Monetary policy and government borrowing rate.} The policy rate follows the Taylor rule~\eqref{eq:taylor}, and the government borrowing rate follows~\eqref{eq:spread}.
+\paragraph{Monetary policy and government borrowing rate.}
+The policy rate follows the Taylor rule~\eqref{eq:taylor}, and the government borrowing rate follows~\eqref{eq:spread}.
 
 \subsection{Market Clearing and Pricing}
 
@@ -647,7 +747,9 @@ where the last term, $\left(Z_{t-1}/A_{t-1}-1\right)S_t$, is the resource cost o
 \section{Notation: Paper and Model Symbols} \label{app:glossary}
 %========================================================================
 
-This appendix maps the paper's notation to the variable and parameter names used in the model code (\texttt{models/}). The tables are complete: they list every endogenous variable, parameter, and exogenous shock declared in the model. The model-code column gives the exact name in the Dynare declarations; a dash (--) in the first column marks an object with no paper symbol---steady-state constants, log levels, reporting transforms, and purely computational auxiliaries.
+This appendix maps the paper's notation to the variable and parameter names used in the model code (\texttt{models/}).
+The tables are complete: they list every endogenous variable, parameter, and exogenous shock declared in the model.
+The model-code column gives the exact name in the Dynare declarations; a dash (--) in the first column marks an object with no paper symbol---steady-state constants, log levels, reporting transforms, and purely computational auxiliaries.
 
 \subsection{Endogenous Variables}
 
@@ -657,7 +759,9 @@ The last two columns give each variable's steady-state value for the representat
 
 \subsection{Parameters}
 
-The last two columns report the calibrated values for the representative advanced economy (AE) and emerging market and developing economy (EMDE), read from the solved model; \colorbox{diffcell}{shaded} cells mark parameters whose value differs between the two calibrations. Three parameters ($\omega$, $\chi$, $q_0$) are calibrated endogenously---solved in the steady state so that a targeted steady-state quantity is matched; a \textcolor{targetblue}{blue parenthetical} records the variable each targets. A ``--'' in a value column marks a parameter of the endogenous-innovation channel, which is switched off for EMDEs (Section~\ref{sec:calibration}); a ``--'' in the Paper column instead marks an object with no paper symbol.
+The last two columns report the calibrated values for the representative advanced economy (AE) and emerging market and developing economy (EMDE), read from the solved model; \colorbox{diffcell}{shaded} cells mark parameters whose value differs between the two calibrations.
+Three parameters ($\omega$, $\chi$, $q_0$) are calibrated endogenously---solved in the steady state so that a targeted steady-state quantity is matched; a \textcolor{targetblue}{blue parenthetical} records the variable each targets.
+A ``--'' in a value column marks a parameter of the endogenous-innovation channel, which is switched off for EMDEs (Section~\ref{sec:calibration}); a ``--'' in the Paper column instead marks an object with no paper symbol.
 
 \input{glossaryParameters.tex}
 
@@ -675,45 +779,69 @@ Figure~\ref{fig:efficiencyBands} plots the estimated spending-efficiency gaps ov
     \caption{Estimated Spending-Efficiency Gaps by Income Group, 2000--23 \label{fig:efficiencyBands}}
     \includegraphics{figures/efficiencyBands.pdf}
     \source{\citet{Bankowskietal2026}.}
-    \desc{Efficiency gap (one minus the spending efficiency score) for infrastructure, health, education, and R\&D. Shaded areas show the 25th--75th percentile range across economies within each income group; lines are group medians; circles mark the 2023 value, the calibration reference. R\&D is shown for advanced economies only, as the innovation channel is shut down for EMDEs. The paper's human capital gap $e^{GE}$ combines the health and education categories.}
+    \desc{Efficiency gap (one minus the spending efficiency score) for infrastructure, health, education, and R\&D.
+Shaded areas show the 25th--75th percentile range across economies within each income group; lines are group medians; circles mark the 2023 value, the calibration reference.
+R\&D is shown for advanced economies only, as the innovation channel is shut down for EMDEs.
+The paper's human capital gap $e^{GE}$ combines the health and education categories.}
 \end{figure}
 
 %========================================================================
 \section{Government Consumption: Robustness to Model Structure} \label{app:simplified}
 %========================================================================
 
-This appendix checks that the sign of the government-consumption transmission reported in Figure~\ref{fig:standardShocks}---in particular its inflation response---is a property of the New Keynesian structure rather than an artifact of the model's growth and public-capital features. Figure~\ref{fig:simplifiedGc} traces the same persistent (AR(1), persistence 0.9) government-consumption shock used in Figure~\ref{fig:standardShocks} through the full model, four step-by-step simplifications, and a from-scratch canonical New Keynesian benchmark. Each simplification pins additional channels to their steady state: the first switches off endogenous technology (R\&D), the second additionally switches off the human-capital channel, the third also switches off public infrastructure (a New Keynesian model with capital), and the fourth further pins private capital, leaving labor-only production. The canonical benchmark is coded independently as a textbook New Keynesian model---stationary (no trend growth), no price indexation, constant returns, a single markup, and lump-sum financing.
+This appendix checks that the sign of the government-consumption transmission reported in Figure~\ref{fig:standardShocks}---in particular its inflation response---is a property of the New Keynesian structure rather than an artifact of the model's growth and public-capital features.
+Figure~\ref{fig:simplifiedGc} traces the same persistent (AR(1), persistence 0.9) government-consumption shock used in Figure~\ref{fig:standardShocks} through the full model, four step-by-step simplifications, and a from-scratch canonical New Keynesian benchmark.
+Each simplification pins additional channels to their steady state: the first switches off endogenous technology (R\&D), the second additionally switches off the human-capital channel, the third also switches off public infrastructure (a New Keynesian model with capital), and the fourth further pins private capital, leaving labor-only production.
+The canonical benchmark is coded independently as a textbook New Keynesian model---stationary (no trend growth), no price indexation, constant returns, a single markup, and lump-sum financing.
 
-The sign of the response is robust across the simplification ladder: output rises on impact and inflation is positive in the full model, in every simplification, and in the from-scratch canonical benchmark. The productive channels shape only the magnitude and timing of the response---R\&D is immaterial for this shock, public infrastructure does not move because the infrastructure instrument is not shocked, and private capital governs how quickly output and inflation build---but none of them changes the sign. The mechanism is clearest in the canonical benchmark, where real marginal cost equals the real wage: a persistent but transitory spending increase exerts only a weak negative wealth effect on labor supply, so the demand effect dominates, the real wage and marginal cost rise, and inflation rises. This is the textbook outcome, confirming that the inflationary sign is a property of the New Keynesian transmission mechanism rather than of the model's growth, public-capital, or private-capital features.
+The sign of the response is robust across the simplification ladder: output rises on impact and inflation is positive in the full model, in every simplification, and in the from-scratch canonical benchmark.
+The productive channels shape only the magnitude and timing of the response---R\&D is immaterial for this shock, public infrastructure does not move because the infrastructure instrument is not shocked, and private capital governs how quickly output and inflation build---but none of them changes the sign.
+The mechanism is clearest in the canonical benchmark, where real marginal cost equals the real wage: a persistent but transitory spending increase exerts only a weak negative wealth effect on labor supply, so the demand effect dominates, the real wage and marginal cost rise, and inflation rises.
+This is the textbook outcome, confirming that the inflationary sign is a property of the New Keynesian transmission mechanism rather than of the model's growth, public-capital, or private-capital features.
 
 \begin{figure}[H]
     \centering
     \caption{Government-Consumption Shock under Progressive Model Simplification: Advanced Economies \label{fig:simplifiedGc}}
     \includegraphics{figures/simplifiedGcAE.pdf}
     \source{IMF staff estimates.}
-    \desc{Impulse responses to the government-consumption shock (a persistent AR(1) increase, persistence 0.9, with an impact of 1 percent of GDP and no offsetting cut) in the full model, four step-by-step simplifications, and a from-scratch canonical New Keynesian benchmark, as listed in the legend. Each simplification pins additional channels to their steady state (the last pins private capital, leaving labor-only production); the canonical benchmark is an independently coded textbook model (no trend growth, no price indexation, constant returns, lump-sum financing). Pinned or absent channels appear as flat or missing lines. All panels report deviations from the steady state, calculated by block: the demand, supply, and labor panels (top three rows) are percent deviations from the steady-state level; the nominal panels (fourth row) are annualized percentage-point deviations; the fiscal panels (bottom row) are deviations in percentage points of steady-state GDP. The real interest rate is the nominal government bond rate deflated by inflation.}
+    \desc{Impulse responses to the government-consumption shock (a persistent AR(1) increase, persistence 0.9, with an impact of 1 percent of GDP and no offsetting cut) in the full model, four step-by-step simplifications, and a from-scratch canonical New Keynesian benchmark, as listed in the legend.
+Each simplification pins additional channels to their steady state (the last pins private capital, leaving labor-only production); the canonical benchmark is an independently coded textbook model (no trend growth, no price indexation, constant returns, lump-sum financing).
+Pinned or absent channels appear as flat or missing lines.
+All panels report deviations from the steady state, calculated by block: the demand, supply, and labor panels (top three rows) are percent deviations from the steady-state level; the nominal panels (fourth row) are annualized percentage-point deviations; the fiscal panels (bottom row) are deviations in percentage points of steady-state GDP.
+The real interest rate is the nominal government bond rate deflated by inflation.}
 \end{figure}
 
 \section{Permanent Shocks} \label{app:permmult}
 %========================================================================
 
-The headline results in Section~\ref{sec:properties} use a persistent AR(1) (persistence 0.9) spending shock. This appendix reports the counterpart experiment in which each spending increase is \emph{permanent}---a step that stays at 1 percent of GDP indefinitely---covering both the transmission impulse responses and the implied fiscal multipliers.
+The headline results in Section~\ref{sec:properties} use a persistent AR(1) (persistence 0.9) spending shock.
+This appendix reports the counterpart experiment in which each spending increase is \emph{permanent}---a step that stays at 1 percent of GDP indefinitely---covering both the transmission impulse responses and the implied fiscal multipliers.
 
 \subsection{Transmission}
 
-Figure~\ref{fig:standardShocksPerm} is the permanent-shock counterpart of Figure~\ref{fig:standardShocks}: it traces the same four debt-financed expansion shocks through the advanced-economy model when each is a permanent rather than a decaying increase. The supply-side channels (public infrastructure, the adopted-technology stock, and the human-capital stock) build up more fully and the stock variables settle at higher new steady states, while the transitory demand effects that dominate the early quarters of the AR(1) responses are correspondingly smaller relative to the long-run accumulation.
+Figure~\ref{fig:standardShocksPerm} is the permanent-shock counterpart of Figure~\ref{fig:standardShocks}: it traces the same four debt-financed expansion shocks through the advanced-economy model when each is a permanent rather than a decaying increase.
+The supply-side channels (public infrastructure, the adopted-technology stock, and the human-capital stock) build up more fully and the stock variables settle at higher new steady states, while the transitory demand effects that dominate the early quarters of the AR(1) responses are correspondingly smaller relative to the long-run accumulation.
 
 \begin{figure}[H]
     \centering
     \caption{Transmission of Standard Public-Spending Shocks under Permanent Shocks: Advanced Economies \label{fig:standardShocksPerm}}
     \includegraphics{figures/standardShocksAEPerm.pdf}
     \source{IMF staff estimates.}
-    \desc{Permanent-shock counterpart of Figure~\ref{fig:standardShocks}. Impulse responses to four standard debt-financed expansion shocks, each a permanent increase of 1 percent of GDP in one spending category with no offsetting cut, as listed in the legend. Unlike the headline figure, which uses a persistent AR(1) (persistence 0.9) shock, here the spending increase is a step that stays at 1 percent of GDP indefinitely. All panels report deviations from the steady state, calculated by block. Demand, supply, and labor panels (top three rows; the third row decomposes effective labor into labor supply and the human capital stock) are percent deviations from the steady-state level. Nominal panels (fourth row: inflation, policy rate, nominal bond rate, real rate) are annualized percentage-point deviations, the change in the gross quarterly rate multiplied by 400. Fiscal panels (bottom row: primary deficit, transfers, debt-to-GDP ratio) are deviations in percentage points of GDP. The real interest rate is the nominal government bond rate deflated by inflation.}
+    \desc{Permanent-shock counterpart of Figure~\ref{fig:standardShocks}.
+Impulse responses to four standard debt-financed expansion shocks, each a permanent increase of 1 percent of GDP in one spending category with no offsetting cut, as listed in the legend.
+Unlike the headline figure, which uses a persistent AR(1) (persistence 0.9) shock, here the spending increase is a step that stays at 1 percent of GDP indefinitely.
+All panels report deviations from the steady state, calculated by block.
+Demand, supply, and labor panels (top three rows; the third row decomposes effective labor into labor supply and the human capital stock) are percent deviations from the steady-state level.
+Nominal panels (fourth row: inflation, policy rate, nominal bond rate, real rate) are annualized percentage-point deviations, the change in the gross quarterly rate multiplied by 400.
+Fiscal panels (bottom row: primary deficit, transfers, debt-to-GDP ratio) are deviations in percentage points of GDP.
+The real interest rate is the nominal government bond rate deflated by inflation.}
 \end{figure}
 
 \subsection{Fiscal Multipliers}
 
-The multipliers in Table~\ref{tab:multipliers} are computed for AR(1) (persistence 0.9) spending shocks, matching the transmission experiment of Section~\ref{sec:properties}. Table~\ref{tab:multipliersPerm} reports the same present-value cumulative multipliers for a \emph{permanent} 1-percent-of-GDP increase in each category. Because a sustained increase keeps the discounted spending in the denominator growing with the horizon, the cumulative multiplier converges to the long-run (steady-state) multiplier and is smaller at intermediate horizons than its AR(1) counterpart---at 25 years, for example, the advanced-economy human-capital multiplier is 1.7 under a permanent increase versus 3.3 under the AR(1) shock.
+The multipliers in Table~\ref{tab:multipliers} are computed for AR(1) (persistence 0.9) spending shocks, matching the transmission experiment of Section~\ref{sec:properties}.
+Table~\ref{tab:multipliersPerm} reports the same present-value cumulative multipliers for a \emph{permanent} 1-percent-of-GDP increase in each category.
+Because a sustained increase keeps the discounted spending in the denominator growing with the horizon, the cumulative multiplier converges to the long-run (steady-state) multiplier and is smaller at intermediate horizons than its AR(1) counterpart---at 25 years, for example, the advanced-economy human-capital multiplier is 1.7 under a permanent increase versus 3.3 under the AR(1) shock.
 
 \begin{table}[H]
     \centering
@@ -723,7 +851,10 @@ The multipliers in Table~\ref{tab:multipliers} are computed for AR(1) (persisten
     \input{multipliersTablePermanent.tex}
 
     \vspace{1mm}
-    \tabnote{IMF staff estimates.}{As Table~\ref{tab:multipliers}, but for a \emph{permanent} 1-percent-of-GDP debt-financed increase in each spending category (no decay), with no offsetting cut to other spending. Output and spending are discounted at the model's steady-state real interest rate before cumulating. The ``Long-term'' column reports the multiplier at a 250-year horizon; under a permanent increase the cumulative multiplier converges to its long-run value more gradually than under the AR(1) shock, so this column still slightly understates the eventual steady-state multiplier. The R\&D innovation channel is shut down for emerging market and developing economies.}
+    \tabnote{IMF staff estimates.}{As Table~\ref{tab:multipliers}, but for a \emph{permanent} 1-percent-of-GDP debt-financed increase in each spending category (no decay), with no offsetting cut to other spending.
+Output and spending are discounted at the model's steady-state real interest rate before cumulating.
+The ``Long-term'' column reports the multiplier at a 250-year horizon; under a permanent increase the cumulative multiplier converges to its long-run value more gradually than under the AR(1) shock, so this column still slightly understates the eventual steady-state multiplier.
+The R\&D innovation channel is shut down for emerging market and developing economies.}
 \end{table}
 
 \end{document}
