@@ -106,6 +106,36 @@ equation \texttt{V = (markupss-1)/(markupss)*mc*y + ...}). This is why the wedge
 factor payments would exhaust revenue and there would be no profit flow left to
 reward technology adoption.
 
+\subsection{Aside: Where Is the Pricing Equation?}
+
+Where in the model can one see that the firm sells at the markup $\mu^{p}$ over
+marginal cost? Nowhere as a standalone line: the model never writes the
+intermediate firm's pricing rule as its own equation. Instead, \eqref{eq:wedge} is
+embedded in the labor-demand equation. Take the model's
+\texttt{(1-alpha)*mc*y/N = markupss*w} and solve it for $mc_t$:
+\begin{equation}\label{eq:pricing}
+    mc_t = \mu^{p}\,\frac{w_t}{(1-\alpha)\,Y_t/N_t}.
+\end{equation}
+The second factor is the wage divided by the marginal product of labor --- the cost
+of producing one more unit using labor, which is just marginal cost $\xi_t$. So
+\eqref{eq:pricing} is the same equation as \eqref{eq:fdN}, read the other way
+around: as a labor demand it prices labor off $mc_t/\mu^{p}$; as a pricing rule it
+sets the output price at $\mu^{p}$ times marginal cost. One equation carries both
+statements, which is why there is no separate pricing line to point to.
+
+Two other equations pin down the interpretation. First, that $mc_t$ is the price
+the retailers pay is visible in the Calvo recursion
+\texttt{x1 = lambda*mc*yd + ...}: $mc_t$ enters as the \emph{retailers'} real
+marginal cost, and since retailers transform intermediate output one-for-one,
+their marginal cost is exactly the relative price at which they buy it. Second,
+the dividend in the technology value, \eqref{eq:profit}, equals
+$(mc_t - mc_t/\mu^{p})\,Y_t$ --- price minus unit cost times quantity, exactly the
+monopoly profit of a producer charging the fixed gross markup $\mu^{p}$. If the
+wedge in the factor demands were something else (a tax, say), this profit would
+not flow to the technology owners. The three equations together --- labor demand,
+Calvo recursion, technology value --- are what make the fixed-markup reading the
+right one.
+
 \subsection{Aside: Two Markups, Two Layers}
 
 $\mu^{p}$ (\texttt{markupss} $=1.18$) is a calibrated parameter and is \emph{not}
