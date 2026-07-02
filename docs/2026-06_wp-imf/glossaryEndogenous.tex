@@ -24,7 +24,7 @@
 5 & $E_t$ & Time in human-capital accumulation \gloseq{\omega(L_t+E_t)^{\varphi}=\lambda^H_t\,\chi\gamma\,E_t^{\gamma-1}(K^{GE}_{t-1})^{\mu}} & \texttt{E} & 0.157 & 0.157 \\
 6 & $I_t$ & Private investment \gloseq{1=\beta\,\mathbb{E}_t\!\big[\tfrac{\lambda_{t+1}}{\lambda_t}(1-\delta+r^k_{t+1})/g_{t+1}\big]} & \texttt{Ip} & 0.163 & 0.146 \\
 7 & $K_t$ & Private capital \gloseq{g_t K_t=(1-\delta)K_{t-1}+I_t} & \texttt{Kp} & 5.617 & 4.505 \\
-8 & $r_t^{k}$ & Rental rate of private capital \gloseq{r^k_t=\alpha\,mc_t\,Y_t/K_{t-1}} & \texttt{rk} & 0.031 & 0.034 \\
+8 & $r_t^{k}$ & Rental rate of private capital \gloseq{r^k_t=\alpha\,(mc_t/\mu^{p})\,Y_t/K_{t-1}} & \texttt{rk} & 0.031 & 0.034 \\
 9 & $w_t$ & Real wage \gloseq{\tfrac{K_{t-1}}{N_t}=\tfrac{\alpha}{1-\alpha}\tfrac{w_t}{r^k_t}} & \texttt{w} & 1.2 & 1.073 \\
 10 & $\lambda_t$ & Marginal utility of consumption \gloseq{\lambda_t=\beta\,\mathbb{E}_t\!\big[\lambda_{t+1}R_t/(g_{t+1}\Pi_{t+1})\big]} & \texttt{lambda} & 2.388 & 2.301 \\
 11 & $\lambda_t^{H}$ & Shadow value of human capital \gloseq{\lambda^H_t=\beta\,\mathbb{E}_t\!\big[\lambda_{t+1}(1-\tau^w_{t+1})w_{t+1}L_{t+1}+\lambda^H_{t+1}(1-\delta^h)\big]} & \texttt{lambda\_H} & 27.027 & 27.934 \\
@@ -33,7 +33,7 @@
 \multicolumn{6}{@{}l}{\textit{Production and technology}} \\
 \addlinespace[0.1em]
 13 & $Y_t$ & Gross output \gloseq{Y_t=A_{t-1}^{\vartheta-1}K_{t-1}^{\alpha}N_t^{1-\alpha}(K^{GI}_{t-1})^{\alpha_G}-\Theta} & \texttt{y} & 0.749 & 0.67 \\
-14 & $mc_t$ & Real marginal cost \gloseq{w_t=(1-\alpha)\,mc_t\,Y_t/N_t} & \texttt{mc} & 0.9 & 0.9 \\
+14 & $mc_t$ & Real marginal cost \gloseq{w_t=(1-\alpha)\,(mc_t/\mu^{p})\,Y_t/N_t} & \texttt{mc} & 0.9 & 0.9 \\
 15 & $\Pi_t$ & Gross inflation \gloseq{1=\theta_p(\Pi_{t-1}^{\chi_p}/\Pi_t)^{1-\epsilon}+(1-\theta_p)(\Pi^*_t)^{1-\epsilon}} & \texttt{PI} & 1 & 1 \\
 16 & $\Pi_t^{*}$ & Reset (optimal) inflation \gloseq{\epsilon\,x_{1,t}=(\epsilon-1)\,x_{2,t}} & \texttt{PIstar} & 1 & 1 \\
 17 & $x_{1,t}$ & Price-setting auxiliary \gloseq{x_{1,t}=\lambda_t mc_t Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{-\epsilon}x_{1,t+1}} & \texttt{x1} & 8.001 & 6.892 \\
@@ -41,7 +41,7 @@
 19 & $A_t$ & Adopted technology \gloseq{(1+\gamma^{a}) A_t=q_t\phi(Z_{t-1}-A_{t-1})+\phi A_{t-1}} & \texttt{A} & 1 & 1 \\
 20 & $Z_t$ & Created technology \gloseq{\log\tfrac{Z_t}{Z^{SS}}=\rho_A\log\tfrac{Z_{t-1}}{Z^{SS}}+\alpha_{HA}\log\tfrac{H_{t-1}}{H^{SS}}+\alpha_{RD}\log\tfrac{(1-e^{GRD}_{t-1})G^{RD}_{t-1}}{(1-e^{GRD})G^{RD,SS}}} & \texttt{Z} & 1.572 & 1.715 \\
 21 & $S_t$ & Adoption expenditure \gloseq{S_t=\varsigma q_t\phi\,\mathbb{E}_t\!\big[\mathit{SDF}_{t+1}\tfrac{1}{1+\gamma^{a}}\tfrac{A_{t-1}}{A_t}(\mathcal{V}_{t+1}-\mathcal{J}_{t+1})\big]} & \texttt{S} & 0.102 & 0.006 \\
-22 & $q_t$ & Adoption probability \gloseq{q_t=q_0(S_t)^{\varsigma}} & \texttt{q} & 0.05 & 0.05 \\
+22 & $q_t$ & Adoption probability \gloseq{q_t=(q_0+\varepsilon^{q}_t)(S_t)^{\varsigma}} & \texttt{q} & 0.05 & 0.05 \\
 23 & $\mathcal{V}_t$ & Value of an adopted technology \gloseq{\mathcal{V}_t=\tfrac{\mu^p-1}{\mu^p}mc_t Y_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\mathcal{V}_{t+1}\tfrac{A_{t-1}}{A_t}\tfrac{1}{1+\gamma^{a}}\big]} & \texttt{V} & 3.515 & 2.555 \\
 24 & $\mathcal{J}_t$ & Value of an unadopted technology \gloseq{\mathcal{J}_t=-S_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\tfrac{A_{t-1}}{A_t}\tfrac{1}{1+\gamma^{a}}(q_t\mathcal{V}_{t+1}+(1-q_t)\mathcal{J}_{t+1})\big]} & \texttt{J} & 0.876 & 1.397 \\
 \addlinespace[0.4em]

@@ -244,7 +244,7 @@ Equation~\eqref{eq:labor} is the standard labor-supply condition; equation~\eqre
 \subsection{Production and Technology}
 
 \paragraph{Final goods.}
-A competitive final good $Y_t^{d}$ is a CES aggregate of a continuum of intermediate varieties with elasticity of substitution $\epsilon$.
+A competitive final good $Y_t^{d}$ is a CES aggregate of a continuum of retail varieties with elasticity of substitution $\epsilon$.
 Cost minimization yields the demand for variety $i$, $y_t(i) = \left(P_t(i)/P_t\right)^{-\epsilon} Y_t^{d}$, and the price index $P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}$.
 
 \paragraph{Intermediate goods.}
@@ -255,14 +255,17 @@ Output of a firm is given by the aggregate production function
 \end{equation}
 where $A_{t-1}$ is the stock of adopted technologies, $K_{t-1}$ is private capital, $N_t = H_{t-1} L_t$ is effective labor, $K_{t-1}^{GI}$ is the stock of public infrastructure capital, which augments private production as a positive externality, and $\Theta$ is a fixed cost.
 The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{In \citet{Anzoateguietal2019} a single intermediate-goods elasticity of substitution sets both the markup and the returns to variety.
-Here the markup is governed separately by $\epsilon$; $\vartheta$ retains only the latter role, mapping the stock of adopted technologies into TFP through the love-of-variety term $A_t^{\vartheta-1}$.}
-Cost minimization implies a common real marginal cost $mc_t$ and the factor-demand conditions
+Here the retail markup is governed by $\epsilon$ and the intermediate producers' markup by the separate parameter $\mu^{p}$; $\vartheta$ retains only the returns-to-variety role, mapping the stock of adopted technologies into TFP through the love-of-variety term $A_t^{\vartheta-1}$.}
+Intermediate producers sell their output to retailers at the relative price $mc_t$, set as a fixed gross markup $\mu^{p}$ over unit factor cost.
+Cost minimization then implies the factor-demand conditions
 \begin{equation} \label{eq:factordemand}
-    r_t^{k} = \alpha\, mc_t \frac{Y_t}{K_{t-1}}, \qquad w_t = (1-\alpha)\, mc_t \frac{Y_t}{N_t}, \qquad \frac{K_{t-1}}{N_t} = \frac{\alpha}{1-\alpha}\frac{w_t}{r_t^{k}}.
+    r_t^{k} = \alpha\, \frac{mc_t}{\mu^{p}} \frac{Y_t}{K_{t-1}}, \qquad w_t = (1-\alpha)\, \frac{mc_t}{\mu^{p}} \frac{Y_t}{N_t}, \qquad \frac{K_{t-1}}{N_t} = \frac{\alpha}{1-\alpha}\frac{w_t}{r_t^{k}}.
 \end{equation}
+The markup wedge leaves the profit flow $\frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t$, which accrues to the owners of adopted technologies and is what gives a technology its value (Appendix~\ref{app:equilibrium}).
 
 \paragraph{Price setting.}
-Each period a fraction $1-\theta_p$ of firms reoptimizes, while the remainder index their price to past inflation with elasticity $\chi_p$.
+Prices are set by retailers, who purchase intermediate output at the relative price $mc_t$---their marginal cost---and differentiate it into the varieties aggregated by the final good.
+Each period a fraction $1-\theta_p$ of retailers reoptimizes, while the remainder index their price to past inflation with elasticity $\chi_p$.
 The reset price $\Pi_t^{*}$ solves the recursive system
 \begin{align}
     x_{1,t} &= \lambda_t\, mc_t\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{-\epsilon} x_{1,t+1}\right], \label{eq:g1}\\
@@ -289,7 +292,7 @@ To capture the lag between creation and adoption, the stock of adopted technolog
 \end{equation}
 where $\phi$ is the survival rate of technologies and the time-varying probability of adoption is $q_t = q_0 \left(S_t/\Lambda_t\right)^{\varsigma}$, increasing in adopters' real expenditure $S_t$ scaled by the trend $\Lambda_t$.
 Competitive adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, equating the marginal cost of adoption effort to its discounted marginal value.
-The associated value functions and the optimality condition for $S_t$, together with the stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, \lambda_{t+1}/\lambda_t$ used to value these flows, are reported in Appendix~\ref{app:equilibrium}.
+The associated value functions and the optimality condition for $S_t$, together with the stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, C_t/C_{t+1}$ used to value these flows, are reported in Appendix~\ref{app:equilibrium}.
 The productivity payoff of the adopted-technology stock $A_t$ is realized in the production function~\eqref{eq:production}, with strength governed by $\vartheta$.
 
 \subsection{Government: Fiscal and Monetary Policy}
@@ -663,23 +666,25 @@ Since $L_t$ and $E_t$ draw on the same time endowment, their marginal disutiliti
 \subsection{Production and Technology}
 
 \paragraph{Final goods.}
-The competitive final-good producer combines intermediate varieties through the CES aggregator $Y_t^{d} = \left[\int_0^1 y_t(i)^{(\epsilon-1)/\epsilon}\, di\right]^{\epsilon/(\epsilon-1)}$ and chooses $y_t(i)$ to minimize expenditure $\int_0^1 P_t(i)\, y_t(i)\, di$ for a given $Y_t^{d}$.
+The competitive final-good producer combines retail varieties through the CES aggregator $Y_t^{d} = \left[\int_0^1 y_t(i)^{(\epsilon-1)/\epsilon}\, di\right]^{\epsilon/(\epsilon-1)}$ and chooses $y_t(i)$ to minimize expenditure $\int_0^1 P_t(i)\, y_t(i)\, di$ for a given $Y_t^{d}$.
 The first-order condition delivers the variety demand $y_t(i) = \left(P_t(i)/P_t\right)^{-\epsilon} Y_t^{d}$, and zero profits give the price index $P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}$.
 
 \paragraph{Intermediate goods.}
 Firm $i$ produces with the technology in~\eqref{eq:production}, taking the public-infrastructure stock $K_{t-1}^{GI}$ and the adopted-technology stock $A_{t-1}$ as given externalities, and renting private capital and hiring effective labor competitively.
-Each firm minimizes cost $r_t^{k} K_{t-1}(i) + w_t N_t(i)$ subject to the production technology, with the multiplier on the output constraint equal to real marginal cost $mc_t$.
+Each firm minimizes cost $r_t^{k} K_{t-1}(i) + w_t N_t(i)$ subject to the production technology; the multiplier on the output constraint is its real unit factor cost.
+The firm sells to retailers at the fixed gross markup $\mu^{p}$ over this cost, so with $mc_t$ the relative price of intermediate output, unit factor cost equals $mc_t/\mu^{p}$.
 Equating each factor's marginal revenue product to its price yields the factor-demand conditions~\eqref{eq:factordemand},
 \begin{equation*}
-    r_t^{k} = \alpha\, mc_t\, \frac{Y_t}{K_{t-1}}, \qquad
-    w_t = (1-\alpha)\, mc_t\, \frac{Y_t}{N_t}, \qquad
+    r_t^{k} = \alpha\, \frac{mc_t}{\mu^{p}}\, \frac{Y_t}{K_{t-1}}, \qquad
+    w_t = (1-\alpha)\, \frac{mc_t}{\mu^{p}}\, \frac{Y_t}{N_t}, \qquad
     \frac{K_{t-1}}{N_t} = \frac{\alpha}{1-\alpha}\, \frac{w_t}{r_t^{k}},
 \end{equation*}
 the last of which follows from the first two and is common across firms, since all face the same factor prices and technology.
+Factor payments absorb $mc_t/\mu^{p}$ of revenue per unit of output; the residual profit flow, $\frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t$, accrues to the owners of adopted technologies and is the dividend priced in the value functions below.
 
 \paragraph{Price setting.}
-Intermediate firms set prices \`a la Calvo: each period a fraction $1-\theta_p$ reoptimize, while the rest index to past inflation at rate $\chi_p$.
-A reoptimizing firm chooses the reset price $\Pi_t^{*}$ to maximize the expected discounted profit it earns while its price remains in force, weighting future dates by the household valuation $\beta^{s}\lambda_{t+s}/\lambda_t$ and the survival probability $\theta_p^{s}$.
+Retailers purchase intermediate output at the relative price $mc_t$---their marginal cost---and set prices \`a la Calvo: each period a fraction $1-\theta_p$ reoptimize, while the rest index to past inflation at rate $\chi_p$.
+A reoptimizing retailer chooses the reset price $\Pi_t^{*}$ to maximize the expected discounted profit it earns while its price remains in force, weighting future dates by the household valuation $\beta^{s}\lambda_{t+s}/\lambda_t$ and the survival probability $\theta_p^{s}$.
 Its optimality condition is expressed recursively through the auxiliary variables~\eqref{eq:g1}--\eqref{eq:g2}: $x_{1,t}$ discounts marginal cost, $x_{2,t}$ discounts marginal revenue, and $\epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}$ sets the reset price as a markup over marginal cost.
 Aggregating over reoptimizing and indexing firms gives the price law of motion $1 = \theta_p\left(\Pi_{t-1}^{\chi_p}/\Pi_t\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}$.
 
@@ -693,21 +698,21 @@ the stationarized counterpart of~\eqref{eq:A}.
 The created- and adopted-technology stocks $Z_t$ and $A_t$ are detrended by their own gross growth rate $1+\gamma^{a}$, which exceeds the output rate $g$ because technology enters production only through the love-of-variety term $A_t^{\vartheta-1}$; balanced growth then requires $1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$ (Section~\ref{sec:model}).
 Each unadopted technology is adopted next period with probability
 \begin{equation}
-    q_t = q_0\left(S_t\right)^{\varsigma}, \label{eq:probadopt}
+    q_t = \left(q_0 + \varepsilon_t^{q}\right)\left(S_t\right)^{\varsigma}, \label{eq:probadopt}
 \end{equation}
-increasing in adoption expenditure $S_t$ with elasticity $\varsigma$.
+increasing in adoption expenditure $S_t$ with elasticity $\varsigma$; the shock $\varepsilon_t^{q}$ shifts the adoption probability directly and is zero in all experiments considered.
 Here $S_t$ is already expressed relative to the trend, so~\eqref{eq:probadopt} is the stationarized form of $q_t = q_0\left(S_t/\Lambda_t\right)^{\varsigma}$ in Section~\ref{sec:model}.
 Adopters value these flows with the household stochastic discount factor
 \begin{equation}
-    \mathit{SDF}_{t+1} = \beta\, \frac{\lambda_{t+1}}{\lambda_t} = \beta\, \frac{C_t}{C_{t+1}}, \label{eq:sdf}
+    \mathit{SDF}_{t+1} = \beta\, \frac{\lambda_{t+1}\left(1+\tau_{t+1}^{c}\right)}{\lambda_t\left(1+\tau_t^{c}\right)} = \beta\, \frac{C_t}{C_{t+1}}, \label{eq:sdf}
 \end{equation}
-where the second equality uses~\eqref{eq:mu} at a constant consumption-tax rate.
+where the second equality uses~\eqref{eq:mu}.
 The value of an adopted technology is its per-variety monopoly profit plus its discounted, survival-weighted continuation value; the value of an unadopted technology is the discounted option of adoption, net of the effort cost $S_t$:
 \begin{align}
     \mathcal{V}_t &= \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \mathcal{V}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\right], \label{eq:VA}\\
     \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\left(q_t\, \mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right], \label{eq:JZ}
 \end{align}
-where $\mu^{p}$ is the steady-state gross markup, so $(\mu^{p}-1)/\mu^{p}$ is the profit share of revenue, and $\phi$ is the survival rate of technologies.
+where $\frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t$ is the intermediate-producer profit flow derived above and $\phi$ is the survival rate of technologies.
 Choosing $S_t$ to maximize $\mathcal{J}_t$ and using $\partial q_t/\partial S_t = \varsigma\, q_t/S_t$ gives the adoption optimality condition
 \begin{equation}
     S_t = \varsigma\, q_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{1}{1+\gamma^{a}}\, \frac{A_{t-1}}{A_{t}}\left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right], \label{eq:SAfoc}

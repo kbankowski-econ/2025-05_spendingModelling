@@ -17,6 +17,9 @@ borrowing rate (simplified — see the simplification pass below), public-capita
 wedge, price dispersion, market clearing, production, HC accumulation, and the
 technology-creation eq (Z) (now deterministic, wedge inlined). All verified
 line-for-line against `model_block.modpart`.
+**Correction (2026-07-02):** the "marginal-cost/factor FOCs" entry above was wrong —
+the paper's factor demands omitted the `markupss` wedge. See "Factor-price markup
+wedge" below; fixed paper-side.
 
 ## ⚠ Timing-convention mismatch — FIXED 2026-07 (paper aligned to the model)
 The model uses predetermined (lagged) stocks; the paper wrote some contemporaneously.
@@ -105,9 +108,49 @@ A/V/J/S, and the §2.5 discussion now use `1+gamma^a` (the paper's new symbol fo
 with the relation `1+gamma^a = g^{(1-alpha)/(vartheta-1)}` stated. Paper-side only; the
 model was already correct. See `investigations/tech-growth-rate/`.
 
+## 🔧 Factor-price markup wedge — FIXED 2026-07-02 (paper-side)
+The paper's factor demands (main-text `eq:factordemand`, the Appendix A derivation,
+and the glossary equations for `rk`/`mc`) read `r^k = α·mc·Y/K`, `w = (1−α)·mc·Y/N`,
+but the model prices factors off `mc/markupss`:
+- `model_block.modpart:46`: `(1-alpha)*mc*y/N = markupss*w`
+- `Steady_states_solution.m:34`: `w=(1-alpha)*mc*y/N/markupss` (and `:27` for `Kp_y`/rk)
+
+The wedge is load-bearing: factor payments absorb only `mc/μ^p` of revenue, and the
+residual `(μ^p−1)/μ^p·mc·Y` is exactly the per-period profit that gives adopted
+technologies their value in `eq:VA` (`model_block.modpart:68`). Structure = Anzoategui
+two-layer production: intermediate variety producers charge the fixed gross markup
+`markupss`=1.18 over unit factor cost; Calvo retailers (elasticity ε=10, so the retail
+markup ε/(ε−1)=1.11 is a *different* object) buy intermediate output at relative price
+`mc` (their marginal cost; SS 0.9 = (ε−1)/ε).
+**FIXED paper-side:** `eq:factordemand` + App. A now carry `mc_t/μ^p`; §2.2 and App. A
+introduce the retail layer in one sentence each (final good aggregates *retail*
+varieties; retailers buy intermediate output at `mc_t` and set Calvo prices); the
+ε-vs-ϑ footnote now names both markups; the profit-flow sentence links the wedge to
+the technology values. Glossary: `rk`/`mc` equations fixed, `markupss` got its paper
+symbol `μ^p` (was `--`).
+
+## 🔧 Minor exactness fixes — 2026-07-02 (paper-side)
+- **SDF stated exactly.** `eq:sdf` now reads
+  `SDF_{t+1} = β·λ_{t+1}(1+τc_{t+1})/(λ_t(1+τc_t)) = β·C_t/C_{t+1}` — identical to
+  `model_block.modpart:29`, no "constant consumption-tax" caveat needed (the second
+  equality is exact by eq:mu). Main-text §2.2 mention switched to `β·C_t/C_{t+1}`.
+- **Adoption-probability shock shown.** App. A `eq:probadopt` now reads
+  `q_t = (q_0+ε^q_t)(S_t)^ς`, matching `q = (kappaprob+epsi_q)*S^varsigma`
+  (`model_block.modpart:62`); noted as zero in all experiments. Glossary `q` equation
+  updated to match.
+- **Glossary `byss` symbol fixed:** `$d^*$` → `$b^*$` (paper uses `b^*` throughout).
+
 ## Status
 All items above are resolved. Timing items 1–6 and item 7 were fixed in the paper
 (predetermined-stock dating; uniform instruments). Item 8 was superseded — the term was
 dropped entirely. As of 2026-07 the model and paper are fully reconciled on equations and
 notation; the only intentional presentation difference is the `g`-detrending (paper main
 text in levels, model/appendix stationarized), which the appendix states.
+
+⚠ One dormant model oddity (not a paper discrepancy — the paper mirrors the code):
+the borrowing-rate equation mixes logs and levels, `log(R) = rho_RG*R(-1) +
+(1-rho_RG)*log(Rmp) + epsi_spread` (`model_block.modpart:80`) — the lagged term is
+linear `R(-1)`, not `log(R(-1))`. Inert at the current calibration (`rho_RG=0`), but
+would be dimensionally wrong for any `rho_RG>0`. If persistence is ever wanted,
+change the model to `log(R(-1))` and re-run; the paper's eq:spread would then match
+both in form and spirit.
