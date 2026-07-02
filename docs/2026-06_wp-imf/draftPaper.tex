@@ -349,7 +349,8 @@ Because the real quantities---consumption, private and public capital, investmen
 Multipliers and asset values move inversely: the marginal utility of consumption $\lambda_t$ and the adoption values $\mathcal{V}_t$ and $\mathcal{J}_t$ are rescaled by the reciprocal trend, since they fall as the economy grows.
 Substituting these definitions leaves the gross growth factor $g_t \equiv \Lambda_t/\Lambda_{t-1}$ wherever variables enter at different dates: an accumulation equation carries a $g_t$ on the current-period stock, and Euler and asset-pricing conditions carry an additional $g_{t+1}$ in the discount factor.
 The bond Euler equation, for instance, transforms from its level form $\lambda_t = \beta\,\mathbb{E}_t\!\left[\lambda_{t+1}R_t/\Pi_{t+1}\right]$ into $\hat{\lambda}_t = \beta\,\mathbb{E}_t\!\left[\hat{\lambda}_{t+1}R_t/(g_{t+1}\Pi_{t+1})\right]$, and the private-capital law of motion $K_t = (1-\delta)K_{t-1}+I_t$ into $g_t\hat{K}_t = (1-\delta)\hat{K}_{t-1} + \hat{I}_t$.
-The created- and adopted-technology stocks are the exception: they grow at their own gross rate $1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$---faster than output, since technology enters production only through the love-of-variety term---so their laws of motion and value functions carry $1+\gamma^{a}$ rather than $g_t$ (Appendix~\ref{app:equilibrium}).
+The created- and adopted-technology stocks are the exception: they grow at their own gross rate $1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$---faster than output, since technology enters production only through the love-of-variety term---so their laws of motion and value functions carry $1+\gamma^{a}$ rather than $g_t$.
+For this reason the technology block in Appendix~\ref{app:equilibrium} is stated directly in stationarized form, the one departure from the level-form convention there, with the adoption expenditure $S_t$ likewise expressed relative to the trend.
 The steady state of this stationary system---with the hats suppressed, as in Appendix~\ref{app:equilibrium} and the Dynare files---is the balanced-growth path.
 
 The model is implemented in Dynare and solved as a deterministic, perfect-foresight system.
@@ -629,9 +630,7 @@ The framework can be used to assess the long-run output consequences of country-
 %========================================================================
 
 This appendix derives the model's optimality conditions block by block, in the order of Section~\ref{sec:model}.
-The conditions are stated in level form, matching the main text.
-As discussed in Subsection~\ref{subsec:bgp}, the model is then solved in stationarized form: trending variables are expressed relative to the technology trend $\Lambda_t$, which leaves the gross growth factor $g \equiv \Lambda_t/\Lambda_{t-1}$ in the equations that relate variables across dates, while the created- and adopted-technology stocks $Z_t$ and $A_t$ are scaled by their own faster rate $1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$.
-The technology-adoption block is the one exception to the level-form convention: its conditions are stated directly in stationarized form, since the factor $1+\gamma^{a}$ appears in the conditions themselves.
+The conditions are stated in level form, matching the main text; the technology block is the one exception and is stated in stationarized form, as discussed in Subsection~\ref{subsec:bgp}.
 
 \subsection{Households}
 
@@ -694,8 +693,7 @@ Its stationarized adoption law of motion is
 \begin{equation}
     \left(1+\gamma^{a}\right) A_{t} = q_t\, \phi\left(Z_{t-1} - A_{t-1}\right) + \phi A_{t-1}, \label{eq:Astat}
 \end{equation}
-the stationarized counterpart of~\eqref{eq:A}.
-The created- and adopted-technology stocks $Z_t$ and $A_t$ are detrended by their own gross growth rate $1+\gamma^{a}$, which exceeds the output rate $g$ because technology enters production only through the love-of-variety term $A_t^{\vartheta-1}$; balanced growth then requires $1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$ (Section~\ref{sec:model}).
+the stationarized counterpart of~\eqref{eq:A}, with the stocks $Z_t$ and $A_t$ detrended by their own gross growth rate $1+\gamma^{a}$ (Subsection~\ref{subsec:bgp}).
 Each unadopted technology is adopted next period with probability
 \begin{equation}
     q_t = \left(q_0 + \varepsilon_t^{q}\right)\left(S_t\right)^{\varsigma}, \label{eq:probadopt}
