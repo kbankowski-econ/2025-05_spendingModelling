@@ -161,6 +161,40 @@ $1+\gamma^a$ in place of $g_t$:
 In sum, the solved model carries two trend growth \emph{rates}---$g_t$ for the real block
 and $1+\gamma^a$ for the technology block---and no trend \emph{level} $\Lambda_t$ at all.
 
+\section{Why the SDF carries no $g$: a stationary kernel, growth carried at the point of use}
+
+The stochastic discount factor looks as though it should carry $g$---it is a ratio of
+marginal utilities at adjacent dates---but it does not:
+\begin{equation}
+    \mathit{SDF}_{t+1} = \beta\,\frac{\lambda_{t+1}}{\lambda_t}
+                       = \beta\,\frac{C_t}{C_{t+1}},
+\end{equation}
+where $\lambda$ and $C$ are the \emph{detrended} (hat-suppressed) variables. Both are
+stationary, so the ratio of the same stationary variable at two adjacent dates has no
+growth wedge: the SDF is itself stationary, equal to $\beta$ in steady state (the solved
+model has $\mathit{SDF} = 0.9985 = \beta$).
+
+Written in \emph{level} marginal utilities it \emph{would} carry $g$: since
+$C^{\mathrm{lev}}$ grows at $g$,
+\begin{equation}
+    \mathit{SDF}^{\mathrm{lev}}_{t+1}
+    = \beta\,\frac{C^{\mathrm{lev}}_t}{C^{\mathrm{lev}}_{t+1}}
+    = \frac{\beta}{g_{t+1}}.
+\end{equation}
+The model instead keeps the SDF as a clean stationary kernel ($\beta$) and applies the
+growth factor \emph{explicitly, wherever the SDF discounts a trending payoff}:
+\begin{itemize}
+    \item pricing the \emph{bond} return puts the $g_{t+1}$ in the Euler equation,
+          $\hat\lambda_t = \beta\,\mathbb{E}_t[\hat\lambda_{t+1}R_t/(g_{t+1}\Pi_{t+1})]$;
+    \item pricing the \emph{adopter values} $\mathcal V_t$ and $\mathcal J_t$, which trend
+          at $1+\gamma^{a}$, puts a $1/(1+\gamma^{a})$ right beside $\mathit{SDF}_{t+1}$;
+    \item discounting \emph{debt} puts a $1/g$ in the government budget.
+\end{itemize}
+So the design is: define the SDF on the stationary pricing kernel (no $g$), and attach a
+growth factor to it in each equation according to the trend of the object being
+discounted. That is why the value functions and the Euler carry a growth factor while the
+SDF definition itself does not.
+
 \section{A note on the investment convention}
 
 Above, investment was scaled by the incumbent trend, $\hat I_t = I_t/\Lambda_{t-1}$,
