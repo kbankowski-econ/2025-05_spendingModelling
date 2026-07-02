@@ -149,8 +149,6 @@ PARAMETERS = [
     ("Production and technology", [
         (r"$\alpha$",           "Private capital share",                        "alpha"),
         (r"$\alpha_G$",         "Output elasticity of public infrastructure",   "alphaG"),
-        (r"$\Theta$",           "Fixed cost of production",                     "Bigtheta"),
-        ("--",                  "Fixed cost, share of GDP",                     "Bigtheta_y"),
         (r"$\theta_p$",         "Calvo non-reset probability",                  "thetap"),
         (r"$\chi_p$",           "Price indexation",                             "chi"),
         (r"$\epsilon$",         "Elasticity of substitution (sets the markup)", "epsilon"),

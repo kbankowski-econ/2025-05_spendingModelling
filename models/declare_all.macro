@@ -86,8 +86,6 @@ delta           % depreciationf
 thetap          % firsm cant change the price
 epsilon         % elasticity of substitution 
 alpha          % share of capital in intermediate firms production
-Bigtheta        % Fixed cost
-Bigtheta_y      % Fixed cost to GDP
 alphaG          % Share of public capital in the production (paper alpha_G)
 rho_R           % Persistence of policy rate
 gamma_pi        % Reponse of MP to inflation
