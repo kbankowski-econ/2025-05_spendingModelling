@@ -14,6 +14,8 @@ paper's model pipeline (`drivers/runModel.m`).
 - `tech-growth-rate/` — why the technology stocks detrend by their own rate
   `1+gammaa = g^((1-alpha)/(vartheta-1))`, not `g` (self-compiling note).
 - `sensitivity/` — parameter-sweep driver + plots behind §4.3.
-- `modelDeriv/` — model derivations. `costMinimization.tex`: the intermediate
-  firm's cost-minimization problem, the `mu^p` markup wedge in the factor demands,
-  the profit flow funding the technology values, and the Θ=0 fixed-cost caveat.
+- `modelDeriv/` — model derivations, styled after the Sims NK lecture notes kept in
+  the folder (`notes_new_keynesian_2024-1.pdf`; see `.sped.md` for the convention).
+  `costMinimization.tex`: the intermediate firm's cost-minimization problem, the
+  `mu^p` markup wedge in the factor demands, and the profit flow funding the
+  technology values.
