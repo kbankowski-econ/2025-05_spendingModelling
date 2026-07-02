@@ -21,4 +21,7 @@ paper's model pipeline (`drivers/runModel.m`).
   technology values. `pricingEquations.tex`: the retailer's Calvo reset-price
   problem with indexation → the x1/x2 recursions, the reset condition, and the
   price-index law of motion; asides on price dispersion (an aggregation object)
-  and on why the recursions carry no growth factor.
+  and on why the recursions carry no growth factor. `creationAdoption.tex`: the
+  technology block — creation process, adoption LoM (level → stationarized), the
+  V/J value functions (per-variety → A-scaled → detrended, showing where the
+  A(-1)/A and 1/(1+gammaa) factors come from), and the S-FOC.
