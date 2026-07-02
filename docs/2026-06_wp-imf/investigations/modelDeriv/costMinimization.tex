@@ -1,0 +1,116 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=2.5cm,vmargin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\title{The Intermediate Firm's Cost-Minimization Problem:\\ Factor Demands and the Markup Wedge}
+\author{Spending-efficiency model --- internal note}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\noindent
+This note derives the factor-demand conditions of Appendix~A in the working paper
+(\texttt{../../draftPaper.tex}) from the intermediate firm's cost-minimization
+problem, and shows where the fixed gross markup $\mu^{p}$ (model parameter
+\texttt{markupss}) enters. It also records a fixed-cost technicality that is inert
+at the current calibration.
+
+\section{The problem}
+
+Firm $i$ takes the factor prices $r_t^{k}$ and $w_t$ and the externalities
+$K_{t-1}^{GI}$ (public infrastructure) and $A_{t-1}$ (adopted technology) as given,
+and chooses private capital and effective labor to produce a required output level
+$\bar{Y}_t(i)$ at minimum factor cost:
+\begin{equation}\label{eq:problem}
+    \min_{K_{t-1}(i),\,N_t(i)} \; r_t^{k}\,K_{t-1}(i) + w_t\,N_t(i)
+\end{equation}
+subject to the production technology
+\begin{equation}\label{eq:constraint}
+    A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
+    K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} - \Theta \;\ge\; \bar{Y}_t(i).
+\end{equation}
+Stating the required output level is what makes the problem well-posed: without it,
+minimizing cost subject to the technology alone has the degenerate zero-input
+solution.
+
+\section{Lagrangian and first-order conditions}
+
+With the multiplier $\xi_t$ on the output constraint,
+\begin{equation}
+    \mathcal{L} = r_t^{k}\,K_{t-1}(i) + w_t\,N_t(i)
+    + \xi_t\left[\bar{Y}_t(i)
+    - A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
+      K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} + \Theta\right].
+\end{equation}
+The first-order conditions are
+\begin{align}
+    [\,K_{t-1}(i)\,]:&\quad r_t^{k} = \xi_t\,\alpha\,\frac{Y_t+\Theta}{K_{t-1}(i)},
+    \label{eq:focK}\\
+    [\,N_t(i)\,]:&\quad w_t = \xi_t\,(1-\alpha)\,\frac{Y_t+\Theta}{N_t(i)},
+    \label{eq:focN}
+\end{align}
+where $Y_t$ denotes output net of the fixed cost, so $Y_t+\Theta$ is the gross
+Cobb--Douglas term whose marginal products appear in the conditions. Dividing
+\eqref{eq:focK} by \eqref{eq:focN} gives the factor-mix condition
+\begin{equation}\label{eq:mix}
+    \frac{K_{t-1}(i)}{N_t(i)} = \frac{\alpha}{1-\alpha}\,\frac{w_t}{r_t^{k}},
+\end{equation}
+which is common across firms, since all face the same factor prices and technology
+(model equation \texttt{Kp(-1)/N = alpha/(1-alpha)*w/rk},
+\texttt{models/model\_block.modpart}).
+
+\section{The multiplier and the markup wedge}
+
+By the envelope theorem, $\xi_t$ is the shadow cost of one more unit of output: the
+firm's \emph{real marginal cost}. With constant returns to the two chosen inputs, it
+also equals unit factor cost.
+
+The firm sells its output to the Calvo retailers at the fixed gross markup $\mu^{p}$
+over this cost. The resulting relative price of intermediate output is $mc_t$ (the
+retailers' marginal cost), so
+\begin{equation}\label{eq:wedge}
+    mc_t = \mu^{p}\,\xi_t
+    \qquad\Longleftrightarrow\qquad
+    \xi_t = \frac{mc_t}{\mu^{p}}.
+\end{equation}
+Substituting \eqref{eq:wedge} into \eqref{eq:focK}--\eqref{eq:focN} (with
+$\Theta=0$; see Section~\ref{sec:theta}) gives the paper's factor demands,
+\begin{equation}\label{eq:factordemand}
+    \boxed{\;r_t^{k} = \alpha\,\frac{mc_t}{\mu^{p}}\,\frac{Y_t}{K_{t-1}}, \qquad
+    w_t = (1-\alpha)\,\frac{mc_t}{\mu^{p}}\,\frac{Y_t}{N_t}\;}
+\end{equation}
+matching the model's labor-demand equation
+\texttt{(1-alpha)*mc*y/N = markupss*w} and the steady state
+\texttt{w=(1-alpha)*mc*y/N/markupss}
+(\texttt{models/Steady\_states\_solution.m}).
+
+Factor payments therefore absorb only $mc_t/\mu^{p}$ of revenue per unit of output.
+The residual,
+\begin{equation}
+    \frac{\mu^{p}-1}{\mu^{p}}\,mc_t\,Y_t,
+\end{equation}
+is the profit flow that accrues to the owners of adopted technologies --- the
+dividend term in the value function $\mathcal{V}_t$
+(model equation \texttt{V = (markupss-1)/(markupss)*mc*y + ...}). Without the wedge
+in \eqref{eq:factordemand}, this profit flow would have no source: competitive
+factor pricing at $mc_t$ would exhaust the entire revenue.
+
+Note that $\mu^{p}$ (\texttt{markupss} $=1.18$) is a separate calibrated parameter,
+\emph{not} the retail Calvo markup $\epsilon/(\epsilon-1)=10/9\approx 1.11$. The two
+markups belong to different layers: $\mu^{p}$ to the intermediate producers, whose
+profits reward technology adoption; $\epsilon$ to the retailers, whose staggered
+pricing generates the New Keynesian block.
+
+\section{The fixed-cost technicality}\label{sec:theta}
+
+The first-order conditions \eqref{eq:focK}--\eqref{eq:focN} involve the gross
+Cobb--Douglas term $Y_t+\Theta$, while the model's factor-demand equations use
+$Y_t$ (net of the fixed cost). The two coincide because the fixed cost is switched
+off at the calibration: \texttt{Bigtheta=0}, \texttt{Bigtheta\_y=0}
+(\texttt{models/parameters\_common.macro}). If $\Theta$ were ever calibrated
+positive, the model's factor demands would need \texttt{y+Bigtheta} in place of
+\texttt{y} to remain the exact first-order conditions.
+
+\end{document}
