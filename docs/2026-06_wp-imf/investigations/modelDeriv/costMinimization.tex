@@ -14,7 +14,10 @@
 This note derives the factor-demand conditions of Appendix~A in the working paper
 (\texttt{../../draftPaper.tex}) from the intermediate firm's cost-minimization
 problem, and shows where the fixed gross markup $\mu^{p}$ (model parameter
-\texttt{markupss}) enters. Notation is the paper's throughout.
+\texttt{markupss}) enters. Notation is the paper's throughout.\footnote{An earlier
+version of this note carried a fixed cost of production $\Theta$ through the
+derivation; the parameter was calibrated to zero and has since been removed from
+the model and the paper entirely.}
 
 \section{The Firm's Problem}
 
@@ -25,9 +28,8 @@ public-infrastructure stock $K_{t-1}^{GI}$ and the adopted-technology stock
 $A_{t-1}$. Its technology is
 \begin{equation}\label{eq:tech}
     Y_t(i) = A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
-    K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} - \Theta,
+    K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha}.
 \end{equation}
-where $\Theta$ is a fixed cost of production.
 
 Consider the problem of producing a required level of output, $\bar{Y}_t(i)$, as
 cheaply as possible. The firm's problem is:
@@ -37,7 +39,7 @@ cheaply as possible. The firm's problem is:
 subject to:
 \begin{equation}\label{eq:constraint}
     A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
-    K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} - \Theta \;\ge\; \bar{Y}_t(i).
+    K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} \;\ge\; \bar{Y}_t(i).
 \end{equation}
 Note that the required output level is what makes the problem well-posed: if we
 dropped it, the cost-minimizing input choice would just be zero.
@@ -48,18 +50,15 @@ A Lagrangian for the firm is:
 \begin{equation*}
     \mathbb{L} = -\,r_t^{k}\,K_{t-1}(i) - w_t\,N_t(i)
     + \xi_t\left[A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
-      K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} - \Theta - \bar{Y}_t(i)\right].
+      K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} - \bar{Y}_t(i)\right].
 \end{equation*}
 The FOC are:
 \begin{align*}
     \frac{\partial\mathbb{L}}{\partial K_{t-1}(i)} = 0
-    &\;\Leftrightarrow\; r_t^{k} = \xi_t\,\alpha\,\frac{Y_t(i)+\Theta}{K_{t-1}(i)},\\
+    &\;\Leftrightarrow\; r_t^{k} = \xi_t\,\alpha\,\frac{Y_t(i)}{K_{t-1}(i)},\\
     \frac{\partial\mathbb{L}}{\partial N_t(i)} = 0
-    &\;\Leftrightarrow\; w_t = \xi_t\,(1-\alpha)\,\frac{Y_t(i)+\Theta}{N_t(i)}.
+    &\;\Leftrightarrow\; w_t = \xi_t\,(1-\alpha)\,\frac{Y_t(i)}{N_t(i)}.
 \end{align*}
-Here $Y_t(i)+\Theta$ is just the Cobb--Douglas term in \eqref{eq:tech} --- the
-marginal products are proportional to output gross of the fixed cost.
-
 Dividing the first condition by the second, the multiplier and the output term drop
 out:
 \begin{equation}\label{eq:mix}
@@ -85,8 +84,7 @@ retailers' marginal cost --- so:
     \qquad\Leftrightarrow\qquad
     \xi_t = \frac{mc_t}{\mu^{p}}.
 \end{equation}
-Plugging \eqref{eq:wedge} into the FOC, and setting $\Theta=0$ (see the aside
-below), we get the factor-demand conditions:
+Plugging \eqref{eq:wedge} into the FOC, we get the factor-demand conditions:
 \begin{align}
     r_t^{k} &= \alpha\,\frac{mc_t}{\mu^{p}}\,\frac{Y_t}{K_{t-1}},\label{eq:fdK}\\
     w_t &= (1-\alpha)\,\frac{mc_t}{\mu^{p}}\,\frac{Y_t}{N_t}.\label{eq:fdN}
@@ -117,15 +115,5 @@ the intermediate producers, and their profits reward technology adoption.
 $\epsilon$ governs the retailers, whose staggered price setting generates the New
 Keynesian block. Keeping them separate is what lets the model calibrate the profit
 share of the technology block independently of the nominal rigidity.
-
-\subsection{Aside: The Fixed Cost $\Theta$}
-
-The FOC involve the gross Cobb--Douglas term $Y_t+\Theta$, while the model's
-factor-demand equations use $Y_t$ (net of the fixed cost). The two coincide because
-the fixed cost is switched off at the calibration: \texttt{Bigtheta=0},
-\texttt{Bigtheta\_y=0} (\texttt{models/parameters\_common.macro}). If $\Theta$ were
-ever calibrated positive, the model's factor demands would need
-\texttt{y+Bigtheta} in place of \texttt{y} to remain the exact first-order
-conditions.
 
 \end{document}
