@@ -18,4 +18,7 @@ paper's model pipeline (`drivers/runModel.m`).
   the folder (`notes_new_keynesian_2024-1.pdf`; see `.sped.md` for the convention).
   `costMinimization.tex`: the intermediate firm's cost-minimization problem, the
   `mu^p` markup wedge in the factor demands, and the profit flow funding the
-  technology values.
+  technology values. `pricingEquations.tex`: the retailer's Calvo reset-price
+  problem with indexation → the x1/x2 recursions, the reset condition, and the
+  price-index law of motion; asides on price dispersion (an aggregation object)
+  and on why the recursions carry no growth factor.

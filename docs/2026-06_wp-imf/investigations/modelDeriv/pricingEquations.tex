@@ -1,0 +1,178 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=2.5cm,vmargin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\title{The Pricing Equations:\\ Calvo Price Setting with Indexation}
+\author{Spending-efficiency model --- internal note}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\noindent
+This note derives the four pricing equations of the model --- the two auxiliary
+recursions for $x_{1,t}$ and $x_{2,t}$, the reset-price condition
+$\epsilon x_{1,t} = (\epsilon-1)x_{2,t}$, and the price-index law of motion ---
+from the retailer's problem (\texttt{models/model\_block.modpart}, price-setting
+block). Notation is the paper's throughout.
+
+\section{Setup}
+
+Retailers purchase intermediate output at the relative price $mc_t$ --- their real
+marginal cost --- differentiate it one-for-one into varieties, and sell variety $i$
+at the nominal price $P_t(i)$. The final-good producer's cost minimization gives
+the demand for each variety:
+\begin{equation}\label{eq:demand}
+    y_t(i) = \left(\frac{P_t(i)}{P_t}\right)^{-\epsilon} Y_t^{d}.
+\end{equation}
+Prices are sticky \`a la Calvo: each period a retailer reoptimizes its price with
+probability $1-\theta_p$. With probability $\theta_p$ it cannot, and instead
+indexes its price to past inflation with elasticity $\chi_p$, so a non-reoptimized
+price is scaled by $\Pi_{t-1}^{\chi_p}$ each period.
+
+Consider a retailer that reoptimizes at $t$. If it is still stuck with that price
+at $t+s$, indexation will have scaled it by the cumulative factor
+\begin{equation}\label{eq:index}
+    X_{t,s} = \prod_{k=1}^{s} \Pi_{t+k-1}^{\chi_p}, \qquad X_{t,0} = 1.
+\end{equation}
+
+\section{The Reset-Price Problem}
+
+The retailer chooses $P_t(i)$ to maximize the expected discounted real profits it
+earns while the price remains in force. A profit $s$ periods ahead survives with
+probability $\theta_p^{s}$ and is valued with the household's discount factor
+$\beta^{s}\lambda_{t+s}/\lambda_t$; multiplying through by the constant
+$\lambda_t$, the problem can be written:
+\begin{equation*}
+    \max_{P_t(i)} \; \mathbb{E}_t \sum_{s=0}^{\infty}
+    \left(\beta\theta_p\right)^{s} \lambda_{t+s}
+    \left[\frac{P_t(i)\,X_{t,s}}{P_{t+s}} - mc_{t+s}\right]
+    \left(\frac{P_t(i)\,X_{t,s}}{P_{t+s}}\right)^{-\epsilon} Y_{t+s}^{d}.
+\end{equation*}
+This is why $\lambda$ appears inside the model's auxiliaries below: profits are
+valued in utility units. The FOC with respect to $P_t(i)$ is:
+\begin{equation*}
+    \mathbb{E}_t \sum_{s=0}^{\infty} \left(\beta\theta_p\right)^{s} \lambda_{t+s}
+    \left[(1-\epsilon)\,P_t(i)^{-\epsilon}
+    \left(\frac{X_{t,s}}{P_{t+s}}\right)^{1-\epsilon}
+    + \epsilon\, mc_{t+s}\,P_t(i)^{-\epsilon-1}
+    \left(\frac{X_{t,s}}{P_{t+s}}\right)^{-\epsilon}\right] Y_{t+s}^{d} = 0.
+\end{equation*}
+Multiplying by $P_t(i)^{\epsilon+1}$ and rearranging:
+\begin{equation}\label{eq:focP}
+    (\epsilon-1)\,P_t(i)\;\mathbb{E}_t \sum_{s=0}^{\infty}
+    \left(\beta\theta_p\right)^{s} \lambda_{t+s}
+    \left(\frac{X_{t,s}}{P_{t+s}}\right)^{1-\epsilon} Y_{t+s}^{d}
+    = \epsilon\;\mathbb{E}_t \sum_{s=0}^{\infty}
+    \left(\beta\theta_p\right)^{s} \lambda_{t+s}\, mc_{t+s}
+    \left(\frac{X_{t,s}}{P_{t+s}}\right)^{-\epsilon} Y_{t+s}^{d}.
+\end{equation}
+Nothing in \eqref{eq:focP} depends on $i$, so all reoptimizing retailers choose the
+same reset price; call it $P_t^{\#}$.
+
+\section{The Recursive Form}
+
+\eqref{eq:focP} contains infinite sums and the price level; to obtain the model's
+stationary system, express everything in relative terms. Define the relative reset
+price and the indexation-deflated price drift:
+\begin{equation}\label{eq:defs}
+    \Pi_t^{*} \equiv \frac{P_t^{\#}}{P_t}, \qquad
+    D_{t,s} \equiv \frac{X_{t,s}\,P_t}{P_{t+s}}, \qquad D_{t,0} = 1.
+\end{equation}
+$D_{t,s}$ is the relative price at $t+s$ of a retailer that reset to the aggregate
+price level at $t$ and indexed ever since. Splitting off the first indexation step,
+it obeys:
+\begin{equation}\label{eq:Drec}
+    D_{t,s} = \frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\; D_{t+1,s-1}.
+\end{equation}
+Now define the two sums in \eqref{eq:focP} in relative terms:
+\begin{equation}\label{eq:x1def}
+    x_{1,t} \equiv \mathbb{E}_t \sum_{s=0}^{\infty}
+    \left(\beta\theta_p\right)^{s} \lambda_{t+s}\, mc_{t+s}\, D_{t,s}^{-\epsilon}\,
+    Y_{t+s}^{d}, \qquad
+    f_{t} \equiv \mathbb{E}_t \sum_{s=0}^{\infty}
+    \left(\beta\theta_p\right)^{s} \lambda_{t+s}\, D_{t,s}^{1-\epsilon}\,
+    Y_{t+s}^{d}.
+\end{equation}
+$x_{1,t}$ discounts marginal cost and $f_t$ discounts revenue, both weighted by the
+demand the price will face. Using \eqref{eq:Drec}, splitting off the $s=0$ term
+turns each sum into a recursion:
+\begin{equation}\label{eq:x1}
+    x_{1,t} = \lambda_t\, mc_t\, Y_t^{d}
+    + \beta\theta_p\, \mathbb{E}_t\!\left[
+    \left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{-\epsilon} x_{1,t+1}\right],
+\end{equation}
+\begin{equation}\label{eq:f}
+    f_{t} = \lambda_t\, Y_t^{d}
+    + \beta\theta_p\, \mathbb{E}_t\!\left[
+    \left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon} f_{t+1}\right].
+\end{equation}
+The model carries the revenue side as $x_{2,t} \equiv \Pi_t^{*} f_t$. Multiplying
+\eqref{eq:f} by $\Pi_t^{*}$:
+\begin{equation}\label{eq:x2}
+    x_{2,t} = \lambda_t\, \Pi_t^{*}\, Y_t^{d}
+    + \beta\theta_p\, \mathbb{E}_t\!\left[
+    \left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon}
+    \frac{\Pi_t^{*}}{\Pi_{t+1}^{*}}\, x_{2,t+1}\right].
+\end{equation}
+Finally, dividing \eqref{eq:focP} by $P_t$ and substituting the definitions, the
+FOC becomes:
+\begin{equation}\label{eq:reset}
+    \epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}.
+\end{equation}
+\eqref{eq:x1}, \eqref{eq:x2}, and \eqref{eq:reset} are the model equations
+\texttt{x1 = lambda*mc*yd+...}, \texttt{x2 = lambda*PIstar*yd+...}, and
+\texttt{epsilon*x1 = (epsilon-1)*x2}. \eqref{eq:reset} says the reset price is a
+markup over (discounted) marginal cost: absent stickiness
+($\theta_p=0$) it collapses to
+$\Pi_t^{*} = \tfrac{\epsilon}{\epsilon-1}\,mc_t$, the static markup rule.
+
+\section{The Price-Index Law of Motion}
+
+The price index aggregates $P_t^{1-\epsilon} = \int_0^1 P_t(i)^{1-\epsilon}di$.
+Each period a fraction $\theta_p$ of prices are last period's scaled by
+$\Pi_{t-1}^{\chi_p}$ --- by the Calvo assumption the non-reoptimizers are a random
+sample, so their price distribution is last period's --- and a fraction
+$1-\theta_p$ equal $P_t^{\#}$:
+\begin{equation*}
+    P_t^{1-\epsilon}
+    = \theta_p \left(\Pi_{t-1}^{\chi_p}\right)^{1-\epsilon} P_{t-1}^{1-\epsilon}
+    + \left(1-\theta_p\right) \left(P_t^{\#}\right)^{1-\epsilon}.
+\end{equation*}
+Dividing by $P_t^{1-\epsilon}$:
+\begin{equation}\label{eq:pindex}
+    1 = \theta_p \left(\frac{\Pi_{t-1}^{\chi_p}}{\Pi_t}\right)^{1-\epsilon}
+    + \left(1-\theta_p\right)\left(\Pi_t^{*}\right)^{1-\epsilon},
+\end{equation}
+the model equation \texttt{1 = thetap*(PI(-1)\^{}chi/PI)\^{}(1-epsilon)+
+(1-thetap)*PIstar\^{}(1-epsilon)}. \eqref{eq:pindex} determines inflation: given
+the reset price from \eqref{eq:reset}, it pins down $\Pi_t$.
+
+\subsection{Aside: Price Dispersion Is an Aggregation Object}
+
+The same reoptimizers/indexers split, applied to the demand weights
+$\left(P_t(i)/P_t\right)^{-\epsilon}$ instead of $P_t(i)^{1-\epsilon}$, gives the
+law of motion of price dispersion $v_t^{p} \equiv \int_0^1
+\left(P_t(i)/P_t\right)^{-\epsilon} di$:
+\begin{equation}\label{eq:vp}
+    v_t^{p} = \theta_p \left(\frac{\Pi_{t-1}^{\chi_p}}{\Pi_t}\right)^{-\epsilon}
+    v_{t-1}^{p} + \left(1-\theta_p\right)\left(\Pi_t^{*}\right)^{-\epsilon}.
+\end{equation}
+We derive it here because the algebra is one more application of the same split,
+but $v_t^{p}$ is \emph{not} part of the pricing block: no retailer chooses
+anything with respect to it. It is an aggregation statistic --- summing the variety
+demands \eqref{eq:demand} gives $\int_0^1 y_t(i)\,di = v_t^{p}\,Y_t^{d} = Y_t$,
+the wedge between gross output and demand --- and accordingly the paper and the
+glossary keep it with market clearing.
+
+\subsection{Aside: Why No Growth Factor in the Recursions}
+
+Unlike the Euler equations, the recursions \eqref{eq:x1} and \eqref{eq:x2} carry no
+growth factor in the model. The reason is that $\lambda$ and $Y^{d}$ enter only as
+the product $\lambda_{t+s} Y_{t+s}^{d}$: the marginal utility scales inversely
+with the trend and demand proportionally to it, so the product is stationary and
+the detrending factors cancel term by term (see
+\texttt{../detrending/detrending.tex} for the general logic).
+
+\end{document}
