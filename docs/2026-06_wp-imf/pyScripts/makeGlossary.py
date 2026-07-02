@@ -76,22 +76,26 @@ ENDOGENOUS = [
         (r"$\lambda_t$",      "Marginal utility of consumption",          "lambda"),
         (r"$\lambda_t^{H}$",  "Shadow value of human capital",            "lambda_H"),
     ]),
-    ("Production and technology", [
+    ("Production and technology: intermediate goods", [
         (r"$Y_t$",            "Gross output",                             "y"),
         (r"$mc_t$",           "Real marginal cost",                       "mc"),
         (r"$r_t^{k}$",        "Rental rate of private capital",           "rk"),
         (r"$w_t$",            "Real wage",                                "w"),
-        (r"$\Pi_t$",          "Gross inflation",                          "PI"),
-        (r"$\Pi_t^{*}$",      "Reset (optimal) inflation",                "PIstar"),
+    ]),
+    ("Production and technology: price setting", [
         (r"$x_{1,t}$",        "Price-setting auxiliary",                  "x1"),
         (r"$x_{2,t}$",        "Price-setting auxiliary",                  "x2"),
-        (r"$A_t$",            "Adopted technology",                       "A"),
+        (r"$\Pi_t^{*}$",      "Reset (optimal) inflation",                "PIstar"),
+        (r"$\Pi_t$",          "Gross inflation",                          "PI"),
+    ]),
+    ("Production and technology: creation and adoption", [
         (r"$Z_t$",            "Created technology",                       "Z"),
-        (r"$S_t$",            "Adoption expenditure",                     "S"),
+        (r"$A_t$",            "Adopted technology",                       "A"),
         (r"$q_t$",            "Adoption probability",                     "q"),
         (r"$\mathit{SDF}_t$", "Stochastic discount factor",               "SDF"),
         (r"$\mathcal{V}_t$",  "Value of an adopted technology",           "V"),
         (r"$\mathcal{J}_t$",  "Value of an unadopted technology",         "J"),
+        (r"$S_t$",            "Adoption expenditure",                     "S"),
     ]),
     ("Government: fiscal and monetary policy", [
         (r"$G_t^{C}$",        "Government consumption",                   "Gc"),
