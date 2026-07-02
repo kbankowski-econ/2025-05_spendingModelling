@@ -25,3 +25,6 @@ paper's model pipeline (`drivers/runModel.m`).
   technology block — creation process, adoption LoM (level → stationarized), the
   V/J value functions (per-variety → A-scaled → detrended, showing where the
   A(-1)/A and 1/(1+gammaa) factors come from), and the S-FOC.
+  `householdProblem.tex`: the household Lagrangian and six FOCs, the
+  work-vs-schooling arbitrage, the exact tax-adjusted SDF, and an aside on which
+  conditions pick up g when stationarized (and why lambda_H carries none).
