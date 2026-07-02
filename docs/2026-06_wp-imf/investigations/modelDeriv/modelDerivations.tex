@@ -3,6 +3,14 @@
 \usepackage{amsmath,amssymb}
 \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
 
+% Boxed display for model-code (Dynare) lines: framed box on the current line
+% width (so it also fits inside lists), small typewriter font, one equation per
+% line (break lines with \\).
+\newcommand{\modelcode}[1]{%
+  \par\smallskip\noindent\hspace*{\fill}%
+  \fbox{\parbox{0.94\linewidth}{\small\ttfamily\raggedright #1}}%
+  \hspace*{\fill}\par\smallskip}
+
 \title{Model Derivations:\\ Households, Cost Minimization, Pricing, and Technology}
 \author{Spending-efficiency model --- internal note}
 \date{\today}
@@ -116,17 +124,18 @@ $\lambda_{t+1}(1-\tau^w_{t+1})w_{t+1}L_{t+1}$ --- and survives into the future
 stock at rate $1-\delta^{h}$, valued at $\lambda^{H}_{t+1}$.
 
 \eqref{eq:focC} identifies $\lambda_t$ as the marginal utility of wealth.
-\eqref{eq:focB}--\eqref{eq:focK} are the bond and capital Euler equations
-(\texttt{lambda = betta*(lambda(+1)/g(+1)*R/PI(+1))} and
-\texttt{1 = betta*(lambda(+1)/lambda/g(+1)*(1-delta+rk(+1)))} in the model; the
-$g_{t+1}$ is the stationarization --- see
-Subsection~\ref{subsec:hhg}). \eqref{eq:focL} is the labor-supply condition
-(\texttt{omega*(L+E)\^{}varphi = lambda*w*H(-1)*(1-tauw)}): an hour of work
-supplies $H_{t-1}$ efficiency units paid $w_t$ each, so its utility value is the
-after-tax hourly wage times the marginal utility of wealth. \eqref{eq:focE} and
-\eqref{eq:focH} are the model equations \texttt{omega*(L+E)\^{}varphi =
-lambda\_H*chiH*gamma*E\^{}(gamma-1)*(Kge(-1))\^{}(mu)} and \texttt{lambda\_H =
-betta*(lambda(+1)*(1-tauw(+1))*w(+1)*L(+1)+lambda\_H(+1)*(1-deltaH))}.
+\eqref{eq:focB}--\eqref{eq:focK} are the bond and capital Euler equations; the
+$g_{t+1}$ in their model counterparts below is the stationarization (see
+Subsection~\ref{subsec:hhg}). \eqref{eq:focL} is the labor-supply condition: an
+hour of work supplies $H_{t-1}$ efficiency units paid $w_t$ each, so its utility
+value is the after-tax hourly wage times the marginal utility of wealth. In the
+model (\texttt{models/model\_block.modpart}), the six conditions read:
+\modelcode{1/C = lambda*(1+tauc);\\
+lambda = betta*(lambda(+1)/g(+1)*R/PI(+1));\\
+1 = betta*(lambda(+1)/lambda/g(+1)*(1-delta+rk(+1)));\\
+omega*(L+E)\^{}varphi = lambda*w*H(-1)*(1-tauw);\\
+omega*(L+E)\^{}varphi = lambda\_H*chiH*gamma*E\^{}(gamma-1)*(Kge(-1))\^{}(mu);\\
+lambda\_H = betta*(lambda(+1)*(1-tauw(+1))*w(+1)*L(+1)+lambda\_H(+1)*(1-deltaH));}
 
 \subsection{The Work-vs-Schooling Arbitrage}
 
@@ -160,8 +169,9 @@ $t$ buys $1/(1+\tau^c_t)$ units of consumption, so:
     = \beta\,\frac{C_t}{C_{t+1}},
 \end{equation}
 where the second equality substitutes \eqref{eq:focC}; it is exact, with no
-constant-tax assumption needed. \eqref{eq:sdf} is the model equation
-\texttt{SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)))}. The SDF is
+constant-tax assumption needed. In the model:
+\modelcode{SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)));}
+The SDF is
 defined by household preferences but used elsewhere: by the technology adopters
 (Section~\ref{sec:tech}) and, in the $\beta^{s}\lambda_{t+s}$ form, by the
 price-setting retailers (Section~\ref{sec:pricing}).
@@ -186,9 +196,9 @@ stationary). The consequences, condition by condition:
     \item \textbf{The HC technology in \eqref{eq:hlom}: the $\Lambda_{t-1}$
     scaling.} Public capital $K^{GE}$ trends while $H$ does not; dividing by the
     trend inside the accumulation technology is what keeps \eqref{eq:hlom}
-    balanced. In the model the equation reads \texttt{H =
-    (1-deltaH)*H(-1)+chiH*E\^{}gamma*(Kge(-1))\^{}(mu)} because \texttt{Kge} is
-    already the detrended stock.
+    balanced. \texttt{Kge} is already the detrended stock, so in the model the
+    equation reads:
+    \modelcode{H = (1-deltaH)*H(-1)+chiH*E\^{}gamma*(Kge(-1))\^{}(mu);}
 \end{itemize}
 
 %========================================================================
@@ -273,9 +283,10 @@ Plugging \eqref{eq:wedge} into the FOC, we get the factor-demand conditions:
     w_t &= (1-\alpha)\,\frac{mc_t}{\mu^{p}}\,\frac{Y_t}{N_t}.\label{eq:fdN}
 \end{align}
 \eqref{eq:fdK}--\eqref{eq:fdN} are the factor demands in Appendix~A of the paper.
-\eqref{eq:fdN} is the model's labor-demand equation
-\texttt{(1-alpha)*mc*y/N = markupss*w}, and the steady state solves it the same way:
-\texttt{w=(1-alpha)*mc*y/N/markupss} (\texttt{models/Steady\_states\_solution.m}).
+\eqref{eq:fdN} is the model's labor-demand equation, and the steady state
+(\texttt{models/Steady\_states\_solution.m}) solves it the same way:
+\modelcode{(1-alpha)*mc*y/N = markupss*w;\\
+w=(1-alpha)*mc*y/N/markupss;}
 
 Now consider profits. Per unit of output the firm receives $mc_t$ and pays
 $mc_t/\mu^{p}$ in factor costs, so the profit flow is:
@@ -442,9 +453,11 @@ FOC becomes:
 \begin{equation}\label{eq:reset}
     \epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}.
 \end{equation}
-\eqref{eq:x1}, \eqref{eq:x2}, and \eqref{eq:reset} are the model equations
-\texttt{x1 = lambda*mc*yd+...}, \texttt{x2 = lambda*PIstar*yd+...}, and
-\texttt{epsilon*x1 = (epsilon-1)*x2}. \eqref{eq:reset} says the reset price is a
+\eqref{eq:x1}, \eqref{eq:x2}, and \eqref{eq:reset} are the model equations:
+\modelcode{x1 = lambda*mc*yd+betta*thetap*(PI\^{}chi/PI(+1))\^{}(-epsilon)*x1(+1);\\
+x2 = lambda*PIstar*yd+betta*thetap*(PI\^{}chi/PI(+1))\^{}(1-epsilon)*PIstar/PIstar(+1)*x2(+1);\\
+epsilon*x1 = (epsilon-1)*x2;}
+\eqref{eq:reset} says the reset price is a
 markup over (discounted) marginal cost: absent stickiness
 ($\theta_p=0$) it collapses to
 $\Pi_t^{*} = \tfrac{\epsilon}{\epsilon-1}\,mc_t$, the static markup rule.
@@ -466,13 +479,14 @@ Dividing by $P_t^{1-\epsilon}$:
     1 = \theta_p \left(\frac{\Pi_{t-1}^{\chi_p}}{\Pi_t}\right)^{1-\epsilon}
     + \left(1-\theta_p\right)\left(\Pi_t^{*}\right)^{1-\epsilon},
 \end{equation}
-the model equation \texttt{1 = thetap*(PI(-1)\^{}chi/PI)\^{}(1-epsilon)+
-(1-thetap)*PIstar\^{}(1-epsilon)}. \eqref{eq:pindex} determines inflation: given
+in the model:
+\modelcode{1 = thetap*(PI(-1)\^{}chi/PI)\^{}(1-epsilon)+(1-thetap)*PIstar\^{}(1-epsilon);}
+\eqref{eq:pindex} determines inflation: given
 the reset price from \eqref{eq:reset}, it pins down $\Pi_t$.
 
 \subsection{Aside: Price Dispersion Is an Aggregation Object}
 
-The same reoptimizers/indexers split, applied to the demand weights
+The same split between reoptimizers and indexers, applied to the demand weights
 $\left(P_t(i)/P_t\right)^{-\epsilon}$ instead of $P_t(i)^{1-\epsilon}$, gives the
 law of motion of price dispersion $v_t^{p} \equiv \int_0^1
 \left(P_t(i)/P_t\right)^{-\epsilon} di$:
@@ -528,7 +542,11 @@ responds to lagged human capital (a learning-by-doing channel) and to lagged
     + \alpha_{RD}\,\ln\frac{\left(1-e^{GRD}_{t-1}\right) G^{RD}_{t-1}}
     {\left(1-e^{GRD}\right) G^{RD,SS}},
 \end{equation}
-the model equation \texttt{ln(Z/STEADY\_STATE(Z)) = ...}. Three remarks. First,
+in the model:
+\modelcode{ln(Z/STEADY\_STATE(Z)) = rho\_A*ln(Z(-1)/STEADY\_STATE(Z))\\
+\hspace*{2em}+alphaRD*ln((1-eGRD(-1))*Grd(-1)/((1-eGRD\_ss)*STEADY\_STATE(Grd)))\\
+\hspace*{2em}+alphaHA*ln(H(-1)/STEADY\_STATE(H));}
+Three remarks. First,
 $\alpha_{HA}$ and $\alpha_{RD}$ are \emph{per-period loadings}; because the
 process is an AR(1) with persistence $\rho_A$, the long-run elasticities of
 created technology are $\alpha_{HA}/(1-\rho_A)$ and $\alpha_{RD}/(1-\rho_A)$.
@@ -612,8 +630,8 @@ $\Lambda_{t+1}/\Lambda_t$ of the continuation value, leaving:
     + \phi\,\mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\,
     \frac{A_{t-1}}{A_{t}}\,\frac{1}{1+\gamma^{a}}\,\mathcal{V}_{t+1}\right],
 \end{equation}
-the model equation \texttt{V = (markupss-1)/(markupss)*mc*y +
-phi*SDF(+1)*V(+1)*A(-1)/A/(1+gammaa)}.
+in the model:
+\modelcode{V = (markupss-1)/(markupss)*mc*y + phi*SDF(+1)*V(+1)*A(-1)/A/(1+gammaa);}
 
 \subsection{The Value of an Unadopted Technology}
 
@@ -634,8 +652,9 @@ gives:
     \frac{A_{t-1}}{A_{t}}\,\frac{1}{1+\gamma^{a}}
     \left(q_t\,\mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right],
 \end{equation}
-the model equation \texttt{J = -S+phi*(SDF(+1)*A(-1)/A*1/(1+gammaa)*(q*V(+1)+
-(1-q)*J(+1)))}. The $A$-scaling of $S_t$ is also what squares the market-clearing
+in the model:
+\modelcode{J = -S+phi*(SDF(+1)*A(-1)/A*1/(1+gammaa)*(q*V(+1)+(1-q)*J(+1)));}
+The $A$-scaling of $S_t$ is also what squares the market-clearing
 adoption cost: total spending is (number of unadopted technologies) $\times\,s_t
 = \left(Z_{t-1}/A_{t-1}-1\right) S_t$, the term in the aggregate-demand equation.
 
@@ -662,8 +681,9 @@ Multiplying through by $S_t$:
     \frac{1}{1+\gamma^{a}}\,\frac{A_{t-1}}{A_{t}}
     \left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right],
 \end{equation}
-the model equation \texttt{varsigma*q*phi*SDF(+1)/(1+gammaa)*A(-1)/A*(V(+1)-J(+1))
-= S}. \eqref{eq:Sfoc} equates the marginal cost of adoption effort --- one unit of
+in the model:
+\modelcode{varsigma*q*phi*SDF(+1)/(1+gammaa)*A(-1)/A*(V(+1)-J(+1)) = S;}
+\eqref{eq:Sfoc} equates the marginal cost of adoption effort --- one unit of
 the final good --- to its marginal value: the probability gain $\varsigma q_t/S_t$
 times the discounted adoption surplus $\mathcal{V}_{t+1} - \mathcal{J}_{t+1}$.
 
@@ -677,8 +697,8 @@ distinct origins:
     stock advances one period inside the continuation value.
     \item $1/(1+\gamma^{a})$ --- the detrending of the technology stocks by their
     \emph{own} trend, which exceeds the output trend $g$ because technology
-    enters production only through $A_{t-1}^{\vartheta-1}$ (see
-    \texttt{../tech-growth-rate/tech\_growth.tex}).
+    enters production only through $A_{t-1}^{\vartheta-1}$ (see the note in
+    \texttt{../tech-growth-rate/}).
     \item no $g$ --- the values grow with the output trend $\Lambda_t$, and the
     level SDF equals the detrended one divided by $g_{t+1}$; the two growth
     factors cancel, so the model's $\mathit{SDF}_{t+1}$ appears bare (the same
