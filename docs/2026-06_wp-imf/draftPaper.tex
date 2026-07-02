@@ -634,7 +634,7 @@ The conditions are stated in level form, matching the main text; the technology 
 
 \subsection{Households}
 
-The representative household chooses $\{C_t, L_t, E_t, K_t, B_t, H_t\}_{t\ge 0}$ to maximize utility~\eqref{eq:utility} subject to the flow budget constraint~\eqref{eq:hhbudget}, the private-capital law of motion $K_t = (1-\delta) K_{t-1} + I_t$, and the human-capital law of motion~\eqref{eq:humancapital}.
+The representative household chooses $\{C_t, L_t, E_t, K_t, B_t, H_t\}_{t\ge 0}$ to maximize lifetime utility subject to the flow budget constraint, the private-capital law of motion $K_t = (1-\delta) K_{t-1} + I_t$, and the human-capital law of motion, all given in Section~\ref{sec:model}.
 It takes prices, taxes, transfers, and rebated profits $\Omega_t$ as given.
 Substituting investment $I_t = K_t - (1-\delta) K_{t-1}$ and effective labor $N_t = H_{t-1} L_t$ out of the budget constraint and attaching the multiplier $\lambda_t$ to the budget constraint and $\lambda_t^{H}$ to the human-capital law of motion, the Lagrangian is
 \begin{equation*}
@@ -654,9 +654,9 @@ The first-order conditions with respect to $C_t$, $B_t$, $K_t$, $L_t$, $E_t$, an
 [\,E_t\,]:&\quad \omega\left(L_t + E_t\right)^{\varphi} = \lambda_t^{H}\, \chi\gamma\, E_t^{\gamma-1} \big(K_{t-1}^{GE}/\Lambda_{t-1}\big)^{\mu}, \\
 [\,H_t\,]:&\quad \lambda_t^{H} = \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\left(1-\tau_{t+1}^{w}\right) w_{t+1} L_{t+1} + \lambda_{t+1}^{H}\left(1-\delta^{h}\right)\right].
 \end{align*}
-The conditions for $C_t$, $B_t$, and $K_t$ give the marginal utility of wealth~\eqref{eq:mu} and the bond and capital Euler equations~\eqref{eq:euler}--\eqref{eq:capital}.
-Those for $L_t$, $E_t$, and $H_t$ are the labor-supply, education-time, and human-capital-value conditions~\eqref{eq:labor}--\eqref{eq:hcvalue}, interpreted in Section~\ref{sec:model}.
-Because work and schooling draw on the same time endowment, combining~\eqref{eq:labor} and~\eqref{eq:edutime} balances the return to an hour of work against the return to an hour of schooling.
+The conditions for $C_t$, $B_t$, and $K_t$ give the marginal utility of wealth and the bond and capital Euler equations.
+Those for $L_t$, $E_t$, and $H_t$ are the labor-supply, education-time, and human-capital-value conditions, interpreted in Section~\ref{sec:model}.
+Because work and schooling draw on the same time endowment, combining the labor-supply and education-time conditions balances the return to an hour of work against the return to an hour of schooling.
 
 \subsection{Production and Technology}
 
@@ -665,10 +665,10 @@ The competitive final-good producer combines retail varieties through the CES ag
 The first-order condition delivers the variety demand $y_t(i) = \left(P_t(i)/P_t\right)^{-\epsilon} Y_t^{d}$, and zero profits give the price index $P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}$.
 
 \paragraph{Intermediate goods.}
-Firm $i$ produces with the technology in~\eqref{eq:production}, taking the public-infrastructure stock $K_{t-1}^{GI}$ and the adopted-technology stock $A_{t-1}$ as given externalities, and renting private capital and hiring effective labor competitively.
+Firm $i$ produces with the production technology of Section~\ref{sec:model}, taking the public-infrastructure stock $K_{t-1}^{GI}$ and the adopted-technology stock $A_{t-1}$ as given externalities, and renting private capital and hiring effective labor competitively.
 Each firm minimizes cost $r_t^{k} K_{t-1}(i) + w_t N_t(i)$ subject to the production technology; the multiplier on the output constraint is its real unit factor cost.
 The firm sells to retailers at the fixed gross markup $\mu^{p}$ over this cost, so with $mc_t$ the relative price of intermediate output, unit factor cost equals $mc_t/\mu^{p}$.
-Equating each factor's marginal revenue product to its price yields the factor-demand conditions~\eqref{eq:factordemand},
+Equating each factor's marginal revenue product to its price yields the factor-demand conditions
 \begin{equation*}
     r_t^{k} = \alpha\, \frac{mc_t}{\mu^{p}}\, \frac{Y_t}{K_{t-1}}, \qquad
     w_t = (1-\alpha)\, \frac{mc_t}{\mu^{p}}\, \frac{Y_t}{N_t}, \qquad
@@ -680,16 +680,16 @@ Factor payments absorb $mc_t/\mu^{p}$ of revenue per unit of output; the residua
 \paragraph{Price setting.}
 Retailers purchase intermediate output at the relative price $mc_t$---their marginal cost---and set prices \`a la Calvo: each period a fraction $1-\theta_p$ reoptimize, while the rest index to past inflation at rate $\chi_p$.
 A reoptimizing retailer chooses the reset price $\Pi_t^{*}$ to maximize the expected discounted profit it earns while its price remains in force, weighting future dates by the household valuation $\beta^{s}\lambda_{t+s}/\lambda_t$ and the survival probability $\theta_p^{s}$.
-Its optimality condition is expressed recursively through the auxiliary variables~\eqref{eq:g1}--\eqref{eq:g2}: $x_{1,t}$ discounts marginal cost, $x_{2,t}$ discounts marginal revenue, and $\epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}$ sets the reset price as a markup over marginal cost.
+Its optimality condition is expressed recursively through the auxiliary variables $x_{1,t}$ and $x_{2,t}$ defined in Section~\ref{sec:model}: $x_{1,t}$ discounts marginal cost, $x_{2,t}$ discounts marginal revenue, and $\epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}$ sets the reset price as a markup over marginal cost.
 Aggregating over reoptimizing and indexing firms gives the price law of motion $1 = \theta_p\left(\Pi_{t-1}^{\chi_p}/\Pi_t\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}$.
 
 \paragraph{Technology creation and adoption.}
-Created technology $Z_t$ evolves according to~\eqref{eq:Z}.
+Created technology $Z_t$ evolves according to the creation process in Section~\ref{sec:model}.
 Its stationarized adoption law of motion is
 \begin{equation}
     \left(1+\gamma^{a}\right) A_{t} = q_t\, \phi\left(Z_{t-1} - A_{t-1}\right) + \phi A_{t-1}, \label{eq:Astat}
 \end{equation}
-the stationarized counterpart of~\eqref{eq:A}, with the stocks $Z_t$ and $A_t$ detrended by their own gross growth rate $1+\gamma^{a}$ (Subsection~\ref{subsec:bgp}).
+the stationarized counterpart of the level-form adoption equation, with the stocks $Z_t$ and $A_t$ detrended by their own gross growth rate $1+\gamma^{a}$ (Subsection~\ref{subsec:bgp}).
 Each unadopted technology is adopted next period with probability
 \begin{equation}
     q_t = \left(q_0 + \varepsilon_t^{q}\right)\left(S_t\right)^{\varsigma}, \label{eq:probadopt}
@@ -700,7 +700,7 @@ Adopters value these flows with the household stochastic discount factor
 \begin{equation}
     \mathit{SDF}_{t+1} = \beta\, \frac{\lambda_{t+1}\left(1+\tau_{t+1}^{c}\right)}{\lambda_t\left(1+\tau_t^{c}\right)} = \beta\, \frac{C_t}{C_{t+1}}, \label{eq:sdf}
 \end{equation}
-where the second equality uses~\eqref{eq:mu}.
+where the second equality uses the condition for $C_t$ above.
 The value of an adopted technology is its per-variety monopoly profit plus its discounted, survival-weighted continuation value; the value of an unadopted technology is the discounted option of adoption, net of the effort cost $S_t$:
 \begin{align}
     \mathcal{V}_t &= \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \mathcal{V}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\right], \label{eq:VA}\\
@@ -738,7 +738,7 @@ Taxes and transfers stabilize debt,
 with $b_t = B_t / Y_t$ the debt-to-GDP ratio and $b^{*}$ its target.
 
 \paragraph{Monetary policy and government borrowing rate.}
-The policy rate follows the Taylor rule~\eqref{eq:taylor}, and the government borrowing rate follows~\eqref{eq:spread}.
+The policy rate follows the Taylor rule, and the government borrowing rate tracks the policy rate up to an exogenous spread shock; both equations are given in Section~\ref{sec:model}.
 
 \subsection{Market Clearing and Pricing}
 
@@ -748,7 +748,7 @@ Aggregate demand, the gross-output wedge, and the price-dispersion term satisfy
     Y_t &= v_t^{p}\, Y_t^{d}, \qquad
     v_t^{p} = \theta_p\left(\frac{\Pi_{t-1}^{\chi_p}}{\Pi_t}\right)^{-\epsilon} v_{t-1}^{p} + \left(1-\theta_p\right)\left(\Pi_t^{*}\right)^{-\epsilon},
 \end{align}
-where the last term, $\left(Z_{t-1}/A_{t-1}-1\right)S_t$, is the resource cost of technology adoption---the term collected in $\mathcal{R}_t$ in~\eqref{eq:resource}---with $S_t$ the adoption expenditure.
+where the last term, $\left(Z_{t-1}/A_{t-1}-1\right)S_t$, is the resource cost of technology adoption---the term collected in $\mathcal{R}_t$ in the market-clearing condition of Section~\ref{sec:model}---with $S_t$ the adoption expenditure.
 
 %========================================================================
 \section{Notation: Paper and Model Symbols} \label{app:glossary}
