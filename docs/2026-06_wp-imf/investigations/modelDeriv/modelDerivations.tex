@@ -1,0 +1,689 @@
+\documentclass[11pt]{article}
+\usepackage[hmargin=2.5cm,vmargin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+\title{Model Derivations:\\ Households, Cost Minimization, Pricing, and Technology}
+\author{Spending-efficiency model --- internal note}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\noindent
+This note derives the model's optimizing blocks equation by equation, in the
+order of Section~2 of the working paper (\texttt{../../draftPaper.tex}): the
+household's problem, the intermediate firm's cost minimization, the retailer's
+Calvo price setting, and the technology creation-and-adoption block. Every
+result is mapped to its exact line in \texttt{models/model\_block.modpart}.
+Notation is the paper's throughout. Derivations are in levels; where the
+distinction matters, level (un-detrended) variables carry a superscript $\ell$
+and plain symbols are the detrended objects the model solves for. The general
+detrending logic is in \texttt{../detrending/detrending.tex}, and the technology
+trend $1+\gamma^{a}$ is derived in
+\texttt{../tech-growth-rate/tech\_growth.tex}. The government block and market
+clearing contain no optimization and are not covered.
+
+\tableofcontents
+
+%========================================================================
+\section{The Household's Problem}\label{sec:hh}
+%========================================================================
+
+\subsection{The Problem}
+
+There is a representative household that consumes, supplies labor, spends time
+building human capital, and accumulates private capital and government bonds. Its
+problem is:
+\begin{equation*}
+    \max_{C_t,\,L_t,\,E_t,\,K_t,\,B_t,\,H_t} \;
+    \mathbb{E}_0 \sum_{t=0}^{\infty} \beta^{t}
+    \left[\ln C_t - \omega\,\frac{\left(L_t + E_t\right)^{1+\varphi}}{1+\varphi}\right]
+\end{equation*}
+subject to the flow budget constraint,
+\begin{equation}\label{eq:budget}
+    \left(1+\tau_t^{c}\right) C_t + I_t + B_t
+    = \left(1-\tau_t^{w}\right) w_t\, N_t + r_t^{k} K_{t-1}
+    + \frac{R_{t-1}}{\Pi_t}\, B_{t-1} + T_t + \Omega_t,
+\end{equation}
+the private-capital law of motion $K_t = (1-\delta)K_{t-1} + I_t$, the
+human-capital law of motion,
+\begin{equation}\label{eq:hlom}
+    H_t = \left(1-\delta^{h}\right) H_{t-1}
+    + \chi\, E_t^{\gamma} \left(\frac{K_{t-1}^{GE}}{\Lambda_{t-1}}\right)^{\mu},
+\end{equation}
+and the definition of effective labor, $N_t = H_{t-1} L_t$. The household takes
+prices, taxes, transfers, and the rebated profits $\Omega_t$ as given. Note two
+things about the time margins. First, labor $L_t$ and education time $E_t$ enter
+the disutility term jointly, so they compete for the same time endowment. Second,
+the human-capital stock enters effective labor with a lag: an hour of schooling
+today raises earnings capacity only from tomorrow on.
+
+Substitute investment $I_t = K_t - (1-\delta)K_{t-1}$ and effective labor
+$N_t = H_{t-1}L_t$ out of \eqref{eq:budget}, and attach the multiplier $\lambda_t$
+to the budget constraint and $\lambda_t^{H}$ to \eqref{eq:hlom}. A Lagrangian for
+the household is:
+\begin{equation*}
+\begin{aligned}
+    \mathbb{L} = \mathbb{E}_0 \sum_{t=0}^{\infty} \beta^{t} \Big\{\,
+    & \ln C_t - \omega\,\frac{\left(L_t + E_t\right)^{1+\varphi}}{1+\varphi} \\
+    & + \lambda_t \Big[\left(1-\tau_t^{w}\right) w_t H_{t-1} L_t
+      + r_t^{k} K_{t-1} + \tfrac{R_{t-1}}{\Pi_t} B_{t-1} + T_t + \Omega_t \\
+    & \qquad\;\; - \left(1+\tau_t^{c}\right) C_t
+      - \big(K_t - (1-\delta) K_{t-1}\big) - B_t \Big] \\
+    & + \lambda_t^{H} \Big[\left(1-\delta^{h}\right) H_{t-1}
+      + \chi\, E_t^{\gamma} \big(K_{t-1}^{GE}/\Lambda_{t-1}\big)^{\mu}
+      - H_t \Big] \Big\}.
+\end{aligned}
+\end{equation*}
+
+\subsection{First-Order Conditions}
+
+The FOC are:
+\begin{align}
+    \frac{\partial\mathbb{L}}{\partial C_t} = 0
+    &\;\Leftrightarrow\;
+    \frac{1}{C_t} = \lambda_t \left(1+\tau_t^{c}\right), \label{eq:focC}\\
+    \frac{\partial\mathbb{L}}{\partial B_t} = 0
+    &\;\Leftrightarrow\;
+    \lambda_t = \beta\,\mathbb{E}_t\!\left[\lambda_{t+1}\,
+    \frac{R_t}{\Pi_{t+1}}\right], \label{eq:focB}\\
+    \frac{\partial\mathbb{L}}{\partial K_t} = 0
+    &\;\Leftrightarrow\;
+    \lambda_t = \beta\,\mathbb{E}_t\!\left[\lambda_{t+1}
+    \left(r_{t+1}^{k} + 1 - \delta\right)\right], \label{eq:focK}\\
+    \frac{\partial\mathbb{L}}{\partial L_t} = 0
+    &\;\Leftrightarrow\;
+    \omega\left(L_t + E_t\right)^{\varphi}
+    = \lambda_t \left(1-\tau_t^{w}\right) w_t H_{t-1}, \label{eq:focL}\\
+    \frac{\partial\mathbb{L}}{\partial E_t} = 0
+    &\;\Leftrightarrow\;
+    \omega\left(L_t + E_t\right)^{\varphi}
+    = \lambda_t^{H}\, \chi\gamma\, E_t^{\gamma-1}
+    \big(K_{t-1}^{GE}/\Lambda_{t-1}\big)^{\mu}, \label{eq:focE}\\
+    \frac{\partial\mathbb{L}}{\partial H_t} = 0
+    &\;\Leftrightarrow\;
+    \lambda_t^{H} = \beta\,\mathbb{E}_t\!\left[\lambda_{t+1}
+    \left(1-\tau_{t+1}^{w}\right) w_{t+1} L_{t+1}
+    + \lambda_{t+1}^{H}\left(1-\delta^{h}\right)\right]. \label{eq:focH}
+\end{align}
+For \eqref{eq:focK}, note that $K_t$ appears twice in the Lagrangian: bought today
+(through the substituted investment, at utility price $\lambda_t$) and carried
+into tomorrow's income and resale (at $\lambda_{t+1}(r^k_{t+1}+1-\delta)$). For
+\eqref{eq:focH} the structure is the same: an extra unit of $H_t$ raises
+tomorrow's effective labor --- and hence after-tax labor income
+$\lambda_{t+1}(1-\tau^w_{t+1})w_{t+1}L_{t+1}$ --- and survives into the future
+stock at rate $1-\delta^{h}$, valued at $\lambda^{H}_{t+1}$.
+
+\eqref{eq:focC} identifies $\lambda_t$ as the marginal utility of wealth.
+\eqref{eq:focB}--\eqref{eq:focK} are the bond and capital Euler equations
+(\texttt{lambda = betta*(lambda(+1)/g(+1)*R/PI(+1))} and
+\texttt{1 = betta*(lambda(+1)/lambda/g(+1)*(1-delta+rk(+1)))} in the model; the
+$g_{t+1}$ is the stationarization --- see
+Subsection~\ref{subsec:hhg}). \eqref{eq:focL} is the labor-supply condition
+(\texttt{omega*(L+E)\^{}varphi = lambda*w*H(-1)*(1-tauw)}): an hour of work
+supplies $H_{t-1}$ efficiency units paid $w_t$ each, so its utility value is the
+after-tax hourly wage times the marginal utility of wealth. \eqref{eq:focE} and
+\eqref{eq:focH} are the model equations \texttt{omega*(L+E)\^{}varphi =
+lambda\_H*chiH*gamma*E\^{}(gamma-1)*(Kge(-1))\^{}(mu)} and \texttt{lambda\_H =
+betta*(lambda(+1)*(1-tauw(+1))*w(+1)*L(+1)+lambda\_H(+1)*(1-deltaH))}.
+
+\subsection{The Work-vs-Schooling Arbitrage}
+
+Because $L_t$ and $E_t$ draw on the same time endowment, their marginal
+disutilities coincide --- the left-hand sides of \eqref{eq:focL} and
+\eqref{eq:focE} are identical. Equating the right-hand sides:
+\begin{equation}\label{eq:arbitrage}
+    \underbrace{\lambda_t \left(1-\tau_t^{w}\right) w_t
+    H_{t-1}}_{\text{return to an hour of work}}
+    \;=\;
+    \underbrace{\lambda_t^{H}\, \chi\gamma\, E_t^{\gamma-1}
+    \big(K_{t-1}^{GE}/\Lambda_{t-1}\big)^{\mu}}_{\text{return to an hour of
+    schooling}}.
+\end{equation}
+\eqref{eq:arbitrage} says the household allocates time until the after-tax wage
+of the marginal hour equals the shadow value of the human capital that hour of
+schooling builds. This is the margin the public human-capital experiments work
+through: a higher $K^{GE}$ raises the marginal product of schooling time, tilting
+\eqref{eq:arbitrage} toward education, and the resulting $H$ raises effective
+labor with a lag.
+
+\subsection{The Stochastic Discount Factor}\label{subsec:sdf}
+
+The household's valuation of a real payoff at $t+1$ per unit at $t$ is the ratio
+of marginal utilities of \emph{income}. From \eqref{eq:focC}, a unit of income at
+$t$ buys $1/(1+\tau^c_t)$ units of consumption, so:
+\begin{equation}\label{eq:sdf}
+    \mathit{SDF}_{t+1}
+    = \beta\,\frac{\lambda_{t+1}\left(1+\tau_{t+1}^{c}\right)}
+    {\lambda_t\left(1+\tau_t^{c}\right)}
+    = \beta\,\frac{C_t}{C_{t+1}},
+\end{equation}
+where the second equality substitutes \eqref{eq:focC}; it is exact, with no
+constant-tax assumption needed. \eqref{eq:sdf} is the model equation
+\texttt{SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)))}. The SDF is
+defined by household preferences but used elsewhere: by the technology adopters
+(Section~\ref{sec:tech}) and, in the $\beta^{s}\lambda_{t+s}$ form, by the
+price-setting retailers (Section~\ref{sec:pricing}).
+
+\subsection{Aside: Which Conditions Pick Up $g$ When Stationarized}\label{subsec:hhg}
+
+Detrending maps $\lambda_t \mapsto \hat\lambda_t/\Lambda_t$ (marginal utility
+falls as the economy grows) and leaves $H_t$, $L_t$, and $E_t$ untouched (all
+stationary). The consequences, condition by condition:
+\begin{itemize}
+    \item \textbf{Bond and capital Eulers \eqref{eq:focB}--\eqref{eq:focK}: a
+    $1/g_{t+1}$ appears.} The two $\lambda$'s sit at different dates, so their
+    trends do not cancel: $\lambda_{t+1}/\lambda_t =
+    (\hat\lambda_{t+1}/\hat\lambda_t)/g_{t+1}$.
+    \item \textbf{Labor FOC \eqref{eq:focL}: nothing.} $\lambda_t w_t$ is a
+    same-date product of an inverse-trend and a trend variable --- stationary.
+    \item \textbf{Education and human-capital FOCs
+    \eqref{eq:focE}--\eqref{eq:focH}: nothing.} $H$ is a stationary stock, so its
+    shadow value $\lambda^{H}$ is stationary too ($\lambda_{t+1}w_{t+1}L_{t+1}$
+    is again an inverse-trend times a trend). This is why the model's
+    \texttt{lambda\_H} equation carries no $g$ while the capital Euler does.
+    \item \textbf{The HC technology in \eqref{eq:hlom}: the $\Lambda_{t-1}$
+    scaling.} Public capital $K^{GE}$ trends while $H$ does not; dividing by the
+    trend inside the accumulation technology is what keeps \eqref{eq:hlom}
+    balanced. In the model the equation reads \texttt{H =
+    (1-deltaH)*H(-1)+chiH*E\^{}gamma*(Kge(-1))\^{}(mu)} because \texttt{Kge} is
+    already the detrended stock.
+\end{itemize}
+
+%========================================================================
+\section{Intermediate Goods: Cost Minimization and the Markup Wedge}\label{sec:costmin}
+%========================================================================
+
+This section derives the factor-demand conditions of Appendix~A in the working
+paper from the intermediate firm's cost-minimization problem, and shows where the
+fixed gross markup $\mu^{p}$ (model parameter \texttt{markupss})
+enters.\footnote{An earlier version of this derivation carried a fixed cost of
+production $\Theta$; the parameter was calibrated to zero and has since been
+removed from the model and the paper entirely.}
+
+\subsection{The Firm's Problem}
+
+There is a continuum of intermediate producers indexed by $i$. A typical firm
+produces output using private capital and effective labor, and takes as given the
+factor prices $r_t^{k}$ and $w_t$ as well as two externalities: the
+public-infrastructure stock $K_{t-1}^{GI}$ and the adopted-technology stock
+$A_{t-1}$. Its technology is
+\begin{equation}\label{eq:tech}
+    Y_t(i) = A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
+    K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha}.
+\end{equation}
+
+Consider the problem of producing a required level of output, $\bar{Y}_t(i)$, as
+cheaply as possible. The firm's problem is:
+\begin{equation}\label{eq:cmproblem}
+    \min_{K_{t-1}(i),\,N_t(i)} \; r_t^{k}\,K_{t-1}(i) + w_t\,N_t(i)
+\end{equation}
+subject to:
+\begin{equation}\label{eq:cmconstraint}
+    A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
+    K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} \;\ge\; \bar{Y}_t(i).
+\end{equation}
+Note that the required output level is what makes the problem well-posed: if we
+dropped it, the cost-minimizing input choice would just be zero.
+
+\subsection{Lagrangian and First-Order Conditions}
+
+A Lagrangian for the firm is:
+\begin{equation*}
+    \mathbb{L} = -\,r_t^{k}\,K_{t-1}(i) - w_t\,N_t(i)
+    + \xi_t\left[A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
+      K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} - \bar{Y}_t(i)\right].
+\end{equation*}
+The FOC are:
+\begin{align*}
+    \frac{\partial\mathbb{L}}{\partial K_{t-1}(i)} = 0
+    &\;\Leftrightarrow\; r_t^{k} = \xi_t\,\alpha\,\frac{Y_t(i)}{K_{t-1}(i)},\\
+    \frac{\partial\mathbb{L}}{\partial N_t(i)} = 0
+    &\;\Leftrightarrow\; w_t = \xi_t\,(1-\alpha)\,\frac{Y_t(i)}{N_t(i)}.
+\end{align*}
+Dividing the first condition by the second, the multiplier and the output term drop
+out:
+\begin{equation}\label{eq:mix}
+    \frac{K_{t-1}(i)}{N_t(i)} = \frac{\alpha}{1-\alpha}\,\frac{w_t}{r_t^{k}}.
+\end{equation}
+\eqref{eq:mix} says that the cost-minimizing capital-labor ratio depends only on
+factor prices. Nothing on the right-hand side depends on $i$, so all firms choose
+the same mix regardless of their scale --- this is the model equation
+\texttt{Kp(-1)/N = alpha/(1-alpha)*w/rk}.
+
+\subsection{The Multiplier Is Marginal Cost; the Markup Wedge}
+
+What is $\xi_t$? It is the multiplier on the output constraint: it measures how
+much the minimized cost rises if the firm must produce one more unit. That is just
+the firm's \emph{real marginal cost}. Since the technology has constant returns in
+the two chosen inputs, marginal cost equals unit factor cost.
+
+The firm sells its output to the retailers at a fixed gross markup $\mu^{p}$ over
+marginal cost. The relative price it receives is $mc_t$ --- which is in turn the
+retailers' marginal cost --- so:
+\begin{equation}\label{eq:wedge}
+    mc_t = \mu^{p}\,\xi_t
+    \qquad\Leftrightarrow\qquad
+    \xi_t = \frac{mc_t}{\mu^{p}}.
+\end{equation}
+Plugging \eqref{eq:wedge} into the FOC, we get the factor-demand conditions:
+\begin{align}
+    r_t^{k} &= \alpha\,\frac{mc_t}{\mu^{p}}\,\frac{Y_t}{K_{t-1}},\label{eq:fdK}\\
+    w_t &= (1-\alpha)\,\frac{mc_t}{\mu^{p}}\,\frac{Y_t}{N_t}.\label{eq:fdN}
+\end{align}
+\eqref{eq:fdK}--\eqref{eq:fdN} are the factor demands in Appendix~A of the paper.
+\eqref{eq:fdN} is the model's labor-demand equation
+\texttt{(1-alpha)*mc*y/N = markupss*w}, and the steady state solves it the same way:
+\texttt{w=(1-alpha)*mc*y/N/markupss} (\texttt{models/Steady\_states\_solution.m}).
+
+Now consider profits. Per unit of output the firm receives $mc_t$ and pays
+$mc_t/\mu^{p}$ in factor costs, so the profit flow is:
+\begin{equation}\label{eq:profit}
+    \frac{\mu^{p}-1}{\mu^{p}}\,mc_t\,Y_t.
+\end{equation}
+\eqref{eq:profit} is the dividend that accrues to the owners of adopted
+technologies --- the first term in the value function $\mathcal{V}_t$
+(Section~\ref{sec:tech}). This is why the wedge in
+\eqref{eq:fdK}--\eqref{eq:fdN} matters: with competitive factor pricing at $mc_t$,
+factor payments would exhaust revenue and there would be no profit flow left to
+reward technology adoption.
+
+\subsection{Aside: Where Is the Pricing Equation?}
+
+Where in the model can one see that the firm sells at the markup $\mu^{p}$ over
+marginal cost? Nowhere as a standalone line: the model never writes the
+intermediate firm's pricing rule as its own equation. Instead, \eqref{eq:wedge} is
+embedded in the labor-demand equation. Take the model's
+\texttt{(1-alpha)*mc*y/N = markupss*w} and solve it for $mc_t$:
+\begin{equation}\label{eq:pricingrule}
+    mc_t = \mu^{p}\,\frac{w_t}{(1-\alpha)\,Y_t/N_t}.
+\end{equation}
+The second factor is the wage divided by the marginal product of labor --- the cost
+of producing one more unit using labor, which is just marginal cost $\xi_t$. So
+\eqref{eq:pricingrule} is the same equation as \eqref{eq:fdN}, read the other way
+around: as a labor demand it prices labor off $mc_t/\mu^{p}$; as a pricing rule it
+sets the output price at $\mu^{p}$ times marginal cost. One equation carries both
+statements, which is why there is no separate pricing line to point to.
+
+Two other equations pin down the interpretation. First, that $mc_t$ is the price
+the retailers pay is visible in the Calvo recursion
+\texttt{x1 = lambda*mc*yd + ...}: $mc_t$ enters as the \emph{retailers'} real
+marginal cost, and since retailers transform intermediate output one-for-one,
+their marginal cost is exactly the relative price at which they buy it. Second,
+the dividend in the technology value, \eqref{eq:profit}, equals
+$(mc_t - mc_t/\mu^{p})\,Y_t$ --- price minus unit cost times quantity, exactly the
+monopoly profit of a producer charging the fixed gross markup $\mu^{p}$. If the
+wedge in the factor demands were something else (a tax, say), this profit would
+not flow to the technology owners. The three equations together --- labor demand,
+Calvo recursion, technology value --- are what make the fixed-markup reading the
+right one.
+
+\subsection{Aside: Two Markups, Two Layers}
+
+$\mu^{p}$ (\texttt{markupss} $=1.18$) is a calibrated parameter and is \emph{not}
+the retail Calvo markup $\epsilon/(\epsilon-1) = 10/9 \approx 1.11$. The two
+markups belong to different layers of the production side. $\mu^{p}$ is charged by
+the intermediate producers, and their profits reward technology adoption.
+$\epsilon$ governs the retailers, whose staggered price setting generates the New
+Keynesian block. Keeping them separate is what lets the model calibrate the profit
+share of the technology block independently of the nominal rigidity.
+
+%========================================================================
+\section{Price Setting}\label{sec:pricing}
+%========================================================================
+
+This section derives the four pricing equations of the model --- the two auxiliary
+recursions for $x_{1,t}$ and $x_{2,t}$, the reset-price condition
+$\epsilon x_{1,t} = (\epsilon-1)x_{2,t}$, and the price-index law of motion ---
+from the retailer's problem.
+
+\subsection{Setup}
+
+Retailers purchase intermediate output at the relative price $mc_t$ --- their real
+marginal cost (Section~\ref{sec:costmin}) --- differentiate it one-for-one into
+varieties, and sell variety $i$ at the nominal price $P_t(i)$. The final-good
+producer's cost minimization gives the demand for each variety:
+\begin{equation}\label{eq:demand}
+    y_t(i) = \left(\frac{P_t(i)}{P_t}\right)^{-\epsilon} Y_t^{d}.
+\end{equation}
+Prices are sticky \`a la Calvo: each period a retailer reoptimizes its price with
+probability $1-\theta_p$. With probability $\theta_p$ it cannot, and instead
+indexes its price to past inflation with elasticity $\chi_p$, so a non-reoptimized
+price is scaled by $\Pi_{t-1}^{\chi_p}$ each period.
+
+Consider a retailer that reoptimizes at $t$. If it is still stuck with that price
+at $t+s$, indexation will have scaled it by the cumulative factor
+\begin{equation}\label{eq:index}
+    X_{t,s} = \prod_{k=1}^{s} \Pi_{t+k-1}^{\chi_p}, \qquad X_{t,0} = 1.
+\end{equation}
+
+\subsection{The Reset-Price Problem}
+
+The retailer chooses $P_t(i)$ to maximize the expected discounted real profits it
+earns while the price remains in force. A profit $s$ periods ahead survives with
+probability $\theta_p^{s}$ and is valued with the household's discount factor
+$\beta^{s}\lambda_{t+s}/\lambda_t$; multiplying through by the constant
+$\lambda_t$, the problem can be written:
+\begin{equation*}
+    \max_{P_t(i)} \; \mathbb{E}_t \sum_{s=0}^{\infty}
+    \left(\beta\theta_p\right)^{s} \lambda_{t+s}
+    \left[\frac{P_t(i)\,X_{t,s}}{P_{t+s}} - mc_{t+s}\right]
+    \left(\frac{P_t(i)\,X_{t,s}}{P_{t+s}}\right)^{-\epsilon} Y_{t+s}^{d}.
+\end{equation*}
+This is why $\lambda$ appears inside the model's auxiliaries below: profits are
+valued in utility units. The FOC with respect to $P_t(i)$ is:
+\begin{equation*}
+    \mathbb{E}_t \sum_{s=0}^{\infty} \left(\beta\theta_p\right)^{s} \lambda_{t+s}
+    \left[(1-\epsilon)\,P_t(i)^{-\epsilon}
+    \left(\frac{X_{t,s}}{P_{t+s}}\right)^{1-\epsilon}
+    + \epsilon\, mc_{t+s}\,P_t(i)^{-\epsilon-1}
+    \left(\frac{X_{t,s}}{P_{t+s}}\right)^{-\epsilon}\right] Y_{t+s}^{d} = 0.
+\end{equation*}
+Multiplying by $P_t(i)^{\epsilon+1}$ and rearranging:
+\begin{equation}\label{eq:focP}
+    (\epsilon-1)\,P_t(i)\;\mathbb{E}_t \sum_{s=0}^{\infty}
+    \left(\beta\theta_p\right)^{s} \lambda_{t+s}
+    \left(\frac{X_{t,s}}{P_{t+s}}\right)^{1-\epsilon} Y_{t+s}^{d}
+    = \epsilon\;\mathbb{E}_t \sum_{s=0}^{\infty}
+    \left(\beta\theta_p\right)^{s} \lambda_{t+s}\, mc_{t+s}
+    \left(\frac{X_{t,s}}{P_{t+s}}\right)^{-\epsilon} Y_{t+s}^{d}.
+\end{equation}
+Nothing in \eqref{eq:focP} depends on $i$, so all reoptimizing retailers choose the
+same reset price; call it $P_t^{\#}$.
+
+\subsection{The Recursive Form}
+
+\eqref{eq:focP} contains infinite sums and the price level; to obtain the model's
+stationary system, express everything in relative terms. Define the relative reset
+price and the indexation-deflated price drift:
+\begin{equation}\label{eq:defs}
+    \Pi_t^{*} \equiv \frac{P_t^{\#}}{P_t}, \qquad
+    D_{t,s} \equiv \frac{X_{t,s}\,P_t}{P_{t+s}}, \qquad D_{t,0} = 1.
+\end{equation}
+$D_{t,s}$ is the relative price at $t+s$ of a retailer that reset to the aggregate
+price level at $t$ and indexed ever since. Splitting off the first indexation step,
+it obeys:
+\begin{equation}\label{eq:Drec}
+    D_{t,s} = \frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\; D_{t+1,s-1}.
+\end{equation}
+Now define the two sums in \eqref{eq:focP} in relative terms:
+\begin{equation}\label{eq:x1def}
+    x_{1,t} \equiv \mathbb{E}_t \sum_{s=0}^{\infty}
+    \left(\beta\theta_p\right)^{s} \lambda_{t+s}\, mc_{t+s}\, D_{t,s}^{-\epsilon}\,
+    Y_{t+s}^{d}, \qquad
+    f_{t} \equiv \mathbb{E}_t \sum_{s=0}^{\infty}
+    \left(\beta\theta_p\right)^{s} \lambda_{t+s}\, D_{t,s}^{1-\epsilon}\,
+    Y_{t+s}^{d}.
+\end{equation}
+$x_{1,t}$ discounts marginal cost and $f_t$ discounts revenue, both weighted by the
+demand the price will face. Using \eqref{eq:Drec}, splitting off the $s=0$ term
+turns each sum into a recursion:
+\begin{equation}\label{eq:x1}
+    x_{1,t} = \lambda_t\, mc_t\, Y_t^{d}
+    + \beta\theta_p\, \mathbb{E}_t\!\left[
+    \left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{-\epsilon} x_{1,t+1}\right],
+\end{equation}
+\begin{equation}\label{eq:f}
+    f_{t} = \lambda_t\, Y_t^{d}
+    + \beta\theta_p\, \mathbb{E}_t\!\left[
+    \left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon} f_{t+1}\right].
+\end{equation}
+The model carries the revenue side as $x_{2,t} \equiv \Pi_t^{*} f_t$. Multiplying
+\eqref{eq:f} by $\Pi_t^{*}$:
+\begin{equation}\label{eq:x2}
+    x_{2,t} = \lambda_t\, \Pi_t^{*}\, Y_t^{d}
+    + \beta\theta_p\, \mathbb{E}_t\!\left[
+    \left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon}
+    \frac{\Pi_t^{*}}{\Pi_{t+1}^{*}}\, x_{2,t+1}\right].
+\end{equation}
+Finally, dividing \eqref{eq:focP} by $P_t$ and substituting the definitions, the
+FOC becomes:
+\begin{equation}\label{eq:reset}
+    \epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}.
+\end{equation}
+\eqref{eq:x1}, \eqref{eq:x2}, and \eqref{eq:reset} are the model equations
+\texttt{x1 = lambda*mc*yd+...}, \texttt{x2 = lambda*PIstar*yd+...}, and
+\texttt{epsilon*x1 = (epsilon-1)*x2}. \eqref{eq:reset} says the reset price is a
+markup over (discounted) marginal cost: absent stickiness
+($\theta_p=0$) it collapses to
+$\Pi_t^{*} = \tfrac{\epsilon}{\epsilon-1}\,mc_t$, the static markup rule.
+
+\subsection{The Price-Index Law of Motion}
+
+The price index aggregates $P_t^{1-\epsilon} = \int_0^1 P_t(i)^{1-\epsilon}di$.
+Each period a fraction $\theta_p$ of prices are last period's scaled by
+$\Pi_{t-1}^{\chi_p}$ --- by the Calvo assumption the non-reoptimizers are a random
+sample, so their price distribution is last period's --- and a fraction
+$1-\theta_p$ equal $P_t^{\#}$:
+\begin{equation*}
+    P_t^{1-\epsilon}
+    = \theta_p \left(\Pi_{t-1}^{\chi_p}\right)^{1-\epsilon} P_{t-1}^{1-\epsilon}
+    + \left(1-\theta_p\right) \left(P_t^{\#}\right)^{1-\epsilon}.
+\end{equation*}
+Dividing by $P_t^{1-\epsilon}$:
+\begin{equation}\label{eq:pindex}
+    1 = \theta_p \left(\frac{\Pi_{t-1}^{\chi_p}}{\Pi_t}\right)^{1-\epsilon}
+    + \left(1-\theta_p\right)\left(\Pi_t^{*}\right)^{1-\epsilon},
+\end{equation}
+the model equation \texttt{1 = thetap*(PI(-1)\^{}chi/PI)\^{}(1-epsilon)+
+(1-thetap)*PIstar\^{}(1-epsilon)}. \eqref{eq:pindex} determines inflation: given
+the reset price from \eqref{eq:reset}, it pins down $\Pi_t$.
+
+\subsection{Aside: Price Dispersion Is an Aggregation Object}
+
+The same reoptimizers/indexers split, applied to the demand weights
+$\left(P_t(i)/P_t\right)^{-\epsilon}$ instead of $P_t(i)^{1-\epsilon}$, gives the
+law of motion of price dispersion $v_t^{p} \equiv \int_0^1
+\left(P_t(i)/P_t\right)^{-\epsilon} di$:
+\begin{equation}\label{eq:vp}
+    v_t^{p} = \theta_p \left(\frac{\Pi_{t-1}^{\chi_p}}{\Pi_t}\right)^{-\epsilon}
+    v_{t-1}^{p} + \left(1-\theta_p\right)\left(\Pi_t^{*}\right)^{-\epsilon}.
+\end{equation}
+We derive it here because the algebra is one more application of the same split,
+but $v_t^{p}$ is \emph{not} part of the pricing block: no retailer chooses
+anything with respect to it. It is an aggregation statistic --- summing the variety
+demands \eqref{eq:demand} gives $\int_0^1 y_t(i)\,di = v_t^{p}\,Y_t^{d} = Y_t$,
+the wedge between gross output and demand --- and accordingly the paper and the
+glossary keep it with market clearing.
+
+\subsection{Aside: Why No Growth Factor in the Recursions}\label{subsec:prg}
+
+Unlike the Euler equations, the recursions \eqref{eq:x1} and \eqref{eq:x2} carry no
+growth factor in the model. The reason is that $\lambda$ and $Y^{d}$ enter only as
+the product $\lambda_{t+s} Y_{t+s}^{d}$: the marginal utility scales inversely
+with the trend and demand proportionally to it, so the product is stationary and
+the detrending factors cancel term by term.
+
+%========================================================================
+\section{Technology Creation and Adoption}\label{sec:tech}
+%========================================================================
+
+This section derives the technology block: the creation process for $Z_t$, the
+adoption law of motion for $A_t$, the values $\mathcal{V}_t$ and $\mathcal{J}_t$
+of adopted and unadopted technologies, and the FOC for adoption expenditure
+$S_t$. The dividend that makes technologies valuable is \eqref{eq:profit} from
+Section~\ref{sec:costmin}.
+
+\subsection{Setup}
+
+There are two stocks. $Z_t$ is the stock of \emph{created} technologies ---
+inventions that exist but are not yet usable in production. $A_t$ is the stock of
+\emph{adopted} technologies, which enters production through the love-of-variety
+term $A_{t-1}^{\vartheta-1}$. The gap $Z_t - A_t > 0$ is the pool of unadopted
+technologies. Competitive adopters spend resources to convert unadopted
+technologies into adopted ones; each adopted technology earns the per-period
+profit flow of the intermediate producers, which is what gives technologies their
+value. Every technology, adopted or not, survives from one period to the next
+with probability $\phi$.
+
+\subsection{Technology Creation}
+
+Creation is a reduced-form process, not an optimization: created technology
+responds to lagged human capital (a learning-by-doing channel) and to lagged
+\emph{effective} public R\&D spending,
+\begin{equation}\label{eq:Z}
+    \ln\frac{Z_t}{Z^{SS}} = \rho_A \ln\frac{Z_{t-1}}{Z^{SS}}
+    + \alpha_{HA}\,\ln\frac{H_{t-1}}{H^{SS}}
+    + \alpha_{RD}\,\ln\frac{\left(1-e^{GRD}_{t-1}\right) G^{RD}_{t-1}}
+    {\left(1-e^{GRD}\right) G^{RD,SS}},
+\end{equation}
+the model equation \texttt{ln(Z/STEADY\_STATE(Z)) = ...}. Three remarks. First,
+$\alpha_{HA}$ and $\alpha_{RD}$ are \emph{per-period loadings}; because the
+process is an AR(1) with persistence $\rho_A$, the long-run elasticities of
+created technology are $\alpha_{HA}/(1-\rho_A)$ and $\alpha_{RD}/(1-\rho_A)$.
+Second, only the productive fraction $1-e^{GRD}_{t-1}$ of R\&D spending drives
+creation, while the raw spending $G^{RD}_t$ enters the government budget --- the
+efficiency wedge destroys the difference. Third, because \eqref{eq:Z} is written
+in ratios to steady state, it looks identical in levels and in detrended
+variables: the common trend cancels.
+
+\subsection{The Adoption Law of Motion}
+
+Between $t-1$ and $t$, a fraction $\phi$ of all technologies survives, and each
+surviving unadopted technology becomes adopted with probability $q_t$. In levels:
+\begin{equation}\label{eq:Alevel}
+    A^{\ell}_t = q_t\,\phi\left(Z^{\ell}_{t-1} - A^{\ell}_{t-1}\right)
+    + \phi\,A^{\ell}_{t-1},
+\end{equation}
+newly adopted technologies plus the surviving previously adopted stock. The
+technology stocks grow at their own gross rate
+$1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$, faster than output. Substituting
+$A^{\ell}_t = (1+\gamma^{a})^{t} A_t$ and $Z^{\ell}_t = (1+\gamma^{a})^{t} Z_t$
+into \eqref{eq:Alevel} and dividing by $(1+\gamma^{a})^{t-1}$:
+\begin{equation}\label{eq:Astat}
+    \left(1+\gamma^{a}\right) A_t
+    = q_t\,\phi\left(Z_{t-1} - A_{t-1}\right) + \phi\,A_{t-1},
+\end{equation}
+the model equation \texttt{(1+gammaa)*A = q*phi*(Z(-1)-A(-1))+phi*A(-1)}. The
+current-dated stock picks up the growth factor, exactly as the capital law of
+motion picks up $g_t$.
+
+\subsection{The Adoption Probability}
+
+Each unadopted technology is adopted next period with probability
+\begin{equation}\label{eq:q}
+    q_t = \left(q_0 + \varepsilon^{q}_t\right)\left(S_t\right)^{\varsigma},
+\end{equation}
+the model equation \texttt{q = (kappaprob+epsi\_q)*(S)\^{}(varsigma)}, increasing
+in adoption expenditure $S_t$ with elasticity $\varsigma$. Two conventions hide in
+\eqref{eq:q}. First, $S_t$ is already detrended, so no $\Lambda_t$ appears (the
+paper's Section~2 writes the level form $q_t = q_0(S^{\ell}_t/\Lambda_t)^{\varsigma}$).
+Second, as the next subsection makes precise, $S_t$ is expenditure \emph{per
+unadopted technology, scaled by the adopted stock} --- the same scaling the value
+functions use.
+
+\subsection{The Value of an Adopted Technology}
+
+Start from one adopted variety. It earns the per-variety profit $\pi_t$, and its
+owner values the surviving continuation with the household stochastic discount
+factor (Subsection~\ref{subsec:sdf}), so in levels:
+\begin{equation}\label{eq:vsmall}
+    v_t = \pi_t + \phi\,\mathbb{E}_t\!\left[\mathit{SDF}^{\ell}_{t+1}\,
+    v_{t+1}\right],
+    \qquad
+    \pi_t = \frac{1}{A^{\ell}_{t-1}}\,\frac{\mu^{p}-1}{\mu^{p}}\,mc_t\,Y^{\ell}_t,
+\end{equation}
+where the second expression divides the total intermediate-producer profit flow
+\eqref{eq:profit} by the $A^{\ell}_{t-1}$ varieties active at $t$.
+
+The model does not carry $v_t$; it carries the value \emph{scaled by the adopted
+stock}, $\mathcal{V}^{\ell}_t \equiv A^{\ell}_{t-1} v_t$. Multiplying
+\eqref{eq:vsmall} by $A^{\ell}_{t-1}$:
+\begin{equation}\label{eq:Vlevel}
+    \mathcal{V}^{\ell}_t = \frac{\mu^{p}-1}{\mu^{p}}\,mc_t\,Y^{\ell}_t
+    + \phi\,\mathbb{E}_t\!\left[\mathit{SDF}^{\ell}_{t+1}\,
+    \frac{A^{\ell}_{t-1}}{A^{\ell}_{t}}\,\mathcal{V}^{\ell}_{t+1}\right],
+\end{equation}
+where the ratio $A^{\ell}_{t-1}/A^{\ell}_{t}$ appears because
+$\mathcal{V}^{\ell}_{t+1} = A^{\ell}_{t}\,v_{t+1}$ is scaled by \emph{next}
+period's active stock. This is where the $A_{t-1}/A_t$ factor in the model comes
+from: it converts between the two scalings, nothing more.
+
+Now detrend. $\mathcal{V}^{\ell}$ and the profit flow grow with the output trend
+$\Lambda_t$; the level SDF relates to the model's detrended one by
+$\mathit{SDF}^{\ell}_{t+1} = \mathit{SDF}_{t+1}/g_{t+1}$; and the technology-stock
+ratio converts as $A^{\ell}_{t-1}/A^{\ell}_t =
+(A_{t-1}/A_t)/(1+\gamma^{a})$. Substituting into \eqref{eq:Vlevel} and dividing by
+$\Lambda_t$, the $g_{t+1}$ from the SDF cancels against the trend growth
+$\Lambda_{t+1}/\Lambda_t$ of the continuation value, leaving:
+\begin{equation}\label{eq:V}
+    \mathcal{V}_t = \frac{\mu^{p}-1}{\mu^{p}}\,mc_t\,Y_t
+    + \phi\,\mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\,
+    \frac{A_{t-1}}{A_{t}}\,\frac{1}{1+\gamma^{a}}\,\mathcal{V}_{t+1}\right],
+\end{equation}
+the model equation \texttt{V = (markupss-1)/(markupss)*mc*y +
+phi*SDF(+1)*V(+1)*A(-1)/A/(1+gammaa)}.
+
+\subsection{The Value of an Unadopted Technology}
+
+An unadopted technology costs its adopter $s_t$ this period; conditional on
+surviving (probability $\phi$), it becomes adopted next period with probability
+$q_t$ --- worth $v_{t+1}$ --- and stays unadopted otherwise --- worth $j_{t+1}$.
+In levels, per variety:
+\begin{equation}\label{eq:jsmall}
+    j_t = -\,s_t + \phi\,\mathbb{E}_t\!\left[\mathit{SDF}^{\ell}_{t+1}
+    \left(q_t\,v_{t+1} + \left(1-q_t\right) j_{t+1}\right)\right].
+\end{equation}
+Scaling by $A^{\ell}_{t-1}$ exactly as before --- define
+$\mathcal{J}^{\ell}_t \equiv A^{\ell}_{t-1} j_t$ and
+$S^{\ell}_t \equiv A^{\ell}_{t-1} s_t$ --- and then detrending by $\Lambda_t$
+gives:
+\begin{equation}\label{eq:J}
+    \mathcal{J}_t = -\,S_t + \phi\,\mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\,
+    \frac{A_{t-1}}{A_{t}}\,\frac{1}{1+\gamma^{a}}
+    \left(q_t\,\mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right],
+\end{equation}
+the model equation \texttt{J = -S+phi*(SDF(+1)*A(-1)/A*1/(1+gammaa)*(q*V(+1)+
+(1-q)*J(+1)))}. The $A$-scaling of $S_t$ is also what squares the market-clearing
+adoption cost: total spending is (number of unadopted technologies) $\times\,s_t
+= \left(Z_{t-1}/A_{t-1}-1\right) S_t$, the term in the aggregate-demand equation.
+
+\subsection{The FOC for Adoption Expenditure}
+
+The adopter chooses $S_t$ to maximize $\mathcal{J}_t$ in \eqref{eq:J}, taking into
+account that spending raises the adoption probability through \eqref{eq:q}. From
+\eqref{eq:q},
+\begin{equation*}
+    \frac{\partial q_t}{\partial S_t} = \varsigma\,\frac{q_t}{S_t}.
+\end{equation*}
+The FOC is:
+\begin{equation*}
+    \frac{\partial \mathcal{J}_t}{\partial S_t} = 0
+    \;\Leftrightarrow\;
+    -1 + \phi\,\mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\,
+    \frac{A_{t-1}}{A_{t}}\,\frac{1}{1+\gamma^{a}}\,
+    \varsigma\,\frac{q_t}{S_t}
+    \left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right] = 0.
+\end{equation*}
+Multiplying through by $S_t$:
+\begin{equation}\label{eq:Sfoc}
+    S_t = \varsigma\, q_t\, \phi\,\mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\,
+    \frac{1}{1+\gamma^{a}}\,\frac{A_{t-1}}{A_{t}}
+    \left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right],
+\end{equation}
+the model equation \texttt{varsigma*q*phi*SDF(+1)/(1+gammaa)*A(-1)/A*(V(+1)-J(+1))
+= S}. \eqref{eq:Sfoc} equates the marginal cost of adoption effort --- one unit of
+the final good --- to its marginal value: the probability gain $\varsigma q_t/S_t$
+times the discounted adoption surplus $\mathcal{V}_{t+1} - \mathcal{J}_{t+1}$.
+
+\subsection{Aside: Where Each Growth Factor Comes From}
+
+The technology block carries three distinct correction factors, with three
+distinct origins:
+\begin{itemize}
+    \item $A_{t-1}/A_t$ --- a \emph{scaling} conversion, not detrending: the
+    values and $S_t$ are per-variety objects scaled by the adopted stock, and the
+    stock advances one period inside the continuation value.
+    \item $1/(1+\gamma^{a})$ --- the detrending of the technology stocks by their
+    \emph{own} trend, which exceeds the output trend $g$ because technology
+    enters production only through $A_{t-1}^{\vartheta-1}$ (see
+    \texttt{../tech-growth-rate/tech\_growth.tex}).
+    \item no $g$ --- the values grow with the output trend $\Lambda_t$, and the
+    level SDF equals the detrended one divided by $g_{t+1}$; the two growth
+    factors cancel, so the model's $\mathit{SDF}_{t+1}$ appears bare (the same
+    cancellation as in the pricing recursions,
+    Subsection~\ref{subsec:prg}).
+\end{itemize}
+
+\end{document}
