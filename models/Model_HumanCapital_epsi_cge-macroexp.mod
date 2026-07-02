@@ -83,8 +83,6 @@ delta           % depreciationf
 thetap          % firsm cant change the price
 epsilon         % elasticity of substitution 
 alpha          % share of capital in intermediate firms production
-Bigtheta        % Fixed cost
-Bigtheta_y      % Fixed cost to GDP
 alphaG          % Share of public capital in the production (paper alpha_G)
 rho_R           % Persistence of policy rate
 gamma_pi        % Reponse of MP to inflation
@@ -129,8 +127,6 @@ delta =0.025;
 thetap = 0.8;
 epsilon =10;
 alpha=0.3;
-Bigtheta=0;
-Bigtheta_y=0;
 rho_R=0.7;
 gamma_pi=1.5;
 gamma_y=0.25;
@@ -214,7 +210,7 @@ Kp(-1)/N = alpha/(1-alpha)*w/rk;
 1 = thetap*(PI(-1)^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon);
 // Production
 [name='y']
-y = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG))*(Kp(-1)^alpha)*(N^(1-alpha))-Bigtheta;
+y = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG))*(Kp(-1)^alpha)*(N^(1-alpha));
 // Technology creation (R&D enters in efficiency-adjusted form)
 ln(Z/STEADY_STATE(Z)) = rho_A*ln(Z(-1)/STEADY_STATE(Z))+alphaRD*ln((1-eGRD(-1))*Grd(-1)/((1-eGRD_ss)*STEADY_STATE(Grd)))+alphaHA*ln(H(-1)/STEADY_STATE(H));
 // Value of an unadopted technology

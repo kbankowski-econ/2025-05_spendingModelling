@@ -24,7 +24,7 @@ mc=(epsilon-1)/epsilon;
 %kG_y=eff*Igiy/(1-(1-delta)/g);
 kG_y=(1-eGI_ss)*Igiy/(g-(1-delta));
 
-Kp_y=(1+Bigtheta_y)*alpha*mc/(markupss*rk);
+Kp_y=alpha*mc/(markupss*rk);
 
 yt_proxy=(kG_y^alphaG)*(Kp_y^alpha)*(N^(1-alpha));
 
@@ -32,11 +32,6 @@ y=yt_proxy^(1/(1-alphaG-alpha));
 
 
 w=(1-alpha)*mc*y/N/markupss;
-
-
-% Real wage
-%w=(mc/((1/(1-alpha))^(1-alpha)*(1/alpha)^alpha*rk^alpha/(kG_y/(1+Bigtheta_y)*1/g)^(alphaG/(1-alphaG))))^(1/(1-alpha));
-%mc=(1/(1-alpha))^(1-alpha)*(1/alpha)^alpha*w^(1-alpha)*rk^alpha/(kG_y/(1+Bigtheta_y)*1/g)^(alphaG/(1-alphaG));
 
 %Kp=alpha/(1-alpha)*w/rk*g*N;
 
@@ -46,16 +41,8 @@ Kp=alpha/(1-alpha)*w/rk*N;
 % Private investment
 Ip=Kp*(g-(1-delta));
 
-%Param_1=1/g^(alphaG+alpha-alphaG*alpha)*(Kp^(alpha*(1-alphaG)))*(N^((1-alpha)*(1-alphaG)));
-%y=((Param_1*kG_y^alphaG)/(1+Bigtheta_y))^(1/(1-alphaG));
-
 % Public capital
 Kg=kG_y*y;
-
-% Fixed cost
-Bigtheta=Bigtheta_y*y;
-%Bigtheta_test=1/g^(alphaG+alpha-alphaG*alpha)*(Kg^alphaG)*(Kp^(alpha*(1-alphaG)))*(N^((1-alpha)*(1-alphaG)))-y
-%(Bigtheta_test-Bigtheta).^2
 
 % NEW PATH
 %kGe_y=effge*Igey/(1-(1-delta)/g);
