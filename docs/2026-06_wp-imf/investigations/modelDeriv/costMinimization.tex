@@ -14,103 +14,118 @@
 This note derives the factor-demand conditions of Appendix~A in the working paper
 (\texttt{../../draftPaper.tex}) from the intermediate firm's cost-minimization
 problem, and shows where the fixed gross markup $\mu^{p}$ (model parameter
-\texttt{markupss}) enters. It also records a fixed-cost technicality that is inert
-at the current calibration.
+\texttt{markupss}) enters. Notation is the paper's throughout.
 
-\section{The problem}
+\section{The Firm's Problem}
 
-Firm $i$ takes the factor prices $r_t^{k}$ and $w_t$ and the externalities
-$K_{t-1}^{GI}$ (public infrastructure) and $A_{t-1}$ (adopted technology) as given,
-and chooses private capital and effective labor to produce a required output level
-$\bar{Y}_t(i)$ at minimum factor cost:
+There is a continuum of intermediate producers indexed by $i$. A typical firm
+produces output using private capital and effective labor, and takes as given the
+factor prices $r_t^{k}$ and $w_t$ as well as two externalities: the
+public-infrastructure stock $K_{t-1}^{GI}$ and the adopted-technology stock
+$A_{t-1}$. Its technology is
+\begin{equation}\label{eq:tech}
+    Y_t(i) = A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
+    K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} - \Theta,
+\end{equation}
+where $\Theta$ is a fixed cost of production.
+
+Consider the problem of producing a required level of output, $\bar{Y}_t(i)$, as
+cheaply as possible. The firm's problem is:
 \begin{equation}\label{eq:problem}
     \min_{K_{t-1}(i),\,N_t(i)} \; r_t^{k}\,K_{t-1}(i) + w_t\,N_t(i)
 \end{equation}
-subject to the production technology
+subject to:
 \begin{equation}\label{eq:constraint}
     A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
     K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} - \Theta \;\ge\; \bar{Y}_t(i).
 \end{equation}
-Stating the required output level is what makes the problem well-posed: without it,
-minimizing cost subject to the technology alone has the degenerate zero-input
-solution.
+Note that the required output level is what makes the problem well-posed: if we
+dropped it, the cost-minimizing input choice would just be zero.
 
-\section{Lagrangian and first-order conditions}
+\section{Lagrangian and First-Order Conditions}
 
-With the multiplier $\xi_t$ on the output constraint,
-\begin{equation}
-    \mathcal{L} = r_t^{k}\,K_{t-1}(i) + w_t\,N_t(i)
-    + \xi_t\left[\bar{Y}_t(i)
-    - A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
-      K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} + \Theta\right].
-\end{equation}
-The first-order conditions are
-\begin{align}
-    [\,K_{t-1}(i)\,]:&\quad r_t^{k} = \xi_t\,\alpha\,\frac{Y_t+\Theta}{K_{t-1}(i)},
-    \label{eq:focK}\\
-    [\,N_t(i)\,]:&\quad w_t = \xi_t\,(1-\alpha)\,\frac{Y_t+\Theta}{N_t(i)},
-    \label{eq:focN}
-\end{align}
-where $Y_t$ denotes output net of the fixed cost, so $Y_t+\Theta$ is the gross
-Cobb--Douglas term whose marginal products appear in the conditions. Dividing
-\eqref{eq:focK} by \eqref{eq:focN} gives the factor-mix condition
+A Lagrangian for the firm is:
+\begin{equation*}
+    \mathbb{L} = -\,r_t^{k}\,K_{t-1}(i) - w_t\,N_t(i)
+    + \xi_t\left[A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
+      K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} - \Theta - \bar{Y}_t(i)\right].
+\end{equation*}
+The FOC are:
+\begin{align*}
+    \frac{\partial\mathbb{L}}{\partial K_{t-1}(i)} = 0
+    &\;\Leftrightarrow\; r_t^{k} = \xi_t\,\alpha\,\frac{Y_t(i)+\Theta}{K_{t-1}(i)},\\
+    \frac{\partial\mathbb{L}}{\partial N_t(i)} = 0
+    &\;\Leftrightarrow\; w_t = \xi_t\,(1-\alpha)\,\frac{Y_t(i)+\Theta}{N_t(i)}.
+\end{align*}
+Here $Y_t(i)+\Theta$ is just the Cobb--Douglas term in \eqref{eq:tech} --- the
+marginal products are proportional to output gross of the fixed cost.
+
+Dividing the first condition by the second, the multiplier and the output term drop
+out:
 \begin{equation}\label{eq:mix}
-    \frac{K_{t-1}(i)}{N_t(i)} = \frac{\alpha}{1-\alpha}\,\frac{w_t}{r_t^{k}},
+    \frac{K_{t-1}(i)}{N_t(i)} = \frac{\alpha}{1-\alpha}\,\frac{w_t}{r_t^{k}}.
 \end{equation}
-which is common across firms, since all face the same factor prices and technology
-(model equation \texttt{Kp(-1)/N = alpha/(1-alpha)*w/rk},
-\texttt{models/model\_block.modpart}).
+\eqref{eq:mix} says that the cost-minimizing capital-labor ratio depends only on
+factor prices. Nothing on the right-hand side depends on $i$, so all firms choose
+the same mix regardless of their scale --- this is the model equation
+\texttt{Kp(-1)/N = alpha/(1-alpha)*w/rk} (\texttt{models/model\_block.modpart}).
 
-\section{The multiplier and the markup wedge}
+\section{The Multiplier Is Marginal Cost; the Markup Wedge}
 
-By the envelope theorem, $\xi_t$ is the shadow cost of one more unit of output: the
-firm's \emph{real marginal cost}. With constant returns to the two chosen inputs, it
-also equals unit factor cost.
+What is $\xi_t$? It is the multiplier on the output constraint: it measures how
+much the minimized cost rises if the firm must produce one more unit. That is just
+the firm's \emph{real marginal cost}. Since the technology has constant returns in
+the two chosen inputs, marginal cost equals unit factor cost.
 
-The firm sells its output to the Calvo retailers at the fixed gross markup $\mu^{p}$
-over this cost. The resulting relative price of intermediate output is $mc_t$ (the
-retailers' marginal cost), so
+The firm sells its output to the retailers at a fixed gross markup $\mu^{p}$ over
+marginal cost. The relative price it receives is $mc_t$ --- which is in turn the
+retailers' marginal cost --- so:
 \begin{equation}\label{eq:wedge}
     mc_t = \mu^{p}\,\xi_t
-    \qquad\Longleftrightarrow\qquad
+    \qquad\Leftrightarrow\qquad
     \xi_t = \frac{mc_t}{\mu^{p}}.
 \end{equation}
-Substituting \eqref{eq:wedge} into \eqref{eq:focK}--\eqref{eq:focN} (with
-$\Theta=0$; see Section~\ref{sec:theta}) gives the paper's factor demands,
-\begin{equation}\label{eq:factordemand}
-    \boxed{\;r_t^{k} = \alpha\,\frac{mc_t}{\mu^{p}}\,\frac{Y_t}{K_{t-1}}, \qquad
-    w_t = (1-\alpha)\,\frac{mc_t}{\mu^{p}}\,\frac{Y_t}{N_t}\;}
+Plugging \eqref{eq:wedge} into the FOC, and setting $\Theta=0$ (see the aside
+below), we get the factor-demand conditions:
+\begin{align}
+    r_t^{k} &= \alpha\,\frac{mc_t}{\mu^{p}}\,\frac{Y_t}{K_{t-1}},\label{eq:fdK}\\
+    w_t &= (1-\alpha)\,\frac{mc_t}{\mu^{p}}\,\frac{Y_t}{N_t}.\label{eq:fdN}
+\end{align}
+\eqref{eq:fdK}--\eqref{eq:fdN} are the factor demands in Appendix~A of the paper.
+\eqref{eq:fdN} is the model's labor-demand equation
+\texttt{(1-alpha)*mc*y/N = markupss*w}, and the steady state solves it the same way:
+\texttt{w=(1-alpha)*mc*y/N/markupss} (\texttt{models/Steady\_states\_solution.m}).
+
+Now consider profits. Per unit of output the firm receives $mc_t$ and pays
+$mc_t/\mu^{p}$ in factor costs, so the profit flow is:
+\begin{equation}\label{eq:profit}
+    \frac{\mu^{p}-1}{\mu^{p}}\,mc_t\,Y_t.
 \end{equation}
-matching the model's labor-demand equation
-\texttt{(1-alpha)*mc*y/N = markupss*w} and the steady state
-\texttt{w=(1-alpha)*mc*y/N/markupss}
-(\texttt{models/Steady\_states\_solution.m}).
+\eqref{eq:profit} is the dividend that accrues to the owners of adopted
+technologies --- the first term in the value function $\mathcal{V}_t$ (model
+equation \texttt{V = (markupss-1)/(markupss)*mc*y + ...}). This is why the wedge in
+\eqref{eq:fdK}--\eqref{eq:fdN} matters: with competitive factor pricing at $mc_t$,
+factor payments would exhaust revenue and there would be no profit flow left to
+reward technology adoption.
 
-Factor payments therefore absorb only $mc_t/\mu^{p}$ of revenue per unit of output.
-The residual,
-\begin{equation}
-    \frac{\mu^{p}-1}{\mu^{p}}\,mc_t\,Y_t,
-\end{equation}
-is the profit flow that accrues to the owners of adopted technologies --- the
-dividend term in the value function $\mathcal{V}_t$
-(model equation \texttt{V = (markupss-1)/(markupss)*mc*y + ...}). Without the wedge
-in \eqref{eq:factordemand}, this profit flow would have no source: competitive
-factor pricing at $mc_t$ would exhaust the entire revenue.
+\subsection{Aside: Two Markups, Two Layers}
 
-Note that $\mu^{p}$ (\texttt{markupss} $=1.18$) is a separate calibrated parameter,
-\emph{not} the retail Calvo markup $\epsilon/(\epsilon-1)=10/9\approx 1.11$. The two
-markups belong to different layers: $\mu^{p}$ to the intermediate producers, whose
-profits reward technology adoption; $\epsilon$ to the retailers, whose staggered
-pricing generates the New Keynesian block.
+$\mu^{p}$ (\texttt{markupss} $=1.18$) is a calibrated parameter and is \emph{not}
+the retail Calvo markup $\epsilon/(\epsilon-1) = 10/9 \approx 1.11$. The two
+markups belong to different layers of the production side. $\mu^{p}$ is charged by
+the intermediate producers, and their profits reward technology adoption.
+$\epsilon$ governs the retailers, whose staggered price setting generates the New
+Keynesian block. Keeping them separate is what lets the model calibrate the profit
+share of the technology block independently of the nominal rigidity.
 
-\section{The fixed-cost technicality}\label{sec:theta}
+\subsection{Aside: The Fixed Cost $\Theta$}
 
-The first-order conditions \eqref{eq:focK}--\eqref{eq:focN} involve the gross
-Cobb--Douglas term $Y_t+\Theta$, while the model's factor-demand equations use
-$Y_t$ (net of the fixed cost). The two coincide because the fixed cost is switched
-off at the calibration: \texttt{Bigtheta=0}, \texttt{Bigtheta\_y=0}
-(\texttt{models/parameters\_common.macro}). If $\Theta$ were ever calibrated
-positive, the model's factor demands would need \texttt{y+Bigtheta} in place of
-\texttt{y} to remain the exact first-order conditions.
+The FOC involve the gross Cobb--Douglas term $Y_t+\Theta$, while the model's
+factor-demand equations use $Y_t$ (net of the fixed cost). The two coincide because
+the fixed cost is switched off at the calibration: \texttt{Bigtheta=0},
+\texttt{Bigtheta\_y=0} (\texttt{models/parameters\_common.macro}). If $\Theta$ were
+ever calibrated positive, the model's factor demands would need
+\texttt{y+Bigtheta} in place of \texttt{y} to remain the exact first-order
+conditions.
 
 \end{document}
