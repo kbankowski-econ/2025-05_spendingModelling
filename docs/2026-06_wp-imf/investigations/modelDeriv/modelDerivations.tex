@@ -19,18 +19,20 @@
 \maketitle
 
 \noindent
-This note derives the model's optimizing blocks equation by equation, in the
-order of Section~2 of the working paper (\texttt{../../draftPaper.tex}): the
-household's problem, the intermediate firm's cost minimization, the retailer's
-Calvo price setting, and the technology creation-and-adoption block. Every
-result is mapped to its exact line in \texttt{models/model\_block.modpart}.
+This note derives the model equation by equation, in the order of Section~2 of
+the working paper (\texttt{../../draftPaper.tex}): the household's problem, the
+intermediate firm's cost minimization, the retailer's Calvo price setting, and
+the technology creation-and-adoption block, followed by the government,
+market-clearing, balanced-growth, and auxiliary blocks, which contain no
+optimization and are stated with brief commentary. The note is complete:
+\emph{every} equation of \texttt{models/model\_block.modpart} appears in a
+framed box exactly once, at the point where it is derived or stated.
 Notation is the paper's throughout. Derivations are in levels; where the
 distinction matters, level (un-detrended) variables carry a superscript $\ell$
 and plain symbols are the detrended objects the model solves for. The general
 detrending logic is in \texttt{../detrending/detrending.tex}, and the technology
 trend $1+\gamma^{a}$ is derived in
-\texttt{../tech-growth-rate/tech\_growth.tex}. The government block and market
-clearing contain no optimization and are not covered.
+\texttt{../tech-growth-rate/tech\_growth.tex}.
 
 \tableofcontents
 
@@ -61,7 +63,13 @@ human-capital law of motion,
     + \chi\, E_t^{\gamma} \left(\frac{K_{t-1}^{GE}}{\Lambda_{t-1}}\right)^{\mu},
 \end{equation}
 and the definition of effective labor, $N_t = H_{t-1} L_t$. The household takes
-prices, taxes, transfers, and the rebated profits $\Omega_t$ as given. Note two
+prices, taxes, transfers, and the rebated profits $\Omega_t$ as given. In the
+model, the capital law of motion and effective labor read (the $g$ on the
+current stock is the stationarization; the human-capital law of motion appears
+in Subsection~\ref{subsec:hhg}):
+\modelcode{Kp*g = (1-delta)*Kp(-1)+Ip;\\
+N = L*H(-1);}
+Note two
 things about the time margins. First, labor $L_t$ and education time $E_t$ enter
 the disutility term jointly, so they compete for the same time endowment. Second,
 the human-capital stock enters effective labor with a lag: an hour of schooling
@@ -223,6 +231,9 @@ $A_{t-1}$. Its technology is
     Y_t(i) = A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
     K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha}.
 \end{equation}
+In the model, the aggregate production function (tagged \texttt{[name='y']})
+reads:
+\modelcode{y = A(-1)\^{}(vartheta-1)*(Kg(-1)\^{}(alphaG))*(Kp(-1)\^{}alpha)*(N\^{}(1-alpha));}
 
 Consider the problem of producing a required level of output, $\bar{Y}_t(i)$, as
 cheaply as possible. The firm's problem is:
@@ -259,8 +270,8 @@ out:
 \end{equation}
 \eqref{eq:mix} says that the cost-minimizing capital-labor ratio depends only on
 factor prices. Nothing on the right-hand side depends on $i$, so all firms choose
-the same mix regardless of their scale --- this is the model equation
-\texttt{Kp(-1)/N = alpha/(1-alpha)*w/rk}.
+the same mix regardless of their scale. In the model:
+\modelcode{Kp(-1)/N = alpha/(1-alpha)*w/rk;}
 
 \subsection{The Multiplier Is Marginal Cost; the Markup Wedge}
 
@@ -484,7 +495,7 @@ in the model:
 \eqref{eq:pindex} determines inflation: given
 the reset price from \eqref{eq:reset}, it pins down $\Pi_t$.
 
-\subsection{Aside: Price Dispersion Is an Aggregation Object}
+\subsection{Aside: Price Dispersion Is an Aggregation Object}\label{subsec:vp}
 
 The same split between reoptimizers and indexers, applied to the demand weights
 $\left(P_t(i)/P_t\right)^{-\epsilon}$ instead of $P_t(i)^{1-\epsilon}$, gives the
@@ -494,6 +505,8 @@ law of motion of price dispersion $v_t^{p} \equiv \int_0^1
     v_t^{p} = \theta_p \left(\frac{\Pi_{t-1}^{\chi_p}}{\Pi_t}\right)^{-\epsilon}
     v_{t-1}^{p} + \left(1-\theta_p\right)\left(\Pi_t^{*}\right)^{-\epsilon}.
 \end{equation}
+In the model:
+\modelcode{vp = thetap*(PI(-1)\^{}chi/PI)\^{}(-epsilon)*vp(-1)+(1-thetap)*PIstar\^{}(-epsilon);}
 We derive it here because the algebra is one more application of the same split,
 but $v_t^{p}$ is \emph{not} part of the pricing block: no retailer chooses
 anything with respect to it. It is an aggregation statistic --- summing the variety
@@ -573,7 +586,9 @@ into \eqref{eq:Alevel} and dividing by $(1+\gamma^{a})^{t-1}$:
     \left(1+\gamma^{a}\right) A_t
     = q_t\,\phi\left(Z_{t-1} - A_{t-1}\right) + \phi\,A_{t-1},
 \end{equation}
-the model equation \texttt{(1+gammaa)*A = q*phi*(Z(-1)-A(-1))+phi*A(-1)}. The
+in the model:
+\modelcode{(1+gammaa)*A = q*phi*(Z(-1)-A(-1))+phi*A(-1);}
+The
 current-dated stock picks up the growth factor, exactly as the capital law of
 motion picks up $g_t$.
 
@@ -583,8 +598,10 @@ Each unadopted technology is adopted next period with probability
 \begin{equation}\label{eq:q}
     q_t = \left(q_0 + \varepsilon^{q}_t\right)\left(S_t\right)^{\varsigma},
 \end{equation}
-the model equation \texttt{q = (kappaprob+epsi\_q)*(S)\^{}(varsigma)}, increasing
-in adoption expenditure $S_t$ with elasticity $\varsigma$. Two conventions hide in
+increasing
+in adoption expenditure $S_t$ with elasticity $\varsigma$; in the model:
+\modelcode{q = (kappaprob+epsi\_q)*(S)\^{}(varsigma);}
+Two conventions hide in
 \eqref{eq:q}. First, $S_t$ is already detrended, so no $\Lambda_t$ appears (the
 paper's Section~2 writes the level form $q_t = q_0(S^{\ell}_t/\Lambda_t)^{\varsigma}$).
 Second, as the next subsection makes precise, $S_t$ is expenditure \emph{per
@@ -705,5 +722,121 @@ distinct origins:
     cancellation as in the pricing recursions,
     Subsection~\ref{subsec:prg}).
 \end{itemize}
+
+%========================================================================
+\section{Government: Fiscal and Monetary Policy}\label{sec:gov}
+%========================================================================
+
+The government block contains no optimization; it is a set of rules and
+identities. This section states them so that the note covers the model in full.
+
+\subsection{Spending Instruments}
+
+Each of the four expenditure instruments is its steady-state level plus an
+innovation scaled by steady-state demand; persistence comes from the shock
+paths set per experiment, not from the rules themselves:
+\modelcode{Gc = Gcy*ydss+ydss*epsi\_gc;\\
+Igi = Igiy*ydss+ydss*epsi\_igi;\\
+Ige = Igey*ydss+ydss*epsi\_ige;\\
+Grd = Grdy*ydss+ydss*epsi\_grd;}
+In the budget-neutral reallocation experiments the consumption innovation
+offsets the investment ones, \texttt{epsi\_gc} $= -($\texttt{epsi\_igi} $+$
+\texttt{epsi\_ige} $+$ \texttt{epsi\_grd}$)$; the debt-financed expansions move a
+single instrument with no offset.
+
+\subsection{Public Capital and Efficiency Gaps}
+
+Public investment accumulates into infrastructure and human-capital stocks, with
+only the productive fraction $1-e$ of each unit spent arriving in the stock (the
+$g$ on the current stock is the stationarization):
+\modelcode{Kg*g = (1-delta)*Kg(-1)+(1-eGI)*Igi;\\
+Kge*g = (1-delta)*Kge(-1)+(1-eGE)*Ige;}
+The efficiency gaps are constants moved only by the experiment shocks; a
+positive shock closes the gap:
+\modelcode{eGI = eGI\_ss-epsi\_effgi;\\
+eGE = eGE\_ss-epsi\_effge;\\
+eGRD = eGRD\_ss-epsi\_effgrd;}
+
+\subsection{Budget, Debt, and the Fiscal Rules}
+
+The budget constraint accumulates real debt --- the $/g$ is the stationarization
+of the predetermined stock --- and \texttt{by} is the debt-to-GDP ratio:
+\modelcode{b = (R(-1)/PI)*b(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;\\
+by = b/y;}
+Taxes and transfers respond to the lagged deviation of debt-to-GDP from target:
+\modelcode{tauc-taucss = rho\_tauc*(tauc(-1)-taucss)\\
+\hspace*{2em}+(1-rho\_tauc)*(gamma\_d\_tauc*(by(-1)-byss))+epsi\_tauc;\\
+tauw-tauwss = rho\_tauw*(tauw(-1)-tauwss)\\
+\hspace*{2em}+(1-rho\_tauw)*(gamma\_d\_tauw*(by(-1)-byss))+epsi\_tauw;\\
+T-STEADY\_STATE(T) = rho\_T*(T(-1)-STEADY\_STATE(T))\\
+\hspace*{2em}+(1-rho\_T)*(-gamma\_d\_T*(by(-1)-byss)*ydss);}
+The minus sign in the transfer rule means transfers fall when debt is above
+target. At the calibration, transfers are the only active feedback:
+\texttt{gamma\_d\_tauc} $=$ \texttt{gamma\_d\_tauw} $= 0$.
+
+\subsection{Monetary Policy and the Borrowing Rate}
+
+The central bank follows a standard Taylor rule with smoothing, and the
+government borrowing rate tracks the policy rate up to an exogenous spread
+shock:
+\modelcode{Rmp/Rss = (Rmp(-1)/Rss)\^{}rho\_R\\
+\hspace*{2em}*((PI/Piss)\^{}gamma\_pi*(yd/ydss)\^{}gamma\_y)\^{}(1-rho\_R)*exp(epsi\_MP);\\
+log(R) = rho\_RG*R(-1)+ (1-rho\_RG)*log(Rmp) + epsi\_spread;}
+One dormant oddity in the second equation: the lagged term is linear
+\texttt{R(-1)} next to logs. It is inert at the calibration
+(\texttt{rho\_RG} $=0$, so the equation reduces to
+$\log R_t = \log R^{mp}_t + \varepsilon^{spr}_t$), but it would be dimensionally
+inconsistent for any \texttt{rho\_RG} $>0$ (flagged in the equation
+reconciliation note in \texttt{../../issues/}).
+
+%========================================================================
+\section{Market Clearing}\label{sec:mc}
+%========================================================================
+
+Aggregate demand sums private consumption and investment, the four public
+spending instruments, and the technology-adoption cost of
+Section~\ref{sec:tech}; gross output exceeds demand by the price-dispersion
+wedge:
+\modelcode{yd = C+Ip+Gc+Igi+Ige+Grd+(Z(-1)/A(-1)-1)*S;\\
+y = vp*yd;}
+The law of motion of the dispersion term \texttt{vp} is derived and boxed in
+Subsection~\ref{subsec:vp}.
+
+%========================================================================
+\section{Balanced Growth}\label{sec:bg}
+%========================================================================
+
+Trend growth is constant absent shocks:
+\modelcode{log(g) = (1-rho\_g)*log(g(-1))+rho\_g*(log(gss))+epsi\_g;}
+Note the parameterization: the weight on the \emph{lagged} term is
+$1-$\texttt{rho\_g}, so \texttt{rho\_g} (calibrated $0.24$) is the speed of
+reversion to steady-state growth, not the persistence. No paper experiment
+shocks \texttt{epsi\_g}, so $g_t = g$ throughout.
+
+%========================================================================
+\section{Auxiliary, Reporting, and Steady-State Pins}\label{sec:aux}
+%========================================================================
+
+The remaining equations define reporting variables --- they feed nothing back
+into the equilibrium. \texttt{G} is total government spending, \texttt{rreal}
+the ex-post real rate, and the last three express fiscal aggregates as shares of
+steady-state GDP (a constant denominator, so the panels show pure accumulation):
+\modelcode{G = Gc+Igi+Ige+Grd;\\
+rreal = R/PI;\\
+pdef\_yss = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;\\
+T\_yss = T/ydss;\\
+by\_yss = b/ydss;}
+Finally, five constants are carried as variables pinned to their steady-state
+values: the endogenously calibrated scales (\texttt{omega} in labor disutility,
+\texttt{chiH} in human-capital accumulation, \texttt{kappaprob} $=q_0$ in the
+adoption probability) and the reference levels (\texttt{Rss}, \texttt{ydss})
+used inside the policy rules:
+\modelcode{omega = STEADY\_STATE(omega);\\
+Rss = STEADY\_STATE(R);\\
+ydss = STEADY\_STATE(yd);\\
+chiH = STEADY\_STATE(chiH);\\
+kappaprob = STEADY\_STATE(kappaprob);}
+With these, every equation of \texttt{models/model\_block.modpart} has appeared
+in a box exactly once.
 
 \end{document}
