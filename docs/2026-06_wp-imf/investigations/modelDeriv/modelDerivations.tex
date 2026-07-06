@@ -651,6 +651,27 @@ factor (Subsection~\ref{subsec:sdf}), so in levels:
 where the second expression divides the total intermediate-producer profit flow
 \eqref{eq:profit} by the $A^{\ell}_{t-1}$ varieties active at $t$.
 
+\intuition{What is the microfoundation of the value recursion in \eqref{eq:vsmall}?}{%
+It is not anyone's optimality condition over a quantity; it is an
+\emph{asset-pricing} (no-arbitrage) condition --- the household's portfolio FOC
+for claims to variety profits. An adopted technology is a durable, tradeable
+claim: the exclusive right to produce variety $i$ and collect its monopoly rent
+$\pi_t$, itself microfounded in Section~\ref{sec:costmin} (love-of-variety
+demand gives market power; the markup $\mu^{p}$ converts it into the rent).
+Households ultimately own these claims --- producer profits are rebated through
+$\Omega_t$ in the budget constraint --- so the claim is priced with the
+household's SDF (Subsection~\ref{subsec:sdf}). Let $p_t$ be the ex-dividend
+price; adding holdings of the claim to the household's budget and taking the
+FOC, with the claim paying off only if the technology survives (probability
+$\phi$, worth zero otherwise), gives
+$p_t = \phi\,\mathbb{E}_t[\mathit{SDF}^{\ell}_{t+1}(\pi_{t+1}+p_{t+1})]$.
+Defining the cum-dividend value $v_t \equiv \pi_t + p_t$ and substituting
+yields \eqref{eq:vsmall}. The structure is the standard Lucas-tree pricing of a
+dividend stream with survival risk, and it is the same machinery the model uses
+for its other long-lived objects: the human-capital shadow value
+\eqref{eq:focH} and the Calvo reset-price recursions
+\eqref{eq:x1}--\eqref{eq:x2}.}
+
 The model does not carry $v_t$; it carries the value \emph{scaled by the adopted
 stock}, $\mathcal{V}^{\ell}_t \equiv A^{\ell}_{t-1} v_t$. Multiplying
 \eqref{eq:vsmall} by $A^{\ell}_{t-1}$:
