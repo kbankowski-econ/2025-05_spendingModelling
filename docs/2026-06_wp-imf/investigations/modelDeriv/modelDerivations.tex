@@ -1,7 +1,16 @@
 \documentclass[11pt]{article}
 \usepackage[hmargin=2.5cm,vmargin=2.5cm]{geometry}
 \usepackage{amsmath,amssymb}
+\usepackage{xcolor}
 \usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
+% Light-blue intuition boxes: answers to specific questions raised while
+% reviewing the model. Usage: \intuition{Question?}{Answer.}
+\definecolor{intuitionblue}{rgb}{0.88,0.94,1.00}
+\newcommand{\intuition}[2]{%
+  \par\medskip\noindent\hspace*{\fill}%
+  \colorbox{intuitionblue}{\parbox{0.94\linewidth}{\textbf{#1}\par\smallskip #2}}%
+  \hspace*{\fill}\par\medskip}
 
 % Boxed display for model-code (Dynare) lines: framed box on the current line
 % width (so it also fits inside lists), small typewriter font, one equation per
@@ -591,6 +600,26 @@ in the model:
 The
 current-dated stock picks up the growth factor, exactly as the capital law of
 motion picks up $g_t$.
+
+\intuition{Why does the survival rate multiply the unadopted pool?}{%
+Obsolescence is a property of the technology itself, not of its adoption
+status: $\phi$ is the probability that an idea remains economically relevant
+one period on, and that fate can befall a blueprint on the shelf just as much
+as a technology in production. Of the unadopted pool $Z_{t-1}-A_{t-1}$, only
+the surviving fraction $\phi$ is still around to be adopted, and each survivor
+is adopted with probability $q_t$ --- one cannot adopt a dead idea. Dropping
+the $\phi$ would make the shelf an obsolescence-proof vault: leaving a
+technology unadopted would shelter it from mortality, artificially raising the
+option value of waiting and distorting the adoption margin; with a uniform
+$\phi$, delay carries the genuine risk that the idea dies unused, which is
+what makes adoption expenditure urgent. Uniform survival also keeps the pool
+arithmetic coherent ($A$ is a subset of $Z$, so both must inherit the same
+mortality), and it is the same $\phi$ that discounts the continuation values
+in \eqref{eq:jsmall}: the $\phi\, q_t$ product here is exactly the event the
+adopter pays $S_t$ to bet on --- survive, then convert. The single rate for
+adopted and unadopted technologies follows Comin--Gertler (2006) and
+Anzoategui et al.\ (2019); \texttt{phi} $=0.98$ quarterly, about 8 percent
+obsolescence per year.}
 
 \subsection{The Adoption Probability}
 
