@@ -754,6 +754,31 @@ In levels, per variety:
     j_t = -\,s_t + \phi\,\mathbb{E}_t\!\left[\mathit{SDF}^{\ell}_{t+1}
     \left(q_t\,v_{t+1} + \left(1-q_t\right) j_{t+1}\right)\right].
 \end{equation}
+
+\intuition{Can \eqref{eq:jsmall} also be written as an infinite sum?}{%
+Yes, with one extra ingredient: because adoption is a \emph{random} date, the
+weights must track the probability of still waiting. Let
+$Q_{t,s} = \prod_{k=0}^{s-1}(1-q_{t+k})$, with $Q_{t,0}=1$, be the probability
+that a technology unadopted at $t$ is still unadopted at $t+s$ (conditional on
+surviving). Iterating \eqref{eq:jsmall} forward:
+\[
+    j_t = -\,\mathbb{E}_t \sum_{s=0}^{\infty} \phi^{s}\,
+    \mathit{SDF}^{\ell}_{t,t+s}\,Q_{t,s}\,s_{t+s}
+    \;+\; \mathbb{E}_t \sum_{s=0}^{\infty} \phi^{s+1}\,
+    \mathit{SDF}^{\ell}_{t,t+s+1}\,Q_{t,s}\,q_{t+s}\,v_{t+s+1}.
+\]
+An unadopted technology is an option with a random exercise date, adoption
+arriving with hazard $q$. The first sum is the expected discounted stream of
+adoption outlays paid while waiting (unadopted with probability $Q_{t,s}$,
+alive with probability $\phi^{s}$). The second is the expected discounted
+prize: conversion at the end of period $t+s$ has probability
+$q_{t+s}Q_{t,s}$, the technology survives into $t+s+1$ (hence $\phi^{s+1}$),
+and is from then on worth $v_{t+s+1}$ --- substituting \eqref{eq:vsum} turns
+the prize into the rent stream earned only from the adoption date onward.
+Each term thus compounds three risks: death ($\phi$ powers), still waiting
+($Q$), and time preference (the compounded SDF). In steady state the sums
+collapse to $j = (\phi\,\mathit{SDF}\,q\,v - s)/(1-\phi\,\mathit{SDF}(1-q))$,
+the recursion solved directly.}
 Scaling by $A^{\ell}_{t-1}$ exactly as before --- define
 $\mathcal{J}^{\ell}_t \equiv A^{\ell}_{t-1} j_t$ and
 $S^{\ell}_t \equiv A^{\ell}_{t-1} s_t$ --- and then detrending by $\Lambda_t$
