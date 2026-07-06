@@ -76,17 +76,17 @@ ENDOGENOUS = [
         (r"$\lambda_t$",      "Marginal utility of consumption",          "lambda"),
         (r"$\lambda_t^{H}$",  "Shadow value of human capital",            "lambda_H"),
     ]),
-    ("Production and technology: intermediate goods", [
-        (r"$Y_t$",            "Gross output",                             "y"),
-        (r"$mc_t$",           "Real marginal cost",                       "mc"),
-        (r"$r_t^{k}$",        "Rental rate of private capital",           "rk"),
-        (r"$w_t$",            "Real wage",                                "w"),
-    ]),
     ("Production and technology: price setting", [
         (r"$x_{1,t}$",        "Price-setting auxiliary",                  "x1"),
         (r"$x_{2,t}$",        "Price-setting auxiliary",                  "x2"),
         (r"$\Pi_t^{*}$",      "Reset (optimal) inflation",                "PIstar"),
         (r"$\Pi_t$",          "Gross inflation",                          "PI"),
+    ]),
+    ("Production and technology: intermediate goods", [
+        (r"$Y_t$",            "Gross output",                             "y"),
+        (r"$mc_t$",           "Real marginal cost",                       "mc"),
+        (r"$r_t^{k}$",        "Rental rate of private capital",           "rk"),
+        (r"$w_t$",            "Real wage",                                "w"),
     ]),
     ("Production and technology: creation and adoption", [
         (r"$Z_t$",            "Created technology",                       "Z"),

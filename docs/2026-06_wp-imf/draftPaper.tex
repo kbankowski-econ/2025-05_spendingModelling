@@ -247,8 +247,21 @@ Equation~\eqref{eq:labor} is the standard labor-supply condition; equation~\eqre
 A competitive final good $Y_t^{d}$ is a CES aggregate of a continuum of retail varieties with elasticity of substitution $\epsilon$.
 Cost minimization yields the demand for variety $i$, $y_t(i) = \left(P_t(i)/P_t\right)^{-\epsilon} Y_t^{d}$, and the price index $P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}$.
 
+\paragraph{Retailers.}
+Retailers purchase intermediate output at the relative price $mc_t$---their marginal cost---and differentiate it into the varieties aggregated by the final good.
+They take $mc_t$ as given; what pins it down is the intermediate producers' markup rule below.
+
+\paragraph{Price setting.}
+Retailers set prices \`a la Calvo: each period a fraction $1-\theta_p$ of them reoptimizes, while the remainder index their price to past inflation with elasticity $\chi_p$.
+The reset price $\Pi_t^{*}$ solves the recursive system
+\begin{align}
+    x_{1,t} &= \lambda_t\, mc_t\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{-\epsilon} x_{1,t+1}\right], \label{eq:g1}\\
+    x_{2,t} &= \lambda_t\, \Pi_t^{*}\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon} \frac{\Pi_t^{*}}{\Pi_{t+1}^{*}} x_{2,t+1}\right], \qquad \epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}, \label{eq:g2}
+\end{align}
+together with the aggregate price law of motion $1 = \theta_p\left(\Pi_{t-1}^{\chi_p}/\Pi_t\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}$.
+
 \paragraph{Intermediate goods.}
-A continuum of monopolistically competitive firms produces the varieties.
+A continuum of monopolistically competitive intermediate firms produces the output that retailers buy.
 Output of a firm is given by the aggregate production function
 \begin{equation} \label{eq:production}
     Y_t = A_{t-1}^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha} \left(K_{t-1}^{GI}\right)^{\alpha_G},
@@ -262,16 +275,6 @@ Cost minimization then implies the factor-demand conditions
     r_t^{k} = \alpha\, \frac{mc_t}{\mu^{p}} \frac{Y_t}{K_{t-1}}, \qquad w_t = (1-\alpha)\, \frac{mc_t}{\mu^{p}} \frac{Y_t}{N_t}, \qquad \frac{K_{t-1}}{N_t} = \frac{\alpha}{1-\alpha}\frac{w_t}{r_t^{k}}.
 \end{equation}
 The markup wedge leaves the profit flow $\frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t$, which accrues to the owners of adopted technologies and is what gives a technology its value (Appendix~\ref{app:equilibrium}).
-
-\paragraph{Price setting.}
-Prices are set by retailers, who purchase intermediate output at the relative price $mc_t$---their marginal cost---and differentiate it into the varieties aggregated by the final good.
-Each period a fraction $1-\theta_p$ of retailers reoptimizes, while the remainder index their price to past inflation with elasticity $\chi_p$.
-The reset price $\Pi_t^{*}$ solves the recursive system
-\begin{align}
-    x_{1,t} &= \lambda_t\, mc_t\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{-\epsilon} x_{1,t+1}\right], \label{eq:g1}\\
-    x_{2,t} &= \lambda_t\, \Pi_t^{*}\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon} \frac{\Pi_t^{*}}{\Pi_{t+1}^{*}} x_{2,t+1}\right], \qquad \epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}, \label{eq:g2}
-\end{align}
-together with the aggregate price law of motion $1 = \theta_p\left(\Pi_{t-1}^{\chi_p}/\Pi_t\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}$.
 
 \paragraph{Technology creation and adoption.}
 Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model distinguishes between the stock of created technologies $Z_t$, available for adoption, and the stock of adopted technologies $A_t$ that enters production.
