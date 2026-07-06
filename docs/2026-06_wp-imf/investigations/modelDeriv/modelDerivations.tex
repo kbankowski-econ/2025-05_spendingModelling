@@ -639,6 +639,33 @@ Second, as the next subsection makes precise, $S_t$ is expenditure \emph{per
 unadopted technology, scaled by the adopted stock} --- the same scaling the value
 functions use.
 
+\intuition{Where does $1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$ come from?}{%
+It is the balanced-growth requirement on the production function. On the
+balanced-growth path, output and private capital grow at the gross rate $g$
+and labor is stationary, so taking growth factors of
+$Y_t = A_{t-1}^{\vartheta-1}K_{t-1}^{\alpha}N_t^{1-\alpha}
+(K^{GI}_{t-1})^{\alpha_G}$ gives
+\[
+    g = \left(1+\gamma^{a}\right)^{\vartheta-1} g^{\alpha}
+    \qquad\Longrightarrow\qquad
+    1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)},
+\]
+the code's \texttt{gammaa = gss\^{}((1-alpha)/(vartheta-1))-1}
+(\texttt{models/modelTemplate.mod}). Reading the balance: the private inputs
+deliver only $g^{\alpha}$ of the required growth ($K$ contributes
+$g^{\alpha}$, stationary $N$ contributes nothing), so the love-of-variety TFP
+term must supply the remaining $g^{1-\alpha}$ --- and because its exponent
+$\vartheta-1$ is small, $A$ must grow \emph{faster} than output to deliver it.
+At the calibration ($\alpha=0.3$, $\vartheta=1.35$) the exponent is
+$0.7/0.35=2$: technology grows at the square of the output factor,
+$1+\gamma^{a}=g^{2}$. Equivalently, the output trend is
+$\Lambda_t = A_t^{(\vartheta-1)/(1-\alpha)}$. Two footnotes. The balance
+ignores the small infrastructure term: the externality is treated as a level
+effect, while the exact balance would read $g^{1-\alpha-\alpha_G}$ in place of
+$g^{1-\alpha}$ (see the note in \texttt{../tech-growth-rate/}). And the same
+relation shows why a single trend $g$ for everything would fail: with $A$
+growing at $g$, output would grow at $g^{\vartheta-1+\alpha} \neq g$.}
+
 \subsection{The Value of an Adopted Technology}
 
 Start from one adopted variety and ask what it is worth to its owner. It
