@@ -696,6 +696,25 @@ geometric, $v = \pi/(1-\phi\,\mathit{SDF})$, which is the closed form in
 \texttt{models/Steady\_states\_solution.m} (with the $1+\gamma^{a}$ factors
 from detrending).}
 
+\intuition{Doesn't compounded discounting make the limit term vanish automatically?}{%
+For the solutions the model actually produces, yes: on a path converging to
+the balanced-growth path, each one-step level discount is
+$\mathit{SDF}^{\ell} \approx \beta/g$ while $v^{\ell}_{t+s}$ grows like
+$g^{s}$, so the limit term is roughly $\phi^{s}(\beta/g)^{s}g^{s}v_t =
+(\beta\phi)^{s}v_t \to 0$, dying geometrically at rate $\beta\phi$ per
+quarter. The mechanism is that the value grows \emph{more slowly} than the
+discount shrinks --- the $g$'s cancel and $\beta\phi<1$ survives. But
+compounding alone does not kill the term for every solution of the recursion:
+a bubble $b_t = \phi\,\mathbb{E}_t[\mathit{SDF}_{t+1}b_{t+1}]$ grows at
+exactly the reciprocal of the discount, so
+$\phi^{s}\,\mathbb{E}_t[\mathit{SDF}_{t,t+s}\,b_{t+s}] = b_t$ for every $s$
+--- constant, not vanishing. Discounting beats anything that grows slower than
+$1/(\phi\,\mathit{SDF})$ per period; a bubble is built to grow at exactly that
+rate. What rules bubbles out is economics (household transversality) and, in
+practice, the solution method: the model is solved by perfect foresight on a
+finite horizon with terminal values pinned to the steady state, which
+mechanically selects the bubble-free path.}
+
 The model does not carry $v_t$; it carries the value \emph{scaled by the adopted
 stock}, $\mathcal{V}^{\ell}_t \equiv A^{\ell}_{t-1} v_t$. Multiplying
 \eqref{eq:vsmall} by $A^{\ell}_{t-1}$:
