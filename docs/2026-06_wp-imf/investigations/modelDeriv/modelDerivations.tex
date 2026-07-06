@@ -672,6 +672,30 @@ for its other long-lived objects: the human-capital shadow value
 \eqref{eq:focH} and the Calvo reset-price recursions
 \eqref{eq:x1}--\eqref{eq:x2}.}
 
+\intuition{Is $v_t$ just an infinite discounted sum written recursively?}{%
+Yes. Iterating \eqref{eq:vsmall} forward on itself gives
+\[
+    v_t = \mathbb{E}_t \sum_{s=0}^{\infty} \phi^{s}\,
+    \mathit{SDF}^{\ell}_{t,t+s}\,\pi_{t+s}
+    \;+\; \lim_{s\to\infty} \phi^{s}\,
+    \mathbb{E}_t\!\left[\mathit{SDF}^{\ell}_{t,t+s}\, v_{t+s}\right],
+\]
+where $\mathit{SDF}^{\ell}_{t,t+s} = \mathit{SDF}^{\ell}_{t+1}\cdots
+\mathit{SDF}^{\ell}_{t+s}$ is the compounded discount factor. The value is the
+expected present value of the entire rent stream, each term discounted twice:
+by the compounded SDF and by $\phi^{s}$, the probability the technology is
+still alive $s$ periods out --- obsolescence acts exactly like an addition to
+the discount rate. Two provisos. First, the equivalence needs the limit term
+to vanish (the no-bubble condition, guaranteed by the household's
+transversality condition); the recursion alone would also admit bubble
+solutions. Second, this is the mirror image of Section~\ref{sec:pricing}:
+there we started from infinite sums and derived the $x_{1}/x_{2}$ recursions,
+here we start recursive and the sum lies underneath --- in both cases because
+Dynare handles recursions, not infinite sums. In steady state the sum is
+geometric, $v = \pi/(1-\phi\,\mathit{SDF})$, which is the closed form in
+\texttt{models/Steady\_states\_solution.m} (with the $1+\gamma^{a}$ factors
+from detrending).}
+
 The model does not carry $v_t$; it carries the value \emph{scaled by the adopted
 stock}, $\mathcal{V}^{\ell}_t \equiv A^{\ell}_{t-1} v_t$. Multiplying
 \eqref{eq:vsmall} by $A^{\ell}_{t-1}$:
