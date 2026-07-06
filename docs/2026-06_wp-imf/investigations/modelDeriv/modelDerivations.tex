@@ -641,17 +641,36 @@ functions use.
 
 \subsection{The Value of an Adopted Technology}
 
-Start from one adopted variety. It earns the per-variety profit $\pi_t$, and its
-owner values the surviving continuation with the household stochastic discount
-factor (Subsection~\ref{subsec:sdf}), so in levels:
-\begin{equation}\label{eq:vsmall}
-    v_t = \pi_t + \phi\,\mathbb{E}_t\!\left[\mathit{SDF}^{\ell}_{t+1}\,
-    v_{t+1}\right],
-    \qquad
+Start from one adopted variety and ask what it is worth to its owner. It
+entitles the owner to the per-variety profit flow
+\begin{equation}\label{eq:pidef}
     \pi_t = \frac{1}{A^{\ell}_{t-1}}\,\frac{\mu^{p}-1}{\mu^{p}}\,mc_t\,Y^{\ell}_t,
 \end{equation}
-where the second expression divides the total intermediate-producer profit flow
-\eqref{eq:profit} by the $A^{\ell}_{t-1}$ varieties active at $t$.
+the total intermediate-producer profit flow \eqref{eq:profit} divided by the
+$A^{\ell}_{t-1}$ varieties active at $t$. The value of the technology is the
+expected present value of this rent stream over its remaining lifetime:
+\begin{equation}\label{eq:vsum}
+    v_t = \mathbb{E}_t \sum_{s=0}^{\infty} \phi^{s}\,
+    \mathit{SDF}^{\ell}_{t,t+s}\,\pi_{t+s},
+\end{equation}
+where $\mathit{SDF}^{\ell}_{t,t+s} = \mathit{SDF}^{\ell}_{t+1}\cdots
+\mathit{SDF}^{\ell}_{t+s}$ (with $\mathit{SDF}^{\ell}_{t,t}=1$) is the
+household's compounded discount factor (Subsection~\ref{subsec:sdf}). Each term
+in \eqref{eq:vsum} is discounted twice: by the compounded SDF and by
+$\phi^{s}$, the probability that the technology is still alive $s$ periods out
+--- obsolescence acts like an addition to the discount rate. In steady state
+the sum is geometric, $v = \pi/(1-\phi\,\mathit{SDF})$, the closed form in
+\texttt{models/Steady\_states\_solution.m} (with the $1+\gamma^{a}$ factors
+from detrending).
+
+Dynare handles recursions, not infinite sums, so --- exactly as with the
+pricing sums of Section~\ref{sec:pricing} --- split off the $s=0$ term of
+\eqref{eq:vsum} and use $\mathit{SDF}^{\ell}_{t,t+s} =
+\mathit{SDF}^{\ell}_{t+1}\,\mathit{SDF}^{\ell}_{t+1,t+s}$:
+\begin{equation}\label{eq:vsmall}
+    v_t = \pi_t + \phi\,\mathbb{E}_t\!\left[\mathit{SDF}^{\ell}_{t+1}\,
+    v_{t+1}\right].
+\end{equation}
 
 \intuition{What is the microfoundation of the value recursion in \eqref{eq:vsmall}?}{%
 It is not anyone's optimality condition over a quantity; it is an
@@ -674,35 +693,15 @@ for its other long-lived objects: the human-capital shadow value
 \eqref{eq:focH} and the Calvo reset-price recursions
 \eqref{eq:x1}--\eqref{eq:x2}.}
 
-\intuition{Is $v_t$ just an infinite discounted sum written recursively?}{%
-Yes. Iterating \eqref{eq:vsmall} forward on itself gives
-\[
-    v_t = \mathbb{E}_t \sum_{s=0}^{\infty} \phi^{s}\,
-    \mathit{SDF}^{\ell}_{t,t+s}\,\pi_{t+s}
-    \;+\; \lim_{s\to\infty} \phi^{s}\,
-    \mathbb{E}_t\!\left[\mathit{SDF}^{\ell}_{t,t+s}\, v_{t+s}\right],
-\]
-where $\mathit{SDF}^{\ell}_{t,t+s} = \mathit{SDF}^{\ell}_{t+1}\cdots
-\mathit{SDF}^{\ell}_{t+s}$ is the compounded discount factor. The value is the
-expected present value of the entire rent stream, each term discounted twice:
-by the compounded SDF and by $\phi^{s}$, the probability the technology is
-still alive $s$ periods out --- obsolescence acts exactly like an addition to
-the discount rate. Two provisos. First, the equivalence needs the limit term
-to vanish (the no-bubble condition, guaranteed by the household's
-transversality condition); the recursion alone would also admit bubble
-solutions. Second, this is the mirror image of Section~\ref{sec:pricing}:
-there we started from infinite sums and derived the $x_{1}/x_{2}$ recursions,
-here we start recursive and the sum lies underneath --- in both cases because
-Dynare handles recursions, not infinite sums. In steady state the sum is
-geometric, $v = \pi/(1-\phi\,\mathit{SDF})$, which is the closed form in
-\texttt{models/Steady\_states\_solution.m} (with the $1+\gamma^{a}$ factors
-from detrending).}
-
-\intuition{Doesn't compounded discounting make the limit term vanish automatically?}{%
-For the solutions the model actually produces, yes: on a path converging to
+\intuition{Going back from \eqref{eq:vsmall} to \eqref{eq:vsum}: doesn't compounded discounting make the limit term vanish automatically?}{%
+Iterating \eqref{eq:vsmall} forward reproduces \eqref{eq:vsum} plus the limit
+term $\lim_{s\to\infty}\phi^{s}\,\mathbb{E}_t[\mathit{SDF}^{\ell}_{t,t+s}\,
+v_{t+s}]$: the sum always satisfies the recursion, but the recursion implies
+the sum only when this term vanishes (the no-bubble condition). For the
+solutions the model actually produces it does vanish: on a path converging to
 the balanced-growth path, each one-step level discount is
 $\mathit{SDF}^{\ell} \approx \beta/g$ while $v^{\ell}_{t+s}$ grows like
-$g^{s}$, so the limit term is roughly $\phi^{s}(\beta/g)^{s}g^{s}v_t =
+$g^{s}$, so the term is roughly $\phi^{s}(\beta/g)^{s}g^{s}v_t =
 (\beta\phi)^{s}v_t \to 0$, dying geometrically at rate $\beta\phi$ per
 quarter. The mechanism is that the value grows \emph{more slowly} than the
 discount shrinks --- the $g$'s cancel and $\beta\phi<1$ survives. But
