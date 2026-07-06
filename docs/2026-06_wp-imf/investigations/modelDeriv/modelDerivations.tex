@@ -30,7 +30,8 @@
 \noindent
 This note derives the model equation by equation, in the order of Section~2 of
 the working paper (\texttt{../../draftPaper.tex}): the household's problem, the
-retailer's Calvo price setting, the intermediate firm's cost minimization, and
+retail layer (the final good's variety demand and the retailers' Calvo price
+setting), the intermediate firm's cost minimization, and
 the technology creation-and-adoption block, followed by the government,
 market-clearing, balanced-growth, and auxiliary blocks, which contain no
 optimization and are stated with brief commentary. The note is complete:
@@ -219,23 +220,66 @@ stationary). The consequences, condition by condition:
 \end{itemize}
 
 %========================================================================
-\section{Price Setting}\label{sec:pricing}
+\section{Retailers}\label{sec:pricing}
 %========================================================================
 
-This section derives the four pricing equations of the model --- the two auxiliary
-recursions for $x_{1,t}$ and $x_{2,t}$, the reset-price condition
-$\epsilon x_{1,t} = (\epsilon-1)x_{2,t}$, and the price-index law of motion ---
-from the retailer's problem.
+This section covers the retail layer: first the final good's demand for retail
+varieties and the aggregate price index, then the retailers' Calvo price
+setting --- the two auxiliary recursions for $x_{1,t}$ and $x_{2,t}$, the
+reset-price condition $\epsilon x_{1,t} = (\epsilon-1)x_{2,t}$, and the
+price-index law of motion.
+
+\subsection{The Final Good and the Demand for Varieties}
+
+The final output good is a CES aggregate of a continuum of retail varieties:
+\begin{equation}\label{eq:cesagg}
+    Y_t^{d} = \left[\int_0^1 y_t(i)^{\frac{\epsilon-1}{\epsilon}}\,di
+    \right]^{\frac{\epsilon}{\epsilon-1}}, \qquad \epsilon > 1.
+\end{equation}
+The final-good producer is competitive; its problem is:
+\begin{equation*}
+    \max_{y_t(i)} \; P_t \left[\int_0^1
+    y_t(i)^{\frac{\epsilon-1}{\epsilon}}\,di\right]^{\frac{\epsilon}{\epsilon-1}}
+    - \int_0^1 P_t(i)\, y_t(i)\, di.
+\end{equation*}
+The FOC for a typical variety $i$ is:
+\begin{equation*}
+    P_t\,\frac{\epsilon}{\epsilon-1}\left[\int_0^1
+    y_t(i)^{\frac{\epsilon-1}{\epsilon}}\,di\right]^{\frac{\epsilon}{\epsilon-1}-1}
+    \frac{\epsilon-1}{\epsilon}\, y_t(i)^{-\frac{1}{\epsilon}} = P_t(i).
+\end{equation*}
+The two elasticity factors cancel, and making note of the definition of the
+aggregate \eqref{eq:cesagg}, the bracket term is just
+$\left(Y_t^{d}\right)^{1/\epsilon}$. Solving for $y_t(i)$:
+\begin{equation}\label{eq:demand}
+    y_t(i) = \left(\frac{P_t(i)}{P_t}\right)^{-\epsilon} Y_t^{d}.
+\end{equation}
+\eqref{eq:demand} says the demand for each variety is proportional to total
+demand and decreasing in the variety's relative price; $\epsilon$ is the price
+elasticity of demand, which is what gives the retailers their pricing power.
+
+For the price index, note that the aggregator is homogeneous of degree one, so
+the competitive final-good producer earns zero profits: nominal revenue equals
+nominal spending, $P_t Y_t^{d} = \int_0^1 P_t(i)\,y_t(i)\,di$. Plugging in the
+demand \eqref{eq:demand}:
+\begin{equation*}
+    P_t Y_t^{d} = \int_0^1 P_t(i)^{1-\epsilon} P_t^{\epsilon}\, Y_t^{d}\, di.
+\end{equation*}
+Pulling out of the integral the terms that do not depend on $i$ and
+simplifying:
+\begin{equation}\label{eq:priceindex}
+    P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\,di\right]^{\frac{1}{1-\epsilon}}.
+\end{equation}
+Neither \eqref{eq:demand} nor \eqref{eq:priceindex} is a model equation: the
+variety level is aggregated out of the Dynare system, and both appear in the
+paper's Section~2.2 exactly as derived here.
 
 \subsection{Setup}
 
 Retailers purchase intermediate output at the relative price $mc_t$ --- their real
 marginal cost (Section~\ref{sec:costmin}) --- differentiate it one-for-one into
-varieties, and sell variety $i$ at the nominal price $P_t(i)$. The final-good
-producer's cost minimization gives the demand for each variety:
-\begin{equation}\label{eq:demand}
-    y_t(i) = \left(\frac{P_t(i)}{P_t}\right)^{-\epsilon} Y_t^{d}.
-\end{equation}
+varieties, and sell variety $i$ at the nominal price $P_t(i)$, facing the demand
+curve \eqref{eq:demand}.
 Prices are sticky \`a la Calvo: each period a retailer reoptimizes its price with
 probability $1-\theta_p$. With probability $\theta_p$ it cannot, and instead
 indexes its price to past inflation with elasticity $\chi_p$, so a non-reoptimized
@@ -362,7 +406,7 @@ $\Pi_t^{*} = \tfrac{\epsilon}{\epsilon-1}\,mc_t$, the static markup rule.
 
 \subsection{The Price-Index Law of Motion}
 
-The price index aggregates $P_t^{1-\epsilon} = \int_0^1 P_t(i)^{1-\epsilon}di$.
+The price index \eqref{eq:priceindex} aggregates $P_t^{1-\epsilon} = \int_0^1 P_t(i)^{1-\epsilon}di$.
 Each period a fraction $\theta_p$ of prices are last period's scaled by
 $\Pi_{t-1}^{\chi_p}$ --- by the Calvo assumption the non-reoptimizers are a random
 sample, so their price distribution is last period's --- and a fraction
