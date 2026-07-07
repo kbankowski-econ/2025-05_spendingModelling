@@ -664,27 +664,57 @@ Because work and schooling draw on the same time endowment, combining the labor-
 
 \subsection{Production and Technology}
 
-\paragraph{Final goods.}
-The competitive final-good producer combines retail varieties through the CES aggregator $Y_t^{d} = \left[\int_0^1 y_t(i)^{(\epsilon-1)/\epsilon}\, di\right]^{\epsilon/(\epsilon-1)}$ and chooses $y_t(i)$ to minimize expenditure $\int_0^1 P_t(i)\, y_t(i)\, di$ for a given $Y_t^{d}$.
-The first-order condition delivers the variety demand $y_t(i) = \left(P_t(i)/P_t\right)^{-\epsilon} Y_t^{d}$, and zero profits give the price index $P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}$.
-These are the standard building blocks of the New Keynesian model \citep{gali2015}; nothing here departs from the textbook treatment.
+In a textbook New Keynesian model, the monopolistically competitive firms that produce differentiated varieties are also the firms that set sticky prices.
+This model separates those roles to keep two margins distinct.
+Retailers carry the standard New Keynesian pricing margin: they differentiate output into varieties and set prices subject to Calvo frictions, taking real marginal cost as given.
+Upstream intermediate producers carry the production and technology-valuation margin: they determine the real marginal cost faced by retailers and earn the markup profit flow that gives adopted technologies value.
+The split lets public infrastructure, human capital, and endogenous technology affect production and technology values without changing the nominal pricing structure.
 
-\paragraph{Retailers.}
-Retailers purchase intermediate output and differentiate it one-for-one into the varieties aggregated by the final good.
-The relative price they pay is denoted $mc_t$ because, with one-for-one transformation, it is also their real marginal cost---the object at the center of price setting below.
-They take $mc_t$ as given; the intermediate producers' markup rule below pins it down, so $mc_t$ already embodies the markup $\mu^{p}$ that rewards technology, and the only markup added at the retail level is the Calvo markup governed by $\epsilon$.
+\paragraph{Final-Good Aggregation.}
+A competitive final-good producer combines retail varieties through the CES aggregator
+\[
+    Y_t^{d} = \left[\int_0^1 y_t(i)^{(\epsilon-1)/\epsilon}\, di\right]^{\epsilon/(\epsilon-1)}.
+\]
+For a given $Y_t^{d}$, it chooses $y_t(i)$ to minimize expenditure $\int_0^1 P_t(i)\, y_t(i)\, di$.
+The first-order condition delivers the variety demand
+\[
+    y_t(i) = \left(\frac{P_t(i)}{P_t}\right)^{-\epsilon} Y_t^{d},
+\]
+and zero profits give the price index
+\[
+    P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}.
+\]
+This is the standard final-good block of the New Keynesian model \citep{gali2015}.
 
-\paragraph{Price setting.}
-Retailers set prices \`a la Calvo: each period a fraction $1-\theta_p$ reoptimize, while the rest index to past inflation at rate $\chi_p$.
-A reoptimizing retailer chooses the reset price $\Pi_t^{*}$ to maximize the expected discounted profit it earns while its price remains in force, weighting future dates by the household valuation $\beta^{s}\lambda_{t+s}/\lambda_t$ and the survival probability $\theta_p^{s}$.
-Its optimality condition is expressed recursively through the auxiliary variables $x_{1,t}$ and $x_{2,t}$ defined in Section~\ref{sec:model}: $x_{1,t}$ discounts marginal cost, $x_{2,t}$ discounts marginal revenue, and $\epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}$ sets the reset price as a markup over marginal cost.
-Aggregating over reoptimizing and indexing retailers gives the price law of motion $1 = \theta_p\left(\Pi_{t-1}^{\chi_p}/\Pi_t\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}$.
+\paragraph{Price-Setting Firms.}
+Retailers are the model's price-setting firms.
+They purchase intermediate output at the relative price $mc_t$, transform it one-for-one into differentiated varieties, and set prices \`a la Calvo.
+With one-for-one transformation, $mc_t$ is the retailer's real marginal cost.
+The intermediate producers' markup rule below pins down this cost, so the Calvo problem is the standard New Keynesian pricing problem.
 
-\paragraph{Intermediate goods.}
-Firm $i$ produces with the production technology of Section~\ref{sec:model}, taking the public-infrastructure stock $K_{t-1}^{GI}$ and the adopted-technology stock $A_{t-1}$ as given externalities, and renting private capital and hiring effective labor competitively.
-Taking factor prices as given, each firm chooses $K_{t-1}(i)$ and $N_t(i)$ to produce a given level of output at minimum factor cost $r_t^{k} K_{t-1}(i) + w_t N_t(i)$.
-The multiplier on the output constraint is the cost of producing one more unit---the firm's real marginal cost, equal to its unit factor cost under constant returns to the two chosen inputs.
-The firm sells to retailers at the fixed gross markup $\mu^{p}$ over its unit factor cost; the transaction price is $mc_t$, so the firm's own unit factor cost is $mc_t/\mu^{p}$.
+Each period, a fraction $1-\theta_p$ of retailers reoptimizes, while the remainder index their price to past inflation at rate $\chi_p$.
+A reoptimizing retailer chooses the reset price $\Pi_t^{*}$ to maximize expected discounted profits while its price remains in force.
+The optimality condition can be written recursively as
+\begin{align*}
+    x_{1,t} &= \lambda_t\, mc_t\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{-\epsilon} x_{1,t+1}\right], \\
+    x_{2,t} &= \lambda_t\, \Pi_t^{*}\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon} \frac{\Pi_t^{*}}{\Pi_{t+1}^{*}} x_{2,t+1}\right], \\
+    \epsilon\, x_{1,t} &= (\epsilon-1)\, x_{2,t}.
+\end{align*}
+The auxiliary $x_{1,t}$ discounts marginal cost, $x_{2,t}$ discounts marginal revenue, and the last condition sets the reset price as a markup over marginal cost.
+Aggregating over reoptimizing and indexing retailers gives the price law of motion
+\[
+    1 = \theta_p\left(\frac{\Pi_{t-1}^{\chi_p}}{\Pi_t}\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}.
+\]
+
+\paragraph{Production and Marginal Cost.}
+Intermediate producers use private capital and effective labor, taking public infrastructure and adopted technology as external production shifters:
+\[
+    Y_t = A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G} K_{t-1}^{\alpha} N_t^{1-\alpha}.
+\]
+They rent private capital and hire effective labor competitively.
+Taking factor prices as given, a producer chooses $K_{t-1}(i)$ and $N_t(i)$ to produce a given level of output at minimum factor cost $r_t^{k} K_{t-1}(i) + w_t N_t(i)$.
+The multiplier on the output constraint is unit factor cost under constant returns to the two chosen inputs.
+Intermediate producers sell to retailers at the fixed gross markup $\mu^{p}$ over unit factor cost; the transaction price is $mc_t$, so unit factor cost is $mc_t/\mu^{p}$.
 Equating each factor's marginal revenue product to its price yields the factor-demand conditions
 \begin{equation*}
     r_t^{k} = \alpha\, \frac{mc_t}{\mu^{p}}\, \frac{Y_t}{K_{t-1}}, \qquad
@@ -692,10 +722,14 @@ Equating each factor's marginal revenue product to its price yields the factor-d
     \frac{K_{t-1}}{N_t} = \frac{\alpha}{1-\alpha}\, \frac{w_t}{r_t^{k}},
 \end{equation*}
 the last of which follows from the first two and is common across firms, since all face the same factor prices and technology.
-Factor payments absorb $mc_t/\mu^{p}$ of revenue per unit of output; the residual profit flow, $\frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t$, accrues to the owners of adopted technologies and is the dividend priced in the value functions below.
+Factor payments absorb $mc_t/\mu^{p}$ of revenue per unit of output.
+The residual profit flow, $\frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t$, accrues to the owners of adopted technologies and is the dividend priced in the value functions below.
 
-\paragraph{Technology creation and adoption.}
-Created technology $Z_t$ evolves according to the creation process in Section~\ref{sec:model}.
+\paragraph{Technology Creation and Adoption.}
+Created technology $Z_t$ follows
+\[
+    \log\!\left(\frac{Z_t}{Z^{SS}}\right) = \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right) + \alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) + \alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) G_{t-1}^{RD}}{\left(1-e^{GRD}\right) G^{RD,SS}}\right).
+\]
 Its stationarized adoption law of motion is
 \begin{equation}
     \left(1+\gamma^{a}\right) A_{t} = q_t\, \phi\left(Z_{t-1} - A_{t-1}\right) + \phi A_{t-1}, \label{eq:Astat}
