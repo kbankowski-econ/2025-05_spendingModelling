@@ -723,10 +723,9 @@ Equating each factor's marginal revenue product to its price yields the factor-d
 \end{equation*}
 the last of which follows from the first two and is common across firms, since all face the same factor prices and technology.
 Factor payments absorb $mc_t/\mu^{p}$ of revenue per unit of output.
-Let $\pi_t^{a}$ denote the profit flow accruing to one adopted technology.
 Aggregate residual profits are revenue at the transaction price minus factor cost:
 \[
-    A_{t-1}\pi_t^{a} \equiv mc_t Y_t - \frac{mc_t}{\mu^{p}}Y_t
+    mc_t Y_t - \frac{mc_t}{\mu^{p}}Y_t
     = \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t.
 \]
 These profits accrue to the owners of adopted technologies and are the dividends priced in the value functions below.
@@ -781,9 +780,8 @@ Splitting off the current-period cost and next-period continuation value gives t
     j_t = -s_t + \phi\,\mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\left(q_t v_{t+1} + (1-q_t)j_{t+1}\right)\right].
 \]
 
-The model carries the stock-scaled objects $\mathcal{V}_t \equiv A_{t-1}v_t$, $\mathcal{J}_t \equiv A_{t-1}j_t$, and $S_t \equiv A_{t-1}s_t$.\footnote{The displayed variables are the stationarized counterparts of these stock-scaled level objects.}
-Multiplying the adopted-value recursion by $A_{t-1}$ turns the per-technology dividend $\pi_t^{a}$ into aggregate residual profits, $A_{t-1}\pi_t^{a}$.
-It also converts next period's stock-scaled values through the ratio $A_{t-1}/A_t$:
+Because the model carries aggregate rather than per-technology objects, multiply the unit recursions by the adopted stock active at $t$, $A_{t-1}$.
+Define $\mathcal{V}_t \equiv A_{t-1}v_t$, $\mathcal{J}_t \equiv A_{t-1}j_t$, and $S_t \equiv A_{t-1}s_t$; using the aggregate-profit identity $A_{t-1}\pi_t^{a} = [(\mu^{p}-1)/\mu^{p}]\, mc_t\, Y_t$ gives
 \begin{align}
     \mathcal{V}_t &= \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \mathcal{V}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\right], \label{eq:VA}\\
     \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\left(q_t\, \mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right], \label{eq:JZ}
