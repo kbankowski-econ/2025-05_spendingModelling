@@ -783,7 +783,7 @@ Splitting off the current-period cost and next-period continuation value gives t
 \]
 
 The model carries aggregate rather than per-technology objects, so the unit recursions are scaled by the adopted stock active at $t$, $A_{t-1}$.
-With $\mathcal{V}_t \equiv A_{t-1}v_t$, $\mathcal{J}_t \equiv A_{t-1}j_t$, and $S_t \equiv A_{t-1}s_t$, and using the aggregate-profit identity $A_{t-1}\pi_t^{a} = [(\mu^{p}-1)/\mu^{p}]\, mc_t\, Y_t$, the value recursions become
+With $\mathcal{V}_t \equiv A_{t-1}v_t$, $\mathcal{J}_t \equiv A_{t-1}j_t$, and $S_t \equiv A_{t-1}s_t$, and using the aggregate-profit identity $A_{t-1}\pi_t^{a} = \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t$, the value recursions become
 \begin{align}
     \mathcal{V}_t &= \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \mathcal{V}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\right], \label{eq:VA}\\
     \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\left(q_t\, \mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right]. \label{eq:JZ}
