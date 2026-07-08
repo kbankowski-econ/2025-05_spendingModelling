@@ -748,15 +748,15 @@ increasing in adoption expenditure $S_t$ with elasticity $\varsigma$; the shock 
 
 The adoption law of motion is
 \begin{equation}
-    \left(1+\gamma^{a}\right) A_{t} = q_t\, \phi\left(Z_{t-1} - A_{t-1}\right) + \phi A_{t-1}, \label{eq:Astat}
+    \left(1+\gamma^{a}\right) A_{t} = q_t\, \phi\left(Z_{t-1} - A_{t-1}\right) + \phi A_{t-1}. \label{eq:Astat}
 \end{equation}
-The first term is surviving unadopted technologies that become adopted; the second is the surviving stock of technologies already in production.
+The first term is the flow of surviving unadopted technologies that become adopted; the second is the surviving stock of technologies already in production.
 The survival rate $\phi$ applies to both pools: an unadopted idea must survive before it can be converted into an adopted technology.\footnote{Equation~\eqref{eq:Astat} is stated in stationarized form. The factor $1+\gamma^{a}$ appears on the current stock because $Z_t$ and $A_t$ are detrended by the technology trend, not by the output trend; see Subsection~\ref{subsec:bgp}.}
 
-Let $v_t$ denote the cum-dividend value of an adopted technology claim to the per-technology profit flow $\pi_t^{a}$ defined above.
-The adopter discounts future profit flows with the household stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, \lambda_{t+1}\left(1+\tau_{t+1}^{c}\right)/[\lambda_t\left(1+\tau_t^{c}\right)] = \beta\, C_t/C_{t+1}$, where the second equality uses the condition for $C_t$ above.
+The aggregate profits derived above are shared equally among the $A_{t-1}$ technologies in production, so each adopted technology pays its owner the per-technology profit flow $\pi_t^{a} \equiv \left[(\mu^{p}-1)/\mu^{p}\right] mc_t\, Y_t / A_{t-1}$.
+The owner discounts future profit flows with the household stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, \lambda_{t+1}\left(1+\tau_{t+1}^{c}\right)/[\lambda_t\left(1+\tau_t^{c}\right)] = \beta\, C_t/C_{t+1}$, where the second equality uses the condition for $C_t$ above.
 For multi-period payoffs, write $\mathit{SDF}_{t,t+s}\equiv\prod_{\ell=1}^{s}\mathit{SDF}_{t+\ell}$, with $\mathit{SDF}_{t,t}=1$.
-Its value is the discounted rent stream
+The cum-dividend value $v_t$ of an adopted technology is the discounted rent stream
 \[
     v_t = \mathbb{E}_t \sum_{s=0}^{\infty} \phi^{s}\,\mathit{SDF}_{t,t+s}\,\pi_{t+s}^{a},
 \]
@@ -784,9 +784,9 @@ Because the model carries aggregate rather than per-technology objects, multiply
 Define $\mathcal{V}_t \equiv A_{t-1}v_t$, $\mathcal{J}_t \equiv A_{t-1}j_t$, and $S_t \equiv A_{t-1}s_t$; using the aggregate-profit identity $A_{t-1}\pi_t^{a} = [(\mu^{p}-1)/\mu^{p}]\, mc_t\, Y_t$ gives
 \begin{align}
     \mathcal{V}_t &= \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \mathcal{V}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\right], \label{eq:VA}\\
-    \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\left(q_t\, \mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right], \label{eq:JZ}
+    \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\left(q_t\, \mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right]. \label{eq:JZ}
 \end{align}
-The ratio $A_{t-1}/A_t$ converts continuation values across the adopted-stock scaling.\footnote{The additional factor $1/(1+\gamma^{a})$ is the technology-growth correction associated with this stationarized scaling.}
+Because the continuation values are scaled by the next period's stock ($\mathcal{V}_{t+1} = A_t v_{t+1}$), the ratio $A_{t-1}/A_t$ converts them back to the date-$t$ scaling $A_{t-1}$.\footnote{The additional factor $1/(1+\gamma^{a})$ is the technology-growth correction associated with this stationarized scaling.}
 Choosing $S_t$ to maximize $\mathcal{J}_t$ and using $\partial q_t/\partial S_t = \varsigma\, q_t/S_t$ gives the adoption optimality condition
 \begin{equation}
     S_t = \varsigma\, q_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{1}{1+\gamma^{a}}\, \frac{A_{t-1}}{A_{t}}\left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right], \label{eq:SAfoc}
