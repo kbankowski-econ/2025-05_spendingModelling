@@ -770,14 +770,13 @@ so, equivalently,
 
 An unadopted technology has value from the possibility of future adoption, net of the adoption effort costs paid while waiting.
 Let $Q_{t,s}\equiv\prod_{k=0}^{s-1}(1-q_{t+k})$ be the probability that a technology unadopted at $t$ remains unadopted through $t+s$, conditional on survival, with $Q_{t,0}=1$.
-Let $j_t$ denote the value of an unadopted technology evaluated at the optimal adoption-effort policy, and let $s_t$ denote effort for that technology.
-Written along that policy,
+The term $j_t$ denotes the value of an unadopted technology evaluated at the optimal adoption-effort policy:
 \[
     j_t =
     -\mathbb{E}_t \sum_{s=0}^{\infty}\phi^{s}\,\mathit{SDF}_{t,t+s}\,Q_{t,s}\,s_{t+s}
     +\mathbb{E}_t \sum_{s=0}^{\infty}\phi^{s+1}\,\mathit{SDF}_{t,t+s+1}\,Q_{t,s}\,q_{t+s}\,v_{t+s+1}.
 \]
-The first term is the stream of adoption costs paid while waiting; the second is the adopted value received when adoption occurs.
+The first term is the stream of adoption costs $s_t$ paid while waiting; the second is the adopted value $v_{t+s+1}$ received when adoption occurs.
 Splitting off the current-period cost and next-period continuation value gives the recursive representation
 \[
     j_t = -s_t + \phi\,\mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\left(q_t v_{t+1} + (1-q_t)j_{t+1}\right)\right].
