@@ -753,10 +753,10 @@ The adoption law of motion is
 The first term is the flow of surviving unadopted technologies that become adopted; the second is the surviving stock of technologies already in production.
 The survival rate $\phi$ applies to both pools: an unadopted idea must survive before it can be converted into an adopted technology.\footnote{Equation~\eqref{eq:Astat} is stated in stationarized form. The factor $1+\gamma^{a}$ appears on the current stock because $Z_t$ and $A_t$ are detrended by the technology trend, not by the output trend; see Subsection~\ref{subsec:bgp}.}
 
-The aggregate profits derived above are shared equally among the $A_{t-1}$ technologies in production, so each adopted technology pays its owner the per-technology profit flow $\pi_t^{a} \equiv \left[(\mu^{p}-1)/\mu^{p}\right] mc_t\, Y_t / A_{t-1}$.
-The owner discounts future profit flows with the household stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, \lambda_{t+1}\left(1+\tau_{t+1}^{c}\right)/[\lambda_t\left(1+\tau_t^{c}\right)] = \beta\, C_t/C_{t+1}$, where the second equality uses the condition for $C_t$ above.
+Let $v_t$ denote the cum-dividend value of an adopted technology: a claim to the per-technology profit flow $\pi_t^{a} \equiv \left[(\mu^{p}-1)/\mu^{p}\right] mc_t\, Y_t / A_{t-1}$, the aggregate profits derived above shared equally among the $A_{t-1}$ technologies in production.
+The owner discounts these profit flows with the household stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, \lambda_{t+1}\left(1+\tau_{t+1}^{c}\right)/[\lambda_t\left(1+\tau_t^{c}\right)] = \beta\, C_t/C_{t+1}$, where the second equality uses the condition for $C_t$ above.
 For multi-period payoffs, write $\mathit{SDF}_{t,t+s}\equiv\prod_{\ell=1}^{s}\mathit{SDF}_{t+\ell}$, with $\mathit{SDF}_{t,t}=1$.
-The cum-dividend value $v_t$ of an adopted technology is the discounted rent stream
+The value $v_t$ is the discounted rent stream
 \[
     v_t = \mathbb{E}_t \sum_{s=0}^{\infty} \phi^{s}\,\mathit{SDF}_{t,t+s}\,\pi_{t+s}^{a},
 \]
