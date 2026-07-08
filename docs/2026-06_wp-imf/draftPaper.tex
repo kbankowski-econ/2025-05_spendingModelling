@@ -776,7 +776,7 @@ The variable $j_t$ denotes the value of an unadopted technology evaluated at the
     -\mathbb{E}_t \sum_{s=0}^{\infty}\phi^{s}\,\mathit{SDF}_{t,t+s}\,Q_{t,s}\,s_{t+s}
     +\mathbb{E}_t \sum_{s=0}^{\infty}\phi^{s+1}\,\mathit{SDF}_{t,t+s+1}\,Q_{t,s}\,q_{t+s}\,v_{t+s+1}.
 \]
-The first term is the expected present value of adoption costs $s_{t+s}$ paid while the technology remains unadopted; the second is the expected present value of the adopted-technology value $v_{t+s+1}$ received when adoption occurs at $t+s$.
+The first term is the expected present value of per-technology adoption costs $s_{t+s}$ paid while the technology remains unadopted; the second is the expected present value of the adopted-technology value $v_{t+s+1}$ received when adoption occurs at $t+s$.
 Splitting off the current-period cost and next-period continuation value gives the recursive representation
 \[
     j_t = -s_t + \phi\,\mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\left(q_t v_{t+1} + (1-q_t)j_{t+1}\right)\right].
