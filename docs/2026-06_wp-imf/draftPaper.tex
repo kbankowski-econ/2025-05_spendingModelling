@@ -734,7 +734,7 @@ These profits accrue to the owners of adopted technologies and are the dividends
 The model distinguishes between the stock of created technologies $Z_t$, which are available for adoption, and the stock of adopted technologies $A_t$, which enter production.
 The gap $Z_t-A_t$ is the stock of unadopted technologies.
 
-Creation is a reduced-form process: lagged human capital captures learning by doing, while lagged effective public R\&D expands the stock of technologies available for adoption:
+Technology creation is a reduced-form process: lagged human capital captures learning by doing, while lagged effective public R\&D expands the stock of technologies available for adoption:
 \[
     \log\!\left(\frac{Z_t}{Z^{SS}}\right) = \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right) + \alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) + \alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) G_{t-1}^{RD}}{\left(1-e^{GRD}\right) G^{RD,SS}}\right).
 \]
@@ -753,13 +753,12 @@ The adoption law of motion is
 The first term is the flow of surviving unadopted technologies that become adopted; the second is the surviving stock of technologies already in production.
 The survival rate $\phi$ applies to both pools: an unadopted idea must survive before it can be converted into an adopted technology.\footnote{Equation~\eqref{eq:Astat} is stated in stationarized form. The factor $1+\gamma^{a}$ appears on the current stock because $Z_t$ and $A_t$ are detrended by the technology trend, not by the output trend; see Subsection~\ref{subsec:bgp}.}
 
-An adopted technology yields its owner a stream of profits: the aggregate profits derived above are shared equally among the $A_{t-1}$ technologies in production, so each period it pays the per-technology flow
+An adopted technology entitles its owner to a stream of profits.
+The aggregate residual profits derived above are shared equally among the $A_{t-1}$ technologies in production, so each adopted technology pays the per-technology flow
 \[
     \pi_t^{a} \equiv \frac{\mu^{p}-1}{\mu^{p}}\, \frac{mc_t\, Y_t}{A_{t-1}}.
 \]
-Let $v_t$ denote the cum-dividend value of this claim.
-The owner discounts future profit flows with the household stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, \lambda_{t+1}\left(1+\tau_{t+1}^{c}\right)/[\lambda_t\left(1+\tau_t^{c}\right)] = \beta\, C_t/C_{t+1}$, where the second equality uses the condition for $C_t$ above.
-For multi-period payoffs, write $\mathit{SDF}_{t,t+s}\equiv\prod_{\ell=1}^{s}\mathit{SDF}_{t+\ell}$, with $\mathit{SDF}_{t,t}=1$.
+The owner discounts future profit flows with the household stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, \lambda_{t+1}\left(1+\tau_{t+1}^{c}\right)/[\lambda_t\left(1+\tau_t^{c}\right)]$.\footnote{For multi-period payoffs, write $\mathit{SDF}_{t,t+s}\equiv\prod_{\ell=1}^{s}\mathit{SDF}_{t+\ell}$, with $\mathit{SDF}_{t,t}=1$.}
 The value $v_t$ is the discounted rent stream
 \[
     v_t = \mathbb{E}_t \sum_{s=0}^{\infty} \phi^{s}\,\mathit{SDF}_{t,t+s}\,\pi_{t+s}^{a},
