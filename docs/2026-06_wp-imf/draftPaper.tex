@@ -809,33 +809,6 @@ Choosing $S_t$ to maximize $\mathcal{J}_t$ then gives the adoption optimality co
 \end{equation}
 which equates the marginal cost of adoption effort---one unit of the good---to its marginal value: the probability gain $\varsigma\, q_t/S_t$ times the discounted, survival-adjusted adoption surplus.
 
-\subsection{Government: Fiscal and Monetary Policy}
-
-\paragraph{Fiscal rules.}
-The expenditure instruments follow
-\begin{equation}
-\begin{aligned}
-    G_t^{C} &= G^{C} + Y^{d}\,\varepsilon_t^{gc}, &\qquad
-    I_t^{GI} &= I^{GI} + Y^{d}\,\varepsilon_t^{igi}, \\
-    I_t^{GE} &= I^{GE} + Y^{d}\,\varepsilon_t^{ige}, &\qquad
-    G_t^{RD} &= G^{RD} + Y^{d}\,\varepsilon_t^{grd},
-\end{aligned}
-\end{equation}
-where variables without a time index denote steady-state values and $Y^{d}$ is steady-state demand.
-Each instrument is its steady-state level plus a scaled innovation; in the policy experiments these innovations follow a persistent path (AR(1), persistence 0.9; Section~\ref{sec:properties}).
-Government consumption is an ordinary instrument with its own innovation $\varepsilon_t^{gc}$.
-The budget-neutral experiments of Section~\ref{sec:results} finance a rise in investment or R\&D with an equal cut in consumption by setting $\varepsilon_t^{gc} = -\left(\varepsilon_t^{igi} + \varepsilon_t^{ige} + \varepsilon_t^{grd}\right)$; a non-neutral experiment sets it freely.
-Taxes and transfers stabilize debt,
-\begin{align}
-    \tau_t^{c} - \tau^{c} &= \rho_{\tau c}\left(\tau_{t-1}^{c} - \tau^{c}\right) + \left(1-\rho_{\tau c}\right)\gamma_{d}^{\tau c}\left(b_{t-1} - b^{*}\right) + \varepsilon_t^{\tau c}, \\
-    \tau_t^{w} - \tau^{w} &= \rho_{\tau w}\left(\tau_{t-1}^{w} - \tau^{w}\right) + \left(1-\rho_{\tau w}\right)\gamma_{d}^{\tau w}\left(b_{t-1} - b^{*}\right) + \varepsilon_t^{\tau w}, \\
-    T_t - T &= \rho_{T}\left(T_{t-1} - T\right) - \left(1-\rho_{T}\right)\gamma_{d}^{T}\left(b_{t-1} - b^{*}\right) Y^{d},
-\end{align}
-with $b_t = B_t / Y_t$ the debt-to-GDP ratio and $b^{*}$ its target.
-
-\paragraph{Monetary policy and government borrowing rate.}
-The policy rate follows the Taylor rule, and the government borrowing rate tracks the policy rate up to an exogenous spread shock; both equations are given in Section~\ref{sec:model}.
-
 \subsection{Market Clearing and Pricing}
 
 Aggregate demand and the gross-output wedge satisfy
