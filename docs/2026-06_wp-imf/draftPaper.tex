@@ -252,38 +252,32 @@ Equation~\eqref{eq:edutime} values an additional hour of education by the human 
 
 \subsection{Production and Technology}
 
-\paragraph{Final goods.}
-A competitive final good is a CES aggregate of a continuum of retail varieties with elasticity of substitution $\epsilon$, $Y_t^{d} = \left[\int_0^1 y_t(i)^{(\epsilon-1)/\epsilon}\, di\right]^{\epsilon/(\epsilon-1)}$.
-Cost minimization yields the demand for variety $i$, $y_t(i) = \left(P_t(i)/P_t\right)^{-\epsilon} Y_t^{d}$, and the price index $P_t = \left[\int_0^1 P_t(i)^{1-\epsilon}\, di\right]^{1/(1-\epsilon)}$.
+The nominal side of the production block is kept close to the textbook New Keynesian model.
+Retail varieties are aggregated into final demand, and retailers set prices subject to Calvo frictions with indexation.
+The derivation of final-good demand, reset-price conditions, the price law of motion, and price dispersion is in Appendix~\ref{app:equilibrium}; Appendix~\ref{app:glossary} reports the complete stationarized equation system.
 
-\paragraph{Retailers.}
-Retailers purchase intermediate output at the relative price $mc_t$---their marginal cost---and differentiate it into the varieties aggregated by the final good.
-They take $mc_t$ as given; what pins it down is the intermediate producers' markup rule below.
+The main departure is upstream from the price-setting firms.
+The model separates the standard New Keynesian pricing margin, carried by retailers, from the production and technology-valuation margin, carried by intermediate producers and technology adopters.
+This separation lets public infrastructure, household human capital, and endogenous technology affect real marginal cost and technology values without changing the Calvo pricing mechanism.
 
-\paragraph{Price setting.}
-Retailers set prices \`a la Calvo: each period a fraction $1-\theta_p$ of them reoptimizes, while the remainder index their price to past inflation with elasticity $\chi_p$.
-The reset price $\Pi_t^{*}$ solves the recursive system
-\begin{align}
-    x_{1,t} &= \lambda_t\, mc_t\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{-\epsilon} x_{1,t+1}\right], \label{eq:g1}\\
-    x_{2,t} &= \lambda_t\, \Pi_t^{*}\, Y_t^{d} + \beta\theta_p\, \mathbb{E}_t\!\left[\left(\frac{\Pi_t^{\chi_p}}{\Pi_{t+1}}\right)^{1-\epsilon} \frac{\Pi_t^{*}}{\Pi_{t+1}^{*}} x_{2,t+1}\right], \qquad \epsilon\, x_{1,t} = (\epsilon-1)\, x_{2,t}, \label{eq:g2}
-\end{align}
-together with the aggregate price law of motion $1 = \theta_p\left(\Pi_{t-1}^{\chi_p}/\Pi_t\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}$.
-
-\paragraph{Intermediate goods.}
-A continuum of monopolistically competitive intermediate firms produces the output that retailers buy.
-Output of a firm is given by the aggregate production function
+\paragraph{Production and marginal cost.}
+Intermediate producers use private capital and effective labor, taking public infrastructure and adopted technology as external production shifters.
+In symmetric equilibrium, aggregate production is
 \begin{equation} \label{eq:production}
     Y_t = A_{t-1}^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha} \left(K_{t-1}^{GI}\right)^{\alpha_G},
 \end{equation}
-where $A_{t-1}$ is the stock of adopted technologies, $K_{t-1}$ is private capital, $N_t = H_{t-1} L_t$ is effective labor, and $K_{t-1}^{GI}$ is the stock of public infrastructure capital, which augments private production as a positive externality.
+where $A_{t-1}$ is the stock of adopted technologies, $K_{t-1}$ is private capital, $N_t = H_{t-1}L_t$ is effective labor, and $K_{t-1}^{GI}$ is the stock of public infrastructure capital.
+Public infrastructure augments private production as a positive externality, while adopted technologies raise productivity through the love-of-variety term $A_{t-1}^{\vartheta-1}$.
 The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{In \citet{Anzoateguietal2019} a single intermediate-goods elasticity of substitution sets both the markup and the returns to variety.
 Here the retail markup is governed by $\epsilon$ and the intermediate producers' markup by the separate parameter $\mu^{p}$; $\vartheta$ retains only the returns-to-variety role, mapping the stock of adopted technologies into TFP through the love-of-variety term $A_t^{\vartheta-1}$.}
+
 Intermediate producers sell their output to retailers at the relative price $mc_t$, set as a fixed gross markup $\mu^{p}$ over unit factor cost.
-Cost minimization then implies the factor-demand conditions
+The corresponding factor-demand conditions are
 \begin{equation} \label{eq:factordemand}
     r_t^{k} = \alpha\, \frac{mc_t}{\mu^{p}} \frac{Y_t}{K_{t-1}}, \qquad w_t = (1-\alpha)\, \frac{mc_t}{\mu^{p}} \frac{Y_t}{N_t}, \qquad \frac{K_{t-1}}{N_t} = \frac{\alpha}{1-\alpha}\frac{w_t}{r_t^{k}}.
 \end{equation}
-The markup wedge leaves the profit flow $\frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t$, which accrues to the owners of adopted technologies and is what gives a technology its value (Appendix~\ref{app:equilibrium}).
+The markup wedge leaves the residual profit flow $\frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t$.
+These profits accrue to the owners of adopted technologies and are the dividends priced in the technology-value recursions derived in Appendix~\ref{app:equilibrium}.
 
 \paragraph{Technology creation and adoption.}
 Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model distinguishes between the stock of created technologies $Z_t$, available for adoption, and the stock of adopted technologies $A_t$ that enters production.
@@ -302,7 +296,8 @@ To capture the lag between creation and adoption, the stock of adopted technolog
 \begin{equation} \label{eq:A}
     A_{t} = q_t\, \phi \left[Z_{t-1} - A_{t-1}\right] + \phi A_{t-1},
 \end{equation}
-where $\phi$ is the survival rate of technologies and the time-varying probability of adoption is $q_t = q_0 \left(S_t/\Lambda_t\right)^{\varsigma}$, increasing in adopters' real expenditure $S_t$ scaled by the trend $\Lambda_t$.
+where $\phi$ is the survival rate of technologies and the time-varying probability of adoption is $q_t = \left(q_0+\varepsilon_t^q\right)\left(S_t/\Lambda_t\right)^{\varsigma}$, increasing in adopters' real expenditure $S_t$ scaled by the trend $\Lambda_t$.
+The shock $\varepsilon_t^q$ shifts the adoption probability directly and is used only in the technology-diffusion experiments.
 Competitive adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, equating the marginal cost of adoption effort to its discounted marginal value.
 The associated value functions and the optimality condition for $S_t$, together with the stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, C_t/C_{t+1}$ used to value these flows, are reported in Appendix~\ref{app:equilibrium}.
 The productivity payoff of the adopted-technology stock $A_t$ is realized in the production function~\eqref{eq:production}, with strength governed by $\vartheta$.
