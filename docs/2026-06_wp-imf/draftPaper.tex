@@ -305,8 +305,9 @@ To capture this diffusion lag, the stock of adopted technologies evolves as
 \begin{equation} \label{eq:A}
     A_{t} = q_t\, \phi \left[Z_{t-1} - A_{t-1}\right] + \phi A_{t-1},
 \end{equation}
-where $\phi$ is the survival rate of technologies and the time-varying probability of adoption is $q_t = \left(q_0+\varepsilon_t^q\right)\left(S_t/\Lambda_t\right)^{\varsigma}$, increasing in adopters' real expenditure $S_t$ scaled by the trend $\Lambda_t$.
+where $\phi$ is the survival rate of technologies applicable to both adopted and unadopted ones to reflect the fact that any idea may become obsolete with time. The variable $q_t$ is the time-varying probability of adoption determined by $q_t = \left(q_0+\varepsilon_t^q\right)\left(S_t/\Lambda_t\right)^{\varsigma}$, increasing in adopters' real expenditure $S_t$ scaled by the trend $\Lambda_t$ with elasticity $\varsigma$.
 The shock $\varepsilon_t^q$ shifts the adoption probability directly and is used only in the technology-diffusion experiments.
+
 Competitive adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, equating the marginal cost of adoption effort to its discounted marginal value.
 The associated value functions and the optimality condition for $S_t$ are reported in Appendix~\ref{app:equilibrium}.
 The productivity payoff of the adopted-technology stock $A_t$ is realized in the production function~\eqref{eq:production}, with strength governed by $\vartheta$.
