@@ -632,8 +632,9 @@ The framework can be used to assess the long-run output consequences of country-
 \section{Equilibrium Conditions} \label{app:equilibrium}
 %========================================================================
 
-This appendix collects the equilibrium conditions block by block, in the order of Section~\ref{sec:model}, and derives the optimality conditions where they come from household or firm problems.
-The conditions are stated in level form, matching the main text; the technology block is the one exception and is stated in stationarized form, as discussed in Subsection~\ref{subsec:bgp}.
+This appendix derives the model conditions that come from optimization problems, price-setting decisions, and technology-value recursions.
+It covers the household problem, the production and pricing block, and the creation and adoption of technologies; policy rules and market-clearing identities are stated in the main text.
+The conditions are written in the same notation as the main text, with the technology-adoption block stated in stationarized form as discussed in Subsection~\ref{subsec:bgp}.
 
 \subsection{Households}
 
@@ -813,9 +814,10 @@ which equates the marginal cost of adoption effort---one unit of the good---to i
 \section{Notation: Paper and Model Symbols} \label{app:glossary}
 %========================================================================
 
-This appendix maps the paper's notation to the variable and parameter names used in the model code (\texttt{models/}).
-The tables are complete: they list every endogenous variable, parameter, and exogenous shock declared in the model.
-The model-code column gives the exact name in the Dynare declarations; a dash (--) in the first column marks an object with no paper symbol---steady-state constants, log levels, reporting transforms, and purely computational auxiliaries.
+This appendix is a notation and code crosswalk.
+It maps the symbols used in the paper to the variable, parameter, and shock names used in the Dynare files in \texttt{models/}, and reports the representative AE and EMDE steady-state values or calibrations where applicable.
+The tables list every endogenous variable, parameter, and exogenous shock declared in the model.
+The model-code column gives the exact name in the Dynare declarations; a dash (--) in the paper-symbol column marks an object with no separate paper notation, such as steady-state constants, log levels, reporting transforms, and purely computational auxiliaries.
 
 \subsection{Endogenous Variables}
 
