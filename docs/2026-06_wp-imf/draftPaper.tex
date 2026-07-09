@@ -226,8 +226,12 @@ The household's standard saving margins imply
     \lambda_t &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\frac{R_t}{\Pi_{t+1}}\right], \label{eq:euler}\\
     \lambda_t &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\left(r_{t+1}^{k} + 1 - \delta\right)\right], \label{eq:capital}
 \end{align}
-Private capital evolves according to $K_t = (1-\delta) K_{t-1} + I_t$, where $\delta$ is the depreciation rate.
 Equation~\eqref{eq:mu} links wealth to the marginal utility of consumption net of the consumption tax, while equations~\eqref{eq:euler} and \eqref{eq:capital} are the bond and private-capital Euler equations.
+Private capital accumulates according to
+\begin{equation} \label{eq:privcapitalacc}
+    K_t = (1-\delta) K_{t-1} + I_t,
+\end{equation}
+where $\delta$ is the depreciation rate.
 
 The main household extension concerns human capital.
 Private human capital $H_t$ evolves according to
