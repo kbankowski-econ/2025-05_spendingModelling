@@ -252,13 +252,14 @@ Equation~\eqref{eq:edutime} values an additional hour of education by the human 
 
 \subsection{Production and Technology}
 
-The nominal side of the production block is kept close to the textbook New Keynesian model.
-Retail varieties are aggregated into final demand, and retailers set prices subject to Calvo frictions with indexation.
-The derivation of final-good demand, reset-price conditions, the price law of motion, and price dispersion is in Appendix~\ref{app:equilibrium}; Appendix~\ref{app:glossary} reports the complete stationarized equation system.
-
-The main departure is upstream from the price-setting firms.
-The model separates the standard New Keynesian pricing margin, carried by retailers, from the production and technology-valuation margin, carried by intermediate producers and technology adopters.
-This separation lets public infrastructure, household human capital, and endogenous technology affect real marginal cost and technology values without changing the Calvo pricing mechanism.
+\paragraph{Layered production structure.}
+Relative to a textbook New Keynesian model, the production block adds one institutional layer and several real-side growth margins.
+In the textbook setup, differentiated-good producers both operate the production technology and set sticky prices.
+Here, these roles are split.
+Retailers purchase intermediate output at the relative price $mc_t$, transform it one-for-one into differentiated varieties, and set prices subject to Calvo frictions.
+Intermediate producers operate the real production technology and sell to retailers at a fixed markup over unit factor cost.
+This split keeps the retailer's pricing problem standard conditional on $mc_t$, while allowing public infrastructure, household human capital, and adopted technologies to determine real marginal cost and the profits that give technologies value.
+Appendix~\ref{app:equilibrium} derives the final-good, pricing, production, and technology-value conditions; Appendix~\ref{app:glossary} reports the complete stationarized equation system.
 
 \paragraph{Production and marginal cost.}
 Intermediate producers use private capital and effective labor, taking public infrastructure and adopted technology as external production shifters.
@@ -279,27 +280,29 @@ The corresponding factor-demand conditions are
 The markup wedge leaves the residual profit flow $\frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t$.
 These profits accrue to the owners of adopted technologies and are the dividends priced in the technology-value recursions derived in Appendix~\ref{app:equilibrium}.
 
-\paragraph{Technology creation and adoption.}
+\paragraph{Technology creation.}
 Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model distinguishes between the stock of created technologies $Z_t$, available for adoption, and the stock of adopted technologies $A_t$ that enters production.
 The gap $Z_t - A_t$ is the stock of unadopted technologies.
-
-The creation of new technologies depends on two factors.
+Created technologies depend on two forces.
 First, higher human capital fosters innovation, reflecting a learning-by-doing channel as in \citet{ChangGomesSchorfheide2002}.
-Second, public R\&D spending $G_t^{RD}$ contributes directly to creation:
+Second, public R\&D spending $G_t^{RD}$ expands the stock of technologies available for adoption:
 \begin{equation} \label{eq:Z}
     \log\!\left(\frac{Z_t}{Z^{SS}}\right) = \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right) + \alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) + \alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) G_{t-1}^{RD}}{\left(1-e^{GRD}\right) G^{RD,SS}}\right),
 \end{equation}
 where only the productive fraction $\left(1-e_{t-1}^{GRD}\right)$ of (lagged) R\&D spending drives innovation: $e_t^{GRD}$ is the R\&D inefficiency wedge, equal to its steady-state value $e^{GRD}$ in the baseline and reduced when the R\&D efficiency gap is closed (Section~\ref{sec:results}).
 The raw spending $G_t^{RD}$ enters the government budget constraint~\eqref{eq:govbudget}.
 The coefficients $\alpha_{HA}$ and $\alpha_{RD}$ are the per-period loadings reported in Table~\ref{tab:parameters}; the implied long-run elasticities of created technology are $\alpha_{HA}/(1-\rho_A)$ and $\alpha_{RD}/(1-\rho_A)$.
-To capture the lag between creation and adoption, the stock of adopted technologies evolves as
+
+\paragraph{Technology adoption and valuation.}
+Creation does not raise productivity until technologies are adopted.
+To capture this diffusion lag, the stock of adopted technologies evolves as
 \begin{equation} \label{eq:A}
     A_{t} = q_t\, \phi \left[Z_{t-1} - A_{t-1}\right] + \phi A_{t-1},
 \end{equation}
 where $\phi$ is the survival rate of technologies and the time-varying probability of adoption is $q_t = \left(q_0+\varepsilon_t^q\right)\left(S_t/\Lambda_t\right)^{\varsigma}$, increasing in adopters' real expenditure $S_t$ scaled by the trend $\Lambda_t$.
 The shock $\varepsilon_t^q$ shifts the adoption probability directly and is used only in the technology-diffusion experiments.
 Competitive adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, equating the marginal cost of adoption effort to its discounted marginal value.
-The associated value functions and the optimality condition for $S_t$, together with the stochastic discount factor $\mathit{SDF}_{t+1} = \beta\, C_t/C_{t+1}$ used to value these flows, are reported in Appendix~\ref{app:equilibrium}.
+The associated value functions and the optimality condition for $S_t$ are reported in Appendix~\ref{app:equilibrium}.
 The productivity payoff of the adopted-technology stock $A_t$ is realized in the production function~\eqref{eq:production}, with strength governed by $\vartheta$.
 
 \subsection{Government: Fiscal and Monetary Policy}
