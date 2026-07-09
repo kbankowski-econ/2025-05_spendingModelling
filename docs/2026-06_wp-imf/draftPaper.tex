@@ -211,35 +211,40 @@ The representative household maximizes expected lifetime utility,
 \end{equation}
 where $C_t$ is consumption, $\beta \in (0,1)$ is the discount factor, $\varphi$ is the inverse Frisch elasticity, and $\omega$ scales the disutility of time spent away from leisure.
 The household's unit time endowment is split between labor supply $L_t$, time devoted to human capital accumulation $E_t$, and leisure $1 - L_t - E_t$.
+Because work and education enter the same time-cost term, the household trades off the current return to labor against the future return to human-capital accumulation.
 The flow budget constraint, in real terms, is
 \begin{equation} \label{eq:hhbudget}
     \left(1+\tau_t^{c}\right) C_t + I_t + B_t = \left(1-\tau_t^{w}\right) w_t N_t + r_t^{k} K_{t-1} + \frac{R_{t-1}}{\Pi_t} B_{t-1} + T_t + \Omega_t,
 \end{equation}
-where $\tau_t^{c}$ and $\tau_t^{w}$ are the consumption and labor income tax rates, $I_t$ is private investment, $B_t$ is real holdings of government debt paying the gross return $R_{t-1}$, $\Pi_t$ is gross inflation, $w_t$ is the real wage, $N_t \equiv H_{t-1} L_t$ is effective labor (the human-capital stock enters predetermined), $r_t^{k}$ is the rental rate of private capital $K_t$, $T_t$ are lump-sum transfers, and $\Omega_t$ are profits rebated by firms and technology adopters.
+where $\tau_t^{c}$ and $\tau_t^{w}$ are the consumption and labor income tax rates, $I_t$ is private investment, $B_t$ is real holdings of government debt paying the gross return $R_{t-1}$, $\Pi_t$ is gross inflation, $w_t$ is the real wage, $N_t \equiv H_{t-1} L_t$ is effective labor, $r_t^{k}$ is the rental rate of private capital, $T_t$ are lump-sum transfers, and $\Omega_t$ are rebated profits.
+The stock variables that generate current income, $K_{t-1}$ and $H_{t-1}$, are predetermined at date $t$.
 
-Let $\lambda_t$ denote the marginal utility of consumption.
-Optimal choices over consumption, debt, and private capital imply
+Let $\lambda_t$ denote the marginal value of real wealth.
+The household's standard saving margins imply
 \begin{align}
     \lambda_t &= \frac{1}{\left(1+\tau_t^{c}\right) C_t}, \label{eq:mu}\\
     \lambda_t &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\frac{R_t}{\Pi_{t+1}}\right], \label{eq:euler}\\
     \lambda_t &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\left(r_{t+1}^{k} + 1 - \delta\right)\right], \qquad K_t = (1-\delta) K_{t-1} + I_t, \label{eq:capital}
 \end{align}
 where $\delta$ is the depreciation rate of private capital.
+Equation~\eqref{eq:mu} links wealth to the marginal utility of consumption net of the consumption tax, while equations~\eqref{eq:euler} and \eqref{eq:capital} are the bond and private-capital Euler equations.
 
-The novel block concerns human capital.
+The main household extension concerns human capital.
 Private human capital $H_t$ evolves according to
 \begin{equation} \label{eq:humancapital}
     H_{t} = \left(1 - \delta^{h}\right) H_{t-1} + \chi \left(E_t\right)^{\gamma} \left(\frac{K_{t-1}^{GE}}{\Lambda_{t-1}}\right)^{\mu},
 \end{equation}
 where $\delta^{h}$ is the depreciation rate of human capital, $\chi$ is a scale constant for the human-capital technology---pinned in the steady state so that the time devoted to education matches its calibration target---$K_t^{GE}$ is the stock of public human capital (e.g., schools and hospitals), and $\Lambda_t$ scales public human capital to keep the relationship consistent with balanced growth.
 The elasticities $\gamma$ and $\mu$ govern the response of human capital formation to the household's time input and to the public human capital stock, respectively.
-Letting $\lambda_t^{H}$ be the shadow value of human capital, the choices of labor and education time satisfy
+Public human capital therefore raises the productivity of household education time, rather than entering household utility directly.
+Letting $\lambda_t^{H}$ be the shadow value of human capital, the labor and education-time conditions are
 \begin{align}
     \omega \left(L_t + E_t\right)^{\varphi} &= \lambda_t \left(1-\tau_t^{w}\right) w_t H_{t-1}, \label{eq:labor}\\
     \omega \left(L_t + E_t\right)^{\varphi} &= \lambda_t^{H}\, \chi \gamma \left(E_t\right)^{\gamma-1} \left(\frac{K_{t-1}^{GE}}{\Lambda_{t-1}}\right)^{\mu}, \label{eq:edutime}\\
     \lambda_t^{H} &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\left(1-\tau_{t+1}^{w}\right) w_{t+1} L_{t+1} + \lambda_{t+1}^{H}\left(1-\delta^{h}\right)\right]. \label{eq:hcvalue}
 \end{align}
-Equation~\eqref{eq:labor} is the standard labor-supply condition; equation~\eqref{eq:edutime} equates the marginal disutility of time to the value of the human capital it builds; and equation~\eqref{eq:hcvalue} prices human capital by its discounted contribution to future labor income.
+Equation~\eqref{eq:labor} values an additional hour of work at the after-tax wage in efficiency units.
+Equation~\eqref{eq:edutime} values an additional hour of education by the human capital it creates, and equation~\eqref{eq:hcvalue} prices human capital as the discounted value of future labor income plus the undepreciated continuation stock.
 
 \subsection{Production and Technology}
 
