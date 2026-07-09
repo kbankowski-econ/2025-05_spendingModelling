@@ -705,6 +705,13 @@ Aggregating over reoptimizing and indexing retailers gives the price law of moti
 \[
     1 = \theta_p\left(\frac{\Pi_{t-1}^{\chi_p}}{\Pi_t}\right)^{1-\epsilon} + (1-\theta_p)\left(\Pi_t^{*}\right)^{1-\epsilon}.
 \]
+The same aggregation gives the price-dispersion wedge
+\[
+    v_t^{p}
+    = \theta_p\left(\frac{\Pi_{t-1}^{\chi_p}}{\Pi_t}\right)^{-\epsilon} v_{t-1}^{p}
+    + \left(1-\theta_p\right)\left(\Pi_t^{*}\right)^{-\epsilon}.
+\]
+This wedge maps final demand into gross output, $Y_t = v_t^{p}Y_t^{d}$, in the market-clearing condition below.
 
 \paragraph{Production and Marginal Cost.}
 Intermediate producer $i$ uses private capital and effective labor, taking public infrastructure and adopted technology as external production shifters:
@@ -828,11 +835,10 @@ The policy rate follows the Taylor rule, and the government borrowing rate track
 
 \subsection{Market Clearing and Pricing}
 
-Aggregate demand, the gross-output wedge, and the price-dispersion term satisfy
+Aggregate demand and the gross-output wedge satisfy
 \begin{align}
     Y_t^{d} &= C_t + I_t + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + \left(\frac{Z_{t-1}}{A_{t-1}} - 1\right) S_t, \\
-    Y_t &= v_t^{p}\, Y_t^{d}, \qquad
-    v_t^{p} = \theta_p\left(\frac{\Pi_{t-1}^{\chi_p}}{\Pi_t}\right)^{-\epsilon} v_{t-1}^{p} + \left(1-\theta_p\right)\left(\Pi_t^{*}\right)^{-\epsilon},
+    Y_t &= v_t^{p}\, Y_t^{d},
 \end{align}
 where the last term, $\left(Z_{t-1}/A_{t-1}-1\right)S_t$, is the resource cost of technology adoption---the term collected in $\mathcal{R}_t$ in the market-clearing condition of Section~\ref{sec:model}---with $S_t$ the adoption expenditure.
 
