@@ -1000,11 +1000,14 @@ Tax rates equal their steady-state values plus independent tax-rate shocks, whil
 transfers respond to the lagged deviation of debt-to-GDP from target:
 \modelcode{tauc = taucss+epsi\_tauc;\\
 tauw = tauwss+epsi\_tauw;\\
-T-STEADY\_STATE(T) = rho\_T*(T(-1)-STEADY\_STATE(T))\\
-\hspace*{2em}+(1-rho\_T)*(-gamma\_d\_T*(by(-1)-byss)*ydss);}
+T-STEADY\_STATE(T) = (1-debtfin)*(rho\_T*(T(-1)-STEADY\_STATE(T))\\
+\hspace*{2em}+(1-rho\_T)*(-gamma\_d\_T*(by(-1)-byss)*ydss));}
 The minus sign in the transfer rule means transfers fall when debt is above
 target. Tax rates do not respond to debt, so transfers are the only active fiscal
-feedback.
+feedback. In non-budget-neutral experiments, the auxiliary dummy
+\texttt{debtfin} equals one throughout the spending path and holds transfers at
+their steady-state value; it returns to zero afterward so the transfer feedback
+restores debt stability.
 
 \subsection{Monetary Policy and the Borrowing Rate}
 

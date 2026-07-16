@@ -71,6 +71,7 @@ epsi_effgi
 epsi_grd       % Shock to R&D spending
 epsi_q
 epsi_effgrd
+debtfin        % Dummy: one suspends the transfer rule for debt-financed experiments
 ;
 %--------------------------
 % Define parameters
@@ -240,7 +241,7 @@ tauc = taucss+epsi_tauc;
 // Labor-income tax rate
 tauw = tauwss+epsi_tauw;
 // Lump-sum transfers
-T-STEADY_STATE(T) = rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*(by(-1)-byss)*ydss);
+T-STEADY_STATE(T) = (1-debtfin)*(rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*(by(-1)-byss)*ydss));
 // Gap in infrastructure spending efficiency (e^GI)
 eGI = eGI_ss-epsi_effgi;
 // Gap in education and health spending efficiency (e^GE; positive shock closes the gap)
@@ -290,6 +291,11 @@ var epsi_grd;
 periods 1:1000 ;
 values
     0.01
+;
+var debtfin;
+periods 1:1000 ;
+values
+    1
 ;
 end;
 perfect_foresight_setup(periods=2000);

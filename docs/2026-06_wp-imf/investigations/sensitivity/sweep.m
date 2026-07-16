@@ -81,6 +81,7 @@ for ie = 1:size(exps, 1)
     modelName = exps{ie, 1};
     instVar   = exps{ie, 2};
     shockSpec = exps{ie, 3};
+    shockSpec{end + 1} = {'debtfin', 'const', 1, '1:1000'};
     fprintf('\n=================== %s (instrument %s) ===================\n', modelName, instVar);
 
     % --- build the model in the isolated work dir ---

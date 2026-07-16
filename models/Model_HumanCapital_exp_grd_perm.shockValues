@@ -3,3 +3,8 @@ periods 1:1000 ;
 values
     0.01
 ;
+var debtfin;
+periods 1:1000 ;
+values
+    1
+;

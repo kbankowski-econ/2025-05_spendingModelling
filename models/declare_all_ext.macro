@@ -75,6 +75,7 @@ epsi_eff
 epsi_cgrd       % Shock to R&D spending
 epsi_q
 epsi_effcgrd
+debtfin        % Dummy: one suspends the transfer rule for debt-financed experiments
 ;
 
 %--------------------------

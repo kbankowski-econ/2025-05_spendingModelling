@@ -51,6 +51,10 @@ cd(fullfile(project_path, 'models'));
 % An optional 5th element sets the sprintf format of the written values
 % (default '%g'); 'roundtrip' writes the shortest decimal that parses back
 % to the exact double, where the historical files carried full precision.
+% Models named *_exp_* are the non-budget-neutral expansions. Their generated
+% shock files also set debtfin=1 over 1:1000, holding transfers at steady state
+% until the spending path ends. The canonical NK benchmark is excluded because
+% it has no government debt or transfer rule.
 % The post-simulation commands (solver plus display-only multiplier
 % reporting) are identical for all models and live in the shared
 % models/postSimul.mod.
@@ -218,6 +222,10 @@ for iModel = 1:size(modelList, 1)
     thisParams = modelList{iModel, 2};
     thisEff    = modelList{iModel, 3};
     thisShocks = modelList{iModel, 4};
+
+    if contains(thisModel, '_exp_') && ~contains(thisModel, 'Model_NK')
+        thisShocks{end + 1} = {'debtfin', 'const', 1, '1:1000'};
+    end
 
     utils.subroutines.generateShocksFile([thisModel '.shockValues'], thisShocks);
 

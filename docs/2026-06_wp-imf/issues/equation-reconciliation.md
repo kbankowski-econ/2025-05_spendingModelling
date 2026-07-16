@@ -76,6 +76,16 @@ exactly unchanged and the maximum absolute difference in simulated endogenous pa
 is `1.39e-13`; both exported CSV datasets are byte-identical. Result MAT containers
 changed because they include model metadata and eigenvalue information.
 
+## Transfer-rule debt-financing dummy — 2026-07-16
+The transfer rule now carries the deterministic binary switch `debtfin`. It is
+one over quarters `1:1000` in all 18 non-budget-neutral `*_exp_*` models, which
+holds transfers exactly at steady state throughout the spending path and makes
+the experiments entirely debt-financed. It returns to zero afterward, restoring
+the debt-feedback rule; all budget-neutral experiments leave it at zero. All 44
+models solve with unchanged steady states. Budget-neutral paths are exactly
+unchanged, and the maximum absolute change among non-fiscal endogenous paths is
+`1.03e-13`; only the intended transfer, deficit, and debt paths change materially.
+
 ## 🧹 Model simplification pass — 2026-07 (supersedes item 8 and parts of the Match list)
 After the reconciliation above, the model was pruned so only live, paper-described objects
 remain. Every change was a numerical no-op (`figureNumbers` byte-identical each time) unless

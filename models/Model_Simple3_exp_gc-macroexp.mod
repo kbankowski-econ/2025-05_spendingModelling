@@ -79,6 +79,7 @@ epsi_effgi
 epsi_grd       % Shock to R&D spending
 epsi_q
 epsi_effgrd
+debtfin        % Dummy: one suspends the transfer rule for debt-financed experiments
 ;
 %--------------------------
 % Define parameters
@@ -232,7 +233,7 @@ Kg = STEADY_STATE(Kg);
 // Government debt
 b = (R(-1)/PI)*b(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;
 // Lump-sum transfers
-T-STEADY_STATE(T) = rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*(by(-1)-byss)*ydss);
+T-STEADY_STATE(T) = (1-debtfin)*(rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*(by(-1)-byss)*ydss));
 // Debt to GDP
 by = b/y;
 // Government spending instruments (subject to expenditure shocks)
@@ -1296,6 +1297,11 @@ values
     2.39763e-48
     2.15787e-48
     1.94208e-48
+;
+var debtfin;
+periods 1:1000 ;
+values
+    1
 ;
 end;
 perfect_foresight_setup(periods=2000);
