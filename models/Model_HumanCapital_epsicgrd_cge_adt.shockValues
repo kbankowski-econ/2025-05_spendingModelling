@@ -58,3 +58,8 @@ periods 1:1000 ;
 values
     -0.01
 ;
+var eTaux;
+periods 1:2000 ;
+values
+    1
+;

@@ -104,7 +104,7 @@ tauc = taucss+epsi_tauc;
 tauw = tauwss+epsi_tauw;
 
 // Lump-sum transfers
-T-STEADY_STATE(T) = (1-debtfin)*(rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*(by(-1)-byss)*ydss));
+T-STEADY_STATE(T) = rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*eTaux*(by(-1)-byss)*ydss);
 
 // Gap in infrastructure spending efficiency (e^GI)
 eGI = eGI_ss-epsi_effgi;

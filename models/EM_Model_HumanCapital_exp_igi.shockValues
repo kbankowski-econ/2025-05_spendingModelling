@@ -1002,8 +1002,8 @@ values
     2.15787e-48
     1.94208e-48
 ;
-var debtfin;
-periods 1:1000 ;
+var eTaux;
+periods 1001:2000 ;
 values
     1
 ;

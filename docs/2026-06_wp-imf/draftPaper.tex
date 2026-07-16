@@ -359,14 +359,13 @@ The consumption- and labor-income-tax rates equal their steady-state values unle
 The exercises in this paper set both shocks to zero.
 Tax rates do not respond to debt; instead, lump-sum transfers ensure debt stability according to
 \begin{equation} \label{eq:transferrule}
-\begin{aligned}
-    T_t-T^{SS} = \left(1-d_t^B\right)\big[&\rho_T\left(T_{t-1}-T^{SS}\right) \\
-    &{}- \left(1-\rho_T\right)\gamma_d^T\left(b_{t-1}-b^*\right)Y^{d,SS}\big].
-\end{aligned}
+    T_t-T^{SS} = \rho_T\left(T_{t-1}-T^{SS}\right)
+    - \left(1-\rho_T\right)\gamma_d^T e_{T,t}^{\mathrm{aux}}
+    \left(b_{t-1}-b^*\right)Y^{d,SS}.
 \end{equation}
-Here $d_t^B$ is an auxiliary dummy that equals one throughout the debt-financed model-properties exercises in Section~\ref{sec:properties}, holding transfers at their steady-state value for the full spending-shock path.
-It returns to zero afterward, when the positive coefficient $\gamma_d^T$ makes transfers fall in response to debt above target and thereby restores debt stability.
-The policy experiments in Section~\ref{sec:results} instead keep $d_t^B=0$ and reallocate spending permanently toward a productive category through an equal reduction in government consumption, making primary spending ex ante budget-neutral.
+Here $e_{T,t}^{\mathrm{aux}}$ is an auxiliary dummy that equals zero throughout the debt-financed model-properties exercises in Section~\ref{sec:properties}, switching off the transfer response to debt for the full spending-shock path.
+It returns to one afterward, when the positive coefficient $\gamma_d^T$ makes transfers fall in response to debt above target and thereby restores debt stability.
+The policy experiments in Section~\ref{sec:results} instead keep $e_{T,t}^{\mathrm{aux}}=1$ and reallocate spending permanently toward a productive category through an equal reduction in government consumption, making primary spending ex ante budget-neutral.
 
 \paragraph{Monetary policy and government borrowing rate.}
 The central bank sets the policy rate $R_t^{mp}$ according to a Taylor rule,
