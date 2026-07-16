@@ -318,7 +318,8 @@ The productivity payoff of the adopted-technology stock $A_t$ is realized in the
 
 \subsection{Government: Fiscal and Monetary Policy}
 
-The fiscal authority determines the composition of public spending, how efficiently productive outlays are converted into capital and technology, and how spending is financed while public debt is stabilized.
+The fiscal authority determines the composition of public spending and how it is financed while public debt is stabilized.
+It can also improve the productivity of spending by narrowing the efficiency gaps, which measure the fraction of investment and R\&D outlays not converted into productive capital or technology.
 The monetary authority sets the policy rate, which anchors the government's borrowing rate.
 
 \paragraph{Government budget.}
@@ -332,13 +333,17 @@ The primary spending terms are government consumption $G_t^C$, infrastructure in
 Revenues come from taxes on labor income, $\tau_t^w w_tN_t$, and consumption, $\tau_t^cC_t$.
 All spending enters the budget constraint at its full fiscal cost, irrespective of how much becomes productive.
 
-\paragraph{Spending instruments and productive uses.}
+\paragraph{Spending instruments and efficiency.}
 The four spending instruments can be moved independently through their respective expenditure shocks.
+Let $X_t^x$ denote $G_t^C$, $I_t^{GI}$, $I_t^{GE}$, or $G_t^{RD}$ for $x=C,GI,GE,RD$, respectively.
+Each instrument follows a simple spending rule under which it deviates from its steady-state level by an innovation scaled to steady-state aggregate demand:
+\begin{equation} \label{eq:spendingrule}
+    X_t^x = X^{x,SS} + Y^{d,SS}\varepsilon_t^x, \qquad x\in\{C,GI,GE,RD\}.
+\end{equation}
+The persistence and duration of $\varepsilon_t^x$ are determined by the experiment.
 Government consumption uses resources but does not build a productive stock.
 Infrastructure investment builds public infrastructure capital $K_t^{GI}$, education and health investment builds public education and health capital $K_t^{GE}$, and public R\&D expands the stock of technologies available for adoption.
-
-\paragraph{Public capital and spending efficiency.}
-The productive contribution of investment depends on how efficiently each outlay is converted into capital:
+For the two investment instruments, productive capital evolves according to
 \begin{align}
     K_t^{GI} &= \left(1 - \delta^{GI}\right) K_{t-1}^{GI} + \left(1 - e_t^{GI}\right) I_t^{GI}, \label{eq:kgi} \\
     K_t^{GE} &= \left(1 - \delta^{GE}\right) K_{t-1}^{GE} + \left(1 - e_t^{GE}\right) I_t^{GE}. \label{eq:kge}
