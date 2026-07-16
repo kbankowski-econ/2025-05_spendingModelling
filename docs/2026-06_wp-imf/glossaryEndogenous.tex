@@ -56,8 +56,8 @@
 25 & $G_t^{C}$ & Government consumption \gloseq{G^C_t=G^{C,SS}+Y^{d,SS}\varepsilon^{c}_t} & \texttt{Gc} & 0.135 & 0.094 \\
 26 & $I_t^{GI}$ & Public infrastructure investment \gloseq{I^{GI}_t=I^{GI,SS}+Y^{d,SS}\varepsilon^{gi}_t} & \texttt{Igi} & 0.022 & 0.033 \\
 27 & $K_t^{GI}$ & Public infrastructure capital \gloseq{g_t K^{GI}_t=(1-\delta)K^{GI}_{t-1}+(1-e^{GI}_t)I^{GI}_t} & \texttt{Kg} & 0.497 & 0.612 \\
-28 & $I_t^{GE}$ & Public human-capital investment \gloseq{I^{GE}_t=I^{GE,SS}+Y^{d,SS}\varepsilon^{ge}_t} & \texttt{Ige} & 0.011 & 0.013 \\
-29 & $K_t^{GE}$ & Public human-capital stock \gloseq{g_t K^{GE}_t=(1-\delta)K^{GE}_{t-1}+(1-e^{GE}_t)I^{GE}_t} & \texttt{Kge} & 0.26 & 0.277 \\
+28 & $I_t^{GE}$ & Public education and health investment \gloseq{I^{GE}_t=I^{GE,SS}+Y^{d,SS}\varepsilon^{ge}_t} & \texttt{Ige} & 0.011 & 0.013 \\
+29 & $K_t^{GE}$ & Public education and health capital \gloseq{g_t K^{GE}_t=(1-\delta)K^{GE}_{t-1}+(1-e^{GE}_t)I^{GE}_t} & \texttt{Kge} & 0.26 & 0.277 \\
 30 & $G_t^{RD}$ & Public R\&D spending \gloseq{G^{RD}_t=G^{RD,SS}+Y^{d,SS}\varepsilon^{rd}_t} & \texttt{Grd} & 0.004 & 0.001 \\
 31 & $G_t$ & Total government spending \gloseq{G_t=G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t} & \texttt{G} & 0.173 & 0.141 \\
 32 & $B_t$ & Public debt \gloseq{B_t=\tfrac{R_{t-1}}{\Pi_t}\tfrac{B_{t-1}}{g_t}+G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t+T_t-\tau^w_t w_t N_t-\tau^c_t C_t} & \texttt{b} & 2.996 & 1.607 \\
@@ -66,9 +66,9 @@
 35 & $\tau_t^{c}$ & Consumption-tax rate \gloseq{\tau^c_t-\tau^c=\rho_{\tau c}(\tau^c_{t-1}-\tau^c)+(1-\rho_{\tau c})\gamma^{\tau c}_d(b_{t-1}-b^*)+\varepsilon^{\tau c}_t} & \texttt{tauc} & 0.18 & 0.15 \\
 36 & $\tau_t^{w}$ & Labor-income-tax rate \gloseq{\tau^w_t-\tau^w=\rho_{\tau w}(\tau^w_{t-1}-\tau^w)+(1-\rho_{\tau w})\gamma^{\tau w}_d(b_{t-1}-b^*)+\varepsilon^{\tau w}_t} & \texttt{tauw} & 0.25 & 0.1 \\
 37 & $R_t^{mp}$ & Monetary-policy rate \gloseq{\tfrac{R^{mp}_t}{R^{SS}}=\big(\tfrac{R^{mp}_{t-1}}{R^{SS}}\big)^{\rho_R}\big[(\tfrac{\Pi_t}{\Pi})^{\gamma_\pi}(\tfrac{Y^d_t}{Y^{d,SS}})^{\gamma_y}\big]^{1-\rho_R}e^{\varepsilon^{mp}_t}} & \texttt{Rmp} & 1.006 & 1.009 \\
-38 & $R_t$ & Government borrowing rate \gloseq{\log R_t=\rho_{RG}R_{t-1}+(1-\rho_{RG})\log R^{mp}_t+\varepsilon^{spr}_t} & \texttt{R} & 1.006 & 1.009 \\
+38 & $R_t$ & Government borrowing rate \gloseq{\log R_t=\rho_{RG}\log R_{t-1}+(1-\rho_{RG})\log R^{mp}_t+\varepsilon^{spr}_t} & \texttt{R} & 1.006 & 1.009 \\
 39 & $e_t^{GI}$ & Infrastructure efficiency gap \gloseq{e^{GI}_t=e^{GI}-\varepsilon^{gi,\mathit{eff}}_t} & \texttt{eGI} & 0.359 & 0.406 \\
-40 & $e_t^{GE}$ & Human-capital efficiency gap \gloseq{e^{GE}_t=e^{GE}-\varepsilon^{ge,\mathit{eff}}_t} & \texttt{eGE} & 0.306 & 0.329 \\
+40 & $e_t^{GE}$ & Education and health efficiency gap \gloseq{e^{GE}_t=e^{GE}-\varepsilon^{ge,\mathit{eff}}_t} & \texttt{eGE} & 0.306 & 0.329 \\
 41 & $e_t^{GRD}$ & R\&D efficiency gap \gloseq{e^{GRD}_t=e^{GRD}-\varepsilon^{rd,\mathit{eff}}_t} & \texttt{eGRD} & 0.399 & 0.2 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Market clearing and equilibrium}} \\

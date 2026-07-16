@@ -147,10 +147,8 @@ dropped entirely. As of 2026-07 the model and paper are fully reconciled on equa
 notation; the only intentional presentation difference is the `g`-detrending (paper main
 text in levels, model/appendix stationarized), which the appendix states.
 
-⚠ One dormant model oddity (not a paper discrepancy — the paper mirrors the code):
-the borrowing-rate equation mixes logs and levels, `log(R) = rho_RG*R(-1) +
-(1-rho_RG)*log(Rmp) + epsi_spread` (`model_block.modpart:80`) — the lagged term is
-linear `R(-1)`, not `log(R(-1))`. Inert at the current calibration (`rho_RG=0`), but
-would be dimensionally wrong for any `rho_RG>0`. If persistence is ever wanted,
-change the model to `log(R(-1))` and re-run; the paper's eq:spread would then match
-both in form and spirit.
+The previously dormant borrowing-rate oddity is fixed: the persistence term is now
+`rho_RG*log(R(-1))`, so the equation is consistently expressed in logs. The correction
+is numerically inert at the current calibration (`rho_RG=0`) but makes the equation
+well-defined if borrowing-rate persistence is used in future work. The paper's
+equation~`eq:spread` and generated glossary were updated at the same time.

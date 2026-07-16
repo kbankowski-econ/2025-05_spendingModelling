@@ -77,12 +77,12 @@ varsigma*q*phi*SDF(+1)/(1+gammaa)*A(-1)/A*(V(+1)-J(+1)) = S;
 Rmp/Rss = (Rmp(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
 
 // Government borrowing rate (tracks the policy rate up to an exogenous shock)
-log(R) = rho_RG*R(-1)+ (1-rho_RG)*log(Rmp) + epsi_spread;
+log(R) = rho_RG*log(R(-1)) + (1-rho_RG)*log(Rmp) + epsi_spread;
 
 // Public infrastructure capital
 Kg*g = (1-delta)*Kg(-1)+(1-eGI)*Igi;
 
-// Public human-capital stock
+// Public education and health capital
 Kge*g = (1-delta)*Kge(-1)+(1-eGE)*Ige;
 
 // Government debt
@@ -94,7 +94,7 @@ by = b/y;
 // Government spending instruments (subject to expenditure shocks)
 Gc = Gcy*ydss+ydss*epsi_gc;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_gc shock)
 Igi = Igiy*ydss+ydss*epsi_igi;                                     // infrastructure investment
-Ige = Igey*ydss+ydss*epsi_ige;                                  // human-capital investment
+Ige = Igey*ydss+ydss*epsi_ige;                                  // education and health investment
 Grd = Grdy*ydss+ydss*epsi_grd;                               // R&D spending
 
 // Consumption tax rule
@@ -109,7 +109,7 @@ T-STEADY_STATE(T) = rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*(by(-1)-
 // Gap in infrastructure spending efficiency (e^GI)
 eGI = eGI_ss-epsi_effgi;
 
-// Gap in human-capital spending efficiency (e^GE; positive shock closes the gap)
+// Gap in education and health spending efficiency (e^GE; positive shock closes the gap)
 eGE = eGE_ss-epsi_effge;
 
 // Gap in R&D spending efficiency (e^GRD)

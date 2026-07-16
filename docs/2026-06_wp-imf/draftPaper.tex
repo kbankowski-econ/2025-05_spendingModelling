@@ -318,30 +318,53 @@ The productivity payoff of the adopted-technology stock $A_t$ is realized in the
 
 \subsection{Government: Fiscal and Monetary Policy}
 
-\paragraph{Public capital and efficiency.}
-The productive contribution of public investment depends on how efficiently spending is converted into capital.
-Infrastructure investment $I_t^{GI}$ builds public infrastructure capital $K_t^{GI}$, while public education and health investment $I_t^{GE}$ builds the public human-capital stock $K_t^{GE}$:
+The fiscal authority determines the composition of public spending, how efficiently productive outlays are converted into capital and technology, and how spending is financed while public debt is stabilized.
+The monetary authority sets the policy rate, which anchors the government's borrowing rate.
+
+\paragraph{Government budget.}
+Let $B_t$ denote real public debt and $b_t=B_t/Y_t$ the debt-to-GDP ratio.
+Current debt equals the real value of inherited debt plus the primary deficit:
+\begin{equation} \label{eq:govbudget}
+    B_t = \frac{R_{t-1}}{\Pi_t} B_{t-1} + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + T_t - \tau_t^{w} w_t N_t - \tau_t^{c} C_t,
+\end{equation}
+where $R_{t-1}/\Pi_t$ is the realized gross real return on inherited debt.
+The primary spending terms are government consumption $G_t^C$, infrastructure investment $I_t^{GI}$, education and health investment $I_t^{GE}$, public R\&D $G_t^{RD}$, and lump-sum transfers $T_t$.
+Revenues come from taxes on labor income, $\tau_t^w w_tN_t$, and consumption, $\tau_t^cC_t$.
+All spending enters the budget constraint at its full fiscal cost, irrespective of how much becomes productive.
+
+\paragraph{Spending instruments and productive uses.}
+The four spending instruments can be moved independently through their respective expenditure shocks.
+Government consumption uses resources but does not build a productive stock.
+Infrastructure investment builds public infrastructure capital $K_t^{GI}$, education and health investment builds public education and health capital $K_t^{GE}$, and public R\&D expands the stock of technologies available for adoption.
+
+\paragraph{Public capital and spending efficiency.}
+The productive contribution of investment depends on how efficiently each outlay is converted into capital:
 \begin{align}
     K_t^{GI} &= \left(1 - \delta^{GI}\right) K_{t-1}^{GI} + \left(1 - e_t^{GI}\right) I_t^{GI}, \label{eq:kgi} \\
     K_t^{GE} &= \left(1 - \delta^{GE}\right) K_{t-1}^{GE} + \left(1 - e_t^{GE}\right) I_t^{GE}. \label{eq:kge}
 \end{align}
-The parameters $\delta^{GI}$ and $\delta^{GE}$ are the respective depreciation rates, and $e_t^{GI}$ and $e_t^{GE}$ are spending-efficiency gaps.
-Only the fraction $1-e_t^x$ of an investment flow becomes productive capital, so closing an efficiency gap raises capital formation without increasing expenditure.
-The R\&D gap operates in the same way: only the productive fraction $\left(1-e_{t-1}^{GRD}\right)G_{t-1}^{RD}$ enters technology creation in equation~\eqref{eq:Z}.
+The parameters $\delta^{GI}$ and $\delta^{GE}$ are the respective depreciation rates, while $e_t^{GI}$ and $e_t^{GE}$ are spending-efficiency gaps.
+Only the fraction $1-e_t^x$ of an investment flow becomes productive capital, so closing a gap raises capital formation without increasing expenditure.
+The R\&D gap operates analogously: only the productive fraction $\left(1-e_{t-1}^{GRD}\right)G_{t-1}^{RD}$ enters technology creation in equation~\eqref{eq:Z}.
 
-\paragraph{Budget and instruments.}
-Let $B_t$ denote real public debt and $b_t = B_t/Y_t$ the debt-to-GDP ratio.
-The government finances its four expenditure instruments and lump-sum transfers with consumption and labor-income taxes and new debt:
-\begin{equation} \label{eq:govbudget}
-    B_t = \frac{R_{t-1}}{\Pi_t} B_{t-1} + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + T_t - \tau_t^{w} w_t N_t - \tau_t^{c} C_t,
+\paragraph{Tax rules.}
+The consumption- and labor-income-tax rates follow persistent rules that allow them to respond to the lagged debt gap:
+\begin{equation} \label{eq:taxrules}
+\begin{aligned}
+    \tau_t^c-\tau^c &= \rho_{\tau c}\left(\tau_{t-1}^c-\tau^c\right) + \left(1-\rho_{\tau c}\right)\gamma_d^{\tau c}\left(b_{t-1}-b^*\right) + \varepsilon_t^{\tau c}, \\
+    \tau_t^w-\tau^w &= \rho_{\tau w}\left(\tau_{t-1}^w-\tau^w\right) + \left(1-\rho_{\tau w}\right)\gamma_d^{\tau w}\left(b_{t-1}-b^*\right) + \varepsilon_t^{\tau w}.
+\end{aligned}
 \end{equation}
-where $G_t^{C}$ is government consumption and $T_t$ denotes lump-sum transfers.
-Government consumption does not build a productive stock, whereas $I_t^{GI}$, $I_t^{GE}$, and $G_t^{RD}$ activate the three accumulation channels described above.
-Raw spending enters the budget constraint in full; the efficiency wedges determine how much of that spending becomes productive, not its fiscal cost.
-The four expenditure instruments can be moved independently.
-In the policy experiments of Section~\ref{sec:results}, an increase in one growth-enhancing category is financed by an equal cut in government consumption, making the reform budget-neutral on impact.
-The fiscal rules allow taxes and transfers to respond to deviations of the debt-to-GDP ratio from its target $b^{*}$.
-Under the baseline calibration, debt stabilization operates through lump-sum transfers, while the debt-feedback coefficients in the tax rules are set to zero.
+The parameters $\rho_{\tau c}$ and $\rho_{\tau w}$ govern persistence, $\gamma_d^{\tau c}$ and $\gamma_d^{\tau w}$ govern the responses to debt, and the innovations $\varepsilon_t^{\tau c}$ and $\varepsilon_t^{\tau w}$ permit independent tax changes.
+
+\paragraph{Fiscal closure and experiment financing.}
+Lump-sum transfers follow
+\begin{equation} \label{eq:transferrule}
+    T_t-T^{SS} = \rho_T\left(T_{t-1}-T^{SS}\right) - \left(1-\rho_T\right)\gamma_d^T\left(b_{t-1}-b^*\right)Y^{d,SS}.
+\end{equation}
+In the baseline calibration, the debt-feedback coefficients in the tax rules are zero, while $\gamma_d^T$ is positive, so a debt ratio above target lowers transfers and transfers provide the operative fiscal closure.
+The model-properties exercises in Section~\ref{sec:properties} use debt-financed spending expansions with no offsetting cut.
+The policy experiments in Section~\ref{sec:results} instead reallocate spending permanently toward a productive category through an equal reduction in government consumption, making primary spending budget-neutral on impact.
 
 \paragraph{Monetary policy and government borrowing rate.}
 The central bank sets the policy rate $R_t^{mp}$ according to a Taylor rule,
@@ -351,7 +374,7 @@ The central bank sets the policy rate $R_t^{mp}$ according to a Taylor rule,
 The parameter $\rho_R$ governs interest-rate smoothing, while $\gamma_\pi$ and $\gamma_y$ govern the responses to inflation and aggregate demand.
 The government borrowing rate $R_t$ tracks the policy rate up to an exogenous shock,
 \begin{equation} \label{eq:spread}
-    \log R_t = \rho_{RG} R_{t-1} + \left(1-\rho_{RG}\right)\log R_t^{mp} + \varepsilon_t^{spr},
+    \log R_t = \rho_{RG}\log R_{t-1} + \left(1-\rho_{RG}\right)\log R_t^{mp} + \varepsilon_t^{spr},
 \end{equation}
 where $\rho_{RG}$ governs persistence in the borrowing rate and $\varepsilon_t^{spr}$ is an exogenous borrowing-cost shock.
 The baseline calibration sets $\rho_{RG}=0$, so the borrowing rate moves one-for-one with the policy rate in the absence of that shock.

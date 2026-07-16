@@ -88,7 +88,7 @@ rho_R           % Persistence of policy rate
 gamma_pi        % Reponse of MP to inflation
 gamma_y         % Reponse of MP to OG
 Piss            % SS of gross inflation
-rho_RG          % Persistence of goverment bond rate capturing the maturity (1/(1-rho_RG)) s the average maturity
+rho_RG          % Persistence of the government borrowing rate
 rho_tauc        % AR(1) of consumption tax rate
 taucss          % Consumption tax rate SS
 gamma_d_tauc    % Response of consumption tax to debt
@@ -236,10 +236,10 @@ varsigma*q*phi*SDF(+1)/(1+gammaa)*A(-1)/A*(V(+1)-J(+1)) = S;
 // Taylor rule
 Rmp/Rss = (Rmp(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
 // Government borrowing rate (tracks the policy rate up to an exogenous shock)
-log(R) = rho_RG*R(-1)+ (1-rho_RG)*log(Rmp) + epsi_spread;
+log(R) = rho_RG*log(R(-1)) + (1-rho_RG)*log(Rmp) + epsi_spread;
 // Public infrastructure capital
 Kg*g = (1-delta)*Kg(-1)+(1-eGI)*Igi;
-// Public human-capital stock
+// Public education and health capital
 Kge*g = (1-delta)*Kge(-1)+(1-eGE)*Ige;
 // Government debt
 b = (R(-1)/PI)*b(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;
@@ -248,7 +248,7 @@ by = b/y;
 // Government spending instruments (subject to expenditure shocks)
 Gc = Gcy*ydss+ydss*epsi_gc;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_gc shock)
 Igi = Igiy*ydss+ydss*epsi_igi;                                     // infrastructure investment
-Ige = Igey*ydss+ydss*epsi_ige;                                  // human-capital investment
+Ige = Igey*ydss+ydss*epsi_ige;                                  // education and health investment
 Grd = Grdy*ydss+ydss*epsi_grd;                               // R&D spending
 // Consumption tax rule
 tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss))+epsi_tauc;

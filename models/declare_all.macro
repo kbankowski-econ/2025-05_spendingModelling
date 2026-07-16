@@ -91,7 +91,7 @@ rho_R           % Persistence of policy rate
 gamma_pi        % Reponse of MP to inflation
 gamma_y         % Reponse of MP to OG
 Piss            % SS of gross inflation
-rho_RG          % Persistence of goverment bond rate capturing the maturity (1/(1-rho_RG)) s the average maturity
+rho_RG          % Persistence of the government borrowing rate
 rho_tauc        % AR(1) of consumption tax rate
 taucss          % Consumption tax rate SS
 gamma_d_tauc    % Response of consumption tax to debt
