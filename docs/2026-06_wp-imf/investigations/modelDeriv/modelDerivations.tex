@@ -996,16 +996,15 @@ The budget constraint accumulates real debt --- the $/g$ is the stationarization
 of the predetermined stock --- and \texttt{by} is the debt-to-GDP ratio:
 \modelcode{b = (R(-1)/PI)*b(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;\\
 by = b/y;}
-Taxes and transfers respond to the lagged deviation of debt-to-GDP from target:
-\modelcode{tauc-taucss = rho\_tauc*(tauc(-1)-taucss)\\
-\hspace*{2em}+(1-rho\_tauc)*(gamma\_d\_tauc*(by(-1)-byss))+epsi\_tauc;\\
-tauw-tauwss = rho\_tauw*(tauw(-1)-tauwss)\\
-\hspace*{2em}+(1-rho\_tauw)*(gamma\_d\_tauw*(by(-1)-byss))+epsi\_tauw;\\
+Tax rates equal their steady-state values plus independent tax-rate shocks, while
+transfers respond to the lagged deviation of debt-to-GDP from target:
+\modelcode{tauc = taucss+epsi\_tauc;\\
+tauw = tauwss+epsi\_tauw;\\
 T-STEADY\_STATE(T) = rho\_T*(T(-1)-STEADY\_STATE(T))\\
 \hspace*{2em}+(1-rho\_T)*(-gamma\_d\_T*(by(-1)-byss)*ydss);}
 The minus sign in the transfer rule means transfers fall when debt is above
-target. At the calibration, transfers are the only active feedback:
-\texttt{gamma\_d\_tauc} $=$ \texttt{gamma\_d\_tauw} $= 0$.
+target. Tax rates do not respond to debt, so transfers are the only active fiscal
+feedback.
 
 \subsection{Monetary Policy and the Borrowing Rate}
 

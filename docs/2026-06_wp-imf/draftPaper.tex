@@ -335,9 +335,9 @@ All spending enters the budget constraint at its full fiscal cost, irrespective 
 
 \paragraph{Spending instruments and efficiency.}
 The four spending instruments, indexed by $x\in\{C,GI,GE,RD\}$, can be moved independently through their respective expenditure shocks.
-Each instrument $X_t^x$ follows a simple rule under which it deviates from its steady-state level by an innovation scaled to steady-state aggregate demand:
+Each instrument $X_t$ follows a simple rule under which it deviates from its steady-state level by an innovation scaled to steady-state aggregate demand:
 \begin{equation} \label{eq:spendingrule}
-    X_t^x = X^{x,SS} + Y^{d,SS}\varepsilon_t^x, \qquad x\in\{C,GI,GE,RD\}.
+    X_t = X^{SS} + Y^{d,SS}\varepsilon_t^x, \qquad x\in\{C,GI,GE,RD\}.
 \end{equation}
 The persistence and duration of $\varepsilon_t^x$ are determined by the experiment.
 Government consumption uses resources but does not build a productive stock.
@@ -351,24 +351,19 @@ The parameters $\delta^{GI}$ and $\delta^{GE}$ are the respective depreciation r
 Only the fraction $1-e_t^x$ of an investment flow becomes productive capital, so closing a gap raises capital formation without increasing expenditure.
 The R\&D gap operates analogously: only the productive fraction $\left(1-e_{t-1}^{GRD}\right)G_{t-1}^{RD}$ enters technology creation in equation~\eqref{eq:Z}.
 
-\paragraph{Tax rules.}
-The consumption- and labor-income-tax rates follow persistent rules that allow them to respond to the lagged debt gap:
+\paragraph{Tax rules, fiscal closure, and experiment financing.}
+The consumption- and labor-income-tax rates equal their steady-state values unless perturbed by their respective tax-rate shocks:
 \begin{equation} \label{eq:taxrules}
-\begin{aligned}
-    \tau_t^c-\tau^c &= \rho_{\tau c}\left(\tau_{t-1}^c-\tau^c\right) + \left(1-\rho_{\tau c}\right)\gamma_d^{\tau c}\left(b_{t-1}-b^*\right) + \varepsilon_t^{\tau c}, \\
-    \tau_t^w-\tau^w &= \rho_{\tau w}\left(\tau_{t-1}^w-\tau^w\right) + \left(1-\rho_{\tau w}\right)\gamma_d^{\tau w}\left(b_{t-1}-b^*\right) + \varepsilon_t^{\tau w}.
-\end{aligned}
+    \tau_t^j = \tau^j + \varepsilon_t^{\tau j}, \qquad j\in\{c,w\}.
 \end{equation}
-The parameters $\rho_{\tau c}$ and $\rho_{\tau w}$ govern persistence, $\gamma_d^{\tau c}$ and $\gamma_d^{\tau w}$ govern the responses to debt, and the innovations $\varepsilon_t^{\tau c}$ and $\varepsilon_t^{\tau w}$ permit independent tax changes.
-
-\paragraph{Fiscal closure and experiment financing.}
-Lump-sum transfers follow
+The exercises in this paper set both shocks to zero.
+Tax rates do not respond to debt; instead, lump-sum transfers ensure debt stability according to
 \begin{equation} \label{eq:transferrule}
     T_t-T^{SS} = \rho_T\left(T_{t-1}-T^{SS}\right) - \left(1-\rho_T\right)\gamma_d^T\left(b_{t-1}-b^*\right)Y^{d,SS}.
 \end{equation}
-In the baseline calibration, the debt-feedback coefficients in the tax rules are zero, while $\gamma_d^T$ is positive, so a debt ratio above target lowers transfers and transfers provide the operative fiscal closure.
+Because $\gamma_d^T$ is positive, a debt ratio above target lowers transfers, making them the model's fiscal-closure instrument.
 The model-properties exercises in Section~\ref{sec:properties} use debt-financed spending expansions with no offsetting cut.
-The policy experiments in Section~\ref{sec:results} instead reallocate spending permanently toward a productive category through an equal reduction in government consumption, making primary spending budget-neutral on impact.
+The policy experiments in Section~\ref{sec:results} instead reallocate spending permanently toward a productive category through an equal reduction in government consumption, making primary spending ex-ante budget-neutral on impact.
 
 \paragraph{Monetary policy and government borrowing rate.}
 The central bank sets the policy rate $R_t^{mp}$ according to a Taylor rule,

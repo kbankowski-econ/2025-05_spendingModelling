@@ -10,10 +10,6 @@ gamma_pi=1.5;
 gamma_y=0.25;
 Piss=1;
 rho_RG=0;
-rho_tauc=0.9;
-gamma_d_tauc=0.0;
-rho_tauw=0.9;
-gamma_d_tauw=0;
 rho_g= 0.24 ;
 
 gamma_d_T=0.01;

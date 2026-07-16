@@ -97,12 +97,8 @@ gamma_pi        % Reponse of MP to inflation
 gamma_y         % Reponse of MP to OG
 Piss            % SS of gross inflation
 rho_RG          % Persistence of the government borrowing rate
-rho_tauc        % AR(1) of consumption tax rate
 taucss          % Consumption tax rate SS
-gamma_d_tauc    % Response of consumption tax to debt
-rho_tauw        % AR(1) of income tax rate
 tauwss          % Income tax rate SS
-gamma_d_tauw    % Response of consumption tax to debt
 byss            % Steady state of debt
 rho_g          % AR(1) of growth shock 
 gss            % SS of growth
@@ -140,10 +136,6 @@ gamma_pi=1.5;
 gamma_y=0.25;
 Piss=1;
 rho_RG=0;
-rho_tauc=0.9;
-gamma_d_tauc=0.0;
-rho_tauw=0.9;
-gamma_d_tauw=0;
 rho_g= 0.24 ;
 gamma_d_T=0.01;
 rho_T=0;
@@ -249,10 +241,10 @@ Gc = Gcy*ydss+ydss*epsi_gc;                                     // consumption (
 Igi = Igiy*ydss+ydss*epsi_igi;                                     // infrastructure investment
 Ige = Igey*ydss+ydss*epsi_ige;                                  // education and health investment
 Grd = Grdy*ydss+ydss*epsi_grd;                               // R&D spending
-// Consumption tax rule
-tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss))+epsi_tauc;
-// Income tax rule
-tauw-tauwss = rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_d_tauw*(by(-1)-byss))+epsi_tauw;
+// Consumption tax rate
+tauc = taucss+epsi_tauc;
+// Labor-income tax rate
+tauw = tauwss+epsi_tauw;
 // Public education and health capital
 Kge*g = (1-delta)*Kge(-1)+(1-eGE)*Ige;
 //********************************************************
@@ -270,7 +262,7 @@ vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 //********************************************************
 // Trend growth
 log(g) = (1-rho_g)*log(g(-1))+rho_g*(log(gss))+epsi_g;
-// Gap in human-capital spending efficiency (e^GE; positive shock closes the gap)
+// Gap in education and health spending efficiency (e^GE; positive shock closes the gap)
 eGE = eGE_ss-epsi_effge;
 // Gap in infrastructure spending efficiency (e^GI)
 eGI = eGI_ss-epsi_effgi;

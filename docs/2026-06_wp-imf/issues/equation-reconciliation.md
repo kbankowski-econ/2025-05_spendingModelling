@@ -65,6 +65,17 @@ equations are `X = Xss + ydss*epsi_X`, no persistence term) and `gamma_y_tauc`,
 re-ran 44 models (values identical). Parameter count 54 → 49. (Same situation as the
 earlier `alphaZZ1`/`rho_AAt` deletions.)
 
+## Tax-rate rules simplified — 2026-07-16
+The consumption- and labor-income-tax rules are now direct tax-rate shocks,
+`tauc=taucss+epsi_tauc` and `tauw=tauwss+epsi_tauw`. A shock of `0.01` changes the
+corresponding rate by one percentage point; persistence, if used in a future tax
+experiment, is encoded in the shock path. The four superseded parameters `rho_tauc`,
+`rho_tauw`, `gamma_d_tauc`, and `gamma_d_tauw` were removed from the declarations,
+common calibration, paper, and glossary. Across all 44 models, steady states are
+exactly unchanged and the maximum absolute difference in simulated endogenous paths
+is `1.39e-13`; both exported CSV datasets are byte-identical. Result MAT containers
+changed because they include model metadata and eigenvalue information.
+
 ## 🧹 Model simplification pass — 2026-07 (supersedes item 8 and parts of the Match list)
 After the reconciliation above, the model was pruned so only live, paper-described objects
 remain. Every change was a numerical no-op (`figureNumbers` byte-identical each time) unless

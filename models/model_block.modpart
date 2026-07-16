@@ -97,11 +97,11 @@ Igi = Igiy*ydss+ydss*epsi_igi;                                     // infrastruc
 Ige = Igey*ydss+ydss*epsi_ige;                                  // education and health investment
 Grd = Grdy*ydss+ydss*epsi_grd;                               // R&D spending
 
-// Consumption tax rule
-tauc-taucss = rho_tauc*(tauc(-1)-taucss)+(1-rho_tauc)*(gamma_d_tauc*(by(-1)-byss))+epsi_tauc;
+// Consumption tax rate
+tauc = taucss+epsi_tauc;
 
-// Income tax rule
-tauw-tauwss = rho_tauw*(tauw(-1)-tauwss)+(1-rho_tauw)*(gamma_d_tauw*(by(-1)-byss))+epsi_tauw;
+// Labor-income tax rate
+tauw = tauwss+epsi_tauw;
 
 // Lump-sum transfers
 T-STEADY_STATE(T) = rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*(by(-1)-byss)*ydss);

@@ -96,12 +96,8 @@ gamma_pi        % Reponse of MP to inflation
 gamma_y         % Reponse of MP to OG
 Piss            % SS of gross inflation
 rho_RG          % Persistence of the government borrowing rate
-rho_tauc        % AR(1) of consumption tax rate
 taucss          % Consumption tax rate SS
-gamma_d_tauc    % Response of consumption tax to debt
-rho_tauw        % AR(1) of income tax rate
 tauwss          % Income tax rate SS
-gamma_d_tauw    % Response of consumption tax to debt
 byss            % Steady state of debt
 rho_g          % AR(1) of growth shock 
 gss            % SS of growth
