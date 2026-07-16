@@ -644,19 +644,21 @@ Creation is a reduced-form process, not an optimization: created technology
 responds to lagged human capital (a learning-by-doing channel) and to lagged
 \emph{effective} public R\&D spending,
 \begin{equation}\label{eq:Z}
-    \ln\frac{Z_t}{Z^{SS}} = \rho_A \ln\frac{Z_{t-1}}{Z^{SS}}
-    + \alpha_{HA}\,\ln\frac{H_{t-1}}{H^{SS}}
-    + \alpha_{RD}\,\ln\frac{\left(1-e^{GRD}_{t-1}\right) G^{RD}_{t-1}}
+\begin{aligned}
+    \ln\frac{Z_t}{Z^{SS}} ={}& \rho_A \ln\frac{Z_{t-1}}{Z^{SS}}
+    + (1-\rho_A)\alpha_{HA}\,\ln\frac{H_{t-1}}{H^{SS}} \\
+    &{}+ (1-\rho_A)\alpha_{RD}\,\ln\frac{\left(1-e^{GRD}_{t-1}\right) G^{RD}_{t-1}}
     {\left(1-e^{GRD}\right) G^{RD,SS}},
+\end{aligned}
 \end{equation}
 in the model:
 \modelcode{ln(Z/STEADY\_STATE(Z)) = rho\_A*ln(Z(-1)/STEADY\_STATE(Z))\\
-\hspace*{2em}+alphaRD*ln((1-eGRD(-1))*Grd(-1)/((1-eGRD\_ss)*STEADY\_STATE(Grd)))\\
-\hspace*{2em}+alphaHA*ln(H(-1)/STEADY\_STATE(H));}
+\hspace*{2em}+(1-rho\_A)*alphaRD*ln((1-eGRD(-1))*Grd(-1)/((1-eGRD\_ss)*STEADY\_STATE(Grd)))\\
+\hspace*{2em}+(1-rho\_A)*alphaHA*ln(H(-1)/STEADY\_STATE(H));}
 Three remarks. First,
-$\alpha_{HA}$ and $\alpha_{RD}$ are \emph{per-period loadings}; because the
-process is an AR(1) with persistence $\rho_A$, the long-run elasticities of
-created technology are $\alpha_{HA}/(1-\rho_A)$ and $\alpha_{RD}/(1-\rho_A)$.
+$\alpha_{HA}$ and $\alpha_{RD}$ are the \emph{long-run elasticities} of created
+technology; the corresponding per-period loadings are
+$(1-\rho_A)\alpha_{HA}$ and $(1-\rho_A)\alpha_{RD}$.
 Second, only the productive fraction $1-e^{GRD}_{t-1}$ of R\&D spending drives
 creation, while the raw spending $G^{RD}_t$ enters the government budget --- the
 efficiency wedge destroys the difference. Third, because \eqref{eq:Z} is written

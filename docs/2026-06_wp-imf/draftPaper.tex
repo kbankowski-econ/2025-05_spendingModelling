@@ -297,11 +297,15 @@ This specification borrows the persistent learning-by-doing form of \citet{Chang
 Second, public R\&D spending $G_t^{RD}$ expands the stock of technologies available for adoption by raising the supply of adoptable ideas.
 Technology creation is governed by the following equation:
 \begin{equation} \label{eq:Z}
-    \log\!\left(\frac{Z_t}{Z^{SS}}\right) = \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right) + \alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) + \alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) G_{t-1}^{RD}}{\left(1-e^{GRD}\right) G^{RD,SS}}\right),
+\begin{aligned}
+    \log\!\left(\frac{Z_t}{Z^{SS}}\right) ={}& \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right)
+    + \left(1-\rho_A\right)\alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) \\
+    &{}+ \left(1-\rho_A\right)\alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) G_{t-1}^{RD}}{\left(1-e^{GRD}\right) G^{RD,SS}}\right),
+\end{aligned}
 \end{equation}
 Only the productive fraction $\left(1-e_{t-1}^{GRD}\right)$ of (lagged) R\&D spending drives innovation: $e_t^{GRD}$ is the R\&D inefficiency wedge, equal to its steady-state value $e^{GRD}$ in the baseline and reduced when the R\&D efficiency gap is closed (Section~\ref{sec:results}).
 The raw spending $G_t^{RD}$ enters the government budget constraint~\eqref{eq:govbudget}.
-The coefficients $\alpha_{HA}$ and $\alpha_{RD}$ are the per-period loadings; the implied long-run elasticities of created technology are $\alpha_{HA}/(1-\rho_A)$ and $\alpha_{RD}/(1-\rho_A)$.
+The coefficients $\alpha_{HA}$ and $\alpha_{RD}$ are the long-run elasticities of created technology with respect to human capital and effective public R\&D, while multiplication by $1-\rho_A$ gives their per-period loadings.
 
 Creation does not raise productivity until technologies are adopted.
 To capture this diffusion lag, the stock of adopted technologies evolves as
@@ -444,9 +448,9 @@ The elasticity with respect to the time spent on human capital accumulation is s
     \item \emph{Depreciation of public capital ($\delta^{GI}$, $\delta^{GE}$).}
 Both depreciation rates are set at the standard value of 0.025, corresponding to an annual depreciation rate of 10 percent.
     \item \emph{Technology innovation parameters.}
-The AR(1) coefficient for the stock of technologies ($\rho_A$) is set at 0.79 (quarterly), as in \citet{ChangGomesSchorfheide2002}.
-For AEs, the elasticity of human capital with respect to technology development ($\alpha_{HA}$) is set at 0.45, capturing the learning-by-doing channel, as in \citet{ChangGomesSchorfheide2002}.
-The elasticity of public R\&D spending ($\alpha_{RD}$) is calibrated at 0.1, consistent with the R\&D impact estimates in \citet{FieldhouseMertens2023}.
+The AR(1) coefficient for the stock of technologies ($\rho_A$) is set at 0.79 (quarterly), following the persistence estimate in \citet{ChangGomesSchorfheide2002}.
+For AEs, the long-run elasticity of technology creation with respect to human capital ($\alpha_{HA}$) is set at $0.10/(1-\rho_A)\approx 0.48$, which retains a per-period loading of 0.10 for the learning-by-doing channel.
+The long-run elasticity with respect to effective public R\&D ($\alpha_{RD}$) is calibrated at 0.09, implying a per-period loading of 0.0189 and remaining close to the R\&D impact estimates in \citet{FieldhouseMertens2023}.
     \item \emph{Technology adoption parameters.}
 Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the elasticity of the adoption probability with respect to adoption spending ($\varsigma$) is set at 0.8 (Table~\ref{tab:parameters}).
 The scale of the adoption-probability function, $q_0$ in $q_t = q_0\left(S_t/\Lambda_t\right)^{\varsigma}$, is not calibrated directly; it is pinned in the steady state by the targeted probability of technology adoption, set to deliver an average adoption lag of approximately 10 years.
@@ -461,7 +465,7 @@ The scale of the adoption-probability function, $q_0$ in $q_t = q_0\left(S_t/\La
 
     \vspace{1mm}
     \tabnote{IMF staff estimates; see references in the text.}{Parameters for the representative advanced economy (AE) and emerging market and developing economy (EMDE).
-The innovation loadings $\alpha_{HA}$ and $\alpha_{RD}$ are the per-period coefficients in the AR(1) law of motion for created technology (Section~\ref{sec:model}); a permanent rise in the human-capital stock or in R\&D raises created technology by $\alpha_{HA}/(1-\rho_A)\approx 0.45$ and $\alpha_{RD}/(1-\rho_A)\approx 0.10$ in the long run.
+The innovation parameters $\alpha_{HA}$ and $\alpha_{RD}$ are long-run elasticities in the law of motion for created technology (Section~\ref{sec:model}); the corresponding per-period loadings are $(1-\rho_A)\alpha_{HA}=0.10$ and $(1-\rho_A)\alpha_{RD}=0.0189$.
 ``--'' marks the parameters of the endogenous-innovation channel---technology creation, public R\&D, and the spending-driven adoption response ($\varsigma$)---which is switched off for EMDEs, so these economies grow along the calibrated trend rather than through endogenous innovation.}
 \end{table}
 
@@ -816,7 +820,11 @@ The gap $Z_t-A_t$ is the stock of unadopted technologies.
 
 Technology creation is a reduced-form process: lagged human capital captures learning by doing, as in \citet{ChangGomesSchorfheide2002}, while lagged effective public R\&D expands the stock of technologies available for adoption:
 \[
-    \log\!\left(\frac{Z_t}{Z^{SS}}\right) = \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right) + \alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) + \alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) G_{t-1}^{RD}}{\left(1-e^{GRD}\right) G^{RD,SS}}\right).
+\begin{aligned}
+    \log\!\left(\frac{Z_t}{Z^{SS}}\right) ={}& \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right)
+    + \left(1-\rho_A\right)\alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) \\
+    &{}+ \left(1-\rho_A\right)\alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) G_{t-1}^{RD}}{\left(1-e^{GRD}\right) G^{RD,SS}}\right).
+\end{aligned}
 \]
 Only the productive fraction $1-e_{t-1}^{GRD}$ of public R\&D enters creation; raw R\&D spending enters the government budget.\footnote{Because the creation equation is written in ratios to steady state, the common trend cancels from this expression.}
 

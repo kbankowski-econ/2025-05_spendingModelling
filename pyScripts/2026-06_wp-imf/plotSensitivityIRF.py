@@ -6,7 +6,7 @@ percent deviation from steady state) is traced as one structural parameter is
 swept over a plausible range, one panel each:
 
   - Infrastructure investment -> Model_HumanCapital_exp_igi, vary alpha_G
-  - Human capital investment  -> Model_HumanCapital_exp_ige, vary mu  (alphaH)
+  - Human capital investment  -> Model_HumanCapital_exp_ige, vary mu
   - R&D investment            -> Model_HumanCapital_exp_grd, vary alpha_RD
 
 In each panel the lines fan from the low (light) to the high (dark) parameter
@@ -51,7 +51,7 @@ STYLE = {
 PANELS = [
     ("Model_HumanCapital_exp_igi", "alphaG",  "Infrastructure (α<sub>G</sub>)",
      "α<sub>G</sub>", ("#90CAF9", "#0D47A1")),
-    ("Model_HumanCapital_exp_ige", "alphaH",  "Human Capital (μ)",
+    ("Model_HumanCapital_exp_ige", "mu",      "Human Capital (μ)",
      "μ", ("#CE93D8", "#4A148C")),
     ("Model_HumanCapital_exp_grd", "alphaRD", "R&D (α<sub>RD</sub>)",
      "α<sub>RD</sub>", ("#A5D6A7", "#1B5E20")),

@@ -113,7 +113,7 @@ gamma             % Effectiveness of education investment.
 mu          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
 eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
-alphaRD         % R&D on TFP
+alphaRD         % Long-run R&D elasticity in technology creation
 Grdy           % share of expenditure for R&D
 markupss        % SS markup of Intermediate goods 
 phi           % obsolescence rate: 0.08/4
@@ -121,7 +121,7 @@ vartheta      % Intermediate goods elasticity of substitution
 gammaa         % Gorwth of tech
 qss    % Probability of adoption
 varsigma      % Adoption elasticity
-alphaHA        % HC elasticity in tech creation (paper alpha_HA)
+alphaHA        % Long-run HC elasticity in technology creation (paper alpha_HA)
 rho_A
 eGRD_ss         % SS gap in public R&D efficiency (e^GRD)
 ;
@@ -164,8 +164,8 @@ Grdy=0.006;                         % R&D spending                              
 mu=0.1;                          % elasticity of HC formation w.r.t. public HRC  | EM: 0.25
 % R&D and technology adoption
 eGRD_ss=0.399;                       % public R&D efficiency gap (e^GRD)              | EM: 0.2
-alphaRD=0.09*(1-rho_A);           % effect of R&D on TFP                          | EM: 0
-alphaHA=0.1;                         % HC elasticity in tech creation (paper a_HA)   | EM: 0
+alphaRD=0.09;                         % long-run R&D elasticity in tech creation      | EM: 0
+alphaHA=0.1/(1-rho_A);                % long-run HC elasticity (keeps loading at 0.1) | EM: 0
 varsigma=0.8;                       % adoption elasticity                           | EM: 0.1
 % AE efficiency gaps (2023 medians; INF re-estimated 2026-06)
 eGI_ss=0.359;

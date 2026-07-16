@@ -32,9 +32,9 @@ EXPS = {
 # parameter -> (display label, AE baseline)
 PARAMS = {
     "alphaG":    (r"$\alpha_G$ (infra elasticity)", 0.054),
-    "alphaH":    (r"$\mu$ (HC elasticity)", 0.10),
-    "alphaRD":   (r"$\alpha_{RD}$ (R&D elasticity)", 0.0189),
-    "rhoSADOPT": (r"$\varsigma$ (adoption elasticity)", 0.80),
+    "mu":        (r"$\mu$ (HC elasticity)", 0.10),
+    "alphaRD":   (r"$\alpha_{RD}$ (long-run R&D elasticity)", 0.09),
+    "varsigma":  (r"$\varsigma$ (adoption elasticity)", 0.80),
 }
 PALETTE = ["#00838F", "#5E35B1", "#6A1B9A", "#AD1457", "#E65100"]
 HORIZON = "mult_long"        # headline horizon for the figures
@@ -107,9 +107,9 @@ def plot_irf_fan(pairs=None):
     if pairs is None:
         pairs = [
             ("Model_HumanCapital_exp_igi", "alphaG"),
-            ("Model_HumanCapital_exp_ige", "alphaH"),
+            ("Model_HumanCapital_exp_ige", "mu"),
             ("Model_HumanCapital_exp_grd", "alphaRD"),
-            ("Model_HumanCapital_exp_grd", "rhoSADOPT"),
+            ("Model_HumanCapital_exp_grd", "varsigma"),
         ]
     irf = pd.read_csv(IRF_CSV)
     ycols = [c for c in irf.columns if c.startswith("yd_y")]

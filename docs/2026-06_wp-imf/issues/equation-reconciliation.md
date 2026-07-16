@@ -102,7 +102,9 @@ noted, each followed by a 44-model re-run.
 - **eq (Z) is now deterministic.** The inert R&D-process disturbance (`shockchi`≡1, never
   shocked) and its `+log(shockchi)` term were removed, and the R&D efficiency wedge was
   inlined (the `Grdeff` variable is gone). Model and paper eq (Z) match exactly:
-  `log(Z/Zss) = ρ_A·log(Z(-1)/Zss) + α_HA·log(H(-1)/Hss) + α_RD·log((1-e^{GRD}_{t-1})G^{RD}_{t-1}/((1-e^{GRD})G^{RD,SS}))`.
+  `log(Z/Zss) = ρ_A·log(Z(-1)/Zss) + (1-ρ_A)α_HA·log(H(-1)/Hss) + (1-ρ_A)α_RD·log((1-e^{GRD}_{t-1})G^{RD}_{t-1}/((1-e^{GRD})G^{RD,SS}))`.
+  The long-run elasticities were recalibrated to `alphaHA=0.1/(1-rho_A)` and
+  `alphaRD=0.09`, preserving the former effective coefficients exactly.
 - **Removed the dormant sovereign-risk block (supersedes "sovereign spread + default
   probability" in the Match list).** `Deltacost=0`, so the debt-dependent spread was
   identically zero. Dropped `Delta_G`, `prob_def`, `eta1`, `eta2`, `Deltacost`; the borrowing

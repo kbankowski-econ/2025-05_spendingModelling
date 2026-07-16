@@ -27,12 +27,14 @@ re-solve the deterministic model, recompute the statistic.
 | Paper | `.mod` | AE baseline | grid |
 |---|---|---|---|
 | α_G (infra output elasticity) | `alphaG`    | 0.054  | 0.02–0.20 (to the EM value) |
-| μ (HC-formation elasticity)   | `alphaH`    | 0.10   | 0.05–0.30 |
-| α_RD (R&D-on-TFP elasticity)  | `alphaRD`   | 0.0189 | 0.005–0.10 |
-| ς (adoption elasticity)       | `rhoSADOPT` | 0.80   | 0.10–0.95 |
+| μ (HC-formation elasticity)   | `mu`        | 0.10   | 0.05–0.30 |
+| α_RD (long-run R&D elasticity) | `alphaRD`  | 0.09   | 0.024–0.476 |
+| ς (adoption elasticity)       | `varsigma`  | 0.80   | 0.10–0.95 |
 
-`alphaRD` = 0.09·(1−ρ_A) is derived, so the sweep reads each parameter's AE
-baseline from `M_.params` at build time (no hardcoding). One parameter moves at a
+The technology-creation equation multiplies `alphaRD` by 1−ρ_A. Its grid is the
+previous effective-loading grid divided by 1−ρ_A, preserving every simulated
+response under the long-run-elasticity normalization. The sweep reads each
+parameter's AE baseline from `M_.params` at build time. One parameter moves at a
 time; the others stay at baseline.
 
 **The efficiency-gap parameters (e^GI/e^GE/e^GRD) were dropped from the sweep.**
@@ -113,8 +115,8 @@ the primary driver, plus the adoption elasticity ς as a universal secondary one
 1. **Each productive multiplier is governed by its own output elasticity**
    (long-term, near-linear): infrastructure in α_G (0.13 → 11.6 as α_G = 0.02 →
    0.20; baseline 0.054 → 2.38), human capital in μ (3.5 → 25.8 as μ = 0.05 →
-   0.30; baseline 8.19), R&D in α_RD (0.95 → 34.2 as α_RD = 0.005 → 0.10; baseline
-   0.0189 → 6.66). Each is essentially flat to the *other* channels' elasticities.
+   0.30; baseline 8.19), R&D in α_RD (0.95 → 34.2 as α_RD = 0.024 → 0.476; baseline
+   0.09 → 6.66). Each is essentially flat to the *other* channels' elasticities.
 2. **ς (adoption elasticity) is the one systemic parameter** — every experiment
    is sensitive to it at long horizons, because it governs economy-wide technology
    diffusion. The response is strongly **convex**, kicking in above ς ≈ 0.8

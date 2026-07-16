@@ -105,7 +105,7 @@ gamma             % Effectiveness of education investment.
 mu          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
 eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
-alphaRD         % R&D on TFP
+alphaRD         % Long-run R&D elasticity in technology creation
 Grdy           % share of expenditure for R&D
 markupss        % SS markup of Intermediate goods 
 phi           % obsolescence rate: 0.08/4
@@ -113,7 +113,7 @@ vartheta      % Intermediate goods elasticity of substitution
 gammaa         % Gorwth of tech
 qss    % Probability of adoption
 varsigma      % Adoption elasticity
-alphaHA        % HC elasticity in tech creation (paper alpha_HA)
+alphaHA        % Long-run HC elasticity in technology creation (paper alpha_HA)
 rho_A
 eGRD_ss         % SS gap in public R&D efficiency (e^GRD)
 ;
@@ -156,8 +156,8 @@ Grdy=0.001;                         % R&D spending                              
 mu=0.25;                         % elasticity of HC formation w.r.t. public HRC  | AE: 0.1
 % R&D and technology adoption
 eGRD_ss=0.2;                         % public R&D efficiency gap (e^GRD)              | AE: 0.41
-alphaRD=0;                           % effect of R&D on TFP                          | AE: 0.09*(1-rho_A)
-alphaHA=0;                           % HC elasticity in tech creation (paper a_HA)   | AE: 0.1
+alphaRD=0;                           % long-run R&D elasticity in tech creation      | AE: 0.09
+alphaHA=0;                           % long-run HC elasticity in tech creation       | AE: 0.1/(1-rho_A)
 varsigma=0.1;                       % adoption elasticity                           | AE: 0.8
 % EMDE efficiency gaps (2023; average of emerging-market and low-income medians; INF re-estimated 2026-06)
 eGI_ss=0.406;
@@ -205,7 +205,7 @@ Kp(-1)/N = alpha/(1-alpha)*w/rk;
 [name='y']
 y = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG))*(Kp(-1)^alpha)*(N^(1-alpha));
 // Technology creation (R&D enters in efficiency-adjusted form)
-ln(Z/STEADY_STATE(Z)) = rho_A*ln(Z(-1)/STEADY_STATE(Z))+alphaRD*ln((1-eGRD(-1))*Grd(-1)/((1-eGRD_ss)*STEADY_STATE(Grd)))+alphaHA*ln(H(-1)/STEADY_STATE(H));
+ln(Z/STEADY_STATE(Z)) = rho_A*ln(Z(-1)/STEADY_STATE(Z))+(1-rho_A)*alphaRD*ln((1-eGRD(-1))*Grd(-1)/((1-eGRD_ss)*STEADY_STATE(Grd)))+(1-rho_A)*alphaHA*ln(H(-1)/STEADY_STATE(H));
 // Value of an unadopted technology
 J = -S+phi*(SDF(+1)*A(-1)/A*1/(1+gammaa)*(q*V(+1)+(1-q)*J(+1)));
 // Probability of adoption

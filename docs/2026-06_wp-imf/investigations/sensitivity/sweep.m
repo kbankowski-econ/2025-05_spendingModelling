@@ -1,8 +1,8 @@
 %% §4.3 sensitivity sweep — multipliers vs. structural parameters (AE).
 % One-at-a-time (OAT) sweep of the AE standard expansions over the parameters
-% flagged in §4.3: alpha_G (alphaG, infra output elasticity), mu (alphaH, HC
-% formation elasticity) and the three efficiency wedges e^GI/e^GE/e^GRD
-% (eGI_ss/eGE_ss/eGRD_ss). For each (experiment, parameter, grid value) it
+% flagged in §4.3: alpha_G (alphaG, infrastructure output elasticity), mu
+% (human-capital formation elasticity), alpha_RD (long-run R&D elasticity), and
+% varsigma (adoption elasticity). For each (experiment, parameter, grid value) it
 % re-solves the perfect-foresight model and recomputes the *present-value
 % cumulative own-spending multiplier* at the same horizons as Table 3
 % (makeMultipliers.py), so the swept numbers are comparable to the paper.
@@ -41,16 +41,17 @@ exps = {
     };
 
 %% Parameters to sweep: {name, grid (include a point near the AE baseline)}.
-% The baseline (restore) value is read from M_.params at build time, so the
-% derived alphaRD = 0.09*(1-rho_ZZRD) = 0.0189 needs no hardcoding. The
+% The baseline (restore) value is read from M_.params at build time. The alphaRD
+% grid divides the previous effective-loading grid by (1-rho_A), preserving the
+% simulated responses under the long-run-elasticity normalization. The
 % efficiency-gap params (eGI_ss/eGE_ss/eGRD_ss) were dropped: the per-dollar
 % multiplier is exactly invariant to them (the (1-e) wedge cancels), so they
 % add nothing to the sweep (see README).
 params = {
     'alphaG',    [0.02 0.054 0.08 0.12 0.17 0.20]    % infra output elasticity (alpha_G)
-    'alphaH',    [0.05 0.10 0.15 0.20 0.25 0.30]     % HC formation elasticity (mu)
-    'alphaRD',   [0.005 0.0189 0.04 0.07 0.10]       % R&D-on-TFP elasticity (alpha_RD, code value)
-    'rhoSADOPT', [0.10 0.30 0.50 0.80 0.90 0.95]     % adoption elasticity (varsigma)
+    'mu',        [0.05 0.10 0.15 0.20 0.25 0.30]     % HC formation elasticity (mu)
+    'alphaRD',   [0.005 0.0189 0.04 0.07 0.10]/(1-0.79) % long-run R&D elasticity
+    'varsigma',  [0.10 0.30 0.50 0.80 0.90 0.95]     % adoption elasticity (varsigma)
     };
 
 horizonsYr = [1 5 10 20 25 250];          % years; quarter window is 4N
@@ -58,7 +59,7 @@ periods    = 2000;
 if smoke
     exps       = exps(4, :);              % grd only (exercises the R&D channel)
     params     = params(3, :);           % alphaRD only
-    params{1,2} = [0.005 0.0189 0.07];   % 3 points
+    params{1,2} = params{1,2}([1 2 4]);  % 3 points
     horizonsYr = [1 5 10];
     periods    = 1200;                    % must exceed the period-1000 shock path
 end

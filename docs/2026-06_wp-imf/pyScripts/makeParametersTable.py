@@ -14,8 +14,8 @@ recalibration of any of them flows into the table automatically:
 
     alpha_G <- alphaG      (output elasticity, infrastructure)
     rho_A   <- rho_A         (AR(1) coefficient, technology stock)
-    alpha_HA <- alphaHA    (HC loading in tech creation; EMDE "--", channel off)
-    alpha_RD <- alphaRD    (R&D loading in tech creation; EMDE "--", channel off)
+    alpha_HA <- alphaHA    (long-run HC elasticity; EMDE "--", channel off)
+    alpha_RD <- alphaRD    (long-run R&D elasticity; EMDE "--", channel off)
     varsigma <- varsigma  (adoption-probability elasticity, AE; EMDE "--", dormant)
     phi     <- phi               (survival rate of adopted technologies, 1 - 0.08/4)
     e_GI    <- eGI_ss      (inefficiency, infrastructure investment)
@@ -25,12 +25,9 @@ recalibration of any of them flows into the table automatically:
     mu      <- mu              (human capital elasticity, public stock)
     gamma   <- gamma              (human capital elasticity, time input)
 
-alpha_HA and alpha_RD are shown as their EXPLICIT model values (0.10 and 0.0189),
-i.e. the per-quarter loadings in the AR(1) law of motion for created technology
-(model_block.modpart:53). They are NOT normalized to the implied long-run
-elasticities alpha/(1-rho_A) ~ 0.45 and 0.10 here; the table NOTE in draftPaper.tex
-explains that long-run interpretation instead. (alphaRD is coded as
-0.09*(1-rho_ZZRD)=0.0189; alphaHA is stored directly as 0.10.)
+alpha_HA and alpha_RD are shown as their explicit long-run elasticities. The
+technology-creation equation multiplies them by (1-rho_A), giving per-quarter
+loadings of 0.10 and 0.0189 at the AE calibration.
 
 The efficiency gaps e_GI/e_GE/e_GRD equal Table 2's data-derived medians (the AE
 median for advanced economies, the (EM+LIC)/2 average for EMDEs), so reading them
@@ -39,7 +36,7 @@ of 0.42 -> 0.41 and the AE e_GRD of 0.41 -> 0.40, recalibrated to the 0.399 data
 median). The EMDE e_GRD is reported "--" because the R&D channel is shut down there
 (alphaRD=0), even though the model still carries eGRD_ss=0.2.
 
-varsigma (adoption-probability elasticity) reads the AE rhoSADOPT and is "--" for
+varsigma (adoption-probability elasticity) reads the AE varsigma and is "--" for
 EMDEs: their endogenous innovation channel is off, so the spending-driven adoption
 response is dormant (verified: the adoption block does not move in EMDE
 experiments), exactly as for alpha_HA/alpha_RD.
@@ -47,7 +44,7 @@ experiments), exactly as for alpha_HA/alpha_RD.
 The paper's adoption-probability SCALE q_0 is intentionally NOT a row here: it is
 not a model parameter. The code parameterizes the scale as `kappaprob` on RAW
 (non-detrended) spending, and kappaprob is SOLVED in steady state to hit the
-targeted adoption probability probadoptss=0.2/4=0.05 (kappaprob = 0.05/S_ss^rhoSADOPT
+targeted adoption probability probadoptss=0.2/4=0.05 (kappaprob = 0.05/S_ss^varsigma
 = 0.309 AE / 0.084 EMDE). Since q_0 corresponds to no stored parameter, it is
 described in the calibration text (draftPaper.tex) rather than tabulated.
 
@@ -109,8 +106,8 @@ def build_groups():
             (r"$\gamma$",  "Elasticity w.r.t.\\ the time input",                 fmt(ae["gamma"], 2),    fmt(em["gamma"], 2)),
         ]),
         ("Technology creation and adoption", [
-            (r"$\alpha_{HA}$", "Human-capital loading in creation",       fmt(ae["alphaHA"], 2),    "--"),
-            (r"$\alpha_{RD}$", r"Public-R\&D loading in creation",        fmt(ae["alphaRD"], 4),    "--"),
+            (r"$\alpha_{HA}$", "Long-run human-capital elasticity",       fmt(ae["alphaHA"], 2),    "--"),
+            (r"$\alpha_{RD}$", r"Long-run public-R\&D elasticity",        fmt(ae["alphaRD"], 2),    "--"),
             (r"$\rho_A$",      "Persistence of created technology",       fmt(ae["rho_A"], 2),   fmt(em["rho_A"], 2)),
             (r"$\phi$",        "Survival rate of adopted technologies",   fmt(ae["phi"], 2),      fmt(em["phi"], 2)),
             (r"$\varsigma$",   "Elasticity of the adoption probability",  fmt(ae["varsigma"], 2),  "--"),

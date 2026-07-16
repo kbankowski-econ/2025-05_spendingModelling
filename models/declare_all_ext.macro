@@ -114,8 +114,8 @@ gamma             % Effectiveness of education investment.
 mu          % Elasticity of Human Capital Formation w.r.t. Public Human-related Capital (HRC)
 effgegap_ss     % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
-alphaHA         % feed back of Human cpital to TFP
-alphaRD         % R&D on TFP
+alphaHA         % Long-run HC elasticity in technology creation
+alphaRD         % Long-run R&D elasticity in technology creation
 Cgrdy           % share of expenditure for R&D
 markupss        % SS markup of Intermediate goods 
 phi           % obsolescence rate: 0.08/4

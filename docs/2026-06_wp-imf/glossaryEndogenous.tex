@@ -43,7 +43,7 @@
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Production and technology: creation and adoption}} \\
 \addlinespace[0.1em]
-18 & $Z_t$ & Created technology \gloseq{\log\tfrac{Z_t}{Z^{SS}}=\rho_A\log\tfrac{Z_{t-1}}{Z^{SS}}+\alpha_{HA}\log\tfrac{H_{t-1}}{H^{SS}}+\alpha_{RD}\log\tfrac{(1-e^{GRD}_{t-1})G^{RD}_{t-1}}{(1-e^{GRD})G^{RD,SS}}} & \texttt{Z} & 1.572 & 1.715 \\
+18 & $Z_t$ & Created technology \gloseq{\log\tfrac{Z_t}{Z^{SS}}=\rho_A\log\tfrac{Z_{t-1}}{Z^{SS}}+(1-\rho_A)\alpha_{HA}\log\tfrac{H_{t-1}}{H^{SS}}+(1-\rho_A)\alpha_{RD}\log\tfrac{(1-e^{GRD}_{t-1})G^{RD}_{t-1}}{(1-e^{GRD})G^{RD,SS}}} & \texttt{Z} & 1.572 & 1.715 \\
 19 & $A_t$ & Adopted technology \gloseq{(1+\gamma^{a}) A_t=q_t\phi(Z_{t-1}-A_{t-1})+\phi A_{t-1}} & \texttt{A} & 1 & 1 \\
 20 & $q_t$ & Adoption probability \gloseq{q_t=(q_0+\varepsilon^{q}_t)(S_t)^{\varsigma}} & \texttt{q} & 0.05 & 0.05 \\
 21 & $\mathit{SDF}_t$ & Stochastic discount factor \gloseq{\mathit{SDF}_t=\beta\lambda_t(1+\tau^c_t)/[\lambda_{t-1}(1+\tau^c_{t-1})]} & \texttt{SDF} & 0.999 & 0.999 \\

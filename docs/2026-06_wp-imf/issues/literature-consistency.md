@@ -52,16 +52,15 @@ and attributions**.
   adoption lag of five years"). ✗
 - **Fix idea:** cite CG for the 10-yr lag; don't imply Anz's value.
 
-### 3. α_HA = 0.45 "as in CGS" — 0.45 is not a CGS number. **[moderate]**
-- **Paper:** line 323 / Table line 335 set α_HA = 0.45 "as in Chang-Gomes-Schorfheide 2002."
+### 3. α_HA = 0.45 "as in CGS" — resolved by normalization. **[resolved 2026-07-16]**
+- **Paper now:** α_HA is the long-run elasticity, calibrated at
+  0.10/(1−ρ_A) ≈ 0.48, and the text attributes only the persistence estimate to
+  Chang-Gomes-Schorfheide. The effective quarterly loading remains 0.10.
 - **CGS:** learning-by-doing elasticity is **μ = 0.111 quarterly (μ̂ = 0.326 annual)** —
   never 0.45.
-- The model's *effective* coefficient in eq. (Z) is `(1−ρ_A)·α_HA = 0.21·0.45 ≈ 0.094`,
-  which lands near CGS's quarterly 0.111 — but it's the headline **0.45**, not the effective
-  0.094, that's attributed to CGS.
-- Note: this is the literature-side counterpart to the known internal `alphaHA`-normalization
-  item (project memory; `.sped.md` TODO). Here the issue is that "0.45 as in CGS" reads as a
-  direct CGS value when it isn't.
+- The revised text no longer presents the long-run value as a direct CGS
+  estimate. The remaining conceptual distinction between CGS learning by doing
+  and this paper's technology-creation channel is recorded below.
 
 ### 4. "human capital fosters innovation … learning-by-doing as in CGS" — conceptual mismatch. **[moderate]**
 - **Paper:** line 258 invokes CGS for human capital driving technology *creation* (Zₜ).
