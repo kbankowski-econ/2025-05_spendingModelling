@@ -376,12 +376,12 @@ The central bank sets the policy rate $R_t^{mp}$ according to a Taylor rule,
 \begin{equation} \label{eq:taylor}
     \frac{R_t^{mp}}{R^{mp}} = \left(\frac{R_{t-1}^{mp}}{R^{mp}}\right)^{\rho_R}\left[\left(\frac{\Pi_t}{\Pi}\right)^{\gamma_\pi}\left(\frac{Y_t^{d}}{Y^{d}}\right)^{\gamma_y}\right]^{1-\rho_R} e^{\varepsilon_t^{mp}}.
 \end{equation}
-The parameter $\rho_R$ governs interest-rate smoothing, while $\gamma_\pi$ and $\gamma_y$ govern the responses to inflation and aggregate demand.
-The government borrowing rate $R_t$ tracks the policy rate up to an exogenous shock,
+Here $\rho_R$ is a smoothing parameter, while $\gamma_\pi$ and $\gamma_y$ govern the responses to inflation and aggregate demand respectively.
+The government borrowing rate $R_t$ tracks the policy rate up to an exogenous shock \varepsilon_t^{spr},
 \begin{equation} \label{eq:spread}
-    \log R_t = \rho_{RG}\log R_{t-1} + \left(1-\rho_{RG}\right)\log R_t^{mp} + \varepsilon_t^{spr},
+    \log R_t = \rho_{RG}\log R_{t-1} + \left(1-\rho_{RG}\right)\log R_t^{mp} + ,
 \end{equation}
-where $\rho_{RG}$ governs persistence in the borrowing rate and $\varepsilon_t^{spr}$ is an exogenous borrowing-cost shock.
+where $\rho_{RG}$ governs persistence in the borrowing rate.
 The baseline calibration sets $\rho_{RG}=0$, so the borrowing rate moves one-for-one with the policy rate in the absence of that shock.
 
 \subsection{Market Clearing and Equilibrium}
