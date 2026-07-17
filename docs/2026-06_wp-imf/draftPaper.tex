@@ -447,16 +447,11 @@ The main text reports the choices most relevant to the quantitative exercises; A
 
 \subsection{Calibration Strategy and Common Parameters}
 
-The structure of the New Keynesian core follows \citet{gali2015}, with its parameters set to conventional quarterly values.
-The standard extensions for capital accumulation and inflation inertia are benchmarked to the IMF's Global Integrated Monetary and Fiscal (GIMF) model \citep{Andersonetal2013}.
-Because GIMF has a richer sectoral structure and uses inflation-adjustment costs rather than the compact Calvo block adopted here, it guides these calibration choices rather than providing a coefficient-by-coefficient mapping.
-The persistence and debt-feedback parameters in the fiscal rule similarly implement GIMF's principle that a fiscal instrument adjusts to stabilize debt, with lump-sum transfers serving as that instrument in this model.
-
-The production extension follows \citet{Anzoateguietal2019}: $\mu^p=1.18$ is their gross intermediate-goods markup, while $\vartheta=1.35$ is their parameter governing substitution across intermediate varieties.
-They place the markup in the middle of the range of available estimates and choose the variety parameter to imply an elasticity of substitution of 3.85.
-Separating the two here allows $\mu^p$ to determine the profit flow that gives adopted technologies value, while $\vartheta$ governs only the productivity gain from a larger stock of adopted technologies.
-All parameters specific to these extensions are held common across the AE and EMDE calibrations.
-Table~\ref{tab:commonParameters} summarizes these parameters.
+The structure of the New Keynesian core follows \citet{gali2015}, with its parameters calibrated at conventional quarterly values.
+The standard extensions for capital accumulation and price indexation are benchmarked to the IMF's Global Integrated Monetary and Fiscal (GIMF) model \citep{Andersonetal2013}.\footnote{Because GIMF has a richer sectoral structure and uses inflation-adjustment costs rather than the compact Calvo block adopted here, it guides these calibration choices rather than providing a coefficient-by-coefficient mapping.}
+The fiscal-rule persistence and debt-feedback parameters similarly implement GIMF's debt-stabilization principle: a fiscal instrument adjusts to stabilize debt, with lump-sum transfers serving as that instrument here.
+The production extension, which introduces a gross markup for intermediate producers and productivity gains from a larger stock of adopted technologies, follows \citet{Anzoateguietal2019}.
+The parameters described below are held common across the AE and EMDE calibrations and summarized in Table~\ref{tab:commonParameters}.
 
 For households and capital accumulation, the quarterly discount factor is $\beta=0.9985$, and the private-capital share in production is $\alpha=0.30$.
 The inverse Frisch elasticity is $\varphi=5$, corresponding to a Frisch elasticity of 0.2.
@@ -465,6 +460,8 @@ Private and public physical capital depreciate at rate $\delta=0.025$ per quarte
 Under Calvo pricing, the probability that a retailer cannot reset its price is $\theta_p=0.80$, implying an average price duration of five quarters, and non-reset prices are indexed to past inflation with coefficient $\chi_p=0.60$.
 The elasticity of substitution across retail goods is $\epsilon=10$.
 Intermediate producers charge a gross markup of $\mu^p=1.18$, and the love-of-variety exponent is $\vartheta=1.35$.
+Anzoategui et al.\ place the markup in the middle of the range of available estimates and choose the variety parameter to imply an elasticity of substitution of 3.85.
+In this model, the two parameters play distinct roles: $\mu^p$ determines the profit flow that gives adopted technologies value, while $\vartheta$ governs the productivity gain from a larger stock of adopted technologies.
 
 Steady-state gross inflation is normalized to $\Pi=1$.
 In the monetary-policy rule, interest-rate smoothing is $\rho_R=0.70$, and the responses to inflation and aggregate demand are $\gamma_\pi=1.50$ and $\gamma_y=0.25$, respectively.
