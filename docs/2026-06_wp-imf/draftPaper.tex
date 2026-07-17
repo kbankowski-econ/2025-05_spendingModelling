@@ -292,6 +292,7 @@ The intermediate-good sector equations are derived in Appendix~\ref{app:equilibr
 Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model distinguishes between the stock of created technologies $Z_t$, available for adoption, and the stock of adopted technologies $A_t$ that enters production.
 The gap $Z_t - A_t$ is the stock of unadopted technologies.
 Created technologies depend on two forces.
+
 First, lagged human capital raises technology creation through a reduced-form learning-by-doing channel.
 This specification borrows the persistent learning-by-doing form of \citet{ChangGomesSchorfheide2002} and applies it here to innovation.
 Second, public R\&D spending $G_t^{RD}$ expands the stock of technologies available for adoption by raising the supply of adoptable ideas.
@@ -377,9 +378,9 @@ The central bank sets the policy rate $R_t^{mp}$ according to a Taylor rule,
     \frac{R_t^{mp}}{R^{mp}} = \left(\frac{R_{t-1}^{mp}}{R^{mp}}\right)^{\rho_R}\left[\left(\frac{\Pi_t}{\Pi}\right)^{\gamma_\pi}\left(\frac{Y_t^{d}}{Y^{d}}\right)^{\gamma_y}\right]^{1-\rho_R} e^{\varepsilon_t^{mp}}.
 \end{equation}
 Here $\rho_R$ is a smoothing parameter, while $\gamma_\pi$ and $\gamma_y$ govern the responses to inflation and aggregate demand respectively.
-The government borrowing rate $R_t$ tracks the policy rate up to an exogenous shock \varepsilon_t^{spr},
+The government borrowing rate $R_t$ tracks the policy rate up to an exogenous shock $\varepsilon_t^{spr}$,
 \begin{equation} \label{eq:spread}
-    \log R_t = \rho_{RG}\log R_{t-1} + \left(1-\rho_{RG}\right)\log R_t^{mp} + ,
+    \log R_t = \rho_{RG}\log R_{t-1} + \left(1-\rho_{RG}\right)\log R_t^{mp} + \varepsilon_t^{spr},
 \end{equation}
 where $\rho_{RG}$ governs persistence in the borrowing rate.
 The baseline calibration sets $\rho_{RG}=0$, so the borrowing rate moves one-for-one with the policy rate in the absence of that shock.
