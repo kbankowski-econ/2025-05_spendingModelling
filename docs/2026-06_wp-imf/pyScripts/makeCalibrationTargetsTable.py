@@ -50,7 +50,7 @@ def main():
         ("Infrastructure investment", "Percent of GDP", pct(ae["Igiy"]), pct(em["Igiy"])),
         ("Human-capital investment", "Percent of GDP", pct(ae["Igey"], 2), pct(em["Igey"])),
         (r"Public R\&D spending", "Percent of GDP", pct(ae["Grdy"]), pct(em["Grdy"])),
-        ("Effective tax rates", None, None, None),
+        ("Implicit tax rates", None, None, None),
         ("Consumption tax", "Percent", pct(ae["taucss"], 0), pct(em["taucss"], 0)),
         ("Labor-income tax", "Percent", pct(ae["tauwss"], 0), pct(em["tauwss"], 0)),
     ]

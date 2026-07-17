@@ -482,16 +482,17 @@ The complete calibration, including the internally determined scale parameters, 
 
 \subsection{Country-Group Steady-State Targets}
 
-The AE and EMDE calibrations differ in their trend growth, public debt, spending composition, and effective tax rates.
-Table~\ref{tab:calibrationTargets} collects these steady-state targets in reader-facing annual or percentage units.
+The AE and EMDE calibrations differ in their trend growth, spending composition, implicit tax rates, and public debt.
+Table~\ref{tab:calibrationTargets} collects these steady-state targets in annualized or percentage terms.
+Annual trend output growth is set at 1.6 percent for AEs and 3.0 percent for EMDEs.
 
 Government consumption is calibrated at 18 percent of GDP for AEs and 14 percent for EMDEs, based on \citet{IMF2023FM} and the World Bank's World Development Indicators.
-It includes the wages of teachers, doctors, nurses, and other public workers employed in education and health care, as well as other government final consumption.
+This category covers intermediate consumption, social transfers in kind, and compensation of government employees, including teachers, doctors, nurses, and other public workers.
 Infrastructure investment is set at 3 percent of GDP for AEs and 5 percent for EMDEs.
 Public human-capital investment---including capital spending on schools and hospitals---is calibrated at about 1.5 percent of GDP for AEs and 2 percent for EMDEs, based on the composition of public investment in the OECD income group \citep{OECD2025Glance}.
 Baseline public R\&D spending is 0.6 percent of GDP for AEs and 0.1 percent for EMDEs.
 
-Effective tax rates follow \citet{IMF2023FM}, \citet{Benitezetal2023}, and \citet{OECD2025Taxing}.
+The implicit tax-rate calibration draws on \citet{IMF2023FM}, \citet{Benitezetal2023}, and \citet{OECD2025Taxing}.
 The consumption tax rate is 18 percent for AEs and 15 percent for EMDEs, while the labor-income tax rate is 25 and 10 percent, respectively.
 The debt targets are 100 percent of annual GDP for AEs and 60 percent for EMDEs.
 
@@ -505,7 +506,7 @@ The debt targets are 100 percent of annual GDP for AEs and 60 percent for EMDEs.
     \vspace{1mm}
     \tabnote{IMF staff calibration based on \citet{IMF2023FM}, the World Bank's World Development Indicators, \citet{Benitezetal2023}, \citet{OECD2025Taxing}, and \citet{OECD2025Glance}.}{Trend growth is annualized from the quarterly gross rate.
 Public debt is reported relative to annual GDP; the Dynare implementation divides debt by quarterly GDP and therefore stores four times the ratios shown here.
-Spending shares and effective tax rates are relative to quarterly GDP or income and have the same numerical values at an annual frequency.}
+Spending shares are relative to quarterly GDP, while implicit tax rates are measured against their corresponding tax bases; both are numerically unchanged at an annual frequency.}
 \end{table}
 
 \subsection{Productive-Spending and Endogenous-Growth Parameters}
