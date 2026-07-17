@@ -179,3 +179,8 @@ The previously dormant borrowing-rate oddity is fixed: the persistence term is n
 is numerically inert at the current calibration (`rho_RG=0`) but makes the equation
 well-defined if borrowing-rate persistence is used in future work. The paper's
 equation~`eq:spread` and generated glossary were updated at the same time.
+
+**Superseded on 2026-07-17:** the separate borrowing-rate equation has now been
+removed. Because `rho_RG=0` and the spread shock was never activated, it imposed
+`R=Rmp` in every simulation. The Taylor rule therefore determines `R` directly,
+and `Rmp`, `rho_RG`, and `epsi_spread` have been eliminated.

@@ -1559,318 +1559,162 @@ year,model,variable,pct_dev
 2048,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),0.0
 2049,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),0.0
 2050,Canonical NK (from scratch),Inflation (Π<sub>t</sub>),0.0
-2025,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2026,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.181
-2027,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.274
-2028,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.324
-2029,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.347
-2030,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.353
-2031,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.35
-2032,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.34
-2033,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.328
-2034,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.314
-2035,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.299
-2036,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.285
-2037,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.271
-2038,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.257
-2039,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.244
-2040,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.231
-2041,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.219
-2042,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.208
-2043,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.197
-2044,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.186
-2045,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.177
-2046,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.167
-2047,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.159
-2048,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.15
-2049,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.143
-2050,Full model,Policy rate (R<sup>mp</sup><sub>t</sub>),0.135
-2025,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2026,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.153
-2027,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.233
-2028,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.269
-2029,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.279
-2030,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.273
-2031,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.259
-2032,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.241
-2033,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.221
-2034,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.2
-2035,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.181
-2036,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.163
-2037,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.146
-2038,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.131
-2039,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.118
-2040,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.105
-2041,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.094
-2042,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.085
-2043,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.076
-2044,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.068
-2045,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.061
-2046,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.055
-2047,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.049
-2048,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.044
-2049,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.04
-2050,No R&D,Policy rate (R<sup>mp</sup><sub>t</sub>),0.036
-2025,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2026,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.226
-2027,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.291
-2028,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.313
-2029,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.31
-2030,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.293
-2031,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.269
-2032,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.243
-2033,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.216
-2034,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.19
-2035,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.167
-2036,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.145
-2037,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.126
-2038,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.109
-2039,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.094
-2040,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.081
-2041,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.07
-2042,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.06
-2043,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.052
-2044,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.044
-2045,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.038
-2046,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.033
-2047,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.028
-2048,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.024
-2049,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.021
-2050,"No R&D, no human capital",Policy rate (R<sup>mp</sup><sub>t</sub>),0.018
-2025,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2026,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.226
-2027,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.291
-2028,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.313
-2029,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.31
-2030,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.293
-2031,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.269
-2032,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.243
-2033,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.216
-2034,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.19
-2035,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.167
-2036,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.145
-2037,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.126
-2038,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.109
-2039,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.094
-2040,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.081
-2041,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.07
-2042,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.06
-2043,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.052
-2044,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.044
-2045,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.038
-2046,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.033
-2047,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.028
-2048,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.024
-2049,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.021
-2050,NK with capital,Policy rate (R<sup>mp</sup><sub>t</sub>),0.018
-2025,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2026,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.558
-2027,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.375
-2028,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.243
-2029,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.159
-2030,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.104
-2031,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.068
-2032,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.045
-2033,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.029
-2034,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.019
-2035,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.013
-2036,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.008
-2037,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.005
-2038,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.004
-2039,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.002
-2040,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.002
-2041,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.001
-2042,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.001
-2043,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2044,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2045,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2046,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2047,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2048,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2049,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2050,Textbook NK (no capital),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2025,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2026,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.335
-2027,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.23
-2028,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.151
-2029,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.099
-2030,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.065
-2031,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.043
-2032,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.028
-2033,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.018
-2034,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.012
-2035,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.008
-2036,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.005
-2037,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.003
-2038,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.002
-2039,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.001
-2040,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.001
-2041,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.001
-2042,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2043,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2044,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2045,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2046,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2047,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2048,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2049,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2050,Canonical NK (from scratch),Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2025,Full model,Nominal bond rate (R<sub>t</sub>),0.0
-2026,Full model,Nominal bond rate (R<sub>t</sub>),0.181
-2027,Full model,Nominal bond rate (R<sub>t</sub>),0.274
-2028,Full model,Nominal bond rate (R<sub>t</sub>),0.324
-2029,Full model,Nominal bond rate (R<sub>t</sub>),0.347
-2030,Full model,Nominal bond rate (R<sub>t</sub>),0.353
-2031,Full model,Nominal bond rate (R<sub>t</sub>),0.35
-2032,Full model,Nominal bond rate (R<sub>t</sub>),0.34
-2033,Full model,Nominal bond rate (R<sub>t</sub>),0.328
-2034,Full model,Nominal bond rate (R<sub>t</sub>),0.314
-2035,Full model,Nominal bond rate (R<sub>t</sub>),0.299
-2036,Full model,Nominal bond rate (R<sub>t</sub>),0.285
-2037,Full model,Nominal bond rate (R<sub>t</sub>),0.271
-2038,Full model,Nominal bond rate (R<sub>t</sub>),0.257
-2039,Full model,Nominal bond rate (R<sub>t</sub>),0.244
-2040,Full model,Nominal bond rate (R<sub>t</sub>),0.231
-2041,Full model,Nominal bond rate (R<sub>t</sub>),0.219
-2042,Full model,Nominal bond rate (R<sub>t</sub>),0.208
-2043,Full model,Nominal bond rate (R<sub>t</sub>),0.197
-2044,Full model,Nominal bond rate (R<sub>t</sub>),0.186
-2045,Full model,Nominal bond rate (R<sub>t</sub>),0.177
-2046,Full model,Nominal bond rate (R<sub>t</sub>),0.167
-2047,Full model,Nominal bond rate (R<sub>t</sub>),0.159
-2048,Full model,Nominal bond rate (R<sub>t</sub>),0.15
-2049,Full model,Nominal bond rate (R<sub>t</sub>),0.143
-2050,Full model,Nominal bond rate (R<sub>t</sub>),0.135
-2025,No R&D,Nominal bond rate (R<sub>t</sub>),0.0
-2026,No R&D,Nominal bond rate (R<sub>t</sub>),0.153
-2027,No R&D,Nominal bond rate (R<sub>t</sub>),0.233
-2028,No R&D,Nominal bond rate (R<sub>t</sub>),0.269
-2029,No R&D,Nominal bond rate (R<sub>t</sub>),0.279
-2030,No R&D,Nominal bond rate (R<sub>t</sub>),0.273
-2031,No R&D,Nominal bond rate (R<sub>t</sub>),0.259
-2032,No R&D,Nominal bond rate (R<sub>t</sub>),0.241
-2033,No R&D,Nominal bond rate (R<sub>t</sub>),0.221
-2034,No R&D,Nominal bond rate (R<sub>t</sub>),0.2
-2035,No R&D,Nominal bond rate (R<sub>t</sub>),0.181
-2036,No R&D,Nominal bond rate (R<sub>t</sub>),0.163
-2037,No R&D,Nominal bond rate (R<sub>t</sub>),0.146
-2038,No R&D,Nominal bond rate (R<sub>t</sub>),0.131
-2039,No R&D,Nominal bond rate (R<sub>t</sub>),0.118
-2040,No R&D,Nominal bond rate (R<sub>t</sub>),0.105
-2041,No R&D,Nominal bond rate (R<sub>t</sub>),0.094
-2042,No R&D,Nominal bond rate (R<sub>t</sub>),0.085
-2043,No R&D,Nominal bond rate (R<sub>t</sub>),0.076
-2044,No R&D,Nominal bond rate (R<sub>t</sub>),0.068
-2045,No R&D,Nominal bond rate (R<sub>t</sub>),0.061
-2046,No R&D,Nominal bond rate (R<sub>t</sub>),0.055
-2047,No R&D,Nominal bond rate (R<sub>t</sub>),0.049
-2048,No R&D,Nominal bond rate (R<sub>t</sub>),0.044
-2049,No R&D,Nominal bond rate (R<sub>t</sub>),0.04
-2050,No R&D,Nominal bond rate (R<sub>t</sub>),0.036
-2025,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.0
-2026,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.226
-2027,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.291
-2028,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.313
-2029,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.31
-2030,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.293
-2031,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.269
-2032,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.243
-2033,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.216
-2034,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.19
-2035,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.167
-2036,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.145
-2037,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.126
-2038,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.109
-2039,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.094
-2040,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.081
-2041,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.07
-2042,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.06
-2043,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.052
-2044,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.044
-2045,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.038
-2046,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.033
-2047,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.028
-2048,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.024
-2049,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.021
-2050,"No R&D, no human capital",Nominal bond rate (R<sub>t</sub>),0.018
-2025,NK with capital,Nominal bond rate (R<sub>t</sub>),0.0
-2026,NK with capital,Nominal bond rate (R<sub>t</sub>),0.226
-2027,NK with capital,Nominal bond rate (R<sub>t</sub>),0.291
-2028,NK with capital,Nominal bond rate (R<sub>t</sub>),0.313
-2029,NK with capital,Nominal bond rate (R<sub>t</sub>),0.31
-2030,NK with capital,Nominal bond rate (R<sub>t</sub>),0.293
-2031,NK with capital,Nominal bond rate (R<sub>t</sub>),0.269
-2032,NK with capital,Nominal bond rate (R<sub>t</sub>),0.243
-2033,NK with capital,Nominal bond rate (R<sub>t</sub>),0.216
-2034,NK with capital,Nominal bond rate (R<sub>t</sub>),0.19
-2035,NK with capital,Nominal bond rate (R<sub>t</sub>),0.167
-2036,NK with capital,Nominal bond rate (R<sub>t</sub>),0.145
-2037,NK with capital,Nominal bond rate (R<sub>t</sub>),0.126
-2038,NK with capital,Nominal bond rate (R<sub>t</sub>),0.109
-2039,NK with capital,Nominal bond rate (R<sub>t</sub>),0.094
-2040,NK with capital,Nominal bond rate (R<sub>t</sub>),0.081
-2041,NK with capital,Nominal bond rate (R<sub>t</sub>),0.07
-2042,NK with capital,Nominal bond rate (R<sub>t</sub>),0.06
-2043,NK with capital,Nominal bond rate (R<sub>t</sub>),0.052
-2044,NK with capital,Nominal bond rate (R<sub>t</sub>),0.044
-2045,NK with capital,Nominal bond rate (R<sub>t</sub>),0.038
-2046,NK with capital,Nominal bond rate (R<sub>t</sub>),0.033
-2047,NK with capital,Nominal bond rate (R<sub>t</sub>),0.028
-2048,NK with capital,Nominal bond rate (R<sub>t</sub>),0.024
-2049,NK with capital,Nominal bond rate (R<sub>t</sub>),0.021
-2050,NK with capital,Nominal bond rate (R<sub>t</sub>),0.018
-2025,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.0
-2026,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.558
-2027,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.375
-2028,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.243
-2029,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.159
-2030,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.104
-2031,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.068
-2032,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.045
-2033,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.029
-2034,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.019
-2035,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.013
-2036,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.008
-2037,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.005
-2038,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.004
-2039,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.002
-2040,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.002
-2041,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.001
-2042,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.001
-2043,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.0
-2044,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.0
-2045,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.0
-2046,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.0
-2047,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.0
-2048,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.0
-2049,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.0
-2050,Textbook NK (no capital),Nominal bond rate (R<sub>t</sub>),0.0
-2025,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.0
-2026,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.335
-2027,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.23
-2028,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.151
-2029,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.099
-2030,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.065
-2031,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.043
-2032,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.028
-2033,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.018
-2034,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.012
-2035,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.008
-2036,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.005
-2037,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.003
-2038,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.002
-2039,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.001
-2040,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.001
-2041,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.001
-2042,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.0
-2043,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.0
-2044,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.0
-2045,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.0
-2046,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.0
-2047,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.0
-2048,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.0
-2049,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.0
-2050,Canonical NK (from scratch),Nominal bond rate (R<sub>t</sub>),0.0
+2025,Full model,Nominal interest rate (R<sub>t</sub>),0.0
+2026,Full model,Nominal interest rate (R<sub>t</sub>),0.181
+2027,Full model,Nominal interest rate (R<sub>t</sub>),0.274
+2028,Full model,Nominal interest rate (R<sub>t</sub>),0.324
+2029,Full model,Nominal interest rate (R<sub>t</sub>),0.347
+2030,Full model,Nominal interest rate (R<sub>t</sub>),0.353
+2031,Full model,Nominal interest rate (R<sub>t</sub>),0.35
+2032,Full model,Nominal interest rate (R<sub>t</sub>),0.34
+2033,Full model,Nominal interest rate (R<sub>t</sub>),0.328
+2034,Full model,Nominal interest rate (R<sub>t</sub>),0.314
+2035,Full model,Nominal interest rate (R<sub>t</sub>),0.299
+2036,Full model,Nominal interest rate (R<sub>t</sub>),0.285
+2037,Full model,Nominal interest rate (R<sub>t</sub>),0.271
+2038,Full model,Nominal interest rate (R<sub>t</sub>),0.257
+2039,Full model,Nominal interest rate (R<sub>t</sub>),0.244
+2040,Full model,Nominal interest rate (R<sub>t</sub>),0.231
+2041,Full model,Nominal interest rate (R<sub>t</sub>),0.219
+2042,Full model,Nominal interest rate (R<sub>t</sub>),0.208
+2043,Full model,Nominal interest rate (R<sub>t</sub>),0.197
+2044,Full model,Nominal interest rate (R<sub>t</sub>),0.186
+2045,Full model,Nominal interest rate (R<sub>t</sub>),0.177
+2046,Full model,Nominal interest rate (R<sub>t</sub>),0.167
+2047,Full model,Nominal interest rate (R<sub>t</sub>),0.159
+2048,Full model,Nominal interest rate (R<sub>t</sub>),0.15
+2049,Full model,Nominal interest rate (R<sub>t</sub>),0.143
+2050,Full model,Nominal interest rate (R<sub>t</sub>),0.135
+2025,No R&D,Nominal interest rate (R<sub>t</sub>),0.0
+2026,No R&D,Nominal interest rate (R<sub>t</sub>),0.153
+2027,No R&D,Nominal interest rate (R<sub>t</sub>),0.233
+2028,No R&D,Nominal interest rate (R<sub>t</sub>),0.269
+2029,No R&D,Nominal interest rate (R<sub>t</sub>),0.279
+2030,No R&D,Nominal interest rate (R<sub>t</sub>),0.273
+2031,No R&D,Nominal interest rate (R<sub>t</sub>),0.259
+2032,No R&D,Nominal interest rate (R<sub>t</sub>),0.241
+2033,No R&D,Nominal interest rate (R<sub>t</sub>),0.221
+2034,No R&D,Nominal interest rate (R<sub>t</sub>),0.2
+2035,No R&D,Nominal interest rate (R<sub>t</sub>),0.181
+2036,No R&D,Nominal interest rate (R<sub>t</sub>),0.163
+2037,No R&D,Nominal interest rate (R<sub>t</sub>),0.146
+2038,No R&D,Nominal interest rate (R<sub>t</sub>),0.131
+2039,No R&D,Nominal interest rate (R<sub>t</sub>),0.118
+2040,No R&D,Nominal interest rate (R<sub>t</sub>),0.105
+2041,No R&D,Nominal interest rate (R<sub>t</sub>),0.094
+2042,No R&D,Nominal interest rate (R<sub>t</sub>),0.085
+2043,No R&D,Nominal interest rate (R<sub>t</sub>),0.076
+2044,No R&D,Nominal interest rate (R<sub>t</sub>),0.068
+2045,No R&D,Nominal interest rate (R<sub>t</sub>),0.061
+2046,No R&D,Nominal interest rate (R<sub>t</sub>),0.055
+2047,No R&D,Nominal interest rate (R<sub>t</sub>),0.049
+2048,No R&D,Nominal interest rate (R<sub>t</sub>),0.044
+2049,No R&D,Nominal interest rate (R<sub>t</sub>),0.04
+2050,No R&D,Nominal interest rate (R<sub>t</sub>),0.036
+2025,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.0
+2026,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.226
+2027,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.291
+2028,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.313
+2029,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.31
+2030,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.293
+2031,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.269
+2032,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.243
+2033,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.216
+2034,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.19
+2035,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.167
+2036,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.145
+2037,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.126
+2038,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.109
+2039,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.094
+2040,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.081
+2041,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.07
+2042,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.06
+2043,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.052
+2044,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.044
+2045,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.038
+2046,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.033
+2047,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.028
+2048,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.024
+2049,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.021
+2050,"No R&D, no human capital",Nominal interest rate (R<sub>t</sub>),0.018
+2025,NK with capital,Nominal interest rate (R<sub>t</sub>),0.0
+2026,NK with capital,Nominal interest rate (R<sub>t</sub>),0.226
+2027,NK with capital,Nominal interest rate (R<sub>t</sub>),0.291
+2028,NK with capital,Nominal interest rate (R<sub>t</sub>),0.313
+2029,NK with capital,Nominal interest rate (R<sub>t</sub>),0.31
+2030,NK with capital,Nominal interest rate (R<sub>t</sub>),0.293
+2031,NK with capital,Nominal interest rate (R<sub>t</sub>),0.269
+2032,NK with capital,Nominal interest rate (R<sub>t</sub>),0.243
+2033,NK with capital,Nominal interest rate (R<sub>t</sub>),0.216
+2034,NK with capital,Nominal interest rate (R<sub>t</sub>),0.19
+2035,NK with capital,Nominal interest rate (R<sub>t</sub>),0.167
+2036,NK with capital,Nominal interest rate (R<sub>t</sub>),0.145
+2037,NK with capital,Nominal interest rate (R<sub>t</sub>),0.126
+2038,NK with capital,Nominal interest rate (R<sub>t</sub>),0.109
+2039,NK with capital,Nominal interest rate (R<sub>t</sub>),0.094
+2040,NK with capital,Nominal interest rate (R<sub>t</sub>),0.081
+2041,NK with capital,Nominal interest rate (R<sub>t</sub>),0.07
+2042,NK with capital,Nominal interest rate (R<sub>t</sub>),0.06
+2043,NK with capital,Nominal interest rate (R<sub>t</sub>),0.052
+2044,NK with capital,Nominal interest rate (R<sub>t</sub>),0.044
+2045,NK with capital,Nominal interest rate (R<sub>t</sub>),0.038
+2046,NK with capital,Nominal interest rate (R<sub>t</sub>),0.033
+2047,NK with capital,Nominal interest rate (R<sub>t</sub>),0.028
+2048,NK with capital,Nominal interest rate (R<sub>t</sub>),0.024
+2049,NK with capital,Nominal interest rate (R<sub>t</sub>),0.021
+2050,NK with capital,Nominal interest rate (R<sub>t</sub>),0.018
+2025,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.558
+2027,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.375
+2028,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.243
+2029,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.159
+2030,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.104
+2031,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.068
+2032,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.045
+2033,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.029
+2034,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.019
+2035,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.013
+2036,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.008
+2037,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.005
+2038,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.004
+2039,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.002
+2040,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.002
+2041,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.001
+2042,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.001
+2043,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.0
+2044,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.0
+2045,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.0
+2046,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.0
+2047,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.0
+2048,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.0
+2049,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.0
+2050,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.0
+2025,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.0
+2026,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.335
+2027,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.23
+2028,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.151
+2029,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.099
+2030,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.065
+2031,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.043
+2032,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.028
+2033,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.018
+2034,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.012
+2035,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.008
+2036,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.005
+2037,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.003
+2038,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.002
+2039,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.001
+2040,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.001
+2041,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.001
+2042,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.0
+2043,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.0
+2044,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.0
+2045,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.0
+2046,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.0
+2047,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.0
+2048,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.0
+2049,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.0
+2050,Canonical NK (from scratch),Nominal interest rate (R<sub>t</sub>),0.0
 2025,Full model,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2026,Full model,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.059
 2027,Full model,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.054

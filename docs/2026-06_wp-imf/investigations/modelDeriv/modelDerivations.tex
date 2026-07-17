@@ -1011,20 +1011,12 @@ feedback. In non-budget-neutral experiments, the auxiliary dummy
 transfer response to debt; it returns to one afterward so the transfer feedback
 restores debt stability.
 
-\subsection{Monetary Policy and the Borrowing Rate}
+\subsection{Monetary Policy and the Government Financing Rate}
 
-The central bank follows a standard Taylor rule with smoothing, and the
-government borrowing rate tracks the policy rate up to an exogenous spread
-shock:
-\modelcode{Rmp/Rss = (Rmp(-1)/Rss)\^{}rho\_R\\
-\hspace*{2em}*((PI/Piss)\^{}gamma\_pi*(yd/ydss)\^{}gamma\_y)\^{}(1-rho\_R)*exp(epsi\_MP);\\
-log(R) = rho\_RG*R(-1)+ (1-rho\_RG)*log(Rmp) + epsi\_spread;}
-One dormant oddity in the second equation: the lagged term is linear
-\texttt{R(-1)} next to logs. It is inert at the calibration
-(\texttt{rho\_RG} $=0$, so the equation reduces to
-$\log R_t = \log R^{mp}_t + \varepsilon^{spr}_t$), but it would be dimensionally
-inconsistent for any \texttt{rho\_RG} $>0$ (flagged in the equation
-reconciliation note in \texttt{../../issues/}).
+The central bank directly sets the nominal rate used for both monetary policy
+and government financing through a standard Taylor rule with smoothing:
+\modelcode{R/Rss = (R(-1)/Rss)\^{}rho\_R\\
+\hspace*{2em}*((PI/Piss)\^{}gamma\_pi*(yd/ydss)\^{}gamma\_y)\^{}(1-rho\_R)*exp(epsi\_MP);}
 
 %========================================================================
 \section{Market Clearing}\label{sec:mc}

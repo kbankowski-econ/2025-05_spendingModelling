@@ -4,7 +4,6 @@
 ,{"lhs": "mc", "rhs":"(epsilon-1)/epsilon"}
 ,{"lhs": "w", "rhs":"mc"}
 ,{"lhs": "R", "rhs":"Rss"}
-,{"lhs": "Rmp", "rhs":"Rss"}
 ,{"lhs": "Gc", "rhs":"Gcss"}
 ,{"lhs": "yd", "rhs":"ydss"}
 ,{"lhs": "y", "rhs":"yd"}

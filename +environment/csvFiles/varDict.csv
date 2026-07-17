@@ -1,7 +1,7 @@
 ,description,diffTransf,diffDesc
 C,Household consumption,(x./y-1)*100,\% deviation
 lambda,Marginal utility of consumption,(x./y-1)*100,\% deviation
-R,Nominal interest rate on gov. bonds,(x-y)*400,ann. ppt deviation
+R,Nominal policy and government financing rate,(x-y)*400,ann. ppt deviation
 PI,Gross inflation rate,(x-y)*400,ann. ppt deviation
 N,Effective labor supply,(x./y-1)*100,\% deviation
 w,Real wage rate,(x./y-1)*100,\% deviation
@@ -14,7 +14,6 @@ mc,Marginal cost of production,(x./y-1)*100,\% deviation
 PIstar,Optimal gross inflation rate,(x./y-1)*100,\% deviation
 y,Total production output,(x./y-1)*100,\% deviation
 Kg,Gov. capital stock,(x./y-1)*100,\% deviation
-Rmp,Monetary policy interest rate,(x-y)*400,ann. ppt deviation
 b,Government debt level,(x./y-1)*100,\% deviation
 by,Debt-to-GDP ratio,(x-y)*100,ppt of GDP
 Igi,Gov. investment,(x./y-1)*100,\% deviation

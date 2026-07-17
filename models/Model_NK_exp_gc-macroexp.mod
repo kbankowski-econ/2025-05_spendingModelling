@@ -11,7 +11,7 @@
 // difference in the Gc response isolates the non-standard ingredients.
 // Reuses only the shock file (epsi_gc) and the perfect-foresight solver.
 // =====================================================================
-var C N L lambda w mc PI PIstar x1 x2 vp yd y Rmp R Gc rreal;
+var C N L lambda w mc PI PIstar x1 x2 vp yd y R Gc rreal;
 varexo epsi_gc;
 parameters betta varphi epsilon thetap gamma_pi gamma_y rho_R Gcy omega Rss PIss ydss Gcss;
 betta    = 0.9985;
@@ -42,9 +42,8 @@ x2 = lambda*PIstar*yd + betta*thetap*(1/PI(+1))^(1-epsilon)*PIstar/PIstar(+1)*x2
 epsilon*x1 = (epsilon-1)*x2;
 1 = thetap*(1/PI)^(1-epsilon) + (1-thetap)*PIstar^(1-epsilon);
 vp = thetap*(1/PI)^(-epsilon)*vp(-1) + (1-thetap)*PIstar^(-epsilon);
-// --- Monetary policy ---
-Rmp/Rss = (Rmp(-1)/Rss)^rho_R*((PI/PIss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R);
-R = Rmp;
+// --- Monetary policy and government financing rate ---
+R/Rss = (R(-1)/Rss)^rho_R*((PI/PIss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R);
 // --- Government (wasteful consumption, lump-sum financed) and market clearing ---
 yd = C + Gc;
 Gc = Gcss + ydss*epsi_gc;
@@ -57,7 +56,6 @@ vp     = 1;
 mc     = (epsilon-1)/epsilon;
 w = mc;
 R      = Rss;
-Rmp    = Rss;
 Gc     = Gcss;
 yd     = ydss;
 y     = yd;

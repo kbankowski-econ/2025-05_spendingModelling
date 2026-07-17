@@ -1143,214 +1143,110 @@ year,shock,variable,pct_dev
 2048,R&D investment,Inflation (Π<sub>t</sub>),-7.708
 2049,R&D investment,Inflation (Π<sub>t</sub>),-7.86
 2050,R&D investment,Inflation (Π<sub>t</sub>),-8.002
-2025,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2026,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.464
-2027,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.512
-2028,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.557
-2029,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.6
-2030,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.64
-2031,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.679
-2032,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.716
-2033,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.75
-2034,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.784
-2035,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.815
-2036,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.845
-2037,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.873
-2038,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.9
-2039,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.926
-2040,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.95
-2041,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.973
-2042,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.995
-2043,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.016
-2044,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.035
-2045,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.054
-2046,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.071
-2047,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.088
-2048,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.104
-2049,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.119
-2050,Government consumption,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.133
-2025,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2026,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.817
-2027,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.087
-2028,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.351
-2029,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.605
-2030,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.85
-2031,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.084
-2032,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.307
-2033,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.52
-2034,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.721
-2035,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.912
-2036,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.093
-2037,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.264
-2038,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.425
-2039,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.577
-2040,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.721
-2041,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.857
-2042,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.985
-2043,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.105
-2044,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.218
-2045,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.325
-2046,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.425
-2047,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.52
-2048,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.609
-2049,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.692
-2050,Infrastructure investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.771
-2025,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2026,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.538
-2027,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.426
-2028,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.41
-2029,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.479
-2030,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.62
-2031,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.823
-2032,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.077
-2033,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.373
-2034,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.702
-2035,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.059
-2036,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.435
-2037,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.826
-2038,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.226
-2039,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.633
-2040,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.041
-2041,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.449
-2042,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.853
-2043,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.252
-2044,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.644
-2045,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.028
-2046,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.402
-2047,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.765
-2048,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.117
-2049,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.457
-2050,Human capital investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.785
-2025,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),0.0
-2026,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.39
-2027,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-0.713
-2028,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.127
-2029,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-1.58
-2030,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.043
-2031,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.505
-2032,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-2.956
-2033,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.391
-2034,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-3.809
-2035,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.206
-2036,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.583
-2037,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-4.939
-2038,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.274
-2039,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.589
-2040,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-5.884
-2041,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.161
-2042,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.419
-2043,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.661
-2044,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-6.888
-2045,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.099
-2046,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.296
-2047,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.48
-2048,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.651
-2049,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.811
-2050,R&D investment,Policy rate (R<sup>mp</sup><sub>t</sub>),-7.96
-2025,Government consumption,Nominal bond rate (R<sub>t</sub>),0.0
-2026,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.464
-2027,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.512
-2028,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.557
-2029,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.6
-2030,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.64
-2031,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.679
-2032,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.716
-2033,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.75
-2034,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.784
-2035,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.815
-2036,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.845
-2037,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.873
-2038,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.9
-2039,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.926
-2040,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.95
-2041,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.973
-2042,Government consumption,Nominal bond rate (R<sub>t</sub>),-0.995
-2043,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.016
-2044,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.035
-2045,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.054
-2046,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.071
-2047,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.088
-2048,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.104
-2049,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.119
-2050,Government consumption,Nominal bond rate (R<sub>t</sub>),-1.133
-2025,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),0.0
-2026,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-0.817
-2027,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-1.087
-2028,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-1.351
-2029,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-1.605
-2030,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-1.85
-2031,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-2.084
-2032,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-2.307
-2033,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-2.52
-2034,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-2.721
-2035,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-2.912
-2036,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-3.093
-2037,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-3.264
-2038,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-3.425
-2039,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-3.577
-2040,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-3.721
-2041,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-3.857
-2042,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-3.985
-2043,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.105
-2044,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.218
-2045,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.325
-2046,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.425
-2047,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.52
-2048,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.609
-2049,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.692
-2050,Infrastructure investment,Nominal bond rate (R<sub>t</sub>),-4.771
-2025,Human capital investment,Nominal bond rate (R<sub>t</sub>),0.0
-2026,Human capital investment,Nominal bond rate (R<sub>t</sub>),-0.538
-2027,Human capital investment,Nominal bond rate (R<sub>t</sub>),-0.426
-2028,Human capital investment,Nominal bond rate (R<sub>t</sub>),-0.41
-2029,Human capital investment,Nominal bond rate (R<sub>t</sub>),-0.479
-2030,Human capital investment,Nominal bond rate (R<sub>t</sub>),-0.62
-2031,Human capital investment,Nominal bond rate (R<sub>t</sub>),-0.823
-2032,Human capital investment,Nominal bond rate (R<sub>t</sub>),-1.077
-2033,Human capital investment,Nominal bond rate (R<sub>t</sub>),-1.373
-2034,Human capital investment,Nominal bond rate (R<sub>t</sub>),-1.702
-2035,Human capital investment,Nominal bond rate (R<sub>t</sub>),-2.059
-2036,Human capital investment,Nominal bond rate (R<sub>t</sub>),-2.435
-2037,Human capital investment,Nominal bond rate (R<sub>t</sub>),-2.826
-2038,Human capital investment,Nominal bond rate (R<sub>t</sub>),-3.226
-2039,Human capital investment,Nominal bond rate (R<sub>t</sub>),-3.633
-2040,Human capital investment,Nominal bond rate (R<sub>t</sub>),-4.041
-2041,Human capital investment,Nominal bond rate (R<sub>t</sub>),-4.449
-2042,Human capital investment,Nominal bond rate (R<sub>t</sub>),-4.853
-2043,Human capital investment,Nominal bond rate (R<sub>t</sub>),-5.252
-2044,Human capital investment,Nominal bond rate (R<sub>t</sub>),-5.644
-2045,Human capital investment,Nominal bond rate (R<sub>t</sub>),-6.028
-2046,Human capital investment,Nominal bond rate (R<sub>t</sub>),-6.402
-2047,Human capital investment,Nominal bond rate (R<sub>t</sub>),-6.765
-2048,Human capital investment,Nominal bond rate (R<sub>t</sub>),-7.117
-2049,Human capital investment,Nominal bond rate (R<sub>t</sub>),-7.457
-2050,Human capital investment,Nominal bond rate (R<sub>t</sub>),-7.785
-2025,R&D investment,Nominal bond rate (R<sub>t</sub>),0.0
-2026,R&D investment,Nominal bond rate (R<sub>t</sub>),-0.39
-2027,R&D investment,Nominal bond rate (R<sub>t</sub>),-0.713
-2028,R&D investment,Nominal bond rate (R<sub>t</sub>),-1.127
-2029,R&D investment,Nominal bond rate (R<sub>t</sub>),-1.58
-2030,R&D investment,Nominal bond rate (R<sub>t</sub>),-2.043
-2031,R&D investment,Nominal bond rate (R<sub>t</sub>),-2.505
-2032,R&D investment,Nominal bond rate (R<sub>t</sub>),-2.956
-2033,R&D investment,Nominal bond rate (R<sub>t</sub>),-3.391
-2034,R&D investment,Nominal bond rate (R<sub>t</sub>),-3.809
-2035,R&D investment,Nominal bond rate (R<sub>t</sub>),-4.206
-2036,R&D investment,Nominal bond rate (R<sub>t</sub>),-4.583
-2037,R&D investment,Nominal bond rate (R<sub>t</sub>),-4.939
-2038,R&D investment,Nominal bond rate (R<sub>t</sub>),-5.274
-2039,R&D investment,Nominal bond rate (R<sub>t</sub>),-5.589
-2040,R&D investment,Nominal bond rate (R<sub>t</sub>),-5.884
-2041,R&D investment,Nominal bond rate (R<sub>t</sub>),-6.161
-2042,R&D investment,Nominal bond rate (R<sub>t</sub>),-6.419
-2043,R&D investment,Nominal bond rate (R<sub>t</sub>),-6.661
-2044,R&D investment,Nominal bond rate (R<sub>t</sub>),-6.888
-2045,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.099
-2046,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.296
-2047,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.48
-2048,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.651
-2049,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.811
-2050,R&D investment,Nominal bond rate (R<sub>t</sub>),-7.96
+2025,Government consumption,Nominal interest rate (R<sub>t</sub>),0.0
+2026,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.464
+2027,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.512
+2028,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.557
+2029,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.6
+2030,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.64
+2031,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.679
+2032,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.716
+2033,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.75
+2034,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.784
+2035,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.815
+2036,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.845
+2037,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.873
+2038,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.9
+2039,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.926
+2040,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.95
+2041,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.973
+2042,Government consumption,Nominal interest rate (R<sub>t</sub>),-0.995
+2043,Government consumption,Nominal interest rate (R<sub>t</sub>),-1.016
+2044,Government consumption,Nominal interest rate (R<sub>t</sub>),-1.035
+2045,Government consumption,Nominal interest rate (R<sub>t</sub>),-1.054
+2046,Government consumption,Nominal interest rate (R<sub>t</sub>),-1.071
+2047,Government consumption,Nominal interest rate (R<sub>t</sub>),-1.088
+2048,Government consumption,Nominal interest rate (R<sub>t</sub>),-1.104
+2049,Government consumption,Nominal interest rate (R<sub>t</sub>),-1.119
+2050,Government consumption,Nominal interest rate (R<sub>t</sub>),-1.133
+2025,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),0.0
+2026,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-0.817
+2027,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-1.087
+2028,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-1.351
+2029,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-1.605
+2030,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-1.85
+2031,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-2.084
+2032,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-2.307
+2033,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-2.52
+2034,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-2.721
+2035,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-2.912
+2036,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-3.093
+2037,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-3.264
+2038,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-3.425
+2039,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-3.577
+2040,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-3.721
+2041,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-3.857
+2042,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-3.985
+2043,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-4.105
+2044,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-4.218
+2045,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-4.325
+2046,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-4.425
+2047,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-4.52
+2048,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-4.609
+2049,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-4.692
+2050,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-4.771
+2025,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.0
+2026,Human capital investment,Nominal interest rate (R<sub>t</sub>),-0.538
+2027,Human capital investment,Nominal interest rate (R<sub>t</sub>),-0.426
+2028,Human capital investment,Nominal interest rate (R<sub>t</sub>),-0.41
+2029,Human capital investment,Nominal interest rate (R<sub>t</sub>),-0.479
+2030,Human capital investment,Nominal interest rate (R<sub>t</sub>),-0.62
+2031,Human capital investment,Nominal interest rate (R<sub>t</sub>),-0.823
+2032,Human capital investment,Nominal interest rate (R<sub>t</sub>),-1.077
+2033,Human capital investment,Nominal interest rate (R<sub>t</sub>),-1.373
+2034,Human capital investment,Nominal interest rate (R<sub>t</sub>),-1.702
+2035,Human capital investment,Nominal interest rate (R<sub>t</sub>),-2.059
+2036,Human capital investment,Nominal interest rate (R<sub>t</sub>),-2.435
+2037,Human capital investment,Nominal interest rate (R<sub>t</sub>),-2.826
+2038,Human capital investment,Nominal interest rate (R<sub>t</sub>),-3.226
+2039,Human capital investment,Nominal interest rate (R<sub>t</sub>),-3.633
+2040,Human capital investment,Nominal interest rate (R<sub>t</sub>),-4.041
+2041,Human capital investment,Nominal interest rate (R<sub>t</sub>),-4.449
+2042,Human capital investment,Nominal interest rate (R<sub>t</sub>),-4.853
+2043,Human capital investment,Nominal interest rate (R<sub>t</sub>),-5.252
+2044,Human capital investment,Nominal interest rate (R<sub>t</sub>),-5.644
+2045,Human capital investment,Nominal interest rate (R<sub>t</sub>),-6.028
+2046,Human capital investment,Nominal interest rate (R<sub>t</sub>),-6.402
+2047,Human capital investment,Nominal interest rate (R<sub>t</sub>),-6.765
+2048,Human capital investment,Nominal interest rate (R<sub>t</sub>),-7.117
+2049,Human capital investment,Nominal interest rate (R<sub>t</sub>),-7.457
+2050,Human capital investment,Nominal interest rate (R<sub>t</sub>),-7.785
+2025,R&D investment,Nominal interest rate (R<sub>t</sub>),0.0
+2026,R&D investment,Nominal interest rate (R<sub>t</sub>),-0.39
+2027,R&D investment,Nominal interest rate (R<sub>t</sub>),-0.713
+2028,R&D investment,Nominal interest rate (R<sub>t</sub>),-1.127
+2029,R&D investment,Nominal interest rate (R<sub>t</sub>),-1.58
+2030,R&D investment,Nominal interest rate (R<sub>t</sub>),-2.043
+2031,R&D investment,Nominal interest rate (R<sub>t</sub>),-2.505
+2032,R&D investment,Nominal interest rate (R<sub>t</sub>),-2.956
+2033,R&D investment,Nominal interest rate (R<sub>t</sub>),-3.391
+2034,R&D investment,Nominal interest rate (R<sub>t</sub>),-3.809
+2035,R&D investment,Nominal interest rate (R<sub>t</sub>),-4.206
+2036,R&D investment,Nominal interest rate (R<sub>t</sub>),-4.583
+2037,R&D investment,Nominal interest rate (R<sub>t</sub>),-4.939
+2038,R&D investment,Nominal interest rate (R<sub>t</sub>),-5.274
+2039,R&D investment,Nominal interest rate (R<sub>t</sub>),-5.589
+2040,R&D investment,Nominal interest rate (R<sub>t</sub>),-5.884
+2041,R&D investment,Nominal interest rate (R<sub>t</sub>),-6.161
+2042,R&D investment,Nominal interest rate (R<sub>t</sub>),-6.419
+2043,R&D investment,Nominal interest rate (R<sub>t</sub>),-6.661
+2044,R&D investment,Nominal interest rate (R<sub>t</sub>),-6.888
+2045,R&D investment,Nominal interest rate (R<sub>t</sub>),-7.099
+2046,R&D investment,Nominal interest rate (R<sub>t</sub>),-7.296
+2047,R&D investment,Nominal interest rate (R<sub>t</sub>),-7.48
+2048,R&D investment,Nominal interest rate (R<sub>t</sub>),-7.651
+2049,R&D investment,Nominal interest rate (R<sub>t</sub>),-7.811
+2050,R&D investment,Nominal interest rate (R<sub>t</sub>),-7.96
 2025,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2026,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.031
 2027,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.027

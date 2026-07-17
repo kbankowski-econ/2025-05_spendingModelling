@@ -100,11 +100,8 @@ S = STEADY_STATE(S);
 //********************************************************
 // MONETARY AUTHORITY
 //********************************************************
-// Taylor rule
-Rmp/Rss = (Rmp(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
-
-// Government borrowing cost vs. policy rate (sovereign spread)
-log(R) = rho_RG*log(R(-1)) + (1-rho_RG)*log(Rmp) + epsi_spread;
+// Taylor rule for the nominal policy and government financing rate
+R/Rss = (R(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
 
 //********************************************************
 // GOVERNMENT DECISIONS

@@ -6,7 +6,6 @@ PIstar=1;            % Optimnal gross inflation
 PI=1;                % Gross inflation
 R=g/betta;  % interest rate
 rk=g/betta-(1-delta);   % return on private investment
-Rmp=R;                   % Monetary policy rate
 %(R/g-1)*400 
 N=1/3;                    % Effective Labor supply
 %H=1;

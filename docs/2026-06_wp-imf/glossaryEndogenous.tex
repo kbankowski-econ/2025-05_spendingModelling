@@ -65,26 +65,25 @@
 34 & $T_t$ & Lump-sum transfers \gloseq{T_t=T^{SS}+\rho_T(T_{t-1}-T^{SS})-(1-\rho_T)\gamma^T_d e_{T,t}^{\mathrm{aux}}(b_{t-1}-b^*)Y^{d,SS}} & \texttt{T} & -0.013 & -0.051 \\
 35 & $\tau_t^{c}$ & Consumption-tax rate \gloseq{\tau^c_t=\tau^c+\varepsilon^{\tau c}_t} & \texttt{tauc} & 0.18 & 0.15 \\
 36 & $\tau_t^{w}$ & Labor-income-tax rate \gloseq{\tau^w_t=\tau^w+\varepsilon^{\tau w}_t} & \texttt{tauw} & 0.25 & 0.1 \\
-37 & $R_t^{mp}$ & Monetary-policy rate \gloseq{\tfrac{R^{mp}_t}{R^{SS}}=\big(\tfrac{R^{mp}_{t-1}}{R^{SS}}\big)^{\rho_R}\big[(\tfrac{\Pi_t}{\Pi})^{\gamma_\pi}(\tfrac{Y^d_t}{Y^{d,SS}})^{\gamma_y}\big]^{1-\rho_R}e^{\varepsilon^{mp}_t}} & \texttt{Rmp} & 1.006 & 1.009 \\
-38 & $R_t$ & Government borrowing rate \gloseq{\log R_t=\rho_{RG}\log R_{t-1}+(1-\rho_{RG})\log R^{mp}_t+\varepsilon^{spr}_t} & \texttt{R} & 1.006 & 1.009 \\
-39 & $e_t^{GI}$ & Infrastructure efficiency gap \gloseq{e^{GI}_t=e^{GI}-\varepsilon^{gi,\mathit{eff}}_t} & \texttt{eGI} & 0.359 & 0.406 \\
-40 & $e_t^{GE}$ & Education and health efficiency gap \gloseq{e^{GE}_t=e^{GE}-\varepsilon^{ge,\mathit{eff}}_t} & \texttt{eGE} & 0.306 & 0.329 \\
-41 & $e_t^{GRD}$ & R\&D efficiency gap \gloseq{e^{GRD}_t=e^{GRD}-\varepsilon^{rd,\mathit{eff}}_t} & \texttt{eGRD} & 0.399 & 0.2 \\
+37 & $R_t$ & Nominal policy and government financing rate \gloseq{\tfrac{R_t}{R^{SS}}=\big(\tfrac{R_{t-1}}{R^{SS}}\big)^{\rho_R}\big[(\tfrac{\Pi_t}{\Pi})^{\gamma_\pi}(\tfrac{Y^d_t}{Y^{d,SS}})^{\gamma_y}\big]^{1-\rho_R}e^{\varepsilon^{mp}_t}} & \texttt{R} & 1.006 & 1.009 \\
+38 & $e_t^{GI}$ & Infrastructure efficiency gap \gloseq{e^{GI}_t=e^{GI}-\varepsilon^{gi,\mathit{eff}}_t} & \texttt{eGI} & 0.359 & 0.406 \\
+39 & $e_t^{GE}$ & Education and health efficiency gap \gloseq{e^{GE}_t=e^{GE}-\varepsilon^{ge,\mathit{eff}}_t} & \texttt{eGE} & 0.306 & 0.329 \\
+40 & $e_t^{GRD}$ & R\&D efficiency gap \gloseq{e^{GRD}_t=e^{GRD}-\varepsilon^{rd,\mathit{eff}}_t} & \texttt{eGRD} & 0.399 & 0.2 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Market clearing and equilibrium}} \\
 \addlinespace[0.1em]
-42 & $Y_t^{d}$ & Aggregate demand \gloseq{Y^d_t=C_t+I_t+G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t+\big(\tfrac{Z_{t-1}}{A_{t-1}}-1\big)S_t} & \texttt{yd} & 0.749 & 0.67 \\
-43 & $v_t^{p}$ & Price dispersion \gloseq{v^p_t=\theta_p(\Pi_{t-1}^{\chi_p}/\Pi_t)^{-\epsilon}v^p_{t-1}+(1-\theta_p)(\Pi^*_t)^{-\epsilon}} & \texttt{vp} & 1 & 1 \\
+41 & $Y_t^{d}$ & Aggregate demand \gloseq{Y^d_t=C_t+I_t+G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t+\big(\tfrac{Z_{t-1}}{A_{t-1}}-1\big)S_t} & \texttt{yd} & 0.749 & 0.67 \\
+42 & $v_t^{p}$ & Price dispersion \gloseq{v^p_t=\theta_p(\Pi_{t-1}^{\chi_p}/\Pi_t)^{-\epsilon}v^p_{t-1}+(1-\theta_p)(\Pi^*_t)^{-\epsilon}} & \texttt{vp} & 1 & 1 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Auxiliary and steady state}} \\
 \addlinespace[0.1em]
-44 & $R_t/\Pi_t$ & Ex-post real interest rate \gloseq{r^{\mathit{real}}_t=R_t/\Pi_t} & \texttt{rreal} & 1.006 & 1.009 \\
-45 & -- & Steady-state output (value added) & \texttt{ydss} & 0.749 & 0.67 \\
-46 & -- & Steady-state borrowing rate & \texttt{Rss} & 1.006 & 1.009 \\
+43 & $R_t/\Pi_t$ & Ex-post real interest rate \gloseq{r^{\mathit{real}}_t=R_t/\Pi_t} & \texttt{rreal} & 1.006 & 1.009 \\
+44 & -- & Steady-state output (value added) & \texttt{ydss} & 0.749 & 0.67 \\
+45 & -- & Steady-state nominal interest rate & \texttt{Rss} & 1.006 & 1.009 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Reporting (share of steady-state GDP)}} \\
 \addlinespace[0.1em]
-47 & -- & Primary deficit \gloseq{(G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t+T_t-\tau^w_t w_t N_t-\tau^c_t C_t)/Y^{d,SS}} & \texttt{pdef\_yss} & -0.006 & -0.004 \\
-48 & -- & Transfers \gloseq{T_t/Y^{d,SS}} & \texttt{T\_yss} & -0.018 & -0.077 \\
-49 & -- & Public debt \gloseq{B_t/Y^{d,SS}} & \texttt{by\_yss} & 4 & 2.4 \\
+46 & -- & Primary deficit \gloseq{(G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t+T_t-\tau^w_t w_t N_t-\tau^c_t C_t)/Y^{d,SS}} & \texttt{pdef\_yss} & -0.006 & -0.004 \\
+47 & -- & Transfers \gloseq{T_t/Y^{d,SS}} & \texttt{T\_yss} & -0.018 & -0.077 \\
+48 & -- & Public debt \gloseq{B_t/Y^{d,SS}} & \texttt{by\_yss} & 4 & 2.4 \\
 \end{longtable}

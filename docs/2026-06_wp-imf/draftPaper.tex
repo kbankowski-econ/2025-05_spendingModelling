@@ -198,7 +198,7 @@ The household chooses consumption, labor supply, private investment, holdings of
 The production sector contains a competitive final-good producer, retailers that set prices subject to Calvo frictions, intermediate producers that operate Cobb--Douglas technologies, and adopters that convert created but unadopted technologies into usable ones.
 The government comprises a fiscal authority and a central bank.
 The fiscal authority spends on government consumption, public infrastructure, public human capital, and public R\&D, in addition to lump-sum transfers, and levies taxes on consumption and labor income.
-The central bank sets the policy rate according to a Taylor rule.
+The central bank sets the nominal interest rate according to a Taylor rule.
 
 The economy grows along a balanced-growth path driven by technology; the trend level is denoted $\Lambda_t$ and grows at the constant gross rate $g$.
 The remainder of this section sets out the model's building blocks in turn, starting from households.
@@ -338,7 +338,7 @@ The productivity payoff of the adopted-technology stock $A_t$ is realized in the
 
 The fiscal authority determines the composition of public spending and how it is financed while public debt is stabilized.
 It can also improve the productivity of spending by narrowing the efficiency gaps, which measure the fraction of investment and R\&D outlays not converted into productive capital or technology.
-The monetary authority sets the policy rate, which anchors the government's borrowing rate.
+The monetary authority sets the nominal interest rate faced by the government.
 
 \paragraph{Government budget.}
 Let $B_t$ denote real public debt and $b_t=B_t/Y_t$ the debt-to-GDP ratio.
@@ -385,18 +385,12 @@ Here $e_{T,t}^{\mathrm{aux}}$ is an auxiliary dummy that equals zero throughout 
 It returns to one afterward, when the positive coefficient $\gamma_d^T$ makes transfers fall in response to debt above target and thereby restores debt stability.
 The policy experiments in Section~\ref{sec:results} instead keep $e_{T,t}^{\mathrm{aux}}=1$ and reallocate spending permanently toward a productive category through an equal reduction in government consumption, making primary spending ex ante budget-neutral.
 
-\paragraph{Monetary policy and government borrowing rate.}
-The central bank sets the policy rate $R_t^{mp}$ according to a Taylor rule,
+\paragraph{Monetary policy and the government financing rate.}
+The central bank sets the nominal interest rate $R_t$, which is also the government's financing rate, according to a Taylor rule:
 \begin{equation} \label{eq:taylor}
-    \frac{R_t^{mp}}{R^{mp}} = \left(\frac{R_{t-1}^{mp}}{R^{mp}}\right)^{\rho_R}\left[\left(\frac{\Pi_t}{\Pi}\right)^{\gamma_\pi}\left(\frac{Y_t^{d}}{Y^{d}}\right)^{\gamma_y}\right]^{1-\rho_R} e^{\varepsilon_t^{mp}}.
+    \frac{R_t}{R^{SS}} = \left(\frac{R_{t-1}}{R^{SS}}\right)^{\rho_R}\left[\left(\frac{\Pi_t}{\Pi}\right)^{\gamma_\pi}\left(\frac{Y_t^{d}}{Y^{d,SS}}\right)^{\gamma_y}\right]^{1-\rho_R} e^{\varepsilon_t^{mp}}.
 \end{equation}
 Here $\rho_R$ is a smoothing parameter, while $\gamma_\pi$ and $\gamma_y$ govern the responses to inflation and aggregate demand respectively.
-The government borrowing rate $R_t$ tracks the policy rate up to an exogenous shock $\varepsilon_t^{spr}$,
-\begin{equation} \label{eq:spread}
-    \log R_t = \rho_{RG}\log R_{t-1} + \left(1-\rho_{RG}\right)\log R_t^{mp} + \varepsilon_t^{spr},
-\end{equation}
-where $\rho_{RG}$ governs persistence in the borrowing rate.
-The baseline calibration sets $\rho_{RG}=0$, so the borrowing rate moves one-for-one with the policy rate in the absence of that shock.
 
 \subsection{Market Clearing and Equilibrium}
 
@@ -543,7 +537,7 @@ Each line is the response to a persistent increase in one instrument---an AR(1) 
 The panels are arranged in rows by theme.
 Row 1 reports the demand side (output, consumption, private investment, and government spending) and row 2 the supply side---the four inputs to the production function: adopted technology, public infrastructure capital, private capital, and effective labor.
 Row 3 decomposes effective labor into labor supply and the human capital stock.
-Rows 4 and 5 report the nominal block (inflation and the policy, bond, and real interest rates) and the fiscal block (the primary deficit, transfers, and the debt-to-GDP ratio).
+Rows 4 and 5 report the nominal block (inflation and the nominal and real interest rates) and the fiscal block (the primary deficit, transfers, and the debt-to-GDP ratio).
 
 The three productive instruments raise output through distinct channels and over distinct horizons.
 Infrastructure investment lifts output and private investment quickly, since public infrastructure capital feeds directly into the production function~\eqref{eq:production}.
@@ -559,9 +553,9 @@ Government consumption, being unproductive, leaves the supply side largely uncha
     \desc{Impulse responses to four standard debt-financed expansion shocks, each a persistent (AR(1), persistence 0.9) increase in one spending category with an impact of 1 percent of GDP and no offsetting cut, as listed in the legend.
 All panels report deviations from the steady state, calculated by block.
 Demand, supply, and labor panels (top three rows; the third row decomposes effective labor into labor supply and the human capital stock) are percent deviations from the steady-state level.
-Nominal panels (fourth row: inflation, policy rate, nominal bond rate, real rate) are annualized percentage-point deviations, the change in the gross quarterly rate multiplied by 400.
+Nominal panels (fourth row: inflation, nominal interest rate, real interest rate) are annualized percentage-point deviations, the change in the gross quarterly rate multiplied by 400.
 Fiscal panels (bottom row: primary deficit, transfers, debt-to-GDP ratio) are deviations in percentage points of GDP.
-The real interest rate is the nominal government bond rate deflated by inflation.}
+The real interest rate is the nominal interest rate deflated by inflation.}
 \end{figure}
 
 \subsection{Fiscal Multipliers}
@@ -992,9 +986,9 @@ Impulse responses to four standard debt-financed expansion shocks, each a perman
 Unlike the headline figure, which uses a persistent AR(1) (persistence 0.9) shock, here the spending increase is a step that stays at 1 percent of GDP indefinitely.
 All panels report deviations from the steady state, calculated by block.
 Demand, supply, and labor panels (top three rows; the third row decomposes effective labor into labor supply and the human capital stock) are percent deviations from the steady-state level.
-Nominal panels (fourth row: inflation, policy rate, nominal bond rate, real rate) are annualized percentage-point deviations, the change in the gross quarterly rate multiplied by 400.
+Nominal panels (fourth row: inflation, nominal interest rate, real interest rate) are annualized percentage-point deviations, the change in the gross quarterly rate multiplied by 400.
 Fiscal panels (bottom row: primary deficit, transfers, debt-to-GDP ratio) are deviations in percentage points of GDP.
-The real interest rate is the nominal government bond rate deflated by inflation.}
+The real interest rate is the nominal interest rate deflated by inflation.}
 \end{figure}
 
 \subsection{Fiscal Multipliers}

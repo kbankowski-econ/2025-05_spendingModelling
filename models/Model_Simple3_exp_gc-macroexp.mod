@@ -9,7 +9,7 @@
 var 
 C               % HH consumption
 lambda          % Marginal Utility
-R               % Interest rate on bond
+R               % Nominal policy and government financing rate
 PI              % Gross inflation
 N               % (Effective) Labor supply
 w          % Real wages
@@ -22,7 +22,6 @@ mc              % Marginal cost
 PIstar          % Optimnal gross inflation 
 y              % Production
 Kg              % Public capital
-Rmp             % Policy rate
 b              % Debt level
 by              % Debt/GDP
 Igi              % Public investment
@@ -66,7 +65,6 @@ eGRD            % Gap in public R&D efficiency (e^GRD)
 varexo
 epsi_gc         % Shock to government consumption
 epsi_igi         % Shock to government investment  
-epsi_spread     % Shock to Spread
 epsi_MP         % Monetary Policy Shocks
 epsi_tauc       % Consumption income tax shock 
 epsi_tauw       % Labor income tax shock
@@ -94,7 +92,6 @@ rho_R           % Persistence of policy rate
 gamma_pi        % Reponse of MP to inflation
 gamma_y         % Reponse of MP to OG
 Piss            % SS of gross inflation
-rho_RG          % Persistence of the government borrowing rate
 taucss          % Consumption tax rate SS
 tauwss          % Income tax rate SS
 byss            % Steady state of debt
@@ -132,7 +129,6 @@ rho_R=0.7;
 gamma_pi=1.5;
 gamma_y=0.25;
 Piss=1;
-rho_RG=0;
 gamma_d_T=0.01;
 rho_T=0;
 deltaH=0.025;
@@ -215,10 +211,8 @@ S = STEADY_STATE(S);
 //********************************************************
 // MONETARY AUTHORITY
 //********************************************************
-// Taylor rule
-Rmp/Rss = (Rmp(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
-// Government borrowing cost vs. policy rate (sovereign spread)
-log(R) = rho_RG*log(R(-1)) + (1-rho_RG)*log(Rmp) + epsi_spread;
+// Taylor rule for the nominal policy and government financing rate
+R/Rss = (R(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
 //********************************************************
 // GOVERNMENT DECISIONS
 //********************************************************

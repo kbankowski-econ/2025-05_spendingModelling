@@ -77,9 +77,9 @@ PANELS = [
     None,
     # Row 4 - nominal block (annualized percentage points)
     ("PI_ann",    "Inflation (Π<sub>t</sub>)"),
-    ("Rmp_ann",   "Policy rate (R<sup>mp</sup><sub>t</sub>)"),
-    ("R_ann",     "Nominal bond rate (R<sub>t</sub>)"),
+    ("R_ann",     "Nominal interest rate (R<sub>t</sub>)"),
     ("rreal_ann", "Real interest rate (R<sub>t</sub>/Π<sub>t</sub>)"),
+    None,
     # Row 5 - fiscal block (percentage points of steady-state GDP); primary
     # deficit is a composite budget flow with no single paper symbol (see
     # eq:govbudget). Debt service (dserv_yss) is computed and exported but not
