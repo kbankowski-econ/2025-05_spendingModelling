@@ -91,7 +91,6 @@ g               % Constant gross trend growth rate
 Igiy             % Public investment/GDP
 Gcy             % Public consumption/GDP
 gamma_d_T   % Response of lump sum transfer to debt
-rho_T
 eGI_ss          % SS gap in public infrastructure efficiency (e^GI)
 deltaH          % Depreciation of Labor
 gamma             % Effectiveness of education investment.
@@ -122,7 +121,6 @@ gamma_pi=1.5;
 gamma_y=0.25;
 Piss=1;
 gamma_d_T=0.01;
-rho_T=0;
 deltaH=0.025;
 gamma=0.5;
 markupss=1.18;
@@ -237,7 +235,7 @@ tauc = taucss+epsi_tauc;
 // Labor-income tax rate
 tauw = tauwss+epsi_tauw;
 // Lump-sum transfers
-T-STEADY_STATE(T) = rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*eTaux*(by(-1)-byss)*ydss);
+T-STEADY_STATE(T) = -gamma_d_T*eTaux*(by(-1)-byss)*ydss;
 // Gap in infrastructure spending efficiency (e^GI)
 eGI = eGI_ss-epsi_effgi;
 // Gap in education and health spending efficiency (e^GE; positive shock closes the gap)

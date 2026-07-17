@@ -39,7 +39,7 @@ def main():
     shown = {
         "betta", "varphi", "alpha", "delta", "deltaH", "thetap", "chi",
         "epsilon", "vartheta", "markupss", "Piss", "rho_R", "gamma_pi",
-        "gamma_y", "gamma_d_T", "rho_T",
+        "gamma_y", "gamma_d_T",
     }
     for code in shown:
         assert abs(ae[code] - em[code]) < 1e-12, f"{code} differs across calibrations"
@@ -65,7 +65,6 @@ def main():
             (r"$\gamma_\pi$", "Policy response to inflation", "gamma_pi", 2),
             (r"$\gamma_y$", "Policy response to aggregate demand", "gamma_y", 2),
             (r"$\gamma_d^T$", "Transfer response to debt", "gamma_d_T", 2),
-            (r"$\rho_T$", "Transfer persistence", "rho_T", 0),
         ]),
     ]
 

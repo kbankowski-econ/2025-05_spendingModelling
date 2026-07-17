@@ -117,8 +117,9 @@ noted, each followed by a 44-model re-run.
   `Igi_ys`, `Grd_ydss_ratio`, `pdef`, plus `TFP`/`dserv_yss` (exported but plotted nowhere).
 
 Notation aligned with the paper: debt `D`/`d` → `b`/`by` (paper `B_t`/`b_t`/`b^*`); shock
-`epsirhoadopt` → `epsi_q` (paper `ε^q`); transfer params `rho_trans`/`gamma_d_trans` →
-`rho_T`/`gamma_d_T` (paper `ρ_T`/`γ_d^T`); plus the earlier Tier-1/2 renames.
+`epsirhoadopt` → `epsi_q` (paper `ε^q`); transfer parameter `gamma_d_trans` →
+`gamma_d_T` (paper `γ_d^T`), while the zero-calibrated `rho_trans` was subsequently
+removed; plus the earlier Tier-1/2 renames.
 
 Counts after the pass: **57 endogenous, 45 parameters, 13 exogenous** — model and the
 appendix glossary match exactly.

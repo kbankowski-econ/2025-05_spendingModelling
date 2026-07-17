@@ -100,7 +100,6 @@ Cgy             % Public consumption/GDP
 rho_Cg          % AR(1) process for public consumption
 rho_Ig          % AR(1) process for public investment  
 gamma_d_T   % Response of lump sum transfer to debt
-rho_T
 effgap_ss       % SS gap in public infrastructure efficiency (e^GI)
 deltaH          % Depreciation of Labor
 gamma             % Effectiveness of education investment.

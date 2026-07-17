@@ -11,7 +11,6 @@ gamma_y=0.25;
 Piss=1;
 
 gamma_d_T=0.01;
-rho_T=0;
 
 deltaH=0.025;
 gamma=0.5;

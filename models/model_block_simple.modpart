@@ -118,7 +118,7 @@ Kg = STEADY_STATE(Kg);
 b = (R(-1)/PI)*b(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;
 
 // Lump-sum transfers
-T-STEADY_STATE(T) = rho_T*(T(-1)-STEADY_STATE(T))+(1-rho_T)*(-gamma_d_T*eTaux*(by(-1)-byss)*ydss);
+T-STEADY_STATE(T) = -gamma_d_T*eTaux*(by(-1)-byss)*ydss;
 
 // Debt to GDP
 by = b/y;

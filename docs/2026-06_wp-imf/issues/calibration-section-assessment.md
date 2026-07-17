@@ -129,10 +129,10 @@ debt is divided by quarterly GDP. Reporting only the raw model values in the
 appendix can mislead readers; Section 3 should report the intuitive annual-GDP
 ratios and explain the quarterly normalization in a note.
 
-The transfer rule also uses `gamma_d^T=0.01` and `rho_T=0`. The weak debt response
-is quantitatively important for debt-financed exercises, while the auxiliary dummy
-temporarily switches it off. These parameters should be disclosed in either the
-common calibration table or a short fiscal-closure paragraph.
+The transfer rule uses `gamma_d^T=0.01`. The weak debt response is quantitatively
+important for debt-financed exercises, while the auxiliary dummy temporarily
+switches it off. This parameter should be disclosed in either the common
+calibration table or a short fiscal-closure paragraph.
 
 ### 6. Baseline public R&D spending is omitted
 

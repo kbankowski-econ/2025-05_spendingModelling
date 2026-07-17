@@ -132,7 +132,7 @@ only), and the derived `gammaa`/`markupss`/`Bigtheta_y`/`qss`. (15 "--" params t
 Verified correct against the paper (incl. brace/order forms that render identically):
 $\beta$, $\varphi$, $\chi_p$, $\delta$, $\theta_p$, $\epsilon$, $\alpha$, $\Theta$,
 $\alpha_G$, $\rho_R$, $\gamma_\pi$, $\gamma_y$, $\rho_{RG}$, $\gamma_d^{\tau c}$,
-$\gamma_d^{\tau w}$, $\gamma_d^{T}$, $\rho_T$, $\eta_1$, $\eta_2$, $g$, $\mu$, $\gamma$,
+$\gamma_d^{\tau w}$, $\gamma_d^{T}$, $\eta_1$, $\eta_2$, $g$, $\mu$, $\gamma$,
 $\vartheta$, $\phi$, $\varsigma$, $\alpha_{HA}$, $\alpha_{RD}$, $\rho_A$.
 
 Every glossary parameter symbol now matches the paper or is a documented "--".
