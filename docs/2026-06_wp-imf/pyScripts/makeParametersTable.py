@@ -15,7 +15,7 @@ automatically:
     alpha_HA <- alphaHA    (long-run HC elasticity; EMDE "--", channel off)
     alpha_RD <- alphaRD    (long-run R&D elasticity; EMDE "--", channel off)
     varsigma <- varsigma  (adoption-probability elasticity, active in both)
-    phi     <- phi               (survival rate of adopted technologies, 1 - 0.08/4)
+    phi     <- phi               (survival rate of technologies, 1 - 0.08/4)
     mu      <- mu              (human capital elasticity, public stock)
     gamma   <- gamma              (human capital elasticity, time input)
 
@@ -90,7 +90,7 @@ def build_groups():
             (r"$\alpha_{HA}$", "Long-run human-capital elasticity",       fmt(ae["alphaHA"], 2),    "--"),
             (r"$\alpha_{RD}$", r"Long-run public-R\&D elasticity",        fmt(ae["alphaRD"], 2),    "--"),
             (r"$\rho_A$",      "Persistence of created technology",       fmt(ae["rho_A"], 2),      "--"),
-            (r"$\phi$",        "Survival rate of adopted technologies",   fmt(ae["phi"], 2),      fmt(em["phi"], 2)),
+            (r"$\phi$",        "Survival rate of technologies",           fmt(ae["phi"], 2),      fmt(em["phi"], 2)),
             (r"$\varsigma$",   "Elasticity of the adoption probability",  fmt(ae["varsigma"], 2), fmt(em["varsigma"], 2)),
         ]),
     ]
