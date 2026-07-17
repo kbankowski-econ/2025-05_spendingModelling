@@ -1,16 +1,14 @@
 """
-Working paper: generate Table 1 (tab:parameters), "Selected Model Parameters".
+Working paper: generate the structural-channel parameter table (tab:parameters).
 
 Writes only the `tabular` environment to ../parametersTable.tex; the surrounding
 table float, caption, label, source and note stay in draftPaper.tex (same split
 as multipliersTable.tex).
 
-HYBRID data sourcing. Most rows of Table 1 are *curated* calibration values that
-deliberately differ from the raw model parameters and so stay encoded here (see
-"why curated" notes per row below). Four parameters map one-for-one onto the
-solved model and are read live from the committed _results.mat (AE =
-Model_HumanCapital_exp_gc, EMDE = EM_Model_HumanCapital_exp_gc), so a
-recalibration of any of them flows into the table automatically:
+Every displayed value maps one-for-one onto the solved model and is read live
+from the committed _results.mat (AE = Model_HumanCapital_exp_gc, EMDE =
+EM_Model_HumanCapital_exp_gc), so a recalibration flows into the table
+automatically:
 
     alpha_G <- alphaG      (output elasticity, infrastructure)
     rho_A   <- rho_A         (AR(1) coefficient, technology stock)
@@ -18,10 +16,6 @@ recalibration of any of them flows into the table automatically:
     alpha_RD <- alphaRD    (long-run R&D elasticity; EMDE "--", channel off)
     varsigma <- varsigma  (adoption-probability elasticity, AE; EMDE "--", dormant)
     phi     <- phi               (survival rate of adopted technologies, 1 - 0.08/4)
-    e_GI    <- eGI_ss      (inefficiency, infrastructure investment)
-    e_GE    <- eGE_ss      (inefficiency, human capital investment)
-    e_GRD   <- eGRD_ss     (inefficiency, public R&D; EMDE shown "--", channel off)
-    delta   <- delta/deltaH (depreciation, public capital; the two are equal)
     mu      <- mu              (human capital elasticity, public stock)
     gamma   <- gamma              (human capital elasticity, time input)
 
@@ -29,24 +23,16 @@ alpha_HA and alpha_RD are shown as their explicit long-run elasticities. The
 technology-creation equation multiplies them by (1-rho_A), giving per-quarter
 loadings of 0.10 and 0.0189 at the AE calibration.
 
-The efficiency gaps e_GI/e_GE/e_GRD equal Table 2's data-derived medians (the AE
-median for advanced economies, the (EM+LIC)/2 average for EMDEs), so reading them
-here keeps Table 1 and Table 2 consistent (this also corrected a stale EMDE e_GI
-of 0.42 -> 0.41 and the AE e_GRD of 0.41 -> 0.40, recalibrated to the 0.399 data
-median). The EMDE e_GRD is reported "--" because the R&D channel is shut down there
-(alphaRD=0), even though the model still carries eGRD_ss=0.2.
-
 varsigma (adoption-probability elasticity) reads the AE varsigma and is "--" for
 EMDEs: their endogenous innovation channel is off, so the spending-driven adoption
 response is dormant (verified: the adoption block does not move in EMDE
 experiments), exactly as for alpha_HA/alpha_RD.
 
-The paper's adoption-probability SCALE q_0 is intentionally NOT a row here: it is
-not a model parameter. The code parameterizes the scale as `kappaprob` on RAW
-(non-detrended) spending, and kappaprob is SOLVED in steady state to hit the
-targeted adoption probability probadoptss=0.2/4=0.05 (kappaprob = 0.05/S_ss^varsigma
-= 0.309 AE / 0.084 EMDE). Since q_0 corresponds to no stored parameter, it is
-described in the calibration text (draftPaper.tex) rather than tabulated.
+The paper's adoption-probability scale q_0 is intentionally not a row here.
+The code represents it with the endogenous object `kappaprob`, which is solved
+in steady state to hit the targeted adoption probability
+probadoptss=0.2/4=0.05. It is therefore discussed with the internally calibrated
+scales in draftPaper.tex rather than tabulated as a structural parameter.
 
 Every row in this table is now read from _results.mat or is a documented "--".
 
@@ -84,22 +70,16 @@ def fmt(x, dp):
 def build_groups():
     """Return [(group title, [(symbol, description, AE, EMDE), ...]), ...].
 
-    Parameters are grouped by the model block they belong to (production, human
-    capital, technology creation/adoption, spending efficiency) so the table reads
-    as four short sections rather than one flat list. Every value is read from the
+    Parameters are grouped by the productive-spending channel they govern. Every
+    value is read from the
     AE/EMDE _results.mat or is a documented "--" (innovation channel off for EMDEs);
     see the module docstring for the param mapping and the q_0 omission."""
     ae = read_params(AE_MODEL)
     em = read_params(EM_MODEL)
 
-    # delta and deltaH are the same depreciation rate; verify before showing once.
-    assert abs(ae["delta"] - ae["deltaH"]) < 1e-12, "delta != deltaH (AE)"
-    assert abs(em["delta"] - em["deltaH"]) < 1e-12, "delta != deltaH (EMDE)"
-
     return [
-        ("Production and public capital", [
+        ("Public infrastructure", [
             (r"$\alpha_G$",                "Output elasticity of public infrastructure", fmt(ae["alphaG"], 3), fmt(em["alphaG"], 2)),
-            (r"$\delta^{GI},\delta^{GE}$", "Depreciation rate of public capital",        fmt(ae["delta"], 3),  fmt(em["delta"], 3)),
         ]),
         ("Human capital accumulation", [
             (r"$\mu$",     "Elasticity w.r.t.\\ the public human-capital stock", fmt(ae["mu"], 2), fmt(em["mu"], 2)),
@@ -111,11 +91,6 @@ def build_groups():
             (r"$\rho_A$",      "Persistence of created technology",       fmt(ae["rho_A"], 2),   fmt(em["rho_A"], 2)),
             (r"$\phi$",        "Survival rate of adopted technologies",   fmt(ae["phi"], 2),      fmt(em["phi"], 2)),
             (r"$\varsigma$",   "Elasticity of the adoption probability",  fmt(ae["varsigma"], 2),  "--"),
-        ]),
-        ("Spending-efficiency gaps", [
-            (r"$e^{GI}$",  "Infrastructure investment", fmt(ae["eGI_ss"], 2),  fmt(em["eGI_ss"], 2)),
-            (r"$e^{GE}$",  "Human capital investment",  fmt(ae["eGE_ss"], 2),  fmt(em["eGE_ss"], 2)),
-            (r"$e^{GRD}$", r"Public R\&D spending",     fmt(ae["eGRD_ss"], 2), "--"),
         ]),
     ]
 

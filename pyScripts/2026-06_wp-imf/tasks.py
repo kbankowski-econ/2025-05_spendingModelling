@@ -32,13 +32,15 @@ PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 
 PAPER TABLES (\\input by draftPaper.tex):
 --------------------------------------------------------------------------------
-- makeMultipliers:  Table 3, multipliers by horizon (docs/.../makeMultipliers.py)
+- makeMultipliers:  Multipliers by horizon (docs/.../makeMultipliers.py)
                     In: *_results.mat | Out: docs/2026-06_wp-imf/multipliersTable.tex
-- makeParametersTable:      Table 1, parameters (docs/.../makeParametersTable.py)
-- makeEfficiencyGapsTable:  Table 2, efficiency-gap derivation (docs/.../makeEfficiencyGapsTable.py)
-- makeNotationTable:        Table 4, notation (docs/.../makeNotationTable.py)
+- makeCommonParametersTable:    Common macro and policy parameters
+- makeCalibrationTargetsTable:  AE and EMDE steady-state targets
+- makeParametersTable:          Structural productive-spending parameters
+- makeEfficiencyGapsTable:      Efficiency-gap derivation
+- makeNotationTable:        Main endogenous-variable notation
                     Calibration/notation values, not model output.
-                    Out: docs/2026-06_wp-imf/{parameters,efficiencyGaps,notation}Table.tex
+                    Out: docs/2026-06_wp-imf/*Table.tex
 
 DIAGNOSTICS (read *_results.mat directly):
 --------------------------------------------------------------------------------
@@ -219,7 +221,7 @@ def plotEfficiencyBands(c):
 @task
 def makeMultipliers(c):
     """
-    Regenerate the multiplier table (Table 3) from the solved models.
+    Regenerate the multiplier table from the solved models.
     Runs docs/2026-06_wp-imf/pyScripts/makeMultipliers.py.
     In: *_results.mat | Out: docs/2026-06_wp-imf/multipliersTable.tex (\\input by the paper)
     """
@@ -236,31 +238,48 @@ def _run_table(c, script, label):
 
 
 @task
+def makeCommonParametersTable(c):
+    """
+    Regenerate the common macro and policy parameter table.
+    Out: docs/2026-06_wp-imf/commonParametersTable.tex
+    """
+    _run_table(c, "makeCommonParametersTable.py", "Common parameters table")
+
+
+@task
+def makeCalibrationTargetsTable(c):
+    """
+    Regenerate the AE and EMDE steady-state target table.
+    Out: docs/2026-06_wp-imf/calibrationTargetsTable.tex
+    """
+    _run_table(c, "makeCalibrationTargetsTable.py", "Calibration targets table")
+
+
+@task
 def makeParametersTable(c):
     """
-    Regenerate Table 1, Selected Model Parameters (makeParametersTable.py).
+    Regenerate the structural productive-spending parameter table.
     Out: docs/2026-06_wp-imf/parametersTable.tex (\\input by the paper)
     """
-    _run_table(c, "makeParametersTable.py", "Parameters table (Table 1)")
+    _run_table(c, "makeParametersTable.py", "Structural parameters table")
 
 
 @task
 def makeEfficiencyGapsTable(c):
     """
-    Regenerate Table 2, Derivation of the Spending-Efficiency Gaps
-    (makeEfficiencyGapsTable.py).
+    Regenerate the spending-efficiency gap derivation table.
     Out: docs/2026-06_wp-imf/efficiencyGapsTable.tex (\\input by the paper)
     """
-    _run_table(c, "makeEfficiencyGapsTable.py", "Efficiency-gap table (Table 2)")
+    _run_table(c, "makeEfficiencyGapsTable.py", "Efficiency-gap table")
 
 
 @task
 def makeNotationTable(c):
     """
-    Regenerate Table 4, Main Endogenous Variables (makeNotationTable.py).
+    Regenerate the main endogenous-variable notation table.
     Out: docs/2026-06_wp-imf/notationTable.tex (\\input by the paper)
     """
-    _run_table(c, "makeNotationTable.py", "Notation table (Table 4)")
+    _run_table(c, "makeNotationTable.py", "Notation table")
 
 
 @task
@@ -319,6 +338,8 @@ def investigateContributions(c):
     plotSensitivityIRF,
     plotEfficiencyBands,
     makeMultipliers,
+    makeCommonParametersTable,
+    makeCalibrationTargetsTable,
     makeParametersTable,
     makeEfficiencyGapsTable,
     makeNotationTable,
