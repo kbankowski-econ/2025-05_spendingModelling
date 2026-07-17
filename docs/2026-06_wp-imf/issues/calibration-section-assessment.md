@@ -167,17 +167,19 @@ also be stated.
 
 ### 9. The EMDE innovation assumption needs sharper language
 
-Table 1 uses “--” for `alpha_HA`, `alpha_RD`, `varsigma`, and the R&D efficiency
-gap, while the underlying model still carries some dormant adoption parameters and
-a positive baseline R&D spending share. The intended economic restriction is clear,
-but the presentation should distinguish:
+Table 1 now uses “--” for the inactive EMDE technology-creation parameters
+`alpha_HA`, `alpha_RD`, and `rho_A`, while reporting the active adoption elasticity
+`varsigma=0.1`. The underlying model also retains a positive baseline R&D spending
+share even though that spending does not create technologies in the EMDE calibration.
+The presentation therefore distinguishes:
 
 - a channel set to zero structurally;
 - a parameter retained in code but inactive in the reported experiments; and
 - a baseline fiscal outlay that remains in the resource constraint.
 
-Saying simply that the entire endogenous-innovation channel is “switched off” can
-hide those distinctions.
+The previous statement that the entire endogenous-innovation channel was switched
+off hid those distinctions; the revised text states that creation is inactive while
+adoption remains endogenous.
 
 ### 10. Literature attributions remain open
 

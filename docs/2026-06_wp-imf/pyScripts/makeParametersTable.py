@@ -11,10 +11,10 @@ EM_Model_HumanCapital_exp_gc), so a recalibration flows into the table
 automatically:
 
     alpha_G <- alphaG      (output elasticity, infrastructure)
-    rho_A   <- rho_A         (AR(1) coefficient, technology stock)
+    rho_A   <- rho_A         (AE AR(1) coefficient; EMDE "--", inactive)
     alpha_HA <- alphaHA    (long-run HC elasticity; EMDE "--", channel off)
     alpha_RD <- alphaRD    (long-run R&D elasticity; EMDE "--", channel off)
-    varsigma <- varsigma  (adoption-probability elasticity, AE; EMDE "--", dormant)
+    varsigma <- varsigma  (adoption-probability elasticity, active in both)
     phi     <- phi               (survival rate of adopted technologies, 1 - 0.08/4)
     mu      <- mu              (human capital elasticity, public stock)
     gamma   <- gamma              (human capital elasticity, time input)
@@ -23,10 +23,10 @@ alpha_HA and alpha_RD are shown as their explicit long-run elasticities. The
 technology-creation equation multiplies them by (1-rho_A), giving per-quarter
 loadings of 0.10 and 0.0189 at the AE calibration.
 
-varsigma (adoption-probability elasticity) reads the AE varsigma and is "--" for
-EMDEs: their endogenous innovation channel is off, so the spending-driven adoption
-response is dormant (verified: the adoption block does not move in EMDE
-experiments), exactly as for alpha_HA/alpha_RD.
+For EMDEs, alpha_HA=alpha_RD=0 keeps created technology at steady state, making
+rho_A inactive. The adoption block remains active, however, with varsigma=0.1:
+EMDEs can adopt from the existing stock of unadopted technologies even though
+human capital and public R&D do not expand the created-technology stock.
 
 The paper's adoption-probability scale q_0 is intentionally not a row here.
 The code represents it with the endogenous object `kappaprob`, which is solved
@@ -72,7 +72,8 @@ def build_groups():
 
     Parameters are grouped by the productive-spending channel they govern. Every
     value is read from the
-    AE/EMDE _results.mat or is a documented "--" (innovation channel off for EMDEs);
+    AE/EMDE _results.mat or is a documented "--" (technology-creation parameter
+    inactive for EMDEs);
     see the module docstring for the param mapping and the q_0 omission."""
     ae = read_params(AE_MODEL)
     em = read_params(EM_MODEL)
@@ -88,9 +89,9 @@ def build_groups():
         ("Technology creation and adoption", [
             (r"$\alpha_{HA}$", "Long-run human-capital elasticity",       fmt(ae["alphaHA"], 2),    "--"),
             (r"$\alpha_{RD}$", r"Long-run public-R\&D elasticity",        fmt(ae["alphaRD"], 2),    "--"),
-            (r"$\rho_A$",      "Persistence of created technology",       fmt(ae["rho_A"], 2),   fmt(em["rho_A"], 2)),
+            (r"$\rho_A$",      "Persistence of created technology",       fmt(ae["rho_A"], 2),      "--"),
             (r"$\phi$",        "Survival rate of adopted technologies",   fmt(ae["phi"], 2),      fmt(em["phi"], 2)),
-            (r"$\varsigma$",   "Elasticity of the adoption probability",  fmt(ae["varsigma"], 2),  "--"),
+            (r"$\varsigma$",   "Elasticity of the adoption probability",  fmt(ae["varsigma"], 2), fmt(em["varsigma"], 2)),
         ]),
     ]
 
