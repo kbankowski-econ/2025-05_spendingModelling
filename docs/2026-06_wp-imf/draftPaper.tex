@@ -318,7 +318,16 @@ The time-varying adoption probability is $q_t = \left(q_0+\varepsilon_t^q\right)
 The shock $\varepsilon_t^q$ shifts the adoption probability directly and is used only in the technology-diffusion experiments.
 
 Competitive adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, equating the marginal cost of adoption effort to its discounted marginal value.
-The associated value functions and the optimality condition for $S_t$ are reported in Appendix~\ref{app:equilibrium}.
+In stationary units, let $\mathcal{V}_t$ and $\mathcal{J}_t$ denote the aggregate values of adopted and unadopted technologies, respectively, $\mathit{SDF}_{t+1}$ the household stochastic discount factor, and $1+\gamma^a$ gross technology-trend growth.
+The resulting optimality condition is
+\begin{equation} \label{eq:Sfocmain}
+    S_t = \varsigma\, q_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\,
+    \frac{1}{1+\gamma^{a}}\, \frac{A_{t-1}}{A_t}
+    \left(\mathcal{V}_{t+1}-\mathcal{J}_{t+1}\right)\right].
+\end{equation}
+
+Thus, adoption expenditure rises with the elasticity of the adoption probability, the probability of adoption, and the discounted value gain from converting an unadopted technology.
+The value functions and derivation of equation~\eqref{eq:Sfocmain} are reported in Appendix~\ref{app:equilibrium}.
 The productivity payoff of the adopted-technology stock $A_t$ is realized in the production function~\eqref{eq:production}, with strength governed by $\vartheta$.
 
 \subsection{Government: Fiscal and Monetary Policy}
