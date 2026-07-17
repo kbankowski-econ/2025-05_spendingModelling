@@ -120,9 +120,6 @@ ENDOGENOUS = [
         (r"$Y_t^{d}$",        "Aggregate demand",                         "yd"),
         (r"$v_t^{p}$",        "Price dispersion",                         "vp"),
     ]),
-    ("Balanced growth", [
-        (r"$g_t$",            "Gross growth rate",                        "g"),
-    ]),
     ("Auxiliary and steady state", [
         (r"$R_t/\Pi_t$",      "Ex-post real interest rate",               "rreal"),
         ("--",                "Steady-state output (value added)",        "ydss"),
@@ -182,8 +179,7 @@ PARAMETERS = [
         (r"$e^{GRD}$",          "Steady-state R\\&D efficiency gap",            "eGRD_ss"),
     ]),
     ("Balanced growth", [
-        (r"$g$",                "Steady-state gross growth",                    "gss"),
-        ("--",                  "Trend-growth shock persistence",               "rho_g"),
+        (r"$g$",                "Constant gross trend growth rate",              "g"),
         (r"$\gamma^{a}$",         "Net trend growth of technology",               "gammaa"),
     ]),
 ]
@@ -206,9 +202,6 @@ EXOGENOUS = [
         (r"$\varepsilon_t^{ge,\mathit{eff}}$", "Human-capital-efficiency shock",      "epsi_effge"),
         (r"$\varepsilon_t^{rd,\mathit{eff}}$", r"R\&D-efficiency shock",              "epsi_effgrd"),
     ]),
-    ("Balanced growth", [
-        (r"$\varepsilon_t^{g}$",        "Trend-growth shock",                         "epsi_g"),
-    ]),
 ]
 
 
@@ -223,11 +216,11 @@ EQNS = {
     "N":        r"N_t=H_{t-1}L_t",
     "H":        r"H_t=(1-\delta^h)H_{t-1}+\chi E_t^{\gamma}(K^{GE}_{t-1})^{\mu}",
     "E":        r"\omega(L_t+E_t)^{\varphi}=\lambda^H_t\,\chi\gamma\,E_t^{\gamma-1}(K^{GE}_{t-1})^{\mu}",
-    "Ip":       r"1=\beta\,\mathbb{E}_t\!\big[\tfrac{\lambda_{t+1}}{\lambda_t}(1-\delta+r^k_{t+1})/g_{t+1}\big]",
-    "Kp":       r"g_t K_t=(1-\delta)K_{t-1}+I_t",
+    "Ip":       r"1=\beta\,\mathbb{E}_t\!\big[\tfrac{\lambda_{t+1}}{\lambda_t}(1-\delta+r^k_{t+1})/g\big]",
+    "Kp":       r"g K_t=(1-\delta)K_{t-1}+I_t",
     "rk":       r"r^k_t=\alpha\,(mc_t/\mu^{p})\,Y_t/K_{t-1}",
     "w":        r"\tfrac{K_{t-1}}{N_t}=\tfrac{\alpha}{1-\alpha}\tfrac{w_t}{r^k_t}",
-    "lambda":   r"\lambda_t=\beta\,\mathbb{E}_t\!\big[\lambda_{t+1}R_t/(g_{t+1}\Pi_{t+1})\big]",
+    "lambda":   r"\lambda_t=\beta\,\mathbb{E}_t\!\big[\lambda_{t+1}R_t/(g\Pi_{t+1})\big]",
     "lambda_H": r"\lambda^H_t=\beta\,\mathbb{E}_t\!\big[\lambda_{t+1}(1-\tau^w_{t+1})w_{t+1}L_{t+1}+\lambda^H_{t+1}(1-\delta^h)\big]",
     "SDF":      r"\mathit{SDF}_t=\beta\lambda_t(1+\tau^c_t)/[\lambda_{t-1}(1+\tau^c_{t-1})]",
     # Production and technology
@@ -246,12 +239,12 @@ EQNS = {
     # Government
     "Gc":       r"G^C_t=G^{C,SS}+Y^{d,SS}\varepsilon^{c}_t",
     "Igi":      r"I^{GI}_t=I^{GI,SS}+Y^{d,SS}\varepsilon^{gi}_t",
-    "Kg":       r"g_t K^{GI}_t=(1-\delta)K^{GI}_{t-1}+(1-e^{GI}_t)I^{GI}_t",
+    "Kg":       r"g K^{GI}_t=(1-\delta)K^{GI}_{t-1}+(1-e^{GI}_t)I^{GI}_t",
     "Ige":      r"I^{GE}_t=I^{GE,SS}+Y^{d,SS}\varepsilon^{ge}_t",
-    "Kge":      r"g_t K^{GE}_t=(1-\delta)K^{GE}_{t-1}+(1-e^{GE}_t)I^{GE}_t",
+    "Kge":      r"g K^{GE}_t=(1-\delta)K^{GE}_{t-1}+(1-e^{GE}_t)I^{GE}_t",
     "Grd":      r"G^{RD}_t=G^{RD,SS}+Y^{d,SS}\varepsilon^{rd}_t",
     "G":        r"G_t=G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t",
-    "b":        r"B_t=\tfrac{R_{t-1}}{\Pi_t}\tfrac{B_{t-1}}{g_t}+G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t+T_t-\tau^w_t w_t N_t-\tau^c_t C_t",
+    "b":        r"B_t=\tfrac{R_{t-1}}{\Pi_t}\tfrac{B_{t-1}}{g}+G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t+T_t-\tau^w_t w_t N_t-\tau^c_t C_t",
     "by":       r"b_t=B_t/Y_t",
     "T":        r"T_t=T^{SS}+\rho_T(T_{t-1}-T^{SS})-(1-\rho_T)\gamma^T_d e_{T,t}^{\mathrm{aux}}(b_{t-1}-b^*)Y^{d,SS}",
     "tauc":     r"\tau^c_t=\tau^c+\varepsilon^{\tau c}_t",
@@ -264,8 +257,6 @@ EQNS = {
     # Market clearing and equilibrium
     "yd":       r"Y^d_t=C_t+I_t+G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t+\big(\tfrac{Z_{t-1}}{A_{t-1}}-1\big)S_t",
     "vp":       r"v^p_t=\theta_p(\Pi_{t-1}^{\chi_p}/\Pi_t)^{-\epsilon}v^p_{t-1}+(1-\theta_p)(\Pi^*_t)^{-\epsilon}",
-    # Balanced growth
-    "g":        r"\log g_t=(1-\rho_g)\log g_{t-1}+\rho_g\log g^{SS}+\varepsilon^{g}_t",
     # Auxiliary and reporting
     "rreal":    r"r^{\mathit{real}}_t=R_t/\Pi_t",
     "pdef_yss": r"(G^C_t+I^{GI}_t+I^{GE}_t+G^{RD}_t+T_t-\tau^w_t w_t N_t-\tau^c_t C_t)/Y^{d,SS}",

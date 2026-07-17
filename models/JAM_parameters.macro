@@ -6,7 +6,7 @@
 
 % production and growth
 alphaG=0.2;                          % share of public capital in production         | EM: 0.2
-gss=1.004;                          % steady-state gross quarterly growth (1.6%/yr) | EM: 1.0075
+g=1.004;                            % constant gross quarterly trend growth (1.6%/yr) | EM: 1.0075
 
 % taxes and debt
 taucss=0.15;                         % steady-state consumption tax rate (GCT 15%)   | EM: 0.15

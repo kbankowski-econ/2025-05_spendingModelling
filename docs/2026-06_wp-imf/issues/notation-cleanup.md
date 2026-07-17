@@ -75,6 +75,13 @@ No paper-symbol changes (code renamed to the existing symbols). No plot scripts 
 `ZZ`/`ZZRD`, so no figures needed regenerating. Model and glossary still match exactly:
 74 / 55 / 16.
 
+### Constant-growth follow-up (2026-07-17)
+
+The unused stochastic process for trend growth was subsequently removed. The former
+endogenous `g`, exogenous `epsi_g`, parameters `rho_g` and `gss`, and the
+growth-process equation were replaced by the single calibrated parameter `g`. This
+supersedes the four historical trend-growth mappings in the table above.
+
 ## DONE — Follow-up cleanups (2026-07)
 
 Model + glossary + varDict + scripts (re-ran 44 models, re-exported; values identical):

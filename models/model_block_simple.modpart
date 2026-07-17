@@ -5,7 +5,7 @@
 1/C = lambda*(1+tauc);
 
 // Euler equation
-lambda = betta*(lambda(+1)/g(+1)*R/PI(+1));
+lambda = betta*(lambda(+1)/g*R/PI(+1));
 
 // Labor decision
 omega*(L+E)^varphi = lambda*w*H(-1)*(1-tauw);
@@ -15,7 +15,7 @@ Kp*g = (1-delta)*Kp(-1)+Ip;
 
 @#if SIMPLIFY_LEVEL < 4
 // Return on private investment
-1 = betta*(lambda(+1)/lambda/g(+1)*(1-delta+rk(+1)));
+1 = betta*(lambda(+1)/lambda/g*(1-delta+rk(+1)));
 @#else
 // SIMPLIFY >= 4: capital fixed (no investment margin). Kp pinned to steady state,
 // so the capital law of motion holds Ip at its steady state and production is
@@ -158,12 +158,6 @@ y = vp*yd;
 
 // Price dispersion
 vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
-
-//********************************************************
-// SHOCK DYNAMICS
-//********************************************************
-// Trend growth
-log(g) = (1-rho_g)*log(g(-1))+rho_g*(log(gss))+epsi_g;
 
 // Gap in education and health spending efficiency (e^GE; positive shock closes the gap)
 eGE = eGE_ss-epsi_effge;

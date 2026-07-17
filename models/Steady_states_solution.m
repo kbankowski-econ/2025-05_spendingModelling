@@ -1,6 +1,4 @@
 by=byss;
-g=gss;             % Gross growth
-shock_ZZ=0 ;         % shock to the g process  
 vp=1;                % Price dispersion
 tauc=taucss;           % Consumption tax- https://www.oecd.org/en/publications/consumption-tax-trends-2024_dcd4dd36-en.html#:~:text=Standard%20VAT%20rates%20across%20OECD,to%208.1%25%20in%202024).
 tauw =tauwss;          % Income tax: https://www.oecd.org/content/dam/oecd/en/topics/policy-issues/tax-policy/taxing-wages-united-states.pdf

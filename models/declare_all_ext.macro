@@ -23,8 +23,6 @@ tauc            % Consumption tax
 tauw            % Income tax
 yd              % Aggregate demand
 vp              % Price dispersion
-g              % Gross growth rate
-%shock_ZZ        % shock to the g process  
 omega           % Scaling
 Igss            % Steady state of Investment
 Cgss            % Steady state of Consumption
@@ -64,7 +62,6 @@ effcgrdgap      % Gap in public R&D efficiency (e^GRD)
 varexo
 epsi_cg         % Shock to government consumption
 epsi_ig         % Shock to government investment  
-epsi_g         % Shock to trend
 epsi_spread     % Shock to Spread
 epsi_MP         % Monetary Policy Shocks
 epsi_tauc       % Consumption income tax shock 
@@ -100,8 +97,7 @@ rho_RG          % Persistence of the government borrowing rate
 taucss          % Consumption tax rate SS
 tauwss          % Income tax rate SS
 byss            % Steady state of debt
-rho_g          % AR(1) of growth shock 
-gss            % SS of growth
+g               % Constant gross trend growth rate
 Igy             % Public investment/GDP
 Cgy             % Public consumption/GDP
 rho_Cg          % AR(1) process for public consumption

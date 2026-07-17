@@ -23,8 +23,6 @@ tauc            % Consumption tax
 tauw            % Income tax
 yd              % Aggregate demand
 vp              % Price dispersion
-g              % Gross growth rate
-%shock_ZZ        % shock to the g process  
 omega           % Scaling
 Rss             % Steady state interest rate   
 ydss            % Steady state output
@@ -60,7 +58,6 @@ eGRD            % Gap in public R&D efficiency (e^GRD)
 varexo
 epsi_gc         % Shock to government consumption
 epsi_igi         % Shock to government investment  
-epsi_g         % Shock to trend
 epsi_spread     % Shock to Spread
 epsi_MP         % Monetary Policy Shocks
 epsi_tauc       % Consumption income tax shock 
@@ -93,8 +90,7 @@ rho_RG          % Persistence of the government borrowing rate
 taucss          % Consumption tax rate SS
 tauwss          % Income tax rate SS
 byss            % Steady state of debt
-rho_g          % AR(1) of growth shock 
-gss            % SS of growth
+g               % Constant gross trend growth rate
 Igiy             % Public investment/GDP
 Gcy             % Public consumption/GDP
 gamma_d_T   % Response of lump sum transfer to debt
@@ -129,7 +125,6 @@ gamma_pi=1.5;
 gamma_y=0.25;
 Piss=1;
 rho_RG=0;
-rho_g= 0.24 ;
 gamma_d_T=0.01;
 rho_T=0;
 deltaH=0.025;
@@ -142,7 +137,7 @@ rho_A=0.79;
 % EM-specific calibration            (definition                                    | AE value)
 % production and growth
 alphaG=0.17;                         % share of public capital in production         | AE: 0.054
-gss=1.0075;                         % steady-state gross quarterly growth           | AE: 1.004
+g=1.0075;                           % constant gross quarterly trend growth          | AE: 1.004
 % taxes and debt
 taucss=0.15;                         % steady-state consumption tax rate             | AE: 0.18
 tauwss=0.10;                         % steady-state income tax rate                  | AE: 0.25
@@ -162,8 +157,8 @@ varsigma=0.1;                       % adoption elasticity                       
 % EMDE efficiency gaps (2023; average of emerging-market and low-income medians; INF re-estimated 2026-06)
 eGI_ss=0.406;
 eGE_ss=0.329;
-% gammaa uses the set-specific gss, so it must come after it
-gammaa=gss^((1-alpha)/(vartheta-1))-1;
+% gammaa uses the set-specific trend growth rate, so it must come after it
+gammaa=g^((1-alpha)/(vartheta-1))-1;
 model;
 //********************************************************
 // HOUSEHOLDS
@@ -171,13 +166,13 @@ model;
 // Marginal utility
 1/C = lambda*(1+tauc);
 // Euler equation
-lambda = betta*(lambda(+1)/g(+1)*R/PI(+1));
+lambda = betta*(lambda(+1)/g*R/PI(+1));
 // Labor decision
 omega*(L+E)^varphi = lambda*w*H(-1)*(1-tauw);
 // Law of motion of private capital
 Kp*g = (1-delta)*Kp(-1)+Ip;
 // Return on private investment
-1 = betta*(lambda(+1)/lambda/g(+1)*(1-delta+rk(+1)));
+1 = betta*(lambda(+1)/lambda/g*(1-delta+rk(+1)));
 // Human capital of the household
 H = (1-deltaH)*H(-1)+chiH*E^gamma*(Kge(-1))^(mu);
 // Time devoted to building human capital (E)
@@ -258,11 +253,6 @@ yd = C+Ip+Gc+Igi+Ige+Grd+(Z(-1)/A(-1)-1)*S;
 y = vp*yd;
 // Price dispersion
 vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
-//********************************************************
-// BALANCED GROWTH
-//********************************************************
-// Trend growth
-log(g) = (1-rho_g)*log(g(-1))+rho_g*(log(gss))+epsi_g;
 //********************************************************
 // AUXILIARY AND REPORTING
 //********************************************************

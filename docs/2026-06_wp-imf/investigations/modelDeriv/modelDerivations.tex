@@ -143,14 +143,14 @@ stock at rate $1-\delta^{h}$, valued at $\lambda^{H}_{t+1}$.
 
 \eqref{eq:focC} identifies $\lambda_t$ as the marginal utility of wealth.
 \eqref{eq:focB}--\eqref{eq:focK} are the bond and capital Euler equations; the
-$g_{t+1}$ in their model counterparts below is the stationarization (see
+constant $g$ in their model counterparts below comes from stationarization (see
 Subsection~\ref{subsec:hhg}). \eqref{eq:focL} is the labor-supply condition: an
 hour of work supplies $H_{t-1}$ efficiency units paid $w_t$ each, so its utility
 value is the after-tax hourly wage times the marginal utility of wealth. In the
 model (\texttt{models/model\_block.modpart}), the six conditions read:
 \modelcode{1/C = lambda*(1+tauc);\\
-lambda = betta*(lambda(+1)/g(+1)*R/PI(+1));\\
-1 = betta*(lambda(+1)/lambda/g(+1)*(1-delta+rk(+1)));\\
+lambda = betta*(lambda(+1)/g*R/PI(+1));\\
+1 = betta*(lambda(+1)/lambda/g*(1-delta+rk(+1)));\\
 omega*(L+E)\^{}varphi = lambda*w*H(-1)*(1-tauw);\\
 omega*(L+E)\^{}varphi = lambda\_H*chiH*gamma*E\^{}(gamma-1)*(Kge(-1))\^{}(mu);\\
 lambda\_H = betta*(lambda(+1)*(1-tauw(+1))*w(+1)*L(+1)+lambda\_H(+1)*(1-deltaH));}
@@ -201,9 +201,9 @@ falls as the economy grows) and leaves $H_t$, $L_t$, and $E_t$ untouched (all
 stationary). The consequences, condition by condition:
 \begin{itemize}
     \item \textbf{Bond and capital Eulers \eqref{eq:focB}--\eqref{eq:focK}: a
-    $1/g_{t+1}$ appears.} The two $\lambda$'s sit at different dates, so their
+    $1/g$ appears.} The two $\lambda$'s sit at different dates, so their
     trends do not cancel: $\lambda_{t+1}/\lambda_t =
-    (\hat\lambda_{t+1}/\hat\lambda_t)/g_{t+1}$.
+    (\hat\lambda_{t+1}/\hat\lambda_t)/g$.
     \item \textbf{Labor FOC \eqref{eq:focL}: nothing.} $\lambda_t w_t$ is a
     same-date product of an inverse-trend and a trend variable --- stationary.
     \item \textbf{Education and human-capital FOCs
@@ -688,7 +688,7 @@ in the model:
 \modelcode{(1+gammaa)*A = q*phi*(Z(-1)-A(-1))+phi*A(-1);}
 The
 current-dated stock picks up the growth factor, exactly as the capital law of
-motion picks up $g_t$.
+motion picks up $g$.
 
 \intuition{Why does the survival rate multiply the unadopted pool?}{%
 Obsolescence is a property of the technology itself, not of its adoption
@@ -737,7 +737,7 @@ $Y_t = A_{t-1}^{\vartheta-1}K_{t-1}^{\alpha}N_t^{1-\alpha}
     \qquad\Longrightarrow\qquad
     1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)},
 \]
-the code's \texttt{gammaa = gss\^{}((1-alpha)/(vartheta-1))-1}
+the code's \texttt{gammaa = g\^{}((1-alpha)/(vartheta-1))-1}
 (\texttt{models/modelTemplate.mod}). Reading the balance: the private inputs
 deliver only $g^{\alpha}$ of the required growth ($K$ contributes
 $g^{\alpha}$, stationary $N$ contributes nothing), so the love-of-variety TFP
@@ -845,10 +845,10 @@ from: it converts between the two scalings, nothing more.
 
 Now detrend. $\mathcal{V}^{\ell}$ and the profit flow grow with the output trend
 $\Lambda_t$; the level SDF relates to the model's detrended one by
-$\mathit{SDF}^{\ell}_{t+1} = \mathit{SDF}_{t+1}/g_{t+1}$; and the technology-stock
+$\mathit{SDF}^{\ell}_{t+1} = \mathit{SDF}_{t+1}/g$; and the technology-stock
 ratio converts as $A^{\ell}_{t-1}/A^{\ell}_t =
 (A_{t-1}/A_t)/(1+\gamma^{a})$. Substituting into \eqref{eq:Vlevel} and dividing by
-$\Lambda_t$, the $g_{t+1}$ from the SDF cancels against the trend growth
+$\Lambda_t$, the $g$ from the SDF cancels against the trend growth
 $\Lambda_{t+1}/\Lambda_t$ of the continuation value, leaving:
 \begin{equation}\label{eq:V}
     \mathcal{V}_t = \frac{\mu^{p}-1}{\mu^{p}}\,mc_t\,Y_t
@@ -952,7 +952,7 @@ distinct origins:
     enters production only through $A_{t-1}^{\vartheta-1}$ (see the note in
     \texttt{../tech-growth-rate/}).
     \item no $g$ --- the values grow with the output trend $\Lambda_t$, and the
-    level SDF equals the detrended one divided by $g_{t+1}$; the two growth
+    level SDF equals the detrended one divided by $g$; the two growth
     factors cancel, so the model's $\mathit{SDF}_{t+1}$ appears bare (the same
     cancellation as in the pricing recursions,
     Subsection~\ref{subsec:prg}).
@@ -1043,12 +1043,13 @@ Subsection~\ref{subsec:vp}.
 \section{Balanced Growth}\label{sec:bg}
 %========================================================================
 
-Trend growth is constant absent shocks:
-\modelcode{log(g) = (1-rho\_g)*log(g(-1))+rho\_g*(log(gss))+epsi\_g;}
-Note the parameterization: the weight on the \emph{lagged} term is
-$1-$\texttt{rho\_g}, so \texttt{rho\_g} (calibrated $0.24$) is the speed of
-reversion to steady-state growth, not the persistence. No paper experiment
-shocks \texttt{epsi\_g}, so $g_t = g$ throughout.
+The output trend grows at the constant calibrated gross rate $g$:
+\[
+    \Lambda_t=g\Lambda_{t-1}.
+\]
+The model therefore carries $g$ as a parameter wherever stationarization links
+trending quantities dated in different periods; it contains no separate
+trend-growth process or shock.
 
 %========================================================================
 \section{Auxiliary, Reporting, and Steady-State Pins}\label{sec:aux}

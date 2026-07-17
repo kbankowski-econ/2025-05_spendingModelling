@@ -18,8 +18,8 @@
 
 @#include effFile
 
-% gammaa uses the set-specific gss, so it must come after it
-gammaa=gss^((1-alpha)/(vartheta-1))-1;
+% gammaa uses the set-specific trend growth rate, so it must come after it
+gammaa=g^((1-alpha)/(vartheta-1))-1;
 
 model;
 

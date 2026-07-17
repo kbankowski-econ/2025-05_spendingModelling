@@ -127,7 +127,7 @@ appendix glossary match exactly.
 The appendix technology block (adoption LoM `eq:Astat`, value functions `eq:VA`/`eq:JZ`,
 and the `S`-FOC `eq:SAfoc`) wrote the growth factor as `g`, but the model detrends the
 technology stocks by their own rate `(1+gammaa)`, which is derived from output growth by
-`1+gammaa = gss^((1-alpha)/(vartheta-1))` (= `gss^2` at the calibration, since the exponent
+`1+gammaa = g^((1-alpha)/(vartheta-1))` (= `g^2` at the calibration, since the exponent
 is 2). Technology grows faster than output because it enters production only via the
 love-of-variety term `A^(vartheta-1)`; a single trend at `g` would leave the production
 function unbalanced. **FIXED:** the four appendix equations, the glossary equations for
