@@ -447,11 +447,23 @@ The main text reports the choices most relevant to the quantitative exercises; A
 
 \subsection{Calibration Strategy and Common Parameters}
 
-Table~\ref{tab:commonParameters} summarizes the common macroeconomic and policy parameters.
-The preference, capital-accumulation, price-setting, and monetary-policy parameters take conventional quarterly values.
-In particular, the inverse Frisch elasticity $\varphi$ is set to 5, corresponding to a Frisch elasticity of 0.2, following \citet{gali2015}.
-The depreciation rates of physical and human capital are both 0.025 per quarter.
-The transfer-rule parameters are also common across calibrations; the auxiliary switch governing debt-financed experiments is described in Section~\ref{sec:model}.
+Parameters governing preferences, capital accumulation, nominal rigidities, markups, and policy are held fixed across the AE and EMDE calibrations.
+This common core ensures that differences between the two economies reflect their country-group-specific steady-state targets and productive-spending channels rather than different underlying macroeconomic dynamics.
+Table~\ref{tab:commonParameters} summarizes these parameters.
+
+For households and capital accumulation, the quarterly discount factor is $\beta=0.9985$, and the private-capital share in production is $\alpha=0.30$.
+The inverse Frisch elasticity is $\varphi=5$, corresponding to a Frisch elasticity of 0.2, following \citet{gali2015}.
+Private and public physical capital depreciate at rate $\delta=0.025$ per quarter, while human capital depreciates at the same quarterly rate, $\delta^h=0.025$.
+
+The price-setting and production parameters take conventional quarterly values.
+Under Calvo pricing, the probability that a retailer cannot reset its price is $\theta_p=0.80$, implying an average price duration of five quarters, and non-reset prices are indexed to past inflation with coefficient $\chi_p=0.60$.
+The elasticity of substitution across retail goods is $\epsilon=10$.
+Separately, intermediate producers charge a gross markup of $\mu^p=1.18$, while the love-of-variety exponent $\vartheta=1.35$ governs the productivity gain from a larger stock of adopted technologies.
+
+Steady-state gross inflation is normalized to $\Pi=1$.
+In the monetary-policy rule, interest-rate smoothing is $\rho_R=0.70$, and the responses to inflation and aggregate demand are $\gamma_\pi=1.50$ and $\gamma_y=0.25$, respectively.
+Fiscal closure operates through lump-sum transfers: $\rho_T=0$ makes their debt response contemporaneous, and $\gamma_d^T=0.01$ governs its strength.
+The auxiliary switch that temporarily suspends this response in debt-financed experiments is described in Section~\ref{sec:model}.
 
 \begin{table}[H]
     \centering
