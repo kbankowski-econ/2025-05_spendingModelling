@@ -26,7 +26,7 @@
 {"statementName": "param_init", "name": "epsilon", "value": "10"},
 {"statementName": "param_init", "name": "thetap", "value": "0.8"},
 {"statementName": "param_init", "name": "gamma_pi", "value": "1.5"},
-{"statementName": "param_init", "name": "gamma_y", "value": "0.25"},
+{"statementName": "param_init", "name": "gamma_y", "value": "0"},
 {"statementName": "param_init", "name": "rho_R", "value": "0.7"},
 {"statementName": "param_init", "name": "Gcy", "value": "0.18"},
 {"statementName": "param_init", "name": "PIss", "value": "1"},

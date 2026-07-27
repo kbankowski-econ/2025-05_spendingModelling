@@ -65,7 +65,7 @@
 {"statementName": "param_init", "name": "alpha", "value": "0.3"},
 {"statementName": "param_init", "name": "rho_R", "value": "0.7"},
 {"statementName": "param_init", "name": "gamma_pi", "value": "1.5"},
-{"statementName": "param_init", "name": "gamma_y", "value": "0.25"},
+{"statementName": "param_init", "name": "gamma_y", "value": "0"},
 {"statementName": "param_init", "name": "Piss", "value": "1"},
 {"statementName": "param_init", "name": "gamma_d_T", "value": "0.01"},
 {"statementName": "param_init", "name": "deltaH", "value": "0.025"},
