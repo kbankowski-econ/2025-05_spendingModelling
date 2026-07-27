@@ -1,16 +1,17 @@
 """
-Figure: transmission of standard public-spending shocks (fig:standardShocks).
+Appendix figure: transmission of persistent temporary public-spending shocks
+(fig:standardShocksTemp).
 
 Advanced-economy impulse responses of the main model variables to the four
-standard debt-financed expansion shocks, each a permanent +1 percent of GDP
-increase in one spending instrument with no offsetting cut:
+standard debt-financed expansion shocks, each an AR(1) increase with persistence
+0.9, a +1-percent-of-GDP impact, and no offsetting cut:
 
   - Government consumption      -> Model_HumanCapital_exp_gc
   - Infrastructure investment  -> Model_HumanCapital_exp_igi
   - Human capital investment   -> Model_HumanCapital_exp_ige
   - R&D investment             -> Model_HumanCapital_exp_grd
 
-A 3x4 grid of percent deviations from steady state. Standalone: the only input
+A 5x4 grid of deviations from steady state. Standalone: the only input
 is docs/csvFiles/figureNumbers_yearly.csv; it writes PNG/PDF/HTML/CSV into
 docs/2026-06_wp-imf/figures/. Requires pandas + plotly (with a Kaleido backend).
 """

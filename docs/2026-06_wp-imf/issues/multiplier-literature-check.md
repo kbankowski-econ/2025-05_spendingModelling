@@ -1,9 +1,9 @@
 # Multiplier consistency with the literature (2026-06-29)
 
-Checks the paper's implied fiscal multipliers (`tab:multipliers` AR(1), `tab:multipliersPerm`
-permanent) against the empirical literature, including the three cited sources. Numbers are
-present-value cumulative output multipliers; the model uses an AR(1) ρ=0.9 shock for the
-headline table and a permanent shock for the appendix table.
+Checks the paper's implied fiscal multipliers (`tab:multipliers` permanent,
+`tab:multipliersTemp` AR(1)) against the empirical literature, including the three cited
+sources. Numbers are present-value cumulative output multipliers; the paper uses a permanent
+increase for the headline table and reports the AR(1) ρ=0.9 counterpart in the appendix.
 
 ## Our numbers (25-year / Long-term)
 
@@ -59,14 +59,14 @@ paper's stated value.)
 
 ## Bottom line and recommendation
 
-1. The **permanent-shock multipliers (Appendix D) are the more literature-consistent set**:
+1. The **permanent-shock multipliers are the more literature-consistent set**:
    government consumption is positive and <1, AE infrastructure ≈1.5 matches the IMF medium-term
-   figure, and the EM>AE ordering matches Afonso–Rodrigues. The AR(1) headline table has two
+   figure, and the EM>AE ordering matches Afonso–Rodrigues. The AR(1) results have two
    problems against the literature — a **negative government-consumption multiplier** and
    **inflated long-horizon investment multipliers** (the transitory-shock accumulation effect).
-   → **Consider making the permanent table the headline (Table 3) and moving the AR(1) version to
-   the appendix**, or at least leading the discussion with the permanent numbers. This also fits
-   the convention that "the fiscal multiplier" refers to a sustained spending change.
+   **Implemented on 2026-07-27:** the permanent table is now the Section 4 headline, and the AR(1)
+   version is reported in the persistent-temporary-shocks appendix. This also fits the convention
+   that "the fiscal multiplier" refers to a sustained spending change.
 2. Regardless of which is the headline, the **25-year values are more defensible than the
    Long-term (250-year) values**; the durable HC/R&D channels push the long-run numbers (8–10)
    well beyond anything in the empirical literature. Lead with the 25-year figures in the text;

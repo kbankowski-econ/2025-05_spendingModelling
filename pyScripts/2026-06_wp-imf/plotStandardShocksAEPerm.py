@@ -1,12 +1,11 @@
 """
-Figure: transmission of standard public-spending shocks under PERMANENT shocks
-(fig:standardShocksPerm), the permanent-shock counterpart of fig:standardShocks.
+Headline figure: transmission of permanent public-spending increases
+(fig:standardShocks).
 
 Advanced-economy impulse responses of the main model variables to the four
 standard debt-financed expansion shocks, each a permanent +1 percent of GDP
-increase in one spending instrument with no offsetting cut. The headline figure
-uses an AR(1) (rho=0.9) shock; here the shock is a step that stays at +1 percent
-of GDP forever:
+increase in one spending instrument with no offsetting cut. Each shock is a step
+that stays at +1 percent of GDP:
 
   - Government consumption      -> Model_HumanCapital_exp_gc_perm
   - Infrastructure investment  -> Model_HumanCapital_exp_igi_perm

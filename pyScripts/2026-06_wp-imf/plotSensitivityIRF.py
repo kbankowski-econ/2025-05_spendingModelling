@@ -1,5 +1,7 @@
 """
-Figure: output-IRF sensitivity to structural parameters (fig:sensitivity).
+Figures: output-IRF sensitivity to structural parameters. The permanent mode
+produces the Section 4 figure (fig:sensitivity); the default AR(1) mode produces
+its persistent-temporary-shock appendix counterpart.
 
 For the three productive advanced-economy expansions, the output response (yd,
 percent deviation from steady state) is traced as one structural parameter is
@@ -15,8 +17,8 @@ deviations from steady state.
 
 Data source: the one-at-a-time parameter sweep produced by
 investigations/sensitivity/sweep.m. By default this reads sweep_AE_irf.csv;
-with --permanent it reads sweep_AE_irf_perm.csv and writes the permanent-shock
-counterpart. Unlike the other figures this does not read figureNumbers_yearly.csv,
+with --permanent it reads sweep_AE_irf_perm.csv and writes the headline figure.
+Unlike the other figures this does not read figureNumbers_yearly.csv,
 because the sweep re-solves the model per parameter draw. Writes PNG/PDF/HTML/CSV
 into docs/2026-06_wp-imf/figures/. Requires pandas + plotly (with a Kaleido backend
 for PNG export).

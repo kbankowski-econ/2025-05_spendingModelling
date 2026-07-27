@@ -115,8 +115,8 @@ def exportData(c):
 @task
 def plotStandardShocksAE(c):
     """
-    AE transmission overview: IRFs of main variables to the four standard
-    debt-financed expansion shocks (3x4 grid).
+    Appendix: AE transmission under the four persistent temporary
+    debt-financed expansion shocks (5x4 grid).
     Out: figures/standardShocksAE.png/.pdf/.html/.csv
     """
     _run_plot(c, "plotStandardShocksAE.py", "Generating: AE Standard-Shock Transmission")
@@ -125,9 +125,8 @@ def plotStandardShocksAE(c):
 @task
 def plotStandardShocksAEPerm(c):
     """
-    Appendix D: permanent-shock counterpart of plotStandardShocksAE -- AE
-    transmission of the four standard debt-financed shocks when each is a
-    permanent (step) increase rather than an AR(1) rho=0.9 shock.
+    Section 4: AE transmission of the four standard debt-financed shocks when
+    each is a permanent step increase.
     Out: figures/standardShocksAEPerm.png/.pdf/.html/.csv
     """
     _run_plot(c, "plotStandardShocksAEPerm.py", "Generating: AE Standard-Shock Transmission (permanent)")
@@ -136,8 +135,8 @@ def plotStandardShocksAEPerm(c):
 @task
 def plotSimplifiedGcAE(c):
     """
-    Appendix: the government-consumption shock under progressive model
-    simplification (full vs Simple1/2/3), same 5x4 block layout.
+    Appendix: persistent temporary government-consumption shock under
+    progressive model simplification, same 5x4 block layout.
     Out: figures/simplifiedGcAE.png/.pdf/.html/.csv
     """
     _run_plot(c, "plotSimplifiedGcAE.py", "Generating: AE Simplified-Model Gc Shock")
@@ -146,7 +145,7 @@ def plotSimplifiedGcAE(c):
 @task
 def plotSimplifiedGcAEPerm(c):
     """
-    Permanent-shock counterpart of plotSimplifiedGcAE.
+    Primary model-structure robustness exercise under a permanent shock.
     Out: figures/simplifiedGcAEPerm.png/.pdf/.html/.csv
     """
     _run_plot(
@@ -212,8 +211,8 @@ def plotDiffusionAE(c):
 @task
 def plotSensitivityIRF(c):
     """
-    AE output-IRF sensitivity to the structural parameters alpha_G, mu, alpha_RD
-    (1x3 fan). Reads the parameter sweep
+    Appendix: AE output-IRF sensitivity under persistent temporary shocks to
+    the structural parameters alpha_G, mu, alpha_RD (1x3 fan). Reads
     docs/2026-06_wp-imf/investigations/sensitivity/results/sweep_AE_irf.csv
     (produced by investigations/sensitivity/sweep.m, MATLAB), not figureNumbers.
     Out: figures/sensitivityIRF_AE.png/.pdf/.html/.csv
@@ -224,7 +223,7 @@ def plotSensitivityIRF(c):
 @task
 def plotSensitivityIRFPerm(c):
     """
-    Permanent-shock counterpart of plotSensitivityIRF. Reads
+    Section 4 sensitivity exercise under permanent shocks. Reads
     docs/2026-06_wp-imf/investigations/sensitivity/results/sweep_AE_irf_perm.csv.
     Out: figures/sensitivityIRF_AEPerm.png/.pdf/.html/.csv
     """

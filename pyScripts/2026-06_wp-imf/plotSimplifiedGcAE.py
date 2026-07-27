@@ -1,6 +1,7 @@
 """
-Appendix figure: the government-consumption shock under progressive model
-simplification (fig:simplifiedGc), with an optional permanent-shock counterpart.
+Appendix figures: the government-consumption shock under progressive model
+simplification. The permanent version is the primary robustness exercise
+(fig:simplifiedGc); the default AR(1) version is its temporary counterpart.
 
 Same 5x4 block layout as plotStandardShocksAE, but the six lines are MODELS
 (not shocks): the full model, four step-by-step simplifications, and the

@@ -62,25 +62,22 @@ cd(fullfile(project_path, 'models'));
 
 modelList = {
     % =================== STANDARD EXPANSIONS (Sections 4.1-4.2) ===================
-    % Debt-financed expansions, no offsetting cut. AE standard expansions: AR(1)
-    % shocks, persistence 0.9 (1%-of-GDP impact). Enter the paper as the transmission
-    % figure (Figure 1, fig:standardShocks, Section 4.1, AE only) and the AE rows of
-    % the cumulative multiplier table (Table 3, tab:multipliers, Section 4.2).
+    % Debt-financed expansions, no offsetting cut. The AE AR(1) shocks have
+    % persistence 0.9 and a 1%-of-GDP impact. They feed the persistent-temporary-
+    % shock appendix transmission figure and the AE rows of its multiplier table.
     'Model_HumanCapital_exp_gc',                'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_HumanCapital_exp_igi',               'AE', 'AE',     {{'epsi_igi',      'ar1', [0.01 0.9],  '1:1000'}}
     'Model_HumanCapital_exp_ige',               'AE', 'AE',     {{'epsi_ige',      'ar1', [0.01 0.9],  '1:1000'}}
     'Model_HumanCapital_exp_grd',               'AE', 'AE',     {{'epsi_grd',      'ar1', [0.01 0.9],  '1:1000'}}
-    % EMDE standard expansions: AR(1) shocks, persistence 0.9 (matching the AE
-    % expansions above). Enter the paper as the EMDE rows of the multiplier table
-    % (Table 3, tab:multipliers, Section 4.2). Not in Figure 1, which is AE only.
+    % The matching EMDE AR(1) shocks feed the EMDE rows of the appendix table.
+    % They do not enter the transmission figure, which reports AEs only.
     'EM_Model_HumanCapital_exp_gc',             'EM', 'EMnorm', {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'EM_Model_HumanCapital_exp_igi',            'EM', 'EMnorm', {{'epsi_igi',      'ar1', [0.01 0.9],  '1:1000'}}
     'EM_Model_HumanCapital_exp_ige',            'EM', 'EMnorm', {{'epsi_ige',      'ar1', [0.01 0.9],  '1:1000'}}
-    % Permanent-shock counterparts of the seven expansions (const +1% of GDP,
-    % no decay). Feed the comparison multiplier table (tab:multipliersPerm,
-    % Section 4.2); not used in any figure. Under a permanent shock the cumulative
-    % multiplier converges to the long-run multiplier (denominator grows with the
-    % horizon), unlike the AR(1) version whose denominator saturates.
+    % The seven permanent counterparts are the Section 4 baseline. The AE paths
+    % feed the headline transmission figure, and all seven feed the headline
+    % multiplier table. With permanent spending, the multiplier denominator keeps
+    % growing with the horizon, unlike the AR(1) denominator, which saturates.
     'Model_HumanCapital_exp_gc_perm',           'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_HumanCapital_exp_igi_perm',          'AE', 'AE',     {{'epsi_igi',      'const', 0.01, '1:1000'}}
     'Model_HumanCapital_exp_ige_perm',          'AE', 'AE',     {{'epsi_ige',      'const', 0.01, '1:1000'}}
@@ -186,25 +183,27 @@ modelList = {
     'JAM_Model_HumanCapital_epsicgeeff30y',     'JAM', 'JAM',    {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.357, '1:60'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
-    % ============= GOV-CONSUMPTION TRANSMISSION BENCHMARKS (Appendix C) =============
-    % AR(1) rho=0.9 +1%-of-GDP gov-consumption shock (matching Figure 1) through a
-    % sequence of model simplifications, isolating which features drive the sign.
+    % =========== GOV-CONSUMPTION TRANSMISSION BENCHMARKS (APPENDICES D-E) ===========
+    % The AR(1) rho=0.9 +1%-of-GDP government-consumption shock is the temporary
+    % counterpart to the main permanent exercise. Both are run through a sequence
+    % of model simplifications to isolate which features drive the response signs.
     % --- Step-by-step simplified variants (AE params, gov-consumption shock).
     % Names contain SimpleN -> built from modelTemplateSimple.mod with
     % -DSIMPLIFY_LEVEL=N, which pins progressively more channels to steady state:
     %   1 = no R&D/technology, 2 = + no human capital, 3 = + no public infra (NK).
-    % Enter Figure 9 (fig:simplifiedGc, Appendix C) as the full-model -> NK ladder;
-    % the canonical-NK end of that ladder is Model_NK_exp_gc below (also AR(1) rho=0.9).
+    % These variants enter the persistent-temporary-shock appendix; the canonical-
+    % NK end of the ladder is Model_NK_exp_gc below.
     'Model_Simple1_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_Simple2_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_Simple3_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_Simple4_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     % From-scratch canonical NK benchmark (own .mod; param/eff columns ignored).
-    % AR(1) rho=0.9 +1%-of-GDP gov-consumption shock (matching the rest of the ladder);
-    % the canonical-NK end of Figure 9 (fig:simplifiedGc).
+    % AR(1) rho=0.9 +1%-of-GDP government-consumption shock, matching the rest
+    % of the temporary ladder.
     'Model_NK_exp_gc',                          'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
-    % Permanent-shock counterparts of the simplification ladder. These enter
-    % the permanent-shocks appendix alongside the full-model exp_gc_perm path.
+    % Permanent counterparts of the simplification ladder. Together with the
+    % full-model exp_gc_perm path, these feed the primary robustness appendix
+    % figure (fig:simplifiedGc).
     'Model_Simple1_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_Simple2_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_Simple3_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
