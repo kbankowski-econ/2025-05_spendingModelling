@@ -1,21 +1,21 @@
 """
 Appendix figure: the government-consumption shock under progressive model
-simplification (fig:simplifiedGc).
+simplification (fig:simplifiedGc), with an optional permanent-shock counterpart.
 
-Same 5x4 block layout as plotStandardShocksAE, but the four lines are MODELS
-(not shocks): the full model and three step-by-step simplifications, each hit by
-the same debt-financed +1 percent of GDP government-consumption shock:
+Same 5x4 block layout as plotStandardShocksAE, but the six lines are MODELS
+(not shocks): the full model, four step-by-step simplifications, and the
+from-scratch canonical NK benchmark, each hit by the same +1-percent-of-GDP
+government-consumption shock with no offsetting spending cut.
 
-  - Full model                     -> Model_HumanCapital_exp_gc
-  - No R&D / technology            -> Model_Simple1_exp_gc
-  - + no human capital             -> Model_Simple2_exp_gc
-  - + no public infrastructure (NK)-> Model_Simple3_exp_gc
+By default the script uses the AR(1) variants. With --permanent it uses the
+corresponding _perm models and writes simplifiedGcAEPerm.*.
 
 Pinned channels show as flat lines (e.g. adopted technology under "No R&D").
 Standalone: the only input is docs/csvFiles/figureNumbers_yearly.csv; it writes
 PNG/PDF/HTML/CSV into docs/2026-06_wp-imf/figures/. Requires pandas + plotly
 (with a Kaleido backend).
 """
+import argparse
 from pathlib import Path
 
 import pandas as pd
@@ -41,9 +41,9 @@ STYLE = {
     "line_width_standard": 2.5,
 }
 
-# (model directory, legend label, colour) -- the four lines are the full model
-# and three progressive simplifications, all under the same Gc shock.
-SERIES = [
+# (model directory, legend label, colour) -- the six lines are the full model,
+# four progressive simplifications, and the canonical NK benchmark.
+BASE_SERIES = [
     ("Model_HumanCapital_exp_gc", "Full model",                 "#6A1B9A"),
     ("Model_Simple1_exp_gc",      "No R&D",                     "#1E88E5"),
     ("Model_Simple2_exp_gc",      "No R&D, no human capital",   "#00897B"),
@@ -104,23 +104,11 @@ X_TICK_HORIZONS = [1, 10, 25]
 X_TICKS = [SHOCK_BASE_YEAR + h for h in X_TICK_HORIZONS]
 X_TICK_LABELS = [f"{h}y" for h in X_TICK_HORIZONS]
 OUTPUT_STEM = "simplifiedGcAE"
-
-# Both sizes come from chartTable.csv: render = original chart size (canvas,
-# controls fonts/quality); display = size shown in the paper (aspect preserved).
-WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (15.0, 18.75))
-DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (15.0, 18.75))
-
-# Font matching the paper: Palatino (the paper's mathpazo), sized so the chart
-# text renders at a fixed point size on the page (recomputed from render/display).
 TARGET_FONT_PT = 7   # axis ticks; a touch smaller given the dense grid
 FONT_FAMILY = "Palatino, 'Palatino Linotype', 'Book Antiqua', serif"
-FONT_PX = font_px_for_pt(TARGET_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
 LEGEND_FONT_PT = 8
-LEGEND_FONT_PX = font_px_for_pt(LEGEND_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
 TITLE_FONT_PT = 8    # subplot titles
-TITLE_FONT_PX = font_px_for_pt(TITLE_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
 BLOCK_FONT_PT = 10   # left-side block names
-BLOCK_FONT_PX = font_px_for_pt(BLOCK_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
 
 
 def load_data():
@@ -131,9 +119,21 @@ def load_data():
     return df[df["year"] >= PLOT_START_YEAR]
 
 
-def main():
+def main(permanent=False):
     df = load_data()
     years = df["year"].values
+    suffix = "_perm" if permanent else ""
+    series = [(f"{model}{suffix}", label, color) for model, label, color in BASE_SERIES]
+    output_stem = f"{OUTPUT_STEM}{'Perm' if permanent else ''}"
+
+    # Both sizes come from chartTable.csv: render = original chart size (canvas,
+    # controls fonts/quality); display = size shown in the paper (aspect preserved).
+    width_px, height_px = chart_render_px(output_stem, (15.0, 18.75))
+    display_cm = chart_display_cm(output_stem, (15.0, 18.75))
+    font_px = font_px_for_pt(TARGET_FONT_PT, width_px, display_cm[0])
+    legend_font_px = font_px_for_pt(LEGEND_FONT_PT, width_px, display_cm[0])
+    title_font_px = font_px_for_pt(TITLE_FONT_PT, width_px, display_cm[0])
+    block_font_px = font_px_for_pt(BLOCK_FONT_PT, width_px, display_cm[0])
 
     fig = make_subplots(
         rows=NROWS, cols=NCOLS,
@@ -148,7 +148,7 @@ def main():
             fig.update_yaxes(visible=False, row=row, col=col)
             continue
         var = panel[0]
-        for model, label, color in SERIES:
+        for model, label, color in series:
             colname = f"{model}___{var}"
             if colname not in df.columns:
                 continue
@@ -164,7 +164,7 @@ def main():
 
     # Subplot titles: Palatino at the title point size.
     for annotation in fig["layout"]["annotations"]:
-        annotation["font"] = dict(family=FONT_FAMILY, size=TITLE_FONT_PX)
+        annotation["font"] = dict(family=FONT_FAMILY, size=title_font_px)
 
     # Block name down the left of each row: vertical, uppercase, on a grey chip,
     # centered on the row band and set close to the charts.
@@ -176,22 +176,22 @@ def main():
             text=block.upper(), textangle=-90,
             xref="paper", yref="paper", x=0, y=(y0 + y1) / 2,
             xshift=-40, showarrow=False, xanchor="center", yanchor="middle",
-            font=dict(family=FONT_FAMILY, size=BLOCK_FONT_PX, color="#424242"),
+            font=dict(family=FONT_FAMILY, size=block_font_px, color="#424242"),
             bgcolor="#E6E6E6", borderpad=2,
         )
 
     fig.update_layout(
         template=STYLE["template"],
-        width=WIDTH_PX,
-        height=HEIGHT_PX,
+        width=width_px,
+        height=height_px,
         margin=STYLE["margins"],
-        font=dict(family=FONT_FAMILY, size=FONT_PX),
+        font=dict(family=FONT_FAMILY, size=font_px),
         legend=dict(
             orientation=STYLE["legend"]["orientation"],
             yref="container", yanchor="top", y=0.99,  # pin to figure top, no blank band
             xanchor=STYLE["legend"]["xanchor"],
             x=STYLE["legend"]["x"],
-            font=dict(size=LEGEND_FONT_PX),
+            font=dict(size=legend_font_px),
             tracegroupgap=2,  # tighten the gap between (wrapped) legend rows
         ),
     )
@@ -200,38 +200,43 @@ def main():
     fig.update_xaxes(
         tickvals=X_TICKS, ticktext=X_TICK_LABELS,
         showgrid=False, linecolor=axes["linecolor"], linewidth=axes["linewidth"],
-        ticks=axes["ticks"], tickfont=dict(size=FONT_PX),
+        ticks=axes["ticks"], tickfont=dict(size=font_px),
     )
     fig.update_yaxes(
         showgrid=axes["showgrid"], gridcolor=axes["gridcolor"], gridwidth=axes["gridwidth"],
         zeroline=axes["zeroline"], zerolinewidth=axes["zerolinewidth"], zerolinecolor="black",
         linecolor=axes["linecolor"], linewidth=axes["linewidth"],
-        ticks=axes["ticks"], tickfont=dict(size=FONT_PX),
+        ticks=axes["ticks"], tickfont=dict(size=font_px),
     )
 
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
-    png_path = FIGURES_DIR / f"{OUTPUT_STEM}.png"
-    pdf_path = FIGURES_DIR / f"{OUTPUT_STEM}.pdf"
-    html_path = FIGURES_DIR / f"{OUTPUT_STEM}.html"
-    smart_save_image(fig, png_path, DISPLAY_CM)
-    write_pdf(fig, pdf_path, WIDTH_PX, DISPLAY_CM[0])  # vector PDF at the display size
+    png_path = FIGURES_DIR / f"{output_stem}.png"
+    pdf_path = FIGURES_DIR / f"{output_stem}.pdf"
+    html_path = FIGURES_DIR / f"{output_stem}.html"
+    smart_save_image(fig, png_path, display_cm)
+    write_pdf(fig, pdf_path, width_px, display_cm[0])  # vector PDF at the display size
     fig.write_html(html_path, auto_open=True)
     print(f"  Saved {png_path.name}, {pdf_path.name} and {html_path.name}")
 
     # Tidy long-format export: one row per (year, model, variable).
     records = []
     for var, title in (panel for panel in PANELS if panel is not None):
-        for model, label, _ in SERIES:
+        for model, label, _ in series:
             colname = f"{model}___{var}"
             if colname not in df.columns:
                 continue
             for yr, val in zip(years, df[colname].values):
                 records.append({"year": yr, "model": label, "variable": title,
                                 "pct_dev": round(val, 3)})
-    csv_path = FIGURES_DIR / f"{OUTPUT_STEM}.csv"
+    csv_path = FIGURES_DIR / f"{output_stem}.csv"
     pd.DataFrame(records).to_csv(csv_path, index=False)
     print(f"  Exported data to {csv_path.name}")
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--permanent", action="store_true",
+        help="plot the permanent government-consumption shock",
+    )
+    main(permanent=parser.parse_args().permanent)

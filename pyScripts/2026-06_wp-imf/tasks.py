@@ -11,7 +11,7 @@ docs/2026-06_wp-imf/figures, and auto-open each chart's .html in the browser.
 
 DATA PIPELINE (MATLAB / Dynare):
 --------------------------------------------------------------------------------
-- runModels:        Solve all 25 models (drivers/runModel.m)
+- runModels:        Solve all configured models (drivers/runModel.m)
                     In: models/*.mod | Out: models/<name>/Output/<name>_results.mat
                     Run only when the model or calibration changes. (Benign
                     exit-time segfault after "canonicalizeResults: normalized".)
@@ -80,7 +80,7 @@ def _run_plot(c, script, label, args=""):
 @task
 def runModels(c):
     """
-    Solve all 25 models (drivers/runModel.m). Run only when the model or
+    Solve all configured models (drivers/runModel.m). Run only when the model or
     calibration changes. Benign exit-time segfault after completion.
     In: models/*.mod | Out: models/<name>/Output/<name>_results.mat
     """
@@ -141,6 +141,18 @@ def plotSimplifiedGcAE(c):
     Out: figures/simplifiedGcAE.png/.pdf/.html/.csv
     """
     _run_plot(c, "plotSimplifiedGcAE.py", "Generating: AE Simplified-Model Gc Shock")
+
+
+@task
+def plotSimplifiedGcAEPerm(c):
+    """
+    Permanent-shock counterpart of plotSimplifiedGcAE.
+    Out: figures/simplifiedGcAEPerm.png/.pdf/.html/.csv
+    """
+    _run_plot(
+        c, "plotSimplifiedGcAE.py", "Generating: AE Simplified-Model Gc Shock (permanent)",
+        args="--permanent",
+    )
 
 
 @task
@@ -342,6 +354,7 @@ def investigateContributions(c):
     plotStandardShocksAE,
     plotStandardShocksAEPerm,
     plotSimplifiedGcAE,
+    plotSimplifiedGcAEPerm,
     plotReallocationAE,
     plotReallocationEM,
     plotEfficiencyAE,

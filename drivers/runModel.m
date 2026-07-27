@@ -193,7 +193,7 @@ modelList = {
     % Names contain SimpleN -> built from modelTemplateSimple.mod with
     % -DSIMPLIFY_LEVEL=N, which pins progressively more channels to steady state:
     %   1 = no R&D/technology, 2 = + no human capital, 3 = + no public infra (NK).
-    % Enter Figure 8 (fig:simplifiedGc, Appendix C) as the full-model -> NK ladder;
+    % Enter Figure 9 (fig:simplifiedGc, Appendix C) as the full-model -> NK ladder;
     % the canonical-NK end of that ladder is Model_NK_exp_gc below (also AR(1) rho=0.9).
     'Model_Simple1_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_Simple2_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
@@ -201,8 +201,15 @@ modelList = {
     'Model_Simple4_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     % From-scratch canonical NK benchmark (own .mod; param/eff columns ignored).
     % AR(1) rho=0.9 +1%-of-GDP gov-consumption shock (matching the rest of the ladder);
-    % the canonical-NK end of Figure 8 (fig:simplifiedGc).
+    % the canonical-NK end of Figure 9 (fig:simplifiedGc).
     'Model_NK_exp_gc',                          'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
+    % Permanent-shock counterparts of the simplification ladder. These enter
+    % the permanent-shocks appendix alongside the full-model exp_gc_perm path.
+    'Model_Simple1_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'Model_Simple2_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'Model_Simple3_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'Model_Simple4_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'Model_NK_exp_gc_perm',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     };
 
 %% optional subset: set the MODEL_FILTER environment variable to a substring
