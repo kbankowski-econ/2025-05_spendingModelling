@@ -42,9 +42,8 @@ def main():
     em = read_params(EM_MODEL)
 
     rows = [
-        ("Growth and public debt", None, None, None),
+        ("Growth", None, None, None),
         ("Annual trend output growth", "Percent", annual_growth(ae["g"]), annual_growth(em["g"])),
-        ("Public debt", "Percent of annual GDP", pct(ae["byss"] / 4, 0), pct(em["byss"] / 4, 0)),
         ("Public spending", None, None, None),
         ("Government consumption", "Percent of GDP", pct(ae["Gcy"]), pct(em["Gcy"])),
         ("Infrastructure investment", "Percent of GDP", pct(ae["Igiy"]), pct(em["Igiy"])),
@@ -53,6 +52,8 @@ def main():
         ("Implicit tax rates", None, None, None),
         ("Consumption tax", "Percent", pct(ae["taucss"], 0), pct(em["taucss"], 0)),
         ("Labor-income tax", "Percent", pct(ae["tauwss"], 0), pct(em["tauwss"], 0)),
+        ("Public debt", None, None, None),
+        ("Public debt level", "Percent of annual GDP", pct(ae["byss"] / 4, 0), pct(em["byss"] / 4, 0)),
     ]
 
     lines = [
