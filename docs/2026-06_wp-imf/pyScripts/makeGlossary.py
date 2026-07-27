@@ -335,15 +335,14 @@ def main():
         for _paper, _desc, code in rows:
             if code in aess:
                 svals[code] = (fmt_val(aess[code]), fmt_val(emss[code]))
-    # Blue parenthetical notes for the endogenously-calibrated parameters, giving the
-    # targeted variable and its (live) steady-state value: (param -> label, symbol, target var).
+    # Blue parenthetical notes for the endogenously calibrated parameters.
     CALIB = {
         "omega":     ("labor supply",         "L_t", "L"),
-        "chiH":      ("education time",        "E_t", "E"),
         "kappaprob": ("adoption probability",  "q_t", "q"),
     }
     pnotes = {code: rf"\calibnote{{targets steady-state {label} ${sym}={fmt_val(aess[tgt])}$}}"
               for code, (label, sym, tgt) in CALIB.items()}
+    pnotes["chiH"] = r"\calibnote{solved from the steady-state education-time condition}"
     specs = [
         (ENDOGENOUS, "Endogenous Variables", "tab:glossEndo", "glossaryEndogenous.tex", svals, EQNS, None),
         (PARAMETERS, "Parameters",           "tab:glossParam", "glossaryParameters.tex", pvals, None, pnotes),
