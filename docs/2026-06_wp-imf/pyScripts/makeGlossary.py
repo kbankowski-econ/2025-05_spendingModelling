@@ -155,7 +155,7 @@ PARAMETERS = [
         (r"$\phi$",             "Survival rate of adopted technologies",        "phi"),
         (r"$\varsigma$",        "Adoption-probability elasticity",              "varsigma"),
         (r"$q_0$",              "Adoption-probability scale",                   "kappaprob"),
-        ("--",                  "Steady-state adoption probability",            "qss"),
+        (r"$q^{SS}$",          "Steady-state adoption probability",            "qss"),
     ]),
     ("Government: fiscal and monetary policy", [
         (r"$\Pi$",              "Steady-state gross inflation",                 "Piss"),
@@ -166,10 +166,10 @@ PARAMETERS = [
         (r"$\tau^w$",           "Steady-state labor-tax rate",                  "tauwss"),
         (r"$b^*$",              "Steady-state debt-to-GDP ratio",               "byss"),
         (r"$\gamma^{T}_d$",     "Transfer response to debt",                    "gamma_d_T"),
-        ("--",                  "Government consumption, share of GDP",          "Gcy"),
-        ("--",                  "Infrastructure investment, share of GDP",      "Igiy"),
-        ("--",                  "Human-capital investment, share of GDP",       "Igey"),
-        ("--",                  "R\\&D spending, share of GDP",                 "Grdy"),
+        (r"$G^{C,SS}/Y^{d,SS}$",  "Government consumption, share of GDP",       "Gcy"),
+        (r"$I^{GI,SS}/Y^{d,SS}$", "Infrastructure investment, share of GDP",    "Igiy"),
+        (r"$I^{GE,SS}/Y^{d,SS}$", "Human-capital investment, share of GDP",     "Igey"),
+        (r"$G^{RD,SS}/Y^{d,SS}$", "R\\&D spending, share of GDP",               "Grdy"),
         (r"$e^{GI}$",           "Steady-state infrastructure efficiency gap",   "eGI_ss"),
         (r"$e^{GE}$",           "Steady-state human-capital efficiency gap",    "eGE_ss"),
         (r"$e^{GRD}$",          "Steady-state R\\&D efficiency gap",            "eGRD_ss"),
@@ -338,7 +338,7 @@ def main():
     # Blue parenthetical notes for the endogenously calibrated parameters.
     CALIB = {
         "omega":     ("labor supply",         "L_t", "L"),
-        "kappaprob": ("adoption probability",  "q_t", "q"),
+        "kappaprob": ("adoption probability",  "q^{SS}", "q"),
     }
     pnotes = {code: rf"\calibnote{{targets steady-state {label} ${sym}={fmt_val(aess[tgt])}$}}"
               for code, (label, sym, tgt) in CALIB.items()}
