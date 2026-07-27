@@ -68,29 +68,29 @@ def main():
     hc_emde = (hlt["EM"] + hlt["LIC"] + edu["EM"] + edu["LIC"]) / 4
 
     rows = [
-        ("row",  "Infrastructure",          f3(inf["AE"]), emde_cell(inf["EM"], inf["LIC"])),
+        ("row",  r"$e^{GI}$",  "Infrastructure",          f3(inf["AE"]), emde_cell(inf["EM"], inf["LIC"])),
         ("gap",),
-        ("row",  r"\quad Health",           f3(hlt["AE"]), emde_cell(hlt["EM"], hlt["LIC"])),
-        ("row",  r"\quad Education",        f3(edu["AE"]), emde_cell(edu["EM"], edu["LIC"])),
+        ("row",  "--",         r"\quad Health",           f3(hlt["AE"]), emde_cell(hlt["EM"], hlt["LIC"])),
+        ("row",  "--",         r"\quad Education",        f3(edu["AE"]), emde_cell(edu["EM"], edu["LIC"])),
         ("gap",),
-        ("row",  "Human capital (average)", f3(hc_ae),     f3(hc_emde)),
+        ("row",  r"$e^{GE}$",  "Human capital (average)", f3(hc_ae),     f3(hc_emde)),
         ("gap",),
-        ("row",  r"R\&D",                   f3(rnd_ae),    "--"),
+        ("row",  r"$e^{GRD}$", r"R\&D",                   f3(rnd_ae),    "--"),
     ]
 
     lines = [
         HEADER,
-        r"\begin{tabular}{lcc}",
+        r"\begin{tabular}{llcc}",
         r"    \toprule",
-        r"    Efficiency gap ($1-$ efficiency) & AE & EMDE \\",
+        r"    Symbol & Efficiency gap ($1-$ efficiency) & AE & EMDE \\",
         r"    \midrule",
     ]
     for row in rows:
         if row[0] == "gap":
             lines.append(r"    \addlinespace[0.3em]")
         else:
-            _, label, ae, emde = row
-            lines.append(f"    {label} & {ae} & {emde} \\\\")
+            _, symbol, label, ae, emde = row
+            lines.append(f"    {symbol} & {label} & {ae} & {emde} \\\\")
     lines += [r"    \bottomrule", r"\end{tabular}"]
     OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"  Wrote {OUT.name}")
