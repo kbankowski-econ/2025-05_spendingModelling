@@ -10,16 +10,18 @@ swept over a plausible range, one panel each:
   - R&D investment            -> Model_HumanCapital_exp_grd, vary alpha_RD
 
 In each panel the lines fan from the low (light) to the high (dark) parameter
-value; the dashed black line is the baseline calibration. A 1x3 grid of percent
+value; the thick grey line is the baseline calibration. A 1x3 grid of percent
 deviations from steady state.
 
-Data source: the one-at-a-time parameter sweep
-docs/2026-06_wp-imf/investigations/sensitivity/results/sweep_AE_irf.csv
-(produced by investigations/sensitivity/sweep.m). Unlike the other figures this
-does not read figureNumbers_yearly.csv, because the sweep re-solves the model per
-parameter draw. Writes PNG/PDF/HTML/CSV into docs/2026-06_wp-imf/figures/.
-Requires pandas + plotly (with a Kaleido backend for PNG export).
+Data source: the one-at-a-time parameter sweep produced by
+investigations/sensitivity/sweep.m. By default this reads sweep_AE_irf.csv;
+with --permanent it reads sweep_AE_irf_perm.csv and writes the permanent-shock
+counterpart. Unlike the other figures this does not read figureNumbers_yearly.csv,
+because the sweep re-solves the model per parameter draw. Writes PNG/PDF/HTML/CSV
+into docs/2026-06_wp-imf/figures/. Requires pandas + plotly (with a Kaleido backend
+for PNG export).
 """
+import argparse
 from pathlib import Path
 
 import pandas as pd
@@ -31,8 +33,8 @@ from wp_charts import chart_render_px, chart_display_cm, font_px_for_pt, smart_s
 # --- Paths (resolved from this file) -----------------------------------------
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parents[1]
-INPUT_CSV = (PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "investigations" /
-             "sensitivity" / "results" / "sweep_AE_irf.csv")
+RESULTS_DIR = (PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "investigations" /
+               "sensitivity" / "results")
 FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 
 # --- Styling (inlined; matches the other working-paper figures) ---------------
@@ -60,18 +62,7 @@ PANELS = [
 HORIZON_YEARS = 25                          # match the multiplier table's 25y window
 X_TICK_HORIZONS = [1, 10, 25]
 OUTPUT_STEM = "sensitivityIRF_AE"
-
-# Both sizes come from chartTable.csv: render = original chart size (canvas,
-# controls fonts/quality); display = size shown in the paper (aspect preserved).
-WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (22.5, 8.25))
-DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (15.0, 5.5))
-
-# Font matching the paper: Palatino (the paper's mathpazo), sized so the chart
-# text renders at a fixed point size on the page (recomputed from render/display).
 FONT_FAMILY = "Palatino, 'Palatino Linotype', 'Book Antiqua', serif"
-FONT_PX = font_px_for_pt(8, WIDTH_PX, DISPLAY_CM[0])         # axis ticks
-TITLE_FONT_PX = font_px_for_pt(8.5, WIDTH_PX, DISPLAY_CM[0])  # subplot titles
-LABEL_FONT_PX = font_px_for_pt(6.5, WIDTH_PX, DISPLAY_CM[0])  # endpoint range labels
 
 
 def _lerp_hex(c0, c1, t):
@@ -81,8 +72,28 @@ def _lerp_hex(c0, c1, t):
     return "#" + "".join(f"{round(a[k] + (b[k] - a[k]) * t):02x}" for k in range(3))
 
 
-def main():
-    irf = pd.read_csv(INPUT_CSV)
+def _format_param(value):
+    """Keep endpoint labels precise enough to identify the calibration grid."""
+    return f"{value:.3f}".rstrip("0").rstrip(".")
+
+
+def main(permanent=False):
+    suffix = "_perm" if permanent else ""
+    input_csv = RESULTS_DIR / f"sweep_AE_irf{suffix}.csv"
+    output_stem = f"{OUTPUT_STEM}{'Perm' if permanent else ''}"
+
+    # Both sizes come from chartTable.csv: render = original chart size (canvas,
+    # controls fonts/quality); display = size shown in the paper (aspect preserved).
+    width_px, height_px = chart_render_px(output_stem, (22.5, 8.25))
+    display_cm = chart_display_cm(output_stem, (15.0, 5.5))
+
+    # Font matching the paper: Palatino (the paper's mathpazo), sized so the chart
+    # text renders at a fixed point size on the page.
+    font_px = font_px_for_pt(8, width_px, display_cm[0])
+    title_font_px = font_px_for_pt(8.5, width_px, display_cm[0])
+    label_font_px = font_px_for_pt(6.5, width_px, display_cm[0])
+
+    irf = pd.read_csv(input_csv)
     ycols = [f"yd_y{y}" for y in range(HORIZON_YEARS + 1)]
     years = list(range(HORIZON_YEARS + 1))
 
@@ -90,13 +101,13 @@ def main():
     # gap two endpoint labels need to avoid overlapping, used to spread the
     # crowded labels (chiefly the infrastructure panel, which the shared scale
     # compresses) outward from the baseline.
-    panel_exps = [p[0] for p in PANELS]
+    panel_exps = [f"{p[0]}{suffix}" for p in PANELS]
     pdata = irf[irf.experiment.isin(panel_exps)][ycols]   # only the plotted panels
     ylo, yhi = float(pdata.min().min()), float(pdata.max().max())   # NaN-safe (skipna)
     pad = 0.06 * (yhi - ylo)
     ylo, yhi = ylo - pad, yhi + pad
-    panel_h_px = HEIGHT_PX - STYLE["margins"]["t"] - STYLE["margins"]["b"]
-    label_min_gap = LABEL_FONT_PX * 1.25 * (yhi - ylo) / panel_h_px
+    panel_h_px = height_px - STYLE["margins"]["t"] - STYLE["margins"]["b"]
+    label_min_gap = label_font_px * 1.25 * (yhi - ylo) / panel_h_px
 
     fig = make_subplots(
         rows=1, cols=len(PANELS),
@@ -105,8 +116,9 @@ def main():
         horizontal_spacing=0.10,
     )
 
-    for j, (ex, param, _title, _psym, (c_lo, c_hi)) in enumerate(PANELS):
+    for j, (base_ex, param, _title, _psym, (c_lo, c_hi)) in enumerate(PANELS):
         col = j + 1
+        ex = f"{base_ex}{suffix}"
         sub = irf[(irf.experiment == ex) & (irf.param == param)].sort_values("param_value")
         vals = sub.param_value.to_numpy()
         lo, hi = vals.min(), vals.max()
@@ -154,20 +166,20 @@ def main():
         for d in items:
             fig.add_annotation(
                 row=1, col=col, x=HORIZON_YEARS, y=d["label_y"],
-                text=f"{d['val']:g}", showarrow=False,
+                text=_format_param(d["val"]), showarrow=False,
                 xanchor="left", yanchor="middle", xshift=3,
-                font=dict(family=FONT_FAMILY, size=LABEL_FONT_PX, color=d["color"]),
+                font=dict(family=FONT_FAMILY, size=label_font_px, color=d["color"]),
             )
 
     # Subplot titles (the first len(PANELS) annotations, added by make_subplots
     # before the endpoint labels) at the title point size.
     for annotation in fig["layout"]["annotations"][:len(PANELS)]:
-        annotation["font"] = dict(family=FONT_FAMILY, size=TITLE_FONT_PX)
+        annotation["font"] = dict(family=FONT_FAMILY, size=title_font_px)
 
     fig.update_layout(
         template=STYLE["template"],
-        width=WIDTH_PX, height=HEIGHT_PX, margin=STYLE["margins"],
-        font=dict(family=FONT_FAMILY, size=FONT_PX),
+        width=width_px, height=height_px, margin=STYLE["margins"],
+        font=dict(family=FONT_FAMILY, size=font_px),
         showlegend=False,
     )
 
@@ -176,38 +188,44 @@ def main():
         tickvals=X_TICK_HORIZONS, ticktext=[f"{h}y" for h in X_TICK_HORIZONS],
         range=[0, HORIZON_YEARS], showgrid=False,
         linecolor=axes["linecolor"], linewidth=axes["linewidth"],
-        ticks=axes["ticks"], tickfont=dict(size=FONT_PX),
+        ticks=axes["ticks"], tickfont=dict(size=font_px),
     )
     fig.update_yaxes(
         range=[ylo, yhi],
         showgrid=axes["showgrid"], gridcolor=axes["gridcolor"], gridwidth=axes["gridwidth"],
         zeroline=axes["zeroline"], zerolinewidth=axes["zerolinewidth"], zerolinecolor="black",
         linecolor=axes["linecolor"], linewidth=axes["linewidth"],
-        ticks=axes["ticks"], tickfont=dict(size=FONT_PX),
+        ticks=axes["ticks"], tickfont=dict(size=font_px),
     )
 
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
-    png_path = FIGURES_DIR / f"{OUTPUT_STEM}.png"
-    pdf_path = FIGURES_DIR / f"{OUTPUT_STEM}.pdf"
-    html_path = FIGURES_DIR / f"{OUTPUT_STEM}.html"
-    smart_save_image(fig, png_path, DISPLAY_CM)
-    write_pdf(fig, pdf_path, WIDTH_PX, DISPLAY_CM[0])
+    png_path = FIGURES_DIR / f"{output_stem}.png"
+    pdf_path = FIGURES_DIR / f"{output_stem}.pdf"
+    html_path = FIGURES_DIR / f"{output_stem}.html"
+    smart_save_image(fig, png_path, display_cm)
+    write_pdf(fig, pdf_path, width_px, display_cm[0])
     fig.write_html(html_path, auto_open=True)
     print(f"  Saved {png_path.name}, {pdf_path.name} and {html_path.name}")
 
     # Tidy long-format export: one row per (panel, parameter value, year).
     records = []
-    for ex, param, title, _psym, _ramp in PANELS:
+    for base_ex, param, title, _psym, _ramp in PANELS:
+        ex = f"{base_ex}{suffix}"
         sub = irf[(irf.experiment == ex) & (irf.param == param)].sort_values("param_value")
         for _, row in sub.iterrows():
             for y in years:
                 records.append({"panel": title, "param": param,
                                 "param_value": row.param_value, "year": y,
                                 "pct_dev": round(float(row[f"yd_y{y}"]), 3)})
-    csv_path = FIGURES_DIR / f"{OUTPUT_STEM}.csv"
+    csv_path = FIGURES_DIR / f"{output_stem}.csv"
     pd.DataFrame(records).to_csv(csv_path, index=False)
     print(f"  Exported data to {csv_path.name}")
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--permanent", action="store_true",
+        help="plot the permanent-shock sensitivity sweep",
+    )
+    main(permanent=parser.parse_args().permanent)

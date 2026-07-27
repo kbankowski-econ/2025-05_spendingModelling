@@ -14,6 +14,7 @@
 %
 % Run headless from the repo root:
 %   matlab -batch "cd('<repo>'); iniProject; run('docs/2026-06_wp-imf/investigations/sensitivity/sweep.m')"
+% Set SWEEP_PERMANENT=1 to run the permanent-shock counterpart.
 % A quick smoke test (one experiment, one parameter, short horizon) first:
 %   SWEEP_SMOKE=1 matlab -batch "...same..."
 % (benign exit-time segfault after completion, as with runModel.m).
@@ -30,15 +31,26 @@ if ~exist(workDir, 'dir'); mkdir(workDir); end
 if ~exist(resDir,  'dir'); mkdir(resDir);  end
 
 smoke = ~isempty(getenv('SWEEP_SMOKE'));
+permanent = ~isempty(getenv('SWEEP_PERMANENT'));
 
 %% Experiments (AE only): {model name, own-spending instrument, shock spec}.
-% Same AR(1) rho=0.9, +1%-of-GDP, debt-financed specs as runModel.m's exp_*.
-exps = {
-    'Model_HumanCapital_exp_gc',  'Gc',  {{'epsi_gc',  'ar1', [0.01 0.9], '1:1000'}}
-    'Model_HumanCapital_exp_igi', 'Igi', {{'epsi_igi', 'ar1', [0.01 0.9], '1:1000'}}
-    'Model_HumanCapital_exp_ige', 'Ige', {{'epsi_ige', 'ar1', [0.01 0.9], '1:1000'}}
-    'Model_HumanCapital_exp_grd', 'Grd', {{'epsi_grd', 'ar1', [0.01 0.9], '1:1000'}}
-    };
+% Match runModel.m's debt-financed expansion specs: AR(1), rho=0.9, by
+% default; a constant +1-percent-of-GDP step when SWEEP_PERMANENT is set.
+if permanent
+    exps = {
+        'Model_HumanCapital_exp_gc_perm',  'Gc',  {{'epsi_gc',  'const', 0.01, '1:1000'}}
+        'Model_HumanCapital_exp_igi_perm', 'Igi', {{'epsi_igi', 'const', 0.01, '1:1000'}}
+        'Model_HumanCapital_exp_ige_perm', 'Ige', {{'epsi_ige', 'const', 0.01, '1:1000'}}
+        'Model_HumanCapital_exp_grd_perm', 'Grd', {{'epsi_grd', 'const', 0.01, '1:1000'}}
+        };
+else
+    exps = {
+        'Model_HumanCapital_exp_gc',  'Gc',  {{'epsi_gc',  'ar1', [0.01 0.9], '1:1000'}}
+        'Model_HumanCapital_exp_igi', 'Igi', {{'epsi_igi', 'ar1', [0.01 0.9], '1:1000'}}
+        'Model_HumanCapital_exp_ige', 'Ige', {{'epsi_ige', 'ar1', [0.01 0.9], '1:1000'}}
+        'Model_HumanCapital_exp_grd', 'Grd', {{'epsi_grd', 'ar1', [0.01 0.9], '1:1000'}}
+        };
+end
 
 %% Parameters to sweep: {name, grid (include a point near the AE baseline)}.
 % The baseline (restore) value is read from M_.params at build time. The alphaRD
@@ -66,14 +78,16 @@ end
 
 nYears = ternary(smoke, 10, 50);     % annual yd IRF horizon
 
-csvPath = fullfile(resDir, sprintf('sweep_AE%s.csv', ternary(smoke, '_smoke', '')));
+variantSuffix = ternary(permanent, '_perm', '');
+smokeSuffix = ternary(smoke, '_smoke', '');
+csvPath = fullfile(resDir, sprintf('sweep_AE%s%s.csv', variantSuffix, smokeSuffix));
 fid = fopen(csvPath, 'w');
 hdr = sprintf('mult_%dy,', horizonsYr); hdr = strrep(hdr(1:end-1), 'mult_250y', 'mult_long');
 fprintf(fid, 'experiment,instrument,param,param_value,is_baseline,%s\n', hdr);
 
 % Companion file: annual yd IRF (percent deviation from SS), wide — one row per
 % draw, columns yd_y0..yd_y<nYears>.
-irfPath = fullfile(resDir, sprintf('sweep_AE_irf%s.csv', ternary(smoke, '_smoke', '')));
+irfPath = fullfile(resDir, sprintf('sweep_AE_irf%s%s.csv', variantSuffix, smokeSuffix));
 fidIrf = fopen(irfPath, 'w');
 irfHdr = sprintf('yd_y%d,', 0:nYears); irfHdr = irfHdr(1:end-1);
 fprintf(fidIrf, 'experiment,instrument,param,param_value,is_baseline,%s\n', irfHdr);

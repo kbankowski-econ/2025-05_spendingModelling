@@ -65,12 +65,12 @@ REPO_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
 MATLAB = "/Applications/MATLAB_R2024b.app/bin/matlab"
 
 
-def _run_plot(c, script, label):
+def _run_plot(c, script, label, args=""):
     """Run one of this folder's plotting scripts (it reads chartTable.csv and
     auto-opens the chart's .html)."""
     path = os.path.join(SCRIPT_DIR, script)
     print(f"--- {label} ---")
-    c.run(f"{sys.executable} {path}")
+    c.run(f"{sys.executable} {path} {args}".rstrip())
 
 
 # =============================================================================
@@ -210,6 +210,19 @@ def plotSensitivityIRF(c):
 
 
 @task
+def plotSensitivityIRFPerm(c):
+    """
+    Permanent-shock counterpart of plotSensitivityIRF. Reads
+    docs/2026-06_wp-imf/investigations/sensitivity/results/sweep_AE_irf_perm.csv.
+    Out: figures/sensitivityIRF_AEPerm.png/.pdf/.html/.csv
+    """
+    _run_plot(
+        c, "plotSensitivityIRF.py", "Generating: AE Parameter Sensitivity (permanent)",
+        args="--permanent",
+    )
+
+
+@task
 def plotEfficiencyBands(c):
     """
     Spending-efficiency gaps by income group (appendix figure).
@@ -336,6 +349,7 @@ def investigateContributions(c):
     plotHumanCapital,
     plotDiffusionAE,
     plotSensitivityIRF,
+    plotSensitivityIRFPerm,
     plotEfficiencyBands,
     makeMultipliers,
     makeCommonParametersTable,

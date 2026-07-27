@@ -1,9 +1,8 @@
 # §4.3 Sensitivity analysis — multipliers vs. structural parameters
 
-Quantitative back-up for **§4.3 (Sensitivity)**, which currently has qualitative
-text only. A **one-at-a-time (OAT)** sweep of the structural parameters the
-section flags — α_G, μ, and the three spending-efficiency wedges — showing how
-each moves the fiscal multiplier of the standard expansions.
+Quantitative back-up for **§4.3 (Sensitivity)**. A **one-at-a-time (OAT)** sweep
+of the structural parameters flagged in the section (α_G, μ, α_RD, and ς) shows
+how each changes the fiscal multiplier and output response of the standard expansions.
 
 ## Why a bespoke sweep (and not Dynare's GSA)
 
@@ -44,10 +43,12 @@ factor, cancelling in the ratio). The gap level sets the *stock*; the gains from
 *closing* a gap are the separate §5.2 experiment. This cleanly separates §4.3
 from §5.2 and is worth a sentence in the paper, but it is not a sweep dimension.
 
-## Experiments (AE only, first pass)
+## Experiments (AE only)
 
 The four standard debt-financed expansions (`Model_HumanCapital_exp_{gc,igi,ige,grd}`),
-AR(1) ρ=0.9, +1%-of-GDP, the same specs as `runModel.m` and Table 3.
+AR(1) ρ=0.9, +1%-of-GDP, use the same specs as `runModel.m` and Table 3.
+Setting `SWEEP_PERMANENT=1` instead runs the corresponding `_perm` models with
+a constant +1-percent-of-GDP step through the 250-year simulation window.
 
 ## Multiplier definition
 
@@ -64,7 +65,7 @@ Horizons: 1, 5, 10, 20, 25 years and a "long-term" 250-year column.
 - `sweep.m` — the driver. Builds each AE expansion in a gitignored `work/` dir
   (so the committed `models/**/_results.mat` are never touched — the shared
   macros and steady-state helper are pulled from `models/` via the preprocessor
-  `-I` include path and the MATLAB path), then OAT-sweeps the five parameters and
+  `-I` include path and the MATLAB path), then OAT-sweeps the four parameters and
   writes one row per (experiment, parameter, grid value).
 - `results/sweep_AE.csv` — tidy multiplier output: `experiment, instrument,
   param, param_value, is_baseline, mult_1y, mult_5y, mult_10y, mult_20y,
@@ -73,6 +74,8 @@ Horizons: 1, 5, 10, 20, 25 years and a "long-term" 250-year column.
   response** (percent deviation from steady state) for every draw, wide —
   `…, is_baseline, yd_y0 … yd_y50` (year 0 = SS = 0; year k = mean of that
   year's four quarters). Same rows as the multiplier file.
+- `results/sweep_AE_perm.csv` and `results/sweep_AE_irf_perm.csv` — permanent-shock
+  counterparts of the two files above, generated with `SWEEP_PERMANENT=1`.
 - `plot_sweep.py` — (i) `sweep_grid.png`: multiplier vs. parameter, experiment ×
   parameter small multiples at the long-term horizon; (ii) `sweep_tornado.png`:
   per-experiment tornado; (iii) `sweep_irf_fan.png`: output-IRF fans (yd vs.
@@ -93,6 +96,13 @@ Or headless (benign exit-time segfault after the `Wrote …` line, as with
 
 ```bash
 matlab -batch "cd('<repo>'); iniProject; run('docs/2026-06_wp-imf/investigations/sensitivity/sweep.m')"
+```
+
+For the permanent-shock counterpart:
+
+```bash
+SWEEP_PERMANENT=1 matlab -batch "cd('<repo>'); iniProject; run('docs/2026-06_wp-imf/investigations/sensitivity/sweep.m')"
+python pyScripts/2026-06_wp-imf/plotSensitivityIRF.py --permanent
 ```
 
 A quick smoke test (one experiment, one parameter, short horizon):
