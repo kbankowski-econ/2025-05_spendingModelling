@@ -87,8 +87,8 @@ def build_groups():
             (r"$\gamma$",  "Elasticity w.r.t.\\ the time input",                 fmt(ae["gamma"], 2),    fmt(em["gamma"], 2)),
         ]),
         ("Technology creation and adoption", [
-            (r"$\alpha_{HA}$", "Long-run human-capital elasticity",       fmt(ae["alphaHA"], 2),    "--"),
-            (r"$\alpha_{RD}$", r"Long-run public-R\&D elasticity",        fmt(ae["alphaRD"], 2),    "--"),
+            (r"$\alpha_{HA}$", "Human-capital elasticity in technology creation", fmt(ae["alphaHA"], 2), "--"),
+            (r"$\alpha_{RD}$", r"Public-R\&D elasticity in technology creation",  fmt(ae["alphaRD"], 2), "--"),
             (r"$\rho_A$",      "Persistence of created technology",       fmt(ae["rho_A"], 2),      "--"),
             (r"$\phi$",        "Survival rate of technologies",           fmt(ae["phi"], 2),      fmt(em["phi"], 2)),
             (r"$\varsigma$",   "Elasticity of the adoption probability",  fmt(ae["varsigma"], 2), fmt(em["varsigma"], 2)),
