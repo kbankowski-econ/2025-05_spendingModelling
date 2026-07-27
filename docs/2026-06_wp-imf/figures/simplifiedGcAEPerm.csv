@@ -1403,6 +1403,162 @@ year,model,variable,pct_dev
 2048,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
 2049,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
 2050,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
+2025,Full model,Real marginal cost (mc<sub>t</sub>),0.0
+2026,Full model,Real marginal cost (mc<sub>t</sub>),0.02
+2027,Full model,Real marginal cost (mc<sub>t</sub>),0.015
+2028,Full model,Real marginal cost (mc<sub>t</sub>),0.014
+2029,Full model,Real marginal cost (mc<sub>t</sub>),0.012
+2030,Full model,Real marginal cost (mc<sub>t</sub>),0.011
+2031,Full model,Real marginal cost (mc<sub>t</sub>),0.009
+2032,Full model,Real marginal cost (mc<sub>t</sub>),0.008
+2033,Full model,Real marginal cost (mc<sub>t</sub>),0.006
+2034,Full model,Real marginal cost (mc<sub>t</sub>),0.005
+2035,Full model,Real marginal cost (mc<sub>t</sub>),0.004
+2036,Full model,Real marginal cost (mc<sub>t</sub>),0.003
+2037,Full model,Real marginal cost (mc<sub>t</sub>),0.001
+2038,Full model,Real marginal cost (mc<sub>t</sub>),0.0
+2039,Full model,Real marginal cost (mc<sub>t</sub>),-0.001
+2040,Full model,Real marginal cost (mc<sub>t</sub>),-0.002
+2041,Full model,Real marginal cost (mc<sub>t</sub>),-0.003
+2042,Full model,Real marginal cost (mc<sub>t</sub>),-0.004
+2043,Full model,Real marginal cost (mc<sub>t</sub>),-0.005
+2044,Full model,Real marginal cost (mc<sub>t</sub>),-0.005
+2045,Full model,Real marginal cost (mc<sub>t</sub>),-0.006
+2046,Full model,Real marginal cost (mc<sub>t</sub>),-0.007
+2047,Full model,Real marginal cost (mc<sub>t</sub>),-0.008
+2048,Full model,Real marginal cost (mc<sub>t</sub>),-0.008
+2049,Full model,Real marginal cost (mc<sub>t</sub>),-0.009
+2050,Full model,Real marginal cost (mc<sub>t</sub>),-0.01
+2025,No R&D,Real marginal cost (mc<sub>t</sub>),0.0
+2026,No R&D,Real marginal cost (mc<sub>t</sub>),0.018
+2027,No R&D,Real marginal cost (mc<sub>t</sub>),0.012
+2028,No R&D,Real marginal cost (mc<sub>t</sub>),0.01
+2029,No R&D,Real marginal cost (mc<sub>t</sub>),0.008
+2030,No R&D,Real marginal cost (mc<sub>t</sub>),0.006
+2031,No R&D,Real marginal cost (mc<sub>t</sub>),0.005
+2032,No R&D,Real marginal cost (mc<sub>t</sub>),0.003
+2033,No R&D,Real marginal cost (mc<sub>t</sub>),0.002
+2034,No R&D,Real marginal cost (mc<sub>t</sub>),0.001
+2035,No R&D,Real marginal cost (mc<sub>t</sub>),-0.0
+2036,No R&D,Real marginal cost (mc<sub>t</sub>),-0.001
+2037,No R&D,Real marginal cost (mc<sub>t</sub>),-0.002
+2038,No R&D,Real marginal cost (mc<sub>t</sub>),-0.003
+2039,No R&D,Real marginal cost (mc<sub>t</sub>),-0.004
+2040,No R&D,Real marginal cost (mc<sub>t</sub>),-0.004
+2041,No R&D,Real marginal cost (mc<sub>t</sub>),-0.005
+2042,No R&D,Real marginal cost (mc<sub>t</sub>),-0.005
+2043,No R&D,Real marginal cost (mc<sub>t</sub>),-0.006
+2044,No R&D,Real marginal cost (mc<sub>t</sub>),-0.006
+2045,No R&D,Real marginal cost (mc<sub>t</sub>),-0.006
+2046,No R&D,Real marginal cost (mc<sub>t</sub>),-0.007
+2047,No R&D,Real marginal cost (mc<sub>t</sub>),-0.007
+2048,No R&D,Real marginal cost (mc<sub>t</sub>),-0.007
+2049,No R&D,Real marginal cost (mc<sub>t</sub>),-0.008
+2050,No R&D,Real marginal cost (mc<sub>t</sub>),-0.008
+2025,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),0.0
+2026,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),0.03
+2027,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),0.006
+2028,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),0.004
+2029,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),0.002
+2030,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),0.001
+2031,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.001
+2032,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.002
+2033,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.003
+2034,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.004
+2035,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.004
+2036,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.005
+2037,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.006
+2038,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.006
+2039,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.006
+2040,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.007
+2041,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.007
+2042,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.007
+2043,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.007
+2044,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.008
+2045,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.008
+2046,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.008
+2047,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.008
+2048,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.008
+2049,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.008
+2050,"No R&D, no human capital",Real marginal cost (mc<sub>t</sub>),-0.008
+2025,NK with capital,Real marginal cost (mc<sub>t</sub>),0.0
+2026,NK with capital,Real marginal cost (mc<sub>t</sub>),0.03
+2027,NK with capital,Real marginal cost (mc<sub>t</sub>),0.006
+2028,NK with capital,Real marginal cost (mc<sub>t</sub>),0.004
+2029,NK with capital,Real marginal cost (mc<sub>t</sub>),0.002
+2030,NK with capital,Real marginal cost (mc<sub>t</sub>),0.001
+2031,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.001
+2032,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.002
+2033,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.003
+2034,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.004
+2035,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.004
+2036,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.005
+2037,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.006
+2038,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.006
+2039,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.006
+2040,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.007
+2041,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.007
+2042,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.007
+2043,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.007
+2044,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.008
+2045,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.008
+2046,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.008
+2047,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.008
+2048,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.008
+2049,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.008
+2050,NK with capital,Real marginal cost (mc<sub>t</sub>),-0.008
+2025,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),0.0
+2026,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.051
+2027,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),0.002
+2028,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2029,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2030,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2031,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2032,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2033,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2034,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2035,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2036,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2037,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2038,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2039,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2040,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2041,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2042,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2043,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2044,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2045,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2046,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2047,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2048,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2049,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2050,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.005
+2025,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),0.0
+2026,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.048
+2027,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.012
+2028,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2029,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2030,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2031,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2032,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2033,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2034,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2035,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2036,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2037,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2038,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2039,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2040,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2041,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2042,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2043,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2044,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2045,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2046,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2047,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2048,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2049,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
+2050,Canonical NK (from scratch),Real marginal cost (mc<sub>t</sub>),-0.011
 2025,Full model,Inflation (Π<sub>t</sub>),0.0
 2026,Full model,Inflation (Π<sub>t</sub>),-0.492
 2027,Full model,Inflation (Π<sub>t</sub>),-0.536

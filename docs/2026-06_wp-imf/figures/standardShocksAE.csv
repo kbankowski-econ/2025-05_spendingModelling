@@ -1039,6 +1039,110 @@ year,shock,variable,pct_dev
 2048,R&D investment,Human capital stock (H<sub>t</sub>),-0.014
 2049,R&D investment,Human capital stock (H<sub>t</sub>),-0.01
 2050,R&D investment,Human capital stock (H<sub>t</sub>),-0.008
+2025,Government consumption,Real marginal cost (mc<sub>t</sub>),0.0
+2026,Government consumption,Real marginal cost (mc<sub>t</sub>),-0.05
+2027,Government consumption,Real marginal cost (mc<sub>t</sub>),-0.027
+2028,Government consumption,Real marginal cost (mc<sub>t</sub>),-0.014
+2029,Government consumption,Real marginal cost (mc<sub>t</sub>),-0.006
+2030,Government consumption,Real marginal cost (mc<sub>t</sub>),-0.001
+2031,Government consumption,Real marginal cost (mc<sub>t</sub>),0.003
+2032,Government consumption,Real marginal cost (mc<sub>t</sub>),0.005
+2033,Government consumption,Real marginal cost (mc<sub>t</sub>),0.006
+2034,Government consumption,Real marginal cost (mc<sub>t</sub>),0.006
+2035,Government consumption,Real marginal cost (mc<sub>t</sub>),0.007
+2036,Government consumption,Real marginal cost (mc<sub>t</sub>),0.007
+2037,Government consumption,Real marginal cost (mc<sub>t</sub>),0.007
+2038,Government consumption,Real marginal cost (mc<sub>t</sub>),0.006
+2039,Government consumption,Real marginal cost (mc<sub>t</sub>),0.006
+2040,Government consumption,Real marginal cost (mc<sub>t</sub>),0.006
+2041,Government consumption,Real marginal cost (mc<sub>t</sub>),0.006
+2042,Government consumption,Real marginal cost (mc<sub>t</sub>),0.005
+2043,Government consumption,Real marginal cost (mc<sub>t</sub>),0.005
+2044,Government consumption,Real marginal cost (mc<sub>t</sub>),0.005
+2045,Government consumption,Real marginal cost (mc<sub>t</sub>),0.005
+2046,Government consumption,Real marginal cost (mc<sub>t</sub>),0.004
+2047,Government consumption,Real marginal cost (mc<sub>t</sub>),0.004
+2048,Government consumption,Real marginal cost (mc<sub>t</sub>),0.004
+2049,Government consumption,Real marginal cost (mc<sub>t</sub>),0.004
+2050,Government consumption,Real marginal cost (mc<sub>t</sub>),0.004
+2025,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),0.0
+2026,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),0.028
+2027,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),0.015
+2028,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),0.008
+2029,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),0.002
+2030,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.001
+2031,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.004
+2032,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.006
+2033,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.008
+2034,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.009
+2035,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.009
+2036,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.009
+2037,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.01
+2038,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.01
+2039,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.009
+2040,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.009
+2041,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.009
+2042,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.009
+2043,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.008
+2044,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.008
+2045,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.008
+2046,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.007
+2047,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.007
+2048,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.007
+2049,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.006
+2050,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.006
+2025,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.0
+2026,Human capital investment,Real marginal cost (mc<sub>t</sub>),-0.056
+2027,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.023
+2028,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.064
+2029,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.083
+2030,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.09
+2031,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.088
+2032,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.081
+2033,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.072
+2034,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.061
+2035,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.05
+2036,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.04
+2037,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.03
+2038,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.021
+2039,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.012
+2040,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.005
+2041,Human capital investment,Real marginal cost (mc<sub>t</sub>),-0.001
+2042,Human capital investment,Real marginal cost (mc<sub>t</sub>),-0.007
+2043,Human capital investment,Real marginal cost (mc<sub>t</sub>),-0.012
+2044,Human capital investment,Real marginal cost (mc<sub>t</sub>),-0.016
+2045,Human capital investment,Real marginal cost (mc<sub>t</sub>),-0.019
+2046,Human capital investment,Real marginal cost (mc<sub>t</sub>),-0.022
+2047,Human capital investment,Real marginal cost (mc<sub>t</sub>),-0.024
+2048,Human capital investment,Real marginal cost (mc<sub>t</sub>),-0.026
+2049,Human capital investment,Real marginal cost (mc<sub>t</sub>),-0.028
+2050,Human capital investment,Real marginal cost (mc<sub>t</sub>),-0.029
+2025,R&D investment,Real marginal cost (mc<sub>t</sub>),0.0
+2026,R&D investment,Real marginal cost (mc<sub>t</sub>),0.153
+2027,R&D investment,Real marginal cost (mc<sub>t</sub>),0.163
+2028,R&D investment,Real marginal cost (mc<sub>t</sub>),0.124
+2029,R&D investment,Real marginal cost (mc<sub>t</sub>),0.078
+2030,R&D investment,Real marginal cost (mc<sub>t</sub>),0.038
+2031,R&D investment,Real marginal cost (mc<sub>t</sub>),0.008
+2032,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.014
+2033,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.028
+2034,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.037
+2035,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.043
+2036,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.045
+2037,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.046
+2038,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.045
+2039,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.044
+2040,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.042
+2041,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.04
+2042,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.037
+2043,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.035
+2044,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.033
+2045,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.031
+2046,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.029
+2047,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.027
+2048,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.025
+2049,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.024
+2050,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.022
 2025,Government consumption,Inflation (Π<sub>t</sub>),0.0
 2026,Government consumption,Inflation (Π<sub>t</sub>),0.121
 2027,Government consumption,Inflation (Π<sub>t</sub>),0.219

@@ -49,11 +49,10 @@ SHOCKS = [
     ("Model_HumanCapital_exp_grd", "R&D investment",            "#2E7D32"),
 ]
 
-# (variable suffix, panel title); laid out row-major in a 4x4 grid, one thematic
-# block per row. Units differ by row: the demand and supply rows are percent
-# deviations; the nominal row is annualized percentage points; the fiscal row is
-# percentage points of steady-state GDP. There are no y-axis unit labels by
-# design -- the figure note spells out how each block's deviations are calculated.
+# (variable suffix, panel title); laid out row-major in a 5x4 grid, one thematic
+# block per row. Units differ by panel: demand, supply, labor, and marginal cost
+# are percent deviations; rates are annualized percentage points; fiscal variables
+# are percentage points of steady-state GDP. The figure note states these units.
 PANELS = [
     # Row 1 - demand components (percent deviation)
     ("yd",        "Output (Y<sup>d</sup><sub>t</sub>)"),
@@ -72,11 +71,11 @@ PANELS = [
     ("H",         "Human capital stock (H<sub>t</sub>)"),
     None,
     None,
-    # Row 4 - nominal block (annualized percentage points)
+    # Row 4 - nominal block (marginal cost in percent; rates in annualized pp)
+    ("mc",        "Real marginal cost (mc<sub>t</sub>)"),
     ("PI_ann",    "Inflation (Π<sub>t</sub>)"),
     ("R_ann",     "Nominal interest rate (R<sub>t</sub>)"),
     ("rreal_ann", "Real interest rate (R<sub>t</sub>/Π<sub>t</sub>)"),
-    None,
     # Row 5 - fiscal block (percentage points of steady-state GDP); primary
     # deficit is a composite budget flow with no single paper symbol (see
     # eq:govbudget). Debt service (dserv_yss) is computed and exported but not
