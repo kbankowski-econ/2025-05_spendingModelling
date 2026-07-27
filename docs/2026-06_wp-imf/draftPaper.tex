@@ -238,7 +238,7 @@ Private human capital $H_t$ evolves according to
 \begin{equation} \label{eq:humancapital}
     H_{t} = \left(1 - \delta^{h}\right) H_{t-1} + \chi \left(E_t\right)^{\gamma} \left(\frac{K_{t-1}^{GE}}{\Lambda_{t-1}}\right)^{\mu},
 \end{equation}
-Here $\delta^{h}$ is the depreciation rate of human capital and $\chi$ is a scale constant determined in the steady state to satisfy the education-time optimality condition.
+Here $\delta^{h}$ is the depreciation rate of human capital and $\chi$ is a scale constant determined from the accumulation equation to ensure the normalized steady-state value $H=1$.
 The stock $K_t^{GE}$ represents public education and health capital, while expressing the inherited stock $K_{t-1}^{GE}$ relative to $\Lambda_{t-1}$ keeps its contribution stationary along the balanced-growth path.
 The elasticities $\gamma$ and $\mu$ govern the response of human capital formation to the household's time input and to the public human capital stock, respectively.
 Public human capital therefore raises the productivity of household education time, rather than entering household utility directly.
@@ -576,11 +576,11 @@ These estimates are the efficiency gaps used directly in the model.}
 
 \subsection{Steady-State Coefficients and Experiment Design}
 
-Three scale parameters are solved jointly with the steady state rather than selected directly, allowing the model to implement its steady-state targets and optimality conditions.
+Three scale parameters are solved jointly with the steady state rather than selected directly, allowing the model to implement its steady-state targets, normalizations, and optimality conditions.
 Following a standard normalization in quarterly DSGE models, as in \citet{Cantoreetal2017}, steady-state labor supply equals one-third of the available time endowment, $L=1/3$.
 The labor-disutility scale $\omega$ is determined internally to implement this target.
-Given this normalization and the calibrated values of $\beta$, $\delta^h$, and $\gamma$, the household optimality conditions imply a steady-state allocation of $E=0.157$ to education and health.
-The human-capital accumulation scale $\chi$ is then determined internally to satisfy the education-time condition.
+The household optimality conditions imply $E=0.157$ given $L=1/3$ and the calibrated values of $\beta$, $\delta^h$, and $\gamma$.
+Conditional on this allocation, the human-capital accumulation scale $\chi$ is determined from the accumulation equation to ensure the normalized steady-state value $H=1$.
 The adoption scale $q_0$ in $q_t=q_0(S_t/\Lambda_t)^{\varsigma}$ is pinned down by the steady-state adoption-probability target, which delivers an average adoption lag of approximately 10 years.
 
 Whereas the three scale parameters are determined within the steady state, the technology-growth rate is implied by trend output growth according to $1+\gamma^a=g^{(1-\alpha)/(\vartheta-1)}$.
@@ -979,7 +979,7 @@ Each variable's defining stationarized equilibrium equation is shown beneath its
 
 The last two columns report the calibrated values for the representative advanced economy (AE) and emerging market and developing economy (EMDE), read from the solved model; \colorbox{diffcell}{shaded} cells mark parameters whose value differs between the two calibrations.
 Three parameters ($\omega$, $\chi$, $q_0$) are calibrated endogenously and solved as part of the steady state.
-A \textcolor{targetblue}{blue parenthetical} records the target or optimality condition that determines each parameter.
+A \textcolor{targetblue}{blue parenthetical} records the target, normalization, or optimality condition that determines each parameter.
 A ``--'' in the EMDE value column marks a technology-creation parameter that is inactive in that calibration (Section~\ref{sec:calibration}); a ``--'' in the Paper column instead marks an object with no paper symbol.
 
 \input{glossaryParameters.tex}

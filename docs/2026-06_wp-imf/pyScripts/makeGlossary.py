@@ -342,7 +342,7 @@ def main():
     }
     pnotes = {code: rf"\calibnote{{targets steady-state {label} ${sym}={fmt_val(aess[tgt])}$}}"
               for code, (label, sym, tgt) in CALIB.items()}
-    pnotes["chiH"] = r"\calibnote{solved from the steady-state education-time condition}"
+    pnotes["chiH"] = r"\calibnote{normalizes steady-state human capital to $H_t=1$}"
     specs = [
         (ENDOGENOUS, "Endogenous Variables", "tab:glossEndo", "glossaryEndogenous.tex", svals, EQNS, None),
         (PARAMETERS, "Parameters",           "tab:glossParam", "glossaryParameters.tex", pvals, None, pnotes),
