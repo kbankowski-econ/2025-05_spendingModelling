@@ -42,37 +42,37 @@ def main():
     em = read_params(EM_MODEL)
 
     rows = [
-        ("Growth", None, None, None),
-        ("Annual trend output growth", "Percent", annual_growth(ae["g"]), annual_growth(em["g"])),
-        ("Public spending", None, None, None),
-        ("Government consumption", "Percent of GDP", pct(ae["Gcy"]), pct(em["Gcy"])),
-        ("Infrastructure investment", "Percent of GDP", pct(ae["Igiy"]), pct(em["Igiy"])),
-        ("Human-capital investment", "Percent of GDP", pct(ae["Igey"], 2), pct(em["Igey"])),
-        (r"Public R\&D spending", "Percent of GDP", pct(ae["Grdy"]), pct(em["Grdy"])),
-        ("Implicit tax rates", None, None, None),
-        ("Consumption tax", "Percent", pct(ae["taucss"], 0), pct(em["taucss"], 0)),
-        ("Labor-income tax", "Percent", pct(ae["tauwss"], 0), pct(em["tauwss"], 0)),
-        ("Public debt", None, None, None),
-        ("Public debt level", "Percent of annual GDP", pct(ae["byss"] / 4, 0), pct(em["byss"] / 4, 0)),
+        ("Growth", None, None, None, None),
+        (r"$g^4-1$", "Annual trend output growth", "Percent", annual_growth(ae["g"]), annual_growth(em["g"])),
+        ("Public spending", None, None, None, None),
+        (r"$G^{C,SS}/Y^{d,SS}$", "Government consumption", "Percent of GDP", pct(ae["Gcy"]), pct(em["Gcy"])),
+        (r"$I^{GI,SS}/Y^{d,SS}$", "Infrastructure investment", "Percent of GDP", pct(ae["Igiy"]), pct(em["Igiy"])),
+        (r"$I^{GE,SS}/Y^{d,SS}$", "Human-capital investment", "Percent of GDP", pct(ae["Igey"], 2), pct(em["Igey"])),
+        (r"$G^{RD,SS}/Y^{d,SS}$", r"Public R\&D spending", "Percent of GDP", pct(ae["Grdy"]), pct(em["Grdy"])),
+        ("Implicit tax rates", None, None, None, None),
+        (r"$\tau^{c,SS}$", "Consumption tax", "Percent", pct(ae["taucss"], 0), pct(em["taucss"], 0)),
+        (r"$\tau^{w,SS}$", "Labor-income tax", "Percent", pct(ae["tauwss"], 0), pct(em["tauwss"], 0)),
+        ("Public debt", None, None, None, None),
+        (r"$b^{SS}/(4Y^{d,SS})$", "Public debt level", "Percent of annual GDP", pct(ae["byss"] / 4, 0), pct(em["byss"] / 4, 0)),
     ]
 
     lines = [
         HEADER,
-        r"\begin{tabular}{llcc}",
+        r"\begin{tabular}{lllcc}",
         r"    \toprule",
-        r"    Target & Unit & AE & EMDE \\",
+        r"    Symbol & Target & Unit & AE & EMDE \\",
         r"    \midrule",
     ]
     first_group = True
-    for label, unit, ae_value, em_value in rows:
+    for symbol, label, unit, ae_value, em_value in rows:
         if unit is None:
             if not first_group:
                 lines.append(r"    \addlinespace[0.4em]")
-            lines.append(rf"    \multicolumn{{4}}{{@{{}}l}}{{\textit{{{label}}}}} \\")
+            lines.append(rf"    \multicolumn{{5}}{{@{{}}l}}{{\textit{{{symbol}}}}} \\")
             lines.append(r"    \addlinespace[0.1em]")
             first_group = False
         else:
-            lines.append(rf"    \quad {label} & {unit} & {ae_value} & {em_value} \\")
+            lines.append(rf"    \quad {symbol} & {label} & {unit} & {ae_value} & {em_value} \\")
     lines += [r"    \bottomrule", r"\end{tabular}"]
     OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"  Wrote {OUT.name}")
