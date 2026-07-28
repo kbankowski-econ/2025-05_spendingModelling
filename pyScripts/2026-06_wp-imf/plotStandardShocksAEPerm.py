@@ -13,7 +13,7 @@ that stays at +1 percent of GDP:
   - R&D investment             -> Model_HumanCapital_exp_grd_perm
 
 A 5x4 grid of percent deviations from steady state. Standalone: the only input
-is docs/csvFiles/figureNumbers_yearly.csv; it writes PNG/PDF/HTML/CSV into
+is docs/csvFiles/figureNumbers.csv; it writes PNG/PDF/HTML/CSV into
 docs/2026-06_wp-imf/figures/. Requires pandas + plotly (with a Kaleido backend).
 """
 from pathlib import Path
@@ -27,7 +27,7 @@ from wp_charts import chart_render_px, chart_display_cm, font_px_for_pt, smart_s
 # --- Paths (resolved from this file; the data CSV is the only external input) -
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parents[1]
-INPUT_CSV = PROJECT_ROOT / "docs" / "csvFiles" / "figureNumbers_yearly.csv"
+INPUT_CSV = PROJECT_ROOT / "docs" / "csvFiles" / "figureNumbers.csv"
 FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 
 # --- Styling (inlined; matches the other working-paper figures) ---------------
@@ -93,17 +93,11 @@ NROWS = 5
 # Block name printed vertically on the left of each row (top to bottom).
 BLOCKS = ["Demand", "Supply", "Labor", "Nominal", "Fiscal"]
 
-# Start at period one of the simulation (2025), the pre-shock steady state where
-# every deviation is zero; the shock is active from 2026 onward.
-PLOT_START_YEAR = 2025
-# Label the x-axis by horizon (years since the shock), consistent with the
-# multiplier table's 1y/5y/10y/20y/25y columns. Period one (2025) is the
-# zero-deviation steady state where the lines start; the first labelled tick is
-# 1y (2026) ... 2050 = 25y. Show a subset of horizons to keep the dense grid
-# legible.
-SHOCK_BASE_YEAR = 2025
+# Plot the pre-shock observation and the subsequent 100 quarterly responses.
+# Keep annual horizon labels, placing them at the corresponding quarter.
+PLOT_HORIZON_QUARTERS = 100
 X_TICK_HORIZONS = [1, 10, 25]
-X_TICKS = [SHOCK_BASE_YEAR + h for h in X_TICK_HORIZONS]
+X_TICKS = [4 * h for h in X_TICK_HORIZONS]
 X_TICK_LABELS = [f"{h}y" for h in X_TICK_HORIZONS]
 OUTPUT_STEM = "standardShocksAEPerm"
 
@@ -128,14 +122,20 @@ BLOCK_FONT_PX = font_px_for_pt(BLOCK_FONT_PT, WIDTH_PX, DISPLAY_CM[0])
 def load_data():
     df = pd.read_csv(INPUT_CSV)
     df = df.rename(columns={df.columns[0]: "date"})
-    df["year"] = df["date"].astype(str).str.extract(r"(\d{4})").astype(int)
-    df = df.sort_values("year")
-    return df[df["year"] >= PLOT_START_YEAR]
+    date_parts = (
+        df["date"].astype(str)
+        .str.extract(r"(?P<year>\d{4})Q(?P<quarter>[1-4])")
+        .astype(int)
+    )
+    period = 4 * date_parts["year"] + date_parts["quarter"]
+    df["horizon_quarter"] = period - period.iloc[0]
+    df = df.sort_values("horizon_quarter")
+    return df[df["horizon_quarter"].between(0, PLOT_HORIZON_QUARTERS)]
 
 
 def main():
     df = load_data()
-    years = df["year"].values
+    quarters = df["horizon_quarter"].values
 
     fig = make_subplots(
         rows=NROWS, cols=NCOLS,
@@ -156,7 +156,7 @@ def main():
                 continue
             fig.add_trace(
                 go.Scatter(
-                    x=years, y=df[colname].values,
+                    x=quarters, y=df[colname].values,
                     name=label, legendgroup=label,
                     line=dict(color=color, width=STYLE["line_width_standard"]),
                     showlegend=(idx == 0),   # one legend entry per shock
@@ -220,16 +220,20 @@ def main():
     fig.write_html(html_path, auto_open=True)
     print(f"  Saved {png_path.name}, {pdf_path.name} and {html_path.name}")
 
-    # Tidy long-format export: one row per (year, shock, variable).
+    # Tidy long-format export: one row per (quarter, shock, variable).
     records = []
     for var, title in (panel for panel in PANELS if panel is not None):
         for model, label, _ in SHOCKS:
             colname = f"{model}___{var}"
             if colname not in df.columns:
                 continue
-            for yr, val in zip(years, df[colname].values):
-                records.append({"year": yr, "shock": label, "variable": title,
-                                "pct_dev": round(val, 3)})
+            for quarter, val in zip(quarters, df[colname].values):
+                records.append({
+                    "horizon_quarter": quarter,
+                    "shock": label,
+                    "variable": title,
+                    "pct_dev": round(val, 3),
+                })
     csv_path = FIGURES_DIR / f"{OUTPUT_STEM}.csv"
     pd.DataFrame(records).to_csv(csv_path, index=False)
     print(f"  Exported data to {csv_path.name}")
