@@ -1,94 +1,97 @@
 //********************************************************
 // HOUSEHOLD DECISIONS
 //********************************************************
-// Marginal utility
+@#if SIMPLIFY_LEVEL < 7
+// Marginal utility with the consumption-tax wedge
 1/C = lambda*(1+tauc);
+@#else
+// Canonical marginal utility
+lambda = 1/C;
+@#endif
 
-// Euler equation
+// Euler equation. At level 6 and above g=1.
 lambda = betta*(lambda(+1)/g*R/PI(+1));
 
-// Labor decision
+@#if SIMPLIFY_LEVEL < 2
+// Labor and education draw on the common time endowment.
 omega*(L+E)^varphi = lambda*w*H(-1)*(1-tauw);
-
-// Law of motion of private capital
-Kp*g = (1-delta)*Kp(-1)+Ip;
+@#elseif SIMPLIFY_LEVEL < 7
+// Human capital is inactive, so effective labor equals hours worked.
+omega*L^varphi = lambda*w*(1-tauw);
+@#else
+// Canonical labor-supply condition
+omega*L^varphi = lambda*w;
+@#endif
 
 @#if SIMPLIFY_LEVEL < 4
-// Return on private investment
+// Private-capital accumulation and optimal investment
+Kp*g = (1-delta)*Kp(-1)+Ip;
 1 = betta*(lambda(+1)/lambda/g*(1-delta+rk(+1)));
 @#else
-// SIMPLIFY >= 4: capital fixed (no investment margin). Kp pinned to steady state,
-// so the capital law of motion holds Ip at its steady state and production is
-// labor-only (Y = const * N^(1-alpha)) -- the textbook NK structure.
+// Private capital is absent from the active equilibrium.
 Kp = STEADY_STATE(Kp);
+Ip = STEADY_STATE(Ip);
 @#endif
 
 @#if SIMPLIFY_LEVEL < 2
-// Human capital of the household
-H = (1-deltaH)*H(-1)+chiH*E^gamma*(Kge(-1))^(mu);
-
-// Time devoted to building human capital (E)
-omega*(L+E)^varphi = lambda_H*chiH*gamma*E^(gamma-1)*(Kge(-1))^(mu);
-
-// Shadow value of human capital
+// Human-capital accumulation and optimal education time
+H = (1-deltaH)*H(-1)+chiH*E^gamma*(Kge(-1))^mu;
+omega*(L+E)^varphi = lambda_H*chiH*gamma*E^(gamma-1)*(Kge(-1))^mu;
 lambda_H = betta*(lambda(+1)*(1-tauw(+1))*w(+1)*L(+1)+lambda_H(+1)*(1-deltaH));
+N = L*H(-1);
 @#else
-// SIMPLIFY >= 2: human-capital channel off (H, E, lambda_H pinned to steady state)
-H = STEADY_STATE(H);
-E = STEADY_STATE(E);
-lambda_H = STEADY_STATE(lambda_H);
+// Human-capital objects are inactive reporting placeholders.
+H = 1;
+E = 0;
+lambda_H = 0;
+N = L;
 @#endif
 
-// Effective labor
-N = L*H(-1);
-
 //********************************************************
-// FIRMS DECISIONS
+// FIRMS AND PRICE SETTING
 //********************************************************
-// Price setting
 x1 = lambda*mc*yd+betta*thetap*(PI^chi/PI(+1))^(-epsilon)*x1(+1);
 x2 = lambda*PIstar*yd+betta*thetap*(PI^chi/PI(+1))^(1-epsilon)*PIstar/PIstar(+1)*x2(+1);
 epsilon*x1 = (epsilon-1)*x2;
 
-// Optimal factor mix
+@#if SIMPLIFY_LEVEL < 4
+// Cobb-Douglas production with private capital and an intermediate markup
 Kp(-1)/N = alpha/(1-alpha)*w/rk;
-
-// Marginal cost
 (1-alpha)*mc*y/N = markupss*w;
+y = A(-1)^(vartheta-1)*Kg(-1)^alphaG*Kp(-1)^alpha*N^(1-alpha);
+@#elseif SIMPLIFY_LEVEL < 7
+// Labor-only constant-returns production. Steady-state scales are retained so
+// levels 4--6 isolate dynamics without changing the background allocation.
+rk = STEADY_STATE(rk);
+mc/STEADY_STATE(mc) = w/STEADY_STATE(w);
+y/STEADY_STATE(y) = N/STEADY_STATE(N);
+@#else
+// Canonical labor-only technology and marginal cost
+rk = STEADY_STATE(rk);
+mc = w;
+y = N;
+@#endif
 
-// Law of motion of prices
+// Calvo price aggregation. The template sets chi=0 from level 5 onward.
 1 = thetap*(PI(-1)^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon);
 
-// Production
-[name='y']
-y = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG))*(Kp(-1)^alpha)*(N^(1-alpha));
-
-// Stochastic discount factor (detrended)
+//********************************************************
+// TECHNOLOGY CREATION AND ADOPTION
+//********************************************************
+@#if SIMPLIFY_LEVEL < 1
 SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)));
 
-
-@#if SIMPLIFY_LEVEL < 1
-// Technology creation (R&D enters in efficiency-adjusted form)
-ln(Z/STEADY_STATE(Z)) = rho_A*ln(Z(-1)/STEADY_STATE(Z))+(1-rho_A)*alphaRD*ln((1-eGRD(-1))*Grd(-1)/((1-eGRD_ss)*STEADY_STATE(Grd)))+(1-rho_A)*alphaHA*ln(H(-1)/STEADY_STATE(H));
-
-// Value of an unadopted technology
-J = -S+phi*(SDF(+1)*A(-1)/A*1/(1+gammaa)*(q*V(+1)+(1-q)*J(+1)));
-
-// Probability of adoption
-q = (kappaprob+epsi_q)*(S)^(varsigma);
-
-// Adoption
+ln(Z/STEADY_STATE(Z)) = rho_A*ln(Z(-1)/STEADY_STATE(Z))
+    +(1-rho_A)*alphaRD*ln((1-eGRD(-1))*Grd(-1)/((1-eGRD_ss)*STEADY_STATE(Grd)))
+    +(1-rho_A)*alphaHA*ln(H(-1)/STEADY_STATE(H));
+J = -S+phi*(SDF(+1)*A(-1)/A/(1+gammaa)*(q*V(+1)+(1-q)*J(+1)));
+q = (kappaprob+epsi_q)*S^varsigma;
 (1+gammaa)*A = q*phi*(Z(-1)-A(-1))+phi*A(-1);
-
-// Value of an adopted technology
-V = (markupss-1)/(markupss)*mc*y + phi*SDF(+1)*V(+1)*A(-1)/A/(1+gammaa);
-
-// FOC for adoption effort
+V = (markupss-1)/markupss*mc*y+phi*SDF(+1)*V(+1)*A(-1)/A/(1+gammaa);
 varsigma*q*phi*SDF(+1)/(1+gammaa)*A(-1)/A*(V(+1)-J(+1)) = S;
-
-// Shock to the R&D technology
 @#else
-// SIMPLIFY >= 1: R&D / endogenous-technology channel off (exogenous technology)
+// Endogenous technology is absent from the active equilibrium.
+SDF = STEADY_STATE(SDF);
 Z = STEADY_STATE(Z);
 J = STEADY_STATE(J);
 q = STEADY_STATE(q);
@@ -98,93 +101,88 @@ S = STEADY_STATE(S);
 @#endif
 
 //********************************************************
-// MONETARY AUTHORITY
+// MONETARY POLICY
 //********************************************************
-// Taylor rule for the nominal policy and government financing rate
 R/Rss = (R(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
 
 //********************************************************
-// GOVERNMENT DECISIONS
+// GOVERNMENT
 //********************************************************
-// Public infrastructure capital
 @#if SIMPLIFY_LEVEL < 3
 Kg*g = (1-delta)*Kg(-1)+(1-eGI)*Igi;
 @#else
-// SIMPLIFY >= 3: public-infrastructure channel off (Kg pinned to steady state)
 Kg = STEADY_STATE(Kg);
 @#endif
 
-// Government debt
+@#if SIMPLIFY_LEVEL < 7
+// Extended fiscal block with debt and distortionary tax wedges
 b = (R(-1)/PI)*b(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;
-
-// Lump-sum transfers
 T-STEADY_STATE(T) = -gamma_d_T*eTaux*(by(-1)-byss)*ydss;
-
-// Debt to GDP
 by = b/y;
 
-// Government spending instruments (subject to expenditure shocks)
-Gc = Gcy*ydss+ydss*epsi_gc;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_gc shock)
-Igi = Igiy*ydss+ydss*epsi_igi;                                     // infrastructure investment
-Ige = Igey*ydss+ydss*epsi_ige;                                  // education and health investment
-Grd = Grdy*ydss+ydss*epsi_grd;                               // R&D spending
-
-// Consumption tax rate
+Gc = Gcy*ydss+ydss*epsi_gc;
+Igi = Igiy*ydss+ydss*epsi_igi;
+Ige = Igey*ydss+ydss*epsi_ige;
+Grd = Grdy*ydss+ydss*epsi_grd;
 tauc = taucss+epsi_tauc;
-
-// Labor-income tax rate
 tauw = tauwss+epsi_tauw;
+@#else
+// Canonical fiscal block: wasteful G is financed contemporaneously by an
+// implicit lump-sum tax. Debt and distortionary taxes are absent.
+b = 0;
+T = 0;
+by = 0;
+Gc = Gcy*ydss+ydss*epsi_gc;
+Igi = 0;
+Ige = 0;
+Grd = 0;
+tauc = 0;
+tauw = 0;
+@#endif
 
-// Public education and health capital
 @#if SIMPLIFY_LEVEL < 2
 Kge*g = (1-delta)*Kge(-1)+(1-eGE)*Ige;
 @#else
-// SIMPLIFY >= 2: public human-capital channel off (Kge pinned to steady state)
 Kge = STEADY_STATE(Kge);
 @#endif
 
 //********************************************************
 // MARKET CLEARING
 //********************************************************
-// Aggregate demand
-[name='yd']
+@#if SIMPLIFY_LEVEL < 7
 yd = C+Ip+Gc+Igi+Ige+Grd+(Z(-1)/A(-1)-1)*S;
+@#else
+yd = C+Gc;
+@#endif
 
-// Aggregate production
 y = vp*yd;
-
-// Price dispersion
 vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 
-// Gap in education and health spending efficiency (e^GE; positive shock closes the gap)
 eGE = eGE_ss-epsi_effge;
-
-// Gap in infrastructure spending efficiency (e^GI)
 eGI = eGI_ss-epsi_effgi;
-
-// Gap in R&D spending efficiency (e^GRD)
 eGRD = eGRD_ss-epsi_effgrd;
 
 //********************************************************
-// VARIABLES OF INTEREST
+// REPORTING
 //********************************************************
-G = Gc+Igi+Ige+Grd;                                        // total government spending (sum of the four instruments)
-rreal = R/PI;                                              // ex-post real interest rate
-// Fiscal aggregates as a share of steady-state GDP (ydss)
-pdef_yss  = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;  // primary deficit
-T_yss = T/ydss;                                       // transfers
-by_yss    = b/ydss;                                          // government debt
+@#if SIMPLIFY_LEVEL < 7
+G = Gc+Igi+Ige+Grd;
+pdef_yss = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;
+T_yss = T/ydss;
+by_yss = b/ydss;
+@#else
+G = Gc;
+pdef_yss = 0;
+T_yss = 0;
+by_yss = 0;
+@#endif
+rreal = R/PI;
 
-// Output growth
-
 //********************************************************
-// STEADY-STATE VALUES CARRIED INTO THE MODEL BLOCK
+// STEADY-STATE VALUES USED AS CONSTANTS
 //********************************************************
-// Auxiliary variables pinned to their steady-state values; used as constants
-// in the rules above. Collected here for clarity — in Dynare the order of
-// equations within the model block does not affect the solution.
-omega       = STEADY_STATE(omega);
-Rss         = STEADY_STATE(R);
-ydss        = STEADY_STATE(yd);
-chiH        = STEADY_STATE(chiH);
-kappaprob   = STEADY_STATE(kappaprob);
+omega = STEADY_STATE(omega);
+Rss = STEADY_STATE(R);
+ydss = STEADY_STATE(yd);
+chiH = STEADY_STATE(chiH);
+kappaprob = STEADY_STATE(kappaprob);

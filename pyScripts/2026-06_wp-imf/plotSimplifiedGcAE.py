@@ -3,16 +3,15 @@ Appendix figures: the government-consumption shock under progressive model
 simplification. The permanent version is the primary robustness exercise
 (fig:simplifiedGc); the default AR(1) version is its temporary counterpart.
 
-Same 5x4 block layout as plotStandardShocksAE, but the seven lines are MODELS
-(not shocks): the full model, four step-by-step simplifications, a controlled
-no-indexation counterfactual, and the from-scratch canonical NK benchmark. Each
-is hit by the same +1-percent-of-GDP government-consumption shock with no
-offsetting spending cut.
+Same 5x4 block layout as plotStandardShocksAE, but the lines are MODELS (not
+shocks): the full model, seven cumulative simplifications, and the independently
+coded canonical NK control. Each is hit by the same +1-percent-of-GDP
+government-consumption shock with no offsetting spending cut.
 
 By default the script uses the AR(1) variants. With --permanent it uses the
 corresponding _perm models and writes simplifiedGcAEPerm.*.
 
-Pinned channels show as flat lines (e.g. adopted technology under "No R&D").
+Inactive channels show as flat lines.
 Standalone: the only input is docs/csvFiles/figureNumbers.csv; it writes
 PNG/PDF/HTML/CSV into docs/2026-06_wp-imf/figures/. Requires pandas + plotly
 (with a Kaleido backend).
@@ -36,7 +35,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 # --- Styling (inlined; matches the other working-paper figures) ---------------
 STYLE = {
     "template": "simple_white",
-    "margins": {"t": 86, "b": 22, "l": 54, "r": 12},  # top room for legend + gap to plots; left room for tick labels + block names
+    "margins": {"t": 108, "b": 22, "l": 54, "r": 12},  # top room for the three-row legend; left room for block names
     "legend": {"orientation": "h", "xanchor": "center", "x": 0.5},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
@@ -44,17 +43,19 @@ STYLE = {
     "line_width_standard": 2.5,
 }
 
-# (model directory, legend label, colour) -- the seven lines are the full model,
-# four progressive simplifications, the no-indexation counterfactual, and the
-# canonical NK benchmark.
+# (model directory, legend label, colour, dash). The final dashed control lies
+# over the derived endpoint when the nesting succeeds, leaving red visible
+# between its dashes.
 BASE_SERIES = [
-    ("Model_HumanCapital_exp_gc", "Full model",                 "#6A1B9A"),
-    ("Model_Simple1_exp_gc",      "No R&D",                     "#1E88E5"),
-    ("Model_Simple2_exp_gc",      "No R&D, no human capital",   "#00897B"),
-    ("Model_Simple3_exp_gc",      "NK with capital",            "#E65100"),
-    ("Model_Simple3NoIndex_exp_gc","No indexation",              "#546E7A"),
-    ("Model_Simple4_exp_gc",      "Textbook NK (no capital)",   "#C62828"),
-    ("Model_NK_exp_gc",           "Canonical NK (from scratch)","#212121"),
+    ("Model_HumanCapital_exp_gc", "Full model",               "#6A1B9A", "solid"),
+    ("Model_Simple1_exp_gc",      "No endogenous technology", "#1565C0", "solid"),
+    ("Model_Simple2_exp_gc",      "No human capital",         "#00897B", "solid"),
+    ("Model_Simple3_exp_gc",      "No public infrastructure", "#558B2F", "solid"),
+    ("Model_Simple4_exp_gc",      "No private capital",       "#E65100", "solid"),
+    ("Model_Simple5_exp_gc",      "No indexation",            "#546E7A", "solid"),
+    ("Model_Simple6_exp_gc",      "No trend growth",          "#AD1457", "solid"),
+    ("Model_Simple7_exp_gc",      "Derived canonical NK",     "#C62828", "solid"),
+    ("Model_NK_exp_gc",           "Canonical NK control",     "#212121", "dash"),
 ]
 
 # (variable suffix, panel title); laid out row-major in a 5x4 grid, one thematic
@@ -138,7 +139,10 @@ def main(permanent=False):
     horizon_positions = [log1p(quarter) for quarter in quarters]
     impact_values = df.set_index("horizon_quarter").loc[IMPACT_QUARTER]
     suffix = "_perm" if permanent else ""
-    series = [(f"{model}{suffix}", label, color) for model, label, color in BASE_SERIES]
+    series = [
+        (f"{model}{suffix}", label, color, dash)
+        for model, label, color, dash in BASE_SERIES
+    ]
     output_stem = f"{OUTPUT_STEM}{'Perm' if permanent else ''}"
 
     # Both sizes come from chartTable.csv: render = original chart size (canvas,
@@ -164,19 +168,21 @@ def main(permanent=False):
             continue
         var = panel[0]
         panel_min = panel_max = None
-        for model, label, color in series:
+        for model, label, color, dash in series:
             colname = f"{model}___{var}"
             if colname not in df.columns:
                 continue
-            values = df[colname].values
-            series_min, series_max = values.min(), values.max()
+            values = pd.to_numeric(df[colname], errors="coerce").values
+            if not pd.notna(values).any():
+                continue
+            series_min, series_max = pd.Series(values).min(), pd.Series(values).max()
             panel_min = series_min if panel_min is None else min(panel_min, series_min)
             panel_max = series_max if panel_max is None else max(panel_max, series_max)
             fig.add_trace(
                 go.Scatter(
                     x=horizon_positions, y=values,
                     name=label, legendgroup=label,
-                    line=dict(color=color, width=STYLE["line_width_standard"]),
+                    line=dict(color=color, width=STYLE["line_width_standard"], dash=dash),
                     showlegend=(idx == 0),   # one legend entry per model
                     customdata=quarters,
                     hovertemplate=(
@@ -192,13 +198,16 @@ def main(permanent=False):
             and (panel_min >= 0 or panel_max <= 0)
         ):
             fig.update_yaxes(rangemode="tozero", row=row, col=col)
-        for model, label, color in series:
+        for model, label, color, _ in series:
             colname = f"{model}___{var}"
             if colname not in df.columns:
                 continue
+            impact_value = impact_values[colname]
+            if pd.isna(impact_value):
+                continue
             fig.add_trace(
                 go.Scatter(
-                    x=[log1p(IMPACT_QUARTER)], y=[impact_values[colname]],
+                    x=[log1p(IMPACT_QUARTER)], y=[impact_value],
                     name=label, legendgroup=label,
                     mode="markers",
                     marker=dict(
@@ -271,11 +280,14 @@ def main(permanent=False):
     # Tidy long-format export: one row per (quarter, model, variable).
     records = []
     for var, title in (panel for panel in PANELS if panel is not None):
-        for model, label, _ in series:
+        for model, label, _, _ in series:
             colname = f"{model}___{var}"
             if colname not in df.columns:
                 continue
-            for quarter, val in zip(quarters, df[colname].values):
+            values = pd.to_numeric(df[colname], errors="coerce")
+            if not values.notna().any():
+                continue
+            for quarter, val in zip(quarters, values):
                 records.append({
                     "horizon_quarter": quarter,
                     "model": label,

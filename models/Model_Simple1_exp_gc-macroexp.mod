@@ -1,12 +1,15 @@
-// Template for the simplified (step-by-step) model variants. Identical to
-// modelTemplate.mod except it includes model_block_simple.modpart, whose
-// productive channels are pinned to steady state by SIMPLIFY_LEVEL:
-//   1 -> R&D / endogenous technology off
-//   2 -> + human-capital channel off
-//   3 -> + public-infrastructure channel off (standard NK with gov. consumption)
-// The steady state, declarations and parameters are unchanged (channels are
-// pinned, not deleted), so the shared steadystate/declare files are reused.
-var 
+// Template for the progressive model-simplification variants. Starting from
+// the full model, SIMPLIFY_LEVEL removes one additional block at each step:
+//   1 -> endogenous technology creation and adoption
+//   2 -> + human-capital accumulation
+//   3 -> + productive public infrastructure
+//   4 -> + private capital; labor-only constant-returns production
+//   5 -> + price indexation
+//   6 -> + trend growth
+//   7 -> + extended fiscal block; canonical lump-sum-financed G model
+// Inactive variables remain declared and are pinned solely so every variant can
+// use the common export pipeline. They do not enter the active equilibrium.
+var
 C               % HH consumption
 lambda          % Marginal Utility
 R               % Nominal policy and government financing rate
@@ -19,7 +22,7 @@ rk              % Return on private investment
 x1              % Price setting 1
 x2              % Price setting 2
 mc              % Marginal cost
-PIstar          % Optimnal gross inflation 
+PIstar          % Optimnal gross inflation
 y              % Production
 Kg              % Public capital
 b              % Debt level
@@ -31,7 +34,7 @@ tauw            % Income tax
 yd              % Aggregate demand
 vp              % Price dispersion
 omega           % Scaling
-Rss             % Steady state interest rate   
+Rss             % Steady state interest rate
 ydss            % Steady state output
 T           % Transfer
 G               % Total government spending (Gc+Igi+Ige+Grd)
@@ -44,7 +47,7 @@ Kge             % Public Human-related Capital Stock (HCS)
 Ige             % Public spending in public humand-related capital stock
 E               % Time for schooling and taking care of health (building capital)
 lambda_H        % Lagrangian of the Human capital formation
-L             % Labor supply 
+L             % Labor supply
 chiH            % Adjuster so that E=0.1
 eGE             % Gap in public human-capital efficiency (e^GE)
 eGI             % Gap in public infrastructure efficiency (e^GI)
@@ -64,9 +67,9 @@ eGRD            % Gap in public R&D efficiency (e^GRD)
 %-----------------------------
 varexo
 epsi_gc         % Shock to government consumption
-epsi_igi         % Shock to government investment  
+epsi_igi         % Shock to government investment
 epsi_MP         % Monetary Policy Shocks
-epsi_tauc       % Consumption income tax shock 
+epsi_tauc       % Consumption income tax shock
 epsi_tauw       % Labor income tax shock
 epsi_ige        % Public HC spending shock
 epsi_effge
@@ -79,13 +82,13 @@ eTaux          % Auxiliary transfer-rule dummy: zero suspends debt feedback
 %--------------------------
 % Define parameters
 %--------------------------
-parameters 
+parameters
 betta           % Discount value
 varphi             % Frisch parameter
 chi             % indexation
 delta           % depreciationf
 thetap          % firsm cant change the price
-epsilon         % elasticity of substitution 
+epsilon         % elasticity of substitution
 alpha          % share of capital in intermediate firms production
 alphaG          % Share of public capital in the production (paper alpha_G)
 rho_R           % Persistence of policy rate
@@ -107,7 +110,7 @@ eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
 alphaRD         % Long-run R&D elasticity in technology creation
 Grdy           % share of expenditure for R&D
-markupss        % SS markup of Intermediate goods 
+markupss        % SS markup of Intermediate goods
 phi           % obsolescence rate: 0.08/4
 vartheta      % Intermediate goods elasticity of substitution
 gammaa         % Gorwth of tech
@@ -159,6 +162,9 @@ varsigma=0.8;                       % adoption elasticity                       
 % AE efficiency gaps (2023 medians; INF re-estimated 2026-06)
 eGI_ss=0.359;
 eGE_ss=0.306;
+// Expose the macro level to the external steady-state routine.
+parameters simplify_level;
+simplify_level = 1;
 // Controlled price-setting counterfactual: retain the selected simplification
 // level and remove only the indexation of non-reset prices.
 % gammaa uses the set-specific trend growth rate, so it must come after it
@@ -167,43 +173,37 @@ model;
 //********************************************************
 // HOUSEHOLD DECISIONS
 //********************************************************
-// Marginal utility
+// Marginal utility with the consumption-tax wedge
 1/C = lambda*(1+tauc);
-// Euler equation
+// Euler equation. At level 6 and above g=1.
 lambda = betta*(lambda(+1)/g*R/PI(+1));
-// Labor decision
+// Labor and education draw on the common time endowment.
 omega*(L+E)^varphi = lambda*w*H(-1)*(1-tauw);
-// Law of motion of private capital
+// Private-capital accumulation and optimal investment
 Kp*g = (1-delta)*Kp(-1)+Ip;
-// Return on private investment
 1 = betta*(lambda(+1)/lambda/g*(1-delta+rk(+1)));
-// Human capital of the household
-H = (1-deltaH)*H(-1)+chiH*E^gamma*(Kge(-1))^(mu);
-// Time devoted to building human capital (E)
-omega*(L+E)^varphi = lambda_H*chiH*gamma*E^(gamma-1)*(Kge(-1))^(mu);
-// Shadow value of human capital
+// Human-capital accumulation and optimal education time
+H = (1-deltaH)*H(-1)+chiH*E^gamma*(Kge(-1))^mu;
+omega*(L+E)^varphi = lambda_H*chiH*gamma*E^(gamma-1)*(Kge(-1))^mu;
 lambda_H = betta*(lambda(+1)*(1-tauw(+1))*w(+1)*L(+1)+lambda_H(+1)*(1-deltaH));
-// Effective labor
 N = L*H(-1);
 //********************************************************
-// FIRMS DECISIONS
+// FIRMS AND PRICE SETTING
 //********************************************************
-// Price setting
 x1 = lambda*mc*yd+betta*thetap*(PI^chi/PI(+1))^(-epsilon)*x1(+1);
 x2 = lambda*PIstar*yd+betta*thetap*(PI^chi/PI(+1))^(1-epsilon)*PIstar/PIstar(+1)*x2(+1);
 epsilon*x1 = (epsilon-1)*x2;
-// Optimal factor mix
+// Cobb-Douglas production with private capital and an intermediate markup
 Kp(-1)/N = alpha/(1-alpha)*w/rk;
-// Marginal cost
 (1-alpha)*mc*y/N = markupss*w;
-// Law of motion of prices
+y = A(-1)^(vartheta-1)*Kg(-1)^alphaG*Kp(-1)^alpha*N^(1-alpha);
+// Calvo price aggregation. The template sets chi=0 from level 5 onward.
 1 = thetap*(PI(-1)^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon);
-// Production
-[name='y']
-y = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG))*(Kp(-1)^alpha)*(N^(1-alpha));
-// Stochastic discount factor (detrended)
-SDF = betta*lambda*(1+tauc)/(lambda(-1)*(1+tauc(-1)));
-// SIMPLIFY >= 1: R&D / endogenous-technology channel off (exogenous technology)
+//********************************************************
+// TECHNOLOGY CREATION AND ADOPTION
+//********************************************************
+// Endogenous technology is absent from the active equilibrium.
+SDF = STEADY_STATE(SDF);
 Z = STEADY_STATE(Z);
 J = STEADY_STATE(J);
 q = STEADY_STATE(q);
@@ -211,69 +211,49 @@ A = STEADY_STATE(A);
 V = STEADY_STATE(V);
 S = STEADY_STATE(S);
 //********************************************************
-// MONETARY AUTHORITY
+// MONETARY POLICY
 //********************************************************
-// Taylor rule for the nominal policy and government financing rate
 R/Rss = (R(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
 //********************************************************
-// GOVERNMENT DECISIONS
+// GOVERNMENT
 //********************************************************
-// Public infrastructure capital
 Kg*g = (1-delta)*Kg(-1)+(1-eGI)*Igi;
-// Government debt
+// Extended fiscal block with debt and distortionary tax wedges
 b = (R(-1)/PI)*b(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;
-// Lump-sum transfers
 T-STEADY_STATE(T) = -gamma_d_T*eTaux*(by(-1)-byss)*ydss;
-// Debt to GDP
 by = b/y;
-// Government spending instruments (subject to expenditure shocks)
-Gc = Gcy*ydss+ydss*epsi_gc;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_gc shock)
-Igi = Igiy*ydss+ydss*epsi_igi;                                     // infrastructure investment
-Ige = Igey*ydss+ydss*epsi_ige;                                  // education and health investment
-Grd = Grdy*ydss+ydss*epsi_grd;                               // R&D spending
-// Consumption tax rate
+Gc = Gcy*ydss+ydss*epsi_gc;
+Igi = Igiy*ydss+ydss*epsi_igi;
+Ige = Igey*ydss+ydss*epsi_ige;
+Grd = Grdy*ydss+ydss*epsi_grd;
 tauc = taucss+epsi_tauc;
-// Labor-income tax rate
 tauw = tauwss+epsi_tauw;
-// Public education and health capital
 Kge*g = (1-delta)*Kge(-1)+(1-eGE)*Ige;
 //********************************************************
 // MARKET CLEARING
 //********************************************************
-// Aggregate demand
-[name='yd']
 yd = C+Ip+Gc+Igi+Ige+Grd+(Z(-1)/A(-1)-1)*S;
-// Aggregate production
 y = vp*yd;
-// Price dispersion
 vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
-// Gap in education and health spending efficiency (e^GE; positive shock closes the gap)
 eGE = eGE_ss-epsi_effge;
-// Gap in infrastructure spending efficiency (e^GI)
 eGI = eGI_ss-epsi_effgi;
-// Gap in R&D spending efficiency (e^GRD)
 eGRD = eGRD_ss-epsi_effgrd;
 //********************************************************
-// VARIABLES OF INTEREST
+// REPORTING
 //********************************************************
-G = Gc+Igi+Ige+Grd;                                        // total government spending (sum of the four instruments)
-rreal = R/PI;                                              // ex-post real interest rate
-// Fiscal aggregates as a share of steady-state GDP (ydss)
-pdef_yss  = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;  // primary deficit
-T_yss = T/ydss;                                       // transfers
-by_yss    = b/ydss;                                          // government debt
-// Output growth
+G = Gc+Igi+Ige+Grd;
+pdef_yss = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;
+T_yss = T/ydss;
+by_yss = b/ydss;
+rreal = R/PI;
 //********************************************************
-// STEADY-STATE VALUES CARRIED INTO THE MODEL BLOCK
+// STEADY-STATE VALUES USED AS CONSTANTS
 //********************************************************
-// Auxiliary variables pinned to their steady-state values; used as constants
-// in the rules above. Collected here for clarity — in Dynare the order of
-// equations within the model block does not affect the solution.
-omega       = STEADY_STATE(omega);
-Rss         = STEADY_STATE(R);
-ydss        = STEADY_STATE(yd);
-chiH        = STEADY_STATE(chiH);
-kappaprob   = STEADY_STATE(kappaprob);
+omega = STEADY_STATE(omega);
+Rss = STEADY_STATE(R);
+ydss = STEADY_STATE(yd);
+chiH = STEADY_STATE(chiH);
+kappaprob = STEADY_STATE(kappaprob);
 end;
 steady;
 check;

@@ -189,17 +189,19 @@ modelList = {
     % of model simplifications to isolate which features drive the response signs.
     % --- Step-by-step simplified variants (AE params, gov-consumption shock).
     % Names contain SimpleN -> built from modelTemplateSimple.mod with
-    % -DSIMPLIFY_LEVEL=N, which pins progressively more channels to steady state:
-    %   1 = no R&D/technology, 2 = + no human capital, 3 = + no public infra (NK),
-    %   4 = + private capital and investment pinned. The Simple3NoIndex variants
-    %   retain level 3 and set only price indexation to zero.
+    % -DSIMPLIFY_LEVEL=N, which progressively removes endogenous technology,
+    % human capital, public infrastructure, private capital, price indexation,
+    % trend growth, and finally the extended fiscal block. Simple7 is the
+    % canonical NK endpoint derived from the shared full-model source.
     % These variants enter the persistent-temporary-shock appendix; the canonical-
     % NK end of the ladder is Model_NK_exp_gc below.
     'Model_Simple1_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_Simple2_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_Simple3_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
-    'Model_Simple3NoIndex_exp_gc',              'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_Simple4_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
+    'Model_Simple5_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
+    'Model_Simple6_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
+    'Model_Simple7_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     % From-scratch canonical NK benchmark (own .mod; param/eff columns ignored).
     % AR(1) rho=0.9 +1%-of-GDP government-consumption shock, matching the rest
     % of the temporary ladder.
@@ -210,8 +212,10 @@ modelList = {
     'Model_Simple1_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_Simple2_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_Simple3_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
-    'Model_Simple3NoIndex_exp_gc_perm',         'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_Simple4_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'Model_Simple5_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'Model_Simple6_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'Model_Simple7_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_NK_exp_gc_perm',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     };
 
@@ -253,8 +257,9 @@ for iModel = 1:size(modelList, 1)
             sprintf('-DshockFile="%s.shockValues"', thisModel));
     else
         % Simplified variants (named ...SimpleN...) build from modelTemplateSimple.mod
-        % with -DSIMPLIFY_LEVEL=N (channels pinned to steady state); everything else
-        % (steady state, declarations, parameters) is shared with the full model.
+        % with -DSIMPLIFY_LEVEL=N. Conditional equation blocks remove each channel,
+        % while a dedicated steady-state routine preserves the common allocation
+        % through level 6 and supplies the canonical normalization at level 7.
         simpTok = regexp(thisModel, 'Simple(\d)', 'tokens', 'once');
         if isempty(simpTok)
             copyfile('modelTemplate.mod', [thisModel '.mod']);
@@ -268,7 +273,11 @@ for iModel = 1:size(modelList, 1)
                 extraDefs{end + 1} = '-DNO_INDEXATION=1';
             end
         end
-        copyfile('modelTemplate_steadystate.m', [thisModel '_steadystate.m']);
+        if isempty(simpTok)
+            copyfile('modelTemplate_steadystate.m', [thisModel '_steadystate.m']);
+        else
+            copyfile('modelTemplateSimple_steadystate.m', [thisModel '_steadystate.m']);
+        end
 
         dynare([thisModel '.mod'], 'savemacro', 'json=compute', ...
             sprintf('-DparamFile="%s_parameters.macro"', thisParams), ...
