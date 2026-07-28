@@ -1,5 +1,4 @@
 horizon_quarter,shock,variable,pct_dev
-0,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.0
 1,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.753
 2,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.07
 3,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),0.116
@@ -100,7 +99,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),-0.072
 99,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),-0.071
 100,Government consumption,Output (Y<sup>d</sup><sub>t</sub>),-0.07
-0,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.0
 1,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.965
 2,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),-0.042
 3,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.11
@@ -201,7 +199,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.117
 99,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.115
 100,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.114
-0,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.0
 1,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.961
 2,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.144
 3,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.124
@@ -302,7 +299,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.677
 99,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.675
 100,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.672
-0,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),0.0
 1,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),0.973
 2,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),-0.197
 3,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),-0.146
@@ -403,7 +399,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),0.367
 99,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),0.362
 100,R&D investment,Output (Y<sup>d</sup><sub>t</sub>),0.357
-0,Government consumption,Consumption (C<sub>t</sub>),0.0
 1,Government consumption,Consumption (C<sub>t</sub>),-0.506
 2,Government consumption,Consumption (C<sub>t</sub>),-0.509
 3,Government consumption,Consumption (C<sub>t</sub>),-0.504
@@ -504,7 +499,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Consumption (C<sub>t</sub>),-0.117
 99,Government consumption,Consumption (C<sub>t</sub>),-0.115
 100,Government consumption,Consumption (C<sub>t</sub>),-0.114
-0,Infrastructure investment,Consumption (C<sub>t</sub>),0.0
 1,Infrastructure investment,Consumption (C<sub>t</sub>),-0.217
 2,Infrastructure investment,Consumption (C<sub>t</sub>),-0.227
 3,Infrastructure investment,Consumption (C<sub>t</sub>),-0.222
@@ -605,7 +599,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Consumption (C<sub>t</sub>),0.179
 99,Infrastructure investment,Consumption (C<sub>t</sub>),0.177
 100,Infrastructure investment,Consumption (C<sub>t</sub>),0.176
-0,Human capital investment,Consumption (C<sub>t</sub>),0.0
 1,Human capital investment,Consumption (C<sub>t</sub>),-0.305
 2,Human capital investment,Consumption (C<sub>t</sub>),-0.307
 3,Human capital investment,Consumption (C<sub>t</sub>),-0.303
@@ -706,7 +699,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Consumption (C<sub>t</sub>),0.933
 99,Human capital investment,Consumption (C<sub>t</sub>),0.933
 100,Human capital investment,Consumption (C<sub>t</sub>),0.932
-0,R&D investment,Consumption (C<sub>t</sub>),0.0
 1,R&D investment,Consumption (C<sub>t</sub>),-0.184
 2,R&D investment,Consumption (C<sub>t</sub>),-0.202
 3,R&D investment,Consumption (C<sub>t</sub>),-0.209
@@ -807,7 +799,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Consumption (C<sub>t</sub>),0.616
 99,R&D investment,Consumption (C<sub>t</sub>),0.607
 100,R&D investment,Consumption (C<sub>t</sub>),0.599
-0,Government consumption,Private investment (I<sub>t</sub>),0.0
 1,Government consumption,Private investment (I<sub>t</sub>),0.032
 2,Government consumption,Private investment (I<sub>t</sub>),-2.633
 3,Government consumption,Private investment (I<sub>t</sub>),-2.007
@@ -908,7 +899,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Private investment (I<sub>t</sub>),-0.068
 99,Government consumption,Private investment (I<sub>t</sub>),-0.068
 100,Government consumption,Private investment (I<sub>t</sub>),-0.067
-0,Infrastructure investment,Private investment (I<sub>t</sub>),0.0
 1,Infrastructure investment,Private investment (I<sub>t</sub>),0.368
 2,Infrastructure investment,Private investment (I<sub>t</sub>),-3.779
 3,Infrastructure investment,Private investment (I<sub>t</sub>),-2.67
@@ -1009,7 +999,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Private investment (I<sub>t</sub>),0.12
 99,Infrastructure investment,Private investment (I<sub>t</sub>),0.118
 100,Infrastructure investment,Private investment (I<sub>t</sub>),0.116
-0,Human capital investment,Private investment (I<sub>t</sub>),0.0
 1,Human capital investment,Private investment (I<sub>t</sub>),0.609
 2,Human capital investment,Private investment (I<sub>t</sub>),-2.664
 3,Human capital investment,Private investment (I<sub>t</sub>),-2.332
@@ -1110,7 +1099,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Private investment (I<sub>t</sub>),0.9
 99,Human capital investment,Private investment (I<sub>t</sub>),0.893
 100,Human capital investment,Private investment (I<sub>t</sub>),0.886
-0,R&D investment,Private investment (I<sub>t</sub>),0.0
 1,R&D investment,Private investment (I<sub>t</sub>),2.154
 2,R&D investment,Private investment (I<sub>t</sub>),-2.476
 3,R&D investment,Private investment (I<sub>t</sub>),-3.235
@@ -1211,7 +1199,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Private investment (I<sub>t</sub>),0.358
 99,R&D investment,Private investment (I<sub>t</sub>),0.351
 100,R&D investment,Private investment (I<sub>t</sub>),0.345
-0,Government consumption,Government spending (G<sub>t</sub>),0.0
 1,Government consumption,Government spending (G<sub>t</sub>),4.338
 2,Government consumption,Government spending (G<sub>t</sub>),3.905
 3,Government consumption,Government spending (G<sub>t</sub>),3.514
@@ -1312,7 +1299,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Government spending (G<sub>t</sub>),0.0
 99,Government consumption,Government spending (G<sub>t</sub>),0.0
 100,Government consumption,Government spending (G<sub>t</sub>),0.0
-0,Infrastructure investment,Government spending (G<sub>t</sub>),0.0
 1,Infrastructure investment,Government spending (G<sub>t</sub>),4.338
 2,Infrastructure investment,Government spending (G<sub>t</sub>),3.905
 3,Infrastructure investment,Government spending (G<sub>t</sub>),3.514
@@ -1413,7 +1399,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Government spending (G<sub>t</sub>),0.0
 99,Infrastructure investment,Government spending (G<sub>t</sub>),0.0
 100,Infrastructure investment,Government spending (G<sub>t</sub>),0.0
-0,Human capital investment,Government spending (G<sub>t</sub>),0.0
 1,Human capital investment,Government spending (G<sub>t</sub>),4.338
 2,Human capital investment,Government spending (G<sub>t</sub>),3.905
 3,Human capital investment,Government spending (G<sub>t</sub>),3.514
@@ -1514,7 +1499,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Government spending (G<sub>t</sub>),0.0
 99,Human capital investment,Government spending (G<sub>t</sub>),0.0
 100,Human capital investment,Government spending (G<sub>t</sub>),0.0
-0,R&D investment,Government spending (G<sub>t</sub>),0.0
 1,R&D investment,Government spending (G<sub>t</sub>),4.338
 2,R&D investment,Government spending (G<sub>t</sub>),3.905
 3,R&D investment,Government spending (G<sub>t</sub>),3.514
@@ -1615,7 +1599,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Government spending (G<sub>t</sub>),0.0
 99,R&D investment,Government spending (G<sub>t</sub>),0.0
 100,R&D investment,Government spending (G<sub>t</sub>),0.0
-0,Government consumption,Adopted technology (A<sub>t</sub>),0.0
 1,Government consumption,Adopted technology (A<sub>t</sub>),-0.004
 2,Government consumption,Adopted technology (A<sub>t</sub>),-0.009
 3,Government consumption,Adopted technology (A<sub>t</sub>),-0.014
@@ -1716,7 +1699,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Adopted technology (A<sub>t</sub>),-0.108
 99,Government consumption,Adopted technology (A<sub>t</sub>),-0.107
 100,Government consumption,Adopted technology (A<sub>t</sub>),-0.105
-0,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.0
 1,Infrastructure investment,Adopted technology (A<sub>t</sub>),-0.003
 2,Infrastructure investment,Adopted technology (A<sub>t</sub>),-0.007
 3,Infrastructure investment,Adopted technology (A<sub>t</sub>),-0.011
@@ -1817,7 +1799,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.11
 99,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.109
 100,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.109
-0,Human capital investment,Adopted technology (A<sub>t</sub>),0.0
 1,Human capital investment,Adopted technology (A<sub>t</sub>),-0.008
 2,Human capital investment,Adopted technology (A<sub>t</sub>),-0.016
 3,Human capital investment,Adopted technology (A<sub>t</sub>),-0.026
@@ -1918,7 +1899,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Adopted technology (A<sub>t</sub>),0.603
 99,Human capital investment,Adopted technology (A<sub>t</sub>),0.607
 100,Human capital investment,Adopted technology (A<sub>t</sub>),0.612
-0,R&D investment,Adopted technology (A<sub>t</sub>),0.0
 1,R&D investment,Adopted technology (A<sub>t</sub>),-0.117
 2,R&D investment,Adopted technology (A<sub>t</sub>),-0.247
 3,R&D investment,Adopted technology (A<sub>t</sub>),-0.26
@@ -2019,7 +1999,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Adopted technology (A<sub>t</sub>),0.649
 99,R&D investment,Adopted technology (A<sub>t</sub>),0.638
 100,R&D investment,Adopted technology (A<sub>t</sub>),0.627
-0,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 1,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 3,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
@@ -2120,7 +2099,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 99,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 100,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-0,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 1,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.963
 2,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.802
 3,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.529
@@ -2221,7 +2199,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.765
 99,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.743
 100,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.722
-0,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 1,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 3,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
@@ -2322,7 +2299,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 99,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 100,Human capital investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-0,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 1,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 3,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
@@ -2423,7 +2399,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 99,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 100,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
-0,Government consumption,Private capital (K<sub>t</sub>),0.0
 1,Government consumption,Private capital (K<sub>t</sub>),0.001
 2,Government consumption,Private capital (K<sub>t</sub>),-0.075
 3,Government consumption,Private capital (K<sub>t</sub>),-0.131
@@ -2524,7 +2499,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Private capital (K<sub>t</sub>),-0.119
 99,Government consumption,Private capital (K<sub>t</sub>),-0.117
 100,Government consumption,Private capital (K<sub>t</sub>),-0.116
-0,Infrastructure investment,Private capital (K<sub>t</sub>),0.0
 1,Infrastructure investment,Private capital (K<sub>t</sub>),0.011
 2,Infrastructure investment,Private capital (K<sub>t</sub>),-0.099
 3,Infrastructure investment,Private capital (K<sub>t</sub>),-0.173
@@ -2625,7 +2599,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Private capital (K<sub>t</sub>),0.179
 99,Infrastructure investment,Private capital (K<sub>t</sub>),0.178
 100,Infrastructure investment,Private capital (K<sub>t</sub>),0.176
-0,Human capital investment,Private capital (K<sub>t</sub>),0.0
 1,Human capital investment,Private capital (K<sub>t</sub>),0.018
 2,Human capital investment,Private capital (K<sub>t</sub>),-0.06
 3,Human capital investment,Private capital (K<sub>t</sub>),-0.125
@@ -2726,7 +2699,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Private capital (K<sub>t</sub>),0.685
 99,Human capital investment,Private capital (K<sub>t</sub>),0.691
 100,Human capital investment,Private capital (K<sub>t</sub>),0.697
-0,R&D investment,Private capital (K<sub>t</sub>),0.0
 1,R&D investment,Private capital (K<sub>t</sub>),0.062
 2,R&D investment,Private capital (K<sub>t</sub>),-0.011
 3,R&D investment,Private capital (K<sub>t</sub>),-0.104
@@ -2827,7 +2799,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Private capital (K<sub>t</sub>),0.636
 99,R&D investment,Private capital (K<sub>t</sub>),0.628
 100,R&D investment,Private capital (K<sub>t</sub>),0.619
-0,Government consumption,Effective labor (N<sub>t</sub>),0.0
 1,Government consumption,Effective labor (N<sub>t</sub>),1.077
 2,Government consumption,Effective labor (N<sub>t</sub>),0.102
 3,Government consumption,Effective labor (N<sub>t</sub>),0.203
@@ -2928,7 +2899,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Effective labor (N<sub>t</sub>),0.004
 99,Government consumption,Effective labor (N<sub>t</sub>),0.004
 100,Government consumption,Effective labor (N<sub>t</sub>),0.004
-0,Infrastructure investment,Effective labor (N<sub>t</sub>),0.0
 1,Infrastructure investment,Effective labor (N<sub>t</sub>),1.383
 2,Infrastructure investment,Effective labor (N<sub>t</sub>),-0.136
 3,Infrastructure investment,Effective labor (N<sub>t</sub>),0.066
@@ -3029,7 +2999,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Effective labor (N<sub>t</sub>),-0.026
 99,Infrastructure investment,Effective labor (N<sub>t</sub>),-0.026
 100,Infrastructure investment,Effective labor (N<sub>t</sub>),-0.025
-0,Human capital investment,Effective labor (N<sub>t</sub>),0.0
 1,Human capital investment,Effective labor (N<sub>t</sub>),1.377
 2,Human capital investment,Effective labor (N<sub>t</sub>),0.203
 3,Human capital investment,Effective labor (N<sub>t</sub>),0.211
@@ -3130,7 +3099,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Effective labor (N<sub>t</sub>),0.376
 99,Human capital investment,Effective labor (N<sub>t</sub>),0.368
 100,Human capital investment,Effective labor (N<sub>t</sub>),0.36
-0,R&D investment,Effective labor (N<sub>t</sub>),0.0
 1,R&D investment,Effective labor (N<sub>t</sub>),1.395
 2,R&D investment,Effective labor (N<sub>t</sub>),-0.249
 3,R&D investment,Effective labor (N<sub>t</sub>),-0.079
@@ -3231,7 +3199,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Effective labor (N<sub>t</sub>),-0.081
 99,R&D investment,Effective labor (N<sub>t</sub>),-0.079
 100,R&D investment,Effective labor (N<sub>t</sub>),-0.077
-0,Government consumption,Labor supply (L<sub>t</sub>),0.0
 1,Government consumption,Labor supply (L<sub>t</sub>),1.077
 2,Government consumption,Labor supply (L<sub>t</sub>),0.122
 3,Government consumption,Labor supply (L<sub>t</sub>),0.223
@@ -3332,7 +3299,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Labor supply (L<sub>t</sub>),0.011
 99,Government consumption,Labor supply (L<sub>t</sub>),0.01
 100,Government consumption,Labor supply (L<sub>t</sub>),0.01
-0,Infrastructure investment,Labor supply (L<sub>t</sub>),0.0
 1,Infrastructure investment,Labor supply (L<sub>t</sub>),1.383
 2,Infrastructure investment,Labor supply (L<sub>t</sub>),-0.109
 3,Infrastructure investment,Labor supply (L<sub>t</sub>),0.089
@@ -3433,7 +3399,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Labor supply (L<sub>t</sub>),-0.017
 99,Infrastructure investment,Labor supply (L<sub>t</sub>),-0.017
 100,Infrastructure investment,Labor supply (L<sub>t</sub>),-0.017
-0,Human capital investment,Labor supply (L<sub>t</sub>),0.0
 1,Human capital investment,Labor supply (L<sub>t</sub>),1.377
 2,Human capital investment,Labor supply (L<sub>t</sub>),0.233
 3,Human capital investment,Labor supply (L<sub>t</sub>),0.242
@@ -3534,7 +3499,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Labor supply (L<sub>t</sub>),-0.012
 99,Human capital investment,Labor supply (L<sub>t</sub>),-0.013
 100,Human capital investment,Labor supply (L<sub>t</sub>),-0.014
-0,R&D investment,Labor supply (L<sub>t</sub>),0.0
 1,R&D investment,Labor supply (L<sub>t</sub>),1.395
 2,R&D investment,Labor supply (L<sub>t</sub>),-0.221
 3,R&D investment,Labor supply (L<sub>t</sub>),-0.057
@@ -3635,7 +3599,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Labor supply (L<sub>t</sub>),-0.069
 99,R&D investment,Labor supply (L<sub>t</sub>),-0.068
 100,R&D investment,Labor supply (L<sub>t</sub>),-0.067
-0,Government consumption,Human capital stock (H<sub>t</sub>),0.0
 1,Government consumption,Human capital stock (H<sub>t</sub>),-0.02
 2,Government consumption,Human capital stock (H<sub>t</sub>),-0.021
 3,Government consumption,Human capital stock (H<sub>t</sub>),-0.023
@@ -3736,7 +3699,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Human capital stock (H<sub>t</sub>),-0.007
 99,Government consumption,Human capital stock (H<sub>t</sub>),-0.007
 100,Government consumption,Human capital stock (H<sub>t</sub>),-0.006
-0,Infrastructure investment,Human capital stock (H<sub>t</sub>),0.0
 1,Infrastructure investment,Human capital stock (H<sub>t</sub>),-0.027
 2,Infrastructure investment,Human capital stock (H<sub>t</sub>),-0.023
 3,Infrastructure investment,Human capital stock (H<sub>t</sub>),-0.023
@@ -3837,7 +3799,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Human capital stock (H<sub>t</sub>),-0.009
 99,Infrastructure investment,Human capital stock (H<sub>t</sub>),-0.008
 100,Infrastructure investment,Human capital stock (H<sub>t</sub>),-0.008
-0,Human capital investment,Human capital stock (H<sub>t</sub>),0.0
 1,Human capital investment,Human capital stock (H<sub>t</sub>),-0.03
 2,Human capital investment,Human capital stock (H<sub>t</sub>),-0.031
 3,Human capital investment,Human capital stock (H<sub>t</sub>),-0.026
@@ -3938,7 +3899,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Human capital stock (H<sub>t</sub>),0.381
 99,Human capital investment,Human capital stock (H<sub>t</sub>),0.374
 100,Human capital investment,Human capital stock (H<sub>t</sub>),0.367
-0,R&D investment,Human capital stock (H<sub>t</sub>),0.0
 1,R&D investment,Human capital stock (H<sub>t</sub>),-0.028
 2,R&D investment,Human capital stock (H<sub>t</sub>),-0.022
 3,R&D investment,Human capital stock (H<sub>t</sub>),-0.02
@@ -4039,7 +3999,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Human capital stock (H<sub>t</sub>),-0.011
 99,R&D investment,Human capital stock (H<sub>t</sub>),-0.01
 100,R&D investment,Human capital stock (H<sub>t</sub>),-0.009
-0,Government consumption,Real marginal cost (mc<sub>t</sub>),0.0
 1,Government consumption,Real marginal cost (mc<sub>t</sub>),0.893
 2,Government consumption,Real marginal cost (mc<sub>t</sub>),-0.163
 3,Government consumption,Real marginal cost (mc<sub>t</sub>),-0.029
@@ -4140,7 +4099,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Real marginal cost (mc<sub>t</sub>),0.0
 99,Government consumption,Real marginal cost (mc<sub>t</sub>),0.0
 100,Government consumption,Real marginal cost (mc<sub>t</sub>),0.0
-0,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),0.0
 1,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),1.457
 2,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.251
 3,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.043
@@ -4241,7 +4199,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.0
 99,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.0
 100,Infrastructure investment,Real marginal cost (mc<sub>t</sub>),-0.0
-0,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.0
 1,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.924
 2,Human capital investment,Real marginal cost (mc<sub>t</sub>),-0.202
 3,Human capital investment,Real marginal cost (mc<sub>t</sub>),-0.051
@@ -4342,7 +4299,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.003
 99,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.003
 100,Human capital investment,Real marginal cost (mc<sub>t</sub>),0.003
-0,R&D investment,Real marginal cost (mc<sub>t</sub>),0.0
 1,R&D investment,Real marginal cost (mc<sub>t</sub>),1.432
 2,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.343
 3,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.104
@@ -4443,7 +4399,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.002
 99,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.002
 100,R&D investment,Real marginal cost (mc<sub>t</sub>),-0.002
-0,Government consumption,Inflation (Π<sub>t</sub>),0.0
 1,Government consumption,Inflation (Π<sub>t</sub>),0.165
 2,Government consumption,Inflation (Π<sub>t</sub>),0.086
 3,Government consumption,Inflation (Π<sub>t</sub>),0.071
@@ -4544,7 +4499,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Inflation (Π<sub>t</sub>),0.011
 99,Government consumption,Inflation (Π<sub>t</sub>),0.01
 100,Government consumption,Inflation (Π<sub>t</sub>),0.01
-0,Infrastructure investment,Inflation (Π<sub>t</sub>),0.0
 1,Infrastructure investment,Inflation (Π<sub>t</sub>),0.284
 2,Infrastructure investment,Inflation (Π<sub>t</sub>),0.164
 3,Infrastructure investment,Inflation (Π<sub>t</sub>),0.143
@@ -4645,7 +4599,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Inflation (Π<sub>t</sub>),-0.015
 99,Infrastructure investment,Inflation (Π<sub>t</sub>),-0.015
 100,Infrastructure investment,Inflation (Π<sub>t</sub>),-0.014
-0,Human capital investment,Inflation (Π<sub>t</sub>),0.0
 1,Human capital investment,Inflation (Π<sub>t</sub>),0.169
 2,Human capital investment,Inflation (Π<sub>t</sub>),0.085
 3,Human capital investment,Inflation (Π<sub>t</sub>),0.075
@@ -4746,7 +4699,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Inflation (Π<sub>t</sub>),-0.017
 99,Human capital investment,Inflation (Π<sub>t</sub>),-0.019
 100,Human capital investment,Inflation (Π<sub>t</sub>),-0.02
-0,R&D investment,Inflation (Π<sub>t</sub>),0.0
 1,R&D investment,Inflation (Π<sub>t</sub>),0.309
 2,R&D investment,Inflation (Π<sub>t</sub>),0.212
 3,R&D investment,Inflation (Π<sub>t</sub>),0.221
@@ -4847,7 +4799,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Inflation (Π<sub>t</sub>),-0.06
 99,R&D investment,Inflation (Π<sub>t</sub>),-0.059
 100,R&D investment,Inflation (Π<sub>t</sub>),-0.058
-0,Government consumption,Nominal interest rate (R<sub>t</sub>),0.0
 1,Government consumption,Nominal interest rate (R<sub>t</sub>),0.075
 2,Government consumption,Nominal interest rate (R<sub>t</sub>),0.091
 3,Government consumption,Nominal interest rate (R<sub>t</sub>),0.096
@@ -4948,7 +4899,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Nominal interest rate (R<sub>t</sub>),0.016
 99,Government consumption,Nominal interest rate (R<sub>t</sub>),0.016
 100,Government consumption,Nominal interest rate (R<sub>t</sub>),0.016
-0,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),0.0
 1,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),0.128
 2,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),0.164
 3,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),0.18
@@ -5049,7 +4999,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-0.022
 99,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-0.022
 100,Infrastructure investment,Nominal interest rate (R<sub>t</sub>),-0.022
-0,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.0
 1,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.076
 2,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.092
 3,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.099
@@ -5150,7 +5099,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Nominal interest rate (R<sub>t</sub>),-0.02
 99,Human capital investment,Nominal interest rate (R<sub>t</sub>),-0.022
 100,Human capital investment,Nominal interest rate (R<sub>t</sub>),-0.025
-0,R&D investment,Nominal interest rate (R<sub>t</sub>),0.0
 1,R&D investment,Nominal interest rate (R<sub>t</sub>),0.14
 2,R&D investment,Nominal interest rate (R<sub>t</sub>),0.194
 3,R&D investment,Nominal interest rate (R<sub>t</sub>),0.236
@@ -5251,7 +5199,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Nominal interest rate (R<sub>t</sub>),-0.093
 99,R&D investment,Nominal interest rate (R<sub>t</sub>),-0.092
 100,R&D investment,Nominal interest rate (R<sub>t</sub>),-0.09
-0,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 1,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.091
 2,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.005
 3,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.025
@@ -5352,7 +5299,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.006
 99,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.006
 100,Government consumption,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.006
-0,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 1,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.157
 2,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.001
 3,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.036
@@ -5453,7 +5399,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.008
 99,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.008
 100,Infrastructure investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.008
-0,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 1,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.093
 2,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.006
 3,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.023
@@ -5554,7 +5499,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.003
 99,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.004
 100,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.004
-0,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 1,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.171
 2,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.019
 3,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.013
@@ -5655,7 +5599,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.033
 99,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.032
 100,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.032
-0,Government consumption,Primary deficit,0.0
 1,Government consumption,Primary deficit,0.823
 2,Government consumption,Primary deficit,0.956
 3,Government consumption,Primary deficit,0.841
@@ -5756,7 +5699,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Primary deficit,0.02
 99,Government consumption,Primary deficit,0.019
 100,Government consumption,Primary deficit,0.019
-0,Infrastructure investment,Primary deficit,0.0
 1,Infrastructure investment,Primary deficit,0.693
 2,Infrastructure investment,Primary deficit,0.958
 3,Infrastructure investment,Primary deficit,0.82
@@ -5857,7 +5799,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Primary deficit,-0.031
 99,Infrastructure investment,Primary deficit,-0.03
 100,Infrastructure investment,Primary deficit,-0.03
-0,Human capital investment,Primary deficit,0.0
 1,Human capital investment,Primary deficit,0.773
 2,Human capital investment,Primary deficit,0.934
 3,Human capital investment,Primary deficit,0.826
@@ -5958,7 +5899,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Primary deficit,-0.17
 99,Human capital investment,Primary deficit,-0.17
 100,Human capital investment,Primary deficit,-0.17
-0,R&D investment,Primary deficit,0.0
 1,R&D investment,Primary deficit,0.693
 2,R&D investment,Primary deficit,0.989
 3,R&D investment,Primary deficit,0.861
@@ -6059,7 +5999,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Primary deficit,-0.101
 99,R&D investment,Primary deficit,-0.1
 100,R&D investment,Primary deficit,-0.098
-0,Government consumption,Transfers (T<sub>t</sub>),0.0
 1,Government consumption,Transfers (T<sub>t</sub>),0.0
 2,Government consumption,Transfers (T<sub>t</sub>),0.0
 3,Government consumption,Transfers (T<sub>t</sub>),0.0
@@ -6160,7 +6099,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Transfers (T<sub>t</sub>),0.0
 99,Government consumption,Transfers (T<sub>t</sub>),0.0
 100,Government consumption,Transfers (T<sub>t</sub>),0.0
-0,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
 1,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
 2,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
 3,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
@@ -6261,7 +6199,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
 99,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
 100,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-0,Human capital investment,Transfers (T<sub>t</sub>),0.0
 1,Human capital investment,Transfers (T<sub>t</sub>),0.0
 2,Human capital investment,Transfers (T<sub>t</sub>),0.0
 3,Human capital investment,Transfers (T<sub>t</sub>),0.0
@@ -6362,7 +6299,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Transfers (T<sub>t</sub>),0.0
 99,Human capital investment,Transfers (T<sub>t</sub>),0.0
 100,Human capital investment,Transfers (T<sub>t</sub>),0.0
-0,R&D investment,Transfers (T<sub>t</sub>),0.0
 1,R&D investment,Transfers (T<sub>t</sub>),0.0
 2,R&D investment,Transfers (T<sub>t</sub>),0.0
 3,R&D investment,Transfers (T<sub>t</sub>),0.0
@@ -6463,7 +6399,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Transfers (T<sub>t</sub>),0.0
 99,R&D investment,Transfers (T<sub>t</sub>),0.0
 100,R&D investment,Transfers (T<sub>t</sub>),0.0
-0,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),0.0
 1,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),0.657
 2,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),1.602
 3,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),2.466
@@ -6564,7 +6499,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),16.379
 99,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),16.429
 100,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),16.478
-0,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),0.0
 1,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),0.409
 2,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.331
 3,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.174
@@ -6665,7 +6599,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),8.508
 99,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),8.482
 100,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),8.457
-0,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),0.0
 1,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),0.604
 2,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.529
 3,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.374
@@ -6766,7 +6699,6 @@ horizon_quarter,shock,variable,pct_dev
 98,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),8.519
 99,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),8.361
 100,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),8.202
-0,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),0.0
 1,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),0.384
 2,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),1.3
 3,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),2.134

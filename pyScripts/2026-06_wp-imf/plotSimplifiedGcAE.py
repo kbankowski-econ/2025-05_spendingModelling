@@ -97,13 +97,16 @@ NROWS = 5
 # Block name printed vertically on the left of each row (top to bottom).
 BLOCKS = ["Demand", "Supply", "Labor", "Nominal", "Fiscal"]
 
-# Plot the pre-shock observation and the subsequent 100 quarterly responses.
+# Plot the 100 quarterly responses from impact through the 25-year horizon.
 # Keep annual horizon labels, placing them at the corresponding quarter.
 PLOT_HORIZON_QUARTERS = 100
 IMPACT_QUARTER = 1
 X_TICK_HORIZONS = [1, 10, 25]
 X_TICKS = [log1p(4 * h) for h in X_TICK_HORIZONS]
 X_TICK_LABELS = [f"{h}y" for h in X_TICK_HORIZONS]
+X_AXIS_MIN = log1p(IMPACT_QUARTER)
+X_AXIS_MAX = log1p(PLOT_HORIZON_QUARTERS)
+X_AXIS_PAD = 0.02 * (X_AXIS_MAX - X_AXIS_MIN)
 OUTPUT_STEM = "simplifiedGcAE"
 TARGET_FONT_PT = 7   # axis ticks; a touch smaller given the dense grid
 FONT_FAMILY = "Palatino, 'Palatino Linotype', 'Book Antiqua', serif"
@@ -123,7 +126,7 @@ def load_data():
     period = 4 * date_parts["year"] + date_parts["quarter"]
     df["horizon_quarter"] = period - period.iloc[0]
     df = df.sort_values("horizon_quarter")
-    return df[df["horizon_quarter"].between(0, PLOT_HORIZON_QUARTERS)]
+    return df[df["horizon_quarter"].between(IMPACT_QUARTER, PLOT_HORIZON_QUARTERS)]
 
 
 def main(permanent=False):
@@ -157,13 +160,18 @@ def main(permanent=False):
             fig.update_yaxes(visible=False, row=row, col=col)
             continue
         var = panel[0]
+        panel_min = panel_max = None
         for model, label, color in series:
             colname = f"{model}___{var}"
             if colname not in df.columns:
                 continue
+            values = df[colname].values
+            series_min, series_max = values.min(), values.max()
+            panel_min = series_min if panel_min is None else min(panel_min, series_min)
+            panel_max = series_max if panel_max is None else max(panel_max, series_max)
             fig.add_trace(
                 go.Scatter(
-                    x=horizon_positions, y=df[colname].values,
+                    x=horizon_positions, y=values,
                     name=label, legendgroup=label,
                     line=dict(color=color, width=STYLE["line_width_standard"]),
                     showlegend=(idx == 0),   # one legend entry per model
@@ -175,6 +183,12 @@ def main(permanent=False):
                 ),
                 row=row, col=col,
             )
+        if (
+            panel_min is not None
+            and (panel_min != 0 or panel_max != 0)
+            and (panel_min >= 0 or panel_max <= 0)
+        ):
+            fig.update_yaxes(rangemode="tozero", row=row, col=col)
         for model, label, color in series:
             colname = f"{model}___{var}"
             if colname not in df.columns:
@@ -231,7 +245,7 @@ def main(permanent=False):
     axes = STYLE["axes"]
     fig.update_xaxes(
         tickvals=X_TICKS, ticktext=X_TICK_LABELS,
-        range=[0, log1p(PLOT_HORIZON_QUARTERS)],
+        range=[X_AXIS_MIN - X_AXIS_PAD, X_AXIS_MAX],
         showgrid=False, linecolor=axes["linecolor"], linewidth=axes["linewidth"],
         ticks=axes["ticks"], tickfont=dict(size=font_px),
     )
