@@ -61,18 +61,16 @@ PANELS = [
     ("C",         "Consumption (C<sub>t</sub>)"),
     ("Ip",        "Private investment (I<sub>t</sub>)"),
     ("G",         "Government spending (G<sub>t</sub>)"),
-    # Row 2 - production factors (percent deviation); the inputs to the output
-    # equation Y = A^(vartheta-1) * Kg^aG * Kp^a * N^(1-a).
+    # Row 2 - productive asset stocks (percent deviation).
     ("A",         "Adopted technology (A<sub>t</sub>)"),
     ("Kg",        "Public infrastructure (K<sup>GI</sup><sub>t</sub>)"),
+    ("Kge",       "Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>)"),
     ("Kp",        "Private capital (K<sub>t</sub>)"),
-    ("N",         "Effective labor (N<sub>t</sub>)"),
-    # Row 3 - labor decomposition (percent deviation): effective labor N = H * L.
-    # Only two panels; the rest of the row is intentionally left blank (None).
+    # Row 3 - labor and human-capital inputs (percent deviation).
     ("L",         "Labor supply (L<sub>t</sub>)"),
     ("H",         "Human capital stock (H<sub>t</sub>)"),
-    None,
-    None,
+    ("N",         "Effective labor (N<sub>t</sub>)"),
+    ("E",         "Education time (E<sub>t</sub>)"),
     # Row 4 - nominal block (marginal cost in percent; rates in annualized pp)
     ("mc",        "Real marginal cost (mc<sub>t</sub>)"),
     ("PI_ann",    "Inflation (Π<sub>t</sub>)"),

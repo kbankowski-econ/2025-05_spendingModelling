@@ -2399,6 +2399,406 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 99,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 100,R&D investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+1,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+2,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+3,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+4,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+5,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+6,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+7,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+8,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+9,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+10,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+11,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+12,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+13,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+14,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+15,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+16,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+17,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+18,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+19,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+20,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+21,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+22,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+23,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+24,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+25,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+26,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+27,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+28,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+29,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+30,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+31,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+32,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+33,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+34,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+35,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+36,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+37,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+38,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+39,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+40,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+41,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+42,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+43,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+44,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+45,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+46,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+47,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+48,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+49,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+50,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+51,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+52,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+53,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+54,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+55,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+56,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+57,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+58,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+59,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+60,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+61,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+62,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+63,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+64,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+65,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+66,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+67,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+68,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+69,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+70,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+71,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+72,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+73,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+74,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+75,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+76,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+77,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+78,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+79,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+80,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+81,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+82,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+83,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+84,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+85,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+86,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+87,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+88,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+89,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+90,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+91,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+92,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+93,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+94,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+95,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+96,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+97,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+98,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+99,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+100,Government consumption,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+1,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+2,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+3,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+4,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+5,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+6,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+7,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+8,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+9,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+10,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+11,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+12,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+13,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+14,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+15,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+16,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+17,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+18,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+19,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+20,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+21,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+22,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+23,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+24,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+25,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+26,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+27,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+28,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+29,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+30,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+31,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+32,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+33,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+34,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+35,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+36,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+37,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+38,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+39,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+40,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+41,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+42,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+43,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+44,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+45,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+46,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+47,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+48,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+49,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+50,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+51,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+52,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+53,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+54,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+55,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+56,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+57,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+58,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+59,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+60,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+61,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+62,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+63,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+64,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+65,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+66,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+67,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+68,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+69,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+70,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+71,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+72,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+73,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+74,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+75,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+76,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+77,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+78,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+79,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+80,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+81,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+82,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+83,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+84,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+85,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+86,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+87,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+88,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+89,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+90,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+91,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+92,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+93,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+94,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+95,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+96,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+97,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+98,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+99,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+100,Infrastructure investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+1,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),1.992
+2,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),3.927
+3,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),5.805
+4,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),7.629
+5,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),9.401
+6,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),11.122
+7,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),12.792
+8,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),14.415
+9,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),15.991
+10,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),17.521
+11,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),19.007
+12,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),20.45
+13,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),21.851
+14,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),23.212
+15,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),24.534
+16,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),25.817
+17,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),27.063
+18,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),28.274
+19,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),29.449
+20,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),30.59
+21,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),31.699
+22,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),32.775
+23,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),33.821
+24,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),34.836
+25,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),35.822
+26,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),36.779
+27,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),37.709
+28,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),38.611
+29,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),39.488
+30,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),40.34
+31,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),41.166
+32,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),41.969
+33,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),42.749
+34,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),43.506
+35,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),44.242
+36,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),44.956
+37,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),45.649
+38,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),46.323
+39,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),46.977
+40,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),47.612
+41,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),48.229
+42,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),48.828
+43,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),49.409
+44,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),49.974
+45,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),50.523
+46,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),51.056
+47,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),51.573
+48,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),52.075
+49,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),52.563
+50,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),53.037
+51,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),53.497
+52,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),53.944
+53,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),54.378
+54,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),54.799
+55,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),55.208
+56,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),55.606
+57,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),55.992
+58,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),56.366
+59,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),56.73
+60,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),57.084
+61,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),57.427
+62,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),57.76
+63,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),58.084
+64,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),58.398
+65,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),58.703
+66,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),59.0
+67,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),59.288
+68,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),59.567
+69,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),59.839
+70,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),60.102
+71,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),60.358
+72,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),60.607
+73,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),60.848
+74,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),61.083
+75,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),61.31
+76,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),61.532
+77,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),61.746
+78,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),61.955
+79,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),62.157
+80,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),62.354
+81,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),62.545
+82,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),62.73
+83,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),62.91
+84,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),63.085
+85,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),63.255
+86,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),63.42
+87,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),63.58
+88,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),63.736
+89,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),63.887
+90,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),64.034
+91,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),64.176
+92,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),64.314
+93,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),64.449
+94,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),64.579
+95,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),64.706
+96,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),64.829
+97,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),64.948
+98,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),65.064
+99,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),65.177
+100,Human capital investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),65.287
+1,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+2,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+3,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+4,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+5,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+6,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+7,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+8,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+9,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+10,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+11,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+12,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+13,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+14,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+15,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+16,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+17,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+18,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+19,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+20,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+21,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+22,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+23,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+24,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+25,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+26,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+27,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+28,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+29,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+30,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+31,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+32,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+33,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+34,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+35,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+36,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+37,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+38,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+39,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+40,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+41,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+42,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+43,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+44,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+45,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+46,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+47,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+48,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+49,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+50,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+51,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+52,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+53,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+54,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+55,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+56,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+57,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+58,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+59,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+60,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+61,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+62,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+63,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+64,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+65,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+66,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+67,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+68,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+69,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+70,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+71,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+72,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+73,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+74,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+75,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+76,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+77,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+78,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+79,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+80,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+81,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+82,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+83,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+84,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+85,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+86,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+87,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+88,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+89,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+90,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+91,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+92,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+93,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+94,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+95,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+96,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+97,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+98,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+99,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
+100,R&D investment,Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>),0.0
 1,Government consumption,Private capital (K<sub>t</sub>),0.06
 2,Government consumption,Private capital (K<sub>t</sub>),0.05
 3,Government consumption,Private capital (K<sub>t</sub>),0.05
@@ -2799,406 +3199,6 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Private capital (K<sub>t</sub>),3.151
 99,R&D investment,Private capital (K<sub>t</sub>),3.196
 100,R&D investment,Private capital (K<sub>t</sub>),3.241
-1,Government consumption,Effective labor (N<sub>t</sub>),0.937
-2,Government consumption,Effective labor (N<sub>t</sub>),0.179
-3,Government consumption,Effective labor (N<sub>t</sub>),0.286
-4,Government consumption,Effective labor (N<sub>t</sub>),0.311
-5,Government consumption,Effective labor (N<sub>t</sub>),0.32
-6,Government consumption,Effective labor (N<sub>t</sub>),0.326
-7,Government consumption,Effective labor (N<sub>t</sub>),0.332
-8,Government consumption,Effective labor (N<sub>t</sub>),0.337
-9,Government consumption,Effective labor (N<sub>t</sub>),0.342
-10,Government consumption,Effective labor (N<sub>t</sub>),0.346
-11,Government consumption,Effective labor (N<sub>t</sub>),0.351
-12,Government consumption,Effective labor (N<sub>t</sub>),0.355
-13,Government consumption,Effective labor (N<sub>t</sub>),0.359
-14,Government consumption,Effective labor (N<sub>t</sub>),0.363
-15,Government consumption,Effective labor (N<sub>t</sub>),0.366
-16,Government consumption,Effective labor (N<sub>t</sub>),0.37
-17,Government consumption,Effective labor (N<sub>t</sub>),0.373
-18,Government consumption,Effective labor (N<sub>t</sub>),0.376
-19,Government consumption,Effective labor (N<sub>t</sub>),0.38
-20,Government consumption,Effective labor (N<sub>t</sub>),0.383
-21,Government consumption,Effective labor (N<sub>t</sub>),0.385
-22,Government consumption,Effective labor (N<sub>t</sub>),0.388
-23,Government consumption,Effective labor (N<sub>t</sub>),0.391
-24,Government consumption,Effective labor (N<sub>t</sub>),0.393
-25,Government consumption,Effective labor (N<sub>t</sub>),0.395
-26,Government consumption,Effective labor (N<sub>t</sub>),0.398
-27,Government consumption,Effective labor (N<sub>t</sub>),0.4
-28,Government consumption,Effective labor (N<sub>t</sub>),0.402
-29,Government consumption,Effective labor (N<sub>t</sub>),0.404
-30,Government consumption,Effective labor (N<sub>t</sub>),0.406
-31,Government consumption,Effective labor (N<sub>t</sub>),0.408
-32,Government consumption,Effective labor (N<sub>t</sub>),0.409
-33,Government consumption,Effective labor (N<sub>t</sub>),0.411
-34,Government consumption,Effective labor (N<sub>t</sub>),0.413
-35,Government consumption,Effective labor (N<sub>t</sub>),0.414
-36,Government consumption,Effective labor (N<sub>t</sub>),0.415
-37,Government consumption,Effective labor (N<sub>t</sub>),0.417
-38,Government consumption,Effective labor (N<sub>t</sub>),0.418
-39,Government consumption,Effective labor (N<sub>t</sub>),0.419
-40,Government consumption,Effective labor (N<sub>t</sub>),0.421
-41,Government consumption,Effective labor (N<sub>t</sub>),0.422
-42,Government consumption,Effective labor (N<sub>t</sub>),0.423
-43,Government consumption,Effective labor (N<sub>t</sub>),0.424
-44,Government consumption,Effective labor (N<sub>t</sub>),0.425
-45,Government consumption,Effective labor (N<sub>t</sub>),0.426
-46,Government consumption,Effective labor (N<sub>t</sub>),0.427
-47,Government consumption,Effective labor (N<sub>t</sub>),0.427
-48,Government consumption,Effective labor (N<sub>t</sub>),0.428
-49,Government consumption,Effective labor (N<sub>t</sub>),0.429
-50,Government consumption,Effective labor (N<sub>t</sub>),0.43
-51,Government consumption,Effective labor (N<sub>t</sub>),0.43
-52,Government consumption,Effective labor (N<sub>t</sub>),0.431
-53,Government consumption,Effective labor (N<sub>t</sub>),0.432
-54,Government consumption,Effective labor (N<sub>t</sub>),0.432
-55,Government consumption,Effective labor (N<sub>t</sub>),0.433
-56,Government consumption,Effective labor (N<sub>t</sub>),0.433
-57,Government consumption,Effective labor (N<sub>t</sub>),0.434
-58,Government consumption,Effective labor (N<sub>t</sub>),0.434
-59,Government consumption,Effective labor (N<sub>t</sub>),0.435
-60,Government consumption,Effective labor (N<sub>t</sub>),0.435
-61,Government consumption,Effective labor (N<sub>t</sub>),0.435
-62,Government consumption,Effective labor (N<sub>t</sub>),0.436
-63,Government consumption,Effective labor (N<sub>t</sub>),0.436
-64,Government consumption,Effective labor (N<sub>t</sub>),0.436
-65,Government consumption,Effective labor (N<sub>t</sub>),0.437
-66,Government consumption,Effective labor (N<sub>t</sub>),0.437
-67,Government consumption,Effective labor (N<sub>t</sub>),0.437
-68,Government consumption,Effective labor (N<sub>t</sub>),0.437
-69,Government consumption,Effective labor (N<sub>t</sub>),0.438
-70,Government consumption,Effective labor (N<sub>t</sub>),0.438
-71,Government consumption,Effective labor (N<sub>t</sub>),0.438
-72,Government consumption,Effective labor (N<sub>t</sub>),0.438
-73,Government consumption,Effective labor (N<sub>t</sub>),0.438
-74,Government consumption,Effective labor (N<sub>t</sub>),0.439
-75,Government consumption,Effective labor (N<sub>t</sub>),0.439
-76,Government consumption,Effective labor (N<sub>t</sub>),0.439
-77,Government consumption,Effective labor (N<sub>t</sub>),0.439
-78,Government consumption,Effective labor (N<sub>t</sub>),0.439
-79,Government consumption,Effective labor (N<sub>t</sub>),0.439
-80,Government consumption,Effective labor (N<sub>t</sub>),0.439
-81,Government consumption,Effective labor (N<sub>t</sub>),0.439
-82,Government consumption,Effective labor (N<sub>t</sub>),0.439
-83,Government consumption,Effective labor (N<sub>t</sub>),0.439
-84,Government consumption,Effective labor (N<sub>t</sub>),0.439
-85,Government consumption,Effective labor (N<sub>t</sub>),0.439
-86,Government consumption,Effective labor (N<sub>t</sub>),0.439
-87,Government consumption,Effective labor (N<sub>t</sub>),0.44
-88,Government consumption,Effective labor (N<sub>t</sub>),0.44
-89,Government consumption,Effective labor (N<sub>t</sub>),0.44
-90,Government consumption,Effective labor (N<sub>t</sub>),0.44
-91,Government consumption,Effective labor (N<sub>t</sub>),0.44
-92,Government consumption,Effective labor (N<sub>t</sub>),0.439
-93,Government consumption,Effective labor (N<sub>t</sub>),0.439
-94,Government consumption,Effective labor (N<sub>t</sub>),0.439
-95,Government consumption,Effective labor (N<sub>t</sub>),0.439
-96,Government consumption,Effective labor (N<sub>t</sub>),0.439
-97,Government consumption,Effective labor (N<sub>t</sub>),0.439
-98,Government consumption,Effective labor (N<sub>t</sub>),0.439
-99,Government consumption,Effective labor (N<sub>t</sub>),0.439
-100,Government consumption,Effective labor (N<sub>t</sub>),0.439
-1,Infrastructure investment,Effective labor (N<sub>t</sub>),1.629
-2,Infrastructure investment,Effective labor (N<sub>t</sub>),-0.251
-3,Infrastructure investment,Effective labor (N<sub>t</sub>),0.016
-4,Infrastructure investment,Effective labor (N<sub>t</sub>),0.09
-5,Infrastructure investment,Effective labor (N<sub>t</sub>),0.125
-6,Infrastructure investment,Effective labor (N<sub>t</sub>),0.151
-7,Infrastructure investment,Effective labor (N<sub>t</sub>),0.173
-8,Infrastructure investment,Effective labor (N<sub>t</sub>),0.193
-9,Infrastructure investment,Effective labor (N<sub>t</sub>),0.211
-10,Infrastructure investment,Effective labor (N<sub>t</sub>),0.227
-11,Infrastructure investment,Effective labor (N<sub>t</sub>),0.241
-12,Infrastructure investment,Effective labor (N<sub>t</sub>),0.254
-13,Infrastructure investment,Effective labor (N<sub>t</sub>),0.265
-14,Infrastructure investment,Effective labor (N<sub>t</sub>),0.276
-15,Infrastructure investment,Effective labor (N<sub>t</sub>),0.284
-16,Infrastructure investment,Effective labor (N<sub>t</sub>),0.292
-17,Infrastructure investment,Effective labor (N<sub>t</sub>),0.299
-18,Infrastructure investment,Effective labor (N<sub>t</sub>),0.305
-19,Infrastructure investment,Effective labor (N<sub>t</sub>),0.31
-20,Infrastructure investment,Effective labor (N<sub>t</sub>),0.315
-21,Infrastructure investment,Effective labor (N<sub>t</sub>),0.318
-22,Infrastructure investment,Effective labor (N<sub>t</sub>),0.321
-23,Infrastructure investment,Effective labor (N<sub>t</sub>),0.324
-24,Infrastructure investment,Effective labor (N<sub>t</sub>),0.325
-25,Infrastructure investment,Effective labor (N<sub>t</sub>),0.327
-26,Infrastructure investment,Effective labor (N<sub>t</sub>),0.328
-27,Infrastructure investment,Effective labor (N<sub>t</sub>),0.328
-28,Infrastructure investment,Effective labor (N<sub>t</sub>),0.328
-29,Infrastructure investment,Effective labor (N<sub>t</sub>),0.328
-30,Infrastructure investment,Effective labor (N<sub>t</sub>),0.327
-31,Infrastructure investment,Effective labor (N<sub>t</sub>),0.326
-32,Infrastructure investment,Effective labor (N<sub>t</sub>),0.325
-33,Infrastructure investment,Effective labor (N<sub>t</sub>),0.324
-34,Infrastructure investment,Effective labor (N<sub>t</sub>),0.322
-35,Infrastructure investment,Effective labor (N<sub>t</sub>),0.32
-36,Infrastructure investment,Effective labor (N<sub>t</sub>),0.318
-37,Infrastructure investment,Effective labor (N<sub>t</sub>),0.316
-38,Infrastructure investment,Effective labor (N<sub>t</sub>),0.314
-39,Infrastructure investment,Effective labor (N<sub>t</sub>),0.311
-40,Infrastructure investment,Effective labor (N<sub>t</sub>),0.309
-41,Infrastructure investment,Effective labor (N<sub>t</sub>),0.306
-42,Infrastructure investment,Effective labor (N<sub>t</sub>),0.303
-43,Infrastructure investment,Effective labor (N<sub>t</sub>),0.301
-44,Infrastructure investment,Effective labor (N<sub>t</sub>),0.298
-45,Infrastructure investment,Effective labor (N<sub>t</sub>),0.295
-46,Infrastructure investment,Effective labor (N<sub>t</sub>),0.292
-47,Infrastructure investment,Effective labor (N<sub>t</sub>),0.289
-48,Infrastructure investment,Effective labor (N<sub>t</sub>),0.286
-49,Infrastructure investment,Effective labor (N<sub>t</sub>),0.283
-50,Infrastructure investment,Effective labor (N<sub>t</sub>),0.279
-51,Infrastructure investment,Effective labor (N<sub>t</sub>),0.276
-52,Infrastructure investment,Effective labor (N<sub>t</sub>),0.273
-53,Infrastructure investment,Effective labor (N<sub>t</sub>),0.27
-54,Infrastructure investment,Effective labor (N<sub>t</sub>),0.267
-55,Infrastructure investment,Effective labor (N<sub>t</sub>),0.264
-56,Infrastructure investment,Effective labor (N<sub>t</sub>),0.261
-57,Infrastructure investment,Effective labor (N<sub>t</sub>),0.257
-58,Infrastructure investment,Effective labor (N<sub>t</sub>),0.254
-59,Infrastructure investment,Effective labor (N<sub>t</sub>),0.251
-60,Infrastructure investment,Effective labor (N<sub>t</sub>),0.248
-61,Infrastructure investment,Effective labor (N<sub>t</sub>),0.245
-62,Infrastructure investment,Effective labor (N<sub>t</sub>),0.242
-63,Infrastructure investment,Effective labor (N<sub>t</sub>),0.239
-64,Infrastructure investment,Effective labor (N<sub>t</sub>),0.236
-65,Infrastructure investment,Effective labor (N<sub>t</sub>),0.233
-66,Infrastructure investment,Effective labor (N<sub>t</sub>),0.23
-67,Infrastructure investment,Effective labor (N<sub>t</sub>),0.227
-68,Infrastructure investment,Effective labor (N<sub>t</sub>),0.224
-69,Infrastructure investment,Effective labor (N<sub>t</sub>),0.221
-70,Infrastructure investment,Effective labor (N<sub>t</sub>),0.218
-71,Infrastructure investment,Effective labor (N<sub>t</sub>),0.215
-72,Infrastructure investment,Effective labor (N<sub>t</sub>),0.213
-73,Infrastructure investment,Effective labor (N<sub>t</sub>),0.21
-74,Infrastructure investment,Effective labor (N<sub>t</sub>),0.207
-75,Infrastructure investment,Effective labor (N<sub>t</sub>),0.204
-76,Infrastructure investment,Effective labor (N<sub>t</sub>),0.202
-77,Infrastructure investment,Effective labor (N<sub>t</sub>),0.199
-78,Infrastructure investment,Effective labor (N<sub>t</sub>),0.196
-79,Infrastructure investment,Effective labor (N<sub>t</sub>),0.194
-80,Infrastructure investment,Effective labor (N<sub>t</sub>),0.191
-81,Infrastructure investment,Effective labor (N<sub>t</sub>),0.189
-82,Infrastructure investment,Effective labor (N<sub>t</sub>),0.186
-83,Infrastructure investment,Effective labor (N<sub>t</sub>),0.184
-84,Infrastructure investment,Effective labor (N<sub>t</sub>),0.181
-85,Infrastructure investment,Effective labor (N<sub>t</sub>),0.179
-86,Infrastructure investment,Effective labor (N<sub>t</sub>),0.177
-87,Infrastructure investment,Effective labor (N<sub>t</sub>),0.174
-88,Infrastructure investment,Effective labor (N<sub>t</sub>),0.172
-89,Infrastructure investment,Effective labor (N<sub>t</sub>),0.17
-90,Infrastructure investment,Effective labor (N<sub>t</sub>),0.168
-91,Infrastructure investment,Effective labor (N<sub>t</sub>),0.165
-92,Infrastructure investment,Effective labor (N<sub>t</sub>),0.163
-93,Infrastructure investment,Effective labor (N<sub>t</sub>),0.161
-94,Infrastructure investment,Effective labor (N<sub>t</sub>),0.159
-95,Infrastructure investment,Effective labor (N<sub>t</sub>),0.157
-96,Infrastructure investment,Effective labor (N<sub>t</sub>),0.155
-97,Infrastructure investment,Effective labor (N<sub>t</sub>),0.153
-98,Infrastructure investment,Effective labor (N<sub>t</sub>),0.151
-99,Infrastructure investment,Effective labor (N<sub>t</sub>),0.149
-100,Infrastructure investment,Effective labor (N<sub>t</sub>),0.147
-1,Human capital investment,Effective labor (N<sub>t</sub>),2.737
-2,Human capital investment,Effective labor (N<sub>t</sub>),0.741
-3,Human capital investment,Effective labor (N<sub>t</sub>),0.871
-4,Human capital investment,Effective labor (N<sub>t</sub>),0.809
-5,Human capital investment,Effective labor (N<sub>t</sub>),0.725
-6,Human capital investment,Effective labor (N<sub>t</sub>),0.648
-7,Human capital investment,Effective labor (N<sub>t</sub>),0.584
-8,Human capital investment,Effective labor (N<sub>t</sub>),0.532
-9,Human capital investment,Effective labor (N<sub>t</sub>),0.491
-10,Human capital investment,Effective labor (N<sub>t</sub>),0.461
-11,Human capital investment,Effective labor (N<sub>t</sub>),0.44
-12,Human capital investment,Effective labor (N<sub>t</sub>),0.428
-13,Human capital investment,Effective labor (N<sub>t</sub>),0.424
-14,Human capital investment,Effective labor (N<sub>t</sub>),0.428
-15,Human capital investment,Effective labor (N<sub>t</sub>),0.438
-16,Human capital investment,Effective labor (N<sub>t</sub>),0.454
-17,Human capital investment,Effective labor (N<sub>t</sub>),0.476
-18,Human capital investment,Effective labor (N<sub>t</sub>),0.503
-19,Human capital investment,Effective labor (N<sub>t</sub>),0.534
-20,Human capital investment,Effective labor (N<sub>t</sub>),0.57
-21,Human capital investment,Effective labor (N<sub>t</sub>),0.609
-22,Human capital investment,Effective labor (N<sub>t</sub>),0.652
-23,Human capital investment,Effective labor (N<sub>t</sub>),0.697
-24,Human capital investment,Effective labor (N<sub>t</sub>),0.746
-25,Human capital investment,Effective labor (N<sub>t</sub>),0.796
-26,Human capital investment,Effective labor (N<sub>t</sub>),0.849
-27,Human capital investment,Effective labor (N<sub>t</sub>),0.904
-28,Human capital investment,Effective labor (N<sub>t</sub>),0.96
-29,Human capital investment,Effective labor (N<sub>t</sub>),1.018
-30,Human capital investment,Effective labor (N<sub>t</sub>),1.077
-31,Human capital investment,Effective labor (N<sub>t</sub>),1.137
-32,Human capital investment,Effective labor (N<sub>t</sub>),1.198
-33,Human capital investment,Effective labor (N<sub>t</sub>),1.26
-34,Human capital investment,Effective labor (N<sub>t</sub>),1.322
-35,Human capital investment,Effective labor (N<sub>t</sub>),1.384
-36,Human capital investment,Effective labor (N<sub>t</sub>),1.447
-37,Human capital investment,Effective labor (N<sub>t</sub>),1.51
-38,Human capital investment,Effective labor (N<sub>t</sub>),1.573
-39,Human capital investment,Effective labor (N<sub>t</sub>),1.636
-40,Human capital investment,Effective labor (N<sub>t</sub>),1.698
-41,Human capital investment,Effective labor (N<sub>t</sub>),1.761
-42,Human capital investment,Effective labor (N<sub>t</sub>),1.823
-43,Human capital investment,Effective labor (N<sub>t</sub>),1.885
-44,Human capital investment,Effective labor (N<sub>t</sub>),1.947
-45,Human capital investment,Effective labor (N<sub>t</sub>),2.008
-46,Human capital investment,Effective labor (N<sub>t</sub>),2.068
-47,Human capital investment,Effective labor (N<sub>t</sub>),2.128
-48,Human capital investment,Effective labor (N<sub>t</sub>),2.187
-49,Human capital investment,Effective labor (N<sub>t</sub>),2.246
-50,Human capital investment,Effective labor (N<sub>t</sub>),2.304
-51,Human capital investment,Effective labor (N<sub>t</sub>),2.361
-52,Human capital investment,Effective labor (N<sub>t</sub>),2.417
-53,Human capital investment,Effective labor (N<sub>t</sub>),2.473
-54,Human capital investment,Effective labor (N<sub>t</sub>),2.528
-55,Human capital investment,Effective labor (N<sub>t</sub>),2.582
-56,Human capital investment,Effective labor (N<sub>t</sub>),2.635
-57,Human capital investment,Effective labor (N<sub>t</sub>),2.687
-58,Human capital investment,Effective labor (N<sub>t</sub>),2.739
-59,Human capital investment,Effective labor (N<sub>t</sub>),2.789
-60,Human capital investment,Effective labor (N<sub>t</sub>),2.839
-61,Human capital investment,Effective labor (N<sub>t</sub>),2.888
-62,Human capital investment,Effective labor (N<sub>t</sub>),2.936
-63,Human capital investment,Effective labor (N<sub>t</sub>),2.983
-64,Human capital investment,Effective labor (N<sub>t</sub>),3.029
-65,Human capital investment,Effective labor (N<sub>t</sub>),3.074
-66,Human capital investment,Effective labor (N<sub>t</sub>),3.119
-67,Human capital investment,Effective labor (N<sub>t</sub>),3.162
-68,Human capital investment,Effective labor (N<sub>t</sub>),3.205
-69,Human capital investment,Effective labor (N<sub>t</sub>),3.247
-70,Human capital investment,Effective labor (N<sub>t</sub>),3.288
-71,Human capital investment,Effective labor (N<sub>t</sub>),3.328
-72,Human capital investment,Effective labor (N<sub>t</sub>),3.367
-73,Human capital investment,Effective labor (N<sub>t</sub>),3.406
-74,Human capital investment,Effective labor (N<sub>t</sub>),3.443
-75,Human capital investment,Effective labor (N<sub>t</sub>),3.48
-76,Human capital investment,Effective labor (N<sub>t</sub>),3.516
-77,Human capital investment,Effective labor (N<sub>t</sub>),3.551
-78,Human capital investment,Effective labor (N<sub>t</sub>),3.585
-79,Human capital investment,Effective labor (N<sub>t</sub>),3.618
-80,Human capital investment,Effective labor (N<sub>t</sub>),3.651
-81,Human capital investment,Effective labor (N<sub>t</sub>),3.683
-82,Human capital investment,Effective labor (N<sub>t</sub>),3.714
-83,Human capital investment,Effective labor (N<sub>t</sub>),3.745
-84,Human capital investment,Effective labor (N<sub>t</sub>),3.774
-85,Human capital investment,Effective labor (N<sub>t</sub>),3.803
-86,Human capital investment,Effective labor (N<sub>t</sub>),3.832
-87,Human capital investment,Effective labor (N<sub>t</sub>),3.859
-88,Human capital investment,Effective labor (N<sub>t</sub>),3.886
-89,Human capital investment,Effective labor (N<sub>t</sub>),3.912
-90,Human capital investment,Effective labor (N<sub>t</sub>),3.938
-91,Human capital investment,Effective labor (N<sub>t</sub>),3.962
-92,Human capital investment,Effective labor (N<sub>t</sub>),3.987
-93,Human capital investment,Effective labor (N<sub>t</sub>),4.01
-94,Human capital investment,Effective labor (N<sub>t</sub>),4.033
-95,Human capital investment,Effective labor (N<sub>t</sub>),4.056
-96,Human capital investment,Effective labor (N<sub>t</sub>),4.077
-97,Human capital investment,Effective labor (N<sub>t</sub>),4.099
-98,Human capital investment,Effective labor (N<sub>t</sub>),4.119
-99,Human capital investment,Effective labor (N<sub>t</sub>),4.139
-100,Human capital investment,Effective labor (N<sub>t</sub>),4.159
-1,R&D investment,Effective labor (N<sub>t</sub>),1.349
-2,R&D investment,Effective labor (N<sub>t</sub>),-0.131
-3,R&D investment,Effective labor (N<sub>t</sub>),0.022
-4,R&D investment,Effective labor (N<sub>t</sub>),0.041
-5,R&D investment,Effective labor (N<sub>t</sub>),0.047
-6,R&D investment,Effective labor (N<sub>t</sub>),0.059
-7,R&D investment,Effective labor (N<sub>t</sub>),0.078
-8,R&D investment,Effective labor (N<sub>t</sub>),0.102
-9,R&D investment,Effective labor (N<sub>t</sub>),0.128
-10,R&D investment,Effective labor (N<sub>t</sub>),0.157
-11,R&D investment,Effective labor (N<sub>t</sub>),0.186
-12,R&D investment,Effective labor (N<sub>t</sub>),0.214
-13,R&D investment,Effective labor (N<sub>t</sub>),0.241
-14,R&D investment,Effective labor (N<sub>t</sub>),0.266
-15,R&D investment,Effective labor (N<sub>t</sub>),0.29
-16,R&D investment,Effective labor (N<sub>t</sub>),0.311
-17,R&D investment,Effective labor (N<sub>t</sub>),0.331
-18,R&D investment,Effective labor (N<sub>t</sub>),0.348
-19,R&D investment,Effective labor (N<sub>t</sub>),0.363
-20,R&D investment,Effective labor (N<sub>t</sub>),0.376
-21,R&D investment,Effective labor (N<sub>t</sub>),0.387
-22,R&D investment,Effective labor (N<sub>t</sub>),0.396
-23,R&D investment,Effective labor (N<sub>t</sub>),0.403
-24,R&D investment,Effective labor (N<sub>t</sub>),0.409
-25,R&D investment,Effective labor (N<sub>t</sub>),0.412
-26,R&D investment,Effective labor (N<sub>t</sub>),0.415
-27,R&D investment,Effective labor (N<sub>t</sub>),0.416
-28,R&D investment,Effective labor (N<sub>t</sub>),0.416
-29,R&D investment,Effective labor (N<sub>t</sub>),0.415
-30,R&D investment,Effective labor (N<sub>t</sub>),0.412
-31,R&D investment,Effective labor (N<sub>t</sub>),0.409
-32,R&D investment,Effective labor (N<sub>t</sub>),0.405
-33,R&D investment,Effective labor (N<sub>t</sub>),0.4
-34,R&D investment,Effective labor (N<sub>t</sub>),0.394
-35,R&D investment,Effective labor (N<sub>t</sub>),0.388
-36,R&D investment,Effective labor (N<sub>t</sub>),0.381
-37,R&D investment,Effective labor (N<sub>t</sub>),0.374
-38,R&D investment,Effective labor (N<sub>t</sub>),0.366
-39,R&D investment,Effective labor (N<sub>t</sub>),0.358
-40,R&D investment,Effective labor (N<sub>t</sub>),0.349
-41,R&D investment,Effective labor (N<sub>t</sub>),0.341
-42,R&D investment,Effective labor (N<sub>t</sub>),0.332
-43,R&D investment,Effective labor (N<sub>t</sub>),0.322
-44,R&D investment,Effective labor (N<sub>t</sub>),0.313
-45,R&D investment,Effective labor (N<sub>t</sub>),0.303
-46,R&D investment,Effective labor (N<sub>t</sub>),0.293
-47,R&D investment,Effective labor (N<sub>t</sub>),0.284
-48,R&D investment,Effective labor (N<sub>t</sub>),0.274
-49,R&D investment,Effective labor (N<sub>t</sub>),0.264
-50,R&D investment,Effective labor (N<sub>t</sub>),0.254
-51,R&D investment,Effective labor (N<sub>t</sub>),0.244
-52,R&D investment,Effective labor (N<sub>t</sub>),0.234
-53,R&D investment,Effective labor (N<sub>t</sub>),0.224
-54,R&D investment,Effective labor (N<sub>t</sub>),0.214
-55,R&D investment,Effective labor (N<sub>t</sub>),0.205
-56,R&D investment,Effective labor (N<sub>t</sub>),0.195
-57,R&D investment,Effective labor (N<sub>t</sub>),0.185
-58,R&D investment,Effective labor (N<sub>t</sub>),0.176
-59,R&D investment,Effective labor (N<sub>t</sub>),0.166
-60,R&D investment,Effective labor (N<sub>t</sub>),0.157
-61,R&D investment,Effective labor (N<sub>t</sub>),0.147
-62,R&D investment,Effective labor (N<sub>t</sub>),0.138
-63,R&D investment,Effective labor (N<sub>t</sub>),0.129
-64,R&D investment,Effective labor (N<sub>t</sub>),0.12
-65,R&D investment,Effective labor (N<sub>t</sub>),0.112
-66,R&D investment,Effective labor (N<sub>t</sub>),0.103
-67,R&D investment,Effective labor (N<sub>t</sub>),0.094
-68,R&D investment,Effective labor (N<sub>t</sub>),0.086
-69,R&D investment,Effective labor (N<sub>t</sub>),0.078
-70,R&D investment,Effective labor (N<sub>t</sub>),0.07
-71,R&D investment,Effective labor (N<sub>t</sub>),0.062
-72,R&D investment,Effective labor (N<sub>t</sub>),0.054
-73,R&D investment,Effective labor (N<sub>t</sub>),0.046
-74,R&D investment,Effective labor (N<sub>t</sub>),0.038
-75,R&D investment,Effective labor (N<sub>t</sub>),0.031
-76,R&D investment,Effective labor (N<sub>t</sub>),0.024
-77,R&D investment,Effective labor (N<sub>t</sub>),0.016
-78,R&D investment,Effective labor (N<sub>t</sub>),0.009
-79,R&D investment,Effective labor (N<sub>t</sub>),0.003
-80,R&D investment,Effective labor (N<sub>t</sub>),-0.004
-81,R&D investment,Effective labor (N<sub>t</sub>),-0.011
-82,R&D investment,Effective labor (N<sub>t</sub>),-0.017
-83,R&D investment,Effective labor (N<sub>t</sub>),-0.024
-84,R&D investment,Effective labor (N<sub>t</sub>),-0.03
-85,R&D investment,Effective labor (N<sub>t</sub>),-0.036
-86,R&D investment,Effective labor (N<sub>t</sub>),-0.042
-87,R&D investment,Effective labor (N<sub>t</sub>),-0.048
-88,R&D investment,Effective labor (N<sub>t</sub>),-0.054
-89,R&D investment,Effective labor (N<sub>t</sub>),-0.06
-90,R&D investment,Effective labor (N<sub>t</sub>),-0.065
-91,R&D investment,Effective labor (N<sub>t</sub>),-0.071
-92,R&D investment,Effective labor (N<sub>t</sub>),-0.076
-93,R&D investment,Effective labor (N<sub>t</sub>),-0.081
-94,R&D investment,Effective labor (N<sub>t</sub>),-0.087
-95,R&D investment,Effective labor (N<sub>t</sub>),-0.092
-96,R&D investment,Effective labor (N<sub>t</sub>),-0.097
-97,R&D investment,Effective labor (N<sub>t</sub>),-0.101
-98,R&D investment,Effective labor (N<sub>t</sub>),-0.106
-99,R&D investment,Effective labor (N<sub>t</sub>),-0.111
-100,R&D investment,Effective labor (N<sub>t</sub>),-0.115
 1,Government consumption,Labor supply (L<sub>t</sub>),0.937
 2,Government consumption,Labor supply (L<sub>t</sub>),0.187
 3,Government consumption,Labor supply (L<sub>t</sub>),0.287
@@ -3999,6 +3999,806 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Human capital stock (H<sub>t</sub>),-0.178
 99,R&D investment,Human capital stock (H<sub>t</sub>),-0.178
 100,R&D investment,Human capital stock (H<sub>t</sub>),-0.178
+1,Government consumption,Effective labor (N<sub>t</sub>),0.937
+2,Government consumption,Effective labor (N<sub>t</sub>),0.179
+3,Government consumption,Effective labor (N<sub>t</sub>),0.286
+4,Government consumption,Effective labor (N<sub>t</sub>),0.311
+5,Government consumption,Effective labor (N<sub>t</sub>),0.32
+6,Government consumption,Effective labor (N<sub>t</sub>),0.326
+7,Government consumption,Effective labor (N<sub>t</sub>),0.332
+8,Government consumption,Effective labor (N<sub>t</sub>),0.337
+9,Government consumption,Effective labor (N<sub>t</sub>),0.342
+10,Government consumption,Effective labor (N<sub>t</sub>),0.346
+11,Government consumption,Effective labor (N<sub>t</sub>),0.351
+12,Government consumption,Effective labor (N<sub>t</sub>),0.355
+13,Government consumption,Effective labor (N<sub>t</sub>),0.359
+14,Government consumption,Effective labor (N<sub>t</sub>),0.363
+15,Government consumption,Effective labor (N<sub>t</sub>),0.366
+16,Government consumption,Effective labor (N<sub>t</sub>),0.37
+17,Government consumption,Effective labor (N<sub>t</sub>),0.373
+18,Government consumption,Effective labor (N<sub>t</sub>),0.376
+19,Government consumption,Effective labor (N<sub>t</sub>),0.38
+20,Government consumption,Effective labor (N<sub>t</sub>),0.383
+21,Government consumption,Effective labor (N<sub>t</sub>),0.385
+22,Government consumption,Effective labor (N<sub>t</sub>),0.388
+23,Government consumption,Effective labor (N<sub>t</sub>),0.391
+24,Government consumption,Effective labor (N<sub>t</sub>),0.393
+25,Government consumption,Effective labor (N<sub>t</sub>),0.395
+26,Government consumption,Effective labor (N<sub>t</sub>),0.398
+27,Government consumption,Effective labor (N<sub>t</sub>),0.4
+28,Government consumption,Effective labor (N<sub>t</sub>),0.402
+29,Government consumption,Effective labor (N<sub>t</sub>),0.404
+30,Government consumption,Effective labor (N<sub>t</sub>),0.406
+31,Government consumption,Effective labor (N<sub>t</sub>),0.408
+32,Government consumption,Effective labor (N<sub>t</sub>),0.409
+33,Government consumption,Effective labor (N<sub>t</sub>),0.411
+34,Government consumption,Effective labor (N<sub>t</sub>),0.413
+35,Government consumption,Effective labor (N<sub>t</sub>),0.414
+36,Government consumption,Effective labor (N<sub>t</sub>),0.415
+37,Government consumption,Effective labor (N<sub>t</sub>),0.417
+38,Government consumption,Effective labor (N<sub>t</sub>),0.418
+39,Government consumption,Effective labor (N<sub>t</sub>),0.419
+40,Government consumption,Effective labor (N<sub>t</sub>),0.421
+41,Government consumption,Effective labor (N<sub>t</sub>),0.422
+42,Government consumption,Effective labor (N<sub>t</sub>),0.423
+43,Government consumption,Effective labor (N<sub>t</sub>),0.424
+44,Government consumption,Effective labor (N<sub>t</sub>),0.425
+45,Government consumption,Effective labor (N<sub>t</sub>),0.426
+46,Government consumption,Effective labor (N<sub>t</sub>),0.427
+47,Government consumption,Effective labor (N<sub>t</sub>),0.427
+48,Government consumption,Effective labor (N<sub>t</sub>),0.428
+49,Government consumption,Effective labor (N<sub>t</sub>),0.429
+50,Government consumption,Effective labor (N<sub>t</sub>),0.43
+51,Government consumption,Effective labor (N<sub>t</sub>),0.43
+52,Government consumption,Effective labor (N<sub>t</sub>),0.431
+53,Government consumption,Effective labor (N<sub>t</sub>),0.432
+54,Government consumption,Effective labor (N<sub>t</sub>),0.432
+55,Government consumption,Effective labor (N<sub>t</sub>),0.433
+56,Government consumption,Effective labor (N<sub>t</sub>),0.433
+57,Government consumption,Effective labor (N<sub>t</sub>),0.434
+58,Government consumption,Effective labor (N<sub>t</sub>),0.434
+59,Government consumption,Effective labor (N<sub>t</sub>),0.435
+60,Government consumption,Effective labor (N<sub>t</sub>),0.435
+61,Government consumption,Effective labor (N<sub>t</sub>),0.435
+62,Government consumption,Effective labor (N<sub>t</sub>),0.436
+63,Government consumption,Effective labor (N<sub>t</sub>),0.436
+64,Government consumption,Effective labor (N<sub>t</sub>),0.436
+65,Government consumption,Effective labor (N<sub>t</sub>),0.437
+66,Government consumption,Effective labor (N<sub>t</sub>),0.437
+67,Government consumption,Effective labor (N<sub>t</sub>),0.437
+68,Government consumption,Effective labor (N<sub>t</sub>),0.437
+69,Government consumption,Effective labor (N<sub>t</sub>),0.438
+70,Government consumption,Effective labor (N<sub>t</sub>),0.438
+71,Government consumption,Effective labor (N<sub>t</sub>),0.438
+72,Government consumption,Effective labor (N<sub>t</sub>),0.438
+73,Government consumption,Effective labor (N<sub>t</sub>),0.438
+74,Government consumption,Effective labor (N<sub>t</sub>),0.439
+75,Government consumption,Effective labor (N<sub>t</sub>),0.439
+76,Government consumption,Effective labor (N<sub>t</sub>),0.439
+77,Government consumption,Effective labor (N<sub>t</sub>),0.439
+78,Government consumption,Effective labor (N<sub>t</sub>),0.439
+79,Government consumption,Effective labor (N<sub>t</sub>),0.439
+80,Government consumption,Effective labor (N<sub>t</sub>),0.439
+81,Government consumption,Effective labor (N<sub>t</sub>),0.439
+82,Government consumption,Effective labor (N<sub>t</sub>),0.439
+83,Government consumption,Effective labor (N<sub>t</sub>),0.439
+84,Government consumption,Effective labor (N<sub>t</sub>),0.439
+85,Government consumption,Effective labor (N<sub>t</sub>),0.439
+86,Government consumption,Effective labor (N<sub>t</sub>),0.439
+87,Government consumption,Effective labor (N<sub>t</sub>),0.44
+88,Government consumption,Effective labor (N<sub>t</sub>),0.44
+89,Government consumption,Effective labor (N<sub>t</sub>),0.44
+90,Government consumption,Effective labor (N<sub>t</sub>),0.44
+91,Government consumption,Effective labor (N<sub>t</sub>),0.44
+92,Government consumption,Effective labor (N<sub>t</sub>),0.439
+93,Government consumption,Effective labor (N<sub>t</sub>),0.439
+94,Government consumption,Effective labor (N<sub>t</sub>),0.439
+95,Government consumption,Effective labor (N<sub>t</sub>),0.439
+96,Government consumption,Effective labor (N<sub>t</sub>),0.439
+97,Government consumption,Effective labor (N<sub>t</sub>),0.439
+98,Government consumption,Effective labor (N<sub>t</sub>),0.439
+99,Government consumption,Effective labor (N<sub>t</sub>),0.439
+100,Government consumption,Effective labor (N<sub>t</sub>),0.439
+1,Infrastructure investment,Effective labor (N<sub>t</sub>),1.629
+2,Infrastructure investment,Effective labor (N<sub>t</sub>),-0.251
+3,Infrastructure investment,Effective labor (N<sub>t</sub>),0.016
+4,Infrastructure investment,Effective labor (N<sub>t</sub>),0.09
+5,Infrastructure investment,Effective labor (N<sub>t</sub>),0.125
+6,Infrastructure investment,Effective labor (N<sub>t</sub>),0.151
+7,Infrastructure investment,Effective labor (N<sub>t</sub>),0.173
+8,Infrastructure investment,Effective labor (N<sub>t</sub>),0.193
+9,Infrastructure investment,Effective labor (N<sub>t</sub>),0.211
+10,Infrastructure investment,Effective labor (N<sub>t</sub>),0.227
+11,Infrastructure investment,Effective labor (N<sub>t</sub>),0.241
+12,Infrastructure investment,Effective labor (N<sub>t</sub>),0.254
+13,Infrastructure investment,Effective labor (N<sub>t</sub>),0.265
+14,Infrastructure investment,Effective labor (N<sub>t</sub>),0.276
+15,Infrastructure investment,Effective labor (N<sub>t</sub>),0.284
+16,Infrastructure investment,Effective labor (N<sub>t</sub>),0.292
+17,Infrastructure investment,Effective labor (N<sub>t</sub>),0.299
+18,Infrastructure investment,Effective labor (N<sub>t</sub>),0.305
+19,Infrastructure investment,Effective labor (N<sub>t</sub>),0.31
+20,Infrastructure investment,Effective labor (N<sub>t</sub>),0.315
+21,Infrastructure investment,Effective labor (N<sub>t</sub>),0.318
+22,Infrastructure investment,Effective labor (N<sub>t</sub>),0.321
+23,Infrastructure investment,Effective labor (N<sub>t</sub>),0.324
+24,Infrastructure investment,Effective labor (N<sub>t</sub>),0.325
+25,Infrastructure investment,Effective labor (N<sub>t</sub>),0.327
+26,Infrastructure investment,Effective labor (N<sub>t</sub>),0.328
+27,Infrastructure investment,Effective labor (N<sub>t</sub>),0.328
+28,Infrastructure investment,Effective labor (N<sub>t</sub>),0.328
+29,Infrastructure investment,Effective labor (N<sub>t</sub>),0.328
+30,Infrastructure investment,Effective labor (N<sub>t</sub>),0.327
+31,Infrastructure investment,Effective labor (N<sub>t</sub>),0.326
+32,Infrastructure investment,Effective labor (N<sub>t</sub>),0.325
+33,Infrastructure investment,Effective labor (N<sub>t</sub>),0.324
+34,Infrastructure investment,Effective labor (N<sub>t</sub>),0.322
+35,Infrastructure investment,Effective labor (N<sub>t</sub>),0.32
+36,Infrastructure investment,Effective labor (N<sub>t</sub>),0.318
+37,Infrastructure investment,Effective labor (N<sub>t</sub>),0.316
+38,Infrastructure investment,Effective labor (N<sub>t</sub>),0.314
+39,Infrastructure investment,Effective labor (N<sub>t</sub>),0.311
+40,Infrastructure investment,Effective labor (N<sub>t</sub>),0.309
+41,Infrastructure investment,Effective labor (N<sub>t</sub>),0.306
+42,Infrastructure investment,Effective labor (N<sub>t</sub>),0.303
+43,Infrastructure investment,Effective labor (N<sub>t</sub>),0.301
+44,Infrastructure investment,Effective labor (N<sub>t</sub>),0.298
+45,Infrastructure investment,Effective labor (N<sub>t</sub>),0.295
+46,Infrastructure investment,Effective labor (N<sub>t</sub>),0.292
+47,Infrastructure investment,Effective labor (N<sub>t</sub>),0.289
+48,Infrastructure investment,Effective labor (N<sub>t</sub>),0.286
+49,Infrastructure investment,Effective labor (N<sub>t</sub>),0.283
+50,Infrastructure investment,Effective labor (N<sub>t</sub>),0.279
+51,Infrastructure investment,Effective labor (N<sub>t</sub>),0.276
+52,Infrastructure investment,Effective labor (N<sub>t</sub>),0.273
+53,Infrastructure investment,Effective labor (N<sub>t</sub>),0.27
+54,Infrastructure investment,Effective labor (N<sub>t</sub>),0.267
+55,Infrastructure investment,Effective labor (N<sub>t</sub>),0.264
+56,Infrastructure investment,Effective labor (N<sub>t</sub>),0.261
+57,Infrastructure investment,Effective labor (N<sub>t</sub>),0.257
+58,Infrastructure investment,Effective labor (N<sub>t</sub>),0.254
+59,Infrastructure investment,Effective labor (N<sub>t</sub>),0.251
+60,Infrastructure investment,Effective labor (N<sub>t</sub>),0.248
+61,Infrastructure investment,Effective labor (N<sub>t</sub>),0.245
+62,Infrastructure investment,Effective labor (N<sub>t</sub>),0.242
+63,Infrastructure investment,Effective labor (N<sub>t</sub>),0.239
+64,Infrastructure investment,Effective labor (N<sub>t</sub>),0.236
+65,Infrastructure investment,Effective labor (N<sub>t</sub>),0.233
+66,Infrastructure investment,Effective labor (N<sub>t</sub>),0.23
+67,Infrastructure investment,Effective labor (N<sub>t</sub>),0.227
+68,Infrastructure investment,Effective labor (N<sub>t</sub>),0.224
+69,Infrastructure investment,Effective labor (N<sub>t</sub>),0.221
+70,Infrastructure investment,Effective labor (N<sub>t</sub>),0.218
+71,Infrastructure investment,Effective labor (N<sub>t</sub>),0.215
+72,Infrastructure investment,Effective labor (N<sub>t</sub>),0.213
+73,Infrastructure investment,Effective labor (N<sub>t</sub>),0.21
+74,Infrastructure investment,Effective labor (N<sub>t</sub>),0.207
+75,Infrastructure investment,Effective labor (N<sub>t</sub>),0.204
+76,Infrastructure investment,Effective labor (N<sub>t</sub>),0.202
+77,Infrastructure investment,Effective labor (N<sub>t</sub>),0.199
+78,Infrastructure investment,Effective labor (N<sub>t</sub>),0.196
+79,Infrastructure investment,Effective labor (N<sub>t</sub>),0.194
+80,Infrastructure investment,Effective labor (N<sub>t</sub>),0.191
+81,Infrastructure investment,Effective labor (N<sub>t</sub>),0.189
+82,Infrastructure investment,Effective labor (N<sub>t</sub>),0.186
+83,Infrastructure investment,Effective labor (N<sub>t</sub>),0.184
+84,Infrastructure investment,Effective labor (N<sub>t</sub>),0.181
+85,Infrastructure investment,Effective labor (N<sub>t</sub>),0.179
+86,Infrastructure investment,Effective labor (N<sub>t</sub>),0.177
+87,Infrastructure investment,Effective labor (N<sub>t</sub>),0.174
+88,Infrastructure investment,Effective labor (N<sub>t</sub>),0.172
+89,Infrastructure investment,Effective labor (N<sub>t</sub>),0.17
+90,Infrastructure investment,Effective labor (N<sub>t</sub>),0.168
+91,Infrastructure investment,Effective labor (N<sub>t</sub>),0.165
+92,Infrastructure investment,Effective labor (N<sub>t</sub>),0.163
+93,Infrastructure investment,Effective labor (N<sub>t</sub>),0.161
+94,Infrastructure investment,Effective labor (N<sub>t</sub>),0.159
+95,Infrastructure investment,Effective labor (N<sub>t</sub>),0.157
+96,Infrastructure investment,Effective labor (N<sub>t</sub>),0.155
+97,Infrastructure investment,Effective labor (N<sub>t</sub>),0.153
+98,Infrastructure investment,Effective labor (N<sub>t</sub>),0.151
+99,Infrastructure investment,Effective labor (N<sub>t</sub>),0.149
+100,Infrastructure investment,Effective labor (N<sub>t</sub>),0.147
+1,Human capital investment,Effective labor (N<sub>t</sub>),2.737
+2,Human capital investment,Effective labor (N<sub>t</sub>),0.741
+3,Human capital investment,Effective labor (N<sub>t</sub>),0.871
+4,Human capital investment,Effective labor (N<sub>t</sub>),0.809
+5,Human capital investment,Effective labor (N<sub>t</sub>),0.725
+6,Human capital investment,Effective labor (N<sub>t</sub>),0.648
+7,Human capital investment,Effective labor (N<sub>t</sub>),0.584
+8,Human capital investment,Effective labor (N<sub>t</sub>),0.532
+9,Human capital investment,Effective labor (N<sub>t</sub>),0.491
+10,Human capital investment,Effective labor (N<sub>t</sub>),0.461
+11,Human capital investment,Effective labor (N<sub>t</sub>),0.44
+12,Human capital investment,Effective labor (N<sub>t</sub>),0.428
+13,Human capital investment,Effective labor (N<sub>t</sub>),0.424
+14,Human capital investment,Effective labor (N<sub>t</sub>),0.428
+15,Human capital investment,Effective labor (N<sub>t</sub>),0.438
+16,Human capital investment,Effective labor (N<sub>t</sub>),0.454
+17,Human capital investment,Effective labor (N<sub>t</sub>),0.476
+18,Human capital investment,Effective labor (N<sub>t</sub>),0.503
+19,Human capital investment,Effective labor (N<sub>t</sub>),0.534
+20,Human capital investment,Effective labor (N<sub>t</sub>),0.57
+21,Human capital investment,Effective labor (N<sub>t</sub>),0.609
+22,Human capital investment,Effective labor (N<sub>t</sub>),0.652
+23,Human capital investment,Effective labor (N<sub>t</sub>),0.697
+24,Human capital investment,Effective labor (N<sub>t</sub>),0.746
+25,Human capital investment,Effective labor (N<sub>t</sub>),0.796
+26,Human capital investment,Effective labor (N<sub>t</sub>),0.849
+27,Human capital investment,Effective labor (N<sub>t</sub>),0.904
+28,Human capital investment,Effective labor (N<sub>t</sub>),0.96
+29,Human capital investment,Effective labor (N<sub>t</sub>),1.018
+30,Human capital investment,Effective labor (N<sub>t</sub>),1.077
+31,Human capital investment,Effective labor (N<sub>t</sub>),1.137
+32,Human capital investment,Effective labor (N<sub>t</sub>),1.198
+33,Human capital investment,Effective labor (N<sub>t</sub>),1.26
+34,Human capital investment,Effective labor (N<sub>t</sub>),1.322
+35,Human capital investment,Effective labor (N<sub>t</sub>),1.384
+36,Human capital investment,Effective labor (N<sub>t</sub>),1.447
+37,Human capital investment,Effective labor (N<sub>t</sub>),1.51
+38,Human capital investment,Effective labor (N<sub>t</sub>),1.573
+39,Human capital investment,Effective labor (N<sub>t</sub>),1.636
+40,Human capital investment,Effective labor (N<sub>t</sub>),1.698
+41,Human capital investment,Effective labor (N<sub>t</sub>),1.761
+42,Human capital investment,Effective labor (N<sub>t</sub>),1.823
+43,Human capital investment,Effective labor (N<sub>t</sub>),1.885
+44,Human capital investment,Effective labor (N<sub>t</sub>),1.947
+45,Human capital investment,Effective labor (N<sub>t</sub>),2.008
+46,Human capital investment,Effective labor (N<sub>t</sub>),2.068
+47,Human capital investment,Effective labor (N<sub>t</sub>),2.128
+48,Human capital investment,Effective labor (N<sub>t</sub>),2.187
+49,Human capital investment,Effective labor (N<sub>t</sub>),2.246
+50,Human capital investment,Effective labor (N<sub>t</sub>),2.304
+51,Human capital investment,Effective labor (N<sub>t</sub>),2.361
+52,Human capital investment,Effective labor (N<sub>t</sub>),2.417
+53,Human capital investment,Effective labor (N<sub>t</sub>),2.473
+54,Human capital investment,Effective labor (N<sub>t</sub>),2.528
+55,Human capital investment,Effective labor (N<sub>t</sub>),2.582
+56,Human capital investment,Effective labor (N<sub>t</sub>),2.635
+57,Human capital investment,Effective labor (N<sub>t</sub>),2.687
+58,Human capital investment,Effective labor (N<sub>t</sub>),2.739
+59,Human capital investment,Effective labor (N<sub>t</sub>),2.789
+60,Human capital investment,Effective labor (N<sub>t</sub>),2.839
+61,Human capital investment,Effective labor (N<sub>t</sub>),2.888
+62,Human capital investment,Effective labor (N<sub>t</sub>),2.936
+63,Human capital investment,Effective labor (N<sub>t</sub>),2.983
+64,Human capital investment,Effective labor (N<sub>t</sub>),3.029
+65,Human capital investment,Effective labor (N<sub>t</sub>),3.074
+66,Human capital investment,Effective labor (N<sub>t</sub>),3.119
+67,Human capital investment,Effective labor (N<sub>t</sub>),3.162
+68,Human capital investment,Effective labor (N<sub>t</sub>),3.205
+69,Human capital investment,Effective labor (N<sub>t</sub>),3.247
+70,Human capital investment,Effective labor (N<sub>t</sub>),3.288
+71,Human capital investment,Effective labor (N<sub>t</sub>),3.328
+72,Human capital investment,Effective labor (N<sub>t</sub>),3.367
+73,Human capital investment,Effective labor (N<sub>t</sub>),3.406
+74,Human capital investment,Effective labor (N<sub>t</sub>),3.443
+75,Human capital investment,Effective labor (N<sub>t</sub>),3.48
+76,Human capital investment,Effective labor (N<sub>t</sub>),3.516
+77,Human capital investment,Effective labor (N<sub>t</sub>),3.551
+78,Human capital investment,Effective labor (N<sub>t</sub>),3.585
+79,Human capital investment,Effective labor (N<sub>t</sub>),3.618
+80,Human capital investment,Effective labor (N<sub>t</sub>),3.651
+81,Human capital investment,Effective labor (N<sub>t</sub>),3.683
+82,Human capital investment,Effective labor (N<sub>t</sub>),3.714
+83,Human capital investment,Effective labor (N<sub>t</sub>),3.745
+84,Human capital investment,Effective labor (N<sub>t</sub>),3.774
+85,Human capital investment,Effective labor (N<sub>t</sub>),3.803
+86,Human capital investment,Effective labor (N<sub>t</sub>),3.832
+87,Human capital investment,Effective labor (N<sub>t</sub>),3.859
+88,Human capital investment,Effective labor (N<sub>t</sub>),3.886
+89,Human capital investment,Effective labor (N<sub>t</sub>),3.912
+90,Human capital investment,Effective labor (N<sub>t</sub>),3.938
+91,Human capital investment,Effective labor (N<sub>t</sub>),3.962
+92,Human capital investment,Effective labor (N<sub>t</sub>),3.987
+93,Human capital investment,Effective labor (N<sub>t</sub>),4.01
+94,Human capital investment,Effective labor (N<sub>t</sub>),4.033
+95,Human capital investment,Effective labor (N<sub>t</sub>),4.056
+96,Human capital investment,Effective labor (N<sub>t</sub>),4.077
+97,Human capital investment,Effective labor (N<sub>t</sub>),4.099
+98,Human capital investment,Effective labor (N<sub>t</sub>),4.119
+99,Human capital investment,Effective labor (N<sub>t</sub>),4.139
+100,Human capital investment,Effective labor (N<sub>t</sub>),4.159
+1,R&D investment,Effective labor (N<sub>t</sub>),1.349
+2,R&D investment,Effective labor (N<sub>t</sub>),-0.131
+3,R&D investment,Effective labor (N<sub>t</sub>),0.022
+4,R&D investment,Effective labor (N<sub>t</sub>),0.041
+5,R&D investment,Effective labor (N<sub>t</sub>),0.047
+6,R&D investment,Effective labor (N<sub>t</sub>),0.059
+7,R&D investment,Effective labor (N<sub>t</sub>),0.078
+8,R&D investment,Effective labor (N<sub>t</sub>),0.102
+9,R&D investment,Effective labor (N<sub>t</sub>),0.128
+10,R&D investment,Effective labor (N<sub>t</sub>),0.157
+11,R&D investment,Effective labor (N<sub>t</sub>),0.186
+12,R&D investment,Effective labor (N<sub>t</sub>),0.214
+13,R&D investment,Effective labor (N<sub>t</sub>),0.241
+14,R&D investment,Effective labor (N<sub>t</sub>),0.266
+15,R&D investment,Effective labor (N<sub>t</sub>),0.29
+16,R&D investment,Effective labor (N<sub>t</sub>),0.311
+17,R&D investment,Effective labor (N<sub>t</sub>),0.331
+18,R&D investment,Effective labor (N<sub>t</sub>),0.348
+19,R&D investment,Effective labor (N<sub>t</sub>),0.363
+20,R&D investment,Effective labor (N<sub>t</sub>),0.376
+21,R&D investment,Effective labor (N<sub>t</sub>),0.387
+22,R&D investment,Effective labor (N<sub>t</sub>),0.396
+23,R&D investment,Effective labor (N<sub>t</sub>),0.403
+24,R&D investment,Effective labor (N<sub>t</sub>),0.409
+25,R&D investment,Effective labor (N<sub>t</sub>),0.412
+26,R&D investment,Effective labor (N<sub>t</sub>),0.415
+27,R&D investment,Effective labor (N<sub>t</sub>),0.416
+28,R&D investment,Effective labor (N<sub>t</sub>),0.416
+29,R&D investment,Effective labor (N<sub>t</sub>),0.415
+30,R&D investment,Effective labor (N<sub>t</sub>),0.412
+31,R&D investment,Effective labor (N<sub>t</sub>),0.409
+32,R&D investment,Effective labor (N<sub>t</sub>),0.405
+33,R&D investment,Effective labor (N<sub>t</sub>),0.4
+34,R&D investment,Effective labor (N<sub>t</sub>),0.394
+35,R&D investment,Effective labor (N<sub>t</sub>),0.388
+36,R&D investment,Effective labor (N<sub>t</sub>),0.381
+37,R&D investment,Effective labor (N<sub>t</sub>),0.374
+38,R&D investment,Effective labor (N<sub>t</sub>),0.366
+39,R&D investment,Effective labor (N<sub>t</sub>),0.358
+40,R&D investment,Effective labor (N<sub>t</sub>),0.349
+41,R&D investment,Effective labor (N<sub>t</sub>),0.341
+42,R&D investment,Effective labor (N<sub>t</sub>),0.332
+43,R&D investment,Effective labor (N<sub>t</sub>),0.322
+44,R&D investment,Effective labor (N<sub>t</sub>),0.313
+45,R&D investment,Effective labor (N<sub>t</sub>),0.303
+46,R&D investment,Effective labor (N<sub>t</sub>),0.293
+47,R&D investment,Effective labor (N<sub>t</sub>),0.284
+48,R&D investment,Effective labor (N<sub>t</sub>),0.274
+49,R&D investment,Effective labor (N<sub>t</sub>),0.264
+50,R&D investment,Effective labor (N<sub>t</sub>),0.254
+51,R&D investment,Effective labor (N<sub>t</sub>),0.244
+52,R&D investment,Effective labor (N<sub>t</sub>),0.234
+53,R&D investment,Effective labor (N<sub>t</sub>),0.224
+54,R&D investment,Effective labor (N<sub>t</sub>),0.214
+55,R&D investment,Effective labor (N<sub>t</sub>),0.205
+56,R&D investment,Effective labor (N<sub>t</sub>),0.195
+57,R&D investment,Effective labor (N<sub>t</sub>),0.185
+58,R&D investment,Effective labor (N<sub>t</sub>),0.176
+59,R&D investment,Effective labor (N<sub>t</sub>),0.166
+60,R&D investment,Effective labor (N<sub>t</sub>),0.157
+61,R&D investment,Effective labor (N<sub>t</sub>),0.147
+62,R&D investment,Effective labor (N<sub>t</sub>),0.138
+63,R&D investment,Effective labor (N<sub>t</sub>),0.129
+64,R&D investment,Effective labor (N<sub>t</sub>),0.12
+65,R&D investment,Effective labor (N<sub>t</sub>),0.112
+66,R&D investment,Effective labor (N<sub>t</sub>),0.103
+67,R&D investment,Effective labor (N<sub>t</sub>),0.094
+68,R&D investment,Effective labor (N<sub>t</sub>),0.086
+69,R&D investment,Effective labor (N<sub>t</sub>),0.078
+70,R&D investment,Effective labor (N<sub>t</sub>),0.07
+71,R&D investment,Effective labor (N<sub>t</sub>),0.062
+72,R&D investment,Effective labor (N<sub>t</sub>),0.054
+73,R&D investment,Effective labor (N<sub>t</sub>),0.046
+74,R&D investment,Effective labor (N<sub>t</sub>),0.038
+75,R&D investment,Effective labor (N<sub>t</sub>),0.031
+76,R&D investment,Effective labor (N<sub>t</sub>),0.024
+77,R&D investment,Effective labor (N<sub>t</sub>),0.016
+78,R&D investment,Effective labor (N<sub>t</sub>),0.009
+79,R&D investment,Effective labor (N<sub>t</sub>),0.003
+80,R&D investment,Effective labor (N<sub>t</sub>),-0.004
+81,R&D investment,Effective labor (N<sub>t</sub>),-0.011
+82,R&D investment,Effective labor (N<sub>t</sub>),-0.017
+83,R&D investment,Effective labor (N<sub>t</sub>),-0.024
+84,R&D investment,Effective labor (N<sub>t</sub>),-0.03
+85,R&D investment,Effective labor (N<sub>t</sub>),-0.036
+86,R&D investment,Effective labor (N<sub>t</sub>),-0.042
+87,R&D investment,Effective labor (N<sub>t</sub>),-0.048
+88,R&D investment,Effective labor (N<sub>t</sub>),-0.054
+89,R&D investment,Effective labor (N<sub>t</sub>),-0.06
+90,R&D investment,Effective labor (N<sub>t</sub>),-0.065
+91,R&D investment,Effective labor (N<sub>t</sub>),-0.071
+92,R&D investment,Effective labor (N<sub>t</sub>),-0.076
+93,R&D investment,Effective labor (N<sub>t</sub>),-0.081
+94,R&D investment,Effective labor (N<sub>t</sub>),-0.087
+95,R&D investment,Effective labor (N<sub>t</sub>),-0.092
+96,R&D investment,Effective labor (N<sub>t</sub>),-0.097
+97,R&D investment,Effective labor (N<sub>t</sub>),-0.101
+98,R&D investment,Effective labor (N<sub>t</sub>),-0.106
+99,R&D investment,Effective labor (N<sub>t</sub>),-0.111
+100,R&D investment,Effective labor (N<sub>t</sub>),-0.115
+1,Government consumption,Education time (E<sub>t</sub>),-0.646
+2,Government consumption,Education time (E<sub>t</sub>),0.565
+3,Government consumption,Education time (E<sub>t</sub>),0.403
+4,Government consumption,Education time (E<sub>t</sub>),0.369
+5,Government consumption,Education time (E<sub>t</sub>),0.36
+6,Government consumption,Education time (E<sub>t</sub>),0.355
+7,Government consumption,Education time (E<sub>t</sub>),0.352
+8,Government consumption,Education time (E<sub>t</sub>),0.348
+9,Government consumption,Education time (E<sub>t</sub>),0.345
+10,Government consumption,Education time (E<sub>t</sub>),0.342
+11,Government consumption,Education time (E<sub>t</sub>),0.34
+12,Government consumption,Education time (E<sub>t</sub>),0.337
+13,Government consumption,Education time (E<sub>t</sub>),0.334
+14,Government consumption,Education time (E<sub>t</sub>),0.332
+15,Government consumption,Education time (E<sub>t</sub>),0.329
+16,Government consumption,Education time (E<sub>t</sub>),0.327
+17,Government consumption,Education time (E<sub>t</sub>),0.325
+18,Government consumption,Education time (E<sub>t</sub>),0.323
+19,Government consumption,Education time (E<sub>t</sub>),0.321
+20,Government consumption,Education time (E<sub>t</sub>),0.319
+21,Government consumption,Education time (E<sub>t</sub>),0.317
+22,Government consumption,Education time (E<sub>t</sub>),0.316
+23,Government consumption,Education time (E<sub>t</sub>),0.314
+24,Government consumption,Education time (E<sub>t</sub>),0.312
+25,Government consumption,Education time (E<sub>t</sub>),0.311
+26,Government consumption,Education time (E<sub>t</sub>),0.31
+27,Government consumption,Education time (E<sub>t</sub>),0.308
+28,Government consumption,Education time (E<sub>t</sub>),0.307
+29,Government consumption,Education time (E<sub>t</sub>),0.306
+30,Government consumption,Education time (E<sub>t</sub>),0.304
+31,Government consumption,Education time (E<sub>t</sub>),0.303
+32,Government consumption,Education time (E<sub>t</sub>),0.302
+33,Government consumption,Education time (E<sub>t</sub>),0.301
+34,Government consumption,Education time (E<sub>t</sub>),0.3
+35,Government consumption,Education time (E<sub>t</sub>),0.299
+36,Government consumption,Education time (E<sub>t</sub>),0.298
+37,Government consumption,Education time (E<sub>t</sub>),0.297
+38,Government consumption,Education time (E<sub>t</sub>),0.296
+39,Government consumption,Education time (E<sub>t</sub>),0.296
+40,Government consumption,Education time (E<sub>t</sub>),0.295
+41,Government consumption,Education time (E<sub>t</sub>),0.294
+42,Government consumption,Education time (E<sub>t</sub>),0.293
+43,Government consumption,Education time (E<sub>t</sub>),0.293
+44,Government consumption,Education time (E<sub>t</sub>),0.292
+45,Government consumption,Education time (E<sub>t</sub>),0.291
+46,Government consumption,Education time (E<sub>t</sub>),0.291
+47,Government consumption,Education time (E<sub>t</sub>),0.29
+48,Government consumption,Education time (E<sub>t</sub>),0.29
+49,Government consumption,Education time (E<sub>t</sub>),0.289
+50,Government consumption,Education time (E<sub>t</sub>),0.289
+51,Government consumption,Education time (E<sub>t</sub>),0.288
+52,Government consumption,Education time (E<sub>t</sub>),0.288
+53,Government consumption,Education time (E<sub>t</sub>),0.287
+54,Government consumption,Education time (E<sub>t</sub>),0.287
+55,Government consumption,Education time (E<sub>t</sub>),0.286
+56,Government consumption,Education time (E<sub>t</sub>),0.286
+57,Government consumption,Education time (E<sub>t</sub>),0.286
+58,Government consumption,Education time (E<sub>t</sub>),0.285
+59,Government consumption,Education time (E<sub>t</sub>),0.285
+60,Government consumption,Education time (E<sub>t</sub>),0.285
+61,Government consumption,Education time (E<sub>t</sub>),0.284
+62,Government consumption,Education time (E<sub>t</sub>),0.284
+63,Government consumption,Education time (E<sub>t</sub>),0.284
+64,Government consumption,Education time (E<sub>t</sub>),0.284
+65,Government consumption,Education time (E<sub>t</sub>),0.283
+66,Government consumption,Education time (E<sub>t</sub>),0.283
+67,Government consumption,Education time (E<sub>t</sub>),0.283
+68,Government consumption,Education time (E<sub>t</sub>),0.283
+69,Government consumption,Education time (E<sub>t</sub>),0.283
+70,Government consumption,Education time (E<sub>t</sub>),0.282
+71,Government consumption,Education time (E<sub>t</sub>),0.282
+72,Government consumption,Education time (E<sub>t</sub>),0.282
+73,Government consumption,Education time (E<sub>t</sub>),0.282
+74,Government consumption,Education time (E<sub>t</sub>),0.282
+75,Government consumption,Education time (E<sub>t</sub>),0.282
+76,Government consumption,Education time (E<sub>t</sub>),0.281
+77,Government consumption,Education time (E<sub>t</sub>),0.281
+78,Government consumption,Education time (E<sub>t</sub>),0.281
+79,Government consumption,Education time (E<sub>t</sub>),0.281
+80,Government consumption,Education time (E<sub>t</sub>),0.281
+81,Government consumption,Education time (E<sub>t</sub>),0.281
+82,Government consumption,Education time (E<sub>t</sub>),0.281
+83,Government consumption,Education time (E<sub>t</sub>),0.281
+84,Government consumption,Education time (E<sub>t</sub>),0.281
+85,Government consumption,Education time (E<sub>t</sub>),0.281
+86,Government consumption,Education time (E<sub>t</sub>),0.28
+87,Government consumption,Education time (E<sub>t</sub>),0.28
+88,Government consumption,Education time (E<sub>t</sub>),0.28
+89,Government consumption,Education time (E<sub>t</sub>),0.28
+90,Government consumption,Education time (E<sub>t</sub>),0.28
+91,Government consumption,Education time (E<sub>t</sub>),0.28
+92,Government consumption,Education time (E<sub>t</sub>),0.28
+93,Government consumption,Education time (E<sub>t</sub>),0.28
+94,Government consumption,Education time (E<sub>t</sub>),0.28
+95,Government consumption,Education time (E<sub>t</sub>),0.28
+96,Government consumption,Education time (E<sub>t</sub>),0.28
+97,Government consumption,Education time (E<sub>t</sub>),0.28
+98,Government consumption,Education time (E<sub>t</sub>),0.28
+99,Government consumption,Education time (E<sub>t</sub>),0.28
+100,Government consumption,Education time (E<sub>t</sub>),0.28
+1,Infrastructure investment,Education time (E<sub>t</sub>),-2.101
+2,Infrastructure investment,Education time (E<sub>t</sub>),0.896
+3,Infrastructure investment,Education time (E<sub>t</sub>),0.485
+4,Infrastructure investment,Education time (E<sub>t</sub>),0.378
+5,Infrastructure investment,Education time (E<sub>t</sub>),0.329
+6,Infrastructure investment,Education time (E<sub>t</sub>),0.294
+7,Infrastructure investment,Education time (E<sub>t</sub>),0.264
+8,Infrastructure investment,Education time (E<sub>t</sub>),0.236
+9,Infrastructure investment,Education time (E<sub>t</sub>),0.211
+10,Infrastructure investment,Education time (E<sub>t</sub>),0.187
+11,Infrastructure investment,Education time (E<sub>t</sub>),0.166
+12,Infrastructure investment,Education time (E<sub>t</sub>),0.146
+13,Infrastructure investment,Education time (E<sub>t</sub>),0.128
+14,Infrastructure investment,Education time (E<sub>t</sub>),0.111
+15,Infrastructure investment,Education time (E<sub>t</sub>),0.095
+16,Infrastructure investment,Education time (E<sub>t</sub>),0.081
+17,Infrastructure investment,Education time (E<sub>t</sub>),0.068
+18,Infrastructure investment,Education time (E<sub>t</sub>),0.056
+19,Infrastructure investment,Education time (E<sub>t</sub>),0.045
+20,Infrastructure investment,Education time (E<sub>t</sub>),0.035
+21,Infrastructure investment,Education time (E<sub>t</sub>),0.025
+22,Infrastructure investment,Education time (E<sub>t</sub>),0.017
+23,Infrastructure investment,Education time (E<sub>t</sub>),0.009
+24,Infrastructure investment,Education time (E<sub>t</sub>),0.002
+25,Infrastructure investment,Education time (E<sub>t</sub>),-0.005
+26,Infrastructure investment,Education time (E<sub>t</sub>),-0.011
+27,Infrastructure investment,Education time (E<sub>t</sub>),-0.016
+28,Infrastructure investment,Education time (E<sub>t</sub>),-0.021
+29,Infrastructure investment,Education time (E<sub>t</sub>),-0.026
+30,Infrastructure investment,Education time (E<sub>t</sub>),-0.03
+31,Infrastructure investment,Education time (E<sub>t</sub>),-0.034
+32,Infrastructure investment,Education time (E<sub>t</sub>),-0.037
+33,Infrastructure investment,Education time (E<sub>t</sub>),-0.04
+34,Infrastructure investment,Education time (E<sub>t</sub>),-0.043
+35,Infrastructure investment,Education time (E<sub>t</sub>),-0.045
+36,Infrastructure investment,Education time (E<sub>t</sub>),-0.048
+37,Infrastructure investment,Education time (E<sub>t</sub>),-0.05
+38,Infrastructure investment,Education time (E<sub>t</sub>),-0.051
+39,Infrastructure investment,Education time (E<sub>t</sub>),-0.053
+40,Infrastructure investment,Education time (E<sub>t</sub>),-0.054
+41,Infrastructure investment,Education time (E<sub>t</sub>),-0.055
+42,Infrastructure investment,Education time (E<sub>t</sub>),-0.057
+43,Infrastructure investment,Education time (E<sub>t</sub>),-0.057
+44,Infrastructure investment,Education time (E<sub>t</sub>),-0.058
+45,Infrastructure investment,Education time (E<sub>t</sub>),-0.059
+46,Infrastructure investment,Education time (E<sub>t</sub>),-0.059
+47,Infrastructure investment,Education time (E<sub>t</sub>),-0.06
+48,Infrastructure investment,Education time (E<sub>t</sub>),-0.06
+49,Infrastructure investment,Education time (E<sub>t</sub>),-0.06
+50,Infrastructure investment,Education time (E<sub>t</sub>),-0.06
+51,Infrastructure investment,Education time (E<sub>t</sub>),-0.06
+52,Infrastructure investment,Education time (E<sub>t</sub>),-0.06
+53,Infrastructure investment,Education time (E<sub>t</sub>),-0.06
+54,Infrastructure investment,Education time (E<sub>t</sub>),-0.06
+55,Infrastructure investment,Education time (E<sub>t</sub>),-0.06
+56,Infrastructure investment,Education time (E<sub>t</sub>),-0.059
+57,Infrastructure investment,Education time (E<sub>t</sub>),-0.059
+58,Infrastructure investment,Education time (E<sub>t</sub>),-0.059
+59,Infrastructure investment,Education time (E<sub>t</sub>),-0.058
+60,Infrastructure investment,Education time (E<sub>t</sub>),-0.058
+61,Infrastructure investment,Education time (E<sub>t</sub>),-0.058
+62,Infrastructure investment,Education time (E<sub>t</sub>),-0.057
+63,Infrastructure investment,Education time (E<sub>t</sub>),-0.057
+64,Infrastructure investment,Education time (E<sub>t</sub>),-0.056
+65,Infrastructure investment,Education time (E<sub>t</sub>),-0.055
+66,Infrastructure investment,Education time (E<sub>t</sub>),-0.055
+67,Infrastructure investment,Education time (E<sub>t</sub>),-0.054
+68,Infrastructure investment,Education time (E<sub>t</sub>),-0.054
+69,Infrastructure investment,Education time (E<sub>t</sub>),-0.053
+70,Infrastructure investment,Education time (E<sub>t</sub>),-0.052
+71,Infrastructure investment,Education time (E<sub>t</sub>),-0.052
+72,Infrastructure investment,Education time (E<sub>t</sub>),-0.051
+73,Infrastructure investment,Education time (E<sub>t</sub>),-0.05
+74,Infrastructure investment,Education time (E<sub>t</sub>),-0.05
+75,Infrastructure investment,Education time (E<sub>t</sub>),-0.049
+76,Infrastructure investment,Education time (E<sub>t</sub>),-0.048
+77,Infrastructure investment,Education time (E<sub>t</sub>),-0.048
+78,Infrastructure investment,Education time (E<sub>t</sub>),-0.047
+79,Infrastructure investment,Education time (E<sub>t</sub>),-0.046
+80,Infrastructure investment,Education time (E<sub>t</sub>),-0.046
+81,Infrastructure investment,Education time (E<sub>t</sub>),-0.045
+82,Infrastructure investment,Education time (E<sub>t</sub>),-0.044
+83,Infrastructure investment,Education time (E<sub>t</sub>),-0.044
+84,Infrastructure investment,Education time (E<sub>t</sub>),-0.043
+85,Infrastructure investment,Education time (E<sub>t</sub>),-0.042
+86,Infrastructure investment,Education time (E<sub>t</sub>),-0.042
+87,Infrastructure investment,Education time (E<sub>t</sub>),-0.041
+88,Infrastructure investment,Education time (E<sub>t</sub>),-0.04
+89,Infrastructure investment,Education time (E<sub>t</sub>),-0.039
+90,Infrastructure investment,Education time (E<sub>t</sub>),-0.039
+91,Infrastructure investment,Education time (E<sub>t</sub>),-0.038
+92,Infrastructure investment,Education time (E<sub>t</sub>),-0.037
+93,Infrastructure investment,Education time (E<sub>t</sub>),-0.037
+94,Infrastructure investment,Education time (E<sub>t</sub>),-0.036
+95,Infrastructure investment,Education time (E<sub>t</sub>),-0.035
+96,Infrastructure investment,Education time (E<sub>t</sub>),-0.035
+97,Infrastructure investment,Education time (E<sub>t</sub>),-0.034
+98,Infrastructure investment,Education time (E<sub>t</sub>),-0.034
+99,Infrastructure investment,Education time (E<sub>t</sub>),-0.033
+100,Infrastructure investment,Education time (E<sub>t</sub>),-0.032
+1,Human capital investment,Education time (E<sub>t</sub>),-4.711
+2,Human capital investment,Education time (E<sub>t</sub>),-1.537
+3,Human capital investment,Education time (E<sub>t</sub>),-1.707
+4,Human capital investment,Education time (E<sub>t</sub>),-1.569
+5,Human capital investment,Education time (E<sub>t</sub>),-1.387
+6,Human capital investment,Education time (E<sub>t</sub>),-1.211
+7,Human capital investment,Education time (E<sub>t</sub>),-1.047
+8,Human capital investment,Education time (E<sub>t</sub>),-0.897
+9,Human capital investment,Education time (E<sub>t</sub>),-0.759
+10,Human capital investment,Education time (E<sub>t</sub>),-0.633
+11,Human capital investment,Education time (E<sub>t</sub>),-0.519
+12,Human capital investment,Education time (E<sub>t</sub>),-0.414
+13,Human capital investment,Education time (E<sub>t</sub>),-0.319
+14,Human capital investment,Education time (E<sub>t</sub>),-0.232
+15,Human capital investment,Education time (E<sub>t</sub>),-0.154
+16,Human capital investment,Education time (E<sub>t</sub>),-0.083
+17,Human capital investment,Education time (E<sub>t</sub>),-0.019
+18,Human capital investment,Education time (E<sub>t</sub>),0.039
+19,Human capital investment,Education time (E<sub>t</sub>),0.091
+20,Human capital investment,Education time (E<sub>t</sub>),0.137
+21,Human capital investment,Education time (E<sub>t</sub>),0.178
+22,Human capital investment,Education time (E<sub>t</sub>),0.215
+23,Human capital investment,Education time (E<sub>t</sub>),0.247
+24,Human capital investment,Education time (E<sub>t</sub>),0.275
+25,Human capital investment,Education time (E<sub>t</sub>),0.299
+26,Human capital investment,Education time (E<sub>t</sub>),0.32
+27,Human capital investment,Education time (E<sub>t</sub>),0.338
+28,Human capital investment,Education time (E<sub>t</sub>),0.353
+29,Human capital investment,Education time (E<sub>t</sub>),0.365
+30,Human capital investment,Education time (E<sub>t</sub>),0.375
+31,Human capital investment,Education time (E<sub>t</sub>),0.382
+32,Human capital investment,Education time (E<sub>t</sub>),0.388
+33,Human capital investment,Education time (E<sub>t</sub>),0.391
+34,Human capital investment,Education time (E<sub>t</sub>),0.393
+35,Human capital investment,Education time (E<sub>t</sub>),0.393
+36,Human capital investment,Education time (E<sub>t</sub>),0.391
+37,Human capital investment,Education time (E<sub>t</sub>),0.388
+38,Human capital investment,Education time (E<sub>t</sub>),0.384
+39,Human capital investment,Education time (E<sub>t</sub>),0.379
+40,Human capital investment,Education time (E<sub>t</sub>),0.373
+41,Human capital investment,Education time (E<sub>t</sub>),0.365
+42,Human capital investment,Education time (E<sub>t</sub>),0.357
+43,Human capital investment,Education time (E<sub>t</sub>),0.348
+44,Human capital investment,Education time (E<sub>t</sub>),0.339
+45,Human capital investment,Education time (E<sub>t</sub>),0.329
+46,Human capital investment,Education time (E<sub>t</sub>),0.318
+47,Human capital investment,Education time (E<sub>t</sub>),0.307
+48,Human capital investment,Education time (E<sub>t</sub>),0.295
+49,Human capital investment,Education time (E<sub>t</sub>),0.283
+50,Human capital investment,Education time (E<sub>t</sub>),0.271
+51,Human capital investment,Education time (E<sub>t</sub>),0.258
+52,Human capital investment,Education time (E<sub>t</sub>),0.245
+53,Human capital investment,Education time (E<sub>t</sub>),0.232
+54,Human capital investment,Education time (E<sub>t</sub>),0.219
+55,Human capital investment,Education time (E<sub>t</sub>),0.206
+56,Human capital investment,Education time (E<sub>t</sub>),0.192
+57,Human capital investment,Education time (E<sub>t</sub>),0.179
+58,Human capital investment,Education time (E<sub>t</sub>),0.165
+59,Human capital investment,Education time (E<sub>t</sub>),0.152
+60,Human capital investment,Education time (E<sub>t</sub>),0.138
+61,Human capital investment,Education time (E<sub>t</sub>),0.125
+62,Human capital investment,Education time (E<sub>t</sub>),0.111
+63,Human capital investment,Education time (E<sub>t</sub>),0.098
+64,Human capital investment,Education time (E<sub>t</sub>),0.084
+65,Human capital investment,Education time (E<sub>t</sub>),0.071
+66,Human capital investment,Education time (E<sub>t</sub>),0.058
+67,Human capital investment,Education time (E<sub>t</sub>),0.045
+68,Human capital investment,Education time (E<sub>t</sub>),0.032
+69,Human capital investment,Education time (E<sub>t</sub>),0.019
+70,Human capital investment,Education time (E<sub>t</sub>),0.006
+71,Human capital investment,Education time (E<sub>t</sub>),-0.007
+72,Human capital investment,Education time (E<sub>t</sub>),-0.019
+73,Human capital investment,Education time (E<sub>t</sub>),-0.031
+74,Human capital investment,Education time (E<sub>t</sub>),-0.043
+75,Human capital investment,Education time (E<sub>t</sub>),-0.055
+76,Human capital investment,Education time (E<sub>t</sub>),-0.067
+77,Human capital investment,Education time (E<sub>t</sub>),-0.078
+78,Human capital investment,Education time (E<sub>t</sub>),-0.09
+79,Human capital investment,Education time (E<sub>t</sub>),-0.101
+80,Human capital investment,Education time (E<sub>t</sub>),-0.112
+81,Human capital investment,Education time (E<sub>t</sub>),-0.123
+82,Human capital investment,Education time (E<sub>t</sub>),-0.133
+83,Human capital investment,Education time (E<sub>t</sub>),-0.144
+84,Human capital investment,Education time (E<sub>t</sub>),-0.154
+85,Human capital investment,Education time (E<sub>t</sub>),-0.164
+86,Human capital investment,Education time (E<sub>t</sub>),-0.174
+87,Human capital investment,Education time (E<sub>t</sub>),-0.183
+88,Human capital investment,Education time (E<sub>t</sub>),-0.193
+89,Human capital investment,Education time (E<sub>t</sub>),-0.202
+90,Human capital investment,Education time (E<sub>t</sub>),-0.211
+91,Human capital investment,Education time (E<sub>t</sub>),-0.22
+92,Human capital investment,Education time (E<sub>t</sub>),-0.228
+93,Human capital investment,Education time (E<sub>t</sub>),-0.237
+94,Human capital investment,Education time (E<sub>t</sub>),-0.245
+95,Human capital investment,Education time (E<sub>t</sub>),-0.253
+96,Human capital investment,Education time (E<sub>t</sub>),-0.261
+97,Human capital investment,Education time (E<sub>t</sub>),-0.269
+98,Human capital investment,Education time (E<sub>t</sub>),-0.276
+99,Human capital investment,Education time (E<sub>t</sub>),-0.283
+100,Human capital investment,Education time (E<sub>t</sub>),-0.291
+1,R&D investment,Education time (E<sub>t</sub>),-1.777
+2,R&D investment,Education time (E<sub>t</sub>),0.58
+3,R&D investment,Education time (E<sub>t</sub>),0.346
+4,R&D investment,Education time (E<sub>t</sub>),0.325
+5,R&D investment,Education time (E<sub>t</sub>),0.323
+6,R&D investment,Education time (E<sub>t</sub>),0.312
+7,R&D investment,Education time (E<sub>t</sub>),0.288
+8,R&D investment,Education time (E<sub>t</sub>),0.256
+9,R&D investment,Education time (E<sub>t</sub>),0.217
+10,R&D investment,Education time (E<sub>t</sub>),0.175
+11,R&D investment,Education time (E<sub>t</sub>),0.13
+12,R&D investment,Education time (E<sub>t</sub>),0.085
+13,R&D investment,Education time (E<sub>t</sub>),0.04
+14,R&D investment,Education time (E<sub>t</sub>),-0.004
+15,R&D investment,Education time (E<sub>t</sub>),-0.046
+16,R&D investment,Education time (E<sub>t</sub>),-0.086
+17,R&D investment,Education time (E<sub>t</sub>),-0.124
+18,R&D investment,Education time (E<sub>t</sub>),-0.16
+19,R&D investment,Education time (E<sub>t</sub>),-0.194
+20,R&D investment,Education time (E<sub>t</sub>),-0.225
+21,R&D investment,Education time (E<sub>t</sub>),-0.254
+22,R&D investment,Education time (E<sub>t</sub>),-0.28
+23,R&D investment,Education time (E<sub>t</sub>),-0.305
+24,R&D investment,Education time (E<sub>t</sub>),-0.327
+25,R&D investment,Education time (E<sub>t</sub>),-0.348
+26,R&D investment,Education time (E<sub>t</sub>),-0.366
+27,R&D investment,Education time (E<sub>t</sub>),-0.383
+28,R&D investment,Education time (E<sub>t</sub>),-0.398
+29,R&D investment,Education time (E<sub>t</sub>),-0.412
+30,R&D investment,Education time (E<sub>t</sub>),-0.424
+31,R&D investment,Education time (E<sub>t</sub>),-0.435
+32,R&D investment,Education time (E<sub>t</sub>),-0.444
+33,R&D investment,Education time (E<sub>t</sub>),-0.453
+34,R&D investment,Education time (E<sub>t</sub>),-0.46
+35,R&D investment,Education time (E<sub>t</sub>),-0.467
+36,R&D investment,Education time (E<sub>t</sub>),-0.472
+37,R&D investment,Education time (E<sub>t</sub>),-0.477
+38,R&D investment,Education time (E<sub>t</sub>),-0.481
+39,R&D investment,Education time (E<sub>t</sub>),-0.484
+40,R&D investment,Education time (E<sub>t</sub>),-0.486
+41,R&D investment,Education time (E<sub>t</sub>),-0.488
+42,R&D investment,Education time (E<sub>t</sub>),-0.49
+43,R&D investment,Education time (E<sub>t</sub>),-0.491
+44,R&D investment,Education time (E<sub>t</sub>),-0.491
+45,R&D investment,Education time (E<sub>t</sub>),-0.491
+46,R&D investment,Education time (E<sub>t</sub>),-0.491
+47,R&D investment,Education time (E<sub>t</sub>),-0.49
+48,R&D investment,Education time (E<sub>t</sub>),-0.489
+49,R&D investment,Education time (E<sub>t</sub>),-0.488
+50,R&D investment,Education time (E<sub>t</sub>),-0.487
+51,R&D investment,Education time (E<sub>t</sub>),-0.485
+52,R&D investment,Education time (E<sub>t</sub>),-0.483
+53,R&D investment,Education time (E<sub>t</sub>),-0.481
+54,R&D investment,Education time (E<sub>t</sub>),-0.479
+55,R&D investment,Education time (E<sub>t</sub>),-0.476
+56,R&D investment,Education time (E<sub>t</sub>),-0.474
+57,R&D investment,Education time (E<sub>t</sub>),-0.471
+58,R&D investment,Education time (E<sub>t</sub>),-0.468
+59,R&D investment,Education time (E<sub>t</sub>),-0.466
+60,R&D investment,Education time (E<sub>t</sub>),-0.463
+61,R&D investment,Education time (E<sub>t</sub>),-0.46
+62,R&D investment,Education time (E<sub>t</sub>),-0.457
+63,R&D investment,Education time (E<sub>t</sub>),-0.454
+64,R&D investment,Education time (E<sub>t</sub>),-0.451
+65,R&D investment,Education time (E<sub>t</sub>),-0.448
+66,R&D investment,Education time (E<sub>t</sub>),-0.445
+67,R&D investment,Education time (E<sub>t</sub>),-0.441
+68,R&D investment,Education time (E<sub>t</sub>),-0.438
+69,R&D investment,Education time (E<sub>t</sub>),-0.435
+70,R&D investment,Education time (E<sub>t</sub>),-0.432
+71,R&D investment,Education time (E<sub>t</sub>),-0.429
+72,R&D investment,Education time (E<sub>t</sub>),-0.426
+73,R&D investment,Education time (E<sub>t</sub>),-0.423
+74,R&D investment,Education time (E<sub>t</sub>),-0.42
+75,R&D investment,Education time (E<sub>t</sub>),-0.417
+76,R&D investment,Education time (E<sub>t</sub>),-0.414
+77,R&D investment,Education time (E<sub>t</sub>),-0.411
+78,R&D investment,Education time (E<sub>t</sub>),-0.408
+79,R&D investment,Education time (E<sub>t</sub>),-0.405
+80,R&D investment,Education time (E<sub>t</sub>),-0.402
+81,R&D investment,Education time (E<sub>t</sub>),-0.399
+82,R&D investment,Education time (E<sub>t</sub>),-0.396
+83,R&D investment,Education time (E<sub>t</sub>),-0.394
+84,R&D investment,Education time (E<sub>t</sub>),-0.391
+85,R&D investment,Education time (E<sub>t</sub>),-0.388
+86,R&D investment,Education time (E<sub>t</sub>),-0.386
+87,R&D investment,Education time (E<sub>t</sub>),-0.383
+88,R&D investment,Education time (E<sub>t</sub>),-0.38
+89,R&D investment,Education time (E<sub>t</sub>),-0.378
+90,R&D investment,Education time (E<sub>t</sub>),-0.375
+91,R&D investment,Education time (E<sub>t</sub>),-0.373
+92,R&D investment,Education time (E<sub>t</sub>),-0.37
+93,R&D investment,Education time (E<sub>t</sub>),-0.368
+94,R&D investment,Education time (E<sub>t</sub>),-0.366
+95,R&D investment,Education time (E<sub>t</sub>),-0.363
+96,R&D investment,Education time (E<sub>t</sub>),-0.361
+97,R&D investment,Education time (E<sub>t</sub>),-0.359
+98,R&D investment,Education time (E<sub>t</sub>),-0.357
+99,R&D investment,Education time (E<sub>t</sub>),-0.355
+100,R&D investment,Education time (E<sub>t</sub>),-0.352
 1,Government consumption,Real marginal cost (mc<sub>t</sub>),0.71
 2,Government consumption,Real marginal cost (mc<sub>t</sub>),-0.135
 3,Government consumption,Real marginal cost (mc<sub>t</sub>),-0.025
