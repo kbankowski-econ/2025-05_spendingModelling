@@ -89,7 +89,7 @@ NCOLS = 4
 NROWS = 5
 
 # Block name printed vertically on the left of each row (top to bottom).
-BLOCKS = ["Demand", "Productive stocks", "Labor", "Prices & rates", "Fiscal"]
+BLOCKS = ["Demand", "Prod. stocks", "Labor", "Prices & rates", "Fiscal"]
 
 # Plot the 100 quarterly responses from impact through the 25-year horizon.
 # Keep annual horizon labels, placing them at the corresponding quarter.
