@@ -17,6 +17,7 @@ PNG/PDF/HTML/CSV into docs/2026-06_wp-imf/figures/. Requires pandas + plotly
 (with a Kaleido backend).
 """
 import argparse
+from math import log1p
 from pathlib import Path
 
 import pandas as pd
@@ -101,7 +102,7 @@ BLOCKS = ["Demand", "Supply", "Labor", "Nominal", "Fiscal"]
 PLOT_HORIZON_QUARTERS = 100
 IMPACT_QUARTER = 1
 X_TICK_HORIZONS = [1, 10, 25]
-X_TICKS = [4 * h for h in X_TICK_HORIZONS]
+X_TICKS = [log1p(4 * h) for h in X_TICK_HORIZONS]
 X_TICK_LABELS = [f"{h}y" for h in X_TICK_HORIZONS]
 OUTPUT_STEM = "simplifiedGcAE"
 TARGET_FONT_PT = 7   # axis ticks; a touch smaller given the dense grid
@@ -128,6 +129,7 @@ def load_data():
 def main(permanent=False):
     df = load_data()
     quarters = df["horizon_quarter"].values
+    horizon_positions = [log1p(quarter) for quarter in quarters]
     impact_values = df.set_index("horizon_quarter").loc[IMPACT_QUARTER]
     suffix = "_perm" if permanent else ""
     series = [(f"{model}{suffix}", label, color) for model, label, color in BASE_SERIES]
@@ -161,10 +163,15 @@ def main(permanent=False):
                 continue
             fig.add_trace(
                 go.Scatter(
-                    x=quarters, y=df[colname].values,
+                    x=horizon_positions, y=df[colname].values,
                     name=label, legendgroup=label,
                     line=dict(color=color, width=STYLE["line_width_standard"]),
                     showlegend=(idx == 0),   # one legend entry per model
+                    customdata=quarters,
+                    hovertemplate=(
+                        f"{label}<br>Quarter: %{{customdata}}"
+                        "<br>Response: %{y:.3f}<extra></extra>"
+                    ),
                 ),
                 row=row, col=col,
             )
@@ -174,7 +181,7 @@ def main(permanent=False):
                 continue
             fig.add_trace(
                 go.Scatter(
-                    x=[IMPACT_QUARTER], y=[impact_values[colname]],
+                    x=[log1p(IMPACT_QUARTER)], y=[impact_values[colname]],
                     name=label, legendgroup=label,
                     mode="markers",
                     marker=dict(
@@ -224,6 +231,7 @@ def main(permanent=False):
     axes = STYLE["axes"]
     fig.update_xaxes(
         tickvals=X_TICKS, ticktext=X_TICK_LABELS,
+        range=[0, log1p(PLOT_HORIZON_QUARTERS)],
         showgrid=False, linecolor=axes["linecolor"], linewidth=axes["linewidth"],
         ticks=axes["ticks"], tickfont=dict(size=font_px),
     )

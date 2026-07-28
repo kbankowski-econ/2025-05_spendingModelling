@@ -15,6 +15,7 @@ A 5x4 grid of deviations from steady state. Standalone: the only input
 is docs/csvFiles/figureNumbers.csv; it writes PNG/PDF/HTML/CSV into
 docs/2026-06_wp-imf/figures/. Requires pandas + plotly (with a Kaleido backend).
 """
+from math import log1p
 from pathlib import Path
 
 import pandas as pd
@@ -97,7 +98,7 @@ BLOCKS = ["Demand", "Supply", "Labor", "Nominal", "Fiscal"]
 PLOT_HORIZON_QUARTERS = 100
 IMPACT_QUARTER = 1
 X_TICK_HORIZONS = [1, 10, 25]
-X_TICKS = [4 * h for h in X_TICK_HORIZONS]
+X_TICKS = [log1p(4 * h) for h in X_TICK_HORIZONS]
 X_TICK_LABELS = [f"{h}y" for h in X_TICK_HORIZONS]
 OUTPUT_STEM = "standardShocksAE"
 
@@ -136,6 +137,7 @@ def load_data():
 def main():
     df = load_data()
     quarters = df["horizon_quarter"].values
+    horizon_positions = [log1p(quarter) for quarter in quarters]
     impact_values = df.set_index("horizon_quarter").loc[IMPACT_QUARTER]
 
     fig = make_subplots(
@@ -157,10 +159,15 @@ def main():
                 continue
             fig.add_trace(
                 go.Scatter(
-                    x=quarters, y=df[colname].values,
+                    x=horizon_positions, y=df[colname].values,
                     name=label, legendgroup=label,
                     line=dict(color=color, width=STYLE["line_width_standard"]),
                     showlegend=(idx == 0),   # one legend entry per shock
+                    customdata=quarters,
+                    hovertemplate=(
+                        f"{label}<br>Quarter: %{{customdata}}"
+                        "<br>Response: %{y:.3f}<extra></extra>"
+                    ),
                 ),
                 row=row, col=col,
             )
@@ -170,7 +177,7 @@ def main():
                 continue
             fig.add_trace(
                 go.Scatter(
-                    x=[IMPACT_QUARTER], y=[impact_values[colname]],
+                    x=[log1p(IMPACT_QUARTER)], y=[impact_values[colname]],
                     name=label, legendgroup=label,
                     mode="markers",
                     marker=dict(
@@ -220,6 +227,7 @@ def main():
     axes = STYLE["axes"]
     fig.update_xaxes(
         tickvals=X_TICKS, ticktext=X_TICK_LABELS,
+        range=[0, log1p(PLOT_HORIZON_QUARTERS)],
         showgrid=False, linecolor=axes["linecolor"], linewidth=axes["linewidth"],
         ticks=axes["ticks"], tickfont=dict(size=FONT_PX),
     )
