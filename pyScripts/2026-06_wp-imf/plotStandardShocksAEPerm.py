@@ -64,7 +64,7 @@ PANELS = [
     # Row 2 - productive asset stocks (percent deviation).
     ("A",         "Adopted technology (A<sub>t</sub>)"),
     ("Kg",        "Public infrastructure (K<sup>GI</sup><sub>t</sub>)"),
-    ("Kge",       "Public education/health<br>capital (K<sup>GE</sup><sub>t</sub>)"),
+    ("Kge",       "Educ./hlt capital (K<sup>GE</sup><sub>t</sub>)"),
     ("Kp",        "Private capital (K<sub>t</sub>)"),
     # Row 3 - labor and human-capital inputs (percent deviation).
     ("L",         "Labor supply (L<sub>t</sub>)"),
