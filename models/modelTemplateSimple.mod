@@ -10,6 +10,10 @@
 @#define SIMPLIFY_LEVEL = 0
 @#endif
 
+@#ifndef NO_INDEXATION
+@#define NO_INDEXATION = 0
+@#endif
+
 @#include "declare_all.macro"
 
 @#include "parameters_common.macro"
@@ -17,6 +21,12 @@
 @#include paramFile
 
 @#include effFile
+
+// Controlled price-setting counterfactual: retain the selected simplification
+// level and remove only the indexation of non-reset prices.
+@#if NO_INDEXATION
+chi = 0;
+@#endif
 
 % gammaa uses the set-specific trend growth rate, so it must come after it
 gammaa=g^((1-alpha)/(vartheta-1))-1;

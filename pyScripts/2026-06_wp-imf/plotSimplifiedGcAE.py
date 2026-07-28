@@ -3,10 +3,11 @@ Appendix figures: the government-consumption shock under progressive model
 simplification. The permanent version is the primary robustness exercise
 (fig:simplifiedGc); the default AR(1) version is its temporary counterpart.
 
-Same 5x4 block layout as plotStandardShocksAE, but the six lines are MODELS
-(not shocks): the full model, four step-by-step simplifications, and the
-from-scratch canonical NK benchmark, each hit by the same +1-percent-of-GDP
-government-consumption shock with no offsetting spending cut.
+Same 5x4 block layout as plotStandardShocksAE, but the seven lines are MODELS
+(not shocks): the full model, four step-by-step simplifications, a controlled
+no-indexation counterfactual, and the from-scratch canonical NK benchmark. Each
+is hit by the same +1-percent-of-GDP government-consumption shock with no
+offsetting spending cut.
 
 By default the script uses the AR(1) variants. With --permanent it uses the
 corresponding _perm models and writes simplifiedGcAEPerm.*.
@@ -43,13 +44,15 @@ STYLE = {
     "line_width_standard": 2.5,
 }
 
-# (model directory, legend label, colour) -- the six lines are the full model,
-# four progressive simplifications, and the canonical NK benchmark.
+# (model directory, legend label, colour) -- the seven lines are the full model,
+# four progressive simplifications, the no-indexation counterfactual, and the
+# canonical NK benchmark.
 BASE_SERIES = [
     ("Model_HumanCapital_exp_gc", "Full model",                 "#6A1B9A"),
     ("Model_Simple1_exp_gc",      "No R&D",                     "#1E88E5"),
     ("Model_Simple2_exp_gc",      "No R&D, no human capital",   "#00897B"),
     ("Model_Simple3_exp_gc",      "NK with capital",            "#E65100"),
+    ("Model_Simple3NoIndex_exp_gc","No indexation",              "#546E7A"),
     ("Model_Simple4_exp_gc",      "Textbook NK (no capital)",   "#C62828"),
     ("Model_NK_exp_gc",           "Canonical NK (from scratch)","#212121"),
 ]

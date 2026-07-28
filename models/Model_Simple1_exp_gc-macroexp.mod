@@ -159,6 +159,8 @@ varsigma=0.8;                       % adoption elasticity                       
 % AE efficiency gaps (2023 medians; INF re-estimated 2026-06)
 eGI_ss=0.359;
 eGE_ss=0.306;
+// Controlled price-setting counterfactual: retain the selected simplification
+// level and remove only the indexation of non-reset prices.
 % gammaa uses the set-specific trend growth rate, so it must come after it
 gammaa=g^((1-alpha)/(vartheta-1))-1;
 model;

@@ -399,6 +399,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.418
 99,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.418
 100,NK with capital,Output (Y<sup>d</sup><sub>t</sub>),0.418
+1,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.458
+2,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.33
+3,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.333
+4,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.336
+5,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.339
+6,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.342
+7,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.345
+8,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.348
+9,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.351
+10,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.353
+11,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.356
+12,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.358
+13,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.36
+14,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.363
+15,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.365
+16,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.367
+17,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.369
+18,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.371
+19,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.373
+20,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.374
+21,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.376
+22,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.378
+23,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.379
+24,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.381
+25,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.382
+26,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.384
+27,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.385
+28,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.386
+29,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.388
+30,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.389
+31,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.39
+32,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.391
+33,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.392
+34,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.393
+35,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.394
+36,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.395
+37,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.396
+38,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.397
+39,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.398
+40,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.399
+41,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.4
+42,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.4
+43,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.401
+44,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.402
+45,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.402
+46,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.403
+47,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.404
+48,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.404
+49,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.405
+50,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.406
+51,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.406
+52,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.407
+53,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.407
+54,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.408
+55,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.408
+56,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.409
+57,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.409
+58,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.409
+59,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.41
+60,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.41
+61,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.411
+62,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.411
+63,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.411
+64,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.412
+65,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.412
+66,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.412
+67,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.413
+68,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.413
+69,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.413
+70,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.413
+71,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.414
+72,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.414
+73,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.414
+74,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.414
+75,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.415
+76,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.415
+77,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.415
+78,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.415
+79,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.415
+80,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.416
+81,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.416
+82,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.416
+83,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.416
+84,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.416
+85,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.416
+86,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.417
+87,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.417
+88,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.417
+89,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.417
+90,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.417
+91,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.417
+92,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.417
+93,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.417
+94,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.418
+95,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.418
+96,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.418
+97,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.418
+98,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.418
+99,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.418
+100,No indexation,Output (Y<sup>d</sup><sub>t</sub>),0.418
 1,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.287
 2,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.287
 3,Textbook NK (no capital),Output (Y<sup>d</sup><sub>t</sub>),0.287
@@ -999,6 +1099,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Consumption (C<sub>t</sub>),-1.423
 99,NK with capital,Consumption (C<sub>t</sub>),-1.423
 100,NK with capital,Consumption (C<sub>t</sub>),-1.423
+1,No indexation,Consumption (C<sub>t</sub>),-1.665
+2,No indexation,Consumption (C<sub>t</sub>),-1.656
+3,No indexation,Consumption (C<sub>t</sub>),-1.647
+4,No indexation,Consumption (C<sub>t</sub>),-1.639
+5,No indexation,Consumption (C<sub>t</sub>),-1.631
+6,No indexation,Consumption (C<sub>t</sub>),-1.623
+7,No indexation,Consumption (C<sub>t</sub>),-1.615
+8,No indexation,Consumption (C<sub>t</sub>),-1.608
+9,No indexation,Consumption (C<sub>t</sub>),-1.601
+10,No indexation,Consumption (C<sub>t</sub>),-1.594
+11,No indexation,Consumption (C<sub>t</sub>),-1.587
+12,No indexation,Consumption (C<sub>t</sub>),-1.581
+13,No indexation,Consumption (C<sub>t</sub>),-1.575
+14,No indexation,Consumption (C<sub>t</sub>),-1.569
+15,No indexation,Consumption (C<sub>t</sub>),-1.564
+16,No indexation,Consumption (C<sub>t</sub>),-1.558
+17,No indexation,Consumption (C<sub>t</sub>),-1.553
+18,No indexation,Consumption (C<sub>t</sub>),-1.548
+19,No indexation,Consumption (C<sub>t</sub>),-1.543
+20,No indexation,Consumption (C<sub>t</sub>),-1.538
+21,No indexation,Consumption (C<sub>t</sub>),-1.534
+22,No indexation,Consumption (C<sub>t</sub>),-1.53
+23,No indexation,Consumption (C<sub>t</sub>),-1.525
+24,No indexation,Consumption (C<sub>t</sub>),-1.521
+25,No indexation,Consumption (C<sub>t</sub>),-1.518
+26,No indexation,Consumption (C<sub>t</sub>),-1.514
+27,No indexation,Consumption (C<sub>t</sub>),-1.51
+28,No indexation,Consumption (C<sub>t</sub>),-1.507
+29,No indexation,Consumption (C<sub>t</sub>),-1.503
+30,No indexation,Consumption (C<sub>t</sub>),-1.5
+31,No indexation,Consumption (C<sub>t</sub>),-1.497
+32,No indexation,Consumption (C<sub>t</sub>),-1.494
+33,No indexation,Consumption (C<sub>t</sub>),-1.491
+34,No indexation,Consumption (C<sub>t</sub>),-1.489
+35,No indexation,Consumption (C<sub>t</sub>),-1.486
+36,No indexation,Consumption (C<sub>t</sub>),-1.483
+37,No indexation,Consumption (C<sub>t</sub>),-1.481
+38,No indexation,Consumption (C<sub>t</sub>),-1.478
+39,No indexation,Consumption (C<sub>t</sub>),-1.476
+40,No indexation,Consumption (C<sub>t</sub>),-1.474
+41,No indexation,Consumption (C<sub>t</sub>),-1.472
+42,No indexation,Consumption (C<sub>t</sub>),-1.47
+43,No indexation,Consumption (C<sub>t</sub>),-1.468
+44,No indexation,Consumption (C<sub>t</sub>),-1.466
+45,No indexation,Consumption (C<sub>t</sub>),-1.464
+46,No indexation,Consumption (C<sub>t</sub>),-1.462
+47,No indexation,Consumption (C<sub>t</sub>),-1.461
+48,No indexation,Consumption (C<sub>t</sub>),-1.459
+49,No indexation,Consumption (C<sub>t</sub>),-1.457
+50,No indexation,Consumption (C<sub>t</sub>),-1.456
+51,No indexation,Consumption (C<sub>t</sub>),-1.454
+52,No indexation,Consumption (C<sub>t</sub>),-1.453
+53,No indexation,Consumption (C<sub>t</sub>),-1.452
+54,No indexation,Consumption (C<sub>t</sub>),-1.45
+55,No indexation,Consumption (C<sub>t</sub>),-1.449
+56,No indexation,Consumption (C<sub>t</sub>),-1.448
+57,No indexation,Consumption (C<sub>t</sub>),-1.447
+58,No indexation,Consumption (C<sub>t</sub>),-1.446
+59,No indexation,Consumption (C<sub>t</sub>),-1.445
+60,No indexation,Consumption (C<sub>t</sub>),-1.444
+61,No indexation,Consumption (C<sub>t</sub>),-1.443
+62,No indexation,Consumption (C<sub>t</sub>),-1.442
+63,No indexation,Consumption (C<sub>t</sub>),-1.441
+64,No indexation,Consumption (C<sub>t</sub>),-1.44
+65,No indexation,Consumption (C<sub>t</sub>),-1.439
+66,No indexation,Consumption (C<sub>t</sub>),-1.438
+67,No indexation,Consumption (C<sub>t</sub>),-1.437
+68,No indexation,Consumption (C<sub>t</sub>),-1.436
+69,No indexation,Consumption (C<sub>t</sub>),-1.436
+70,No indexation,Consumption (C<sub>t</sub>),-1.435
+71,No indexation,Consumption (C<sub>t</sub>),-1.434
+72,No indexation,Consumption (C<sub>t</sub>),-1.434
+73,No indexation,Consumption (C<sub>t</sub>),-1.433
+74,No indexation,Consumption (C<sub>t</sub>),-1.432
+75,No indexation,Consumption (C<sub>t</sub>),-1.432
+76,No indexation,Consumption (C<sub>t</sub>),-1.431
+77,No indexation,Consumption (C<sub>t</sub>),-1.431
+78,No indexation,Consumption (C<sub>t</sub>),-1.43
+79,No indexation,Consumption (C<sub>t</sub>),-1.43
+80,No indexation,Consumption (C<sub>t</sub>),-1.429
+81,No indexation,Consumption (C<sub>t</sub>),-1.429
+82,No indexation,Consumption (C<sub>t</sub>),-1.428
+83,No indexation,Consumption (C<sub>t</sub>),-1.428
+84,No indexation,Consumption (C<sub>t</sub>),-1.427
+85,No indexation,Consumption (C<sub>t</sub>),-1.427
+86,No indexation,Consumption (C<sub>t</sub>),-1.427
+87,No indexation,Consumption (C<sub>t</sub>),-1.426
+88,No indexation,Consumption (C<sub>t</sub>),-1.426
+89,No indexation,Consumption (C<sub>t</sub>),-1.425
+90,No indexation,Consumption (C<sub>t</sub>),-1.425
+91,No indexation,Consumption (C<sub>t</sub>),-1.425
+92,No indexation,Consumption (C<sub>t</sub>),-1.425
+93,No indexation,Consumption (C<sub>t</sub>),-1.424
+94,No indexation,Consumption (C<sub>t</sub>),-1.424
+95,No indexation,Consumption (C<sub>t</sub>),-1.424
+96,No indexation,Consumption (C<sub>t</sub>),-1.423
+97,No indexation,Consumption (C<sub>t</sub>),-1.423
+98,No indexation,Consumption (C<sub>t</sub>),-1.423
+99,No indexation,Consumption (C<sub>t</sub>),-1.423
+100,No indexation,Consumption (C<sub>t</sub>),-1.422
 1,Textbook NK (no capital),Consumption (C<sub>t</sub>),-1.504
 2,Textbook NK (no capital),Consumption (C<sub>t</sub>),-1.504
 3,Textbook NK (no capital),Consumption (C<sub>t</sub>),-1.504
@@ -1599,6 +1799,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Private investment (I<sub>t</sub>),0.423
 99,NK with capital,Private investment (I<sub>t</sub>),0.423
 100,NK with capital,Private investment (I<sub>t</sub>),0.423
+1,No indexation,Private investment (I<sub>t</sub>),1.138
+2,No indexation,Private investment (I<sub>t</sub>),0.525
+3,No indexation,Private investment (I<sub>t</sub>),0.522
+4,No indexation,Private investment (I<sub>t</sub>),0.518
+5,No indexation,Private investment (I<sub>t</sub>),0.515
+6,No indexation,Private investment (I<sub>t</sub>),0.511
+7,No indexation,Private investment (I<sub>t</sub>),0.508
+8,No indexation,Private investment (I<sub>t</sub>),0.505
+9,No indexation,Private investment (I<sub>t</sub>),0.502
+10,No indexation,Private investment (I<sub>t</sub>),0.499
+11,No indexation,Private investment (I<sub>t</sub>),0.496
+12,No indexation,Private investment (I<sub>t</sub>),0.493
+13,No indexation,Private investment (I<sub>t</sub>),0.491
+14,No indexation,Private investment (I<sub>t</sub>),0.488
+15,No indexation,Private investment (I<sub>t</sub>),0.486
+16,No indexation,Private investment (I<sub>t</sub>),0.483
+17,No indexation,Private investment (I<sub>t</sub>),0.481
+18,No indexation,Private investment (I<sub>t</sub>),0.479
+19,No indexation,Private investment (I<sub>t</sub>),0.477
+20,No indexation,Private investment (I<sub>t</sub>),0.475
+21,No indexation,Private investment (I<sub>t</sub>),0.473
+22,No indexation,Private investment (I<sub>t</sub>),0.471
+23,No indexation,Private investment (I<sub>t</sub>),0.469
+24,No indexation,Private investment (I<sub>t</sub>),0.467
+25,No indexation,Private investment (I<sub>t</sub>),0.465
+26,No indexation,Private investment (I<sub>t</sub>),0.464
+27,No indexation,Private investment (I<sub>t</sub>),0.462
+28,No indexation,Private investment (I<sub>t</sub>),0.461
+29,No indexation,Private investment (I<sub>t</sub>),0.459
+30,No indexation,Private investment (I<sub>t</sub>),0.458
+31,No indexation,Private investment (I<sub>t</sub>),0.456
+32,No indexation,Private investment (I<sub>t</sub>),0.455
+33,No indexation,Private investment (I<sub>t</sub>),0.454
+34,No indexation,Private investment (I<sub>t</sub>),0.452
+35,No indexation,Private investment (I<sub>t</sub>),0.451
+36,No indexation,Private investment (I<sub>t</sub>),0.45
+37,No indexation,Private investment (I<sub>t</sub>),0.449
+38,No indexation,Private investment (I<sub>t</sub>),0.448
+39,No indexation,Private investment (I<sub>t</sub>),0.447
+40,No indexation,Private investment (I<sub>t</sub>),0.446
+41,No indexation,Private investment (I<sub>t</sub>),0.445
+42,No indexation,Private investment (I<sub>t</sub>),0.444
+43,No indexation,Private investment (I<sub>t</sub>),0.443
+44,No indexation,Private investment (I<sub>t</sub>),0.442
+45,No indexation,Private investment (I<sub>t</sub>),0.442
+46,No indexation,Private investment (I<sub>t</sub>),0.441
+47,No indexation,Private investment (I<sub>t</sub>),0.44
+48,No indexation,Private investment (I<sub>t</sub>),0.439
+49,No indexation,Private investment (I<sub>t</sub>),0.439
+50,No indexation,Private investment (I<sub>t</sub>),0.438
+51,No indexation,Private investment (I<sub>t</sub>),0.437
+52,No indexation,Private investment (I<sub>t</sub>),0.437
+53,No indexation,Private investment (I<sub>t</sub>),0.436
+54,No indexation,Private investment (I<sub>t</sub>),0.436
+55,No indexation,Private investment (I<sub>t</sub>),0.435
+56,No indexation,Private investment (I<sub>t</sub>),0.435
+57,No indexation,Private investment (I<sub>t</sub>),0.434
+58,No indexation,Private investment (I<sub>t</sub>),0.433
+59,No indexation,Private investment (I<sub>t</sub>),0.433
+60,No indexation,Private investment (I<sub>t</sub>),0.433
+61,No indexation,Private investment (I<sub>t</sub>),0.432
+62,No indexation,Private investment (I<sub>t</sub>),0.432
+63,No indexation,Private investment (I<sub>t</sub>),0.431
+64,No indexation,Private investment (I<sub>t</sub>),0.431
+65,No indexation,Private investment (I<sub>t</sub>),0.43
+66,No indexation,Private investment (I<sub>t</sub>),0.43
+67,No indexation,Private investment (I<sub>t</sub>),0.43
+68,No indexation,Private investment (I<sub>t</sub>),0.429
+69,No indexation,Private investment (I<sub>t</sub>),0.429
+70,No indexation,Private investment (I<sub>t</sub>),0.429
+71,No indexation,Private investment (I<sub>t</sub>),0.428
+72,No indexation,Private investment (I<sub>t</sub>),0.428
+73,No indexation,Private investment (I<sub>t</sub>),0.428
+74,No indexation,Private investment (I<sub>t</sub>),0.428
+75,No indexation,Private investment (I<sub>t</sub>),0.427
+76,No indexation,Private investment (I<sub>t</sub>),0.427
+77,No indexation,Private investment (I<sub>t</sub>),0.427
+78,No indexation,Private investment (I<sub>t</sub>),0.427
+79,No indexation,Private investment (I<sub>t</sub>),0.426
+80,No indexation,Private investment (I<sub>t</sub>),0.426
+81,No indexation,Private investment (I<sub>t</sub>),0.426
+82,No indexation,Private investment (I<sub>t</sub>),0.426
+83,No indexation,Private investment (I<sub>t</sub>),0.426
+84,No indexation,Private investment (I<sub>t</sub>),0.425
+85,No indexation,Private investment (I<sub>t</sub>),0.425
+86,No indexation,Private investment (I<sub>t</sub>),0.425
+87,No indexation,Private investment (I<sub>t</sub>),0.425
+88,No indexation,Private investment (I<sub>t</sub>),0.425
+89,No indexation,Private investment (I<sub>t</sub>),0.425
+90,No indexation,Private investment (I<sub>t</sub>),0.424
+91,No indexation,Private investment (I<sub>t</sub>),0.424
+92,No indexation,Private investment (I<sub>t</sub>),0.424
+93,No indexation,Private investment (I<sub>t</sub>),0.424
+94,No indexation,Private investment (I<sub>t</sub>),0.424
+95,No indexation,Private investment (I<sub>t</sub>),0.424
+96,No indexation,Private investment (I<sub>t</sub>),0.424
+97,No indexation,Private investment (I<sub>t</sub>),0.423
+98,No indexation,Private investment (I<sub>t</sub>),0.423
+99,No indexation,Private investment (I<sub>t</sub>),0.423
+100,No indexation,Private investment (I<sub>t</sub>),0.423
 1,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
 2,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
 3,Textbook NK (no capital),Private investment (I<sub>t</sub>),0.0
@@ -2099,6 +2399,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Government spending (G<sub>t</sub>),4.338
 99,NK with capital,Government spending (G<sub>t</sub>),4.338
 100,NK with capital,Government spending (G<sub>t</sub>),4.338
+1,No indexation,Government spending (G<sub>t</sub>),4.338
+2,No indexation,Government spending (G<sub>t</sub>),4.338
+3,No indexation,Government spending (G<sub>t</sub>),4.338
+4,No indexation,Government spending (G<sub>t</sub>),4.338
+5,No indexation,Government spending (G<sub>t</sub>),4.338
+6,No indexation,Government spending (G<sub>t</sub>),4.338
+7,No indexation,Government spending (G<sub>t</sub>),4.338
+8,No indexation,Government spending (G<sub>t</sub>),4.338
+9,No indexation,Government spending (G<sub>t</sub>),4.338
+10,No indexation,Government spending (G<sub>t</sub>),4.338
+11,No indexation,Government spending (G<sub>t</sub>),4.338
+12,No indexation,Government spending (G<sub>t</sub>),4.338
+13,No indexation,Government spending (G<sub>t</sub>),4.338
+14,No indexation,Government spending (G<sub>t</sub>),4.338
+15,No indexation,Government spending (G<sub>t</sub>),4.338
+16,No indexation,Government spending (G<sub>t</sub>),4.338
+17,No indexation,Government spending (G<sub>t</sub>),4.338
+18,No indexation,Government spending (G<sub>t</sub>),4.338
+19,No indexation,Government spending (G<sub>t</sub>),4.338
+20,No indexation,Government spending (G<sub>t</sub>),4.338
+21,No indexation,Government spending (G<sub>t</sub>),4.338
+22,No indexation,Government spending (G<sub>t</sub>),4.338
+23,No indexation,Government spending (G<sub>t</sub>),4.338
+24,No indexation,Government spending (G<sub>t</sub>),4.338
+25,No indexation,Government spending (G<sub>t</sub>),4.338
+26,No indexation,Government spending (G<sub>t</sub>),4.338
+27,No indexation,Government spending (G<sub>t</sub>),4.338
+28,No indexation,Government spending (G<sub>t</sub>),4.338
+29,No indexation,Government spending (G<sub>t</sub>),4.338
+30,No indexation,Government spending (G<sub>t</sub>),4.338
+31,No indexation,Government spending (G<sub>t</sub>),4.338
+32,No indexation,Government spending (G<sub>t</sub>),4.338
+33,No indexation,Government spending (G<sub>t</sub>),4.338
+34,No indexation,Government spending (G<sub>t</sub>),4.338
+35,No indexation,Government spending (G<sub>t</sub>),4.338
+36,No indexation,Government spending (G<sub>t</sub>),4.338
+37,No indexation,Government spending (G<sub>t</sub>),4.338
+38,No indexation,Government spending (G<sub>t</sub>),4.338
+39,No indexation,Government spending (G<sub>t</sub>),4.338
+40,No indexation,Government spending (G<sub>t</sub>),4.338
+41,No indexation,Government spending (G<sub>t</sub>),4.338
+42,No indexation,Government spending (G<sub>t</sub>),4.338
+43,No indexation,Government spending (G<sub>t</sub>),4.338
+44,No indexation,Government spending (G<sub>t</sub>),4.338
+45,No indexation,Government spending (G<sub>t</sub>),4.338
+46,No indexation,Government spending (G<sub>t</sub>),4.338
+47,No indexation,Government spending (G<sub>t</sub>),4.338
+48,No indexation,Government spending (G<sub>t</sub>),4.338
+49,No indexation,Government spending (G<sub>t</sub>),4.338
+50,No indexation,Government spending (G<sub>t</sub>),4.338
+51,No indexation,Government spending (G<sub>t</sub>),4.338
+52,No indexation,Government spending (G<sub>t</sub>),4.338
+53,No indexation,Government spending (G<sub>t</sub>),4.338
+54,No indexation,Government spending (G<sub>t</sub>),4.338
+55,No indexation,Government spending (G<sub>t</sub>),4.338
+56,No indexation,Government spending (G<sub>t</sub>),4.338
+57,No indexation,Government spending (G<sub>t</sub>),4.338
+58,No indexation,Government spending (G<sub>t</sub>),4.338
+59,No indexation,Government spending (G<sub>t</sub>),4.338
+60,No indexation,Government spending (G<sub>t</sub>),4.338
+61,No indexation,Government spending (G<sub>t</sub>),4.338
+62,No indexation,Government spending (G<sub>t</sub>),4.338
+63,No indexation,Government spending (G<sub>t</sub>),4.338
+64,No indexation,Government spending (G<sub>t</sub>),4.338
+65,No indexation,Government spending (G<sub>t</sub>),4.338
+66,No indexation,Government spending (G<sub>t</sub>),4.338
+67,No indexation,Government spending (G<sub>t</sub>),4.338
+68,No indexation,Government spending (G<sub>t</sub>),4.338
+69,No indexation,Government spending (G<sub>t</sub>),4.338
+70,No indexation,Government spending (G<sub>t</sub>),4.338
+71,No indexation,Government spending (G<sub>t</sub>),4.338
+72,No indexation,Government spending (G<sub>t</sub>),4.338
+73,No indexation,Government spending (G<sub>t</sub>),4.338
+74,No indexation,Government spending (G<sub>t</sub>),4.338
+75,No indexation,Government spending (G<sub>t</sub>),4.338
+76,No indexation,Government spending (G<sub>t</sub>),4.338
+77,No indexation,Government spending (G<sub>t</sub>),4.338
+78,No indexation,Government spending (G<sub>t</sub>),4.338
+79,No indexation,Government spending (G<sub>t</sub>),4.338
+80,No indexation,Government spending (G<sub>t</sub>),4.338
+81,No indexation,Government spending (G<sub>t</sub>),4.338
+82,No indexation,Government spending (G<sub>t</sub>),4.338
+83,No indexation,Government spending (G<sub>t</sub>),4.338
+84,No indexation,Government spending (G<sub>t</sub>),4.338
+85,No indexation,Government spending (G<sub>t</sub>),4.338
+86,No indexation,Government spending (G<sub>t</sub>),4.338
+87,No indexation,Government spending (G<sub>t</sub>),4.338
+88,No indexation,Government spending (G<sub>t</sub>),4.338
+89,No indexation,Government spending (G<sub>t</sub>),4.338
+90,No indexation,Government spending (G<sub>t</sub>),4.338
+91,No indexation,Government spending (G<sub>t</sub>),4.338
+92,No indexation,Government spending (G<sub>t</sub>),4.338
+93,No indexation,Government spending (G<sub>t</sub>),4.338
+94,No indexation,Government spending (G<sub>t</sub>),4.338
+95,No indexation,Government spending (G<sub>t</sub>),4.338
+96,No indexation,Government spending (G<sub>t</sub>),4.338
+97,No indexation,Government spending (G<sub>t</sub>),4.338
+98,No indexation,Government spending (G<sub>t</sub>),4.338
+99,No indexation,Government spending (G<sub>t</sub>),4.338
+100,No indexation,Government spending (G<sub>t</sub>),4.338
 1,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
 2,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
 3,Textbook NK (no capital),Government spending (G<sub>t</sub>),4.338
@@ -2599,6 +2999,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Adopted technology (A<sub>t</sub>),0.0
 99,NK with capital,Adopted technology (A<sub>t</sub>),0.0
 100,NK with capital,Adopted technology (A<sub>t</sub>),0.0
+1,No indexation,Adopted technology (A<sub>t</sub>),0.0
+2,No indexation,Adopted technology (A<sub>t</sub>),0.0
+3,No indexation,Adopted technology (A<sub>t</sub>),0.0
+4,No indexation,Adopted technology (A<sub>t</sub>),0.0
+5,No indexation,Adopted technology (A<sub>t</sub>),0.0
+6,No indexation,Adopted technology (A<sub>t</sub>),0.0
+7,No indexation,Adopted technology (A<sub>t</sub>),0.0
+8,No indexation,Adopted technology (A<sub>t</sub>),0.0
+9,No indexation,Adopted technology (A<sub>t</sub>),0.0
+10,No indexation,Adopted technology (A<sub>t</sub>),0.0
+11,No indexation,Adopted technology (A<sub>t</sub>),0.0
+12,No indexation,Adopted technology (A<sub>t</sub>),0.0
+13,No indexation,Adopted technology (A<sub>t</sub>),0.0
+14,No indexation,Adopted technology (A<sub>t</sub>),0.0
+15,No indexation,Adopted technology (A<sub>t</sub>),0.0
+16,No indexation,Adopted technology (A<sub>t</sub>),0.0
+17,No indexation,Adopted technology (A<sub>t</sub>),0.0
+18,No indexation,Adopted technology (A<sub>t</sub>),0.0
+19,No indexation,Adopted technology (A<sub>t</sub>),0.0
+20,No indexation,Adopted technology (A<sub>t</sub>),0.0
+21,No indexation,Adopted technology (A<sub>t</sub>),0.0
+22,No indexation,Adopted technology (A<sub>t</sub>),0.0
+23,No indexation,Adopted technology (A<sub>t</sub>),0.0
+24,No indexation,Adopted technology (A<sub>t</sub>),0.0
+25,No indexation,Adopted technology (A<sub>t</sub>),0.0
+26,No indexation,Adopted technology (A<sub>t</sub>),0.0
+27,No indexation,Adopted technology (A<sub>t</sub>),0.0
+28,No indexation,Adopted technology (A<sub>t</sub>),0.0
+29,No indexation,Adopted technology (A<sub>t</sub>),0.0
+30,No indexation,Adopted technology (A<sub>t</sub>),0.0
+31,No indexation,Adopted technology (A<sub>t</sub>),0.0
+32,No indexation,Adopted technology (A<sub>t</sub>),0.0
+33,No indexation,Adopted technology (A<sub>t</sub>),0.0
+34,No indexation,Adopted technology (A<sub>t</sub>),0.0
+35,No indexation,Adopted technology (A<sub>t</sub>),0.0
+36,No indexation,Adopted technology (A<sub>t</sub>),0.0
+37,No indexation,Adopted technology (A<sub>t</sub>),0.0
+38,No indexation,Adopted technology (A<sub>t</sub>),0.0
+39,No indexation,Adopted technology (A<sub>t</sub>),0.0
+40,No indexation,Adopted technology (A<sub>t</sub>),0.0
+41,No indexation,Adopted technology (A<sub>t</sub>),0.0
+42,No indexation,Adopted technology (A<sub>t</sub>),0.0
+43,No indexation,Adopted technology (A<sub>t</sub>),0.0
+44,No indexation,Adopted technology (A<sub>t</sub>),0.0
+45,No indexation,Adopted technology (A<sub>t</sub>),0.0
+46,No indexation,Adopted technology (A<sub>t</sub>),0.0
+47,No indexation,Adopted technology (A<sub>t</sub>),0.0
+48,No indexation,Adopted technology (A<sub>t</sub>),0.0
+49,No indexation,Adopted technology (A<sub>t</sub>),0.0
+50,No indexation,Adopted technology (A<sub>t</sub>),0.0
+51,No indexation,Adopted technology (A<sub>t</sub>),0.0
+52,No indexation,Adopted technology (A<sub>t</sub>),0.0
+53,No indexation,Adopted technology (A<sub>t</sub>),0.0
+54,No indexation,Adopted technology (A<sub>t</sub>),0.0
+55,No indexation,Adopted technology (A<sub>t</sub>),0.0
+56,No indexation,Adopted technology (A<sub>t</sub>),0.0
+57,No indexation,Adopted technology (A<sub>t</sub>),0.0
+58,No indexation,Adopted technology (A<sub>t</sub>),0.0
+59,No indexation,Adopted technology (A<sub>t</sub>),0.0
+60,No indexation,Adopted technology (A<sub>t</sub>),0.0
+61,No indexation,Adopted technology (A<sub>t</sub>),0.0
+62,No indexation,Adopted technology (A<sub>t</sub>),0.0
+63,No indexation,Adopted technology (A<sub>t</sub>),0.0
+64,No indexation,Adopted technology (A<sub>t</sub>),0.0
+65,No indexation,Adopted technology (A<sub>t</sub>),0.0
+66,No indexation,Adopted technology (A<sub>t</sub>),0.0
+67,No indexation,Adopted technology (A<sub>t</sub>),0.0
+68,No indexation,Adopted technology (A<sub>t</sub>),0.0
+69,No indexation,Adopted technology (A<sub>t</sub>),0.0
+70,No indexation,Adopted technology (A<sub>t</sub>),0.0
+71,No indexation,Adopted technology (A<sub>t</sub>),0.0
+72,No indexation,Adopted technology (A<sub>t</sub>),0.0
+73,No indexation,Adopted technology (A<sub>t</sub>),0.0
+74,No indexation,Adopted technology (A<sub>t</sub>),0.0
+75,No indexation,Adopted technology (A<sub>t</sub>),0.0
+76,No indexation,Adopted technology (A<sub>t</sub>),0.0
+77,No indexation,Adopted technology (A<sub>t</sub>),0.0
+78,No indexation,Adopted technology (A<sub>t</sub>),0.0
+79,No indexation,Adopted technology (A<sub>t</sub>),0.0
+80,No indexation,Adopted technology (A<sub>t</sub>),0.0
+81,No indexation,Adopted technology (A<sub>t</sub>),0.0
+82,No indexation,Adopted technology (A<sub>t</sub>),0.0
+83,No indexation,Adopted technology (A<sub>t</sub>),0.0
+84,No indexation,Adopted technology (A<sub>t</sub>),0.0
+85,No indexation,Adopted technology (A<sub>t</sub>),0.0
+86,No indexation,Adopted technology (A<sub>t</sub>),0.0
+87,No indexation,Adopted technology (A<sub>t</sub>),0.0
+88,No indexation,Adopted technology (A<sub>t</sub>),0.0
+89,No indexation,Adopted technology (A<sub>t</sub>),0.0
+90,No indexation,Adopted technology (A<sub>t</sub>),0.0
+91,No indexation,Adopted technology (A<sub>t</sub>),0.0
+92,No indexation,Adopted technology (A<sub>t</sub>),0.0
+93,No indexation,Adopted technology (A<sub>t</sub>),0.0
+94,No indexation,Adopted technology (A<sub>t</sub>),0.0
+95,No indexation,Adopted technology (A<sub>t</sub>),0.0
+96,No indexation,Adopted technology (A<sub>t</sub>),0.0
+97,No indexation,Adopted technology (A<sub>t</sub>),0.0
+98,No indexation,Adopted technology (A<sub>t</sub>),0.0
+99,No indexation,Adopted technology (A<sub>t</sub>),0.0
+100,No indexation,Adopted technology (A<sub>t</sub>),0.0
 1,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
 2,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
 3,Textbook NK (no capital),Adopted technology (A<sub>t</sub>),0.0
@@ -3099,6 +3599,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 99,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 100,NK with capital,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+1,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+2,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+3,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+4,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+5,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+6,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+7,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+8,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+9,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+10,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+11,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+12,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+13,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+14,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+15,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+16,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+17,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+18,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+19,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+20,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+21,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+22,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+23,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+24,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+25,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+26,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+27,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+28,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+29,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+30,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+31,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+32,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+33,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+34,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+35,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+36,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+37,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+38,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+39,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+40,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+41,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+42,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+43,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+44,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+45,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+46,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+47,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+48,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+49,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+50,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+51,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+52,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+53,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+54,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+55,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+56,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+57,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+58,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+59,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+60,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+61,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+62,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+63,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+64,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+65,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+66,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+67,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+68,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+69,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+70,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+71,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+72,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+73,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+74,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+75,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+76,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+77,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+78,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+79,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+80,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+81,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+82,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+83,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+84,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+85,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+86,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+87,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+88,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+89,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+90,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+91,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+92,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+93,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+94,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+95,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+96,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+97,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+98,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+99,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
+100,No indexation,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 1,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 2,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 3,Textbook NK (no capital),Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
@@ -3599,6 +4199,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Private capital (K<sub>t</sub>),0.409
 99,NK with capital,Private capital (K<sub>t</sub>),0.41
 100,NK with capital,Private capital (K<sub>t</sub>),0.41
+1,No indexation,Private capital (K<sub>t</sub>),0.033
+2,No indexation,Private capital (K<sub>t</sub>),0.047
+3,No indexation,Private capital (K<sub>t</sub>),0.061
+4,No indexation,Private capital (K<sub>t</sub>),0.074
+5,No indexation,Private capital (K<sub>t</sub>),0.087
+6,No indexation,Private capital (K<sub>t</sub>),0.099
+7,No indexation,Private capital (K<sub>t</sub>),0.111
+8,No indexation,Private capital (K<sub>t</sub>),0.122
+9,No indexation,Private capital (K<sub>t</sub>),0.133
+10,No indexation,Private capital (K<sub>t</sub>),0.144
+11,No indexation,Private capital (K<sub>t</sub>),0.154
+12,No indexation,Private capital (K<sub>t</sub>),0.164
+13,No indexation,Private capital (K<sub>t</sub>),0.173
+14,No indexation,Private capital (K<sub>t</sub>),0.182
+15,No indexation,Private capital (K<sub>t</sub>),0.191
+16,No indexation,Private capital (K<sub>t</sub>),0.199
+17,No indexation,Private capital (K<sub>t</sub>),0.208
+18,No indexation,Private capital (K<sub>t</sub>),0.215
+19,No indexation,Private capital (K<sub>t</sub>),0.223
+20,No indexation,Private capital (K<sub>t</sub>),0.23
+21,No indexation,Private capital (K<sub>t</sub>),0.237
+22,No indexation,Private capital (K<sub>t</sub>),0.244
+23,No indexation,Private capital (K<sub>t</sub>),0.25
+24,No indexation,Private capital (K<sub>t</sub>),0.257
+25,No indexation,Private capital (K<sub>t</sub>),0.263
+26,No indexation,Private capital (K<sub>t</sub>),0.269
+27,No indexation,Private capital (K<sub>t</sub>),0.274
+28,No indexation,Private capital (K<sub>t</sub>),0.28
+29,No indexation,Private capital (K<sub>t</sub>),0.285
+30,No indexation,Private capital (K<sub>t</sub>),0.29
+31,No indexation,Private capital (K<sub>t</sub>),0.295
+32,No indexation,Private capital (K<sub>t</sub>),0.299
+33,No indexation,Private capital (K<sub>t</sub>),0.304
+34,No indexation,Private capital (K<sub>t</sub>),0.308
+35,No indexation,Private capital (K<sub>t</sub>),0.312
+36,No indexation,Private capital (K<sub>t</sub>),0.316
+37,No indexation,Private capital (K<sub>t</sub>),0.32
+38,No indexation,Private capital (K<sub>t</sub>),0.324
+39,No indexation,Private capital (K<sub>t</sub>),0.327
+40,No indexation,Private capital (K<sub>t</sub>),0.331
+41,No indexation,Private capital (K<sub>t</sub>),0.334
+42,No indexation,Private capital (K<sub>t</sub>),0.337
+43,No indexation,Private capital (K<sub>t</sub>),0.34
+44,No indexation,Private capital (K<sub>t</sub>),0.343
+45,No indexation,Private capital (K<sub>t</sub>),0.346
+46,No indexation,Private capital (K<sub>t</sub>),0.349
+47,No indexation,Private capital (K<sub>t</sub>),0.351
+48,No indexation,Private capital (K<sub>t</sub>),0.354
+49,No indexation,Private capital (K<sub>t</sub>),0.356
+50,No indexation,Private capital (K<sub>t</sub>),0.359
+51,No indexation,Private capital (K<sub>t</sub>),0.361
+52,No indexation,Private capital (K<sub>t</sub>),0.363
+53,No indexation,Private capital (K<sub>t</sub>),0.365
+54,No indexation,Private capital (K<sub>t</sub>),0.367
+55,No indexation,Private capital (K<sub>t</sub>),0.369
+56,No indexation,Private capital (K<sub>t</sub>),0.371
+57,No indexation,Private capital (K<sub>t</sub>),0.373
+58,No indexation,Private capital (K<sub>t</sub>),0.375
+59,No indexation,Private capital (K<sub>t</sub>),0.376
+60,No indexation,Private capital (K<sub>t</sub>),0.378
+61,No indexation,Private capital (K<sub>t</sub>),0.38
+62,No indexation,Private capital (K<sub>t</sub>),0.381
+63,No indexation,Private capital (K<sub>t</sub>),0.383
+64,No indexation,Private capital (K<sub>t</sub>),0.384
+65,No indexation,Private capital (K<sub>t</sub>),0.385
+66,No indexation,Private capital (K<sub>t</sub>),0.387
+67,No indexation,Private capital (K<sub>t</sub>),0.388
+68,No indexation,Private capital (K<sub>t</sub>),0.389
+69,No indexation,Private capital (K<sub>t</sub>),0.39
+70,No indexation,Private capital (K<sub>t</sub>),0.391
+71,No indexation,Private capital (K<sub>t</sub>),0.392
+72,No indexation,Private capital (K<sub>t</sub>),0.393
+73,No indexation,Private capital (K<sub>t</sub>),0.394
+74,No indexation,Private capital (K<sub>t</sub>),0.395
+75,No indexation,Private capital (K<sub>t</sub>),0.396
+76,No indexation,Private capital (K<sub>t</sub>),0.397
+77,No indexation,Private capital (K<sub>t</sub>),0.398
+78,No indexation,Private capital (K<sub>t</sub>),0.399
+79,No indexation,Private capital (K<sub>t</sub>),0.4
+80,No indexation,Private capital (K<sub>t</sub>),0.4
+81,No indexation,Private capital (K<sub>t</sub>),0.401
+82,No indexation,Private capital (K<sub>t</sub>),0.402
+83,No indexation,Private capital (K<sub>t</sub>),0.403
+84,No indexation,Private capital (K<sub>t</sub>),0.403
+85,No indexation,Private capital (K<sub>t</sub>),0.404
+86,No indexation,Private capital (K<sub>t</sub>),0.404
+87,No indexation,Private capital (K<sub>t</sub>),0.405
+88,No indexation,Private capital (K<sub>t</sub>),0.406
+89,No indexation,Private capital (K<sub>t</sub>),0.406
+90,No indexation,Private capital (K<sub>t</sub>),0.407
+91,No indexation,Private capital (K<sub>t</sub>),0.407
+92,No indexation,Private capital (K<sub>t</sub>),0.408
+93,No indexation,Private capital (K<sub>t</sub>),0.408
+94,No indexation,Private capital (K<sub>t</sub>),0.409
+95,No indexation,Private capital (K<sub>t</sub>),0.409
+96,No indexation,Private capital (K<sub>t</sub>),0.409
+97,No indexation,Private capital (K<sub>t</sub>),0.41
+98,No indexation,Private capital (K<sub>t</sub>),0.41
+99,No indexation,Private capital (K<sub>t</sub>),0.411
+100,No indexation,Private capital (K<sub>t</sub>),0.411
 1,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
 2,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
 3,Textbook NK (no capital),Private capital (K<sub>t</sub>),0.0
@@ -4099,6 +4799,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Effective labor (N<sub>t</sub>),0.421
 99,NK with capital,Effective labor (N<sub>t</sub>),0.421
 100,NK with capital,Effective labor (N<sub>t</sub>),0.421
+1,No indexation,Effective labor (N<sub>t</sub>),0.656
+2,No indexation,Effective labor (N<sub>t</sub>),0.458
+3,No indexation,Effective labor (N<sub>t</sub>),0.456
+4,No indexation,Effective labor (N<sub>t</sub>),0.455
+5,No indexation,Effective labor (N<sub>t</sub>),0.454
+6,No indexation,Effective labor (N<sub>t</sub>),0.453
+7,No indexation,Effective labor (N<sub>t</sub>),0.451
+8,No indexation,Effective labor (N<sub>t</sub>),0.45
+9,No indexation,Effective labor (N<sub>t</sub>),0.449
+10,No indexation,Effective labor (N<sub>t</sub>),0.448
+11,No indexation,Effective labor (N<sub>t</sub>),0.447
+12,No indexation,Effective labor (N<sub>t</sub>),0.446
+13,No indexation,Effective labor (N<sub>t</sub>),0.445
+14,No indexation,Effective labor (N<sub>t</sub>),0.444
+15,No indexation,Effective labor (N<sub>t</sub>),0.443
+16,No indexation,Effective labor (N<sub>t</sub>),0.442
+17,No indexation,Effective labor (N<sub>t</sub>),0.442
+18,No indexation,Effective labor (N<sub>t</sub>),0.441
+19,No indexation,Effective labor (N<sub>t</sub>),0.44
+20,No indexation,Effective labor (N<sub>t</sub>),0.439
+21,No indexation,Effective labor (N<sub>t</sub>),0.439
+22,No indexation,Effective labor (N<sub>t</sub>),0.438
+23,No indexation,Effective labor (N<sub>t</sub>),0.437
+24,No indexation,Effective labor (N<sub>t</sub>),0.437
+25,No indexation,Effective labor (N<sub>t</sub>),0.436
+26,No indexation,Effective labor (N<sub>t</sub>),0.436
+27,No indexation,Effective labor (N<sub>t</sub>),0.435
+28,No indexation,Effective labor (N<sub>t</sub>),0.434
+29,No indexation,Effective labor (N<sub>t</sub>),0.434
+30,No indexation,Effective labor (N<sub>t</sub>),0.433
+31,No indexation,Effective labor (N<sub>t</sub>),0.433
+32,No indexation,Effective labor (N<sub>t</sub>),0.433
+33,No indexation,Effective labor (N<sub>t</sub>),0.432
+34,No indexation,Effective labor (N<sub>t</sub>),0.432
+35,No indexation,Effective labor (N<sub>t</sub>),0.431
+36,No indexation,Effective labor (N<sub>t</sub>),0.431
+37,No indexation,Effective labor (N<sub>t</sub>),0.43
+38,No indexation,Effective labor (N<sub>t</sub>),0.43
+39,No indexation,Effective labor (N<sub>t</sub>),0.43
+40,No indexation,Effective labor (N<sub>t</sub>),0.429
+41,No indexation,Effective labor (N<sub>t</sub>),0.429
+42,No indexation,Effective labor (N<sub>t</sub>),0.429
+43,No indexation,Effective labor (N<sub>t</sub>),0.428
+44,No indexation,Effective labor (N<sub>t</sub>),0.428
+45,No indexation,Effective labor (N<sub>t</sub>),0.428
+46,No indexation,Effective labor (N<sub>t</sub>),0.428
+47,No indexation,Effective labor (N<sub>t</sub>),0.427
+48,No indexation,Effective labor (N<sub>t</sub>),0.427
+49,No indexation,Effective labor (N<sub>t</sub>),0.427
+50,No indexation,Effective labor (N<sub>t</sub>),0.427
+51,No indexation,Effective labor (N<sub>t</sub>),0.426
+52,No indexation,Effective labor (N<sub>t</sub>),0.426
+53,No indexation,Effective labor (N<sub>t</sub>),0.426
+54,No indexation,Effective labor (N<sub>t</sub>),0.426
+55,No indexation,Effective labor (N<sub>t</sub>),0.426
+56,No indexation,Effective labor (N<sub>t</sub>),0.425
+57,No indexation,Effective labor (N<sub>t</sub>),0.425
+58,No indexation,Effective labor (N<sub>t</sub>),0.425
+59,No indexation,Effective labor (N<sub>t</sub>),0.425
+60,No indexation,Effective labor (N<sub>t</sub>),0.425
+61,No indexation,Effective labor (N<sub>t</sub>),0.425
+62,No indexation,Effective labor (N<sub>t</sub>),0.424
+63,No indexation,Effective labor (N<sub>t</sub>),0.424
+64,No indexation,Effective labor (N<sub>t</sub>),0.424
+65,No indexation,Effective labor (N<sub>t</sub>),0.424
+66,No indexation,Effective labor (N<sub>t</sub>),0.424
+67,No indexation,Effective labor (N<sub>t</sub>),0.424
+68,No indexation,Effective labor (N<sub>t</sub>),0.424
+69,No indexation,Effective labor (N<sub>t</sub>),0.423
+70,No indexation,Effective labor (N<sub>t</sub>),0.423
+71,No indexation,Effective labor (N<sub>t</sub>),0.423
+72,No indexation,Effective labor (N<sub>t</sub>),0.423
+73,No indexation,Effective labor (N<sub>t</sub>),0.423
+74,No indexation,Effective labor (N<sub>t</sub>),0.423
+75,No indexation,Effective labor (N<sub>t</sub>),0.423
+76,No indexation,Effective labor (N<sub>t</sub>),0.423
+77,No indexation,Effective labor (N<sub>t</sub>),0.423
+78,No indexation,Effective labor (N<sub>t</sub>),0.423
+79,No indexation,Effective labor (N<sub>t</sub>),0.423
+80,No indexation,Effective labor (N<sub>t</sub>),0.422
+81,No indexation,Effective labor (N<sub>t</sub>),0.422
+82,No indexation,Effective labor (N<sub>t</sub>),0.422
+83,No indexation,Effective labor (N<sub>t</sub>),0.422
+84,No indexation,Effective labor (N<sub>t</sub>),0.422
+85,No indexation,Effective labor (N<sub>t</sub>),0.422
+86,No indexation,Effective labor (N<sub>t</sub>),0.422
+87,No indexation,Effective labor (N<sub>t</sub>),0.422
+88,No indexation,Effective labor (N<sub>t</sub>),0.422
+89,No indexation,Effective labor (N<sub>t</sub>),0.422
+90,No indexation,Effective labor (N<sub>t</sub>),0.422
+91,No indexation,Effective labor (N<sub>t</sub>),0.422
+92,No indexation,Effective labor (N<sub>t</sub>),0.422
+93,No indexation,Effective labor (N<sub>t</sub>),0.422
+94,No indexation,Effective labor (N<sub>t</sub>),0.422
+95,No indexation,Effective labor (N<sub>t</sub>),0.422
+96,No indexation,Effective labor (N<sub>t</sub>),0.422
+97,No indexation,Effective labor (N<sub>t</sub>),0.422
+98,No indexation,Effective labor (N<sub>t</sub>),0.421
+99,No indexation,Effective labor (N<sub>t</sub>),0.421
+100,No indexation,Effective labor (N<sub>t</sub>),0.421
 1,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.411
 2,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.411
 3,Textbook NK (no capital),Effective labor (N<sub>t</sub>),0.411
@@ -4699,6 +5499,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Labor supply (L<sub>t</sub>),0.421
 99,NK with capital,Labor supply (L<sub>t</sub>),0.421
 100,NK with capital,Labor supply (L<sub>t</sub>),0.421
+1,No indexation,Labor supply (L<sub>t</sub>),0.656
+2,No indexation,Labor supply (L<sub>t</sub>),0.458
+3,No indexation,Labor supply (L<sub>t</sub>),0.456
+4,No indexation,Labor supply (L<sub>t</sub>),0.455
+5,No indexation,Labor supply (L<sub>t</sub>),0.454
+6,No indexation,Labor supply (L<sub>t</sub>),0.453
+7,No indexation,Labor supply (L<sub>t</sub>),0.451
+8,No indexation,Labor supply (L<sub>t</sub>),0.45
+9,No indexation,Labor supply (L<sub>t</sub>),0.449
+10,No indexation,Labor supply (L<sub>t</sub>),0.448
+11,No indexation,Labor supply (L<sub>t</sub>),0.447
+12,No indexation,Labor supply (L<sub>t</sub>),0.446
+13,No indexation,Labor supply (L<sub>t</sub>),0.445
+14,No indexation,Labor supply (L<sub>t</sub>),0.444
+15,No indexation,Labor supply (L<sub>t</sub>),0.443
+16,No indexation,Labor supply (L<sub>t</sub>),0.442
+17,No indexation,Labor supply (L<sub>t</sub>),0.442
+18,No indexation,Labor supply (L<sub>t</sub>),0.441
+19,No indexation,Labor supply (L<sub>t</sub>),0.44
+20,No indexation,Labor supply (L<sub>t</sub>),0.439
+21,No indexation,Labor supply (L<sub>t</sub>),0.439
+22,No indexation,Labor supply (L<sub>t</sub>),0.438
+23,No indexation,Labor supply (L<sub>t</sub>),0.437
+24,No indexation,Labor supply (L<sub>t</sub>),0.437
+25,No indexation,Labor supply (L<sub>t</sub>),0.436
+26,No indexation,Labor supply (L<sub>t</sub>),0.436
+27,No indexation,Labor supply (L<sub>t</sub>),0.435
+28,No indexation,Labor supply (L<sub>t</sub>),0.434
+29,No indexation,Labor supply (L<sub>t</sub>),0.434
+30,No indexation,Labor supply (L<sub>t</sub>),0.433
+31,No indexation,Labor supply (L<sub>t</sub>),0.433
+32,No indexation,Labor supply (L<sub>t</sub>),0.433
+33,No indexation,Labor supply (L<sub>t</sub>),0.432
+34,No indexation,Labor supply (L<sub>t</sub>),0.432
+35,No indexation,Labor supply (L<sub>t</sub>),0.431
+36,No indexation,Labor supply (L<sub>t</sub>),0.431
+37,No indexation,Labor supply (L<sub>t</sub>),0.43
+38,No indexation,Labor supply (L<sub>t</sub>),0.43
+39,No indexation,Labor supply (L<sub>t</sub>),0.43
+40,No indexation,Labor supply (L<sub>t</sub>),0.429
+41,No indexation,Labor supply (L<sub>t</sub>),0.429
+42,No indexation,Labor supply (L<sub>t</sub>),0.429
+43,No indexation,Labor supply (L<sub>t</sub>),0.428
+44,No indexation,Labor supply (L<sub>t</sub>),0.428
+45,No indexation,Labor supply (L<sub>t</sub>),0.428
+46,No indexation,Labor supply (L<sub>t</sub>),0.428
+47,No indexation,Labor supply (L<sub>t</sub>),0.427
+48,No indexation,Labor supply (L<sub>t</sub>),0.427
+49,No indexation,Labor supply (L<sub>t</sub>),0.427
+50,No indexation,Labor supply (L<sub>t</sub>),0.427
+51,No indexation,Labor supply (L<sub>t</sub>),0.426
+52,No indexation,Labor supply (L<sub>t</sub>),0.426
+53,No indexation,Labor supply (L<sub>t</sub>),0.426
+54,No indexation,Labor supply (L<sub>t</sub>),0.426
+55,No indexation,Labor supply (L<sub>t</sub>),0.426
+56,No indexation,Labor supply (L<sub>t</sub>),0.425
+57,No indexation,Labor supply (L<sub>t</sub>),0.425
+58,No indexation,Labor supply (L<sub>t</sub>),0.425
+59,No indexation,Labor supply (L<sub>t</sub>),0.425
+60,No indexation,Labor supply (L<sub>t</sub>),0.425
+61,No indexation,Labor supply (L<sub>t</sub>),0.425
+62,No indexation,Labor supply (L<sub>t</sub>),0.424
+63,No indexation,Labor supply (L<sub>t</sub>),0.424
+64,No indexation,Labor supply (L<sub>t</sub>),0.424
+65,No indexation,Labor supply (L<sub>t</sub>),0.424
+66,No indexation,Labor supply (L<sub>t</sub>),0.424
+67,No indexation,Labor supply (L<sub>t</sub>),0.424
+68,No indexation,Labor supply (L<sub>t</sub>),0.424
+69,No indexation,Labor supply (L<sub>t</sub>),0.423
+70,No indexation,Labor supply (L<sub>t</sub>),0.423
+71,No indexation,Labor supply (L<sub>t</sub>),0.423
+72,No indexation,Labor supply (L<sub>t</sub>),0.423
+73,No indexation,Labor supply (L<sub>t</sub>),0.423
+74,No indexation,Labor supply (L<sub>t</sub>),0.423
+75,No indexation,Labor supply (L<sub>t</sub>),0.423
+76,No indexation,Labor supply (L<sub>t</sub>),0.423
+77,No indexation,Labor supply (L<sub>t</sub>),0.423
+78,No indexation,Labor supply (L<sub>t</sub>),0.423
+79,No indexation,Labor supply (L<sub>t</sub>),0.423
+80,No indexation,Labor supply (L<sub>t</sub>),0.422
+81,No indexation,Labor supply (L<sub>t</sub>),0.422
+82,No indexation,Labor supply (L<sub>t</sub>),0.422
+83,No indexation,Labor supply (L<sub>t</sub>),0.422
+84,No indexation,Labor supply (L<sub>t</sub>),0.422
+85,No indexation,Labor supply (L<sub>t</sub>),0.422
+86,No indexation,Labor supply (L<sub>t</sub>),0.422
+87,No indexation,Labor supply (L<sub>t</sub>),0.422
+88,No indexation,Labor supply (L<sub>t</sub>),0.422
+89,No indexation,Labor supply (L<sub>t</sub>),0.422
+90,No indexation,Labor supply (L<sub>t</sub>),0.422
+91,No indexation,Labor supply (L<sub>t</sub>),0.422
+92,No indexation,Labor supply (L<sub>t</sub>),0.422
+93,No indexation,Labor supply (L<sub>t</sub>),0.422
+94,No indexation,Labor supply (L<sub>t</sub>),0.422
+95,No indexation,Labor supply (L<sub>t</sub>),0.422
+96,No indexation,Labor supply (L<sub>t</sub>),0.422
+97,No indexation,Labor supply (L<sub>t</sub>),0.422
+98,No indexation,Labor supply (L<sub>t</sub>),0.421
+99,No indexation,Labor supply (L<sub>t</sub>),0.421
+100,No indexation,Labor supply (L<sub>t</sub>),0.421
 1,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.411
 2,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.411
 3,Textbook NK (no capital),Labor supply (L<sub>t</sub>),0.411
@@ -5299,6 +6199,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Human capital stock (H<sub>t</sub>),0.0
 99,NK with capital,Human capital stock (H<sub>t</sub>),0.0
 100,NK with capital,Human capital stock (H<sub>t</sub>),0.0
+1,No indexation,Human capital stock (H<sub>t</sub>),0.0
+2,No indexation,Human capital stock (H<sub>t</sub>),0.0
+3,No indexation,Human capital stock (H<sub>t</sub>),0.0
+4,No indexation,Human capital stock (H<sub>t</sub>),0.0
+5,No indexation,Human capital stock (H<sub>t</sub>),0.0
+6,No indexation,Human capital stock (H<sub>t</sub>),0.0
+7,No indexation,Human capital stock (H<sub>t</sub>),0.0
+8,No indexation,Human capital stock (H<sub>t</sub>),0.0
+9,No indexation,Human capital stock (H<sub>t</sub>),0.0
+10,No indexation,Human capital stock (H<sub>t</sub>),0.0
+11,No indexation,Human capital stock (H<sub>t</sub>),0.0
+12,No indexation,Human capital stock (H<sub>t</sub>),0.0
+13,No indexation,Human capital stock (H<sub>t</sub>),0.0
+14,No indexation,Human capital stock (H<sub>t</sub>),0.0
+15,No indexation,Human capital stock (H<sub>t</sub>),0.0
+16,No indexation,Human capital stock (H<sub>t</sub>),0.0
+17,No indexation,Human capital stock (H<sub>t</sub>),0.0
+18,No indexation,Human capital stock (H<sub>t</sub>),0.0
+19,No indexation,Human capital stock (H<sub>t</sub>),0.0
+20,No indexation,Human capital stock (H<sub>t</sub>),0.0
+21,No indexation,Human capital stock (H<sub>t</sub>),0.0
+22,No indexation,Human capital stock (H<sub>t</sub>),0.0
+23,No indexation,Human capital stock (H<sub>t</sub>),0.0
+24,No indexation,Human capital stock (H<sub>t</sub>),0.0
+25,No indexation,Human capital stock (H<sub>t</sub>),0.0
+26,No indexation,Human capital stock (H<sub>t</sub>),0.0
+27,No indexation,Human capital stock (H<sub>t</sub>),0.0
+28,No indexation,Human capital stock (H<sub>t</sub>),0.0
+29,No indexation,Human capital stock (H<sub>t</sub>),0.0
+30,No indexation,Human capital stock (H<sub>t</sub>),0.0
+31,No indexation,Human capital stock (H<sub>t</sub>),0.0
+32,No indexation,Human capital stock (H<sub>t</sub>),0.0
+33,No indexation,Human capital stock (H<sub>t</sub>),0.0
+34,No indexation,Human capital stock (H<sub>t</sub>),0.0
+35,No indexation,Human capital stock (H<sub>t</sub>),0.0
+36,No indexation,Human capital stock (H<sub>t</sub>),0.0
+37,No indexation,Human capital stock (H<sub>t</sub>),0.0
+38,No indexation,Human capital stock (H<sub>t</sub>),0.0
+39,No indexation,Human capital stock (H<sub>t</sub>),0.0
+40,No indexation,Human capital stock (H<sub>t</sub>),0.0
+41,No indexation,Human capital stock (H<sub>t</sub>),0.0
+42,No indexation,Human capital stock (H<sub>t</sub>),0.0
+43,No indexation,Human capital stock (H<sub>t</sub>),0.0
+44,No indexation,Human capital stock (H<sub>t</sub>),0.0
+45,No indexation,Human capital stock (H<sub>t</sub>),0.0
+46,No indexation,Human capital stock (H<sub>t</sub>),0.0
+47,No indexation,Human capital stock (H<sub>t</sub>),0.0
+48,No indexation,Human capital stock (H<sub>t</sub>),0.0
+49,No indexation,Human capital stock (H<sub>t</sub>),0.0
+50,No indexation,Human capital stock (H<sub>t</sub>),0.0
+51,No indexation,Human capital stock (H<sub>t</sub>),0.0
+52,No indexation,Human capital stock (H<sub>t</sub>),0.0
+53,No indexation,Human capital stock (H<sub>t</sub>),0.0
+54,No indexation,Human capital stock (H<sub>t</sub>),0.0
+55,No indexation,Human capital stock (H<sub>t</sub>),0.0
+56,No indexation,Human capital stock (H<sub>t</sub>),0.0
+57,No indexation,Human capital stock (H<sub>t</sub>),0.0
+58,No indexation,Human capital stock (H<sub>t</sub>),0.0
+59,No indexation,Human capital stock (H<sub>t</sub>),0.0
+60,No indexation,Human capital stock (H<sub>t</sub>),0.0
+61,No indexation,Human capital stock (H<sub>t</sub>),0.0
+62,No indexation,Human capital stock (H<sub>t</sub>),0.0
+63,No indexation,Human capital stock (H<sub>t</sub>),0.0
+64,No indexation,Human capital stock (H<sub>t</sub>),0.0
+65,No indexation,Human capital stock (H<sub>t</sub>),0.0
+66,No indexation,Human capital stock (H<sub>t</sub>),0.0
+67,No indexation,Human capital stock (H<sub>t</sub>),0.0
+68,No indexation,Human capital stock (H<sub>t</sub>),0.0
+69,No indexation,Human capital stock (H<sub>t</sub>),0.0
+70,No indexation,Human capital stock (H<sub>t</sub>),0.0
+71,No indexation,Human capital stock (H<sub>t</sub>),0.0
+72,No indexation,Human capital stock (H<sub>t</sub>),0.0
+73,No indexation,Human capital stock (H<sub>t</sub>),0.0
+74,No indexation,Human capital stock (H<sub>t</sub>),0.0
+75,No indexation,Human capital stock (H<sub>t</sub>),0.0
+76,No indexation,Human capital stock (H<sub>t</sub>),0.0
+77,No indexation,Human capital stock (H<sub>t</sub>),0.0
+78,No indexation,Human capital stock (H<sub>t</sub>),0.0
+79,No indexation,Human capital stock (H<sub>t</sub>),0.0
+80,No indexation,Human capital stock (H<sub>t</sub>),0.0
+81,No indexation,Human capital stock (H<sub>t</sub>),0.0
+82,No indexation,Human capital stock (H<sub>t</sub>),0.0
+83,No indexation,Human capital stock (H<sub>t</sub>),0.0
+84,No indexation,Human capital stock (H<sub>t</sub>),0.0
+85,No indexation,Human capital stock (H<sub>t</sub>),0.0
+86,No indexation,Human capital stock (H<sub>t</sub>),0.0
+87,No indexation,Human capital stock (H<sub>t</sub>),0.0
+88,No indexation,Human capital stock (H<sub>t</sub>),0.0
+89,No indexation,Human capital stock (H<sub>t</sub>),0.0
+90,No indexation,Human capital stock (H<sub>t</sub>),0.0
+91,No indexation,Human capital stock (H<sub>t</sub>),0.0
+92,No indexation,Human capital stock (H<sub>t</sub>),0.0
+93,No indexation,Human capital stock (H<sub>t</sub>),0.0
+94,No indexation,Human capital stock (H<sub>t</sub>),0.0
+95,No indexation,Human capital stock (H<sub>t</sub>),0.0
+96,No indexation,Human capital stock (H<sub>t</sub>),0.0
+97,No indexation,Human capital stock (H<sub>t</sub>),0.0
+98,No indexation,Human capital stock (H<sub>t</sub>),0.0
+99,No indexation,Human capital stock (H<sub>t</sub>),0.0
+100,No indexation,Human capital stock (H<sub>t</sub>),0.0
 1,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
 2,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
 3,Textbook NK (no capital),Human capital stock (H<sub>t</sub>),0.0
@@ -5799,6 +6799,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Real marginal cost (mc<sub>t</sub>),0.0
 99,NK with capital,Real marginal cost (mc<sub>t</sub>),0.0
 100,NK with capital,Real marginal cost (mc<sub>t</sub>),0.0
+1,No indexation,Real marginal cost (mc<sub>t</sub>),0.745
+2,No indexation,Real marginal cost (mc<sub>t</sub>),0.01
+3,No indexation,Real marginal cost (mc<sub>t</sub>),0.01
+4,No indexation,Real marginal cost (mc<sub>t</sub>),0.009
+5,No indexation,Real marginal cost (mc<sub>t</sub>),0.009
+6,No indexation,Real marginal cost (mc<sub>t</sub>),0.009
+7,No indexation,Real marginal cost (mc<sub>t</sub>),0.008
+8,No indexation,Real marginal cost (mc<sub>t</sub>),0.008
+9,No indexation,Real marginal cost (mc<sub>t</sub>),0.008
+10,No indexation,Real marginal cost (mc<sub>t</sub>),0.007
+11,No indexation,Real marginal cost (mc<sub>t</sub>),0.007
+12,No indexation,Real marginal cost (mc<sub>t</sub>),0.007
+13,No indexation,Real marginal cost (mc<sub>t</sub>),0.007
+14,No indexation,Real marginal cost (mc<sub>t</sub>),0.006
+15,No indexation,Real marginal cost (mc<sub>t</sub>),0.006
+16,No indexation,Real marginal cost (mc<sub>t</sub>),0.006
+17,No indexation,Real marginal cost (mc<sub>t</sub>),0.006
+18,No indexation,Real marginal cost (mc<sub>t</sub>),0.005
+19,No indexation,Real marginal cost (mc<sub>t</sub>),0.005
+20,No indexation,Real marginal cost (mc<sub>t</sub>),0.005
+21,No indexation,Real marginal cost (mc<sub>t</sub>),0.005
+22,No indexation,Real marginal cost (mc<sub>t</sub>),0.005
+23,No indexation,Real marginal cost (mc<sub>t</sub>),0.005
+24,No indexation,Real marginal cost (mc<sub>t</sub>),0.004
+25,No indexation,Real marginal cost (mc<sub>t</sub>),0.004
+26,No indexation,Real marginal cost (mc<sub>t</sub>),0.004
+27,No indexation,Real marginal cost (mc<sub>t</sub>),0.004
+28,No indexation,Real marginal cost (mc<sub>t</sub>),0.004
+29,No indexation,Real marginal cost (mc<sub>t</sub>),0.004
+30,No indexation,Real marginal cost (mc<sub>t</sub>),0.003
+31,No indexation,Real marginal cost (mc<sub>t</sub>),0.003
+32,No indexation,Real marginal cost (mc<sub>t</sub>),0.003
+33,No indexation,Real marginal cost (mc<sub>t</sub>),0.003
+34,No indexation,Real marginal cost (mc<sub>t</sub>),0.003
+35,No indexation,Real marginal cost (mc<sub>t</sub>),0.003
+36,No indexation,Real marginal cost (mc<sub>t</sub>),0.003
+37,No indexation,Real marginal cost (mc<sub>t</sub>),0.003
+38,No indexation,Real marginal cost (mc<sub>t</sub>),0.003
+39,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+40,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+41,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+42,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+43,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+44,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+45,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+46,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+47,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+48,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+49,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+50,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+51,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+52,No indexation,Real marginal cost (mc<sub>t</sub>),0.002
+53,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+54,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+55,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+56,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+57,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+58,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+59,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+60,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+61,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+62,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+63,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+64,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+65,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+66,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+67,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+68,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+69,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+70,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+71,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+72,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+73,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+74,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+75,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+76,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+77,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+78,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+79,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+80,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+81,No indexation,Real marginal cost (mc<sub>t</sub>),0.001
+82,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+83,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+84,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+85,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+86,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+87,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+88,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+89,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+90,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+91,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+92,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+93,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+94,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+95,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+96,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+97,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+98,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+99,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
+100,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
 1,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.0
 2,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.0
 3,Textbook NK (no capital),Real marginal cost (mc<sub>t</sub>),-0.0
@@ -6399,6 +7499,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Inflation (Π<sub>t</sub>),0.002
 99,NK with capital,Inflation (Π<sub>t</sub>),0.001
 100,NK with capital,Inflation (Π<sub>t</sub>),0.001
+1,No indexation,Inflation (Π<sub>t</sub>),0.2
+2,No indexation,Inflation (Π<sub>t</sub>),0.052
+3,No indexation,Inflation (Π<sub>t</sub>),0.051
+4,No indexation,Inflation (Π<sub>t</sub>),0.049
+5,No indexation,Inflation (Π<sub>t</sub>),0.047
+6,No indexation,Inflation (Π<sub>t</sub>),0.045
+7,No indexation,Inflation (Π<sub>t</sub>),0.044
+8,No indexation,Inflation (Π<sub>t</sub>),0.042
+9,No indexation,Inflation (Π<sub>t</sub>),0.04
+10,No indexation,Inflation (Π<sub>t</sub>),0.039
+11,No indexation,Inflation (Π<sub>t</sub>),0.037
+12,No indexation,Inflation (Π<sub>t</sub>),0.036
+13,No indexation,Inflation (Π<sub>t</sub>),0.035
+14,No indexation,Inflation (Π<sub>t</sub>),0.033
+15,No indexation,Inflation (Π<sub>t</sub>),0.032
+16,No indexation,Inflation (Π<sub>t</sub>),0.031
+17,No indexation,Inflation (Π<sub>t</sub>),0.03
+18,No indexation,Inflation (Π<sub>t</sub>),0.029
+19,No indexation,Inflation (Π<sub>t</sub>),0.028
+20,No indexation,Inflation (Π<sub>t</sub>),0.027
+21,No indexation,Inflation (Π<sub>t</sub>),0.026
+22,No indexation,Inflation (Π<sub>t</sub>),0.025
+23,No indexation,Inflation (Π<sub>t</sub>),0.024
+24,No indexation,Inflation (Π<sub>t</sub>),0.023
+25,No indexation,Inflation (Π<sub>t</sub>),0.022
+26,No indexation,Inflation (Π<sub>t</sub>),0.021
+27,No indexation,Inflation (Π<sub>t</sub>),0.021
+28,No indexation,Inflation (Π<sub>t</sub>),0.02
+29,No indexation,Inflation (Π<sub>t</sub>),0.019
+30,No indexation,Inflation (Π<sub>t</sub>),0.018
+31,No indexation,Inflation (Π<sub>t</sub>),0.018
+32,No indexation,Inflation (Π<sub>t</sub>),0.017
+33,No indexation,Inflation (Π<sub>t</sub>),0.016
+34,No indexation,Inflation (Π<sub>t</sub>),0.016
+35,No indexation,Inflation (Π<sub>t</sub>),0.015
+36,No indexation,Inflation (Π<sub>t</sub>),0.015
+37,No indexation,Inflation (Π<sub>t</sub>),0.014
+38,No indexation,Inflation (Π<sub>t</sub>),0.014
+39,No indexation,Inflation (Π<sub>t</sub>),0.013
+40,No indexation,Inflation (Π<sub>t</sub>),0.013
+41,No indexation,Inflation (Π<sub>t</sub>),0.012
+42,No indexation,Inflation (Π<sub>t</sub>),0.012
+43,No indexation,Inflation (Π<sub>t</sub>),0.011
+44,No indexation,Inflation (Π<sub>t</sub>),0.011
+45,No indexation,Inflation (Π<sub>t</sub>),0.01
+46,No indexation,Inflation (Π<sub>t</sub>),0.01
+47,No indexation,Inflation (Π<sub>t</sub>),0.01
+48,No indexation,Inflation (Π<sub>t</sub>),0.009
+49,No indexation,Inflation (Π<sub>t</sub>),0.009
+50,No indexation,Inflation (Π<sub>t</sub>),0.009
+51,No indexation,Inflation (Π<sub>t</sub>),0.008
+52,No indexation,Inflation (Π<sub>t</sub>),0.008
+53,No indexation,Inflation (Π<sub>t</sub>),0.008
+54,No indexation,Inflation (Π<sub>t</sub>),0.007
+55,No indexation,Inflation (Π<sub>t</sub>),0.007
+56,No indexation,Inflation (Π<sub>t</sub>),0.007
+57,No indexation,Inflation (Π<sub>t</sub>),0.007
+58,No indexation,Inflation (Π<sub>t</sub>),0.006
+59,No indexation,Inflation (Π<sub>t</sub>),0.006
+60,No indexation,Inflation (Π<sub>t</sub>),0.006
+61,No indexation,Inflation (Π<sub>t</sub>),0.006
+62,No indexation,Inflation (Π<sub>t</sub>),0.006
+63,No indexation,Inflation (Π<sub>t</sub>),0.005
+64,No indexation,Inflation (Π<sub>t</sub>),0.005
+65,No indexation,Inflation (Π<sub>t</sub>),0.005
+66,No indexation,Inflation (Π<sub>t</sub>),0.005
+67,No indexation,Inflation (Π<sub>t</sub>),0.005
+68,No indexation,Inflation (Π<sub>t</sub>),0.004
+69,No indexation,Inflation (Π<sub>t</sub>),0.004
+70,No indexation,Inflation (Π<sub>t</sub>),0.004
+71,No indexation,Inflation (Π<sub>t</sub>),0.004
+72,No indexation,Inflation (Π<sub>t</sub>),0.004
+73,No indexation,Inflation (Π<sub>t</sub>),0.004
+74,No indexation,Inflation (Π<sub>t</sub>),0.004
+75,No indexation,Inflation (Π<sub>t</sub>),0.003
+76,No indexation,Inflation (Π<sub>t</sub>),0.003
+77,No indexation,Inflation (Π<sub>t</sub>),0.003
+78,No indexation,Inflation (Π<sub>t</sub>),0.003
+79,No indexation,Inflation (Π<sub>t</sub>),0.003
+80,No indexation,Inflation (Π<sub>t</sub>),0.003
+81,No indexation,Inflation (Π<sub>t</sub>),0.003
+82,No indexation,Inflation (Π<sub>t</sub>),0.003
+83,No indexation,Inflation (Π<sub>t</sub>),0.003
+84,No indexation,Inflation (Π<sub>t</sub>),0.002
+85,No indexation,Inflation (Π<sub>t</sub>),0.002
+86,No indexation,Inflation (Π<sub>t</sub>),0.002
+87,No indexation,Inflation (Π<sub>t</sub>),0.002
+88,No indexation,Inflation (Π<sub>t</sub>),0.002
+89,No indexation,Inflation (Π<sub>t</sub>),0.002
+90,No indexation,Inflation (Π<sub>t</sub>),0.002
+91,No indexation,Inflation (Π<sub>t</sub>),0.002
+92,No indexation,Inflation (Π<sub>t</sub>),0.002
+93,No indexation,Inflation (Π<sub>t</sub>),0.002
+94,No indexation,Inflation (Π<sub>t</sub>),0.002
+95,No indexation,Inflation (Π<sub>t</sub>),0.002
+96,No indexation,Inflation (Π<sub>t</sub>),0.002
+97,No indexation,Inflation (Π<sub>t</sub>),0.001
+98,No indexation,Inflation (Π<sub>t</sub>),0.001
+99,No indexation,Inflation (Π<sub>t</sub>),0.001
+100,No indexation,Inflation (Π<sub>t</sub>),0.001
 1,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-0.0
 2,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-0.0
 3,Textbook NK (no capital),Inflation (Π<sub>t</sub>),-0.0
@@ -6999,6 +8199,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Nominal interest rate (R<sub>t</sub>),0.002
 99,NK with capital,Nominal interest rate (R<sub>t</sub>),0.002
 100,NK with capital,Nominal interest rate (R<sub>t</sub>),0.002
+1,No indexation,Nominal interest rate (R<sub>t</sub>),0.09
+2,No indexation,Nominal interest rate (R<sub>t</sub>),0.087
+3,No indexation,Nominal interest rate (R<sub>t</sub>),0.084
+4,No indexation,Nominal interest rate (R<sub>t</sub>),0.081
+5,No indexation,Nominal interest rate (R<sub>t</sub>),0.078
+6,No indexation,Nominal interest rate (R<sub>t</sub>),0.075
+7,No indexation,Nominal interest rate (R<sub>t</sub>),0.072
+8,No indexation,Nominal interest rate (R<sub>t</sub>),0.069
+9,No indexation,Nominal interest rate (R<sub>t</sub>),0.067
+10,No indexation,Nominal interest rate (R<sub>t</sub>),0.064
+11,No indexation,Nominal interest rate (R<sub>t</sub>),0.062
+12,No indexation,Nominal interest rate (R<sub>t</sub>),0.06
+13,No indexation,Nominal interest rate (R<sub>t</sub>),0.058
+14,No indexation,Nominal interest rate (R<sub>t</sub>),0.055
+15,No indexation,Nominal interest rate (R<sub>t</sub>),0.053
+16,No indexation,Nominal interest rate (R<sub>t</sub>),0.051
+17,No indexation,Nominal interest rate (R<sub>t</sub>),0.05
+18,No indexation,Nominal interest rate (R<sub>t</sub>),0.048
+19,No indexation,Nominal interest rate (R<sub>t</sub>),0.046
+20,No indexation,Nominal interest rate (R<sub>t</sub>),0.044
+21,No indexation,Nominal interest rate (R<sub>t</sub>),0.043
+22,No indexation,Nominal interest rate (R<sub>t</sub>),0.041
+23,No indexation,Nominal interest rate (R<sub>t</sub>),0.04
+24,No indexation,Nominal interest rate (R<sub>t</sub>),0.038
+25,No indexation,Nominal interest rate (R<sub>t</sub>),0.037
+26,No indexation,Nominal interest rate (R<sub>t</sub>),0.035
+27,No indexation,Nominal interest rate (R<sub>t</sub>),0.034
+28,No indexation,Nominal interest rate (R<sub>t</sub>),0.033
+29,No indexation,Nominal interest rate (R<sub>t</sub>),0.032
+30,No indexation,Nominal interest rate (R<sub>t</sub>),0.03
+31,No indexation,Nominal interest rate (R<sub>t</sub>),0.029
+32,No indexation,Nominal interest rate (R<sub>t</sub>),0.028
+33,No indexation,Nominal interest rate (R<sub>t</sub>),0.027
+34,No indexation,Nominal interest rate (R<sub>t</sub>),0.026
+35,No indexation,Nominal interest rate (R<sub>t</sub>),0.025
+36,No indexation,Nominal interest rate (R<sub>t</sub>),0.024
+37,No indexation,Nominal interest rate (R<sub>t</sub>),0.023
+38,No indexation,Nominal interest rate (R<sub>t</sub>),0.023
+39,No indexation,Nominal interest rate (R<sub>t</sub>),0.022
+40,No indexation,Nominal interest rate (R<sub>t</sub>),0.021
+41,No indexation,Nominal interest rate (R<sub>t</sub>),0.02
+42,No indexation,Nominal interest rate (R<sub>t</sub>),0.019
+43,No indexation,Nominal interest rate (R<sub>t</sub>),0.019
+44,No indexation,Nominal interest rate (R<sub>t</sub>),0.018
+45,No indexation,Nominal interest rate (R<sub>t</sub>),0.017
+46,No indexation,Nominal interest rate (R<sub>t</sub>),0.017
+47,No indexation,Nominal interest rate (R<sub>t</sub>),0.016
+48,No indexation,Nominal interest rate (R<sub>t</sub>),0.015
+49,No indexation,Nominal interest rate (R<sub>t</sub>),0.015
+50,No indexation,Nominal interest rate (R<sub>t</sub>),0.014
+51,No indexation,Nominal interest rate (R<sub>t</sub>),0.014
+52,No indexation,Nominal interest rate (R<sub>t</sub>),0.013
+53,No indexation,Nominal interest rate (R<sub>t</sub>),0.013
+54,No indexation,Nominal interest rate (R<sub>t</sub>),0.012
+55,No indexation,Nominal interest rate (R<sub>t</sub>),0.012
+56,No indexation,Nominal interest rate (R<sub>t</sub>),0.011
+57,No indexation,Nominal interest rate (R<sub>t</sub>),0.011
+58,No indexation,Nominal interest rate (R<sub>t</sub>),0.011
+59,No indexation,Nominal interest rate (R<sub>t</sub>),0.01
+60,No indexation,Nominal interest rate (R<sub>t</sub>),0.01
+61,No indexation,Nominal interest rate (R<sub>t</sub>),0.009
+62,No indexation,Nominal interest rate (R<sub>t</sub>),0.009
+63,No indexation,Nominal interest rate (R<sub>t</sub>),0.009
+64,No indexation,Nominal interest rate (R<sub>t</sub>),0.008
+65,No indexation,Nominal interest rate (R<sub>t</sub>),0.008
+66,No indexation,Nominal interest rate (R<sub>t</sub>),0.008
+67,No indexation,Nominal interest rate (R<sub>t</sub>),0.008
+68,No indexation,Nominal interest rate (R<sub>t</sub>),0.007
+69,No indexation,Nominal interest rate (R<sub>t</sub>),0.007
+70,No indexation,Nominal interest rate (R<sub>t</sub>),0.007
+71,No indexation,Nominal interest rate (R<sub>t</sub>),0.007
+72,No indexation,Nominal interest rate (R<sub>t</sub>),0.006
+73,No indexation,Nominal interest rate (R<sub>t</sub>),0.006
+74,No indexation,Nominal interest rate (R<sub>t</sub>),0.006
+75,No indexation,Nominal interest rate (R<sub>t</sub>),0.006
+76,No indexation,Nominal interest rate (R<sub>t</sub>),0.005
+77,No indexation,Nominal interest rate (R<sub>t</sub>),0.005
+78,No indexation,Nominal interest rate (R<sub>t</sub>),0.005
+79,No indexation,Nominal interest rate (R<sub>t</sub>),0.005
+80,No indexation,Nominal interest rate (R<sub>t</sub>),0.005
+81,No indexation,Nominal interest rate (R<sub>t</sub>),0.004
+82,No indexation,Nominal interest rate (R<sub>t</sub>),0.004
+83,No indexation,Nominal interest rate (R<sub>t</sub>),0.004
+84,No indexation,Nominal interest rate (R<sub>t</sub>),0.004
+85,No indexation,Nominal interest rate (R<sub>t</sub>),0.004
+86,No indexation,Nominal interest rate (R<sub>t</sub>),0.004
+87,No indexation,Nominal interest rate (R<sub>t</sub>),0.004
+88,No indexation,Nominal interest rate (R<sub>t</sub>),0.003
+89,No indexation,Nominal interest rate (R<sub>t</sub>),0.003
+90,No indexation,Nominal interest rate (R<sub>t</sub>),0.003
+91,No indexation,Nominal interest rate (R<sub>t</sub>),0.003
+92,No indexation,Nominal interest rate (R<sub>t</sub>),0.003
+93,No indexation,Nominal interest rate (R<sub>t</sub>),0.003
+94,No indexation,Nominal interest rate (R<sub>t</sub>),0.003
+95,No indexation,Nominal interest rate (R<sub>t</sub>),0.003
+96,No indexation,Nominal interest rate (R<sub>t</sub>),0.003
+97,No indexation,Nominal interest rate (R<sub>t</sub>),0.002
+98,No indexation,Nominal interest rate (R<sub>t</sub>),0.002
+99,No indexation,Nominal interest rate (R<sub>t</sub>),0.002
+100,No indexation,Nominal interest rate (R<sub>t</sub>),0.002
 1,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),0.0
 2,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),-0.0
 3,Textbook NK (no capital),Nominal interest rate (R<sub>t</sub>),-0.0
@@ -7599,6 +8899,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
 99,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
 100,NK with capital,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+1,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.11
+2,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.034
+3,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.033
+4,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.032
+5,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.031
+6,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.029
+7,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.028
+8,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.027
+9,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.026
+10,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.025
+11,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.024
+12,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.023
+13,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.023
+14,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.022
+15,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.021
+16,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.02
+17,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.019
+18,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.019
+19,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.018
+20,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.017
+21,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.017
+22,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.016
+23,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.016
+24,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.015
+25,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.014
+26,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.014
+27,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.013
+28,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.013
+29,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.012
+30,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.012
+31,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.011
+32,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.011
+33,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.011
+34,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.01
+35,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.01
+36,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.01
+37,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.009
+38,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.009
+39,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.009
+40,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.008
+41,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.008
+42,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.008
+43,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.007
+44,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.007
+45,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.007
+46,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.007
+47,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.006
+48,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.006
+49,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.006
+50,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.006
+51,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.005
+52,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.005
+53,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.005
+54,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.005
+55,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.005
+56,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.004
+57,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.004
+58,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.004
+59,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.004
+60,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.004
+61,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.004
+62,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.004
+63,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
+64,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
+65,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
+66,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
+67,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
+68,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
+69,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
+70,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
+71,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.003
+72,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+73,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+74,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+75,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+76,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+77,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+78,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+79,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+80,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+81,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+82,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+83,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+84,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+85,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.002
+86,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+87,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+88,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+89,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+90,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+91,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+92,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+93,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+94,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+95,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+96,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+97,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+98,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+99,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
+100,No indexation,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.001
 1,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 2,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 3,Textbook NK (no capital),Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
@@ -8199,6 +9599,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Primary deficit,1.066
 99,NK with capital,Primary deficit,1.066
 100,NK with capital,Primary deficit,1.066
+1,No indexation,Primary deficit,0.981
+2,No indexation,Primary deficit,1.096
+3,No indexation,Primary deficit,1.095
+4,No indexation,Primary deficit,1.094
+5,No indexation,Primary deficit,1.093
+6,No indexation,Primary deficit,1.091
+7,No indexation,Primary deficit,1.091
+8,No indexation,Primary deficit,1.09
+9,No indexation,Primary deficit,1.089
+10,No indexation,Primary deficit,1.088
+11,No indexation,Primary deficit,1.087
+12,No indexation,Primary deficit,1.086
+13,No indexation,Primary deficit,1.085
+14,No indexation,Primary deficit,1.085
+15,No indexation,Primary deficit,1.084
+16,No indexation,Primary deficit,1.083
+17,No indexation,Primary deficit,1.082
+18,No indexation,Primary deficit,1.082
+19,No indexation,Primary deficit,1.081
+20,No indexation,Primary deficit,1.081
+21,No indexation,Primary deficit,1.08
+22,No indexation,Primary deficit,1.079
+23,No indexation,Primary deficit,1.079
+24,No indexation,Primary deficit,1.078
+25,No indexation,Primary deficit,1.078
+26,No indexation,Primary deficit,1.077
+27,No indexation,Primary deficit,1.077
+28,No indexation,Primary deficit,1.076
+29,No indexation,Primary deficit,1.076
+30,No indexation,Primary deficit,1.076
+31,No indexation,Primary deficit,1.075
+32,No indexation,Primary deficit,1.075
+33,No indexation,Primary deficit,1.074
+34,No indexation,Primary deficit,1.074
+35,No indexation,Primary deficit,1.074
+36,No indexation,Primary deficit,1.073
+37,No indexation,Primary deficit,1.073
+38,No indexation,Primary deficit,1.073
+39,No indexation,Primary deficit,1.072
+40,No indexation,Primary deficit,1.072
+41,No indexation,Primary deficit,1.072
+42,No indexation,Primary deficit,1.072
+43,No indexation,Primary deficit,1.071
+44,No indexation,Primary deficit,1.071
+45,No indexation,Primary deficit,1.071
+46,No indexation,Primary deficit,1.071
+47,No indexation,Primary deficit,1.07
+48,No indexation,Primary deficit,1.07
+49,No indexation,Primary deficit,1.07
+50,No indexation,Primary deficit,1.07
+51,No indexation,Primary deficit,1.07
+52,No indexation,Primary deficit,1.069
+53,No indexation,Primary deficit,1.069
+54,No indexation,Primary deficit,1.069
+55,No indexation,Primary deficit,1.069
+56,No indexation,Primary deficit,1.069
+57,No indexation,Primary deficit,1.069
+58,No indexation,Primary deficit,1.068
+59,No indexation,Primary deficit,1.068
+60,No indexation,Primary deficit,1.068
+61,No indexation,Primary deficit,1.068
+62,No indexation,Primary deficit,1.068
+63,No indexation,Primary deficit,1.068
+64,No indexation,Primary deficit,1.068
+65,No indexation,Primary deficit,1.068
+66,No indexation,Primary deficit,1.067
+67,No indexation,Primary deficit,1.067
+68,No indexation,Primary deficit,1.067
+69,No indexation,Primary deficit,1.067
+70,No indexation,Primary deficit,1.067
+71,No indexation,Primary deficit,1.067
+72,No indexation,Primary deficit,1.067
+73,No indexation,Primary deficit,1.067
+74,No indexation,Primary deficit,1.067
+75,No indexation,Primary deficit,1.067
+76,No indexation,Primary deficit,1.067
+77,No indexation,Primary deficit,1.067
+78,No indexation,Primary deficit,1.066
+79,No indexation,Primary deficit,1.066
+80,No indexation,Primary deficit,1.066
+81,No indexation,Primary deficit,1.066
+82,No indexation,Primary deficit,1.066
+83,No indexation,Primary deficit,1.066
+84,No indexation,Primary deficit,1.066
+85,No indexation,Primary deficit,1.066
+86,No indexation,Primary deficit,1.066
+87,No indexation,Primary deficit,1.066
+88,No indexation,Primary deficit,1.066
+89,No indexation,Primary deficit,1.066
+90,No indexation,Primary deficit,1.066
+91,No indexation,Primary deficit,1.066
+92,No indexation,Primary deficit,1.066
+93,No indexation,Primary deficit,1.066
+94,No indexation,Primary deficit,1.066
+95,No indexation,Primary deficit,1.066
+96,No indexation,Primary deficit,1.066
+97,No indexation,Primary deficit,1.066
+98,No indexation,Primary deficit,1.066
+99,No indexation,Primary deficit,1.065
+100,No indexation,Primary deficit,1.065
 1,Textbook NK (no capital),Primary deficit,1.09
 2,Textbook NK (no capital),Primary deficit,1.09
 3,Textbook NK (no capital),Primary deficit,1.09
@@ -8699,6 +10199,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Transfers (T<sub>t</sub>),0.0
 99,NK with capital,Transfers (T<sub>t</sub>),0.0
 100,NK with capital,Transfers (T<sub>t</sub>),0.0
+1,No indexation,Transfers (T<sub>t</sub>),0.0
+2,No indexation,Transfers (T<sub>t</sub>),0.0
+3,No indexation,Transfers (T<sub>t</sub>),0.0
+4,No indexation,Transfers (T<sub>t</sub>),0.0
+5,No indexation,Transfers (T<sub>t</sub>),0.0
+6,No indexation,Transfers (T<sub>t</sub>),0.0
+7,No indexation,Transfers (T<sub>t</sub>),0.0
+8,No indexation,Transfers (T<sub>t</sub>),0.0
+9,No indexation,Transfers (T<sub>t</sub>),0.0
+10,No indexation,Transfers (T<sub>t</sub>),0.0
+11,No indexation,Transfers (T<sub>t</sub>),0.0
+12,No indexation,Transfers (T<sub>t</sub>),0.0
+13,No indexation,Transfers (T<sub>t</sub>),0.0
+14,No indexation,Transfers (T<sub>t</sub>),0.0
+15,No indexation,Transfers (T<sub>t</sub>),0.0
+16,No indexation,Transfers (T<sub>t</sub>),0.0
+17,No indexation,Transfers (T<sub>t</sub>),0.0
+18,No indexation,Transfers (T<sub>t</sub>),0.0
+19,No indexation,Transfers (T<sub>t</sub>),0.0
+20,No indexation,Transfers (T<sub>t</sub>),0.0
+21,No indexation,Transfers (T<sub>t</sub>),0.0
+22,No indexation,Transfers (T<sub>t</sub>),0.0
+23,No indexation,Transfers (T<sub>t</sub>),0.0
+24,No indexation,Transfers (T<sub>t</sub>),0.0
+25,No indexation,Transfers (T<sub>t</sub>),0.0
+26,No indexation,Transfers (T<sub>t</sub>),0.0
+27,No indexation,Transfers (T<sub>t</sub>),0.0
+28,No indexation,Transfers (T<sub>t</sub>),0.0
+29,No indexation,Transfers (T<sub>t</sub>),0.0
+30,No indexation,Transfers (T<sub>t</sub>),0.0
+31,No indexation,Transfers (T<sub>t</sub>),0.0
+32,No indexation,Transfers (T<sub>t</sub>),0.0
+33,No indexation,Transfers (T<sub>t</sub>),0.0
+34,No indexation,Transfers (T<sub>t</sub>),0.0
+35,No indexation,Transfers (T<sub>t</sub>),0.0
+36,No indexation,Transfers (T<sub>t</sub>),0.0
+37,No indexation,Transfers (T<sub>t</sub>),0.0
+38,No indexation,Transfers (T<sub>t</sub>),0.0
+39,No indexation,Transfers (T<sub>t</sub>),0.0
+40,No indexation,Transfers (T<sub>t</sub>),0.0
+41,No indexation,Transfers (T<sub>t</sub>),0.0
+42,No indexation,Transfers (T<sub>t</sub>),0.0
+43,No indexation,Transfers (T<sub>t</sub>),0.0
+44,No indexation,Transfers (T<sub>t</sub>),0.0
+45,No indexation,Transfers (T<sub>t</sub>),0.0
+46,No indexation,Transfers (T<sub>t</sub>),0.0
+47,No indexation,Transfers (T<sub>t</sub>),0.0
+48,No indexation,Transfers (T<sub>t</sub>),0.0
+49,No indexation,Transfers (T<sub>t</sub>),0.0
+50,No indexation,Transfers (T<sub>t</sub>),0.0
+51,No indexation,Transfers (T<sub>t</sub>),0.0
+52,No indexation,Transfers (T<sub>t</sub>),0.0
+53,No indexation,Transfers (T<sub>t</sub>),0.0
+54,No indexation,Transfers (T<sub>t</sub>),0.0
+55,No indexation,Transfers (T<sub>t</sub>),0.0
+56,No indexation,Transfers (T<sub>t</sub>),0.0
+57,No indexation,Transfers (T<sub>t</sub>),0.0
+58,No indexation,Transfers (T<sub>t</sub>),0.0
+59,No indexation,Transfers (T<sub>t</sub>),0.0
+60,No indexation,Transfers (T<sub>t</sub>),0.0
+61,No indexation,Transfers (T<sub>t</sub>),0.0
+62,No indexation,Transfers (T<sub>t</sub>),0.0
+63,No indexation,Transfers (T<sub>t</sub>),0.0
+64,No indexation,Transfers (T<sub>t</sub>),0.0
+65,No indexation,Transfers (T<sub>t</sub>),0.0
+66,No indexation,Transfers (T<sub>t</sub>),0.0
+67,No indexation,Transfers (T<sub>t</sub>),0.0
+68,No indexation,Transfers (T<sub>t</sub>),0.0
+69,No indexation,Transfers (T<sub>t</sub>),0.0
+70,No indexation,Transfers (T<sub>t</sub>),0.0
+71,No indexation,Transfers (T<sub>t</sub>),0.0
+72,No indexation,Transfers (T<sub>t</sub>),0.0
+73,No indexation,Transfers (T<sub>t</sub>),0.0
+74,No indexation,Transfers (T<sub>t</sub>),0.0
+75,No indexation,Transfers (T<sub>t</sub>),0.0
+76,No indexation,Transfers (T<sub>t</sub>),0.0
+77,No indexation,Transfers (T<sub>t</sub>),0.0
+78,No indexation,Transfers (T<sub>t</sub>),0.0
+79,No indexation,Transfers (T<sub>t</sub>),0.0
+80,No indexation,Transfers (T<sub>t</sub>),0.0
+81,No indexation,Transfers (T<sub>t</sub>),0.0
+82,No indexation,Transfers (T<sub>t</sub>),0.0
+83,No indexation,Transfers (T<sub>t</sub>),0.0
+84,No indexation,Transfers (T<sub>t</sub>),0.0
+85,No indexation,Transfers (T<sub>t</sub>),0.0
+86,No indexation,Transfers (T<sub>t</sub>),0.0
+87,No indexation,Transfers (T<sub>t</sub>),0.0
+88,No indexation,Transfers (T<sub>t</sub>),0.0
+89,No indexation,Transfers (T<sub>t</sub>),0.0
+90,No indexation,Transfers (T<sub>t</sub>),0.0
+91,No indexation,Transfers (T<sub>t</sub>),0.0
+92,No indexation,Transfers (T<sub>t</sub>),0.0
+93,No indexation,Transfers (T<sub>t</sub>),0.0
+94,No indexation,Transfers (T<sub>t</sub>),0.0
+95,No indexation,Transfers (T<sub>t</sub>),0.0
+96,No indexation,Transfers (T<sub>t</sub>),0.0
+97,No indexation,Transfers (T<sub>t</sub>),0.0
+98,No indexation,Transfers (T<sub>t</sub>),0.0
+99,No indexation,Transfers (T<sub>t</sub>),0.0
+100,No indexation,Transfers (T<sub>t</sub>),0.0
 1,Textbook NK (no capital),Transfers (T<sub>t</sub>),0.0
 2,Textbook NK (no capital),Transfers (T<sub>t</sub>),0.0
 3,Textbook NK (no capital),Transfers (T<sub>t</sub>),0.0
@@ -9199,6 +10799,106 @@ horizon_quarter,model,variable,pct_dev
 98,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),114.124
 99,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),115.362
 100,NK with capital,Debt-to-GDP ratio (b<sub>t</sub>),116.602
+1,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),0.781
+2,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),1.916
+3,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),3.049
+4,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),4.182
+5,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),5.315
+6,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),6.447
+7,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),7.579
+8,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),8.71
+9,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),9.841
+10,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),10.972
+11,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),12.103
+12,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),13.233
+13,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),14.364
+14,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),15.495
+15,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),16.626
+16,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),17.757
+17,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),18.888
+18,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),20.02
+19,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),21.151
+20,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),22.284
+21,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),23.416
+22,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),24.55
+23,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),25.683
+24,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),26.818
+25,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),27.953
+26,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),29.088
+27,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),30.224
+28,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),31.361
+29,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),32.499
+30,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),33.638
+31,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),34.777
+32,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),35.917
+33,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),37.058
+34,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),38.2
+35,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),39.343
+36,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),40.487
+37,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),41.632
+38,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),42.778
+39,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),43.925
+40,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),45.073
+41,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),46.222
+42,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),47.372
+43,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),48.524
+44,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),49.677
+45,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),50.83
+46,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),51.985
+47,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),53.142
+48,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),54.299
+49,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),55.458
+50,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),56.618
+51,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),57.78
+52,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),58.943
+53,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),60.107
+54,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),61.272
+55,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),62.439
+56,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),63.607
+57,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),64.777
+58,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),65.948
+59,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),67.121
+60,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),68.295
+61,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),69.47
+62,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),70.647
+63,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),71.825
+64,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),73.005
+65,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),74.187
+66,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),75.37
+67,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),76.554
+68,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),77.74
+69,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),78.928
+70,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),80.117
+71,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),81.307
+72,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),82.5
+73,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),83.694
+74,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),84.889
+75,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),86.086
+76,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),87.285
+77,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),88.485
+78,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),89.687
+79,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),90.891
+80,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),92.096
+81,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),93.303
+82,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),94.512
+83,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),95.722
+84,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),96.934
+85,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),98.148
+86,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),99.364
+87,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),100.581
+88,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),101.8
+89,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),103.02
+90,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),104.242
+91,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),105.467
+92,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),106.692
+93,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),107.92
+94,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),109.149
+95,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),110.38
+96,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),111.613
+97,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),112.847
+98,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),114.084
+99,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),115.322
+100,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),116.562
 1,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),1.09
 2,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),2.182
 3,Textbook NK (no capital),Debt-to-GDP ratio (b<sub>t</sub>),3.275

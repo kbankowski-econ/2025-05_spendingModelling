@@ -6,7 +6,7 @@
 //   3 -> + public-infrastructure channel off (standard NK with gov. consumption)
 // The steady state, declarations and parameters are unchanged (channels are
 // pinned, not deleted), so the shared steadystate/declare files are reused.
-var 
+var
 C               % HH consumption
 lambda          % Marginal Utility
 R               % Nominal policy and government financing rate
@@ -19,7 +19,7 @@ rk              % Return on private investment
 x1              % Price setting 1
 x2              % Price setting 2
 mc              % Marginal cost
-PIstar          % Optimnal gross inflation 
+PIstar          % Optimnal gross inflation
 y              % Production
 Kg              % Public capital
 b              % Debt level
@@ -31,7 +31,7 @@ tauw            % Income tax
 yd              % Aggregate demand
 vp              % Price dispersion
 omega           % Scaling
-Rss             % Steady state interest rate   
+Rss             % Steady state interest rate
 ydss            % Steady state output
 T           % Transfer
 G               % Total government spending (Gc+Igi+Ige+Grd)
@@ -44,7 +44,7 @@ Kge             % Public Human-related Capital Stock (HCS)
 Ige             % Public spending in public humand-related capital stock
 E               % Time for schooling and taking care of health (building capital)
 lambda_H        % Lagrangian of the Human capital formation
-L             % Labor supply 
+L             % Labor supply
 chiH            % Adjuster so that E=0.1
 eGE             % Gap in public human-capital efficiency (e^GE)
 eGI             % Gap in public infrastructure efficiency (e^GI)
@@ -64,9 +64,9 @@ eGRD            % Gap in public R&D efficiency (e^GRD)
 %-----------------------------
 varexo
 epsi_gc         % Shock to government consumption
-epsi_igi         % Shock to government investment  
+epsi_igi         % Shock to government investment
 epsi_MP         % Monetary Policy Shocks
-epsi_tauc       % Consumption income tax shock 
+epsi_tauc       % Consumption income tax shock
 epsi_tauw       % Labor income tax shock
 epsi_ige        % Public HC spending shock
 epsi_effge
@@ -79,13 +79,13 @@ eTaux          % Auxiliary transfer-rule dummy: zero suspends debt feedback
 %--------------------------
 % Define parameters
 %--------------------------
-parameters 
+parameters
 betta           % Discount value
 varphi             % Frisch parameter
 chi             % indexation
 delta           % depreciationf
 thetap          % firsm cant change the price
-epsilon         % elasticity of substitution 
+epsilon         % elasticity of substitution
 alpha          % share of capital in intermediate firms production
 alphaG          % Share of public capital in the production (paper alpha_G)
 rho_R           % Persistence of policy rate
@@ -107,7 +107,7 @@ eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
 alphaRD         % Long-run R&D elasticity in technology creation
 Grdy           % share of expenditure for R&D
-markupss        % SS markup of Intermediate goods 
+markupss        % SS markup of Intermediate goods
 phi           % obsolescence rate: 0.08/4
 vartheta      % Intermediate goods elasticity of substitution
 gammaa         % Gorwth of tech
@@ -161,6 +161,7 @@ eGI_ss=0.359;
 eGE_ss=0.306;
 // Controlled price-setting counterfactual: retain the selected simplification
 // level and remove only the indexation of non-reset prices.
+chi = 0;
 % gammaa uses the set-specific trend growth rate, so it must come after it
 gammaa=g^((1-alpha)/(vartheta-1))-1;
 model;

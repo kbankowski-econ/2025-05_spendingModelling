@@ -190,12 +190,15 @@ modelList = {
     % --- Step-by-step simplified variants (AE params, gov-consumption shock).
     % Names contain SimpleN -> built from modelTemplateSimple.mod with
     % -DSIMPLIFY_LEVEL=N, which pins progressively more channels to steady state:
-    %   1 = no R&D/technology, 2 = + no human capital, 3 = + no public infra (NK).
+    %   1 = no R&D/technology, 2 = + no human capital, 3 = + no public infra (NK),
+    %   4 = + private capital and investment pinned. The Simple3NoIndex variants
+    %   retain level 3 and set only price indexation to zero.
     % These variants enter the persistent-temporary-shock appendix; the canonical-
     % NK end of the ladder is Model_NK_exp_gc below.
     'Model_Simple1_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_Simple2_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_Simple3_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
+    'Model_Simple3NoIndex_exp_gc',              'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     'Model_Simple4_exp_gc',                     'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
     % From-scratch canonical NK benchmark (own .mod; param/eff columns ignored).
     % AR(1) rho=0.9 +1%-of-GDP government-consumption shock, matching the rest
@@ -207,6 +210,7 @@ modelList = {
     'Model_Simple1_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_Simple2_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_Simple3_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'Model_Simple3NoIndex_exp_gc_perm',         'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_Simple4_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_NK_exp_gc_perm',                     'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     };
@@ -260,6 +264,9 @@ for iModel = 1:size(modelList, 1)
             % nostrict: pinning channels leaves some declared shocks unused (e.g.
             % epsi_q once R&D is off); they are zero in these experiments anyway.
             extraDefs = {sprintf('-DSIMPLIFY_LEVEL=%s', simpTok{1}), 'nostrict'};
+            if contains(thisModel, 'NoIndex')
+                extraDefs{end + 1} = '-DNO_INDEXATION=1';
+            end
         end
         copyfile('modelTemplate_steadystate.m', [thisModel '_steadystate.m']);
 
