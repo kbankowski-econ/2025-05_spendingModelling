@@ -12,7 +12,7 @@ By default the script uses the AR(1) variants. With --permanent it uses the
 corresponding _perm models and writes simplifiedGcAEPerm.*.
 
 Pinned channels show as flat lines (e.g. adopted technology under "No R&D").
-Standalone: the only input is docs/csvFiles/figureNumbers_yearly.csv; it writes
+Standalone: the only input is docs/csvFiles/figureNumbers.csv; it writes
 PNG/PDF/HTML/CSV into docs/2026-06_wp-imf/figures/. Requires pandas + plotly
 (with a Kaleido backend).
 """
@@ -28,7 +28,7 @@ from wp_charts import chart_render_px, chart_display_cm, font_px_for_pt, smart_s
 # --- Paths (resolved from this file; the data CSV is the only external input) -
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parents[1]
-INPUT_CSV = PROJECT_ROOT / "docs" / "csvFiles" / "figureNumbers_yearly.csv"
+INPUT_CSV = PROJECT_ROOT / "docs" / "csvFiles" / "figureNumbers.csv"
 FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 
 # --- Styling (inlined; matches the other working-paper figures) ---------------
@@ -96,12 +96,11 @@ NROWS = 5
 # Block name printed vertically on the left of each row (top to bottom).
 BLOCKS = ["Demand", "Supply", "Labor", "Nominal", "Fiscal"]
 
-# Start at period one of the simulation (2025), the pre-shock steady state where
-# every deviation is zero; the shock is active from 2026 onward.
-PLOT_START_YEAR = 2025
-SHOCK_BASE_YEAR = 2025
+# Plot the pre-shock observation and the subsequent 100 quarterly responses.
+# Keep annual horizon labels, placing them at the corresponding quarter.
+PLOT_HORIZON_QUARTERS = 100
 X_TICK_HORIZONS = [1, 10, 25]
-X_TICKS = [SHOCK_BASE_YEAR + h for h in X_TICK_HORIZONS]
+X_TICKS = [4 * h for h in X_TICK_HORIZONS]
 X_TICK_LABELS = [f"{h}y" for h in X_TICK_HORIZONS]
 OUTPUT_STEM = "simplifiedGcAE"
 TARGET_FONT_PT = 7   # axis ticks; a touch smaller given the dense grid
@@ -114,14 +113,20 @@ BLOCK_FONT_PT = 10   # left-side block names
 def load_data():
     df = pd.read_csv(INPUT_CSV)
     df = df.rename(columns={df.columns[0]: "date"})
-    df["year"] = df["date"].astype(str).str.extract(r"(\d{4})").astype(int)
-    df = df.sort_values("year")
-    return df[df["year"] >= PLOT_START_YEAR]
+    date_parts = (
+        df["date"].astype(str)
+        .str.extract(r"(?P<year>\d{4})Q(?P<quarter>[1-4])")
+        .astype(int)
+    )
+    period = 4 * date_parts["year"] + date_parts["quarter"]
+    df["horizon_quarter"] = period - period.iloc[0]
+    df = df.sort_values("horizon_quarter")
+    return df[df["horizon_quarter"].between(0, PLOT_HORIZON_QUARTERS)]
 
 
 def main(permanent=False):
     df = load_data()
-    years = df["year"].values
+    quarters = df["horizon_quarter"].values
     suffix = "_perm" if permanent else ""
     series = [(f"{model}{suffix}", label, color) for model, label, color in BASE_SERIES]
     output_stem = f"{OUTPUT_STEM}{'Perm' if permanent else ''}"
@@ -154,7 +159,7 @@ def main(permanent=False):
                 continue
             fig.add_trace(
                 go.Scatter(
-                    x=years, y=df[colname].values,
+                    x=quarters, y=df[colname].values,
                     name=label, legendgroup=label,
                     line=dict(color=color, width=STYLE["line_width_standard"]),
                     showlegend=(idx == 0),   # one legend entry per model
@@ -218,16 +223,20 @@ def main(permanent=False):
     fig.write_html(html_path, auto_open=True)
     print(f"  Saved {png_path.name}, {pdf_path.name} and {html_path.name}")
 
-    # Tidy long-format export: one row per (year, model, variable).
+    # Tidy long-format export: one row per (quarter, model, variable).
     records = []
     for var, title in (panel for panel in PANELS if panel is not None):
         for model, label, _ in series:
             colname = f"{model}___{var}"
             if colname not in df.columns:
                 continue
-            for yr, val in zip(years, df[colname].values):
-                records.append({"year": yr, "model": label, "variable": title,
-                                "pct_dev": round(val, 3)})
+            for quarter, val in zip(quarters, df[colname].values):
+                records.append({
+                    "horizon_quarter": quarter,
+                    "model": label,
+                    "variable": title,
+                    "pct_dev": round(val, 3),
+                })
     csv_path = FIGURES_DIR / f"{output_stem}.csv"
     pd.DataFrame(records).to_csv(csv_path, index=False)
     print(f"  Exported data to {csv_path.name}")
