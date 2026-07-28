@@ -99,6 +99,7 @@ BLOCKS = ["Demand", "Supply", "Labor", "Nominal", "Fiscal"]
 # Plot the pre-shock observation and the subsequent 100 quarterly responses.
 # Keep annual horizon labels, placing them at the corresponding quarter.
 PLOT_HORIZON_QUARTERS = 100
+IMPACT_QUARTER = 1
 X_TICK_HORIZONS = [1, 10, 25]
 X_TICKS = [4 * h for h in X_TICK_HORIZONS]
 X_TICK_LABELS = [f"{h}y" for h in X_TICK_HORIZONS]
@@ -127,6 +128,7 @@ def load_data():
 def main(permanent=False):
     df = load_data()
     quarters = df["horizon_quarter"].values
+    impact_values = df.set_index("horizon_quarter").loc[IMPACT_QUARTER]
     suffix = "_perm" if permanent else ""
     series = [(f"{model}{suffix}", label, color) for model, label, color in BASE_SERIES]
     output_stem = f"{OUTPUT_STEM}{'Perm' if permanent else ''}"
@@ -163,6 +165,24 @@ def main(permanent=False):
                     name=label, legendgroup=label,
                     line=dict(color=color, width=STYLE["line_width_standard"]),
                     showlegend=(idx == 0),   # one legend entry per model
+                ),
+                row=row, col=col,
+            )
+        for model, label, color in series:
+            colname = f"{model}___{var}"
+            if colname not in df.columns:
+                continue
+            fig.add_trace(
+                go.Scatter(
+                    x=[IMPACT_QUARTER], y=[impact_values[colname]],
+                    name=label, legendgroup=label,
+                    mode="markers",
+                    marker=dict(
+                        symbol="circle", size=6, color=color,
+                        line=dict(color="white", width=0.75),
+                    ),
+                    showlegend=False,
+                    hovertemplate=f"{label}<br>Q1: %{{y:.3f}}<extra></extra>",
                 ),
                 row=row, col=col,
             )
