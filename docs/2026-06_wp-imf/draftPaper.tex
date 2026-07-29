@@ -609,7 +609,7 @@ The transmission analysis focuses on the AE calibration to describe the underlyi
 The sensitivity analysis then varies structural parameters central to the calibration differences between the two groups.
 The cumulative-multiplier analysis subsequently adds the EMDE calibration, allowing the responses to be compared across country groups.
 
-\subsection{Transmission of Public Spending}
+\subsection{Transmission of Public Spending} \label{subsec:transmission}
 
 The standard-shock exercise raises each spending instrument permanently by ex-ante 1 percent of GDP, with no offsetting spending cut or tax increase.
 The expansions are entirely debt financed throughout the reported horizon by setting the auxiliary dummy $e_{T,t}^{\mathrm{aux}}$ to zero.
@@ -708,16 +708,29 @@ The horizontal axis reports quarterly responses on a linear scale through the 25
 
 \subsection{Fiscal Multipliers}
 
-The differing payoff horizons can be summarized by cumulative fiscal multipliers, which measure the discounted output gain per unit of additional spending.
+Cumulative fiscal multipliers complement the impulse responses by summarizing the discounted output gain per unit of additional spending.
+Their evolution across horizons shows how quickly each spending category pays off.
+The country-group comparison further shows how the calibration differences described in Section~\ref{sec:calibration} shape these returns.
 
-Permanent spending increases yield cumulative multipliers that vary across instruments, horizons, and country-group calibrations (Table~\ref{tab:multipliers}).
-Each multiplier is computed from a debt-financed increase of 1 percent of GDP in one spending category, with no offsetting cut to other spending.
+Each multiplier is computed from the debt-financed permanent increases analyzed in Subsection~\ref{subsec:transmission}.
+One spending category rises by 1 percent of GDP, with no offsetting cut to other spending.\footnote{Appendix~\ref{app:tempshocks} reports the persistent AR(1) counterparts, which are generally larger at intermediate horizons.}
 Output and spending are discounted at the model's steady-state real interest rate before cumulating, so gains and costs accruing at different dates are weighted consistently.
 Because the additional spending persists, the discounted numerator and denominator both continue to grow with the horizon, and the cumulative multiplier gradually converges toward its long-run value.
-Infrastructure pays off fastest, while human capital and---in advanced economies---R\&D build up more slowly but catch up to or exceed infrastructure by the 25-year horizon; government consumption, being unproductive, yields a long-run multiplier below one.
-The investment multipliers are larger for emerging market and developing economies, reflecting the higher output elasticity of infrastructure and the higher marginal product of public capital in these economies; the R\&D channel is shut down there, as these economies grow mainly by adopting existing technologies rather than creating them.
-At medium horizons these magnitudes are broadly in line with the public-investment and R\&D multipliers documented in the empirical literature \citep{Ramey2020, AfonsoRodrigues2024, FieldhouseMertens2023}, though the model's long-run values are larger, reflecting the durability of the public capital created.
-Appendix~\ref{app:tempshocks} reports the persistent AR(1) counterparts, which are generally larger at intermediate horizons.
+
+Government consumption provides a natural reference point because it is the standard fiscal instrument and creates no productive stock.
+Its AE multiplier remains below one at every horizon, reaching just 0.65 in the long term (Table~\ref{tab:multipliers}).
+Infrastructure begins generating sustained productivity gains sooner than the other productive instruments.
+Its AE multiplier exceeds one between 10 and 20 years and reaches 3.08 in the long term.
+Human-capital and R\&D gains are more back-loaded, but their 25-year multipliers reach 1.70 and 2.44, respectively.
+Their long-term multipliers, at 7.18 and 5.45, exceed that of infrastructure.
+At medium horizons, the productive-spending multipliers are broadly in line with empirical estimates of public-investment and R\&D multipliers \citep{Ramey2020, AfonsoRodrigues2024, FieldhouseMertens2023}.
+The model's larger long-term values reflect the durability of the productive stocks these instruments create.
+
+Infrastructure and human-capital investment generate larger multipliers in the EMDE calibration.
+At the 25-year horizon, the infrastructure multiplier is 2.84 in EMDEs versus 1.60 in AEs; the corresponding human-capital values are 3.20 and 1.70.
+The government-consumption multiplier, by contrast, is lower for EMDEs, at 0.33 versus 0.43.
+The EMDE advantage is therefore specific to the active productive-spending channels and reflects the higher calibrated elasticities associated with less developed public-capital stocks.
+An EMDE R\&D multiplier is not reported because public R\&D does not expand the created-technology stock in that calibration.
 
 \begin{table}[H]
     \centering
