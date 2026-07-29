@@ -12,8 +12,8 @@ swept over a plausible range, one panel each:
   - R&D investment            -> Model_HumanCapital_exp_grd, vary alpha_RD
 
 In each panel the lines fan from the low (light) to the high (dark) parameter
-value; the thick grey line is the baseline calibration. A 1x3 grid of percent
-deviations from steady state.
+value; the thick grey line is the baseline calibration. Circles identify the
+first-quarter responses. A 1x3 grid of percent deviations from steady state.
 
 Data source: the one-at-a-time parameter sweep produced by
 investigations/sensitivity/sweep.m. By default this reads sweep_AE_irf.csv;
@@ -61,8 +61,10 @@ PANELS = [
      "α<sub>RD</sub>", ("#A5D6A7", "#1B5E20")),
 ]
 
-HORIZON_YEARS = 25                          # match the multiplier table's 25y window
-X_TICK_HORIZONS = [1, 10, 25]
+HORIZON_QUARTERS = 100                      # 25 years of quarterly responses
+IMPACT_QUARTER = 1
+X_TICKS = [IMPACT_QUARTER, 20, 40, HORIZON_QUARTERS]
+X_TICK_LABELS = ["1q", "5y", "10y", "25y"]
 OUTPUT_STEM = "sensitivityIRF_AE"
 FONT_FAMILY = "Palatino, 'Palatino Linotype', 'Book Antiqua', serif"
 
@@ -96,8 +98,8 @@ def main(permanent=False):
     label_font_px = font_px_for_pt(6.5, width_px, display_cm[0])
 
     irf = pd.read_csv(input_csv)
-    ycols = [f"yd_y{y}" for y in range(HORIZON_YEARS + 1)]
-    years = list(range(HORIZON_YEARS + 1))
+    ycols = [f"yd_q{q}" for q in range(IMPACT_QUARTER, HORIZON_QUARTERS + 1)]
+    quarters = list(range(IMPACT_QUARTER, HORIZON_QUARTERS + 1))
 
     # Common y-range (all panels share one vertical scale) and the minimum data
     # gap two endpoint labels need to avoid overlapping, used to spread the
@@ -128,8 +130,20 @@ def main(permanent=False):
             frac = 0.0 if hi == lo else (row.param_value - lo) / (hi - lo)
             fig.add_trace(
                 go.Scatter(
-                    x=years, y=row[ycols].to_numpy(dtype=float), mode="lines",
+                    x=quarters, y=row[ycols].to_numpy(dtype=float), mode="lines",
                     line=dict(color=_lerp_hex(c_lo, c_hi, frac), width=STYLE["line_width_standard"]),
+                    showlegend=False, hoverinfo="skip",
+                ),
+                row=1, col=col,
+            )
+            fig.add_trace(
+                go.Scatter(
+                    x=[IMPACT_QUARTER], y=[float(row[ycols[0]])], mode="markers",
+                    marker=dict(
+                        symbol="circle", size=6,
+                        color=_lerp_hex(c_lo, c_hi, frac),
+                        line=dict(color="white", width=0.75),
+                    ),
                     showlegend=False, hoverinfo="skip",
                 ),
                 row=1, col=col,
@@ -139,8 +153,19 @@ def main(permanent=False):
         if len(base):
             fig.add_trace(
                 go.Scatter(
-                    x=years, y=base.iloc[0][ycols].to_numpy(dtype=float), mode="lines",
+                    x=quarters, y=base.iloc[0][ycols].to_numpy(dtype=float), mode="lines",
                     line=dict(color="#757575", width=5.0),
+                    showlegend=False, hoverinfo="skip",
+                ),
+                row=1, col=col,
+            )
+            fig.add_trace(
+                go.Scatter(
+                    x=[IMPACT_QUARTER], y=[float(base.iloc[0][ycols[0]])], mode="markers",
+                    marker=dict(
+                        symbol="circle", size=7, color="#757575",
+                        line=dict(color="white", width=0.75),
+                    ),
                     showlegend=False, hoverinfo="skip",
                 ),
                 row=1, col=col,
@@ -167,7 +192,7 @@ def main(permanent=False):
             items[k]["label_y"] = min(items[k]["y"], items[k + 1]["label_y"] - label_min_gap)
         for d in items:
             fig.add_annotation(
-                row=1, col=col, x=HORIZON_YEARS, y=d["label_y"],
+                row=1, col=col, x=HORIZON_QUARTERS, y=d["label_y"],
                 text=_format_param(d["val"]), showarrow=False,
                 xanchor="left", yanchor="middle", xshift=3,
                 font=dict(family=FONT_FAMILY, size=label_font_px, color=d["color"]),
@@ -187,8 +212,8 @@ def main(permanent=False):
 
     axes = STYLE["axes"]
     fig.update_xaxes(
-        tickvals=X_TICK_HORIZONS, ticktext=[f"{h}y" for h in X_TICK_HORIZONS],
-        range=[0, HORIZON_YEARS], showgrid=False,
+        tickvals=X_TICKS, ticktext=X_TICK_LABELS,
+        tickangle=0, range=[0, HORIZON_QUARTERS], showgrid=False,
         linecolor=axes["linecolor"], linewidth=axes["linewidth"],
         ticks=axes["ticks"], tickfont=dict(size=font_px),
     )
@@ -209,16 +234,16 @@ def main(permanent=False):
     fig.write_html(html_path, auto_open=True)
     print(f"  Saved {png_path.name}, {pdf_path.name} and {html_path.name}")
 
-    # Tidy long-format export: one row per (panel, parameter value, year).
+    # Tidy long-format export: one row per (panel, parameter value, quarter).
     records = []
     for base_ex, param, title, _psym, _ramp in PANELS:
         ex = f"{base_ex}{suffix}"
         sub = irf[(irf.experiment == ex) & (irf.param == param)].sort_values("param_value")
         for _, row in sub.iterrows():
-            for y in years:
+            for q in quarters:
                 records.append({"panel": title, "param": param,
-                                "param_value": row.param_value, "year": y,
-                                "pct_dev": round(float(row[f"yd_y{y}"]), 3)})
+                                "param_value": row.param_value, "quarter": q,
+                                "pct_dev": round(float(row[f"yd_q{q}"]), 3)})
     csv_path = FIGURES_DIR / f"{output_stem}.csv"
     pd.DataFrame(records).to_csv(csv_path, index=False)
     print(f"  Exported data to {csv_path.name}")

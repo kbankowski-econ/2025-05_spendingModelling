@@ -70,10 +70,11 @@ Horizons: 1, 5, 10, 20, 25 years and a "long-term" 250-year column.
 - `results/sweep_AE.csv` — tidy multiplier output: `experiment, instrument,
   param, param_value, is_baseline, mult_1y, mult_5y, mult_10y, mult_20y,
   mult_25y, mult_long`. (`*_smoke.csv` are gitignored smoke artifacts.)
-- `results/sweep_AE_irf.csv` — companion IRF output: the **annual `yd` impulse
-  response** (percent deviation from steady state) for every draw, wide —
-  `…, is_baseline, yd_y0 … yd_y50` (year 0 = SS = 0; year k = mean of that
-  year's four quarters). Same rows as the multiplier file.
+- `results/sweep_AE_irf.csv` — companion IRF output: the `yd` impulse response
+  (percent deviation from steady state) for every draw, wide. Annual columns
+  `yd_y0 … yd_y50` retain yearly averages for the investigation plots; quarterly
+  columns `yd_q1 … yd_q100` provide the first 25 years for the paper figures.
+  Same rows as the multiplier file.
 - `results/sweep_AE_perm.csv` and `results/sweep_AE_irf_perm.csv` — permanent-shock
   counterparts of the two files above, generated with `SWEEP_PERMANENT=1`.
 - `plot_sweep.py` — (i) `sweep_grid.png`: multiplier vs. parameter, experiment ×

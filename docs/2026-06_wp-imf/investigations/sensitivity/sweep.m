@@ -76,7 +76,8 @@ if smoke
     periods    = 1200;                    % must exceed the period-1000 shock path
 end
 
-nYears = ternary(smoke, 10, 50);     % annual yd IRF horizon
+nYears = ternary(smoke, 10, 50);        % annual yd IRF horizon
+nQuarters = ternary(smoke, 40, 100);    % quarterly yd IRF horizon for paper figures
 
 variantSuffix = ternary(permanent, '_perm', '');
 smokeSuffix = ternary(smoke, '_smoke', '');
@@ -85,12 +86,14 @@ fid = fopen(csvPath, 'w');
 hdr = sprintf('mult_%dy,', horizonsYr); hdr = strrep(hdr(1:end-1), 'mult_250y', 'mult_long');
 fprintf(fid, 'experiment,instrument,param,param_value,is_baseline,%s\n', hdr);
 
-% Companion file: annual yd IRF (percent deviation from SS), wide — one row per
-% draw, columns yd_y0..yd_y<nYears>.
+% Companion file: yd IRF (percent deviation from SS), wide -- one row per draw.
+% Retain annual averages for the investigation plots and append quarters 1--100
+% for the paper figures.
 irfPath = fullfile(resDir, sprintf('sweep_AE_irf%s%s.csv', variantSuffix, smokeSuffix));
 fidIrf = fopen(irfPath, 'w');
 irfHdr = sprintf('yd_y%d,', 0:nYears); irfHdr = irfHdr(1:end-1);
-fprintf(fidIrf, 'experiment,instrument,param,param_value,is_baseline,%s\n', irfHdr);
+irfQHdr = sprintf('yd_q%d,', 1:nQuarters); irfQHdr = irfQHdr(1:end-1);
+fprintf(fidIrf, 'experiment,instrument,param,param_value,is_baseline,%s,%s\n', irfHdr, irfQHdr);
 
 for ie = 1:size(exps, 1)
     modelName = exps{ie, 1};
@@ -135,9 +138,9 @@ for ie = 1:size(exps, 1)
     options_.periods = periods;
 
     % --- baseline (all params at AE calibration) ---
-    [mBase, ydBase] = solveMult(periods, iYd, iInst, beta, horizonsYr, nYears);
+    [mBase, ydBaseAnn, ydBaseQtr] = solveMult(periods, iYd, iInst, beta, horizonsYr, nYears, nQuarters);
     writeRow(fid, modelName, instVar, 'baseline', NaN, 1, mBase);
-    writeRow(fidIrf, modelName, instVar, 'baseline', NaN, 1, ydBase);
+    writeRow(fidIrf, modelName, instVar, 'baseline', NaN, 1, [ydBaseAnn ydBaseQtr]);
     fprintf('  baseline  %s\n', fmtMult(mBase, horizonsYr));
 
     % --- OAT sweep ---
@@ -149,13 +152,14 @@ for ie = 1:size(exps, 1)
             ok = true;
             try
                 set_param_value(pName, v);
-                [m, ydAnn] = solveMult(periods, iYd, iInst, beta, horizonsYr, nYears);
+                [m, ydAnn, ydQtr] = solveMult(periods, iYd, iInst, beta, horizonsYr, nYears, nQuarters);
             catch ME
-                ok = false; m = nan(1, numel(horizonsYr)); ydAnn = nan(1, nYears + 1);
+                ok = false; m = nan(1, numel(horizonsYr));
+                ydAnn = nan(1, nYears + 1); ydQtr = nan(1, nQuarters);
                 fprintf('  !! %s=%g failed: %s\n', pName, v, ME.message);
             end
             writeRow(fid, modelName, instVar, pName, v, 0, m);
-            writeRow(fidIrf, modelName, instVar, pName, v, 0, ydAnn);
+            writeRow(fidIrf, modelName, instVar, pName, v, 0, [ydAnn ydQtr]);
             if ok
                 fprintf('  %-8s=%-7g %s\n', pName, v, fmtMult(m, horizonsYr));
             end
@@ -169,7 +173,7 @@ fclose(fidIrf);
 fprintf('\nWrote %s\n  and %s\n', csvPath, irfPath);
 
 %% ---------- local functions ----------
-function [m, ydAnn] = solveMult(periods, iYd, iInst, beta, horizonsYr, nYears)
+function [m, ydAnn, ydQtr] = solveMult(periods, iYd, iInst, beta, horizonsYr, nYears, nQuarters)
     global oo_ options_
     options_.periods = periods;
     steady;                       % refresh SS at the current params
@@ -201,6 +205,14 @@ function [m, ydAnn] = solveMult(periods, iYd, iInst, beta, horizonsYr, nYears)
         q = (4*k - 2):(4*k + 1);
         if max(q) <= size(e, 2)
             ydAnn(k + 1) = mean(yd(q) / ydss - 1) * 100;
+        end
+    end
+    % Quarterly yd IRF from impact (q1) onward. The shock starts in period 2,
+    % so model period k+1 corresponds to response quarter k.
+    ydQtr = nan(1, nQuarters);
+    for k = 1:nQuarters
+        if k + 1 <= size(e, 2)
+            ydQtr(k) = (yd(k + 1) / ydss - 1) * 100;
         end
     end
 end
