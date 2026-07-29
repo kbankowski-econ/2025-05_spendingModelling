@@ -12,7 +12,8 @@ swept over a plausible range, one panel each:
   - R&D investment            -> Model_HumanCapital_exp_grd, vary alpha_RD
 
 In each panel the lines fan from the low (light) to the high (dark) parameter
-value; the thick grey line is the baseline calibration. Circles identify the
+value. The thick grey line is the AE baseline; where applicable, a thick colored
+line marks the EMDE value of the varied elasticity. Circles identify the
 first-quarter responses. A 1x3 grid of percent deviations from steady state.
 
 Data source: the one-at-a-time parameter sweep produced by
@@ -42,7 +43,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 # --- Styling (inlined; matches the other working-paper figures) ---------------
 STYLE = {
     "template": "simple_white",
-    "margins": {"t": 44, "b": 28, "l": 40, "r": 40},
+    "margins": {"t": 44, "b": 28, "l": 40, "r": 80},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
              "zeroline": True, "zerolinewidth": 1.5},
@@ -60,6 +61,9 @@ PANELS = [
     ("Model_HumanCapital_exp_grd", "alphaRD", "R&D (α<sub>RD</sub>)",
      "α<sub>RD</sub>", ("#A5D6A7", "#1B5E20")),
 ]
+
+AE_VALUES = {"alphaG": 0.054, "mu": 0.10, "alphaRD": 0.09}
+EMDE_VALUES = {"alphaG": 0.17, "mu": 0.25}
 
 HORIZON_QUARTERS = 100                      # 25 years of quarterly responses
 IMPACT_QUARTER = 1
@@ -117,7 +121,7 @@ def main(permanent=False):
         rows=1, cols=len(PANELS),
         subplot_titles=[p[2] for p in PANELS],
         shared_yaxes=True,            # common y-scale across all three panels
-        horizontal_spacing=0.10,
+        horizontal_spacing=0.15,
     )
 
     for j, (base_ex, param, _title, _psym, (c_lo, c_hi)) in enumerate(PANELS):
@@ -128,10 +132,14 @@ def main(permanent=False):
         lo, hi = vals.min(), vals.max()
         for _, row in sub.iterrows():
             frac = 0.0 if hi == lo else (row.param_value - lo) / (hi - lo)
+            is_emde = param in EMDE_VALUES and abs(row.param_value - EMDE_VALUES[param]) < 1e-9
             fig.add_trace(
                 go.Scatter(
                     x=quarters, y=row[ycols].to_numpy(dtype=float), mode="lines",
-                    line=dict(color=_lerp_hex(c_lo, c_hi, frac), width=STYLE["line_width_standard"]),
+                    line=dict(
+                        color=_lerp_hex(c_lo, c_hi, frac),
+                        width=4.0 if is_emde else STYLE["line_width_standard"],
+                    ),
                     showlegend=False, hoverinfo="skip",
                 ),
                 row=1, col=col,
@@ -140,7 +148,7 @@ def main(permanent=False):
                 go.Scatter(
                     x=[IMPACT_QUARTER], y=[float(row[ycols[0]])], mode="markers",
                     marker=dict(
-                        symbol="circle", size=6,
+                        symbol="circle", size=7 if is_emde else 6,
                         color=_lerp_hex(c_lo, c_hi, frac),
                         line=dict(color="white", width=0.75),
                     ),
@@ -175,14 +183,14 @@ def main(permanent=False):
         # label is greyed to match the thick grey baseline line and stays at its
         # endpoint; the others are spread vertically outward from it (up for
         # higher values, down for lower) only where they would otherwise overlap.
-        base_end = float(base.iloc[0][ycols[-1]]) if len(base) else None
         items = []
         for _, r in sub.iterrows():
             frac = 0.0 if hi == lo else (r.param_value - lo) / (hi - lo)
             r_end = float(r[ycols[-1]])
-            is_base = base_end is not None and abs(r_end - base_end) < 1e-9
+            is_base = abs(r.param_value - AE_VALUES[param]) < 1e-9
+            is_emde = param in EMDE_VALUES and abs(r.param_value - EMDE_VALUES[param]) < 1e-9
             items.append({"y": r_end, "label_y": r_end, "val": r.param_value,
-                          "is_base": is_base,
+                          "is_base": is_base, "is_emde": is_emde,
                           "color": "#757575" if is_base else _lerp_hex(c_lo, c_hi, frac)})
         items.sort(key=lambda d: d["y"])
         anchor = next((k for k, d in enumerate(items) if d["is_base"]), len(items) // 2)
@@ -191,9 +199,14 @@ def main(permanent=False):
         for k in range(anchor - 1, -1, -1):                  # push lower labels down
             items[k]["label_y"] = min(items[k]["y"], items[k + 1]["label_y"] - label_min_gap)
         for d in items:
+            label = _format_param(d["val"])
+            if d["is_base"]:
+                label += " (AE)"
+            elif d["is_emde"]:
+                label += " (EMDE)"
             fig.add_annotation(
                 row=1, col=col, x=HORIZON_QUARTERS, y=d["label_y"],
-                text=_format_param(d["val"]), showarrow=False,
+                text=label, showarrow=False,
                 xanchor="left", yanchor="middle", xshift=3,
                 font=dict(family=FONT_FAMILY, size=label_font_px, color=d["color"]),
             )
