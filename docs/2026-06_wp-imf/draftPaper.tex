@@ -512,7 +512,7 @@ Public debt is reported relative to annual GDP; the Dynare implementation divide
 Spending shares are relative to quarterly GDP, while implicit tax rates are measured against their corresponding tax bases; both are numerically unchanged at an annual frequency.}
 \end{table}
 
-\subsection{Productive-Spending and Endogenous-Growth Parameters}
+\subsection{Productive-Spending and Endogenous-Growth Parameters} \label{subsec:productive-calibration}
 
 Each productive-spending category operates through a distinct propagation mechanism, and the country-specific calibration reflects differences in initial productive stocks and innovation capacity.
 Infrastructure investment builds public capital; human-capital investment raises workforce skills.
@@ -675,15 +675,21 @@ The real interest rate is the nominal interest rate deflated by inflation.}
 \subsection{Sensitivity}
 
 The productive-spending elasticities are central to both the size of the output gains and the differences between the two country-group calibrations.
-In the model, each productive spending category's potency is driven primarily by its own elasticity: the infrastructure response scales with the output elasticity of public infrastructure ($\alpha_G$), the human-capital response with the elasticity of human capital formation with respect to the public stock ($\mu$), and the R\&D response with the elasticity of technology creation with respect to public R\&D ($\alpha_{RD}$).
+In the model, the strength of each productive-spending channel is governed primarily by its own elasticity.
+The infrastructure response scales with the output elasticity of public infrastructure ($\alpha_G$).
+The human-capital response scales with the elasticity of human-capital formation with respect to the public stock ($\mu$).
+The R\&D response scales with the elasticity of technology creation with respect to public R\&D ($\alpha_{RD}$).
 
-The output gains are sensitive to the calibration of elasticities.
-Figure~\ref{fig:sensitivity} traces the output response to each permanent productive expansion as the relevant elasticities are varied over a plausible range.
+Figure~\ref{fig:sensitivity} illustrates this sensitivity by tracing the output response to each permanent productive expansion as its relevant elasticity is varied over a plausible range.
 At the 25-year horizon, the output response spans about 1.3 to 8.4 percent for infrastructure, 2.4 to 12.6 percent for human capital, and 1.6 to 24.1 percent for R\&D over the parameter ranges considered.
-The ordering of horizons is robust throughout, with infrastructure paying off first and human capital and R\&D later.
-The efficiency wedges $e^{GI}$, $e^{GE}$, and $e^{GRD}$ enter differently: they scale the steady-state stock of effective public capital, so they govern the gains from \emph{closing} efficiency gaps (Section~\ref{subsec:efficiency}) but leave the multiplier of an additional unit of spending essentially unchanged.
-A further key parameter is the speed of technology diffusion, governed by the adoption probability $q_t$: faster diffusion brings the productivity payoff of R\&D forward, raising the gains at every horizon.
-Section~\ref{subsec:hcrd} quantifies this for the human-capital/R\&D policy mix (Figure~\ref{fig:diffusion}).
+The timing of the gains is robust across these ranges.
+Infrastructure begins to pay off earliest and then builds gradually.
+Human-capital investment produces a short-lived impact gain before larger benefits emerge over time, whereas R\&D briefly lowers output after impact and delivers its strongest gains later.
+
+The highlighted country-group values show how the calibration of these elasticities contributes to differences in the effects of productive spending.
+The values are grounded in the literature reviewed in Subsection~\ref{subsec:productive-calibration} and capture relevant structural differences between the two groups.
+At the EMDE values of $\alpha_G$ and $\mu$, infrastructure and human-capital investment are more potent than at the corresponding AE values.
+The cumulative multipliers below compare the full AE and EMDE calibrations.
 
 \begin{figure}[H]
     \centering
@@ -725,6 +731,11 @@ Formally, the $N$-year multiplier is $\left(\sum_{t=1}^{4N}\beta^{t}\,\Delta Y_t
 The ``Long-term'' column reports the multiplier at a 250-year horizon; convergence is gradual under a permanent increase, so this column may still slightly understate the eventual long-run multiplier.
 The R\&D innovation channel is shut down for emerging market and developing economies.}
 \end{table}
+
+\subsection{Improving efficiency}
+
+The efficiency wedges $e^{GI}$, $e^{GE}$, and $e^{GRD}$ enter differently: they scale the steady-state stock of effective public capital, so they govern the gains from \emph{closing} efficiency gaps (Section~\ref{subsec:efficiency}) but leave the multiplier of an additional unit of spending essentially unchanged.
+
 
 %========================================================================
 \section{Policy Experiments} \label{sec:results}
