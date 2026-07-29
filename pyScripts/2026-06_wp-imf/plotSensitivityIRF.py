@@ -5,7 +5,7 @@ its persistent-temporary-shock appendix counterpart.
 
 For the three productive advanced-economy expansions, the output response (yd,
 percent deviation from steady state) is traced as one structural parameter is
-swept over a plausible range, one panel each:
+swept over an illustrative range, one panel each:
 
   - Infrastructure investment -> Model_HumanCapital_exp_igi, vary alpha_G
   - Human capital investment  -> Model_HumanCapital_exp_ige, vary mu
