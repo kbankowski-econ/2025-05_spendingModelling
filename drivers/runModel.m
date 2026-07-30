@@ -107,7 +107,7 @@ modelList = {
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     % --- Permanent efficiency-gap closures --- Each experiment sets one
     % efficiency gap to zero from quarter 1 onward while leaving spending
-    % unchanged. These scenarios feed the Section 5.2 transmission figures.
+    % unchanged. These scenarios feed the Section 4.4 transmission figures.
     'Model_HumanCapital_effgi_perm',            'AE', 'AE',     {{'epsi_effgi',  'const', 0.359, '1:1000'}}
     'Model_HumanCapital_effge_perm',            'AE', 'AE',     {{'epsi_effge',  'const', 0.306, '1:1000'}}
     'Model_HumanCapital_effgrd_perm',           'AE', 'AE',     {{'epsi_effgrd', 'const', 0.399, '1:1000'}}
