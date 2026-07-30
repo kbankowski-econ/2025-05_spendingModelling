@@ -1199,606 +1199,606 @@ horizon_quarter,instrument,treatment,variable,response
 98,R&D,Spending increase,Consumption (C<sub>t</sub>),1.814
 99,R&D,Spending increase,Consumption (C<sub>t</sub>),1.829
 100,R&D,Spending increase,Consumption (C<sub>t</sub>),1.843
-1,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.039
-2,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.01
-3,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.015
-4,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.016
-5,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.017
-6,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.018
-7,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.019
-8,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.02
-9,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.022
-10,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.023
-11,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.024
-12,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.025
-13,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.027
-14,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.028
-15,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.03
-16,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.031
-17,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.032
-18,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.034
-19,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.035
-20,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.036
-21,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.038
-22,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.039
-23,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.04
-24,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.042
-25,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.043
-26,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.044
-27,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.046
-28,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.047
-29,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.048
-30,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.05
-31,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.051
-32,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.052
-33,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.053
-34,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.054
-35,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.056
-36,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.057
-37,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.058
-38,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.059
-39,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.06
-40,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.061
-41,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.062
-42,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.063
-43,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.064
-44,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.065
-45,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.066
-46,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.067
-47,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.068
-48,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.069
-49,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.07
-50,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.07
-51,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.071
-52,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.072
-53,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.073
-54,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.074
-55,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.074
-56,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.075
-57,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.076
-58,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.076
-59,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.077
-60,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.077
-61,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.078
-62,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.079
-63,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.079
-64,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.08
-65,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.08
-66,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.081
-67,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.081
-68,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.082
-69,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.082
-70,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.082
-71,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.083
-72,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.083
-73,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.084
-74,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.084
-75,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.084
-76,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.084
-77,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.085
-78,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.085
-79,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.085
-80,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.086
-81,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.086
-82,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.086
-83,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.086
-84,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.086
-85,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.086
-86,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-87,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-88,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-89,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-90,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-91,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-92,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-93,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-94,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-95,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-96,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-97,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-98,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-99,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-100,Infrastructure,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-1,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.224
-2,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.268
-3,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.265
-4,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.263
-5,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.26
-6,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.258
-7,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.256
-8,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.254
-9,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.252
-10,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.25
-11,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.248
-12,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.246
-13,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.244
-14,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.242
-15,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.24
-16,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.238
-17,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.236
-18,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.234
-19,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.232
-20,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.23
-21,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.228
-22,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.225
-23,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.223
-24,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.221
-25,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.219
-26,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.217
-27,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.215
-28,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.213
-29,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.211
-30,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.209
-31,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.207
-32,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.205
-33,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.203
-34,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.201
-35,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.2
-36,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.198
-37,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.196
-38,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.194
-39,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.192
-40,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.19
-41,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.188
-42,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.187
-43,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.185
-44,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.183
-45,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.181
-46,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.179
-47,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.178
-48,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.176
-49,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.174
-50,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.173
-51,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.171
-52,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.169
-53,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.168
-54,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.166
-55,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.165
-56,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.163
-57,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.161
-58,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.16
-59,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.158
-60,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.157
-61,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.155
-62,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.154
-63,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.152
-64,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.151
-65,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.15
-66,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.148
-67,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.147
-68,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.145
-69,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.144
-70,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.143
-71,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.141
-72,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.14
-73,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.139
-74,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.138
-75,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.136
-76,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.135
-77,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.134
-78,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.133
-79,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.131
-80,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.13
-81,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.129
-82,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.128
-83,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.127
-84,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.125
-85,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.124
-86,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.123
-87,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.122
-88,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.121
-89,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.12
-90,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.119
-91,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.118
-92,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.117
-93,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.116
-94,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.115
-95,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.114
-96,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.113
-97,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.112
-98,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.111
-99,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.11
-100,Infrastructure,Spending increase,Primary deficit (PD<sub>t</sub>),0.109
-1,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.077
-2,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.027
-3,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.031
-4,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.029
-5,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.028
-6,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.026
-7,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.025
-8,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.023
-9,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.022
-10,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.021
-11,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.02
-12,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.019
-13,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.018
-14,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.017
-15,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.017
-16,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.017
-17,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.017
-18,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.016
-19,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.017
-20,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.017
-21,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.017
-22,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.018
-23,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.018
-24,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.019
-25,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.02
-26,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.021
-27,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.022
-28,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.023
-29,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.025
-30,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.026
-31,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.028
-32,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.029
-33,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.031
-34,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.033
-35,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.035
-36,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.037
-37,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.039
-38,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.041
-39,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.044
-40,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.046
-41,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.048
-42,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.051
-43,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.053
-44,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.056
-45,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.058
-46,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.061
-47,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.064
-48,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.067
-49,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.069
-50,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.072
-51,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.075
-52,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.078
-53,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.081
-54,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.084
-55,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.087
-56,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.09
-57,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.093
-58,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.096
-59,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.099
-60,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.102
-61,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.105
-62,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.108
-63,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.111
-64,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.114
-65,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.117
-66,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.12
-67,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.123
-68,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.126
-69,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.129
-70,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.132
-71,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.135
-72,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.138
-73,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.141
-74,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.144
-75,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.147
-76,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.15
-77,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.153
-78,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.156
-79,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.159
-80,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.161
-81,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.164
-82,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.167
-83,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.17
-84,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.172
-85,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.175
-86,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.178
-87,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.18
-88,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.183
-89,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.185
-90,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.188
-91,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.19
-92,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.193
-93,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.195
-94,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.197
-95,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.2
-96,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.202
-97,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.204
-98,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.206
-99,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.208
-100,Human capital,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.21
-1,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.186
-2,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.241
-3,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.241
-4,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.242
-5,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.244
-6,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.246
-7,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.247
-8,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.249
-9,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.25
-10,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.252
-11,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.253
-12,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.253
-13,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.254
-14,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.254
-15,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.255
-16,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.255
-17,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.255
-18,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.254
-19,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.254
-20,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.254
-21,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.253
-22,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.252
-23,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.251
-24,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.25
-25,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.249
-26,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.247
-27,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.246
-28,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.244
-29,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.242
-30,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.24
-31,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.238
-32,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.236
-33,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.234
-34,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.231
-35,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.229
-36,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.226
-37,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.224
-38,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.221
-39,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.218
-40,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.215
-41,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.212
-42,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.209
-43,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.206
-44,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.202
-45,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.199
-46,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.196
-47,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.192
-48,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.189
-49,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.185
-50,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.181
-51,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.178
-52,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.174
-53,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.17
-54,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.166
-55,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.162
-56,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.158
-57,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.154
-58,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.15
-59,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.146
-60,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.142
-61,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.138
-62,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.134
-63,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.13
-64,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.125
-65,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.121
-66,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.117
-67,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.113
-68,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.109
-69,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.104
-70,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.1
-71,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.096
-72,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.091
-73,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.087
-74,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.083
-75,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.078
-76,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.074
-77,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.07
-78,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.065
-79,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.061
-80,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.057
-81,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.052
-82,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.048
-83,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.044
-84,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.039
-85,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.035
-86,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.031
-87,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.027
-88,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.022
-89,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.018
-90,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.014
-91,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.01
-92,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.005
-93,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),0.001
-94,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),-0.003
-95,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),-0.007
-96,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),-0.011
-97,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),-0.015
-98,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),-0.02
-99,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),-0.024
-100,Human capital,Spending increase,Primary deficit (PD<sub>t</sub>),-0.028
-1,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.054
-2,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.006
-3,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.008
-4,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.007
-5,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.006
-6,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.007
-7,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.008
-8,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.009
-9,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.011
-10,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.014
-11,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.017
-12,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.02
-13,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.023
-14,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.027
-15,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.031
-16,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.035
-17,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.039
-18,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.043
-19,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.048
-20,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.052
-21,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.057
-22,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.062
-23,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.066
-24,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.071
-25,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.075
-26,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.08
-27,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.085
-28,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.089
-29,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.094
-30,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.098
-31,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.103
-32,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.107
-33,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.111
-34,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.116
-35,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.12
-36,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.124
-37,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.128
-38,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.132
-39,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.136
-40,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.14
-41,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.144
-42,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.147
-43,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.151
-44,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.155
-45,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.158
-46,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.162
-47,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.165
-48,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.168
-49,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.171
-50,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.174
-51,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.177
-52,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.18
-53,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.183
-54,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.186
-55,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.188
-56,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.191
-57,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.193
-58,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.196
-59,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.198
-60,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.2
-61,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.203
-62,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.205
-63,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.207
-64,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.209
-65,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.211
-66,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.212
-67,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.214
-68,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.216
-69,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.217
-70,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.219
-71,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.22
-72,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.222
-73,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.223
-74,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.224
-75,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.226
-76,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.227
-77,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.228
-78,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.229
-79,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.23
-80,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.231
-81,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.232
-82,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.232
-83,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.233
-84,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.234
-85,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.235
-86,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.235
-87,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.236
-88,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.236
-89,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.237
-90,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.237
-91,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.237
-92,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.238
-93,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.238
-94,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.238
-95,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.238
-96,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.239
-97,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.239
-98,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.239
-99,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.239
-100,R&D,Efficiency improvement,Primary deficit (PD<sub>t</sub>),-0.239
-1,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.21
-2,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.271
-3,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.272
-4,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.274
-5,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.274
-6,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.274
-7,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.272
-8,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.27
-9,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.267
-10,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.264
-11,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.26
-12,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.255
-13,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.251
-14,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.246
-15,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.241
-16,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.236
-17,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.23
-18,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.225
-19,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.219
-20,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.214
-21,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.208
-22,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.202
-23,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.197
-24,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.191
-25,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.185
-26,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.18
-27,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.174
-28,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.168
-29,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.163
-30,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.157
-31,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.152
-32,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.146
-33,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.141
-34,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.135
-35,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.13
-36,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.124
-37,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.119
-38,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.114
-39,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.109
-40,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.103
-41,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.098
-42,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.093
-43,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.088
-44,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.083
-45,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.078
-46,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.073
-47,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.069
-48,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.064
-49,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.059
-50,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.055
-51,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.05
-52,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.045
-53,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.041
-54,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.037
-55,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.032
-56,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.028
-57,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.024
-58,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.019
-59,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.015
-60,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.011
-61,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.007
-62,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),0.003
-63,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.001
-64,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.005
-65,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.009
-66,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.012
-67,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.016
-68,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.02
-69,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.023
-70,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.027
-71,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.03
-72,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.034
-73,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.037
-74,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.041
-75,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.044
-76,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.047
-77,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.051
-78,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.054
-79,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.057
-80,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.06
-81,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.063
-82,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.066
-83,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.069
-84,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.072
-85,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.075
-86,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.078
-87,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.081
-88,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.084
-89,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.087
-90,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.089
-91,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.092
-92,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.095
-93,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.097
-94,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.1
-95,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.102
-96,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.105
-97,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.107
-98,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.11
-99,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.112
-100,R&D,Spending increase,Primary deficit (PD<sub>t</sub>),-0.115
+1,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.039
+2,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.01
+3,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.015
+4,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.016
+5,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.017
+6,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.018
+7,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.019
+8,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.02
+9,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.022
+10,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.023
+11,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.024
+12,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.025
+13,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.027
+14,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.028
+15,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.03
+16,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.031
+17,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.032
+18,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.034
+19,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.035
+20,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.036
+21,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.038
+22,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.039
+23,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.04
+24,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.042
+25,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.043
+26,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.044
+27,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.046
+28,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.047
+29,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.048
+30,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.05
+31,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.051
+32,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.052
+33,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.053
+34,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.054
+35,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.056
+36,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.057
+37,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.058
+38,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.059
+39,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.06
+40,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.061
+41,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.062
+42,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.063
+43,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.064
+44,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.065
+45,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.066
+46,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.067
+47,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.068
+48,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.069
+49,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.07
+50,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.07
+51,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.071
+52,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.072
+53,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.073
+54,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.074
+55,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.074
+56,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.075
+57,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.076
+58,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.076
+59,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.077
+60,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.077
+61,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.078
+62,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.079
+63,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.079
+64,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.08
+65,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.08
+66,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.081
+67,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.081
+68,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.082
+69,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.082
+70,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.082
+71,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.083
+72,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.083
+73,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.084
+74,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.084
+75,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.084
+76,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.084
+77,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.085
+78,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.085
+79,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.085
+80,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.086
+81,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.086
+82,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.086
+83,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.086
+84,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.086
+85,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.086
+86,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+87,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+88,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+89,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+90,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+91,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+92,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+93,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+94,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+95,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+96,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+97,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+98,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+99,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+100,Infrastructure,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+1,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.224
+2,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.268
+3,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.265
+4,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.263
+5,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.26
+6,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.258
+7,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.256
+8,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.254
+9,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.252
+10,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.25
+11,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.248
+12,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.246
+13,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.244
+14,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.242
+15,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.24
+16,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.238
+17,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.236
+18,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.234
+19,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.232
+20,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.23
+21,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.228
+22,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.225
+23,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.223
+24,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.221
+25,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.219
+26,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.217
+27,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.215
+28,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.213
+29,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.211
+30,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.209
+31,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.207
+32,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.205
+33,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.203
+34,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.201
+35,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.2
+36,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.198
+37,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.196
+38,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.194
+39,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.192
+40,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.19
+41,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.188
+42,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.187
+43,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.185
+44,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.183
+45,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.181
+46,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.179
+47,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.178
+48,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.176
+49,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.174
+50,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.173
+51,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.171
+52,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.169
+53,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.168
+54,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.166
+55,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.165
+56,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.163
+57,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.161
+58,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.16
+59,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.158
+60,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.157
+61,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.155
+62,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.154
+63,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.152
+64,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.151
+65,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.15
+66,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.148
+67,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.147
+68,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.145
+69,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.144
+70,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.143
+71,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.141
+72,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.14
+73,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.139
+74,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.138
+75,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.136
+76,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.135
+77,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.134
+78,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.133
+79,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.131
+80,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.13
+81,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.129
+82,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.128
+83,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.127
+84,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.125
+85,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.124
+86,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.123
+87,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.122
+88,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.121
+89,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.12
+90,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.119
+91,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.118
+92,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.117
+93,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.116
+94,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.115
+95,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.114
+96,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.113
+97,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.112
+98,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.111
+99,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.11
+100,Infrastructure,Spending increase,Prim. def. (PD<sub>t</sub>),0.109
+1,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.077
+2,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.027
+3,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.031
+4,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.029
+5,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.028
+6,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.026
+7,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.025
+8,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.023
+9,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.022
+10,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.021
+11,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.02
+12,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.019
+13,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.018
+14,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.017
+15,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.017
+16,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.017
+17,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.017
+18,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.016
+19,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.017
+20,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.017
+21,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.017
+22,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.018
+23,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.018
+24,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.019
+25,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.02
+26,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.021
+27,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.022
+28,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.023
+29,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.025
+30,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.026
+31,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.028
+32,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.029
+33,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.031
+34,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.033
+35,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.035
+36,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.037
+37,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.039
+38,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.041
+39,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.044
+40,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.046
+41,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.048
+42,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.051
+43,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.053
+44,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.056
+45,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.058
+46,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.061
+47,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.064
+48,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.067
+49,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.069
+50,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.072
+51,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.075
+52,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.078
+53,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.081
+54,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.084
+55,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.087
+56,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.09
+57,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.093
+58,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.096
+59,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.099
+60,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.102
+61,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.105
+62,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.108
+63,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.111
+64,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.114
+65,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.117
+66,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.12
+67,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.123
+68,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.126
+69,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.129
+70,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.132
+71,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.135
+72,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.138
+73,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.141
+74,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.144
+75,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.147
+76,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.15
+77,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.153
+78,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.156
+79,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.159
+80,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.161
+81,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.164
+82,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.167
+83,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.17
+84,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.172
+85,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.175
+86,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.178
+87,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.18
+88,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.183
+89,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.185
+90,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.188
+91,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.19
+92,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.193
+93,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.195
+94,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.197
+95,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.2
+96,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.202
+97,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.204
+98,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.206
+99,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.208
+100,Human capital,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.21
+1,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.186
+2,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.241
+3,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.241
+4,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.242
+5,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.244
+6,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.246
+7,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.247
+8,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.249
+9,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.25
+10,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.252
+11,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.253
+12,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.253
+13,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.254
+14,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.254
+15,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.255
+16,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.255
+17,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.255
+18,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.254
+19,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.254
+20,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.254
+21,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.253
+22,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.252
+23,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.251
+24,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.25
+25,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.249
+26,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.247
+27,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.246
+28,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.244
+29,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.242
+30,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.24
+31,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.238
+32,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.236
+33,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.234
+34,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.231
+35,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.229
+36,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.226
+37,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.224
+38,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.221
+39,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.218
+40,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.215
+41,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.212
+42,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.209
+43,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.206
+44,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.202
+45,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.199
+46,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.196
+47,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.192
+48,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.189
+49,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.185
+50,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.181
+51,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.178
+52,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.174
+53,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.17
+54,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.166
+55,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.162
+56,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.158
+57,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.154
+58,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.15
+59,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.146
+60,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.142
+61,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.138
+62,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.134
+63,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.13
+64,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.125
+65,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.121
+66,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.117
+67,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.113
+68,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.109
+69,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.104
+70,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.1
+71,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.096
+72,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.091
+73,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.087
+74,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.083
+75,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.078
+76,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.074
+77,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.07
+78,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.065
+79,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.061
+80,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.057
+81,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.052
+82,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.048
+83,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.044
+84,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.039
+85,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.035
+86,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.031
+87,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.027
+88,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.022
+89,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.018
+90,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.014
+91,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.01
+92,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.005
+93,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),0.001
+94,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),-0.003
+95,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),-0.007
+96,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),-0.011
+97,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),-0.015
+98,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),-0.02
+99,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),-0.024
+100,Human capital,Spending increase,Prim. def. (PD<sub>t</sub>),-0.028
+1,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.054
+2,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.006
+3,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.008
+4,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.007
+5,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.006
+6,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.007
+7,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.008
+8,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.009
+9,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.011
+10,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.014
+11,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.017
+12,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.02
+13,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.023
+14,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.027
+15,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.031
+16,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.035
+17,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.039
+18,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.043
+19,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.048
+20,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.052
+21,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.057
+22,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.062
+23,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.066
+24,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.071
+25,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.075
+26,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.08
+27,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.085
+28,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.089
+29,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.094
+30,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.098
+31,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.103
+32,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.107
+33,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.111
+34,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.116
+35,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.12
+36,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.124
+37,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.128
+38,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.132
+39,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.136
+40,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.14
+41,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.144
+42,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.147
+43,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.151
+44,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.155
+45,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.158
+46,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.162
+47,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.165
+48,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.168
+49,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.171
+50,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.174
+51,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.177
+52,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.18
+53,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.183
+54,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.186
+55,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.188
+56,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.191
+57,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.193
+58,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.196
+59,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.198
+60,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.2
+61,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.203
+62,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.205
+63,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.207
+64,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.209
+65,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.211
+66,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.212
+67,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.214
+68,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.216
+69,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.217
+70,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.219
+71,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.22
+72,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.222
+73,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.223
+74,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.224
+75,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.226
+76,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.227
+77,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.228
+78,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.229
+79,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.23
+80,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.231
+81,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.232
+82,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.232
+83,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.233
+84,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.234
+85,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.235
+86,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.235
+87,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.236
+88,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.236
+89,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.237
+90,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.237
+91,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.237
+92,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.238
+93,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.238
+94,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.238
+95,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.238
+96,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.239
+97,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.239
+98,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.239
+99,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.239
+100,R&D,Efficiency improvement,Prim. def. (PD<sub>t</sub>),-0.239
+1,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.21
+2,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.271
+3,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.272
+4,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.274
+5,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.274
+6,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.274
+7,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.272
+8,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.27
+9,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.267
+10,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.264
+11,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.26
+12,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.255
+13,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.251
+14,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.246
+15,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.241
+16,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.236
+17,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.23
+18,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.225
+19,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.219
+20,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.214
+21,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.208
+22,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.202
+23,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.197
+24,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.191
+25,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.185
+26,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.18
+27,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.174
+28,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.168
+29,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.163
+30,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.157
+31,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.152
+32,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.146
+33,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.141
+34,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.135
+35,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.13
+36,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.124
+37,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.119
+38,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.114
+39,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.109
+40,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.103
+41,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.098
+42,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.093
+43,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.088
+44,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.083
+45,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.078
+46,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.073
+47,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.069
+48,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.064
+49,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.059
+50,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.055
+51,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.05
+52,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.045
+53,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.041
+54,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.037
+55,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.032
+56,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.028
+57,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.024
+58,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.019
+59,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.015
+60,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.011
+61,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.007
+62,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),0.003
+63,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.001
+64,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.005
+65,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.009
+66,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.012
+67,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.016
+68,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.02
+69,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.023
+70,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.027
+71,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.03
+72,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.034
+73,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.037
+74,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.041
+75,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.044
+76,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.047
+77,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.051
+78,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.054
+79,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.057
+80,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.06
+81,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.063
+82,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.066
+83,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.069
+84,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.072
+85,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.075
+86,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.078
+87,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.081
+88,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.084
+89,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.087
+90,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.089
+91,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.092
+92,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.095
+93,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.097
+94,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.1
+95,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.102
+96,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.105
+97,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.107
+98,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.11
+99,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.112
+100,R&D,Spending increase,Prim. def. (PD<sub>t</sub>),-0.115
 1,Infrastructure,Efficiency improvement,Public debt (b<sub>t</sub>),-0.081
 2,Infrastructure,Efficiency improvement,Public debt (b<sub>t</sub>),-0.095
 3,Infrastructure,Efficiency improvement,Public debt (b<sub>t</sub>),-0.111

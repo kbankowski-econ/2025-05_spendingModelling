@@ -64,7 +64,7 @@ PANELS = [
 COMPARISON_ROWS = [
     ("yd", "Output (Y<sup>d</sup><sub>t</sub>)"),
     ("C", "Consumption (C<sub>t</sub>)"),
-    ("pdef_yss", "Primary deficit (PD<sub>t</sub>)"),
+    ("pdef_yss", "Prim. def. (PD<sub>t</sub>)"),
     ("by_yss", "Public debt (b<sub>t</sub>)"),
 ]
 
@@ -414,8 +414,6 @@ def plot_efficiency_comparison(instruments, output_stem):
             xanchor="center",
             yanchor="middle",
             font=dict(family=FONT_FAMILY, size=row_font_px, color="#424242"),
-            bgcolor="#E6E6E6",
-            borderpad=2,
         )
 
     fig.update_layout(
