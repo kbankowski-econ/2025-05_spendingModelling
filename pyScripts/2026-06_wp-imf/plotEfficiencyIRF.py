@@ -316,7 +316,7 @@ def plot_efficiency_comparison(instruments, output_stem):
         instruments, start=1
     ):
         treatments = [
-            (spending_model, "Spending increase (benchmark)", "solid"),
+            (spending_model, "Spending increase (AE, benchmark)", "solid"),
             (ae_efficiency_model, "Efficiency improvement (AE)", "dot"),
             (emde_efficiency_model, "Efficiency improvement (EMDE)", "dash"),
         ]
@@ -370,7 +370,7 @@ def plot_efficiency_comparison(instruments, output_stem):
     # Neutral legend keys make clear that line style, rather than column color,
     # identifies the matched treatments and calibrations.
     legend_treatments = (
-        ("Spending increase (benchmark)", "solid"),
+        ("Spending increase (AE, benchmark)", "solid"),
         ("Efficiency improvement (AE)", "dot"),
         ("Efficiency improvement (EMDE)", "dash"),
     )
@@ -482,7 +482,7 @@ def plot_efficiency_comparison(instruments, output_stem):
         for (instrument, _color, spending_model, ae_efficiency_model,
              emde_efficiency_model) in instruments:
             treatments = (
-                ("Spending increase (benchmark)", spending_model),
+                ("Spending increase (AE, benchmark)", spending_model),
                 ("Efficiency improvement (AE)", ae_efficiency_model),
                 ("Efficiency improvement (EMDE)", emde_efficiency_model),
             )
