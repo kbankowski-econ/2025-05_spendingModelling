@@ -1,4 +1,4 @@
-"""Shared 5-by-4 IRF chart for permanent spending-efficiency improvements."""
+"""Shared 5-by-4 IRF chart for efficiency improvements and comparators."""
 
 from math import log1p
 from pathlib import Path
@@ -92,7 +92,11 @@ def load_data():
 
 
 def plot_efficiency_irfs(scenarios, output_stem):
-    """Render one economy's efficiency-gap closures using the standard IRF grid."""
+    """Render efficiency-gap closures and optional comparators on the IRF grid."""
+    scenarios = [
+        (*scenario, "solid") if len(scenario) == 3 else scenario
+        for scenario in scenarios
+    ]
     width_px, height_px = chart_render_px(output_stem, (15.0, 18.75))
     display_cm = chart_display_cm(output_stem, (15.0, 18.75))
     font_px = font_px_for_pt(7, width_px, display_cm[0])
@@ -122,7 +126,7 @@ def plot_efficiency_irfs(scenarios, output_stem):
 
         var = panel[0]
         panel_min = panel_max = None
-        for model, label, color in scenarios:
+        for model, label, color, dash in scenarios:
             colname = f"{model}___{var}"
             if colname not in df.columns:
                 raise KeyError(f"Missing exported series: {colname}")
@@ -136,7 +140,7 @@ def plot_efficiency_irfs(scenarios, output_stem):
                     y=values,
                     name=label,
                     legendgroup=label,
-                    line=dict(color=color, width=STYLE["line_width"]),
+                    line=dict(color=color, width=STYLE["line_width"], dash=dash),
                     showlegend=(idx == 0),
                     customdata=quarters,
                     hovertemplate=(
@@ -154,7 +158,7 @@ def plot_efficiency_irfs(scenarios, output_stem):
         ):
             fig.update_yaxes(rangemode="tozero", row=row, col=col)
 
-        for model, label, color in scenarios:
+        for model, label, color, dash in scenarios:
             colname = f"{model}___{var}"
             fig.add_trace(
                 go.Scatter(
@@ -203,7 +207,10 @@ def plot_efficiency_irfs(scenarios, output_stem):
         template=STYLE["template"],
         width=width_px,
         height=height_px,
-        margin=STYLE["margins"],
+        margin={
+            **STYLE["margins"],
+            "t": 112 if len(scenarios) > 3 else STYLE["margins"]["t"],
+        },
         font=dict(family=FONT_FAMILY, size=font_px),
         legend=dict(
             orientation=STYLE["legend"]["orientation"],
@@ -214,6 +221,8 @@ def plot_efficiency_irfs(scenarios, output_stem):
             x=STYLE["legend"]["x"],
             font=dict(size=legend_font_px),
             tracegroupgap=2,
+            entrywidth=0.32 if len(scenarios) > 3 else 0,
+            entrywidthmode="fraction" if len(scenarios) > 3 else "pixels",
         ),
     )
 
@@ -252,13 +261,13 @@ def plot_efficiency_irfs(scenarios, output_stem):
 
     records = []
     for var, title in (panel for panel in PANELS if panel is not None):
-        for model, label, _ in scenarios:
+        for model, label, _, _ in scenarios:
             colname = f"{model}___{var}"
             for quarter, value in zip(quarters, df[colname].values):
                 records.append(
                     {
                         "horizon_quarter": quarter,
-                        "improvement": label,
+                        "scenario": label,
                         "variable": title,
                         "pct_dev": round(value, 3),
                     }
