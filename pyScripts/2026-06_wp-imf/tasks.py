@@ -26,7 +26,7 @@ PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 - plotReallocationEM:   EMDE output response (infra + human capital; no R&D)
 - plotEfficiencyAE:     Matched AE spending and AE/EMDE efficiency experiments
 - plotEfficiencyEM:     EMDE transmission of permanent efficiency-gap closures
-- plotPolicyEfficiency: Output gains from full efficiency-gap closures by country group
+- plotPolicyEfficiency: FM-style gradual efficiency improvements by country group
 - plotHumanCapital:     Human capital + R&D mix IRFs
 - plotDiffusionAE:      Technology diffusion-speed sensitivity
 - plotEfficiencyBands:  Spending-efficiency gaps by income group (appendix)
@@ -194,7 +194,7 @@ def plotEfficiencyEM(c):
 @task
 def plotPolicyEfficiency(c):
     """
-    Section 5: output gains from fully closing the calibrated efficiency gaps.
+    Section 5: FM-style output gains from gradual efficiency improvements.
     Out: figures/policyEfficiency{AE,EM}_yd.png/.pdf/.html/.csv
     """
     _run_plot(c, "plotPolicyEfficiency.py", "Generating: Policy Efficiency")

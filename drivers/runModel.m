@@ -111,7 +111,9 @@ modelList = {
     'EM_Model_HumanCapital_effge_perm025',       'EM', 'EMnorm', {{'epsi_effge',   'const', comparisonEffGE_EMDE,    '1:1000', 'roundtrip'}}
     % ====================== POLICY EXPERIMENTS (Section 5) ======================
     % Reallocation reforms increase growth-enhancing spending and cut public
-    % consumption by the same amount. Efficiency reforms leave spending unchanged.
+    % consumption by the same amount. The FM-style efficiency comparisons add a
+    % gradual efficiency improvement and report the gain relative to reallocation
+    % alone. The permanent efficiency-only experiments above leave spending unchanged.
     %
     % --- AE reallocation + human-capital/R&D mix ---
     % epsi_ig / epsi_cge / epsi_cgrd: reallocation toward infrastructure / human
@@ -138,8 +140,9 @@ modelList = {
     'Model_HumanCapital_effgrd_perm',           'AE', 'AE',     {{'epsi_effgrd', 'const', 0.399, '1:1000'}}
     'EM_Model_HumanCapital_effgi_perm',         'EM', 'EMnorm', {{'epsi_effgi',  'const', 0.406, '1:1000'}}
     'EM_Model_HumanCapital_effge_perm',         'EM', 'EMnorm', {{'epsi_effge',  'const', 0.329, '1:1000'}}
-    % --- Legacy AE gradual efficiency scenarios --- These combine reallocation
-    % with a 25-year ramp that closes the relevant spending-efficiency gap.
+    % --- AE gradual efficiency scenarios --- These combine reallocation with a
+    % 25-year ramp that closes the relevant spending-efficiency gap. Their
+    % incremental output gains enter Figure 5 (fig:policyEfficiency, Section 5.2).
     'Model_HumanCapital_epsi_igeff25y',         'AE', 'AE',     {{'epsi_igi',      'const', 0.01,  '1:1000'}
                                                                  {'epsi_effgi',   'ramp',  0.359,  '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
@@ -148,8 +151,9 @@ modelList = {
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     % --- EMDE reallocation and legacy gradual efficiency scenarios --- The bare
     % epsiig / epsicge reallocations enter Figure 2 (fig:reallocation, panel b,
-    % Section 5.1). The remaining rows retain the earlier low-calibration and
-    % 25y/30y efficiency-ramp comparisons. The EMDE R&D channel is inactive.
+    % Section 5.1). The remaining rows provide the initial-gap and 15y/25y
+    % efficiency-ramp comparisons in Figure 5 (Section 5.2). The EMDE R&D channel
+    % is inactive.
     'EM_Model_HumanCapital_epsiig',             'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01,  '1:1000'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiiglow',          'EM', 'EMlow',  {{'epsi_igi',      'const', 0.01,  '1:1000'}
@@ -182,7 +186,7 @@ modelList = {
     'EM_Model_HumanCapital_epsicgeeff25ylow',   'EM', 'EMlow',  {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.329, '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
-    % --- Legacy AE gradual R&D-efficiency scenario ---
+    % --- AE gradual R&D-efficiency scenario (Figure 5, Section 5.2) ---
     'Model_HumanCapital_epsi_cgrd_eff25y',      'AE', 'AE',     {{'epsi_grd',    'const', 0.01,  '1:1000'}
                                                                  {'epsi_effgrd',  'ramp',  0.399, '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}

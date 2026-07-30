@@ -15,7 +15,7 @@ sizes). Each script's only data input is its source CSV.
 | `plotReallocationEM.py` | Reallocation, panel b — EMDE | `docs/csvFiles/figureNumbers_yearly.csv` |
 | `plotEfficiencyAE.py` | Matched AE spending and AE/EMDE efficiency experiments (`fig:efficiencyAE`) | `docs/csvFiles/figureNumbers.csv` |
 | `plotEfficiencyEM.py` | Spending efficiency, panel b — EMDE | `docs/csvFiles/figureNumbers_yearly.csv` |
-| `plotPolicyEfficiency.py` | Full efficiency-gap closures by country group (`fig:policyEfficiency`) | `docs/csvFiles/figureNumbers_yearly.csv` |
+| `plotPolicyEfficiency.py` | FM-style gradual efficiency improvements by country group (`fig:policyEfficiency`) | `docs/csvFiles/figureNumbers_yearly.csv` |
 | `plotHumanCapitalIRFs.py` | Human capital + R&D mix (`fig:humanCapital`) | `docs/csvFiles/figureNumbers_yearly.csv` |
 | `plotEfficiencyBands.py` | Efficiency bands by income group (App. B, `fig:efficiencyBands`) | IMF staff efficiency estimates (`DATA_DIR` in the script) |
 
