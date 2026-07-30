@@ -24,8 +24,8 @@ PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 - plotStandardShocksAE: AE transmission of the four standard debt-financed shocks
 - plotReallocationAE:   AE output response to three reallocation shocks
 - plotReallocationEM:   EMDE output response (infra + human capital; no R&D)
-- plotEfficiencyAE:     AE 2050 output gain from closing efficiency gaps
-- plotEfficiencyEM:     EMDE output gain from closing efficiency gaps
+- plotEfficiencyAE:     AE transmission of permanent efficiency-gap closures
+- plotEfficiencyEM:     EMDE transmission of permanent efficiency-gap closures
 - plotHumanCapital:     Human capital + R&D mix IRFs
 - plotDiffusionAE:      Technology diffusion-speed sensitivity
 - plotEfficiencyBands:  Spending-efficiency gaps by income group (appendix)
@@ -174,8 +174,8 @@ def plotReallocationEM(c):
 @task
 def plotEfficiencyAE(c):
     """
-    AE 2050 output gain from gradually closing spending-efficiency gaps.
-    Out: figures/efficiencyAE_yd.png/.html/.csv
+    AE transmission of permanent spending-efficiency-gap closures (5x4 grid).
+    Out: figures/efficiencyAE_yd.png/.pdf/.html/.csv
     """
     _run_plot(c, "plotEfficiencyAE.py", "Generating: AE Spending Efficiency")
 
@@ -183,8 +183,8 @@ def plotEfficiencyAE(c):
 @task
 def plotEfficiencyEM(c):
     """
-    EMDE output gain from gradually closing spending-efficiency gaps.
-    Out: figures/efficiencyEM_yd.png/.html/.csv
+    EMDE transmission of permanent spending-efficiency-gap closures (5x4 grid).
+    Out: figures/efficiencyEM_yd.png/.pdf/.html/.csv
     """
     _run_plot(c, "plotEfficiencyEM.py", "Generating: EMDE Spending Efficiency")
 

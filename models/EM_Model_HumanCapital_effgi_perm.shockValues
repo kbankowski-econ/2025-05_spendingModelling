@@ -1,0 +1,10 @@
+var epsi_effgi;
+periods 1:1000 ;
+values
+    0.406
+;
+var eTaux;
+periods 1:2000 ;
+values
+    1
+;

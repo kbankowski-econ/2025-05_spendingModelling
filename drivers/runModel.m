@@ -22,7 +22,7 @@ cd(fullfile(project_path, 'models'));
 %   HLT:     AE 0.295   EMDE (0.311 + 0.307) / 2 = 0.309
 %   EDU:     AE 0.318   EMDE (0.347 + 0.350) / 2 = 0.348
 %   HLT/EDU: AE 0.306   EMDE 0.329   (human capital = average of HLT and EDU)
-%   RND:     AE 0.41    EMDE -       (unchanged; no 2023 estimate)
+%   RND:     AE 0.399   EMDE -       (EMDE technology-creation channel inactive)
 %   JAM:     INF 0.1681 (2023, total public investment);  HC = avg(HLT 0.3617, EDU 0.3596) = 0.357
 
 %% model list: {name, params, efficiency, shocks}
@@ -86,14 +86,13 @@ modelList = {
     'EM_Model_HumanCapital_exp_igi_perm',       'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01, '1:1000'}}
     'EM_Model_HumanCapital_exp_ige_perm',       'EM', 'EMnorm', {{'epsi_ige',      'const', 0.01, '1:1000'}}
     % ====================== POLICY EXPERIMENTS (Section 5) ======================
-    % Budget-neutral reforms: a growth-enhancing spending increase financed by an
-    % equal cut in public consumption (epsi_gc -0.01). All permanent (const, 1:1000).
+    % Reallocation reforms increase growth-enhancing spending and cut public
+    % consumption by the same amount. Efficiency reforms leave spending unchanged.
     %
     % --- AE reallocation + human-capital/R&D mix ---
     % epsi_ig / epsi_cge / epsi_cgrd: reallocation toward infrastructure / human
-    % capital / R&D. Enter Figure 2 (fig:reallocation, panel a, Section 5.1) and are
-    % the no-efficiency baselines (denominators) for Figure 3 (fig:efficiencyAE,
-    % Section 5.2). epsi_cge and epsi_cgrd also enter the human-capital + R&D mix,
+    % capital / R&D. Enter Figure 2 (fig:reallocation, panel a, Section 5.1).
+    % epsi_cge and epsi_cgrd also enter the human-capital + R&D mix,
     % Figure 5 (fig:humanCapital, Section 5.3). epsi_cgeCgrd is the combined HC+R&D
     % experiment: Figure 5 and the baseline for the diffusion experiment, Figure 6
     % (fig:diffusion, Section 5.3).
@@ -106,21 +105,26 @@ modelList = {
     'Model_HumanCapital_epsi_cgeCgrd',          'AE', 'AE',     {{'epsi_ige',     'const', 0.005, '1:1000'}
                                                                  {'epsi_grd',    'const', 0.005, '1:1000'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
-    % --- AE efficiency gains (reallocation + a 25-year ramp that closes the
-    % spending-efficiency gap) --- Enter Figure 3 (fig:efficiencyAE, Section 5.2),
-    % each shown against its no-efficiency baseline above. (The R&D counterpart,
-    % epsi_cgrd_eff25y, sits further below with the diffusion block.)
+    % --- Permanent efficiency-gap closures --- Each experiment sets one
+    % efficiency gap to zero from quarter 1 onward while leaving spending
+    % unchanged. These scenarios feed the Section 5.2 transmission figures.
+    'Model_HumanCapital_effgi_perm',            'AE', 'AE',     {{'epsi_effgi',  'const', 0.359, '1:1000'}}
+    'Model_HumanCapital_effge_perm',            'AE', 'AE',     {{'epsi_effge',  'const', 0.306, '1:1000'}}
+    'Model_HumanCapital_effgrd_perm',           'AE', 'AE',     {{'epsi_effgrd', 'const', 0.399, '1:1000'}}
+    'EM_Model_HumanCapital_effgi_perm',         'EM', 'EMnorm', {{'epsi_effgi',  'const', 0.406, '1:1000'}}
+    'EM_Model_HumanCapital_effge_perm',         'EM', 'EMnorm', {{'epsi_effge',  'const', 0.329, '1:1000'}}
+    % --- Legacy AE gradual efficiency scenarios --- These combine reallocation
+    % with a 25-year ramp that closes the relevant spending-efficiency gap.
     'Model_HumanCapital_epsi_igeff25y',         'AE', 'AE',     {{'epsi_igi',      'const', 0.01,  '1:1000'}
                                                                  {'epsi_effgi',   'ramp',  0.359,  '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'Model_HumanCapital_epsi_cgeeff25y',        'AE', 'AE',     {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.306, '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
-    % --- EMDE reallocation + efficiency gains --- The bare epsiig / epsicge
-    % reallocations enter Figure 2 (fig:reallocation, panel b, Section 5.1) and are
-    % the baselines for Figure 4. All the EMDE rows here (including the *low* central-
-    % calibration variants and the 25y/30y efficiency ramps) enter Figure 4
-    % (fig:efficiencyEM, Section 5.2). No EMDE R&D experiment (innovation channel off).
+    % --- EMDE reallocation and legacy gradual efficiency scenarios --- The bare
+    % epsiig / epsicge reallocations enter Figure 2 (fig:reallocation, panel b,
+    % Section 5.1). The remaining rows retain the earlier low-calibration and
+    % 25y/30y efficiency-ramp comparisons. The EMDE R&D channel is inactive.
     'EM_Model_HumanCapital_epsiig',             'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01,  '1:1000'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiiglow',          'EM', 'EMlow',  {{'epsi_igi',      'const', 0.01,  '1:1000'}
@@ -153,10 +157,9 @@ modelList = {
     'EM_Model_HumanCapital_epsicgeeff25ylow',   'EM', 'EMlow',  {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.329, '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
-    % --- AE R&D efficiency gain --- The R&D counterpart of the AE efficiency block
-    % above; enters Figure 3 (fig:efficiencyAE, Section 5.2) as the R&D bars.
+    % --- Legacy AE gradual R&D-efficiency scenario ---
     'Model_HumanCapital_epsi_cgrd_eff25y',      'AE', 'AE',     {{'epsi_grd',    'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effgrd',  'ramp',  0.41,  '1:100'}
+                                                                 {'epsi_effgrd',  'ramp',  0.399, '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     % --- AE technology-diffusion experiments --- The combined HC+R&D reform under a
     % faster (adt) and a slower/limited (limt) technology-adoption speed. Enter
