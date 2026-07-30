@@ -62,10 +62,10 @@ PANELS = [
 ]
 
 COMPARISON_ROWS = [
-    ("yd", "Output"),
-    ("C", "Consumption"),
-    ("pdef_yss", "Primary deficit"),
-    ("by_yss", "Debt"),
+    ("yd", "Output (Y<sup>d</sup><sub>t</sub>)"),
+    ("C", "Consumption (C<sub>t</sub>)"),
+    ("pdef_yss", "Primary deficit (PD<sub>t</sub>)"),
+    ("by_yss", "Public debt (b<sub>t</sub>)"),
 ]
 
 NCOLS = 4
@@ -403,7 +403,7 @@ def plot_efficiency_comparison(instruments, output_stem):
         axis_name = "yaxis" + ("" if panel_idx == 1 else str(panel_idx))
         y0, y1 = fig.layout[axis_name].domain
         fig.add_annotation(
-            text=row_label.upper(),
+            text=row_label,
             textangle=-90,
             xref="paper",
             yref="paper",
