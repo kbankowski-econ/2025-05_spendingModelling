@@ -311,15 +311,19 @@ def plot_efficiency_comparison(instruments, output_stem):
         vertical_spacing=0.10,
     )
 
-    for col, (instrument, color, efficiency_model, spending_model) in enumerate(
+    for col, (instrument, color, spending_model, ae_efficiency_model,
+              emde_efficiency_model) in enumerate(
         instruments, start=1
     ):
         treatments = [
-            (efficiency_model, "Efficiency improvement", "solid"),
-            (spending_model, "Spending increase", "dot"),
+            (spending_model, "Spending increase (benchmark)", "solid"),
+            (ae_efficiency_model, "Efficiency improvement (AE)", "dot"),
+            (emde_efficiency_model, "Efficiency improvement (EMDE)", "dash"),
         ]
         for row, (variable, _row_label) in enumerate(COMPARISON_ROWS, start=1):
             for model, treatment, dash in treatments:
+                if model is None:
+                    continue
                 colname = f"{model}___{variable}"
                 if colname not in df.columns:
                     raise KeyError(f"Missing exported series: {colname}")
@@ -364,9 +368,13 @@ def plot_efficiency_comparison(instruments, output_stem):
                 )
 
     # Neutral legend keys make clear that line style, rather than column color,
-    # identifies the two matched treatments.
-    for treatment, dash in (("Efficiency improvement", "solid"),
-                            ("Spending increase", "dot")):
+    # identifies the matched treatments and calibrations.
+    legend_treatments = (
+        ("Spending increase (benchmark)", "solid"),
+        ("Efficiency improvement (AE)", "dot"),
+        ("Efficiency improvement (EMDE)", "dash"),
+    )
+    for treatment, dash in legend_treatments:
         fig.add_trace(
             go.Scatter(
                 x=[None],
@@ -385,9 +393,12 @@ def plot_efficiency_comparison(instruments, output_stem):
     # Comparisons across instruments use the same vertical scale within each row.
     for row, (variable, _row_label) in enumerate(COMPARISON_ROWS, start=1):
         row_values = []
-        for _instrument, _color, efficiency_model, spending_model in instruments:
-            row_values.extend(df[f"{efficiency_model}___{variable}"].tolist())
+        for (_instrument, _color, spending_model, ae_efficiency_model,
+             emde_efficiency_model) in instruments:
             row_values.extend(df[f"{spending_model}___{variable}"].tolist())
+            row_values.extend(df[f"{ae_efficiency_model}___{variable}"].tolist())
+            if emde_efficiency_model is not None:
+                row_values.extend(df[f"{emde_efficiency_model}___{variable}"].tolist())
         row_min = min(0, min(row_values))
         row_max = max(0, max(row_values))
         span = row_max - row_min
@@ -468,9 +479,16 @@ def plot_efficiency_comparison(instruments, output_stem):
 
     records = []
     for variable, row_label in COMPARISON_ROWS:
-        for instrument, _color, efficiency_model, spending_model in instruments:
-            for treatment, model in (("Efficiency improvement", efficiency_model),
-                                     ("Spending increase", spending_model)):
+        for (instrument, _color, spending_model, ae_efficiency_model,
+             emde_efficiency_model) in instruments:
+            treatments = (
+                ("Spending increase (benchmark)", spending_model),
+                ("Efficiency improvement (AE)", ae_efficiency_model),
+                ("Efficiency improvement (EMDE)", emde_efficiency_model),
+            )
+            for treatment, model in treatments:
+                if model is None:
+                    continue
                 colname = f"{model}___{variable}"
                 for quarter, value in zip(quarters, df[colname].values):
                     records.append(

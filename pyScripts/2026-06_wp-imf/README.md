@@ -13,7 +13,7 @@ sizes). Each script's only data input is its source CSV.
 | `plotDiffusionAE.py` | Technology diffusion (`fig:diffusion`) | `docs/csvFiles/figureNumbers_yearly.csv` |
 | `plotReallocationAE.py` | Reallocation, panel a — AE (`fig:reallocation`) | `docs/csvFiles/figureNumbers_yearly.csv` |
 | `plotReallocationEM.py` | Reallocation, panel b — EMDE | `docs/csvFiles/figureNumbers_yearly.csv` |
-| `plotEfficiencyAE.py` | Spending efficiency, panel a — AE (`fig:efficiency`) | `docs/csvFiles/figureNumbers_yearly.csv` |
+| `plotEfficiencyAE.py` | Matched AE spending and AE/EMDE efficiency experiments (`fig:efficiencyAE`) | `docs/csvFiles/figureNumbers.csv` |
 | `plotEfficiencyEM.py` | Spending efficiency, panel b — EMDE | `docs/csvFiles/figureNumbers_yearly.csv` |
 | `plotHumanCapitalIRFs.py` | Human capital + R&D mix (`fig:humanCapital`) | `docs/csvFiles/figureNumbers_yearly.csv` |
 | `plotEfficiencyBands.py` | Efficiency bands by income group (App. B, `fig:efficiencyBands`) | IMF staff efficiency estimates (`DATA_DIR` in the script) |

@@ -68,6 +68,8 @@ comparisonSpendingShock = 0.0025;
 comparisonEffGI = (1-0.359) * comparisonSpendingShock / 0.03;
 comparisonEffGE = (1-0.306) * comparisonSpendingShock / 0.0145;
 comparisonEffGRD = (1-0.399) * comparisonSpendingShock / 0.006;
+comparisonEffGI_EMDE = (1-0.406) * comparisonSpendingShock / 0.05;
+comparisonEffGE_EMDE = (1-0.329) * comparisonSpendingShock / 0.02;
 
 modelList = {
     % =================== STANDARD EXPANSIONS (Sections 4.1-4.2) ===================
@@ -94,15 +96,19 @@ modelList = {
     'EM_Model_HumanCapital_exp_gc_perm',        'EM', 'EMnorm', {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'EM_Model_HumanCapital_exp_igi_perm',       'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01, '1:1000'}}
     'EM_Model_HumanCapital_exp_ige_perm',       'EM', 'EMnorm', {{'epsi_ige',      'const', 0.01, '1:1000'}}
-    % Comparable permanent AE experiments for Section 4.4. The first three
-    % raise spending by 0.25% of GDP. The next three leave spending unchanged
-    % and raise effective productive spending by exactly the same amount.
+    % Comparable permanent experiments for Section 4.4. The first three raise
+    % AE spending by 0.25% of GDP. The remaining rows leave spending unchanged
+    % and raise effective productive spending by exactly the same amount. The
+    % EMDE calibration has no active R&D-creation channel, so its comparison is
+    % limited to infrastructure and human capital.
     'Model_HumanCapital_exp_igi_perm025',        'AE', 'AE',     {{'epsi_igi',     'const', comparisonSpendingShock, '1:1000'}}
     'Model_HumanCapital_exp_ige_perm025',        'AE', 'AE',     {{'epsi_ige',     'const', comparisonSpendingShock, '1:1000'}}
     'Model_HumanCapital_exp_grd_perm025',        'AE', 'AE',     {{'epsi_grd',     'const', comparisonSpendingShock, '1:1000'}}
     'Model_HumanCapital_effgi_perm025',          'AE', 'AE',     {{'epsi_effgi',   'const', comparisonEffGI,         '1:1000', 'roundtrip'}}
     'Model_HumanCapital_effge_perm025',          'AE', 'AE',     {{'epsi_effge',   'const', comparisonEffGE,         '1:1000', 'roundtrip'}}
     'Model_HumanCapital_effgrd_perm025',         'AE', 'AE',     {{'epsi_effgrd',  'const', comparisonEffGRD,        '1:1000', 'roundtrip'}}
+    'EM_Model_HumanCapital_effgi_perm025',       'EM', 'EMnorm', {{'epsi_effgi',   'const', comparisonEffGI_EMDE,    '1:1000', 'roundtrip'}}
+    'EM_Model_HumanCapital_effge_perm025',       'EM', 'EMnorm', {{'epsi_effge',   'const', comparisonEffGE_EMDE,    '1:1000', 'roundtrip'}}
     % ====================== POLICY EXPERIMENTS (Section 5) ======================
     % Reallocation reforms increase growth-enhancing spending and cut public
     % consumption by the same amount. Efficiency reforms leave spending unchanged.

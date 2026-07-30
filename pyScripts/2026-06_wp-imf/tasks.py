@@ -24,7 +24,7 @@ PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 - plotStandardShocksAE: AE transmission of the four standard debt-financed shocks
 - plotReallocationAE:   AE output response to three reallocation shocks
 - plotReallocationEM:   EMDE output response (infra + human capital; no R&D)
-- plotEfficiencyAE:     AE efficiency-gap closures with fiscal-shock comparators
+- plotEfficiencyAE:     Matched AE spending and AE/EMDE efficiency experiments
 - plotEfficiencyEM:     EMDE transmission of permanent efficiency-gap closures
 - plotHumanCapital:     Human capital + R&D mix IRFs
 - plotDiffusionAE:      Technology diffusion-speed sensitivity
@@ -174,11 +174,11 @@ def plotReallocationEM(c):
 @task
 def plotEfficiencyAE(c):
     """
-    AE permanent efficiency improvements with matched permanent spending-shock
-    IRFs (4x3 variable-by-instrument grid).
+    Matched AE spending and AE/EMDE efficiency IRFs
+    (4x3 variable-by-instrument grid).
     Out: figures/efficiencyAE_yd.png/.pdf/.html/.csv
     """
-    _run_plot(c, "plotEfficiencyAE.py", "Generating: AE Spending Efficiency")
+    _run_plot(c, "plotEfficiencyAE.py", "Generating: Matched Spending and Efficiency")
 
 
 @task
