@@ -12,8 +12,8 @@ swept over an illustrative range, one panel each:
   - R&D investment            -> Model_HumanCapital_exp_grd, vary alpha_RD
 
 In each panel the lines fan from the low (light) to the high (dark) parameter
-value. The thick grey line is the AE baseline; where applicable, a thick colored
-line marks the EMDE value of the varied elasticity. Circles identify the
+value. The AE baseline and, where applicable, the EMDE value remain on that
+color scale and are identified only by thicker lines. Circles identify the
 first-quarter responses. A 1x3 grid of percent deviations from steady state.
 
 Data source: the one-at-a-time parameter sweep produced by
@@ -48,6 +48,7 @@ STYLE = {
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
              "zeroline": True, "zerolinewidth": 1.5},
     "line_width_standard": 2.0,
+    "line_width_highlight": 4.0,
 }
 
 # (model directory, swept parameter, panel title, parameter symbol, (light, dark)
@@ -138,7 +139,8 @@ def main(permanent=False):
                     x=quarters, y=row[ycols].to_numpy(dtype=float), mode="lines",
                     line=dict(
                         color=_lerp_hex(c_lo, c_hi, frac),
-                        width=4.0 if is_emde else STYLE["line_width_standard"],
+                        width=(STYLE["line_width_highlight"] if is_emde
+                               else STYLE["line_width_standard"]),
                     ),
                     showlegend=False, hoverinfo="skip",
                 ),
@@ -148,7 +150,7 @@ def main(permanent=False):
                 go.Scatter(
                     x=[IMPACT_QUARTER], y=[float(row[ycols[0]])], mode="markers",
                     marker=dict(
-                        symbol="circle", size=7 if is_emde else 6,
+                        symbol="circle", size=6,
                         color=_lerp_hex(c_lo, c_hi, frac),
                         line=dict(color="white", width=0.75),
                     ),
@@ -156,13 +158,17 @@ def main(permanent=False):
                 ),
                 row=1, col=col,
             )
-        # baseline calibration: thick grey line (identified in the figure note)
+        # Keep the baseline on the panel's color scale and identify it only by
+        # the same line-width treatment used for the EMDE reference value.
         base = irf[(irf.experiment == ex) & (irf.is_baseline == 1)]
         if len(base):
+            base_value = AE_VALUES[param]
+            base_frac = 0.0 if hi == lo else (base_value - lo) / (hi - lo)
+            base_color = _lerp_hex(c_lo, c_hi, base_frac)
             fig.add_trace(
                 go.Scatter(
                     x=quarters, y=base.iloc[0][ycols].to_numpy(dtype=float), mode="lines",
-                    line=dict(color="#757575", width=5.0),
+                    line=dict(color=base_color, width=STYLE["line_width_highlight"]),
                     showlegend=False, hoverinfo="skip",
                 ),
                 row=1, col=col,
@@ -171,18 +177,17 @@ def main(permanent=False):
                 go.Scatter(
                     x=[IMPACT_QUARTER], y=[float(base.iloc[0][ycols[0]])], mode="markers",
                     marker=dict(
-                        symbol="circle", size=7, color="#757575",
+                        symbol="circle", size=6, color=base_color,
                         line=dict(color="white", width=0.75),
                     ),
                     showlegend=False, hoverinfo="skip",
                 ),
                 row=1, col=col,
             )
-        # label every line with its parameter value, just past its right endpoint
-        # (the panel title carries the parameter symbol). The baseline value's
-        # label is greyed to match the thick grey baseline line and stays at its
-        # endpoint; the others are spread vertically outward from it (up for
-        # higher values, down for lower) only where they would otherwise overlap.
+        # Label every line with its parameter value, just past its right endpoint
+        # (the panel title carries the parameter symbol). The baseline label stays
+        # at its endpoint; the others are spread vertically outward from it (up
+        # for higher values, down for lower) only where they would overlap.
         items = []
         for _, r in sub.iterrows():
             frac = 0.0 if hi == lo else (r.param_value - lo) / (hi - lo)
@@ -191,7 +196,7 @@ def main(permanent=False):
             is_emde = param in EMDE_VALUES and abs(r.param_value - EMDE_VALUES[param]) < 1e-9
             items.append({"y": r_end, "label_y": r_end, "val": r.param_value,
                           "is_base": is_base, "is_emde": is_emde,
-                          "color": "#757575" if is_base else _lerp_hex(c_lo, c_hi, frac)})
+                          "color": _lerp_hex(c_lo, c_hi, frac)})
         items.sort(key=lambda d: d["y"])
         anchor = next((k for k, d in enumerate(items) if d["is_base"]), len(items) // 2)
         for k in range(anchor + 1, len(items)):              # push higher labels up
