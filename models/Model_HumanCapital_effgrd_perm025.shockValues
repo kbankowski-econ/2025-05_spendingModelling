@@ -1,0 +1,10 @@
+var epsi_effgrd;
+periods 1:1000 ;
+values
+    0.2504166666666667
+;
+var eTaux;
+periods 1:2000 ;
+values
+    1
+;

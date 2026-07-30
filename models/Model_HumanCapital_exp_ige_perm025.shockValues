@@ -1,0 +1,10 @@
+var epsi_ige;
+periods 1:1000 ;
+values
+    0.0025
+;
+var eTaux;
+periods 1001:2000 ;
+values
+    1
+;
