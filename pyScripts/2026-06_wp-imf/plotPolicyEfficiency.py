@@ -290,7 +290,7 @@ def plot_emde(row):
         template=STYLE["template"],
         width=width_px,
         height=height_px,
-        margin={"t": 90, "b": 24, "l": 34, "r": 8},
+        margin={"t": 90, "b": 35, "l": 34, "r": 8},
         font=dict(family=FONT_FAMILY, size=font_px),
         bargap=0.45,
         legend=dict(
