@@ -38,8 +38,7 @@ PAPER TABLES (\\input by draftPaper.tex):
 - makeCalibrationTargetsTable:  AE and EMDE steady-state targets
 - makeParametersTable:          Structural productive-spending parameters
 - makeEfficiencyGapsTable:      Efficiency-gap derivation
-- makeNotationTable:        Main endogenous-variable notation
-                    Calibration/notation values, not model output.
+                    Calibration values, not model output.
                     Out: docs/2026-06_wp-imf/*Table.tex
 
 DIAGNOSTICS (read *_results.mat directly):
@@ -298,15 +297,6 @@ def makeEfficiencyGapsTable(c):
 
 
 @task
-def makeNotationTable(c):
-    """
-    Regenerate the main endogenous-variable notation table.
-    Out: docs/2026-06_wp-imf/notationTable.tex (\\input by the paper)
-    """
-    _run_table(c, "makeNotationTable.py", "Notation table")
-
-
-@task
 def makeGlossary(c):
     """
     Regenerate the appendix symbol glossary (paper <-> model-code mapping):
@@ -368,7 +358,6 @@ def investigateContributions(c):
     makeCalibrationTargetsTable,
     makeParametersTable,
     makeEfficiencyGapsTable,
-    makeNotationTable,
     makeGlossary,
     plotContributions,
     investigateContributions,
@@ -376,7 +365,7 @@ def investigateContributions(c):
 def run_all(c):
     """
     Export model data, then regenerate every figure and every \\input table
-    (multipliers, parameters, efficiency gaps, notation).
+    (multipliers, parameters, efficiency gaps, and the glossary).
     (Does not re-solve the models; run `runModels` first if the model changed.)
     """
     print("Full figure and table workflow complete.")

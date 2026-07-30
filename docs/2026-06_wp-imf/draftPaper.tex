@@ -121,7 +121,6 @@ Over a 25-year horizon the implied output multipliers on permanent increases in 
 \begin{itemize}\setlength{\itemsep}{0pt}
   \item Add an annex section documenting the data sources and construction of the calibrated values reported in Table~\ref{tab:calibrationTargets}.
   \item Assess the model-implied steady-state value $E=0.157$ against the literature, as the current allocation of time to education and health appears high. Revisit the calibration if warranted.
-  \item Verify the duration-dependent inflation response. Permanent shocks produce a persistently positive output deviation and persistent deflation. Temporary shocks eventually produce a negative output deviation and positive inflation that gradually disappears. Establish whether this contrast is driven by the Taylor rule's response to output relative to its original steady state, and assess whether the rule should instead respond to a natural-output gap.
 \end{itemize}
 \end{minipage}}
 \end{center}
@@ -391,9 +390,11 @@ The policy experiments in Section~\ref{sec:results} instead keep $e_{T,t}^{\math
 \paragraph{Monetary policy and the government financing rate.}
 The central bank sets the nominal interest rate $R_t$, which is also the government's financing rate, according to a Taylor rule:
 \begin{equation} \label{eq:taylor}
-    \frac{R_t}{R^{SS}} = \left(\frac{R_{t-1}}{R^{SS}}\right)^{\rho_R}\left[\left(\frac{\Pi_t}{\Pi}\right)^{\gamma_\pi}\left(\frac{Y_t^{d}}{Y^{d,SS}}\right)^{\gamma_y}\right]^{1-\rho_R} e^{\varepsilon_t^{mp}}.
+    \frac{R_t}{R^{SS}} = \left(\frac{R_{t-1}}{R^{SS}}\right)^{\rho_R}\left[\left(\frac{\Pi_t}{\Pi}\right)^{\gamma_\pi}\left(\frac{mc_t}{mc^{SS}}\right)^{\gamma_y}\right]^{1-\rho_R} e^{\varepsilon_t^{mp}}.
 \end{equation}
-Here $\rho_R$ is a smoothing parameter, while $\gamma_\pi$ and $\gamma_y$ govern the responses to inflation and aggregate demand respectively.
+Here $\rho_R$ is a smoothing parameter, and $\gamma_\pi$ governs the response to inflation.
+Following \citet{GertlerKaradi2011}, minus the log deviation of the retail price markup proxies for the output gap.
+Since this markup is $1/mc_t$, the proxy is $\log(mc_t/mc^{SS})$, with response coefficient $\gamma_y$.
 
 \subsection{Market Clearing and Equilibrium}
 
@@ -467,7 +468,8 @@ Anzoategui et al.\ place the markup in the middle of the range of available esti
 In this model, the two parameters play distinct roles: $\mu^p$ determines the profit flow that gives adopted technologies value, while $\vartheta$ governs the productivity gain from a larger stock of adopted technologies.
 
 Steady-state gross inflation is normalized to $\Pi=1$.
-The monetary-policy rule uses representative quarterly coefficients: interest-rate smoothing is $\rho_R=0.70$, and the responses to inflation and aggregate demand are $\gamma_\pi=1.50$ and $\gamma_y=0.25$, respectively.
+The monetary-policy rule uses representative quarterly coefficients: interest-rate smoothing is $\rho_R=0.70$, and the response to inflation is $\gamma_\pi=1.50$.
+Following \citet{GertlerKaradi2011}, the response to the markup-based output-gap proxy is $\gamma_y=0.125$, corresponding to their quarterly coefficient of $0.50/4$.
 Fiscal closure operates through lump-sum transfers, with $\gamma_d^T=0.01$ governing their response to the lagged debt gap.
 The auxiliary switch temporarily suspends this response, ensuring that the spending expansions in the model-properties exercises are financed entirely through debt.
 

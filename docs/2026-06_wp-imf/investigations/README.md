@@ -15,7 +15,7 @@ paper's model pipeline (`drivers/runModel.m`).
   `1+gammaa = g^((1-alpha)/(vartheta-1))`, not `g` (self-compiling note).
 - `inflation-dynamics/` — derives why the former output-level term in the Taylor
   rule forced persistent deflation after permanent output gains, and why the
-  inflation-only rule restores long-run inflation to target (self-compiling note).
+  markup-based output-gap proxy removes that artifact (self-compiling note).
 - `sensitivity/` — parameter-sweep driver + plots behind §4.3.
 - `modelDeriv/` — model derivations, styled after the Sims NK lecture notes kept in
   the folder (`notes_new_keynesian_2024-1.pdf`; see `.sped.md` for the convention).

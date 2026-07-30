@@ -21,7 +21,7 @@ varphi      = 5;     // inverse Frisch elasticity (Frisch 0.2), as in Gali (2015
 epsilon  = 10;
 thetap   = 0.8;
 gamma_pi = 1.5;
-gamma_y  = 0;
+gamma_y  = 0.125;
 rho_R    = 0.7;
 Gcy      = 0.18;
 PIss     = 1;
@@ -48,7 +48,7 @@ epsilon*x1 = (epsilon-1)*x2;
 vp = thetap*(1/PI)^(-epsilon)*vp(-1) + (1-thetap)*PIstar^(-epsilon);
 
 // --- Monetary policy and government financing rate ---
-R/Rss = (R(-1)/Rss)^rho_R*((PI/PIss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R);
+R/Rss = (R(-1)/Rss)^rho_R*((PI/PIss)^gamma_pi*(mc/STEADY_STATE(mc))^gamma_y)^(1-rho_R);
 
 // --- Government (wasteful consumption, lump-sum financed) and market clearing ---
 yd = C + Gc;

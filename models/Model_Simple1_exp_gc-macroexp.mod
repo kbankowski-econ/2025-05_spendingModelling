@@ -9,7 +9,7 @@
 //   7 -> + extended fiscal block; canonical lump-sum-financed G model
 // Inactive variables remain declared and are pinned solely so every variant can
 // use the common export pipeline. They do not enter the active equilibrium.
-var
+var 
 C               % HH consumption
 lambda          % Marginal Utility
 R               % Nominal policy and government financing rate
@@ -22,7 +22,7 @@ rk              % Return on private investment
 x1              % Price setting 1
 x2              % Price setting 2
 mc              % Marginal cost
-PIstar          % Optimnal gross inflation
+PIstar          % Optimnal gross inflation 
 y              % Production
 Kg              % Public capital
 b              % Debt level
@@ -34,7 +34,7 @@ tauw            % Income tax
 yd              % Aggregate demand
 vp              % Price dispersion
 omega           % Scaling
-Rss             % Steady state interest rate
+Rss             % Steady state interest rate   
 ydss            % Steady state output
 T           % Transfer
 G               % Total government spending (Gc+Igi+Ige+Grd)
@@ -47,7 +47,7 @@ Kge             % Public Human-related Capital Stock (HCS)
 Ige             % Public spending in public humand-related capital stock
 E               % Time for schooling and taking care of health (building capital)
 lambda_H        % Lagrangian of the Human capital formation
-L             % Labor supply
+L             % Labor supply 
 chiH            % Adjuster so that E=0.1
 eGE             % Gap in public human-capital efficiency (e^GE)
 eGI             % Gap in public infrastructure efficiency (e^GI)
@@ -67,9 +67,9 @@ eGRD            % Gap in public R&D efficiency (e^GRD)
 %-----------------------------
 varexo
 epsi_gc         % Shock to government consumption
-epsi_igi         % Shock to government investment
+epsi_igi         % Shock to government investment  
 epsi_MP         % Monetary Policy Shocks
-epsi_tauc       % Consumption income tax shock
+epsi_tauc       % Consumption income tax shock 
 epsi_tauw       % Labor income tax shock
 epsi_ige        % Public HC spending shock
 epsi_effge
@@ -82,13 +82,13 @@ eTaux          % Auxiliary transfer-rule dummy: zero suspends debt feedback
 %--------------------------
 % Define parameters
 %--------------------------
-parameters
+parameters 
 betta           % Discount value
 varphi             % Frisch parameter
 chi             % indexation
 delta           % depreciationf
 thetap          % firsm cant change the price
-epsilon         % elasticity of substitution
+epsilon         % elasticity of substitution 
 alpha          % share of capital in intermediate firms production
 alphaG          % Share of public capital in the production (paper alpha_G)
 rho_R           % Persistence of policy rate
@@ -110,7 +110,7 @@ eGE_ss          % SS gap in public human-capital efficiency (e^GE)
 Igey            % Share of goevrnment expenditure to human capital
 alphaRD         % Long-run R&D elasticity in technology creation
 Grdy           % share of expenditure for R&D
-markupss        % SS markup of Intermediate goods
+markupss        % SS markup of Intermediate goods 
 phi           % obsolescence rate: 0.08/4
 vartheta      % Intermediate goods elasticity of substitution
 gammaa         % Gorwth of tech
@@ -129,7 +129,7 @@ epsilon =10;
 alpha=0.3;
 rho_R=0.7;
 gamma_pi=1.5;
-gamma_y=0;
+gamma_y=0.125;   % quarterly response to minus the retail price markup, Gertler and Karadi (2011)
 Piss=1;
 gamma_d_T=0.01;
 deltaH=0.025;
@@ -213,7 +213,7 @@ S = STEADY_STATE(S);
 //********************************************************
 // MONETARY POLICY
 //********************************************************
-R/Rss = (R(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
+R/Rss = (R(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(mc/STEADY_STATE(mc))^gamma_y)^(1-rho_R)*exp(epsi_MP);
 //********************************************************
 // GOVERNMENT
 //********************************************************

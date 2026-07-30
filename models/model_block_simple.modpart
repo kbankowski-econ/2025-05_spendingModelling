@@ -103,7 +103,7 @@ S = STEADY_STATE(S);
 //********************************************************
 // MONETARY POLICY
 //********************************************************
-R/Rss = (R(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
+R/Rss = (R(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(mc/STEADY_STATE(mc))^gamma_y)^(1-rho_R)*exp(epsi_MP);
 
 //********************************************************
 // GOVERNMENT

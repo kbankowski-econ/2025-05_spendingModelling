@@ -1,9 +1,9 @@
 category,region,model,mult_1y,mult_5y,mult_10y,mult_20y,mult_25y,mult_longterm
-Government consumption,Advanced economies,Model_HumanCapital_exp_gc_perm,0.3128,0.2899,0.3292,0.4015,0.4310,0.6474
-Government consumption,Emerging markets,EM_Model_HumanCapital_exp_gc_perm,0.2695,0.2508,0.2793,0.3211,0.3348,0.3968
-Infrastructure investment,Advanced economies,Model_HumanCapital_exp_igi_perm,0.3311,0.5203,0.8595,1.3909,1.5974,3.0789
-Infrastructure investment,Emerging markets,EM_Model_HumanCapital_exp_igi_perm,0.3623,0.8416,1.5612,2.5247,2.8358,4.2963
-Human capital investment,Advanced economies,Model_HumanCapital_exp_ige_perm,0.9389,0.4413,0.4727,1.2149,1.6967,7.1794
-Human capital investment,Emerging markets,EM_Model_HumanCapital_exp_ige_perm,1.4377,0.5953,0.8089,2.3685,3.1954,8.8863
-Research and development,Advanced economies,Model_HumanCapital_exp_grd_perm,0.1672,0.2573,0.8974,2.0065,2.4415,5.4528
+Government consumption,Advanced economies,Model_HumanCapital_exp_gc_perm,0.2708,0.2817,0.3252,0.3996,0.4295,0.6472
+Government consumption,Emerging markets,EM_Model_HumanCapital_exp_gc_perm,0.2340,0.2442,0.2764,0.3198,0.3338,0.3966
+Infrastructure investment,Advanced economies,Model_HumanCapital_exp_igi_perm,0.2312,0.5016,0.8506,1.3868,1.5943,3.0784
+Infrastructure investment,Emerging markets,EM_Model_HumanCapital_exp_igi_perm,0.1930,0.8120,1.5484,2.5193,2.8316,4.2956
+Human capital investment,Advanced economies,Model_HumanCapital_exp_ige_perm,0.8514,0.4245,0.4649,1.2116,1.6943,7.1790
+Human capital investment,Emerging markets,EM_Model_HumanCapital_exp_ige_perm,1.3243,0.5750,0.8010,2.3657,3.1934,8.8860
+Research and development,Advanced economies,Model_HumanCapital_exp_grd_perm,0.1245,0.2512,0.8951,2.0057,2.4410,5.4528
 Research and development,Emerging markets,,,,,,,

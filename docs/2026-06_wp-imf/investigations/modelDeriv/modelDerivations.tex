@@ -1014,9 +1014,12 @@ restores debt stability.
 \subsection{Monetary Policy and the Government Financing Rate}
 
 The central bank directly sets the nominal rate used for both monetary policy
-and government financing through a standard Taylor rule with smoothing:
+and government financing through a Taylor rule with smoothing. Following
+Gertler and Karadi (2011), minus the log deviation of the retail price markup
+proxies for the output gap. Because that markup is the inverse of real marginal
+cost, the rule is:
 \modelcode{R/Rss = (R(-1)/Rss)\^{}rho\_R\\
-\hspace*{2em}*((PI/Piss)\^{}gamma\_pi*(yd/ydss)\^{}gamma\_y)\^{}(1-rho\_R)*exp(epsi\_MP);}
+\hspace*{2em}*((PI/Piss)\^{}gamma\_pi*(mc/STEADY\_STATE(mc))\^{}gamma\_y)\^{}(1-rho\_R)*exp(epsi\_MP);}
 
 %========================================================================
 \section{Market Clearing}\label{sec:mc}

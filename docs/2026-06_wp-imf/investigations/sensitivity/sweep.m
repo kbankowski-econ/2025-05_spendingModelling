@@ -175,6 +175,7 @@ fprintf('\nWrote %s\n  and %s\n', csvPath, irfPath);
 function [m, ydAnn, ydQtr] = solveMult(periods, iYd, iInst, beta, horizonsYr, nYears, nQuarters)
     global oo_ options_
     options_.periods = periods;
+    options_.no_homotopy = true;       % let the sweep record failed extreme draws as NaN
     steady;                       % refresh SS at the current params
     perfect_foresight_setup;
     perfect_foresight_solver;

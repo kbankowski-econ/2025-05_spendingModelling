@@ -63,7 +63,7 @@ def main():
             (r"$\Pi$", "Steady-state gross inflation", "Piss", 2),
             (r"$\rho_R$", "Interest-rate smoothing", "rho_R", 2),
             (r"$\gamma_\pi$", "Policy response to inflation", "gamma_pi", 2),
-            (r"$\gamma_y$", "Policy response to aggregate demand", "gamma_y", 2),
+            (r"$\gamma_y$", "Policy response to the output-gap proxy", "gamma_y", 3),
             (r"$\gamma_d^T$", "Transfer response to debt", "gamma_d_T", 2),
         ]),
     ]

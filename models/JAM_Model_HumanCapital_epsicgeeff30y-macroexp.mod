@@ -118,7 +118,7 @@ epsilon =10;
 alpha=0.3;
 rho_R=0.7;
 gamma_pi=1.5;
-gamma_y=0;
+gamma_y=0.125;   % quarterly response to minus the retail price markup, Gertler and Karadi (2011)
 Piss=1;
 gamma_d_T=0.01;
 deltaH=0.025;
@@ -216,7 +216,7 @@ varsigma*q*phi*SDF(+1)/(1+gammaa)*A(-1)/A*(V(+1)-J(+1)) = S;
 // GOVERNMENT: FISCAL AND MONETARY POLICY
 //********************************************************
 // Taylor rule for the nominal policy and government financing rate
-R/Rss = (R(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(yd/ydss)^gamma_y)^(1-rho_R)*exp(epsi_MP);
+R/Rss = (R(-1)/Rss)^rho_R*((PI/Piss)^gamma_pi*(mc/STEADY_STATE(mc))^gamma_y)^(1-rho_R)*exp(epsi_MP);
 // Public infrastructure capital
 Kg*g = (1-delta)*Kg(-1)+(1-eGI)*Igi;
 // Public education and health capital
