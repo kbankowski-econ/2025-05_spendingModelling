@@ -1,17 +1,29 @@
-"""AE efficiency-gap closures with corresponding fiscal-shock IRFs."""
+"""AE matched efficiency and spending experiments by instrument."""
 
-from plotEfficiencyIRF import plot_efficiency_irfs
+from plotEfficiencyIRF import plot_efficiency_comparison
 
 
-SCENARIOS = [
-    ("Model_HumanCapital_effgi_perm025", "Infrastructure efficiency", "#1565C0", "solid"),
-    ("Model_HumanCapital_effge_perm025", "Human-capital efficiency", "#6A1B9A", "solid"),
-    ("Model_HumanCapital_effgrd_perm025", "R&D efficiency", "#2E7D32", "solid"),
-    ("Model_HumanCapital_exp_igi_perm025", "Infrastructure spending", "#1565C0", "dot"),
-    ("Model_HumanCapital_exp_ige_perm025", "Human-capital spending", "#6A1B9A", "dot"),
-    ("Model_HumanCapital_exp_grd_perm025", "R&D spending", "#2E7D32", "dot"),
+INSTRUMENTS = [
+    (
+        "Infrastructure",
+        "#1565C0",
+        "Model_HumanCapital_effgi_perm025",
+        "Model_HumanCapital_exp_igi_perm025",
+    ),
+    (
+        "Human capital",
+        "#6A1B9A",
+        "Model_HumanCapital_effge_perm025",
+        "Model_HumanCapital_exp_ige_perm025",
+    ),
+    (
+        "R&D",
+        "#2E7D32",
+        "Model_HumanCapital_effgrd_perm025",
+        "Model_HumanCapital_exp_grd_perm025",
+    ),
 ]
 
 
 if __name__ == "__main__":
-    plot_efficiency_irfs(SCENARIOS, "efficiencyAE_yd")
+    plot_efficiency_comparison(INSTRUMENTS, "efficiencyAE_yd")

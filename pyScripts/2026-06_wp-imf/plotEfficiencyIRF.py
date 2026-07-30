@@ -1,4 +1,4 @@
-"""Shared 5-by-4 IRF chart for efficiency improvements and comparators."""
+"""Shared IRF charts for spending-efficiency experiments."""
 
 from math import log1p
 from pathlib import Path
@@ -59,6 +59,13 @@ PANELS = [
     ("T_yss", "Transfers (T<sub>t</sub>)"),
     ("by_yss", "Debt-to-GDP ratio (b<sub>t</sub>)"),
     None,
+]
+
+COMPARISON_ROWS = [
+    ("yd", "Output"),
+    ("C", "Consumption"),
+    ("pdef_yss", "Primary deficit"),
+    ("by_yss", "Debt"),
 ]
 
 NCOLS = 4
@@ -272,6 +279,211 @@ def plot_efficiency_irfs(scenarios, output_stem):
                         "pct_dev": round(value, 3),
                     }
                 )
+    csv_path = FIGURES_DIR / f"{output_stem}.csv"
+    pd.DataFrame(records).to_csv(csv_path, index=False)
+    print(f"  Exported data to {csv_path.name}")
+
+
+def plot_efficiency_comparison(instruments, output_stem):
+    """Render matched efficiency and spending experiments by instrument."""
+    width_px, height_px = chart_render_px(output_stem, (15.0, 13.0))
+    display_cm = chart_display_cm(output_stem, (15.0, 13.0))
+    font_px = font_px_for_pt(7.5, width_px, display_cm[0])
+    legend_font_px = font_px_for_pt(8, width_px, display_cm[0])
+    title_font_px = font_px_for_pt(9, width_px, display_cm[0])
+    row_font_px = font_px_for_pt(9, width_px, display_cm[0])
+
+    df = load_data()
+    quarters = df["horizon_quarter"].values
+    horizon_positions = [log1p(quarter) for quarter in quarters]
+    impact_values = df.set_index("horizon_quarter").loc[IMPACT_QUARTER]
+
+    nrows = len(COMPARISON_ROWS)
+    ncols = len(instruments)
+    subplot_titles = [instrument[0] for instrument in instruments]
+    subplot_titles.extend([""] * (nrows * ncols - ncols))
+    fig = make_subplots(
+        rows=nrows,
+        cols=ncols,
+        subplot_titles=subplot_titles,
+        shared_yaxes="rows",
+        horizontal_spacing=0.10,
+        vertical_spacing=0.10,
+    )
+
+    for col, (instrument, color, efficiency_model, spending_model) in enumerate(
+        instruments, start=1
+    ):
+        treatments = [
+            (efficiency_model, "Efficiency improvement", "solid"),
+            (spending_model, "Spending increase", "dot"),
+        ]
+        for row, (variable, _row_label) in enumerate(COMPARISON_ROWS, start=1):
+            for model, treatment, dash in treatments:
+                colname = f"{model}___{variable}"
+                if colname not in df.columns:
+                    raise KeyError(f"Missing exported series: {colname}")
+                values = df[colname].values
+                fig.add_trace(
+                    go.Scatter(
+                        x=horizon_positions,
+                        y=values,
+                        name=treatment,
+                        legendgroup=treatment,
+                        line=dict(color=color, width=STYLE["line_width"], dash=dash),
+                        showlegend=False,
+                        customdata=quarters,
+                        hovertemplate=(
+                            f"{instrument}: {treatment}<br>Quarter: %{{customdata}}"
+                            "<br>Response: %{y:.3f}<extra></extra>"
+                        ),
+                    ),
+                    row=row,
+                    col=col,
+                )
+                fig.add_trace(
+                    go.Scatter(
+                        x=[log1p(IMPACT_QUARTER)],
+                        y=[impact_values[colname]],
+                        name=treatment,
+                        legendgroup=treatment,
+                        mode="markers",
+                        marker=dict(
+                            symbol="circle",
+                            size=6,
+                            color=color,
+                            line=dict(color="white", width=0.75),
+                        ),
+                        showlegend=False,
+                        hovertemplate=(
+                            f"{instrument}: {treatment}<br>Q1: %{{y:.3f}}<extra></extra>"
+                        ),
+                    ),
+                    row=row,
+                    col=col,
+                )
+
+    # Neutral legend keys make clear that line style, rather than column color,
+    # identifies the two matched treatments.
+    for treatment, dash in (("Efficiency improvement", "solid"),
+                            ("Spending increase", "dot")):
+        fig.add_trace(
+            go.Scatter(
+                x=[None],
+                y=[None],
+                name=treatment,
+                legendgroup=treatment,
+                mode="lines",
+                line=dict(color="#424242", width=STYLE["line_width"], dash=dash),
+                showlegend=True,
+                hoverinfo="skip",
+            ),
+            row=1,
+            col=1,
+        )
+
+    # Comparisons across instruments use the same vertical scale within each row.
+    for row, (variable, _row_label) in enumerate(COMPARISON_ROWS, start=1):
+        row_values = []
+        for _instrument, _color, efficiency_model, spending_model in instruments:
+            row_values.extend(df[f"{efficiency_model}___{variable}"].tolist())
+            row_values.extend(df[f"{spending_model}___{variable}"].tolist())
+        row_min = min(0, min(row_values))
+        row_max = max(0, max(row_values))
+        span = row_max - row_min
+        pad = 0.06 * span if span else 0.1
+        for col in range(1, ncols + 1):
+            fig.update_yaxes(range=[row_min - pad, row_max + pad], row=row, col=col)
+
+    for annotation in fig["layout"]["annotations"]:
+        annotation["font"] = dict(family=FONT_FAMILY, size=title_font_px)
+
+    for row, (_variable, row_label) in enumerate(COMPARISON_ROWS, start=1):
+        panel_idx = (row - 1) * ncols + 1
+        axis_name = "yaxis" + ("" if panel_idx == 1 else str(panel_idx))
+        y0, y1 = fig.layout[axis_name].domain
+        fig.add_annotation(
+            text=row_label.upper(),
+            textangle=-90,
+            xref="paper",
+            yref="paper",
+            x=0,
+            y=(y0 + y1) / 2,
+            xshift=-42,
+            showarrow=False,
+            xanchor="center",
+            yanchor="middle",
+            font=dict(family=FONT_FAMILY, size=row_font_px, color="#424242"),
+            bgcolor="#E6E6E6",
+            borderpad=2,
+        )
+
+    fig.update_layout(
+        template=STYLE["template"],
+        width=width_px,
+        height=height_px,
+        margin={"t": 80, "b": 22, "l": 58, "r": 12},
+        font=dict(family=FONT_FAMILY, size=font_px),
+        legend=dict(
+            orientation="h",
+            yref="container",
+            yanchor="top",
+            y=0.99,
+            xanchor="center",
+            x=0.5,
+            font=dict(size=legend_font_px),
+        ),
+    )
+
+    axes = STYLE["axes"]
+    fig.update_xaxes(
+        tickvals=X_TICKS,
+        ticktext=X_TICK_LABELS,
+        range=[X_AXIS_MIN - X_AXIS_PAD, X_AXIS_MAX],
+        showgrid=False,
+        linecolor=axes["linecolor"],
+        linewidth=axes["linewidth"],
+        ticks=axes["ticks"],
+        tickfont=dict(size=font_px),
+    )
+    fig.update_yaxes(
+        showgrid=axes["showgrid"],
+        gridcolor=axes["gridcolor"],
+        gridwidth=axes["gridwidth"],
+        zeroline=axes["zeroline"],
+        zerolinewidth=axes["zerolinewidth"],
+        zerolinecolor="black",
+        linecolor=axes["linecolor"],
+        linewidth=axes["linewidth"],
+        ticks=axes["ticks"],
+        tickfont=dict(size=font_px),
+    )
+
+    FIGURES_DIR.mkdir(parents=True, exist_ok=True)
+    png_path = FIGURES_DIR / f"{output_stem}.png"
+    pdf_path = FIGURES_DIR / f"{output_stem}.pdf"
+    html_path = FIGURES_DIR / f"{output_stem}.html"
+    smart_save_image(fig, png_path, display_cm)
+    write_pdf(fig, pdf_path, width_px, display_cm[0])
+    fig.write_html(html_path, auto_open=True)
+    print(f"  Saved {png_path.name}, {pdf_path.name} and {html_path.name}")
+
+    records = []
+    for variable, row_label in COMPARISON_ROWS:
+        for instrument, _color, efficiency_model, spending_model in instruments:
+            for treatment, model in (("Efficiency improvement", efficiency_model),
+                                     ("Spending increase", spending_model)):
+                colname = f"{model}___{variable}"
+                for quarter, value in zip(quarters, df[colname].values):
+                    records.append(
+                        {
+                            "horizon_quarter": quarter,
+                            "instrument": instrument,
+                            "treatment": treatment,
+                            "variable": row_label,
+                            "response": round(value, 3),
+                        }
+                    )
     csv_path = FIGURES_DIR / f"{output_stem}.csv"
     pd.DataFrame(records).to_csv(csv_path, index=False)
     print(f"  Exported data to {csv_path.name}")

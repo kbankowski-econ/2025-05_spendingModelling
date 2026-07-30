@@ -174,8 +174,8 @@ def plotReallocationEM(c):
 @task
 def plotEfficiencyAE(c):
     """
-    AE permanent efficiency-gap closures with corresponding permanent
-    spending-shock IRFs (5x4 grid).
+    AE permanent efficiency improvements with matched permanent spending-shock
+    IRFs (4x3 variable-by-instrument grid).
     Out: figures/efficiencyAE_yd.png/.pdf/.html/.csv
     """
     _run_plot(c, "plotEfficiencyAE.py", "Generating: AE Spending Efficiency")
