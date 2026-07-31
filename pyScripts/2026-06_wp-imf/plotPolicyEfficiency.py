@@ -167,7 +167,6 @@ def plot_ae(row):
         (label, row[efficiency] - row[baseline], color)
         for label, efficiency, baseline, color in AE_SERIES
     ]
-    bars.sort(key=lambda item: item[1])
 
     fig = go.Figure(
         go.Bar(
