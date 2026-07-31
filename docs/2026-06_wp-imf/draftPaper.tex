@@ -1331,9 +1331,14 @@ The R\&D innovation channel is shut down for emerging market and developing econ
 \end{figure}
 
 \clearpage
+\AddToHookNext{shipout/foreground}{%
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[rotate=45,scale=3,text=gray!25] at (current page.center) {\bfseries October 2025 Fiscal Monitor};
+    \end{tikzpicture}%
+}
 \begin{figure}[H]
     \centering
-    \caption{Long-Term Gains in Output: April 2026 Fiscal Monitor Panel \label{fig:policySummaryFM}}
+    \caption{Long-Term Gains in Output: October 2025 Fiscal Monitor Panel \label{fig:policySummaryFM}}
     \vspace{-1mm}
     {\small (Percent deviation from steady state)\par}
     \vspace{2mm}
@@ -1375,7 +1380,7 @@ The R\&D innovation channel is shut down for emerging market and developing econ
         \includegraphics[width=\linewidth]{../2026-04_FM-panel-replication/figures/diffusionAE_yd.png}
     \end{minipage}
 
-    \fignote{IMF staff estimates.}{This figure reproduces the summary panel prepared for the April 2026 Fiscal Monitor.
+    \fignote{IMF staff estimates.}{This figure reproduces the summary panel prepared for the October 2025 Fiscal Monitor.
     Panels 1 and 2 depict output responses to a permanent 1-percent-of-GDP increase in the expenditure categories shown, funded by a cut in public consumption.
     Panel 3 reports the additional output gains by 2050 from gradually closing spending-efficiency gaps.
     Panel 4 reports gains from closing these gaps by 2040 or 2050 and from different initial efficiency levels.
