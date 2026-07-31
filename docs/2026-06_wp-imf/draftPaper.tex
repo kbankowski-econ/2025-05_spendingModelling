@@ -24,6 +24,7 @@
 
 \newcommand{\source}[1]{\vspace{2mm} \footnotesize \begin{minipage}{0.9\textwidth} \emph{Sources: }{#1} \end{minipage}}
 \newcommand{\desc}[1]{\vspace{0mm} \footnotesize \begin{minipage}{0.9\textwidth} \emph{Note: }{#1} \end{minipage}}
+\newcommand{\fignote}[2]{\vspace{2mm}\par\noindent\begin{minipage}{0.9\textwidth}\footnotesize\setlength{\parindent}{0pt}\emph{Sources: }#1\par\vspace{1mm}\emph{Note: }#2\end{minipage}}
 % Combined source+note for tables: both in one left-aligned box so they share the
 % left margin exactly, with a fixed gap between them (matches the figures' look).
 \newcommand{\tabnote}[2]{\vspace{2mm}\par\noindent\begin{minipage}{0.9\textwidth}\footnotesize\setlength{\parindent}{0pt}\emph{Sources: }#1\par\vspace{2mm}\emph{Note: }#2\end{minipage}}
@@ -1323,9 +1324,7 @@ The R\&D innovation channel is shut down for emerging market and developing econ
         \includegraphics[width=\linewidth]{figures/diffusionAE_yd.pdf}
     \end{minipage}
 
-    \vspace{1mm}
-    \source{IMF staff estimates.}
-    \desc{Panels 1 and 2 report output responses to permanent 1-percent-of-GDP reallocations from public consumption toward the productive categories shown.
+    \fignote{IMF staff estimates.}{Panels 1 and 2 report output responses to permanent 1-percent-of-GDP reallocations from public consumption toward the productive categories shown.
     Panels 3 and 4 report the additional gains from gradually improving spending efficiency.
     Panel 5 compares human-capital investment, R\&D spending, and an equal combination of the two.
     Panel 6 shows how the gains from that combination vary with the speed of technology diffusion.}
@@ -1376,9 +1375,7 @@ The R\&D innovation channel is shut down for emerging market and developing econ
         \includegraphics[width=\linewidth]{../2026-04_FM-panel-replication/figures/diffusionAE_yd.png}
     \end{minipage}
 
-    \vspace{1mm}
-    \source{IMF staff estimates.}
-    \desc{This figure reproduces the summary panel prepared for the April 2026 Fiscal Monitor.
+    \fignote{IMF staff estimates.}{This figure reproduces the summary panel prepared for the April 2026 Fiscal Monitor.
     Panels 1 and 2 depict output responses to a permanent 1-percent-of-GDP increase in the expenditure categories shown, funded by a cut in public consumption.
     Panel 3 reports the additional output gains by 2050 from gradually closing spending-efficiency gaps.
     Panel 4 reports gains from closing these gaps by 2040 or 2050 and from different initial efficiency levels.
