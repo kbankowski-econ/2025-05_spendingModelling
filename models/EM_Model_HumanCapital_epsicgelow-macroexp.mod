@@ -148,9 +148,9 @@ eGRD_ss=0.2;                         % public R&D efficiency gap (e^GRD)        
 alphaRD=0;                           % long-run R&D elasticity in tech creation      | AE: 0.09
 alphaHA=0;                           % long-run HC elasticity in tech creation       | AE: 0.1/(1-rho_A)
 varsigma=0.1;                       % adoption elasticity                           | AE: 0.8
-% EM efficiency gaps raised by 0.1 (low-efficiency variant)
-eGI_ss=0.415+0.1;
-eGE_ss=0.320+0.1;
+% EMDE efficiency gaps exactly 0.10 above the empirical calibration (sensitivity)
+eGI_ss=0.406+0.1;
+eGE_ss=0.329+0.1;
 % gammaa uses the set-specific trend growth rate, so it must come after it
 gammaa=g^((1-alpha)/(vartheta-1))-1;
 model;

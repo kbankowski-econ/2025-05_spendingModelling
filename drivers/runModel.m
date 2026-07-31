@@ -152,8 +152,10 @@ modelList = {
     % --- EMDE reallocation and legacy gradual efficiency scenarios --- The bare
     % epsiig / epsicge reallocations enter Figure 2 (fig:reallocation, panel b,
     % Section 5.1). The remaining rows provide the initial-gap and 15y/25y
-    % efficiency-ramp comparisons in Figure 5 (Section 5.2). The EMDE R&D channel
-    % is inactive.
+    % efficiency-ramp comparisons in Figure 5 (Section 5.2). The higher-gap
+    % variants start exactly 0.10 above EMnorm and narrow the gap by the same
+    % amount as the corresponding calibrated-gap reform, ending at 0.10. The
+    % EMDE R&D channel is inactive.
     'EM_Model_HumanCapital_epsiig',             'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01,  '1:1000'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiiglow',          'EM', 'EMlow',  {{'epsi_igi',      'const', 0.01,  '1:1000'}
@@ -166,13 +168,13 @@ modelList = {
                                                                  {'epsi_effgi',   'ramp',  0.406, '1:60'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiigeff30ylow',    'EM', 'EMlow',  {{'epsi_igi',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effgi',   'ramp',  0.399, '1:60'}
+                                                                 {'epsi_effgi',   'ramp',  0.406, '1:60'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiigeff25y',       'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01,  '1:1000'}
                                                                  {'epsi_effgi',   'ramp',  0.406, '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsiigeff25ylow',    'EM', 'EMlow',  {{'epsi_igi',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effgi',   'ramp',  0.399, '1:100'}
+                                                                 {'epsi_effgi',   'ramp',  0.406, '1:100'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
     'EM_Model_HumanCapital_epsicgeeff30y',      'EM', 'EMnorm', {{'epsi_ige',     'const', 0.01,  '1:1000'}
                                                                  {'epsi_effge',   'ramp',  0.329, '1:60'}
