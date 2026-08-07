@@ -1167,6 +1167,59 @@ All shocks are zero in steady state; the paths they follow in each experiment ar
 \input{glossaryExogenous.tex}
 
 %========================================================================
+\section{Functional Composition of Government Investment} \label{app:investmentComposition}
+%========================================================================
+
+Mapping government investment into the model's two productive-capital blocks requires translating the OECD's functional classification into economic channels.
+The calculation uses the 2023 country observations in Table~J.10.4 of \citet{OECD2025Glance}.
+The published OECD and OECD-EU aggregates are excluded, and the remaining economies are assigned to the AE and EMDE groups used in the IMF World Economic Outlook.
+
+The mapping adopts a broad concept of human-capital-related investment (Table~\ref{tab:investmentFunctionMapping}).
+In addition to health and education, it includes housing and community amenities, recreation and culture, and social protection.
+These functions support health, learning, and participation in work.
+Administrative, security, economic, and environmental functions are assigned to infrastructure and other public capital.
+
+\begin{table}[H]
+    \centering
+    \caption{Mapping Government Investment Functions to the Model Blocks \label{tab:investmentFunctionMapping}}
+    \footnotesize
+    \renewcommand{\arraystretch}{1.2}
+    \input{investmentFunctionMappingTable.tex}
+
+    \vspace{1mm}
+    \tabnote{\citet{OECD2025Glance}; IMF staff classification.}{The classification is exhaustive: every first-level COFOG function in Table~J.10.4 is assigned to one model investment block.
+It is based on the purpose of investment rather than the type of asset acquired.}
+\end{table}
+
+For economy $i$, the human-capital-related share is the sum of the five functions assigned to that block,
+\[
+    s_i^{GE}=s_i^{06}+s_i^{07}+s_i^{08}+s_i^{09}+s_i^{10},
+    \qquad
+    s_i^{GI}=s_i^{01}+s_i^{02}+s_i^{03}+s_i^{04}+s_i^{05},
+\]
+where the superscripts $01,\ldots,10$ denote first-level COFOG functions.
+The two shares sum to 100 percent, apart from rounding in the published data.
+Country-group means give each economy equal weight.
+The medians identify the central economy without being driven by unusually large or negative entries associated with asset disposals.
+
+Human-capital-related investment accounts for about one-third of public investment in both country groups (Table~\ref{tab:investmentComposition}).
+Its median share is 33.1 percent for AEs and 34.3 percent for the OECD-covered EMDE sample; the corresponding means are 33.7 and 33.8 percent.
+
+\begin{table}[H]
+    \centering
+    \caption{Government Investment Composition by Country Group \label{tab:investmentComposition}}
+    \footnotesize
+    \renewcommand{\arraystretch}{1.2}
+    \input{investmentCompositionTable.tex}
+
+    \vspace{1mm}
+    \tabnote{\citet{OECD2025Glance}; IMF staff calculations.}{Shares are percentages of total government investment.
+The EMDE sample comprises Bulgaria, Chile, Colombia, Costa Rica, Hungary, Poland, and Romania; the other 29 country observations are classified as AEs.
+The source reports functional shares but not investment amounts, so the means give each economy equal weight.
+Data refer to 2023 except where otherwise noted by the OECD.}
+\end{table}
+
+%========================================================================
 \section{Spending-Efficiency Estimates} \label{app:efficiency}
 %========================================================================
 
@@ -1456,60 +1509,5 @@ The R\&D innovation channel is shut down for emerging market and developing econ
     Panel 5 compares human-capital investment, R\&D spending, and an equal combination of the two, financed by cutting public consumption.
     Panel 6 shows how the gains from that combination vary with the speed of technology diffusion.}
 \end{figure}
-
-\clearpage
-%========================================================================
-\section{Functional Composition of Government Investment} \label{app:investmentComposition}
-%========================================================================
-\enlargethispage{4\baselineskip}
-
-Mapping government investment into the model's two productive-capital blocks requires translating the OECD's functional classification into economic channels.
-The calculation uses the 2023 country observations in Table~J.10.4 of \citet{OECD2025Glance}.
-The published OECD and OECD-EU aggregates are excluded, and the remaining economies are assigned to the AE and EMDE groups used in the IMF World Economic Outlook.
-
-The mapping adopts a broad concept of human-capital-related investment (Table~\ref{tab:investmentFunctionMapping}).
-In addition to health and education, it includes housing and community amenities, recreation and culture, and social protection.
-These functions support health, learning, and participation in work.
-Administrative, security, economic, and environmental functions are assigned to infrastructure and other public capital.
-
-\begin{table}[H]
-    \centering
-    \caption{Mapping Government Investment Functions to the Model Blocks \label{tab:investmentFunctionMapping}}
-    \footnotesize
-    \renewcommand{\arraystretch}{1.2}
-    \input{investmentFunctionMappingTable.tex}
-
-    \vspace{1mm}
-    \tabnote{\citet{OECD2025Glance}; IMF staff classification.}{The classification is exhaustive: every first-level COFOG function in Table~J.10.4 is assigned to one model investment block.
-It is based on the purpose of investment rather than the type of asset acquired.}
-\end{table}
-
-For economy $i$, the human-capital-related share is the sum of the five functions assigned to that block,
-\[
-    s_i^{GE}=s_i^{06}+s_i^{07}+s_i^{08}+s_i^{09}+s_i^{10},
-    \qquad
-    s_i^{GI}=s_i^{01}+s_i^{02}+s_i^{03}+s_i^{04}+s_i^{05},
-\]
-where the superscripts $01,\ldots,10$ denote first-level COFOG functions.
-The two shares sum to 100 percent, apart from rounding in the published data.
-Country-group means give each economy equal weight.
-The medians identify the central economy without being driven by unusually large or negative entries associated with asset disposals.
-
-Human-capital-related investment accounts for about one-third of public investment in both country groups (Table~\ref{tab:investmentComposition}).
-Its median share is 33.1 percent for AEs and 34.3 percent for the OECD-covered EMDE sample; the corresponding means are 33.7 and 33.8 percent.
-
-\begin{table}[H]
-    \centering
-    \caption{Government Investment Composition by Country Group \label{tab:investmentComposition}}
-    \footnotesize
-    \renewcommand{\arraystretch}{1.2}
-    \input{investmentCompositionTable.tex}
-
-    \vspace{1mm}
-    \tabnote{\citet{OECD2025Glance}; IMF staff calculations.}{Shares are percentages of total government investment.
-The EMDE sample comprises Bulgaria, Chile, Colombia, Costa Rica, Hungary, Poland, and Romania; the other 29 country observations are classified as AEs.
-The source reports functional shares but not investment amounts, so the means give each economy equal weight.
-Data refer to 2023 except where otherwise noted by the OECD.}
-\end{table}
 
 \end{document}
