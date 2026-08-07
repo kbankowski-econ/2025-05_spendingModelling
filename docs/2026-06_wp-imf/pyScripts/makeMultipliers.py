@@ -36,6 +36,10 @@ calibrations alike).
 Writes:
   ../csvFiles/multipliers.csv      (one row per scenario, all horizons)
   ../multipliersTable.tex          (\\input by draftPaper.tex)
+
+The permanent-shock table also reports the first two cumulative steps in the
+progressive model-simplification exercise beneath the advanced-economy
+government-consumption estimates.
 """
 from pathlib import Path
 import numpy as np
@@ -80,6 +84,16 @@ GROUPS = [
 PERM_GROUPS = [(stype, [(r, (m + "_perm") if m else None, i) for r, m, i in regs])
                for stype, regs in GROUPS]
 
+# Supplementary estimates shown below their corresponding baseline row. These
+# models are available only for the advanced-economy government-consumption
+# experiment.
+PERM_SUPPLEMENTS = {
+    "Model_HumanCapital_exp_gc_perm": [
+        ("Step 1: No endogenous technology", "Model_Simple1_exp_gc_perm", "Gc"),
+        ("Step 2: No human capital", "Model_Simple2_exp_gc_perm", "Gc"),
+    ],
+}
+
 
 def multipliers(model, inst):
     """Present-value cumulative output multipliers at each horizon (output and
@@ -103,8 +117,9 @@ def multipliers(model, inst):
     return out
 
 
-def emit(groups, csv_out, tex_out, label):
+def emit(groups, csv_out, tex_out, label, supplements=None):
     """Compute every (type, region) cell for one shock set and write its CSV + TeX."""
+    supplements = supplements or {}
     print(f"--- {label} ---")
     data = []   # (stype, region, model, mult-or-None)
     for stype, regions in groups:
@@ -114,6 +129,11 @@ def emit(groups, csv_out, tex_out, label):
             shown = ("  ".join(f"{lbl}={mult[yr]:.2f}" for lbl, yr in COLS)
                      if mult else "  (n/a)")
             print(f"  {stype:26s} {region:20s} {shown}")
+            for step, step_model, step_inst in supplements.get(model, []):
+                step_mult = multipliers(step_model, step_inst)
+                data.append((stype, f"{region} - {step}", step_model, step_mult))
+                shown = "  ".join(f"{lbl}={step_mult[yr]:.2f}" for lbl, yr in COLS)
+                print(f"  {'':26s} {step:20s} {shown}")
 
     csv_cols = ["mult_" + lbl.replace("-", "").replace(" ", "").lower() for lbl, _ in COLS]
     csv_out.parent.mkdir(parents=True, exist_ok=True)
@@ -145,6 +165,16 @@ def emit(groups, csv_out, tex_out, label):
                                  for h in HORIZONS)
                      if mult else " & ".join(["--"] * ncol))
             lines.append(f"    \\quad {region} & {cells} \\\\")
+            for step, step_model, step_inst in supplements.get(model, []):
+                step_mult = multipliers(step_model, step_inst)
+                step_cells = " & ".join(
+                    f"{{\\scriptsize\\color{{linkcol}} {step_mult[h] + 0.0:.2f}}}".replace(
+                        "-0.00", "0.00"
+                    )
+                    for h in HORIZONS
+                )
+                step_label = f"{{\\scriptsize\\color{{linkcol}}\\itshape {step}}}"
+                lines.append(f"    \\quad\\quad {step_label} & {step_cells} \\\\")
     lines += ["    \\bottomrule", "\\end{tabular}"]
     tex_out.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print(f"  Wrote {tex_out.name}")
@@ -152,7 +182,7 @@ def emit(groups, csv_out, tex_out, label):
 
 def main():
     emit(GROUPS,      CSV_OUT,      TEX_OUT,      "AR(1), persistence 0.9")
-    emit(PERM_GROUPS, CSV_OUT_PERM, TEX_OUT_PERM, "Permanent shocks")
+    emit(PERM_GROUPS, CSV_OUT_PERM, TEX_OUT_PERM, "Permanent shocks", PERM_SUPPLEMENTS)
 
 
 if __name__ == "__main__":
