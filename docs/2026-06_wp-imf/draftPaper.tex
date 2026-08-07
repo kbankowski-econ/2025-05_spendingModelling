@@ -52,6 +52,7 @@
 % Glossary helper: an equation below a variable's description, auto-shrunk to the column width.
 \newcommand{\gloseq}[1]{\newline\adjustbox{max width=\linewidth}{\footnotesize\ensuremath{\displaystyle #1}}}
 \definecolor{targetblue}{HTML}{1565C0} % blue: calibration-target notes in the parameter table
+\definecolor{stepred}{HTML}{9B3A42} % muted red: second progressive-simplification step in Table 5
 \newcommand{\calibnote}[1]{~{\footnotesize\textcolor{targetblue}{(#1)}}}
 \usepackage{appendix}
 \usepackage{eurosym}
@@ -757,7 +758,7 @@ The absence of an EMDE R\&D multiplier reflects a different source of technology
     \tabnote{IMF staff estimates.}{Present-value cumulative output gain per unit of additional spending at the 1-, 5-, 10-, 20-, and 25-year horizons and in the long term, for a permanent 1-percent-of-GDP debt-financed increase in each spending category, with no offsetting cut to other spending.
 Formally, the $N$-year multiplier is $\left(\sum_{t=1}^{4N}\beta^{t}\,\Delta Y_t\right)\big/\left(\sum_{t=1}^{4N}\beta^{t}\,\Delta G_t\right)$, where $\Delta Y_t$ and $\Delta G_t$ are the deviations of output and of the spending category from steady state and $\beta$ is the model's discount factor (so flows are discounted at the steady-state real interest rate).
 The ``Long-term'' column reports the multiplier at a 250-year horizon; convergence is gradual under a permanent increase, so this column may still slightly understate the eventual long-run multiplier.
-The smaller blue rows beneath the AE government-consumption estimates report the cumulative Step~1 and Step~2 model simplifications defined in Table~\ref{tab:progressiveModelsTemp}.
+The smaller colored rows beneath the AE government-consumption estimates report the cumulative Step~1 and Step~2 model simplifications defined in Table~\ref{tab:progressiveModelsTemp}.
 The R\&D innovation channel is shut down for emerging market and developing economies.}
 \end{table}
 

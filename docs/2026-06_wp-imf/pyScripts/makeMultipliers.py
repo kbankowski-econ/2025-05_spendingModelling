@@ -89,8 +89,8 @@ PERM_GROUPS = [(stype, [(r, (m + "_perm") if m else None, i) for r, m, i in regs
 # experiment.
 PERM_SUPPLEMENTS = {
     "Model_HumanCapital_exp_gc_perm": [
-        ("Step 1: No endogenous technology", "Model_Simple1_exp_gc_perm", "Gc"),
-        ("Step 2: No human capital", "Model_Simple2_exp_gc_perm", "Gc"),
+        ("Step 1: No endogenous technology", "Model_Simple1_exp_gc_perm", "Gc", "targetblue"),
+        ("Step 2: No human capital", "Model_Simple2_exp_gc_perm", "Gc", "stepred"),
     ],
 }
 
@@ -129,7 +129,7 @@ def emit(groups, csv_out, tex_out, label, supplements=None):
             shown = ("  ".join(f"{lbl}={mult[yr]:.2f}" for lbl, yr in COLS)
                      if mult else "  (n/a)")
             print(f"  {stype:26s} {region:20s} {shown}")
-            for step, step_model, step_inst in supplements.get(model, []):
+            for step, step_model, step_inst, _step_color in supplements.get(model, []):
                 step_mult = multipliers(step_model, step_inst)
                 data.append((stype, f"{region} - {step}", step_model, step_mult))
                 shown = "  ".join(f"{lbl}={step_mult[yr]:.2f}" for lbl, yr in COLS)
@@ -165,15 +165,15 @@ def emit(groups, csv_out, tex_out, label, supplements=None):
                                  for h in HORIZONS)
                      if mult else " & ".join(["--"] * ncol))
             lines.append(f"    \\quad {region} & {cells} \\\\")
-            for step, step_model, step_inst in supplements.get(model, []):
+            for step, step_model, step_inst, step_color in supplements.get(model, []):
                 step_mult = multipliers(step_model, step_inst)
                 step_cells = " & ".join(
-                    f"{{\\scriptsize\\color{{linkcol}} {step_mult[h] + 0.0:.2f}}}".replace(
+                    f"{{\\scriptsize\\color{{{step_color}}} {step_mult[h] + 0.0:.2f}}}".replace(
                         "-0.00", "0.00"
                     )
                     for h in HORIZONS
                 )
-                step_label = f"{{\\scriptsize\\color{{linkcol}}\\itshape {step}}}"
+                step_label = f"{{\\scriptsize\\color{{{step_color}}}\\itshape {step}}}"
                 lines.append(f"    \\quad\\quad {step_label} & {step_cells} \\\\")
     lines += ["    \\bottomrule", "\\end{tabular}"]
     tex_out.write_text("\n".join(lines) + "\n", encoding="utf-8")
