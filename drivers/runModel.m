@@ -240,11 +240,26 @@ modelList = {
     % AR(1) rho=0.9 +1%-of-GDP government-consumption shock, matching the rest
     % of the temporary ladder.
     'Model_NK_exp_gc',                          'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
-    % Permanent counterparts of the simplification ladder. Together with the
-    % full-model exp_gc_perm path, these feed the primary robustness appendix
-    % figure (fig:simplifiedGc).
+    % The first two permanent simplifications are run for every spending
+    % instrument reported in Table 5. Step 1 removes endogenous technology;
+    % Step 2 additionally removes human capital. EMDE R&D remains unreported
+    % because its technology-creation channel is inactive in the baseline.
     'Model_Simple1_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'Model_Simple1_exp_igi_perm',               'AE', 'AE',     {{'epsi_igi',      'const', 0.01, '1:1000'}}
+    'Model_Simple1_exp_ige_perm',               'AE', 'AE',     {{'epsi_ige',      'const', 0.01, '1:1000'}}
+    'Model_Simple1_exp_grd_perm',               'AE', 'AE',     {{'epsi_grd',      'const', 0.01, '1:1000'}}
+    'EM_Model_Simple1_exp_gc_perm',             'EM', 'EMnorm', {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'EM_Model_Simple1_exp_igi_perm',            'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01, '1:1000'}}
+    'EM_Model_Simple1_exp_ige_perm',            'EM', 'EMnorm', {{'epsi_ige',      'const', 0.01, '1:1000'}}
     'Model_Simple2_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'Model_Simple2_exp_igi_perm',               'AE', 'AE',     {{'epsi_igi',      'const', 0.01, '1:1000'}}
+    'Model_Simple2_exp_ige_perm',               'AE', 'AE',     {{'epsi_ige',      'const', 0.01, '1:1000'}}
+    'Model_Simple2_exp_grd_perm',               'AE', 'AE',     {{'epsi_grd',      'const', 0.01, '1:1000'}}
+    'EM_Model_Simple2_exp_gc_perm',             'EM', 'EMnorm', {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'EM_Model_Simple2_exp_igi_perm',            'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01, '1:1000'}}
+    'EM_Model_Simple2_exp_ige_perm',            'EM', 'EMnorm', {{'epsi_ige',      'const', 0.01, '1:1000'}}
+    % The remaining steps are needed only for the government-consumption
+    % robustness ladder in Appendix E.
     'Model_Simple3_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_Simple4_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_Simple5_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}

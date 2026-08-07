@@ -38,8 +38,8 @@ Writes:
   ../multipliersTable.tex          (\\input by draftPaper.tex)
 
 The permanent-shock table also reports the first two cumulative steps in the
-progressive model-simplification exercise beneath the advanced-economy
-government-consumption estimates.
+progressive model-simplification exercise beneath every estimable baseline
+row.
 """
 from pathlib import Path
 import numpy as np
@@ -84,14 +84,19 @@ GROUPS = [
 PERM_GROUPS = [(stype, [(r, (m + "_perm") if m else None, i) for r, m, i in regs])
                for stype, regs in GROUPS]
 
-# Supplementary estimates shown below their corresponding baseline row. These
-# models are available only for the advanced-economy government-consumption
-# experiment.
+# Supplementary estimates shown below every estimable permanent baseline row.
+# Their names mirror the baseline model names so the table stays synchronized
+# with the experiment list in drivers/runModel.m.
 PERM_SUPPLEMENTS = {
-    "Model_HumanCapital_exp_gc_perm": [
-        ("No endog. tech.", "Model_Simple1_exp_gc_perm", "Gc", "targetblue"),
-        ("No endog. tech. + no human capital", "Model_Simple2_exp_gc_perm", "Gc", "stepred"),
-    ],
+    model: [
+        ("No endog. tech.",
+         model.replace("Model_HumanCapital", "Model_Simple1"), inst, "targetblue"),
+        ("No endog. tech. + no human capital",
+         model.replace("Model_HumanCapital", "Model_Simple2"), inst, "stepred"),
+    ]
+    for _stype, regions in PERM_GROUPS
+    for _region, model, inst in regions
+    if model is not None
 }
 
 
