@@ -1249,6 +1249,35 @@ The real interest rate is the nominal interest rate deflated by inflation.}
 \subsection{Robustness to Model Structure}
 
 Figure~\ref{fig:simplifiedGcTemp} repeats the model-simplification exercise of Figure~\ref{fig:simplifiedGc} for the temporary government-consumption shock.
+Table~\ref{tab:progressiveModelsTemp} summarizes how the sequence is constructed.
+
+\begin{table}[H]
+    \centering
+    \caption{Progressive Model Simplification Ladder \label{tab:progressiveModelsTemp}}
+    \footnotesize
+    \renewcommand{\arraystretch}{1.15}
+    \begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{0.29\textwidth}X@{}}
+        \toprule
+        Specification & Cumulative construction \\
+        \midrule
+        Full model & All structural blocks are active. \\
+        Step 1: No endogenous technology & Technology creation and adoption are held at their steady-state values. \\
+        Step 2: No human capital & Human capital is fixed at one and education time at zero, so effective labor equals hours worked. The public education and health capital stock is also fixed. \\
+        Step 3: No public infrastructure & The productive public-infrastructure stock is held at its steady-state value. \\
+        Step 4: No private capital & Private-capital accumulation and factor demand are removed, and production becomes labor-only with constant returns. \\
+        Step 5: No indexation & Indexation of non-reset prices to past inflation is set to zero. \\
+        Step 6: No trend growth & The balanced-growth factor is set to one. \\
+        Step 7: Derived canonical NK & The extended fiscal block, debt, and distortionary taxes are replaced by wasteful government consumption financed contemporaneously through an implicit lump-sum tax. The remaining household, production, pricing, policy, and resource-constraint equations form the canonical New Keynesian model. \\
+        Canonical NK control & The same canonical model is coded independently, using identical parameters and the same spending shock. \\
+        \bottomrule
+    \end{tabularx}
+
+    \vspace{1mm}
+    \tabnote{Authors' construction.}{Each numbered step retains all earlier simplifications and adds the change shown in that row.
+Steps 1--6 preserve the full model's steady-state resource allocation, so differences across them isolate the dynamics of the block being removed.
+The independently coded control verifies the derived endpoint.}
+\end{table}
+
 Output remains positive across the full model and all seven cumulative simplifications.
 Inflation is also positive in every specification, including the labor-only and canonical endpoints in which it is zero under the permanent increase.
 At the canonical endpoint, the temporary increase produces a weaker negative wealth effect on labor supply, allowing the demand effect to raise the real wage, marginal cost, and inflation.
