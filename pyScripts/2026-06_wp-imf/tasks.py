@@ -46,6 +46,8 @@ PAPER TABLES (\\input by draftPaper.tex):
 OECD DATA:
 - retrieveOECDGovernmentInvestment: 2023 general-government investment / GDP
                     Out: data/oecdGovernmentInvestmentPctGDP_2023*.csv
+- makeWEOWeightedGovernmentInvestmentAggregates: Compare paper and supplied-WEO
+                    classifications with equal-country and WEO GDP weights
 
 DIAGNOSTICS (read *_results.mat directly):
 --------------------------------------------------------------------------------
@@ -328,6 +330,19 @@ def retrieveOECDGovernmentInvestment(c):
     Out: data/oecdGovernmentInvestmentPctGDP_2023*.csv
     """
     _run_table(c, "retrieveOECDGovernmentInvestment.py", "OECD government-investment data")
+
+
+@task
+def makeWEOWeightedGovernmentInvestmentAggregates(c):
+    """
+    Compare OECD government-investment aggregates using WEO groups and weights.
+    Out: data/oecdGovernmentInvestmentPctGDP_2023_weoComparison.csv
+    """
+    _run_table(
+        c,
+        "makeWEOWeightedGovernmentInvestmentAggregates.py",
+        "WEO-weighted government-investment aggregates",
+    )
 
 
 @task

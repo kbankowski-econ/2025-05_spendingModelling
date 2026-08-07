@@ -1,0 +1,9 @@
+classification,weighting,group,economies,government_investment_pct_gdp
+Paper (April 2025 WEO),Equal country weights,AE,29,4.0419
+Paper (April 2025 WEO),Equal country weights,EMDE,7,3.8308
+Paper (April 2025 WEO),2023 WEO nominal-GDP weights,AE,29,3.4688
+Paper (April 2025 WEO),2023 WEO nominal-GDP weights,EMDE,7,4.2339
+Supplied WEO file,Equal country weights,AE,30,4.0335
+Supplied WEO file,Equal country weights,EMDE,6,3.8374
+Supplied WEO file,2023 WEO nominal-GDP weights,AE,30,3.4693
+Supplied WEO file,2023 WEO nominal-GDP weights,EMDE,6,4.2548
