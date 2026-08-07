@@ -39,6 +39,7 @@ PAPER TABLES (\\input by draftPaper.tex):
 - makeCalibrationTargetsTable:  AE and EMDE steady-state targets
 - makeParametersTable:          Structural productive-spending parameters
 - makeEfficiencyGapsTable:      Efficiency-gap derivation
+- makeInvestmentCompositionTables: OECD investment-function mapping and aggregates
                     Calibration values, not model output.
                     Out: docs/2026-06_wp-imf/*Table.tex
 
@@ -308,6 +309,15 @@ def makeEfficiencyGapsTable(c):
 
 
 @task
+def makeInvestmentCompositionTables(c):
+    """
+    Regenerate the OECD functional-composition appendix tables and CSV files.
+    Out: docs/2026-06_wp-imf/investment{FunctionMapping,Composition}Table.tex
+    """
+    _run_table(c, "makeInvestmentCompositionTables.py", "Investment-composition tables")
+
+
+@task
 def makeGlossary(c):
     """
     Regenerate the appendix symbol glossary (paper <-> model-code mapping):
@@ -370,6 +380,7 @@ def investigateContributions(c):
     makeCalibrationTargetsTable,
     makeParametersTable,
     makeEfficiencyGapsTable,
+    makeInvestmentCompositionTables,
     makeGlossary,
     plotContributions,
     investigateContributions,
