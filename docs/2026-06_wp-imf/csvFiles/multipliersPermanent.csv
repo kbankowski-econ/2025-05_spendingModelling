@@ -1,7 +1,7 @@
 category,region,model,mult_1y,mult_5y,mult_10y,mult_20y,mult_25y,mult_longterm
 Government consumption,Advanced economies,Model_HumanCapital_exp_gc_perm,0.2708,0.2817,0.3252,0.3996,0.4295,0.6472
-Government consumption,Advanced economies - Step 1: No endogenous technology,Model_Simple1_exp_gc_perm,0.2679,0.2752,0.3073,0.3520,0.3667,0.4345
-Government consumption,Advanced economies - Step 2: No human capital,Model_Simple2_exp_gc_perm,0.2508,0.2623,0.2762,0.2920,0.2966,0.3090
+Government consumption,Advanced economies - No endog. tech.,Model_Simple1_exp_gc_perm,0.2679,0.2752,0.3073,0.3520,0.3667,0.4345
+Government consumption,Advanced economies - No endog. tech. + no human capital,Model_Simple2_exp_gc_perm,0.2508,0.2623,0.2762,0.2920,0.2966,0.3090
 Government consumption,Emerging markets,EM_Model_HumanCapital_exp_gc_perm,0.2340,0.2442,0.2764,0.3198,0.3338,0.3966
 Infrastructure investment,Advanced economies,Model_HumanCapital_exp_igi_perm,0.2312,0.5016,0.8506,1.3868,1.5943,3.0784
 Infrastructure investment,Emerging markets,EM_Model_HumanCapital_exp_igi_perm,0.1930,0.8120,1.5484,2.5193,2.8316,4.2956

@@ -89,8 +89,8 @@ PERM_GROUPS = [(stype, [(r, (m + "_perm") if m else None, i) for r, m, i in regs
 # experiment.
 PERM_SUPPLEMENTS = {
     "Model_HumanCapital_exp_gc_perm": [
-        ("Step 1: No endogenous technology", "Model_Simple1_exp_gc_perm", "Gc", "targetblue"),
-        ("Step 2: No human capital", "Model_Simple2_exp_gc_perm", "Gc", "stepred"),
+        ("No endog. tech.", "Model_Simple1_exp_gc_perm", "Gc", "targetblue"),
+        ("No endog. tech. + no human capital", "Model_Simple2_exp_gc_perm", "Gc", "stepred"),
     ],
 }
 
