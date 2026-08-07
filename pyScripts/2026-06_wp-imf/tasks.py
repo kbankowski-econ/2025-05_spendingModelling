@@ -43,6 +43,10 @@ PAPER TABLES (\\input by draftPaper.tex):
                     Calibration values, not model output.
                     Out: docs/2026-06_wp-imf/*Table.tex
 
+OECD DATA:
+- retrieveOECDGovernmentInvestment: 2023 general-government investment / GDP
+                    Out: data/oecdGovernmentInvestmentPctGDP_2023*.csv
+
 DIAGNOSTICS (read *_results.mat directly):
 --------------------------------------------------------------------------------
 - plotContributions:        yd contribution decomposition across models (drivers/plotContributions.m)
@@ -315,6 +319,15 @@ def makeInvestmentCompositionTables(c):
     Out: docs/2026-06_wp-imf/investment{FunctionMapping,Composition}Table.tex
     """
     _run_table(c, "makeInvestmentCompositionTables.py", "Investment-composition tables")
+
+
+@task
+def retrieveOECDGovernmentInvestment(c):
+    """
+    Retrieve 2023 general-government investment as a percentage of GDP.
+    Out: data/oecdGovernmentInvestmentPctGDP_2023*.csv
+    """
+    _run_table(c, "retrieveOECDGovernmentInvestment.py", "OECD government-investment data")
 
 
 @task
