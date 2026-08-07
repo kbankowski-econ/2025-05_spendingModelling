@@ -1170,35 +1170,20 @@ All shocks are zero in steady state; the paths they follow in each experiment ar
 \section{Functional Composition of Government Investment} \label{app:investmentComposition}
 %========================================================================
 
-Mapping government investment into the model's two productive-capital blocks requires translating the OECD's functional classification into economic channels.
-The calculation uses the 2023 country observations in Table~J.10.4 of \citet{OECD2025Glance}.
-The published OECD and OECD-EU aggregates are excluded, and the remaining economies are assigned to the AE and EMDE groups used in the IMF World Economic Outlook.
+Splitting government investment into the model's two productive-capital blocks can be based on the functional spending classififation. 
+The figures published in \citet{OECD2025Glance} in Table~J.10.4 provide information on the shares of total government investment observed in 2023 and dedicated to fullfillig various funcitons of the govermnet.
+These functions comprise categories like econmic affiars (e.g. transporation infrastrucutre) and health (e.g. hospitals) (see OECD functional classification column in Table 9).
 
-The mapping adopts a broad concept of human-capital-related investment (Table~\ref{tab:investmentFunctionMapping}).
-In addition to health and education, it includes housing and community amenities, recreation and culture, and social protection.
-These functions support health, learning, and participation in work.
+
+For the purpse of the moidel caliibration we adopt a broad concept of mapping  (Table~\ref{tab:investmentFunctionMapping}).
 Administrative, security, economic, and environmental functions are assigned to infrastructure and other public capital.
+Human capital-related investment includes not only strictly healt and education includes housing and community amenities, recreation and culture, and social protection.
+The human-capital-related share is the sum of the five functions assigned to that block.
+These functions support health, learning, and participation in work.
+The shares calculated for both categories are a sum of relevfant functional shares.
+Since the classification is exhaustive the two calcuated shares sum to 100 percent.
 
-\begin{table}[H]
-    \centering
-    \caption{Mapping Government Investment Functions to the Model Blocks \label{tab:investmentFunctionMapping}}
-    \footnotesize
-    \renewcommand{\arraystretch}{1.2}
-    \input{investmentFunctionMappingTable.tex}
-
-    \vspace{1mm}
-    \tabnote{\citet{OECD2025Glance}; IMF staff classification.}{The classification is exhaustive: every first-level COFOG function in Table~J.10.4 is assigned to one model investment block.
-It is based on the purpose of investment rather than the type of asset acquired.}
-\end{table}
-
-For economy $i$, the human-capital-related share is the sum of the five functions assigned to that block,
-\[
-    s_i^{GE}=s_i^{06}+s_i^{07}+s_i^{08}+s_i^{09}+s_i^{10},
-    \qquad
-    s_i^{GI}=s_i^{01}+s_i^{02}+s_i^{03}+s_i^{04}+s_i^{05},
-\]
-where the superscripts $01,\ldots,10$ denote first-level COFOG functions.
-The two shares sum to 100 percent, apart from rounding in the published data.
+Available in the OECD's taqble countries (x countries) are assigned to the AE and EMDE groups according to classifficatdion followed in the IMF World Economic Outlook.ś
 Country-group means give each economy equal weight.
 The medians identify the central economy without being driven by unusually large or negative entries associated with asset disposals.
 
