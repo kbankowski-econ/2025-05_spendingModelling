@@ -607,13 +607,13 @@ The size, duration, and persistence of the exercises described in Sections~\ref{
 
 This section documents the model's quantitative properties before turning to the policy reforms of Section~\ref{sec:results}.
 It first traces the responses to wasteful government consumption and to three productive instruments: infrastructure investment, human-capital investment, and public R\&D.
-It then examines their sensitivity to key structural parameters, summarizes them as cumulative fiscal multipliers, isolates the contribution of the human-capital and technology channels, and traces the effects of improving spending efficiency.
+It then summarizes the responses as cumulative fiscal multipliers, isolates the contribution of the human-capital and technology channels, examines sensitivity to key structural parameters, and traces the effects of improving spending efficiency.
 All exercises consider permanent changes.
 Appendix~\ref{app:tempshocks} reports the corresponding results for persistent but temporary shocks.
 
 The transmission analysis focuses on the AE calibration to describe the underlying mechanisms clearly.
-The sensitivity analysis then varies structural parameters central to the calibration differences between the two groups.
-The cumulative-multiplier analysis subsequently adds the EMDE calibration, allowing the responses to be compared across country groups.
+The cumulative-multiplier analysis then adds the EMDE calibration, allowing the responses to be compared across country groups.
+The channel decomposition and sensitivity analysis subsequently assess the sources and robustness of these results.
 
 \subsection{Transmission of Public Spending} \label{subsec:transmission}
 
@@ -680,41 +680,7 @@ Fiscal panels (bottom row: primary deficit, transfers, debt-to-GDP ratio) are de
 The real interest rate is the nominal interest rate deflated by inflation.}
 \end{figure}
 
-\subsection{Sensitivity}
-
-The productive-spending elasticities are central to both the size of the output gains and the differences between the two country-group calibrations.
-In the model, the strength of each productive-spending channel is governed primarily by its own elasticity.
-The infrastructure response scales with the output elasticity of public infrastructure ($\alpha_G$).
-The human-capital response scales with the elasticity of human-capital formation with respect to the public stock ($\mu$).
-The R\&D response scales with the elasticity of technology creation with respect to public R\&D ($\alpha_{RD}$).
-
-Figure~\ref{fig:sensitivity} illustrates this sensitivity by tracing the output response to each permanent productive expansion as its relevant elasticity is varied over an illustrative range.
-At the 25-year horizon, the output response spans about 1.3 to 8.4 percent for infrastructure, 2.4 to 12.6 percent for human capital, and 1.9 to 7.4 percent for R\&D over the parameter ranges considered.
-The timing of the gains is robust across these ranges.
-Infrastructure begins to pay off earliest and then builds gradually.
-Human-capital investment produces a short-lived impact gain before larger benefits emerge over time.
-R\&D briefly lowers output after impact and delivers its strongest gains later.
-
-The highlighted country-group values show how the calibration of these elasticities contributes to differences in the effects of productive spending.
-The values are grounded in the literature reviewed in Subsection~\ref{subsec:productive-calibration} and capture relevant structural differences between the two groups.
-At the EMDE values of $\alpha_G$ and $\mu$, infrastructure and human-capital investment are more potent than at the corresponding AE values.
-The cumulative multipliers below compare the full AE and EMDE calibrations.
-
-\begin{figure}[H]
-    \centering
-    \caption{Sensitivity of Output Responses to Structural Parameters under Permanent Spending Increases: Advanced Economies \label{fig:sensitivity}}
-    \includegraphics{figures/sensitivityIRF_AEPerm.pdf}
-    \source{IMF staff estimates.}
-    \desc{Output responses (percent deviation from steady state) to a debt-financed permanent increase of 1 percent of GDP with no offsetting cut, as one structural parameter is varied over an illustrative range.
-Each panel pairs one spending category with the elasticity governing its productive channel: infrastructure with $\alpha_G$, human capital with $\mu$, and R\&D with $\alpha_{RD}$.
-In each panel the lines run from the low (light) to the high (dark) value of the parameter, with each line labeled by its parameter value at the right.
-The AE baseline and the EMDE value of the varied elasticity, where applicable, are highlighted only by thicker lines; their colors remain on the same panel scale, and all other parameters remain at their AE settings.
-No EMDE value is shown for $\alpha_{RD}$ because technology creation is inactive in that calibration.
-Circles mark first-quarter impact responses.
-The horizontal axis reports quarterly responses on a linear scale through the 25-year horizon, with annual labels at selected quarters; the three panels share a common vertical scale.}
-\end{figure}
-
-\subsection{Fiscal Multipliers}
+\subsection{Fiscal Multipliers} \label{subsec:multipliers}
 
 Cumulative fiscal multipliers complement the impulse responses by expressing the discounted output gain per unit of additional spending.
 Their evolution across horizons reveals a central feature of the model: demand effects materialize quickly, whereas productive gains build over time as public capital, human capital, and technologies accumulate.
@@ -783,6 +749,40 @@ At the 25-year horizon, the human-capital channel contributes 1.35 points to the
 Endogenous technology contributes 2.07 points to the AE public-R\&D multiplier of 2.44.
 Their effects on the other spending instruments are considerably smaller: removing both channels lowers the government-consumption multiplier by 0.13 in AEs and 0.07 in EMDEs, and the infrastructure multiplier by 0.20 and 0.09, respectively.
 Integrating the two channels is therefore essential for capturing the sustained gains from human-capital and R\&D spending, while their effects on the more standard fiscal instruments remain comparatively limited.
+
+\subsection{Sensitivity} \label{subsec:sensitivity}
+
+The productive-spending elasticities are central to both the size of the output gains and the differences between the two country-group calibrations.
+In the model, the strength of each productive-spending channel is governed primarily by its own elasticity.
+The infrastructure response scales with the output elasticity of public infrastructure ($\alpha_G$).
+The human-capital response scales with the elasticity of human-capital formation with respect to the public stock ($\mu$).
+The R\&D response scales with the elasticity of technology creation with respect to public R\&D ($\alpha_{RD}$).
+
+Figure~\ref{fig:sensitivity} illustrates this sensitivity by tracing the output response to each permanent productive expansion as its relevant elasticity is varied over an illustrative range.
+At the 25-year horizon, the output response spans about 1.3 to 8.4 percent for infrastructure, 2.4 to 12.6 percent for human capital, and 1.9 to 7.4 percent for R\&D over the parameter ranges considered.
+The timing of the gains is robust across these ranges.
+Infrastructure begins to pay off earliest and then builds gradually.
+Human-capital investment produces a short-lived impact gain before larger benefits emerge over time.
+R\&D briefly lowers output after impact and delivers its strongest gains later.
+
+The highlighted country-group values show how the calibration of these elasticities contributes to differences in the effects of productive spending.
+The values are grounded in the literature reviewed in Subsection~\ref{subsec:productive-calibration} and capture relevant structural differences between the two groups.
+At the EMDE values of $\alpha_G$ and $\mu$, infrastructure and human-capital investment are more potent than at the corresponding AE values.
+These parameter differences help account for the larger EMDE multipliers reported in Subsection~\ref{subsec:multipliers}.
+
+\begin{figure}[H]
+    \centering
+    \caption{Sensitivity of Output Responses to Structural Parameters under Permanent Spending Increases: Advanced Economies \label{fig:sensitivity}}
+    \includegraphics{figures/sensitivityIRF_AEPerm.pdf}
+    \source{IMF staff estimates.}
+    \desc{Output responses (percent deviation from steady state) to a debt-financed permanent increase of 1 percent of GDP with no offsetting cut, as one structural parameter is varied over an illustrative range.
+Each panel pairs one spending category with the elasticity governing its productive channel: infrastructure with $\alpha_G$, human capital with $\mu$, and R\&D with $\alpha_{RD}$.
+In each panel the lines run from the low (light) to the high (dark) value of the parameter, with each line labeled by its parameter value at the right.
+The AE baseline and the EMDE value of the varied elasticity, where applicable, are highlighted only by thicker lines; their colors remain on the same panel scale, and all other parameters remain at their AE settings.
+No EMDE value is shown for $\alpha_{RD}$ because technology creation is inactive in that calibration.
+Circles mark first-quarter impact responses.
+The horizontal axis reports quarterly responses on a linear scale through the 25-year horizon, with annual labels at selected quarters; the three panels share a common vertical scale.}
+\end{figure}
 
 \subsection{Improving Efficiency} \label{subsec:efficiency}
 
