@@ -315,10 +315,10 @@ Created technologies depend on two forces.
 First, lagged human capital raises technology creation through a reduced-form learning-by-doing channel.
 This specification borrows the persistent learning-by-doing form of \citet{ChangGomesSchorfheide2002} and applies it here to innovation.
 Second, normalized public R\&D spending $\hat{G}_t^{RD}$ expands the stock of technologies available for adoption by raising the supply of adoptable ideas.
-Technology creation is governed by the following equation:
+In stationary form, technology creation is governed by
 \begin{equation} \label{eq:Z}
 \begin{aligned}
-    \log\!\left(\frac{Z_t}{Z^{SS}}\right) ={}& \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right)
+    \log\!\left(\frac{\hat{Z}_t}{\hat{Z}^{SS}}\right) ={}& \rho_A \log\!\left(\frac{\hat{Z}_{t-1}}{\hat{Z}^{SS}}\right)
     + \left(1-\rho_A\right)\alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) \\
     &{}+ \left(1-\rho_A\right)\alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) \hat{G}_{t-1}^{RD}}{\left(1-e^{GRD}\right) \hat{G}^{RD,SS}}\right),
 \end{aligned}
@@ -335,18 +335,18 @@ To capture this diffusion lag, the stock of adopted technologies evolves as
 The survival rate $\phi$ applies to both adopted and unadopted technologies, since an idea may become obsolete in either state.
 The time-varying adoption probability is
 \begin{equation} \label{eq:qmain}
-    q_t = \left(q_0+\varepsilon_t^q\right)\left(\frac{S_t}{\Lambda_t}\right)^{\varsigma},
+    q_t = \left(q_0+\varepsilon_t^q\right)\left(\hat{S}_t\right)^{\varsigma},
 \end{equation}
-which increases with adopters' trend-adjusted expenditure $S_t/\Lambda_t$ with elasticity $\varsigma$.
+where $\hat{S}_t=S_t/\Lambda_{t-1}$ is stationary adoption expenditure and $\varsigma$ is its elasticity.
 The shock $\varepsilon_t^q$ shifts the adoption probability directly and is used only in the technology-diffusion experiments.
 
 Competitive adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, equating the marginal cost of adoption effort to its discounted marginal value.
-In stationary units, let $\mathcal{V}_t$ and $\mathcal{J}_t$ denote the aggregate values of adopted and unadopted technologies, respectively, $\mathit{SDF}_{t+1}$ the household stochastic discount factor, and $1+\gamma^a$ gross technology-trend growth.
+In stationary units, let $\hat{\mathcal{V}}_t$ and $\hat{\mathcal{J}}_t$ denote the aggregate values of adopted and unadopted technologies, respectively, $\mathit{SDF}_{t+1}$ the household stochastic discount factor, and $1+\gamma^a$ gross technology-trend growth.
 The resulting optimality condition is
 \begin{equation} \label{eq:Sfocmain}
-    S_t = \varsigma\, q_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\,
-    \frac{1}{1+\gamma^{a}}\, \frac{A_{t-1}}{A_t}
-    \left(\mathcal{V}_{t+1}-\mathcal{J}_{t+1}\right)\right].
+    \hat{S}_t = \varsigma\, q_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\,
+    \frac{1}{1+\gamma^{a}}\, \frac{\hat{A}_{t-1}}{\hat{A}_t}
+    \left(\hat{\mathcal{V}}_{t+1}-\hat{\mathcal{J}}_{t+1}\right)\right].
 \end{equation}
 
 Thus, adoption expenditure rises with the elasticity and level of the adoption probability, the survival rate, and the discounted value gain from converting an unadopted technology.
@@ -372,9 +372,9 @@ All spending enters the budget constraint at its full fiscal cost, irrespective 
 
 \paragraph{Spending instruments and efficiency.}
 The four spending instruments, indexed by $x\in\{C,GI,GE,RD\}$, can be moved independently through their respective expenditure shocks.
-Each instrument $X_t$ follows a simple rule under which it deviates from its steady-state level by an innovation scaled to steady-state aggregate demand:
+Each stationary instrument $\hat{X}_t$ follows a simple rule under which it deviates from its steady-state value by an innovation scaled to steady-state aggregate demand:
 \begin{equation} \label{eq:spendingrule}
-    X_t = X^{SS} + Y^{d,SS}\varepsilon_t^x, \qquad x\in\{C,GI,GE,RD\}.
+    \hat{X}_t = \hat{X}^{SS} + \hat{Y}^{d,SS}\varepsilon_t^x, \qquad x\in\{C,GI,GE,RD\}.
 \end{equation}
 The persistence and duration of $\varepsilon_t^x$ are determined by the experiment.
 Government consumption uses resources but does not build a productive stock.
@@ -394,11 +394,11 @@ The consumption- and labor-income-tax rates equal their steady-state values unle
     \tau_t^j = \tau^j + \varepsilon_t^{\tau j}, \qquad j\in\{c,w\}.
 \end{equation}
 The exercises in this paper set both shocks to zero.
-Tax rates do not respond to debt; instead, lump-sum transfers ensure debt stability according to
+Tax rates do not respond to debt; instead, stationary lump-sum transfers ensure debt stability according to
 \begin{equation} \label{eq:transferrule}
-    T_t = T^{SS}
+    \hat{T}_t = \hat{T}^{SS}
     - \gamma_d^T e_{T,t}^{\mathrm{aux}}
-    \left(b_{t-1}-b^*\right)Y^{d,SS}.
+    \left(b_{t-1}-b^*\right)\hat{Y}^{d,SS}.
 \end{equation}
 Here $e_{T,t}^{\mathrm{aux}}$ is an auxiliary dummy that equals zero throughout the debt-financed model-properties exercises in Section~\ref{sec:properties}, switching off the transfer response to debt for the full spending-shock path.
 It returns to one afterward, when the positive coefficient $\gamma_d^T$ makes transfers fall in response to debt above target and thereby restores debt stability.
@@ -419,11 +419,11 @@ Final demand is allocated across private consumption and investment, the four pu
 \begin{equation} \label{eq:resource}
     Y_t^{d} = C_t + I_t + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + \mathcal{R}_t,
 \end{equation}
-Here $\mathcal{R}_t$ is the aggregate resource cost of adoption, equal in stationary units to
+Here $\mathcal{R}_t$ is the aggregate resource cost of adoption, with stationary counterpart
 \[
-    \mathcal{R}_t=\left(\frac{Z_{t-1}}{A_{t-1}}-1\right)S_t.
+    \hat{\mathcal{R}}_t=\left(\frac{\hat{Z}_{t-1}}{\hat{A}_{t-1}}-1\right)\hat{S}_t.
 \]
-This is the per-unadopted-technology outlay $S_t$ scaled by the stock of unadopted technologies relative to adopted ones.
+This is stationary adoption expenditure $\hat{S}_t$ scaled by the stock of unadopted technologies relative to adopted ones.
 The normalized public R\&D input used in technology creation corresponds to the level outlay $G_t^{RD}$ included in equation~\eqref{eq:resource}.
 As in a standard New Keynesian model with Calvo price setting, the price-dispersion index $v_t^{p}$ makes the gross production required to satisfy a given level of final demand exceed that demand, so $Y_t = v_t^{p}Y_t^{d}$.
 A competitive equilibrium is a sequence of quantities and prices such that households, producers, retailers, and adopters optimize; fiscal and monetary policy rules hold; and the goods, labor, capital, and bond markets clear for given paths of the exogenous processes.
@@ -444,7 +444,8 @@ A typical date-$t$ flow $X_t$ is expressed relative to the incumbent trend, whil
 Accordingly, production and human-capital formation use the normalized public stocks $\hat{K}_t^{GI}$ and $\hat{K}_t^{GE}$, while technology creation uses normalized public R\&D spending $\hat{G}_t^{RD}$.
 Their corresponding levels $K_t^{GI}$, $K_t^{GE}$, and $G_t^{RD}$ remain the objects in the capital-accumulation and fiscal equations.
 Debt is scaled with date-$t$ flows so that the stationary debt-to-output ratio is preserved.
-Marginal utility and the technology-value objects move inversely with the scale of the economy, so their stationary counterparts remove the corresponding inverse trend.
+Marginal utility moves inversely with the scale of the economy, whereas aggregate technology values and adoption expenditure share the real trend.
+Their stationary counterparts remove these respective trends.
 
 Because the trend grows at the constant gross rate $g$, these transformations leave the factor $g=\Lambda_t/\Lambda_{t-1}$ wherever an equation links trending variables dated in different periods.
 For example, the level bond Euler equation $\lambda_t = \beta\,\mathbb{E}_t\!\left[\lambda_{t+1}R_t/\Pi_{t+1}\right]$ becomes
@@ -474,9 +475,9 @@ They follow $\Gamma_t$ rather than $\Lambda_t$, with
 \]
 The technology-stock trend grows faster than the real trend because technology enters production through the love-of-variety term $A_t^{\vartheta-1}$.
 Their laws of motion and value functions therefore carry $1+\gamma^{a}$ rather than $g$.
-For this reason, the technology block in Appendix~\ref{app:equilibrium} is stated directly in stationarized form, with adoption expenditure $S_t$ also expressed relative to the trend.
+For this reason, the technology block in Appendix~\ref{app:equilibrium} is stated directly in stationarized form, with adoption expenditure denoted by $\hat{S}_t$.
 The steady state of the stationary system corresponds to the balanced-growth path of the level economy.
-The Dynare files suppress hats on stationary variables.
+Only the Dynare files suppress hats as a coding convention; the equations reported here retain them.
 
 The model is implemented in Dynare and solved as a deterministic, perfect-foresight system.
 The policy experiments in Section~\ref{sec:results} are permanent reforms introduced in 2025, with responses traced out to 2050 around the balanced-growth steady state.
@@ -631,7 +632,7 @@ The household optimality conditions imply $E=0.157$ given $L=1/3$ and the calibr
 Conditional on this allocation, the human-capital accumulation scale $\chi$ is determined from the accumulation equation to ensure the normalized steady-state value $H=1$.
 Following \citet{Anzoateguietal2019}, the steady-state adoption probability is set to $q^{SS}=0.05$ per quarter.
 This target implies an average adoption lag of $1/q^{SS}=20$ quarters, or five years.
-The scale $q_0$ in $q_t=q_0(S_t/\Lambda_t)^{\varsigma}$ is determined internally so that the adoption-probability equation attains this target in the steady state.
+The scale $q_0$ in $q_t=q_0(\hat{S}_t)^{\varsigma}$ is determined internally so that the adoption-probability equation attains this target in the steady state.
 
 Whereas the three scale parameters are determined within the steady state, the technology-growth rate is implied by trend output growth according to $1+\gamma^a=g^{(1-\alpha)/(\vartheta-1)}$.
 At zero steady-state inflation, the steady-state nominal interest rate satisfies $R^{SS}=g/\beta$.
@@ -761,7 +762,7 @@ The absence of an EMDE R\&D multiplier reflects a different source of technology
 
     \vspace{1mm}
     \tabnote{IMF staff estimates.}{Present-value cumulative output gain per unit of additional spending at the 1-, 5-, 10-, 20-, and 25-year horizons and in the long term, for a permanent 1-percent-of-GDP debt-financed increase in each spending category, with no offsetting cut to other spending.
-Formally, the $N$-year multiplier is $\left(\sum_{t=1}^{4N}\beta^{t}\,\Delta Y_t\right)\big/\left(\sum_{t=1}^{4N}\beta^{t}\,\Delta G_t\right)$, where $\Delta Y_t$ and $\Delta G_t$ are the deviations of output and of the spending category from steady state and $\beta$ is the model's discount factor (so flows are discounted at the steady-state real interest rate).
+Formally, the $N$-year multiplier is $\left(\sum_{t=1}^{4N}\beta^{t}\,\Delta \hat{Y}_t\right)\big/\left(\sum_{t=1}^{4N}\beta^{t}\,\Delta \hat{G}_t\right)$, where $\Delta \hat{Y}_t$ and $\Delta \hat{G}_t$ are the deviations of stationary output and of the stationary spending category from steady state and $\beta$ is the model's discount factor (so flows are discounted at the steady-state real interest rate).
 The smaller colored rows beneath each full-model estimate report partial-model variants.
 Green rows remove human capital, blue rows remove endogenous technology, and red rows remove both channels.
 No R\&D multipliers are reported for emerging market and developing economies because endogenous technology creation is inactive in that calibration.
@@ -1129,7 +1130,7 @@ The gap $Z_t-A_t$ is the stock of unadopted technologies.
 Technology creation is a reduced-form process: lagged human capital captures learning by doing, as in \citet{ChangGomesSchorfheide2002}, while lagged effective public R\&D expands the stock of technologies available for adoption:
 \[
 \begin{aligned}
-    \log\!\left(\frac{Z_t}{Z^{SS}}\right) ={}& \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right)
+    \log\!\left(\frac{\hat{Z}_t}{\hat{Z}^{SS}}\right) ={}& \rho_A \log\!\left(\frac{\hat{Z}_{t-1}}{\hat{Z}^{SS}}\right)
     + \left(1-\rho_A\right)\alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) \\
     &{}+ \left(1-\rho_A\right)\alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) \hat{G}_{t-1}^{RD}}{\left(1-e^{GRD}\right) \hat{G}^{RD,SS}}\right).
 \end{aligned}
@@ -1138,16 +1139,16 @@ Only the productive fraction $1-e_{t-1}^{GRD}$ of normalized public R\&D enters 
 
 Each unadopted technology is adopted next period with probability
 \begin{equation}
-    q_t = \left(q_0 + \varepsilon_t^{q}\right)\left(S_t\right)^{\varsigma}, \label{eq:probadopt}
+    q_t = \left(q_0 + \varepsilon_t^{q}\right)\left(\hat{S}_t\right)^{\varsigma}, \label{eq:probadopt}
 \end{equation}
-increasing in adoption expenditure $S_t$ with elasticity $\varsigma$; the shock $\varepsilon_t^{q}$ shifts the adoption probability directly and is nonzero only in the technology-diffusion experiments.\footnote{In equation~\eqref{eq:probadopt}, $S_t$ is already expressed relative to the trend, so this is the stationarized form of $q_t = q_0\left(S_t/\Lambda_t\right)^{\varsigma}$ in Section~\ref{sec:model}.}
+increasing in stationary adoption expenditure $\hat{S}_t$ with elasticity $\varsigma$; the shock $\varepsilon_t^{q}$ shifts the adoption probability directly and is nonzero only in the technology-diffusion experiments.
 
 The adoption law of motion is
 \begin{equation}
-    \left(1+\gamma^{a}\right) A_{t} = q_t\, \phi\left(Z_{t-1} - A_{t-1}\right) + \phi A_{t-1}. \label{eq:Astat}
+    \left(1+\gamma^{a}\right) \hat{A}_{t} = q_t\, \phi\left(\hat{Z}_{t-1} - \hat{A}_{t-1}\right) + \phi \hat{A}_{t-1}. \label{eq:Astat}
 \end{equation}
 The first term is the flow of surviving unadopted technologies that become adopted; the second is the surviving stock of technologies already in production.
-The survival rate $\phi$ applies to both pools: an unadopted idea must survive before it can be converted into an adopted technology.\footnote{Equation~\eqref{eq:Astat} is stated in stationarized form. The factor $1+\gamma^{a}$ appears on the current stock because $Z_t$ and $A_t$ are detrended by the technology-stock trend $\Gamma_t$, not by the real trend $\Lambda_t$; see Subsection~\ref{subsec:bgp}.}
+The survival rate $\phi$ applies to both pools: an unadopted idea must survive before it can be converted into an adopted technology.\footnote{The factor $1+\gamma^{a}$ appears on the current stock because $Z_t$ and $A_t$ are detrended by the technology-stock trend $\Gamma_t$, not by the real trend $\Lambda_t$; see Subsection~\ref{subsec:bgp}.}
 
 An adopted technology entitles its owner to a stream of profits.
 The aggregate residual profits derived above are shared equally among the $A_{t-1}$ technologies in production, so each adopted technology pays the per-technology flow
@@ -1179,18 +1180,18 @@ Splitting off the current-period cost and next-period continuation value gives t
 \]
 
 The model carries aggregate rather than per-technology objects, so the unit recursions are scaled by the adopted stock active at $t$, $A_{t-1}$.
-Define $\mathcal{V}_t \equiv A_{t-1}v_t$, $\mathcal{J}_t \equiv A_{t-1}j_t$, and $S_t \equiv A_{t-1}s_t$.
-Using the aggregate-profit identity $A_{t-1}\pi_t^{a} = \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t$, the scaled value recursions are\footnote{Because the continuation values are scaled by the next period's stock ($\mathcal{V}_{t+1} = A_t v_{t+1}$), the ratio $A_{t-1}/A_t$ converts them back to the date-$t$ scaling $A_{t-1}$. The additional factor $1/(1+\gamma^{a})$ is the technology-growth correction associated with this stationarized scaling.}
+Define the level aggregates $\mathcal{V}_t \equiv A_{t-1}v_t$, $\mathcal{J}_t \equiv A_{t-1}j_t$, and $S_t \equiv A_{t-1}s_t$, and denote their stationary counterparts by $\hat{\mathcal{V}}_t$, $\hat{\mathcal{J}}_t$, and $\hat{S}_t$.
+After scaling the aggregate-profit identity $A_{t-1}\pi_t^{a} = \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t$ by the real trend, the stationary value recursions are\footnote{Because continuation values are scaled by the next period's adopted stock, the ratio $\hat{A}_{t-1}/\hat{A}_t$ converts them to the date-$t$ scaling. The factor $1/(1+\gamma^{a})$ adjusts for growth in the technology-stock trend.}
 \begin{align}
-    \mathcal{V}_t &= \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \mathcal{V}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\right], \label{eq:VA}\\
-    \mathcal{J}_t &= -S_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{A_{t-1}}{A_{t}}\, \frac{1}{1+\gamma^{a}}\left(q_t\, \mathcal{V}_{t+1} + \left(1-q_t\right)\mathcal{J}_{t+1}\right)\right]. \label{eq:JZ}
+    \hat{\mathcal{V}}_t &= \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, \hat{Y}_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \hat{\mathcal{V}}_{t+1}\, \frac{\hat{A}_{t-1}}{\hat{A}_{t}}\, \frac{1}{1+\gamma^{a}}\right], \label{eq:VA}\\
+    \hat{\mathcal{J}}_t &= -\hat{S}_t + \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{\hat{A}_{t-1}}{\hat{A}_{t}}\, \frac{1}{1+\gamma^{a}}\left(q_t\, \hat{\mathcal{V}}_{t+1} + \left(1-q_t\right)\hat{\mathcal{J}}_{t+1}\right)\right]. \label{eq:JZ}
 \end{align}
-The adoption-probability function in equation~\eqref{eq:probadopt} implies $\partial q_t/\partial S_t = \left(q_0+\varepsilon_t^{q}\right)\varsigma S_t^{\varsigma-1} = \varsigma q_t/S_t$.
-Choosing $S_t$ to maximize $\mathcal{J}_t$ then gives the adoption optimality condition
+The adoption-probability function in equation~\eqref{eq:probadopt} implies $\partial q_t/\partial \hat{S}_t = \left(q_0+\varepsilon_t^{q}\right)\varsigma \hat{S}_t^{\varsigma-1} = \varsigma q_t/\hat{S}_t$.
+Choosing $\hat{S}_t$ to maximize $\hat{\mathcal{J}}_t$ then gives the adoption optimality condition
 \begin{equation}
-    S_t = \varsigma\, q_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{1}{1+\gamma^{a}}\, \frac{A_{t-1}}{A_{t}}\left(\mathcal{V}_{t+1} - \mathcal{J}_{t+1}\right)\right], \label{eq:SAfoc}
+    \hat{S}_t = \varsigma\, q_t\, \phi\, \mathbb{E}_t\!\left[\mathit{SDF}_{t+1}\, \frac{1}{1+\gamma^{a}}\, \frac{\hat{A}_{t-1}}{\hat{A}_{t}}\left(\hat{\mathcal{V}}_{t+1} - \hat{\mathcal{J}}_{t+1}\right)\right], \label{eq:SAfoc}
 \end{equation}
-which equates the marginal cost of adoption effort---one unit of the good---to its marginal value: the probability gain $\varsigma\, q_t/S_t$ times the discounted, survival-adjusted adoption surplus.
+which equates the marginal cost of adoption effort---one unit of the good---to its marginal value: the probability gain $\varsigma\, q_t/\hat{S}_t$ times the discounted, survival-adjusted adoption surplus.
 
 %========================================================================
 \section{Model Equations and Notation} \label{app:glossary}
@@ -1205,7 +1206,7 @@ For parameters, it reports the numerical values used in the two calibrations.
 
 The last two columns give each variable's steady-state value for the representative AE and EMDE calibrations, read from the solved model.
 Each variable's defining stationarized equilibrium equation is shown beneath its description ($g$ is the gross real-trend growth rate, $1+\gamma^{a}$ the technology-stock-trend growth rate, and superscript $SS$ a steady-state value).
-To match the model code, hats are suppressed in the tables below.
+Consistent with the main text, hats identify detrended counterparts; variables that are stationary by construction retain unaccented notation.
 
 \input{glossaryEndogenous.tex}
 
