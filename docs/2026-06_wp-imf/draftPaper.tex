@@ -213,9 +213,15 @@ A date-$t$ physical-capital stock is instead scaled by its own-date trend, so $\
 Variables that are stationary by construction, including time allocations, human capital, rates, tax rates, and adoption probabilities, retain their unaccented notation.
 
 Technology stocks follow a separate trend, denoted by $\Gamma_t$.
-Adopted technologies enter production through the love-of-variety term $A_{t-1}^{\vartheta-1}$, where $\vartheta$ governs returns to variety and $\alpha$ denotes the output elasticity of private capital.
+The stock of adopted technologies, $A_t$, enters the aggregate production function for output $Y_t$,
+\begin{equation} \label{eq:production}
+    Y_t = A_{t-1}^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha}
+    \left(\frac{K_{t-1}^{GI}}{\Lambda_{t-1}}\right)^{\alpha_G},
+\end{equation}
+where $K_{t-1}$ is private capital, $N_t$ is effective labor, and $K_{t-1}^{GI}/\Lambda_{t-1}$ is infrastructure intensity.
+The parameter $\vartheta$ governs returns to variety, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.
 The technology trend must therefore grow faster than the real trend to supply the portion of trend output growth not accounted for by private-capital accumulation.
-Consequently, their gross growth rate is $\Gamma_t/\Gamma_{t-1}=g^{(1-\alpha)/(\vartheta-1)}$.
+Consequently, its gross growth rate is $\Gamma_t/\Gamma_{t-1}=g^{(1-\alpha)/(\vartheta-1)}$.
 Accordingly, the stationarized created- and adopted-technology stocks are $\hat{Z}_t=Z_t/\Gamma_t$ and $\hat{A}_t=A_t/\Gamma_t$, respectively.
 
 The remainder of this section sets out the model's building blocks in turn, starting from households.
@@ -288,13 +294,8 @@ Intermediate-good firms are therefore responsible only for real production.
 
 \paragraph{Production and marginal cost.}
 Intermediate producers use private capital and effective labor, taking public infrastructure and adopted technology as external production shifters.
-In symmetric equilibrium, aggregate production is
-\begin{equation} \label{eq:production}
-    Y_t = A_{t-1}^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha} \left(K_{t-1}^{GI}\right)^{\alpha_G},
-\end{equation}
-where $A_{t-1}$ is the stock of adopted technologies, $K_{t-1}$ is private capital, $N_t = H_{t-1}L_t$ is effective labor, and $K_{t-1}^{GI}$ is the stock of public infrastructure capital.
-Public infrastructure augments private production as a positive externality, while adopted technologies raise productivity through the love-of-variety term $A_{t-1}^{\vartheta-1}$.
-The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{In \citet{Anzoateguietal2019} a single intermediate-goods elasticity of substitution sets both the markup and the returns to variety.
+In symmetric equilibrium, aggregate production follows equation~\eqref{eq:production}, with effective labor given by $N_t=H_{t-1}L_t$.
+Public infrastructure augments private production as a positive externality, while adopted technologies raise productivity through the love-of-variety term $A_{t-1}^{\vartheta-1}$.\footnote{In \citet{Anzoateguietal2019} a single intermediate-goods elasticity of substitution sets both the markup and the returns to variety.
 Here the retail markup is governed by $\epsilon$ and the intermediate producers' markup by the separate parameter $\mu^{p}$; $\vartheta$ retains only the returns-to-variety role, mapping the stock of adopted technologies into TFP through the love-of-variety term $A_t^{\vartheta-1}$.}
 
 The cost-minimization problem leads to familiar optimality conditions.
