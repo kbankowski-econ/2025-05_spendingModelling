@@ -205,7 +205,30 @@ The government comprises a fiscal authority and a central bank.
 The fiscal authority spends on government consumption, public infrastructure, public human capital, and public R\&D, in addition to lump-sum transfers, and levies taxes on consumption and labor income.
 The central bank sets the nominal interest rate according to a Taylor rule.
 
-The economy grows along a balanced-growth path driven by technology; the trend level is denoted $\Lambda_t$ and grows at the constant gross rate $g$.
+The economy grows along a balanced-growth path driven by technology.
+The real trend $\Lambda_t$ grows at the constant gross rate $g$.
+Throughout the main text, unaccented trending variables denote levels and hats denote their stationary counterparts.
+A date-$t$ flow is scaled by the incumbent real trend, while a date-$t$ physical-capital stock is scaled by its own-date trend:
+\[
+    \hat{X}_t=\frac{X_t}{\Lambda_{t-1}},
+    \qquad
+    \hat{K}_t=\frac{K_t}{\Lambda_t},
+    \qquad
+    g=\frac{\Lambda_t}{\Lambda_{t-1}}.
+\]
+Variables that are stationary by construction, including time allocations, human capital, rates, tax rates, and adoption probabilities, retain their unaccented notation.
+
+The created- and adopted-technology stocks follow the separate technology-stock trend $\Gamma_t$.
+Its growth rate and the corresponding stationary stocks are
+\[
+    1+\gamma^{a}=\frac{\Gamma_t}{\Gamma_{t-1}}
+    =g^{(1-\alpha)/(\vartheta-1)},
+    \qquad
+    \hat{A}_t=\frac{A_t}{\Gamma_t},
+    \qquad
+    \hat{Z}_t=\frac{Z_t}{\Gamma_t}.
+\]
+Thus $\Gamma_t$ is determined by the calibrated real growth rate rather than representing an additional exogenous process.
 The remainder of this section sets out the model's building blocks in turn, starting from households.
 The derivations for the household, production, pricing, and technology-adoption conditions are given in Appendix~\ref{app:equilibrium}; Appendix~\ref{app:glossary} reports the stationarized model equations and notation.
 
@@ -416,7 +439,7 @@ A competitive equilibrium is a sequence of quantities and prices such that house
 
 \subsection{Balanced Growth and Solution} \label{subsec:bgp}
 
-The economy follows a balanced-growth path driven by the technology trend $\Lambda_t$, which grows at the constant gross rate $g$.
+The economy follows a balanced-growth path driven by technology, with the real trend $\Lambda_t$ growing at the constant gross rate $g$.
 The equations above are written mainly in levels to make their economic content transparent, whereas Dynare solves a stationary representation of the system.
 
 Consumption, output, the real wage, private and public capital, government spending, debt, and transfers share the same gross trend.
@@ -447,7 +470,16 @@ Because all date-$t$ flows use the same incumbent trend, the resource constraint
 \]
 
 The created- and adopted-technology stocks are the exception.
-They grow at their own gross rate $1+\gamma^{a}=g^{(1-\alpha)/(\vartheta-1)}$, which is faster than output growth because technology enters production through the love-of-variety term $A_t^{\vartheta-1}$.
+They follow $\Gamma_t$ rather than $\Lambda_t$, with
+\[
+    1+\gamma^{a}=\frac{\Gamma_t}{\Gamma_{t-1}}
+    =g^{(1-\alpha)/(\vartheta-1)},
+    \qquad
+    \hat{A}_t=\frac{A_t}{\Gamma_t},
+    \qquad
+    \hat{Z}_t=\frac{Z_t}{\Gamma_t}.
+\]
+The technology-stock trend grows faster than the real trend because technology enters production through the love-of-variety term $A_t^{\vartheta-1}$.
 Their laws of motion and value functions therefore carry $1+\gamma^{a}$ rather than $g$.
 For this reason, the technology block in Appendix~\ref{app:equilibrium} is stated directly in stationarized form, with adoption expenditure $S_t$ also expressed relative to the trend.
 The steady state of the stationary system---with hats suppressed in Appendix~\ref{app:equilibrium} and in the Dynare files---corresponds to the balanced-growth path of the level economy.
@@ -1121,7 +1153,7 @@ The adoption law of motion is
     \left(1+\gamma^{a}\right) A_{t} = q_t\, \phi\left(Z_{t-1} - A_{t-1}\right) + \phi A_{t-1}. \label{eq:Astat}
 \end{equation}
 The first term is the flow of surviving unadopted technologies that become adopted; the second is the surviving stock of technologies already in production.
-The survival rate $\phi$ applies to both pools: an unadopted idea must survive before it can be converted into an adopted technology.\footnote{Equation~\eqref{eq:Astat} is stated in stationarized form. The factor $1+\gamma^{a}$ appears on the current stock because $Z_t$ and $A_t$ are detrended by the technology trend, not by the output trend; see Subsection~\ref{subsec:bgp}.}
+The survival rate $\phi$ applies to both pools: an unadopted idea must survive before it can be converted into an adopted technology.\footnote{Equation~\eqref{eq:Astat} is stated in stationarized form. The factor $1+\gamma^{a}$ appears on the current stock because $Z_t$ and $A_t$ are detrended by the technology-stock trend $\Gamma_t$, not by the real trend $\Lambda_t$; see Subsection~\ref{subsec:bgp}.}
 
 An adopted technology entitles its owner to a stream of profits.
 The aggregate residual profits derived above are shared equally among the $A_{t-1}$ technologies in production, so each adopted technology pays the per-technology flow
@@ -1178,7 +1210,7 @@ For parameters, it reports the numerical values used in the two calibrations.
 \subsection{Endogenous Variables}
 
 The last two columns give each variable's steady-state value for the representative AE and EMDE calibrations, read from the solved model.
-Each variable's defining stationarized equilibrium equation is shown beneath its description ($g$ is the gross output-trend growth rate, $1+\gamma^{a}$ the technology-trend growth rate, and superscript $SS$ a steady-state value).
+Each variable's defining stationarized equilibrium equation is shown beneath its description ($g$ is the gross real-trend growth rate, $1+\gamma^{a}$ the technology-stock-trend growth rate, and superscript $SS$ a steady-state value).
 
 \input{glossaryEndogenous.tex}
 
