@@ -240,10 +240,11 @@ modelList = {
     % AR(1) rho=0.9 +1%-of-GDP government-consumption shock, matching the rest
     % of the temporary ladder.
     'Model_NK_exp_gc',                          'AE', 'AE',     {{'epsi_gc',       'ar1', [0.01 0.9],  '1:1000'}}
-    % The first two permanent simplifications are run for every spending
-    % instrument reported in Table 5. Step 1 removes endogenous technology;
-    % Step 2 additionally removes human capital. EMDE R&D remains unreported
-    % because its technology-creation channel is inactive in the baseline.
+    % Three partial variants are run for every spending instrument reported in
+    % Table 5: no endogenous technology, no human capital, and both removals.
+    % The no-human-capital-only variant retains technology creation and adoption.
+    % EMDE R&D remains unreported because its technology-creation channel is
+    % inactive in the baseline.
     'Model_Simple1_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_Simple1_exp_igi_perm',               'AE', 'AE',     {{'epsi_igi',      'const', 0.01, '1:1000'}}
     'Model_Simple1_exp_ige_perm',               'AE', 'AE',     {{'epsi_ige',      'const', 0.01, '1:1000'}}
@@ -251,6 +252,13 @@ modelList = {
     'EM_Model_Simple1_exp_gc_perm',             'EM', 'EMnorm', {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'EM_Model_Simple1_exp_igi_perm',            'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01, '1:1000'}}
     'EM_Model_Simple1_exp_ige_perm',            'EM', 'EMnorm', {{'epsi_ige',      'const', 0.01, '1:1000'}}
+    'Model_NoHumanCapital_exp_gc_perm',         'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'Model_NoHumanCapital_exp_igi_perm',        'AE', 'AE',     {{'epsi_igi',      'const', 0.01, '1:1000'}}
+    'Model_NoHumanCapital_exp_ige_perm',        'AE', 'AE',     {{'epsi_ige',      'const', 0.01, '1:1000'}}
+    'Model_NoHumanCapital_exp_grd_perm',        'AE', 'AE',     {{'epsi_grd',      'const', 0.01, '1:1000'}}
+    'EM_Model_NoHumanCapital_exp_gc_perm',      'EM', 'EMnorm', {{'epsi_gc',       'const', 0.01, '1:1000'}}
+    'EM_Model_NoHumanCapital_exp_igi_perm',     'EM', 'EMnorm', {{'epsi_igi',      'const', 0.01, '1:1000'}}
+    'EM_Model_NoHumanCapital_exp_ige_perm',     'EM', 'EMnorm', {{'epsi_ige',      'const', 0.01, '1:1000'}}
     'Model_Simple2_exp_gc_perm',                'AE', 'AE',     {{'epsi_gc',       'const', 0.01, '1:1000'}}
     'Model_Simple2_exp_igi_perm',               'AE', 'AE',     {{'epsi_igi',      'const', 0.01, '1:1000'}}
     'Model_Simple2_exp_ige_perm',               'AE', 'AE',     {{'epsi_ige',      'const', 0.01, '1:1000'}}
@@ -305,24 +313,34 @@ for iModel = 1:size(modelList, 1)
         dynare([thisModel '.mod'], 'savemacro', 'json=compute', ...
             sprintf('-DshockFile="%s.shockValues"', thisModel));
     else
-        % Simplified variants (named ...SimpleN...) build from modelTemplateSimple.mod
-        % with -DSIMPLIFY_LEVEL=N. Conditional equation blocks remove each channel,
-        % while a dedicated steady-state routine preserves the common allocation
+        % Simplified variants build from modelTemplateSimple.mod. The SimpleN
+        % ladder uses -DSIMPLIFY_LEVEL=N; NoHumanCapital uses a separate switch
+        % to remove only that channel while retaining endogenous technology.
+        % A dedicated steady-state routine preserves the common allocation
         % through level 6 and supplies the canonical normalization at level 7.
         simpTok = regexp(thisModel, 'Simple(\d)', 'tokens', 'once');
-        if isempty(simpTok)
+        noHumanCapital = contains(thisModel, 'NoHumanCapital');
+        if isempty(simpTok) && ~noHumanCapital
             copyfile('modelTemplate.mod', [thisModel '.mod']);
             extraDefs = {};
         else
             copyfile('modelTemplateSimple.mod', [thisModel '.mod']);
             % nostrict: pinning channels leaves some declared shocks unused (e.g.
             % epsi_q once R&D is off); they are zero in these experiments anyway.
-            extraDefs = {sprintf('-DSIMPLIFY_LEVEL=%s', simpTok{1}), 'nostrict'};
+            if isempty(simpTok)
+                simplifyLevel = '0';
+            else
+                simplifyLevel = simpTok{1};
+            end
+            extraDefs = {sprintf('-DSIMPLIFY_LEVEL=%s', simplifyLevel), 'nostrict'};
+            if noHumanCapital
+                extraDefs{end + 1} = '-DNO_HUMAN_CAPITAL=1';
+            end
             if contains(thisModel, 'NoIndex')
                 extraDefs{end + 1} = '-DNO_INDEXATION=1';
             end
         end
-        if isempty(simpTok)
+        if isempty(simpTok) && ~noHumanCapital
             copyfile('modelTemplate_steadystate.m', [thisModel '_steadystate.m']);
         else
             copyfile('modelTemplateSimple_steadystate.m', [thisModel '_steadystate.m']);

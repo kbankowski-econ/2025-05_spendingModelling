@@ -12,7 +12,7 @@ lambda = 1/C;
 // Euler equation. At level 6 and above g=1.
 lambda = betta*(lambda(+1)/g*R/PI(+1));
 
-@#if SIMPLIFY_LEVEL < 2
+@#if (SIMPLIFY_LEVEL < 2) && (NO_HUMAN_CAPITAL == 0)
 // Labor and education draw on the common time endowment.
 omega*(L+E)^varphi = lambda*w*H(-1)*(1-tauw);
 @#elseif SIMPLIFY_LEVEL < 7
@@ -33,7 +33,7 @@ Kp = STEADY_STATE(Kp);
 Ip = STEADY_STATE(Ip);
 @#endif
 
-@#if SIMPLIFY_LEVEL < 2
+@#if (SIMPLIFY_LEVEL < 2) && (NO_HUMAN_CAPITAL == 0)
 // Human-capital accumulation and optimal education time
 H = (1-deltaH)*H(-1)+chiH*E^gamma*(Kge(-1))^mu;
 omega*(L+E)^varphi = lambda_H*chiH*gamma*E^(gamma-1)*(Kge(-1))^mu;
@@ -140,7 +140,7 @@ tauc = 0;
 tauw = 0;
 @#endif
 
-@#if SIMPLIFY_LEVEL < 2
+@#if (SIMPLIFY_LEVEL < 2) && (NO_HUMAN_CAPITAL == 0)
 Kge*g = (1-delta)*Kge(-1)+(1-eGE)*Ige;
 @#else
 Kge = STEADY_STATE(Kge);

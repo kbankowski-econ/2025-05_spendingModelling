@@ -37,9 +37,9 @@ Writes:
   ../csvFiles/multipliers.csv      (one row per scenario, all horizons)
   ../multipliersTable.tex          (\\input by draftPaper.tex)
 
-The permanent-shock table also reports the first two cumulative steps in the
-progressive model-simplification exercise beneath every estimable baseline
-row.
+The permanent-shock table also reports three partial model variants beneath
+every estimable baseline row: no endogenous technology, no human capital, and
+both removals together.
 """
 from pathlib import Path
 import numpy as np
@@ -91,6 +91,8 @@ PERM_SUPPLEMENTS = {
     model: [
         ("No endog. tech.",
          model.replace("Model_HumanCapital", "Model_Simple1"), inst, "targetblue"),
+        ("No human capital",
+         model.replace("Model_HumanCapital", "Model_NoHumanCapital"), inst, "stepgreen"),
         ("No endog. tech. + no human capital",
          model.replace("Model_HumanCapital", "Model_Simple2"), inst, "stepred"),
     ]
