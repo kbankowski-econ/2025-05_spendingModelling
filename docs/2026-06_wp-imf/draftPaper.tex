@@ -211,10 +211,11 @@ Throughout the main text, unaccented trending variables denote levels and hats d
 A date-$t$ flow is scaled by the incumbent real trend, so $\hat{X}_t=X_t/\Lambda_{t-1}$.
 A date-$t$ physical-capital stock is instead scaled by its own-date trend, so $\hat{K}_t=K_t/\Lambda_t$.
 Variables that are stationary by construction, including time allocations, human capital, rates, tax rates, and adoption probabilities, retain their unaccented notation.
+The productive public inputs are therefore $\hat{K}_t^{GI}=K_t^{GI}/\Lambda_t$, $\hat{K}_t^{GE}=K_t^{GE}/\Lambda_t$, and $\hat{G}_t^{RD}=G_t^{RD}/\Lambda_{t-1}$.
 
 Technology stocks follow a separate trend, denoted by $\Gamma_t$.
-As discussed below, adopted technologies enter production through the love-of-variety term $A_{t-1}^{\vartheta-1}$, where $\vartheta$ governs returns to variety.
-Together with private capital, whose output elasticity is $\alpha$, this term determines trend output growth.\footnote{Private capital grows at $g$ and enters with elasticity $\alpha$, contributing $g^{\alpha}$ to gross output growth; effective labor and $K_{t-1}^{GI}/\Lambda_{t-1}$ are stationary. The love-of-variety term must supply the remaining $g^{1-\alpha}$, implying technology-stock growth of $g^{(1-\alpha)/(\vartheta-1)}$.}
+As discussed below, adopted technologies enter production through the love-of-variety term $A_{t-1}^{\vartheta-1}$, where $\vartheta$ governs returns to variety.\footnote{Private capital grows at $g$ and enters with elasticity $\alpha$, contributing $g^{\alpha}$ to gross output growth; effective labor and $\hat{K}_{t-1}^{GI}$ are stationary. The love-of-variety term must supply the remaining $g^{1-\alpha}$, implying technology-stock growth of $g^{(1-\alpha)/(\vartheta-1)}$.}
+Private capital's output elasticity is $\alpha$; both terms determine trend output growth.
 The calibrated technology trend therefore grows faster than the real trend.
 Specifically, its gross growth rate is $\Gamma_t/\Gamma_{t-1}=g^{(1-\alpha)/(\vartheta-1)}$.
 Accordingly, the stationarized created- and adopted-technology stocks are $\hat{Z}_t=Z_t/\Gamma_t$ and $\hat{A}_t=A_t/\Gamma_t$, respectively.
@@ -255,16 +256,16 @@ where $\delta$ is the depreciation rate.
 The main household extension is the human-capital accumulation channel, in which private time devoted to education and health is complemented by public human-capital investment \citep{BlankenauSimpson2004, Dissouetal2016, Atoliaetal2021}.
 Private human capital $H_t$ evolves according to
 \begin{equation} \label{eq:humancapital}
-    H_{t} = \left(1 - \delta^{h}\right) H_{t-1} + \chi \left(E_t\right)^{\gamma} \left(\frac{K_{t-1}^{GE}}{\Lambda_{t-1}}\right)^{\mu},
+    H_{t} = \left(1 - \delta^{h}\right) H_{t-1} + \chi \left(E_t\right)^{\gamma} \left(\hat{K}_{t-1}^{GE}\right)^{\mu},
 \end{equation}
 Here $\delta^{h}$ is the depreciation rate of human capital and $\chi$ is a scale constant determined from the accumulation equation to ensure the normalized steady-state value $H=1$.
-The stock $K_t^{GE}$ represents public education and health capital, while expressing the inherited stock $K_{t-1}^{GE}$ relative to $\Lambda_{t-1}$ keeps its contribution stationary along the balanced-growth path.
+The stock $K_t^{GE}$ represents public education and health capital, while its normalized counterpart $\hat{K}_{t-1}^{GE}$ keeps the inherited public input stationary along the balanced-growth path.
 The elasticities $\gamma$ and $\mu$ govern the response of human capital formation to the household's time input and to the public human capital stock, respectively.
 Public human capital therefore raises the productivity of household education time, rather than entering household utility directly.
 Letting $\lambda_t^{H}$ be the shadow value of human capital, the labor and education-time conditions are
 \begin{align}
     \omega \left(L_t + E_t\right)^{\varphi} &= \lambda_t \left(1-\tau_t^{w}\right) w_t H_{t-1}, \label{eq:labor}\\
-    \omega \left(L_t + E_t\right)^{\varphi} &= \lambda_t^{H}\, \chi \gamma \left(E_t\right)^{\gamma-1} \left(\frac{K_{t-1}^{GE}}{\Lambda_{t-1}}\right)^{\mu}, \label{eq:edutime}\\
+    \omega \left(L_t + E_t\right)^{\varphi} &= \lambda_t^{H}\, \chi \gamma \left(E_t\right)^{\gamma-1} \left(\hat{K}_{t-1}^{GE}\right)^{\mu}, \label{eq:edutime}\\
     \lambda_t^{H} &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\left(1-\tau_{t+1}^{w}\right) w_{t+1} L_{t+1} + \lambda_{t+1}^{H}\left(1-\delta^{h}\right)\right]. \label{eq:hcvalue}
 \end{align}
 Equation~\eqref{eq:labor} values an additional hour of work at the after-tax wage in efficiency units.
@@ -291,9 +292,9 @@ Intermediate-good firms are therefore responsible only for real production.
 Intermediate producers use private capital and effective labor, taking public infrastructure and adopted technology as external production shifters.
 In symmetric equilibrium, aggregate production is
 \begin{equation} \label{eq:production}
-    Y_t = A_{t-1}^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha} \left(K_{t-1}^{GI}\right)^{\alpha_G},
+    Y_t = A_{t-1}^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha} \left(\hat{K}_{t-1}^{GI}\right)^{\alpha_G},
 \end{equation}
-where $A_{t-1}$ is the stock of adopted technologies, $K_{t-1}$ is private capital, $N_t = H_{t-1}L_t$ is effective labor, and $K_{t-1}^{GI}$ is the stock of public infrastructure capital.
+where $A_{t-1}$ is the stock of adopted technologies, $K_{t-1}$ is private capital, $N_t = H_{t-1}L_t$ is effective labor, and $\hat{K}_{t-1}^{GI}$ is normalized public infrastructure capital.
 Public infrastructure augments private production as a positive externality, while adopted technologies raise productivity through the love-of-variety term $A_{t-1}^{\vartheta-1}$.
 The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{In \citet{Anzoateguietal2019} a single intermediate-goods elasticity of substitution sets both the markup and the returns to variety.
 Here the retail markup is governed by $\epsilon$ and the intermediate producers' markup by the separate parameter $\mu^{p}$; $\vartheta$ retains only the returns-to-variety role, mapping the stock of adopted technologies into TFP through the love-of-variety term $A_t^{\vartheta-1}$.}
@@ -313,17 +314,17 @@ Created technologies depend on two forces.
 
 First, lagged human capital raises technology creation through a reduced-form learning-by-doing channel.
 This specification borrows the persistent learning-by-doing form of \citet{ChangGomesSchorfheide2002} and applies it here to innovation.
-Second, public R\&D spending $G_t^{RD}$ expands the stock of technologies available for adoption by raising the supply of adoptable ideas.
+Second, normalized public R\&D spending $\hat{G}_t^{RD}$ expands the stock of technologies available for adoption by raising the supply of adoptable ideas.
 Technology creation is governed by the following equation:
 \begin{equation} \label{eq:Z}
 \begin{aligned}
     \log\!\left(\frac{Z_t}{Z^{SS}}\right) ={}& \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right)
     + \left(1-\rho_A\right)\alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) \\
-    &{}+ \left(1-\rho_A\right)\alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) G_{t-1}^{RD}}{\left(1-e^{GRD}\right) G^{RD,SS}}\right),
+    &{}+ \left(1-\rho_A\right)\alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) \hat{G}_{t-1}^{RD}}{\left(1-e^{GRD}\right) \hat{G}^{RD,SS}}\right),
 \end{aligned}
 \end{equation}
-Only the productive fraction $\left(1-e_{t-1}^{GRD}\right)$ of (lagged) R\&D spending drives innovation: $e_t^{GRD}$ is the R\&D inefficiency wedge, equal to its steady-state value $e^{GRD}$ in the baseline and reduced when the R\&D efficiency gap is closed (Section~\ref{sec:results}).
-The raw spending $G_t^{RD}$ enters the government budget constraint~\eqref{eq:govbudget}.
+Only the productive fraction $\left(1-e_{t-1}^{GRD}\right)$ of normalized (lagged) R\&D spending drives innovation: $e_t^{GRD}$ is the R\&D inefficiency wedge, equal to its steady-state value $e^{GRD}$ in the baseline and reduced when the R\&D efficiency gap is closed (Section~\ref{sec:results}).
+The corresponding level outlay $G_t^{RD}$ enters the government budget constraint~\eqref{eq:govbudget}.
 The coefficients $\alpha_{HA}$ and $\alpha_{RD}$ are the long-run elasticities of created technology with respect to human capital and effective public R\&D, while multiplication by $1-\rho_A$ gives their per-period loadings.
 
 Creation does not raise productivity until technologies are adopted.
@@ -385,7 +386,7 @@ For the two investment instruments, productive capital evolves according to
 \end{align}
 The parameters $\delta^{GI}$ and $\delta^{GE}$ are the respective depreciation rates, while $e_t^{GI}$ and $e_t^{GE}$ are spending-efficiency gaps.
 Only the fraction $1-e_t^x$ of an investment flow becomes productive capital, so closing a gap raises capital formation without increasing expenditure.
-The R\&D gap operates analogously: only the productive fraction $\left(1-e_{t-1}^{GRD}\right)G_{t-1}^{RD}$ enters technology creation in equation~\eqref{eq:Z}.
+The R\&D gap operates analogously: only the productive fraction $\left(1-e_{t-1}^{GRD}\right)\hat{G}_{t-1}^{RD}$ enters technology creation in equation~\eqref{eq:Z}.
 
 \paragraph{Tax rules, fiscal closure, and experiment financing.}
 The consumption- and labor-income-tax rates equal their steady-state values unless perturbed by their respective tax-rate shocks:
@@ -423,7 +424,7 @@ Here $\mathcal{R}_t$ is the aggregate resource cost of adoption, equal in statio
     \mathcal{R}_t=\left(\frac{Z_{t-1}}{A_{t-1}}-1\right)S_t.
 \]
 This is the per-unadopted-technology outlay $S_t$ scaled by the stock of unadopted technologies relative to adopted ones.
-Technology creation uses the separate public R\&D flow $G_t^{RD}$ already included in equation~\eqref{eq:resource}.
+The normalized public R\&D input used in technology creation corresponds to the level outlay $G_t^{RD}$ included in equation~\eqref{eq:resource}.
 As in a standard New Keynesian model with Calvo price setting, the price-dispersion index $v_t^{p}$ makes the gross production required to satisfy a given level of final demand exceed that demand, so $Y_t = v_t^{p}Y_t^{d}$.
 A competitive equilibrium is a sequence of quantities and prices such that households, producers, retailers, and adopters optimize; fiscal and monetary policy rules hold; and the goods, labor, capital, and bond markets clear for given paths of the exogenous processes.
 
@@ -440,6 +441,8 @@ A typical date-$t$ flow $X_t$ is expressed relative to the incumbent trend, whil
     \qquad
     \hat{K}_t=\frac{K_t}{\Lambda_t}.
 \]
+Accordingly, production and human-capital formation use the normalized public stocks $\hat{K}_t^{GI}$ and $\hat{K}_t^{GE}$, while technology creation uses normalized public R\&D spending $\hat{G}_t^{RD}$.
+Their corresponding levels $K_t^{GI}$, $K_t^{GE}$, and $G_t^{RD}$ remain the objects in the capital-accumulation and fiscal equations.
 Debt is scaled with date-$t$ flows so that the stationary debt-to-output ratio is preserved.
 Marginal utility and the technology-value objects move inversely with the scale of the economy, so their stationary counterparts remove the corresponding inverse trend.
 
@@ -472,7 +475,8 @@ They follow $\Gamma_t$ rather than $\Lambda_t$, with
 The technology-stock trend grows faster than the real trend because technology enters production through the love-of-variety term $A_t^{\vartheta-1}$.
 Their laws of motion and value functions therefore carry $1+\gamma^{a}$ rather than $g$.
 For this reason, the technology block in Appendix~\ref{app:equilibrium} is stated directly in stationarized form, with adoption expenditure $S_t$ also expressed relative to the trend.
-The steady state of the stationary system---with hats suppressed in Appendix~\ref{app:equilibrium} and in the Dynare files---corresponds to the balanced-growth path of the level economy.
+The steady state of the stationary system corresponds to the balanced-growth path of the level economy.
+The Dynare files suppress hats on stationary variables.
 
 The model is implemented in Dynare and solved as a deterministic, perfect-foresight system.
 The policy experiments in Section~\ref{sec:results} are permanent reforms introduced in 2025, with responses traced out to 2050 around the balanced-growth steady state.
@@ -1014,14 +1018,14 @@ The conditions are written in the same notation as the main text, with the techn
 
 The representative household chooses $\{C_t, L_t, E_t, K_t, B_t, H_t\}_{t\ge 0}$ to maximize lifetime utility subject to the flow budget constraint, the private-capital law of motion, and the human-capital law of motion, all given in Section~\ref{sec:model}.
 At each date, the inherited private stocks $K_{t-1}$ and $H_{t-1}$ are predetermined states, while the household chooses their next-period values through investment and education time.
-It takes as given prices, taxes, transfers, rebated profits $\Omega_t$, the government-provided input into human-capital formation $K_{t-1}^{GE}$, and the trend $\Lambda_{t-1}$.
+It takes as given prices, taxes, transfers, rebated profits $\Omega_t$, and the normalized government-provided input into human-capital formation $\hat{K}_{t-1}^{GE}$.
 Substituting investment $I_t = K_t - (1-\delta) K_{t-1}$ and effective labor $N_t = H_{t-1} L_t$ out of the budget constraint and attaching the multiplier $\lambda_t$ to the budget constraint and $\lambda_t^{H}$ to the human-capital law of motion, the Lagrangian is
 \begin{equation*}
 \begin{aligned}
 \mathcal{L} = \mathbb{E}_0 \sum_{t=0}^{\infty} \beta^t \Big\{\, & \ln C_t - \omega\,\frac{\left(L_t + E_t\right)^{1+\varphi}}{1+\varphi} \\[2pt]
 & + \lambda_t \Big[ \left(1-\tau_t^{w}\right) w_t H_{t-1} L_t + r_t^{k} K_{t-1} + \tfrac{R_{t-1}}{\Pi_t} B_{t-1} + T_t + \Omega_t \\
 & \qquad\;\; - \left(1+\tau_t^{c}\right) C_t - \big(K_t - (1-\delta) K_{t-1}\big) - B_t \Big] \\[2pt]
-& + \lambda_t^{H} \Big[ \left(1-\delta^{h}\right) H_{t-1} + \chi\, E_t^{\gamma} \big(K_{t-1}^{GE}/\Lambda_{t-1}\big)^{\mu} - H_t \Big] \Big\}.
+& + \lambda_t^{H} \Big[ \left(1-\delta^{h}\right) H_{t-1} + \chi\, E_t^{\gamma} \big(\hat{K}_{t-1}^{GE}\big)^{\mu} - H_t \Big] \Big\}.
 \end{aligned}
 \end{equation*}
 The first-order conditions with respect to $C_t$, $B_t$, $K_t$, $L_t$, $E_t$, and $H_t$ are
@@ -1030,7 +1034,7 @@ The first-order conditions with respect to $C_t$, $B_t$, $K_t$, $L_t$, $E_t$, an
 [\,B_t\,]:&\quad \lambda_t = \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\, \frac{R_t}{\Pi_{t+1}}\right], \\
 [\,K_t\,]:&\quad \lambda_t = \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\left(r_{t+1}^{k} + 1 - \delta\right)\right], \\
 [\,L_t\,]:&\quad \omega\left(L_t + E_t\right)^{\varphi} = \lambda_t \left(1-\tau_t^{w}\right) w_t H_{t-1}, \\
-[\,E_t\,]:&\quad \omega\left(L_t + E_t\right)^{\varphi} = \lambda_t^{H}\, \chi\gamma\, E_t^{\gamma-1} \big(K_{t-1}^{GE}/\Lambda_{t-1}\big)^{\mu}, \\
+[\,E_t\,]:&\quad \omega\left(L_t + E_t\right)^{\varphi} = \lambda_t^{H}\, \chi\gamma\, E_t^{\gamma-1} \big(\hat{K}_{t-1}^{GE}\big)^{\mu}, \\
 [\,H_t\,]:&\quad \lambda_t^{H} = \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\left(1-\tau_{t+1}^{w}\right) w_{t+1} L_{t+1} + \lambda_{t+1}^{H}\left(1-\delta^{h}\right)\right].
 \end{align*}
 The conditions for $C_t$, $B_t$, and $K_t$ give the marginal utility of wealth and the bond and capital Euler equations.
@@ -1091,7 +1095,7 @@ This wedge maps final demand into gross output, $Y_t = v_t^{p}Y_t^{d}$, in the m
 \paragraph{Production and Marginal Cost.}
 Intermediate producer $i$ uses private capital and effective labor, taking public infrastructure and adopted technology as external production shifters:
 \[
-    Y_t(i) = A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G} K_{t-1}(i)^{\alpha} N_t(i)^{1-\alpha}.
+    Y_t(i) = A_{t-1}^{\vartheta-1}\left(\hat{K}_{t-1}^{GI}\right)^{\alpha_G} K_{t-1}(i)^{\alpha} N_t(i)^{1-\alpha}.
 \]
 
 They rent private capital and hire effective labor competitively.
@@ -1127,10 +1131,10 @@ Technology creation is a reduced-form process: lagged human capital captures lea
 \begin{aligned}
     \log\!\left(\frac{Z_t}{Z^{SS}}\right) ={}& \rho_A \log\!\left(\frac{Z_{t-1}}{Z^{SS}}\right)
     + \left(1-\rho_A\right)\alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) \\
-    &{}+ \left(1-\rho_A\right)\alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) G_{t-1}^{RD}}{\left(1-e^{GRD}\right) G^{RD,SS}}\right).
+    &{}+ \left(1-\rho_A\right)\alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) \hat{G}_{t-1}^{RD}}{\left(1-e^{GRD}\right) \hat{G}^{RD,SS}}\right).
 \end{aligned}
 \]
-Only the productive fraction $1-e_{t-1}^{GRD}$ of public R\&D enters creation; raw R\&D spending enters the government budget.\footnote{Because the creation equation is written in ratios to steady state, the common trend cancels from this expression.}
+Only the productive fraction $1-e_{t-1}^{GRD}$ of normalized public R\&D enters creation; the corresponding level outlay enters the government budget.
 
 Each unadopted technology is adopted next period with probability
 \begin{equation}
@@ -1201,6 +1205,7 @@ For parameters, it reports the numerical values used in the two calibrations.
 
 The last two columns give each variable's steady-state value for the representative AE and EMDE calibrations, read from the solved model.
 Each variable's defining stationarized equilibrium equation is shown beneath its description ($g$ is the gross real-trend growth rate, $1+\gamma^{a}$ the technology-stock-trend growth rate, and superscript $SS$ a steady-state value).
+To match the model code, hats are suppressed in the tables below.
 
 \input{glossaryEndogenous.tex}
 
