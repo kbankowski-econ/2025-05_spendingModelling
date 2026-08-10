@@ -419,9 +419,15 @@ A competitive equilibrium is a sequence of quantities and prices such that house
 The economy follows a balanced-growth path driven by the technology trend $\Lambda_t$, which grows at the constant gross rate $g$.
 The equations above are written mainly in levels to make their economic content transparent, whereas Dynare solves a stationary representation of the system.
 
-Consumption, output, the real wage, private and public capital, government spending, debt, and transfers share the trend $\Lambda_t$.
-For a typical date-$t$ quantity $X_t$, define its stationary counterpart as $\hat{X}_t=X_t/\Lambda_t$.
-Investment is instead divided by the incumbent trend $\Lambda_{t-1}$, placing the flow in the same units as the predetermined capital stock it augments.
+Consumption, output, the real wage, private and public capital, government spending, debt, and transfers share the same gross trend.
+The stationarization uses a timing convention that distinguishes flows from capital stocks.
+A typical date-$t$ flow $X_t$ is expressed relative to the incumbent trend, while a date-$t$ capital stock $K_t$ is expressed relative to its own-date trend:
+\[
+    \hat{X}_t=\frac{X_t}{\Lambda_{t-1}},
+    \qquad
+    \hat{K}_t=\frac{K_t}{\Lambda_t}.
+\]
+Debt is scaled with date-$t$ flows so that the stationary debt-to-output ratio is preserved.
 Marginal utility and the technology-value objects move inversely with the scale of the economy, so their stationary counterparts remove the corresponding inverse trend.
 
 Because the trend grows at the constant gross rate $g$, these transformations leave the factor $g=\Lambda_t/\Lambda_{t-1}$ wherever an equation links trending variables dated in different periods.
@@ -434,6 +440,11 @@ while the private-capital law $K_t=(1-\delta)K_{t-1}+I_t$ becomes
     g\hat{K}_t=(1-\delta)\hat{K}_{t-1}+\hat{I}_t.
 \]
 Thus accumulation equations carry the growth factor on the current stock, while Euler and asset-pricing conditions carry it in the intertemporal discount term.
+Because all date-$t$ flows use the same incumbent trend, the resource constraint retains its level-form appearance after stationarization:
+\[
+    \hat{Y}_t^{d}=\hat{C}_t+\hat{I}_t+\hat{G}_t^{C}
+    +\hat{I}_t^{GI}+\hat{I}_t^{GE}+\hat{G}_t^{RD}+\hat{\mathcal{R}}_t.
+\]
 
 The created- and adopted-technology stocks are the exception.
 They grow at their own gross rate $1+\gamma^{a}=g^{(1-\alpha)/(\vartheta-1)}$, which is faster than output growth because technology enters production through the love-of-variety term $A_t^{\vartheta-1}$.
