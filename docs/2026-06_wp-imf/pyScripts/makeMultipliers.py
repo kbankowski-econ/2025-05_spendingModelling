@@ -89,10 +89,10 @@ PERM_GROUPS = [(stype, [(r, (m + "_perm") if m else None, i) for r, m, i in regs
 # with the experiment list in drivers/runModel.m.
 PERM_SUPPLEMENTS = {
     model: [
-        ("No endog. tech.",
-         model.replace("Model_HumanCapital", "Model_Simple1"), inst, "targetblue"),
         ("No human capital",
          model.replace("Model_HumanCapital", "Model_NoHumanCapital"), inst, "stepgreen"),
+        ("No endog. tech.",
+         model.replace("Model_HumanCapital", "Model_Simple1"), inst, "targetblue"),
         ("No endog. tech. + no human capital",
          model.replace("Model_HumanCapital", "Model_Simple2"), inst, "stepred"),
     ]
