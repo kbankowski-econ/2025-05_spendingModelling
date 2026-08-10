@@ -430,57 +430,48 @@ A competitive equilibrium is a sequence of quantities and prices such that house
 
 \subsection{Balanced Growth and Solution} \label{subsec:bgp}
 
-The economy follows a balanced-growth path driven by technology, with the real trend $\Lambda_t$ growing at the constant gross rate $g$.
-The equations above are written mainly in levels to make their economic content transparent, whereas Dynare solves a stationary representation of the system.
+The economy is solved around the technology-driven balanced-growth path described at the beginning of this section.
+Recall that trending real quantities share the trend $\Lambda_t$, which grows at the gross rate $g$, whereas created and adopted technologies follow the separate trend $\Gamma_t$.
+Applying the hat convention introduced there converts the level equations into a stationary system; variables that are stationary by construction remain unchanged.
 
-Consumption, output, the real wage, private and public capital, government spending, debt, and transfers share the same gross trend.
-The stationarization uses a timing convention that distinguishes flows from capital stocks.
-A typical date-$t$ flow $X_t$ is expressed relative to the incumbent trend, while a date-$t$ capital stock $K_t$ is expressed relative to its own-date trend:
-\[
-    \hat{X}_t=\frac{X_t}{\Lambda_{t-1}},
-    \qquad
-    \hat{K}_t=\frac{K_t}{\Lambda_t}.
-\]
-Accordingly, production and human-capital formation use the normalized public stocks $\hat{K}_t^{GI}$ and $\hat{K}_t^{GE}$, while technology creation uses normalized public R\&D spending $\hat{G}_t^{RD}$.
-Their corresponding levels $K_t^{GI}$, $K_t^{GE}$, and $G_t^{RD}$ remain the objects in the capital-accumulation and fiscal equations.
-Debt is scaled with date-$t$ flows so that the stationary debt-to-output ratio is preserved.
-Marginal utility moves inversely with the scale of the economy, whereas aggregate technology values and adoption expenditure share the real trend.
-Their stationary counterparts remove these respective trends.
-
-Because the trend grows at the constant gross rate $g$, these transformations leave the factor $g=\Lambda_t/\Lambda_{t-1}$ wherever an equation links trending variables dated in different periods.
-For example, the level bond Euler equation $\lambda_t = \beta\,\mathbb{E}_t\!\left[\lambda_{t+1}R_t/\Pi_{t+1}\right]$ becomes
-\[
-    \hat{\lambda}_t = \beta\,\mathbb{E}_t\!\left[\hat{\lambda}_{t+1}\frac{R_t}{g\Pi_{t+1}}\right],
-\]
-while the private-capital law $K_t=(1-\delta)K_{t-1}+I_t$ becomes
-\[
-    g\hat{K}_t=(1-\delta)\hat{K}_{t-1}+\hat{I}_t.
-\]
-Thus accumulation equations carry the growth factor on the current stock, while Euler and asset-pricing conditions carry it in the intertemporal discount term.
-Because all date-$t$ flows use the same incumbent trend, the resource constraint retains its level-form appearance after stationarization:
+Equations involving only contemporaneous common-trend flows retain their level-form appearance.
+The resource constraint, for example, becomes
 \[
     \hat{Y}_t^{d}=\hat{C}_t+\hat{I}_t+\hat{G}_t^{C}
     +\hat{I}_t^{GI}+\hat{I}_t^{GE}+\hat{G}_t^{RD}+\hat{\mathcal{R}}_t.
 \]
+The same principle applies to contemporaneous accounting identities and static optimality conditions: every trending object is replaced by its stationary counterpart, while the common trend cancels.
 
-The created- and adopted-technology stocks are the exception.
-They follow $\Gamma_t$ rather than $\Lambda_t$, with
+Equations linking common-trend variables across dates retain the gross growth factor $g$.
+Physical-capital accumulation places it on the current stationary stock,
 \[
-    1+\gamma^{a}=\frac{\Gamma_t}{\Gamma_{t-1}}
-    =g^{(1-\alpha)/(\vartheta-1)},
-    \qquad
-    \hat{A}_t=\frac{A_t}{\Gamma_t},
-    \qquad
-    \hat{Z}_t=\frac{Z_t}{\Gamma_t}.
+    g\hat{K}_t=(1-\delta)\hat{K}_{t-1}+\hat{I}_t,
 \]
-The technology-stock trend grows faster than the real trend because technology enters production through the love-of-variety term $A_t^{\vartheta-1}$.
-Their laws of motion and value functions therefore carry $1+\gamma^{a}$ rather than $g$.
-For this reason, the technology block in Appendix~\ref{app:equilibrium} is stated directly in stationarized form, with adoption expenditure denoted by $\hat{S}_t$.
-The steady state of the stationary system corresponds to the balanced-growth path of the level economy.
-Only the Dynare files suppress hats as a coding convention; the equations reported here retain them.
+and the same adjustment applies to public physical-capital accumulation.
+Human capital requires no such adjustment because $H_t$ is stationary by construction.
+Public debt is normalized as a flow, so its stationary budget constraint instead divides inherited debt by $g$; this scaling preserves the stationary debt-to-output ratio.
+Intertemporal optimality conditions place the growth adjustment in the discount term.
+For example, the bond Euler equation becomes
+\[
+    \hat{\lambda}_t = \beta\,\mathbb{E}_t\!\left[
+    \hat{\lambda}_{t+1}\frac{R_t}{g\Pi_{t+1}}\right].
+\]
+Level marginal utility moves inversely with the real trend, so its stationary counterpart is $\hat{\lambda}_t=\Lambda_{t-1}\lambda_t$.
+Aggregate technology values and adoption expenditure follow the flow convention and are divided by $\Lambda_{t-1}$.
 
-The model is implemented in Dynare and solved as a deterministic, perfect-foresight system.
-The policy experiments in Section~\ref{sec:results} are permanent reforms introduced in 2025, with responses traced out to 2050 around the balanced-growth steady state.
+The technology stocks require a distinct adjustment because they grow with $\Gamma_t$.
+Writing $1+\gamma^a=\Gamma_t/\Gamma_{t-1}$, their stationary laws of motion place $1+\gamma^a$ on the current stock, as illustrated by adoption:
+\[
+    (1+\gamma^a)\hat{A}_t
+    =q_t\phi\left(\hat{Z}_{t-1}-\hat{A}_{t-1}\right)
+    +\phi\hat{A}_{t-1}.
+\]
+The continuation terms in the technology value functions correspondingly carry $1/(1+\gamma^a)$, while the adoption probability depends on stationary expenditure $\hat{S}_t$.
+Technology creation is specified directly in ratios of stationary stocks to their steady-state values, so it requires no additional growth factor.
+
+The steady state of this stationary system represents the balanced-growth path of the level economy.
+The model is implemented in Dynare, where hats are suppressed only as a coding convention, and solved as a deterministic perfect-foresight system.
+The permanent policy reforms in Section~\ref{sec:results} are evaluated over a 25-year horizon around that steady state.
 
 %========================================================================
 \section{Calibration} \label{sec:calibration}
