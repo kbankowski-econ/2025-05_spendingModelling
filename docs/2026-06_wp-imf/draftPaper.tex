@@ -122,7 +122,7 @@ Over a 25-year horizon the implied output multipliers on permanent increases in 
 \fcolorbox{linkcol}{white}{\begin{minipage}{0.9\textwidth}
 \small\textbf{TODO (temporary --- remove before circulation)}
 \begin{itemize}\setlength{\itemsep}{0pt}
-  \item Add an annex section documenting the data sources and construction of the calibrated values reported in Table~\ref{tab:calibrationTargets}.
+  \item Complete the data appendix for the growth, tax-rate, and public-debt targets in Table~\ref{tab:calibrationTargets}; government consumption and investment are already documented.
   \item Assess the model-implied steady-state value $E=0.157$ against the literature, as the current allocation of time to education and health appears high. Revisit the calibration if warranted.
 \end{itemize}
 \end{minipage}}
@@ -1250,6 +1250,30 @@ The EMDE sample comprises Bulgaria, Chile, Colombia, Costa Rica, Hungary, Poland
 The source reports functional shares but not investment amounts, so the means give each economy equal weight.
 Data refer to 2023 except where otherwise noted by the OECD.}
 \end{table}
+
+%========================================================================
+\section{Data Underlying the Country-Group Calibration Targets} \label{app:calibrationData}
+%========================================================================
+
+The country-group targets in Table~\ref{tab:calibrationTargets} draw on cross-country evidence from the IMF's World Economic Outlook database.
+For government consumption and fixed investment, the distributions across AEs and EMDEs provide a direct comparison with the selected values (Figure~\ref{fig:calibrationDataBands}).
+The government-consumption series maps directly to the model instrument $G_t^C$.
+The comparable model target for fixed investment is the sum of infrastructure and human-capital investment; public R\&D is excluded because it is not part of this aggregate.
+The remaining four panels reserve space for the evidence on output growth, implicit tax rates, and public debt.
+
+\begin{figure}[H]
+    \centering
+    \caption{Data Underlying Country-Group Calibration Targets, 2000--23 \label{fig:calibrationDataBands}}
+    \includegraphics{figures/calibrationDataBands.pdf}
+    \source{IMF, World Economic Outlook database; IMF staff calculations.}
+    \desc{Lines show equal-country group medians, and shaded areas show the 25th--75th percentile range.
+Circles mark the 2023 medians; open diamonds show the corresponding calibration targets in Table~\ref{tab:calibrationTargets}.
+The EMDE group combines economies classified in the database as emerging markets or low-income countries.
+Government consumption and government fixed investment are measured as percentages of GDP using the national-accounts series NCG and NFIG, respectively.
+The model investment target sums infrastructure and human-capital investment and excludes public R\&D.
+Group-year estimates are reported when at least ten economies have data.
+The remaining four panels are placeholders.}
+\end{figure}
 
 %========================================================================
 \section{Spending-Efficiency Estimates} \label{app:efficiency}

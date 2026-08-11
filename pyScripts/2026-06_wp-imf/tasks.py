@@ -29,6 +29,7 @@ PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 - plotPolicyEfficiency: FM-style gradual efficiency improvements by country group
 - plotHumanCapital:     Human capital + R&D mix IRFs
 - plotDiffusionAE:      Technology diffusion-speed sensitivity
+- plotCalibrationData:  WEO evidence underlying country-group calibration targets
 - plotEfficiencyBands:  Spending-efficiency gaps by income group (appendix)
 
 PAPER TABLES (\\input by draftPaper.tex):
@@ -251,6 +252,15 @@ def plotSensitivityIRFPerm(c):
 
 
 @task
+def plotCalibrationData(c):
+    """
+    WEO evidence underlying the country-group calibration targets.
+    Out: figures/calibrationDataBands.png/.pdf/.html/.csv
+    """
+    _run_plot(c, "plotCalibrationData.py", "Generating: Calibration Data (appendix)")
+
+
+@task
 def plotEfficiencyBands(c):
     """
     Spending-efficiency gaps by income group (appendix figure).
@@ -402,6 +412,7 @@ def investigateContributions(c):
     plotDiffusionAE,
     plotSensitivityIRF,
     plotSensitivityIRFPerm,
+    plotCalibrationData,
     plotEfficiencyBands,
     makeMultipliers,
     makeCommonParametersTable,
