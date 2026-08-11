@@ -1,12 +1,14 @@
 """Country-group evidence underlying the steady-state calibration targets.
 
 The figure is structured as a 3x2 panel for the six target categories in Table 2.
-Real GDP growth, government consumption, government investment, and public debt
-are populated from the WEO calibration database; the tax panels are placeholders.
+Real GDP growth, government consumption, government investment, the consumption
+tax rate, and public debt are populated from the WEO calibration database; the
+labor-income-tax panel is a placeholder.
 
-For each populated panel, solid lines are equal-country group medians and shaded
-areas are the 25th--75th percentile range. Circles mark the 2023 medians, and
-open diamonds show the corresponding model targets.
+For growth, spending, and debt, solid lines are equal-country group medians. The
+consumption-tax lines are ratios of group sums. Shaded areas are cross-country
+25th--75th percentile ranges. Circles mark the 2023 group values, and open
+diamonds show the corresponding model targets.
 
 In:  WEO_calib_enhanced.dta
 Out: docs/2026-06_wp-imf/figures/calibrationDataBands.{png,pdf,html,csv}
@@ -38,6 +40,7 @@ OUTPUT_STEM = "calibrationDataBands"
 FIRST_YEAR, LAST_YEAR = 2000, 2023
 REF_YEAR = 2023
 MIN_PEERS = 10
+MIN_AGGREGATE_IFSCODE = 1000
 
 GROUPS = [
     ("Advanced Economies", "AE", "#1E88E5"),
@@ -53,7 +56,7 @@ PANELS = [
     ("Real GDP growth", "g_real", "Percent"),
     ("Government consumption", "ncg_gdp", "Percent of GDP"),
     ("Government investment", "nfig_gdp", "Percent of GDP"),
-    ("Consumption tax", None, None),
+    ("Consumption tax", "tau_c", "Percent"),
     ("Labor income tax", None, None),
     ("Public debt", "ggxwdg_gdp", "Percent of GDP"),
 ]
@@ -62,6 +65,7 @@ TARGETS = {
     "ncg_gdp": {"AE": 18.0, "EMDE": 14.0},
     # Infrastructure plus human-capital investment; public R&D is not fixed investment.
     "nfig_gdp": {"AE": 3.0 + 1.45, "EMDE": 5.0 + 2.0},
+    "tau_c": {"AE": 18.0, "EMDE": 15.0},
     "ggxwdg_gdp": {"AE": 100.0, "EMDE": 60.0},
 }
 
@@ -88,22 +92,42 @@ def rgba(hex_color, alpha):
 
 def load_data(path):
     columns = [
-        "year", "devClass", "g_real", "ncg_gdp", "nfig_gdp", "ggxwdg_gdp",
+        "ifscode", "year", "devClass", "ngdpd", "g_real", "ncg_gdp",
+        "nfig_gdp", "tau_c_tax", "tau_c_base", "tau_c", "ggxwdg_gdp",
     ]
     data = pd.read_stata(path, columns=columns, convert_categoricals=False)
+    data = data.loc[data["ifscode"].lt(MIN_AGGREGATE_IFSCODE)].copy()
     data["group"] = data["devClass"].map(GROUP_MAP)
     data = data.dropna(subset=["group"])
     return data[data["year"].between(FIRST_YEAR, LAST_YEAR)].copy()
 
 
 def group_band(data, variable, group):
-    grouped = data.loc[data["group"].eq(group)].groupby("year")[variable]
+    subset = data.loc[data["group"].eq(group)]
+    grouped = subset.groupby("year")[variable]
     band = pd.DataFrame({
         "p25": grouped.quantile(0.25),
         "p50": grouped.quantile(0.50),
         "p75": grouped.quantile(0.75),
         "n": grouped.count(),
     })
+
+    if variable == "tau_c":
+        paired = subset.dropna(
+            subset=["ngdpd", "tau_c_tax", "tau_c_base", "tau_c"]
+        ).copy()
+        paired = paired.loc[paired["ngdpd"].gt(0)]
+        paired["tax_amount"] = paired["ngdpd"] * paired["tau_c_tax"]
+        paired["pretax_base"] = paired["ngdpd"] * (
+            paired["tau_c_base"] - paired["tau_c_tax"]
+        )
+        sums = paired.groupby("year")[["tax_amount", "pretax_base"]].sum()
+        band["group_value"] = sums["tax_amount"] / sums["pretax_base"] * 100
+        band["central_statistic"] = "ratio_of_sums"
+    else:
+        band["group_value"] = band["p50"]
+        band["central_statistic"] = "country_median"
+
     return band.loc[band["n"].ge(MIN_PEERS)].reset_index()
 
 
@@ -130,7 +154,7 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
 
         fig.add_trace(go.Scatter(
             x=band["year"],
-            y=band["p50"],
+            y=band["group_value"],
             mode="lines",
             line=dict(color=color, width=LINE_WIDTH),
             name=name,
@@ -138,7 +162,9 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
             showlegend=show_group_legend,
         ), row=row, col=col)
 
-        reference = float(band.loc[band["year"].eq(REF_YEAR), "p50"].iloc[0])
+        reference = float(
+            band.loc[band["year"].eq(REF_YEAR), "group_value"].iloc[0]
+        )
         fig.add_trace(go.Scatter(
             x=[REF_YEAR],
             y=[reference],
@@ -168,6 +194,8 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
                 "p25": round(float(obs["p25"]), 4),
                 "p50": round(float(obs["p50"]), 4),
                 "p75": round(float(obs["p75"]), 4),
+                "group_value": round(float(obs["group_value"]), 4),
+                "central_statistic": obs["central_statistic"],
                 "economies": int(obs["n"]),
                 "table2_target": TARGETS[variable][code],
             })

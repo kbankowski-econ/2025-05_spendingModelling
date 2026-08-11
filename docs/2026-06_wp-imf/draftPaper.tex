@@ -122,7 +122,7 @@ Over a 25-year horizon the implied output multipliers on permanent increases in 
 \fcolorbox{linkcol}{white}{\begin{minipage}{0.9\textwidth}
 \small\textbf{TODO (temporary --- remove before circulation)}
 \begin{itemize}\setlength{\itemsep}{0pt}
-  \item Complete the data appendix for the tax-rate targets in Table~\ref{tab:calibrationTargets}; growth, government consumption, investment, and public debt are already documented.
+  \item Complete the data appendix for the labor-income-tax target in Table~\ref{tab:calibrationTargets}; growth, government consumption, investment, the consumption tax, and public debt are already documented.
   \item Assess the model-implied steady-state value $E=0.157$ against the literature, as the current allocation of time to education and health appears high. Revisit the calibration if warranted.
 \end{itemize}
 \end{minipage}}
@@ -1255,24 +1255,26 @@ Data refer to 2023 except where otherwise noted by the OECD.}
 \section{Data Underlying the Country-Group Calibration Targets} \label{app:calibrationData}
 %========================================================================
 
-The country-group targets in Table~\ref{tab:calibrationTargets} draw on cross-country evidence from the IMF's World Economic Outlook database.
-Distributions of real GDP growth, government consumption, fixed investment, and public debt provide direct comparisons with the selected AE and EMDE values (Figure~\ref{fig:calibrationDataBands}).
+Cross-country distributions from the IMF's World Economic Outlook database provide direct comparisons for five targets in Table~\ref{tab:calibrationTargets} (Figure~\ref{fig:calibrationDataBands}).
 Annual growth is an observable but cyclical counterpart to the calibrated trend-growth rate.
 Government consumption maps directly to $G_t^C$; the fixed-investment target sums infrastructure and human-capital investment and excludes public R\&D.
-The remaining two panels reserve space for the evidence on implicit tax rates.
+The implicit consumption tax rate divides taxes on goods and services by private consumption net of those taxes.
+This adjustment is needed because observed consumption is measured at tax-inclusive prices.
+The remaining panel reserves space for the evidence on the labor-income tax rate.
 
 \begin{figure}[H]
     \centering
     \caption{Data Underlying Country-Group Calibration Targets, 2000--23 \label{fig:calibrationDataBands}}
     \includegraphics{figures/calibrationDataBands.pdf}
     \source{IMF, World Economic Outlook database; IMF staff calculations.}
-    \desc{Lines show equal-country group medians, shaded areas show the 25th--75th percentile range, circles mark the 2023 medians, and open diamonds show the calibration targets in Table~\ref{tab:calibrationTargets}.
-The EMDE group combines economies classified in the database as emerging markets or low-income countries.
-Real GDP growth is the annual percentage change in constant-price GDP.
-Government consumption and fixed investment are percentages of GDP from the national-accounts series NCG and NFIG, respectively.
+    \desc{Lines show equal-country group medians except for the consumption tax, which is the ratio of summed tax revenue to summed pre-tax consumption.
+Shaded areas show the 25th--75th percentile range across countries, circles mark the 2023 group values, and open diamonds show the calibration targets in Table~\ref{tab:calibrationTargets}.
+EMDEs combine emerging markets and low-income countries.
+Real GDP growth is the annual percentage change in constant-price GDP; government consumption and fixed investment are the national-accounts series NCG and NFIG as percentages of GDP.
 The model investment target sums infrastructure and human-capital investment and excludes public R\&D.
-Public debt is general-government gross debt as a percentage of GDP.
-Group-year estimates require at least ten economies; the two tax panels are placeholders.}
+The tax numerator is taxes on goods and services (GGRTGS); the denominator is private final consumption (NCP) less GGRTGS.
+Public debt is general-government gross debt relative to GDP.
+Group-year estimates require at least ten economies; the labor-income-tax panel is a placeholder.}
 \end{figure}
 
 %========================================================================
