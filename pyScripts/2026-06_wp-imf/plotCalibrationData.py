@@ -5,10 +5,9 @@ Real GDP growth, government consumption, government investment, the consumption
 tax rate, and public debt are populated from the WEO calibration database; the
 labor-income-tax panel is a placeholder.
 
-For growth, spending, and debt, solid lines are equal-country group medians. The
-consumption-tax lines are ratios of group sums. Shaded areas are cross-country
-25th--75th percentile ranges. Circles mark the 2023 group values, and open
-diamonds show the corresponding model targets.
+Solid lines are equal-country group medians, and shaded areas are cross-country
+25th--75th percentile ranges. Circles mark the 2023 medians, and open diamonds
+show the corresponding model targets.
 
 In:  WEO_calib_enhanced.dta
 Out: docs/2026-06_wp-imf/figures/calibrationDataBands.{png,pdf,html,csv}
@@ -92,11 +91,15 @@ def rgba(hex_color, alpha):
 
 def load_data(path):
     columns = [
-        "ifscode", "year", "devClass", "ngdpd", "g_real", "ncg_gdp",
-        "nfig_gdp", "tau_c_tax", "tau_c_base", "tau_c", "ggxwdg_gdp",
+        "ifscode", "year", "devClass", "g_real", "ncg_gdp", "nfig_gdp",
+        "tau_c_tax", "tau_c_base", "ggxwdg_gdp",
     ]
     data = pd.read_stata(path, columns=columns, convert_categoricals=False)
     data = data.loc[data["ifscode"].lt(MIN_AGGREGATE_IFSCODE)].copy()
+    pretax_consumption = data["tau_c_base"] - data["tau_c_tax"]
+    data["tau_c"] = (
+        data["tau_c_tax"] / pretax_consumption * 100
+    ).where(pretax_consumption.gt(0))
     data["group"] = data["devClass"].map(GROUP_MAP)
     data = data.dropna(subset=["group"])
     return data[data["year"].between(FIRST_YEAR, LAST_YEAR)].copy()
@@ -112,21 +115,8 @@ def group_band(data, variable, group):
         "n": grouped.count(),
     })
 
-    if variable == "tau_c":
-        paired = subset.dropna(
-            subset=["ngdpd", "tau_c_tax", "tau_c_base", "tau_c"]
-        ).copy()
-        paired = paired.loc[paired["ngdpd"].gt(0)]
-        paired["tax_amount"] = paired["ngdpd"] * paired["tau_c_tax"]
-        paired["pretax_base"] = paired["ngdpd"] * (
-            paired["tau_c_base"] - paired["tau_c_tax"]
-        )
-        sums = paired.groupby("year")[["tax_amount", "pretax_base"]].sum()
-        band["group_value"] = sums["tax_amount"] / sums["pretax_base"] * 100
-        band["central_statistic"] = "ratio_of_sums"
-    else:
-        band["group_value"] = band["p50"]
-        band["central_statistic"] = "country_median"
+    band["group_value"] = band["p50"]
+    band["central_statistic"] = "country_median"
 
     return band.loc[band["n"].ge(MIN_PEERS)].reset_index()
 
