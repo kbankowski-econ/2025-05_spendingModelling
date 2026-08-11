@@ -1,8 +1,8 @@
 """Country-group evidence underlying the steady-state calibration targets.
 
 The figure is structured as a 3x2 panel for the six target categories in Table 2.
-Government consumption and government investment are populated from the WEO
-calibration database; the remaining four panels are explicit placeholders.
+Real GDP growth, government consumption, and government investment are populated
+from the WEO calibration database; the remaining three panels are placeholders.
 
 For each populated panel, solid lines are equal-country group medians and shaded
 areas are the 25th--75th percentile range. Circles mark the 2023 medians, and
@@ -50,14 +50,15 @@ GROUP_MAP = {
 }
 
 PANELS = [
-    ("Government consumption", "ncg_gdp"),
-    ("Government investment", "nfig_gdp"),
-    ("Output growth", None),
-    ("Consumption tax", None),
-    ("Labor income tax", None),
-    ("Public debt", None),
+    ("Real GDP growth", "g_real", "Percent"),
+    ("Government consumption", "ncg_gdp", "Percent of GDP"),
+    ("Government investment", "nfig_gdp", "Percent of GDP"),
+    ("Consumption tax", None, None),
+    ("Labor income tax", None, None),
+    ("Public debt", None, None),
 ]
 TARGETS = {
+    "g_real": {"AE": 1.6, "EMDE": 3.0},
     "ncg_gdp": {"AE": 18.0, "EMDE": 14.0},
     # Infrastructure plus human-capital investment; public R&D is not fixed investment.
     "nfig_gdp": {"AE": 3.0 + 1.45, "EMDE": 5.0 + 2.0},
@@ -85,7 +86,7 @@ def rgba(hex_color, alpha):
 
 
 def load_data(path):
-    columns = ["year", "devClass", "ncg_gdp", "nfig_gdp"]
+    columns = ["year", "devClass", "g_real", "ncg_gdp", "nfig_gdp"]
     data = pd.read_stata(path, columns=columns, convert_categoricals=False)
     data["group"] = data["devClass"].map(GROUP_MAP)
     data = data.dropna(subset=["group"])
@@ -178,13 +179,13 @@ def main():
     fig = make_subplots(
         rows=3,
         cols=2,
-        subplot_titles=tuple(title for title, _ in PANELS),
+        subplot_titles=tuple(title for title, _, _ in PANELS),
         horizontal_spacing=0.08,
         vertical_spacing=0.13,
     )
 
     csv_rows = []
-    for index, (_, variable) in enumerate(PANELS):
+    for index, (_, variable, unit) in enumerate(PANELS):
         row, col = index // 2 + 1, index % 2 + 1
         if variable is not None:
             add_populated_panel(
@@ -204,7 +205,7 @@ def main():
                 col=col,
             )
             fig.update_yaxes(
-                title_text="Percent of GDP",
+                title_text=unit,
                 showgrid=True,
                 gridcolor="rgba(0,0,0,0.15)",
                 gridwidth=0.5,
@@ -248,7 +249,7 @@ def main():
         ),
     )
     for annotation in fig.layout.annotations:
-        if annotation.text in {title for title, _ in PANELS}:
+        if annotation.text in {title for title, _, _ in PANELS}:
             annotation.font.size = TITLE_FONT_PX
 
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
