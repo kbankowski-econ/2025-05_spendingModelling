@@ -1,8 +1,8 @@
 """Country-group evidence underlying the steady-state calibration targets.
 
 The figure is structured as a 3x2 panel for the six target categories in Table 2.
-Real GDP growth, government consumption, and government investment are populated
-from the WEO calibration database; the remaining three panels are placeholders.
+Real GDP growth, government consumption, government investment, and public debt
+are populated from the WEO calibration database; the tax panels are placeholders.
 
 For each populated panel, solid lines are equal-country group medians and shaded
 areas are the 25th--75th percentile range. Circles mark the 2023 medians, and
@@ -55,13 +55,14 @@ PANELS = [
     ("Government investment", "nfig_gdp", "Percent of GDP"),
     ("Consumption tax", None, None),
     ("Labor income tax", None, None),
-    ("Public debt", None, None),
+    ("Public debt", "ggxwdg_gdp", "Percent of GDP"),
 ]
 TARGETS = {
     "g_real": {"AE": 1.6, "EMDE": 3.0},
     "ncg_gdp": {"AE": 18.0, "EMDE": 14.0},
     # Infrastructure plus human-capital investment; public R&D is not fixed investment.
     "nfig_gdp": {"AE": 3.0 + 1.45, "EMDE": 5.0 + 2.0},
+    "ggxwdg_gdp": {"AE": 100.0, "EMDE": 60.0},
 }
 
 BAND_OPACITY = 0.15
@@ -86,7 +87,9 @@ def rgba(hex_color, alpha):
 
 
 def load_data(path):
-    columns = ["year", "devClass", "g_real", "ncg_gdp", "nfig_gdp"]
+    columns = [
+        "year", "devClass", "g_real", "ncg_gdp", "nfig_gdp", "ggxwdg_gdp",
+    ]
     data = pd.read_stata(path, columns=columns, convert_categoricals=False)
     data["group"] = data["devClass"].map(GROUP_MAP)
     data = data.dropna(subset=["group"])
