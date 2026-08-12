@@ -2,14 +2,16 @@
 
 The figure is structured as a 3x2 panel for the six target categories in Table 2.
 Real GDP growth, government consumption, government investment, the consumption
-tax rate, and public debt are populated from the WEO calibration database; the
-labor-income-tax panel is a placeholder.
+tax rate, and public debt are populated from the WEO calibration database. The
+labor-income-tax panel uses the effective tax rate on labor from Bachas and
+others' Globalization and Factor Income Taxation database.
 
 Solid lines are equal-country group medians, and shaded areas are cross-country
-25th--75th percentile ranges. Circles mark the 2023 medians, and open diamonds
-show the corresponding model targets.
+25th--75th percentile ranges. Circles mark the 2023 medians except for labor
+taxation, whose source ends in 2018. Open diamonds show the corresponding model
+targets.
 
-In:  WEO_calib_enhanced.dta
+In:  WEO_calib_enhanced.dta, data/globalETR_bfjz.dta
 Out: docs/2026-06_wp-imf/figures/calibrationDataBands.{png,pdf,html,csv}
 """
 from argparse import ArgumentParser
@@ -34,10 +36,12 @@ DEFAULT_WEO = Path(
     "/Users/kk/Developer/2025-09_FM-conjunctural/data/fmData/"
     "WEO_calib_enhanced.dta"
 )
+DEFAULT_LABOR_TAX = PROJECT_ROOT / "data" / "globalETR_bfjz.dta"
 
 OUTPUT_STEM = "calibrationDataBands"
 FIRST_YEAR, LAST_YEAR = 2000, 2023
 REF_YEAR = 2023
+REFERENCE_YEARS = {"tau_l": 2018}
 MIN_PEERS = 10
 MIN_AGGREGATE_IFSCODE = 1000
 
@@ -56,7 +60,7 @@ PANELS = [
     ("Government consumption", "ncg_gdp", "Percent of GDP"),
     ("Government investment", "nfig_gdp", "Percent of GDP"),
     ("Consumption tax", "tau_c", "Percent"),
-    ("Labor income tax", None, None),
+    ("Labor income tax", "tau_l", "Percent"),
     ("Public debt", "ggxwdg_gdp", "Percent of GDP"),
 ]
 TARGETS = {
@@ -65,6 +69,7 @@ TARGETS = {
     # Infrastructure plus human-capital investment; public R&D is not fixed investment.
     "nfig_gdp": {"AE": 3.0 + 1.45, "EMDE": 5.0 + 2.0},
     "tau_c": {"AE": 18.0, "EMDE": 15.0},
+    "tau_l": {"AE": 25.0, "EMDE": 10.0},
     "ggxwdg_gdp": {"AE": 100.0, "EMDE": 60.0},
 }
 
@@ -89,12 +94,12 @@ def rgba(hex_color, alpha):
     )
 
 
-def load_data(path):
+def load_data(weo_path, labor_tax_path):
     columns = [
         "ifscode", "year", "devClass", "g_real", "ncg_gdp", "nfig_gdp",
         "tau_c_tax", "tau_c_base", "ggxwdg_gdp",
     ]
-    data = pd.read_stata(path, columns=columns, convert_categoricals=False)
+    data = pd.read_stata(weo_path, columns=columns, convert_categoricals=False)
     data = data.loc[data["ifscode"].lt(MIN_AGGREGATE_IFSCODE)].copy()
     pretax_consumption = data["tau_c_base"] - data["tau_c_tax"]
     data["tau_c"] = (
@@ -102,7 +107,39 @@ def load_data(path):
     ).where(pretax_consumption.gt(0))
     data["group"] = data["devClass"].map(GROUP_MAP)
     data = data.dropna(subset=["group"])
-    return data[data["year"].between(FIRST_YEAR, LAST_YEAR)].copy()
+    data = data[data["year"].between(FIRST_YEAR, LAST_YEAR)].copy()
+
+    iso_groups = pd.read_stata(
+        weo_path,
+        columns=["ifscode", "isocode", "year", "devClass"],
+        convert_categoricals=False,
+    )
+    iso_groups = iso_groups.loc[
+        iso_groups["ifscode"].lt(MIN_AGGREGATE_IFSCODE)
+    ].copy()
+    iso_groups["group"] = iso_groups["devClass"].map(GROUP_MAP)
+    iso_groups = (
+        iso_groups.dropna(subset=["isocode", "group"])
+        .sort_values("year")
+        .drop_duplicates("isocode", keep="last")
+        .set_index("isocode")["group"]
+    )
+
+    labor = pd.read_stata(
+        labor_tax_path,
+        columns=["country", "year", "ETR_L"],
+        convert_categoricals=False,
+    )
+    labor["year"] = pd.to_datetime(labor["year"]).dt.year
+    labor["group"] = labor["country"].map(iso_groups)
+    labor["tau_l"] = pd.to_numeric(labor["ETR_L"], errors="coerce") * 100
+    labor = labor.loc[
+        labor["group"].notna()
+        & labor["year"].between(FIRST_YEAR, LAST_YEAR),
+        ["year", "group", "tau_l"],
+    ]
+
+    return pd.concat([data, labor], ignore_index=True, sort=False)
 
 
 def group_band(data, variable, group):
@@ -139,8 +176,11 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
 
     for name, code, color in GROUPS:
         band = bands[code]
-        if band.empty or not band["year"].eq(REF_YEAR).any():
-            raise ValueError(f"Missing {REF_YEAR} {code} observations for {variable}")
+        reference_year = REFERENCE_YEARS.get(variable, REF_YEAR)
+        if band.empty or not band["year"].eq(reference_year).any():
+            raise ValueError(
+                f"Missing {reference_year} {code} observations for {variable}"
+            )
 
         fig.add_trace(go.Scatter(
             x=band["year"],
@@ -153,10 +193,10 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
         ), row=row, col=col)
 
         reference = float(
-            band.loc[band["year"].eq(REF_YEAR), "group_value"].iloc[0]
+            band.loc[band["year"].eq(reference_year), "group_value"].iloc[0]
         )
         fig.add_trace(go.Scatter(
-            x=[REF_YEAR],
+            x=[reference_year],
             y=[reference],
             mode="markers",
             marker=dict(color=color, size=8, symbol="circle"),
@@ -194,8 +234,9 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
 def main():
     parser = ArgumentParser()
     parser.add_argument("--weo", type=Path, default=DEFAULT_WEO)
+    parser.add_argument("--labor-tax", type=Path, default=DEFAULT_LABOR_TAX)
     args = parser.parse_args()
-    data = load_data(args.weo)
+    data = load_data(args.weo, args.labor_tax)
 
     fig = make_subplots(
         rows=3,
@@ -239,18 +280,6 @@ def main():
                 row=row,
                 col=col,
             )
-        else:
-            fig.add_trace(go.Scatter(
-                x=[0.5],
-                y=[0.5],
-                mode="text",
-                text=["To be added"],
-                textfont=dict(size=FONT_PX, color="#7A7A7A"),
-                hoverinfo="skip",
-                showlegend=False,
-            ), row=row, col=col)
-            fig.update_xaxes(visible=False, range=[0, 1], row=row, col=col)
-            fig.update_yaxes(visible=False, range=[0, 1], row=row, col=col)
 
     fig.update_xaxes(tickfont=dict(size=FONT_PX))
     fig.update_yaxes(tickfont=dict(size=FONT_PX), title_font=dict(size=FONT_PX))
