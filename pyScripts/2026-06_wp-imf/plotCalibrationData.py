@@ -3,15 +3,16 @@
 The figure is structured as a 3x2 panel for the six target categories in Table 2.
 Real GDP growth, government consumption, government investment, the consumption
 tax rate, and public debt are populated from the WEO calibration database. The
-labor-income-tax panel uses the effective tax rate on labor from Bachas and
-others' Globalization and Factor Income Taxation database.
+labor-income-tax panel divides individual income taxes and social contributions
+from the IMF's WoRLD database by labor income from ILOSTAT.
 
 Solid lines are equal-country group medians, dotted lines are calendar-GDP-
 weighted group averages, and shaded areas are cross-country 25th--75th
-percentile ranges. Circles mark the 2023 medians except for labor taxation,
-whose source ends in 2018. Open diamonds show the corresponding model targets.
+percentile ranges. Circles mark the 2023 medians, and open diamonds show the
+corresponding model targets.
 
-In:  WEO_calib_enhanced.dta, data/globalETR_bfjz.dta
+In:  WEO_calib_enhanced.dta, data/world_imf2026.dta,
+     data/SDG_1041_NOC_RT_A.csv
 Out: docs/2026-06_wp-imf/figures/calibrationDataBands.{png,pdf,html,csv}
 """
 from argparse import ArgumentParser
@@ -36,12 +37,12 @@ DEFAULT_WEO = Path(
     "/Users/kk/Developer/2025-09_FM-conjunctural/data/fmData/"
     "WEO_calib_enhanced.dta"
 )
-DEFAULT_LABOR_TAX = PROJECT_ROOT / "data" / "globalETR_bfjz.dta"
+DEFAULT_WORLD = PROJECT_ROOT / "data" / "world_imf2026.dta"
+DEFAULT_ILO_LABOR = PROJECT_ROOT / "data" / "SDG_1041_NOC_RT_A.csv"
 
 OUTPUT_STEM = "calibrationDataBands"
 FIRST_YEAR, LAST_YEAR = 2000, 2023
 REF_YEAR = 2023
-REFERENCE_YEARS = {"tau_l": 2018}
 MIN_PEERS = 10
 MIN_AGGREGATE_IFSCODE = 1000
 
@@ -95,7 +96,7 @@ def rgba(hex_color, alpha):
     )
 
 
-def load_data(weo_path, labor_tax_path):
+def load_data(weo_path, world_path, ilo_labor_path):
     columns = [
         "ifscode", "isocode", "year", "devClass", "ngdpd", "g_real",
         "ncg_gdp", "nfig_gdp", "tau_c_tax", "tau_c_base", "ggxwdg_gdp",
@@ -114,20 +115,40 @@ def load_data(weo_path, labor_tax_path):
         subset=["isocode", "group"]
     )
 
-    labor = pd.read_stata(
-        labor_tax_path,
-        columns=["country", "year", "ETR_L"],
+    world = pd.read_stata(
+        world_path,
+        columns=["ISO3", "year", "TaxIncI", "SocialCon"],
         convert_categoricals=False,
     )
-    labor["year"] = pd.to_datetime(labor["year"]).dt.year
-    labor["tau_l"] = pd.to_numeric(labor["ETR_L"], errors="coerce") * 100
+    world["labor_tax_gdp"] = world["TaxIncI"] + world["SocialCon"]
+
+    ilo = pd.read_csv(
+        ilo_labor_path,
+        usecols=["ref_area", "time", "obs_value"],
+    ).rename(columns={"obs_value": "labor_income_gdp"})
+
+    labor = world.merge(
+        ilo,
+        left_on=["ISO3", "year"],
+        right_on=["ref_area", "time"],
+        how="inner",
+        validate="one_to_one",
+    )
+    labor["tau_l"] = (
+        labor["labor_tax_gdp"] / labor["labor_income_gdp"] * 100
+    ).where(labor["labor_income_gdp"].gt(0))
     labor = labor.loc[labor["year"].between(FIRST_YEAR, LAST_YEAR)].merge(
         country_year,
-        left_on=["country", "year"],
+        left_on=["ISO3", "year"],
         right_on=["isocode", "year"],
         how="inner",
         validate="one_to_one",
-    )[["year", "group", "ngdpd", "tau_l"]]
+    )[
+        [
+            "year", "group", "ngdpd", "tau_l", "labor_tax_gdp",
+            "labor_income_gdp",
+        ]
+    ]
 
     return pd.concat([data, labor], ignore_index=True, sort=False)
 
@@ -145,25 +166,35 @@ def group_band(data, variable, group):
     band["group_value"] = band["p50"]
     band["central_statistic"] = "country_median"
 
-    if variable == "tau_c":
-        pretax_consumption = subset["tau_c_base"] - subset["tau_c_tax"]
+    if variable in {"tau_c", "tau_l"}:
+        if variable == "tau_c":
+            tax_column = "tau_c_tax"
+            base_column = "tau_c_base"
+            base = subset[base_column] - subset[tax_column]
+        else:
+            tax_column = "labor_tax_gdp"
+            base_column = "labor_income_gdp"
+            base = subset[base_column]
+
         weighted = subset.loc[
-            subset[["tau_c_tax", "tau_c_base"]].notna().all(axis=1)
-            & pretax_consumption.gt(0)
+            subset[[tax_column, base_column]].notna().all(axis=1)
+            & base.gt(0)
             & subset["ngdpd"].gt(0),
-            ["year", "tau_c_tax", "tau_c_base", "ngdpd"],
+            ["year", tax_column, base_column, "ngdpd"],
         ].copy()
-        weighted["weighted_tax"] = weighted["tau_c_tax"] * weighted["ngdpd"]
-        weighted["weighted_base"] = weighted["tau_c_base"] * weighted["ngdpd"]
+        weighted["weighted_tax"] = weighted[tax_column] * weighted["ngdpd"]
+        weighted["weighted_base"] = weighted[base_column] * weighted["ngdpd"]
         weighted = weighted.groupby("year").agg(
             weighted_tax=("weighted_tax", "sum"),
             weighted_base=("weighted_base", "sum"),
-            weighted_n=("tau_c_tax", "count"),
+            weighted_n=(tax_column, "count"),
         )
+        if variable == "tau_c":
+            denominator = weighted["weighted_base"] - weighted["weighted_tax"]
+        else:
+            denominator = weighted["weighted_base"]
         weighted["gdp_weighted_average"] = (
-            weighted["weighted_tax"]
-            / (weighted["weighted_base"] - weighted["weighted_tax"])
-            * 100
+            weighted["weighted_tax"] / denominator * 100
         )
     else:
         weighted = subset.loc[
@@ -202,7 +233,7 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
 
     for _, code, color in GROUPS:
         band = bands[code]
-        reference_year = REFERENCE_YEARS.get(variable, REF_YEAR)
+        reference_year = REF_YEAR
         if band.empty or not band["year"].eq(reference_year).any():
             raise ValueError(
                 f"Missing {reference_year} {code} observations for {variable}"
@@ -276,9 +307,10 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
 def main():
     parser = ArgumentParser()
     parser.add_argument("--weo", type=Path, default=DEFAULT_WEO)
-    parser.add_argument("--labor-tax", type=Path, default=DEFAULT_LABOR_TAX)
+    parser.add_argument("--world", type=Path, default=DEFAULT_WORLD)
+    parser.add_argument("--ilo-labor", type=Path, default=DEFAULT_ILO_LABOR)
     args = parser.parse_args()
-    data = load_data(args.weo, args.labor_tax)
+    data = load_data(args.weo, args.world, args.ilo_labor)
 
     fig = make_subplots(
         rows=3,

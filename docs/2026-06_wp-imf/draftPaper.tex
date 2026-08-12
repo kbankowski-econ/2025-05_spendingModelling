@@ -1259,21 +1259,23 @@ Annual growth is an observable but cyclical counterpart to the calibrated trend-
 Government consumption maps directly to $G_t^C$; the fixed-investment target sums infrastructure and human-capital investment and excludes public R\&D.
 The implicit consumption tax rate divides taxes on goods and services by private consumption net of those taxes.
 This adjustment is needed because observed consumption is measured at tax-inclusive prices.
-The labor-income tax rate draws on the global effective-tax-rate database of \citet{Bachasetal2024}.
+The labor-income tax rate combines personal income taxes and social contributions from the IMF's World Revenue Longitudinal Database.
+Labor income as a share of GDP comes from ILOSTAT.
 
 \begin{figure}[H]
     \centering
     \caption{Data Underlying Country-Group Calibration Targets, 2000--23 \label{fig:calibrationDataBands}}
     \includegraphics{figures/calibrationDataBands.pdf}
-    \source{IMF, World Economic Outlook database; \citet{Bachasetal2024}; IMF staff calculations.}
+    \source{IMF, World Economic Outlook database and World Revenue Longitudinal Database; ILOSTAT; IMF staff calculations.}
     \desc{Solid lines show equal-country group medians, dotted lines show calendar-GDP-weighted group averages, shaded areas show the 25th--75th percentile range, and open diamonds show the calibration targets in Table~\ref{tab:calibrationTargets}.
-Circles mark the 2023 medians except for the labor-income tax, whose latest observation is 2018.
+Circles mark the 2023 medians.
 EMDEs combine emerging markets and low-income countries.
-For the consumption-tax panel, the weighted line aggregates the tax and consumption-base components before calculating the implicit rate.
+For both tax panels, the weighted lines aggregate the tax and base components before calculating the implicit rates.
 Real GDP growth is the annual percentage change in constant-price GDP; government consumption and fixed investment are the national-accounts series NCG and NFIG as percentages of GDP.
 The model investment target sums infrastructure and human-capital investment and excludes public R\&D.
-The tax numerator is taxes on goods and services (GGRTGS); the denominator is private final consumption (NCP) less GGRTGS.
-The labor-income tax is the effective tax rate on labor income from \citet{Bachasetal2024}, excluding indirect taxes.
+The consumption-tax numerator is taxes on goods and services (GGRTGS); the denominator is private final consumption (NCP) less GGRTGS.
+The labor-income tax divides personal income taxes and social contributions from WoRLD by labor income from ILOSTAT.
+The latter includes employee compensation and the labor income of the self-employed; corporate income taxes are excluded.
 Public debt is general-government gross debt relative to GDP.
 Group-year estimates require at least ten economies.}
 \end{figure}

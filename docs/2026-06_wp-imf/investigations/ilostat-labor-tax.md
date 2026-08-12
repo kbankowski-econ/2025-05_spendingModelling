@@ -1,32 +1,32 @@
 # ILOSTAT labor-income denominator
 
-## Candidate construction
+## Selected construction
 
 ILOSTAT's annual SDG indicator 10.4.1 provides labor income as a percentage of
 GDP. It covers 2004--2026 in the vintage retrieved on August 12, 2026. Matching
 ISO codes and calendar years to the WEO calibration database gives denominator
 coverage for 40 AEs and 136 EMDEs in 2023.
 
-The WEO labor-tax numerator can be constructed without its poorly covered wage-
-bill series. Individual income tax is `GGRTII` when available and otherwise
-`GGRTI - GGRTIC`; social contributions are `GGRS`. The candidate rate is
+The labor-tax numerator comes from the IMF's World Revenue Longitudinal
+Database (WoRLD). Individual income taxes are `TaxIncI`, and social
+contributions are `SocialCon`. The rate is
 
 `tau_l = (individual income tax + social contributions) / ILO labor income`.
 
 Because both inputs are expressed as percentages of GDP, GDP cancels from this
-calculation. The WEO numerator limits the usable 2023 sample to 23 AEs and 59
-EMDEs. The resulting equal-country medians are 35.6 percent for AEs and 8.6
-percent for EMDEs. The calendar-GDP-weighted averages are 35.0 and 17.2 percent,
-respectively.
+calculation. The WoRLD numerator limits the usable 2023 sample to 37 AEs and 62
+EMDEs. The resulting equal-country medians are 34.1 percent for AEs and 11.1
+percent for EMDEs. Aggregating the GDP-weighted tax and labor-income components
+before calculating the rates gives 32.4 and 16.5 percent, respectively.
 
 ## Validation against Bachas and others
 
-The 2018 overlap provides a useful check against the current source. For 25 AEs,
-the country-level correlation is 0.84 and the median absolute difference is 3.2
-percentage points. The candidate and Bachas medians on this common sample are
-35.9 and 37.1 percent. For 49 EMDEs, the correlation is 0.94 and the median
-absolute difference is 1.6 percentage points; the corresponding medians are
-10.5 and 10.7 percent.
+The 2018 overlap provides a useful check against the previous source. For 35
+AEs, the country-level correlation is 0.78 and the median absolute difference is
+2.6 percentage points. The WoRLD--ILOSTAT and Bachas medians on this common
+sample are 33.7 and 33.9 percent. For 56 EMDEs, the correlation is 0.91 and the
+median absolute difference is 1.9 percentage points; the corresponding medians
+are 11.5 and 12.2 percent.
 
 ## Qualifications
 
@@ -37,7 +37,7 @@ stated explicitly because the tax numerator is not measured on precisely the
 same conceptual boundary in every country.
 
 The current series combines reported information with ILO estimates. Within the
-usable 2023 tax-rate sample, 18 AE observations are unflagged and 5 are imputed.
-For EMDEs, 19 are unflagged, 29 are imputed, and 11 are model-based
+usable 2023 tax-rate sample, 27 AE observations are unflagged and 10 are
+imputed. For EMDEs, 26 are unflagged, 24 are imputed, and 12 are model-based
 extrapolations. All observations for 2025 and 2026 are imputed or extrapolated,
 so 2023 is the preferable reference year for the paper.

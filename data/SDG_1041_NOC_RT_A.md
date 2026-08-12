@@ -11,8 +11,8 @@ frequency. It covers 2004--2026 in the retrieved vintage. The value-status code
 `I` denotes an imputation, `M` denotes a model-based extrapolation, and an empty
 status is unflagged in the source.
 
-The candidate implicit labor-income tax rate combines this denominator with the
-WEO tax numerator:
+The implicit labor-income tax rate in the paper combines this denominator with
+the IMF WoRLD tax numerator:
 
 `tau_l = (personal income tax + social contributions) / labor income`.
 

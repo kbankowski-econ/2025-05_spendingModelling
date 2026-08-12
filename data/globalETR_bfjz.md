@@ -6,11 +6,9 @@ Factor Income Taxation*:
 
 https://github.com/pierrebachas/Globalization_Factor_Taxation/blob/main/globalETR_bfjz.dta
 
-The paper's calibration-data figure uses `ETR_L`, the effective tax rate on
-labor income excluding indirect taxes. The source stores the rate as a fraction;
-the plotting script multiplies it by 100 and reports the equal-country median,
-interquartile range, and calendar-GDP-weighted average for the paper's WEO-based
-AE and EMDE groups. The source ends in 2018.
+The source stores `ETR_L`, the effective tax rate on labor income excluding
+indirect taxes, as a fraction. It was used to validate the paper's WoRLD--
+ILOSTAT construction over their common sample. The source ends in 2018.
 
 SHA-256:
 `854b041d995384d75365ed5d79f5e26497dfa5ba8a9e0e3163a7abfa4105a2c0`
