@@ -60,12 +60,12 @@ GROUP_MAP = {
 }
 
 PANELS = [
-    ("Real GDP growth", "g_real", "Percent"),
-    ("Government consumption", "ncg_gdp", "Percent of GDP"),
-    ("Government investment", "nfig_gdp", "Percent of GDP"),
-    ("Consumption tax", "tau_c", "Percent"),
-    ("Labor income tax", "tau_l", "Percent"),
-    ("Public debt", "ggxwdg_gdp", "Percent of GDP"),
+    ("Real GDP growth", "g_real"),
+    ("Government consumption", "ncg_gdp"),
+    ("Government investment", "nfig_gdp"),
+    ("Consumption tax", "tau_c"),
+    ("Labor income tax", "tau_l"),
+    ("Public debt", "ggxwdg_gdp"),
 ]
 TARGETS = {
     "g_real": {"AE": 1.6, "EMDE": 3.0},
@@ -339,13 +339,13 @@ def main():
     fig = make_subplots(
         rows=3,
         cols=2,
-        subplot_titles=tuple(title for title, _, _ in PANELS),
+        subplot_titles=tuple(title for title, _ in PANELS),
         horizontal_spacing=0.08,
         vertical_spacing=0.13,
     )
 
     csv_rows = []
-    for index, (_, variable, unit) in enumerate(PANELS):
+    for index, (_, variable) in enumerate(PANELS):
         row, col = index // 2 + 1, index % 2 + 1
         if variable is not None:
             add_populated_panel(
@@ -365,7 +365,6 @@ def main():
                 col=col,
             )
             fig.update_yaxes(
-                title_text=unit,
                 showgrid=True,
                 gridcolor="rgba(0,0,0,0.15)",
                 gridwidth=0.5,
@@ -380,12 +379,12 @@ def main():
             )
 
     fig.update_xaxes(tickfont=dict(size=FONT_PX))
-    fig.update_yaxes(tickfont=dict(size=FONT_PX), title_font=dict(size=FONT_PX))
+    fig.update_yaxes(tickfont=dict(size=FONT_PX))
     fig.update_layout(
         template="simple_white",
         width=WIDTH_PX,
         height=HEIGHT_PX,
-        margin=dict(l=42, r=14, t=70, b=24),
+        margin=dict(l=30, r=14, t=70, b=24),
         font=dict(family=FONT_FAMILY, size=FONT_PX),
         legend=dict(
             orientation="h",
@@ -397,7 +396,7 @@ def main():
         ),
     )
     for annotation in fig.layout.annotations:
-        if annotation.text in {title for title, _, _ in PANELS}:
+        if annotation.text in {title for title, _ in PANELS}:
             annotation.font.size = TITLE_FONT_PX
 
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
