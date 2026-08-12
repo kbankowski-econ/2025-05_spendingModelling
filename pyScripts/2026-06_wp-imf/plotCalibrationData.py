@@ -7,6 +7,8 @@ divides taxes on sales and production from the IMF's WoRLD database by private
 consumption net of those taxes. The labor-income-tax panel divides individual
 income taxes and social contributions from WoRLD by labor income from ILOSTAT.
 For 2000--03, each economy's labor-income share is held at its 2004 value.
+China is excluded only from the government-investment aggregates because its
+WEO series covers the broader public sector.
 
 Solid lines are equal-country group medians, dotted lines are calendar-GDP-
 weighted group averages, and shaded areas are cross-country 25th--75th
@@ -179,6 +181,8 @@ def load_data(weo_path, world_path, ilo_labor_path):
 
 def group_band(data, variable, group):
     subset = data.loc[data["group"].eq(group)]
+    if variable == "nfig_gdp":
+        subset = subset.loc[subset["isocode"].ne("CHN")]
     grouped = subset.groupby("year")[variable]
     band = pd.DataFrame({
         "p25": grouped.quantile(0.25),
