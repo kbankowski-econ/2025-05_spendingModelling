@@ -5,11 +5,13 @@ Database (WoRLD), downloaded on 2026-08-12. The database is available from:
 
 https://data.imf.org/Datasets/WORLD
 
-The paper's calibration-data figure uses `TaxIncI`, taxes on the income and
-profits of individuals, and `SocialCon`, social contributions. Both are reported
-as percentages of GDP. Corporate income taxes (`TaxIncC`) are excluded. Missing
-social contributions remain missing; only explicitly reported zeros are treated
-as zero.
+The paper's calibration-data figure uses `TaxSal`, taxes on sales and
+production, as the numerator of the implicit consumption-tax rate. It uses
+`TaxIncI`, taxes on the income and profits of individuals, and `SocialCon`,
+social contributions, as the numerator of the labor-income tax rate. All three
+series are reported as percentages of GDP. Corporate income taxes (`TaxIncC`)
+are excluded. Missing social contributions remain missing; only explicitly
+reported zeros are treated as zero.
 
 SHA-256:
 `359487f34b057839c5d2ebea2416e09b6d33725bcc57b7b8f8bac3108f49677a`
