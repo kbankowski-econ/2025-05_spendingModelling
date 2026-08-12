@@ -8,9 +8,9 @@ https://github.com/pierrebachas/Globalization_Factor_Taxation/blob/main/globalET
 
 The paper's calibration-data figure uses `ETR_L`, the effective tax rate on
 labor income excluding indirect taxes. The source stores the rate as a fraction;
-the plotting script multiplies it by 100 and reports the equal-country median
-and interquartile range for the paper's WEO-based AE and EMDE groups. The source
-ends in 2018.
+the plotting script multiplies it by 100 and reports the equal-country median,
+interquartile range, and calendar-GDP-weighted average for the paper's WEO-based
+AE and EMDE groups. The source ends in 2018.
 
 SHA-256:
 `854b041d995384d75365ed5d79f5e26497dfa5ba8a9e0e3163a7abfa4105a2c0`

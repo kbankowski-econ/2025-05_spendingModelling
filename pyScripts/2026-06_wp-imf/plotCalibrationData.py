@@ -6,10 +6,10 @@ tax rate, and public debt are populated from the WEO calibration database. The
 labor-income-tax panel uses the effective tax rate on labor from Bachas and
 others' Globalization and Factor Income Taxation database.
 
-Solid lines are equal-country group medians, and shaded areas are cross-country
-25th--75th percentile ranges. Circles mark the 2023 medians except for labor
-taxation, whose source ends in 2018. Open diamonds show the corresponding model
-targets.
+Solid lines are equal-country group medians, dotted lines are calendar-GDP-
+weighted group averages, and shaded areas are cross-country 25th--75th
+percentile ranges. Circles mark the 2023 medians except for labor taxation,
+whose source ends in 2018. Open diamonds show the corresponding model targets.
 
 In:  WEO_calib_enhanced.dta, data/globalETR_bfjz.dta
 Out: docs/2026-06_wp-imf/figures/calibrationDataBands.{png,pdf,html,csv}
@@ -75,6 +75,7 @@ TARGETS = {
 
 BAND_OPACITY = 0.15
 LINE_WIDTH = 2.5
+WEIGHTED_LINE_WIDTH = 2.0
 TICK_YEARS = [2000, 2005, 2010, 2015, 2020, 2023]
 TICK_LABELS = ["2000", "05", "10", "15", "20", "23"]
 
@@ -96,8 +97,8 @@ def rgba(hex_color, alpha):
 
 def load_data(weo_path, labor_tax_path):
     columns = [
-        "ifscode", "year", "devClass", "g_real", "ncg_gdp", "nfig_gdp",
-        "tau_c_tax", "tau_c_base", "ggxwdg_gdp",
+        "ifscode", "isocode", "year", "devClass", "ngdpd", "g_real",
+        "ncg_gdp", "nfig_gdp", "tau_c_tax", "tau_c_base", "ggxwdg_gdp",
     ]
     data = pd.read_stata(weo_path, columns=columns, convert_categoricals=False)
     data = data.loc[data["ifscode"].lt(MIN_AGGREGATE_IFSCODE)].copy()
@@ -109,20 +110,8 @@ def load_data(weo_path, labor_tax_path):
     data = data.dropna(subset=["group"])
     data = data[data["year"].between(FIRST_YEAR, LAST_YEAR)].copy()
 
-    iso_groups = pd.read_stata(
-        weo_path,
-        columns=["ifscode", "isocode", "year", "devClass"],
-        convert_categoricals=False,
-    )
-    iso_groups = iso_groups.loc[
-        iso_groups["ifscode"].lt(MIN_AGGREGATE_IFSCODE)
-    ].copy()
-    iso_groups["group"] = iso_groups["devClass"].map(GROUP_MAP)
-    iso_groups = (
-        iso_groups.dropna(subset=["isocode", "group"])
-        .sort_values("year")
-        .drop_duplicates("isocode", keep="last")
-        .set_index("isocode")["group"]
+    country_year = data[["isocode", "year", "group", "ngdpd"]].dropna(
+        subset=["isocode", "group"]
     )
 
     labor = pd.read_stata(
@@ -131,13 +120,14 @@ def load_data(weo_path, labor_tax_path):
         convert_categoricals=False,
     )
     labor["year"] = pd.to_datetime(labor["year"]).dt.year
-    labor["group"] = labor["country"].map(iso_groups)
     labor["tau_l"] = pd.to_numeric(labor["ETR_L"], errors="coerce") * 100
-    labor = labor.loc[
-        labor["group"].notna()
-        & labor["year"].between(FIRST_YEAR, LAST_YEAR),
-        ["year", "group", "tau_l"],
-    ]
+    labor = labor.loc[labor["year"].between(FIRST_YEAR, LAST_YEAR)].merge(
+        country_year,
+        left_on=["country", "year"],
+        right_on=["isocode", "year"],
+        how="inner",
+        validate="one_to_one",
+    )[["year", "group", "ngdpd", "tau_l"]]
 
     return pd.concat([data, labor], ignore_index=True, sort=False)
 
@@ -154,6 +144,42 @@ def group_band(data, variable, group):
 
     band["group_value"] = band["p50"]
     band["central_statistic"] = "country_median"
+
+    if variable == "tau_c":
+        pretax_consumption = subset["tau_c_base"] - subset["tau_c_tax"]
+        weighted = subset.loc[
+            subset[["tau_c_tax", "tau_c_base"]].notna().all(axis=1)
+            & pretax_consumption.gt(0)
+            & subset["ngdpd"].gt(0),
+            ["year", "tau_c_tax", "tau_c_base", "ngdpd"],
+        ].copy()
+        weighted["weighted_tax"] = weighted["tau_c_tax"] * weighted["ngdpd"]
+        weighted["weighted_base"] = weighted["tau_c_base"] * weighted["ngdpd"]
+        weighted = weighted.groupby("year").agg(
+            weighted_tax=("weighted_tax", "sum"),
+            weighted_base=("weighted_base", "sum"),
+            weighted_n=("tau_c_tax", "count"),
+        )
+        weighted["gdp_weighted_average"] = (
+            weighted["weighted_tax"]
+            / (weighted["weighted_base"] - weighted["weighted_tax"])
+            * 100
+        )
+    else:
+        weighted = subset.loc[
+            subset[variable].notna() & subset["ngdpd"].gt(0),
+            ["year", variable, "ngdpd"],
+        ].copy()
+        weighted["weighted_value"] = weighted[variable] * weighted["ngdpd"]
+        weighted = weighted.groupby("year").agg(
+            weighted_value=("weighted_value", "sum"),
+            weight=("ngdpd", "sum"),
+            weighted_n=(variable, "count"),
+        )
+        weighted["gdp_weighted_average"] = (
+            weighted["weighted_value"] / weighted["weight"]
+        )
+    band = band.join(weighted[["gdp_weighted_average", "weighted_n"]])
 
     return band.loc[band["n"].ge(MIN_PEERS)].reset_index()
 
@@ -174,7 +200,7 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
             showlegend=False,
         ), row=row, col=col)
 
-    for name, code, color in GROUPS:
+    for _, code, color in GROUPS:
         band = bands[code]
         reference_year = REFERENCE_YEARS.get(variable, REF_YEAR)
         if band.empty or not band["year"].eq(reference_year).any():
@@ -187,8 +213,19 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
             y=band["group_value"],
             mode="lines",
             line=dict(color=color, width=LINE_WIDTH),
-            name=name,
-            legendgroup=code,
+            name=f"{code}: median",
+            legendgroup=f"{code}_median",
+            legendrank=1 if code == "AE" else 3,
+            showlegend=show_group_legend,
+        ), row=row, col=col)
+        fig.add_trace(go.Scatter(
+            x=band["year"],
+            y=band["gdp_weighted_average"],
+            mode="lines",
+            line=dict(color=color, width=WEIGHTED_LINE_WIDTH, dash="dot"),
+            name=f"{code}: GDP-weighted average",
+            legendgroup=f"{code}_weighted",
+            legendrank=2 if code == "AE" else 4,
             showlegend=show_group_legend,
         ), row=row, col=col)
 
@@ -211,6 +248,7 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
             marker=dict(color=color, size=9, symbol="diamond-open", line=dict(width=2)),
             name="Table 2 target",
             legendgroup="target",
+            legendrank=5,
             showlegend=show_group_legend and code == "AE",
             hoverinfo="skip",
             cliponaxis=False,
@@ -227,6 +265,10 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
                 "group_value": round(float(obs["group_value"]), 4),
                 "central_statistic": obs["central_statistic"],
                 "economies": int(obs["n"]),
+                "gdp_weighted_average": round(
+                    float(obs["gdp_weighted_average"]), 4
+                ),
+                "weighted_economies": int(obs["weighted_n"]),
                 "table2_target": TARGETS[variable][code],
             })
 
