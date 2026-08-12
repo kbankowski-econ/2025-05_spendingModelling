@@ -7,6 +7,11 @@ GDP. It covers 2004--2026 in the vintage retrieved on August 12, 2026. Matching
 ISO codes and calendar years to the WEO calibration database gives denominator
 coverage for 40 AEs and 136 EMDEs in 2023.
 
+The ILOSTAT series begins in 2004. To present the same 2000--23 horizon as the
+other calibration series, each economy's 2004 labor-income share is held
+constant over 2000--03. The WoRLD numerator remains year-specific during the
+backcast period.
+
 The labor-tax numerator comes from the IMF's World Revenue Longitudinal
 Database (WoRLD). Individual income taxes are `TaxIncI`, and social
 contributions are `SocialCon`. The rate is

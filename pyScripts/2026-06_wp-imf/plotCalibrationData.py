@@ -6,6 +6,7 @@ are populated from the WEO calibration database. The consumption-tax panel
 divides taxes on sales and production from the IMF's WoRLD database by private
 consumption net of those taxes. The labor-income-tax panel divides individual
 income taxes and social contributions from WoRLD by labor income from ILOSTAT.
+For 2000--03, each economy's labor-income share is held at its 2004 value.
 
 Solid lines are equal-country group medians, dotted lines are calendar-GDP-
 weighted group averages, and shaded areas are cross-country 25th--75th
@@ -44,6 +45,7 @@ DEFAULT_ILO_LABOR = PROJECT_ROOT / "data" / "SDG_1041_NOC_RT_A.csv"
 OUTPUT_STEM = "calibrationDataBands"
 FIRST_YEAR, LAST_YEAR = 2000, 2023
 REF_YEAR = 2023
+LABOR_SHARE_FIRST_YEAR = 2004
 MIN_PEERS = 10
 MIN_AGGREGATE_IFSCODE = 1000
 
@@ -139,6 +141,15 @@ def load_data(weo_path, world_path, ilo_labor_path):
         ilo_labor_path,
         usecols=["ref_area", "time", "obs_value"],
     ).rename(columns={"obs_value": "labor_income_gdp"})
+    ilo_first = ilo.loc[ilo["time"].eq(LABOR_SHARE_FIRST_YEAR)].copy()
+    ilo_backcast = pd.concat(
+        [
+            ilo_first.assign(time=year)
+            for year in range(FIRST_YEAR, LABOR_SHARE_FIRST_YEAR)
+        ],
+        ignore_index=True,
+    )
+    ilo = pd.concat([ilo_backcast, ilo], ignore_index=True)
 
     labor = world.merge(
         ilo,

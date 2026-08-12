@@ -11,6 +11,10 @@ frequency. It covers 2004--2026 in the retrieved vintage. The value-status code
 `I` denotes an imputation, `M` denotes a model-based extrapolation, and an empty
 status is unflagged in the source.
 
+For the calibration-data figure, each economy's 2004 labor-income share is held
+constant over 2000--03. The backcast is implemented in the plotting script; the
+source files remain unchanged.
+
 The implicit labor-income tax rate in the paper combines this denominator with
 the IMF WoRLD tax numerator:
 
