@@ -15,6 +15,8 @@ Solid lines are equal-country group medians, dotted lines are calendar-GDP-
 weighted group averages, and shaded areas are cross-country 25th--75th
 percentile ranges. Circles mark the 2023 medians, and open diamonds show the
 corresponding model targets.
+The United States is excluded only from the AE consumption-tax weighted average
+because its government employee compensation is unavailable after 2021.
 
 In:  WEO_calib_enhanced.dta, data/world_imf2026.dta,
      data/SDG_1041_NOC_RT_A.csv
@@ -203,20 +205,24 @@ def group_band(data, variable, group):
     band["group_value"] = band["p50"]
     band["central_statistic"] = "country_median"
 
+    weighted_subset = subset
+    if variable == "tau_c" and group == "AE":
+        weighted_subset = subset.loc[subset["isocode"].ne("USA")]
+
     if variable in {"tau_c", "tau_l"}:
         if variable == "tau_c":
             tax_column = "tau_c_tax"
             base_column = "tau_c_base"
-            base = subset[base_column] - subset[tax_column]
+            base = weighted_subset[base_column] - weighted_subset[tax_column]
         else:
             tax_column = "labor_tax_gdp"
             base_column = "labor_income_gdp"
-            base = subset[base_column]
+            base = weighted_subset[base_column]
 
-        weighted = subset.loc[
-            subset[[tax_column, base_column]].notna().all(axis=1)
+        weighted = weighted_subset.loc[
+            weighted_subset[[tax_column, base_column]].notna().all(axis=1)
             & base.gt(0)
-            & subset["ngdpd"].gt(0),
+            & weighted_subset["ngdpd"].gt(0),
             ["year", tax_column, base_column, "ngdpd"],
         ].copy()
         weighted["weighted_tax"] = weighted[tax_column] * weighted["ngdpd"]
@@ -234,8 +240,8 @@ def group_band(data, variable, group):
             weighted["weighted_tax"] / denominator * 100
         )
     else:
-        weighted = subset.loc[
-            subset[variable].notna() & subset["ngdpd"].gt(0),
+        weighted = weighted_subset.loc[
+            weighted_subset[variable].notna() & weighted_subset["ngdpd"].gt(0),
             ["year", variable, "ngdpd"],
         ].copy()
         weighted["weighted_value"] = weighted[variable] * weighted["ngdpd"]
