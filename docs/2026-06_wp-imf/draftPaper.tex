@@ -1267,21 +1267,18 @@ Labor income as a share of GDP comes from ILOSTAT.
     \caption{Data Underlying Country-Group Calibration Targets, 2000--23 \label{fig:calibrationDataBands}}
     \includegraphics{figures/calibrationDataBands.pdf}
     \source{IMF, World Economic Outlook database and World Revenue Longitudinal Database; ILOSTAT; IMF staff calculations.}
-    \desc{Solid lines show equal-country group medians, dotted lines show calendar-GDP-weighted group averages, shaded areas show the 25th--75th percentile range, and open diamonds show the calibration targets in Table~\ref{tab:calibrationTargets}.
-Circles mark the 2023 medians.
+    \desc{In the left-hand panels, solid lines show equal-country group medians, dotted lines show calendar-GDP-weighted group averages, shaded areas show the 25th--75th percentile range, and circles mark the 2023 medians.
+The right-hand boxplots pool all country-year observations over 2000--23; boxes span the interquartile range, center lines mark the median, and whiskers extend to 1.5 times that range, with individual outliers omitted.
+Boxplot circles mark the median of annual group medians, squares the mean annual GDP-weighted aggregate, and open diamonds the calibration targets in Table~\ref{tab:calibrationTargets}.
 EMDEs combine emerging markets and low-income countries.
 For both tax panels, the weighted lines aggregate the tax and base components before calculating the implicit rates.
-The United States is excluded from the AE consumption-tax weighted average because government employee compensation, which is needed to construct the tax base, is unavailable from 2022.
-Applying the exclusion throughout avoids a break in the weighted series when the United States drops out.
+The United States is excluded throughout from the AE consumption-tax weighted average to avoid a break when missing government employee compensation causes it to drop out after 2021.
 Real GDP growth is the annual percentage change in constant-price GDP, and both tax rates are in percent.
 Government consumption, fixed investment, and public debt are in percent of GDP; the first two are the national-accounts series NCG and NFIG.
 China is excluded from the government-investment aggregates because its NFIG series covers the broader public sector, and GFS does not report a corresponding general-government series.
-The model investment target sums infrastructure and human-capital investment and excludes public R\&D.
-The consumption-tax numerator sums general sales taxes (TaxSalG) and excises (TaxSalExc) from WoRLD.
-Its denominator sums private final consumption (NCP) and government final consumption (NCG), subtracts government employee compensation (GGECE), and is expressed net of the two consumption taxes.
-Observations missing any of these components are excluded rather than treating the missing component as zero.
-The labor-income tax divides personal income taxes and social contributions from WoRLD by labor income from ILOSTAT.
-The latter includes employee compensation and the labor income of the self-employed; corporate income taxes are excluded.
+The consumption-tax numerator sums general sales taxes and excises from WoRLD; its base combines private and government consumption, excludes government employee compensation, and is net of those taxes.
+The labor-income tax divides personal income taxes and social contributions from WoRLD by ILOSTAT labor income, including employee compensation and self-employment income; corporate income taxes are excluded.
+Missing tax components are not treated as zero.
 For 2000--03, each economy's labor-income share is held at its 2004 value, the first year available from ILOSTAT.
 Group-year estimates require at least ten economies.}
 \end{figure}

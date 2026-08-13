@@ -1,6 +1,7 @@
 """Country-group evidence underlying the steady-state calibration targets.
 
 The figure is structured as a 3x2 panel for the six target categories in Table 2.
+Each panel pairs a time series with a smaller box-and-whisker summary.
 Real GDP growth, government consumption, government investment, and public debt
 are populated from the WEO calibration database. The consumption-tax panel
 uses general sales taxes and excises from the IMF's WoRLD database. Its base is
@@ -17,6 +18,7 @@ percentile ranges. Circles mark the 2023 medians, and open diamonds show the
 corresponding model targets.
 The United States is excluded only from the AE consumption-tax weighted average
 because its government employee compensation is unavailable after 2021.
+Each boxplot pools the available country-year observations for 2000--23.
 
 In:  WEO_calib_enhanced.dta, data/world_imf2026.dta,
      data/SDG_1041_NOC_RT_A.csv
@@ -94,6 +96,7 @@ FONT_FAMILY = "Palatino, 'Palatino Linotype', 'Book Antiqua', serif"
 FONT_PX = font_px_for_pt(8, WIDTH_PX, DISPLAY_CM[0])
 LEGEND_FONT_PX = font_px_for_pt(7, WIDTH_PX, DISPLAY_CM[0])
 TITLE_FONT_PX = font_px_for_pt(9, WIDTH_PX, DISPLAY_CM[0])
+BOX_TICK_FONT_PX = font_px_for_pt(7, WIDTH_PX, DISPLAY_CM[0])
 
 
 def rgba(hex_color, alpha):
@@ -190,10 +193,15 @@ def load_data(weo_path, world_path, ilo_labor_path):
     return pd.concat([data, labor], ignore_index=True, sort=False)
 
 
-def group_band(data, variable, group):
+def group_sample(data, variable, group):
     subset = data.loc[data["group"].eq(group)]
     if variable == "nfig_gdp":
         subset = subset.loc[subset["isocode"].ne("CHN")]
+    return subset
+
+
+def group_band(data, variable, group):
+    subset = group_sample(data, variable, group)
     grouped = subset.groupby("year")[variable]
     band = pd.DataFrame({
         "p25": grouped.quantile(0.25),
@@ -258,7 +266,9 @@ def group_band(data, variable, group):
     return band.loc[band["n"].ge(MIN_PEERS)].reset_index()
 
 
-def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_rows):
+def add_populated_panel(
+    fig, data, variable, row, time_col, box_col, show_group_legend, csv_rows,
+):
     bands = {code: group_band(data, variable, code) for _, code, _ in GROUPS}
 
     for _, code, color in GROUPS:
@@ -272,7 +282,7 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
             line=dict(color="rgba(0,0,0,0)"),
             hoverinfo="skip",
             showlegend=False,
-        ), row=row, col=col)
+        ), row=row, col=time_col)
 
     for _, code, color in GROUPS:
         band = bands[code]
@@ -291,7 +301,7 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
             legendgroup=f"{code}_median",
             legendrank=1 if code == "AE" else 3,
             showlegend=show_group_legend,
-        ), row=row, col=col)
+        ), row=row, col=time_col)
         fig.add_trace(go.Scatter(
             x=band["year"],
             y=band["gdp_weighted_average"],
@@ -301,7 +311,7 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
             legendgroup=f"{code}_weighted",
             legendrank=2 if code == "AE" else 4,
             showlegend=show_group_legend,
-        ), row=row, col=col)
+        ), row=row, col=time_col)
 
         reference = float(
             band.loc[band["year"].eq(reference_year), "group_value"].iloc[0]
@@ -314,7 +324,7 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
             showlegend=False,
             hoverinfo="skip",
             cliponaxis=False,
-        ), row=row, col=col)
+        ), row=row, col=time_col)
         fig.add_trace(go.Scatter(
             x=[REF_YEAR],
             y=[TARGETS[variable][code]],
@@ -326,7 +336,72 @@ def add_populated_panel(fig, data, variable, row, col, show_group_legend, csv_ro
             showlegend=show_group_legend and code == "AE",
             hoverinfo="skip",
             cliponaxis=False,
-        ), row=row, col=col)
+        ), row=row, col=time_col)
+
+        pooled = group_sample(data, variable, code)[variable].dropna()
+        box_position = 0 if code == "AE" else 1
+        fig.add_trace(go.Box(
+            x=[box_position] * len(pooled),
+            y=pooled,
+            width=0.52,
+            boxpoints=False,
+            whiskerwidth=0.65,
+            fillcolor=rgba(color, BAND_OPACITY),
+            line=dict(color=color, width=1.5),
+            marker=dict(color=color),
+            name=code,
+            showlegend=False,
+            hovertemplate=f"{code}<br>%{{y:.2f}}<extra></extra>",
+        ), row=row, col=box_col)
+
+        period_median = float(band["group_value"].median())
+        period_weighted = float(band["gdp_weighted_average"].mean())
+        summary_markers = [
+            (
+                box_position - 0.16,
+                period_median,
+                "circle",
+                "Period median",
+                "period_median",
+                6,
+            ),
+            (
+                box_position,
+                period_weighted,
+                "square-open",
+                "Period GDP-weighted average",
+                "period_weighted",
+                7,
+            ),
+            (
+                box_position + 0.16,
+                TARGETS[variable][code],
+                "diamond-open",
+                "Table 2 target",
+                "target",
+                8,
+            ),
+        ]
+        for x_value, y_value, symbol, name, legendgroup, rank in summary_markers:
+            fig.add_trace(go.Scatter(
+                x=[x_value],
+                y=[y_value],
+                mode="markers",
+                marker=dict(
+                    color=color,
+                    size=8 if symbol == "circle" else 9,
+                    symbol=symbol,
+                    line=dict(width=2),
+                ),
+                name=name,
+                legendgroup=legendgroup,
+                legendrank=rank,
+                showlegend=(
+                    show_group_legend and code == "AE" and legendgroup != "target"
+                ),
+                hovertemplate=f"{name}: %{{y:.2f}}<extra></extra>",
+                cliponaxis=False,
+            ), row=row, col=box_col)
 
         for _, obs in band.iterrows():
             csv_rows.append({
@@ -357,18 +432,29 @@ def main():
 
     fig = make_subplots(
         rows=3,
-        cols=2,
-        subplot_titles=tuple(title for title, _ in PANELS),
-        horizontal_spacing=0.08,
+        cols=5,
+        specs=[[{}, {}, None, {}, {}] for _ in range(3)],
+        column_widths=[0.36, 0.12, 0.04, 0.36, 0.12],
+        subplot_titles=tuple(
+            item
+            for pair_index in range(3)
+            for item in (
+                PANELS[pair_index * 2][0], "",
+                PANELS[pair_index * 2 + 1][0], "",
+            )
+        ),
+        horizontal_spacing=0.018,
         vertical_spacing=0.13,
     )
 
     csv_rows = []
     for index, (_, variable) in enumerate(PANELS):
-        row, col = index // 2 + 1, index % 2 + 1
+        row = index // 2 + 1
+        time_col = 1 if index % 2 == 0 else 4
+        box_col = 2 if index % 2 == 0 else 5
         if variable is not None:
             add_populated_panel(
-                fig, data, variable, row, col,
+                fig, data, variable, row, time_col, box_col,
                 show_group_legend=(index == 0),
                 csv_rows=csv_rows,
             )
@@ -381,7 +467,7 @@ def main():
                 linewidth=1.5,
                 ticks="inside",
                 row=row,
-                col=col,
+                col=time_col,
             )
             fig.update_yaxes(
                 showgrid=True,
@@ -394,7 +480,36 @@ def main():
                 linewidth=1.5,
                 ticks="inside",
                 row=row,
-                col=col,
+                col=time_col,
+            )
+            fig.update_xaxes(
+                range=[-0.5, 1.5],
+                tickvals=[0, 1],
+                ticktext=["AE", "EMDE"],
+                tickfont=dict(size=BOX_TICK_FONT_PX),
+                showgrid=False,
+                linecolor="black",
+                linewidth=1.5,
+                ticks="",
+                row=row,
+                col=box_col,
+            )
+            fig.update_yaxes(
+                showticklabels=True,
+                tickfont=dict(size=BOX_TICK_FONT_PX),
+                tickformat=".0f",
+                showgrid=True,
+                gridcolor="rgba(0,0,0,0.15)",
+                gridwidth=0.5,
+                zeroline=True,
+                zerolinecolor="black",
+                zerolinewidth=1.2,
+                linecolor="black",
+                linewidth=1.5,
+                ticks="inside",
+                side="right",
+                row=row,
+                col=box_col,
             )
 
     fig.update_xaxes(tickfont=dict(size=FONT_PX))
@@ -403,12 +518,12 @@ def main():
         template="simple_white",
         width=WIDTH_PX,
         height=HEIGHT_PX,
-        margin=dict(l=30, r=14, t=70, b=24),
+        margin=dict(l=30, r=14, t=100, b=24),
         font=dict(family=FONT_FAMILY, size=FONT_PX),
         legend=dict(
             orientation="h",
             yanchor="bottom",
-            y=1.045,
+            y=1.04,
             xanchor="center",
             x=0.5,
             font=dict(size=LEGEND_FONT_PX),
@@ -417,6 +532,15 @@ def main():
     for annotation in fig.layout.annotations:
         if annotation.text in {title for title, _ in PANELS}:
             annotation.font.size = TITLE_FONT_PX
+    left_title_x = (fig.layout.xaxis.domain[0] + fig.layout.xaxis2.domain[1]) / 2
+    right_title_x = (fig.layout.xaxis3.domain[0] + fig.layout.xaxis4.domain[1]) / 2
+    title_annotations = [
+        annotation
+        for annotation in fig.layout.annotations
+        if annotation.text in {title for title, _ in PANELS}
+    ]
+    for index, annotation in enumerate(title_annotations):
+        annotation.x = left_title_x if index % 2 == 0 else right_title_x
 
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
     png_path = FIGURES_DIR / f"{OUTPUT_STEM}.png"
