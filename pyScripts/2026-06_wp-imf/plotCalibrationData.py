@@ -18,6 +18,8 @@ percentile ranges. Open diamonds show the corresponding model targets in the
 distribution panels.
 The United States is excluded only from the AE consumption-tax weighted average
 because its government employee compensation is unavailable after 2021.
+Japan is excluded only from the AE public-debt weighted average because its
+exceptionally high debt ratio has disproportionate influence under GDP weights.
 Each boxplot pools the available country-year observations for 2000--23.
 
 In:  WEO_calib_enhanced.dta, data/world_imf2026.dta,
@@ -216,6 +218,8 @@ def group_band(data, variable, group):
     weighted_subset = subset
     if variable == "tau_c" and group == "AE":
         weighted_subset = subset.loc[subset["isocode"].ne("USA")]
+    if variable == "ggxwdg_gdp" and group == "AE":
+        weighted_subset = subset.loc[subset["isocode"].ne("JPN")]
 
     if variable in {"tau_c", "tau_l"}:
         if variable == "tau_c":
