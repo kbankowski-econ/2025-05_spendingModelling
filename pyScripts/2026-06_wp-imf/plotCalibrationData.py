@@ -340,12 +340,16 @@ def add_populated_panel(
 
         pooled = group_sample(data, variable, code)[variable].dropna()
         box_position = 0 if code == "AE" else 1
+        q1, pooled_median, q3 = pooled.quantile([0.25, 0.50, 0.75])
         fig.add_trace(go.Box(
-            x=[box_position] * len(pooled),
-            y=pooled,
+            x=[box_position],
+            q1=[q1],
+            median=[pooled_median],
+            q3=[q3],
+            lowerfence=[q1],
+            upperfence=[q3],
             width=0.52,
             boxpoints=False,
-            whiskerwidth=0.65,
             fillcolor=rgba(color, BAND_OPACITY),
             line=dict(color=color, width=1.5),
             marker=dict(color=color),
