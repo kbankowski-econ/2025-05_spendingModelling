@@ -14,8 +14,8 @@ series covers the broader public sector.
 
 Solid lines are equal-country group medians, dotted lines are calendar-GDP-
 weighted group averages, and shaded areas are cross-country 25th--75th
-percentile ranges. Circles mark the 2023 medians, and open diamonds show the
-corresponding model targets.
+percentile ranges. Open diamonds show the corresponding model targets in the
+distribution panels.
 The United States is excluded only from the AE consumption-tax weighted average
 because its government employee compensation is unavailable after 2021.
 Each boxplot pools the available country-year observations for 2000--23.
@@ -313,31 +313,6 @@ def add_populated_panel(
             showlegend=show_group_legend,
         ), row=row, col=time_col)
 
-        reference = float(
-            band.loc[band["year"].eq(reference_year), "group_value"].iloc[0]
-        )
-        fig.add_trace(go.Scatter(
-            x=[reference_year],
-            y=[reference],
-            mode="markers",
-            marker=dict(color=color, size=8, symbol="circle"),
-            showlegend=False,
-            hoverinfo="skip",
-            cliponaxis=False,
-        ), row=row, col=time_col)
-        fig.add_trace(go.Scatter(
-            x=[REF_YEAR],
-            y=[TARGETS[variable][code]],
-            mode="markers",
-            marker=dict(color=color, size=9, symbol="diamond-open", line=dict(width=2)),
-            name="Table 2 target",
-            legendgroup="target",
-            legendrank=5,
-            showlegend=show_group_legend and code == "AE",
-            hoverinfo="skip",
-            cliponaxis=False,
-        ), row=row, col=time_col)
-
         pooled = group_sample(data, variable, code)[variable].dropna()
         box_position = 0 if code == "AE" else 1
         q1, pooled_median, q3 = pooled.quantile([0.25, 0.50, 0.75])
@@ -380,20 +355,20 @@ def add_populated_panel(
         ]
         for y_value, dash, width, name, legendgroup, rank in summary_lines:
             fig.add_trace(go.Scatter(
-                x=[box_position - 0.34, box_position + 0.10],
+                x=[box_position - 0.38, box_position + 0.38],
                 y=[y_value, y_value],
                 mode="lines",
                 line=dict(color=color, width=width, dash=dash),
                 name=name,
                 legendgroup=legendgroup,
                 legendrank=rank,
-                showlegend=show_group_legend and code == "AE",
+                showlegend=False,
                 hovertemplate=f"{name}: %{{y:.2f}}<extra></extra>",
                 cliponaxis=False,
             ), row=row, col=box_col)
 
         fig.add_trace(go.Scatter(
-            x=[box_position + 0.20],
+            x=[box_position],
             y=[TARGETS[variable][code]],
             mode="markers",
             marker=dict(
@@ -404,8 +379,8 @@ def add_populated_panel(
             ),
             name="Table 2 target",
             legendgroup="target",
-            legendrank=8,
-            showlegend=False,
+            legendrank=5,
+            showlegend=show_group_legend and code == "AE",
             hovertemplate="Table 2 target: %{y:.2f}<extra></extra>",
             cliponaxis=False,
         ), row=row, col=box_col)
