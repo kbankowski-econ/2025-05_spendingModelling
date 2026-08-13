@@ -360,52 +360,55 @@ def add_populated_panel(
 
         period_median = float(band["group_value"].median())
         period_weighted = float(band["gdp_weighted_average"].mean())
-        summary_markers = [
+        summary_lines = [
             (
-                box_position - 0.16,
                 period_median,
-                "circle",
+                "solid",
+                LINE_WIDTH,
                 "Period median",
                 "period_median",
                 6,
             ),
             (
-                box_position,
                 period_weighted,
-                "square-open",
+                "dot",
+                WEIGHTED_LINE_WIDTH,
                 "Period GDP-weighted average",
                 "period_weighted",
                 7,
             ),
-            (
-                box_position + 0.16,
-                TARGETS[variable][code],
-                "diamond-open",
-                "Table 2 target",
-                "target",
-                8,
-            ),
         ]
-        for x_value, y_value, symbol, name, legendgroup, rank in summary_markers:
+        for y_value, dash, width, name, legendgroup, rank in summary_lines:
             fig.add_trace(go.Scatter(
-                x=[x_value],
-                y=[y_value],
-                mode="markers",
-                marker=dict(
-                    color=color,
-                    size=8 if symbol == "circle" else 9,
-                    symbol=symbol,
-                    line=dict(width=2),
-                ),
+                x=[box_position - 0.34, box_position + 0.10],
+                y=[y_value, y_value],
+                mode="lines",
+                line=dict(color=color, width=width, dash=dash),
                 name=name,
                 legendgroup=legendgroup,
                 legendrank=rank,
-                showlegend=(
-                    show_group_legend and code == "AE" and legendgroup != "target"
-                ),
+                showlegend=show_group_legend and code == "AE",
                 hovertemplate=f"{name}: %{{y:.2f}}<extra></extra>",
                 cliponaxis=False,
             ), row=row, col=box_col)
+
+        fig.add_trace(go.Scatter(
+            x=[box_position + 0.20],
+            y=[TARGETS[variable][code]],
+            mode="markers",
+            marker=dict(
+                color=color,
+                size=9,
+                symbol="diamond-open",
+                line=dict(width=2),
+            ),
+            name="Table 2 target",
+            legendgroup="target",
+            legendrank=8,
+            showlegend=False,
+            hovertemplate="Table 2 target: %{y:.2f}<extra></extra>",
+            cliponaxis=False,
+        ), row=row, col=box_col)
 
         for _, obs in band.iterrows():
             csv_rows.append({
