@@ -456,6 +456,7 @@ def main():
         row = index // 2 + 1
         time_col = 1 if index % 2 == 0 else 4
         box_col = 2 if index % 2 == 0 else 5
+        time_yaxis = "y" if index == 0 else f"y{index * 2 + 1}"
         if variable is not None:
             add_populated_panel(
                 fig, data, variable, row, time_col, box_col,
@@ -499,6 +500,7 @@ def main():
                 col=box_col,
             )
             fig.update_yaxes(
+                matches=time_yaxis,
                 showticklabels=True,
                 tickfont=dict(size=BOX_TICK_FONT_PX),
                 tickformat=".0f",
