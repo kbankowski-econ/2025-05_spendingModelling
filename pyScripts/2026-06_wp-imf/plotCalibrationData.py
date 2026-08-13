@@ -96,7 +96,7 @@ WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (15, 15))
 DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (15, 15))
 FONT_FAMILY = "Palatino, 'Palatino Linotype', 'Book Antiqua', serif"
 FONT_PX = font_px_for_pt(8, WIDTH_PX, DISPLAY_CM[0])
-LEGEND_FONT_PX = font_px_for_pt(7, WIDTH_PX, DISPLAY_CM[0])
+LEGEND_FONT_PX = font_px_for_pt(8, WIDTH_PX, DISPLAY_CM[0])
 TITLE_FONT_PX = font_px_for_pt(9, WIDTH_PX, DISPLAY_CM[0])
 BOX_TICK_FONT_PX = font_px_for_pt(7, WIDTH_PX, DISPLAY_CM[0])
 
@@ -302,7 +302,6 @@ def add_populated_panel(
             mode="lines",
             line=dict(color=color, width=LINE_WIDTH),
             name=f"{code}: median",
-            legend="legend",
             legendgroup=f"{code}_median",
             legendrank=1 if code == "AE" else 3,
             showlegend=show_group_legend,
@@ -313,7 +312,6 @@ def add_populated_panel(
             mode="lines",
             line=dict(color=color, width=WEIGHTED_LINE_WIDTH, dash="dot"),
             name=f"{code}: GDP-weighted average",
-            legend="legend" if code == "AE" else "legend2",
             legendgroup=f"{code}_weighted",
             legendrank=2 if code == "AE" else 4,
             showlegend=show_group_legend,
@@ -384,7 +382,6 @@ def add_populated_panel(
                 line=dict(width=2),
             ),
             name="Table 2 target",
-            legend="legend2",
             legendgroup="target",
             legendrank=5,
             showlegend=show_group_legend and code == "AE",
@@ -513,21 +510,13 @@ def main():
         font=dict(family=FONT_FAMILY, size=FONT_PX),
         legend=dict(
             orientation="h",
-            bgcolor="rgba(0,0,0,0)",
-            yanchor="bottom",
-            y=1.075,
+            yref="container",
+            yanchor="top",
+            y=0.99,
             xanchor="center",
             x=0.5,
             font=dict(size=LEGEND_FONT_PX),
-        ),
-        legend2=dict(
-            orientation="h",
-            bgcolor="rgba(0,0,0,0)",
-            yanchor="bottom",
-            y=1.04,
-            xanchor="center",
-            x=0.5,
-            font=dict(size=LEGEND_FONT_PX),
+            tracegroupgap=2,
         ),
     )
     for annotation in fig.layout.annotations:
