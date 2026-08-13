@@ -20,7 +20,7 @@ The United States is excluded only from the AE consumption-tax weighted average
 because its government employee compensation is unavailable after 2021.
 Japan is excluded only from the AE public-debt weighted average because its
 exceptionally high debt ratio has disproportionate influence under GDP weights.
-Each boxplot pools the available country-year observations for 2000--23.
+Each distribution box pools the available country-year observations for 2000--23.
 
 In:  WEO_calib_enhanced.dta, data/world_imf2026.dta,
      data/SDG_1041_NOC_RT_A.csv
@@ -319,37 +319,41 @@ def add_populated_panel(
 
         pooled = group_sample(data, variable, code)[variable].dropna()
         box_position = 0 if code == "AE" else 1
-        q1, pooled_median, q3 = pooled.quantile([0.25, 0.50, 0.75])
-        fig.add_trace(go.Box(
-            x=[box_position],
-            q1=[q1],
-            median=[pooled_median],
-            q3=[q3],
-            lowerfence=[q1],
-            upperfence=[q3],
-            width=0.52,
-            boxpoints=False,
+        q1, q3 = pooled.quantile([0.25, 0.75])
+        fig.add_trace(go.Scatter(
+            x=[
+                box_position - 0.26,
+                box_position + 0.26,
+                box_position + 0.26,
+                box_position - 0.26,
+                box_position - 0.26,
+            ],
+            y=[q1, q1, q3, q3, q1],
+            mode="lines",
+            fill="toself",
             fillcolor=rgba(color, BAND_OPACITY),
             line=dict(color=color, width=1.5),
-            marker=dict(color=color),
             name=code,
             showlegend=False,
-            hovertemplate=f"{code}<br>%{{y:.2f}}<extra></extra>",
+            hovertemplate=(
+                f"{code}<br>25th percentile: {q1:.2f}"
+                f"<br>75th percentile: {q3:.2f}<extra></extra>"
+            ),
         ), row=row, col=box_col)
 
-        period_median = float(band["group_value"].median())
-        period_weighted = float(band["gdp_weighted_average"].mean())
+        mean_annual_median = float(band["group_value"].mean())
+        mean_annual_weighted = float(band["gdp_weighted_average"].mean())
         summary_lines = [
             (
-                period_median,
+                mean_annual_median,
                 "solid",
                 LINE_WIDTH,
-                "Period median",
+                "Mean annual group median",
                 "period_median",
                 6,
             ),
             (
-                period_weighted,
+                mean_annual_weighted,
                 "dot",
                 WEIGHTED_LINE_WIDTH,
                 "Period GDP-weighted average",
