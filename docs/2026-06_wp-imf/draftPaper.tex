@@ -1257,8 +1257,8 @@ Data refer to 2023 except where otherwise noted by the OECD.}
 Cross-country distributions provide direct comparisons for the six targets in Table~\ref{tab:calibrationTargets} (Figure~\ref{fig:calibrationDataBands}).
 Annual growth is an observable but cyclical counterpart to the calibrated trend-growth rate.
 Government consumption maps directly to $G_t^C$; the fixed-investment target sums infrastructure and human-capital investment and excludes public R\&D.
-The implicit consumption tax rate divides taxes on sales and production from WoRLD by private consumption from the WEO database net of those taxes.
-This adjustment is needed because observed consumption is measured at tax-inclusive prices.
+The implicit consumption tax rate follows the effective-average-tax approach of \citet{MendozaRazinTesar1994}, using general sales taxes and excises from WoRLD as the numerator.
+Its base is private consumption plus government consumption excluding employee compensation, net of those taxes.
 The labor-income tax rate combines personal income taxes and social contributions from the IMF's World Revenue Longitudinal Database.
 Labor income as a share of GDP comes from ILOSTAT.
 
@@ -1275,7 +1275,9 @@ Real GDP growth is the annual percentage change in constant-price GDP, and both 
 Government consumption, fixed investment, and public debt are in percent of GDP; the first two are the national-accounts series NCG and NFIG.
 China is excluded from the government-investment aggregates because its NFIG series covers the broader public sector, and GFS does not report a corresponding general-government series.
 The model investment target sums infrastructure and human-capital investment and excludes public R\&D.
-The consumption-tax numerator is taxes on sales and production (TaxSal) from WoRLD; the denominator is private final consumption (NCP) from the WEO database less TaxSal.
+The consumption-tax numerator sums general sales taxes (TaxSalG) and excises (TaxSalExc) from WoRLD.
+Its denominator sums private final consumption (NCP) and government final consumption (NCG), subtracts government employee compensation (GGECE), and is expressed net of the two consumption taxes.
+Observations missing any of these components are excluded rather than treating the missing component as zero.
 The labor-income tax divides personal income taxes and social contributions from WoRLD by labor income from ILOSTAT.
 The latter includes employee compensation and the labor income of the self-employed; corporate income taxes are excluded.
 For 2000--03, each economy's labor-income share is held at its 2004 value, the first year available from ILOSTAT.

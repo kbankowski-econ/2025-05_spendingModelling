@@ -3,12 +3,13 @@
 The figure is structured as a 3x2 panel for the six target categories in Table 2.
 Real GDP growth, government consumption, government investment, and public debt
 are populated from the WEO calibration database. The consumption-tax panel
-divides taxes on sales and production from the IMF's WoRLD database by private
-consumption net of those taxes. The labor-income-tax panel divides individual
+uses general sales taxes and excises from the IMF's WoRLD database. Its base is
+private consumption plus government consumption excluding government employee
+compensation, net of those taxes. The labor-income-tax panel divides individual
 income taxes and social contributions from WoRLD by labor income from ILOSTAT.
-For 2000--03, each economy's labor-income share is held at its 2004 value.
-China is excluded only from the government-investment aggregates because its
-WEO series covers the broader public sector.
+For 2000--03, each economy's labor-income share is held at its 2004 value. China
+is excluded only from the government-investment aggregates because its WEO
+series covers the broader public sector.
 
 Solid lines are equal-country group medians, dotted lines are calendar-GDP-
 weighted group averages, and shaded areas are cross-country 25th--75th
@@ -104,26 +105,34 @@ def rgba(hex_color, alpha):
 def load_data(weo_path, world_path, ilo_labor_path):
     columns = [
         "ifscode", "isocode", "year", "devClass", "ngdpd", "g_real",
-        "ncg_gdp", "nfig_gdp", "ncp_gdp", "ggxwdg_gdp",
+        "ncg_gdp", "nfig_gdp", "ncp_gdp", "ggece_gdp", "ggxwdg_gdp",
     ]
     data = pd.read_stata(weo_path, columns=columns, convert_categoricals=False)
     data = data.loc[data["ifscode"].lt(MIN_AGGREGATE_IFSCODE)].copy()
 
     world = pd.read_stata(
         world_path,
-        columns=["ISO3", "year", "TaxIncI", "SocialCon", "TaxSal"],
+        columns=[
+            "ISO3", "year", "TaxIncI", "SocialCon", "TaxSalG", "TaxSalExc",
+        ],
         convert_categoricals=False,
     )
     data = data.merge(
-        world[["ISO3", "year", "TaxSal"]],
+        world[["ISO3", "year", "TaxSalG", "TaxSalExc"]],
         left_on=["isocode", "year"],
         right_on=["ISO3", "year"],
         how="left",
         validate="one_to_one",
     )
-    data["tau_c_tax"] = data["TaxSal"]
-    data["tau_c_base"] = data["ncp_gdp"]
-    data = data.drop(columns=["ISO3", "TaxSal"])
+    consumption_tax_components = ["TaxSalG", "TaxSalExc"]
+    complete_tax = data[consumption_tax_components].notna().all(axis=1)
+    data["tau_c_tax"] = data[consumption_tax_components].sum(axis=1).where(
+        complete_tax
+    )
+    data["tau_c_base"] = (
+        data["ncp_gdp"] + data["ncg_gdp"] - data["ggece_gdp"]
+    )
+    data = data.drop(columns=["ISO3", *consumption_tax_components])
 
     pretax_consumption = data["tau_c_base"] - data["tau_c_tax"]
     data["tau_c"] = (
