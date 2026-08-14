@@ -27,7 +27,7 @@ Model_HumanCapital_exp_igi_perm,Igi,baseline,,1,0.227890,0.547207,0.950448,1.566
 Model_HumanCapital_exp_igi_perm,Igi,alphaG,0.02,0,0.253083,0.378391,0.554768,0.828527,0.934931,1.705841
 Model_HumanCapital_exp_igi_perm,Igi,alphaG,0.054,0,0.227890,0.547207,0.950448,1.566470,1.804472,3.507628
 Model_HumanCapital_exp_igi_perm,Igi,alphaG,0.08,0,0.208988,0.676768,1.255145,2.137718,2.478690,4.898991
-Model_HumanCapital_exp_igi_perm,Igi,alphaG,0.12,0,0.180519,0.876840,1.727476,3.028422,3.531829,7.063091
+Model_HumanCapital_exp_igi_perm,Igi,alphaG,0.1,0,0.194661,0.776693,1.490772,2.581264,3.002841,5.977428
 Model_HumanCapital_exp_igi_perm,Igi,alphaG,0.17,0,0.145971,1.128120,2.323921,4.162257,4.875684,9.809646
 Model_HumanCapital_exp_igi_perm,Igi,alphaG,0.2,0,0.125794,1.279476,2.684980,4.853597,5.696829,11.480404
 Model_HumanCapital_exp_igi_perm,Igi,mu,0.05,0,0.227890,0.547207,0.950448,1.566470,1.804472,3.507628

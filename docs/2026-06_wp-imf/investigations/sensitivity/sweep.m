@@ -59,7 +59,7 @@ end
 % the per-dollar multiplier is exactly invariant to them (the (1-e) wedge
 % cancels), so they add nothing to the sweep (see README).
 params = {
-    'alphaG',    [0.02 0.054 0.08 0.12 0.17 0.20]    % infra output elasticity (alpha_G)
+    'alphaG',    [0.02 0.054 0.08 0.10 0.17 0.20]    % infra output elasticity (alpha_G)
     'mu',        [0.05 0.10 0.15 0.20 0.25 0.30]     % HC formation elasticity (mu)
     'alphaRD',   [0.03 0.06 0.09 0.12 0.15]             % long-run R&D elasticity
     'varsigma',  [0.10 0.30 0.50 0.80 0.90 0.95]     % adoption elasticity (varsigma)

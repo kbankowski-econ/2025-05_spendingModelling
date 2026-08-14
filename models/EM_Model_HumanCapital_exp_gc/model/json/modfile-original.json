@@ -75,7 +75,7 @@
 {"statementName": "param_init", "name": "vartheta", "value": "1.35"},
 {"statementName": "param_init", "name": "qss", "value": "0.05"},
 {"statementName": "param_init", "name": "rho_A", "value": "0.79"},
-{"statementName": "param_init", "name": "alphaG", "value": "0.12"},
+{"statementName": "param_init", "name": "alphaG", "value": "0.10"},
 {"statementName": "param_init", "name": "g", "value": "1.0125195680911334"},
 {"statementName": "param_init", "name": "taucss", "value": "0.11583054349525241"},
 {"statementName": "param_init", "name": "tauwss", "value": "0.13957543978997473"},
