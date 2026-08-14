@@ -28,7 +28,7 @@
 {"statementName": "param_init", "name": "gamma_pi", "value": "1.5"},
 {"statementName": "param_init", "name": "gamma_y", "value": "0.125"},
 {"statementName": "param_init", "name": "rho_R", "value": "0.7"},
-{"statementName": "param_init", "name": "Gcy", "value": "0.18"},
+{"statementName": "param_init", "name": "Gcy", "value": "0.1766798699446066"},
 {"statementName": "param_init", "name": "PIss", "value": "1"},
 {"statementName": "param_init", "name": "Rss", "value": "1/betta"},
 {"statementName": "param_init", "name": "ydss", "value": "1"},

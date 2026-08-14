@@ -29,7 +29,7 @@
 , {"temporary_term": "T282", "value": "T277*T281"}
 , {"temporary_term": "T284", "value": "T282^(1-rho_R)"}
 , {"temporary_term": "T400", "value": "thetap*T157^(-epsilon)"}
-],
+], 
 "residuals":[
 {"residual": {"lhs": "1/C", "rhs": "lambda*(1+tauc)"}}
 , {"residual": {"lhs": "lambda", "rhs": "betta*lambda(1)/g*R/PI(1)"}}

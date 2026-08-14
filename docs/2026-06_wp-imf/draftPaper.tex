@@ -106,7 +106,7 @@ It builds on three strands of the literature: public infrastructure investment, 
 The accumulation of public capital is adjusted for efficiency, so that only a fraction of each unit of spending is converted into productive capital.
 The model is parameterized separately for a representative advanced economy and a representative emerging market and developing economy.
 Simulations show that reallocating spending toward human capital and infrastructure investment, and closing efficiency gaps, deliver sizable long-run output gains, with effects materializing over different horizons across spending categories and country groups.
-Over a 25-year horizon the implied output multipliers on permanent increases in public investment are sizable---roughly 1.5 to 1.7 in advanced economies and 2.6 to 2.9 in emerging market and developing economies---and rise further at longer horizons.
+Over a 25-year horizon the implied output multipliers on permanent increases in public investment are sizable---roughly 1.8 to 1.9 in advanced economies and 4.1 to 4.4 in emerging market and developing economies---and rise further at longer horizons.
 
 \bigskip
 
@@ -174,9 +174,9 @@ The main findings are threefold.
 First, reallocating spending toward investment raises output over the long run, with infrastructure paying off sooner and human capital later.
 Second, closing efficiency gaps delivers sizable additional gains, the more so for economies that start further from the efficiency frontier.
 Third, the gains are larger for emerging market and developing economies, reflecting a higher marginal product of public capital.
-Over a 25-year horizon the implied output multipliers on permanent spending increases are about 1.5 for infrastructure and 1.7 for human capital in advanced economies.
-The corresponding multipliers are larger in emerging market and developing economies, at about 2.6 and 2.9, respectively.
-The advanced-economy R\&D multiplier is about 2.4, and all rise further at longer horizons.
+Over a 25-year horizon the implied output multipliers on permanent spending increases are about 1.8 for infrastructure and 1.9 for human capital in advanced economies.
+The corresponding multipliers are larger in emerging market and developing economies, at about 4.4 and 4.1, respectively.
+The advanced-economy R\&D multiplier is about 2.5, and all rise further at longer horizons.
 
 % [5] ROAD MAP --- short, by-section description of the rest of the paper.
 The remainder of the paper is organized as follows.
@@ -520,18 +520,20 @@ The complete calibration, including the internally determined scale parameters, 
 
 The AE and EMDE calibrations differ in their trend growth, spending composition, implicit tax rates, and public debt level.
 Table~\ref{tab:calibrationTargets} collects these steady-state targets in annualized or percentage terms.
-Annual trend output growth is set at 1.6 percent for AEs and 3.0 percent for EMDEs.
+Except for public R\&D, the targets are set to the 2000--23 means of the annual GDP-weighted country-group aggregates documented in Appendix~\ref{app:calibrationData}.
+Annual trend output growth is 1.9 percent for AEs and 5.1 percent for EMDEs.
 
-Government consumption is calibrated at 18 percent of GDP for AEs and 14 percent for EMDEs, based on \citet{IMF2023FM} and the World Bank's World Development Indicators.
+Government consumption is calibrated at 17.7 percent of GDP for AEs and 14.7 percent for EMDEs.
 This category covers intermediate consumption, social transfers in kind, and compensation of government employees, including teachers, doctors, nurses, and other public workers.
-Infrastructure investment is set at 3 percent of GDP for AEs and 5 percent for EMDEs.
-Public human-capital investment---including capital spending on schools and hospitals---is calibrated at about 1.5 percent of GDP for AEs and 2 percent for EMDEs, based on the functional composition of public investment in OECD economies \citep{OECD2025Glance}.
-Appendix~\ref{app:investmentComposition} describes the mapping into the model's investment blocks.
+Total government fixed investment is 3.9 percent of GDP for AEs and 4.9 percent for EMDEs.
+These totals are divided using the median functional composition of government investment in OECD economies \citep{OECD2025Glance}.
+The resulting infrastructure investment shares are 2.6 and 3.2 percent of GDP, while public human-capital investment---including capital spending on schools and hospitals---is 1.3 and 1.7 percent, respectively.
+Appendix~\ref{app:investmentComposition} describes this mapping into the model's investment blocks.
 Baseline public R\&D spending is 0.6 percent of GDP for AEs and 0.1 percent for EMDEs.
 
-The implicit tax-rate calibration draws on \citet{IMF2023FM}, \citet{Benitezetal2023}, and \citet{OECD2025Taxing}.
-The consumption tax rate is 18 percent for AEs and 15 percent for EMDEs, while the labor-income tax rate is 25 and 10 percent, respectively.
-The debt targets are 100 percent of annual GDP for AEs and 60 percent for EMDEs.
+The implicit consumption tax rate is 15.1 percent for AEs and 11.6 percent for EMDEs.
+The labor-income tax rate is 30.9 and 14.0 percent, respectively.
+The public-debt targets are 78.8 percent of annual GDP for AEs and 46.4 percent for EMDEs.
 
 \begin{table}[H]
     \centering
@@ -541,7 +543,8 @@ The debt targets are 100 percent of annual GDP for AEs and 60 percent for EMDEs.
     \input{calibrationTargetsTable.tex}
 
     \vspace{1mm}
-    \tabnote{IMF staff calibration based on \citet{IMF2023FM}, the World Bank's World Development Indicators, \citet{Benitezetal2023}, \citet{OECD2025Taxing}, and \citet{OECD2025Glance}.}{Trend growth is annualized from the quarterly gross rate.
+    \tabnote{IMF, World Economic Outlook database and World Revenue Longitudinal Database; ILOSTAT; \citet{OECD2025Glance}; IMF staff calculations.}{Except for public R\&D, the targets correspond to the means of the annual GDP-weighted country-group aggregates shown in Appendix~\ref{app:calibrationData}; total fixed investment is split using the functional composition reported in Appendix~\ref{app:investmentComposition}.
+Trend growth is annualized from the quarterly gross rate.
 Public debt is reported relative to annual GDP; the Dynare implementation divides debt by quarterly GDP and therefore stores four times the ratios shown here.
 Spending shares are relative to quarterly GDP, while implicit tax rates are measured against their corresponding tax bases; both are numerically unchanged at an annual frequency.}
 \end{table}
@@ -668,7 +671,7 @@ Their distinguishing effects arise from the assets they create and how quickly t
 \emph{Infrastructure investment} builds public capital from the outset.
 Because this stock enters production directly through equation~\eqref{eq:production}, it raises productivity sooner than the other productive instruments and eventually crowds in private investment and consumption.
 Although the labor-supply response is of a similar order of magnitude to that under government consumption, the output gain is substantially larger.
-By the end of the horizon shown, output is around 2.5 percent above its steady-state level, compared with around one-half of a percent under government consumption.
+By the end of the horizon shown, output is around 3 percent above its steady-state level, compared with around one-half of a percent under government consumption.
 The greater pressure on the inherited capital stock produces a larger impact increase in real marginal cost and inflation than under government consumption.
 The gains in economic activity also broaden the tax bases, gradually narrowing the primary deficit and slowing debt accumulation relative to government consumption.
 
@@ -733,7 +736,8 @@ Over two decades, the cumulative multiplier expands severalfold.
 After some initial weakening, human-capital accumulation yields a large long-term multiplier, the highest among all instruments.
 \item \emph{R\&D} starts more slowly because technologies must first be created and then adopted.
 \end{inparaenum}
-By the 25-year horizon, both have caught up with or overtaken infrastructure, and their advantage widens further in the long term.
+In AEs, human-capital investment and R\&D have caught up with or overtaken infrastructure by the 25-year horizon, and their advantage widens further in the long term.
+In EMDEs, the human-capital multiplier is close to the infrastructure multiplier by that horizon and exceeds it in the long term.
 At medium horizons, the productive-spending multipliers are broadly in line with empirical estimates of public-investment and R\&D multipliers \citep{Ramey2020, AfonsoRodrigues2024, FieldhouseMertens2023}.
 The model's larger long-term values reflect the durability of the productive stocks these instruments create.
 
@@ -772,9 +776,9 @@ Their quantitative importance can therefore be assessed by asking how much each 
 
 Both blocks are fundamental to the effects of their associated instruments.
 Once the relevant productive channel is removed, additional human-capital or R\&D spending becomes equivalent to wasteful government consumption within the corresponding partial model (Table~\ref{tab:multipliers}).
-At the 25-year horizon, the human-capital channel contributes 1.35 points to the AE human-capital investment multiplier of 1.69 and 2.93 points to the EMDE multiplier of 3.19.
-Endogenous technology contributes 2.07 points to the AE public-R\&D multiplier of 2.44.
-Their effects on the other spending instruments are considerably smaller: removing both channels lowers the government-consumption multiplier by 0.13 in AEs and 0.07 in EMDEs, and the infrastructure multiplier by 0.20 and 0.09, respectively.
+At the 25-year horizon, the human-capital channel contributes 1.55 points to the AE human-capital investment multiplier of 1.89 and 3.80 points to the EMDE multiplier of 4.06.
+Endogenous technology contributes 2.11 points to the AE public-R\&D multiplier of 2.48.
+Their effects on the other spending instruments are considerably smaller: removing both channels lowers the government-consumption multiplier by 0.14 in AEs and 0.07 in EMDEs, and the infrastructure multiplier by 0.23 and 0.12, respectively.
 Integrating the two channels is therefore essential for capturing the sustained gains from human-capital and R\&D spending, while their effects on the more standard fiscal instruments remain comparatively limited.
 
 \subsection{Sensitivity} \label{subsec:sensitivity}
@@ -786,7 +790,7 @@ The human-capital response scales with the elasticity of human-capital formation
 The R\&D response scales with the elasticity of technology creation with respect to public R\&D ($\alpha_{RD}$).
 
 Figure~\ref{fig:sensitivity} illustrates this sensitivity by tracing the output response to each permanent productive expansion as its relevant elasticity is varied over an illustrative range.
-At the 25-year horizon, the output response spans about 1.3 to 8.4 percent for infrastructure, 2.4 to 12.6 percent for human capital, and 1.9 to 7.4 percent for R\&D over the parameter ranges considered.
+At the 25-year horizon, the output response spans about 1.5 to 9.9 percent for infrastructure, 2.7 to 14.5 percent for human capital, and 1.9 to 7.5 percent for R\&D over the parameter ranges considered.
 The timing of the gains is robust across these ranges.
 Infrastructure begins to pay off earliest and then builds gradually.
 Human-capital investment produces a short-lived impact gain before larger benefits emerge over time.
@@ -820,9 +824,9 @@ Hence, it expands productive capacity without an additional budgetary cost.
 Comparing permanent efficiency improvements with matched increases in productive spending reveals different transmission channels behind similar output effects (Figure~\ref{fig:efficiencyAE}).
 Each efficiency improvement is calibrated to match the increase in effective productive inputs generated by a debt-financed permanent spending increase of 0.25 percent of GDP.\footnote{Matching a 1-percent-of-GDP increase would require negative efficiency gaps for some instruments; the smaller 0.25-percent-of-GDP experiment is therefore used for illustration.}
 For instrument $x$, this requires eliminating waste equal to $(1-e^{x,SS})\times0.25$ percent of GDP.
-For AEs, the infrastructure gap narrows by approximately 5.3 percentage points from an initial 35.9 percent and the human-capital gap by 12.0 points from 30.6 percent.
+For AEs, the infrastructure gap narrows by approximately 6.2 percentage points from an initial 35.9 percent and the human-capital gap by 13.6 points from 30.6 percent.
 The R\&D gap narrows by 25.0 percentage points from an initial 39.9 percent.
-For EMDEs, the infrastructure gap narrows by 3.0 percentage points from 40.6 percent and the human-capital gap by 8.4 points from 32.9 percent.
+For EMDEs, the infrastructure gap narrows by 4.6 percentage points from 40.6 percent and the human-capital gap by 10.0 points from 32.9 percent.
 No EMDE R\&D response is reported because technology creation is inactive in that calibration.
 
 The efficiency improvements produce output responses similar to those from the matched spending increases, but the underlying transmission differs.
@@ -870,13 +874,13 @@ Reallocating toward \emph{infrastructure investment} has little effect on output
 Both spending categories enter aggregate demand, so their direct demand effects largely offset.
 As public infrastructure accumulates, however, output gains gather pace.
 Public infrastructure enters production directly, raising the marginal return to private capital and encouraging private investment.
-By 2050, output is about 2 percent higher in advanced economies and 4 percent higher in emerging market and developing economies.
+By 2050, output is about 2.5 percent higher in advanced economies and 6 percent higher in emerging market and developing economies.
 
 Redirecting expenditure toward \emph{public human-capital investment}, such as school and hospital infrastructure, produces an initial output gain.
 Households reallocate some time from education to work, temporarily boosting labor supply.
 The gain is short-lived, however, and the instrument's full productive potential takes years to materialize.
 Once public education and health capital accumulates and supports workforce skills, the output gains become sizable.
-By 2050, output is about 4 percent higher in advanced economies and 7 percent higher in emerging market and developing economies.
+By 2050, output is about 4.5 percent higher in advanced economies and 9 percent higher in emerging market and developing economies.
 The larger EMDE response reflects lower initial human-capital stocks and a higher calibrated return to public human-capital investment.
 
 \emph{Public R\&D} offers advanced economies a second route to larger long-run gains through technology creation and adoption.
@@ -914,16 +918,16 @@ The model treats the efficiency improvements themselves as costless.
 They are therefore particularly attractive: productive capacity expands without additional debt accumulation or further cuts to other spending.
 
 The scope for efficiency gains is substantially larger in emerging market and developing economies (Figure~\ref{fig:policyEfficiency}, panel~b).
-Closing the calibrated gaps over 25 years adds about 3 percent to output for human-capital investment and 8 percent for infrastructure.
+Closing the calibrated gaps over 25 years adds about 3.5 percent to output for human-capital investment and 9 percent for infrastructure.
 The larger gains reflect both higher initial gaps and stronger marginal returns to productive public capital where initial stocks are lower.
 Public R\&D is omitted because technology creation is inactive in the EMDE calibration.
 
 The benefits depend not only on the size of the gap but also on the pace of its closure, as the EMDE experiments demonstrate.
-Completing the reform over 15 rather than 25 years raises the additional gains from about 3 to 5 percent for human-capital investment and from 8 to 11 percent for infrastructure.
+Completing the reform over 15 rather than 25 years raises the additional gains from about 3.5 to 6 percent for human-capital investment and from 9 to 12 percent for infrastructure.
 Productive stocks begin accumulating sooner.
 The starting point also matters even when the gap is narrowed by the same amount.
 In hypothetical sensitivity scenarios, initial gaps are exactly 10 percentage points above the empirical calibration and are narrowed by the same amount as in the calibrated-gap reforms.
-Relative to the calibrated-gap cases, these scenarios raise output gains by about 0.5--0.8 percentage point for human-capital investment and 1.4--1.8 percentage points for infrastructure.
+Relative to the calibrated-gap cases, these scenarios raise output gains by about 0.6--0.9 percentage point for human-capital investment and 1.6--2.0 percentage points for infrastructure.
 This underscores the stronger payoff from reform where initial spending inefficiency is particularly high.
 
 \begin{figure}[H]
@@ -953,7 +957,7 @@ The policy experiment in this subsection also demonstrates why spending instrume
 Combining instruments can therefore yield larger gains than concentrating the same total reallocation in a single category.
 
 The interaction between human capital and public R\&D provides a telling example.
-A 50/50 reallocation toward the two categories raises output by about 4.5 percent after 25 years, compared with about 4 percent for either category alone (Figure~\ref{fig:humanCapital}).
+A 50/50 reallocation toward the two categories raises output by about 5 percent after 25 years, compared with about 4 percent for either category alone (Figure~\ref{fig:humanCapital}).
 R\&D expands the set of technologies available for adoption, while human capital raises workforce skills and supports technology creation.
 
 \begin{figure}[H]
@@ -966,8 +970,8 @@ R\&D expands the set of technologies available for adoption, while human capital
 
 The return to this policy mix depends strongly on how quickly new technologies diffuse within the private sector.
 The experiments vary the resulting quarterly adoption probability $q_t$.
-By 2050, it is about 4.0 percent under limited diffusion, 5.2 percent in the baseline, and 6.7 percent under improved diffusion.
-The corresponding output gain falls to about 1.25 percent under limited diffusion or rises to 7.5 percent under improved diffusion, compared with 4.5 percent in the baseline (Figure~\ref{fig:diffusion}).
+By 2050, it is about 4.0 percent under limited diffusion, 5.3 percent in the baseline, and 6.7 percent under improved diffusion.
+The corresponding output gain falls to about 1.5 percent under limited diffusion or rises to 8 percent under improved diffusion, compared with 5 percent in the baseline (Figure~\ref{fig:diffusion}).
 Complementary institutions that support technology transfer and private-sector adoption can therefore magnify the payoff from fiscal reallocation.
 
 
@@ -1254,8 +1258,9 @@ Data refer to 2023 except where otherwise noted by the OECD.}
 \section{Data Underlying the Country-Group Calibration Targets} \label{app:calibrationData}
 %========================================================================
 
-Cross-country distributions provide direct comparisons for the six targets in Table~\ref{tab:calibrationTargets} (Figure~\ref{fig:calibrationDataBands}).
-Annual growth is an observable but cyclical counterpart to the calibrated trend-growth rate.
+Cross-country distributions provide the empirical basis for six targets in Table~\ref{tab:calibrationTargets} (Figure~\ref{fig:calibrationDataBands}).
+Each target is the 2000--23 mean of the corresponding annual GDP-weighted country-group aggregate.
+Annual growth is an observable but cyclical proxy for the calibrated trend-growth rate.
 Government consumption maps directly to $G_t^C$; the fixed-investment target sums infrastructure and human-capital investment and excludes public R\&D.
 The implicit consumption tax rate follows the effective-average-tax approach of \citet{MendozaRazinTesar1994}, using general sales taxes and excises from WoRLD as the numerator.
 Its base is private consumption plus government consumption excluding employee compensation, net of those taxes.
@@ -1446,7 +1451,7 @@ The horizontal axis reports quarterly responses on a linear scale through the 25
 Table~\ref{tab:multipliersTemp} reports the present-value cumulative multipliers for the persistent temporary shocks.
 Once the spending increase fades, the denominator of the cumulative multiplier stops growing rapidly, while the output effects of the productive stocks dissipate more slowly.
 The temporary-shock multipliers can therefore exceed their permanent counterparts at intermediate horizons.
-At 25 years, for example, the advanced-economy human-capital multiplier is 3.3 under the temporary shock, compared with 1.7 under the permanent increase.
+At 25 years, for example, the advanced-economy human-capital multiplier is 3.8 under the temporary shock, compared with 1.9 under the permanent increase.
 
 \begin{table}[H]
     \centering

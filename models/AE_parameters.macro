@@ -2,17 +2,17 @@
 
 % production and growth
 alphaG=0.054;                        % share of public capital in production         | EM: 0.17
-g=1.004;                            % constant gross quarterly trend growth          | EM: 1.0075
+g=1.0046515917901333;               % constant gross quarterly trend growth          | EM: 1.0125195680911334
 
 % taxes and debt
-taucss=0.18;                         % steady-state consumption tax rate             | EM: 0.15
-tauwss=0.25;                         % steady-state income tax rate                  | EM: 0.10
-byss=1*4;                            % steady-state debt to quarterly GDP (annual x4)| EM: 0.6*4
+taucss=0.15067283860879371;          % steady-state consumption tax rate             | EM: 0.11583054349525241
+tauwss=0.30876981241278333;          % steady-state income tax rate                  | EM: 0.13957543978997473
+byss=0.7875515483152252*4;           % steady-state debt to quarterly GDP (annual x4)| EM: 0.46444789855028866*4
 
 % public spending shares of GDP
-Igiy=0.03;                            % public investment                             | EM: 0.05
-Gcy=0.18;                            % public consumption                            | EM: 0.14
-Igey=0.0145;                         % human-capital-related spending                | EM: 0.02
+Igiy=0.025841914048759393;           % infrastructure investment                     | EM: 0.03224078049073542
+Gcy=0.1766798699446066;              % public consumption                            | EM: 0.14683743823337528
+Igey=0.012785760164632823;           % human-capital-related investment              | EM: 0.016831944761525493
 Grdy=0.006;                         % R&D spending                                  | EM: 0.001
 
 % human capital

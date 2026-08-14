@@ -144,15 +144,15 @@ rho_A=0.79;
 % EM-specific calibration            (definition                                    | AE value)
 % production and growth
 alphaG=0.17;                         % share of public capital in production         | AE: 0.054
-g=1.0075;                           % constant gross quarterly trend growth          | AE: 1.004
+g=1.0125195680911334;               % constant gross quarterly trend growth          | AE: 1.0046515917901333
 % taxes and debt
-taucss=0.15;                         % steady-state consumption tax rate             | AE: 0.18
-tauwss=0.10;                         % steady-state income tax rate                  | AE: 0.25
-byss=0.6*4;                          % steady-state debt to quarterly GDP (annual x4)| AE: 1*4
+taucss=0.11583054349525241;          % steady-state consumption tax rate             | AE: 0.15067283860879371
+tauwss=0.13957543978997473;          % steady-state income tax rate                  | AE: 0.30876981241278333
+byss=0.46444789855028866*4;          % steady-state debt to quarterly GDP (annual x4)| AE: 0.7875515483152252*4
 % public spending shares of GDP
-Igiy=0.05;                            % public investment                             | AE: 0.03
-Gcy=0.14;                            % public consumption                            | AE: 0.18
-Igey=0.02;                           % human-capital-related spending                | AE: 0.0145
+Igiy=0.03224078049073542;            % infrastructure investment                     | AE: 0.025841914048759393
+Gcy=0.14683743823337528;             % public consumption                            | AE: 0.1766798699446066
+Igey=0.016831944761525493;           % human-capital-related investment              | AE: 0.012785760164632823
 Grdy=0.001;                         % R&D spending                                  | AE: 0.006
 % human capital
 mu=0.25;                         % elasticity of HC formation w.r.t. public HRC  | AE: 0.1

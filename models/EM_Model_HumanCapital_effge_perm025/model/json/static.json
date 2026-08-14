@@ -24,7 +24,7 @@
 , {"temporary_term": "T244", "value": "(mc/(mc))^gamma_y"}
 , {"temporary_term": "T245", "value": "T240*T244"}
 , {"temporary_term": "T247", "value": "T245^(1-rho_R)"}
-],
+], 
 "residuals":[
 {"residual": {"lhs": "1/C", "rhs": "lambda*(1+tauc)"}}
 , {"residual": {"lhs": "lambda", "rhs": "betta*lambda/g*R/PI"}}

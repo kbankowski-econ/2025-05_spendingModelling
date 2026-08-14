@@ -13,7 +13,7 @@ check = 0;
 % in background spending shares.
 Steady_states_solution;
 
-if simplify_level >= 2
+if simplify_level >= 2 || contains(M_.fname, 'NoHumanCapital')
     % Human-capital choices are inactive. Recalibrate the labor-disutility scale
     % so that the common labor target remains a steady state of the reduced FOC.
     H = 1;

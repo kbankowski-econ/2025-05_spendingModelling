@@ -7,6 +7,8 @@
 //   5 -> + price indexation
 //   6 -> + trend growth
 //   7 -> + extended fiscal block; canonical lump-sum-financed G model
+// NO_HUMAN_CAPITAL provides a separate, non-cumulative counterfactual that
+// removes only human capital while retaining endogenous technology.
 // Inactive variables remain declared and are pinned solely so every variant can
 // use the common export pipeline. They do not enter the active equilibrium.
 @#ifndef SIMPLIFY_LEVEL
@@ -15,6 +17,10 @@
 
 @#ifndef NO_INDEXATION
 @#define NO_INDEXATION = 0
+@#endif
+
+@#ifndef NO_HUMAN_CAPITAL
+@#define NO_HUMAN_CAPITAL = 0
 @#endif
 
 @#include "declare_all.macro"

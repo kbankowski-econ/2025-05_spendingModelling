@@ -77,13 +77,13 @@ PANELS = [
     ("Public debt", "ggxwdg_gdp"),
 ]
 TARGETS = {
-    "g_real": {"AE": 1.6, "EMDE": 3.0},
-    "ncg_gdp": {"AE": 18.0, "EMDE": 14.0},
+    "g_real": {"AE": 1.8736594057462057, "EMDE": 5.102658369059963},
+    "ncg_gdp": {"AE": 17.66798699446066, "EMDE": 14.683743823337528},
     # Infrastructure plus human-capital investment; public R&D is not fixed investment.
-    "nfig_gdp": {"AE": 3.0 + 1.45, "EMDE": 5.0 + 2.0},
-    "tau_c": {"AE": 18.0, "EMDE": 15.0},
-    "tau_l": {"AE": 25.0, "EMDE": 10.0},
-    "ggxwdg_gdp": {"AE": 100.0, "EMDE": 60.0},
+    "nfig_gdp": {"AE": 3.8627674213392216, "EMDE": 4.907272525226091},
+    "tau_c": {"AE": 15.067283860879371, "EMDE": 11.583054349525241},
+    "tau_l": {"AE": 30.876981241278333, "EMDE": 13.957543978997473},
+    "ggxwdg_gdp": {"AE": 78.75515483152252, "EMDE": 46.444789855028866},
 }
 
 BAND_OPACITY = 0.15

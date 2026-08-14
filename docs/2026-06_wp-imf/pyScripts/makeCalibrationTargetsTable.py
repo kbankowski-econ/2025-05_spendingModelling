@@ -47,13 +47,13 @@ def main():
         ("Public spending", None, None, None, None),
         (r"$\hat G^{C,SS}/\hat Y^{d,SS}$", "Government consumption", "Percent of GDP", pct(ae["Gcy"]), pct(em["Gcy"])),
         (r"$\hat I^{GI,SS}/\hat Y^{d,SS}$", "Infrastructure investment", "Percent of GDP", pct(ae["Igiy"]), pct(em["Igiy"])),
-        (r"$\hat I^{GE,SS}/\hat Y^{d,SS}$", "Human-capital investment", "Percent of GDP", pct(ae["Igey"], 2), pct(em["Igey"])),
+        (r"$\hat I^{GE,SS}/\hat Y^{d,SS}$", "Human-capital investment", "Percent of GDP", pct(ae["Igey"]), pct(em["Igey"])),
         (r"$\hat G^{RD,SS}/\hat Y^{d,SS}$", r"Public R\&D spending", "Percent of GDP", pct(ae["Grdy"]), pct(em["Grdy"])),
         ("Implicit tax rates", None, None, None, None),
-        (r"$\tau^{c,SS}$", "Consumption tax", "Percent", pct(ae["taucss"], 0), pct(em["taucss"], 0)),
-        (r"$\tau^{w,SS}$", "Labor-income tax", "Percent", pct(ae["tauwss"], 0), pct(em["tauwss"], 0)),
+        (r"$\tau^{c,SS}$", "Consumption tax", "Percent", pct(ae["taucss"]), pct(em["taucss"])),
+        (r"$\tau^{w,SS}$", "Labor-income tax", "Percent", pct(ae["tauwss"]), pct(em["tauwss"])),
         ("Public debt", None, None, None, None),
-        (r"$\hat B^{SS}/(4\hat Y^{d,SS})$", "Public debt level", "Percent of annual GDP", pct(ae["byss"] / 4, 0), pct(em["byss"] / 4, 0)),
+        (r"$\hat B^{SS}/(4\hat Y^{d,SS})$", "Public debt level", "Percent of annual GDP", pct(ae["byss"] / 4), pct(em["byss"] / 4)),
     ]
 
     lines = [

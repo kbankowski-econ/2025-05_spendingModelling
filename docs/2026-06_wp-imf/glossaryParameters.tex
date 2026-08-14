@@ -19,12 +19,12 @@
 \addlinespace[0.1em]
 1 & $\beta$ & Discount factor & \texttt{betta} & 0.999 & 0.999 \\
 2 & $\varphi$ & Inverse Frisch elasticity & \texttt{varphi} & 5 & 5 \\
-3 & $\omega$ & Labor-disutility scaling\calibnote{targets steady-state labor supply $L_t=0.333$} & \texttt{omega} & \cellcolor{diffcell} 75.643 & \cellcolor{diffcell} 78.182 \\
+3 & $\omega$ & Labor-disutility scaling\calibnote{targets steady-state labor supply $L_t=0.333$} & \texttt{omega} & \cellcolor{diffcell} 70.313 & \cellcolor{diffcell} 75.435 \\
 4 & $\delta$ & Depreciation rate of physical capital (private and public) & \texttt{delta} & 0.025 & 0.025 \\
 5 & $\delta^h$ & Depreciation rate of human capital & \texttt{deltaH} & 0.025 & 0.025 \\
 6 & $\gamma$ & Human-capital elasticity, time input & \texttt{gamma} & 0.5 & 0.5 \\
 7 & $\mu$ & Human-capital elasticity, public stock & \texttt{mu} & \cellcolor{diffcell} 0.1 & \cellcolor{diffcell} 0.25 \\
-8 & $\chi$ & Scale in human-capital accumulation\calibnote{normalizes steady-state human capital to $H_t=1$} & \texttt{chiH} & \cellcolor{diffcell} 0.072 & \cellcolor{diffcell} 0.087 \\
+8 & $\chi$ & Scale in human-capital accumulation\calibnote{normalizes steady-state human capital to $H_t=1$} & \texttt{chiH} & \cellcolor{diffcell} 0.073 & \cellcolor{diffcell} 0.101 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Production and technology}} \\
 \addlinespace[0.1em]
@@ -40,7 +40,7 @@
 18 & $\alpha_{RD}$ & Long-run R\&D elasticity in tech creation & \texttt{alphaRD} & \cellcolor{diffcell} 0.09 & \cellcolor{diffcell} -- \\
 19 & $\phi$ & Survival rate of adopted technologies & \texttt{phi} & 0.98 & 0.98 \\
 20 & $\varsigma$ & Adoption-probability elasticity & \texttt{varsigma} & \cellcolor{diffcell} 0.8 & \cellcolor{diffcell} 0.1 \\
-21 & $q_0$ & Adoption-probability scale\calibnote{targets steady-state adoption probability $q^{SS}=0.05$} & \texttt{kappaprob} & \cellcolor{diffcell} 0.309 & \cellcolor{diffcell} 0.084 \\
+21 & $q_0$ & Adoption-probability scale\calibnote{targets steady-state adoption probability $q^{SS}=0.05$} & \texttt{kappaprob} & \cellcolor{diffcell} 0.324 & \cellcolor{diffcell} 0.087 \\
 22 & $q^{SS}$ & Steady-state adoption probability & \texttt{qss} & 0.05 & 0.05 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Government: fiscal and monetary policy}} \\
@@ -49,13 +49,13 @@
 24 & $\rho_R$ & Policy-rate smoothing & \texttt{rho\_R} & 0.7 & 0.7 \\
 25 & $\gamma_\pi$ & Policy response to inflation & \texttt{gamma\_pi} & 1.5 & 1.5 \\
 26 & $\gamma_y$ & Policy response to the output-gap proxy & \texttt{gamma\_y} & 0.125 & 0.125 \\
-27 & $\tau^c$ & Steady-state consumption-tax rate & \texttt{taucss} & \cellcolor{diffcell} 0.18 & \cellcolor{diffcell} 0.15 \\
-28 & $\tau^w$ & Steady-state labor-tax rate & \texttt{tauwss} & \cellcolor{diffcell} 0.25 & \cellcolor{diffcell} 0.1 \\
-29 & $b^*$ & Steady-state debt-to-GDP ratio & \texttt{byss} & \cellcolor{diffcell} 4 & \cellcolor{diffcell} 2.4 \\
+27 & $\tau^c$ & Steady-state consumption-tax rate & \texttt{taucss} & \cellcolor{diffcell} 0.151 & \cellcolor{diffcell} 0.116 \\
+28 & $\tau^w$ & Steady-state labor-tax rate & \texttt{tauwss} & \cellcolor{diffcell} 0.309 & \cellcolor{diffcell} 0.14 \\
+29 & $b^*$ & Steady-state debt-to-GDP ratio & \texttt{byss} & \cellcolor{diffcell} 3.15 & \cellcolor{diffcell} 1.858 \\
 30 & $\gamma^{T}_d$ & Transfer response to debt & \texttt{gamma\_d\_T} & 0.01 & 0.01 \\
-31 & $\hat G^{C,SS}/\hat Y^{d,SS}$ & Government consumption, share of GDP & \texttt{Gcy} & \cellcolor{diffcell} 0.18 & \cellcolor{diffcell} 0.14 \\
-32 & $\hat I^{GI,SS}/\hat Y^{d,SS}$ & Infrastructure investment, share of GDP & \texttt{Igiy} & \cellcolor{diffcell} 0.03 & \cellcolor{diffcell} 0.05 \\
-33 & $\hat I^{GE,SS}/\hat Y^{d,SS}$ & Human-capital investment, share of GDP & \texttt{Igey} & \cellcolor{diffcell} 0.015 & \cellcolor{diffcell} 0.02 \\
+31 & $\hat G^{C,SS}/\hat Y^{d,SS}$ & Government consumption, share of GDP & \texttt{Gcy} & \cellcolor{diffcell} 0.177 & \cellcolor{diffcell} 0.147 \\
+32 & $\hat I^{GI,SS}/\hat Y^{d,SS}$ & Infrastructure investment, share of GDP & \texttt{Igiy} & \cellcolor{diffcell} 0.026 & \cellcolor{diffcell} 0.032 \\
+33 & $\hat I^{GE,SS}/\hat Y^{d,SS}$ & Human-capital investment, share of GDP & \texttt{Igey} & \cellcolor{diffcell} 0.013 & \cellcolor{diffcell} 0.017 \\
 34 & $\hat G^{RD,SS}/\hat Y^{d,SS}$ & R\&D spending, share of GDP & \texttt{Grdy} & \cellcolor{diffcell} 0.006 & \cellcolor{diffcell} 0.001 \\
 35 & $e^{GI}$ & Steady-state infrastructure efficiency gap & \texttt{eGI\_ss} & \cellcolor{diffcell} 0.359 & \cellcolor{diffcell} 0.406 \\
 36 & $e^{GE}$ & Steady-state human-capital efficiency gap & \texttt{eGE\_ss} & \cellcolor{diffcell} 0.306 & \cellcolor{diffcell} 0.329 \\
@@ -63,6 +63,6 @@
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Balanced growth}} \\
 \addlinespace[0.1em]
-38 & $g$ & Constant gross trend growth rate & \texttt{g} & \cellcolor{diffcell} 1.004 & \cellcolor{diffcell} 1.008 \\
-39 & $\gamma^{a}$ & Net trend growth of technology & \texttt{gammaa} & \cellcolor{diffcell} 0.008 & \cellcolor{diffcell} 0.015 \\
+38 & $g$ & Constant gross trend growth rate & \texttt{g} & \cellcolor{diffcell} 1.005 & \cellcolor{diffcell} 1.013 \\
+39 & $\gamma^{a}$ & Net trend growth of technology & \texttt{gammaa} & \cellcolor{diffcell} 0.009 & \cellcolor{diffcell} 0.025 \\
 \end{longtable}

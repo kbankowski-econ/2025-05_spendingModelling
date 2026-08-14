@@ -65,11 +65,11 @@ cd(fullfile(project_path, 'models'));
 % productive spending. For instrument x, the equivalent gap reduction is
 %   delta_e_x = (1-e_x_ss) * delta_X / (X_ss/Y_ss).
 comparisonSpendingShock = 0.0025;
-comparisonEffGI = (1-0.359) * comparisonSpendingShock / 0.03;
-comparisonEffGE = (1-0.306) * comparisonSpendingShock / 0.0145;
+comparisonEffGI = (1-0.359) * comparisonSpendingShock / 0.025841914048759393;
+comparisonEffGE = (1-0.306) * comparisonSpendingShock / 0.012785760164632823;
 comparisonEffGRD = (1-0.399) * comparisonSpendingShock / 0.006;
-comparisonEffGI_EMDE = (1-0.406) * comparisonSpendingShock / 0.05;
-comparisonEffGE_EMDE = (1-0.329) * comparisonSpendingShock / 0.02;
+comparisonEffGI_EMDE = (1-0.406) * comparisonSpendingShock / 0.03224078049073542;
+comparisonEffGE_EMDE = (1-0.329) * comparisonSpendingShock / 0.016831944761525493;
 
 modelList = {
     % =================== STANDARD EXPANSIONS (Sections 4.1-4.2) ===================
