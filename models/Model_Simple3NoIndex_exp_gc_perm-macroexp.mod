@@ -138,7 +138,7 @@ qss=0.2/4;
 rho_A=0.79;
 % AE-specific calibration            (definition                                    | EM value)
 % production and growth
-alphaG=0.054;                        % share of public capital in production         | EM: 0.17
+alphaG=0.054;                        % share of public capital in production         | EM: 0.12
 g=1.004;                            % constant gross quarterly trend growth          | EM: 1.0075
 % taxes and debt
 taucss=0.18;                         % steady-state consumption tax rate             | EM: 0.15

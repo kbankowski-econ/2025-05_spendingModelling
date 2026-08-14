@@ -11,10 +11,10 @@ Infrastructure investment,Advanced economies,Model_HumanCapital_exp_igi_perm,0.2
 Infrastructure investment,Advanced economies - No human capital,Model_NoHumanCapital_exp_igi_perm,0.2107,0.5285,0.8959,1.4912,1.7296,3.4969,0.0748
 Infrastructure investment,Advanced economies - No endog. tech.,Model_Simple1_exp_igi_perm,0.2268,0.5547,0.9437,1.4578,1.6268,2.4577,0.1777
 Infrastructure investment,Advanced economies - No endog. tech. + no human capital,Model_Simple2_exp_igi_perm,0.2126,0.5347,0.8910,1.3978,1.5708,2.4219,0.2337
-Infrastructure investment,Emerging markets,EM_Model_HumanCapital_exp_igi_perm,0.2692,1.3280,2.5228,3.9893,4.4325,6.3682,
-Infrastructure investment,Emerging markets - No human capital,EM_Model_NoHumanCapital_exp_igi_perm,0.2670,1.3179,2.4500,3.9348,4.3972,6.4029,0.0353
-Infrastructure investment,Emerging markets - No endog. tech.,EM_Model_Simple1_exp_igi_perm,0.2714,1.3211,2.4953,3.9210,4.3486,6.2059,0.0839
-Infrastructure investment,Emerging markets - No endog. tech. + no human capital,EM_Model_Simple2_exp_igi_perm,0.2653,1.3074,2.4217,3.8684,4.3154,6.2408,0.1172
+Infrastructure investment,Emerging markets,EM_Model_HumanCapital_exp_igi_perm,0.2583,1.0080,1.8546,2.8907,3.2035,4.5695,
+Infrastructure investment,Emerging markets - No human capital,EM_Model_NoHumanCapital_exp_igi_perm,0.2518,0.9967,1.7941,2.8345,3.1579,4.5578,0.0456
+Infrastructure investment,Emerging markets - No endog. tech.,EM_Model_Simple1_exp_igi_perm,0.2598,1.0026,1.8343,2.8414,3.1433,4.4541,0.0602
+Infrastructure investment,Emerging markets - No endog. tech. + no human capital,EM_Model_Simple2_exp_igi_perm,0.2506,0.9887,1.7734,2.7870,3.0995,4.4435,0.1040
 Human capital investment,Advanced economies,Model_HumanCapital_exp_ige_perm,0.9161,0.4387,0.4924,1.3464,1.8947,8.0849,
 Human capital investment,Advanced economies - No human capital,Model_NoHumanCapital_exp_ige_perm,0.2488,0.2671,0.2922,0.3314,0.3466,0.4483,1.5481
 Human capital investment,Advanced economies - No endog. tech.,Model_Simple1_exp_ige_perm,0.8946,0.4413,0.5411,1.3320,1.7548,4.7813,0.1399
