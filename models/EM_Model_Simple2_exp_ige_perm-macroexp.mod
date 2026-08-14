@@ -155,7 +155,7 @@ Gcy=0.14683743823337528;             % public consumption                       
 Igey=0.016831944761525493;           % human-capital-related investment              | AE: 0.012785760164632823
 Grdy=0.001;                         % R&D spending                                  | AE: 0.006
 % human capital
-mu=0.25;                         % elasticity of HC formation w.r.t. public HRC  | AE: 0.1
+mu=0.15;                         % elasticity of HC formation w.r.t. public HRC  | AE: 0.1
 % R&D and technology adoption
 eGRD_ss=0.2;                         % public R&D efficiency gap (e^GRD)              | AE: 0.41
 alphaRD=0;                           % long-run R&D elasticity in tech creation      | AE: 0.09

@@ -252,7 +252,7 @@
 {"statementName": "param_init", "name": "Gcy", "value": "0.14683743823337528"}, 
 {"statementName": "param_init", "name": "Igey", "value": "0.016831944761525493"}, 
 {"statementName": "param_init", "name": "Grdy", "value": "0.001"}, 
-{"statementName": "param_init", "name": "mu", "value": "0.25"}, 
+{"statementName": "param_init", "name": "mu", "value": "0.15"}, 
 {"statementName": "param_init", "name": "eGRD_ss", "value": "0.2"}, 
 {"statementName": "param_init", "name": "alphaRD", "value": "0"}, 
 {"statementName": "param_init", "name": "alphaHA", "value": "0"}, 

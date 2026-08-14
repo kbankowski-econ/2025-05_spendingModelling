@@ -64,7 +64,7 @@ PANELS = [
 ]
 
 AE_VALUES = {"alphaG": 0.054, "mu": 0.10, "alphaRD": 0.09}
-EMDE_VALUES = {"alphaG": 0.10, "mu": 0.25}
+EMDE_VALUES = {"alphaG": 0.10, "mu": 0.15}
 
 HORIZON_QUARTERS = 100                      # 25 years of quarterly responses
 IMPACT_QUARTER = 1

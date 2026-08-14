@@ -499,106 +499,106 @@ horizon_quarter,instrument,treatment,variable,response
 98,Human capital,Efficiency improvement (AE),Output (Y<sup>d</sup><sub>t</sub>),1.198
 99,Human capital,Efficiency improvement (AE),Output (Y<sup>d</sup><sub>t</sub>),1.216
 100,Human capital,Efficiency improvement (AE),Output (Y<sup>d</sup><sub>t</sub>),1.233
-1,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.656
-2,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.351
-3,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.312
-4,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.267
-5,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.224
-6,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.185
-7,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.15
-8,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.12
-9,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.094
-10,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.072
-11,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.054
-12,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.04
-13,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.03
-14,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.022
-15,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.019
-16,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.018
-17,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.02
-18,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.025
-19,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.032
-20,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.042
-21,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.055
-22,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.069
-23,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.086
-24,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.104
-25,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.125
-26,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.147
-27,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.17
-28,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.196
-29,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.222
-30,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.25
-31,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.279
-32,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.309
-33,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.34
-34,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.372
-35,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.404
-36,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.438
-37,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.472
-38,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.507
-39,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.542
-40,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.578
-41,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.614
-42,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.651
-43,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.688
-44,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.725
-45,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.762
-46,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.8
-47,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.838
-48,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.876
-49,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.913
-50,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.951
-51,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.989
-52,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.027
-53,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.065
-54,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.102
-55,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.139
-56,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.177
-57,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.214
-58,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.251
-59,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.287
-60,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.323
-61,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.359
-62,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.395
-63,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.43
-64,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.465
-65,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.5
-66,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.535
-67,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.569
-68,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.602
-69,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.635
-70,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.668
-71,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.701
-72,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.733
-73,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.764
-74,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.795
-75,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.826
-76,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.856
-77,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.886
-78,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.916
-79,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.945
-80,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.973
-81,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.002
-82,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.029
-83,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.057
-84,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.083
-85,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.11
-86,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.136
-87,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.161
-88,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.186
-89,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.211
-90,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.235
-91,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.259
-92,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.282
-93,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.305
-94,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.328
-95,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.35
-96,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.372
-97,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.393
-98,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.414
-99,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.435
-100,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),2.455
+1,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.395
+2,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.212
+3,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.188
+4,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.161
+5,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.135
+6,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.112
+7,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.091
+8,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.073
+9,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.057
+10,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.044
+11,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.033
+12,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.025
+13,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.018
+14,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.014
+15,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.011
+16,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.011
+17,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.012
+18,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.015
+19,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.02
+20,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.026
+21,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.033
+22,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.042
+23,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.051
+24,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.062
+25,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.075
+26,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.088
+27,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.102
+28,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.117
+29,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.133
+30,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.149
+31,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.166
+32,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.184
+33,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.203
+34,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.222
+35,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.241
+36,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.261
+37,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.282
+38,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.302
+39,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.324
+40,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.345
+41,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.367
+42,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.388
+43,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.41
+44,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.433
+45,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.455
+46,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.477
+47,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.5
+48,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.522
+49,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.545
+50,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.568
+51,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.59
+52,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.613
+53,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.635
+54,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.658
+55,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.68
+56,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.702
+57,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.724
+58,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.746
+59,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.768
+60,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.789
+61,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.811
+62,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.832
+63,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.853
+64,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.874
+65,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.895
+66,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.915
+67,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.936
+68,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.956
+69,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.975
+70,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),0.995
+71,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.014
+72,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.033
+73,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.052
+74,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.071
+75,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.089
+76,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.107
+77,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.125
+78,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.142
+79,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.16
+80,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.177
+81,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.193
+82,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.21
+83,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.226
+84,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.242
+85,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.258
+86,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.273
+87,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.288
+88,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.303
+89,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.318
+90,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.332
+91,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.347
+92,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.361
+93,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.374
+94,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.388
+95,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.401
+96,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.414
+97,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.426
+98,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.439
+99,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.451
+100,Human capital,Efficiency improvement (EMDE),Output (Y<sup>d</sup><sub>t</sub>),1.463
 1,R&D,"Spending increase (AE, benchmark)",Output (Y<sup>d</sup><sub>t</sub>),0.171
 2,R&D,"Spending increase (AE, benchmark)",Output (Y<sup>d</sup><sub>t</sub>),-0.02
 3,R&D,"Spending increase (AE, benchmark)",Output (Y<sup>d</sup><sub>t</sub>),-0.045
@@ -1299,106 +1299,106 @@ horizon_quarter,instrument,treatment,variable,response
 98,Human capital,Efficiency improvement (AE),Consumption (C<sub>t</sub>),1.857
 99,Human capital,Efficiency improvement (AE),Consumption (C<sub>t</sub>),1.883
 100,Human capital,Efficiency improvement (AE),Consumption (C<sub>t</sub>),1.908
-1,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.359
-2,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.368
-3,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.375
-4,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.38
-5,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.384
-6,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.386
-7,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.387
-8,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.388
-9,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.388
-10,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.389
-11,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.39
-12,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.391
-13,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.393
-14,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.396
-15,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.4
-16,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.406
-17,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.413
-18,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.421
-19,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.43
-20,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.441
-21,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.454
-22,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.468
-23,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.484
-24,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.501
-25,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.52
-26,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.54
-27,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.562
-28,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.585
-29,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.61
-30,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.636
-31,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.663
-32,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.692
-33,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.721
-34,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.752
-35,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.785
-36,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.818
-37,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.852
-38,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.887
-39,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.923
-40,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.96
-41,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.997
-42,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.036
-43,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.075
-44,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.114
-45,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.155
-46,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.195
-47,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.236
-48,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.278
-49,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.32
-50,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.362
-51,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.404
-52,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.447
-53,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.49
-54,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.533
-55,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.576
-56,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.619
-57,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.662
-58,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.705
-59,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.748
-60,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.791
-61,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.834
-62,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.877
-63,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.919
-64,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.962
-65,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.004
-66,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.046
-67,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.087
-68,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.129
-69,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.17
-70,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.21
-71,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.251
-72,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.291
-73,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.33
-74,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.37
-75,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.409
-76,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.447
-77,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.485
-78,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.523
-79,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.56
-80,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.597
-81,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.633
-82,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.669
-83,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.704
-84,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.739
-85,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.773
-86,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.807
-87,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.841
-88,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.874
-89,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.906
-90,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.938
-91,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),2.97
-92,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),3.001
-93,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),3.031
-94,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),3.061
-95,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),3.091
-96,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),3.12
-97,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),3.149
-98,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),3.177
-99,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),3.204
-100,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),3.232
+1,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.216
+2,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.221
+3,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.225
+4,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.229
+5,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.231
+6,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.232
+7,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.233
+8,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.233
+9,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.233
+10,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.234
+11,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.234
+12,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.235
+13,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.236
+14,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.238
+15,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.241
+16,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.244
+17,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.248
+18,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.253
+19,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.259
+20,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.265
+21,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.273
+22,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.281
+23,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.29
+24,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.301
+25,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.312
+26,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.324
+27,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.337
+28,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.351
+29,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.366
+30,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.381
+31,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.397
+32,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.414
+33,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.432
+34,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.451
+35,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.47
+36,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.49
+37,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.51
+38,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.531
+39,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.552
+40,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.574
+41,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.597
+42,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.62
+43,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.643
+44,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.666
+45,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.69
+46,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.715
+47,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.739
+48,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.764
+49,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.789
+50,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.814
+51,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.839
+52,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.864
+53,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.89
+54,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.916
+55,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.941
+56,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.967
+57,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),0.993
+58,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.018
+59,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.044
+60,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.069
+61,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.095
+62,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.12
+63,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.146
+64,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.171
+65,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.196
+66,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.221
+67,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.246
+68,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.27
+69,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.295
+70,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.319
+71,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.343
+72,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.367
+73,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.39
+74,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.414
+75,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.437
+76,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.46
+77,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.482
+78,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.505
+79,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.527
+80,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.549
+81,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.57
+82,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.592
+83,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.613
+84,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.633
+85,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.654
+86,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.674
+87,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.694
+88,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.714
+89,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.733
+90,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.752
+91,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.771
+92,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.789
+93,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.807
+94,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.825
+95,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.843
+96,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.86
+97,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.877
+98,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.894
+99,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.91
+100,Human capital,Efficiency improvement (EMDE),Consumption (C<sub>t</sub>),1.926
 1,R&D,"Spending increase (AE, benchmark)",Consumption (C<sub>t</sub>),-0.144
 2,R&D,"Spending increase (AE, benchmark)",Consumption (C<sub>t</sub>),-0.146
 3,R&D,"Spending increase (AE, benchmark)",Consumption (C<sub>t</sub>),-0.15
@@ -2099,106 +2099,106 @@ horizon_quarter,instrument,treatment,variable,response
 98,Human capital,Efficiency improvement (AE),Prim. def. (PD<sub>t</sub>),-0.246
 99,Human capital,Efficiency improvement (AE),Prim. def. (PD<sub>t</sub>),-0.248
 100,Human capital,Efficiency improvement (AE),Prim. def. (PD<sub>t</sub>),-0.251
-1,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.1
-2,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.033
-3,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.038
-4,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.036
-5,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.034
-6,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.032
-7,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.029
-8,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.028
-9,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.026
-10,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.025
-11,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.023
-12,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.023
-13,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.022
-14,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.022
-15,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.022
-16,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.022
-17,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.022
-18,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.023
-19,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.024
-20,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.026
-21,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.027
-22,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.029
-23,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.031
-24,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.033
-25,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.036
-26,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.039
-27,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.041
-28,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.044
-29,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.048
-30,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.051
-31,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.054
-32,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.058
-33,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.062
-34,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.066
-35,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.07
-36,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.074
-37,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.078
-38,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.082
-39,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.086
-40,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.091
-41,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.095
-42,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.099
-43,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.104
-44,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.108
-45,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.113
-46,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.117
-47,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.122
-48,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.126
-49,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.131
-50,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.135
-51,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.139
-52,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.144
-53,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.148
-54,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.152
-55,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.157
-56,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.161
-57,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.165
-58,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.169
-59,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.173
-60,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.177
-61,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.181
-62,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.185
-63,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.189
-64,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.192
-65,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.196
-66,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.199
-67,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.203
-68,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.206
-69,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.21
-70,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.213
-71,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.216
-72,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.219
-73,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.222
-74,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.225
-75,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.227
-76,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.23
-77,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.233
-78,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.235
-79,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.238
-80,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.24
-81,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.242
-82,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.244
-83,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.246
-84,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.248
-85,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.25
-86,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.252
-87,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.254
-88,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.255
-89,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.257
-90,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.258
-91,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.26
-92,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.261
-93,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.262
-94,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.263
-95,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.265
-96,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.266
-97,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.266
-98,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.267
-99,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.268
-100,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.269
+1,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.06
+2,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.02
+3,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.023
+4,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.022
+5,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.02
+6,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.019
+7,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.018
+8,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.017
+9,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.016
+10,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.015
+11,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.014
+12,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.014
+13,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.013
+14,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.013
+15,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.013
+16,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.013
+17,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.014
+18,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.014
+19,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.015
+20,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.015
+21,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.016
+22,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.017
+23,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.019
+24,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.02
+25,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.021
+26,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.023
+27,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.025
+28,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.027
+29,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.028
+30,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.03
+31,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.033
+32,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.035
+33,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.037
+34,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.039
+35,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.042
+36,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.044
+37,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.047
+38,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.049
+39,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.052
+40,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.054
+41,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.057
+42,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.059
+43,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.062
+44,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.065
+45,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.067
+46,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.07
+47,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.073
+48,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.075
+49,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.078
+50,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.081
+51,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.083
+52,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.086
+53,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.088
+54,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.091
+55,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.093
+56,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.096
+57,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.098
+58,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.101
+59,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.103
+60,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.106
+61,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.108
+62,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.11
+63,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.112
+64,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.115
+65,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.117
+66,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.119
+67,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.121
+68,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.123
+69,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.125
+70,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.127
+71,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.129
+72,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.13
+73,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.132
+74,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.134
+75,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.136
+76,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.137
+77,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.139
+78,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.14
+79,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.142
+80,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.143
+81,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.144
+82,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.145
+83,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.147
+84,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.148
+85,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.149
+86,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.15
+87,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.151
+88,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.152
+89,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.153
+90,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.154
+91,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.155
+92,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.155
+93,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.156
+94,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.157
+95,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.157
+96,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.158
+97,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.158
+98,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.159
+99,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.159
+100,Human capital,Efficiency improvement (EMDE),Prim. def. (PD<sub>t</sub>),-0.16
 1,R&D,"Spending increase (AE, benchmark)",Prim. def. (PD<sub>t</sub>),0.196
 2,R&D,"Spending increase (AE, benchmark)",Prim. def. (PD<sub>t</sub>),0.271
 3,R&D,"Spending increase (AE, benchmark)",Prim. def. (PD<sub>t</sub>),0.273
@@ -2899,106 +2899,106 @@ horizon_quarter,instrument,treatment,variable,response
 98,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.256
 99,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.435
 100,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.617
-1,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.137
-2,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.155
-3,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.18
-4,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.206
-5,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.234
-6,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.262
-7,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.29
-8,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.317
-9,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.342
-10,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.366
-11,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.389
-12,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.409
-13,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.428
-14,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.445
-15,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.459
-16,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.472
-17,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.482
-18,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.491
-19,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.499
-20,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.505
-21,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.51
-22,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.513
-23,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.516
-24,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.519
-25,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.52
-26,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.522
-27,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.524
-28,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.527
-29,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.53
-30,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.534
-31,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.538
-32,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.545
-33,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.552
-34,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.562
-35,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.573
-36,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.587
-37,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.602
-38,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.621
-39,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.642
-40,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.666
-41,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.693
-42,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.723
-43,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.756
-44,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.793
-45,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.833
-46,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.877
-47,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.925
-48,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.977
-49,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.032
-50,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.092
-51,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.156
-52,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.223
-53,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.295
-54,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.372
-55,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.452
-56,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.537
-57,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.626
-58,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.719
-59,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.817
-60,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.919
-61,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.025
-62,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.136
-63,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.251
-64,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.371
-65,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.494
-66,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.622
-67,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.754
-68,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.89
-69,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.031
-70,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.175
-71,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.323
-72,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.476
-73,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.632
-74,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.792
-75,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.956
-76,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.124
-77,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.295
-78,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.47
-79,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.649
-80,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.831
-81,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.016
-82,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.205
-83,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.397
-84,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.592
-85,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.79
-86,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.992
-87,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-6.196
-88,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-6.403
-89,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-6.613
-90,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-6.825
-91,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-7.041
-92,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-7.258
-93,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-7.479
-94,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-7.701
-95,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-7.926
-96,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-8.153
-97,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-8.383
-98,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-8.614
-99,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-8.847
-100,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-9.083
+1,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.082
+2,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.093
+3,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.108
+4,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.124
+5,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.141
+6,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.157
+7,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.174
+8,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.19
+9,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.206
+10,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.22
+11,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.234
+12,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.246
+13,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.257
+14,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.267
+15,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.276
+16,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.284
+17,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.29
+18,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.296
+19,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.3
+20,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.304
+21,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.307
+22,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.309
+23,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.311
+24,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.312
+25,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.314
+26,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.315
+27,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.316
+28,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.317
+29,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.319
+30,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.321
+31,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.324
+32,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.328
+33,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.333
+34,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.338
+35,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.345
+36,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.353
+37,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.362
+38,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.373
+39,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.386
+40,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.4
+41,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.416
+42,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.434
+43,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.453
+44,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.475
+45,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.499
+46,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.525
+47,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.554
+48,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.584
+49,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.617
+50,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.652
+51,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.69
+52,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.73
+53,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.773
+54,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.818
+55,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.866
+56,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.916
+57,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.969
+58,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.024
+59,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.082
+60,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.142
+61,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.205
+62,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.271
+63,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.339
+64,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.409
+65,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.483
+66,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.558
+67,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.636
+68,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.717
+69,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.8
+70,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.885
+71,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.973
+72,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.063
+73,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.156
+74,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.25
+75,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.347
+76,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.447
+77,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.548
+78,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.651
+79,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.757
+80,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.865
+81,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.974
+82,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.086
+83,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.199
+84,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.314
+85,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.432
+86,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.551
+87,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.671
+88,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.794
+89,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.918
+90,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.043
+91,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.17
+92,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.299
+93,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.429
+94,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.56
+95,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.693
+96,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.827
+97,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.963
+98,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.1
+99,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.237
+100,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.376
 1,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.136
 2,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.398
 3,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.662
