@@ -526,7 +526,16 @@ The complete calibration, including the internally determined scale parameters, 
 
 The AE and EMDE calibrations differ in their trend growth, spending composition, implicit tax rates, and public debt level.
 Table~\ref{tab:calibrationTargets} collects these steady-state targets in annualized or percentage terms.
-Except for public R\&D, the targets are set to the 2000--23 means of the annual GDP-weighted country-group aggregates documented in Appendix~\ref{app:calibrationData}.
+Except for public R\&D, the targets are set to the 2000--23 means of the annual GDP-weighted country-group aggregates shown in Figure~\ref{fig:calibrationDataBands}.
+
+Six targets anchor the two calibrations in the cross-country data.
+Annual growth is an observable but cyclical proxy for the calibrated trend-growth rate.
+Government consumption maps directly to $G_t^C$, while the fixed-investment target sums infrastructure and human-capital investment and excludes public R\&D.
+The implicit consumption tax rate follows the effective-average-tax approach of \citet{MendozaRazinTesar1994}, using general sales taxes and excises from the World Revenue Longitudinal Database (WoRLD) as the numerator.
+Its base is private consumption plus government consumption excluding employee compensation, net of those taxes.
+The labor-income tax rate combines personal income taxes and social contributions from WoRLD and divides them by labor income from ILOSTAT.
+Public debt is measured as general-government gross debt.
+
 Annual trend output growth is 1.9 percent for AEs and 5.1 percent for EMDEs.
 
 Government consumption is calibrated at 17.7 percent of GDP for AEs and 14.7 percent for EMDEs.
@@ -549,11 +558,33 @@ The public-debt targets are 78.8 percent of annual GDP for AEs and 46.4 percent 
     \input{calibrationTargetsTable.tex}
 
     \vspace{1mm}
-    \tabnote{IMF, World Economic Outlook database and World Revenue Longitudinal Database; ILOSTAT; \citet{OECD2025Glance}; IMF staff calculations.}{Except for public R\&D, the targets correspond to the means of the annual GDP-weighted country-group aggregates shown in Appendix~\ref{app:calibrationData}; total fixed investment is split using the functional composition reported in Appendix~\ref{app:investmentComposition}.
+    \tabnote{IMF, World Economic Outlook database and World Revenue Longitudinal Database; ILOSTAT; \citet{OECD2025Glance}; IMF staff calculations.}{Except for public R\&D, the targets correspond to the means of the annual GDP-weighted country-group aggregates shown in Figure~\ref{fig:calibrationDataBands}; total fixed investment is split using the functional composition reported in Appendix~\ref{app:investmentComposition}.
 Trend growth is annualized from the quarterly gross rate.
 Public debt is reported relative to annual GDP; the Dynare implementation divides debt by quarterly GDP and therefore stores four times the ratios shown here.
 Spending shares are relative to quarterly GDP, while implicit tax rates are measured against their corresponding tax bases; both are numerically unchanged at an annual frequency.}
 \end{table}
+
+\begin{figure}[H]
+    \centering
+    \caption{Data Underlying Country-Group Calibration Targets, 2000--23 \label{fig:calibrationDataBands}}
+    \includegraphics{figures/calibrationDataBands.pdf}
+    \source{IMF, World Economic Outlook database and World Revenue Longitudinal Database; ILOSTAT; IMF staff calculations.}
+    \desc{In the left-hand panels, solid lines show country-group medians, dotted lines show GDP-weighted group averages, and shaded areas show the 25th--75th percentile range.
+In the right-hand panels, boxes show the interquartile range of country-year observations pooled over 2000--23.
+Short solid lines show the means of annual group medians, short dotted lines show the means of annual GDP-weighted aggregates, and centered open diamonds show the calibration targets in Table~\ref{tab:calibrationTargets}.
+\par\vspace{0.5mm}\noindent
+Real GDP growth is the annual percentage change in constant-price GDP, and both tax rates are in percent.
+Government consumption, fixed investment, and public debt are in percent of GDP; the first two are the national-accounts series \texttt{NCG} and \texttt{NFIG}.
+\par\vspace{0.5mm}\noindent
+The consumption-tax numerator sums general sales taxes and excises from WoRLD; its base combines private and government consumption net of government employee compensation, and is net of those taxes.
+The labor-income tax divides personal income taxes and social contributions from WoRLD by ILOSTAT labor income, including employee compensation and self-employment income; corporate income taxes are excluded.
+For 2000--03, each economy's labor-income share is held at its 2004 value, the first year available from ILOSTAT.
+\par\vspace{0.5mm}\noindent
+The United States is excluded from the AE consumption-tax weighted average because it relies on state and local retail sales taxes rather than a national VAT.
+This system yields an exceptionally low implicit rate and, given the size of the US economy, would disproportionately lower the GDP-weighted aggregate.
+Japan is excluded from the AE public-debt weighted average because its exceptionally high debt ratio would otherwise have disproportionate influence under GDP weights.
+China is excluded from the government-investment aggregates because its \texttt{NFIG} series covers the broader public sector, and GFS does not report a corresponding general-government series.}
+\end{figure}
 
 \subsection{Productive-Spending and Endogenous-Growth Parameters} \label{subsec:productive-calibration}
 
@@ -1264,41 +1295,6 @@ The EMDE sample comprises Bulgaria, Chile, Colombia, Costa Rica, Hungary, Poland
 The source reports functional shares but not investment amounts, so the means give each economy equal weight.
 Data refer to 2023 except where otherwise noted by the OECD.}
 \end{table}
-
-%========================================================================
-\section{Data Underlying the Country-Group Calibration Targets} \label{app:calibrationData}
-%========================================================================
-
-Cross-country distributions provide the empirical basis for six targets in Table~\ref{tab:calibrationTargets} (Figure~\ref{fig:calibrationDataBands}).
-Each target is the 2000--23 mean of the corresponding annual GDP-weighted country-group aggregate.
-Annual growth is an observable but cyclical proxy for the calibrated trend-growth rate.
-Government consumption maps directly to $G_t^C$; the fixed-investment target sums infrastructure and human-capital investment and excludes public R\&D.
-The implicit consumption tax rate follows the effective-average-tax approach of \citet{MendozaRazinTesar1994}, using general sales taxes and excises from WoRLD as the numerator.
-Its base is private consumption plus government consumption excluding employee compensation, net of those taxes.
-The labor-income tax rate combines personal income taxes and social contributions from the IMF's World Revenue Longitudinal Database.
-Labor income as a share of GDP comes from ILOSTAT.
-
-\begin{figure}[H]
-    \centering
-    \caption{Data Underlying Country-Group Calibration Targets, 2000--23 \label{fig:calibrationDataBands}}
-    \includegraphics{figures/calibrationDataBands.pdf}
-    \source{IMF, World Economic Outlook database and World Revenue Longitudinal Database; ILOSTAT; IMF staff calculations.}
-    \desc{In the left-hand panels, solid lines show country-group medians, dotted lines show GDP-weighted group averages, and shaded areas show the 25th--75th percentile range.
-In the right-hand panels, boxes show the interquartile range of country-year observations pooled over 2000--23.
-Short solid lines show the means of annual group medians, short dotted lines show the means of annual GDP-weighted aggregates, and centered open diamonds show the calibration targets in Table~\ref{tab:calibrationTargets}.
-\par\vspace{0.5mm}\noindent
-Real GDP growth is the annual percentage change in constant-price GDP, and both tax rates are in percent.
-Government consumption, fixed investment, and public debt are in percent of GDP; the first two are the national-accounts series \texttt{NCG} and \texttt{NFIG}.
-\par\vspace{0.5mm}\noindent
-The consumption-tax numerator sums general sales taxes and excises from WoRLD; its base combines private and government consumption net of government employee compensation, and is net of those taxes.
-The labor-income tax divides personal income taxes and social contributions from WoRLD by ILOSTAT labor income, including employee compensation and self-employment income; corporate income taxes are excluded.
-For 2000--03, each economy's labor-income share is held at its 2004 value, the first year available from ILOSTAT.
-\par\vspace{0.5mm}\noindent
-The United States is excluded from the AE consumption-tax weighted average because it relies on state and local retail sales taxes rather than a national VAT.
-This system yields an exceptionally low implicit rate and, given the size of the US economy, would disproportionately lower the GDP-weighted aggregate.
-Japan is excluded from the AE public-debt weighted average because its exceptionally high debt ratio would otherwise have disproportionate influence under GDP weights.
-China is excluded from the government-investment aggregates because its \texttt{NFIG} series covers the broader public sector, and GFS does not report a corresponding general-government series.}
-\end{figure}
 
 %========================================================================
 \section{Spending-Efficiency Estimates} \label{app:efficiency}
