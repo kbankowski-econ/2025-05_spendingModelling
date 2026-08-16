@@ -52,6 +52,18 @@ def infrastructure_shares():
     return shares
 
 
+def investment_label(label, ae_share, emde_share):
+    detail = (
+        r"{\scriptsize\textit{(Share of government investment: "
+        rf"AE {pct(ae_share, 0)}\%; EMDE {pct(emde_share, 0)}\%)}}}}"
+    )
+    return (
+        r"\begin{tabular}[c]{@{}l@{}}"
+        rf"{label}\\[-0.2em]{detail}"
+        r"\end{tabular}"
+    )
+
+
 def main():
     ae = read_params(AE_MODEL)
     em = read_params(EM_MODEL)
@@ -68,10 +80,8 @@ def main():
         (r"$g^4-1$", "Annual trend output growth", "Percent", annual_growth(ae["g"]), annual_growth(em["g"])),
         ("Public spending", None, None, None, None),
         (r"$\hat G^{C,SS}/\hat Y^{d,SS}$", "Government consumption", "Percent of GDP", pct(ae["Gcy"]), pct(em["Gcy"])),
-        (r"$\hat I^{GI,SS}/\hat Y^{d,SS}$", "Infrastructure investment", "Percent of GDP", pct(ae_infrastructure), pct(em_infrastructure)),
-        ("", r"\hspace{1em}{\scriptsize\textit{(Share of government investment)}}", r"{\scriptsize Percent}", rf"{{\scriptsize {pct(shares['AE'], 0)}}}", rf"{{\scriptsize {pct(shares['EMDE'], 0)}}}"),
-        (r"$\hat I^{GE,SS}/\hat Y^{d,SS}$", "Human-capital investment", "Percent of GDP", pct(ae_human_capital), pct(em_human_capital)),
-        ("", r"\hspace{1em}{\scriptsize\textit{(Share of government investment)}}", r"{\scriptsize Percent}", rf"{{\scriptsize {pct(1 - shares['AE'], 0)}}}", rf"{{\scriptsize {pct(1 - shares['EMDE'], 0)}}}"),
+        (r"$\hat I^{GI,SS}/\hat Y^{d,SS}$", investment_label("Infrastructure investment", shares["AE"], shares["EMDE"]), "Percent of GDP", pct(ae_infrastructure), pct(em_infrastructure)),
+        (r"$\hat I^{GE,SS}/\hat Y^{d,SS}$", investment_label("Human-capital investment", 1 - shares["AE"], 1 - shares["EMDE"]), "Percent of GDP", pct(ae_human_capital), pct(em_human_capital)),
         (r"$\hat G^{RD,SS}/\hat Y^{d,SS}$", r"Public R\&D spending", "Percent of GDP", pct(ae["Grdy"]), pct(em["Grdy"])),
         ("Implicit tax rates", None, None, None, None),
         (r"$\tau^{c,SS}$", "Consumption tax", "Percent", pct(ae["taucss"]), pct(em["taucss"])),
