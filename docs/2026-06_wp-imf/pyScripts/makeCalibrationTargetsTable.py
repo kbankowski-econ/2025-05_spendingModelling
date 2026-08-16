@@ -1,21 +1,25 @@
 """
 Generate the AE and EMDE steady-state target table for the working paper.
 
-Values are read from the committed result files and converted to reader-facing
-annual or percentage units. In particular, the model's debt ratio uses quarterly
-GDP as its denominator, so it is divided by four for reporting against annual GDP.
+Aggregate values are read from the committed result files and converted to
+reader-facing annual or percentage units. Total fixed investment is split using
+the 2013-22 GDP-weighted functional shares reported in Appendix C. The model's
+debt ratio uses quarterly GDP as its denominator, so it is divided by four for
+reporting against annual GDP.
 
 Writes:
   ../calibrationTargetsTable.tex
 """
 from pathlib import Path
 
+import pandas as pd
 from scipy.io import loadmat
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE.parent / "calibrationTargetsTable.tex"
 REPO = HERE.parents[2]
 MODELS = REPO / "models"
+COMPOSITION = HERE.parent / "figures" / "investmentCompositionBands.csv"
 AE_MODEL = "Model_HumanCapital_exp_gc"
 EM_MODEL = "EM_Model_HumanCapital_exp_gc"
 
@@ -37,17 +41,35 @@ def annual_growth(value):
     return f"{100 * (float(value) ** 4 - 1):.1f}"
 
 
+def infrastructure_shares():
+    composition = pd.read_csv(COMPOSITION)
+    infrastructure = composition.loc[
+        composition["variable"].eq("infrastructure_share")
+    ]
+    shares = infrastructure.groupby("group")["gdp_weighted_average"].mean() / 100
+    if set(shares.index) != {"AE", "EMDE"}:
+        raise ValueError("Investment-composition data must contain AE and EMDE shares")
+    return shares
+
+
 def main():
     ae = read_params(AE_MODEL)
     em = read_params(EM_MODEL)
+    shares = infrastructure_shares()
+    ae_total_investment = ae["Igiy"] + ae["Igey"]
+    em_total_investment = em["Igiy"] + em["Igey"]
+    ae_infrastructure = ae_total_investment * shares["AE"]
+    em_infrastructure = em_total_investment * shares["EMDE"]
+    ae_human_capital = ae_total_investment - ae_infrastructure
+    em_human_capital = em_total_investment - em_infrastructure
 
     rows = [
         ("Growth", None, None, None, None),
         (r"$g^4-1$", "Annual trend output growth", "Percent", annual_growth(ae["g"]), annual_growth(em["g"])),
         ("Public spending", None, None, None, None),
         (r"$\hat G^{C,SS}/\hat Y^{d,SS}$", "Government consumption", "Percent of GDP", pct(ae["Gcy"]), pct(em["Gcy"])),
-        (r"$\hat I^{GI,SS}/\hat Y^{d,SS}$", "Infrastructure investment", "Percent of GDP", pct(ae["Igiy"]), pct(em["Igiy"])),
-        (r"$\hat I^{GE,SS}/\hat Y^{d,SS}$", "Human-capital investment", "Percent of GDP", pct(ae["Igey"]), pct(em["Igey"])),
+        (r"$\hat I^{GI,SS}/\hat Y^{d,SS}$", "Infrastructure investment", "Percent of GDP", pct(ae_infrastructure), pct(em_infrastructure)),
+        (r"$\hat I^{GE,SS}/\hat Y^{d,SS}$", "Human-capital investment", "Percent of GDP", pct(ae_human_capital), pct(em_human_capital)),
         (r"$\hat G^{RD,SS}/\hat Y^{d,SS}$", r"Public R\&D spending", "Percent of GDP", pct(ae["Grdy"]), pct(em["Grdy"])),
         ("Implicit tax rates", None, None, None, None),
         (r"$\tau^{c,SS}$", "Consumption tax", "Percent", pct(ae["taucss"]), pct(em["taucss"])),
