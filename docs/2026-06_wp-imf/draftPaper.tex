@@ -531,17 +531,17 @@ This period balances broad country coverage against the need to average through 
 Table~\ref{tab:calibrationTargets} reports the targets in the annualized or percentage units used in the paper; its note explains their correspondence to the quarterly model.
 
 Annual trend output growth is 1.9 percent for AEs and 5.1 percent for EMDEs.
-Annual real GDP growth provides an observable, albeit cyclical, proxy for these calibrated trend-growth rates.
+Annual real GDP growth provides an observable proxy for these calibrated trend-growth rates.
 Turning to spending, government consumption maps directly to $G_t^C$ and is calibrated at 17.7 percent of GDP for AEs and 14.7 percent for EMDEs.
 This category covers intermediate consumption, social transfers in kind, and compensation of government employees, including teachers, doctors, nurses, and other public workers.
-The fixed-investment target sums infrastructure and human-capital investment and excludes public R\&D.
-Total government fixed investment is calibrated at 3.9 percent of GDP for AEs and 4.9 percent for EMDEs.
-These totals are divided using the median functional composition of government investment in OECD economies \citep{OECD2025Glance}.
+The fixed-investment target combines infrastructure and human-capital-related investment, excluding public R\&D, and is 3.9 percent of GDP for AEs and 4.9 percent for EMDEs in the data.
+Because the model treats the two productive instruments separately, these totals must be decomposed.
+The split uses the functional composition of government investment reported by \citet{OECD2025Glance}; Appendix~\ref{app:investmentComposition} describes the mapping in detail.
+The OECD dataset covers a narrower set of economies than the WEO-based sample but provides the only cross-country breakdown available for this calibration.
 The resulting infrastructure investment shares are 2.6 and 3.2 percent of GDP, while public human-capital investment---including capital spending on schools and hospitals---is 1.3 and 1.7 percent, respectively.
-Appendix~\ref{app:investmentComposition} describes this mapping into the model's investment blocks.
 Baseline public R\&D spending is 0.6 percent of GDP for AEs and 0.1 percent for EMDEs.
 
-The implicit consumption tax rate is 15.1 percent for AEs and 11.6 percent for EMDEs.
+Turning to tax rates, the implicit consumption tax rate is 15.1 percent for AEs and 11.6 percent for EMDEs.
 It follows the effective-average-tax approach of \citet{MendozaRazinTesar1994}, with general sales taxes and excises from the World Revenue Longitudinal Database (WoRLD) in the numerator.
 The tax base is private consumption plus government consumption excluding employee compensation, net of those taxes.
 The labor-income tax rate is 30.9 and 14.0 percent, respectively.
