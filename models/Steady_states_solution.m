@@ -104,7 +104,7 @@ G=Gc+Igi+Ige+Grd;
 rreal=R/PI;
 pdef_yss=(Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;
 T_yss=T/ydss;
-by_yss=b/ydss;
+by_yss=b/(4*ydss);
 
 
 

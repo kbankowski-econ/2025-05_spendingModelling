@@ -169,7 +169,7 @@ eGRD = eGRD_ss-epsi_effgrd;
 G = Gc+Igi+Ige+Grd;
 pdef_yss = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;
 T_yss = T/ydss;
-by_yss = b/ydss;
+by_yss = b/(4*ydss); // government debt relative to annual steady-state GDP
 @#else
 G = Gc;
 pdef_yss = 0;

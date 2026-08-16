@@ -2399,803 +2399,803 @@ horizon_quarter,instrument,treatment,variable,response
 98,R&D,Efficiency improvement (AE),Prim. def. (PD<sub>t</sub>),-0.25
 99,R&D,Efficiency improvement (AE),Prim. def. (PD<sub>t</sub>),-0.25
 100,R&D,Efficiency improvement (AE),Prim. def. (PD<sub>t</sub>),-0.249
-1,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.15
-2,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.414
-3,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.678
-4,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.944
-5,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.209
-6,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.476
-7,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.742
-8,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.008
-9,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.274
-10,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.539
-11,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.804
-12,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.068
-13,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.332
-14,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.594
-15,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.855
-16,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.115
-17,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.373
-18,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.63
-19,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.886
-20,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.14
-21,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.392
-22,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.643
-23,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.892
-24,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),6.139
-25,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),6.385
-26,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),6.628
-27,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),6.87
-28,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),7.11
-29,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),7.347
-30,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),7.583
-31,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),7.817
-32,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),8.049
-33,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),8.278
-34,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),8.506
-35,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),8.732
-36,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),8.955
-37,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),9.177
-38,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),9.397
-39,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),9.614
-40,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),9.83
-41,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),10.043
-42,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),10.254
-43,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),10.464
-44,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),10.671
-45,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),10.876
-46,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.079
-47,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.28
-48,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.48
-49,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.677
-50,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.872
-51,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.065
-52,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.256
-53,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.446
-54,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.633
-55,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.819
-56,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.002
-57,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.184
-58,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.364
-59,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.542
-60,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.718
-61,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.892
-62,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),14.065
-63,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),14.235
-64,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),14.404
-65,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),14.571
-66,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),14.737
-67,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),14.901
-68,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),15.063
-69,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),15.223
-70,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),15.381
-71,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),15.538
-72,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),15.694
-73,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),15.847
-74,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),15.999
-75,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),16.15
-76,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),16.299
-77,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),16.446
-78,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),16.592
-79,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),16.736
-80,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),16.879
-81,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.02
-82,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.16
-83,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.298
-84,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.435
-85,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.57
-86,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.704
-87,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.837
-88,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.968
-89,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.098
-90,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.227
-91,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.354
-92,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.48
-93,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.604
-94,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.727
-95,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.849
-96,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.97
-97,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.09
-98,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.208
-99,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.325
-100,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.441
-1,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.088
-2,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.099
-3,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.112
-4,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.123
-5,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.134
-6,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.143
-7,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.153
-8,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.162
-9,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.171
-10,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.18
-11,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.189
-12,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.199
-13,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.209
-14,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.22
-15,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.232
-16,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.245
-17,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.258
-18,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.273
-19,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.289
-20,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.306
-21,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.324
-22,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.344
-23,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.365
-24,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.387
-25,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.411
-26,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.436
-27,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.463
-28,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.491
-29,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.52
-30,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.552
-31,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.584
-32,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.619
-33,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.654
-34,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.692
-35,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.731
-36,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.771
-37,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.813
-38,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.856
-39,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.901
-40,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.947
-41,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.995
-42,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.044
-43,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.095
-44,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.147
-45,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.201
-46,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.255
-47,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.312
-48,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.369
-49,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.428
-50,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.488
-51,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.55
-52,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.613
-53,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.677
-54,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.742
-55,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.808
-56,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.876
-57,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.945
-58,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.014
-59,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.085
-60,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.157
-61,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.23
-62,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.305
-63,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.38
-64,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.456
-65,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.533
-66,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.611
-67,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.69
-68,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.769
-69,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.85
-70,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.932
-71,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.014
-72,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.097
-73,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.181
-74,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.266
-75,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.351
-76,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.437
-77,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.524
-78,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.611
-79,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.7
-80,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.788
-81,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.878
-82,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.968
-83,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.058
-84,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.149
-85,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.241
-86,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.333
-87,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.426
-88,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.519
-89,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.612
-90,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.706
-91,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.801
-92,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.896
-93,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.991
-94,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.086
-95,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.182
-96,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.279
-97,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.375
-98,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.472
-99,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.569
-100,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.667
-1,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.1
-2,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.115
-3,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.131
-4,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.144
-5,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.155
-6,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.164
-7,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.172
-8,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.18
-9,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.187
-10,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.194
-11,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.202
-12,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.21
-13,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.219
-14,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.229
-15,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.24
-16,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.252
-17,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.266
-18,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.282
-19,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.299
-20,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.318
-21,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.339
-22,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.362
-23,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.387
-24,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.414
-25,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.443
-26,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.473
-27,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.506
-28,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.541
-29,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.578
-30,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.617
-31,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.658
-32,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.701
-33,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.746
-34,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.793
-35,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.842
-36,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.892
-37,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.944
-38,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.999
-39,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.054
-40,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.112
-41,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.171
-42,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.232
-43,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.294
-44,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.358
-45,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.423
-46,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.489
-47,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.557
-48,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.626
-49,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.697
-50,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.768
-51,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.841
-52,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.915
-53,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.989
-54,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.065
-55,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.142
-56,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.219
-57,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.298
-58,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.377
-59,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.457
-60,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.538
-61,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.619
-62,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.701
-63,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.784
-64,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.867
-65,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.951
-66,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.035
-67,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.119
-68,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.205
-69,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.29
-70,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.376
-71,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.462
-72,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.548
-73,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.635
-74,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.721
-75,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.808
-76,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.895
-77,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.983
-78,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.07
-79,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.157
-80,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.245
-81,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.333
-82,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.42
-83,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.508
-84,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.595
-85,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.682
-86,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.77
-87,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.857
-88,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.944
-89,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.031
-90,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.118
-91,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.205
-92,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.291
-93,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.378
-94,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.464
-95,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.55
-96,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.635
-97,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.721
-98,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.806
-99,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.891
-100,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.975
-1,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.108
-2,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.353
-3,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.597
-4,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.842
-5,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.089
-6,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.337
-7,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.586
-8,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.837
-9,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.091
-10,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.346
-11,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.603
-12,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.862
-13,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.124
-14,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.387
-15,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.652
-16,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.918
-17,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.187
-18,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.457
-19,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.728
-20,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.001
-21,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.275
-22,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.55
-23,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.827
-24,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),6.104
-25,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),6.382
-26,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),6.66
-27,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),6.939
-28,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),7.218
-29,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),7.497
-30,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),7.776
-31,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),8.055
-32,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),8.334
-33,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),8.612
-34,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),8.89
-35,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),9.166
-36,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),9.442
-37,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),9.717
-38,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),9.99
-39,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),10.262
-40,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),10.532
-41,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),10.801
-42,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.068
-43,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.333
-44,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.596
-45,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.857
-46,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.115
-47,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.371
-48,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.625
-49,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.875
-50,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.123
-51,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.368
-52,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.61
-53,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.848
-54,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),14.084
-55,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),14.316
-56,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),14.545
-57,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),14.77
-58,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),14.991
-59,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),15.209
-60,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),15.423
-61,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),15.633
-62,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),15.839
-63,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),16.041
-64,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),16.239
-65,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),16.433
-66,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),16.622
-67,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),16.807
-68,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),16.988
-69,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.164
-70,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.336
-71,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.503
-72,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.666
-73,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.824
-74,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),17.977
-75,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.126
-76,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.27
-77,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.409
-78,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.543
-79,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.672
-80,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.796
-81,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),18.916
-82,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.03
-83,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.139
-84,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.244
-85,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.343
-86,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.437
-87,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.526
-88,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.61
-89,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.689
-90,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.762
-91,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.831
-92,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.894
-93,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),19.952
-94,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),20.005
-95,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),20.053
-96,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),20.096
-97,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),20.133
-98,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),20.166
-99,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),20.193
-100,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),20.214
-1,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.129
-2,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.15
-3,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.176
-4,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.201
-5,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.226
-6,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.249
-7,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.272
-8,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.292
-9,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.312
-10,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.329
-11,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.345
-12,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.36
-13,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.372
-14,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.383
-15,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.393
-16,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.401
-17,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.407
-18,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.412
-19,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.415
-20,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.417
-21,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.418
-22,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.418
-23,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.417
-24,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.416
-25,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.413
-26,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.411
-27,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.407
-28,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.404
-29,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.4
-30,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.396
-31,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.393
-32,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.39
-33,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.387
-34,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.384
-35,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.383
-36,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.382
-37,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.382
-38,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.383
-39,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.386
-40,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.39
-41,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.395
-42,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.401
-43,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.41
-44,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.42
-45,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.432
-46,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.446
-47,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.462
-48,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.48
-49,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.5
-50,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.523
-51,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.548
-52,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.576
-53,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.606
-54,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.639
-55,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.675
-56,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.713
-57,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.754
-58,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.798
-59,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.845
-60,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.895
-61,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.949
-62,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.005
-63,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.064
-64,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.127
-65,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.193
-66,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.262
-67,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.334
-68,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.41
-69,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.489
-70,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.571
-71,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.657
-72,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.746
-73,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.838
-74,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.934
-75,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.034
-76,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.137
-77,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.243
-78,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.353
-79,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.466
-80,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.582
-81,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.702
-82,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.826
-83,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.953
-84,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.083
-85,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.217
-86,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.354
-87,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.494
-88,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.638
-89,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.785
-90,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.935
-91,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.089
-92,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.246
-93,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.406
-94,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.57
-95,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.737
-96,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.906
-97,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.079
-98,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.256
-99,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.435
-100,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.617
-1,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.082
-2,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.093
-3,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.108
-4,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.124
-5,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.141
-6,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.157
-7,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.174
-8,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.19
-9,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.206
-10,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.22
-11,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.234
-12,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.246
-13,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.257
-14,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.267
-15,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.276
-16,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.284
-17,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.29
-18,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.296
-19,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.3
-20,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.304
-21,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.307
-22,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.309
-23,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.311
-24,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.312
-25,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.314
-26,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.315
-27,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.316
-28,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.317
-29,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.319
-30,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.321
-31,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.324
-32,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.328
-33,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.333
-34,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.338
-35,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.345
-36,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.353
-37,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.362
-38,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.373
-39,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.386
-40,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.4
-41,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.416
-42,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.434
-43,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.453
-44,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.475
-45,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.499
-46,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.525
-47,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.554
-48,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.584
-49,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.617
-50,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.652
-51,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.69
-52,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.73
-53,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.773
-54,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.818
-55,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.866
-56,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.916
-57,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.969
-58,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.024
-59,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.082
-60,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.142
-61,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.205
-62,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.271
-63,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.339
-64,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.409
-65,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.483
-66,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.558
-67,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.636
-68,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.717
-69,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.8
-70,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.885
-71,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.973
-72,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.063
-73,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.156
-74,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.25
-75,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.347
-76,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.447
-77,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.548
-78,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.651
-79,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.757
-80,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.865
-81,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-2.974
-82,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.086
-83,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.199
-84,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.314
-85,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.432
-86,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.551
-87,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.671
-88,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.794
-89,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-3.918
-90,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.043
-91,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.17
-92,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.299
-93,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.429
-94,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.56
-95,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.693
-96,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.827
-97,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-4.963
-98,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.1
-99,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.237
-100,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-5.376
-1,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.136
-2,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.398
-3,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.662
-4,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.928
-5,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.198
-6,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.471
-7,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.747
-8,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.027
-9,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.309
-10,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.593
-11,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.88
-12,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.168
-13,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.457
-14,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.746
-15,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.035
-16,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.324
-17,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.611
-18,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.898
-19,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.182
-20,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.465
-21,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.744
-22,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),6.022
-23,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),6.295
-24,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),6.566
-25,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),6.833
-26,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),7.096
-27,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),7.355
-28,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),7.609
-29,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),7.859
-30,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),8.105
-31,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),8.345
-32,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),8.581
-33,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),8.812
-34,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),9.038
-35,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),9.259
-36,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),9.474
-37,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),9.684
-38,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),9.889
-39,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),10.088
-40,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),10.282
-41,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),10.471
-42,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),10.654
-43,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),10.831
-44,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.003
-45,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.17
-46,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.331
-47,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.487
-48,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.637
-49,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.781
-50,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),11.921
-51,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.055
-52,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.183
-53,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.306
-54,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.424
-55,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.536
-56,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.644
-57,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.746
-58,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.843
-59,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.935
-60,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.021
-61,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.103
-62,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.179
-63,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.251
-64,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.318
-65,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.38
-66,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.437
-67,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.489
-68,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.537
-69,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.58
-70,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.618
-71,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.651
-72,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.681
-73,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.705
-74,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.725
-75,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.741
-76,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.753
-77,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.76
-78,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.763
-79,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.761
-80,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.756
-81,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.746
-82,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.732
-83,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.715
-84,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.693
-85,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.667
-86,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.638
-87,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.604
-88,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.567
-89,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.526
-90,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.481
-91,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.433
-92,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.381
-93,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.326
-94,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.266
-95,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.204
-96,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.138
-97,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),13.068
-98,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.995
-99,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.919
-100,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),12.839
-1,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.101
-2,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.113
-3,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.127
-4,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.14
-5,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.15
-6,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.156
-7,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.16
-8,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.16
-9,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.157
-10,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.151
-11,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.143
-12,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.133
-13,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.122
-14,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.11
-15,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.097
-16,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.085
-17,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.072
-18,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.061
-19,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.051
-20,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.043
-21,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.037
-22,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.032
-23,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.031
-24,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.032
-25,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.037
-26,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.044
-27,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.055
-28,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.07
-29,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.088
-30,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.11
-31,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.137
-32,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.167
-33,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.202
-34,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.24
-35,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.283
-36,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.331
-37,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.382
-38,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.438
-39,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.499
-40,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.563
-41,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.632
-42,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.706
-43,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.783
-44,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.865
-45,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.952
-46,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.042
-47,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.136
-48,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.235
-49,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.338
-50,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.445
-51,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.555
-52,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.67
-53,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.788
-54,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.91
-55,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.036
-56,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.165
-57,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.298
-58,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.435
-59,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.575
-60,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.718
-61,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.865
-62,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.014
-63,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.167
-64,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.323
-65,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.482
-66,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.644
-67,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.809
-68,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-3.976
-69,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.146
-70,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.319
-71,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.495
-72,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.673
-73,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-4.853
-74,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.036
-75,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.221
-76,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.408
-77,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.597
-78,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.789
-79,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-5.983
-80,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-6.178
-81,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-6.376
-82,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-6.575
-83,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-6.776
-84,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-6.979
-85,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-7.183
-86,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-7.389
-87,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-7.597
-88,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-7.806
-89,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-8.017
-90,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-8.229
-91,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-8.442
-92,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-8.657
-93,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-8.873
-94,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-9.09
-95,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-9.308
-96,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-9.528
-97,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-9.748
-98,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-9.969
-99,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-10.191
-100,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-10.415
+1,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.037
+2,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.103
+3,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.17
+4,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.236
+5,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.302
+6,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.369
+7,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.435
+8,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.502
+9,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.568
+10,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.635
+11,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.701
+12,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.767
+13,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.833
+14,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.898
+15,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.964
+16,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.029
+17,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.093
+18,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.158
+19,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.221
+20,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.285
+21,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.348
+22,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.411
+23,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.473
+24,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.535
+25,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.596
+26,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.657
+27,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.717
+28,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.777
+29,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.837
+30,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.896
+31,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.954
+32,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.012
+33,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.07
+34,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.127
+35,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.183
+36,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.239
+37,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.294
+38,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.349
+39,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.404
+40,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.457
+41,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.511
+42,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.564
+43,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.616
+44,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.668
+45,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.719
+46,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.77
+47,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.82
+48,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.87
+49,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.919
+50,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.968
+51,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.016
+52,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.064
+53,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.111
+54,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.158
+55,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.205
+56,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.251
+57,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.296
+58,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.341
+59,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.385
+60,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.429
+61,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.473
+62,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.516
+63,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.559
+64,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.601
+65,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.643
+66,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.684
+67,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.725
+68,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.766
+69,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.806
+70,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.845
+71,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.885
+72,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.923
+73,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.962
+74,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.0
+75,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.037
+76,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.075
+77,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.111
+78,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.148
+79,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.184
+80,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.22
+81,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.255
+82,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.29
+83,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.325
+84,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.359
+85,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.393
+86,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.426
+87,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.459
+88,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.492
+89,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.525
+90,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.557
+91,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.588
+92,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.62
+93,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.651
+94,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.682
+95,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.712
+96,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.743
+97,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.772
+98,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.802
+99,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.831
+100,Infrastructure,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.86
+1,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.022
+2,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.025
+3,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.028
+4,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.031
+5,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.033
+6,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.036
+7,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.038
+8,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.04
+9,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.043
+10,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.045
+11,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.047
+12,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.05
+13,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.052
+14,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.055
+15,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.058
+16,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.061
+17,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.065
+18,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.068
+19,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.072
+20,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.076
+21,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.081
+22,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.086
+23,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.091
+24,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.097
+25,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.103
+26,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.109
+27,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.116
+28,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.123
+29,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.13
+30,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.138
+31,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.146
+32,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.155
+33,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.164
+34,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.173
+35,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.183
+36,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.193
+37,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.203
+38,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.214
+39,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.225
+40,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.237
+41,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.249
+42,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.261
+43,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.274
+44,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.287
+45,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.3
+46,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.314
+47,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.328
+48,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.342
+49,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.357
+50,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.372
+51,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.387
+52,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.403
+53,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.419
+54,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.435
+55,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.452
+56,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.469
+57,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.486
+58,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.504
+59,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.521
+60,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.539
+61,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.558
+62,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.576
+63,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.595
+64,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.614
+65,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.633
+66,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.653
+67,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.672
+68,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.692
+69,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.713
+70,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.733
+71,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.753
+72,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.774
+73,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.795
+74,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.816
+75,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.838
+76,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.859
+77,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.881
+78,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.903
+79,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.925
+80,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.947
+81,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.969
+82,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.992
+83,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.015
+84,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.037
+85,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.06
+86,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.083
+87,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.106
+88,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.13
+89,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.153
+90,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.177
+91,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.2
+92,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.224
+93,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.248
+94,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.272
+95,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.296
+96,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.32
+97,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.344
+98,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.368
+99,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.392
+100,Infrastructure,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.417
+1,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.025
+2,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.029
+3,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.033
+4,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.036
+5,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.039
+6,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.041
+7,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.043
+8,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.045
+9,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.047
+10,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.049
+11,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.05
+12,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.052
+13,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.055
+14,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.057
+15,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.06
+16,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.063
+17,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.067
+18,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.07
+19,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.075
+20,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.08
+21,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.085
+22,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.091
+23,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.097
+24,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.103
+25,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.111
+26,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.118
+27,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.127
+28,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.135
+29,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.145
+30,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.154
+31,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.165
+32,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.175
+33,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.187
+34,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.198
+35,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.21
+36,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.223
+37,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.236
+38,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.25
+39,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.264
+40,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.278
+41,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.293
+42,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.308
+43,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.323
+44,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.339
+45,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.356
+46,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.372
+47,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.389
+48,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.407
+49,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.424
+50,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.442
+51,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.46
+52,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.479
+53,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.497
+54,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.516
+55,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.535
+56,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.555
+57,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.574
+58,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.594
+59,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.614
+60,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.634
+61,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.655
+62,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.675
+63,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.696
+64,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.717
+65,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.738
+66,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.759
+67,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.78
+68,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.801
+69,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.822
+70,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.844
+71,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.865
+72,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.887
+73,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.909
+74,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.93
+75,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.952
+76,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.974
+77,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.996
+78,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.018
+79,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.039
+80,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.061
+81,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.083
+82,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.105
+83,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.127
+84,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.149
+85,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.171
+86,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.192
+87,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.214
+88,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.236
+89,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.258
+90,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.28
+91,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.301
+92,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.323
+93,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.344
+94,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.366
+95,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.387
+96,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.409
+97,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.43
+98,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.451
+99,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.473
+100,Infrastructure,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.494
+1,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.027
+2,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.088
+3,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.149
+4,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.211
+5,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.272
+6,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.334
+7,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.397
+8,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.459
+9,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.523
+10,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.586
+11,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.651
+12,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.716
+13,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.781
+14,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.847
+15,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.913
+16,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.98
+17,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.047
+18,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.114
+19,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.182
+20,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.25
+21,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.319
+22,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.388
+23,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.457
+24,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.526
+25,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.595
+26,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.665
+27,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.735
+28,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.804
+29,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.874
+30,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.944
+31,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.014
+32,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.083
+33,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.153
+34,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.222
+35,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.292
+36,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.36
+37,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.429
+38,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.497
+39,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.565
+40,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.633
+41,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.7
+42,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.767
+43,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.833
+44,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.899
+45,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.964
+46,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.029
+47,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.093
+48,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.156
+49,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.219
+50,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.281
+51,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.342
+52,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.402
+53,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.462
+54,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.521
+55,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.579
+56,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.636
+57,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.692
+58,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.748
+59,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.802
+60,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.856
+61,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.908
+62,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.96
+63,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.01
+64,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.06
+65,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.108
+66,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.155
+67,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.202
+68,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.247
+69,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.291
+70,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.334
+71,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.376
+72,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.416
+73,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.456
+74,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.494
+75,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.531
+76,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.567
+77,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.602
+78,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.636
+79,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.668
+80,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.699
+81,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.729
+82,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.757
+83,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.785
+84,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.811
+85,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.836
+86,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.859
+87,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.882
+88,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.902
+89,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.922
+90,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.941
+91,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.958
+92,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.974
+93,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),4.988
+94,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.001
+95,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.013
+96,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.024
+97,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.033
+98,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.041
+99,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.048
+100,Human capital,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),5.054
+1,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.032
+2,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.038
+3,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.044
+4,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.05
+5,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.056
+6,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.062
+7,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.068
+8,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.073
+9,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.078
+10,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.082
+11,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.086
+12,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.09
+13,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.093
+14,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.096
+15,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.098
+16,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.1
+17,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.102
+18,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.103
+19,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.104
+20,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.104
+21,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.105
+22,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.105
+23,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.104
+24,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.104
+25,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.103
+26,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.103
+27,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.102
+28,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.101
+29,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.1
+30,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.099
+31,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.098
+32,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.097
+33,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.097
+34,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.096
+35,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.096
+36,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.096
+37,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.096
+38,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.096
+39,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.096
+40,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.097
+41,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.099
+42,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.1
+43,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.102
+44,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.105
+45,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.108
+46,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.111
+47,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.115
+48,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.12
+49,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.125
+50,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.131
+51,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.137
+52,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.144
+53,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.152
+54,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.16
+55,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.169
+56,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.178
+57,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.189
+58,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.2
+59,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.211
+60,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.224
+61,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.237
+62,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.251
+63,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.266
+64,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.282
+65,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.298
+66,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.315
+67,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.334
+68,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.352
+69,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.372
+70,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.393
+71,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.414
+72,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.436
+73,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.46
+74,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.484
+75,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.508
+76,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.534
+77,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.561
+78,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.588
+79,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.616
+80,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.646
+81,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.676
+82,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.706
+83,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.738
+84,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.771
+85,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.804
+86,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.838
+87,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.874
+88,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.909
+89,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.946
+90,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.984
+91,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.022
+92,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.062
+93,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.102
+94,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.142
+95,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.184
+96,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.227
+97,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.27
+98,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.314
+99,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.359
+100,Human capital,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.404
+1,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.021
+2,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.023
+3,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.027
+4,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.031
+5,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.035
+6,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.039
+7,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.044
+8,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.048
+9,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.051
+10,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.055
+11,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.058
+12,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.062
+13,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.064
+14,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.067
+15,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.069
+16,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.071
+17,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.073
+18,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.074
+19,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.075
+20,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.076
+21,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.077
+22,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.077
+23,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.078
+24,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.078
+25,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.078
+26,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.079
+27,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.079
+28,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.079
+29,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.08
+30,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.08
+31,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.081
+32,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.082
+33,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.083
+34,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.085
+35,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.086
+36,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.088
+37,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.091
+38,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.093
+39,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.096
+40,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.1
+41,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.104
+42,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.108
+43,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.113
+44,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.119
+45,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.125
+46,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.131
+47,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.138
+48,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.146
+49,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.154
+50,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.163
+51,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.173
+52,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.183
+53,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.193
+54,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.205
+55,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.216
+56,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.229
+57,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.242
+58,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.256
+59,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.27
+60,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.286
+61,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.301
+62,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.318
+63,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.335
+64,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.352
+65,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.371
+66,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.39
+67,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.409
+68,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.429
+69,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.45
+70,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.471
+71,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.493
+72,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.516
+73,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.539
+74,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.563
+75,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.587
+76,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.612
+77,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.637
+78,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.663
+79,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.689
+80,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.716
+81,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.744
+82,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.771
+83,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.8
+84,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.829
+85,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.858
+86,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.888
+87,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.918
+88,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.948
+89,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-0.979
+90,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.011
+91,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.043
+92,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.075
+93,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.107
+94,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.14
+95,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.173
+96,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.207
+97,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.241
+98,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.275
+99,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.309
+100,Human capital,Efficiency improvement (EMDE),Public debt (b<sub>t</sub>),-1.344
+1,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.034
+2,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.1
+3,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.165
+4,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.232
+5,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.299
+6,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.368
+7,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.437
+8,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.507
+9,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.577
+10,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.648
+11,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.72
+12,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.792
+13,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.864
+14,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),0.936
+15,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.009
+16,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.081
+17,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.153
+18,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.224
+19,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.296
+20,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.366
+21,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.436
+22,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.505
+23,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.574
+24,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.641
+25,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.708
+26,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.774
+27,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.839
+28,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.902
+29,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),1.965
+30,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.026
+31,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.086
+32,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.145
+33,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.203
+34,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.259
+35,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.315
+36,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.369
+37,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.421
+38,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.472
+39,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.522
+40,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.571
+41,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.618
+42,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.663
+43,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.708
+44,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.751
+45,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.792
+46,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.833
+47,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.872
+48,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.909
+49,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.945
+50,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),2.98
+51,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.014
+52,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.046
+53,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.077
+54,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.106
+55,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.134
+56,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.161
+57,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.186
+58,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.211
+59,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.234
+60,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.255
+61,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.276
+62,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.295
+63,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.313
+64,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.329
+65,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.345
+66,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.359
+67,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.372
+68,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.384
+69,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.395
+70,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.404
+71,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.413
+72,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.42
+73,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.426
+74,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.431
+75,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.435
+76,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.438
+77,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.44
+78,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.441
+79,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.44
+80,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.439
+81,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.437
+82,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.433
+83,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.429
+84,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.423
+85,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.417
+86,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.409
+87,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.401
+88,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.392
+89,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.382
+90,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.37
+91,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.358
+92,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.345
+93,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.331
+94,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.317
+95,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.301
+96,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.284
+97,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.267
+98,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.249
+99,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.23
+100,R&D,"Spending increase (AE, benchmark)",Public debt (b<sub>t</sub>),3.21
+1,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.025
+2,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.028
+3,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.032
+4,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.035
+5,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.037
+6,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.039
+7,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.04
+8,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.04
+9,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.039
+10,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.038
+11,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.036
+12,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.033
+13,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.03
+14,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.027
+15,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.024
+16,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.021
+17,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.018
+18,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.015
+19,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.013
+20,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.011
+21,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.009
+22,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.008
+23,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.008
+24,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.008
+25,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.009
+26,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.011
+27,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.014
+28,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.017
+29,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.022
+30,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.028
+31,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.034
+32,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.042
+33,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.05
+34,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.06
+35,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.071
+36,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.083
+37,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.096
+38,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.11
+39,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.125
+40,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.141
+41,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.158
+42,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.176
+43,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.196
+44,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.216
+45,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.238
+46,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.26
+47,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.284
+48,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.309
+49,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.334
+50,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.361
+51,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.389
+52,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.417
+53,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.447
+54,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.478
+55,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.509
+56,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.541
+57,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.575
+58,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.609
+59,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.644
+60,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.68
+61,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.716
+62,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.754
+63,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.792
+64,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.831
+65,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.871
+66,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.911
+67,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.952
+68,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-0.994
+69,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.037
+70,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.08
+71,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.124
+72,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.168
+73,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.213
+74,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.259
+75,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.305
+76,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.352
+77,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.399
+78,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.447
+79,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.496
+80,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.545
+81,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.594
+82,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.644
+83,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.694
+84,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.745
+85,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.796
+86,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.847
+87,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.899
+88,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-1.952
+89,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.004
+90,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.057
+91,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.111
+92,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.164
+93,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.218
+94,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.273
+95,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.327
+96,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.382
+97,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.437
+98,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.492
+99,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.548
+100,R&D,Efficiency improvement (AE),Public debt (b<sub>t</sub>),-2.604

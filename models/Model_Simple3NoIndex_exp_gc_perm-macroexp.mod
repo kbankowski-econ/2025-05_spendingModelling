@@ -262,7 +262,7 @@ rreal = R/PI;                                              // ex-post real inter
 // Fiscal aggregates as a share of steady-state GDP (ydss)
 pdef_yss  = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;  // primary deficit
 T_yss = T/ydss;                                       // transfers
-by_yss    = b/ydss;                                          // government debt
+by_yss    = b/(4*ydss);                                // government debt relative to annual steady-state GDP
 // Output growth
 //********************************************************
 // STEADY-STATE VALUES CARRIED INTO THE MODEL BLOCK

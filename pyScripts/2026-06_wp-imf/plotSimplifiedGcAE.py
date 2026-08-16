@@ -61,7 +61,8 @@ BASE_SERIES = [
 # (variable suffix, panel title); laid out row-major in a 5x4 grid, one thematic
 # block per row. Units differ by panel: demand, supply, labor, and marginal cost
 # are percent deviations; rates are annualized percentage points; fiscal variables
-# are percentage points of steady-state GDP. The figure note states these units.
+# are percentage points of steady-state GDP: quarterly GDP for flows and annual
+# GDP for public debt. The figure note states these units.
 PANELS = [
     # Row 1 - demand components (percent deviation)
     ("yd",        "Output (Y<sup>d</sup><sub>t</sub>)"),
@@ -85,7 +86,7 @@ PANELS = [
     ("PI_ann",    "Inflation (Π<sub>t</sub>)"),
     ("R_ann",     "Nominal interest rate (R<sub>t</sub>)"),
     ("rreal_ann", "Real interest rate (R<sub>t</sub>/Π<sub>t</sub>)"),
-    # Row 5 - fiscal block (percentage points of steady-state GDP); primary
+    # Row 5 - fiscal block (quarterly-GDP pp for flows; annual-GDP pp for debt); primary
     # deficit is a composite budget flow with no single paper symbol (see
     # eq:govbudget). Debt service (dserv_yss) is computed and exported but not
     # plotted here.

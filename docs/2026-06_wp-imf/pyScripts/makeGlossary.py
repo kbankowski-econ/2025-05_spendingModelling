@@ -123,10 +123,10 @@ ENDOGENOUS = [
         ("--",                "Steady-state output (value added)",        "ydss"),
         ("--",                "Steady-state nominal interest rate",       "Rss"),
     ]),
-    ("Reporting (share of steady-state GDP)", [
+    ("Fiscal reporting", [
         ("--",                "Primary deficit",                          "pdef_yss"),
         ("--",                "Transfers",                                "T_yss"),
-        ("--",                "Public debt",                              "by_yss"),
+        ("--",                "Public debt relative to annual output",    "by_yss"),
     ]),
 ]
 
@@ -255,7 +255,7 @@ EQNS = {
     "rreal":    r"r^{\mathit{real}}_t=R_t/\Pi_t",
     "pdef_yss": r"(\hat G^C_t+\hat I^{GI}_t+\hat I^{GE}_t+\hat G^{RD}_t+\hat T_t-\tau^w_t\hat w_tN_t-\tau^c_t\hat C_t)/\hat Y^{d,SS}",
     "T_yss":    r"\hat T_t/\hat Y^{d,SS}",
-    "by_yss":   r"\hat B_t/\hat Y^{d,SS}",
+    "by_yss":   r"\hat B_t/(4\hat Y^{d,SS})",
 }
 
 

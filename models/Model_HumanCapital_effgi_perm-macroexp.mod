@@ -28,9 +28,9 @@ ydss            % Steady state output
 T           % Transfer
 G               % Total government spending (Gc+Igi+Ige+Grd)
 rreal           % Ex-post real interest rate (R/PI)
-pdef_yss        % Primary deficit, share of steady-state GDP
-T_yss       % Transfers, share of steady-state GDP
-by_yss          % Government debt, share of steady-state GDP
+pdef_yss        % Primary deficit, share of quarterly steady-state GDP
+T_yss       % Transfers, share of quarterly steady-state GDP
+by_yss          % Government debt, share of annual steady-state GDP
 H               % Human capital
 Kge             % Public Human-related Capital Stock (HCS)
 Ige             % Public spending in public humand-related capital stock
@@ -250,10 +250,10 @@ vp = thetap*(PI(-1)^chi/PI)^(-epsilon)*vp(-1)+(1-thetap)*PIstar^(-epsilon);
 //********************************************************
 G = Gc+Igi+Ige+Grd;                                        // total government spending (sum of the four instruments)
 rreal = R/PI;                                              // ex-post real interest rate
-// Fiscal aggregates as a share of steady-state GDP (ydss)
+// Fiscal flows as a share of quarterly steady-state GDP (ydss)
 pdef_yss  = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;  // primary deficit
 T_yss = T/ydss;                                       // transfers
-by_yss    = b/ydss;                                          // government debt
+by_yss    = b/(4*ydss);                                // government debt relative to annual steady-state GDP
 //********************************************************
 // STEADY-STATE VALUES CARRIED INTO THE MODEL BLOCK
 //********************************************************

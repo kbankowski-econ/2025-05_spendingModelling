@@ -41,9 +41,9 @@ ydss            % Steady state output
 T           % Transfer
 G               % Total government spending (Gc+Igi+Ige+Grd)
 rreal           % Ex-post real interest rate (R/PI)
-pdef_yss        % Primary deficit, share of steady-state GDP
-T_yss       % Transfers, share of steady-state GDP
-by_yss          % Government debt, share of steady-state GDP
+pdef_yss        % Primary deficit, share of quarterly steady-state GDP
+T_yss       % Transfers, share of quarterly steady-state GDP
+by_yss          % Government debt, share of annual steady-state GDP
 H               % Human capital
 Kge             % Public Human-related Capital Stock (HCS)
 Ige             % Public spending in public humand-related capital stock
@@ -247,7 +247,7 @@ eGRD = eGRD_ss-epsi_effgrd;
 G = Gc+Igi+Ige+Grd;
 pdef_yss = (Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C)/ydss;
 T_yss = T/ydss;
-by_yss = b/ydss;
+by_yss = b/(4*ydss); // government debt relative to annual steady-state GDP
 rreal = R/PI;
 //********************************************************
 // STEADY-STATE VALUES USED AS CONSTANTS
