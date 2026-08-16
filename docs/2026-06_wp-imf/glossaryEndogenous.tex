@@ -46,7 +46,7 @@
 18 & $\hat{Z}_t$ & Created technology \gloseq{\log\tfrac{\hat Z_t}{\hat Z^{SS}}=\rho_A\log\tfrac{\hat Z_{t-1}}{\hat Z^{SS}}+(1-\rho_A)\alpha_{HA}\log\tfrac{H_{t-1}}{H^{SS}}+(1-\rho_A)\alpha_{RD}\log\tfrac{(1-e^{GRD}_{t-1})\hat G^{RD}_{t-1}}{(1-e^{GRD})\hat G^{RD,SS}}} & \texttt{Z} & 1.584 & 1.848 \\
 19 & $\hat{A}_t$ & Adopted technology \gloseq{(1+\gamma^{a})\hat A_t=q_t\phi(\hat Z_{t-1}-\hat A_{t-1})+\phi\hat A_{t-1}} & \texttt{A} & 1 & 1 \\
 20 & $q_t$ & Adoption probability \gloseq{q_t=(q_0+\varepsilon^{q}_t)(\hat S_t)^{\varsigma}} & \texttt{q} & 0.05 & 0.05 \\
-21 & $\mathit{SDF}_t$ & Stochastic discount factor \gloseq{\mathit{SDF}_t=\beta\hat\lambda_t(1+\tau^c_t)/[\hat\lambda_{t-1}(1+\tau^c_{t-1})]} & \texttt{SDF} & 0.999 & 0.999 \\
+21 & $\mathit{SDF}_t$ & Growth-adjusted stochastic discount factor \gloseq{\mathit{SDF}_t=\beta\hat\lambda_t(1+\tau^c_t)/[\hat\lambda_{t-1}(1+\tau^c_{t-1})]} & \texttt{SDF} & 0.999 & 0.999 \\
 22 & $\hat{\mathcal{V}}_t$ & Value of an adopted technology \gloseq{\hat{\mathcal V}_t=\tfrac{\mu^p-1}{\mu^p}mc_t\hat Y_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\hat{\mathcal V}_{t+1}\tfrac{\hat A_{t-1}}{\hat A_t}\tfrac{1}{1+\gamma^{a}}\big]} & \texttt{V} & 3.366 & 1.975 \\
 23 & $\hat{\mathcal{J}}_t$ & Value of an unadopted technology \gloseq{\hat{\mathcal J}_t=-\hat S_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\tfrac{\hat A_{t-1}}{\hat A_t}\tfrac{1}{1+\gamma^{a}}(q_t\hat{\mathcal V}_{t+1}+(1-q_t)\hat{\mathcal J}_{t+1})\big]} & \texttt{J} & 0.826 & 0.999 \\
 24 & $\hat{S}_t$ & Adoption expenditure \gloseq{\hat S_t=\varsigma q_t\phi\,\mathbb{E}_t\!\big[\mathit{SDF}_{t+1}\tfrac{1}{1+\gamma^{a}}\tfrac{\hat A_{t-1}}{\hat A_t}(\hat{\mathcal V}_{t+1}-\hat{\mathcal J}_{t+1})\big]} & \texttt{S} & 0.099 & 0.005 \\

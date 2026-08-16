@@ -91,7 +91,7 @@ ENDOGENOUS = [
         (r"$\hat{Z}_t$",      "Created technology",                       "Z"),
         (r"$\hat{A}_t$",      "Adopted technology",                       "A"),
         (r"$q_t$",            "Adoption probability",                     "q"),
-        (r"$\mathit{SDF}_t$", "Stochastic discount factor",               "SDF"),
+        (r"$\mathit{SDF}_t$", "Growth-adjusted stochastic discount factor", "SDF"),
         (r"$\hat{\mathcal{V}}_t$", "Value of an adopted technology",      "V"),
         (r"$\hat{\mathcal{J}}_t$", "Value of an unadopted technology",    "J"),
         (r"$\hat{S}_t$",      "Adoption expenditure",                     "S"),
