@@ -10,9 +10,9 @@ tauwss=0.13957543978997473;          % steady-state income tax rate             
 byss=0.46444789855028866*4;          % steady-state debt to quarterly GDP (annual x4)| AE: 0.7875515483152252*4
 
 % public spending shares of GDP
-Igiy=0.03224078049073542;            % infrastructure investment                     | AE: 0.025841914048759393
+Igiy=0.03393197673959215;            % infrastructure investment                     | AE: 0.02583899130065564
 Gcy=0.14683743823337528;             % public consumption                            | AE: 0.1766798699446066
-Igey=0.016831944761525493;           % human-capital-related investment              | AE: 0.012785760164632823
+Igey=0.015140748512668771;           % human-capital-related investment              | AE: 0.012788682912736575
 Grdy=0.001;                         % R&D spending                                  | AE: 0.006
 
 % human capital

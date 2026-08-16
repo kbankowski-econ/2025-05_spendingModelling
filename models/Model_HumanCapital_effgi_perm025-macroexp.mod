@@ -137,9 +137,9 @@ taucss=0.15067283860879371;          % steady-state consumption tax rate        
 tauwss=0.30876981241278333;          % steady-state income tax rate                  | EM: 0.13957543978997473
 byss=0.7875515483152252*4;           % steady-state debt to quarterly GDP (annual x4)| EM: 0.46444789855028866*4
 % public spending shares of GDP
-Igiy=0.025841914048759393;           % infrastructure investment                     | EM: 0.03224078049073542
+Igiy=0.02583899130065564;            % infrastructure investment                     | EM: 0.03393197673959215
 Gcy=0.1766798699446066;              % public consumption                            | EM: 0.14683743823337528
-Igey=0.012785760164632823;           % human-capital-related investment              | EM: 0.016831944761525493
+Igey=0.012788682912736575;           % human-capital-related investment              | EM: 0.015140748512668771
 Grdy=0.006;                         % R&D spending                                  | EM: 0.001
 % human capital
 mu=0.1;                          % elasticity of HC formation w.r.t. public HRC  | EM: 0.15
@@ -272,7 +272,7 @@ shocks;
 var epsi_effgi;
 periods 1:1000 ;
 values
-    0.06201166047438859
+    0.062018674852812
 ;
 var eTaux;
 periods 1:2000 ;

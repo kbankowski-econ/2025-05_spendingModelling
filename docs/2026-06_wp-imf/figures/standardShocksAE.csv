@@ -117,7 +117,7 @@ horizon_quarter,shock,variable,pct_dev
 16,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.334
 17,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.337
 18,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.34
-19,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.341
+19,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.342
 20,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.343
 21,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.343
 22,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.343
@@ -135,7 +135,7 @@ horizon_quarter,shock,variable,pct_dev
 34,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.321
 35,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.318
 36,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.315
-37,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.312
+37,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.313
 38,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.309
 39,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.306
 40,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.303
@@ -152,7 +152,7 @@ horizon_quarter,shock,variable,pct_dev
 51,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.269
 52,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.266
 53,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.263
-54,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.259
+54,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.26
 55,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.256
 56,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.253
 57,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.25
@@ -183,7 +183,7 @@ horizon_quarter,shock,variable,pct_dev
 82,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.184
 83,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.182
 84,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.18
-85,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.177
+85,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.178
 86,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.175
 87,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.173
 88,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.171
@@ -191,9 +191,9 @@ horizon_quarter,shock,variable,pct_dev
 90,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.167
 91,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.165
 92,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.163
-93,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.16
-94,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.158
-95,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.156
+93,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.161
+94,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.159
+95,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.157
 96,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.155
 97,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.153
 98,Infrastructure investment,Output (Y<sup>d</sup><sub>t</sub>),0.151
@@ -240,10 +240,10 @@ horizon_quarter,shock,variable,pct_dev
 39,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.317
 40,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.341
 41,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.364
-42,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.387
-43,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.409
+42,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.386
+43,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.408
 44,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.43
-45,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.451
+45,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.45
 46,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.47
 47,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.49
 48,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.508
@@ -253,7 +253,7 @@ horizon_quarter,shock,variable,pct_dev
 52,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.576
 53,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.592
 54,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.606
-55,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.621
+55,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.62
 56,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.634
 57,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.647
 58,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.659
@@ -276,7 +276,7 @@ horizon_quarter,shock,variable,pct_dev
 75,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.787
 76,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.791
 77,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.794
-78,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.797
+78,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.796
 79,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.799
 80,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.801
 81,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.803
@@ -286,12 +286,12 @@ horizon_quarter,shock,variable,pct_dev
 85,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.807
 86,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.807
 87,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.807
-88,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.807
+88,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.806
 89,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.806
 90,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.805
 91,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.804
 92,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.803
-93,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.802
+93,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.801
 94,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.8
 95,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.798
 96,Human capital investment,Output (Y<sup>d</sup><sub>t</sub>),0.796
@@ -525,7 +525,7 @@ horizon_quarter,shock,variable,pct_dev
 24,Infrastructure investment,Consumption (C<sub>t</sub>),0.183
 25,Infrastructure investment,Consumption (C<sub>t</sub>),0.196
 26,Infrastructure investment,Consumption (C<sub>t</sub>),0.208
-27,Infrastructure investment,Consumption (C<sub>t</sub>),0.219
+27,Infrastructure investment,Consumption (C<sub>t</sub>),0.22
 28,Infrastructure investment,Consumption (C<sub>t</sub>),0.23
 29,Infrastructure investment,Consumption (C<sub>t</sub>),0.24
 30,Infrastructure investment,Consumption (C<sub>t</sub>),0.25
@@ -545,11 +545,11 @@ horizon_quarter,shock,variable,pct_dev
 44,Infrastructure investment,Consumption (C<sub>t</sub>),0.321
 45,Infrastructure investment,Consumption (C<sub>t</sub>),0.323
 46,Infrastructure investment,Consumption (C<sub>t</sub>),0.324
-47,Infrastructure investment,Consumption (C<sub>t</sub>),0.325
+47,Infrastructure investment,Consumption (C<sub>t</sub>),0.326
 48,Infrastructure investment,Consumption (C<sub>t</sub>),0.326
 49,Infrastructure investment,Consumption (C<sub>t</sub>),0.327
 50,Infrastructure investment,Consumption (C<sub>t</sub>),0.327
-51,Infrastructure investment,Consumption (C<sub>t</sub>),0.327
+51,Infrastructure investment,Consumption (C<sub>t</sub>),0.328
 52,Infrastructure investment,Consumption (C<sub>t</sub>),0.327
 53,Infrastructure investment,Consumption (C<sub>t</sub>),0.327
 54,Infrastructure investment,Consumption (C<sub>t</sub>),0.327
@@ -557,7 +557,7 @@ horizon_quarter,shock,variable,pct_dev
 56,Infrastructure investment,Consumption (C<sub>t</sub>),0.325
 57,Infrastructure investment,Consumption (C<sub>t</sub>),0.324
 58,Infrastructure investment,Consumption (C<sub>t</sub>),0.323
-59,Infrastructure investment,Consumption (C<sub>t</sub>),0.321
+59,Infrastructure investment,Consumption (C<sub>t</sub>),0.322
 60,Infrastructure investment,Consumption (C<sub>t</sub>),0.32
 61,Infrastructure investment,Consumption (C<sub>t</sub>),0.319
 62,Infrastructure investment,Consumption (C<sub>t</sub>),0.317
@@ -575,7 +575,7 @@ horizon_quarter,shock,variable,pct_dev
 74,Infrastructure investment,Consumption (C<sub>t</sub>),0.291
 75,Infrastructure investment,Consumption (C<sub>t</sub>),0.289
 76,Infrastructure investment,Consumption (C<sub>t</sub>),0.286
-77,Infrastructure investment,Consumption (C<sub>t</sub>),0.283
+77,Infrastructure investment,Consumption (C<sub>t</sub>),0.284
 78,Infrastructure investment,Consumption (C<sub>t</sub>),0.281
 79,Infrastructure investment,Consumption (C<sub>t</sub>),0.278
 80,Infrastructure investment,Consumption (C<sub>t</sub>),0.276
@@ -603,7 +603,7 @@ horizon_quarter,shock,variable,pct_dev
 2,Human capital investment,Consumption (C<sub>t</sub>),-0.301
 3,Human capital investment,Consumption (C<sub>t</sub>),-0.295
 4,Human capital investment,Consumption (C<sub>t</sub>),-0.29
-5,Human capital investment,Consumption (C<sub>t</sub>),-0.285
+5,Human capital investment,Consumption (C<sub>t</sub>),-0.286
 6,Human capital investment,Consumption (C<sub>t</sub>),-0.281
 7,Human capital investment,Consumption (C<sub>t</sub>),-0.276
 8,Human capital investment,Consumption (C<sub>t</sub>),-0.271
@@ -616,7 +616,7 @@ horizon_quarter,shock,variable,pct_dev
 15,Human capital investment,Consumption (C<sub>t</sub>),-0.205
 16,Human capital investment,Consumption (C<sub>t</sub>),-0.19
 17,Human capital investment,Consumption (C<sub>t</sub>),-0.175
-18,Human capital investment,Consumption (C<sub>t</sub>),-0.158
+18,Human capital investment,Consumption (C<sub>t</sub>),-0.159
 19,Human capital investment,Consumption (C<sub>t</sub>),-0.141
 20,Human capital investment,Consumption (C<sub>t</sub>),-0.122
 21,Human capital investment,Consumption (C<sub>t</sub>),-0.102
@@ -624,14 +624,14 @@ horizon_quarter,shock,variable,pct_dev
 23,Human capital investment,Consumption (C<sub>t</sub>),-0.06
 24,Human capital investment,Consumption (C<sub>t</sub>),-0.038
 25,Human capital investment,Consumption (C<sub>t</sub>),-0.015
-26,Human capital investment,Consumption (C<sub>t</sub>),0.009
+26,Human capital investment,Consumption (C<sub>t</sub>),0.008
 27,Human capital investment,Consumption (C<sub>t</sub>),0.033
 28,Human capital investment,Consumption (C<sub>t</sub>),0.057
 29,Human capital investment,Consumption (C<sub>t</sub>),0.082
 30,Human capital investment,Consumption (C<sub>t</sub>),0.108
-31,Human capital investment,Consumption (C<sub>t</sub>),0.134
+31,Human capital investment,Consumption (C<sub>t</sub>),0.133
 32,Human capital investment,Consumption (C<sub>t</sub>),0.159
-33,Human capital investment,Consumption (C<sub>t</sub>),0.186
+33,Human capital investment,Consumption (C<sub>t</sub>),0.185
 34,Human capital investment,Consumption (C<sub>t</sub>),0.212
 35,Human capital investment,Consumption (C<sub>t</sub>),0.238
 36,Human capital investment,Consumption (C<sub>t</sub>),0.264
@@ -645,28 +645,28 @@ horizon_quarter,shock,variable,pct_dev
 44,Human capital investment,Consumption (C<sub>t</sub>),0.469
 45,Human capital investment,Consumption (C<sub>t</sub>),0.493
 46,Human capital investment,Consumption (C<sub>t</sub>),0.517
-47,Human capital investment,Consumption (C<sub>t</sub>),0.541
+47,Human capital investment,Consumption (C<sub>t</sub>),0.54
 48,Human capital investment,Consumption (C<sub>t</sub>),0.564
 49,Human capital investment,Consumption (C<sub>t</sub>),0.586
 50,Human capital investment,Consumption (C<sub>t</sub>),0.609
-51,Human capital investment,Consumption (C<sub>t</sub>),0.631
+51,Human capital investment,Consumption (C<sub>t</sub>),0.63
 52,Human capital investment,Consumption (C<sub>t</sub>),0.652
-53,Human capital investment,Consumption (C<sub>t</sub>),0.673
+53,Human capital investment,Consumption (C<sub>t</sub>),0.672
 54,Human capital investment,Consumption (C<sub>t</sub>),0.693
-55,Human capital investment,Consumption (C<sub>t</sub>),0.713
+55,Human capital investment,Consumption (C<sub>t</sub>),0.712
 56,Human capital investment,Consumption (C<sub>t</sub>),0.732
 57,Human capital investment,Consumption (C<sub>t</sub>),0.75
-58,Human capital investment,Consumption (C<sub>t</sub>),0.769
+58,Human capital investment,Consumption (C<sub>t</sub>),0.768
 59,Human capital investment,Consumption (C<sub>t</sub>),0.786
 60,Human capital investment,Consumption (C<sub>t</sub>),0.803
-61,Human capital investment,Consumption (C<sub>t</sub>),0.82
-62,Human capital investment,Consumption (C<sub>t</sub>),0.836
+61,Human capital investment,Consumption (C<sub>t</sub>),0.819
+62,Human capital investment,Consumption (C<sub>t</sub>),0.835
 63,Human capital investment,Consumption (C<sub>t</sub>),0.851
 64,Human capital investment,Consumption (C<sub>t</sub>),0.866
 65,Human capital investment,Consumption (C<sub>t</sub>),0.88
 66,Human capital investment,Consumption (C<sub>t</sub>),0.894
 67,Human capital investment,Consumption (C<sub>t</sub>),0.907
-68,Human capital investment,Consumption (C<sub>t</sub>),0.92
+68,Human capital investment,Consumption (C<sub>t</sub>),0.919
 69,Human capital investment,Consumption (C<sub>t</sub>),0.932
 70,Human capital investment,Consumption (C<sub>t</sub>),0.943
 71,Human capital investment,Consumption (C<sub>t</sub>),0.954
@@ -697,8 +697,8 @@ horizon_quarter,shock,variable,pct_dev
 96,Human capital investment,Consumption (C<sub>t</sub>),1.08
 97,Human capital investment,Consumption (C<sub>t</sub>),1.08
 98,Human capital investment,Consumption (C<sub>t</sub>),1.08
-99,Human capital investment,Consumption (C<sub>t</sub>),1.08
-100,Human capital investment,Consumption (C<sub>t</sub>),1.079
+99,Human capital investment,Consumption (C<sub>t</sub>),1.079
+100,Human capital investment,Consumption (C<sub>t</sub>),1.078
 1,R&D investment,Consumption (C<sub>t</sub>),-0.223
 2,R&D investment,Consumption (C<sub>t</sub>),-0.227
 3,R&D investment,Consumption (C<sub>t</sub>),-0.231
@@ -899,13 +899,13 @@ horizon_quarter,shock,variable,pct_dev
 98,Government consumption,Private investment (I<sub>t</sub>),-0.07
 99,Government consumption,Private investment (I<sub>t</sub>),-0.07
 100,Government consumption,Private investment (I<sub>t</sub>),-0.069
-1,Infrastructure investment,Private investment (I<sub>t</sub>),-2.01
+1,Infrastructure investment,Private investment (I<sub>t</sub>),-2.011
 2,Infrastructure investment,Private investment (I<sub>t</sub>),-3.193
 3,Infrastructure investment,Private investment (I<sub>t</sub>),-2.565
 4,Infrastructure investment,Private investment (I<sub>t</sub>),-2.056
 5,Infrastructure investment,Private investment (I<sub>t</sub>),-1.626
 6,Infrastructure investment,Private investment (I<sub>t</sub>),-1.257
-7,Infrastructure investment,Private investment (I<sub>t</sub>),-0.94
+7,Infrastructure investment,Private investment (I<sub>t</sub>),-0.939
 8,Infrastructure investment,Private investment (I<sub>t</sub>),-0.666
 9,Infrastructure investment,Private investment (I<sub>t</sub>),-0.431
 10,Infrastructure investment,Private investment (I<sub>t</sub>),-0.229
@@ -924,7 +924,7 @@ horizon_quarter,shock,variable,pct_dev
 23,Infrastructure investment,Private investment (I<sub>t</sub>),0.702
 24,Infrastructure investment,Private investment (I<sub>t</sub>),0.708
 25,Infrastructure investment,Private investment (I<sub>t</sub>),0.71
-26,Infrastructure investment,Private investment (I<sub>t</sub>),0.708
+26,Infrastructure investment,Private investment (I<sub>t</sub>),0.709
 27,Infrastructure investment,Private investment (I<sub>t</sub>),0.704
 28,Infrastructure investment,Private investment (I<sub>t</sub>),0.698
 29,Infrastructure investment,Private investment (I<sub>t</sub>),0.69
@@ -989,7 +989,7 @@ horizon_quarter,shock,variable,pct_dev
 88,Infrastructure investment,Private investment (I<sub>t</sub>),0.179
 89,Infrastructure investment,Private investment (I<sub>t</sub>),0.176
 90,Infrastructure investment,Private investment (I<sub>t</sub>),0.173
-91,Infrastructure investment,Private investment (I<sub>t</sub>),0.17
+91,Infrastructure investment,Private investment (I<sub>t</sub>),0.171
 92,Infrastructure investment,Private investment (I<sub>t</sub>),0.168
 93,Infrastructure investment,Private investment (I<sub>t</sub>),0.165
 94,Infrastructure investment,Private investment (I<sub>t</sub>),0.162
@@ -1004,13 +1004,13 @@ horizon_quarter,shock,variable,pct_dev
 3,Human capital investment,Private investment (I<sub>t</sub>),-2.242
 4,Human capital investment,Private investment (I<sub>t</sub>),-2.308
 5,Human capital investment,Private investment (I<sub>t</sub>),-2.345
-6,Human capital investment,Private investment (I<sub>t</sub>),-2.35
-7,Human capital investment,Private investment (I<sub>t</sub>),-2.326
+6,Human capital investment,Private investment (I<sub>t</sub>),-2.349
+7,Human capital investment,Private investment (I<sub>t</sub>),-2.325
 8,Human capital investment,Private investment (I<sub>t</sub>),-2.278
 9,Human capital investment,Private investment (I<sub>t</sub>),-2.212
-10,Human capital investment,Private investment (I<sub>t</sub>),-2.132
+10,Human capital investment,Private investment (I<sub>t</sub>),-2.131
 11,Human capital investment,Private investment (I<sub>t</sub>),-2.04
-12,Human capital investment,Private investment (I<sub>t</sub>),-1.94
+12,Human capital investment,Private investment (I<sub>t</sub>),-1.939
 13,Human capital investment,Private investment (I<sub>t</sub>),-1.833
 14,Human capital investment,Private investment (I<sub>t</sub>),-1.722
 15,Human capital investment,Private investment (I<sub>t</sub>),-1.609
@@ -1039,7 +1039,7 @@ horizon_quarter,shock,variable,pct_dev
 38,Human capital investment,Private investment (I<sub>t</sub>),0.453
 39,Human capital investment,Private investment (I<sub>t</sub>),0.505
 40,Human capital investment,Private investment (I<sub>t</sub>),0.555
-41,Human capital investment,Private investment (I<sub>t</sub>),0.602
+41,Human capital investment,Private investment (I<sub>t</sub>),0.601
 42,Human capital investment,Private investment (I<sub>t</sub>),0.646
 43,Human capital investment,Private investment (I<sub>t</sub>),0.687
 44,Human capital investment,Private investment (I<sub>t</sub>),0.727
@@ -1048,37 +1048,37 @@ horizon_quarter,shock,variable,pct_dev
 47,Human capital investment,Private investment (I<sub>t</sub>),0.831
 48,Human capital investment,Private investment (I<sub>t</sub>),0.861
 49,Human capital investment,Private investment (I<sub>t</sub>),0.89
-50,Human capital investment,Private investment (I<sub>t</sub>),0.917
+50,Human capital investment,Private investment (I<sub>t</sub>),0.916
 51,Human capital investment,Private investment (I<sub>t</sub>),0.941
 52,Human capital investment,Private investment (I<sub>t</sub>),0.964
 53,Human capital investment,Private investment (I<sub>t</sub>),0.986
-54,Human capital investment,Private investment (I<sub>t</sub>),1.006
+54,Human capital investment,Private investment (I<sub>t</sub>),1.005
 55,Human capital investment,Private investment (I<sub>t</sub>),1.024
-56,Human capital investment,Private investment (I<sub>t</sub>),1.041
+56,Human capital investment,Private investment (I<sub>t</sub>),1.04
 57,Human capital investment,Private investment (I<sub>t</sub>),1.056
 58,Human capital investment,Private investment (I<sub>t</sub>),1.07
 59,Human capital investment,Private investment (I<sub>t</sub>),1.083
-60,Human capital investment,Private investment (I<sub>t</sub>),1.095
+60,Human capital investment,Private investment (I<sub>t</sub>),1.094
 61,Human capital investment,Private investment (I<sub>t</sub>),1.105
 62,Human capital investment,Private investment (I<sub>t</sub>),1.114
-63,Human capital investment,Private investment (I<sub>t</sub>),1.123
+63,Human capital investment,Private investment (I<sub>t</sub>),1.122
 64,Human capital investment,Private investment (I<sub>t</sub>),1.13
 65,Human capital investment,Private investment (I<sub>t</sub>),1.136
-66,Human capital investment,Private investment (I<sub>t</sub>),1.142
+66,Human capital investment,Private investment (I<sub>t</sub>),1.141
 67,Human capital investment,Private investment (I<sub>t</sub>),1.146
 68,Human capital investment,Private investment (I<sub>t</sub>),1.15
 69,Human capital investment,Private investment (I<sub>t</sub>),1.153
 70,Human capital investment,Private investment (I<sub>t</sub>),1.155
 71,Human capital investment,Private investment (I<sub>t</sub>),1.157
-72,Human capital investment,Private investment (I<sub>t</sub>),1.158
+72,Human capital investment,Private investment (I<sub>t</sub>),1.157
 73,Human capital investment,Private investment (I<sub>t</sub>),1.158
-74,Human capital investment,Private investment (I<sub>t</sub>),1.158
-75,Human capital investment,Private investment (I<sub>t</sub>),1.157
+74,Human capital investment,Private investment (I<sub>t</sub>),1.157
+75,Human capital investment,Private investment (I<sub>t</sub>),1.156
 76,Human capital investment,Private investment (I<sub>t</sub>),1.155
 77,Human capital investment,Private investment (I<sub>t</sub>),1.153
 78,Human capital investment,Private investment (I<sub>t</sub>),1.151
 79,Human capital investment,Private investment (I<sub>t</sub>),1.148
-80,Human capital investment,Private investment (I<sub>t</sub>),1.145
+80,Human capital investment,Private investment (I<sub>t</sub>),1.144
 81,Human capital investment,Private investment (I<sub>t</sub>),1.141
 82,Human capital investment,Private investment (I<sub>t</sub>),1.137
 83,Human capital investment,Private investment (I<sub>t</sub>),1.132
@@ -1089,16 +1089,16 @@ horizon_quarter,shock,variable,pct_dev
 88,Human capital investment,Private investment (I<sub>t</sub>),1.105
 89,Human capital investment,Private investment (I<sub>t</sub>),1.099
 90,Human capital investment,Private investment (I<sub>t</sub>),1.092
-91,Human capital investment,Private investment (I<sub>t</sub>),1.086
-92,Human capital investment,Private investment (I<sub>t</sub>),1.079
-93,Human capital investment,Private investment (I<sub>t</sub>),1.072
+91,Human capital investment,Private investment (I<sub>t</sub>),1.085
+92,Human capital investment,Private investment (I<sub>t</sub>),1.078
+93,Human capital investment,Private investment (I<sub>t</sub>),1.071
 94,Human capital investment,Private investment (I<sub>t</sub>),1.064
 95,Human capital investment,Private investment (I<sub>t</sub>),1.057
 96,Human capital investment,Private investment (I<sub>t</sub>),1.049
-97,Human capital investment,Private investment (I<sub>t</sub>),1.042
+97,Human capital investment,Private investment (I<sub>t</sub>),1.041
 98,Human capital investment,Private investment (I<sub>t</sub>),1.034
 99,Human capital investment,Private investment (I<sub>t</sub>),1.026
-100,Human capital investment,Private investment (I<sub>t</sub>),1.018
+100,Human capital investment,Private investment (I<sub>t</sub>),1.017
 1,R&D investment,Private investment (I<sub>t</sub>),0.109
 2,R&D investment,Private investment (I<sub>t</sub>),-1.716
 3,R&D investment,Private investment (I<sub>t</sub>),-3.003
@@ -1749,7 +1749,7 @@ horizon_quarter,shock,variable,pct_dev
 48,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.083
 49,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.087
 50,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.091
-51,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.094
+51,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.095
 52,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.098
 53,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.102
 54,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.105
@@ -1776,7 +1776,7 @@ horizon_quarter,shock,variable,pct_dev
 75,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.15
 76,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.151
 77,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.152
-78,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.152
+78,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.153
 79,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.153
 80,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.154
 81,Infrastructure investment,Adopted technology (A<sub>t</sub>),0.155
@@ -1862,18 +1862,18 @@ horizon_quarter,shock,variable,pct_dev
 61,Human capital investment,Adopted technology (A<sub>t</sub>),0.277
 62,Human capital investment,Adopted technology (A<sub>t</sub>),0.295
 63,Human capital investment,Adopted technology (A<sub>t</sub>),0.313
-64,Human capital investment,Adopted technology (A<sub>t</sub>),0.331
+64,Human capital investment,Adopted technology (A<sub>t</sub>),0.33
 65,Human capital investment,Adopted technology (A<sub>t</sub>),0.348
 66,Human capital investment,Adopted technology (A<sub>t</sub>),0.365
 67,Human capital investment,Adopted technology (A<sub>t</sub>),0.381
 68,Human capital investment,Adopted technology (A<sub>t</sub>),0.398
 69,Human capital investment,Adopted technology (A<sub>t</sub>),0.414
-70,Human capital investment,Adopted technology (A<sub>t</sub>),0.43
+70,Human capital investment,Adopted technology (A<sub>t</sub>),0.429
 71,Human capital investment,Adopted technology (A<sub>t</sub>),0.445
 72,Human capital investment,Adopted technology (A<sub>t</sub>),0.46
 73,Human capital investment,Adopted technology (A<sub>t</sub>),0.475
 74,Human capital investment,Adopted technology (A<sub>t</sub>),0.489
-75,Human capital investment,Adopted technology (A<sub>t</sub>),0.504
+75,Human capital investment,Adopted technology (A<sub>t</sub>),0.503
 76,Human capital investment,Adopted technology (A<sub>t</sub>),0.517
 77,Human capital investment,Adopted technology (A<sub>t</sub>),0.531
 78,Human capital investment,Adopted technology (A<sub>t</sub>),0.544
@@ -1889,13 +1889,13 @@ horizon_quarter,shock,variable,pct_dev
 88,Human capital investment,Adopted technology (A<sub>t</sub>),0.654
 89,Human capital investment,Adopted technology (A<sub>t</sub>),0.663
 90,Human capital investment,Adopted technology (A<sub>t</sub>),0.671
-91,Human capital investment,Adopted technology (A<sub>t</sub>),0.68
+91,Human capital investment,Adopted technology (A<sub>t</sub>),0.679
 92,Human capital investment,Adopted technology (A<sub>t</sub>),0.687
 93,Human capital investment,Adopted technology (A<sub>t</sub>),0.695
 94,Human capital investment,Adopted technology (A<sub>t</sub>),0.702
 95,Human capital investment,Adopted technology (A<sub>t</sub>),0.709
 96,Human capital investment,Adopted technology (A<sub>t</sub>),0.715
-97,Human capital investment,Adopted technology (A<sub>t</sub>),0.722
+97,Human capital investment,Adopted technology (A<sub>t</sub>),0.721
 98,Human capital investment,Adopted technology (A<sub>t</sub>),0.727
 99,Human capital investment,Adopted technology (A<sub>t</sub>),0.733
 100,Human capital investment,Adopted technology (A<sub>t</sub>),0.738
@@ -2100,55 +2100,55 @@ horizon_quarter,shock,variable,pct_dev
 99,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 100,Government consumption,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.0
 1,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.142
-2,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.136
-3,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.998
-4,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.742
-5,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.381
-6,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.926
-7,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.388
-8,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.775
-9,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.096
-10,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.359
+2,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.137
+3,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.999
+4,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.743
+5,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.382
+6,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.927
+7,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.389
+8,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.776
+9,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.097
+10,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.36
 11,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.57
-12,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.734
-13,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.858
-14,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.946
-15,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),7.002
+12,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.735
+13,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.859
+14,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.947
+15,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),7.003
 16,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),7.031
 17,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),7.035
 18,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),7.018
-19,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.982
-20,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.93
-21,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.864
+19,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.983
+20,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.931
+21,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.865
 22,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.787
-23,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.699
-24,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.602
+23,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.7
+24,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.603
 25,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.499
-26,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.389
-27,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.274
-28,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.155
-29,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.033
-30,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.909
-31,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.783
-32,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.656
-33,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.528
-34,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.4
+26,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.39
+27,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.275
+28,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.156
+29,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),6.034
+30,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.91
+31,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.784
+32,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.657
+33,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.529
+34,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.401
 35,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.273
 36,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.146
 37,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),5.02
 38,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.895
-39,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.771
+39,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.772
 40,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.649
 41,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.529
-42,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.41
+42,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.411
 43,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.294
-44,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.179
+44,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.18
 45,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),4.067
 46,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.957
-47,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.849
+47,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.85
 48,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.744
-49,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.64
-50,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.539
+49,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.641
+50,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.54
 51,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.441
 52,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.345
 53,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),3.251
@@ -2157,16 +2157,16 @@ horizon_quarter,shock,variable,pct_dev
 56,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.983
 57,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.898
 58,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.815
-59,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.734
+59,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.735
 60,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.656
 61,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.58
-62,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.505
+62,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.506
 63,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.433
 64,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.363
-65,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.294
+65,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.295
 66,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.228
 67,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.163
-68,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.1
+68,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.101
 69,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),2.039
 70,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.98
 71,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.922
@@ -2181,7 +2181,7 @@ horizon_quarter,shock,variable,pct_dev
 80,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.471
 81,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.428
 82,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.386
-83,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.345
+83,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.346
 84,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.306
 85,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.268
 86,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.23
@@ -2190,7 +2190,7 @@ horizon_quarter,shock,variable,pct_dev
 89,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.125
 90,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.092
 91,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.06
-92,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.028
+92,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),1.029
 93,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.998
 94,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.969
 95,Infrastructure investment,Public infrastructure (K<sup>GI</sup><sub>t</sub>),0.94
@@ -2600,97 +2600,97 @@ horizon_quarter,shock,variable,pct_dev
 99,Infrastructure investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),0.0
 100,Infrastructure investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),0.0
 1,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.308
-2,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.318
-3,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.06
-4,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),7.564
-5,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),8.855
-6,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),9.957
-7,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),10.89
-8,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),11.673
-9,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),12.322
-10,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),12.852
-11,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.278
-12,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.61
-13,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.861
-14,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.038
-15,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.152
-16,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.21
-17,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.218
-18,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.183
-19,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.111
-20,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.007
-21,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.874
-22,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.717
-23,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.539
-24,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.344
-25,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.135
-26,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),12.913
-27,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),12.681
-28,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),12.441
-29,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),12.194
-30,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),11.943
-31,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),11.689
-32,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),11.432
-33,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),11.174
-34,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),10.915
-35,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),10.657
-36,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),10.4
-37,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),10.145
-38,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),9.893
-39,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),9.643
-40,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),9.396
-41,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),9.153
-42,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),8.914
-43,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),8.678
-44,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),8.447
-45,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),8.22
-46,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),7.998
-47,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),7.78
-48,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),7.566
-49,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),7.358
-50,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),7.154
-51,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.955
-52,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.76
-53,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.57
-54,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.385
-55,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.204
-56,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.028
-57,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),5.857
-58,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),5.689
-59,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),5.527
-60,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),5.368
-61,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),5.214
-62,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),5.064
-63,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.918
-64,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.775
-65,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.637
-66,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.503
-67,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.372
-68,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.245
-69,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.122
-70,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.002
-71,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),3.885
+2,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.317
+3,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.059
+4,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),7.562
+5,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),8.853
+6,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),9.955
+7,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),10.887
+8,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),11.67
+9,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),12.319
+10,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),12.849
+11,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.275
+12,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.607
+13,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.858
+14,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.035
+15,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.149
+16,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.206
+17,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.215
+18,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.18
+19,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.108
+20,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),14.003
+21,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.871
+22,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.714
+23,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.536
+24,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.341
+25,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),13.132
+26,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),12.91
+27,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),12.678
+28,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),12.438
+29,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),12.192
+30,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),11.94
+31,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),11.686
+32,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),11.429
+33,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),11.171
+34,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),10.913
+35,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),10.655
+36,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),10.398
+37,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),10.143
+38,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),9.891
+39,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),9.641
+40,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),9.394
+41,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),9.151
+42,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),8.912
+43,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),8.676
+44,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),8.445
+45,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),8.218
+46,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),7.996
+47,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),7.778
+48,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),7.565
+49,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),7.356
+50,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),7.152
+51,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.953
+52,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.758
+53,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.569
+54,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.383
+55,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.203
+56,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),6.027
+57,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),5.855
+58,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),5.688
+59,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),5.525
+60,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),5.367
+61,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),5.213
+62,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),5.062
+63,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.916
+64,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.774
+65,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.636
+66,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.502
+67,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.371
+68,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.244
+69,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.121
+70,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),4.001
+71,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),3.884
 72,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),3.771
 73,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),3.661
 74,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),3.554
 75,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),3.45
 76,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),3.349
 77,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),3.251
-78,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),3.156
-79,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),3.064
-80,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.974
+78,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),3.155
+79,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),3.063
+80,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.973
 81,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.886
-82,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.802
+82,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.801
 83,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.719
 84,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.639
-85,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.562
-86,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.487
+85,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.561
+86,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.486
 87,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.413
 88,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.342
-89,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.274
-90,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.207
-91,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.142
-92,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.079
+89,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.273
+90,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.206
+91,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.141
+92,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.078
 93,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),2.017
 94,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),1.958
 95,Human capital investment,Educ./hlt capital (K<sup>GE</sup><sub>t</sub>),1.9
@@ -2925,7 +2925,7 @@ horizon_quarter,shock,variable,pct_dev
 24,Infrastructure investment,Private capital (K<sub>t</sub>),-0.071
 25,Infrastructure investment,Private capital (K<sub>t</sub>),-0.048
 26,Infrastructure investment,Private capital (K<sub>t</sub>),-0.026
-27,Infrastructure investment,Private capital (K<sub>t</sub>),-0.005
+27,Infrastructure investment,Private capital (K<sub>t</sub>),-0.004
 28,Infrastructure investment,Private capital (K<sub>t</sub>),0.016
 29,Infrastructure investment,Private capital (K<sub>t</sub>),0.036
 30,Infrastructure investment,Private capital (K<sub>t</sub>),0.055
@@ -2971,7 +2971,7 @@ horizon_quarter,shock,variable,pct_dev
 70,Infrastructure investment,Private capital (K<sub>t</sub>),0.286
 71,Infrastructure investment,Private capital (K<sub>t</sub>),0.285
 72,Infrastructure investment,Private capital (K<sub>t</sub>),0.284
-73,Infrastructure investment,Private capital (K<sub>t</sub>),0.282
+73,Infrastructure investment,Private capital (K<sub>t</sub>),0.283
 74,Infrastructure investment,Private capital (K<sub>t</sub>),0.281
 75,Infrastructure investment,Private capital (K<sub>t</sub>),0.279
 76,Infrastructure investment,Private capital (K<sub>t</sub>),0.278
@@ -2985,7 +2985,7 @@ horizon_quarter,shock,variable,pct_dev
 84,Infrastructure investment,Private capital (K<sub>t</sub>),0.262
 85,Infrastructure investment,Private capital (K<sub>t</sub>),0.26
 86,Infrastructure investment,Private capital (K<sub>t</sub>),0.258
-87,Infrastructure investment,Private capital (K<sub>t</sub>),0.255
+87,Infrastructure investment,Private capital (K<sub>t</sub>),0.256
 88,Infrastructure investment,Private capital (K<sub>t</sub>),0.253
 89,Infrastructure investment,Private capital (K<sub>t</sub>),0.251
 90,Infrastructure investment,Private capital (K<sub>t</sub>),0.249
@@ -3006,7 +3006,7 @@ horizon_quarter,shock,variable,pct_dev
 5,Human capital investment,Private capital (K<sub>t</sub>),-0.271
 6,Human capital investment,Private capital (K<sub>t</sub>),-0.332
 7,Human capital investment,Private capital (K<sub>t</sub>),-0.391
-8,Human capital investment,Private capital (K<sub>t</sub>),-0.447
+8,Human capital investment,Private capital (K<sub>t</sub>),-0.446
 9,Human capital investment,Private capital (K<sub>t</sub>),-0.499
 10,Human capital investment,Private capital (K<sub>t</sub>),-0.547
 11,Human capital investment,Private capital (K<sub>t</sub>),-0.591
@@ -3018,7 +3018,7 @@ horizon_quarter,shock,variable,pct_dev
 17,Human capital investment,Private capital (K<sub>t</sub>),-0.766
 18,Human capital investment,Private capital (K<sub>t</sub>),-0.78
 19,Human capital investment,Private capital (K<sub>t</sub>),-0.791
-20,Human capital investment,Private capital (K<sub>t</sub>),-0.799
+20,Human capital investment,Private capital (K<sub>t</sub>),-0.798
 21,Human capital investment,Private capital (K<sub>t</sub>),-0.802
 22,Human capital investment,Private capital (K<sub>t</sub>),-0.803
 23,Human capital investment,Private capital (K<sub>t</sub>),-0.8
@@ -3035,7 +3035,7 @@ horizon_quarter,shock,variable,pct_dev
 34,Human capital investment,Private capital (K<sub>t</sub>),-0.618
 35,Human capital investment,Private capital (K<sub>t</sub>),-0.591
 36,Human capital investment,Private capital (K<sub>t</sub>),-0.564
-37,Human capital investment,Private capital (K<sub>t</sub>),-0.536
+37,Human capital investment,Private capital (K<sub>t</sub>),-0.535
 38,Human capital investment,Private capital (K<sub>t</sub>),-0.506
 39,Human capital investment,Private capital (K<sub>t</sub>),-0.476
 40,Human capital investment,Private capital (K<sub>t</sub>),-0.446
@@ -3053,18 +3053,18 @@ horizon_quarter,shock,variable,pct_dev
 52,Human capital investment,Private capital (K<sub>t</sub>),-0.066
 53,Human capital investment,Private capital (K<sub>t</sub>),-0.035
 54,Human capital investment,Private capital (K<sub>t</sub>),-0.004
-55,Human capital investment,Private capital (K<sub>t</sub>),0.027
+55,Human capital investment,Private capital (K<sub>t</sub>),0.026
 56,Human capital investment,Private capital (K<sub>t</sub>),0.056
 57,Human capital investment,Private capital (K<sub>t</sub>),0.086
 58,Human capital investment,Private capital (K<sub>t</sub>),0.115
-59,Human capital investment,Private capital (K<sub>t</sub>),0.144
+59,Human capital investment,Private capital (K<sub>t</sub>),0.143
 60,Human capital investment,Private capital (K<sub>t</sub>),0.172
 61,Human capital investment,Private capital (K<sub>t</sub>),0.199
 62,Human capital investment,Private capital (K<sub>t</sub>),0.226
 63,Human capital investment,Private capital (K<sub>t</sub>),0.253
-64,Human capital investment,Private capital (K<sub>t</sub>),0.279
+64,Human capital investment,Private capital (K<sub>t</sub>),0.278
 65,Human capital investment,Private capital (K<sub>t</sub>),0.304
-66,Human capital investment,Private capital (K<sub>t</sub>),0.329
+66,Human capital investment,Private capital (K<sub>t</sub>),0.328
 67,Human capital investment,Private capital (K<sub>t</sub>),0.353
 68,Human capital investment,Private capital (K<sub>t</sub>),0.376
 69,Human capital investment,Private capital (K<sub>t</sub>),0.399
@@ -3072,14 +3072,14 @@ horizon_quarter,shock,variable,pct_dev
 71,Human capital investment,Private capital (K<sub>t</sub>),0.443
 72,Human capital investment,Private capital (K<sub>t</sub>),0.464
 73,Human capital investment,Private capital (K<sub>t</sub>),0.485
-74,Human capital investment,Private capital (K<sub>t</sub>),0.505
+74,Human capital investment,Private capital (K<sub>t</sub>),0.504
 75,Human capital investment,Private capital (K<sub>t</sub>),0.524
-76,Human capital investment,Private capital (K<sub>t</sub>),0.543
-77,Human capital investment,Private capital (K<sub>t</sub>),0.561
+76,Human capital investment,Private capital (K<sub>t</sub>),0.542
+77,Human capital investment,Private capital (K<sub>t</sub>),0.56
 78,Human capital investment,Private capital (K<sub>t</sub>),0.578
 79,Human capital investment,Private capital (K<sub>t</sub>),0.595
 80,Human capital investment,Private capital (K<sub>t</sub>),0.611
-81,Human capital investment,Private capital (K<sub>t</sub>),0.627
+81,Human capital investment,Private capital (K<sub>t</sub>),0.626
 82,Human capital investment,Private capital (K<sub>t</sub>),0.642
 83,Human capital investment,Private capital (K<sub>t</sub>),0.656
 84,Human capital investment,Private capital (K<sub>t</sub>),0.67
@@ -3092,11 +3092,11 @@ horizon_quarter,shock,variable,pct_dev
 91,Human capital investment,Private capital (K<sub>t</sub>),0.752
 92,Human capital investment,Private capital (K<sub>t</sub>),0.762
 93,Human capital investment,Private capital (K<sub>t</sub>),0.771
-94,Human capital investment,Private capital (K<sub>t</sub>),0.78
+94,Human capital investment,Private capital (K<sub>t</sub>),0.779
 95,Human capital investment,Private capital (K<sub>t</sub>),0.788
-96,Human capital investment,Private capital (K<sub>t</sub>),0.796
+96,Human capital investment,Private capital (K<sub>t</sub>),0.795
 97,Human capital investment,Private capital (K<sub>t</sub>),0.803
-98,Human capital investment,Private capital (K<sub>t</sub>),0.81
+98,Human capital investment,Private capital (K<sub>t</sub>),0.809
 99,Human capital investment,Private capital (K<sub>t</sub>),0.816
 100,Human capital investment,Private capital (K<sub>t</sub>),0.822
 1,R&D investment,Private capital (K<sub>t</sub>),0.003
@@ -3392,7 +3392,7 @@ horizon_quarter,shock,variable,pct_dev
 91,Infrastructure investment,Labor supply (L<sub>t</sub>),-0.022
 92,Infrastructure investment,Labor supply (L<sub>t</sub>),-0.022
 93,Infrastructure investment,Labor supply (L<sub>t</sub>),-0.022
-94,Infrastructure investment,Labor supply (L<sub>t</sub>),-0.021
+94,Infrastructure investment,Labor supply (L<sub>t</sub>),-0.022
 95,Infrastructure investment,Labor supply (L<sub>t</sub>),-0.021
 96,Infrastructure investment,Labor supply (L<sub>t</sub>),-0.021
 97,Infrastructure investment,Labor supply (L<sub>t</sub>),-0.021
@@ -3409,7 +3409,7 @@ horizon_quarter,shock,variable,pct_dev
 8,Human capital investment,Labor supply (L<sub>t</sub>),-0.139
 9,Human capital investment,Labor supply (L<sub>t</sub>),-0.183
 10,Human capital investment,Labor supply (L<sub>t</sub>),-0.218
-11,Human capital investment,Labor supply (L<sub>t</sub>),-0.245
+11,Human capital investment,Labor supply (L<sub>t</sub>),-0.244
 12,Human capital investment,Labor supply (L<sub>t</sub>),-0.264
 13,Human capital investment,Labor supply (L<sub>t</sub>),-0.279
 14,Human capital investment,Labor supply (L<sub>t</sub>),-0.288
@@ -3417,14 +3417,14 @@ horizon_quarter,shock,variable,pct_dev
 16,Human capital investment,Labor supply (L<sub>t</sub>),-0.295
 17,Human capital investment,Labor supply (L<sub>t</sub>),-0.294
 18,Human capital investment,Labor supply (L<sub>t</sub>),-0.29
-19,Human capital investment,Labor supply (L<sub>t</sub>),-0.285
+19,Human capital investment,Labor supply (L<sub>t</sub>),-0.284
 20,Human capital investment,Labor supply (L<sub>t</sub>),-0.277
 21,Human capital investment,Labor supply (L<sub>t</sub>),-0.269
 22,Human capital investment,Labor supply (L<sub>t</sub>),-0.259
 23,Human capital investment,Labor supply (L<sub>t</sub>),-0.249
 24,Human capital investment,Labor supply (L<sub>t</sub>),-0.238
 25,Human capital investment,Labor supply (L<sub>t</sub>),-0.226
-26,Human capital investment,Labor supply (L<sub>t</sub>),-0.215
+26,Human capital investment,Labor supply (L<sub>t</sub>),-0.214
 27,Human capital investment,Labor supply (L<sub>t</sub>),-0.203
 28,Human capital investment,Labor supply (L<sub>t</sub>),-0.191
 29,Human capital investment,Labor supply (L<sub>t</sub>),-0.179
@@ -3448,7 +3448,7 @@ horizon_quarter,shock,variable,pct_dev
 47,Human capital investment,Labor supply (L<sub>t</sub>),-0.024
 48,Human capital investment,Labor supply (L<sub>t</sub>),-0.019
 49,Human capital investment,Labor supply (L<sub>t</sub>),-0.015
-50,Human capital investment,Labor supply (L<sub>t</sub>),-0.011
+50,Human capital investment,Labor supply (L<sub>t</sub>),-0.01
 51,Human capital investment,Labor supply (L<sub>t</sub>),-0.007
 52,Human capital investment,Labor supply (L<sub>t</sub>),-0.003
 53,Human capital investment,Labor supply (L<sub>t</sub>),-0.0
@@ -3812,7 +3812,7 @@ horizon_quarter,shock,variable,pct_dev
 11,Human capital investment,Human capital stock (H<sub>t</sub>),0.189
 12,Human capital investment,Human capital stock (H<sub>t</sub>),0.224
 13,Human capital investment,Human capital stock (H<sub>t</sub>),0.26
-14,Human capital investment,Human capital stock (H<sub>t</sub>),0.296
+14,Human capital investment,Human capital stock (H<sub>t</sub>),0.295
 15,Human capital investment,Human capital stock (H<sub>t</sub>),0.331
 16,Human capital investment,Human capital stock (H<sub>t</sub>),0.365
 17,Human capital investment,Human capital stock (H<sub>t</sub>),0.399
@@ -3827,7 +3827,7 @@ horizon_quarter,shock,variable,pct_dev
 26,Human capital investment,Human capital stock (H<sub>t</sub>),0.651
 27,Human capital investment,Human capital stock (H<sub>t</sub>),0.672
 28,Human capital investment,Human capital stock (H<sub>t</sub>),0.691
-29,Human capital investment,Human capital stock (H<sub>t</sub>),0.71
+29,Human capital investment,Human capital stock (H<sub>t</sub>),0.709
 30,Human capital investment,Human capital stock (H<sub>t</sub>),0.726
 31,Human capital investment,Human capital stock (H<sub>t</sub>),0.742
 32,Human capital investment,Human capital stock (H<sub>t</sub>),0.756
@@ -3837,7 +3837,7 @@ horizon_quarter,shock,variable,pct_dev
 36,Human capital investment,Human capital stock (H<sub>t</sub>),0.8
 37,Human capital investment,Human capital stock (H<sub>t</sub>),0.808
 38,Human capital investment,Human capital stock (H<sub>t</sub>),0.815
-39,Human capital investment,Human capital stock (H<sub>t</sub>),0.821
+39,Human capital investment,Human capital stock (H<sub>t</sub>),0.82
 40,Human capital investment,Human capital stock (H<sub>t</sub>),0.825
 41,Human capital investment,Human capital stock (H<sub>t</sub>),0.829
 42,Human capital investment,Human capital stock (H<sub>t</sub>),0.832
@@ -3846,10 +3846,10 @@ horizon_quarter,shock,variable,pct_dev
 45,Human capital investment,Human capital stock (H<sub>t</sub>),0.836
 46,Human capital investment,Human capital stock (H<sub>t</sub>),0.835
 47,Human capital investment,Human capital stock (H<sub>t</sub>),0.834
-48,Human capital investment,Human capital stock (H<sub>t</sub>),0.833
+48,Human capital investment,Human capital stock (H<sub>t</sub>),0.832
 49,Human capital investment,Human capital stock (H<sub>t</sub>),0.83
 50,Human capital investment,Human capital stock (H<sub>t</sub>),0.827
-51,Human capital investment,Human capital stock (H<sub>t</sub>),0.824
+51,Human capital investment,Human capital stock (H<sub>t</sub>),0.823
 52,Human capital investment,Human capital stock (H<sub>t</sub>),0.819
 53,Human capital investment,Human capital stock (H<sub>t</sub>),0.815
 54,Human capital investment,Human capital stock (H<sub>t</sub>),0.81
@@ -3875,23 +3875,23 @@ horizon_quarter,shock,variable,pct_dev
 74,Human capital investment,Human capital stock (H<sub>t</sub>),0.648
 75,Human capital investment,Human capital stock (H<sub>t</sub>),0.639
 76,Human capital investment,Human capital stock (H<sub>t</sub>),0.629
-77,Human capital investment,Human capital stock (H<sub>t</sub>),0.62
+77,Human capital investment,Human capital stock (H<sub>t</sub>),0.619
 78,Human capital investment,Human capital stock (H<sub>t</sub>),0.61
-79,Human capital investment,Human capital stock (H<sub>t</sub>),0.601
+79,Human capital investment,Human capital stock (H<sub>t</sub>),0.6
 80,Human capital investment,Human capital stock (H<sub>t</sub>),0.591
-81,Human capital investment,Human capital stock (H<sub>t</sub>),0.582
+81,Human capital investment,Human capital stock (H<sub>t</sub>),0.581
 82,Human capital investment,Human capital stock (H<sub>t</sub>),0.572
-83,Human capital investment,Human capital stock (H<sub>t</sub>),0.563
+83,Human capital investment,Human capital stock (H<sub>t</sub>),0.562
 84,Human capital investment,Human capital stock (H<sub>t</sub>),0.553
 85,Human capital investment,Human capital stock (H<sub>t</sub>),0.544
-86,Human capital investment,Human capital stock (H<sub>t</sub>),0.535
+86,Human capital investment,Human capital stock (H<sub>t</sub>),0.534
 87,Human capital investment,Human capital stock (H<sub>t</sub>),0.525
 88,Human capital investment,Human capital stock (H<sub>t</sub>),0.516
 89,Human capital investment,Human capital stock (H<sub>t</sub>),0.507
 90,Human capital investment,Human capital stock (H<sub>t</sub>),0.498
 91,Human capital investment,Human capital stock (H<sub>t</sub>),0.489
 92,Human capital investment,Human capital stock (H<sub>t</sub>),0.48
-93,Human capital investment,Human capital stock (H<sub>t</sub>),0.472
+93,Human capital investment,Human capital stock (H<sub>t</sub>),0.471
 94,Human capital investment,Human capital stock (H<sub>t</sub>),0.463
 95,Human capital investment,Human capital stock (H<sub>t</sub>),0.454
 96,Human capital investment,Human capital stock (H<sub>t</sub>),0.446
@@ -4232,7 +4232,7 @@ horizon_quarter,shock,variable,pct_dev
 31,Human capital investment,Effective labor (N<sub>t</sub>),0.569
 32,Human capital investment,Effective labor (N<sub>t</sub>),0.596
 33,Human capital investment,Effective labor (N<sub>t</sub>),0.621
-34,Human capital investment,Effective labor (N<sub>t</sub>),0.645
+34,Human capital investment,Effective labor (N<sub>t</sub>),0.644
 35,Human capital investment,Effective labor (N<sub>t</sub>),0.666
 36,Human capital investment,Effective labor (N<sub>t</sub>),0.686
 37,Human capital investment,Effective labor (N<sub>t</sub>),0.705
@@ -4243,52 +4243,52 @@ horizon_quarter,shock,variable,pct_dev
 42,Human capital investment,Effective labor (N<sub>t</sub>),0.775
 43,Human capital investment,Effective labor (N<sub>t</sub>),0.785
 44,Human capital investment,Effective labor (N<sub>t</sub>),0.793
-45,Human capital investment,Effective labor (N<sub>t</sub>),0.801
-46,Human capital investment,Effective labor (N<sub>t</sub>),0.807
+45,Human capital investment,Effective labor (N<sub>t</sub>),0.8
+46,Human capital investment,Effective labor (N<sub>t</sub>),0.806
 47,Human capital investment,Effective labor (N<sub>t</sub>),0.811
 48,Human capital investment,Effective labor (N<sub>t</sub>),0.815
 49,Human capital investment,Effective labor (N<sub>t</sub>),0.818
-50,Human capital investment,Effective labor (N<sub>t</sub>),0.82
+50,Human capital investment,Effective labor (N<sub>t</sub>),0.819
 51,Human capital investment,Effective labor (N<sub>t</sub>),0.82
 52,Human capital investment,Effective labor (N<sub>t</sub>),0.82
 53,Human capital investment,Effective labor (N<sub>t</sub>),0.819
 54,Human capital investment,Effective labor (N<sub>t</sub>),0.817
 55,Human capital investment,Effective labor (N<sub>t</sub>),0.815
-56,Human capital investment,Effective labor (N<sub>t</sub>),0.812
-57,Human capital investment,Effective labor (N<sub>t</sub>),0.808
+56,Human capital investment,Effective labor (N<sub>t</sub>),0.811
+57,Human capital investment,Effective labor (N<sub>t</sub>),0.807
 58,Human capital investment,Effective labor (N<sub>t</sub>),0.803
 59,Human capital investment,Effective labor (N<sub>t</sub>),0.798
 60,Human capital investment,Effective labor (N<sub>t</sub>),0.792
 61,Human capital investment,Effective labor (N<sub>t</sub>),0.786
 62,Human capital investment,Effective labor (N<sub>t</sub>),0.779
 63,Human capital investment,Effective labor (N<sub>t</sub>),0.772
-64,Human capital investment,Effective labor (N<sub>t</sub>),0.765
-65,Human capital investment,Effective labor (N<sub>t</sub>),0.757
+64,Human capital investment,Effective labor (N<sub>t</sub>),0.764
+65,Human capital investment,Effective labor (N<sub>t</sub>),0.756
 66,Human capital investment,Effective labor (N<sub>t</sub>),0.748
 67,Human capital investment,Effective labor (N<sub>t</sub>),0.74
 68,Human capital investment,Effective labor (N<sub>t</sub>),0.731
-69,Human capital investment,Effective labor (N<sub>t</sub>),0.722
+69,Human capital investment,Effective labor (N<sub>t</sub>),0.721
 70,Human capital investment,Effective labor (N<sub>t</sub>),0.712
-71,Human capital investment,Effective labor (N<sub>t</sub>),0.703
+71,Human capital investment,Effective labor (N<sub>t</sub>),0.702
 72,Human capital investment,Effective labor (N<sub>t</sub>),0.693
 73,Human capital investment,Effective labor (N<sub>t</sub>),0.683
 74,Human capital investment,Effective labor (N<sub>t</sub>),0.673
-75,Human capital investment,Effective labor (N<sub>t</sub>),0.663
+75,Human capital investment,Effective labor (N<sub>t</sub>),0.662
 76,Human capital investment,Effective labor (N<sub>t</sub>),0.652
 77,Human capital investment,Effective labor (N<sub>t</sub>),0.642
 78,Human capital investment,Effective labor (N<sub>t</sub>),0.631
 79,Human capital investment,Effective labor (N<sub>t</sub>),0.621
 80,Human capital investment,Effective labor (N<sub>t</sub>),0.61
-81,Human capital investment,Effective labor (N<sub>t</sub>),0.6
+81,Human capital investment,Effective labor (N<sub>t</sub>),0.599
 82,Human capital investment,Effective labor (N<sub>t</sub>),0.589
 83,Human capital investment,Effective labor (N<sub>t</sub>),0.578
-84,Human capital investment,Effective labor (N<sub>t</sub>),0.568
+84,Human capital investment,Effective labor (N<sub>t</sub>),0.567
 85,Human capital investment,Effective labor (N<sub>t</sub>),0.557
 86,Human capital investment,Effective labor (N<sub>t</sub>),0.546
 87,Human capital investment,Effective labor (N<sub>t</sub>),0.536
 88,Human capital investment,Effective labor (N<sub>t</sub>),0.525
 89,Human capital investment,Effective labor (N<sub>t</sub>),0.515
-90,Human capital investment,Effective labor (N<sub>t</sub>),0.505
+90,Human capital investment,Effective labor (N<sub>t</sub>),0.504
 91,Human capital investment,Effective labor (N<sub>t</sub>),0.494
 92,Human capital investment,Effective labor (N<sub>t</sub>),0.484
 93,Human capital investment,Effective labor (N<sub>t</sub>),0.474
@@ -4500,7 +4500,7 @@ horizon_quarter,shock,variable,pct_dev
 99,Government consumption,Education time (E<sub>t</sub>),-0.001
 100,Government consumption,Education time (E<sub>t</sub>),-0.001
 1,Infrastructure investment,Education time (E<sub>t</sub>),-0.954
-2,Infrastructure investment,Education time (E<sub>t</sub>),-0.054
+2,Infrastructure investment,Education time (E<sub>t</sub>),-0.053
 3,Infrastructure investment,Education time (E<sub>t</sub>),-0.117
 4,Infrastructure investment,Education time (E<sub>t</sub>),-0.152
 5,Infrastructure investment,Education time (E<sub>t</sub>),-0.174
@@ -4550,7 +4550,7 @@ horizon_quarter,shock,variable,pct_dev
 49,Infrastructure investment,Education time (E<sub>t</sub>),-0.017
 50,Infrastructure investment,Education time (E<sub>t</sub>),-0.015
 51,Infrastructure investment,Education time (E<sub>t</sub>),-0.013
-52,Infrastructure investment,Education time (E<sub>t</sub>),-0.011
+52,Infrastructure investment,Education time (E<sub>t</sub>),-0.012
 53,Infrastructure investment,Education time (E<sub>t</sub>),-0.01
 54,Infrastructure investment,Education time (E<sub>t</sub>),-0.008
 55,Infrastructure investment,Education time (E<sub>t</sub>),-0.007
@@ -4605,27 +4605,27 @@ horizon_quarter,shock,variable,pct_dev
 4,Human capital investment,Education time (E<sub>t</sub>),-0.244
 5,Human capital investment,Education time (E<sub>t</sub>),-0.031
 6,Human capital investment,Education time (E<sub>t</sub>),0.148
-7,Human capital investment,Education time (E<sub>t</sub>),0.296
+7,Human capital investment,Education time (E<sub>t</sub>),0.295
 8,Human capital investment,Education time (E<sub>t</sub>),0.416
 9,Human capital investment,Education time (E<sub>t</sub>),0.513
 10,Human capital investment,Education time (E<sub>t</sub>),0.59
-11,Human capital investment,Education time (E<sub>t</sub>),0.65
+11,Human capital investment,Education time (E<sub>t</sub>),0.649
 12,Human capital investment,Education time (E<sub>t</sub>),0.694
 13,Human capital investment,Education time (E<sub>t</sub>),0.726
-14,Human capital investment,Education time (E<sub>t</sub>),0.747
+14,Human capital investment,Education time (E<sub>t</sub>),0.746
 15,Human capital investment,Education time (E<sub>t</sub>),0.758
-16,Human capital investment,Education time (E<sub>t</sub>),0.762
+16,Human capital investment,Education time (E<sub>t</sub>),0.761
 17,Human capital investment,Education time (E<sub>t</sub>),0.758
-18,Human capital investment,Education time (E<sub>t</sub>),0.75
+18,Human capital investment,Education time (E<sub>t</sub>),0.749
 19,Human capital investment,Education time (E<sub>t</sub>),0.736
 20,Human capital investment,Education time (E<sub>t</sub>),0.718
-21,Human capital investment,Education time (E<sub>t</sub>),0.698
+21,Human capital investment,Education time (E<sub>t</sub>),0.697
 22,Human capital investment,Education time (E<sub>t</sub>),0.674
 23,Human capital investment,Education time (E<sub>t</sub>),0.649
 24,Human capital investment,Education time (E<sub>t</sub>),0.622
 25,Human capital investment,Education time (E<sub>t</sub>),0.593
 26,Human capital investment,Education time (E<sub>t</sub>),0.564
-27,Human capital investment,Education time (E<sub>t</sub>),0.535
+27,Human capital investment,Education time (E<sub>t</sub>),0.534
 28,Human capital investment,Education time (E<sub>t</sub>),0.504
 29,Human capital investment,Education time (E<sub>t</sub>),0.474
 30,Human capital investment,Education time (E<sub>t</sub>),0.444
@@ -4642,7 +4642,7 @@ horizon_quarter,shock,variable,pct_dev
 41,Human capital investment,Education time (E<sub>t</sub>),0.154
 42,Human capital investment,Education time (E<sub>t</sub>),0.132
 43,Human capital investment,Education time (E<sub>t</sub>),0.112
-44,Human capital investment,Education time (E<sub>t</sub>),0.093
+44,Human capital investment,Education time (E<sub>t</sub>),0.092
 45,Human capital investment,Education time (E<sub>t</sub>),0.074
 46,Human capital investment,Education time (E<sub>t</sub>),0.056
 47,Human capital investment,Education time (E<sub>t</sub>),0.039
@@ -5360,7 +5360,7 @@ horizon_quarter,shock,variable,pct_dev
 59,Infrastructure investment,Inflation (Π<sub>t</sub>),-0.017
 60,Infrastructure investment,Inflation (Π<sub>t</sub>),-0.018
 61,Infrastructure investment,Inflation (Π<sub>t</sub>),-0.018
-62,Infrastructure investment,Inflation (Π<sub>t</sub>),-0.018
+62,Infrastructure investment,Inflation (Π<sub>t</sub>),-0.019
 63,Infrastructure investment,Inflation (Π<sub>t</sub>),-0.019
 64,Infrastructure investment,Inflation (Π<sub>t</sub>),-0.019
 65,Infrastructure investment,Inflation (Π<sub>t</sub>),-0.019
@@ -5418,7 +5418,7 @@ horizon_quarter,shock,variable,pct_dev
 17,Human capital investment,Inflation (Π<sub>t</sub>),0.183
 18,Human capital investment,Inflation (Π<sub>t</sub>),0.187
 19,Human capital investment,Inflation (Π<sub>t</sub>),0.19
-20,Human capital investment,Inflation (Π<sub>t</sub>),0.193
+20,Human capital investment,Inflation (Π<sub>t</sub>),0.192
 21,Human capital investment,Inflation (Π<sub>t</sub>),0.195
 22,Human capital investment,Inflation (Π<sub>t</sub>),0.196
 23,Human capital investment,Inflation (Π<sub>t</sub>),0.197
@@ -5431,7 +5431,7 @@ horizon_quarter,shock,variable,pct_dev
 30,Human capital investment,Inflation (Π<sub>t</sub>),0.194
 31,Human capital investment,Inflation (Π<sub>t</sub>),0.193
 32,Human capital investment,Inflation (Π<sub>t</sub>),0.191
-33,Human capital investment,Inflation (Π<sub>t</sub>),0.189
+33,Human capital investment,Inflation (Π<sub>t</sub>),0.188
 34,Human capital investment,Inflation (Π<sub>t</sub>),0.186
 35,Human capital investment,Inflation (Π<sub>t</sub>),0.183
 36,Human capital investment,Inflation (Π<sub>t</sub>),0.18
@@ -5819,18 +5819,18 @@ horizon_quarter,shock,variable,pct_dev
 18,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.262
 19,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.269
 20,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.275
-21,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.281
+21,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.28
 22,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.285
 23,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.289
 24,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.292
-25,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.295
+25,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.294
 26,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.296
 27,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.297
 28,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.298
 29,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.298
 30,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.297
 31,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.296
-32,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.295
+32,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.294
 33,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.292
 34,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.29
 35,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.287
@@ -5842,7 +5842,7 @@ horizon_quarter,shock,variable,pct_dev
 41,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.262
 42,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.257
 43,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.252
-44,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.247
+44,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.246
 45,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.241
 46,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.235
 47,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.229
@@ -5850,13 +5850,13 @@ horizon_quarter,shock,variable,pct_dev
 49,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.217
 50,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.211
 51,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.205
-52,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.199
+52,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.198
 53,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.192
 54,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.186
-55,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.18
+55,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.179
 56,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.173
 57,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.167
-58,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.161
+58,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.16
 59,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.154
 60,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.148
 61,Human capital investment,Nominal interest rate (R<sub>t</sub>),0.142
@@ -6203,7 +6203,7 @@ horizon_quarter,shock,variable,pct_dev
 2,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.023
 3,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.026
 4,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.026
-5,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.026
+5,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.027
 6,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.028
 7,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.03
 8,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.033
@@ -6218,7 +6218,7 @@ horizon_quarter,shock,variable,pct_dev
 17,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.07
 18,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.074
 19,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.078
-20,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.082
+20,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.081
 21,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.085
 22,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.088
 23,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.09
@@ -6269,8 +6269,8 @@ horizon_quarter,shock,variable,pct_dev
 68,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.045
 69,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.043
 70,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.041
-71,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.039
-72,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.037
+71,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.038
+72,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.036
 73,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.035
 74,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.033
 75,Human capital investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.031
@@ -6503,7 +6503,7 @@ horizon_quarter,shock,variable,pct_dev
 2,Infrastructure investment,Primary deficit,0.905
 3,Infrastructure investment,Primary deficit,0.802
 4,Infrastructure investment,Primary deficit,0.713
-5,Infrastructure investment,Primary deficit,0.634
+5,Infrastructure investment,Primary deficit,0.633
 6,Infrastructure investment,Primary deficit,0.562
 7,Infrastructure investment,Primary deficit,0.499
 8,Infrastructure investment,Primary deficit,0.441
@@ -6664,7 +6664,7 @@ horizon_quarter,shock,variable,pct_dev
 63,Human capital investment,Primary deficit,-0.179
 64,Human capital investment,Primary deficit,-0.182
 65,Human capital investment,Primary deficit,-0.184
-66,Human capital investment,Primary deficit,-0.187
+66,Human capital investment,Primary deficit,-0.186
 67,Human capital investment,Primary deficit,-0.189
 68,Human capital investment,Primary deficit,-0.191
 69,Human capital investment,Primary deficit,-0.193
@@ -6678,7 +6678,7 @@ horizon_quarter,shock,variable,pct_dev
 77,Human capital investment,Primary deficit,-0.205
 78,Human capital investment,Primary deficit,-0.206
 79,Human capital investment,Primary deficit,-0.207
-80,Human capital investment,Primary deficit,-0.208
+80,Human capital investment,Primary deficit,-0.207
 81,Human capital investment,Primary deficit,-0.208
 82,Human capital investment,Primary deficit,-0.209
 83,Human capital investment,Primary deficit,-0.209
@@ -7324,19 +7324,19 @@ horizon_quarter,shock,variable,pct_dev
 23,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.306
 24,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.325
 25,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.341
-26,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.355
+26,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.354
 27,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.365
 28,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.374
 29,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.38
 30,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.385
-31,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.388
+31,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.387
 32,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.389
 33,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.388
 34,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.387
 35,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.384
 36,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.38
-37,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.375
-38,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.369
+37,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.374
+38,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.368
 39,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.362
 40,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.354
 41,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.346
@@ -7347,7 +7347,7 @@ horizon_quarter,shock,variable,pct_dev
 46,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.296
 47,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.285
 48,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.273
-49,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.262
+49,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.261
 50,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.249
 51,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.237
 52,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.225
@@ -7362,7 +7362,7 @@ horizon_quarter,shock,variable,pct_dev
 61,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.107
 62,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.094
 63,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.081
-64,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.068
+64,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.067
 65,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.054
 66,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.041
 67,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.028
@@ -7373,12 +7373,12 @@ horizon_quarter,shock,variable,pct_dev
 72,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.963
 73,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.951
 74,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.938
-75,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.926
+75,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.925
 76,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.913
 77,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.901
 78,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.889
-79,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.877
-80,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.865
+79,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.876
+80,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.864
 81,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.853
 82,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.841
 83,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.829
@@ -7394,11 +7394,11 @@ horizon_quarter,shock,variable,pct_dev
 93,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.719
 94,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.709
 95,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.699
-96,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.689
-97,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.679
+96,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.688
+97,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.678
 98,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.669
 99,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.659
-100,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.65
+100,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.649
 1,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),0.185
 2,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),0.413
 3,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),0.622
@@ -7461,16 +7461,16 @@ horizon_quarter,shock,variable,pct_dev
 60,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.983
 61,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.958
 62,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.931
-63,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.903
-64,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.874
+63,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.904
+64,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.875
 65,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.844
 66,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.813
 67,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.781
-68,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.747
+68,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.748
 69,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.713
 70,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.678
 71,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.642
-72,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.604
+72,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.605
 73,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.567
 74,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.528
 75,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.488
@@ -7478,27 +7478,27 @@ horizon_quarter,shock,variable,pct_dev
 77,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.407
 78,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.365
 79,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.323
-80,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.279
+80,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.28
 81,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.236
-82,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.191
-83,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.146
+82,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.192
+83,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.147
 84,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.101
-85,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.055
+85,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.056
 86,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.009
 87,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.962
 88,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.915
 89,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.867
 90,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.819
-91,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.77
+91,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.771
 92,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.722
 93,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.673
-94,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.623
+94,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.624
 95,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.574
 96,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.524
 97,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.474
-98,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.423
+98,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.424
 99,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.373
-100,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.322
+100,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.323
 1,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),0.163
 2,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),0.395
 3,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),0.606

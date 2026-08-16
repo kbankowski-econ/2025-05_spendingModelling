@@ -1,7 +1,7 @@
 var epsi_effgi;
 periods 1:1000 ;
 values
-    0.04605967899650331
+    0.043764028585675886
 ;
 var eTaux;
 periods 1:2000 ;

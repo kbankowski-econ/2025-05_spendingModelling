@@ -8899,39 +8899,39 @@ horizon_quarter,model,variable,pct_dev
 98,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
 99,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
 100,No indexation,Real marginal cost (mc<sub>t</sub>),0.0
-1,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+1,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
 2,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-3,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-4,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-5,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
+3,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+4,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+5,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 6,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
-7,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+7,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
 8,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 9,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 10,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 11,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 12,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
-13,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-14,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-15,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-16,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-17,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-18,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-19,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
+13,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+14,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+15,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+16,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+17,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+18,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+19,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 20,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
-21,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-22,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
+21,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+22,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 23,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 24,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 25,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 26,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 27,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
-28,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-29,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-30,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-31,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-32,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-33,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
+28,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+29,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+30,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+31,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+32,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+33,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 34,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 35,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 36,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
@@ -8941,27 +8941,27 @@ horizon_quarter,model,variable,pct_dev
 40,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 41,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 42,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
-43,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-44,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-45,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-46,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-47,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-48,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-49,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
+43,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+44,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+45,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+46,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+47,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+48,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+49,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 50,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
-51,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-52,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-53,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
+51,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+52,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+53,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 54,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 55,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 56,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
-57,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-58,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-59,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-60,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-61,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-62,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-63,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
+57,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+58,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+59,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+60,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+61,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+62,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+63,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 64,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 65,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 66,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
@@ -8971,27 +8971,27 @@ horizon_quarter,model,variable,pct_dev
 70,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 71,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 72,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
-73,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-74,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-75,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-76,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-77,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-78,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-79,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
+73,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+74,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+75,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+76,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+77,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+78,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+79,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 80,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
-81,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-82,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-83,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
+81,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+82,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+83,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 84,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 85,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 86,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
-87,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-88,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-89,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-90,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-91,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-92,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
-93,No trend growth,Real marginal cost (mc<sub>t</sub>),-0.0
+87,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+88,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+89,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+90,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+91,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+92,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
+93,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 94,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 95,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
 96,No trend growth,Real marginal cost (mc<sub>t</sub>),0.0
@@ -9702,37 +9702,37 @@ horizon_quarter,model,variable,pct_dev
 1,No indexation,Inflation (Π<sub>t</sub>),0.0
 2,No indexation,Inflation (Π<sub>t</sub>),0.0
 3,No indexation,Inflation (Π<sub>t</sub>),0.0
-4,No indexation,Inflation (Π<sub>t</sub>),0.0
-5,No indexation,Inflation (Π<sub>t</sub>),0.0
-6,No indexation,Inflation (Π<sub>t</sub>),0.0
-7,No indexation,Inflation (Π<sub>t</sub>),0.0
-8,No indexation,Inflation (Π<sub>t</sub>),0.0
-9,No indexation,Inflation (Π<sub>t</sub>),0.0
-10,No indexation,Inflation (Π<sub>t</sub>),0.0
-11,No indexation,Inflation (Π<sub>t</sub>),0.0
-12,No indexation,Inflation (Π<sub>t</sub>),0.0
-13,No indexation,Inflation (Π<sub>t</sub>),0.0
-14,No indexation,Inflation (Π<sub>t</sub>),0.0
-15,No indexation,Inflation (Π<sub>t</sub>),0.0
-16,No indexation,Inflation (Π<sub>t</sub>),0.0
-17,No indexation,Inflation (Π<sub>t</sub>),0.0
-18,No indexation,Inflation (Π<sub>t</sub>),0.0
-19,No indexation,Inflation (Π<sub>t</sub>),0.0
-20,No indexation,Inflation (Π<sub>t</sub>),0.0
-21,No indexation,Inflation (Π<sub>t</sub>),0.0
-22,No indexation,Inflation (Π<sub>t</sub>),0.0
-23,No indexation,Inflation (Π<sub>t</sub>),0.0
-24,No indexation,Inflation (Π<sub>t</sub>),0.0
-25,No indexation,Inflation (Π<sub>t</sub>),0.0
-26,No indexation,Inflation (Π<sub>t</sub>),0.0
-27,No indexation,Inflation (Π<sub>t</sub>),0.0
-28,No indexation,Inflation (Π<sub>t</sub>),0.0
-29,No indexation,Inflation (Π<sub>t</sub>),0.0
-30,No indexation,Inflation (Π<sub>t</sub>),0.0
-31,No indexation,Inflation (Π<sub>t</sub>),0.0
-32,No indexation,Inflation (Π<sub>t</sub>),0.0
-33,No indexation,Inflation (Π<sub>t</sub>),0.0
-34,No indexation,Inflation (Π<sub>t</sub>),0.0
+4,No indexation,Inflation (Π<sub>t</sub>),-0.0
+5,No indexation,Inflation (Π<sub>t</sub>),-0.0
+6,No indexation,Inflation (Π<sub>t</sub>),-0.0
+7,No indexation,Inflation (Π<sub>t</sub>),-0.0
+8,No indexation,Inflation (Π<sub>t</sub>),-0.0
+9,No indexation,Inflation (Π<sub>t</sub>),-0.0
+10,No indexation,Inflation (Π<sub>t</sub>),-0.0
+11,No indexation,Inflation (Π<sub>t</sub>),-0.0
+12,No indexation,Inflation (Π<sub>t</sub>),-0.0
+13,No indexation,Inflation (Π<sub>t</sub>),-0.0
+14,No indexation,Inflation (Π<sub>t</sub>),-0.0
+15,No indexation,Inflation (Π<sub>t</sub>),-0.0
+16,No indexation,Inflation (Π<sub>t</sub>),-0.0
+17,No indexation,Inflation (Π<sub>t</sub>),-0.0
+18,No indexation,Inflation (Π<sub>t</sub>),-0.0
+19,No indexation,Inflation (Π<sub>t</sub>),-0.0
+20,No indexation,Inflation (Π<sub>t</sub>),-0.0
+21,No indexation,Inflation (Π<sub>t</sub>),-0.0
+22,No indexation,Inflation (Π<sub>t</sub>),-0.0
+23,No indexation,Inflation (Π<sub>t</sub>),-0.0
+24,No indexation,Inflation (Π<sub>t</sub>),-0.0
+25,No indexation,Inflation (Π<sub>t</sub>),-0.0
+26,No indexation,Inflation (Π<sub>t</sub>),-0.0
+27,No indexation,Inflation (Π<sub>t</sub>),-0.0
+28,No indexation,Inflation (Π<sub>t</sub>),-0.0
+29,No indexation,Inflation (Π<sub>t</sub>),-0.0
+30,No indexation,Inflation (Π<sub>t</sub>),-0.0
+31,No indexation,Inflation (Π<sub>t</sub>),-0.0
+32,No indexation,Inflation (Π<sub>t</sub>),-0.0
+33,No indexation,Inflation (Π<sub>t</sub>),-0.0
+34,No indexation,Inflation (Π<sub>t</sub>),-0.0
 35,No indexation,Inflation (Π<sub>t</sub>),-0.0
 36,No indexation,Inflation (Π<sub>t</sub>),-0.0
 37,No indexation,Inflation (Π<sub>t</sub>),-0.0
@@ -9799,106 +9799,106 @@ horizon_quarter,model,variable,pct_dev
 98,No indexation,Inflation (Π<sub>t</sub>),-0.0
 99,No indexation,Inflation (Π<sub>t</sub>),-0.0
 100,No indexation,Inflation (Π<sub>t</sub>),-0.0
-1,No trend growth,Inflation (Π<sub>t</sub>),0.0
-2,No trend growth,Inflation (Π<sub>t</sub>),0.0
-3,No trend growth,Inflation (Π<sub>t</sub>),0.0
-4,No trend growth,Inflation (Π<sub>t</sub>),0.0
-5,No trend growth,Inflation (Π<sub>t</sub>),0.0
-6,No trend growth,Inflation (Π<sub>t</sub>),0.0
-7,No trend growth,Inflation (Π<sub>t</sub>),0.0
-8,No trend growth,Inflation (Π<sub>t</sub>),0.0
-9,No trend growth,Inflation (Π<sub>t</sub>),0.0
-10,No trend growth,Inflation (Π<sub>t</sub>),0.0
-11,No trend growth,Inflation (Π<sub>t</sub>),0.0
-12,No trend growth,Inflation (Π<sub>t</sub>),0.0
-13,No trend growth,Inflation (Π<sub>t</sub>),0.0
-14,No trend growth,Inflation (Π<sub>t</sub>),0.0
-15,No trend growth,Inflation (Π<sub>t</sub>),0.0
-16,No trend growth,Inflation (Π<sub>t</sub>),0.0
-17,No trend growth,Inflation (Π<sub>t</sub>),0.0
-18,No trend growth,Inflation (Π<sub>t</sub>),0.0
-19,No trend growth,Inflation (Π<sub>t</sub>),0.0
-20,No trend growth,Inflation (Π<sub>t</sub>),0.0
-21,No trend growth,Inflation (Π<sub>t</sub>),0.0
-22,No trend growth,Inflation (Π<sub>t</sub>),0.0
-23,No trend growth,Inflation (Π<sub>t</sub>),0.0
-24,No trend growth,Inflation (Π<sub>t</sub>),0.0
-25,No trend growth,Inflation (Π<sub>t</sub>),0.0
-26,No trend growth,Inflation (Π<sub>t</sub>),0.0
-27,No trend growth,Inflation (Π<sub>t</sub>),0.0
-28,No trend growth,Inflation (Π<sub>t</sub>),0.0
-29,No trend growth,Inflation (Π<sub>t</sub>),0.0
-30,No trend growth,Inflation (Π<sub>t</sub>),0.0
-31,No trend growth,Inflation (Π<sub>t</sub>),0.0
-32,No trend growth,Inflation (Π<sub>t</sub>),0.0
-33,No trend growth,Inflation (Π<sub>t</sub>),0.0
-34,No trend growth,Inflation (Π<sub>t</sub>),0.0
-35,No trend growth,Inflation (Π<sub>t</sub>),0.0
-36,No trend growth,Inflation (Π<sub>t</sub>),0.0
-37,No trend growth,Inflation (Π<sub>t</sub>),0.0
-38,No trend growth,Inflation (Π<sub>t</sub>),0.0
-39,No trend growth,Inflation (Π<sub>t</sub>),0.0
-40,No trend growth,Inflation (Π<sub>t</sub>),0.0
-41,No trend growth,Inflation (Π<sub>t</sub>),0.0
-42,No trend growth,Inflation (Π<sub>t</sub>),0.0
-43,No trend growth,Inflation (Π<sub>t</sub>),0.0
-44,No trend growth,Inflation (Π<sub>t</sub>),0.0
-45,No trend growth,Inflation (Π<sub>t</sub>),0.0
-46,No trend growth,Inflation (Π<sub>t</sub>),0.0
-47,No trend growth,Inflation (Π<sub>t</sub>),0.0
-48,No trend growth,Inflation (Π<sub>t</sub>),0.0
-49,No trend growth,Inflation (Π<sub>t</sub>),0.0
-50,No trend growth,Inflation (Π<sub>t</sub>),0.0
-51,No trend growth,Inflation (Π<sub>t</sub>),0.0
-52,No trend growth,Inflation (Π<sub>t</sub>),0.0
-53,No trend growth,Inflation (Π<sub>t</sub>),0.0
-54,No trend growth,Inflation (Π<sub>t</sub>),0.0
-55,No trend growth,Inflation (Π<sub>t</sub>),0.0
-56,No trend growth,Inflation (Π<sub>t</sub>),0.0
-57,No trend growth,Inflation (Π<sub>t</sub>),0.0
-58,No trend growth,Inflation (Π<sub>t</sub>),0.0
-59,No trend growth,Inflation (Π<sub>t</sub>),0.0
-60,No trend growth,Inflation (Π<sub>t</sub>),0.0
-61,No trend growth,Inflation (Π<sub>t</sub>),0.0
-62,No trend growth,Inflation (Π<sub>t</sub>),0.0
-63,No trend growth,Inflation (Π<sub>t</sub>),0.0
-64,No trend growth,Inflation (Π<sub>t</sub>),0.0
-65,No trend growth,Inflation (Π<sub>t</sub>),0.0
-66,No trend growth,Inflation (Π<sub>t</sub>),0.0
-67,No trend growth,Inflation (Π<sub>t</sub>),0.0
-68,No trend growth,Inflation (Π<sub>t</sub>),0.0
-69,No trend growth,Inflation (Π<sub>t</sub>),0.0
-70,No trend growth,Inflation (Π<sub>t</sub>),0.0
-71,No trend growth,Inflation (Π<sub>t</sub>),0.0
-72,No trend growth,Inflation (Π<sub>t</sub>),0.0
-73,No trend growth,Inflation (Π<sub>t</sub>),0.0
-74,No trend growth,Inflation (Π<sub>t</sub>),0.0
-75,No trend growth,Inflation (Π<sub>t</sub>),0.0
-76,No trend growth,Inflation (Π<sub>t</sub>),0.0
-77,No trend growth,Inflation (Π<sub>t</sub>),0.0
-78,No trend growth,Inflation (Π<sub>t</sub>),0.0
-79,No trend growth,Inflation (Π<sub>t</sub>),0.0
-80,No trend growth,Inflation (Π<sub>t</sub>),0.0
-81,No trend growth,Inflation (Π<sub>t</sub>),0.0
-82,No trend growth,Inflation (Π<sub>t</sub>),0.0
-83,No trend growth,Inflation (Π<sub>t</sub>),0.0
-84,No trend growth,Inflation (Π<sub>t</sub>),0.0
-85,No trend growth,Inflation (Π<sub>t</sub>),0.0
-86,No trend growth,Inflation (Π<sub>t</sub>),0.0
-87,No trend growth,Inflation (Π<sub>t</sub>),0.0
-88,No trend growth,Inflation (Π<sub>t</sub>),0.0
-89,No trend growth,Inflation (Π<sub>t</sub>),0.0
-90,No trend growth,Inflation (Π<sub>t</sub>),0.0
-91,No trend growth,Inflation (Π<sub>t</sub>),0.0
-92,No trend growth,Inflation (Π<sub>t</sub>),0.0
-93,No trend growth,Inflation (Π<sub>t</sub>),0.0
-94,No trend growth,Inflation (Π<sub>t</sub>),0.0
-95,No trend growth,Inflation (Π<sub>t</sub>),0.0
-96,No trend growth,Inflation (Π<sub>t</sub>),0.0
-97,No trend growth,Inflation (Π<sub>t</sub>),0.0
-98,No trend growth,Inflation (Π<sub>t</sub>),0.0
-99,No trend growth,Inflation (Π<sub>t</sub>),0.0
-100,No trend growth,Inflation (Π<sub>t</sub>),0.0
+1,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+2,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+3,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+4,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+5,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+6,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+7,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+8,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+9,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+10,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+11,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+12,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+13,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+14,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+15,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+16,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+17,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+18,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+19,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+20,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+21,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+22,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+23,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+24,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+25,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+26,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+27,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+28,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+29,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+30,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+31,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+32,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+33,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+34,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+35,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+36,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+37,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+38,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+39,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+40,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+41,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+42,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+43,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+44,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+45,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+46,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+47,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+48,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+49,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+50,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+51,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+52,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+53,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+54,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+55,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+56,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+57,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+58,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+59,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+60,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+61,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+62,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+63,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+64,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+65,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+66,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+67,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+68,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+69,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+70,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+71,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+72,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+73,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+74,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+75,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+76,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+77,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+78,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+79,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+80,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+81,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+82,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+83,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+84,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+85,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+86,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+87,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+88,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+89,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+90,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+91,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+92,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+93,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+94,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+95,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+96,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+97,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+98,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+99,No trend growth,Inflation (Π<sub>t</sub>),-0.0
+100,No trend growth,Inflation (Π<sub>t</sub>),-0.0
 1,Derived canonical NK,Inflation (Π<sub>t</sub>),-0.0
 2,Derived canonical NK,Inflation (Π<sub>t</sub>),-0.0
 3,Derived canonical NK,Inflation (Π<sub>t</sub>),-0.0
@@ -10630,20 +10630,20 @@ horizon_quarter,model,variable,pct_dev
 29,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
 30,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
 31,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
-32,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
-33,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
-34,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
-35,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
-36,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
-37,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
-38,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
-39,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
-40,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
-41,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
-42,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
-43,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
-44,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
-45,No indexation,Nominal interest rate (R<sub>t</sub>),-0.0
+32,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
+33,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
+34,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
+35,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
+36,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
+37,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
+38,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
+39,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
+40,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
+41,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
+42,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
+43,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
+44,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
+45,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
 46,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
 47,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
 48,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
@@ -10699,106 +10699,106 @@ horizon_quarter,model,variable,pct_dev
 98,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
 99,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
 100,No indexation,Nominal interest rate (R<sub>t</sub>),0.0
-1,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-2,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-3,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-4,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-5,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-6,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-7,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-8,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-9,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-10,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-11,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-12,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-13,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-14,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-15,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-16,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-17,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-18,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-19,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-20,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-21,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-22,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-23,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-24,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-25,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-26,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-27,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-28,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-29,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-30,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-31,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-32,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-33,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-34,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-35,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-36,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-37,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-38,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-39,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-40,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-41,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-42,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-43,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-44,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-45,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-46,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-47,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-48,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-49,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-50,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-51,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-52,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-53,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-54,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-55,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-56,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-57,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-58,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-59,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-60,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-61,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-62,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-63,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-64,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-65,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-66,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-67,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-68,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-69,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-70,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-71,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-72,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-73,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-74,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-75,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-76,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-77,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-78,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-79,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-80,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-81,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-82,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-83,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-84,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-85,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-86,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-87,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-88,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-89,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-90,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-91,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-92,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-93,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-94,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-95,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-96,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-97,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-98,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-99,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
-100,No trend growth,Nominal interest rate (R<sub>t</sub>),0.0
+1,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+2,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+3,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+4,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+5,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+6,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+7,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+8,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+9,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+10,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+11,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+12,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+13,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+14,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+15,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+16,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+17,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+18,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+19,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+20,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+21,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+22,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+23,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+24,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+25,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+26,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+27,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+28,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+29,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+30,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+31,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+32,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+33,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+34,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+35,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+36,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+37,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+38,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+39,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+40,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+41,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+42,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+43,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+44,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+45,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+46,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+47,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+48,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+49,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+50,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+51,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+52,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+53,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+54,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+55,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+56,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+57,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+58,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+59,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+60,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+61,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+62,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+63,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+64,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+65,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+66,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+67,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+68,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+69,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+70,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+71,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+72,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+73,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+74,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+75,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+76,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+77,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+78,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+79,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+80,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+81,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+82,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+83,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+84,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+85,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+86,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+87,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+88,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+89,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+90,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+91,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+92,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+93,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+94,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+95,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+96,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+97,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+98,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+99,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
+100,No trend growth,Nominal interest rate (R<sub>t</sub>),-0.0
 1,Derived canonical NK,Nominal interest rate (R<sub>t</sub>),-0.0
 2,Derived canonical NK,Nominal interest rate (R<sub>t</sub>),-0.0
 3,Derived canonical NK,Nominal interest rate (R<sub>t</sub>),-0.0
@@ -11603,10 +11603,10 @@ horizon_quarter,model,variable,pct_dev
 2,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 3,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 4,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
-5,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
-6,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
-7,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
-8,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+5,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+6,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+7,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
+8,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 9,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 10,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 11,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
@@ -11615,7 +11615,7 @@ horizon_quarter,model,variable,pct_dev
 14,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 15,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 16,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
-17,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+17,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 18,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 19,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 20,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
@@ -11630,7 +11630,7 @@ horizon_quarter,model,variable,pct_dev
 29,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 30,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 31,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
-32,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+32,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 33,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 34,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 35,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
@@ -11660,7 +11660,7 @@ horizon_quarter,model,variable,pct_dev
 59,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 60,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 61,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
-62,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+62,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 63,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 64,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 65,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
@@ -11690,7 +11690,7 @@ horizon_quarter,model,variable,pct_dev
 89,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 90,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 91,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
-92,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.0
+92,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 93,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 94,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 95,No trend growth,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
