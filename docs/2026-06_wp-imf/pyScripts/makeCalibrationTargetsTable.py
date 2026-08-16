@@ -54,12 +54,12 @@ def infrastructure_shares():
 
 def investment_label(label, ae_share, emde_share):
     detail = (
-        r"{\fontsize{6}{6.5}\selectfont\textit{(Government-investment share: "
+        r"{\fontsize{6.5}{7}\selectfont\textit{(Government-investment share: "
         rf"AE {pct(ae_share, 0)}\%; EMDE {pct(emde_share, 0)}\%)}}}}"
     )
     return (
         r"\begin{tabular}[c]{@{}l@{}}"
-        rf"{label}\\[-0.2em]{detail}"
+        rf"{label}\\[-0.35em]{detail}"
         r"\end{tabular}"
     )
 
