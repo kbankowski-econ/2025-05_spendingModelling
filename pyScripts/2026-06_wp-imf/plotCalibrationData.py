@@ -14,8 +14,7 @@ series covers the broader public sector.
 
 Solid lines are equal-country group medians, dotted lines are calendar-GDP-
 weighted group averages, and shaded areas are cross-country 25th--75th
-percentile ranges. Open diamonds show the corresponding model targets in the
-distribution panels.
+percentile ranges.
 The United States is excluded only from the AE consumption-tax weighted average
 because its government employee compensation is unavailable after 2021.
 Japan is excluded only from the AE public-debt weighted average because its
@@ -76,16 +75,6 @@ PANELS = [
     ("Labor income tax", "tau_l"),
     ("Public debt", "ggxwdg_gdp"),
 ]
-TARGETS = {
-    "g_real": {"AE": 1.8736594057462057, "EMDE": 5.102658369059963},
-    "ncg_gdp": {"AE": 17.66798699446066, "EMDE": 14.683743823337528},
-    # Infrastructure plus human-capital investment; public R&D is not fixed investment.
-    "nfig_gdp": {"AE": 3.8627674213392216, "EMDE": 4.907272525226091},
-    "tau_c": {"AE": 15.067283860879371, "EMDE": 11.583054349525241},
-    "tau_l": {"AE": 30.876981241278333, "EMDE": 13.957543978997473},
-    "ggxwdg_gdp": {"AE": 78.75515483152252, "EMDE": 46.444789855028866},
-}
-
 BAND_OPACITY = 0.15
 LINE_WIDTH = 2.5
 WEIGHTED_LINE_WIDTH = 2.0
@@ -375,24 +364,6 @@ def add_populated_panel(
                 cliponaxis=False,
             ), row=row, col=box_col)
 
-        fig.add_trace(go.Scatter(
-            x=[box_position],
-            y=[TARGETS[variable][code]],
-            mode="markers",
-            marker=dict(
-                color=color,
-                size=9,
-                symbol="diamond-open",
-                line=dict(width=2),
-            ),
-            name="Table 2 target",
-            legendgroup="target",
-            legendrank=5,
-            showlegend=show_group_legend and code == "AE",
-            hovertemplate="Table 2 target: %{y:.2f}<extra></extra>",
-            cliponaxis=False,
-        ), row=row, col=box_col)
-
         for _, obs in band.iterrows():
             csv_rows.append({
                 "variable": variable,
@@ -408,7 +379,6 @@ def add_populated_panel(
                     float(obs["gdp_weighted_average"]), 4
                 ),
                 "weighted_economies": int(obs["weighted_n"]),
-                "table2_target": TARGETS[variable][code],
             })
 
 
