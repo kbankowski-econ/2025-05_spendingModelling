@@ -30,6 +30,7 @@ PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 - plotHumanCapital:     Human capital + R&D mix IRFs
 - plotDiffusionAE:      Technology diffusion-speed sensitivity
 - plotCalibrationData:  WEO evidence underlying country-group calibration targets
+- plotInvestmentComposition: OECD functional composition of government investment
 - plotEfficiencyBands:  Spending-efficiency gaps by income group (appendix)
 
 PAPER TABLES (\\input by draftPaper.tex):
@@ -40,11 +41,11 @@ PAPER TABLES (\\input by draftPaper.tex):
 - makeCalibrationTargetsTable:  AE and EMDE steady-state targets
 - makeParametersTable:          Structural productive-spending parameters
 - makeEfficiencyGapsTable:      Efficiency-gap derivation
-- makeInvestmentCompositionTables: OECD investment-function mapping and aggregates
-                    Calibration values, not model output.
-                    Out: docs/2026-06_wp-imf/*Table.tex
 
 OECD DATA:
+- retrieveOECDInvestmentComposition: annual general-government investment by
+                    function for the paper's 36-country sample
+                    Out: data/oecdGovernmentInvestmentByFunction.csv
 - retrieveOECDGovernmentInvestment: 2023 general-government investment / GDP
                     Out: data/oecdGovernmentInvestmentPctGDP_2023*.csv
 - makeWEOWeightedGovernmentInvestmentAggregates: Compare paper and supplied-WEO
@@ -261,6 +262,19 @@ def plotCalibrationData(c):
 
 
 @task
+def plotInvestmentComposition(c):
+    """
+    OECD functional composition of government investment by country group.
+    Out: figures/investmentCompositionBands.png/.pdf/.html/.csv
+    """
+    _run_plot(
+        c,
+        "plotInvestmentComposition.py",
+        "Generating: Government-Investment Composition (appendix)",
+    )
+
+
+@task
 def plotEfficiencyBands(c):
     """
     Spending-efficiency gaps by income group (appendix figure).
@@ -325,21 +339,25 @@ def makeEfficiencyGapsTable(c):
 
 
 @task
-def makeInvestmentCompositionTables(c):
-    """
-    Regenerate the OECD functional-composition appendix tables and CSV files.
-    Out: docs/2026-06_wp-imf/investment{FunctionMapping,Composition}Table.tex
-    """
-    _run_table(c, "makeInvestmentCompositionTables.py", "Investment-composition tables")
-
-
-@task
 def retrieveOECDGovernmentInvestment(c):
     """
     Retrieve 2023 general-government investment as a percentage of GDP.
     Out: data/oecdGovernmentInvestmentPctGDP_2023*.csv
     """
     _run_table(c, "retrieveOECDGovernmentInvestment.py", "OECD government-investment data")
+
+
+@task
+def retrieveOECDInvestmentComposition(c):
+    """
+    Retrieve annual general-government investment by COFOG function.
+    Out: data/oecdGovernmentInvestmentByFunction.csv
+    """
+    _run_table(
+        c,
+        "retrieveOECDInvestmentComposition.py",
+        "OECD government-investment composition data",
+    )
 
 
 @task
@@ -413,13 +431,13 @@ def investigateContributions(c):
     plotSensitivityIRF,
     plotSensitivityIRFPerm,
     plotCalibrationData,
+    plotInvestmentComposition,
     plotEfficiencyBands,
     makeMultipliers,
     makeCommonParametersTable,
     makeCalibrationTargetsTable,
     makeParametersTable,
     makeEfficiencyGapsTable,
-    makeInvestmentCompositionTables,
     makeGlossary,
     plotContributions,
     investigateContributions,
