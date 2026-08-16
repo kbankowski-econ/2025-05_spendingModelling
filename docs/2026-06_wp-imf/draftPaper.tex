@@ -207,17 +207,18 @@ The central bank sets the nominal interest rate according to a Taylor rule.
 The economy grows along a balanced-growth path driven by technology.
 The associated real trend $\Lambda_t$ grows at the constant gross rate $g$, so $g=\Lambda_t/\Lambda_{t-1}$.
 Throughout the main text, unaccented trending variables denote levels and hats denote their stationary counterparts.
-A date-$t$ flow is scaled by the incumbent real trend, so $\hat{X}_t=X_t/\Lambda_{t-1}$.
-A date-$t$ physical-capital stock is instead scaled by its own-date trend, so $\hat{K}_t=K_t/\Lambda_t$.
+A date-$t$ flow is scaled by the incumbent real trend, so $\hat{X}_t=X_t/\Lambda_{t}$.
+A date-$t-1$ physical-capital stock, which is predertermined and used for the production at time $t$, is instead scaled by time $t$ trend, so $\hat{K}_{t-1}=K_{t-1}/\Lambda_t$.
 Variables that are stationary by construction, including time allocations, human capital, rates, tax rates, and adoption probabilities, retain their unaccented notation.
-The productive public inputs are therefore $\hat{K}_t^{GI}=K_t^{GI}/\Lambda_t$, $\hat{K}_t^{GE}=K_t^{GE}/\Lambda_t$, and $\hat{G}_t^{RD}=G_t^{RD}/\Lambda_{t-1}$.
+The productive public inputs are therefore $\hat{K}_{t-1}^{GI}=K_{t-1}^{GI}/\Lambda_t$, $\hat{K}_{t-1}^{GE}=K_{t-1}^{GE}/\Lambda_t$, and $\hat{G}_t^{RD}=G_t^{RD}/\Lambda_{t}$.
 
-Technology stocks follow a separate trend, denoted by $\Gamma_t$.
-As discussed below, adopted technologies enter production through the love-of-variety term $A_{t-1}^{\vartheta-1}$, where $\vartheta$ governs returns to variety.\footnote{Private capital grows at $g$ and enters with elasticity $\alpha$, contributing $g^{\alpha}$ to gross output growth; effective labor and $\hat{K}_{t-1}^{GI}$ are stationary. The love-of-variety term must supply the remaining $g^{1-\alpha}$, implying technology-stock growth of $g^{(1-\alpha)/(\vartheta-1)}$.}
-Private capital's output elasticity is $\alpha$; both terms determine trend output growth.
-The calibrated technology trend therefore grows faster than the real trend.
-Specifically, its gross growth rate is $\Gamma_t/\Gamma_{t-1}=g^{(1-\alpha)/(\vartheta-1)}$.
-Accordingly, the stationarized created- and adopted-technology stocks are $\hat{Z}_t=Z_t/\Gamma_t$ and $\hat{A}_t=A_t/\Gamma_t$, respectively.
+The stocks of created and adopted technologies share a common deterministic
+trend, denoted by $\Gamma_t$. Its growth rate is linked to that of the real
+trend $\Lambda_t$ by the balanced-growth restrictions derived below. Accordingly, the
+stationary created- and adopted-technology stocks are defined as $\hat Z_t=\frac{Z_t}{\Gamma_t}$ and 
+$\hat A_t=\frac{A_t}{\Gamma_t}$.
+
+%Technology stocks afollow a separate trend, denoted by $\Gamma_t$. As discussed below, adopted technologies enter production through the love-of-variety term $A_{t-1}^{\vartheta-1}$, where $\vartheta$ governs returns to variety.\footnote{Private capital grows at $g$ and enters with elasticity $\alpha$, contributing $g^{\alpha}$ to gross output growth; effective labor and $\hat{K}_{t-1}^{GI}$ are stationary. The love-of-variety term must supply the remaining $g^{1-\alpha}$, implying technology-stock growth of $g^{(1-\alpha)/(\vartheta-1)}$.} Private capital's output elasticity is $\alpha$; both terms determine trend output growth. The calibrated technology trend therefore grows faster than the real trend. Specifically, its gross growth rate is $\Gamma_t/\Gamma_{t-1}=g^{(1-\alpha)/(\vartheta-1)}$. Accordingly, the stationarized created- and adopted-technology stocks are $\hat{Z}_t=Z_t/\Gamma_t$ and $\hat{A}_t=A_t/\Gamma_t$, respectively.
 
 The remainder of this section sets out the model's building blocks in turn, starting from households.
 The derivations for the household, production, pricing, and technology-adoption conditions are given in Appendix~\ref{app:equilibrium}; Appendix~\ref{app:glossary} reports the stationarized model equations and notation.
@@ -291,9 +292,9 @@ Intermediate-good firms are therefore responsible only for real production.
 Intermediate producers use private capital and effective labor, taking public infrastructure and adopted technology as external production shifters.
 In symmetric equilibrium, aggregate production is
 \begin{equation} \label{eq:production}
-    Y_t = A_{t-1}^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha} \left(\hat{K}_{t-1}^{GI}\right)^{\alpha_G},
+    Y_t = A_{t-1}^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha} \left(K_{t-1}^{GI}\right)^{\alpha_G},
 \end{equation}
-where $A_{t-1}$ is the stock of adopted technologies, $K_{t-1}$ is private capital, $N_t = H_{t-1}L_t$ is effective labor, and $\hat{K}_{t-1}^{GI}$ is normalized public infrastructure capital.
+where $A_{t-1}$ is the stock of adopted technologies whose dynamics will be discussed below, $K_{t-1}$ is private capital, $N_t = H_{t-1}L_t$ is effective labor, and $K_{t-1}^{GI}$ is public infrastructure capital.
 Public infrastructure augments private production as a positive externality, while adopted technologies raise productivity through the love-of-variety term $A_{t-1}^{\vartheta-1}$.
 The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{In \citet{Anzoateguietal2019} a single intermediate-goods elasticity of substitution sets both the markup and the returns to variety.
 Here the retail markup is governed by $\epsilon$ and the intermediate producers' markup by the separate parameter $\mu^{p}$; $\vartheta$ retains only the returns-to-variety role, mapping the stock of adopted technologies into TFP through the love-of-variety term $A_t^{\vartheta-1}$.}
@@ -311,10 +312,7 @@ Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model dis
 The gap $Z_t - A_t$ is the stock of unadopted technologies.
 Created technologies depend on two forces.
 
-First, lagged human capital raises technology creation through a reduced-form learning-by-doing channel.
-This specification borrows the persistent learning-by-doing form of \citet{ChangGomesSchorfheide2002} and applies it here to innovation.
-Second, normalized public R\&D spending $\hat{G}_t^{RD}$ expands the stock of technologies available for adoption by raising the supply of adoptable ideas.
-In stationary form, technology creation is governed by
+First, the stock of created technologies $Z_{t}$ is assumed to follow: $Z_{t}=\Gamma_{t+1} \hat{Z}_{t}$.\footnote{Setting the trend at $t+1$ is consistent with the convention that a date-$t-1$ stock variable is scaled by a time $t$ trend.} In which, $\Gamma_{t}=(1+\gamma_{a})^{t}$ captures the pre-deterministic trend, while $\hat{Z}_{t}$  is its stochastic component depending on human capital and public R\&D spending:
 \begin{equation} \label{eq:Z}
 \begin{aligned}
     \log\!\left(\frac{\hat{Z}_t}{\hat{Z}^{SS}}\right) ={}& \rho_A \log\!\left(\frac{\hat{Z}_{t-1}}{\hat{Z}^{SS}}\right)
@@ -322,6 +320,9 @@ In stationary form, technology creation is governed by
     &{}+ \left(1-\rho_A\right)\alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) \hat{G}_{t-1}^{RD}}{\left(1-e^{GRD}\right) \hat{G}^{RD,SS}}\right),
 \end{aligned}
 \end{equation}
+Lagged human capital raises technology creation through a reduced-form learning-by-doing channel. This specification borrows the persistent learning-by-doing form of \citet{ChangGomesSchorfheide2002} and applies it here to innovation. Normalized public R\&D spending $\hat{G}_t^{RD}$ expands the stock of technologies available for adoption by raising the supply of adoptable ideas.
+%In stationary form, technology creation is governed by
+
 Only the productive fraction $\left(1-e_{t-1}^{GRD}\right)$ of normalized (lagged) R\&D spending drives innovation: $e_t^{GRD}$ is the R\&D inefficiency wedge, equal to its steady-state value $e^{GRD}$ in the baseline and reduced when the R\&D efficiency gap is closed (Section~\ref{sec:results}).
 The corresponding level outlay $G_t^{RD}$ enters the government budget constraint~\eqref{eq:govbudget}.
 The coefficients $\alpha_{HA}$ and $\alpha_{RD}$ are the long-run elasticities of created technology with respect to human capital and effective public R\&D, while multiplication by $1-\rho_A$ gives their per-period loadings.
@@ -331,6 +332,7 @@ To capture this diffusion lag, the stock of adopted technologies evolves as
 \begin{equation} \label{eq:A}
     A_{t} = q_t\, \phi \left[Z_{t-1} - A_{t-1}\right] + \phi A_{t-1}.
 \end{equation}
+which implies that stock of adopted technologies $A_{t}$ shares the same pre-deterministic trend as the stock of created technologies $Z_{t}$.
 The survival rate $\phi$ applies to both adopted and unadopted technologies, since an idea may become obsolete in either state.
 The time-varying adoption probability is
 \begin{equation} \label{eq:qmain}
@@ -429,9 +431,13 @@ A competitive equilibrium is a sequence of quantities and prices such that house
 
 \subsection{Balanced Growth and Solution} \label{subsec:bgp}
 
-The economy is solved around the technology-driven balanced-growth path described at the beginning of this section.
-Recall that trending real quantities share the trend $\Lambda_t$, which grows at the gross rate $g$, whereas created and adopted technologies follow the separate trend $\Gamma_t$.
-Applying the hat convention introduced there converts the level equations into a stationary system; variables that are stationary by construction remain unchanged.
+The economy is solved around the technology-driven balanced-growth path described at the beginning of this section. 
+Recall that trending real quantities share the trend $\Lambda_t$, which grows at the gross rate $g$, which is driven by the technology growth of $1+\gamma_{a}$, which is the same for the stock of created and adopted technologies. In the production (\ref{eq:production}), to guarantee that output $Y_{t}$, private capital $K_{t}$, and public infrastructure capital $K_{t}^{GI}$ are on the same balanced-growth path, the deterministic growth rate of technology and real economy satisfied: $\Gamma_t/\Gamma_{t-1}=1+\gamma_{a}=g^{(1-\alpha-\alpha_{G})/(\vartheta-1)}$. In what follows, we apply the hat convention, as mentioned above, to convert the trend-variable into a stationary one; variables that are stationary by construction remain unchanged. 
+
+Using the convention that the date-$t$ flow variable and the date-$t-1$ stock variable de-trended by the (corresponding) date-$t$ trend and the link between the real and technology trend, the production function, adjusted for the deterministci trend, can be written as: 
+\[
+    \hat{Y}_t = \hat{A}_{t-1}^{\vartheta-1} \hat K_{t-1}^{\alpha} N_t^{1-\alpha} \left( \hat K_{t-1}^{GI}\right)^{\alpha_G}.
+\]
 
 Equations involving only contemporaneous common-trend flows retain their level-form appearance.
 The resource constraint, for example, becomes
@@ -455,7 +461,7 @@ For example, the bond Euler equation becomes
     \hat{\lambda}_t = \beta\,\mathbb{E}_t\!\left[
     \hat{\lambda}_{t+1}\frac{R_t}{g\Pi_{t+1}}\right].
 \]
-Level marginal utility moves inversely with the real trend, so its stationary counterpart is $\hat{\lambda}_t=\Lambda_{t-1}\lambda_t$.
+Level marginal utility moves inversely with the real trend, so its stationary counterpart is $\hat{\lambda}_t=\Lambda_{t}\lambda_t$.
 Aggregate technology values and adoption expenditure follow the flow convention and are divided by $\Lambda_{t-1}$.
 
 The technology stocks require a distinct adjustment because they grow with $\Gamma_t$.
