@@ -169,8 +169,8 @@ parameters simplify_level;
 simplify_level = 3;
 // Controlled price-setting counterfactual: retain the selected simplification
 // level and remove only the indexation of non-reset prices.
-% gammaa uses the set-specific trend growth rate, so it must come after it
-gammaa=g^((1-alpha)/(vartheta-1))-1;
+% Technology growth balances the common trends in private and public capital.
+gammaa=g^((1-alpha-alphaG)/(vartheta-1))-1;
 model;
 //********************************************************
 // HOUSEHOLD DECISIONS
@@ -195,7 +195,7 @@ N = L;
 x1 = lambda*mc*yd+betta*thetap*(PI^chi/PI(+1))^(-epsilon)*x1(+1);
 x2 = lambda*PIstar*yd+betta*thetap*(PI^chi/PI(+1))^(1-epsilon)*PIstar/PIstar(+1)*x2(+1);
 epsilon*x1 = (epsilon-1)*x2;
-// Cobb-Douglas production with private capital and an intermediate markup
+// Cobb-Douglas private production with public capital as an external input
 Kp(-1)/N = alpha/(1-alpha)*w/rk;
 (1-alpha)*mc*y/N = markupss*w;
 y = A(-1)^(vartheta-1)*Kg(-1)^alphaG*Kp(-1)^alpha*N^(1-alpha);

@@ -49,8 +49,8 @@ chi = 0;
 g = 1;
 @#endif
 
-% gammaa uses the set-specific trend growth rate, so it must come after it
-gammaa=g^((1-alpha)/(vartheta-1))-1;
+% Technology growth balances the common trends in private and public capital.
+gammaa=g^((1-alpha-alphaG)/(vartheta-1))-1;
 
 model;
 

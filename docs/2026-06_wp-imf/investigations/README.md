@@ -12,7 +12,7 @@ paper's model pipeline (`drivers/runModel.m`).
 - `detrending/` — worked level→stationarized transformation (capital-LoM example);
   why `g` appears where it does and Λ never does (self-compiling note).
 - `tech-growth-rate/` — why the technology stocks detrend by their own rate
-  `1+gammaa = g^((1-alpha)/(vartheta-1))`, not `g` (self-compiling note).
+  `1+gammaa = g^((1-alpha-alphaG)/(vartheta-1))`, not `g` (self-compiling note).
 - `inflation-dynamics/` — derives why the former output-level term in the Taylor
   rule forced persistent deflation after permanent output gains, and why the
   markup-based output-gap proxy removes that artifact (self-compiling note).

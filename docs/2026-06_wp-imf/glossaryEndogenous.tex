@@ -17,39 +17,39 @@
 \endlastfoot
 \multicolumn{6}{@{}l}{\textit{Households}} \\
 \addlinespace[0.1em]
-1 & $\hat{C}_t$ & Consumption \gloseq{\tfrac{1}{\hat C_t}=\hat\lambda_t(1+\tau^c_t)} & \texttt{C} & 0.352 & 0.349 \\
+1 & $\hat{C}_t$ & Consumption \gloseq{\tfrac{1}{\hat C_t}=\hat\lambda_t(1+\tau^c_t)} & \texttt{C} & 0.353 & 0.349 \\
 2 & $L_t$ & Labor supply (hours) \gloseq{\omega(L_t+E_t)^{\varphi}=\hat\lambda_t(1-\tau^w_t)\hat w_t H_{t-1}} & \texttt{L} & 0.333 & 0.333 \\
 3 & $N_t$ & Effective labor, $H_{t-1} L_t$ \gloseq{N_t=H_{t-1}L_t} & \texttt{N} & 0.333 & 0.333 \\
 4 & $H_t$ & Private human-capital stock \gloseq{H_t=(1-\delta^h)H_{t-1}+\chi E_t^{\gamma}(\hat K^{GE}_{t-1})^{\mu}} & \texttt{H} & 1 & 1 \\
 5 & $E_t$ & Time in human-capital accumulation \gloseq{\omega(L_t+E_t)^{\varphi}=\lambda^H_t\,\chi\gamma\,E_t^{\gamma-1}(\hat K^{GE}_{t-1})^{\mu}} & \texttt{E} & 0.157 & 0.157 \\
 6 & $\hat{I}_t$ & Private investment \gloseq{1=\beta\,\mathbb{E}_t\!\big[\tfrac{\hat\lambda_{t+1}}{\hat\lambda_t}(1-\delta+r^k_{t+1})/g\big]} & \texttt{Ip} & 0.159 & 0.133 \\
 7 & $\hat{K}_t$ & Private capital \gloseq{g\hat K_t=(1-\delta)\hat K_{t-1}+\hat I_t} & \texttt{Kp} & 5.368 & 3.551 \\
-8 & $\hat{\lambda}_t$ & Marginal utility of consumption \gloseq{\hat\lambda_t=\beta\,\mathbb{E}_t\!\big[\hat\lambda_{t+1}R_t/(g\Pi_{t+1})\big]} & \texttt{lambda} & 2.468 & 2.567 \\
-9 & $\lambda_t^{H}$ & Shadow value of human capital \gloseq{\lambda^H_t=\beta\,\mathbb{E}_t\!\big[\hat\lambda_{t+1}(1-\tau^w_{t+1})\hat w_{t+1}L_{t+1}+\lambda^H_{t+1}(1-\delta^h)\big]} & \texttt{lambda\_H} & 25.122 & 26.952 \\
+8 & $\hat{\lambda}_t$ & Marginal utility of consumption \gloseq{\hat\lambda_t=\beta\,\mathbb{E}_t\!\big[\hat\lambda_{t+1}R_t/(g\Pi_{t+1})\big]} & \texttt{lambda} & 2.465 & 2.565 \\
+9 & $\lambda_t^{H}$ & Shadow value of human capital \gloseq{\lambda^H_t=\beta\,\mathbb{E}_t\!\big[\hat\lambda_{t+1}(1-\tau^w_{t+1})\hat w_{t+1}L_{t+1}+\lambda^H_{t+1}(1-\delta^h)\big]} & \texttt{lambda\_H} & 25.094 & 26.939 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Production and technology: price setting}} \\
 \addlinespace[0.1em]
-10 & $x_{1,t}$ & Price-setting auxiliary \gloseq{x_{1,t}=\hat\lambda_t mc_t \hat Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{-\epsilon}x_{1,t+1}} & \texttt{x1} & 8.07 & 6.955 \\
-11 & $x_{2,t}$ & Price-setting auxiliary \gloseq{x_{2,t}=\hat\lambda_t\Pi^*_t \hat Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{1-\epsilon}\tfrac{\Pi^*_t}{\Pi^*_{t+1}}x_{2,t+1}} & \texttt{x2} & 8.967 & 7.728 \\
+10 & $x_{1,t}$ & Price-setting auxiliary \gloseq{x_{1,t}=\hat\lambda_t mc_t \hat Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{-\epsilon}x_{1,t+1}} & \texttt{x1} & 8.061 & 6.952 \\
+11 & $x_{2,t}$ & Price-setting auxiliary \gloseq{x_{2,t}=\hat\lambda_t\Pi^*_t \hat Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{1-\epsilon}\tfrac{\Pi^*_t}{\Pi^*_{t+1}}x_{2,t+1}} & \texttt{x2} & 8.956 & 7.724 \\
 12 & $\Pi_t^{*}$ & Reset (optimal) inflation \gloseq{\epsilon\,x_{1,t}=(\epsilon-1)\,x_{2,t}} & \texttt{PIstar} & 1 & 1 \\
 13 & $\Pi_t$ & Gross inflation \gloseq{1=\theta_p(\Pi_{t-1}^{\chi_p}/\Pi_t)^{1-\epsilon}+(1-\theta_p)(\Pi^*_t)^{1-\epsilon}} & \texttt{PI} & 1 & 1 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Production and technology: intermediate goods}} \\
 \addlinespace[0.1em]
-14 & $\hat{Y}_t$ & Gross output \gloseq{\hat Y_t=\hat A_{t-1}^{\vartheta-1}\hat K_{t-1}^{\alpha}N_t^{1-\alpha}(\hat K^{GI}_{t-1})^{\alpha_G}} & \texttt{y} & 0.731 & 0.606 \\
+14 & $\hat{Y}_t$ & Gross output \gloseq{\hat Y_t=\hat A_{t-1}^{\vartheta-1}\hat K_{t-1}^{\alpha}(\hat K^{GI}_{t-1})^{\alpha_G}N_t^{1-\alpha}} & \texttt{y} & 0.731 & 0.606 \\
 15 & $mc_t$ & Real marginal cost \gloseq{\hat w_t=(1-\alpha)\,(mc_t/\mu^{p})\,\hat Y_t/N_t} & \texttt{mc} & 0.9 & 0.9 \\
 16 & $r_t^{k}$ & Rental rate of private capital \gloseq{r^k_t=\alpha\,(mc_t/\mu^{p})\,\hat Y_t/\hat K_{t-1}} & \texttt{rk} & 0.031 & 0.039 \\
 17 & $\hat{w}_t$ & Real wage \gloseq{\tfrac{\hat K_{t-1}}{N_t}=\tfrac{\alpha}{1-\alpha}\tfrac{\hat w_t}{r^k_t}} & \texttt{w} & 1.171 & 0.97 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Production and technology: creation and adoption}} \\
 \addlinespace[0.1em]
-18 & $\hat{Z}_t$ & Created technology \gloseq{\log\tfrac{\hat Z_t}{\hat Z^{SS}}=\rho_A\log\tfrac{\hat Z_{t-1}}{\hat Z^{SS}}+(1-\rho_A)\alpha_{HA}\log\tfrac{H_{t-1}}{H^{SS}}+(1-\rho_A)\alpha_{RD}\log\tfrac{(1-e^{GRD}_{t-1})\hat G^{RD}_{t-1}}{(1-e^{GRD})\hat G^{RD,SS}}} & \texttt{Z} & 1.598 & 1.922 \\
+18 & $\hat{Z}_t$ & Created technology \gloseq{\log\tfrac{\hat Z_t}{\hat Z^{SS}}=\rho_A\log\tfrac{\hat Z_{t-1}}{\hat Z^{SS}}+(1-\rho_A)\alpha_{HA}\log\tfrac{H_{t-1}}{H^{SS}}+(1-\rho_A)\alpha_{RD}\log\tfrac{(1-e^{GRD}_{t-1})\hat G^{RD}_{t-1}}{(1-e^{GRD})\hat G^{RD,SS}}} & \texttt{Z} & 1.584 & 1.848 \\
 19 & $\hat{A}_t$ & Adopted technology \gloseq{(1+\gamma^{a})\hat A_t=q_t\phi(\hat Z_{t-1}-\hat A_{t-1})+\phi\hat A_{t-1}} & \texttt{A} & 1 & 1 \\
 20 & $q_t$ & Adoption probability \gloseq{q_t=(q_0+\varepsilon^{q}_t)(\hat S_t)^{\varsigma}} & \texttt{q} & 0.05 & 0.05 \\
 21 & $\mathit{SDF}_t$ & Stochastic discount factor \gloseq{\mathit{SDF}_t=\beta\hat\lambda_t(1+\tau^c_t)/[\hat\lambda_{t-1}(1+\tau^c_{t-1})]} & \texttt{SDF} & 0.999 & 0.999 \\
-22 & $\hat{\mathcal{V}}_t$ & Value of an adopted technology \gloseq{\hat{\mathcal V}_t=\tfrac{\mu^p-1}{\mu^p}mc_t\hat Y_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\hat{\mathcal V}_{t+1}\tfrac{\hat A_{t-1}}{\hat A_t}\tfrac{1}{1+\gamma^{a}}\big]} & \texttt{V} & 3.29 & 1.827 \\
-23 & $\hat{\mathcal{J}}_t$ & Value of an unadopted technology \gloseq{\hat{\mathcal J}_t=-\hat S_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\tfrac{\hat A_{t-1}}{\hat A_t}\tfrac{1}{1+\gamma^{a}}(q_t\hat{\mathcal V}_{t+1}+(1-q_t)\hat{\mathcal J}_{t+1})\big]} & \texttt{J} & 0.793 & 0.887 \\
-24 & $\hat{S}_t$ & Adoption expenditure \gloseq{\hat S_t=\varsigma q_t\phi\,\mathbb{E}_t\!\big[\mathit{SDF}_{t+1}\tfrac{1}{1+\gamma^{a}}\tfrac{\hat A_{t-1}}{\hat A_t}(\hat{\mathcal V}_{t+1}-\hat{\mathcal J}_{t+1})\big]} & \texttt{S} & 0.097 & 0.004 \\
+22 & $\hat{\mathcal{V}}_t$ & Value of an adopted technology \gloseq{\hat{\mathcal V}_t=\tfrac{\mu^p-1}{\mu^p}mc_t\hat Y_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\hat{\mathcal V}_{t+1}\tfrac{\hat A_{t-1}}{\hat A_t}\tfrac{1}{1+\gamma^{a}}\big]} & \texttt{V} & 3.366 & 1.975 \\
+23 & $\hat{\mathcal{J}}_t$ & Value of an unadopted technology \gloseq{\hat{\mathcal J}_t=-\hat S_t+\phi\,\mathbb{E}_t\big[\mathit{SDF}_{t+1}\tfrac{\hat A_{t-1}}{\hat A_t}\tfrac{1}{1+\gamma^{a}}(q_t\hat{\mathcal V}_{t+1}+(1-q_t)\hat{\mathcal J}_{t+1})\big]} & \texttt{J} & 0.826 & 0.999 \\
+24 & $\hat{S}_t$ & Adoption expenditure \gloseq{\hat S_t=\varsigma q_t\phi\,\mathbb{E}_t\!\big[\mathit{SDF}_{t+1}\tfrac{1}{1+\gamma^{a}}\tfrac{\hat A_{t-1}}{\hat A_t}(\hat{\mathcal V}_{t+1}-\hat{\mathcal J}_{t+1})\big]} & \texttt{S} & 0.099 & 0.005 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Government: fiscal and monetary policy}} \\
 \addlinespace[0.1em]

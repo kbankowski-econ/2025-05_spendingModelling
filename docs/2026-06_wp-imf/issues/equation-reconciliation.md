@@ -124,30 +124,33 @@ removed; plus the earlier Tier-1/2 renames.
 Counts after the pass: **57 endogenous, 45 parameters, 13 exogenous** — model and the
 appendix glossary match exactly.
 
-## 🔧 Technology-block detrending — FIXED 2026-07
+## 🔧 Technology-block detrending — UPDATED 2026-08
 The appendix technology block (adoption LoM `eq:Astat`, value functions `eq:VA`/`eq:JZ`,
 and the `S`-FOC `eq:SAfoc`) wrote the growth factor as `g`, but the model detrends the
 technology stocks by their own rate `(1+gammaa)`, which is derived from output growth by
-`1+gammaa = g^((1-alpha)/(vartheta-1))` (= `g^2` at the calibration, since the exponent
-is 2). Technology grows faster than output because it enters production only via the
+`1+gammaa = g^((1-alpha-alphaG)/(vartheta-1))`. Technology grows faster than output because it enters production only via the
 love-of-variety term `A^(vartheta-1)`; a single trend at `g` would leave the production
 function unbalanced. **FIXED:** the four appendix equations, the glossary equations for
 A/V/J/S, and the §2.5 discussion now use `1+gamma^a` (the paper's new symbol for `gammaa`),
-with the relation `1+gamma^a = g^{(1-alpha)/(vartheta-1)}` stated. Paper-side only; the
-model was already correct. See `investigations/tech-growth-rate/`.
+with the relation `1+gamma^a = g^{(1-alpha-alphaG)/(vartheta-1)}` stated. The August
+update incorporates the trend growth of the external public-infrastructure input and
+aligns the model's technology-growth parameter with the exact balanced-growth
+restriction. See `investigations/tech-growth-rate/`.
 
 ## 🔧 Factor-price markup wedge — FIXED 2026-07-02 (paper-side)
 The paper's factor demands (main-text `eq:factordemand`, the Appendix A derivation,
-and the glossary equations for `rk`/`mc`) read `r^k = α·mc·Y/K`, `w = (1−α)·mc·Y/N`,
+and the glossary equations for `rk`/`mc`) use `r^k = α·mc/μ^p·Y/K` and
+`w = (1−α)·mc/μ^p·Y/N`,
 but the model prices factors off `mc/markupss`:
-- `model_block.modpart:46`: `(1-alpha)*mc*y/N = markupss*w`
-- `Steady_states_solution.m:34`: `w=(1-alpha)*mc*y/N/markupss` (and `:27` for `Kp_y`/rk)
+- `model_block.modpart`: `(1-alpha)*mc*y/N = markupss*w`
+- `Steady_states_solution.m`: `w=(1-alpha)*mc*y/N/markupss`
 
-The wedge is load-bearing: factor payments absorb only `mc/μ^p` of revenue, and the
-residual `(μ^p−1)/μ^p·mc·Y` is exactly the per-period profit that gives adopted
-technologies their value in `eq:VA` (`model_block.modpart:68`). Structure = Anzoategui
+The wedge is load-bearing. Private factor payments absorb `mc/μ^p` of revenue,
+and the residual `(μ^p−1)/μ^p·mc·Y` gives adopted technologies their value in
+`eq:VA`. Public infrastructure is an external productive input and is not paid a
+private rental return. Structure = Anzoategui
 two-layer production: intermediate variety producers charge the fixed gross markup
-`markupss`=1.18 over unit factor cost; Calvo retailers (elasticity ε=10, so the retail
+`markupss`=1.18 over marginal factor cost; Calvo retailers (elasticity ε=10, so the retail
 markup ε/(ε−1)=1.11 is a *different* object) buy intermediate output at relative price
 `mc` (their marginal cost; SS 0.9 = (ε−1)/ε).
 **FIXED paper-side:** `eq:factordemand` + App. A now carry `mc_t/μ^p`; §2.2 and App. A

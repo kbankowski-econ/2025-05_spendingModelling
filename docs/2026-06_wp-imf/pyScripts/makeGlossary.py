@@ -219,7 +219,7 @@ EQNS = {
     "lambda_H": r"\lambda^H_t=\beta\,\mathbb{E}_t\!\big[\hat\lambda_{t+1}(1-\tau^w_{t+1})\hat w_{t+1}L_{t+1}+\lambda^H_{t+1}(1-\delta^h)\big]",
     "SDF":      r"\mathit{SDF}_t=\beta\hat\lambda_t(1+\tau^c_t)/[\hat\lambda_{t-1}(1+\tau^c_{t-1})]",
     # Production and technology
-    "y":        r"\hat Y_t=\hat A_{t-1}^{\vartheta-1}\hat K_{t-1}^{\alpha}N_t^{1-\alpha}(\hat K^{GI}_{t-1})^{\alpha_G}",
+    "y":        r"\hat Y_t=\hat A_{t-1}^{\vartheta-1}\hat K_{t-1}^{\alpha}(\hat K^{GI}_{t-1})^{\alpha_G}N_t^{1-\alpha}",
     "mc":       r"\hat w_t=(1-\alpha)\,(mc_t/\mu^{p})\,\hat Y_t/N_t",
     "PI":       r"1=\theta_p(\Pi_{t-1}^{\chi_p}/\Pi_t)^{1-\epsilon}+(1-\theta_p)(\Pi^*_t)^{1-\epsilon}",
     "PIstar":   r"\epsilon\,x_{1,t}=(\epsilon-1)\,x_{2,t}",

@@ -170,8 +170,8 @@ simplify_level = 5;
 // Controlled price-setting counterfactual: retain the selected simplification
 // level and remove only the indexation of non-reset prices.
 chi = 0;
-% gammaa uses the set-specific trend growth rate, so it must come after it
-gammaa=g^((1-alpha)/(vartheta-1))-1;
+% Technology growth balances the common trends in private and public capital.
+gammaa=g^((1-alpha-alphaG)/(vartheta-1))-1;
 model;
 //********************************************************
 // HOUSEHOLD DECISIONS

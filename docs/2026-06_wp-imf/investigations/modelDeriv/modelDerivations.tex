@@ -488,17 +488,17 @@ removed from the model and the paper entirely.}
 \subsection{The Firm's Problem}
 
 There is a continuum of intermediate producers indexed by $i$. A typical firm
-produces output using private capital and effective labor, and takes as given the
-factor prices $r_t^{k}$ and $w_t$ as well as two externalities: the
-public-infrastructure stock $K_{t-1}^{GI}$ and the adopted-technology stock
-$A_{t-1}$. Its technology is
+produces output using private capital and effective labor. It takes the factor
+prices $r_t^{k}$ and $w_t$, the public stock $K_{t-1}^{GI}$, and adopted
+technology $A_{t-1}$ as given. Public infrastructure is an external productive
+input to the firm. Its technology is
 \begin{equation}\label{eq:tech}
-    Y_t(i) = A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
-    K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha}.
+    Y_t(i) = A_{t-1}^{\vartheta-1}K_{t-1}(i)^{\alpha}
+    \left(K_{t-1}^{GI}\right)^{\alpha_G}N_t(i)^{1-\alpha}.
 \end{equation}
 In the model, the aggregate production function (tagged \texttt{[name='y']})
 reads:
-\modelcode{y = A(-1)\^{}(vartheta-1)*(Kg(-1)\^{}(alphaG))*(Kp(-1)\^{}alpha)*(N\^{}(1-alpha));}
+\modelcode{y = A(-1)\^{}(vartheta-1)*Kg(-1)\^{}alphaG*Kp(-1)\^{}alpha*N\^{}(1-alpha);}
 
 Consider the problem of producing a required level of output, $\bar{Y}_t(i)$, as
 cheaply as possible. The firm's problem is:
@@ -507,8 +507,9 @@ cheaply as possible. The firm's problem is:
 \end{equation}
 subject to:
 \begin{equation}\label{eq:cmconstraint}
-    A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
-    K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} \;\ge\; \bar{Y}_t(i).
+    A_{t-1}^{\vartheta-1}K_{t-1}(i)^{\alpha}
+    \left(K_{t-1}^{GI}\right)^{\alpha_G}N_t(i)^{1-\alpha}
+    \;\ge\; \bar{Y}_t(i).
 \end{equation}
 Note that the required output level is what makes the problem well-posed: if we
 dropped it, the cost-minimizing input choice would just be zero.
@@ -518,8 +519,9 @@ dropped it, the cost-minimizing input choice would just be zero.
 A Lagrangian for the firm is:
 \begin{equation*}
     \mathbb{L} = -\,r_t^{k}\,K_{t-1}(i) - w_t\,N_t(i)
-    + \xi_t\left[A_{t-1}^{\vartheta-1}\left(K_{t-1}^{GI}\right)^{\alpha_G}
-      K_{t-1}(i)^{\alpha}\,N_t(i)^{1-\alpha} - \bar{Y}_t(i)\right].
+    + \xi_t\left[A_{t-1}^{\vartheta-1}K_{t-1}(i)^{\alpha}
+      \left(K_{t-1}^{GI}\right)^{\alpha_G}N_t(i)^{1-\alpha}
+      - \bar{Y}_t(i)\right].
 \end{equation*}
 The FOC are:
 \begin{align*}
@@ -541,9 +543,9 @@ the same mix regardless of their scale. In the model:
 \subsection{The Multiplier Is Marginal Cost; the Markup Wedge}
 
 What is $\xi_t$? It is the multiplier on the output constraint: it measures how
-much the minimized cost rises if the firm must produce one more unit. That is just
-the firm's \emph{real marginal cost}. Since the technology has constant returns in
-the two chosen inputs, marginal cost equals unit factor cost.
+much the minimized cost rises if the firm must produce one more unit. That is the
+firm's \emph{real marginal factor cost}. Conditional on the external public
+capital stock, the privately chosen inputs exhibit constant returns to scale.
 
 The firm sells its output to the retailers at a fixed gross markup $\mu^{p}$ over
 marginal cost. The relative price it receives is $mc_t$ --- which is in turn the
@@ -599,12 +601,10 @@ the retailers pay is visible in the Calvo recursion
 marginal cost, and since retailers transform intermediate output one-for-one,
 their marginal cost is exactly the relative price at which they buy it. Second,
 the dividend in the technology value, \eqref{eq:profit}, equals
-$(mc_t - mc_t/\mu^{p})\,Y_t$ --- price minus unit cost times quantity, exactly the
-monopoly profit of a producer charging the fixed gross markup $\mu^{p}$. If the
-wedge in the factor demands were something else (a tax, say), this profit would
-not flow to the technology owners. The three equations together --- labor demand,
-Calvo recursion, technology value --- are what make the fixed-markup reading the
-right one.
+$(mc_t-mc_t/\mu^{p})Y_t$ --- transaction revenue minus factor cost. It is the
+fixed-markup profit of the intermediate producer. The three equations together
+--- labor demand, Calvo recursion, and technology value --- pin down this
+interpretation.
 
 \subsection{Aside: Two Markups, Two Layers}
 
@@ -677,7 +677,7 @@ levels:
 \end{equation}
 newly adopted technologies plus the surviving previously adopted stock. The
 technology stocks grow at their own gross rate
-$1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$, faster than output. Substituting
+$1+\gamma^{a} = g^{(1-\alpha-\alpha_G)/(\vartheta-1)}$, faster than output. Substituting
 $A^{\ell}_t = (1+\gamma^{a})^{t} A_t$ and $Z^{\ell}_t = (1+\gamma^{a})^{t} Z_t$
 into \eqref{eq:Alevel} and dividing by $(1+\gamma^{a})^{t-1}$:
 \begin{equation}\label{eq:Astat}
@@ -726,32 +726,21 @@ Second, as the next subsection makes precise, $S_t$ is expenditure \emph{per
 unadopted technology, scaled by the adopted stock} --- the same scaling the value
 functions use.
 
-\intuition{Where does $1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)}$ come from?}{%
+\intuition{Where does $1+\gamma^{a} = g^{(1-\alpha-\alpha_G)/(\vartheta-1)}$ come from?}{%
 It is the balanced-growth requirement on the production function. On the
-balanced-growth path, output and private capital grow at the gross rate $g$
-and labor is stationary, so taking growth factors of
-$Y_t = A_{t-1}^{\vartheta-1}K_{t-1}^{\alpha}N_t^{1-\alpha}
-(K^{GI}_{t-1})^{\alpha_G}$ gives
+balanced-growth path, output and both capital stocks grow at the gross rate $g$
+and labor is stationary, so taking growth factors of the production function gives
 \[
-    g = \left(1+\gamma^{a}\right)^{\vartheta-1} g^{\alpha}
+    g = \left(1+\gamma^{a}\right)^{\vartheta-1} g^{\alpha+\alpha_G}
     \qquad\Longrightarrow\qquad
-    1+\gamma^{a} = g^{(1-\alpha)/(\vartheta-1)},
+    1+\gamma^{a} = g^{(1-\alpha-\alpha_G)/(\vartheta-1)},
 \]
-the code's \texttt{gammaa = g\^{}((1-alpha)/(vartheta-1))-1}
-(\texttt{models/modelTemplate.mod}). Reading the balance: the private inputs
-deliver only $g^{\alpha}$ of the required growth ($K$ contributes
-$g^{\alpha}$, stationary $N$ contributes nothing), so the love-of-variety TFP
-term must supply the remaining $g^{1-\alpha}$ --- and because its exponent
-$\vartheta-1$ is small, $A$ must grow \emph{faster} than output to deliver it.
-At the calibration ($\alpha=0.3$, $\vartheta=1.35$) the exponent is
-$0.7/0.35=2$: technology grows at the square of the output factor,
-$1+\gamma^{a}=g^{2}$. Equivalently, the output trend is
-$\Lambda_t = A_t^{(\vartheta-1)/(1-\alpha)}$. Two footnotes. The balance
-ignores the small infrastructure term: the externality is treated as a level
-effect, while the exact balance would read $g^{1-\alpha-\alpha_G}$ in place of
-$g^{1-\alpha}$ (see the note in \texttt{../tech-growth-rate/}). And the same
-relation shows why a single trend $g$ for everything would fail: with $A$
-growing at $g$, output would grow at $g^{\vartheta-1+\alpha} \neq g$.}
+the code's \texttt{gammaa = g\^{}((1-alpha-alphaG)/(vartheta-1))-1}
+(\texttt{models/modelTemplate.mod}). Private and public capital deliver
+$g^{\alpha+\alpha_G}$ of the required growth, so the love-of-variety TFP term
+must supply the remaining $g^{1-\alpha-\alpha_G}$. Because its exponent
+$\vartheta-1$ is small, $A$ still grows faster than output. The exact exponent
+differs across the AE and EMDE calibrations through $\alpha_G$.}
 
 \subsection{The Value of an Adopted Technology}
 
@@ -791,8 +780,8 @@ It is not anyone's optimality condition over a quantity; it is an
 \emph{asset-pricing} (no-arbitrage) condition --- the household's portfolio FOC
 for claims to variety profits. An adopted technology is a durable, tradeable
 claim: the exclusive right to produce variety $i$ and collect its monopoly rent
-$\pi_t$, itself microfounded in Section~\ref{sec:costmin} (love-of-variety
-demand gives market power; the markup $\mu^{p}$ converts it into the rent).
+$\pi_t$, itself microfounded in Section~\ref{sec:costmin} as the fixed markup
+rent earned by the intermediate producer.
 Households ultimately own these claims --- producer profits are rebated through
 $\Omega_t$ in the budget constraint --- so the claim is priced with the
 household's SDF (Subsection~\ref{subsec:sdf}). Let $p_t$ be the ex-dividend
@@ -856,7 +845,7 @@ $\Lambda_{t+1}/\Lambda_t$ of the continuation value, leaving:
     \frac{A_{t-1}}{A_{t}}\,\frac{1}{1+\gamma^{a}}\,\mathcal{V}_{t+1}\right],
 \end{equation}
 in the model:
-\modelcode{V = (markupss-1)/(markupss)*mc*y + phi*SDF(+1)*V(+1)*A(-1)/A/(1+gammaa);}
+\modelcode{V = (markupss-1)/markupss*mc*y + phi*SDF(+1)*V(+1)*A(-1)/A/(1+gammaa);}
 
 \subsection{The Value of an Unadopted Technology}
 

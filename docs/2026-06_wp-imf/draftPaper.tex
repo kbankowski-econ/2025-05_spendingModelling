@@ -218,8 +218,6 @@ trend $\Lambda_t$ by the balanced-growth restrictions derived below. Accordingly
 stationary created- and adopted-technology stocks are defined as $\hat Z_t=\frac{Z_t}{\Gamma_t}$ and 
 $\hat A_t=\frac{A_t}{\Gamma_t}$.
 
-%Technology stocks afollow a separate trend, denoted by $\Gamma_t$. As discussed below, adopted technologies enter production through the love-of-variety term $A_{t-1}^{\vartheta-1}$, where $\vartheta$ governs returns to variety.\footnote{Private capital grows at $g$ and enters with elasticity $\alpha$, contributing $g^{\alpha}$ to gross output growth; effective labor and $\hat{K}_{t-1}^{GI}$ are stationary. The love-of-variety term must supply the remaining $g^{1-\alpha}$, implying technology-stock growth of $g^{(1-\alpha)/(\vartheta-1)}$.} Private capital's output elasticity is $\alpha$; both terms determine trend output growth. The calibrated technology trend therefore grows faster than the real trend. Specifically, its gross growth rate is $\Gamma_t/\Gamma_{t-1}=g^{(1-\alpha)/(\vartheta-1)}$. Accordingly, the stationarized created- and adopted-technology stocks are $\hat{Z}_t=Z_t/\Gamma_t$ and $\hat{A}_t=A_t/\Gamma_t$, respectively.
-
 The remainder of this section sets out the model's building blocks in turn, starting from households.
 The derivations for the household, production, pricing, and technology-adoption conditions are given in Appendix~\ref{app:equilibrium}; Appendix~\ref{app:glossary} reports the stationarized model equations and notation.
 
@@ -276,7 +274,7 @@ Equation~\eqref{eq:edutime} values an additional hour of education by the human 
 The production side departs from a textbook New Keynesian framework along several dimensions.
 First, it separates price setting from real production: retailers set sticky prices, while intermediate producers determine unit factor cost and sell to retailers at a fixed gross markup.
 In this structure, unit factor cost and retail marginal cost are not equivalent; the wedge between them generates residual profits that accrue to the owners of adopted technologies.
-Second, production depends on human capital via effective labor, $N_t = H_{t-1}L_t$, rather than hours alone, and public infrastructure directly shifts productive capacity.
+Second, production depends on human capital through effective labor, $N_t = H_{t-1}L_t$, rather than hours alone, while public infrastructure augments productive capacity.
 Finally, productivity evolves endogenously through a creation-adoption technology block in which public R\&D expands the stock of ideas and private adoption turns them into productive technologies.
 
 \paragraph{Retail firms.}
@@ -289,18 +287,19 @@ Appendix~\ref{app:equilibrium} contains the final-good and pricing equations.
 Intermediate-good firms are therefore responsible only for real production.
 
 \paragraph{Production and marginal cost.}
-Intermediate producers use private capital and effective labor, taking public infrastructure and adopted technology as external production shifters.
+Intermediate producers use private capital and effective labor, taking government-provided public infrastructure and adopted technology as external productive inputs.
 In symmetric equilibrium, aggregate production is
 \begin{equation} \label{eq:production}
-    Y_t = A_{t-1}^{\vartheta-1} K_{t-1}^{\alpha} N_t^{1-\alpha} \left(K_{t-1}^{GI}\right)^{\alpha_G},
+    Y_t = A_{t-1}^{\vartheta-1} K_{t-1}^{\alpha} \left(K_{t-1}^{GI}\right)^{\alpha_G} N_t^{1-\alpha},
 \end{equation}
 where $A_{t-1}$ is the stock of adopted technologies whose dynamics will be discussed below, $K_{t-1}$ is private capital, $N_t = H_{t-1}L_t$ is effective labor, and $K_{t-1}^{GI}$ is public infrastructure capital.
-Public infrastructure augments private production as a positive externality, while adopted technologies raise productivity through the love-of-variety term $A_{t-1}^{\vartheta-1}$.
+Private capital and effective labor have output elasticities $\alpha$ and $1-\alpha$, respectively, while public infrastructure enters with elasticity $\alpha_G$ as an external productive input.
+Adopted technologies raise productivity through the love-of-variety term $A_{t-1}^{\vartheta-1}$.
 The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{In \citet{Anzoateguietal2019} a single intermediate-goods elasticity of substitution sets both the markup and the returns to variety.
 Here the retail markup is governed by $\epsilon$ and the intermediate producers' markup by the separate parameter $\mu^{p}$; $\vartheta$ retains only the returns-to-variety role, mapping the stock of adopted technologies into TFP through the love-of-variety term $A_t^{\vartheta-1}$.}
 
 The cost-minimization problem leads to familiar optimality conditions.
-The only deviation is that the unit factor cost equals the selling price $mc_t$ divided by the fixed gross markup $\mu^{p}$, which gives rise to $\frac{mc_t}{\mu^{p}}$ in the equations below.
+Marginal factor cost equals the selling price $mc_t$ divided by the fixed gross markup $\mu^{p}$, which gives rise to $\frac{mc_t}{\mu^{p}}$ in the equations below.
 \begin{equation} \label{eq:factordemand}
     r_t^{k} = \alpha\, \frac{mc_t}{\mu^{p}} \frac{Y_t}{K_{t-1}}, \qquad w_t = (1-\alpha)\, \frac{mc_t}{\mu^{p}} \frac{Y_t}{N_t}, \qquad \frac{K_{t-1}}{N_t} = \frac{\alpha}{1-\alpha}\frac{w_t}{r_t^{k}}.
 \end{equation}
@@ -436,7 +435,7 @@ Recall that trending real quantities share the trend $\Lambda_t$, which grows at
 
 Using the convention that the date-$t$ flow variable and the date-$t-1$ stock variable de-trended by the (corresponding) date-$t$ trend and the link between the real and technology trend, the production function, adjusted for the deterministci trend, can be written as: 
 \[
-    \hat{Y}_t = \hat{A}_{t-1}^{\vartheta-1} \hat K_{t-1}^{\alpha} N_t^{1-\alpha} \left( \hat K_{t-1}^{GI}\right)^{\alpha_G}.
+    \hat{Y}_t = \hat{A}_{t-1}^{\vartheta-1} \hat K_{t-1}^{\alpha} \left( \hat K_{t-1}^{GI}\right)^{\alpha_G} N_t^{1-\alpha}.
 \]
 
 Equations involving only contemporaneous common-trend flows retain their level-form appearance.
@@ -667,7 +666,7 @@ Following \citet{Anzoateguietal2019}, the steady-state adoption probability is s
 This target implies an average adoption lag of $1/q^{SS}=20$ quarters, or five years.
 The scale $q_0$ in $q_t=q_0(\hat{S}_t)^{\varsigma}$ is determined internally so that the adoption-probability equation attains this target in the steady state.
 
-Whereas the three scale parameters are determined within the steady state, the technology-growth rate is implied by trend output growth according to $1+\gamma^a=g^{(1-\alpha)/(\vartheta-1)}$.
+Whereas the three scale parameters are determined within the steady state, the technology-growth rate is implied by trend output growth according to $1+\gamma^a=g^{(1-\alpha-\alpha_G)/(\vartheta-1)}$.
 At zero steady-state inflation, the steady-state nominal interest rate satisfies $R^{SS}=g/\beta$.
 Appendix~\ref{app:glossary} reports the resulting values of the internally calibrated scales and all derived steady-state objects.
 The size, duration, and persistence of the exercises described in Sections~\ref{sec:properties} and~\ref{sec:results} are specified through the paths of the relevant exogenous shocks.
@@ -817,7 +816,7 @@ Their quantitative importance can therefore be assessed by asking how much each 
 Both blocks are fundamental to the effects of their associated instruments.
 Once the relevant productive channel is removed, additional human-capital or R\&D spending becomes equivalent to wasteful government consumption within the corresponding partial model (Table~\ref{tab:multipliers}).
 At the 25-year horizon, the human-capital channel contributes 1.55 points to the AE human-capital investment multiplier of 1.89 and 2.48 points to the EMDE multiplier of 2.74.
-Endogenous technology contributes 2.11 points to the AE public-R\&D multiplier of 2.48.
+Endogenous technology contributes 2.11 points to the AE public-R\&D multiplier of 2.47.
 Their effects on the other spending instruments are considerably smaller: removing both channels lowers the government-consumption multiplier by 0.14 in AEs and 0.07 in EMDEs, and the infrastructure multiplier by 0.23 and 0.10, respectively.
 Integrating the two channels is therefore essential for capturing the sustained gains from human-capital and R\&D spending, while their effects on the more standard fiscal instruments remain comparatively limited.
 
@@ -830,7 +829,7 @@ The human-capital response scales with the elasticity of human-capital formation
 The R\&D response scales with the elasticity of technology creation with respect to public R\&D ($\alpha_{RD}$).
 
 Figure~\ref{fig:sensitivity} illustrates this sensitivity by tracing the output response to each permanent productive expansion as its relevant elasticity is varied over an illustrative range.
-At the 25-year horizon, the output response spans about 1.5 to 9.9 percent for infrastructure, 2.7 to 14.5 percent for human capital, and 1.9 to 7.5 percent for R\&D over the parameter ranges considered.
+At the 25-year horizon, the output response spans about 1.5 to 9.8 percent for infrastructure, 2.7 to 14.5 percent for human capital, and 1.9 to 7.5 percent for R\&D over the parameter ranges considered.
 The timing of the gains is robust across these ranges.
 Infrastructure begins to pay off earliest and then builds gradually.
 Human-capital investment produces a short-lived impact gain before larger benefits emerge over time.
@@ -914,13 +913,13 @@ Reallocating toward \emph{infrastructure investment} has little effect on output
 Both spending categories enter aggregate demand, so their direct demand effects largely offset.
 As public infrastructure accumulates, however, output gains gather pace.
 Public infrastructure enters production directly, raising the marginal return to private capital and encouraging private investment.
-By 2050, output is about 2.5 percent higher in advanced economies and 3.5 percent higher in emerging market and developing economies.
+By 2050, output is about 2.4 percent higher in advanced economies and 3.4 percent higher in emerging market and developing economies.
 
 Redirecting expenditure toward \emph{public human-capital investment}, such as school and hospital infrastructure, produces an initial output gain.
 Households reallocate some time from education to work, temporarily boosting labor supply.
 The gain is short-lived, however, and the instrument's full productive potential takes years to materialize.
 Once public education and health capital accumulates and supports workforce skills, the output gains become sizable.
-By 2050, output is about 4.5 percent higher in advanced economies and 5.5 percent higher in emerging market and developing economies.
+By 2050, output is about 4.3 percent higher in advanced economies and 5.6 percent higher in emerging market and developing economies.
 The larger EMDE response reflects the combination of a lower initial human-capital stock and a moderately higher calibrated elasticity with respect to public human-capital investment.
 
 \emph{Public R\&D} offers advanced economies a second route to larger long-run gains through technology creation and adoption.
@@ -1011,7 +1010,7 @@ R\&D expands the set of technologies available for adoption, while human capital
 The return to this policy mix depends strongly on how quickly new technologies diffuse within the private sector.
 The experiments vary the resulting quarterly adoption probability $q_t$.
 By 2050, it is about 4.0 percent under limited diffusion, 5.3 percent in the baseline, and 6.7 percent under improved diffusion.
-The corresponding output gain falls to about 1.5 percent under limited diffusion or rises to 8 percent under improved diffusion, compared with 5 percent in the baseline (Figure~\ref{fig:diffusion}).
+The corresponding output gain falls to about 1.6 percent under limited diffusion or rises to 8 percent under improved diffusion, compared with 5 percent in the baseline (Figure~\ref{fig:diffusion}).
 Complementary institutions that support technology transfer and private-sector adoption can therefore magnify the payoff from fiscal reallocation.
 
 
@@ -1128,16 +1127,16 @@ The same aggregation gives the price-dispersion wedge
 This wedge maps final demand into gross output, $Y_t = v_t^{p}Y_t^{d}$, in the market-clearing condition.
 
 \paragraph{Production and Marginal Cost.}
-Intermediate producer $i$ uses private capital and effective labor, taking public infrastructure and adopted technology as external production shifters:
+Intermediate producer $i$ combines private capital and effective labor, taking government-provided public infrastructure and adopted technology as external productive inputs:
 \[
-    Y_t(i) = A_{t-1}^{\vartheta-1}\left(\hat{K}_{t-1}^{GI}\right)^{\alpha_G} K_{t-1}(i)^{\alpha} N_t(i)^{1-\alpha}.
+    Y_t(i) = A_{t-1}^{\vartheta-1}K_{t-1}(i)^{\alpha}\left(\hat{K}_{t-1}^{GI}\right)^{\alpha_G}N_t(i)^{1-\alpha}.
 \]
 
 They rent private capital and hire effective labor competitively.
 Taking factor prices as given, a producer chooses $K_{t-1}(i)$ and $N_t(i)$ to produce a given level of output at minimum factor cost $r_t^{k} K_{t-1}(i) + w_t N_t(i)$.
-The multiplier on the output constraint is unit factor cost under constant returns to the two chosen inputs.
+The multiplier on the output constraint is marginal factor cost.
 
-In this layered production structure, intermediate producers sell to retailers at the fixed gross markup $\mu^{p}$ over unit factor cost; the transaction price is $mc_t$, so unit factor cost is $mc_t/\mu^{p}$.
+In this layered production structure, intermediate producers sell to retailers at the fixed gross markup $\mu^{p}$ over marginal factor cost; the transaction price is $mc_t$, so marginal factor cost is $mc_t/\mu^{p}$.
 After imposing symmetry across intermediate producers, the first-order conditions with respect to private capital and effective labor are
 \begin{align*}
     [\,K_{t-1}\,]:&\quad r_t^{k} = \alpha\, \frac{mc_t}{\mu^{p}}\, \frac{Y_t}{K_{t-1}}, \\
@@ -1149,13 +1148,14 @@ Dividing the two conditions gives the common input ratio
 \]
 which is common across firms, since all face the same factor prices and technology.
 
-Factor payments absorb $mc_t/\mu^{p}$ of revenue per unit of output.
+Private factor payments absorb $mc_t/\mu^{p}$ of revenue per unit of output.
 Aggregate residual profits are revenue at the transaction price minus factor cost:
 \[
     mc_t Y_t - \frac{mc_t}{\mu^{p}}Y_t
     = \frac{\mu^{p}-1}{\mu^{p}}\, mc_t\, Y_t.
 \]
-These profits accrue to the owners of adopted technologies and are the dividends priced in the value functions below.
+These profits are the fixed-markup rent.
+They accrue to the owners of adopted technologies and are the dividends priced in the value functions below.
 
 \paragraph{Technology Creation and Adoption.}
 Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model distinguishes between the stock of created technologies $Z_t$, which are available for adoption, and the stock of adopted technologies $A_t$, which enter production.

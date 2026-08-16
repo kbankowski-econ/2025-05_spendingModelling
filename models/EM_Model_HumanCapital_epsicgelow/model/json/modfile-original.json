@@ -91,7 +91,7 @@
 {"statementName": "param_init", "name": "varsigma", "value": "0.1"},
 {"statementName": "param_init", "name": "eGI_ss", "value": "0.506"},
 {"statementName": "param_init", "name": "eGE_ss", "value": "0.429"},
-{"statementName": "param_init", "name": "gammaa", "value": "g^((1-alpha)/(vartheta-1))-1"},
+{"statementName": "param_init", "name": "gammaa", "value": "g^((1-alpha-alphaG)/(vartheta-1))-1"},
 {"statementName": "steady"},
 {"statementName": "check"},
 {"statementName": "shocks", "overwrite": false, "deterministic_shocks": [{"var": "epsi_gc", "values": [{"period1": 1, "period2": 1000, "value": "(-0.01)"}]}, {"var": "epsi_ige", "values": [{"period1": 1, "period2": 1000, "value": "0.01"}]}, {"var": "eTaux", "values": [{"period1": 1, "period2": 2000, "value": "1"}]}], "variance": [], "stderr": [], "covariance": [], "correlation": []},

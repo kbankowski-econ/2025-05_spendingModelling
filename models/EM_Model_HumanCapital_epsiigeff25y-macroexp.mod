@@ -151,8 +151,8 @@ varsigma=0.1;                       % adoption elasticity                       
 % EMDE efficiency gaps (2023; average of emerging-market and low-income medians; INF re-estimated 2026-06)
 eGI_ss=0.406;
 eGE_ss=0.329;
-% gammaa uses the set-specific trend growth rate, so it must come after it
-gammaa=g^((1-alpha)/(vartheta-1))-1;
+% Technology growth balances the common trends in private and public capital.
+gammaa=g^((1-alpha-alphaG)/(vartheta-1))-1;
 model;
 //********************************************************
 // HOUSEHOLDS
@@ -192,7 +192,7 @@ Kp(-1)/N = alpha/(1-alpha)*w/rk;
 1 = thetap*(PI(-1)^chi/PI)^(1-epsilon)+(1-thetap)*PIstar^(1-epsilon);
 // Production
 [name='y']
-y = A(-1)^(vartheta-1)*(Kg(-1)^(alphaG))*(Kp(-1)^alpha)*(N^(1-alpha));
+y = A(-1)^(vartheta-1)*(Kg(-1)^alphaG)*(Kp(-1)^alpha)*(N^(1-alpha));
 // Technology creation (R&D enters in efficiency-adjusted form)
 ln(Z/STEADY_STATE(Z)) = rho_A*ln(Z(-1)/STEADY_STATE(Z))+(1-rho_A)*alphaRD*ln((1-eGRD(-1))*Grd(-1)/((1-eGRD_ss)*STEADY_STATE(Grd)))+(1-rho_A)*alphaHA*ln(H(-1)/STEADY_STATE(H));
 // Value of an unadopted technology
@@ -202,7 +202,7 @@ q = (kappaprob+epsi_q)*(S)^(varsigma);
 // Adoption
 (1+gammaa)*A = q*phi*(Z(-1)-A(-1))+phi*A(-1);
 // Value of an adopted technology
-V = (markupss-1)/(markupss)*mc*y + phi*SDF(+1)*V(+1)*A(-1)/A/(1+gammaa);
+V = (markupss-1)/markupss*mc*y + phi*SDF(+1)*V(+1)*A(-1)/A/(1+gammaa);
 // FOC for adoption effort
 varsigma*q*phi*SDF(+1)/(1+gammaa)*A(-1)/A*(V(+1)-J(+1)) = S;
 //********************************************************
