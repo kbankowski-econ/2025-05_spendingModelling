@@ -25,16 +25,17 @@ re-solve the deterministic model, recompute the statistic.
 
 | Paper | `.mod` | AE baseline | grid |
 |---|---|---|---|
-| α_G (infra output elasticity) | `alphaG`    | 0.054  | 0.02–0.20 (to the EM value) |
-| μ (HC-formation elasticity)   | `mu`        | 0.10   | 0.05–0.30 |
-| α_RD (long-run R&D elasticity) | `alphaRD`  | 0.09   | 0.03–0.15 |
+| α_G (infra output elasticity) | `alphaG`    | 0.054  | 0.03–0.15; includes the EMDE value (0.10) and the Bom--Ligthart estimate (0.122) |
+| μ (HC-formation elasticity)   | `mu`        | 0.10   | 0.05–0.20; brackets the AE and EMDE calibrations |
+| α_RD (long-run R&D elasticity) | `alphaRD`  | 0.09   | 0.05–0.13; centered on the AE calibration |
 | ς (adoption elasticity)       | `varsigma`  | 0.80   | 0.10–0.95 |
 
 The technology-creation equation multiplies `alphaRD` by 1−ρ_A. Its illustrative
-grid is stated directly in long-run-elasticity units and centered on the AE
-calibration of 0.09. The sweep reads each parameter's AE baseline from
-`M_.params` at build time. One parameter moves at a time; the others stay at
-baseline.
+grid is stated directly in long-run-elasticity units. The three grids shown in
+the paper now emphasize the calibrated and literature-supported neighborhood
+rather than obsolete extremes from earlier calibrations. The sweep reads each
+parameter's AE baseline from `M_.params` at build time. One parameter moves at a
+time; the others stay at baseline.
 
 **The efficiency-gap parameters (e^GI/e^GE/e^GRD) were dropped from the sweep.**
 A first pass showed the per-dollar multiplier is *exactly* invariant to them (the
@@ -124,36 +125,38 @@ Each multiplier has a **two-factor** structure: its own channel's elasticity as
 the primary driver, plus the adoption elasticity ς as a universal secondary one.
 
 1. **Each productive multiplier is governed by its own output elasticity**
-   (long-term, near-linear): infrastructure in α_G (0.13 → 11.6 as α_G = 0.02 →
-   0.20; baseline 0.054 → 2.38), human capital in μ (3.5 → 25.8 as μ = 0.05 →
-   0.30; baseline 8.19), R&D in α_RD (1.60 → 12.55 as α_RD = 0.03 → 0.15;
-   baseline 0.09 → 7.14). Each is essentially flat to the *other* channels'
-   elasticities.
+   (long-term, near-linear): infrastructure in α_G (1.25 → 11.24 as α_G = 0.03
+   → 0.15; baseline 0.054 → 3.25), human capital in μ (4.31 → 21.08 as μ =
+   0.05 → 0.20; baseline 9.89), R&D in α_RD (3.49 → 10.87 as α_RD = 0.05 →
+   0.13; baseline 0.09 → 7.21). Each is essentially flat to the *other*
+   channels' elasticities.
 2. **ς (adoption elasticity) is the one systemic parameter** — every experiment
    is sensitive to it at long horizons, because it governs economy-wide technology
    diffusion. The response is strongly **convex**, kicking in above ς ≈ 0.8
-   (long-term: R&D 5.1 → 12.3, HC 6.5 → 24.1, infra 1.9 → 5.9 as ς = 0.10 → 0.95;
-   wasteful consumption becomes *more* negative, −0.5 → −2.9). Since the paper
+   (long-term: R&D 5.48 → 13.74, HC 7.65 → 32.75, infra 2.49 → 11.53 as ς =
+   0.10 → 0.95; wasteful consumption becomes *more* negative, −0.47 → −14.17).
+   Since the paper
    uses ς = 0.80 and the literature suggests 0.90–0.95, the calibration sits right
    at the knee of the curve — a calibration note worth making.
 3. **ς also shifts the R&D multiplier's *timing*.** Higher ς back-loads the payoff
-   (R&D 10-year multiplier 3.3 at ς = 0.1 → 0.16 at ς = 0.95) while raising the
+   (R&D 10-year multiplier 3.56 at ς = 0.1 → 0.13 at ς = 0.95) while raising the
    long-run level — faster eventual diffusion, slower to arrive.
-4. **Government consumption (≈ −1.2 long run) responds only to ς** — no productive
+4. **Government consumption (≈ −1.24 long run) responds only to ς** — no productive
    channel, so the own-elasticities do nothing; ς amplifies the long-run wealth
    loss.
 
 The efficiency gaps were checked and found *exactly* invariant (see above), so
 they are excluded. Baselines reproduce Table 3 (`makeMultipliers.py`) exactly,
-validating the loop. One non-key cell failed to solve (government consumption at
-ς = 0.95, recorded NaN).
+validating the loop. All temporary-shock parameter draws solve. In the
+permanent-shock diagnostic, the four non-plotted draws at ς = 0.95 are recorded
+as NaN; all parameter draws used in the paper figure solve.
 
 ## Status / next steps
 
 - [x] Driver runs end-to-end; AE full sweep complete; baselines match Table 3.
 - [x] R&D sweep extended with α_RD and ς; both drive the R&D multiplier.
 - [ ] EMDE counterpart (re-run with EM params/efficiency; note α_RD = α_HA = 0,
-      so no R&D channel, ς is small at 0.1, and μ is larger at 0.25).
-- [ ] Promote the chosen view to a paper figure/table via the chartTable
-      pipeline once the headline cut is agreed (tornado vs. spider; which
-      horizon; which parameter→experiment pairings to feature).
+      so no R&D channel, ς is small at 0.1, and μ is 0.15).
+- [x] The permanent output-IRF view is integrated into the paper through the
+      chartTable pipeline, with one productive instrument and its governing
+      elasticity in each panel.
