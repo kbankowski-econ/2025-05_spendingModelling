@@ -1,9 +1,8 @@
-"""Government investment composition by country group, 2013-22.
+"""Government fixed-investment composition by country group, 2013-22.
 
 Each COFOG division is mapped to the model's infrastructure or public
-human-capital block. The paper figure uses P5L because it preserves the same
-36-country coverage as OECD Government at a Glance Table J.10.4. P51G remains
-in the source extract for robustness calculations.
+human-capital block. The paper figure uses P51G, with P5L used for Chile and
+Costa Rica because their P51G series are unavailable or unusable.
 """
 from pathlib import Path
 
@@ -26,7 +25,9 @@ DATA = PROJECT_ROOT / "data" / "oecdGovernmentInvestmentByFunction.csv"
 FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 
 OUTPUT_STEM = "investmentCompositionBands"
-TRANSACTION = "P5L"
+PRIMARY_TRANSACTION = "P51G"
+FALLBACK_TRANSACTIONS = {"CHL": "P5L", "CRI": "P5L"}
+TRANSACTION_LABEL = "P51G (CHL and CRI: P5L)"
 FIRST_YEAR, LAST_YEAR = 2013, 2022
 GROUPS = [
     ("Advanced Economies", "AE", "#1E88E5"),
@@ -62,10 +63,19 @@ def rgba(hex_color, alpha):
 
 def load_shares():
     data = pd.read_csv(DATA)
-    data = data.loc[
-        data["transaction"].eq(TRANSACTION)
-        & data["year"].between(FIRST_YEAR, LAST_YEAR)
-    ].copy()
+    in_period = data["year"].between(FIRST_YEAR, LAST_YEAR)
+    selected = [data.loc[
+        in_period
+        & data["transaction"].eq(PRIMARY_TRANSACTION)
+        & ~data["isocode"].isin(FALLBACK_TRANSACTIONS)
+    ]]
+    for isocode, transaction in FALLBACK_TRANSACTIONS.items():
+        selected.append(data.loc[
+            in_period
+            & data["isocode"].eq(isocode)
+            & data["transaction"].eq(transaction)
+        ])
+    data = pd.concat(selected, ignore_index=True)
     data["block"] = data["function"].map(
         lambda value: "infrastructure" if value in INFRASTRUCTURE else "human_capital"
     )
@@ -180,7 +190,7 @@ def add_panel(fig, shares, variable, time_col, box_col, show_legend, csv_rows):
 
         for _, observation in band.iterrows():
             csv_rows.append({
-                "transaction": TRANSACTION,
+                "transaction": TRANSACTION_LABEL,
                 "variable": variable,
                 "group": code,
                 "year": int(observation["year"]),
