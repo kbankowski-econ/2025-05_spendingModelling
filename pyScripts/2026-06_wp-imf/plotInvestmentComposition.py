@@ -2,8 +2,10 @@
 
 Each COFOG division is mapped to the model's infrastructure or public
 human-capital block. The paper figure uses P51G, with P5L used for Chile and
-Costa Rica because their P51G series are unavailable or unusable.
+Costa Rica because their P51G series are unavailable or unusable. Country
+shares are aggregated using medians and calendar-GDP-weighted averages.
 """
+from argparse import ArgumentParser
 from pathlib import Path
 
 import pandas as pd
@@ -23,6 +25,10 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parents[1]
 DATA = PROJECT_ROOT / "data" / "oecdGovernmentInvestmentByFunction.csv"
 FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
+DEFAULT_WEO = Path(
+    "/Users/kk/Developer/2025-09_FM-conjunctural/data/fmData/"
+    "WEO_calib_enhanced.dta"
+)
 
 OUTPUT_STEM = "investmentCompositionBands"
 PRIMARY_TRANSACTION = "P51G"
@@ -47,7 +53,7 @@ LEGEND_FONT_PX = font_px_for_pt(8, WIDTH_PX, DISPLAY_CM[0])
 TITLE_FONT_PX = font_px_for_pt(9, WIDTH_PX, DISPLAY_CM[0])
 BOX_TICK_FONT_PX = font_px_for_pt(7, WIDTH_PX, DISPLAY_CM[0])
 LINE_WIDTH = 2.5
-MEAN_LINE_WIDTH = 2.0
+WEIGHTED_LINE_WIDTH = 2.0
 BAND_OPACITY = 0.15
 TICK_YEARS = [2013, 2016, 2019, 2022]
 TICK_LABELS = ["2013", "16", "19", "22"]
@@ -61,7 +67,7 @@ def rgba(hex_color, alpha):
     )
 
 
-def load_shares():
+def load_shares(weo_path):
     data = pd.read_csv(DATA)
     in_period = data["year"].between(FIRST_YEAR, LAST_YEAR)
     selected = [data.loc[
@@ -95,6 +101,31 @@ def load_shares():
         shares["human_capital"] / shares["total"] * 100
     )
 
+    weights = pd.read_stata(
+        weo_path,
+        columns=["isocode", "year", "ngdpd"],
+        convert_categoricals=False,
+    )
+    weights = weights.loc[
+        weights["year"].between(FIRST_YEAR, LAST_YEAR)
+        & weights["isocode"].isin(shares["isocode"]),
+        ["isocode", "year", "ngdpd"],
+    ]
+    if weights.duplicated(["isocode", "year"]).any():
+        raise ValueError("Duplicate WEO GDP weights by country and year")
+    shares = shares.merge(
+        weights,
+        on=["isocode", "year"],
+        how="left",
+        validate="one_to_one",
+    )
+    if shares["ngdpd"].isna().any() or shares["ngdpd"].le(0).any():
+        missing = shares.loc[
+            shares["ngdpd"].isna() | shares["ngdpd"].le(0),
+            ["isocode", "year"],
+        ]
+        raise ValueError(f"Missing or non-positive WEO GDP weights:\n{missing}")
+
     expected = {"AE": 29, "EMDE": 7}
     observed = shares.groupby(["group", "year"])["isocode"].nunique()
     for (group, _), count in observed.items():
@@ -104,14 +135,24 @@ def load_shares():
 
 
 def annual_band(shares, variable, group):
-    grouped = shares.loc[shares["group"].eq(group)].groupby("year")[variable]
-    return pd.DataFrame({
+    group_shares = shares.loc[shares["group"].eq(group)].copy()
+    grouped = group_shares.groupby("year")[variable]
+    band = pd.DataFrame({
         "p25": grouped.quantile(0.25),
         "median": grouped.median(),
         "p75": grouped.quantile(0.75),
-        "mean": grouped.mean(),
         "economies": grouped.count(),
-    }).reset_index()
+    })
+    group_shares["weighted_value"] = group_shares[variable] * group_shares["ngdpd"]
+    weighted = group_shares.groupby("year").agg(
+        weighted_value=("weighted_value", "sum"),
+        weight=("ngdpd", "sum"),
+        weighted_economies=(variable, "count"),
+    )
+    weighted["gdp_weighted_average"] = weighted["weighted_value"] / weighted["weight"]
+    return band.join(
+        weighted[["gdp_weighted_average", "weighted_economies"]]
+    ).reset_index()
 
 
 def add_panel(fig, shares, variable, time_col, box_col, show_legend, csv_rows):
@@ -144,11 +185,11 @@ def add_panel(fig, shares, variable, time_col, box_col, show_legend, csv_rows):
         ), row=1, col=time_col)
         fig.add_trace(go.Scatter(
             x=band["year"],
-            y=band["mean"],
+            y=band["gdp_weighted_average"],
             mode="lines",
-            line=dict(color=color, width=MEAN_LINE_WIDTH, dash="dot"),
-            name=f"{code}: mean",
-            legendgroup=f"{code}_mean",
+            line=dict(color=color, width=WEIGHTED_LINE_WIDTH, dash="dot"),
+            name=f"{code}: GDP-weighted average",
+            legendgroup=f"{code}_weighted",
             legendrank=2 if code == "AE" else 4,
             showlegend=show_legend,
         ), row=1, col=time_col)
@@ -176,7 +217,12 @@ def add_panel(fig, shares, variable, time_col, box_col, show_legend, csv_rows):
 
         for value, dash, width, label in [
             (band["median"].mean(), "solid", LINE_WIDTH, "Mean annual median"),
-            (band["mean"].mean(), "dot", MEAN_LINE_WIDTH, "Mean annual mean"),
+            (
+                band["gdp_weighted_average"].mean(),
+                "dot",
+                WEIGHTED_LINE_WIDTH,
+                "Mean annual GDP-weighted average",
+            ),
         ]:
             fig.add_trace(go.Scatter(
                 x=[box_position - 0.38, box_position + 0.38],
@@ -197,13 +243,19 @@ def add_panel(fig, shares, variable, time_col, box_col, show_legend, csv_rows):
                 "p25": round(float(observation["p25"]), 4),
                 "median": round(float(observation["median"]), 4),
                 "p75": round(float(observation["p75"]), 4),
-                "mean": round(float(observation["mean"]), 4),
                 "economies": int(observation["economies"]),
+                "gdp_weighted_average": round(
+                    float(observation["gdp_weighted_average"]), 4
+                ),
+                "weighted_economies": int(observation["weighted_economies"]),
             })
 
 
 def main():
-    shares = load_shares()
+    parser = ArgumentParser()
+    parser.add_argument("--weo", type=Path, default=DEFAULT_WEO)
+    args = parser.parse_args()
+    shares = load_shares(args.weo)
     fig = make_subplots(
         rows=1,
         cols=5,
