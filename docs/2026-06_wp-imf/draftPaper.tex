@@ -548,20 +548,6 @@ The labor-income tax rate is 30.9 and 14.0 percent, respectively.
 It combines personal income taxes and social contributions from WoRLD and divides them by labor income from ILOSTAT.
 Public debt is measured as general-government gross debt, with targets of 78.8 percent of annual GDP for AEs and 46.4 percent for EMDEs.
 
-\begin{table}[H]
-    \centering
-    \caption{Country-Group Steady-State Targets \label{tab:calibrationTargets}}
-    \footnotesize
-    \renewcommand{\arraystretch}{1.2}
-    \input{calibrationTargetsTable.tex}
-
-    \vspace{1mm}
-    \tabnote{IMF, World Economic Outlook database and World Revenue Longitudinal Database; ILOSTAT; \citet{OECD2025Glance}; IMF staff calculations.}{Except for public R\&D, the targets correspond to the means of the annual GDP-weighted country-group aggregates shown in Figure~\ref{fig:calibrationDataBands}; total fixed investment is split using the functional composition reported in Appendix~\ref{app:investmentComposition}.
-Trend growth is annualized from the quarterly gross rate.
-Public debt is reported relative to annual GDP; the Dynare implementation divides debt by quarterly GDP and therefore stores four times the ratios shown here.
-Spending shares are relative to quarterly GDP, while implicit tax rates are measured against their corresponding tax bases; both are numerically unchanged at an annual frequency.}
-\end{table}
-
 \begin{figure}[H]
     \centering
     \caption{Data Underlying Country-Group Calibration Targets, 2000--23 \label{fig:calibrationDataBands}}
@@ -583,6 +569,20 @@ This system yields an exceptionally low implicit rate and, given the size of the
 Japan is excluded from the AE public-debt weighted average because its exceptionally high debt ratio would otherwise have disproportionate influence under GDP weights.
 China is excluded from the government-investment aggregates because its \texttt{NFIG} series covers the broader public sector, and GFS does not report a corresponding general-government series.}
 \end{figure}
+
+\begin{table}[H]
+    \centering
+    \caption{Country-Group Steady-State Targets \label{tab:calibrationTargets}}
+    \footnotesize
+    \renewcommand{\arraystretch}{1.2}
+    \input{calibrationTargetsTable.tex}
+
+    \vspace{1mm}
+    \tabnote{IMF, World Economic Outlook database and World Revenue Longitudinal Database; ILOSTAT; \citet{OECD2025Glance}; IMF staff calculations.}{Except for public R\&D, the targets correspond to the means of the annual GDP-weighted country-group aggregates shown in Figure~\ref{fig:calibrationDataBands}; total fixed investment is split using the functional composition reported in Appendix~\ref{app:investmentComposition}.
+Trend growth is annualized from the quarterly gross rate.
+Public debt is reported relative to annual GDP; the Dynare implementation divides debt by quarterly GDP and therefore stores four times the ratios shown here.
+Spending shares are relative to quarterly GDP, while implicit tax rates are measured against their corresponding tax bases; both are numerically unchanged at an annual frequency.}
+\end{table}
 
 \subsection{Productive-Spending and Endogenous-Growth Parameters} \label{subsec:productive-calibration}
 
