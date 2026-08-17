@@ -1,11 +1,10 @@
-%% §4.3 sensitivity sweep — multipliers vs. structural parameters (AE).
-% One-at-a-time (OAT) sweep of the AE standard expansions over the parameters
-% flagged in §4.3: alpha_G (alphaG, infrastructure output elasticity), mu
-% (human-capital formation elasticity), alpha_RD (long-run R&D elasticity), and
-% varsigma (adoption elasticity). For each (experiment, parameter, grid value) it
-% re-solves the perfect-foresight model and recomputes the *present-value
-% cumulative own-spending multiplier* at the same horizons as Table 3
-% (makeMultipliers.py), so the swept numbers are comparable to the paper.
+%% §4.4 sensitivity sweep — multipliers vs. structural parameters (AE).
+% Paper-specific sweep of the three productive-spending expansions and their
+% corresponding structural elasticities: infrastructure and alpha_G (alphaG),
+% human capital and mu, and R&D and alpha_RD. For each grid value it re-solves
+% the perfect-foresight model and recomputes the *present-value
+% cumulative own-spending multiplier* at the same horizons as the paper's
+% multiplier table (makeMultipliers.py).
 %
 % Isolation: each model is built in a gitignored work/ dir (NOT models/), so the
 % committed _results.mat are never touched. The shared macros and the external
@@ -33,44 +32,28 @@ if ~exist(resDir,  'dir'); mkdir(resDir);  end
 smoke = ~isempty(getenv('SWEEP_SMOKE'));
 permanent = ~isempty(getenv('SWEEP_PERMANENT'));
 
-%% Experiments (AE only): {model name, own-spending instrument, shock spec}.
+%% Experiments (AE only): {model, instrument, shock, parameter, grid}.
 % Match runModel.m's debt-financed expansion specs: AR(1), rho=0.9, by
 % default; a constant +1-percent-of-GDP step when SWEEP_PERMANENT is set.
 if permanent
     exps = {
-        'Model_HumanCapital_exp_gc_perm',  'Gc',  {{'epsi_gc',  'const', 0.01, '1:1000'}}
-        'Model_HumanCapital_exp_igi_perm', 'Igi', {{'epsi_igi', 'const', 0.01, '1:1000'}}
-        'Model_HumanCapital_exp_ige_perm', 'Ige', {{'epsi_ige', 'const', 0.01, '1:1000'}}
-        'Model_HumanCapital_exp_grd_perm', 'Grd', {{'epsi_grd', 'const', 0.01, '1:1000'}}
+        'Model_HumanCapital_exp_igi_perm', 'Igi', {{'epsi_igi', 'const', 0.01, '1:1000'}}, 'alphaG',  [0.03 0.054 0.075 0.10 0.122 0.15]
+        'Model_HumanCapital_exp_ige_perm', 'Ige', {{'epsi_ige', 'const', 0.01, '1:1000'}}, 'mu',      [0.05 0.10 0.15 0.20]
+        'Model_HumanCapital_exp_grd_perm', 'Grd', {{'epsi_grd', 'const', 0.01, '1:1000'}}, 'alphaRD', [0.05 0.07 0.09 0.11 0.13]
         };
 else
     exps = {
-        'Model_HumanCapital_exp_gc',  'Gc',  {{'epsi_gc',  'ar1', [0.01 0.9], '1:1000'}}
-        'Model_HumanCapital_exp_igi', 'Igi', {{'epsi_igi', 'ar1', [0.01 0.9], '1:1000'}}
-        'Model_HumanCapital_exp_ige', 'Ige', {{'epsi_ige', 'ar1', [0.01 0.9], '1:1000'}}
-        'Model_HumanCapital_exp_grd', 'Grd', {{'epsi_grd', 'ar1', [0.01 0.9], '1:1000'}}
+        'Model_HumanCapital_exp_igi', 'Igi', {{'epsi_igi', 'ar1', [0.01 0.9], '1:1000'}}, 'alphaG',  [0.03 0.054 0.075 0.10 0.122 0.15]
+        'Model_HumanCapital_exp_ige', 'Ige', {{'epsi_ige', 'ar1', [0.01 0.9], '1:1000'}}, 'mu',      [0.05 0.10 0.15 0.20]
+        'Model_HumanCapital_exp_grd', 'Grd', {{'epsi_grd', 'ar1', [0.01 0.9], '1:1000'}}, 'alphaRD', [0.05 0.07 0.09 0.11 0.13]
         };
 end
-
-%% Parameters to sweep: {name, grid (include the AE baseline where practical)}.
-% The baseline (restore) value is read from M_.params at build time. The alphaRD
-% grid is stated directly in long-run-elasticity units and centered on the AE
-% calibration. The efficiency-gap params (eGI_ss/eGE_ss/eGRD_ss) were dropped:
-% the per-dollar multiplier is exactly invariant to them (the (1-e) wedge
-% cancels), so they add nothing to the sweep (see README).
-params = {
-    'alphaG',    [0.03 0.054 0.075 0.10 0.122 0.15]  % infra elasticity; calibrations + literature anchors
-    'mu',        [0.05 0.10 0.15 0.20]               % HC elasticity; brackets both calibrations
-    'alphaRD',   [0.05 0.07 0.09 0.11 0.13]          % long-run R&D elasticity, centered on AE baseline
-    'varsigma',  [0.10 0.30 0.50 0.80 0.90 0.95]     % adoption elasticity (varsigma)
-    };
 
 horizonsYr = [1 5 10 20 25 250];          % years; quarter window is 4N
 periods    = 2000;
 if smoke
-    exps       = exps(4, :);              % grd only (exercises the R&D channel)
-    params     = params(3, :);           % alphaRD only
-    params{1,2} = params{1,2}([1 2 4]);  % 3 points
+    exps       = exps(3, :);              % R&D / alphaRD only
+    exps{1, 5} = exps{1, 5}([1 2 4]);    % 3 points
     horizonsYr = [1 5 10];
     periods    = 1200;                    % must exceed the period-1000 shock path
 end
@@ -98,6 +81,8 @@ for ie = 1:size(exps, 1)
     modelName = exps{ie, 1};
     instVar   = exps{ie, 2};
     shockSpec = exps{ie, 3};
+    pName     = exps{ie, 4};
+    pGrid     = exps{ie, 5};
     shockSpec{end + 1} = {'eTaux', 'const', 1, sprintf('1001:%d', periods)};
     fprintf('\n=================== %s (instrument %s) ===================\n', modelName, instVar);
 
@@ -142,29 +127,25 @@ for ie = 1:size(exps, 1)
     writeRow(fidIrf, modelName, instVar, 'baseline', NaN, 1, [ydBaseAnn ydBaseQtr]);
     fprintf('  baseline  %s\n', fmtMult(mBase, horizonsYr));
 
-    % --- OAT sweep ---
-    for ip = 1:size(params, 1)
-        pName = params{ip, 1};
-        pGrid = params{ip, 2};
-        pBase = baseParams(strcmp(parNames, pName));   % AE calibration of this param
-        for v = pGrid
-            ok = true;
-            try
-                set_param_value(pName, v);
-                [m, ydAnn, ydQtr] = solveMult(periods, iYd, iInst, beta, horizonsYr, nYears, nQuarters);
-            catch ME
-                ok = false; m = nan(1, numel(horizonsYr));
-                ydAnn = nan(1, nYears + 1); ydQtr = nan(1, nQuarters);
-                fprintf('  !! %s=%g failed: %s\n', pName, v, ME.message);
-            end
-            writeRow(fid, modelName, instVar, pName, v, 0, m);
-            writeRow(fidIrf, modelName, instVar, pName, v, 0, [ydAnn ydQtr]);
-            if ok
-                fprintf('  %-8s=%-7g %s\n', pName, v, fmtMult(m, horizonsYr));
-            end
+    % --- Sweep the elasticity governing this instrument's productive channel ---
+    pBase = baseParams(strcmp(parNames, pName));
+    for v = pGrid
+        ok = true;
+        try
+            set_param_value(pName, v);
+            [m, ydAnn, ydQtr] = solveMult(periods, iYd, iInst, beta, horizonsYr, nYears, nQuarters);
+        catch ME
+            ok = false; m = nan(1, numel(horizonsYr));
+            ydAnn = nan(1, nYears + 1); ydQtr = nan(1, nQuarters);
+            fprintf('  !! %s=%g failed: %s\n', pName, v, ME.message);
         end
-        set_param_value(pName, pBase);   % restore before sweeping the next param
+        writeRow(fid, modelName, instVar, pName, v, 0, m);
+        writeRow(fidIrf, modelName, instVar, pName, v, 0, [ydAnn ydQtr]);
+        if ok
+            fprintf('  %-8s=%-7g %s\n', pName, v, fmtMult(m, horizonsYr));
+        end
     end
+    set_param_value(pName, pBase);
 end
 
 fclose(fid);

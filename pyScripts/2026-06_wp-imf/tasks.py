@@ -25,7 +25,6 @@ PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 - plotReallocationAE:   AE output response to three reallocation shocks
 - plotReallocationEM:   EMDE output response (infra + human capital; no R&D)
 - plotEfficiencyAE:     Matched AE spending and AE/EMDE efficiency experiments
-- plotEfficiencyEM:     EMDE transmission of permanent efficiency-gap closures
 - plotPolicyEfficiency: FM-style gradual efficiency improvements by country group
 - plotHumanCapital:     Human capital + R&D mix IRFs
 - plotDiffusionAE:      Technology diffusion-speed sensitivity
@@ -189,15 +188,6 @@ def plotEfficiencyAE(c):
     Out: figures/efficiencyAE_yd.png/.pdf/.html/.csv
     """
     _run_plot(c, "plotEfficiencyAE.py", "Generating: Matched Spending and Efficiency")
-
-
-@task
-def plotEfficiencyEM(c):
-    """
-    EMDE transmission of permanent spending-efficiency-gap closures (5x4 grid).
-    Out: figures/efficiencyEM_yd.png/.pdf/.html/.csv
-    """
-    _run_plot(c, "plotEfficiencyEM.py", "Generating: EMDE Spending Efficiency")
 
 
 @task
@@ -424,7 +414,6 @@ def investigateContributions(c):
     plotReallocationAE,
     plotReallocationEM,
     plotEfficiencyAE,
-    plotEfficiencyEM,
     plotPolicyEfficiency,
     plotHumanCapital,
     plotDiffusionAE,

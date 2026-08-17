@@ -131,15 +131,6 @@ modelList = {
     'Model_HumanCapital_epsi_cgeCgrd',          'AE', 'AE',     {{'epsi_ige',     'const', 0.005, '1:1000'}
                                                                  {'epsi_grd',    'const', 0.005, '1:1000'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
-    % --- Permanent efficiency-gap closures --- Each experiment sets one
-    % efficiency gap to zero from quarter 1 onward while leaving spending
-    % unchanged. The AE scenarios feed Section 4.4; the EMDE scenarios are
-    % retained for comparison outside the current draft.
-    'Model_HumanCapital_effgi_perm',            'AE', 'AE',     {{'epsi_effgi',  'const', 0.359, '1:1000'}}
-    'Model_HumanCapital_effge_perm',            'AE', 'AE',     {{'epsi_effge',  'const', 0.306, '1:1000'}}
-    'Model_HumanCapital_effgrd_perm',           'AE', 'AE',     {{'epsi_effgrd', 'const', 0.399, '1:1000'}}
-    'EM_Model_HumanCapital_effgi_perm',         'EM', 'EMnorm', {{'epsi_effgi',  'const', 0.406, '1:1000'}}
-    'EM_Model_HumanCapital_effge_perm',         'EM', 'EMnorm', {{'epsi_effge',  'const', 0.329, '1:1000'}}
     % --- AE gradual efficiency scenarios --- These combine reallocation with a
     % 25-year ramp that closes the relevant spending-efficiency gap. Their
     % incremental output gains enter Figure 5 (fig:policyEfficiency, Section 5.2).
@@ -203,20 +194,6 @@ modelList = {
                                                                  {'epsi_ige',     'const', 0.005, '1:1000'}
                                                                  {'epsi_q', 'ramp',  -0.03, '1:40'}
                                                                  {'epsi_gc',      'const', -0.01, '1:1000'}}
-    % ===================== JAMAICA (separate FM-panel project) =====================
-    % NOT used in this working paper. Kept for the separate Jamaica fiscal-multiplier
-    % deck; calibrated to Jamaica (JAM params/efficiency). Excluded from every paper
-    % figure and table here.
-    'JAM_Model_HumanCapital_epsiig',            'JAM', 'JAM',    {{'epsi_igi',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_gc',      'const', -0.01, '1:1000'}}
-    'JAM_Model_HumanCapital_epsicge',           'JAM', 'JAM',    {{'epsi_ige',     'const', 0.01,  '1:1000'}
-                                                                 {'epsi_gc',      'const', -0.01, '1:1000'}}
-    'JAM_Model_HumanCapital_epsiigeff30y',      'JAM', 'JAM',    {{'epsi_igi',      'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effgi',   'ramp',  0.1681, '1:60'}
-                                                                 {'epsi_gc',      'const', -0.01, '1:1000'}}
-    'JAM_Model_HumanCapital_epsicgeeff30y',     'JAM', 'JAM',    {{'epsi_ige',     'const', 0.01,  '1:1000'}
-                                                                 {'epsi_effge',   'ramp',  0.357, '1:60'}
-                                                                 {'epsi_gc',      'const', -0.01, '1:1000'}}
     % =========== GOV-CONSUMPTION TRANSMISSION BENCHMARKS (APPENDICES D-E) ===========
     % The AR(1) rho=0.9 +1%-of-GDP government-consumption shock is the temporary
     % counterpart to the main permanent exercise. Both are run through a sequence
@@ -277,9 +254,8 @@ modelList = {
     };
 
 %% optional subset: set the MODEL_FILTER environment variable to a substring
-% and only matching model names are run (e.g. MODEL_FILTER=JAM re-runs just the
-% Jamaica models after a Jamaica-specific recalibration). Read from the process
-% environment so it survives the clear all in the preamble.
+% and only matching model names are run. Read from the process environment so
+% it survives the clear all in the preamble.
 modelFilter = getenv('MODEL_FILTER');
 if ~isempty(modelFilter)
     keepRows = contains(modelList(:, 1), modelFilter);

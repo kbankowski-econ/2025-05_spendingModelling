@@ -1,162 +1,49 @@
-# §4.3 Sensitivity analysis — multipliers vs. structural parameters
+# Section 4.4 sensitivity analysis
 
-Quantitative back-up for **§4.3 (Sensitivity)**. A **one-at-a-time (OAT)** sweep
-of the structural parameters flagged in the section (α_G, μ, α_RD, and ς) shows
-how each changes the fiscal multiplier and output response of the standard expansions.
+Quantitative support for the paper's sensitivity figure. The driver varies the
+structural elasticity governing each productive-spending channel:
 
-## Why a bespoke sweep (and not Dynare's GSA)
+| Experiment | Parameter | AE baseline | Grid |
+|---|---|---:|---|
+| Infrastructure investment | `alphaG` | 0.054 | 0.03, 0.054, 0.075, 0.10, 0.122, 0.15 |
+| Human-capital investment | `mu` | 0.10 | 0.05, 0.10, 0.15, 0.20 |
+| R&D spending | `alphaRD` | 0.09 | 0.05, 0.07, 0.09, 0.11, 0.13 |
 
-Dynare's native global sensitivity toolbox (`sensitivity` / `dynare_sensitivity`)
-is built on the **perturbation/`stoch_simul`** reduced form: it Monte-Carlo
-samples parameters and maps them to stability regions and to stochastic
-moments/IRFs. This model is solved entirely by **`perfect_foresight_setup` /
-`perfect_foresight_solver`** (deterministic, 2000-period), so the native toolbox
-does not apply without a separate, stationarized `stoch_simul` version of the
-model — which would change the object being analyzed. The native toolbox also
-answers a different question (determinacy + moment Sobol indices), not "how does
-the 25-year multiplier move with α_G."
+For each pair, `sweep.m` overrides the parameter with `set_param_value`, solves
+the deterministic perfect-foresight model, and records output responses and
+present-value cumulative own-spending multipliers. Other parameters remain at
+their AE calibration. A separate baseline row retains the full calibrated model
+for each experiment.
 
-What §4.3 needs is comparative statics of the **multiplier / IRF** with respect to
-a handful of named parameters. That is the same pattern as the Frisch check in
-`../galiCheck/phi_sweep.m`: override the parameter with `set_param_value`,
-re-solve the deterministic model, recompute the statistic.
-
-## Parameters swept (AE calibration)
-
-| Paper | `.mod` | AE baseline | grid |
-|---|---|---|---|
-| α_G (infra output elasticity) | `alphaG`    | 0.054  | 0.03–0.15; includes the EMDE value (0.10) and the Bom--Ligthart estimate (0.122) |
-| μ (HC-formation elasticity)   | `mu`        | 0.10   | 0.05–0.20; brackets the AE and EMDE calibrations |
-| α_RD (long-run R&D elasticity) | `alphaRD`  | 0.09   | 0.05–0.13; centered on the AE calibration |
-| ς (adoption elasticity)       | `varsigma`  | 0.80   | 0.10–0.95 |
-
-The technology-creation equation multiplies `alphaRD` by 1−ρ_A. Its illustrative
-grid is stated directly in long-run-elasticity units. The three grids shown in
-the paper now emphasize the calibrated and literature-supported neighborhood
-rather than obsolete extremes from earlier calibrations. The sweep reads each
-parameter's AE baseline from `M_.params` at build time. One parameter moves at a
-time; the others stay at baseline.
-
-**The efficiency-gap parameters (e^GI/e^GE/e^GRD) were dropped from the sweep.**
-A first pass showed the per-dollar multiplier is *exactly* invariant to them (the
-(1−e) wedge scales effective spending and the steady-state stock by the same
-factor, cancelling in the ratio). The gap level sets the *stock*; the gains from
-*closing* a gap are the separate §5.2 experiment. This cleanly separates §4.3
-from §5.2 and is worth a sentence in the paper, but it is not a sweep dimension.
-
-## Experiments (AE only)
-
-The four standard debt-financed expansions (`Model_HumanCapital_exp_{gc,igi,ige,grd}`),
-AR(1) ρ=0.9, +1%-of-GDP, use the same specs as `runModel.m` and Table 3.
-Setting `SWEEP_PERMANENT=1` instead runs the corresponding `_perm` models with
-a constant +1-percent-of-GDP step through the 250-year simulation window.
-
-## Multiplier definition
-
-Identical to Table 3 (`pyScripts/makeMultipliers.py`): the **present-value
-cumulative own-spending multiplier**
-
-    M_Ny = Σ β^(t-1) (yd_t − yd_ss)  /  Σ β^(t-1) (inst_t − inst_ss),   t = 2..4N+1
-
-with β = `betta` and `inst` the experiment's own instrument (Gc/Igi/Ige/Grd).
-Horizons: 1, 5, 10, 20, 25 years and a "long-term" 250-year column.
+The sweep is deliberately paper-specific. It excludes government consumption,
+cross-channel elasticities, the adoption elasticity, and spending-efficiency
+gaps because none enters the current sensitivity figure. Efficiency reforms are
+analyzed as separate experiments in the paper.
 
 ## Files
 
-- `sweep.m` — the driver. Builds each AE expansion in a gitignored `work/` dir
-  (so the committed `models/**/_results.mat` are never touched — the shared
-  macros and steady-state helper are pulled from `models/` via the preprocessor
-  `-I` include path and the MATLAB path), then OAT-sweeps the four parameters and
-  writes one row per (experiment, parameter, grid value).
-- `results/sweep_AE.csv` — tidy multiplier output: `experiment, instrument,
-  param, param_value, is_baseline, mult_1y, mult_5y, mult_10y, mult_20y,
-  mult_25y, mult_long`. (`*_smoke.csv` are gitignored smoke artifacts.)
-- `results/sweep_AE_irf.csv` — companion IRF output: the `yd` impulse response
-  (percent deviation from steady state) for every draw, wide. Annual columns
-  `yd_y0 … yd_y50` retain yearly averages for the investigation plots; quarterly
-  columns `yd_q1 … yd_q100` provide the first 25 years for the paper figures.
-  Same rows as the multiplier file.
-- `results/sweep_AE_perm.csv` and `results/sweep_AE_irf_perm.csv` — permanent-shock
-  counterparts of the two files above, generated with `SWEEP_PERMANENT=1`.
-- `plot_sweep.py` — (i) `sweep_grid.png`: multiplier vs. parameter, experiment ×
-  parameter small multiples at the long-term horizon; (ii) `sweep_tornado.png`:
-  per-experiment tornado; (iii) `sweep_irf_fan.png`: output-IRF fans (yd vs.
-  year) for selected (experiment, parameter) pairs, one line per grid value.
-- `work/` — gitignored Dynare build artifacts.
+- `sweep.m`: isolated Dynare driver. It builds models under the gitignored
+  `work/` directory, leaving committed model results unchanged.
+- `results/sweep_AE.csv` and `results/sweep_AE_perm.csv`: multiplier results for
+  persistent temporary and permanent spending increases.
+- `results/sweep_AE_irf.csv` and `results/sweep_AE_irf_perm.csv`: corresponding
+  annual and quarterly output paths used by the paper figure.
 
-## How to run
+## Multiplier definition
 
-From the repo root, in MATLAB (project Dynare on the path via `iniProject`):
+The calculation matches the paper's multiplier table: discounted cumulative
+output deviations divided by discounted cumulative deviations of the spending
+instrument. It is reported at 1, 5, 10, 20, 25, and 250 years.
 
-```matlab
-cd('/Users/kk/Developer/sm-worktrees/wp-equations'); iniProject;
-run('docs/2026-06_wp-imf/investigations/sensitivity/sweep.m')
-```
+## Run
 
-Or headless (benign exit-time segfault after the `Wrote …` line, as with
-`runModel.m`):
+From the repository root:
 
 ```bash
 matlab -batch "cd('<repo>'); iniProject; run('docs/2026-06_wp-imf/investigations/sensitivity/sweep.m')"
-```
-
-For the permanent-shock counterpart:
-
-```bash
 SWEEP_PERMANENT=1 matlab -batch "cd('<repo>'); iniProject; run('docs/2026-06_wp-imf/investigations/sensitivity/sweep.m')"
+python pyScripts/2026-06_wp-imf/plotSensitivityIRF.py
 python pyScripts/2026-06_wp-imf/plotSensitivityIRF.py --permanent
 ```
 
-A quick smoke test (one experiment, one parameter, short horizon):
-
-```bash
-SWEEP_SMOKE=1 matlab -batch "...same..."
-```
-
-Then plot (Python 3.11 framework env):
-
-```bash
-python docs/2026-06_wp-imf/investigations/sensitivity/plot_sweep.py
-```
-
-## Findings (AE, full sweep — `results/sweep_AE{,_grid,_tornado}.png`)
-
-Each multiplier has a **two-factor** structure: its own channel's elasticity as
-the primary driver, plus the adoption elasticity ς as a universal secondary one.
-
-1. **Each productive multiplier is governed by its own output elasticity**
-   (long-term, near-linear): infrastructure in α_G (1.25 → 11.24 as α_G = 0.03
-   → 0.15; baseline 0.054 → 3.25), human capital in μ (4.31 → 21.08 as μ =
-   0.05 → 0.20; baseline 9.89), R&D in α_RD (3.49 → 10.87 as α_RD = 0.05 →
-   0.13; baseline 0.09 → 7.21). Each is essentially flat to the *other*
-   channels' elasticities.
-2. **ς (adoption elasticity) is the one systemic parameter** — every experiment
-   is sensitive to it at long horizons, because it governs economy-wide technology
-   diffusion. The response is strongly **convex**, kicking in above ς ≈ 0.8
-   (long-term: R&D 5.48 → 13.74, HC 7.65 → 32.75, infra 2.49 → 11.53 as ς =
-   0.10 → 0.95; wasteful consumption becomes *more* negative, −0.47 → −14.17).
-   Since the paper
-   uses ς = 0.80 and the literature suggests 0.90–0.95, the calibration sits right
-   at the knee of the curve — a calibration note worth making.
-3. **ς also shifts the R&D multiplier's *timing*.** Higher ς back-loads the payoff
-   (R&D 10-year multiplier 3.56 at ς = 0.1 → 0.13 at ς = 0.95) while raising the
-   long-run level — faster eventual diffusion, slower to arrive.
-4. **Government consumption (≈ −1.24 long run) responds only to ς** — no productive
-   channel, so the own-elasticities do nothing; ς amplifies the long-run wealth
-   loss.
-
-The efficiency gaps were checked and found *exactly* invariant (see above), so
-they are excluded. Baselines reproduce Table 3 (`makeMultipliers.py`) exactly,
-validating the loop. All temporary-shock parameter draws solve. In the
-permanent-shock diagnostic, the four non-plotted draws at ς = 0.95 are recorded
-as NaN; all parameter draws used in the paper figure solve.
-
-## Status / next steps
-
-- [x] Driver runs end-to-end; AE full sweep complete; baselines match Table 3.
-- [x] R&D sweep extended with α_RD and ς; both drive the R&D multiplier.
-- [ ] EMDE counterpart (re-run with EM params/efficiency; note α_RD = α_HA = 0,
-      so no R&D channel, ς is small at 0.1, and μ is 0.15).
-- [x] The permanent output-IRF view is integrated into the paper through the
-      chartTable pipeline, with one productive instrument and its governing
-      elasticity in each panel.
+Set `SWEEP_SMOKE=1` to run three R&D/`alphaRD` draws as a short pipeline check.
