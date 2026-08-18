@@ -21,6 +21,7 @@
 \usepackage{multirow}
 \usepackage{array}
 \usepackage{subcaption}
+\usepackage{eso-pic}
 
 \newcommand{\source}[1]{\vspace{2mm} \footnotesize \begin{minipage}{0.9\textwidth} \emph{Sources: }{#1} \end{minipage}}
 \newcommand{\desc}[1]{\vspace{0mm} \footnotesize \begin{minipage}{0.9\textwidth} \emph{Note: }{#1} \end{minipage}}
@@ -138,6 +139,7 @@ Over a 25-year horizon the implied output multipliers on permanent increases in 
 
 \thispagestyle{fancy}
 
+\clearpage
 %========================================================================
 \section{Introduction and Motivation}
 %========================================================================
@@ -156,9 +158,22 @@ The second is \emph{efficiency}: how much of each dollar spent is actually conve
 
 % [2] RESEARCH QUESTION + CONTRIBUTION --- lead with our own contribution, then
 %     set it against others in one sentence (substitutes for a lit-review section).
-This paper develops and documents a model to answer a specific question: how much can a country raise long-run output by reallocating public spending toward more productive uses and by closing spending-efficiency gaps?
-Its contribution is to integrate the entire expenditure side of fiscal policy---infrastructure, human capital, and R\&D---together with household human capital formation within a single endogenous-growth model in which both the allocation and the efficiency of spending are operative.
-Where existing work typically isolates one channel---public-investment multipliers, human-capital formation, or innovation---this integration lets the model speak to the horizon over which each type of spending pays off and to how country characteristics shape the gains.
+This paper develops and documents a model to answer a specific question: how much can a country raise long-run output by reallocating public spending toward more productive uses and by closing spending-efficiency gaps? The contribution is threefold.  
+
+First, our proposed model integrates the entire expenditure side of fiscal policy---consumption, infrastructure, human capital, and R\&D---together with household human capital formation within a single endogenous-growth model in which both the allocation and the efficiency of spending are operative. 
+Existing works typically contain subsets of these channels. Public investment models, such as  \citet{TraumYang2015}, \citet{DrautzburgUhlig2015}, \citet{berg2012public}, \citet{marto2018building}, carry a rich fiscal block and an efficiency wedge (for the last two), but treat productivity as exogenous and human capital as fixed. Meanwhile, \citet{Atoliaetal2021} endogenize the household education margin and pose the infrastructure-versus-schools allocation question, but contain no innovation channel. The creation-adoption framework of \citet{CominGertler2006} and \citet{Anzoateguietal2019} endogenizes technology but has essentially no disaggregated expenditure side. This integration lets the model speak to the horizon over which each type of spending pays off and to how country characteristics shape the gains.
+
+Second, we extend the analysis of efficiency spending beyond public infrastructure investment to every productive category. Specifically, human-capital and R\&D outlays, like infrastructure, are converted into productive stocks at less than par, with gaps taken from a novel database recently estimated by \citet{Bankowskietal2026}. This places efficiency alongside allocation as
+an instrument of policy rather than treating it as a fixed feature, which in turn allows us to evaluate policy packages that combine the two, such as the gains from reallocating expenditure with and without a simultaneous improvement in efficiency.
+
+Third, the model is parameterized separately for a representative advanced economy (AE) and a representative emerging market and developing economy (EMDE), so that the payoff to each instrument and the return to closing each gap can be compared across country groups within one internally consistent framework. The
+country-group targets are constructed by combining the IMF's World Economic
+Outlook (WEO) and World Revenue Longitudinal Database (WoRLD), the ILO's labor
+statistics (ILOSTAT), and the functional composition of government investment
+reported by OECD. The same procedure can be applied to an individual
+economy, which makes the framework readily transferable to country-specific
+spending reforms.
+
 
 % [3] METHODS --- key features of the approach; the former strand-by-strand lit
 %     review folded in here as context (citations kept), not as a separate section.
@@ -1537,11 +1552,12 @@ The R\&D innovation channel is shut down for emerging market and developing econ
 \end{figure}
 
 \clearpage
-\AddToHookNext{shipout/foreground}{%
-    \begin{tikzpicture}[remember picture,overlay]
-        \node[rotate=45,scale=3,text=gray!25] at (current page.center) {\bfseries October 2025 Fiscal Monitor};
-    \end{tikzpicture}%
+\AddToShipoutPictureFG*{%
+    \put(\LenToUnit{0.5\paperwidth},\LenToUnit{0.5\paperheight}){%
+        \makebox(0,0){\rotatebox{45}{\scalebox{3}{\color{gray!25}\bfseries October 2025 Fiscal Monitor}}}
+    }%
 }
+
 \begin{figure}[H]
     \centering
     \caption{Long-Term Gains in Output: October 2025 Fiscal Monitor Panel \label{fig:policySummaryFM}}
@@ -1593,5 +1609,4 @@ The R\&D innovation channel is shut down for emerging market and developing econ
     Panel 5 compares human-capital investment, R\&D spending, and an equal combination of the two, financed by cutting public consumption.
     Panel 6 shows how the gains from that combination vary with the speed of technology diffusion.}
 \end{figure}
-
 \end{document}
