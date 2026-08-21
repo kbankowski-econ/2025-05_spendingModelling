@@ -60,6 +60,11 @@ COLS = [("1y", 1), ("5y", 5), ("10y", 10), ("20y", 20), ("25y", 25), ("Long-term
 HORIZONS = [yr for _, yr in COLS]      # years; quarter window is N*4
 CHANNEL_HORIZON = 25
 
+# The permanent-shock table stops at 25 years: under a permanent increase the
+# cumulative multiplier converges only gradually, so the 250-year column invited
+# more weight than it can carry. Both CSVs still record every horizon.
+PERM_COLS = [col for col in COLS if col[0] != "Long-term"]
+
 # Spending type -> list of (region label, model directory or None, instrument).
 # A None model emits dashes (R&D is shut down for EMDEs: alphaRD = alphaHA = 0).
 GROUPS = [
@@ -125,9 +130,16 @@ def multipliers(model, inst):
     return out
 
 
-def emit(groups, csv_out, tex_out, label, supplements=None, channel_effect=False):
-    """Compute every (type, region) cell for one shock set and write its CSV + TeX."""
+def emit(groups, csv_out, tex_out, label, supplements=None, channel_effect=False,
+         tex_cols=None):
+    """Compute every (type, region) cell for one shock set and write its CSV + TeX.
+
+    tex_cols selects which horizons the TeX table shows; the CSV always keeps all
+    of COLS so no computed horizon is lost.
+    """
     supplements = supplements or {}
+    tex_cols = tex_cols or COLS
+    tex_horizons = [yr for _, yr in tex_cols]
     print(f"--- {label} ---")
     data = []   # (stype, region, model, mult-or-None, 25-year channel effect)
     for stype, regions in groups:
@@ -159,8 +171,8 @@ def emit(groups, csv_out, tex_out, label, supplements=None, channel_effect=False
             f.write(f"{stype},{region},{model or ''},{cells}\n")
     print(f"  Wrote {csv_out.name}")
 
-    ncol = len(COLS) + int(channel_effect)
-    header_labels = [lbl for lbl, _ in COLS]
+    ncol = len(tex_cols) + int(channel_effect)
+    header_labels = [lbl for lbl, _ in tex_cols]
     if channel_effect:
         header_labels.append(rf"\makecell{{Channel effect\\({CHANNEL_HORIZON}y)}}")
     header = "    Present-value multiplier & " + " & ".join(header_labels) + " \\\\"
@@ -179,7 +191,7 @@ def emit(groups, csv_out, tex_out, label, supplements=None, channel_effect=False
         for region, model, inst in regions:
             mult = multipliers(model, inst) if model else None
             cells = (" & ".join(f"{mult[h] + 0.0:.2f}".replace("-0.00", "0.00")
-                                 for h in HORIZONS)
+                                 for h in tex_horizons)
                      if mult else " & ".join(["--"] * ncol))
             if mult and channel_effect:
                 cells += " & --"
@@ -190,7 +202,7 @@ def emit(groups, csv_out, tex_out, label, supplements=None, channel_effect=False
                     f"{{\\scriptsize\\color{{{step_color}}} {step_mult[h] + 0.0:.2f}}}".replace(
                         "-0.00", "0.00"
                     )
-                    for h in HORIZONS
+                    for h in tex_horizons
                 )
                 if channel_effect:
                     effect = mult[CHANNEL_HORIZON] - step_mult[CHANNEL_HORIZON]
@@ -208,7 +220,7 @@ def emit(groups, csv_out, tex_out, label, supplements=None, channel_effect=False
 def main():
     emit(GROUPS,      CSV_OUT,      TEX_OUT,      "AR(1), persistence 0.9")
     emit(PERM_GROUPS, CSV_OUT_PERM, TEX_OUT_PERM, "Permanent shocks", PERM_SUPPLEMENTS,
-         channel_effect=True)
+         channel_effect=True, tex_cols=PERM_COLS)
 
 
 if __name__ == "__main__":
