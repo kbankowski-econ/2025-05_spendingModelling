@@ -249,7 +249,7 @@ Further appendices document the composition of government investment, the spendi
 
 The model is built on a relatively standard New Keynesian framework augmented with endogenous growth. 
 Its central extension, for the purpose of analyzing public spending, is the introduction of productive public spending components: investment in physical infrastructure, investment in human capital, and spending on research and development. 
-These outlays build, respectively, a stock of public infrastructure capital (e.g., roads and bridges), public  utilities facilitating the accumulation of human capital (e.g., schools and hospitals), and the economy's stock of technological knowledge (e.g., publicly funded patents not yet adopted by the private sector).
+These outlays build, respectively, a stock of public infrastructure capital (e.g., roads and bridges), public facilities that support the accumulation of human capital (e.g., schools and hospitals), and the economy's stock of technological knowledge (e.g., publicly funded patents not yet adopted by the private sector).
 All are created from efficiency-adjusted public spending, recognizing that a fraction of each flow is wasted through inefficiency.
 
 
@@ -297,7 +297,7 @@ The household's standard saving margins imply
 \begin{align}
     \lambda_t &= \frac{1}{\left(1+\tau_t^{c}\right) C_t}, \label{eq:mu}\\
     \lambda_t &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\frac{R_t}{\Pi_{t+1}}\right], \label{eq:euler}\\
-    \lambda_t &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\left(r_{t+1}^{k} + 1 - \delta\right)\right], \label{eq:capital}
+    \lambda_t &= \beta\, \mathbb{E}_t\!\left[\lambda_{t+1}\left(r_{t+1}^{k} + 1 - \delta\right)\right]. \label{eq:capital}
 \end{align}
 Equation~\eqref{eq:mu} links the marginal value of wealth to the tax-adjusted marginal utility of consumption, while equations~\eqref{eq:euler} and \eqref{eq:capital} are the bond and private-capital Euler equations.
 Private capital accumulates according to
@@ -309,7 +309,7 @@ where $\delta$ is the depreciation rate.
 The main household extension is the human-capital accumulation channel, in which private time devoted to education and health is complemented by public human-capital investment \citep{BlankenauSimpson2004, Dissouetal2016, Atoliaetal2021}.
 Private human capital $H_t$ evolves according to
 \begin{equation} \label{eq:humancapital}
-    H_{t} = \left(1 - \delta^{h}\right) H_{t-1} + \chi \left(E_t\right)^{\gamma} \left(\hat{K}_{t-1}^{GE}\right)^{\mu},
+    H_{t} = \left(1 - \delta^{h}\right) H_{t-1} + \chi \left(E_t\right)^{\gamma} \left(\hat{K}_{t-1}^{GE}\right)^{\mu}.
 \end{equation}
 Here $\delta^{h}$ is the depreciation rate of human capital and $\chi$ is a scale constant determined from the accumulation equation to ensure the normalized steady-state value $H=1$.
 The stock $K_t^{GE}$ represents public education and health capital, while its normalized counterpart $\hat{K}_{t-1}^{GE}$ keeps the inherited public input stationary along the balanced-growth path.
@@ -351,7 +351,7 @@ where $A_{t-1}$ is the stock of adopted technologies whose dynamics will be disc
 Private capital and effective labor have output elasticities $\alpha$ and $1-\alpha$, respectively, while public infrastructure enters with elasticity $\alpha_G$ as an external productive input.
 Adopted technologies raise productivity through the love-of-variety term $A_{t-1}^{\vartheta-1}$.
 The parameter $\vartheta$ governs the productivity impact of technology adoption, while $\alpha$ and $\alpha_G$ denote the output elasticities of private capital and public infrastructure, respectively.\footnote{In \citet{Anzoateguietal2019} a single intermediate-goods elasticity of substitution sets both the markup and the returns to variety.
-Here the retail markup is governed by $\epsilon$ and the intermediate producers' markup by the separate parameter $\mu^{p}$; $\vartheta$ retains only the returns-to-variety role, mapping the stock of adopted technologies into TFP through the love-of-variety term $A_t^{\vartheta-1}$.}
+Here the retail markup is governed by the elasticity of substitution across retail goods, $\epsilon$, and the intermediate producers' markup by the separate parameter $\mu^{p}$; $\vartheta$ retains only the returns-to-variety role, mapping the stock of adopted technologies into TFP through the love-of-variety term $A_t^{\vartheta-1}$.}
 
 The cost-minimization problem leads to familiar optimality conditions.
 Marginal factor cost equals the selling price $mc_t$ divided by the fixed gross markup $\mu^{p}$, which gives rise to $\frac{mc_t}{\mu^{p}}$ in the equations below.
@@ -370,7 +370,7 @@ Its stationary component depends on two forces: lagged human capital raises tech
 \begin{aligned}
     \log\!\left(\frac{\hat{Z}_t}{\hat{Z}^{SS}}\right) ={}& \rho_A \log\!\left(\frac{\hat{Z}_{t-1}}{\hat{Z}^{SS}}\right)
     + \left(1-\rho_A\right)\alpha_{HA} \log\!\left(\frac{H_{t-1}}{H^{SS}}\right) \\
-    &{}+ \left(1-\rho_A\right)\alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) \hat{G}_{t-1}^{RD}}{\left(1-e^{GRD}\right) \hat{G}^{RD,SS}}\right),
+    &{}+ \left(1-\rho_A\right)\alpha_{RD} \log\!\left(\frac{\left(1-e_{t-1}^{GRD}\right) \hat{G}_{t-1}^{RD}}{\left(1-e^{GRD}\right) \hat{G}^{RD,SS}}\right).
 \end{aligned}
 \end{equation}
 The learning-by-doing specification borrows the persistent form of \citet{ChangGomesSchorfheide2002} and applies it here to innovation.
@@ -390,7 +390,7 @@ The time-varying adoption probability is
 \begin{equation} \label{eq:qmain}
     q_t = \left(q_0+\varepsilon_t^q\right)\left(\hat{S}_t\right)^{\varsigma},
 \end{equation}
-where $\hat{S}_t=S_t/\Lambda_t$ is stationary adoption expenditure and $\varsigma$ is its elasticity.
+where $\hat{S}_t=S_t/\Lambda_t$ is stationary adoption expenditure, $\varsigma$ is its elasticity, and $q_0$ is a scale constant set to match the steady-state adoption probability.
 The shock $\varepsilon_t^q$ shifts the adoption probability directly and is used only in the technology-diffusion experiments.
 
 Competitive adopters choose $S_t$ to maximize the value of converting unadopted technologies into usable ones, equating the marginal cost of adoption effort to its discounted marginal value.
@@ -470,7 +470,7 @@ Since this markup is $1/mc_t$, the proxy is $\log(mc_t/mc^{SS})$, with response 
 
 Final demand is allocated across private consumption and investment, the four public-spending categories, and technology-adoption costs:
 \begin{equation} \label{eq:resource}
-    Y_t^{d} = C_t + I_t + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + \mathcal{R}_t,
+    Y_t^{d} = C_t + I_t + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + \mathcal{R}_t.
 \end{equation}
 Here $\mathcal{R}_t$ is the aggregate resource cost of adoption, with stationary counterpart
 \[
