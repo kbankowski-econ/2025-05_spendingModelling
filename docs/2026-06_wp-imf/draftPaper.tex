@@ -125,6 +125,14 @@ Closing efficiency gaps adds further gains at no additional budgetary cost.
 %     L=1/3 and the calibrated beta, delta^h and gamma (Section
 %     \ref{sec:calibration}, "Steady-State Coefficients and Experiment
 %     Design"). Revisit the calibration if warranted.
+% [2] Consider normalizing public debt by final demand rather than gross
+%     output. The code sets by = b/y (model_block.modpart:89), while every
+%     other fiscal object -- the spending rules, the transfer rule, and the
+%     reported ratios -- is scaled by ydss. Measured debt-to-GDP corresponds
+%     to final demand, so b/yd is the more standard choice. The two coincide
+%     in steady state (v^p = 1), so the debt targets are unaffected and the
+%     difference is second order; switching means re-running all model
+%     variants and regenerating the figures and tables, hence deferred.
 % -------------------------------------------------------------------------
 
 \clearpage
