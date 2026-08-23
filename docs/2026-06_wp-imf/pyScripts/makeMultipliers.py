@@ -69,20 +69,20 @@ PERM_COLS = [col for col in COLS if col[0] != "Long-term"]
 # A None model emits dashes (R&D is shut down for EMDEs: alphaRD = alphaHA = 0).
 GROUPS = [
     ("Government consumption", [
-        ("Advanced economies", "Model_HumanCapital_exp_gc",    "Gc"),
-        ("Emerging markets",   "EM_Model_HumanCapital_exp_gc", "Gc"),
+        ("AE", "Model_HumanCapital_exp_gc",    "Gc"),
+        ("EMDE", "EM_Model_HumanCapital_exp_gc", "Gc"),
     ]),
     ("Infrastructure investment", [
-        ("Advanced economies", "Model_HumanCapital_exp_igi",    "Igi"),
-        ("Emerging markets",   "EM_Model_HumanCapital_exp_igi", "Igi"),
+        ("AE", "Model_HumanCapital_exp_igi",    "Igi"),
+        ("EMDE", "EM_Model_HumanCapital_exp_igi", "Igi"),
     ]),
     ("Human capital investment", [
-        ("Advanced economies", "Model_HumanCapital_exp_ige",    "Ige"),
-        ("Emerging markets",   "EM_Model_HumanCapital_exp_ige", "Ige"),
+        ("AE", "Model_HumanCapital_exp_ige",    "Ige"),
+        ("EMDE", "EM_Model_HumanCapital_exp_ige", "Ige"),
     ]),
     ("Research and development", [
-        ("Advanced economies", "Model_HumanCapital_exp_grd", "Grd"),
-        ("Emerging markets",   None,                         None),
+        ("AE", "Model_HumanCapital_exp_grd", "Grd"),
+        ("EMDE", None,                        None),
     ]),
 ]
 
