@@ -136,6 +136,13 @@ Closing spending-efficiency gaps can generate additional gains.
 %     in steady state (v^p = 1), so the debt targets are unaffected and the
 %     difference is second order; switching means re-running all model
 %     variants and regenerating the figures and tables, hence deferred.
+% [3] Consider separate depreciation rates for the two public capital
+%     stocks. Equations (kgi) and (kge) now use the common delta, matching
+%     the code (model_block.modpart:80,83) and the glossary, which calls
+%     delta the depreciation rate of private and public physical capital.
+%     Infrastructure and school or hospital capital plausibly depreciate at
+%     different rates, so delta^GI and delta^GE could be introduced and
+%     calibrated separately; that requires new targets and a re-run.
 % -------------------------------------------------------------------------
 
 \clearpage
@@ -445,10 +452,10 @@ Government consumption uses resources but does not build a productive stock.
 Infrastructure investment builds public infrastructure capital $K_t^{GI}$, education and health investment builds public education and health capital $K_t^{GE}$, and public R\&D expands the stock of technologies available for adoption.
 For the two investment instruments, productive capital evolves according to
 \begin{align}
-    K_t^{GI} &= \left(1 - \delta^{GI}\right) K_{t-1}^{GI} + \left(1 - e_t^{GI}\right) I_t^{GI}, \label{eq:kgi} \\
-    K_t^{GE} &= \left(1 - \delta^{GE}\right) K_{t-1}^{GE} + \left(1 - e_t^{GE}\right) I_t^{GE}. \label{eq:kge}
+    K_t^{GI} &= \left(1 - \delta\right) K_{t-1}^{GI} + \left(1 - e_t^{GI}\right) I_t^{GI}, \label{eq:kgi} \\
+    K_t^{GE} &= \left(1 - \delta\right) K_{t-1}^{GE} + \left(1 - e_t^{GE}\right) I_t^{GE}. \label{eq:kge}
 \end{align}
-The parameters $\delta^{GI}$ and $\delta^{GE}$ are the respective depreciation rates, while $e_t^{GI}$ and $e_t^{GE}$ are spending-efficiency gaps.
+Both public stocks depreciate at the same rate $\delta$ as private capital, while $e_t^{GI}$ and $e_t^{GE}$ are spending-efficiency gaps.
 Only the fraction $1-e_t^x$ of an investment flow becomes productive capital, so closing a gap raises capital formation without increasing expenditure.
 The R\&D gap operates analogously: only the productive fraction $\left(1-e_{t-1}^{GRD}\right)\hat{G}_{t-1}^{RD}$ enters technology creation in equation~\eqref{eq:Z}.
 
