@@ -80,8 +80,8 @@ PANELS = [
     # deficit is a composite budget flow with no single paper symbol (see
     # eq:govbudget). Debt service (dserv_yss) is computed and exported but not
     # plotted here.
-    ("pdef_yss",  "Primary deficit"),
-    ("T_yss", "Transfers (T<sub>t</sub>)"),
+    ("pdef_yss",  "Primary deficit-to-GDP ratio"),
+    ("T_yss", "Transfers-to-GDP ratio"),
     ("by_yss",    "Debt-to-GDP ratio (b<sub>t</sub>)"),
     None,
 ]

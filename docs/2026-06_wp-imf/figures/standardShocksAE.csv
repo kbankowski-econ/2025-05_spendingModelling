@@ -6399,806 +6399,806 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.033
 99,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.032
 100,R&D investment,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),-0.032
-1,Government consumption,Primary deficit,0.904
-2,Government consumption,Primary deficit,0.916
-3,Government consumption,Primary deficit,0.827
-4,Government consumption,Primary deficit,0.749
-5,Government consumption,Primary deficit,0.68
-6,Government consumption,Primary deficit,0.617
-7,Government consumption,Primary deficit,0.561
-8,Government consumption,Primary deficit,0.511
-9,Government consumption,Primary deficit,0.466
-10,Government consumption,Primary deficit,0.425
-11,Government consumption,Primary deficit,0.388
-12,Government consumption,Primary deficit,0.354
-13,Government consumption,Primary deficit,0.324
-14,Government consumption,Primary deficit,0.297
-15,Government consumption,Primary deficit,0.272
-16,Government consumption,Primary deficit,0.25
-17,Government consumption,Primary deficit,0.23
-18,Government consumption,Primary deficit,0.212
-19,Government consumption,Primary deficit,0.196
-20,Government consumption,Primary deficit,0.181
-21,Government consumption,Primary deficit,0.168
-22,Government consumption,Primary deficit,0.156
-23,Government consumption,Primary deficit,0.145
-24,Government consumption,Primary deficit,0.135
-25,Government consumption,Primary deficit,0.126
-26,Government consumption,Primary deficit,0.118
-27,Government consumption,Primary deficit,0.11
-28,Government consumption,Primary deficit,0.103
-29,Government consumption,Primary deficit,0.097
-30,Government consumption,Primary deficit,0.092
-31,Government consumption,Primary deficit,0.087
-32,Government consumption,Primary deficit,0.082
-33,Government consumption,Primary deficit,0.078
-34,Government consumption,Primary deficit,0.074
-35,Government consumption,Primary deficit,0.071
-36,Government consumption,Primary deficit,0.068
-37,Government consumption,Primary deficit,0.065
-38,Government consumption,Primary deficit,0.062
-39,Government consumption,Primary deficit,0.06
-40,Government consumption,Primary deficit,0.057
-41,Government consumption,Primary deficit,0.055
-42,Government consumption,Primary deficit,0.053
-43,Government consumption,Primary deficit,0.052
-44,Government consumption,Primary deficit,0.05
-45,Government consumption,Primary deficit,0.048
-46,Government consumption,Primary deficit,0.047
-47,Government consumption,Primary deficit,0.046
-48,Government consumption,Primary deficit,0.044
-49,Government consumption,Primary deficit,0.043
-50,Government consumption,Primary deficit,0.042
-51,Government consumption,Primary deficit,0.041
-52,Government consumption,Primary deficit,0.04
-53,Government consumption,Primary deficit,0.039
-54,Government consumption,Primary deficit,0.039
-55,Government consumption,Primary deficit,0.038
-56,Government consumption,Primary deficit,0.037
-57,Government consumption,Primary deficit,0.036
-58,Government consumption,Primary deficit,0.036
-59,Government consumption,Primary deficit,0.035
-60,Government consumption,Primary deficit,0.034
-61,Government consumption,Primary deficit,0.034
-62,Government consumption,Primary deficit,0.033
-63,Government consumption,Primary deficit,0.033
-64,Government consumption,Primary deficit,0.032
-65,Government consumption,Primary deficit,0.032
-66,Government consumption,Primary deficit,0.031
-67,Government consumption,Primary deficit,0.031
-68,Government consumption,Primary deficit,0.03
-69,Government consumption,Primary deficit,0.03
-70,Government consumption,Primary deficit,0.029
-71,Government consumption,Primary deficit,0.029
-72,Government consumption,Primary deficit,0.029
-73,Government consumption,Primary deficit,0.028
-74,Government consumption,Primary deficit,0.028
-75,Government consumption,Primary deficit,0.027
-76,Government consumption,Primary deficit,0.027
-77,Government consumption,Primary deficit,0.027
-78,Government consumption,Primary deficit,0.026
-79,Government consumption,Primary deficit,0.026
-80,Government consumption,Primary deficit,0.026
-81,Government consumption,Primary deficit,0.025
-82,Government consumption,Primary deficit,0.025
-83,Government consumption,Primary deficit,0.025
-84,Government consumption,Primary deficit,0.024
-85,Government consumption,Primary deficit,0.024
-86,Government consumption,Primary deficit,0.024
-87,Government consumption,Primary deficit,0.023
-88,Government consumption,Primary deficit,0.023
-89,Government consumption,Primary deficit,0.023
-90,Government consumption,Primary deficit,0.022
-91,Government consumption,Primary deficit,0.022
-92,Government consumption,Primary deficit,0.022
-93,Government consumption,Primary deficit,0.022
-94,Government consumption,Primary deficit,0.021
-95,Government consumption,Primary deficit,0.021
-96,Government consumption,Primary deficit,0.021
-97,Government consumption,Primary deficit,0.021
-98,Government consumption,Primary deficit,0.02
-99,Government consumption,Primary deficit,0.02
-100,Government consumption,Primary deficit,0.02
-1,Infrastructure investment,Primary deficit,0.838
-2,Infrastructure investment,Primary deficit,0.905
-3,Infrastructure investment,Primary deficit,0.802
-4,Infrastructure investment,Primary deficit,0.713
-5,Infrastructure investment,Primary deficit,0.634
-6,Infrastructure investment,Primary deficit,0.563
-7,Infrastructure investment,Primary deficit,0.499
-8,Infrastructure investment,Primary deficit,0.441
-9,Infrastructure investment,Primary deficit,0.389
-10,Infrastructure investment,Primary deficit,0.343
-11,Infrastructure investment,Primary deficit,0.301
-12,Infrastructure investment,Primary deficit,0.263
-13,Infrastructure investment,Primary deficit,0.229
-14,Infrastructure investment,Primary deficit,0.198
-15,Infrastructure investment,Primary deficit,0.17
-16,Infrastructure investment,Primary deficit,0.145
-17,Infrastructure investment,Primary deficit,0.123
-18,Infrastructure investment,Primary deficit,0.103
-19,Infrastructure investment,Primary deficit,0.084
-20,Infrastructure investment,Primary deficit,0.068
-21,Infrastructure investment,Primary deficit,0.053
-22,Infrastructure investment,Primary deficit,0.04
-23,Infrastructure investment,Primary deficit,0.028
-24,Infrastructure investment,Primary deficit,0.018
-25,Infrastructure investment,Primary deficit,0.008
-26,Infrastructure investment,Primary deficit,-0.0
-27,Infrastructure investment,Primary deficit,-0.008
-28,Infrastructure investment,Primary deficit,-0.015
-29,Infrastructure investment,Primary deficit,-0.021
-30,Infrastructure investment,Primary deficit,-0.027
-31,Infrastructure investment,Primary deficit,-0.031
-32,Infrastructure investment,Primary deficit,-0.036
-33,Infrastructure investment,Primary deficit,-0.04
-34,Infrastructure investment,Primary deficit,-0.043
-35,Infrastructure investment,Primary deficit,-0.046
-36,Infrastructure investment,Primary deficit,-0.049
-37,Infrastructure investment,Primary deficit,-0.051
-38,Infrastructure investment,Primary deficit,-0.053
-39,Infrastructure investment,Primary deficit,-0.055
-40,Infrastructure investment,Primary deficit,-0.056
-41,Infrastructure investment,Primary deficit,-0.058
-42,Infrastructure investment,Primary deficit,-0.059
-43,Infrastructure investment,Primary deficit,-0.06
-44,Infrastructure investment,Primary deficit,-0.061
-45,Infrastructure investment,Primary deficit,-0.061
-46,Infrastructure investment,Primary deficit,-0.062
-47,Infrastructure investment,Primary deficit,-0.062
-48,Infrastructure investment,Primary deficit,-0.063
-49,Infrastructure investment,Primary deficit,-0.063
-50,Infrastructure investment,Primary deficit,-0.063
-51,Infrastructure investment,Primary deficit,-0.063
-52,Infrastructure investment,Primary deficit,-0.063
-53,Infrastructure investment,Primary deficit,-0.063
-54,Infrastructure investment,Primary deficit,-0.063
-55,Infrastructure investment,Primary deficit,-0.062
-56,Infrastructure investment,Primary deficit,-0.062
-57,Infrastructure investment,Primary deficit,-0.062
-58,Infrastructure investment,Primary deficit,-0.062
-59,Infrastructure investment,Primary deficit,-0.061
-60,Infrastructure investment,Primary deficit,-0.061
-61,Infrastructure investment,Primary deficit,-0.06
-62,Infrastructure investment,Primary deficit,-0.06
-63,Infrastructure investment,Primary deficit,-0.06
-64,Infrastructure investment,Primary deficit,-0.059
-65,Infrastructure investment,Primary deficit,-0.059
-66,Infrastructure investment,Primary deficit,-0.058
-67,Infrastructure investment,Primary deficit,-0.058
-68,Infrastructure investment,Primary deficit,-0.057
-69,Infrastructure investment,Primary deficit,-0.057
-70,Infrastructure investment,Primary deficit,-0.056
-71,Infrastructure investment,Primary deficit,-0.055
-72,Infrastructure investment,Primary deficit,-0.055
-73,Infrastructure investment,Primary deficit,-0.054
-74,Infrastructure investment,Primary deficit,-0.054
-75,Infrastructure investment,Primary deficit,-0.053
-76,Infrastructure investment,Primary deficit,-0.053
-77,Infrastructure investment,Primary deficit,-0.052
-78,Infrastructure investment,Primary deficit,-0.052
-79,Infrastructure investment,Primary deficit,-0.051
-80,Infrastructure investment,Primary deficit,-0.05
-81,Infrastructure investment,Primary deficit,-0.05
-82,Infrastructure investment,Primary deficit,-0.049
-83,Infrastructure investment,Primary deficit,-0.049
-84,Infrastructure investment,Primary deficit,-0.048
-85,Infrastructure investment,Primary deficit,-0.048
-86,Infrastructure investment,Primary deficit,-0.047
-87,Infrastructure investment,Primary deficit,-0.047
-88,Infrastructure investment,Primary deficit,-0.046
-89,Infrastructure investment,Primary deficit,-0.046
-90,Infrastructure investment,Primary deficit,-0.045
-91,Infrastructure investment,Primary deficit,-0.044
-92,Infrastructure investment,Primary deficit,-0.044
-93,Infrastructure investment,Primary deficit,-0.043
-94,Infrastructure investment,Primary deficit,-0.043
-95,Infrastructure investment,Primary deficit,-0.042
-96,Infrastructure investment,Primary deficit,-0.042
-97,Infrastructure investment,Primary deficit,-0.041
-98,Infrastructure investment,Primary deficit,-0.041
-99,Infrastructure investment,Primary deficit,-0.04
-100,Infrastructure investment,Primary deficit,-0.04
-1,Human capital investment,Primary deficit,0.832
-2,Human capital investment,Primary deficit,0.891
-3,Human capital investment,Primary deficit,0.813
-4,Human capital investment,Primary deficit,0.746
-5,Human capital investment,Primary deficit,0.686
-6,Human capital investment,Primary deficit,0.631
-7,Human capital investment,Primary deficit,0.581
-8,Human capital investment,Primary deficit,0.534
-9,Human capital investment,Primary deficit,0.491
-10,Human capital investment,Primary deficit,0.451
-11,Human capital investment,Primary deficit,0.414
-12,Human capital investment,Primary deficit,0.379
-13,Human capital investment,Primary deficit,0.347
-14,Human capital investment,Primary deficit,0.317
-15,Human capital investment,Primary deficit,0.29
-16,Human capital investment,Primary deficit,0.264
-17,Human capital investment,Primary deficit,0.239
-18,Human capital investment,Primary deficit,0.217
-19,Human capital investment,Primary deficit,0.195
-20,Human capital investment,Primary deficit,0.175
-21,Human capital investment,Primary deficit,0.156
-22,Human capital investment,Primary deficit,0.138
-23,Human capital investment,Primary deficit,0.121
-24,Human capital investment,Primary deficit,0.105
-25,Human capital investment,Primary deficit,0.09
-26,Human capital investment,Primary deficit,0.076
-27,Human capital investment,Primary deficit,0.062
-28,Human capital investment,Primary deficit,0.049
-29,Human capital investment,Primary deficit,0.037
-30,Human capital investment,Primary deficit,0.025
-31,Human capital investment,Primary deficit,0.014
-32,Human capital investment,Primary deficit,0.003
-33,Human capital investment,Primary deficit,-0.007
-34,Human capital investment,Primary deficit,-0.017
-35,Human capital investment,Primary deficit,-0.027
-36,Human capital investment,Primary deficit,-0.036
-37,Human capital investment,Primary deficit,-0.044
-38,Human capital investment,Primary deficit,-0.053
-39,Human capital investment,Primary deficit,-0.061
-40,Human capital investment,Primary deficit,-0.068
-41,Human capital investment,Primary deficit,-0.076
-42,Human capital investment,Primary deficit,-0.083
-43,Human capital investment,Primary deficit,-0.089
-44,Human capital investment,Primary deficit,-0.096
-45,Human capital investment,Primary deficit,-0.102
-46,Human capital investment,Primary deficit,-0.108
-47,Human capital investment,Primary deficit,-0.114
-48,Human capital investment,Primary deficit,-0.12
-49,Human capital investment,Primary deficit,-0.125
-50,Human capital investment,Primary deficit,-0.13
-51,Human capital investment,Primary deficit,-0.135
-52,Human capital investment,Primary deficit,-0.139
-53,Human capital investment,Primary deficit,-0.144
-54,Human capital investment,Primary deficit,-0.148
-55,Human capital investment,Primary deficit,-0.152
-56,Human capital investment,Primary deficit,-0.156
-57,Human capital investment,Primary deficit,-0.16
-58,Human capital investment,Primary deficit,-0.164
-59,Human capital investment,Primary deficit,-0.167
-60,Human capital investment,Primary deficit,-0.17
-61,Human capital investment,Primary deficit,-0.173
-62,Human capital investment,Primary deficit,-0.176
-63,Human capital investment,Primary deficit,-0.179
-64,Human capital investment,Primary deficit,-0.182
-65,Human capital investment,Primary deficit,-0.184
-66,Human capital investment,Primary deficit,-0.187
-67,Human capital investment,Primary deficit,-0.189
-68,Human capital investment,Primary deficit,-0.191
-69,Human capital investment,Primary deficit,-0.193
-70,Human capital investment,Primary deficit,-0.195
-71,Human capital investment,Primary deficit,-0.196
-72,Human capital investment,Primary deficit,-0.198
-73,Human capital investment,Primary deficit,-0.2
-74,Human capital investment,Primary deficit,-0.201
-75,Human capital investment,Primary deficit,-0.202
-76,Human capital investment,Primary deficit,-0.203
-77,Human capital investment,Primary deficit,-0.205
-78,Human capital investment,Primary deficit,-0.206
-79,Human capital investment,Primary deficit,-0.206
-80,Human capital investment,Primary deficit,-0.207
-81,Human capital investment,Primary deficit,-0.208
-82,Human capital investment,Primary deficit,-0.209
-83,Human capital investment,Primary deficit,-0.209
-84,Human capital investment,Primary deficit,-0.209
-85,Human capital investment,Primary deficit,-0.21
-86,Human capital investment,Primary deficit,-0.21
-87,Human capital investment,Primary deficit,-0.21
-88,Human capital investment,Primary deficit,-0.211
-89,Human capital investment,Primary deficit,-0.211
-90,Human capital investment,Primary deficit,-0.211
-91,Human capital investment,Primary deficit,-0.211
-92,Human capital investment,Primary deficit,-0.21
-93,Human capital investment,Primary deficit,-0.21
-94,Human capital investment,Primary deficit,-0.21
-95,Human capital investment,Primary deficit,-0.21
-96,Human capital investment,Primary deficit,-0.209
-97,Human capital investment,Primary deficit,-0.209
-98,Human capital investment,Primary deficit,-0.208
-99,Human capital investment,Primary deficit,-0.208
-100,Human capital investment,Primary deficit,-0.207
-1,R&D investment,Primary deficit,0.822
-2,R&D investment,Primary deficit,0.941
-3,R&D investment,Primary deficit,0.855
-4,R&D investment,Primary deficit,0.777
-5,R&D investment,Primary deficit,0.703
-6,R&D investment,Primary deficit,0.632
-7,R&D investment,Primary deficit,0.565
-8,R&D investment,Primary deficit,0.501
-9,R&D investment,Primary deficit,0.441
-10,R&D investment,Primary deficit,0.385
-11,R&D investment,Primary deficit,0.332
-12,R&D investment,Primary deficit,0.283
-13,R&D investment,Primary deficit,0.238
-14,R&D investment,Primary deficit,0.196
-15,R&D investment,Primary deficit,0.157
-16,R&D investment,Primary deficit,0.121
-17,R&D investment,Primary deficit,0.088
-18,R&D investment,Primary deficit,0.058
-19,R&D investment,Primary deficit,0.03
-20,R&D investment,Primary deficit,0.005
-21,R&D investment,Primary deficit,-0.018
-22,R&D investment,Primary deficit,-0.039
-23,R&D investment,Primary deficit,-0.058
-24,R&D investment,Primary deficit,-0.075
-25,R&D investment,Primary deficit,-0.09
-26,R&D investment,Primary deficit,-0.104
-27,R&D investment,Primary deficit,-0.117
-28,R&D investment,Primary deficit,-0.128
-29,R&D investment,Primary deficit,-0.138
-30,R&D investment,Primary deficit,-0.146
-31,R&D investment,Primary deficit,-0.154
-32,R&D investment,Primary deficit,-0.161
-33,R&D investment,Primary deficit,-0.167
-34,R&D investment,Primary deficit,-0.172
-35,R&D investment,Primary deficit,-0.176
-36,R&D investment,Primary deficit,-0.18
-37,R&D investment,Primary deficit,-0.183
-38,R&D investment,Primary deficit,-0.186
-39,R&D investment,Primary deficit,-0.188
-40,R&D investment,Primary deficit,-0.19
-41,R&D investment,Primary deficit,-0.191
-42,R&D investment,Primary deficit,-0.192
-43,R&D investment,Primary deficit,-0.193
-44,R&D investment,Primary deficit,-0.193
-45,R&D investment,Primary deficit,-0.193
-46,R&D investment,Primary deficit,-0.193
-47,R&D investment,Primary deficit,-0.192
-48,R&D investment,Primary deficit,-0.192
-49,R&D investment,Primary deficit,-0.191
-50,R&D investment,Primary deficit,-0.19
-51,R&D investment,Primary deficit,-0.189
-52,R&D investment,Primary deficit,-0.188
-53,R&D investment,Primary deficit,-0.186
-54,R&D investment,Primary deficit,-0.185
-55,R&D investment,Primary deficit,-0.183
-56,R&D investment,Primary deficit,-0.182
-57,R&D investment,Primary deficit,-0.18
-58,R&D investment,Primary deficit,-0.178
-59,R&D investment,Primary deficit,-0.176
-60,R&D investment,Primary deficit,-0.174
-61,R&D investment,Primary deficit,-0.173
-62,R&D investment,Primary deficit,-0.171
-63,R&D investment,Primary deficit,-0.169
-64,R&D investment,Primary deficit,-0.167
-65,R&D investment,Primary deficit,-0.165
-66,R&D investment,Primary deficit,-0.163
-67,R&D investment,Primary deficit,-0.161
-68,R&D investment,Primary deficit,-0.159
-69,R&D investment,Primary deficit,-0.157
-70,R&D investment,Primary deficit,-0.155
-71,R&D investment,Primary deficit,-0.153
-72,R&D investment,Primary deficit,-0.151
-73,R&D investment,Primary deficit,-0.149
-74,R&D investment,Primary deficit,-0.147
-75,R&D investment,Primary deficit,-0.145
-76,R&D investment,Primary deficit,-0.143
-77,R&D investment,Primary deficit,-0.141
-78,R&D investment,Primary deficit,-0.14
-79,R&D investment,Primary deficit,-0.138
-80,R&D investment,Primary deficit,-0.136
-81,R&D investment,Primary deficit,-0.134
-82,R&D investment,Primary deficit,-0.132
-83,R&D investment,Primary deficit,-0.13
-84,R&D investment,Primary deficit,-0.129
-85,R&D investment,Primary deficit,-0.127
-86,R&D investment,Primary deficit,-0.125
-87,R&D investment,Primary deficit,-0.123
-88,R&D investment,Primary deficit,-0.122
-89,R&D investment,Primary deficit,-0.12
-90,R&D investment,Primary deficit,-0.118
-91,R&D investment,Primary deficit,-0.117
-92,R&D investment,Primary deficit,-0.115
-93,R&D investment,Primary deficit,-0.114
-94,R&D investment,Primary deficit,-0.112
-95,R&D investment,Primary deficit,-0.11
-96,R&D investment,Primary deficit,-0.109
-97,R&D investment,Primary deficit,-0.107
-98,R&D investment,Primary deficit,-0.106
-99,R&D investment,Primary deficit,-0.104
-100,R&D investment,Primary deficit,-0.103
-1,Government consumption,Transfers (T<sub>t</sub>),0.0
-2,Government consumption,Transfers (T<sub>t</sub>),0.0
-3,Government consumption,Transfers (T<sub>t</sub>),0.0
-4,Government consumption,Transfers (T<sub>t</sub>),0.0
-5,Government consumption,Transfers (T<sub>t</sub>),0.0
-6,Government consumption,Transfers (T<sub>t</sub>),0.0
-7,Government consumption,Transfers (T<sub>t</sub>),0.0
-8,Government consumption,Transfers (T<sub>t</sub>),0.0
-9,Government consumption,Transfers (T<sub>t</sub>),0.0
-10,Government consumption,Transfers (T<sub>t</sub>),0.0
-11,Government consumption,Transfers (T<sub>t</sub>),0.0
-12,Government consumption,Transfers (T<sub>t</sub>),0.0
-13,Government consumption,Transfers (T<sub>t</sub>),0.0
-14,Government consumption,Transfers (T<sub>t</sub>),0.0
-15,Government consumption,Transfers (T<sub>t</sub>),0.0
-16,Government consumption,Transfers (T<sub>t</sub>),0.0
-17,Government consumption,Transfers (T<sub>t</sub>),0.0
-18,Government consumption,Transfers (T<sub>t</sub>),0.0
-19,Government consumption,Transfers (T<sub>t</sub>),0.0
-20,Government consumption,Transfers (T<sub>t</sub>),0.0
-21,Government consumption,Transfers (T<sub>t</sub>),0.0
-22,Government consumption,Transfers (T<sub>t</sub>),0.0
-23,Government consumption,Transfers (T<sub>t</sub>),0.0
-24,Government consumption,Transfers (T<sub>t</sub>),0.0
-25,Government consumption,Transfers (T<sub>t</sub>),0.0
-26,Government consumption,Transfers (T<sub>t</sub>),0.0
-27,Government consumption,Transfers (T<sub>t</sub>),0.0
-28,Government consumption,Transfers (T<sub>t</sub>),0.0
-29,Government consumption,Transfers (T<sub>t</sub>),0.0
-30,Government consumption,Transfers (T<sub>t</sub>),0.0
-31,Government consumption,Transfers (T<sub>t</sub>),0.0
-32,Government consumption,Transfers (T<sub>t</sub>),0.0
-33,Government consumption,Transfers (T<sub>t</sub>),0.0
-34,Government consumption,Transfers (T<sub>t</sub>),0.0
-35,Government consumption,Transfers (T<sub>t</sub>),0.0
-36,Government consumption,Transfers (T<sub>t</sub>),0.0
-37,Government consumption,Transfers (T<sub>t</sub>),0.0
-38,Government consumption,Transfers (T<sub>t</sub>),0.0
-39,Government consumption,Transfers (T<sub>t</sub>),0.0
-40,Government consumption,Transfers (T<sub>t</sub>),0.0
-41,Government consumption,Transfers (T<sub>t</sub>),0.0
-42,Government consumption,Transfers (T<sub>t</sub>),0.0
-43,Government consumption,Transfers (T<sub>t</sub>),0.0
-44,Government consumption,Transfers (T<sub>t</sub>),0.0
-45,Government consumption,Transfers (T<sub>t</sub>),0.0
-46,Government consumption,Transfers (T<sub>t</sub>),0.0
-47,Government consumption,Transfers (T<sub>t</sub>),0.0
-48,Government consumption,Transfers (T<sub>t</sub>),0.0
-49,Government consumption,Transfers (T<sub>t</sub>),0.0
-50,Government consumption,Transfers (T<sub>t</sub>),0.0
-51,Government consumption,Transfers (T<sub>t</sub>),0.0
-52,Government consumption,Transfers (T<sub>t</sub>),0.0
-53,Government consumption,Transfers (T<sub>t</sub>),0.0
-54,Government consumption,Transfers (T<sub>t</sub>),0.0
-55,Government consumption,Transfers (T<sub>t</sub>),0.0
-56,Government consumption,Transfers (T<sub>t</sub>),0.0
-57,Government consumption,Transfers (T<sub>t</sub>),0.0
-58,Government consumption,Transfers (T<sub>t</sub>),0.0
-59,Government consumption,Transfers (T<sub>t</sub>),0.0
-60,Government consumption,Transfers (T<sub>t</sub>),0.0
-61,Government consumption,Transfers (T<sub>t</sub>),0.0
-62,Government consumption,Transfers (T<sub>t</sub>),0.0
-63,Government consumption,Transfers (T<sub>t</sub>),0.0
-64,Government consumption,Transfers (T<sub>t</sub>),0.0
-65,Government consumption,Transfers (T<sub>t</sub>),0.0
-66,Government consumption,Transfers (T<sub>t</sub>),0.0
-67,Government consumption,Transfers (T<sub>t</sub>),0.0
-68,Government consumption,Transfers (T<sub>t</sub>),0.0
-69,Government consumption,Transfers (T<sub>t</sub>),0.0
-70,Government consumption,Transfers (T<sub>t</sub>),0.0
-71,Government consumption,Transfers (T<sub>t</sub>),0.0
-72,Government consumption,Transfers (T<sub>t</sub>),0.0
-73,Government consumption,Transfers (T<sub>t</sub>),0.0
-74,Government consumption,Transfers (T<sub>t</sub>),0.0
-75,Government consumption,Transfers (T<sub>t</sub>),0.0
-76,Government consumption,Transfers (T<sub>t</sub>),0.0
-77,Government consumption,Transfers (T<sub>t</sub>),0.0
-78,Government consumption,Transfers (T<sub>t</sub>),0.0
-79,Government consumption,Transfers (T<sub>t</sub>),0.0
-80,Government consumption,Transfers (T<sub>t</sub>),0.0
-81,Government consumption,Transfers (T<sub>t</sub>),0.0
-82,Government consumption,Transfers (T<sub>t</sub>),0.0
-83,Government consumption,Transfers (T<sub>t</sub>),0.0
-84,Government consumption,Transfers (T<sub>t</sub>),0.0
-85,Government consumption,Transfers (T<sub>t</sub>),0.0
-86,Government consumption,Transfers (T<sub>t</sub>),0.0
-87,Government consumption,Transfers (T<sub>t</sub>),0.0
-88,Government consumption,Transfers (T<sub>t</sub>),0.0
-89,Government consumption,Transfers (T<sub>t</sub>),0.0
-90,Government consumption,Transfers (T<sub>t</sub>),0.0
-91,Government consumption,Transfers (T<sub>t</sub>),0.0
-92,Government consumption,Transfers (T<sub>t</sub>),0.0
-93,Government consumption,Transfers (T<sub>t</sub>),0.0
-94,Government consumption,Transfers (T<sub>t</sub>),0.0
-95,Government consumption,Transfers (T<sub>t</sub>),0.0
-96,Government consumption,Transfers (T<sub>t</sub>),0.0
-97,Government consumption,Transfers (T<sub>t</sub>),0.0
-98,Government consumption,Transfers (T<sub>t</sub>),0.0
-99,Government consumption,Transfers (T<sub>t</sub>),0.0
-100,Government consumption,Transfers (T<sub>t</sub>),0.0
-1,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-2,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-3,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-4,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-5,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-6,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-7,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-8,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-9,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-10,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-11,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-12,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-13,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-14,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-15,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-16,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-17,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-18,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-19,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-20,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-21,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-22,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-23,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-24,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-25,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-26,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-27,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-28,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-29,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-30,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-31,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-32,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-33,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-34,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-35,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-36,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-37,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-38,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-39,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-40,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-41,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-42,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-43,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-44,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-45,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-46,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-47,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-48,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-49,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-50,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-51,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-52,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-53,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-54,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-55,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-56,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-57,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-58,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-59,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-60,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-61,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-62,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-63,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-64,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-65,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-66,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-67,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-68,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-69,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-70,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-71,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-72,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-73,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-74,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-75,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-76,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-77,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-78,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-79,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-80,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-81,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-82,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-83,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-84,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-85,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-86,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-87,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-88,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-89,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-90,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-91,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-92,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-93,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-94,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-95,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-96,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-97,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-98,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-99,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-100,Infrastructure investment,Transfers (T<sub>t</sub>),0.0
-1,Human capital investment,Transfers (T<sub>t</sub>),0.0
-2,Human capital investment,Transfers (T<sub>t</sub>),0.0
-3,Human capital investment,Transfers (T<sub>t</sub>),0.0
-4,Human capital investment,Transfers (T<sub>t</sub>),0.0
-5,Human capital investment,Transfers (T<sub>t</sub>),0.0
-6,Human capital investment,Transfers (T<sub>t</sub>),0.0
-7,Human capital investment,Transfers (T<sub>t</sub>),0.0
-8,Human capital investment,Transfers (T<sub>t</sub>),0.0
-9,Human capital investment,Transfers (T<sub>t</sub>),0.0
-10,Human capital investment,Transfers (T<sub>t</sub>),0.0
-11,Human capital investment,Transfers (T<sub>t</sub>),0.0
-12,Human capital investment,Transfers (T<sub>t</sub>),0.0
-13,Human capital investment,Transfers (T<sub>t</sub>),0.0
-14,Human capital investment,Transfers (T<sub>t</sub>),0.0
-15,Human capital investment,Transfers (T<sub>t</sub>),0.0
-16,Human capital investment,Transfers (T<sub>t</sub>),0.0
-17,Human capital investment,Transfers (T<sub>t</sub>),0.0
-18,Human capital investment,Transfers (T<sub>t</sub>),0.0
-19,Human capital investment,Transfers (T<sub>t</sub>),0.0
-20,Human capital investment,Transfers (T<sub>t</sub>),0.0
-21,Human capital investment,Transfers (T<sub>t</sub>),0.0
-22,Human capital investment,Transfers (T<sub>t</sub>),0.0
-23,Human capital investment,Transfers (T<sub>t</sub>),0.0
-24,Human capital investment,Transfers (T<sub>t</sub>),0.0
-25,Human capital investment,Transfers (T<sub>t</sub>),0.0
-26,Human capital investment,Transfers (T<sub>t</sub>),0.0
-27,Human capital investment,Transfers (T<sub>t</sub>),0.0
-28,Human capital investment,Transfers (T<sub>t</sub>),0.0
-29,Human capital investment,Transfers (T<sub>t</sub>),0.0
-30,Human capital investment,Transfers (T<sub>t</sub>),0.0
-31,Human capital investment,Transfers (T<sub>t</sub>),0.0
-32,Human capital investment,Transfers (T<sub>t</sub>),0.0
-33,Human capital investment,Transfers (T<sub>t</sub>),0.0
-34,Human capital investment,Transfers (T<sub>t</sub>),0.0
-35,Human capital investment,Transfers (T<sub>t</sub>),0.0
-36,Human capital investment,Transfers (T<sub>t</sub>),0.0
-37,Human capital investment,Transfers (T<sub>t</sub>),0.0
-38,Human capital investment,Transfers (T<sub>t</sub>),0.0
-39,Human capital investment,Transfers (T<sub>t</sub>),0.0
-40,Human capital investment,Transfers (T<sub>t</sub>),0.0
-41,Human capital investment,Transfers (T<sub>t</sub>),0.0
-42,Human capital investment,Transfers (T<sub>t</sub>),0.0
-43,Human capital investment,Transfers (T<sub>t</sub>),0.0
-44,Human capital investment,Transfers (T<sub>t</sub>),0.0
-45,Human capital investment,Transfers (T<sub>t</sub>),0.0
-46,Human capital investment,Transfers (T<sub>t</sub>),0.0
-47,Human capital investment,Transfers (T<sub>t</sub>),0.0
-48,Human capital investment,Transfers (T<sub>t</sub>),0.0
-49,Human capital investment,Transfers (T<sub>t</sub>),0.0
-50,Human capital investment,Transfers (T<sub>t</sub>),0.0
-51,Human capital investment,Transfers (T<sub>t</sub>),0.0
-52,Human capital investment,Transfers (T<sub>t</sub>),0.0
-53,Human capital investment,Transfers (T<sub>t</sub>),0.0
-54,Human capital investment,Transfers (T<sub>t</sub>),0.0
-55,Human capital investment,Transfers (T<sub>t</sub>),0.0
-56,Human capital investment,Transfers (T<sub>t</sub>),0.0
-57,Human capital investment,Transfers (T<sub>t</sub>),0.0
-58,Human capital investment,Transfers (T<sub>t</sub>),0.0
-59,Human capital investment,Transfers (T<sub>t</sub>),0.0
-60,Human capital investment,Transfers (T<sub>t</sub>),0.0
-61,Human capital investment,Transfers (T<sub>t</sub>),0.0
-62,Human capital investment,Transfers (T<sub>t</sub>),0.0
-63,Human capital investment,Transfers (T<sub>t</sub>),0.0
-64,Human capital investment,Transfers (T<sub>t</sub>),0.0
-65,Human capital investment,Transfers (T<sub>t</sub>),0.0
-66,Human capital investment,Transfers (T<sub>t</sub>),0.0
-67,Human capital investment,Transfers (T<sub>t</sub>),0.0
-68,Human capital investment,Transfers (T<sub>t</sub>),0.0
-69,Human capital investment,Transfers (T<sub>t</sub>),0.0
-70,Human capital investment,Transfers (T<sub>t</sub>),0.0
-71,Human capital investment,Transfers (T<sub>t</sub>),0.0
-72,Human capital investment,Transfers (T<sub>t</sub>),0.0
-73,Human capital investment,Transfers (T<sub>t</sub>),0.0
-74,Human capital investment,Transfers (T<sub>t</sub>),0.0
-75,Human capital investment,Transfers (T<sub>t</sub>),0.0
-76,Human capital investment,Transfers (T<sub>t</sub>),0.0
-77,Human capital investment,Transfers (T<sub>t</sub>),0.0
-78,Human capital investment,Transfers (T<sub>t</sub>),0.0
-79,Human capital investment,Transfers (T<sub>t</sub>),0.0
-80,Human capital investment,Transfers (T<sub>t</sub>),0.0
-81,Human capital investment,Transfers (T<sub>t</sub>),0.0
-82,Human capital investment,Transfers (T<sub>t</sub>),0.0
-83,Human capital investment,Transfers (T<sub>t</sub>),0.0
-84,Human capital investment,Transfers (T<sub>t</sub>),0.0
-85,Human capital investment,Transfers (T<sub>t</sub>),0.0
-86,Human capital investment,Transfers (T<sub>t</sub>),0.0
-87,Human capital investment,Transfers (T<sub>t</sub>),0.0
-88,Human capital investment,Transfers (T<sub>t</sub>),0.0
-89,Human capital investment,Transfers (T<sub>t</sub>),0.0
-90,Human capital investment,Transfers (T<sub>t</sub>),0.0
-91,Human capital investment,Transfers (T<sub>t</sub>),0.0
-92,Human capital investment,Transfers (T<sub>t</sub>),0.0
-93,Human capital investment,Transfers (T<sub>t</sub>),0.0
-94,Human capital investment,Transfers (T<sub>t</sub>),0.0
-95,Human capital investment,Transfers (T<sub>t</sub>),0.0
-96,Human capital investment,Transfers (T<sub>t</sub>),0.0
-97,Human capital investment,Transfers (T<sub>t</sub>),0.0
-98,Human capital investment,Transfers (T<sub>t</sub>),0.0
-99,Human capital investment,Transfers (T<sub>t</sub>),0.0
-100,Human capital investment,Transfers (T<sub>t</sub>),0.0
-1,R&D investment,Transfers (T<sub>t</sub>),0.0
-2,R&D investment,Transfers (T<sub>t</sub>),0.0
-3,R&D investment,Transfers (T<sub>t</sub>),0.0
-4,R&D investment,Transfers (T<sub>t</sub>),0.0
-5,R&D investment,Transfers (T<sub>t</sub>),0.0
-6,R&D investment,Transfers (T<sub>t</sub>),0.0
-7,R&D investment,Transfers (T<sub>t</sub>),0.0
-8,R&D investment,Transfers (T<sub>t</sub>),0.0
-9,R&D investment,Transfers (T<sub>t</sub>),0.0
-10,R&D investment,Transfers (T<sub>t</sub>),0.0
-11,R&D investment,Transfers (T<sub>t</sub>),0.0
-12,R&D investment,Transfers (T<sub>t</sub>),0.0
-13,R&D investment,Transfers (T<sub>t</sub>),0.0
-14,R&D investment,Transfers (T<sub>t</sub>),0.0
-15,R&D investment,Transfers (T<sub>t</sub>),0.0
-16,R&D investment,Transfers (T<sub>t</sub>),0.0
-17,R&D investment,Transfers (T<sub>t</sub>),0.0
-18,R&D investment,Transfers (T<sub>t</sub>),0.0
-19,R&D investment,Transfers (T<sub>t</sub>),0.0
-20,R&D investment,Transfers (T<sub>t</sub>),0.0
-21,R&D investment,Transfers (T<sub>t</sub>),0.0
-22,R&D investment,Transfers (T<sub>t</sub>),0.0
-23,R&D investment,Transfers (T<sub>t</sub>),0.0
-24,R&D investment,Transfers (T<sub>t</sub>),0.0
-25,R&D investment,Transfers (T<sub>t</sub>),0.0
-26,R&D investment,Transfers (T<sub>t</sub>),0.0
-27,R&D investment,Transfers (T<sub>t</sub>),0.0
-28,R&D investment,Transfers (T<sub>t</sub>),0.0
-29,R&D investment,Transfers (T<sub>t</sub>),0.0
-30,R&D investment,Transfers (T<sub>t</sub>),0.0
-31,R&D investment,Transfers (T<sub>t</sub>),0.0
-32,R&D investment,Transfers (T<sub>t</sub>),0.0
-33,R&D investment,Transfers (T<sub>t</sub>),0.0
-34,R&D investment,Transfers (T<sub>t</sub>),0.0
-35,R&D investment,Transfers (T<sub>t</sub>),0.0
-36,R&D investment,Transfers (T<sub>t</sub>),0.0
-37,R&D investment,Transfers (T<sub>t</sub>),0.0
-38,R&D investment,Transfers (T<sub>t</sub>),0.0
-39,R&D investment,Transfers (T<sub>t</sub>),0.0
-40,R&D investment,Transfers (T<sub>t</sub>),0.0
-41,R&D investment,Transfers (T<sub>t</sub>),0.0
-42,R&D investment,Transfers (T<sub>t</sub>),0.0
-43,R&D investment,Transfers (T<sub>t</sub>),0.0
-44,R&D investment,Transfers (T<sub>t</sub>),0.0
-45,R&D investment,Transfers (T<sub>t</sub>),0.0
-46,R&D investment,Transfers (T<sub>t</sub>),0.0
-47,R&D investment,Transfers (T<sub>t</sub>),0.0
-48,R&D investment,Transfers (T<sub>t</sub>),0.0
-49,R&D investment,Transfers (T<sub>t</sub>),0.0
-50,R&D investment,Transfers (T<sub>t</sub>),0.0
-51,R&D investment,Transfers (T<sub>t</sub>),0.0
-52,R&D investment,Transfers (T<sub>t</sub>),0.0
-53,R&D investment,Transfers (T<sub>t</sub>),0.0
-54,R&D investment,Transfers (T<sub>t</sub>),0.0
-55,R&D investment,Transfers (T<sub>t</sub>),0.0
-56,R&D investment,Transfers (T<sub>t</sub>),0.0
-57,R&D investment,Transfers (T<sub>t</sub>),0.0
-58,R&D investment,Transfers (T<sub>t</sub>),0.0
-59,R&D investment,Transfers (T<sub>t</sub>),0.0
-60,R&D investment,Transfers (T<sub>t</sub>),0.0
-61,R&D investment,Transfers (T<sub>t</sub>),0.0
-62,R&D investment,Transfers (T<sub>t</sub>),0.0
-63,R&D investment,Transfers (T<sub>t</sub>),0.0
-64,R&D investment,Transfers (T<sub>t</sub>),0.0
-65,R&D investment,Transfers (T<sub>t</sub>),0.0
-66,R&D investment,Transfers (T<sub>t</sub>),0.0
-67,R&D investment,Transfers (T<sub>t</sub>),0.0
-68,R&D investment,Transfers (T<sub>t</sub>),0.0
-69,R&D investment,Transfers (T<sub>t</sub>),0.0
-70,R&D investment,Transfers (T<sub>t</sub>),0.0
-71,R&D investment,Transfers (T<sub>t</sub>),0.0
-72,R&D investment,Transfers (T<sub>t</sub>),0.0
-73,R&D investment,Transfers (T<sub>t</sub>),0.0
-74,R&D investment,Transfers (T<sub>t</sub>),0.0
-75,R&D investment,Transfers (T<sub>t</sub>),0.0
-76,R&D investment,Transfers (T<sub>t</sub>),0.0
-77,R&D investment,Transfers (T<sub>t</sub>),0.0
-78,R&D investment,Transfers (T<sub>t</sub>),0.0
-79,R&D investment,Transfers (T<sub>t</sub>),0.0
-80,R&D investment,Transfers (T<sub>t</sub>),0.0
-81,R&D investment,Transfers (T<sub>t</sub>),0.0
-82,R&D investment,Transfers (T<sub>t</sub>),0.0
-83,R&D investment,Transfers (T<sub>t</sub>),0.0
-84,R&D investment,Transfers (T<sub>t</sub>),0.0
-85,R&D investment,Transfers (T<sub>t</sub>),0.0
-86,R&D investment,Transfers (T<sub>t</sub>),0.0
-87,R&D investment,Transfers (T<sub>t</sub>),0.0
-88,R&D investment,Transfers (T<sub>t</sub>),0.0
-89,R&D investment,Transfers (T<sub>t</sub>),0.0
-90,R&D investment,Transfers (T<sub>t</sub>),0.0
-91,R&D investment,Transfers (T<sub>t</sub>),0.0
-92,R&D investment,Transfers (T<sub>t</sub>),0.0
-93,R&D investment,Transfers (T<sub>t</sub>),0.0
-94,R&D investment,Transfers (T<sub>t</sub>),0.0
-95,R&D investment,Transfers (T<sub>t</sub>),0.0
-96,R&D investment,Transfers (T<sub>t</sub>),0.0
-97,R&D investment,Transfers (T<sub>t</sub>),0.0
-98,R&D investment,Transfers (T<sub>t</sub>),0.0
-99,R&D investment,Transfers (T<sub>t</sub>),0.0
-100,R&D investment,Transfers (T<sub>t</sub>),0.0
+1,Government consumption,Primary deficit-to-GDP ratio,0.904
+2,Government consumption,Primary deficit-to-GDP ratio,0.916
+3,Government consumption,Primary deficit-to-GDP ratio,0.827
+4,Government consumption,Primary deficit-to-GDP ratio,0.749
+5,Government consumption,Primary deficit-to-GDP ratio,0.68
+6,Government consumption,Primary deficit-to-GDP ratio,0.617
+7,Government consumption,Primary deficit-to-GDP ratio,0.561
+8,Government consumption,Primary deficit-to-GDP ratio,0.511
+9,Government consumption,Primary deficit-to-GDP ratio,0.466
+10,Government consumption,Primary deficit-to-GDP ratio,0.425
+11,Government consumption,Primary deficit-to-GDP ratio,0.388
+12,Government consumption,Primary deficit-to-GDP ratio,0.354
+13,Government consumption,Primary deficit-to-GDP ratio,0.324
+14,Government consumption,Primary deficit-to-GDP ratio,0.297
+15,Government consumption,Primary deficit-to-GDP ratio,0.272
+16,Government consumption,Primary deficit-to-GDP ratio,0.25
+17,Government consumption,Primary deficit-to-GDP ratio,0.23
+18,Government consumption,Primary deficit-to-GDP ratio,0.212
+19,Government consumption,Primary deficit-to-GDP ratio,0.196
+20,Government consumption,Primary deficit-to-GDP ratio,0.181
+21,Government consumption,Primary deficit-to-GDP ratio,0.168
+22,Government consumption,Primary deficit-to-GDP ratio,0.156
+23,Government consumption,Primary deficit-to-GDP ratio,0.145
+24,Government consumption,Primary deficit-to-GDP ratio,0.135
+25,Government consumption,Primary deficit-to-GDP ratio,0.126
+26,Government consumption,Primary deficit-to-GDP ratio,0.118
+27,Government consumption,Primary deficit-to-GDP ratio,0.11
+28,Government consumption,Primary deficit-to-GDP ratio,0.103
+29,Government consumption,Primary deficit-to-GDP ratio,0.097
+30,Government consumption,Primary deficit-to-GDP ratio,0.092
+31,Government consumption,Primary deficit-to-GDP ratio,0.087
+32,Government consumption,Primary deficit-to-GDP ratio,0.082
+33,Government consumption,Primary deficit-to-GDP ratio,0.078
+34,Government consumption,Primary deficit-to-GDP ratio,0.074
+35,Government consumption,Primary deficit-to-GDP ratio,0.071
+36,Government consumption,Primary deficit-to-GDP ratio,0.068
+37,Government consumption,Primary deficit-to-GDP ratio,0.065
+38,Government consumption,Primary deficit-to-GDP ratio,0.062
+39,Government consumption,Primary deficit-to-GDP ratio,0.06
+40,Government consumption,Primary deficit-to-GDP ratio,0.057
+41,Government consumption,Primary deficit-to-GDP ratio,0.055
+42,Government consumption,Primary deficit-to-GDP ratio,0.053
+43,Government consumption,Primary deficit-to-GDP ratio,0.052
+44,Government consumption,Primary deficit-to-GDP ratio,0.05
+45,Government consumption,Primary deficit-to-GDP ratio,0.048
+46,Government consumption,Primary deficit-to-GDP ratio,0.047
+47,Government consumption,Primary deficit-to-GDP ratio,0.046
+48,Government consumption,Primary deficit-to-GDP ratio,0.044
+49,Government consumption,Primary deficit-to-GDP ratio,0.043
+50,Government consumption,Primary deficit-to-GDP ratio,0.042
+51,Government consumption,Primary deficit-to-GDP ratio,0.041
+52,Government consumption,Primary deficit-to-GDP ratio,0.04
+53,Government consumption,Primary deficit-to-GDP ratio,0.039
+54,Government consumption,Primary deficit-to-GDP ratio,0.039
+55,Government consumption,Primary deficit-to-GDP ratio,0.038
+56,Government consumption,Primary deficit-to-GDP ratio,0.037
+57,Government consumption,Primary deficit-to-GDP ratio,0.036
+58,Government consumption,Primary deficit-to-GDP ratio,0.036
+59,Government consumption,Primary deficit-to-GDP ratio,0.035
+60,Government consumption,Primary deficit-to-GDP ratio,0.034
+61,Government consumption,Primary deficit-to-GDP ratio,0.034
+62,Government consumption,Primary deficit-to-GDP ratio,0.033
+63,Government consumption,Primary deficit-to-GDP ratio,0.033
+64,Government consumption,Primary deficit-to-GDP ratio,0.032
+65,Government consumption,Primary deficit-to-GDP ratio,0.032
+66,Government consumption,Primary deficit-to-GDP ratio,0.031
+67,Government consumption,Primary deficit-to-GDP ratio,0.031
+68,Government consumption,Primary deficit-to-GDP ratio,0.03
+69,Government consumption,Primary deficit-to-GDP ratio,0.03
+70,Government consumption,Primary deficit-to-GDP ratio,0.029
+71,Government consumption,Primary deficit-to-GDP ratio,0.029
+72,Government consumption,Primary deficit-to-GDP ratio,0.029
+73,Government consumption,Primary deficit-to-GDP ratio,0.028
+74,Government consumption,Primary deficit-to-GDP ratio,0.028
+75,Government consumption,Primary deficit-to-GDP ratio,0.027
+76,Government consumption,Primary deficit-to-GDP ratio,0.027
+77,Government consumption,Primary deficit-to-GDP ratio,0.027
+78,Government consumption,Primary deficit-to-GDP ratio,0.026
+79,Government consumption,Primary deficit-to-GDP ratio,0.026
+80,Government consumption,Primary deficit-to-GDP ratio,0.026
+81,Government consumption,Primary deficit-to-GDP ratio,0.025
+82,Government consumption,Primary deficit-to-GDP ratio,0.025
+83,Government consumption,Primary deficit-to-GDP ratio,0.025
+84,Government consumption,Primary deficit-to-GDP ratio,0.024
+85,Government consumption,Primary deficit-to-GDP ratio,0.024
+86,Government consumption,Primary deficit-to-GDP ratio,0.024
+87,Government consumption,Primary deficit-to-GDP ratio,0.023
+88,Government consumption,Primary deficit-to-GDP ratio,0.023
+89,Government consumption,Primary deficit-to-GDP ratio,0.023
+90,Government consumption,Primary deficit-to-GDP ratio,0.022
+91,Government consumption,Primary deficit-to-GDP ratio,0.022
+92,Government consumption,Primary deficit-to-GDP ratio,0.022
+93,Government consumption,Primary deficit-to-GDP ratio,0.022
+94,Government consumption,Primary deficit-to-GDP ratio,0.021
+95,Government consumption,Primary deficit-to-GDP ratio,0.021
+96,Government consumption,Primary deficit-to-GDP ratio,0.021
+97,Government consumption,Primary deficit-to-GDP ratio,0.021
+98,Government consumption,Primary deficit-to-GDP ratio,0.02
+99,Government consumption,Primary deficit-to-GDP ratio,0.02
+100,Government consumption,Primary deficit-to-GDP ratio,0.02
+1,Infrastructure investment,Primary deficit-to-GDP ratio,0.838
+2,Infrastructure investment,Primary deficit-to-GDP ratio,0.905
+3,Infrastructure investment,Primary deficit-to-GDP ratio,0.802
+4,Infrastructure investment,Primary deficit-to-GDP ratio,0.713
+5,Infrastructure investment,Primary deficit-to-GDP ratio,0.634
+6,Infrastructure investment,Primary deficit-to-GDP ratio,0.563
+7,Infrastructure investment,Primary deficit-to-GDP ratio,0.499
+8,Infrastructure investment,Primary deficit-to-GDP ratio,0.441
+9,Infrastructure investment,Primary deficit-to-GDP ratio,0.389
+10,Infrastructure investment,Primary deficit-to-GDP ratio,0.343
+11,Infrastructure investment,Primary deficit-to-GDP ratio,0.301
+12,Infrastructure investment,Primary deficit-to-GDP ratio,0.263
+13,Infrastructure investment,Primary deficit-to-GDP ratio,0.229
+14,Infrastructure investment,Primary deficit-to-GDP ratio,0.198
+15,Infrastructure investment,Primary deficit-to-GDP ratio,0.17
+16,Infrastructure investment,Primary deficit-to-GDP ratio,0.145
+17,Infrastructure investment,Primary deficit-to-GDP ratio,0.123
+18,Infrastructure investment,Primary deficit-to-GDP ratio,0.103
+19,Infrastructure investment,Primary deficit-to-GDP ratio,0.084
+20,Infrastructure investment,Primary deficit-to-GDP ratio,0.068
+21,Infrastructure investment,Primary deficit-to-GDP ratio,0.053
+22,Infrastructure investment,Primary deficit-to-GDP ratio,0.04
+23,Infrastructure investment,Primary deficit-to-GDP ratio,0.028
+24,Infrastructure investment,Primary deficit-to-GDP ratio,0.018
+25,Infrastructure investment,Primary deficit-to-GDP ratio,0.008
+26,Infrastructure investment,Primary deficit-to-GDP ratio,-0.0
+27,Infrastructure investment,Primary deficit-to-GDP ratio,-0.008
+28,Infrastructure investment,Primary deficit-to-GDP ratio,-0.015
+29,Infrastructure investment,Primary deficit-to-GDP ratio,-0.021
+30,Infrastructure investment,Primary deficit-to-GDP ratio,-0.027
+31,Infrastructure investment,Primary deficit-to-GDP ratio,-0.031
+32,Infrastructure investment,Primary deficit-to-GDP ratio,-0.036
+33,Infrastructure investment,Primary deficit-to-GDP ratio,-0.04
+34,Infrastructure investment,Primary deficit-to-GDP ratio,-0.043
+35,Infrastructure investment,Primary deficit-to-GDP ratio,-0.046
+36,Infrastructure investment,Primary deficit-to-GDP ratio,-0.049
+37,Infrastructure investment,Primary deficit-to-GDP ratio,-0.051
+38,Infrastructure investment,Primary deficit-to-GDP ratio,-0.053
+39,Infrastructure investment,Primary deficit-to-GDP ratio,-0.055
+40,Infrastructure investment,Primary deficit-to-GDP ratio,-0.056
+41,Infrastructure investment,Primary deficit-to-GDP ratio,-0.058
+42,Infrastructure investment,Primary deficit-to-GDP ratio,-0.059
+43,Infrastructure investment,Primary deficit-to-GDP ratio,-0.06
+44,Infrastructure investment,Primary deficit-to-GDP ratio,-0.061
+45,Infrastructure investment,Primary deficit-to-GDP ratio,-0.061
+46,Infrastructure investment,Primary deficit-to-GDP ratio,-0.062
+47,Infrastructure investment,Primary deficit-to-GDP ratio,-0.062
+48,Infrastructure investment,Primary deficit-to-GDP ratio,-0.063
+49,Infrastructure investment,Primary deficit-to-GDP ratio,-0.063
+50,Infrastructure investment,Primary deficit-to-GDP ratio,-0.063
+51,Infrastructure investment,Primary deficit-to-GDP ratio,-0.063
+52,Infrastructure investment,Primary deficit-to-GDP ratio,-0.063
+53,Infrastructure investment,Primary deficit-to-GDP ratio,-0.063
+54,Infrastructure investment,Primary deficit-to-GDP ratio,-0.063
+55,Infrastructure investment,Primary deficit-to-GDP ratio,-0.062
+56,Infrastructure investment,Primary deficit-to-GDP ratio,-0.062
+57,Infrastructure investment,Primary deficit-to-GDP ratio,-0.062
+58,Infrastructure investment,Primary deficit-to-GDP ratio,-0.062
+59,Infrastructure investment,Primary deficit-to-GDP ratio,-0.061
+60,Infrastructure investment,Primary deficit-to-GDP ratio,-0.061
+61,Infrastructure investment,Primary deficit-to-GDP ratio,-0.06
+62,Infrastructure investment,Primary deficit-to-GDP ratio,-0.06
+63,Infrastructure investment,Primary deficit-to-GDP ratio,-0.06
+64,Infrastructure investment,Primary deficit-to-GDP ratio,-0.059
+65,Infrastructure investment,Primary deficit-to-GDP ratio,-0.059
+66,Infrastructure investment,Primary deficit-to-GDP ratio,-0.058
+67,Infrastructure investment,Primary deficit-to-GDP ratio,-0.058
+68,Infrastructure investment,Primary deficit-to-GDP ratio,-0.057
+69,Infrastructure investment,Primary deficit-to-GDP ratio,-0.057
+70,Infrastructure investment,Primary deficit-to-GDP ratio,-0.056
+71,Infrastructure investment,Primary deficit-to-GDP ratio,-0.055
+72,Infrastructure investment,Primary deficit-to-GDP ratio,-0.055
+73,Infrastructure investment,Primary deficit-to-GDP ratio,-0.054
+74,Infrastructure investment,Primary deficit-to-GDP ratio,-0.054
+75,Infrastructure investment,Primary deficit-to-GDP ratio,-0.053
+76,Infrastructure investment,Primary deficit-to-GDP ratio,-0.053
+77,Infrastructure investment,Primary deficit-to-GDP ratio,-0.052
+78,Infrastructure investment,Primary deficit-to-GDP ratio,-0.052
+79,Infrastructure investment,Primary deficit-to-GDP ratio,-0.051
+80,Infrastructure investment,Primary deficit-to-GDP ratio,-0.05
+81,Infrastructure investment,Primary deficit-to-GDP ratio,-0.05
+82,Infrastructure investment,Primary deficit-to-GDP ratio,-0.049
+83,Infrastructure investment,Primary deficit-to-GDP ratio,-0.049
+84,Infrastructure investment,Primary deficit-to-GDP ratio,-0.048
+85,Infrastructure investment,Primary deficit-to-GDP ratio,-0.048
+86,Infrastructure investment,Primary deficit-to-GDP ratio,-0.047
+87,Infrastructure investment,Primary deficit-to-GDP ratio,-0.047
+88,Infrastructure investment,Primary deficit-to-GDP ratio,-0.046
+89,Infrastructure investment,Primary deficit-to-GDP ratio,-0.046
+90,Infrastructure investment,Primary deficit-to-GDP ratio,-0.045
+91,Infrastructure investment,Primary deficit-to-GDP ratio,-0.044
+92,Infrastructure investment,Primary deficit-to-GDP ratio,-0.044
+93,Infrastructure investment,Primary deficit-to-GDP ratio,-0.043
+94,Infrastructure investment,Primary deficit-to-GDP ratio,-0.043
+95,Infrastructure investment,Primary deficit-to-GDP ratio,-0.042
+96,Infrastructure investment,Primary deficit-to-GDP ratio,-0.042
+97,Infrastructure investment,Primary deficit-to-GDP ratio,-0.041
+98,Infrastructure investment,Primary deficit-to-GDP ratio,-0.041
+99,Infrastructure investment,Primary deficit-to-GDP ratio,-0.04
+100,Infrastructure investment,Primary deficit-to-GDP ratio,-0.04
+1,Human capital investment,Primary deficit-to-GDP ratio,0.832
+2,Human capital investment,Primary deficit-to-GDP ratio,0.891
+3,Human capital investment,Primary deficit-to-GDP ratio,0.813
+4,Human capital investment,Primary deficit-to-GDP ratio,0.746
+5,Human capital investment,Primary deficit-to-GDP ratio,0.686
+6,Human capital investment,Primary deficit-to-GDP ratio,0.631
+7,Human capital investment,Primary deficit-to-GDP ratio,0.581
+8,Human capital investment,Primary deficit-to-GDP ratio,0.534
+9,Human capital investment,Primary deficit-to-GDP ratio,0.491
+10,Human capital investment,Primary deficit-to-GDP ratio,0.451
+11,Human capital investment,Primary deficit-to-GDP ratio,0.414
+12,Human capital investment,Primary deficit-to-GDP ratio,0.379
+13,Human capital investment,Primary deficit-to-GDP ratio,0.347
+14,Human capital investment,Primary deficit-to-GDP ratio,0.317
+15,Human capital investment,Primary deficit-to-GDP ratio,0.29
+16,Human capital investment,Primary deficit-to-GDP ratio,0.264
+17,Human capital investment,Primary deficit-to-GDP ratio,0.239
+18,Human capital investment,Primary deficit-to-GDP ratio,0.217
+19,Human capital investment,Primary deficit-to-GDP ratio,0.195
+20,Human capital investment,Primary deficit-to-GDP ratio,0.175
+21,Human capital investment,Primary deficit-to-GDP ratio,0.156
+22,Human capital investment,Primary deficit-to-GDP ratio,0.138
+23,Human capital investment,Primary deficit-to-GDP ratio,0.121
+24,Human capital investment,Primary deficit-to-GDP ratio,0.105
+25,Human capital investment,Primary deficit-to-GDP ratio,0.09
+26,Human capital investment,Primary deficit-to-GDP ratio,0.076
+27,Human capital investment,Primary deficit-to-GDP ratio,0.062
+28,Human capital investment,Primary deficit-to-GDP ratio,0.049
+29,Human capital investment,Primary deficit-to-GDP ratio,0.037
+30,Human capital investment,Primary deficit-to-GDP ratio,0.025
+31,Human capital investment,Primary deficit-to-GDP ratio,0.014
+32,Human capital investment,Primary deficit-to-GDP ratio,0.003
+33,Human capital investment,Primary deficit-to-GDP ratio,-0.007
+34,Human capital investment,Primary deficit-to-GDP ratio,-0.017
+35,Human capital investment,Primary deficit-to-GDP ratio,-0.027
+36,Human capital investment,Primary deficit-to-GDP ratio,-0.036
+37,Human capital investment,Primary deficit-to-GDP ratio,-0.044
+38,Human capital investment,Primary deficit-to-GDP ratio,-0.053
+39,Human capital investment,Primary deficit-to-GDP ratio,-0.061
+40,Human capital investment,Primary deficit-to-GDP ratio,-0.068
+41,Human capital investment,Primary deficit-to-GDP ratio,-0.076
+42,Human capital investment,Primary deficit-to-GDP ratio,-0.083
+43,Human capital investment,Primary deficit-to-GDP ratio,-0.089
+44,Human capital investment,Primary deficit-to-GDP ratio,-0.096
+45,Human capital investment,Primary deficit-to-GDP ratio,-0.102
+46,Human capital investment,Primary deficit-to-GDP ratio,-0.108
+47,Human capital investment,Primary deficit-to-GDP ratio,-0.114
+48,Human capital investment,Primary deficit-to-GDP ratio,-0.12
+49,Human capital investment,Primary deficit-to-GDP ratio,-0.125
+50,Human capital investment,Primary deficit-to-GDP ratio,-0.13
+51,Human capital investment,Primary deficit-to-GDP ratio,-0.135
+52,Human capital investment,Primary deficit-to-GDP ratio,-0.139
+53,Human capital investment,Primary deficit-to-GDP ratio,-0.144
+54,Human capital investment,Primary deficit-to-GDP ratio,-0.148
+55,Human capital investment,Primary deficit-to-GDP ratio,-0.152
+56,Human capital investment,Primary deficit-to-GDP ratio,-0.156
+57,Human capital investment,Primary deficit-to-GDP ratio,-0.16
+58,Human capital investment,Primary deficit-to-GDP ratio,-0.164
+59,Human capital investment,Primary deficit-to-GDP ratio,-0.167
+60,Human capital investment,Primary deficit-to-GDP ratio,-0.17
+61,Human capital investment,Primary deficit-to-GDP ratio,-0.173
+62,Human capital investment,Primary deficit-to-GDP ratio,-0.176
+63,Human capital investment,Primary deficit-to-GDP ratio,-0.179
+64,Human capital investment,Primary deficit-to-GDP ratio,-0.182
+65,Human capital investment,Primary deficit-to-GDP ratio,-0.184
+66,Human capital investment,Primary deficit-to-GDP ratio,-0.187
+67,Human capital investment,Primary deficit-to-GDP ratio,-0.189
+68,Human capital investment,Primary deficit-to-GDP ratio,-0.191
+69,Human capital investment,Primary deficit-to-GDP ratio,-0.193
+70,Human capital investment,Primary deficit-to-GDP ratio,-0.195
+71,Human capital investment,Primary deficit-to-GDP ratio,-0.196
+72,Human capital investment,Primary deficit-to-GDP ratio,-0.198
+73,Human capital investment,Primary deficit-to-GDP ratio,-0.2
+74,Human capital investment,Primary deficit-to-GDP ratio,-0.201
+75,Human capital investment,Primary deficit-to-GDP ratio,-0.202
+76,Human capital investment,Primary deficit-to-GDP ratio,-0.203
+77,Human capital investment,Primary deficit-to-GDP ratio,-0.205
+78,Human capital investment,Primary deficit-to-GDP ratio,-0.206
+79,Human capital investment,Primary deficit-to-GDP ratio,-0.206
+80,Human capital investment,Primary deficit-to-GDP ratio,-0.207
+81,Human capital investment,Primary deficit-to-GDP ratio,-0.208
+82,Human capital investment,Primary deficit-to-GDP ratio,-0.209
+83,Human capital investment,Primary deficit-to-GDP ratio,-0.209
+84,Human capital investment,Primary deficit-to-GDP ratio,-0.209
+85,Human capital investment,Primary deficit-to-GDP ratio,-0.21
+86,Human capital investment,Primary deficit-to-GDP ratio,-0.21
+87,Human capital investment,Primary deficit-to-GDP ratio,-0.21
+88,Human capital investment,Primary deficit-to-GDP ratio,-0.211
+89,Human capital investment,Primary deficit-to-GDP ratio,-0.211
+90,Human capital investment,Primary deficit-to-GDP ratio,-0.211
+91,Human capital investment,Primary deficit-to-GDP ratio,-0.211
+92,Human capital investment,Primary deficit-to-GDP ratio,-0.21
+93,Human capital investment,Primary deficit-to-GDP ratio,-0.21
+94,Human capital investment,Primary deficit-to-GDP ratio,-0.21
+95,Human capital investment,Primary deficit-to-GDP ratio,-0.21
+96,Human capital investment,Primary deficit-to-GDP ratio,-0.209
+97,Human capital investment,Primary deficit-to-GDP ratio,-0.209
+98,Human capital investment,Primary deficit-to-GDP ratio,-0.208
+99,Human capital investment,Primary deficit-to-GDP ratio,-0.208
+100,Human capital investment,Primary deficit-to-GDP ratio,-0.207
+1,R&D investment,Primary deficit-to-GDP ratio,0.822
+2,R&D investment,Primary deficit-to-GDP ratio,0.941
+3,R&D investment,Primary deficit-to-GDP ratio,0.855
+4,R&D investment,Primary deficit-to-GDP ratio,0.777
+5,R&D investment,Primary deficit-to-GDP ratio,0.703
+6,R&D investment,Primary deficit-to-GDP ratio,0.632
+7,R&D investment,Primary deficit-to-GDP ratio,0.565
+8,R&D investment,Primary deficit-to-GDP ratio,0.501
+9,R&D investment,Primary deficit-to-GDP ratio,0.441
+10,R&D investment,Primary deficit-to-GDP ratio,0.385
+11,R&D investment,Primary deficit-to-GDP ratio,0.332
+12,R&D investment,Primary deficit-to-GDP ratio,0.283
+13,R&D investment,Primary deficit-to-GDP ratio,0.238
+14,R&D investment,Primary deficit-to-GDP ratio,0.196
+15,R&D investment,Primary deficit-to-GDP ratio,0.157
+16,R&D investment,Primary deficit-to-GDP ratio,0.121
+17,R&D investment,Primary deficit-to-GDP ratio,0.088
+18,R&D investment,Primary deficit-to-GDP ratio,0.058
+19,R&D investment,Primary deficit-to-GDP ratio,0.03
+20,R&D investment,Primary deficit-to-GDP ratio,0.005
+21,R&D investment,Primary deficit-to-GDP ratio,-0.018
+22,R&D investment,Primary deficit-to-GDP ratio,-0.039
+23,R&D investment,Primary deficit-to-GDP ratio,-0.058
+24,R&D investment,Primary deficit-to-GDP ratio,-0.075
+25,R&D investment,Primary deficit-to-GDP ratio,-0.09
+26,R&D investment,Primary deficit-to-GDP ratio,-0.104
+27,R&D investment,Primary deficit-to-GDP ratio,-0.117
+28,R&D investment,Primary deficit-to-GDP ratio,-0.128
+29,R&D investment,Primary deficit-to-GDP ratio,-0.138
+30,R&D investment,Primary deficit-to-GDP ratio,-0.146
+31,R&D investment,Primary deficit-to-GDP ratio,-0.154
+32,R&D investment,Primary deficit-to-GDP ratio,-0.161
+33,R&D investment,Primary deficit-to-GDP ratio,-0.167
+34,R&D investment,Primary deficit-to-GDP ratio,-0.172
+35,R&D investment,Primary deficit-to-GDP ratio,-0.176
+36,R&D investment,Primary deficit-to-GDP ratio,-0.18
+37,R&D investment,Primary deficit-to-GDP ratio,-0.183
+38,R&D investment,Primary deficit-to-GDP ratio,-0.186
+39,R&D investment,Primary deficit-to-GDP ratio,-0.188
+40,R&D investment,Primary deficit-to-GDP ratio,-0.19
+41,R&D investment,Primary deficit-to-GDP ratio,-0.191
+42,R&D investment,Primary deficit-to-GDP ratio,-0.192
+43,R&D investment,Primary deficit-to-GDP ratio,-0.193
+44,R&D investment,Primary deficit-to-GDP ratio,-0.193
+45,R&D investment,Primary deficit-to-GDP ratio,-0.193
+46,R&D investment,Primary deficit-to-GDP ratio,-0.193
+47,R&D investment,Primary deficit-to-GDP ratio,-0.192
+48,R&D investment,Primary deficit-to-GDP ratio,-0.192
+49,R&D investment,Primary deficit-to-GDP ratio,-0.191
+50,R&D investment,Primary deficit-to-GDP ratio,-0.19
+51,R&D investment,Primary deficit-to-GDP ratio,-0.189
+52,R&D investment,Primary deficit-to-GDP ratio,-0.188
+53,R&D investment,Primary deficit-to-GDP ratio,-0.186
+54,R&D investment,Primary deficit-to-GDP ratio,-0.185
+55,R&D investment,Primary deficit-to-GDP ratio,-0.183
+56,R&D investment,Primary deficit-to-GDP ratio,-0.182
+57,R&D investment,Primary deficit-to-GDP ratio,-0.18
+58,R&D investment,Primary deficit-to-GDP ratio,-0.178
+59,R&D investment,Primary deficit-to-GDP ratio,-0.176
+60,R&D investment,Primary deficit-to-GDP ratio,-0.174
+61,R&D investment,Primary deficit-to-GDP ratio,-0.173
+62,R&D investment,Primary deficit-to-GDP ratio,-0.171
+63,R&D investment,Primary deficit-to-GDP ratio,-0.169
+64,R&D investment,Primary deficit-to-GDP ratio,-0.167
+65,R&D investment,Primary deficit-to-GDP ratio,-0.165
+66,R&D investment,Primary deficit-to-GDP ratio,-0.163
+67,R&D investment,Primary deficit-to-GDP ratio,-0.161
+68,R&D investment,Primary deficit-to-GDP ratio,-0.159
+69,R&D investment,Primary deficit-to-GDP ratio,-0.157
+70,R&D investment,Primary deficit-to-GDP ratio,-0.155
+71,R&D investment,Primary deficit-to-GDP ratio,-0.153
+72,R&D investment,Primary deficit-to-GDP ratio,-0.151
+73,R&D investment,Primary deficit-to-GDP ratio,-0.149
+74,R&D investment,Primary deficit-to-GDP ratio,-0.147
+75,R&D investment,Primary deficit-to-GDP ratio,-0.145
+76,R&D investment,Primary deficit-to-GDP ratio,-0.143
+77,R&D investment,Primary deficit-to-GDP ratio,-0.141
+78,R&D investment,Primary deficit-to-GDP ratio,-0.14
+79,R&D investment,Primary deficit-to-GDP ratio,-0.138
+80,R&D investment,Primary deficit-to-GDP ratio,-0.136
+81,R&D investment,Primary deficit-to-GDP ratio,-0.134
+82,R&D investment,Primary deficit-to-GDP ratio,-0.132
+83,R&D investment,Primary deficit-to-GDP ratio,-0.13
+84,R&D investment,Primary deficit-to-GDP ratio,-0.129
+85,R&D investment,Primary deficit-to-GDP ratio,-0.127
+86,R&D investment,Primary deficit-to-GDP ratio,-0.125
+87,R&D investment,Primary deficit-to-GDP ratio,-0.123
+88,R&D investment,Primary deficit-to-GDP ratio,-0.122
+89,R&D investment,Primary deficit-to-GDP ratio,-0.12
+90,R&D investment,Primary deficit-to-GDP ratio,-0.118
+91,R&D investment,Primary deficit-to-GDP ratio,-0.117
+92,R&D investment,Primary deficit-to-GDP ratio,-0.115
+93,R&D investment,Primary deficit-to-GDP ratio,-0.114
+94,R&D investment,Primary deficit-to-GDP ratio,-0.112
+95,R&D investment,Primary deficit-to-GDP ratio,-0.11
+96,R&D investment,Primary deficit-to-GDP ratio,-0.109
+97,R&D investment,Primary deficit-to-GDP ratio,-0.107
+98,R&D investment,Primary deficit-to-GDP ratio,-0.106
+99,R&D investment,Primary deficit-to-GDP ratio,-0.104
+100,R&D investment,Primary deficit-to-GDP ratio,-0.103
+1,Government consumption,Transfers-to-GDP ratio,0.0
+2,Government consumption,Transfers-to-GDP ratio,0.0
+3,Government consumption,Transfers-to-GDP ratio,0.0
+4,Government consumption,Transfers-to-GDP ratio,0.0
+5,Government consumption,Transfers-to-GDP ratio,0.0
+6,Government consumption,Transfers-to-GDP ratio,0.0
+7,Government consumption,Transfers-to-GDP ratio,0.0
+8,Government consumption,Transfers-to-GDP ratio,0.0
+9,Government consumption,Transfers-to-GDP ratio,0.0
+10,Government consumption,Transfers-to-GDP ratio,0.0
+11,Government consumption,Transfers-to-GDP ratio,0.0
+12,Government consumption,Transfers-to-GDP ratio,0.0
+13,Government consumption,Transfers-to-GDP ratio,0.0
+14,Government consumption,Transfers-to-GDP ratio,0.0
+15,Government consumption,Transfers-to-GDP ratio,0.0
+16,Government consumption,Transfers-to-GDP ratio,0.0
+17,Government consumption,Transfers-to-GDP ratio,0.0
+18,Government consumption,Transfers-to-GDP ratio,0.0
+19,Government consumption,Transfers-to-GDP ratio,0.0
+20,Government consumption,Transfers-to-GDP ratio,0.0
+21,Government consumption,Transfers-to-GDP ratio,0.0
+22,Government consumption,Transfers-to-GDP ratio,0.0
+23,Government consumption,Transfers-to-GDP ratio,0.0
+24,Government consumption,Transfers-to-GDP ratio,0.0
+25,Government consumption,Transfers-to-GDP ratio,0.0
+26,Government consumption,Transfers-to-GDP ratio,0.0
+27,Government consumption,Transfers-to-GDP ratio,0.0
+28,Government consumption,Transfers-to-GDP ratio,0.0
+29,Government consumption,Transfers-to-GDP ratio,0.0
+30,Government consumption,Transfers-to-GDP ratio,0.0
+31,Government consumption,Transfers-to-GDP ratio,0.0
+32,Government consumption,Transfers-to-GDP ratio,0.0
+33,Government consumption,Transfers-to-GDP ratio,0.0
+34,Government consumption,Transfers-to-GDP ratio,0.0
+35,Government consumption,Transfers-to-GDP ratio,0.0
+36,Government consumption,Transfers-to-GDP ratio,0.0
+37,Government consumption,Transfers-to-GDP ratio,0.0
+38,Government consumption,Transfers-to-GDP ratio,0.0
+39,Government consumption,Transfers-to-GDP ratio,0.0
+40,Government consumption,Transfers-to-GDP ratio,0.0
+41,Government consumption,Transfers-to-GDP ratio,0.0
+42,Government consumption,Transfers-to-GDP ratio,0.0
+43,Government consumption,Transfers-to-GDP ratio,0.0
+44,Government consumption,Transfers-to-GDP ratio,0.0
+45,Government consumption,Transfers-to-GDP ratio,0.0
+46,Government consumption,Transfers-to-GDP ratio,0.0
+47,Government consumption,Transfers-to-GDP ratio,0.0
+48,Government consumption,Transfers-to-GDP ratio,0.0
+49,Government consumption,Transfers-to-GDP ratio,0.0
+50,Government consumption,Transfers-to-GDP ratio,0.0
+51,Government consumption,Transfers-to-GDP ratio,0.0
+52,Government consumption,Transfers-to-GDP ratio,0.0
+53,Government consumption,Transfers-to-GDP ratio,0.0
+54,Government consumption,Transfers-to-GDP ratio,0.0
+55,Government consumption,Transfers-to-GDP ratio,0.0
+56,Government consumption,Transfers-to-GDP ratio,0.0
+57,Government consumption,Transfers-to-GDP ratio,0.0
+58,Government consumption,Transfers-to-GDP ratio,0.0
+59,Government consumption,Transfers-to-GDP ratio,0.0
+60,Government consumption,Transfers-to-GDP ratio,0.0
+61,Government consumption,Transfers-to-GDP ratio,0.0
+62,Government consumption,Transfers-to-GDP ratio,0.0
+63,Government consumption,Transfers-to-GDP ratio,0.0
+64,Government consumption,Transfers-to-GDP ratio,0.0
+65,Government consumption,Transfers-to-GDP ratio,0.0
+66,Government consumption,Transfers-to-GDP ratio,0.0
+67,Government consumption,Transfers-to-GDP ratio,0.0
+68,Government consumption,Transfers-to-GDP ratio,0.0
+69,Government consumption,Transfers-to-GDP ratio,0.0
+70,Government consumption,Transfers-to-GDP ratio,0.0
+71,Government consumption,Transfers-to-GDP ratio,0.0
+72,Government consumption,Transfers-to-GDP ratio,0.0
+73,Government consumption,Transfers-to-GDP ratio,0.0
+74,Government consumption,Transfers-to-GDP ratio,0.0
+75,Government consumption,Transfers-to-GDP ratio,0.0
+76,Government consumption,Transfers-to-GDP ratio,0.0
+77,Government consumption,Transfers-to-GDP ratio,0.0
+78,Government consumption,Transfers-to-GDP ratio,0.0
+79,Government consumption,Transfers-to-GDP ratio,0.0
+80,Government consumption,Transfers-to-GDP ratio,0.0
+81,Government consumption,Transfers-to-GDP ratio,0.0
+82,Government consumption,Transfers-to-GDP ratio,0.0
+83,Government consumption,Transfers-to-GDP ratio,0.0
+84,Government consumption,Transfers-to-GDP ratio,0.0
+85,Government consumption,Transfers-to-GDP ratio,0.0
+86,Government consumption,Transfers-to-GDP ratio,0.0
+87,Government consumption,Transfers-to-GDP ratio,0.0
+88,Government consumption,Transfers-to-GDP ratio,0.0
+89,Government consumption,Transfers-to-GDP ratio,0.0
+90,Government consumption,Transfers-to-GDP ratio,0.0
+91,Government consumption,Transfers-to-GDP ratio,0.0
+92,Government consumption,Transfers-to-GDP ratio,0.0
+93,Government consumption,Transfers-to-GDP ratio,0.0
+94,Government consumption,Transfers-to-GDP ratio,0.0
+95,Government consumption,Transfers-to-GDP ratio,0.0
+96,Government consumption,Transfers-to-GDP ratio,0.0
+97,Government consumption,Transfers-to-GDP ratio,0.0
+98,Government consumption,Transfers-to-GDP ratio,0.0
+99,Government consumption,Transfers-to-GDP ratio,0.0
+100,Government consumption,Transfers-to-GDP ratio,0.0
+1,Infrastructure investment,Transfers-to-GDP ratio,0.0
+2,Infrastructure investment,Transfers-to-GDP ratio,0.0
+3,Infrastructure investment,Transfers-to-GDP ratio,0.0
+4,Infrastructure investment,Transfers-to-GDP ratio,0.0
+5,Infrastructure investment,Transfers-to-GDP ratio,0.0
+6,Infrastructure investment,Transfers-to-GDP ratio,0.0
+7,Infrastructure investment,Transfers-to-GDP ratio,0.0
+8,Infrastructure investment,Transfers-to-GDP ratio,0.0
+9,Infrastructure investment,Transfers-to-GDP ratio,0.0
+10,Infrastructure investment,Transfers-to-GDP ratio,0.0
+11,Infrastructure investment,Transfers-to-GDP ratio,0.0
+12,Infrastructure investment,Transfers-to-GDP ratio,0.0
+13,Infrastructure investment,Transfers-to-GDP ratio,0.0
+14,Infrastructure investment,Transfers-to-GDP ratio,0.0
+15,Infrastructure investment,Transfers-to-GDP ratio,0.0
+16,Infrastructure investment,Transfers-to-GDP ratio,0.0
+17,Infrastructure investment,Transfers-to-GDP ratio,0.0
+18,Infrastructure investment,Transfers-to-GDP ratio,0.0
+19,Infrastructure investment,Transfers-to-GDP ratio,0.0
+20,Infrastructure investment,Transfers-to-GDP ratio,0.0
+21,Infrastructure investment,Transfers-to-GDP ratio,0.0
+22,Infrastructure investment,Transfers-to-GDP ratio,0.0
+23,Infrastructure investment,Transfers-to-GDP ratio,0.0
+24,Infrastructure investment,Transfers-to-GDP ratio,0.0
+25,Infrastructure investment,Transfers-to-GDP ratio,0.0
+26,Infrastructure investment,Transfers-to-GDP ratio,0.0
+27,Infrastructure investment,Transfers-to-GDP ratio,0.0
+28,Infrastructure investment,Transfers-to-GDP ratio,0.0
+29,Infrastructure investment,Transfers-to-GDP ratio,0.0
+30,Infrastructure investment,Transfers-to-GDP ratio,0.0
+31,Infrastructure investment,Transfers-to-GDP ratio,0.0
+32,Infrastructure investment,Transfers-to-GDP ratio,0.0
+33,Infrastructure investment,Transfers-to-GDP ratio,0.0
+34,Infrastructure investment,Transfers-to-GDP ratio,0.0
+35,Infrastructure investment,Transfers-to-GDP ratio,0.0
+36,Infrastructure investment,Transfers-to-GDP ratio,0.0
+37,Infrastructure investment,Transfers-to-GDP ratio,0.0
+38,Infrastructure investment,Transfers-to-GDP ratio,0.0
+39,Infrastructure investment,Transfers-to-GDP ratio,0.0
+40,Infrastructure investment,Transfers-to-GDP ratio,0.0
+41,Infrastructure investment,Transfers-to-GDP ratio,0.0
+42,Infrastructure investment,Transfers-to-GDP ratio,0.0
+43,Infrastructure investment,Transfers-to-GDP ratio,0.0
+44,Infrastructure investment,Transfers-to-GDP ratio,0.0
+45,Infrastructure investment,Transfers-to-GDP ratio,0.0
+46,Infrastructure investment,Transfers-to-GDP ratio,0.0
+47,Infrastructure investment,Transfers-to-GDP ratio,0.0
+48,Infrastructure investment,Transfers-to-GDP ratio,0.0
+49,Infrastructure investment,Transfers-to-GDP ratio,0.0
+50,Infrastructure investment,Transfers-to-GDP ratio,0.0
+51,Infrastructure investment,Transfers-to-GDP ratio,0.0
+52,Infrastructure investment,Transfers-to-GDP ratio,0.0
+53,Infrastructure investment,Transfers-to-GDP ratio,0.0
+54,Infrastructure investment,Transfers-to-GDP ratio,0.0
+55,Infrastructure investment,Transfers-to-GDP ratio,0.0
+56,Infrastructure investment,Transfers-to-GDP ratio,0.0
+57,Infrastructure investment,Transfers-to-GDP ratio,0.0
+58,Infrastructure investment,Transfers-to-GDP ratio,0.0
+59,Infrastructure investment,Transfers-to-GDP ratio,0.0
+60,Infrastructure investment,Transfers-to-GDP ratio,0.0
+61,Infrastructure investment,Transfers-to-GDP ratio,0.0
+62,Infrastructure investment,Transfers-to-GDP ratio,0.0
+63,Infrastructure investment,Transfers-to-GDP ratio,0.0
+64,Infrastructure investment,Transfers-to-GDP ratio,0.0
+65,Infrastructure investment,Transfers-to-GDP ratio,0.0
+66,Infrastructure investment,Transfers-to-GDP ratio,0.0
+67,Infrastructure investment,Transfers-to-GDP ratio,0.0
+68,Infrastructure investment,Transfers-to-GDP ratio,0.0
+69,Infrastructure investment,Transfers-to-GDP ratio,0.0
+70,Infrastructure investment,Transfers-to-GDP ratio,0.0
+71,Infrastructure investment,Transfers-to-GDP ratio,0.0
+72,Infrastructure investment,Transfers-to-GDP ratio,0.0
+73,Infrastructure investment,Transfers-to-GDP ratio,0.0
+74,Infrastructure investment,Transfers-to-GDP ratio,0.0
+75,Infrastructure investment,Transfers-to-GDP ratio,0.0
+76,Infrastructure investment,Transfers-to-GDP ratio,0.0
+77,Infrastructure investment,Transfers-to-GDP ratio,0.0
+78,Infrastructure investment,Transfers-to-GDP ratio,0.0
+79,Infrastructure investment,Transfers-to-GDP ratio,0.0
+80,Infrastructure investment,Transfers-to-GDP ratio,0.0
+81,Infrastructure investment,Transfers-to-GDP ratio,0.0
+82,Infrastructure investment,Transfers-to-GDP ratio,0.0
+83,Infrastructure investment,Transfers-to-GDP ratio,0.0
+84,Infrastructure investment,Transfers-to-GDP ratio,0.0
+85,Infrastructure investment,Transfers-to-GDP ratio,0.0
+86,Infrastructure investment,Transfers-to-GDP ratio,0.0
+87,Infrastructure investment,Transfers-to-GDP ratio,0.0
+88,Infrastructure investment,Transfers-to-GDP ratio,0.0
+89,Infrastructure investment,Transfers-to-GDP ratio,0.0
+90,Infrastructure investment,Transfers-to-GDP ratio,0.0
+91,Infrastructure investment,Transfers-to-GDP ratio,0.0
+92,Infrastructure investment,Transfers-to-GDP ratio,0.0
+93,Infrastructure investment,Transfers-to-GDP ratio,0.0
+94,Infrastructure investment,Transfers-to-GDP ratio,0.0
+95,Infrastructure investment,Transfers-to-GDP ratio,0.0
+96,Infrastructure investment,Transfers-to-GDP ratio,0.0
+97,Infrastructure investment,Transfers-to-GDP ratio,0.0
+98,Infrastructure investment,Transfers-to-GDP ratio,0.0
+99,Infrastructure investment,Transfers-to-GDP ratio,0.0
+100,Infrastructure investment,Transfers-to-GDP ratio,0.0
+1,Human capital investment,Transfers-to-GDP ratio,0.0
+2,Human capital investment,Transfers-to-GDP ratio,0.0
+3,Human capital investment,Transfers-to-GDP ratio,0.0
+4,Human capital investment,Transfers-to-GDP ratio,0.0
+5,Human capital investment,Transfers-to-GDP ratio,0.0
+6,Human capital investment,Transfers-to-GDP ratio,0.0
+7,Human capital investment,Transfers-to-GDP ratio,0.0
+8,Human capital investment,Transfers-to-GDP ratio,0.0
+9,Human capital investment,Transfers-to-GDP ratio,0.0
+10,Human capital investment,Transfers-to-GDP ratio,0.0
+11,Human capital investment,Transfers-to-GDP ratio,0.0
+12,Human capital investment,Transfers-to-GDP ratio,0.0
+13,Human capital investment,Transfers-to-GDP ratio,0.0
+14,Human capital investment,Transfers-to-GDP ratio,0.0
+15,Human capital investment,Transfers-to-GDP ratio,0.0
+16,Human capital investment,Transfers-to-GDP ratio,0.0
+17,Human capital investment,Transfers-to-GDP ratio,0.0
+18,Human capital investment,Transfers-to-GDP ratio,0.0
+19,Human capital investment,Transfers-to-GDP ratio,0.0
+20,Human capital investment,Transfers-to-GDP ratio,0.0
+21,Human capital investment,Transfers-to-GDP ratio,0.0
+22,Human capital investment,Transfers-to-GDP ratio,0.0
+23,Human capital investment,Transfers-to-GDP ratio,0.0
+24,Human capital investment,Transfers-to-GDP ratio,0.0
+25,Human capital investment,Transfers-to-GDP ratio,0.0
+26,Human capital investment,Transfers-to-GDP ratio,0.0
+27,Human capital investment,Transfers-to-GDP ratio,0.0
+28,Human capital investment,Transfers-to-GDP ratio,0.0
+29,Human capital investment,Transfers-to-GDP ratio,0.0
+30,Human capital investment,Transfers-to-GDP ratio,0.0
+31,Human capital investment,Transfers-to-GDP ratio,0.0
+32,Human capital investment,Transfers-to-GDP ratio,0.0
+33,Human capital investment,Transfers-to-GDP ratio,0.0
+34,Human capital investment,Transfers-to-GDP ratio,0.0
+35,Human capital investment,Transfers-to-GDP ratio,0.0
+36,Human capital investment,Transfers-to-GDP ratio,0.0
+37,Human capital investment,Transfers-to-GDP ratio,0.0
+38,Human capital investment,Transfers-to-GDP ratio,0.0
+39,Human capital investment,Transfers-to-GDP ratio,0.0
+40,Human capital investment,Transfers-to-GDP ratio,0.0
+41,Human capital investment,Transfers-to-GDP ratio,0.0
+42,Human capital investment,Transfers-to-GDP ratio,0.0
+43,Human capital investment,Transfers-to-GDP ratio,0.0
+44,Human capital investment,Transfers-to-GDP ratio,0.0
+45,Human capital investment,Transfers-to-GDP ratio,0.0
+46,Human capital investment,Transfers-to-GDP ratio,0.0
+47,Human capital investment,Transfers-to-GDP ratio,0.0
+48,Human capital investment,Transfers-to-GDP ratio,0.0
+49,Human capital investment,Transfers-to-GDP ratio,0.0
+50,Human capital investment,Transfers-to-GDP ratio,0.0
+51,Human capital investment,Transfers-to-GDP ratio,0.0
+52,Human capital investment,Transfers-to-GDP ratio,0.0
+53,Human capital investment,Transfers-to-GDP ratio,0.0
+54,Human capital investment,Transfers-to-GDP ratio,0.0
+55,Human capital investment,Transfers-to-GDP ratio,0.0
+56,Human capital investment,Transfers-to-GDP ratio,0.0
+57,Human capital investment,Transfers-to-GDP ratio,0.0
+58,Human capital investment,Transfers-to-GDP ratio,0.0
+59,Human capital investment,Transfers-to-GDP ratio,0.0
+60,Human capital investment,Transfers-to-GDP ratio,0.0
+61,Human capital investment,Transfers-to-GDP ratio,0.0
+62,Human capital investment,Transfers-to-GDP ratio,0.0
+63,Human capital investment,Transfers-to-GDP ratio,0.0
+64,Human capital investment,Transfers-to-GDP ratio,0.0
+65,Human capital investment,Transfers-to-GDP ratio,0.0
+66,Human capital investment,Transfers-to-GDP ratio,0.0
+67,Human capital investment,Transfers-to-GDP ratio,0.0
+68,Human capital investment,Transfers-to-GDP ratio,0.0
+69,Human capital investment,Transfers-to-GDP ratio,0.0
+70,Human capital investment,Transfers-to-GDP ratio,0.0
+71,Human capital investment,Transfers-to-GDP ratio,0.0
+72,Human capital investment,Transfers-to-GDP ratio,0.0
+73,Human capital investment,Transfers-to-GDP ratio,0.0
+74,Human capital investment,Transfers-to-GDP ratio,0.0
+75,Human capital investment,Transfers-to-GDP ratio,0.0
+76,Human capital investment,Transfers-to-GDP ratio,0.0
+77,Human capital investment,Transfers-to-GDP ratio,0.0
+78,Human capital investment,Transfers-to-GDP ratio,0.0
+79,Human capital investment,Transfers-to-GDP ratio,0.0
+80,Human capital investment,Transfers-to-GDP ratio,0.0
+81,Human capital investment,Transfers-to-GDP ratio,0.0
+82,Human capital investment,Transfers-to-GDP ratio,0.0
+83,Human capital investment,Transfers-to-GDP ratio,0.0
+84,Human capital investment,Transfers-to-GDP ratio,0.0
+85,Human capital investment,Transfers-to-GDP ratio,0.0
+86,Human capital investment,Transfers-to-GDP ratio,0.0
+87,Human capital investment,Transfers-to-GDP ratio,0.0
+88,Human capital investment,Transfers-to-GDP ratio,0.0
+89,Human capital investment,Transfers-to-GDP ratio,0.0
+90,Human capital investment,Transfers-to-GDP ratio,0.0
+91,Human capital investment,Transfers-to-GDP ratio,0.0
+92,Human capital investment,Transfers-to-GDP ratio,0.0
+93,Human capital investment,Transfers-to-GDP ratio,0.0
+94,Human capital investment,Transfers-to-GDP ratio,0.0
+95,Human capital investment,Transfers-to-GDP ratio,0.0
+96,Human capital investment,Transfers-to-GDP ratio,0.0
+97,Human capital investment,Transfers-to-GDP ratio,0.0
+98,Human capital investment,Transfers-to-GDP ratio,0.0
+99,Human capital investment,Transfers-to-GDP ratio,0.0
+100,Human capital investment,Transfers-to-GDP ratio,0.0
+1,R&D investment,Transfers-to-GDP ratio,0.0
+2,R&D investment,Transfers-to-GDP ratio,0.0
+3,R&D investment,Transfers-to-GDP ratio,0.0
+4,R&D investment,Transfers-to-GDP ratio,0.0
+5,R&D investment,Transfers-to-GDP ratio,0.0
+6,R&D investment,Transfers-to-GDP ratio,0.0
+7,R&D investment,Transfers-to-GDP ratio,0.0
+8,R&D investment,Transfers-to-GDP ratio,0.0
+9,R&D investment,Transfers-to-GDP ratio,0.0
+10,R&D investment,Transfers-to-GDP ratio,0.0
+11,R&D investment,Transfers-to-GDP ratio,0.0
+12,R&D investment,Transfers-to-GDP ratio,0.0
+13,R&D investment,Transfers-to-GDP ratio,0.0
+14,R&D investment,Transfers-to-GDP ratio,0.0
+15,R&D investment,Transfers-to-GDP ratio,0.0
+16,R&D investment,Transfers-to-GDP ratio,0.0
+17,R&D investment,Transfers-to-GDP ratio,0.0
+18,R&D investment,Transfers-to-GDP ratio,0.0
+19,R&D investment,Transfers-to-GDP ratio,0.0
+20,R&D investment,Transfers-to-GDP ratio,0.0
+21,R&D investment,Transfers-to-GDP ratio,0.0
+22,R&D investment,Transfers-to-GDP ratio,0.0
+23,R&D investment,Transfers-to-GDP ratio,0.0
+24,R&D investment,Transfers-to-GDP ratio,0.0
+25,R&D investment,Transfers-to-GDP ratio,0.0
+26,R&D investment,Transfers-to-GDP ratio,0.0
+27,R&D investment,Transfers-to-GDP ratio,0.0
+28,R&D investment,Transfers-to-GDP ratio,0.0
+29,R&D investment,Transfers-to-GDP ratio,0.0
+30,R&D investment,Transfers-to-GDP ratio,0.0
+31,R&D investment,Transfers-to-GDP ratio,0.0
+32,R&D investment,Transfers-to-GDP ratio,0.0
+33,R&D investment,Transfers-to-GDP ratio,0.0
+34,R&D investment,Transfers-to-GDP ratio,0.0
+35,R&D investment,Transfers-to-GDP ratio,0.0
+36,R&D investment,Transfers-to-GDP ratio,0.0
+37,R&D investment,Transfers-to-GDP ratio,0.0
+38,R&D investment,Transfers-to-GDP ratio,0.0
+39,R&D investment,Transfers-to-GDP ratio,0.0
+40,R&D investment,Transfers-to-GDP ratio,0.0
+41,R&D investment,Transfers-to-GDP ratio,0.0
+42,R&D investment,Transfers-to-GDP ratio,0.0
+43,R&D investment,Transfers-to-GDP ratio,0.0
+44,R&D investment,Transfers-to-GDP ratio,0.0
+45,R&D investment,Transfers-to-GDP ratio,0.0
+46,R&D investment,Transfers-to-GDP ratio,0.0
+47,R&D investment,Transfers-to-GDP ratio,0.0
+48,R&D investment,Transfers-to-GDP ratio,0.0
+49,R&D investment,Transfers-to-GDP ratio,0.0
+50,R&D investment,Transfers-to-GDP ratio,0.0
+51,R&D investment,Transfers-to-GDP ratio,0.0
+52,R&D investment,Transfers-to-GDP ratio,0.0
+53,R&D investment,Transfers-to-GDP ratio,0.0
+54,R&D investment,Transfers-to-GDP ratio,0.0
+55,R&D investment,Transfers-to-GDP ratio,0.0
+56,R&D investment,Transfers-to-GDP ratio,0.0
+57,R&D investment,Transfers-to-GDP ratio,0.0
+58,R&D investment,Transfers-to-GDP ratio,0.0
+59,R&D investment,Transfers-to-GDP ratio,0.0
+60,R&D investment,Transfers-to-GDP ratio,0.0
+61,R&D investment,Transfers-to-GDP ratio,0.0
+62,R&D investment,Transfers-to-GDP ratio,0.0
+63,R&D investment,Transfers-to-GDP ratio,0.0
+64,R&D investment,Transfers-to-GDP ratio,0.0
+65,R&D investment,Transfers-to-GDP ratio,0.0
+66,R&D investment,Transfers-to-GDP ratio,0.0
+67,R&D investment,Transfers-to-GDP ratio,0.0
+68,R&D investment,Transfers-to-GDP ratio,0.0
+69,R&D investment,Transfers-to-GDP ratio,0.0
+70,R&D investment,Transfers-to-GDP ratio,0.0
+71,R&D investment,Transfers-to-GDP ratio,0.0
+72,R&D investment,Transfers-to-GDP ratio,0.0
+73,R&D investment,Transfers-to-GDP ratio,0.0
+74,R&D investment,Transfers-to-GDP ratio,0.0
+75,R&D investment,Transfers-to-GDP ratio,0.0
+76,R&D investment,Transfers-to-GDP ratio,0.0
+77,R&D investment,Transfers-to-GDP ratio,0.0
+78,R&D investment,Transfers-to-GDP ratio,0.0
+79,R&D investment,Transfers-to-GDP ratio,0.0
+80,R&D investment,Transfers-to-GDP ratio,0.0
+81,R&D investment,Transfers-to-GDP ratio,0.0
+82,R&D investment,Transfers-to-GDP ratio,0.0
+83,R&D investment,Transfers-to-GDP ratio,0.0
+84,R&D investment,Transfers-to-GDP ratio,0.0
+85,R&D investment,Transfers-to-GDP ratio,0.0
+86,R&D investment,Transfers-to-GDP ratio,0.0
+87,R&D investment,Transfers-to-GDP ratio,0.0
+88,R&D investment,Transfers-to-GDP ratio,0.0
+89,R&D investment,Transfers-to-GDP ratio,0.0
+90,R&D investment,Transfers-to-GDP ratio,0.0
+91,R&D investment,Transfers-to-GDP ratio,0.0
+92,R&D investment,Transfers-to-GDP ratio,0.0
+93,R&D investment,Transfers-to-GDP ratio,0.0
+94,R&D investment,Transfers-to-GDP ratio,0.0
+95,R&D investment,Transfers-to-GDP ratio,0.0
+96,R&D investment,Transfers-to-GDP ratio,0.0
+97,R&D investment,Transfers-to-GDP ratio,0.0
+98,R&D investment,Transfers-to-GDP ratio,0.0
+99,R&D investment,Transfers-to-GDP ratio,0.0
+100,R&D investment,Transfers-to-GDP ratio,0.0
 1,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),0.207
 2,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),0.441
 3,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),0.654

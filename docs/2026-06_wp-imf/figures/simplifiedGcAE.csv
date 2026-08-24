@@ -11899,1606 +11899,1606 @@ horizon_quarter,model,variable,pct_dev
 98,Canonical NK control,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 99,Canonical NK control,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
 100,Canonical NK control,Real interest rate (R<sub>t</sub>/Π<sub>t</sub>),0.0
-1,Full model,Primary deficit,0.904
-2,Full model,Primary deficit,0.916
-3,Full model,Primary deficit,0.827
-4,Full model,Primary deficit,0.749
-5,Full model,Primary deficit,0.68
-6,Full model,Primary deficit,0.617
-7,Full model,Primary deficit,0.561
-8,Full model,Primary deficit,0.511
-9,Full model,Primary deficit,0.466
-10,Full model,Primary deficit,0.425
-11,Full model,Primary deficit,0.388
-12,Full model,Primary deficit,0.354
-13,Full model,Primary deficit,0.324
-14,Full model,Primary deficit,0.297
-15,Full model,Primary deficit,0.272
-16,Full model,Primary deficit,0.25
-17,Full model,Primary deficit,0.23
-18,Full model,Primary deficit,0.212
-19,Full model,Primary deficit,0.196
-20,Full model,Primary deficit,0.181
-21,Full model,Primary deficit,0.168
-22,Full model,Primary deficit,0.156
-23,Full model,Primary deficit,0.145
-24,Full model,Primary deficit,0.135
-25,Full model,Primary deficit,0.126
-26,Full model,Primary deficit,0.118
-27,Full model,Primary deficit,0.11
-28,Full model,Primary deficit,0.103
-29,Full model,Primary deficit,0.097
-30,Full model,Primary deficit,0.092
-31,Full model,Primary deficit,0.087
-32,Full model,Primary deficit,0.082
-33,Full model,Primary deficit,0.078
-34,Full model,Primary deficit,0.074
-35,Full model,Primary deficit,0.071
-36,Full model,Primary deficit,0.068
-37,Full model,Primary deficit,0.065
-38,Full model,Primary deficit,0.062
-39,Full model,Primary deficit,0.06
-40,Full model,Primary deficit,0.057
-41,Full model,Primary deficit,0.055
-42,Full model,Primary deficit,0.053
-43,Full model,Primary deficit,0.052
-44,Full model,Primary deficit,0.05
-45,Full model,Primary deficit,0.048
-46,Full model,Primary deficit,0.047
-47,Full model,Primary deficit,0.046
-48,Full model,Primary deficit,0.044
-49,Full model,Primary deficit,0.043
-50,Full model,Primary deficit,0.042
-51,Full model,Primary deficit,0.041
-52,Full model,Primary deficit,0.04
-53,Full model,Primary deficit,0.039
-54,Full model,Primary deficit,0.039
-55,Full model,Primary deficit,0.038
-56,Full model,Primary deficit,0.037
-57,Full model,Primary deficit,0.036
-58,Full model,Primary deficit,0.036
-59,Full model,Primary deficit,0.035
-60,Full model,Primary deficit,0.034
-61,Full model,Primary deficit,0.034
-62,Full model,Primary deficit,0.033
-63,Full model,Primary deficit,0.033
-64,Full model,Primary deficit,0.032
-65,Full model,Primary deficit,0.032
-66,Full model,Primary deficit,0.031
-67,Full model,Primary deficit,0.031
-68,Full model,Primary deficit,0.03
-69,Full model,Primary deficit,0.03
-70,Full model,Primary deficit,0.029
-71,Full model,Primary deficit,0.029
-72,Full model,Primary deficit,0.029
-73,Full model,Primary deficit,0.028
-74,Full model,Primary deficit,0.028
-75,Full model,Primary deficit,0.027
-76,Full model,Primary deficit,0.027
-77,Full model,Primary deficit,0.027
-78,Full model,Primary deficit,0.026
-79,Full model,Primary deficit,0.026
-80,Full model,Primary deficit,0.026
-81,Full model,Primary deficit,0.025
-82,Full model,Primary deficit,0.025
-83,Full model,Primary deficit,0.025
-84,Full model,Primary deficit,0.024
-85,Full model,Primary deficit,0.024
-86,Full model,Primary deficit,0.024
-87,Full model,Primary deficit,0.023
-88,Full model,Primary deficit,0.023
-89,Full model,Primary deficit,0.023
-90,Full model,Primary deficit,0.022
-91,Full model,Primary deficit,0.022
-92,Full model,Primary deficit,0.022
-93,Full model,Primary deficit,0.022
-94,Full model,Primary deficit,0.021
-95,Full model,Primary deficit,0.021
-96,Full model,Primary deficit,0.021
-97,Full model,Primary deficit,0.021
-98,Full model,Primary deficit,0.02
-99,Full model,Primary deficit,0.02
-100,Full model,Primary deficit,0.02
-1,No endogenous technology,Primary deficit,0.895
-2,No endogenous technology,Primary deficit,0.917
-3,No endogenous technology,Primary deficit,0.826
-4,No endogenous technology,Primary deficit,0.748
-5,No endogenous technology,Primary deficit,0.679
-6,No endogenous technology,Primary deficit,0.616
-7,No endogenous technology,Primary deficit,0.56
-8,No endogenous technology,Primary deficit,0.509
-9,No endogenous technology,Primary deficit,0.463
-10,No endogenous technology,Primary deficit,0.422
-11,No endogenous technology,Primary deficit,0.384
-12,No endogenous technology,Primary deficit,0.35
-13,No endogenous technology,Primary deficit,0.32
-14,No endogenous technology,Primary deficit,0.292
-15,No endogenous technology,Primary deficit,0.267
-16,No endogenous technology,Primary deficit,0.244
-17,No endogenous technology,Primary deficit,0.224
-18,No endogenous technology,Primary deficit,0.205
-19,No endogenous technology,Primary deficit,0.188
-20,No endogenous technology,Primary deficit,0.173
-21,No endogenous technology,Primary deficit,0.159
-22,No endogenous technology,Primary deficit,0.147
-23,No endogenous technology,Primary deficit,0.135
-24,No endogenous technology,Primary deficit,0.125
-25,No endogenous technology,Primary deficit,0.115
-26,No endogenous technology,Primary deficit,0.107
-27,No endogenous technology,Primary deficit,0.099
-28,No endogenous technology,Primary deficit,0.092
-29,No endogenous technology,Primary deficit,0.085
-30,No endogenous technology,Primary deficit,0.08
-31,No endogenous technology,Primary deficit,0.074
-32,No endogenous technology,Primary deficit,0.069
-33,No endogenous technology,Primary deficit,0.065
-34,No endogenous technology,Primary deficit,0.061
-35,No endogenous technology,Primary deficit,0.057
-36,No endogenous technology,Primary deficit,0.053
-37,No endogenous technology,Primary deficit,0.05
-38,No endogenous technology,Primary deficit,0.047
-39,No endogenous technology,Primary deficit,0.045
-40,No endogenous technology,Primary deficit,0.042
-41,No endogenous technology,Primary deficit,0.04
-42,No endogenous technology,Primary deficit,0.038
-43,No endogenous technology,Primary deficit,0.036
-44,No endogenous technology,Primary deficit,0.034
-45,No endogenous technology,Primary deficit,0.032
-46,No endogenous technology,Primary deficit,0.031
-47,No endogenous technology,Primary deficit,0.029
-48,No endogenous technology,Primary deficit,0.028
-49,No endogenous technology,Primary deficit,0.027
-50,No endogenous technology,Primary deficit,0.026
-51,No endogenous technology,Primary deficit,0.025
-52,No endogenous technology,Primary deficit,0.023
-53,No endogenous technology,Primary deficit,0.023
-54,No endogenous technology,Primary deficit,0.022
-55,No endogenous technology,Primary deficit,0.021
-56,No endogenous technology,Primary deficit,0.02
-57,No endogenous technology,Primary deficit,0.019
-58,No endogenous technology,Primary deficit,0.019
-59,No endogenous technology,Primary deficit,0.018
-60,No endogenous technology,Primary deficit,0.017
-61,No endogenous technology,Primary deficit,0.017
-62,No endogenous technology,Primary deficit,0.016
-63,No endogenous technology,Primary deficit,0.015
-64,No endogenous technology,Primary deficit,0.015
-65,No endogenous technology,Primary deficit,0.014
-66,No endogenous technology,Primary deficit,0.014
-67,No endogenous technology,Primary deficit,0.014
-68,No endogenous technology,Primary deficit,0.013
-69,No endogenous technology,Primary deficit,0.013
-70,No endogenous technology,Primary deficit,0.012
-71,No endogenous technology,Primary deficit,0.012
-72,No endogenous technology,Primary deficit,0.012
-73,No endogenous technology,Primary deficit,0.011
-74,No endogenous technology,Primary deficit,0.011
-75,No endogenous technology,Primary deficit,0.011
-76,No endogenous technology,Primary deficit,0.01
-77,No endogenous technology,Primary deficit,0.01
-78,No endogenous technology,Primary deficit,0.01
-79,No endogenous technology,Primary deficit,0.009
-80,No endogenous technology,Primary deficit,0.009
-81,No endogenous technology,Primary deficit,0.009
-82,No endogenous technology,Primary deficit,0.009
-83,No endogenous technology,Primary deficit,0.008
-84,No endogenous technology,Primary deficit,0.008
-85,No endogenous technology,Primary deficit,0.008
-86,No endogenous technology,Primary deficit,0.008
-87,No endogenous technology,Primary deficit,0.007
-88,No endogenous technology,Primary deficit,0.007
-89,No endogenous technology,Primary deficit,0.007
-90,No endogenous technology,Primary deficit,0.007
-91,No endogenous technology,Primary deficit,0.007
-92,No endogenous technology,Primary deficit,0.007
-93,No endogenous technology,Primary deficit,0.006
-94,No endogenous technology,Primary deficit,0.006
-95,No endogenous technology,Primary deficit,0.006
-96,No endogenous technology,Primary deficit,0.006
-97,No endogenous technology,Primary deficit,0.006
-98,No endogenous technology,Primary deficit,0.006
-99,No endogenous technology,Primary deficit,0.005
-100,No endogenous technology,Primary deficit,0.005
-1,No human capital,Primary deficit,0.958
-2,No human capital,Primary deficit,0.939
-3,No human capital,Primary deficit,0.849
-4,No human capital,Primary deficit,0.77
-5,No human capital,Primary deficit,0.7
-6,No human capital,Primary deficit,0.636
-7,No human capital,Primary deficit,0.579
-8,No human capital,Primary deficit,0.527
-9,No human capital,Primary deficit,0.48
-10,No human capital,Primary deficit,0.438
-11,No human capital,Primary deficit,0.399
-12,No human capital,Primary deficit,0.364
-13,No human capital,Primary deficit,0.333
-14,No human capital,Primary deficit,0.305
-15,No human capital,Primary deficit,0.279
-16,No human capital,Primary deficit,0.255
-17,No human capital,Primary deficit,0.234
-18,No human capital,Primary deficit,0.215
-19,No human capital,Primary deficit,0.197
-20,No human capital,Primary deficit,0.182
-21,No human capital,Primary deficit,0.167
-22,No human capital,Primary deficit,0.154
-23,No human capital,Primary deficit,0.142
-24,No human capital,Primary deficit,0.131
-25,No human capital,Primary deficit,0.121
-26,No human capital,Primary deficit,0.112
-27,No human capital,Primary deficit,0.104
-28,No human capital,Primary deficit,0.097
-29,No human capital,Primary deficit,0.09
-30,No human capital,Primary deficit,0.083
-31,No human capital,Primary deficit,0.078
-32,No human capital,Primary deficit,0.072
-33,No human capital,Primary deficit,0.068
-34,No human capital,Primary deficit,0.063
-35,No human capital,Primary deficit,0.059
-36,No human capital,Primary deficit,0.055
-37,No human capital,Primary deficit,0.052
-38,No human capital,Primary deficit,0.049
-39,No human capital,Primary deficit,0.046
-40,No human capital,Primary deficit,0.043
-41,No human capital,Primary deficit,0.041
-42,No human capital,Primary deficit,0.038
-43,No human capital,Primary deficit,0.036
-44,No human capital,Primary deficit,0.034
-45,No human capital,Primary deficit,0.032
-46,No human capital,Primary deficit,0.03
-47,No human capital,Primary deficit,0.029
-48,No human capital,Primary deficit,0.027
-49,No human capital,Primary deficit,0.026
-50,No human capital,Primary deficit,0.025
-51,No human capital,Primary deficit,0.023
-52,No human capital,Primary deficit,0.022
-53,No human capital,Primary deficit,0.021
-54,No human capital,Primary deficit,0.02
-55,No human capital,Primary deficit,0.019
-56,No human capital,Primary deficit,0.018
-57,No human capital,Primary deficit,0.018
-58,No human capital,Primary deficit,0.017
-59,No human capital,Primary deficit,0.016
-60,No human capital,Primary deficit,0.015
-61,No human capital,Primary deficit,0.015
-62,No human capital,Primary deficit,0.014
-63,No human capital,Primary deficit,0.013
-64,No human capital,Primary deficit,0.013
-65,No human capital,Primary deficit,0.012
-66,No human capital,Primary deficit,0.012
-67,No human capital,Primary deficit,0.011
-68,No human capital,Primary deficit,0.011
-69,No human capital,Primary deficit,0.01
-70,No human capital,Primary deficit,0.01
-71,No human capital,Primary deficit,0.01
-72,No human capital,Primary deficit,0.009
-73,No human capital,Primary deficit,0.009
-74,No human capital,Primary deficit,0.009
-75,No human capital,Primary deficit,0.008
-76,No human capital,Primary deficit,0.008
-77,No human capital,Primary deficit,0.008
-78,No human capital,Primary deficit,0.007
-79,No human capital,Primary deficit,0.007
-80,No human capital,Primary deficit,0.007
-81,No human capital,Primary deficit,0.006
-82,No human capital,Primary deficit,0.006
-83,No human capital,Primary deficit,0.006
-84,No human capital,Primary deficit,0.006
-85,No human capital,Primary deficit,0.006
-86,No human capital,Primary deficit,0.005
-87,No human capital,Primary deficit,0.005
-88,No human capital,Primary deficit,0.005
-89,No human capital,Primary deficit,0.005
-90,No human capital,Primary deficit,0.005
-91,No human capital,Primary deficit,0.004
-92,No human capital,Primary deficit,0.004
-93,No human capital,Primary deficit,0.004
-94,No human capital,Primary deficit,0.004
-95,No human capital,Primary deficit,0.004
-96,No human capital,Primary deficit,0.004
-97,No human capital,Primary deficit,0.004
-98,No human capital,Primary deficit,0.003
-99,No human capital,Primary deficit,0.003
-100,No human capital,Primary deficit,0.003
-1,No public infrastructure,Primary deficit,0.958
-2,No public infrastructure,Primary deficit,0.939
-3,No public infrastructure,Primary deficit,0.849
-4,No public infrastructure,Primary deficit,0.77
-5,No public infrastructure,Primary deficit,0.7
-6,No public infrastructure,Primary deficit,0.636
-7,No public infrastructure,Primary deficit,0.579
-8,No public infrastructure,Primary deficit,0.527
-9,No public infrastructure,Primary deficit,0.48
-10,No public infrastructure,Primary deficit,0.438
-11,No public infrastructure,Primary deficit,0.399
-12,No public infrastructure,Primary deficit,0.364
-13,No public infrastructure,Primary deficit,0.333
-14,No public infrastructure,Primary deficit,0.305
-15,No public infrastructure,Primary deficit,0.279
-16,No public infrastructure,Primary deficit,0.255
-17,No public infrastructure,Primary deficit,0.234
-18,No public infrastructure,Primary deficit,0.215
-19,No public infrastructure,Primary deficit,0.197
-20,No public infrastructure,Primary deficit,0.182
-21,No public infrastructure,Primary deficit,0.167
-22,No public infrastructure,Primary deficit,0.154
-23,No public infrastructure,Primary deficit,0.142
-24,No public infrastructure,Primary deficit,0.131
-25,No public infrastructure,Primary deficit,0.121
-26,No public infrastructure,Primary deficit,0.112
-27,No public infrastructure,Primary deficit,0.104
-28,No public infrastructure,Primary deficit,0.097
-29,No public infrastructure,Primary deficit,0.09
-30,No public infrastructure,Primary deficit,0.083
-31,No public infrastructure,Primary deficit,0.078
-32,No public infrastructure,Primary deficit,0.072
-33,No public infrastructure,Primary deficit,0.068
-34,No public infrastructure,Primary deficit,0.063
-35,No public infrastructure,Primary deficit,0.059
-36,No public infrastructure,Primary deficit,0.055
-37,No public infrastructure,Primary deficit,0.052
-38,No public infrastructure,Primary deficit,0.049
-39,No public infrastructure,Primary deficit,0.046
-40,No public infrastructure,Primary deficit,0.043
-41,No public infrastructure,Primary deficit,0.041
-42,No public infrastructure,Primary deficit,0.038
-43,No public infrastructure,Primary deficit,0.036
-44,No public infrastructure,Primary deficit,0.034
-45,No public infrastructure,Primary deficit,0.032
-46,No public infrastructure,Primary deficit,0.03
-47,No public infrastructure,Primary deficit,0.029
-48,No public infrastructure,Primary deficit,0.027
-49,No public infrastructure,Primary deficit,0.026
-50,No public infrastructure,Primary deficit,0.025
-51,No public infrastructure,Primary deficit,0.023
-52,No public infrastructure,Primary deficit,0.022
-53,No public infrastructure,Primary deficit,0.021
-54,No public infrastructure,Primary deficit,0.02
-55,No public infrastructure,Primary deficit,0.019
-56,No public infrastructure,Primary deficit,0.018
-57,No public infrastructure,Primary deficit,0.018
-58,No public infrastructure,Primary deficit,0.017
-59,No public infrastructure,Primary deficit,0.016
-60,No public infrastructure,Primary deficit,0.015
-61,No public infrastructure,Primary deficit,0.015
-62,No public infrastructure,Primary deficit,0.014
-63,No public infrastructure,Primary deficit,0.013
-64,No public infrastructure,Primary deficit,0.013
-65,No public infrastructure,Primary deficit,0.012
-66,No public infrastructure,Primary deficit,0.012
-67,No public infrastructure,Primary deficit,0.011
-68,No public infrastructure,Primary deficit,0.011
-69,No public infrastructure,Primary deficit,0.01
-70,No public infrastructure,Primary deficit,0.01
-71,No public infrastructure,Primary deficit,0.01
-72,No public infrastructure,Primary deficit,0.009
-73,No public infrastructure,Primary deficit,0.009
-74,No public infrastructure,Primary deficit,0.009
-75,No public infrastructure,Primary deficit,0.008
-76,No public infrastructure,Primary deficit,0.008
-77,No public infrastructure,Primary deficit,0.008
-78,No public infrastructure,Primary deficit,0.007
-79,No public infrastructure,Primary deficit,0.007
-80,No public infrastructure,Primary deficit,0.007
-81,No public infrastructure,Primary deficit,0.006
-82,No public infrastructure,Primary deficit,0.006
-83,No public infrastructure,Primary deficit,0.006
-84,No public infrastructure,Primary deficit,0.006
-85,No public infrastructure,Primary deficit,0.006
-86,No public infrastructure,Primary deficit,0.005
-87,No public infrastructure,Primary deficit,0.005
-88,No public infrastructure,Primary deficit,0.005
-89,No public infrastructure,Primary deficit,0.005
-90,No public infrastructure,Primary deficit,0.005
-91,No public infrastructure,Primary deficit,0.004
-92,No public infrastructure,Primary deficit,0.004
-93,No public infrastructure,Primary deficit,0.004
-94,No public infrastructure,Primary deficit,0.004
-95,No public infrastructure,Primary deficit,0.004
-96,No public infrastructure,Primary deficit,0.004
-97,No public infrastructure,Primary deficit,0.004
-98,No public infrastructure,Primary deficit,0.003
-99,No public infrastructure,Primary deficit,0.003
-100,No public infrastructure,Primary deficit,0.003
-1,No private capital,Primary deficit,0.796
-2,No private capital,Primary deficit,0.826
-3,No private capital,Primary deficit,0.803
-4,No private capital,Primary deficit,0.75
-5,No private capital,Primary deficit,0.684
-6,No private capital,Primary deficit,0.618
-7,No private capital,Primary deficit,0.556
-8,No private capital,Primary deficit,0.5
-9,No private capital,Primary deficit,0.449
-10,No private capital,Primary deficit,0.404
-11,No private capital,Primary deficit,0.363
-12,No private capital,Primary deficit,0.327
-13,No private capital,Primary deficit,0.294
-14,No private capital,Primary deficit,0.265
-15,No private capital,Primary deficit,0.238
-16,No private capital,Primary deficit,0.214
-17,No private capital,Primary deficit,0.193
-18,No private capital,Primary deficit,0.174
-19,No private capital,Primary deficit,0.156
-20,No private capital,Primary deficit,0.141
-21,No private capital,Primary deficit,0.127
-22,No private capital,Primary deficit,0.114
-23,No private capital,Primary deficit,0.103
-24,No private capital,Primary deficit,0.092
-25,No private capital,Primary deficit,0.083
-26,No private capital,Primary deficit,0.075
-27,No private capital,Primary deficit,0.067
-28,No private capital,Primary deficit,0.061
-29,No private capital,Primary deficit,0.055
-30,No private capital,Primary deficit,0.049
-31,No private capital,Primary deficit,0.044
-32,No private capital,Primary deficit,0.04
-33,No private capital,Primary deficit,0.036
-34,No private capital,Primary deficit,0.032
-35,No private capital,Primary deficit,0.029
-36,No private capital,Primary deficit,0.026
-37,No private capital,Primary deficit,0.023
-38,No private capital,Primary deficit,0.021
-39,No private capital,Primary deficit,0.019
-40,No private capital,Primary deficit,0.017
-41,No private capital,Primary deficit,0.015
-42,No private capital,Primary deficit,0.014
-43,No private capital,Primary deficit,0.012
-44,No private capital,Primary deficit,0.011
-45,No private capital,Primary deficit,0.01
-46,No private capital,Primary deficit,0.009
-47,No private capital,Primary deficit,0.008
-48,No private capital,Primary deficit,0.007
-49,No private capital,Primary deficit,0.007
-50,No private capital,Primary deficit,0.006
-51,No private capital,Primary deficit,0.005
-52,No private capital,Primary deficit,0.005
-53,No private capital,Primary deficit,0.004
-54,No private capital,Primary deficit,0.004
-55,No private capital,Primary deficit,0.004
-56,No private capital,Primary deficit,0.003
-57,No private capital,Primary deficit,0.003
-58,No private capital,Primary deficit,0.003
-59,No private capital,Primary deficit,0.002
-60,No private capital,Primary deficit,0.002
-61,No private capital,Primary deficit,0.002
-62,No private capital,Primary deficit,0.002
-63,No private capital,Primary deficit,0.002
-64,No private capital,Primary deficit,0.001
-65,No private capital,Primary deficit,0.001
-66,No private capital,Primary deficit,0.001
-67,No private capital,Primary deficit,0.001
-68,No private capital,Primary deficit,0.001
-69,No private capital,Primary deficit,0.001
-70,No private capital,Primary deficit,0.001
-71,No private capital,Primary deficit,0.001
-72,No private capital,Primary deficit,0.001
-73,No private capital,Primary deficit,0.001
-74,No private capital,Primary deficit,0.0
-75,No private capital,Primary deficit,0.0
-76,No private capital,Primary deficit,0.0
-77,No private capital,Primary deficit,0.0
-78,No private capital,Primary deficit,0.0
-79,No private capital,Primary deficit,0.0
-80,No private capital,Primary deficit,0.0
-81,No private capital,Primary deficit,0.0
-82,No private capital,Primary deficit,0.0
-83,No private capital,Primary deficit,0.0
-84,No private capital,Primary deficit,0.0
-85,No private capital,Primary deficit,0.0
-86,No private capital,Primary deficit,0.0
-87,No private capital,Primary deficit,0.0
-88,No private capital,Primary deficit,0.0
-89,No private capital,Primary deficit,0.0
-90,No private capital,Primary deficit,0.0
-91,No private capital,Primary deficit,0.0
-92,No private capital,Primary deficit,0.0
-93,No private capital,Primary deficit,0.0
-94,No private capital,Primary deficit,0.0
-95,No private capital,Primary deficit,0.0
-96,No private capital,Primary deficit,0.0
-97,No private capital,Primary deficit,0.0
-98,No private capital,Primary deficit,0.0
-99,No private capital,Primary deficit,0.0
-100,No private capital,Primary deficit,0.0
-1,No indexation,Primary deficit,0.832
-2,No indexation,Primary deficit,0.833
-3,No indexation,Primary deficit,0.787
-4,No indexation,Primary deficit,0.725
-5,No indexation,Primary deficit,0.66
-6,No indexation,Primary deficit,0.597
-7,No indexation,Primary deficit,0.539
-8,No indexation,Primary deficit,0.486
-9,No indexation,Primary deficit,0.437
-10,No indexation,Primary deficit,0.394
-11,No indexation,Primary deficit,0.354
-12,No indexation,Primary deficit,0.319
-13,No indexation,Primary deficit,0.287
-14,No indexation,Primary deficit,0.258
-15,No indexation,Primary deficit,0.233
-16,No indexation,Primary deficit,0.209
-17,No indexation,Primary deficit,0.188
-18,No indexation,Primary deficit,0.17
-19,No indexation,Primary deficit,0.153
-20,No indexation,Primary deficit,0.137
-21,No indexation,Primary deficit,0.124
-22,No indexation,Primary deficit,0.111
-23,No indexation,Primary deficit,0.1
-24,No indexation,Primary deficit,0.09
-25,No indexation,Primary deficit,0.081
-26,No indexation,Primary deficit,0.073
-27,No indexation,Primary deficit,0.066
-28,No indexation,Primary deficit,0.059
-29,No indexation,Primary deficit,0.053
-30,No indexation,Primary deficit,0.048
-31,No indexation,Primary deficit,0.043
-32,No indexation,Primary deficit,0.039
-33,No indexation,Primary deficit,0.035
-34,No indexation,Primary deficit,0.031
-35,No indexation,Primary deficit,0.028
-36,No indexation,Primary deficit,0.025
-37,No indexation,Primary deficit,0.023
-38,No indexation,Primary deficit,0.021
-39,No indexation,Primary deficit,0.019
-40,No indexation,Primary deficit,0.017
-41,No indexation,Primary deficit,0.015
-42,No indexation,Primary deficit,0.014
-43,No indexation,Primary deficit,0.012
-44,No indexation,Primary deficit,0.011
-45,No indexation,Primary deficit,0.01
-46,No indexation,Primary deficit,0.009
-47,No indexation,Primary deficit,0.008
-48,No indexation,Primary deficit,0.007
-49,No indexation,Primary deficit,0.006
-50,No indexation,Primary deficit,0.006
-51,No indexation,Primary deficit,0.005
-52,No indexation,Primary deficit,0.005
-53,No indexation,Primary deficit,0.004
-54,No indexation,Primary deficit,0.004
-55,No indexation,Primary deficit,0.003
-56,No indexation,Primary deficit,0.003
-57,No indexation,Primary deficit,0.003
-58,No indexation,Primary deficit,0.003
-59,No indexation,Primary deficit,0.002
-60,No indexation,Primary deficit,0.002
-61,No indexation,Primary deficit,0.002
-62,No indexation,Primary deficit,0.002
-63,No indexation,Primary deficit,0.001
-64,No indexation,Primary deficit,0.001
-65,No indexation,Primary deficit,0.001
-66,No indexation,Primary deficit,0.001
-67,No indexation,Primary deficit,0.001
-68,No indexation,Primary deficit,0.001
-69,No indexation,Primary deficit,0.001
-70,No indexation,Primary deficit,0.001
-71,No indexation,Primary deficit,0.001
-72,No indexation,Primary deficit,0.001
-73,No indexation,Primary deficit,0.001
-74,No indexation,Primary deficit,0.0
-75,No indexation,Primary deficit,0.0
-76,No indexation,Primary deficit,0.0
-77,No indexation,Primary deficit,0.0
-78,No indexation,Primary deficit,0.0
-79,No indexation,Primary deficit,0.0
-80,No indexation,Primary deficit,0.0
-81,No indexation,Primary deficit,0.0
-82,No indexation,Primary deficit,0.0
-83,No indexation,Primary deficit,0.0
-84,No indexation,Primary deficit,0.0
-85,No indexation,Primary deficit,0.0
-86,No indexation,Primary deficit,0.0
-87,No indexation,Primary deficit,0.0
-88,No indexation,Primary deficit,0.0
-89,No indexation,Primary deficit,0.0
-90,No indexation,Primary deficit,0.0
-91,No indexation,Primary deficit,0.0
-92,No indexation,Primary deficit,0.0
-93,No indexation,Primary deficit,0.0
-94,No indexation,Primary deficit,0.0
-95,No indexation,Primary deficit,0.0
-96,No indexation,Primary deficit,0.0
-97,No indexation,Primary deficit,0.0
-98,No indexation,Primary deficit,0.0
-99,No indexation,Primary deficit,0.0
-100,No indexation,Primary deficit,0.0
-1,No trend growth,Primary deficit,0.835
-2,No trend growth,Primary deficit,0.835
-3,No trend growth,Primary deficit,0.789
-4,No trend growth,Primary deficit,0.726
-5,No trend growth,Primary deficit,0.661
-6,No trend growth,Primary deficit,0.598
-7,No trend growth,Primary deficit,0.54
-8,No trend growth,Primary deficit,0.486
-9,No trend growth,Primary deficit,0.438
-10,No trend growth,Primary deficit,0.394
-11,No trend growth,Primary deficit,0.355
-12,No trend growth,Primary deficit,0.32
-13,No trend growth,Primary deficit,0.288
-14,No trend growth,Primary deficit,0.259
-15,No trend growth,Primary deficit,0.233
-16,No trend growth,Primary deficit,0.21
-17,No trend growth,Primary deficit,0.189
-18,No trend growth,Primary deficit,0.17
-19,No trend growth,Primary deficit,0.153
-20,No trend growth,Primary deficit,0.138
-21,No trend growth,Primary deficit,0.124
-22,No trend growth,Primary deficit,0.112
-23,No trend growth,Primary deficit,0.1
-24,No trend growth,Primary deficit,0.09
-25,No trend growth,Primary deficit,0.081
-26,No trend growth,Primary deficit,0.073
-27,No trend growth,Primary deficit,0.066
-28,No trend growth,Primary deficit,0.059
-29,No trend growth,Primary deficit,0.053
-30,No trend growth,Primary deficit,0.048
-31,No trend growth,Primary deficit,0.043
-32,No trend growth,Primary deficit,0.039
-33,No trend growth,Primary deficit,0.035
-34,No trend growth,Primary deficit,0.032
-35,No trend growth,Primary deficit,0.028
-36,No trend growth,Primary deficit,0.026
-37,No trend growth,Primary deficit,0.023
-38,No trend growth,Primary deficit,0.021
-39,No trend growth,Primary deficit,0.019
-40,No trend growth,Primary deficit,0.017
-41,No trend growth,Primary deficit,0.015
-42,No trend growth,Primary deficit,0.014
-43,No trend growth,Primary deficit,0.012
-44,No trend growth,Primary deficit,0.011
-45,No trend growth,Primary deficit,0.01
-46,No trend growth,Primary deficit,0.009
-47,No trend growth,Primary deficit,0.008
-48,No trend growth,Primary deficit,0.007
-49,No trend growth,Primary deficit,0.006
-50,No trend growth,Primary deficit,0.006
-51,No trend growth,Primary deficit,0.005
-52,No trend growth,Primary deficit,0.005
-53,No trend growth,Primary deficit,0.004
-54,No trend growth,Primary deficit,0.004
-55,No trend growth,Primary deficit,0.003
-56,No trend growth,Primary deficit,0.003
-57,No trend growth,Primary deficit,0.003
-58,No trend growth,Primary deficit,0.003
-59,No trend growth,Primary deficit,0.002
-60,No trend growth,Primary deficit,0.002
-61,No trend growth,Primary deficit,0.002
-62,No trend growth,Primary deficit,0.002
-63,No trend growth,Primary deficit,0.001
-64,No trend growth,Primary deficit,0.001
-65,No trend growth,Primary deficit,0.001
-66,No trend growth,Primary deficit,0.001
-67,No trend growth,Primary deficit,0.001
-68,No trend growth,Primary deficit,0.001
-69,No trend growth,Primary deficit,0.001
-70,No trend growth,Primary deficit,0.001
-71,No trend growth,Primary deficit,0.001
-72,No trend growth,Primary deficit,0.001
-73,No trend growth,Primary deficit,0.001
-74,No trend growth,Primary deficit,0.0
-75,No trend growth,Primary deficit,0.0
-76,No trend growth,Primary deficit,0.0
-77,No trend growth,Primary deficit,0.0
-78,No trend growth,Primary deficit,0.0
-79,No trend growth,Primary deficit,0.0
-80,No trend growth,Primary deficit,0.0
-81,No trend growth,Primary deficit,0.0
-82,No trend growth,Primary deficit,0.0
-83,No trend growth,Primary deficit,0.0
-84,No trend growth,Primary deficit,0.0
-85,No trend growth,Primary deficit,0.0
-86,No trend growth,Primary deficit,0.0
-87,No trend growth,Primary deficit,0.0
-88,No trend growth,Primary deficit,0.0
-89,No trend growth,Primary deficit,0.0
-90,No trend growth,Primary deficit,0.0
-91,No trend growth,Primary deficit,0.0
-92,No trend growth,Primary deficit,0.0
-93,No trend growth,Primary deficit,0.0
-94,No trend growth,Primary deficit,0.0
-95,No trend growth,Primary deficit,0.0
-96,No trend growth,Primary deficit,0.0
-97,No trend growth,Primary deficit,0.0
-98,No trend growth,Primary deficit,0.0
-99,No trend growth,Primary deficit,0.0
-100,No trend growth,Primary deficit,0.0
-1,Derived canonical NK,Primary deficit,0.0
-2,Derived canonical NK,Primary deficit,0.0
-3,Derived canonical NK,Primary deficit,0.0
-4,Derived canonical NK,Primary deficit,0.0
-5,Derived canonical NK,Primary deficit,0.0
-6,Derived canonical NK,Primary deficit,0.0
-7,Derived canonical NK,Primary deficit,0.0
-8,Derived canonical NK,Primary deficit,0.0
-9,Derived canonical NK,Primary deficit,0.0
-10,Derived canonical NK,Primary deficit,0.0
-11,Derived canonical NK,Primary deficit,0.0
-12,Derived canonical NK,Primary deficit,0.0
-13,Derived canonical NK,Primary deficit,0.0
-14,Derived canonical NK,Primary deficit,0.0
-15,Derived canonical NK,Primary deficit,0.0
-16,Derived canonical NK,Primary deficit,0.0
-17,Derived canonical NK,Primary deficit,0.0
-18,Derived canonical NK,Primary deficit,0.0
-19,Derived canonical NK,Primary deficit,0.0
-20,Derived canonical NK,Primary deficit,0.0
-21,Derived canonical NK,Primary deficit,0.0
-22,Derived canonical NK,Primary deficit,0.0
-23,Derived canonical NK,Primary deficit,0.0
-24,Derived canonical NK,Primary deficit,0.0
-25,Derived canonical NK,Primary deficit,0.0
-26,Derived canonical NK,Primary deficit,0.0
-27,Derived canonical NK,Primary deficit,0.0
-28,Derived canonical NK,Primary deficit,0.0
-29,Derived canonical NK,Primary deficit,0.0
-30,Derived canonical NK,Primary deficit,0.0
-31,Derived canonical NK,Primary deficit,0.0
-32,Derived canonical NK,Primary deficit,0.0
-33,Derived canonical NK,Primary deficit,0.0
-34,Derived canonical NK,Primary deficit,0.0
-35,Derived canonical NK,Primary deficit,0.0
-36,Derived canonical NK,Primary deficit,0.0
-37,Derived canonical NK,Primary deficit,0.0
-38,Derived canonical NK,Primary deficit,0.0
-39,Derived canonical NK,Primary deficit,0.0
-40,Derived canonical NK,Primary deficit,0.0
-41,Derived canonical NK,Primary deficit,0.0
-42,Derived canonical NK,Primary deficit,0.0
-43,Derived canonical NK,Primary deficit,0.0
-44,Derived canonical NK,Primary deficit,0.0
-45,Derived canonical NK,Primary deficit,0.0
-46,Derived canonical NK,Primary deficit,0.0
-47,Derived canonical NK,Primary deficit,0.0
-48,Derived canonical NK,Primary deficit,0.0
-49,Derived canonical NK,Primary deficit,0.0
-50,Derived canonical NK,Primary deficit,0.0
-51,Derived canonical NK,Primary deficit,0.0
-52,Derived canonical NK,Primary deficit,0.0
-53,Derived canonical NK,Primary deficit,0.0
-54,Derived canonical NK,Primary deficit,0.0
-55,Derived canonical NK,Primary deficit,0.0
-56,Derived canonical NK,Primary deficit,0.0
-57,Derived canonical NK,Primary deficit,0.0
-58,Derived canonical NK,Primary deficit,0.0
-59,Derived canonical NK,Primary deficit,0.0
-60,Derived canonical NK,Primary deficit,0.0
-61,Derived canonical NK,Primary deficit,0.0
-62,Derived canonical NK,Primary deficit,0.0
-63,Derived canonical NK,Primary deficit,0.0
-64,Derived canonical NK,Primary deficit,0.0
-65,Derived canonical NK,Primary deficit,0.0
-66,Derived canonical NK,Primary deficit,0.0
-67,Derived canonical NK,Primary deficit,0.0
-68,Derived canonical NK,Primary deficit,0.0
-69,Derived canonical NK,Primary deficit,0.0
-70,Derived canonical NK,Primary deficit,0.0
-71,Derived canonical NK,Primary deficit,0.0
-72,Derived canonical NK,Primary deficit,0.0
-73,Derived canonical NK,Primary deficit,0.0
-74,Derived canonical NK,Primary deficit,0.0
-75,Derived canonical NK,Primary deficit,0.0
-76,Derived canonical NK,Primary deficit,0.0
-77,Derived canonical NK,Primary deficit,0.0
-78,Derived canonical NK,Primary deficit,0.0
-79,Derived canonical NK,Primary deficit,0.0
-80,Derived canonical NK,Primary deficit,0.0
-81,Derived canonical NK,Primary deficit,0.0
-82,Derived canonical NK,Primary deficit,0.0
-83,Derived canonical NK,Primary deficit,0.0
-84,Derived canonical NK,Primary deficit,0.0
-85,Derived canonical NK,Primary deficit,0.0
-86,Derived canonical NK,Primary deficit,0.0
-87,Derived canonical NK,Primary deficit,0.0
-88,Derived canonical NK,Primary deficit,0.0
-89,Derived canonical NK,Primary deficit,0.0
-90,Derived canonical NK,Primary deficit,0.0
-91,Derived canonical NK,Primary deficit,0.0
-92,Derived canonical NK,Primary deficit,0.0
-93,Derived canonical NK,Primary deficit,0.0
-94,Derived canonical NK,Primary deficit,0.0
-95,Derived canonical NK,Primary deficit,0.0
-96,Derived canonical NK,Primary deficit,0.0
-97,Derived canonical NK,Primary deficit,0.0
-98,Derived canonical NK,Primary deficit,0.0
-99,Derived canonical NK,Primary deficit,0.0
-100,Derived canonical NK,Primary deficit,0.0
-1,Full model,Transfers (T<sub>t</sub>),0.0
-2,Full model,Transfers (T<sub>t</sub>),0.0
-3,Full model,Transfers (T<sub>t</sub>),0.0
-4,Full model,Transfers (T<sub>t</sub>),0.0
-5,Full model,Transfers (T<sub>t</sub>),0.0
-6,Full model,Transfers (T<sub>t</sub>),0.0
-7,Full model,Transfers (T<sub>t</sub>),0.0
-8,Full model,Transfers (T<sub>t</sub>),0.0
-9,Full model,Transfers (T<sub>t</sub>),0.0
-10,Full model,Transfers (T<sub>t</sub>),0.0
-11,Full model,Transfers (T<sub>t</sub>),0.0
-12,Full model,Transfers (T<sub>t</sub>),0.0
-13,Full model,Transfers (T<sub>t</sub>),0.0
-14,Full model,Transfers (T<sub>t</sub>),0.0
-15,Full model,Transfers (T<sub>t</sub>),0.0
-16,Full model,Transfers (T<sub>t</sub>),0.0
-17,Full model,Transfers (T<sub>t</sub>),0.0
-18,Full model,Transfers (T<sub>t</sub>),0.0
-19,Full model,Transfers (T<sub>t</sub>),0.0
-20,Full model,Transfers (T<sub>t</sub>),0.0
-21,Full model,Transfers (T<sub>t</sub>),0.0
-22,Full model,Transfers (T<sub>t</sub>),0.0
-23,Full model,Transfers (T<sub>t</sub>),0.0
-24,Full model,Transfers (T<sub>t</sub>),0.0
-25,Full model,Transfers (T<sub>t</sub>),0.0
-26,Full model,Transfers (T<sub>t</sub>),0.0
-27,Full model,Transfers (T<sub>t</sub>),0.0
-28,Full model,Transfers (T<sub>t</sub>),0.0
-29,Full model,Transfers (T<sub>t</sub>),0.0
-30,Full model,Transfers (T<sub>t</sub>),0.0
-31,Full model,Transfers (T<sub>t</sub>),0.0
-32,Full model,Transfers (T<sub>t</sub>),0.0
-33,Full model,Transfers (T<sub>t</sub>),0.0
-34,Full model,Transfers (T<sub>t</sub>),0.0
-35,Full model,Transfers (T<sub>t</sub>),0.0
-36,Full model,Transfers (T<sub>t</sub>),0.0
-37,Full model,Transfers (T<sub>t</sub>),0.0
-38,Full model,Transfers (T<sub>t</sub>),0.0
-39,Full model,Transfers (T<sub>t</sub>),0.0
-40,Full model,Transfers (T<sub>t</sub>),0.0
-41,Full model,Transfers (T<sub>t</sub>),0.0
-42,Full model,Transfers (T<sub>t</sub>),0.0
-43,Full model,Transfers (T<sub>t</sub>),0.0
-44,Full model,Transfers (T<sub>t</sub>),0.0
-45,Full model,Transfers (T<sub>t</sub>),0.0
-46,Full model,Transfers (T<sub>t</sub>),0.0
-47,Full model,Transfers (T<sub>t</sub>),0.0
-48,Full model,Transfers (T<sub>t</sub>),0.0
-49,Full model,Transfers (T<sub>t</sub>),0.0
-50,Full model,Transfers (T<sub>t</sub>),0.0
-51,Full model,Transfers (T<sub>t</sub>),0.0
-52,Full model,Transfers (T<sub>t</sub>),0.0
-53,Full model,Transfers (T<sub>t</sub>),0.0
-54,Full model,Transfers (T<sub>t</sub>),0.0
-55,Full model,Transfers (T<sub>t</sub>),0.0
-56,Full model,Transfers (T<sub>t</sub>),0.0
-57,Full model,Transfers (T<sub>t</sub>),0.0
-58,Full model,Transfers (T<sub>t</sub>),0.0
-59,Full model,Transfers (T<sub>t</sub>),0.0
-60,Full model,Transfers (T<sub>t</sub>),0.0
-61,Full model,Transfers (T<sub>t</sub>),0.0
-62,Full model,Transfers (T<sub>t</sub>),0.0
-63,Full model,Transfers (T<sub>t</sub>),0.0
-64,Full model,Transfers (T<sub>t</sub>),0.0
-65,Full model,Transfers (T<sub>t</sub>),0.0
-66,Full model,Transfers (T<sub>t</sub>),0.0
-67,Full model,Transfers (T<sub>t</sub>),0.0
-68,Full model,Transfers (T<sub>t</sub>),0.0
-69,Full model,Transfers (T<sub>t</sub>),0.0
-70,Full model,Transfers (T<sub>t</sub>),0.0
-71,Full model,Transfers (T<sub>t</sub>),0.0
-72,Full model,Transfers (T<sub>t</sub>),0.0
-73,Full model,Transfers (T<sub>t</sub>),0.0
-74,Full model,Transfers (T<sub>t</sub>),0.0
-75,Full model,Transfers (T<sub>t</sub>),0.0
-76,Full model,Transfers (T<sub>t</sub>),0.0
-77,Full model,Transfers (T<sub>t</sub>),0.0
-78,Full model,Transfers (T<sub>t</sub>),0.0
-79,Full model,Transfers (T<sub>t</sub>),0.0
-80,Full model,Transfers (T<sub>t</sub>),0.0
-81,Full model,Transfers (T<sub>t</sub>),0.0
-82,Full model,Transfers (T<sub>t</sub>),0.0
-83,Full model,Transfers (T<sub>t</sub>),0.0
-84,Full model,Transfers (T<sub>t</sub>),0.0
-85,Full model,Transfers (T<sub>t</sub>),0.0
-86,Full model,Transfers (T<sub>t</sub>),0.0
-87,Full model,Transfers (T<sub>t</sub>),0.0
-88,Full model,Transfers (T<sub>t</sub>),0.0
-89,Full model,Transfers (T<sub>t</sub>),0.0
-90,Full model,Transfers (T<sub>t</sub>),0.0
-91,Full model,Transfers (T<sub>t</sub>),0.0
-92,Full model,Transfers (T<sub>t</sub>),0.0
-93,Full model,Transfers (T<sub>t</sub>),0.0
-94,Full model,Transfers (T<sub>t</sub>),0.0
-95,Full model,Transfers (T<sub>t</sub>),0.0
-96,Full model,Transfers (T<sub>t</sub>),0.0
-97,Full model,Transfers (T<sub>t</sub>),0.0
-98,Full model,Transfers (T<sub>t</sub>),0.0
-99,Full model,Transfers (T<sub>t</sub>),0.0
-100,Full model,Transfers (T<sub>t</sub>),0.0
-1,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-2,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-3,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-4,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-5,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-6,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-7,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-8,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-9,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-10,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-11,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-12,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-13,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-14,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-15,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-16,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-17,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-18,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-19,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-20,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-21,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-22,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-23,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-24,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-25,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-26,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-27,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-28,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-29,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-30,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-31,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-32,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-33,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-34,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-35,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-36,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-37,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-38,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-39,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-40,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-41,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-42,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-43,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-44,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-45,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-46,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-47,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-48,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-49,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-50,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-51,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-52,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-53,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-54,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-55,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-56,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-57,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-58,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-59,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-60,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-61,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-62,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-63,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-64,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-65,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-66,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-67,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-68,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-69,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-70,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-71,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-72,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-73,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-74,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-75,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-76,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-77,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-78,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-79,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-80,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-81,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-82,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-83,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-84,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-85,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-86,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-87,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-88,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-89,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-90,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-91,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-92,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-93,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-94,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-95,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-96,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-97,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-98,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-99,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-100,No endogenous technology,Transfers (T<sub>t</sub>),0.0
-1,No human capital,Transfers (T<sub>t</sub>),0.0
-2,No human capital,Transfers (T<sub>t</sub>),0.0
-3,No human capital,Transfers (T<sub>t</sub>),0.0
-4,No human capital,Transfers (T<sub>t</sub>),0.0
-5,No human capital,Transfers (T<sub>t</sub>),0.0
-6,No human capital,Transfers (T<sub>t</sub>),0.0
-7,No human capital,Transfers (T<sub>t</sub>),0.0
-8,No human capital,Transfers (T<sub>t</sub>),0.0
-9,No human capital,Transfers (T<sub>t</sub>),0.0
-10,No human capital,Transfers (T<sub>t</sub>),0.0
-11,No human capital,Transfers (T<sub>t</sub>),0.0
-12,No human capital,Transfers (T<sub>t</sub>),0.0
-13,No human capital,Transfers (T<sub>t</sub>),0.0
-14,No human capital,Transfers (T<sub>t</sub>),0.0
-15,No human capital,Transfers (T<sub>t</sub>),0.0
-16,No human capital,Transfers (T<sub>t</sub>),0.0
-17,No human capital,Transfers (T<sub>t</sub>),0.0
-18,No human capital,Transfers (T<sub>t</sub>),0.0
-19,No human capital,Transfers (T<sub>t</sub>),0.0
-20,No human capital,Transfers (T<sub>t</sub>),0.0
-21,No human capital,Transfers (T<sub>t</sub>),0.0
-22,No human capital,Transfers (T<sub>t</sub>),0.0
-23,No human capital,Transfers (T<sub>t</sub>),0.0
-24,No human capital,Transfers (T<sub>t</sub>),0.0
-25,No human capital,Transfers (T<sub>t</sub>),0.0
-26,No human capital,Transfers (T<sub>t</sub>),0.0
-27,No human capital,Transfers (T<sub>t</sub>),0.0
-28,No human capital,Transfers (T<sub>t</sub>),0.0
-29,No human capital,Transfers (T<sub>t</sub>),0.0
-30,No human capital,Transfers (T<sub>t</sub>),0.0
-31,No human capital,Transfers (T<sub>t</sub>),0.0
-32,No human capital,Transfers (T<sub>t</sub>),0.0
-33,No human capital,Transfers (T<sub>t</sub>),0.0
-34,No human capital,Transfers (T<sub>t</sub>),0.0
-35,No human capital,Transfers (T<sub>t</sub>),0.0
-36,No human capital,Transfers (T<sub>t</sub>),0.0
-37,No human capital,Transfers (T<sub>t</sub>),0.0
-38,No human capital,Transfers (T<sub>t</sub>),0.0
-39,No human capital,Transfers (T<sub>t</sub>),0.0
-40,No human capital,Transfers (T<sub>t</sub>),0.0
-41,No human capital,Transfers (T<sub>t</sub>),0.0
-42,No human capital,Transfers (T<sub>t</sub>),0.0
-43,No human capital,Transfers (T<sub>t</sub>),0.0
-44,No human capital,Transfers (T<sub>t</sub>),0.0
-45,No human capital,Transfers (T<sub>t</sub>),0.0
-46,No human capital,Transfers (T<sub>t</sub>),0.0
-47,No human capital,Transfers (T<sub>t</sub>),0.0
-48,No human capital,Transfers (T<sub>t</sub>),0.0
-49,No human capital,Transfers (T<sub>t</sub>),0.0
-50,No human capital,Transfers (T<sub>t</sub>),0.0
-51,No human capital,Transfers (T<sub>t</sub>),0.0
-52,No human capital,Transfers (T<sub>t</sub>),0.0
-53,No human capital,Transfers (T<sub>t</sub>),0.0
-54,No human capital,Transfers (T<sub>t</sub>),0.0
-55,No human capital,Transfers (T<sub>t</sub>),0.0
-56,No human capital,Transfers (T<sub>t</sub>),0.0
-57,No human capital,Transfers (T<sub>t</sub>),0.0
-58,No human capital,Transfers (T<sub>t</sub>),0.0
-59,No human capital,Transfers (T<sub>t</sub>),0.0
-60,No human capital,Transfers (T<sub>t</sub>),0.0
-61,No human capital,Transfers (T<sub>t</sub>),0.0
-62,No human capital,Transfers (T<sub>t</sub>),0.0
-63,No human capital,Transfers (T<sub>t</sub>),0.0
-64,No human capital,Transfers (T<sub>t</sub>),0.0
-65,No human capital,Transfers (T<sub>t</sub>),0.0
-66,No human capital,Transfers (T<sub>t</sub>),0.0
-67,No human capital,Transfers (T<sub>t</sub>),0.0
-68,No human capital,Transfers (T<sub>t</sub>),0.0
-69,No human capital,Transfers (T<sub>t</sub>),0.0
-70,No human capital,Transfers (T<sub>t</sub>),0.0
-71,No human capital,Transfers (T<sub>t</sub>),0.0
-72,No human capital,Transfers (T<sub>t</sub>),0.0
-73,No human capital,Transfers (T<sub>t</sub>),0.0
-74,No human capital,Transfers (T<sub>t</sub>),0.0
-75,No human capital,Transfers (T<sub>t</sub>),0.0
-76,No human capital,Transfers (T<sub>t</sub>),0.0
-77,No human capital,Transfers (T<sub>t</sub>),0.0
-78,No human capital,Transfers (T<sub>t</sub>),0.0
-79,No human capital,Transfers (T<sub>t</sub>),0.0
-80,No human capital,Transfers (T<sub>t</sub>),0.0
-81,No human capital,Transfers (T<sub>t</sub>),0.0
-82,No human capital,Transfers (T<sub>t</sub>),0.0
-83,No human capital,Transfers (T<sub>t</sub>),0.0
-84,No human capital,Transfers (T<sub>t</sub>),0.0
-85,No human capital,Transfers (T<sub>t</sub>),0.0
-86,No human capital,Transfers (T<sub>t</sub>),0.0
-87,No human capital,Transfers (T<sub>t</sub>),0.0
-88,No human capital,Transfers (T<sub>t</sub>),0.0
-89,No human capital,Transfers (T<sub>t</sub>),0.0
-90,No human capital,Transfers (T<sub>t</sub>),0.0
-91,No human capital,Transfers (T<sub>t</sub>),0.0
-92,No human capital,Transfers (T<sub>t</sub>),0.0
-93,No human capital,Transfers (T<sub>t</sub>),0.0
-94,No human capital,Transfers (T<sub>t</sub>),0.0
-95,No human capital,Transfers (T<sub>t</sub>),0.0
-96,No human capital,Transfers (T<sub>t</sub>),0.0
-97,No human capital,Transfers (T<sub>t</sub>),0.0
-98,No human capital,Transfers (T<sub>t</sub>),0.0
-99,No human capital,Transfers (T<sub>t</sub>),0.0
-100,No human capital,Transfers (T<sub>t</sub>),0.0
-1,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-2,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-3,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-4,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-5,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-6,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-7,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-8,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-9,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-10,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-11,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-12,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-13,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-14,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-15,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-16,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-17,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-18,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-19,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-20,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-21,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-22,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-23,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-24,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-25,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-26,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-27,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-28,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-29,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-30,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-31,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-32,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-33,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-34,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-35,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-36,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-37,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-38,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-39,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-40,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-41,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-42,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-43,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-44,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-45,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-46,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-47,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-48,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-49,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-50,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-51,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-52,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-53,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-54,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-55,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-56,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-57,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-58,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-59,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-60,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-61,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-62,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-63,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-64,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-65,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-66,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-67,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-68,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-69,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-70,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-71,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-72,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-73,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-74,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-75,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-76,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-77,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-78,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-79,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-80,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-81,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-82,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-83,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-84,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-85,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-86,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-87,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-88,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-89,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-90,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-91,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-92,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-93,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-94,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-95,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-96,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-97,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-98,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-99,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-100,No public infrastructure,Transfers (T<sub>t</sub>),0.0
-1,No private capital,Transfers (T<sub>t</sub>),0.0
-2,No private capital,Transfers (T<sub>t</sub>),0.0
-3,No private capital,Transfers (T<sub>t</sub>),0.0
-4,No private capital,Transfers (T<sub>t</sub>),0.0
-5,No private capital,Transfers (T<sub>t</sub>),0.0
-6,No private capital,Transfers (T<sub>t</sub>),0.0
-7,No private capital,Transfers (T<sub>t</sub>),0.0
-8,No private capital,Transfers (T<sub>t</sub>),0.0
-9,No private capital,Transfers (T<sub>t</sub>),0.0
-10,No private capital,Transfers (T<sub>t</sub>),0.0
-11,No private capital,Transfers (T<sub>t</sub>),0.0
-12,No private capital,Transfers (T<sub>t</sub>),0.0
-13,No private capital,Transfers (T<sub>t</sub>),0.0
-14,No private capital,Transfers (T<sub>t</sub>),0.0
-15,No private capital,Transfers (T<sub>t</sub>),0.0
-16,No private capital,Transfers (T<sub>t</sub>),0.0
-17,No private capital,Transfers (T<sub>t</sub>),0.0
-18,No private capital,Transfers (T<sub>t</sub>),0.0
-19,No private capital,Transfers (T<sub>t</sub>),0.0
-20,No private capital,Transfers (T<sub>t</sub>),0.0
-21,No private capital,Transfers (T<sub>t</sub>),0.0
-22,No private capital,Transfers (T<sub>t</sub>),0.0
-23,No private capital,Transfers (T<sub>t</sub>),0.0
-24,No private capital,Transfers (T<sub>t</sub>),0.0
-25,No private capital,Transfers (T<sub>t</sub>),0.0
-26,No private capital,Transfers (T<sub>t</sub>),0.0
-27,No private capital,Transfers (T<sub>t</sub>),0.0
-28,No private capital,Transfers (T<sub>t</sub>),0.0
-29,No private capital,Transfers (T<sub>t</sub>),0.0
-30,No private capital,Transfers (T<sub>t</sub>),0.0
-31,No private capital,Transfers (T<sub>t</sub>),0.0
-32,No private capital,Transfers (T<sub>t</sub>),0.0
-33,No private capital,Transfers (T<sub>t</sub>),0.0
-34,No private capital,Transfers (T<sub>t</sub>),0.0
-35,No private capital,Transfers (T<sub>t</sub>),0.0
-36,No private capital,Transfers (T<sub>t</sub>),0.0
-37,No private capital,Transfers (T<sub>t</sub>),0.0
-38,No private capital,Transfers (T<sub>t</sub>),0.0
-39,No private capital,Transfers (T<sub>t</sub>),0.0
-40,No private capital,Transfers (T<sub>t</sub>),0.0
-41,No private capital,Transfers (T<sub>t</sub>),0.0
-42,No private capital,Transfers (T<sub>t</sub>),0.0
-43,No private capital,Transfers (T<sub>t</sub>),0.0
-44,No private capital,Transfers (T<sub>t</sub>),0.0
-45,No private capital,Transfers (T<sub>t</sub>),0.0
-46,No private capital,Transfers (T<sub>t</sub>),0.0
-47,No private capital,Transfers (T<sub>t</sub>),0.0
-48,No private capital,Transfers (T<sub>t</sub>),0.0
-49,No private capital,Transfers (T<sub>t</sub>),0.0
-50,No private capital,Transfers (T<sub>t</sub>),0.0
-51,No private capital,Transfers (T<sub>t</sub>),0.0
-52,No private capital,Transfers (T<sub>t</sub>),0.0
-53,No private capital,Transfers (T<sub>t</sub>),0.0
-54,No private capital,Transfers (T<sub>t</sub>),0.0
-55,No private capital,Transfers (T<sub>t</sub>),0.0
-56,No private capital,Transfers (T<sub>t</sub>),0.0
-57,No private capital,Transfers (T<sub>t</sub>),0.0
-58,No private capital,Transfers (T<sub>t</sub>),0.0
-59,No private capital,Transfers (T<sub>t</sub>),0.0
-60,No private capital,Transfers (T<sub>t</sub>),0.0
-61,No private capital,Transfers (T<sub>t</sub>),0.0
-62,No private capital,Transfers (T<sub>t</sub>),0.0
-63,No private capital,Transfers (T<sub>t</sub>),0.0
-64,No private capital,Transfers (T<sub>t</sub>),0.0
-65,No private capital,Transfers (T<sub>t</sub>),0.0
-66,No private capital,Transfers (T<sub>t</sub>),0.0
-67,No private capital,Transfers (T<sub>t</sub>),0.0
-68,No private capital,Transfers (T<sub>t</sub>),0.0
-69,No private capital,Transfers (T<sub>t</sub>),0.0
-70,No private capital,Transfers (T<sub>t</sub>),0.0
-71,No private capital,Transfers (T<sub>t</sub>),0.0
-72,No private capital,Transfers (T<sub>t</sub>),0.0
-73,No private capital,Transfers (T<sub>t</sub>),0.0
-74,No private capital,Transfers (T<sub>t</sub>),0.0
-75,No private capital,Transfers (T<sub>t</sub>),0.0
-76,No private capital,Transfers (T<sub>t</sub>),0.0
-77,No private capital,Transfers (T<sub>t</sub>),0.0
-78,No private capital,Transfers (T<sub>t</sub>),0.0
-79,No private capital,Transfers (T<sub>t</sub>),0.0
-80,No private capital,Transfers (T<sub>t</sub>),0.0
-81,No private capital,Transfers (T<sub>t</sub>),0.0
-82,No private capital,Transfers (T<sub>t</sub>),0.0
-83,No private capital,Transfers (T<sub>t</sub>),0.0
-84,No private capital,Transfers (T<sub>t</sub>),0.0
-85,No private capital,Transfers (T<sub>t</sub>),0.0
-86,No private capital,Transfers (T<sub>t</sub>),0.0
-87,No private capital,Transfers (T<sub>t</sub>),0.0
-88,No private capital,Transfers (T<sub>t</sub>),0.0
-89,No private capital,Transfers (T<sub>t</sub>),0.0
-90,No private capital,Transfers (T<sub>t</sub>),0.0
-91,No private capital,Transfers (T<sub>t</sub>),0.0
-92,No private capital,Transfers (T<sub>t</sub>),0.0
-93,No private capital,Transfers (T<sub>t</sub>),0.0
-94,No private capital,Transfers (T<sub>t</sub>),0.0
-95,No private capital,Transfers (T<sub>t</sub>),0.0
-96,No private capital,Transfers (T<sub>t</sub>),0.0
-97,No private capital,Transfers (T<sub>t</sub>),0.0
-98,No private capital,Transfers (T<sub>t</sub>),0.0
-99,No private capital,Transfers (T<sub>t</sub>),0.0
-100,No private capital,Transfers (T<sub>t</sub>),0.0
-1,No indexation,Transfers (T<sub>t</sub>),0.0
-2,No indexation,Transfers (T<sub>t</sub>),0.0
-3,No indexation,Transfers (T<sub>t</sub>),0.0
-4,No indexation,Transfers (T<sub>t</sub>),0.0
-5,No indexation,Transfers (T<sub>t</sub>),0.0
-6,No indexation,Transfers (T<sub>t</sub>),0.0
-7,No indexation,Transfers (T<sub>t</sub>),0.0
-8,No indexation,Transfers (T<sub>t</sub>),0.0
-9,No indexation,Transfers (T<sub>t</sub>),0.0
-10,No indexation,Transfers (T<sub>t</sub>),0.0
-11,No indexation,Transfers (T<sub>t</sub>),0.0
-12,No indexation,Transfers (T<sub>t</sub>),0.0
-13,No indexation,Transfers (T<sub>t</sub>),0.0
-14,No indexation,Transfers (T<sub>t</sub>),0.0
-15,No indexation,Transfers (T<sub>t</sub>),0.0
-16,No indexation,Transfers (T<sub>t</sub>),0.0
-17,No indexation,Transfers (T<sub>t</sub>),0.0
-18,No indexation,Transfers (T<sub>t</sub>),0.0
-19,No indexation,Transfers (T<sub>t</sub>),0.0
-20,No indexation,Transfers (T<sub>t</sub>),0.0
-21,No indexation,Transfers (T<sub>t</sub>),0.0
-22,No indexation,Transfers (T<sub>t</sub>),0.0
-23,No indexation,Transfers (T<sub>t</sub>),0.0
-24,No indexation,Transfers (T<sub>t</sub>),0.0
-25,No indexation,Transfers (T<sub>t</sub>),0.0
-26,No indexation,Transfers (T<sub>t</sub>),0.0
-27,No indexation,Transfers (T<sub>t</sub>),0.0
-28,No indexation,Transfers (T<sub>t</sub>),0.0
-29,No indexation,Transfers (T<sub>t</sub>),0.0
-30,No indexation,Transfers (T<sub>t</sub>),0.0
-31,No indexation,Transfers (T<sub>t</sub>),0.0
-32,No indexation,Transfers (T<sub>t</sub>),0.0
-33,No indexation,Transfers (T<sub>t</sub>),0.0
-34,No indexation,Transfers (T<sub>t</sub>),0.0
-35,No indexation,Transfers (T<sub>t</sub>),0.0
-36,No indexation,Transfers (T<sub>t</sub>),0.0
-37,No indexation,Transfers (T<sub>t</sub>),0.0
-38,No indexation,Transfers (T<sub>t</sub>),0.0
-39,No indexation,Transfers (T<sub>t</sub>),0.0
-40,No indexation,Transfers (T<sub>t</sub>),0.0
-41,No indexation,Transfers (T<sub>t</sub>),0.0
-42,No indexation,Transfers (T<sub>t</sub>),0.0
-43,No indexation,Transfers (T<sub>t</sub>),0.0
-44,No indexation,Transfers (T<sub>t</sub>),0.0
-45,No indexation,Transfers (T<sub>t</sub>),0.0
-46,No indexation,Transfers (T<sub>t</sub>),0.0
-47,No indexation,Transfers (T<sub>t</sub>),0.0
-48,No indexation,Transfers (T<sub>t</sub>),0.0
-49,No indexation,Transfers (T<sub>t</sub>),0.0
-50,No indexation,Transfers (T<sub>t</sub>),0.0
-51,No indexation,Transfers (T<sub>t</sub>),0.0
-52,No indexation,Transfers (T<sub>t</sub>),0.0
-53,No indexation,Transfers (T<sub>t</sub>),0.0
-54,No indexation,Transfers (T<sub>t</sub>),0.0
-55,No indexation,Transfers (T<sub>t</sub>),0.0
-56,No indexation,Transfers (T<sub>t</sub>),0.0
-57,No indexation,Transfers (T<sub>t</sub>),0.0
-58,No indexation,Transfers (T<sub>t</sub>),0.0
-59,No indexation,Transfers (T<sub>t</sub>),0.0
-60,No indexation,Transfers (T<sub>t</sub>),0.0
-61,No indexation,Transfers (T<sub>t</sub>),0.0
-62,No indexation,Transfers (T<sub>t</sub>),0.0
-63,No indexation,Transfers (T<sub>t</sub>),0.0
-64,No indexation,Transfers (T<sub>t</sub>),0.0
-65,No indexation,Transfers (T<sub>t</sub>),0.0
-66,No indexation,Transfers (T<sub>t</sub>),0.0
-67,No indexation,Transfers (T<sub>t</sub>),0.0
-68,No indexation,Transfers (T<sub>t</sub>),0.0
-69,No indexation,Transfers (T<sub>t</sub>),0.0
-70,No indexation,Transfers (T<sub>t</sub>),0.0
-71,No indexation,Transfers (T<sub>t</sub>),0.0
-72,No indexation,Transfers (T<sub>t</sub>),0.0
-73,No indexation,Transfers (T<sub>t</sub>),0.0
-74,No indexation,Transfers (T<sub>t</sub>),0.0
-75,No indexation,Transfers (T<sub>t</sub>),0.0
-76,No indexation,Transfers (T<sub>t</sub>),0.0
-77,No indexation,Transfers (T<sub>t</sub>),0.0
-78,No indexation,Transfers (T<sub>t</sub>),0.0
-79,No indexation,Transfers (T<sub>t</sub>),0.0
-80,No indexation,Transfers (T<sub>t</sub>),0.0
-81,No indexation,Transfers (T<sub>t</sub>),0.0
-82,No indexation,Transfers (T<sub>t</sub>),0.0
-83,No indexation,Transfers (T<sub>t</sub>),0.0
-84,No indexation,Transfers (T<sub>t</sub>),0.0
-85,No indexation,Transfers (T<sub>t</sub>),0.0
-86,No indexation,Transfers (T<sub>t</sub>),0.0
-87,No indexation,Transfers (T<sub>t</sub>),0.0
-88,No indexation,Transfers (T<sub>t</sub>),0.0
-89,No indexation,Transfers (T<sub>t</sub>),0.0
-90,No indexation,Transfers (T<sub>t</sub>),0.0
-91,No indexation,Transfers (T<sub>t</sub>),0.0
-92,No indexation,Transfers (T<sub>t</sub>),0.0
-93,No indexation,Transfers (T<sub>t</sub>),0.0
-94,No indexation,Transfers (T<sub>t</sub>),0.0
-95,No indexation,Transfers (T<sub>t</sub>),0.0
-96,No indexation,Transfers (T<sub>t</sub>),0.0
-97,No indexation,Transfers (T<sub>t</sub>),0.0
-98,No indexation,Transfers (T<sub>t</sub>),0.0
-99,No indexation,Transfers (T<sub>t</sub>),0.0
-100,No indexation,Transfers (T<sub>t</sub>),0.0
-1,No trend growth,Transfers (T<sub>t</sub>),0.0
-2,No trend growth,Transfers (T<sub>t</sub>),0.0
-3,No trend growth,Transfers (T<sub>t</sub>),0.0
-4,No trend growth,Transfers (T<sub>t</sub>),0.0
-5,No trend growth,Transfers (T<sub>t</sub>),0.0
-6,No trend growth,Transfers (T<sub>t</sub>),0.0
-7,No trend growth,Transfers (T<sub>t</sub>),0.0
-8,No trend growth,Transfers (T<sub>t</sub>),0.0
-9,No trend growth,Transfers (T<sub>t</sub>),0.0
-10,No trend growth,Transfers (T<sub>t</sub>),0.0
-11,No trend growth,Transfers (T<sub>t</sub>),0.0
-12,No trend growth,Transfers (T<sub>t</sub>),0.0
-13,No trend growth,Transfers (T<sub>t</sub>),0.0
-14,No trend growth,Transfers (T<sub>t</sub>),0.0
-15,No trend growth,Transfers (T<sub>t</sub>),0.0
-16,No trend growth,Transfers (T<sub>t</sub>),0.0
-17,No trend growth,Transfers (T<sub>t</sub>),0.0
-18,No trend growth,Transfers (T<sub>t</sub>),0.0
-19,No trend growth,Transfers (T<sub>t</sub>),0.0
-20,No trend growth,Transfers (T<sub>t</sub>),0.0
-21,No trend growth,Transfers (T<sub>t</sub>),0.0
-22,No trend growth,Transfers (T<sub>t</sub>),0.0
-23,No trend growth,Transfers (T<sub>t</sub>),0.0
-24,No trend growth,Transfers (T<sub>t</sub>),0.0
-25,No trend growth,Transfers (T<sub>t</sub>),0.0
-26,No trend growth,Transfers (T<sub>t</sub>),0.0
-27,No trend growth,Transfers (T<sub>t</sub>),0.0
-28,No trend growth,Transfers (T<sub>t</sub>),0.0
-29,No trend growth,Transfers (T<sub>t</sub>),0.0
-30,No trend growth,Transfers (T<sub>t</sub>),0.0
-31,No trend growth,Transfers (T<sub>t</sub>),0.0
-32,No trend growth,Transfers (T<sub>t</sub>),0.0
-33,No trend growth,Transfers (T<sub>t</sub>),0.0
-34,No trend growth,Transfers (T<sub>t</sub>),0.0
-35,No trend growth,Transfers (T<sub>t</sub>),0.0
-36,No trend growth,Transfers (T<sub>t</sub>),0.0
-37,No trend growth,Transfers (T<sub>t</sub>),0.0
-38,No trend growth,Transfers (T<sub>t</sub>),0.0
-39,No trend growth,Transfers (T<sub>t</sub>),0.0
-40,No trend growth,Transfers (T<sub>t</sub>),0.0
-41,No trend growth,Transfers (T<sub>t</sub>),0.0
-42,No trend growth,Transfers (T<sub>t</sub>),0.0
-43,No trend growth,Transfers (T<sub>t</sub>),0.0
-44,No trend growth,Transfers (T<sub>t</sub>),0.0
-45,No trend growth,Transfers (T<sub>t</sub>),0.0
-46,No trend growth,Transfers (T<sub>t</sub>),0.0
-47,No trend growth,Transfers (T<sub>t</sub>),0.0
-48,No trend growth,Transfers (T<sub>t</sub>),0.0
-49,No trend growth,Transfers (T<sub>t</sub>),0.0
-50,No trend growth,Transfers (T<sub>t</sub>),0.0
-51,No trend growth,Transfers (T<sub>t</sub>),0.0
-52,No trend growth,Transfers (T<sub>t</sub>),0.0
-53,No trend growth,Transfers (T<sub>t</sub>),0.0
-54,No trend growth,Transfers (T<sub>t</sub>),0.0
-55,No trend growth,Transfers (T<sub>t</sub>),0.0
-56,No trend growth,Transfers (T<sub>t</sub>),0.0
-57,No trend growth,Transfers (T<sub>t</sub>),0.0
-58,No trend growth,Transfers (T<sub>t</sub>),0.0
-59,No trend growth,Transfers (T<sub>t</sub>),0.0
-60,No trend growth,Transfers (T<sub>t</sub>),0.0
-61,No trend growth,Transfers (T<sub>t</sub>),0.0
-62,No trend growth,Transfers (T<sub>t</sub>),0.0
-63,No trend growth,Transfers (T<sub>t</sub>),0.0
-64,No trend growth,Transfers (T<sub>t</sub>),0.0
-65,No trend growth,Transfers (T<sub>t</sub>),0.0
-66,No trend growth,Transfers (T<sub>t</sub>),0.0
-67,No trend growth,Transfers (T<sub>t</sub>),0.0
-68,No trend growth,Transfers (T<sub>t</sub>),0.0
-69,No trend growth,Transfers (T<sub>t</sub>),0.0
-70,No trend growth,Transfers (T<sub>t</sub>),0.0
-71,No trend growth,Transfers (T<sub>t</sub>),0.0
-72,No trend growth,Transfers (T<sub>t</sub>),0.0
-73,No trend growth,Transfers (T<sub>t</sub>),0.0
-74,No trend growth,Transfers (T<sub>t</sub>),0.0
-75,No trend growth,Transfers (T<sub>t</sub>),0.0
-76,No trend growth,Transfers (T<sub>t</sub>),0.0
-77,No trend growth,Transfers (T<sub>t</sub>),0.0
-78,No trend growth,Transfers (T<sub>t</sub>),0.0
-79,No trend growth,Transfers (T<sub>t</sub>),0.0
-80,No trend growth,Transfers (T<sub>t</sub>),0.0
-81,No trend growth,Transfers (T<sub>t</sub>),0.0
-82,No trend growth,Transfers (T<sub>t</sub>),0.0
-83,No trend growth,Transfers (T<sub>t</sub>),0.0
-84,No trend growth,Transfers (T<sub>t</sub>),0.0
-85,No trend growth,Transfers (T<sub>t</sub>),0.0
-86,No trend growth,Transfers (T<sub>t</sub>),0.0
-87,No trend growth,Transfers (T<sub>t</sub>),0.0
-88,No trend growth,Transfers (T<sub>t</sub>),0.0
-89,No trend growth,Transfers (T<sub>t</sub>),0.0
-90,No trend growth,Transfers (T<sub>t</sub>),0.0
-91,No trend growth,Transfers (T<sub>t</sub>),0.0
-92,No trend growth,Transfers (T<sub>t</sub>),0.0
-93,No trend growth,Transfers (T<sub>t</sub>),0.0
-94,No trend growth,Transfers (T<sub>t</sub>),0.0
-95,No trend growth,Transfers (T<sub>t</sub>),0.0
-96,No trend growth,Transfers (T<sub>t</sub>),0.0
-97,No trend growth,Transfers (T<sub>t</sub>),0.0
-98,No trend growth,Transfers (T<sub>t</sub>),0.0
-99,No trend growth,Transfers (T<sub>t</sub>),0.0
-100,No trend growth,Transfers (T<sub>t</sub>),0.0
-1,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-2,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-3,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-4,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-5,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-6,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-7,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-8,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-9,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-10,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-11,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-12,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-13,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-14,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-15,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-16,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-17,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-18,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-19,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-20,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-21,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-22,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-23,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-24,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-25,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-26,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-27,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-28,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-29,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-30,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-31,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-32,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-33,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-34,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-35,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-36,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-37,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-38,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-39,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-40,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-41,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-42,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-43,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-44,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-45,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-46,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-47,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-48,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-49,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-50,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-51,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-52,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-53,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-54,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-55,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-56,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-57,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-58,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-59,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-60,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-61,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-62,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-63,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-64,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-65,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-66,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-67,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-68,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-69,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-70,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-71,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-72,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-73,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-74,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-75,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-76,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-77,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-78,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-79,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-80,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-81,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-82,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-83,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-84,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-85,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-86,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-87,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-88,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-89,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-90,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-91,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-92,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-93,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-94,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-95,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-96,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-97,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-98,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-99,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
-100,Derived canonical NK,Transfers (T<sub>t</sub>),0.0
+1,Full model,Primary deficit-to-GDP ratio,0.904
+2,Full model,Primary deficit-to-GDP ratio,0.916
+3,Full model,Primary deficit-to-GDP ratio,0.827
+4,Full model,Primary deficit-to-GDP ratio,0.749
+5,Full model,Primary deficit-to-GDP ratio,0.68
+6,Full model,Primary deficit-to-GDP ratio,0.617
+7,Full model,Primary deficit-to-GDP ratio,0.561
+8,Full model,Primary deficit-to-GDP ratio,0.511
+9,Full model,Primary deficit-to-GDP ratio,0.466
+10,Full model,Primary deficit-to-GDP ratio,0.425
+11,Full model,Primary deficit-to-GDP ratio,0.388
+12,Full model,Primary deficit-to-GDP ratio,0.354
+13,Full model,Primary deficit-to-GDP ratio,0.324
+14,Full model,Primary deficit-to-GDP ratio,0.297
+15,Full model,Primary deficit-to-GDP ratio,0.272
+16,Full model,Primary deficit-to-GDP ratio,0.25
+17,Full model,Primary deficit-to-GDP ratio,0.23
+18,Full model,Primary deficit-to-GDP ratio,0.212
+19,Full model,Primary deficit-to-GDP ratio,0.196
+20,Full model,Primary deficit-to-GDP ratio,0.181
+21,Full model,Primary deficit-to-GDP ratio,0.168
+22,Full model,Primary deficit-to-GDP ratio,0.156
+23,Full model,Primary deficit-to-GDP ratio,0.145
+24,Full model,Primary deficit-to-GDP ratio,0.135
+25,Full model,Primary deficit-to-GDP ratio,0.126
+26,Full model,Primary deficit-to-GDP ratio,0.118
+27,Full model,Primary deficit-to-GDP ratio,0.11
+28,Full model,Primary deficit-to-GDP ratio,0.103
+29,Full model,Primary deficit-to-GDP ratio,0.097
+30,Full model,Primary deficit-to-GDP ratio,0.092
+31,Full model,Primary deficit-to-GDP ratio,0.087
+32,Full model,Primary deficit-to-GDP ratio,0.082
+33,Full model,Primary deficit-to-GDP ratio,0.078
+34,Full model,Primary deficit-to-GDP ratio,0.074
+35,Full model,Primary deficit-to-GDP ratio,0.071
+36,Full model,Primary deficit-to-GDP ratio,0.068
+37,Full model,Primary deficit-to-GDP ratio,0.065
+38,Full model,Primary deficit-to-GDP ratio,0.062
+39,Full model,Primary deficit-to-GDP ratio,0.06
+40,Full model,Primary deficit-to-GDP ratio,0.057
+41,Full model,Primary deficit-to-GDP ratio,0.055
+42,Full model,Primary deficit-to-GDP ratio,0.053
+43,Full model,Primary deficit-to-GDP ratio,0.052
+44,Full model,Primary deficit-to-GDP ratio,0.05
+45,Full model,Primary deficit-to-GDP ratio,0.048
+46,Full model,Primary deficit-to-GDP ratio,0.047
+47,Full model,Primary deficit-to-GDP ratio,0.046
+48,Full model,Primary deficit-to-GDP ratio,0.044
+49,Full model,Primary deficit-to-GDP ratio,0.043
+50,Full model,Primary deficit-to-GDP ratio,0.042
+51,Full model,Primary deficit-to-GDP ratio,0.041
+52,Full model,Primary deficit-to-GDP ratio,0.04
+53,Full model,Primary deficit-to-GDP ratio,0.039
+54,Full model,Primary deficit-to-GDP ratio,0.039
+55,Full model,Primary deficit-to-GDP ratio,0.038
+56,Full model,Primary deficit-to-GDP ratio,0.037
+57,Full model,Primary deficit-to-GDP ratio,0.036
+58,Full model,Primary deficit-to-GDP ratio,0.036
+59,Full model,Primary deficit-to-GDP ratio,0.035
+60,Full model,Primary deficit-to-GDP ratio,0.034
+61,Full model,Primary deficit-to-GDP ratio,0.034
+62,Full model,Primary deficit-to-GDP ratio,0.033
+63,Full model,Primary deficit-to-GDP ratio,0.033
+64,Full model,Primary deficit-to-GDP ratio,0.032
+65,Full model,Primary deficit-to-GDP ratio,0.032
+66,Full model,Primary deficit-to-GDP ratio,0.031
+67,Full model,Primary deficit-to-GDP ratio,0.031
+68,Full model,Primary deficit-to-GDP ratio,0.03
+69,Full model,Primary deficit-to-GDP ratio,0.03
+70,Full model,Primary deficit-to-GDP ratio,0.029
+71,Full model,Primary deficit-to-GDP ratio,0.029
+72,Full model,Primary deficit-to-GDP ratio,0.029
+73,Full model,Primary deficit-to-GDP ratio,0.028
+74,Full model,Primary deficit-to-GDP ratio,0.028
+75,Full model,Primary deficit-to-GDP ratio,0.027
+76,Full model,Primary deficit-to-GDP ratio,0.027
+77,Full model,Primary deficit-to-GDP ratio,0.027
+78,Full model,Primary deficit-to-GDP ratio,0.026
+79,Full model,Primary deficit-to-GDP ratio,0.026
+80,Full model,Primary deficit-to-GDP ratio,0.026
+81,Full model,Primary deficit-to-GDP ratio,0.025
+82,Full model,Primary deficit-to-GDP ratio,0.025
+83,Full model,Primary deficit-to-GDP ratio,0.025
+84,Full model,Primary deficit-to-GDP ratio,0.024
+85,Full model,Primary deficit-to-GDP ratio,0.024
+86,Full model,Primary deficit-to-GDP ratio,0.024
+87,Full model,Primary deficit-to-GDP ratio,0.023
+88,Full model,Primary deficit-to-GDP ratio,0.023
+89,Full model,Primary deficit-to-GDP ratio,0.023
+90,Full model,Primary deficit-to-GDP ratio,0.022
+91,Full model,Primary deficit-to-GDP ratio,0.022
+92,Full model,Primary deficit-to-GDP ratio,0.022
+93,Full model,Primary deficit-to-GDP ratio,0.022
+94,Full model,Primary deficit-to-GDP ratio,0.021
+95,Full model,Primary deficit-to-GDP ratio,0.021
+96,Full model,Primary deficit-to-GDP ratio,0.021
+97,Full model,Primary deficit-to-GDP ratio,0.021
+98,Full model,Primary deficit-to-GDP ratio,0.02
+99,Full model,Primary deficit-to-GDP ratio,0.02
+100,Full model,Primary deficit-to-GDP ratio,0.02
+1,No endogenous technology,Primary deficit-to-GDP ratio,0.895
+2,No endogenous technology,Primary deficit-to-GDP ratio,0.917
+3,No endogenous technology,Primary deficit-to-GDP ratio,0.826
+4,No endogenous technology,Primary deficit-to-GDP ratio,0.748
+5,No endogenous technology,Primary deficit-to-GDP ratio,0.679
+6,No endogenous technology,Primary deficit-to-GDP ratio,0.616
+7,No endogenous technology,Primary deficit-to-GDP ratio,0.56
+8,No endogenous technology,Primary deficit-to-GDP ratio,0.509
+9,No endogenous technology,Primary deficit-to-GDP ratio,0.463
+10,No endogenous technology,Primary deficit-to-GDP ratio,0.422
+11,No endogenous technology,Primary deficit-to-GDP ratio,0.384
+12,No endogenous technology,Primary deficit-to-GDP ratio,0.35
+13,No endogenous technology,Primary deficit-to-GDP ratio,0.32
+14,No endogenous technology,Primary deficit-to-GDP ratio,0.292
+15,No endogenous technology,Primary deficit-to-GDP ratio,0.267
+16,No endogenous technology,Primary deficit-to-GDP ratio,0.244
+17,No endogenous technology,Primary deficit-to-GDP ratio,0.224
+18,No endogenous technology,Primary deficit-to-GDP ratio,0.205
+19,No endogenous technology,Primary deficit-to-GDP ratio,0.188
+20,No endogenous technology,Primary deficit-to-GDP ratio,0.173
+21,No endogenous technology,Primary deficit-to-GDP ratio,0.159
+22,No endogenous technology,Primary deficit-to-GDP ratio,0.147
+23,No endogenous technology,Primary deficit-to-GDP ratio,0.135
+24,No endogenous technology,Primary deficit-to-GDP ratio,0.125
+25,No endogenous technology,Primary deficit-to-GDP ratio,0.115
+26,No endogenous technology,Primary deficit-to-GDP ratio,0.107
+27,No endogenous technology,Primary deficit-to-GDP ratio,0.099
+28,No endogenous technology,Primary deficit-to-GDP ratio,0.092
+29,No endogenous technology,Primary deficit-to-GDP ratio,0.085
+30,No endogenous technology,Primary deficit-to-GDP ratio,0.08
+31,No endogenous technology,Primary deficit-to-GDP ratio,0.074
+32,No endogenous technology,Primary deficit-to-GDP ratio,0.069
+33,No endogenous technology,Primary deficit-to-GDP ratio,0.065
+34,No endogenous technology,Primary deficit-to-GDP ratio,0.061
+35,No endogenous technology,Primary deficit-to-GDP ratio,0.057
+36,No endogenous technology,Primary deficit-to-GDP ratio,0.053
+37,No endogenous technology,Primary deficit-to-GDP ratio,0.05
+38,No endogenous technology,Primary deficit-to-GDP ratio,0.047
+39,No endogenous technology,Primary deficit-to-GDP ratio,0.045
+40,No endogenous technology,Primary deficit-to-GDP ratio,0.042
+41,No endogenous technology,Primary deficit-to-GDP ratio,0.04
+42,No endogenous technology,Primary deficit-to-GDP ratio,0.038
+43,No endogenous technology,Primary deficit-to-GDP ratio,0.036
+44,No endogenous technology,Primary deficit-to-GDP ratio,0.034
+45,No endogenous technology,Primary deficit-to-GDP ratio,0.032
+46,No endogenous technology,Primary deficit-to-GDP ratio,0.031
+47,No endogenous technology,Primary deficit-to-GDP ratio,0.029
+48,No endogenous technology,Primary deficit-to-GDP ratio,0.028
+49,No endogenous technology,Primary deficit-to-GDP ratio,0.027
+50,No endogenous technology,Primary deficit-to-GDP ratio,0.026
+51,No endogenous technology,Primary deficit-to-GDP ratio,0.025
+52,No endogenous technology,Primary deficit-to-GDP ratio,0.023
+53,No endogenous technology,Primary deficit-to-GDP ratio,0.023
+54,No endogenous technology,Primary deficit-to-GDP ratio,0.022
+55,No endogenous technology,Primary deficit-to-GDP ratio,0.021
+56,No endogenous technology,Primary deficit-to-GDP ratio,0.02
+57,No endogenous technology,Primary deficit-to-GDP ratio,0.019
+58,No endogenous technology,Primary deficit-to-GDP ratio,0.019
+59,No endogenous technology,Primary deficit-to-GDP ratio,0.018
+60,No endogenous technology,Primary deficit-to-GDP ratio,0.017
+61,No endogenous technology,Primary deficit-to-GDP ratio,0.017
+62,No endogenous technology,Primary deficit-to-GDP ratio,0.016
+63,No endogenous technology,Primary deficit-to-GDP ratio,0.015
+64,No endogenous technology,Primary deficit-to-GDP ratio,0.015
+65,No endogenous technology,Primary deficit-to-GDP ratio,0.014
+66,No endogenous technology,Primary deficit-to-GDP ratio,0.014
+67,No endogenous technology,Primary deficit-to-GDP ratio,0.014
+68,No endogenous technology,Primary deficit-to-GDP ratio,0.013
+69,No endogenous technology,Primary deficit-to-GDP ratio,0.013
+70,No endogenous technology,Primary deficit-to-GDP ratio,0.012
+71,No endogenous technology,Primary deficit-to-GDP ratio,0.012
+72,No endogenous technology,Primary deficit-to-GDP ratio,0.012
+73,No endogenous technology,Primary deficit-to-GDP ratio,0.011
+74,No endogenous technology,Primary deficit-to-GDP ratio,0.011
+75,No endogenous technology,Primary deficit-to-GDP ratio,0.011
+76,No endogenous technology,Primary deficit-to-GDP ratio,0.01
+77,No endogenous technology,Primary deficit-to-GDP ratio,0.01
+78,No endogenous technology,Primary deficit-to-GDP ratio,0.01
+79,No endogenous technology,Primary deficit-to-GDP ratio,0.009
+80,No endogenous technology,Primary deficit-to-GDP ratio,0.009
+81,No endogenous technology,Primary deficit-to-GDP ratio,0.009
+82,No endogenous technology,Primary deficit-to-GDP ratio,0.009
+83,No endogenous technology,Primary deficit-to-GDP ratio,0.008
+84,No endogenous technology,Primary deficit-to-GDP ratio,0.008
+85,No endogenous technology,Primary deficit-to-GDP ratio,0.008
+86,No endogenous technology,Primary deficit-to-GDP ratio,0.008
+87,No endogenous technology,Primary deficit-to-GDP ratio,0.007
+88,No endogenous technology,Primary deficit-to-GDP ratio,0.007
+89,No endogenous technology,Primary deficit-to-GDP ratio,0.007
+90,No endogenous technology,Primary deficit-to-GDP ratio,0.007
+91,No endogenous technology,Primary deficit-to-GDP ratio,0.007
+92,No endogenous technology,Primary deficit-to-GDP ratio,0.007
+93,No endogenous technology,Primary deficit-to-GDP ratio,0.006
+94,No endogenous technology,Primary deficit-to-GDP ratio,0.006
+95,No endogenous technology,Primary deficit-to-GDP ratio,0.006
+96,No endogenous technology,Primary deficit-to-GDP ratio,0.006
+97,No endogenous technology,Primary deficit-to-GDP ratio,0.006
+98,No endogenous technology,Primary deficit-to-GDP ratio,0.006
+99,No endogenous technology,Primary deficit-to-GDP ratio,0.005
+100,No endogenous technology,Primary deficit-to-GDP ratio,0.005
+1,No human capital,Primary deficit-to-GDP ratio,0.958
+2,No human capital,Primary deficit-to-GDP ratio,0.939
+3,No human capital,Primary deficit-to-GDP ratio,0.849
+4,No human capital,Primary deficit-to-GDP ratio,0.77
+5,No human capital,Primary deficit-to-GDP ratio,0.7
+6,No human capital,Primary deficit-to-GDP ratio,0.636
+7,No human capital,Primary deficit-to-GDP ratio,0.579
+8,No human capital,Primary deficit-to-GDP ratio,0.527
+9,No human capital,Primary deficit-to-GDP ratio,0.48
+10,No human capital,Primary deficit-to-GDP ratio,0.438
+11,No human capital,Primary deficit-to-GDP ratio,0.399
+12,No human capital,Primary deficit-to-GDP ratio,0.364
+13,No human capital,Primary deficit-to-GDP ratio,0.333
+14,No human capital,Primary deficit-to-GDP ratio,0.305
+15,No human capital,Primary deficit-to-GDP ratio,0.279
+16,No human capital,Primary deficit-to-GDP ratio,0.255
+17,No human capital,Primary deficit-to-GDP ratio,0.234
+18,No human capital,Primary deficit-to-GDP ratio,0.215
+19,No human capital,Primary deficit-to-GDP ratio,0.197
+20,No human capital,Primary deficit-to-GDP ratio,0.182
+21,No human capital,Primary deficit-to-GDP ratio,0.167
+22,No human capital,Primary deficit-to-GDP ratio,0.154
+23,No human capital,Primary deficit-to-GDP ratio,0.142
+24,No human capital,Primary deficit-to-GDP ratio,0.131
+25,No human capital,Primary deficit-to-GDP ratio,0.121
+26,No human capital,Primary deficit-to-GDP ratio,0.112
+27,No human capital,Primary deficit-to-GDP ratio,0.104
+28,No human capital,Primary deficit-to-GDP ratio,0.097
+29,No human capital,Primary deficit-to-GDP ratio,0.09
+30,No human capital,Primary deficit-to-GDP ratio,0.083
+31,No human capital,Primary deficit-to-GDP ratio,0.078
+32,No human capital,Primary deficit-to-GDP ratio,0.072
+33,No human capital,Primary deficit-to-GDP ratio,0.068
+34,No human capital,Primary deficit-to-GDP ratio,0.063
+35,No human capital,Primary deficit-to-GDP ratio,0.059
+36,No human capital,Primary deficit-to-GDP ratio,0.055
+37,No human capital,Primary deficit-to-GDP ratio,0.052
+38,No human capital,Primary deficit-to-GDP ratio,0.049
+39,No human capital,Primary deficit-to-GDP ratio,0.046
+40,No human capital,Primary deficit-to-GDP ratio,0.043
+41,No human capital,Primary deficit-to-GDP ratio,0.041
+42,No human capital,Primary deficit-to-GDP ratio,0.038
+43,No human capital,Primary deficit-to-GDP ratio,0.036
+44,No human capital,Primary deficit-to-GDP ratio,0.034
+45,No human capital,Primary deficit-to-GDP ratio,0.032
+46,No human capital,Primary deficit-to-GDP ratio,0.03
+47,No human capital,Primary deficit-to-GDP ratio,0.029
+48,No human capital,Primary deficit-to-GDP ratio,0.027
+49,No human capital,Primary deficit-to-GDP ratio,0.026
+50,No human capital,Primary deficit-to-GDP ratio,0.025
+51,No human capital,Primary deficit-to-GDP ratio,0.023
+52,No human capital,Primary deficit-to-GDP ratio,0.022
+53,No human capital,Primary deficit-to-GDP ratio,0.021
+54,No human capital,Primary deficit-to-GDP ratio,0.02
+55,No human capital,Primary deficit-to-GDP ratio,0.019
+56,No human capital,Primary deficit-to-GDP ratio,0.018
+57,No human capital,Primary deficit-to-GDP ratio,0.018
+58,No human capital,Primary deficit-to-GDP ratio,0.017
+59,No human capital,Primary deficit-to-GDP ratio,0.016
+60,No human capital,Primary deficit-to-GDP ratio,0.015
+61,No human capital,Primary deficit-to-GDP ratio,0.015
+62,No human capital,Primary deficit-to-GDP ratio,0.014
+63,No human capital,Primary deficit-to-GDP ratio,0.013
+64,No human capital,Primary deficit-to-GDP ratio,0.013
+65,No human capital,Primary deficit-to-GDP ratio,0.012
+66,No human capital,Primary deficit-to-GDP ratio,0.012
+67,No human capital,Primary deficit-to-GDP ratio,0.011
+68,No human capital,Primary deficit-to-GDP ratio,0.011
+69,No human capital,Primary deficit-to-GDP ratio,0.01
+70,No human capital,Primary deficit-to-GDP ratio,0.01
+71,No human capital,Primary deficit-to-GDP ratio,0.01
+72,No human capital,Primary deficit-to-GDP ratio,0.009
+73,No human capital,Primary deficit-to-GDP ratio,0.009
+74,No human capital,Primary deficit-to-GDP ratio,0.009
+75,No human capital,Primary deficit-to-GDP ratio,0.008
+76,No human capital,Primary deficit-to-GDP ratio,0.008
+77,No human capital,Primary deficit-to-GDP ratio,0.008
+78,No human capital,Primary deficit-to-GDP ratio,0.007
+79,No human capital,Primary deficit-to-GDP ratio,0.007
+80,No human capital,Primary deficit-to-GDP ratio,0.007
+81,No human capital,Primary deficit-to-GDP ratio,0.006
+82,No human capital,Primary deficit-to-GDP ratio,0.006
+83,No human capital,Primary deficit-to-GDP ratio,0.006
+84,No human capital,Primary deficit-to-GDP ratio,0.006
+85,No human capital,Primary deficit-to-GDP ratio,0.006
+86,No human capital,Primary deficit-to-GDP ratio,0.005
+87,No human capital,Primary deficit-to-GDP ratio,0.005
+88,No human capital,Primary deficit-to-GDP ratio,0.005
+89,No human capital,Primary deficit-to-GDP ratio,0.005
+90,No human capital,Primary deficit-to-GDP ratio,0.005
+91,No human capital,Primary deficit-to-GDP ratio,0.004
+92,No human capital,Primary deficit-to-GDP ratio,0.004
+93,No human capital,Primary deficit-to-GDP ratio,0.004
+94,No human capital,Primary deficit-to-GDP ratio,0.004
+95,No human capital,Primary deficit-to-GDP ratio,0.004
+96,No human capital,Primary deficit-to-GDP ratio,0.004
+97,No human capital,Primary deficit-to-GDP ratio,0.004
+98,No human capital,Primary deficit-to-GDP ratio,0.003
+99,No human capital,Primary deficit-to-GDP ratio,0.003
+100,No human capital,Primary deficit-to-GDP ratio,0.003
+1,No public infrastructure,Primary deficit-to-GDP ratio,0.958
+2,No public infrastructure,Primary deficit-to-GDP ratio,0.939
+3,No public infrastructure,Primary deficit-to-GDP ratio,0.849
+4,No public infrastructure,Primary deficit-to-GDP ratio,0.77
+5,No public infrastructure,Primary deficit-to-GDP ratio,0.7
+6,No public infrastructure,Primary deficit-to-GDP ratio,0.636
+7,No public infrastructure,Primary deficit-to-GDP ratio,0.579
+8,No public infrastructure,Primary deficit-to-GDP ratio,0.527
+9,No public infrastructure,Primary deficit-to-GDP ratio,0.48
+10,No public infrastructure,Primary deficit-to-GDP ratio,0.438
+11,No public infrastructure,Primary deficit-to-GDP ratio,0.399
+12,No public infrastructure,Primary deficit-to-GDP ratio,0.364
+13,No public infrastructure,Primary deficit-to-GDP ratio,0.333
+14,No public infrastructure,Primary deficit-to-GDP ratio,0.305
+15,No public infrastructure,Primary deficit-to-GDP ratio,0.279
+16,No public infrastructure,Primary deficit-to-GDP ratio,0.255
+17,No public infrastructure,Primary deficit-to-GDP ratio,0.234
+18,No public infrastructure,Primary deficit-to-GDP ratio,0.215
+19,No public infrastructure,Primary deficit-to-GDP ratio,0.197
+20,No public infrastructure,Primary deficit-to-GDP ratio,0.182
+21,No public infrastructure,Primary deficit-to-GDP ratio,0.167
+22,No public infrastructure,Primary deficit-to-GDP ratio,0.154
+23,No public infrastructure,Primary deficit-to-GDP ratio,0.142
+24,No public infrastructure,Primary deficit-to-GDP ratio,0.131
+25,No public infrastructure,Primary deficit-to-GDP ratio,0.121
+26,No public infrastructure,Primary deficit-to-GDP ratio,0.112
+27,No public infrastructure,Primary deficit-to-GDP ratio,0.104
+28,No public infrastructure,Primary deficit-to-GDP ratio,0.097
+29,No public infrastructure,Primary deficit-to-GDP ratio,0.09
+30,No public infrastructure,Primary deficit-to-GDP ratio,0.083
+31,No public infrastructure,Primary deficit-to-GDP ratio,0.078
+32,No public infrastructure,Primary deficit-to-GDP ratio,0.072
+33,No public infrastructure,Primary deficit-to-GDP ratio,0.068
+34,No public infrastructure,Primary deficit-to-GDP ratio,0.063
+35,No public infrastructure,Primary deficit-to-GDP ratio,0.059
+36,No public infrastructure,Primary deficit-to-GDP ratio,0.055
+37,No public infrastructure,Primary deficit-to-GDP ratio,0.052
+38,No public infrastructure,Primary deficit-to-GDP ratio,0.049
+39,No public infrastructure,Primary deficit-to-GDP ratio,0.046
+40,No public infrastructure,Primary deficit-to-GDP ratio,0.043
+41,No public infrastructure,Primary deficit-to-GDP ratio,0.041
+42,No public infrastructure,Primary deficit-to-GDP ratio,0.038
+43,No public infrastructure,Primary deficit-to-GDP ratio,0.036
+44,No public infrastructure,Primary deficit-to-GDP ratio,0.034
+45,No public infrastructure,Primary deficit-to-GDP ratio,0.032
+46,No public infrastructure,Primary deficit-to-GDP ratio,0.03
+47,No public infrastructure,Primary deficit-to-GDP ratio,0.029
+48,No public infrastructure,Primary deficit-to-GDP ratio,0.027
+49,No public infrastructure,Primary deficit-to-GDP ratio,0.026
+50,No public infrastructure,Primary deficit-to-GDP ratio,0.025
+51,No public infrastructure,Primary deficit-to-GDP ratio,0.023
+52,No public infrastructure,Primary deficit-to-GDP ratio,0.022
+53,No public infrastructure,Primary deficit-to-GDP ratio,0.021
+54,No public infrastructure,Primary deficit-to-GDP ratio,0.02
+55,No public infrastructure,Primary deficit-to-GDP ratio,0.019
+56,No public infrastructure,Primary deficit-to-GDP ratio,0.018
+57,No public infrastructure,Primary deficit-to-GDP ratio,0.018
+58,No public infrastructure,Primary deficit-to-GDP ratio,0.017
+59,No public infrastructure,Primary deficit-to-GDP ratio,0.016
+60,No public infrastructure,Primary deficit-to-GDP ratio,0.015
+61,No public infrastructure,Primary deficit-to-GDP ratio,0.015
+62,No public infrastructure,Primary deficit-to-GDP ratio,0.014
+63,No public infrastructure,Primary deficit-to-GDP ratio,0.013
+64,No public infrastructure,Primary deficit-to-GDP ratio,0.013
+65,No public infrastructure,Primary deficit-to-GDP ratio,0.012
+66,No public infrastructure,Primary deficit-to-GDP ratio,0.012
+67,No public infrastructure,Primary deficit-to-GDP ratio,0.011
+68,No public infrastructure,Primary deficit-to-GDP ratio,0.011
+69,No public infrastructure,Primary deficit-to-GDP ratio,0.01
+70,No public infrastructure,Primary deficit-to-GDP ratio,0.01
+71,No public infrastructure,Primary deficit-to-GDP ratio,0.01
+72,No public infrastructure,Primary deficit-to-GDP ratio,0.009
+73,No public infrastructure,Primary deficit-to-GDP ratio,0.009
+74,No public infrastructure,Primary deficit-to-GDP ratio,0.009
+75,No public infrastructure,Primary deficit-to-GDP ratio,0.008
+76,No public infrastructure,Primary deficit-to-GDP ratio,0.008
+77,No public infrastructure,Primary deficit-to-GDP ratio,0.008
+78,No public infrastructure,Primary deficit-to-GDP ratio,0.007
+79,No public infrastructure,Primary deficit-to-GDP ratio,0.007
+80,No public infrastructure,Primary deficit-to-GDP ratio,0.007
+81,No public infrastructure,Primary deficit-to-GDP ratio,0.006
+82,No public infrastructure,Primary deficit-to-GDP ratio,0.006
+83,No public infrastructure,Primary deficit-to-GDP ratio,0.006
+84,No public infrastructure,Primary deficit-to-GDP ratio,0.006
+85,No public infrastructure,Primary deficit-to-GDP ratio,0.006
+86,No public infrastructure,Primary deficit-to-GDP ratio,0.005
+87,No public infrastructure,Primary deficit-to-GDP ratio,0.005
+88,No public infrastructure,Primary deficit-to-GDP ratio,0.005
+89,No public infrastructure,Primary deficit-to-GDP ratio,0.005
+90,No public infrastructure,Primary deficit-to-GDP ratio,0.005
+91,No public infrastructure,Primary deficit-to-GDP ratio,0.004
+92,No public infrastructure,Primary deficit-to-GDP ratio,0.004
+93,No public infrastructure,Primary deficit-to-GDP ratio,0.004
+94,No public infrastructure,Primary deficit-to-GDP ratio,0.004
+95,No public infrastructure,Primary deficit-to-GDP ratio,0.004
+96,No public infrastructure,Primary deficit-to-GDP ratio,0.004
+97,No public infrastructure,Primary deficit-to-GDP ratio,0.004
+98,No public infrastructure,Primary deficit-to-GDP ratio,0.003
+99,No public infrastructure,Primary deficit-to-GDP ratio,0.003
+100,No public infrastructure,Primary deficit-to-GDP ratio,0.003
+1,No private capital,Primary deficit-to-GDP ratio,0.796
+2,No private capital,Primary deficit-to-GDP ratio,0.826
+3,No private capital,Primary deficit-to-GDP ratio,0.803
+4,No private capital,Primary deficit-to-GDP ratio,0.75
+5,No private capital,Primary deficit-to-GDP ratio,0.684
+6,No private capital,Primary deficit-to-GDP ratio,0.618
+7,No private capital,Primary deficit-to-GDP ratio,0.556
+8,No private capital,Primary deficit-to-GDP ratio,0.5
+9,No private capital,Primary deficit-to-GDP ratio,0.449
+10,No private capital,Primary deficit-to-GDP ratio,0.404
+11,No private capital,Primary deficit-to-GDP ratio,0.363
+12,No private capital,Primary deficit-to-GDP ratio,0.327
+13,No private capital,Primary deficit-to-GDP ratio,0.294
+14,No private capital,Primary deficit-to-GDP ratio,0.265
+15,No private capital,Primary deficit-to-GDP ratio,0.238
+16,No private capital,Primary deficit-to-GDP ratio,0.214
+17,No private capital,Primary deficit-to-GDP ratio,0.193
+18,No private capital,Primary deficit-to-GDP ratio,0.174
+19,No private capital,Primary deficit-to-GDP ratio,0.156
+20,No private capital,Primary deficit-to-GDP ratio,0.141
+21,No private capital,Primary deficit-to-GDP ratio,0.127
+22,No private capital,Primary deficit-to-GDP ratio,0.114
+23,No private capital,Primary deficit-to-GDP ratio,0.103
+24,No private capital,Primary deficit-to-GDP ratio,0.092
+25,No private capital,Primary deficit-to-GDP ratio,0.083
+26,No private capital,Primary deficit-to-GDP ratio,0.075
+27,No private capital,Primary deficit-to-GDP ratio,0.067
+28,No private capital,Primary deficit-to-GDP ratio,0.061
+29,No private capital,Primary deficit-to-GDP ratio,0.055
+30,No private capital,Primary deficit-to-GDP ratio,0.049
+31,No private capital,Primary deficit-to-GDP ratio,0.044
+32,No private capital,Primary deficit-to-GDP ratio,0.04
+33,No private capital,Primary deficit-to-GDP ratio,0.036
+34,No private capital,Primary deficit-to-GDP ratio,0.032
+35,No private capital,Primary deficit-to-GDP ratio,0.029
+36,No private capital,Primary deficit-to-GDP ratio,0.026
+37,No private capital,Primary deficit-to-GDP ratio,0.023
+38,No private capital,Primary deficit-to-GDP ratio,0.021
+39,No private capital,Primary deficit-to-GDP ratio,0.019
+40,No private capital,Primary deficit-to-GDP ratio,0.017
+41,No private capital,Primary deficit-to-GDP ratio,0.015
+42,No private capital,Primary deficit-to-GDP ratio,0.014
+43,No private capital,Primary deficit-to-GDP ratio,0.012
+44,No private capital,Primary deficit-to-GDP ratio,0.011
+45,No private capital,Primary deficit-to-GDP ratio,0.01
+46,No private capital,Primary deficit-to-GDP ratio,0.009
+47,No private capital,Primary deficit-to-GDP ratio,0.008
+48,No private capital,Primary deficit-to-GDP ratio,0.007
+49,No private capital,Primary deficit-to-GDP ratio,0.007
+50,No private capital,Primary deficit-to-GDP ratio,0.006
+51,No private capital,Primary deficit-to-GDP ratio,0.005
+52,No private capital,Primary deficit-to-GDP ratio,0.005
+53,No private capital,Primary deficit-to-GDP ratio,0.004
+54,No private capital,Primary deficit-to-GDP ratio,0.004
+55,No private capital,Primary deficit-to-GDP ratio,0.004
+56,No private capital,Primary deficit-to-GDP ratio,0.003
+57,No private capital,Primary deficit-to-GDP ratio,0.003
+58,No private capital,Primary deficit-to-GDP ratio,0.003
+59,No private capital,Primary deficit-to-GDP ratio,0.002
+60,No private capital,Primary deficit-to-GDP ratio,0.002
+61,No private capital,Primary deficit-to-GDP ratio,0.002
+62,No private capital,Primary deficit-to-GDP ratio,0.002
+63,No private capital,Primary deficit-to-GDP ratio,0.002
+64,No private capital,Primary deficit-to-GDP ratio,0.001
+65,No private capital,Primary deficit-to-GDP ratio,0.001
+66,No private capital,Primary deficit-to-GDP ratio,0.001
+67,No private capital,Primary deficit-to-GDP ratio,0.001
+68,No private capital,Primary deficit-to-GDP ratio,0.001
+69,No private capital,Primary deficit-to-GDP ratio,0.001
+70,No private capital,Primary deficit-to-GDP ratio,0.001
+71,No private capital,Primary deficit-to-GDP ratio,0.001
+72,No private capital,Primary deficit-to-GDP ratio,0.001
+73,No private capital,Primary deficit-to-GDP ratio,0.001
+74,No private capital,Primary deficit-to-GDP ratio,0.0
+75,No private capital,Primary deficit-to-GDP ratio,0.0
+76,No private capital,Primary deficit-to-GDP ratio,0.0
+77,No private capital,Primary deficit-to-GDP ratio,0.0
+78,No private capital,Primary deficit-to-GDP ratio,0.0
+79,No private capital,Primary deficit-to-GDP ratio,0.0
+80,No private capital,Primary deficit-to-GDP ratio,0.0
+81,No private capital,Primary deficit-to-GDP ratio,0.0
+82,No private capital,Primary deficit-to-GDP ratio,0.0
+83,No private capital,Primary deficit-to-GDP ratio,0.0
+84,No private capital,Primary deficit-to-GDP ratio,0.0
+85,No private capital,Primary deficit-to-GDP ratio,0.0
+86,No private capital,Primary deficit-to-GDP ratio,0.0
+87,No private capital,Primary deficit-to-GDP ratio,0.0
+88,No private capital,Primary deficit-to-GDP ratio,0.0
+89,No private capital,Primary deficit-to-GDP ratio,0.0
+90,No private capital,Primary deficit-to-GDP ratio,0.0
+91,No private capital,Primary deficit-to-GDP ratio,0.0
+92,No private capital,Primary deficit-to-GDP ratio,0.0
+93,No private capital,Primary deficit-to-GDP ratio,0.0
+94,No private capital,Primary deficit-to-GDP ratio,0.0
+95,No private capital,Primary deficit-to-GDP ratio,0.0
+96,No private capital,Primary deficit-to-GDP ratio,0.0
+97,No private capital,Primary deficit-to-GDP ratio,0.0
+98,No private capital,Primary deficit-to-GDP ratio,0.0
+99,No private capital,Primary deficit-to-GDP ratio,0.0
+100,No private capital,Primary deficit-to-GDP ratio,0.0
+1,No indexation,Primary deficit-to-GDP ratio,0.832
+2,No indexation,Primary deficit-to-GDP ratio,0.833
+3,No indexation,Primary deficit-to-GDP ratio,0.787
+4,No indexation,Primary deficit-to-GDP ratio,0.725
+5,No indexation,Primary deficit-to-GDP ratio,0.66
+6,No indexation,Primary deficit-to-GDP ratio,0.597
+7,No indexation,Primary deficit-to-GDP ratio,0.539
+8,No indexation,Primary deficit-to-GDP ratio,0.486
+9,No indexation,Primary deficit-to-GDP ratio,0.437
+10,No indexation,Primary deficit-to-GDP ratio,0.394
+11,No indexation,Primary deficit-to-GDP ratio,0.354
+12,No indexation,Primary deficit-to-GDP ratio,0.319
+13,No indexation,Primary deficit-to-GDP ratio,0.287
+14,No indexation,Primary deficit-to-GDP ratio,0.258
+15,No indexation,Primary deficit-to-GDP ratio,0.233
+16,No indexation,Primary deficit-to-GDP ratio,0.209
+17,No indexation,Primary deficit-to-GDP ratio,0.188
+18,No indexation,Primary deficit-to-GDP ratio,0.17
+19,No indexation,Primary deficit-to-GDP ratio,0.153
+20,No indexation,Primary deficit-to-GDP ratio,0.137
+21,No indexation,Primary deficit-to-GDP ratio,0.124
+22,No indexation,Primary deficit-to-GDP ratio,0.111
+23,No indexation,Primary deficit-to-GDP ratio,0.1
+24,No indexation,Primary deficit-to-GDP ratio,0.09
+25,No indexation,Primary deficit-to-GDP ratio,0.081
+26,No indexation,Primary deficit-to-GDP ratio,0.073
+27,No indexation,Primary deficit-to-GDP ratio,0.066
+28,No indexation,Primary deficit-to-GDP ratio,0.059
+29,No indexation,Primary deficit-to-GDP ratio,0.053
+30,No indexation,Primary deficit-to-GDP ratio,0.048
+31,No indexation,Primary deficit-to-GDP ratio,0.043
+32,No indexation,Primary deficit-to-GDP ratio,0.039
+33,No indexation,Primary deficit-to-GDP ratio,0.035
+34,No indexation,Primary deficit-to-GDP ratio,0.031
+35,No indexation,Primary deficit-to-GDP ratio,0.028
+36,No indexation,Primary deficit-to-GDP ratio,0.025
+37,No indexation,Primary deficit-to-GDP ratio,0.023
+38,No indexation,Primary deficit-to-GDP ratio,0.021
+39,No indexation,Primary deficit-to-GDP ratio,0.019
+40,No indexation,Primary deficit-to-GDP ratio,0.017
+41,No indexation,Primary deficit-to-GDP ratio,0.015
+42,No indexation,Primary deficit-to-GDP ratio,0.014
+43,No indexation,Primary deficit-to-GDP ratio,0.012
+44,No indexation,Primary deficit-to-GDP ratio,0.011
+45,No indexation,Primary deficit-to-GDP ratio,0.01
+46,No indexation,Primary deficit-to-GDP ratio,0.009
+47,No indexation,Primary deficit-to-GDP ratio,0.008
+48,No indexation,Primary deficit-to-GDP ratio,0.007
+49,No indexation,Primary deficit-to-GDP ratio,0.006
+50,No indexation,Primary deficit-to-GDP ratio,0.006
+51,No indexation,Primary deficit-to-GDP ratio,0.005
+52,No indexation,Primary deficit-to-GDP ratio,0.005
+53,No indexation,Primary deficit-to-GDP ratio,0.004
+54,No indexation,Primary deficit-to-GDP ratio,0.004
+55,No indexation,Primary deficit-to-GDP ratio,0.003
+56,No indexation,Primary deficit-to-GDP ratio,0.003
+57,No indexation,Primary deficit-to-GDP ratio,0.003
+58,No indexation,Primary deficit-to-GDP ratio,0.003
+59,No indexation,Primary deficit-to-GDP ratio,0.002
+60,No indexation,Primary deficit-to-GDP ratio,0.002
+61,No indexation,Primary deficit-to-GDP ratio,0.002
+62,No indexation,Primary deficit-to-GDP ratio,0.002
+63,No indexation,Primary deficit-to-GDP ratio,0.001
+64,No indexation,Primary deficit-to-GDP ratio,0.001
+65,No indexation,Primary deficit-to-GDP ratio,0.001
+66,No indexation,Primary deficit-to-GDP ratio,0.001
+67,No indexation,Primary deficit-to-GDP ratio,0.001
+68,No indexation,Primary deficit-to-GDP ratio,0.001
+69,No indexation,Primary deficit-to-GDP ratio,0.001
+70,No indexation,Primary deficit-to-GDP ratio,0.001
+71,No indexation,Primary deficit-to-GDP ratio,0.001
+72,No indexation,Primary deficit-to-GDP ratio,0.001
+73,No indexation,Primary deficit-to-GDP ratio,0.001
+74,No indexation,Primary deficit-to-GDP ratio,0.0
+75,No indexation,Primary deficit-to-GDP ratio,0.0
+76,No indexation,Primary deficit-to-GDP ratio,0.0
+77,No indexation,Primary deficit-to-GDP ratio,0.0
+78,No indexation,Primary deficit-to-GDP ratio,0.0
+79,No indexation,Primary deficit-to-GDP ratio,0.0
+80,No indexation,Primary deficit-to-GDP ratio,0.0
+81,No indexation,Primary deficit-to-GDP ratio,0.0
+82,No indexation,Primary deficit-to-GDP ratio,0.0
+83,No indexation,Primary deficit-to-GDP ratio,0.0
+84,No indexation,Primary deficit-to-GDP ratio,0.0
+85,No indexation,Primary deficit-to-GDP ratio,0.0
+86,No indexation,Primary deficit-to-GDP ratio,0.0
+87,No indexation,Primary deficit-to-GDP ratio,0.0
+88,No indexation,Primary deficit-to-GDP ratio,0.0
+89,No indexation,Primary deficit-to-GDP ratio,0.0
+90,No indexation,Primary deficit-to-GDP ratio,0.0
+91,No indexation,Primary deficit-to-GDP ratio,0.0
+92,No indexation,Primary deficit-to-GDP ratio,0.0
+93,No indexation,Primary deficit-to-GDP ratio,0.0
+94,No indexation,Primary deficit-to-GDP ratio,0.0
+95,No indexation,Primary deficit-to-GDP ratio,0.0
+96,No indexation,Primary deficit-to-GDP ratio,0.0
+97,No indexation,Primary deficit-to-GDP ratio,0.0
+98,No indexation,Primary deficit-to-GDP ratio,0.0
+99,No indexation,Primary deficit-to-GDP ratio,0.0
+100,No indexation,Primary deficit-to-GDP ratio,0.0
+1,No trend growth,Primary deficit-to-GDP ratio,0.835
+2,No trend growth,Primary deficit-to-GDP ratio,0.835
+3,No trend growth,Primary deficit-to-GDP ratio,0.789
+4,No trend growth,Primary deficit-to-GDP ratio,0.726
+5,No trend growth,Primary deficit-to-GDP ratio,0.661
+6,No trend growth,Primary deficit-to-GDP ratio,0.598
+7,No trend growth,Primary deficit-to-GDP ratio,0.54
+8,No trend growth,Primary deficit-to-GDP ratio,0.486
+9,No trend growth,Primary deficit-to-GDP ratio,0.438
+10,No trend growth,Primary deficit-to-GDP ratio,0.394
+11,No trend growth,Primary deficit-to-GDP ratio,0.355
+12,No trend growth,Primary deficit-to-GDP ratio,0.32
+13,No trend growth,Primary deficit-to-GDP ratio,0.288
+14,No trend growth,Primary deficit-to-GDP ratio,0.259
+15,No trend growth,Primary deficit-to-GDP ratio,0.233
+16,No trend growth,Primary deficit-to-GDP ratio,0.21
+17,No trend growth,Primary deficit-to-GDP ratio,0.189
+18,No trend growth,Primary deficit-to-GDP ratio,0.17
+19,No trend growth,Primary deficit-to-GDP ratio,0.153
+20,No trend growth,Primary deficit-to-GDP ratio,0.138
+21,No trend growth,Primary deficit-to-GDP ratio,0.124
+22,No trend growth,Primary deficit-to-GDP ratio,0.112
+23,No trend growth,Primary deficit-to-GDP ratio,0.1
+24,No trend growth,Primary deficit-to-GDP ratio,0.09
+25,No trend growth,Primary deficit-to-GDP ratio,0.081
+26,No trend growth,Primary deficit-to-GDP ratio,0.073
+27,No trend growth,Primary deficit-to-GDP ratio,0.066
+28,No trend growth,Primary deficit-to-GDP ratio,0.059
+29,No trend growth,Primary deficit-to-GDP ratio,0.053
+30,No trend growth,Primary deficit-to-GDP ratio,0.048
+31,No trend growth,Primary deficit-to-GDP ratio,0.043
+32,No trend growth,Primary deficit-to-GDP ratio,0.039
+33,No trend growth,Primary deficit-to-GDP ratio,0.035
+34,No trend growth,Primary deficit-to-GDP ratio,0.032
+35,No trend growth,Primary deficit-to-GDP ratio,0.028
+36,No trend growth,Primary deficit-to-GDP ratio,0.026
+37,No trend growth,Primary deficit-to-GDP ratio,0.023
+38,No trend growth,Primary deficit-to-GDP ratio,0.021
+39,No trend growth,Primary deficit-to-GDP ratio,0.019
+40,No trend growth,Primary deficit-to-GDP ratio,0.017
+41,No trend growth,Primary deficit-to-GDP ratio,0.015
+42,No trend growth,Primary deficit-to-GDP ratio,0.014
+43,No trend growth,Primary deficit-to-GDP ratio,0.012
+44,No trend growth,Primary deficit-to-GDP ratio,0.011
+45,No trend growth,Primary deficit-to-GDP ratio,0.01
+46,No trend growth,Primary deficit-to-GDP ratio,0.009
+47,No trend growth,Primary deficit-to-GDP ratio,0.008
+48,No trend growth,Primary deficit-to-GDP ratio,0.007
+49,No trend growth,Primary deficit-to-GDP ratio,0.006
+50,No trend growth,Primary deficit-to-GDP ratio,0.006
+51,No trend growth,Primary deficit-to-GDP ratio,0.005
+52,No trend growth,Primary deficit-to-GDP ratio,0.005
+53,No trend growth,Primary deficit-to-GDP ratio,0.004
+54,No trend growth,Primary deficit-to-GDP ratio,0.004
+55,No trend growth,Primary deficit-to-GDP ratio,0.003
+56,No trend growth,Primary deficit-to-GDP ratio,0.003
+57,No trend growth,Primary deficit-to-GDP ratio,0.003
+58,No trend growth,Primary deficit-to-GDP ratio,0.003
+59,No trend growth,Primary deficit-to-GDP ratio,0.002
+60,No trend growth,Primary deficit-to-GDP ratio,0.002
+61,No trend growth,Primary deficit-to-GDP ratio,0.002
+62,No trend growth,Primary deficit-to-GDP ratio,0.002
+63,No trend growth,Primary deficit-to-GDP ratio,0.001
+64,No trend growth,Primary deficit-to-GDP ratio,0.001
+65,No trend growth,Primary deficit-to-GDP ratio,0.001
+66,No trend growth,Primary deficit-to-GDP ratio,0.001
+67,No trend growth,Primary deficit-to-GDP ratio,0.001
+68,No trend growth,Primary deficit-to-GDP ratio,0.001
+69,No trend growth,Primary deficit-to-GDP ratio,0.001
+70,No trend growth,Primary deficit-to-GDP ratio,0.001
+71,No trend growth,Primary deficit-to-GDP ratio,0.001
+72,No trend growth,Primary deficit-to-GDP ratio,0.001
+73,No trend growth,Primary deficit-to-GDP ratio,0.001
+74,No trend growth,Primary deficit-to-GDP ratio,0.0
+75,No trend growth,Primary deficit-to-GDP ratio,0.0
+76,No trend growth,Primary deficit-to-GDP ratio,0.0
+77,No trend growth,Primary deficit-to-GDP ratio,0.0
+78,No trend growth,Primary deficit-to-GDP ratio,0.0
+79,No trend growth,Primary deficit-to-GDP ratio,0.0
+80,No trend growth,Primary deficit-to-GDP ratio,0.0
+81,No trend growth,Primary deficit-to-GDP ratio,0.0
+82,No trend growth,Primary deficit-to-GDP ratio,0.0
+83,No trend growth,Primary deficit-to-GDP ratio,0.0
+84,No trend growth,Primary deficit-to-GDP ratio,0.0
+85,No trend growth,Primary deficit-to-GDP ratio,0.0
+86,No trend growth,Primary deficit-to-GDP ratio,0.0
+87,No trend growth,Primary deficit-to-GDP ratio,0.0
+88,No trend growth,Primary deficit-to-GDP ratio,0.0
+89,No trend growth,Primary deficit-to-GDP ratio,0.0
+90,No trend growth,Primary deficit-to-GDP ratio,0.0
+91,No trend growth,Primary deficit-to-GDP ratio,0.0
+92,No trend growth,Primary deficit-to-GDP ratio,0.0
+93,No trend growth,Primary deficit-to-GDP ratio,0.0
+94,No trend growth,Primary deficit-to-GDP ratio,0.0
+95,No trend growth,Primary deficit-to-GDP ratio,0.0
+96,No trend growth,Primary deficit-to-GDP ratio,0.0
+97,No trend growth,Primary deficit-to-GDP ratio,0.0
+98,No trend growth,Primary deficit-to-GDP ratio,0.0
+99,No trend growth,Primary deficit-to-GDP ratio,0.0
+100,No trend growth,Primary deficit-to-GDP ratio,0.0
+1,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+2,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+3,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+4,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+5,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+6,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+7,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+8,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+9,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+10,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+11,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+12,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+13,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+14,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+15,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+16,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+17,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+18,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+19,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+20,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+21,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+22,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+23,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+24,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+25,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+26,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+27,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+28,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+29,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+30,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+31,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+32,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+33,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+34,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+35,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+36,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+37,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+38,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+39,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+40,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+41,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+42,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+43,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+44,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+45,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+46,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+47,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+48,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+49,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+50,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+51,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+52,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+53,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+54,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+55,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+56,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+57,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+58,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+59,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+60,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+61,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+62,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+63,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+64,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+65,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+66,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+67,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+68,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+69,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+70,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+71,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+72,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+73,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+74,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+75,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+76,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+77,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+78,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+79,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+80,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+81,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+82,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+83,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+84,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+85,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+86,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+87,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+88,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+89,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+90,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+91,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+92,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+93,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+94,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+95,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+96,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+97,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+98,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+99,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+100,Derived canonical NK,Primary deficit-to-GDP ratio,0.0
+1,Full model,Transfers-to-GDP ratio,0.0
+2,Full model,Transfers-to-GDP ratio,0.0
+3,Full model,Transfers-to-GDP ratio,0.0
+4,Full model,Transfers-to-GDP ratio,0.0
+5,Full model,Transfers-to-GDP ratio,0.0
+6,Full model,Transfers-to-GDP ratio,0.0
+7,Full model,Transfers-to-GDP ratio,0.0
+8,Full model,Transfers-to-GDP ratio,0.0
+9,Full model,Transfers-to-GDP ratio,0.0
+10,Full model,Transfers-to-GDP ratio,0.0
+11,Full model,Transfers-to-GDP ratio,0.0
+12,Full model,Transfers-to-GDP ratio,0.0
+13,Full model,Transfers-to-GDP ratio,0.0
+14,Full model,Transfers-to-GDP ratio,0.0
+15,Full model,Transfers-to-GDP ratio,0.0
+16,Full model,Transfers-to-GDP ratio,0.0
+17,Full model,Transfers-to-GDP ratio,0.0
+18,Full model,Transfers-to-GDP ratio,0.0
+19,Full model,Transfers-to-GDP ratio,0.0
+20,Full model,Transfers-to-GDP ratio,0.0
+21,Full model,Transfers-to-GDP ratio,0.0
+22,Full model,Transfers-to-GDP ratio,0.0
+23,Full model,Transfers-to-GDP ratio,0.0
+24,Full model,Transfers-to-GDP ratio,0.0
+25,Full model,Transfers-to-GDP ratio,0.0
+26,Full model,Transfers-to-GDP ratio,0.0
+27,Full model,Transfers-to-GDP ratio,0.0
+28,Full model,Transfers-to-GDP ratio,0.0
+29,Full model,Transfers-to-GDP ratio,0.0
+30,Full model,Transfers-to-GDP ratio,0.0
+31,Full model,Transfers-to-GDP ratio,0.0
+32,Full model,Transfers-to-GDP ratio,0.0
+33,Full model,Transfers-to-GDP ratio,0.0
+34,Full model,Transfers-to-GDP ratio,0.0
+35,Full model,Transfers-to-GDP ratio,0.0
+36,Full model,Transfers-to-GDP ratio,0.0
+37,Full model,Transfers-to-GDP ratio,0.0
+38,Full model,Transfers-to-GDP ratio,0.0
+39,Full model,Transfers-to-GDP ratio,0.0
+40,Full model,Transfers-to-GDP ratio,0.0
+41,Full model,Transfers-to-GDP ratio,0.0
+42,Full model,Transfers-to-GDP ratio,0.0
+43,Full model,Transfers-to-GDP ratio,0.0
+44,Full model,Transfers-to-GDP ratio,0.0
+45,Full model,Transfers-to-GDP ratio,0.0
+46,Full model,Transfers-to-GDP ratio,0.0
+47,Full model,Transfers-to-GDP ratio,0.0
+48,Full model,Transfers-to-GDP ratio,0.0
+49,Full model,Transfers-to-GDP ratio,0.0
+50,Full model,Transfers-to-GDP ratio,0.0
+51,Full model,Transfers-to-GDP ratio,0.0
+52,Full model,Transfers-to-GDP ratio,0.0
+53,Full model,Transfers-to-GDP ratio,0.0
+54,Full model,Transfers-to-GDP ratio,0.0
+55,Full model,Transfers-to-GDP ratio,0.0
+56,Full model,Transfers-to-GDP ratio,0.0
+57,Full model,Transfers-to-GDP ratio,0.0
+58,Full model,Transfers-to-GDP ratio,0.0
+59,Full model,Transfers-to-GDP ratio,0.0
+60,Full model,Transfers-to-GDP ratio,0.0
+61,Full model,Transfers-to-GDP ratio,0.0
+62,Full model,Transfers-to-GDP ratio,0.0
+63,Full model,Transfers-to-GDP ratio,0.0
+64,Full model,Transfers-to-GDP ratio,0.0
+65,Full model,Transfers-to-GDP ratio,0.0
+66,Full model,Transfers-to-GDP ratio,0.0
+67,Full model,Transfers-to-GDP ratio,0.0
+68,Full model,Transfers-to-GDP ratio,0.0
+69,Full model,Transfers-to-GDP ratio,0.0
+70,Full model,Transfers-to-GDP ratio,0.0
+71,Full model,Transfers-to-GDP ratio,0.0
+72,Full model,Transfers-to-GDP ratio,0.0
+73,Full model,Transfers-to-GDP ratio,0.0
+74,Full model,Transfers-to-GDP ratio,0.0
+75,Full model,Transfers-to-GDP ratio,0.0
+76,Full model,Transfers-to-GDP ratio,0.0
+77,Full model,Transfers-to-GDP ratio,0.0
+78,Full model,Transfers-to-GDP ratio,0.0
+79,Full model,Transfers-to-GDP ratio,0.0
+80,Full model,Transfers-to-GDP ratio,0.0
+81,Full model,Transfers-to-GDP ratio,0.0
+82,Full model,Transfers-to-GDP ratio,0.0
+83,Full model,Transfers-to-GDP ratio,0.0
+84,Full model,Transfers-to-GDP ratio,0.0
+85,Full model,Transfers-to-GDP ratio,0.0
+86,Full model,Transfers-to-GDP ratio,0.0
+87,Full model,Transfers-to-GDP ratio,0.0
+88,Full model,Transfers-to-GDP ratio,0.0
+89,Full model,Transfers-to-GDP ratio,0.0
+90,Full model,Transfers-to-GDP ratio,0.0
+91,Full model,Transfers-to-GDP ratio,0.0
+92,Full model,Transfers-to-GDP ratio,0.0
+93,Full model,Transfers-to-GDP ratio,0.0
+94,Full model,Transfers-to-GDP ratio,0.0
+95,Full model,Transfers-to-GDP ratio,0.0
+96,Full model,Transfers-to-GDP ratio,0.0
+97,Full model,Transfers-to-GDP ratio,0.0
+98,Full model,Transfers-to-GDP ratio,0.0
+99,Full model,Transfers-to-GDP ratio,0.0
+100,Full model,Transfers-to-GDP ratio,0.0
+1,No endogenous technology,Transfers-to-GDP ratio,0.0
+2,No endogenous technology,Transfers-to-GDP ratio,0.0
+3,No endogenous technology,Transfers-to-GDP ratio,0.0
+4,No endogenous technology,Transfers-to-GDP ratio,0.0
+5,No endogenous technology,Transfers-to-GDP ratio,0.0
+6,No endogenous technology,Transfers-to-GDP ratio,0.0
+7,No endogenous technology,Transfers-to-GDP ratio,0.0
+8,No endogenous technology,Transfers-to-GDP ratio,0.0
+9,No endogenous technology,Transfers-to-GDP ratio,0.0
+10,No endogenous technology,Transfers-to-GDP ratio,0.0
+11,No endogenous technology,Transfers-to-GDP ratio,0.0
+12,No endogenous technology,Transfers-to-GDP ratio,0.0
+13,No endogenous technology,Transfers-to-GDP ratio,0.0
+14,No endogenous technology,Transfers-to-GDP ratio,0.0
+15,No endogenous technology,Transfers-to-GDP ratio,0.0
+16,No endogenous technology,Transfers-to-GDP ratio,0.0
+17,No endogenous technology,Transfers-to-GDP ratio,0.0
+18,No endogenous technology,Transfers-to-GDP ratio,0.0
+19,No endogenous technology,Transfers-to-GDP ratio,0.0
+20,No endogenous technology,Transfers-to-GDP ratio,0.0
+21,No endogenous technology,Transfers-to-GDP ratio,0.0
+22,No endogenous technology,Transfers-to-GDP ratio,0.0
+23,No endogenous technology,Transfers-to-GDP ratio,0.0
+24,No endogenous technology,Transfers-to-GDP ratio,0.0
+25,No endogenous technology,Transfers-to-GDP ratio,0.0
+26,No endogenous technology,Transfers-to-GDP ratio,0.0
+27,No endogenous technology,Transfers-to-GDP ratio,0.0
+28,No endogenous technology,Transfers-to-GDP ratio,0.0
+29,No endogenous technology,Transfers-to-GDP ratio,0.0
+30,No endogenous technology,Transfers-to-GDP ratio,0.0
+31,No endogenous technology,Transfers-to-GDP ratio,0.0
+32,No endogenous technology,Transfers-to-GDP ratio,0.0
+33,No endogenous technology,Transfers-to-GDP ratio,0.0
+34,No endogenous technology,Transfers-to-GDP ratio,0.0
+35,No endogenous technology,Transfers-to-GDP ratio,0.0
+36,No endogenous technology,Transfers-to-GDP ratio,0.0
+37,No endogenous technology,Transfers-to-GDP ratio,0.0
+38,No endogenous technology,Transfers-to-GDP ratio,0.0
+39,No endogenous technology,Transfers-to-GDP ratio,0.0
+40,No endogenous technology,Transfers-to-GDP ratio,0.0
+41,No endogenous technology,Transfers-to-GDP ratio,0.0
+42,No endogenous technology,Transfers-to-GDP ratio,0.0
+43,No endogenous technology,Transfers-to-GDP ratio,0.0
+44,No endogenous technology,Transfers-to-GDP ratio,0.0
+45,No endogenous technology,Transfers-to-GDP ratio,0.0
+46,No endogenous technology,Transfers-to-GDP ratio,0.0
+47,No endogenous technology,Transfers-to-GDP ratio,0.0
+48,No endogenous technology,Transfers-to-GDP ratio,0.0
+49,No endogenous technology,Transfers-to-GDP ratio,0.0
+50,No endogenous technology,Transfers-to-GDP ratio,0.0
+51,No endogenous technology,Transfers-to-GDP ratio,0.0
+52,No endogenous technology,Transfers-to-GDP ratio,0.0
+53,No endogenous technology,Transfers-to-GDP ratio,0.0
+54,No endogenous technology,Transfers-to-GDP ratio,0.0
+55,No endogenous technology,Transfers-to-GDP ratio,0.0
+56,No endogenous technology,Transfers-to-GDP ratio,0.0
+57,No endogenous technology,Transfers-to-GDP ratio,0.0
+58,No endogenous technology,Transfers-to-GDP ratio,0.0
+59,No endogenous technology,Transfers-to-GDP ratio,0.0
+60,No endogenous technology,Transfers-to-GDP ratio,0.0
+61,No endogenous technology,Transfers-to-GDP ratio,0.0
+62,No endogenous technology,Transfers-to-GDP ratio,0.0
+63,No endogenous technology,Transfers-to-GDP ratio,0.0
+64,No endogenous technology,Transfers-to-GDP ratio,0.0
+65,No endogenous technology,Transfers-to-GDP ratio,0.0
+66,No endogenous technology,Transfers-to-GDP ratio,0.0
+67,No endogenous technology,Transfers-to-GDP ratio,0.0
+68,No endogenous technology,Transfers-to-GDP ratio,0.0
+69,No endogenous technology,Transfers-to-GDP ratio,0.0
+70,No endogenous technology,Transfers-to-GDP ratio,0.0
+71,No endogenous technology,Transfers-to-GDP ratio,0.0
+72,No endogenous technology,Transfers-to-GDP ratio,0.0
+73,No endogenous technology,Transfers-to-GDP ratio,0.0
+74,No endogenous technology,Transfers-to-GDP ratio,0.0
+75,No endogenous technology,Transfers-to-GDP ratio,0.0
+76,No endogenous technology,Transfers-to-GDP ratio,0.0
+77,No endogenous technology,Transfers-to-GDP ratio,0.0
+78,No endogenous technology,Transfers-to-GDP ratio,0.0
+79,No endogenous technology,Transfers-to-GDP ratio,0.0
+80,No endogenous technology,Transfers-to-GDP ratio,0.0
+81,No endogenous technology,Transfers-to-GDP ratio,0.0
+82,No endogenous technology,Transfers-to-GDP ratio,0.0
+83,No endogenous technology,Transfers-to-GDP ratio,0.0
+84,No endogenous technology,Transfers-to-GDP ratio,0.0
+85,No endogenous technology,Transfers-to-GDP ratio,0.0
+86,No endogenous technology,Transfers-to-GDP ratio,0.0
+87,No endogenous technology,Transfers-to-GDP ratio,0.0
+88,No endogenous technology,Transfers-to-GDP ratio,0.0
+89,No endogenous technology,Transfers-to-GDP ratio,0.0
+90,No endogenous technology,Transfers-to-GDP ratio,0.0
+91,No endogenous technology,Transfers-to-GDP ratio,0.0
+92,No endogenous technology,Transfers-to-GDP ratio,0.0
+93,No endogenous technology,Transfers-to-GDP ratio,0.0
+94,No endogenous technology,Transfers-to-GDP ratio,0.0
+95,No endogenous technology,Transfers-to-GDP ratio,0.0
+96,No endogenous technology,Transfers-to-GDP ratio,0.0
+97,No endogenous technology,Transfers-to-GDP ratio,0.0
+98,No endogenous technology,Transfers-to-GDP ratio,0.0
+99,No endogenous technology,Transfers-to-GDP ratio,0.0
+100,No endogenous technology,Transfers-to-GDP ratio,0.0
+1,No human capital,Transfers-to-GDP ratio,0.0
+2,No human capital,Transfers-to-GDP ratio,0.0
+3,No human capital,Transfers-to-GDP ratio,0.0
+4,No human capital,Transfers-to-GDP ratio,0.0
+5,No human capital,Transfers-to-GDP ratio,0.0
+6,No human capital,Transfers-to-GDP ratio,0.0
+7,No human capital,Transfers-to-GDP ratio,0.0
+8,No human capital,Transfers-to-GDP ratio,0.0
+9,No human capital,Transfers-to-GDP ratio,0.0
+10,No human capital,Transfers-to-GDP ratio,0.0
+11,No human capital,Transfers-to-GDP ratio,0.0
+12,No human capital,Transfers-to-GDP ratio,0.0
+13,No human capital,Transfers-to-GDP ratio,0.0
+14,No human capital,Transfers-to-GDP ratio,0.0
+15,No human capital,Transfers-to-GDP ratio,0.0
+16,No human capital,Transfers-to-GDP ratio,0.0
+17,No human capital,Transfers-to-GDP ratio,0.0
+18,No human capital,Transfers-to-GDP ratio,0.0
+19,No human capital,Transfers-to-GDP ratio,0.0
+20,No human capital,Transfers-to-GDP ratio,0.0
+21,No human capital,Transfers-to-GDP ratio,0.0
+22,No human capital,Transfers-to-GDP ratio,0.0
+23,No human capital,Transfers-to-GDP ratio,0.0
+24,No human capital,Transfers-to-GDP ratio,0.0
+25,No human capital,Transfers-to-GDP ratio,0.0
+26,No human capital,Transfers-to-GDP ratio,0.0
+27,No human capital,Transfers-to-GDP ratio,0.0
+28,No human capital,Transfers-to-GDP ratio,0.0
+29,No human capital,Transfers-to-GDP ratio,0.0
+30,No human capital,Transfers-to-GDP ratio,0.0
+31,No human capital,Transfers-to-GDP ratio,0.0
+32,No human capital,Transfers-to-GDP ratio,0.0
+33,No human capital,Transfers-to-GDP ratio,0.0
+34,No human capital,Transfers-to-GDP ratio,0.0
+35,No human capital,Transfers-to-GDP ratio,0.0
+36,No human capital,Transfers-to-GDP ratio,0.0
+37,No human capital,Transfers-to-GDP ratio,0.0
+38,No human capital,Transfers-to-GDP ratio,0.0
+39,No human capital,Transfers-to-GDP ratio,0.0
+40,No human capital,Transfers-to-GDP ratio,0.0
+41,No human capital,Transfers-to-GDP ratio,0.0
+42,No human capital,Transfers-to-GDP ratio,0.0
+43,No human capital,Transfers-to-GDP ratio,0.0
+44,No human capital,Transfers-to-GDP ratio,0.0
+45,No human capital,Transfers-to-GDP ratio,0.0
+46,No human capital,Transfers-to-GDP ratio,0.0
+47,No human capital,Transfers-to-GDP ratio,0.0
+48,No human capital,Transfers-to-GDP ratio,0.0
+49,No human capital,Transfers-to-GDP ratio,0.0
+50,No human capital,Transfers-to-GDP ratio,0.0
+51,No human capital,Transfers-to-GDP ratio,0.0
+52,No human capital,Transfers-to-GDP ratio,0.0
+53,No human capital,Transfers-to-GDP ratio,0.0
+54,No human capital,Transfers-to-GDP ratio,0.0
+55,No human capital,Transfers-to-GDP ratio,0.0
+56,No human capital,Transfers-to-GDP ratio,0.0
+57,No human capital,Transfers-to-GDP ratio,0.0
+58,No human capital,Transfers-to-GDP ratio,0.0
+59,No human capital,Transfers-to-GDP ratio,0.0
+60,No human capital,Transfers-to-GDP ratio,0.0
+61,No human capital,Transfers-to-GDP ratio,0.0
+62,No human capital,Transfers-to-GDP ratio,0.0
+63,No human capital,Transfers-to-GDP ratio,0.0
+64,No human capital,Transfers-to-GDP ratio,0.0
+65,No human capital,Transfers-to-GDP ratio,0.0
+66,No human capital,Transfers-to-GDP ratio,0.0
+67,No human capital,Transfers-to-GDP ratio,0.0
+68,No human capital,Transfers-to-GDP ratio,0.0
+69,No human capital,Transfers-to-GDP ratio,0.0
+70,No human capital,Transfers-to-GDP ratio,0.0
+71,No human capital,Transfers-to-GDP ratio,0.0
+72,No human capital,Transfers-to-GDP ratio,0.0
+73,No human capital,Transfers-to-GDP ratio,0.0
+74,No human capital,Transfers-to-GDP ratio,0.0
+75,No human capital,Transfers-to-GDP ratio,0.0
+76,No human capital,Transfers-to-GDP ratio,0.0
+77,No human capital,Transfers-to-GDP ratio,0.0
+78,No human capital,Transfers-to-GDP ratio,0.0
+79,No human capital,Transfers-to-GDP ratio,0.0
+80,No human capital,Transfers-to-GDP ratio,0.0
+81,No human capital,Transfers-to-GDP ratio,0.0
+82,No human capital,Transfers-to-GDP ratio,0.0
+83,No human capital,Transfers-to-GDP ratio,0.0
+84,No human capital,Transfers-to-GDP ratio,0.0
+85,No human capital,Transfers-to-GDP ratio,0.0
+86,No human capital,Transfers-to-GDP ratio,0.0
+87,No human capital,Transfers-to-GDP ratio,0.0
+88,No human capital,Transfers-to-GDP ratio,0.0
+89,No human capital,Transfers-to-GDP ratio,0.0
+90,No human capital,Transfers-to-GDP ratio,0.0
+91,No human capital,Transfers-to-GDP ratio,0.0
+92,No human capital,Transfers-to-GDP ratio,0.0
+93,No human capital,Transfers-to-GDP ratio,0.0
+94,No human capital,Transfers-to-GDP ratio,0.0
+95,No human capital,Transfers-to-GDP ratio,0.0
+96,No human capital,Transfers-to-GDP ratio,0.0
+97,No human capital,Transfers-to-GDP ratio,0.0
+98,No human capital,Transfers-to-GDP ratio,0.0
+99,No human capital,Transfers-to-GDP ratio,0.0
+100,No human capital,Transfers-to-GDP ratio,0.0
+1,No public infrastructure,Transfers-to-GDP ratio,0.0
+2,No public infrastructure,Transfers-to-GDP ratio,0.0
+3,No public infrastructure,Transfers-to-GDP ratio,0.0
+4,No public infrastructure,Transfers-to-GDP ratio,0.0
+5,No public infrastructure,Transfers-to-GDP ratio,0.0
+6,No public infrastructure,Transfers-to-GDP ratio,0.0
+7,No public infrastructure,Transfers-to-GDP ratio,0.0
+8,No public infrastructure,Transfers-to-GDP ratio,0.0
+9,No public infrastructure,Transfers-to-GDP ratio,0.0
+10,No public infrastructure,Transfers-to-GDP ratio,0.0
+11,No public infrastructure,Transfers-to-GDP ratio,0.0
+12,No public infrastructure,Transfers-to-GDP ratio,0.0
+13,No public infrastructure,Transfers-to-GDP ratio,0.0
+14,No public infrastructure,Transfers-to-GDP ratio,0.0
+15,No public infrastructure,Transfers-to-GDP ratio,0.0
+16,No public infrastructure,Transfers-to-GDP ratio,0.0
+17,No public infrastructure,Transfers-to-GDP ratio,0.0
+18,No public infrastructure,Transfers-to-GDP ratio,0.0
+19,No public infrastructure,Transfers-to-GDP ratio,0.0
+20,No public infrastructure,Transfers-to-GDP ratio,0.0
+21,No public infrastructure,Transfers-to-GDP ratio,0.0
+22,No public infrastructure,Transfers-to-GDP ratio,0.0
+23,No public infrastructure,Transfers-to-GDP ratio,0.0
+24,No public infrastructure,Transfers-to-GDP ratio,0.0
+25,No public infrastructure,Transfers-to-GDP ratio,0.0
+26,No public infrastructure,Transfers-to-GDP ratio,0.0
+27,No public infrastructure,Transfers-to-GDP ratio,0.0
+28,No public infrastructure,Transfers-to-GDP ratio,0.0
+29,No public infrastructure,Transfers-to-GDP ratio,0.0
+30,No public infrastructure,Transfers-to-GDP ratio,0.0
+31,No public infrastructure,Transfers-to-GDP ratio,0.0
+32,No public infrastructure,Transfers-to-GDP ratio,0.0
+33,No public infrastructure,Transfers-to-GDP ratio,0.0
+34,No public infrastructure,Transfers-to-GDP ratio,0.0
+35,No public infrastructure,Transfers-to-GDP ratio,0.0
+36,No public infrastructure,Transfers-to-GDP ratio,0.0
+37,No public infrastructure,Transfers-to-GDP ratio,0.0
+38,No public infrastructure,Transfers-to-GDP ratio,0.0
+39,No public infrastructure,Transfers-to-GDP ratio,0.0
+40,No public infrastructure,Transfers-to-GDP ratio,0.0
+41,No public infrastructure,Transfers-to-GDP ratio,0.0
+42,No public infrastructure,Transfers-to-GDP ratio,0.0
+43,No public infrastructure,Transfers-to-GDP ratio,0.0
+44,No public infrastructure,Transfers-to-GDP ratio,0.0
+45,No public infrastructure,Transfers-to-GDP ratio,0.0
+46,No public infrastructure,Transfers-to-GDP ratio,0.0
+47,No public infrastructure,Transfers-to-GDP ratio,0.0
+48,No public infrastructure,Transfers-to-GDP ratio,0.0
+49,No public infrastructure,Transfers-to-GDP ratio,0.0
+50,No public infrastructure,Transfers-to-GDP ratio,0.0
+51,No public infrastructure,Transfers-to-GDP ratio,0.0
+52,No public infrastructure,Transfers-to-GDP ratio,0.0
+53,No public infrastructure,Transfers-to-GDP ratio,0.0
+54,No public infrastructure,Transfers-to-GDP ratio,0.0
+55,No public infrastructure,Transfers-to-GDP ratio,0.0
+56,No public infrastructure,Transfers-to-GDP ratio,0.0
+57,No public infrastructure,Transfers-to-GDP ratio,0.0
+58,No public infrastructure,Transfers-to-GDP ratio,0.0
+59,No public infrastructure,Transfers-to-GDP ratio,0.0
+60,No public infrastructure,Transfers-to-GDP ratio,0.0
+61,No public infrastructure,Transfers-to-GDP ratio,0.0
+62,No public infrastructure,Transfers-to-GDP ratio,0.0
+63,No public infrastructure,Transfers-to-GDP ratio,0.0
+64,No public infrastructure,Transfers-to-GDP ratio,0.0
+65,No public infrastructure,Transfers-to-GDP ratio,0.0
+66,No public infrastructure,Transfers-to-GDP ratio,0.0
+67,No public infrastructure,Transfers-to-GDP ratio,0.0
+68,No public infrastructure,Transfers-to-GDP ratio,0.0
+69,No public infrastructure,Transfers-to-GDP ratio,0.0
+70,No public infrastructure,Transfers-to-GDP ratio,0.0
+71,No public infrastructure,Transfers-to-GDP ratio,0.0
+72,No public infrastructure,Transfers-to-GDP ratio,0.0
+73,No public infrastructure,Transfers-to-GDP ratio,0.0
+74,No public infrastructure,Transfers-to-GDP ratio,0.0
+75,No public infrastructure,Transfers-to-GDP ratio,0.0
+76,No public infrastructure,Transfers-to-GDP ratio,0.0
+77,No public infrastructure,Transfers-to-GDP ratio,0.0
+78,No public infrastructure,Transfers-to-GDP ratio,0.0
+79,No public infrastructure,Transfers-to-GDP ratio,0.0
+80,No public infrastructure,Transfers-to-GDP ratio,0.0
+81,No public infrastructure,Transfers-to-GDP ratio,0.0
+82,No public infrastructure,Transfers-to-GDP ratio,0.0
+83,No public infrastructure,Transfers-to-GDP ratio,0.0
+84,No public infrastructure,Transfers-to-GDP ratio,0.0
+85,No public infrastructure,Transfers-to-GDP ratio,0.0
+86,No public infrastructure,Transfers-to-GDP ratio,0.0
+87,No public infrastructure,Transfers-to-GDP ratio,0.0
+88,No public infrastructure,Transfers-to-GDP ratio,0.0
+89,No public infrastructure,Transfers-to-GDP ratio,0.0
+90,No public infrastructure,Transfers-to-GDP ratio,0.0
+91,No public infrastructure,Transfers-to-GDP ratio,0.0
+92,No public infrastructure,Transfers-to-GDP ratio,0.0
+93,No public infrastructure,Transfers-to-GDP ratio,0.0
+94,No public infrastructure,Transfers-to-GDP ratio,0.0
+95,No public infrastructure,Transfers-to-GDP ratio,0.0
+96,No public infrastructure,Transfers-to-GDP ratio,0.0
+97,No public infrastructure,Transfers-to-GDP ratio,0.0
+98,No public infrastructure,Transfers-to-GDP ratio,0.0
+99,No public infrastructure,Transfers-to-GDP ratio,0.0
+100,No public infrastructure,Transfers-to-GDP ratio,0.0
+1,No private capital,Transfers-to-GDP ratio,0.0
+2,No private capital,Transfers-to-GDP ratio,0.0
+3,No private capital,Transfers-to-GDP ratio,0.0
+4,No private capital,Transfers-to-GDP ratio,0.0
+5,No private capital,Transfers-to-GDP ratio,0.0
+6,No private capital,Transfers-to-GDP ratio,0.0
+7,No private capital,Transfers-to-GDP ratio,0.0
+8,No private capital,Transfers-to-GDP ratio,0.0
+9,No private capital,Transfers-to-GDP ratio,0.0
+10,No private capital,Transfers-to-GDP ratio,0.0
+11,No private capital,Transfers-to-GDP ratio,0.0
+12,No private capital,Transfers-to-GDP ratio,0.0
+13,No private capital,Transfers-to-GDP ratio,0.0
+14,No private capital,Transfers-to-GDP ratio,0.0
+15,No private capital,Transfers-to-GDP ratio,0.0
+16,No private capital,Transfers-to-GDP ratio,0.0
+17,No private capital,Transfers-to-GDP ratio,0.0
+18,No private capital,Transfers-to-GDP ratio,0.0
+19,No private capital,Transfers-to-GDP ratio,0.0
+20,No private capital,Transfers-to-GDP ratio,0.0
+21,No private capital,Transfers-to-GDP ratio,0.0
+22,No private capital,Transfers-to-GDP ratio,0.0
+23,No private capital,Transfers-to-GDP ratio,0.0
+24,No private capital,Transfers-to-GDP ratio,0.0
+25,No private capital,Transfers-to-GDP ratio,0.0
+26,No private capital,Transfers-to-GDP ratio,0.0
+27,No private capital,Transfers-to-GDP ratio,0.0
+28,No private capital,Transfers-to-GDP ratio,0.0
+29,No private capital,Transfers-to-GDP ratio,0.0
+30,No private capital,Transfers-to-GDP ratio,0.0
+31,No private capital,Transfers-to-GDP ratio,0.0
+32,No private capital,Transfers-to-GDP ratio,0.0
+33,No private capital,Transfers-to-GDP ratio,0.0
+34,No private capital,Transfers-to-GDP ratio,0.0
+35,No private capital,Transfers-to-GDP ratio,0.0
+36,No private capital,Transfers-to-GDP ratio,0.0
+37,No private capital,Transfers-to-GDP ratio,0.0
+38,No private capital,Transfers-to-GDP ratio,0.0
+39,No private capital,Transfers-to-GDP ratio,0.0
+40,No private capital,Transfers-to-GDP ratio,0.0
+41,No private capital,Transfers-to-GDP ratio,0.0
+42,No private capital,Transfers-to-GDP ratio,0.0
+43,No private capital,Transfers-to-GDP ratio,0.0
+44,No private capital,Transfers-to-GDP ratio,0.0
+45,No private capital,Transfers-to-GDP ratio,0.0
+46,No private capital,Transfers-to-GDP ratio,0.0
+47,No private capital,Transfers-to-GDP ratio,0.0
+48,No private capital,Transfers-to-GDP ratio,0.0
+49,No private capital,Transfers-to-GDP ratio,0.0
+50,No private capital,Transfers-to-GDP ratio,0.0
+51,No private capital,Transfers-to-GDP ratio,0.0
+52,No private capital,Transfers-to-GDP ratio,0.0
+53,No private capital,Transfers-to-GDP ratio,0.0
+54,No private capital,Transfers-to-GDP ratio,0.0
+55,No private capital,Transfers-to-GDP ratio,0.0
+56,No private capital,Transfers-to-GDP ratio,0.0
+57,No private capital,Transfers-to-GDP ratio,0.0
+58,No private capital,Transfers-to-GDP ratio,0.0
+59,No private capital,Transfers-to-GDP ratio,0.0
+60,No private capital,Transfers-to-GDP ratio,0.0
+61,No private capital,Transfers-to-GDP ratio,0.0
+62,No private capital,Transfers-to-GDP ratio,0.0
+63,No private capital,Transfers-to-GDP ratio,0.0
+64,No private capital,Transfers-to-GDP ratio,0.0
+65,No private capital,Transfers-to-GDP ratio,0.0
+66,No private capital,Transfers-to-GDP ratio,0.0
+67,No private capital,Transfers-to-GDP ratio,0.0
+68,No private capital,Transfers-to-GDP ratio,0.0
+69,No private capital,Transfers-to-GDP ratio,0.0
+70,No private capital,Transfers-to-GDP ratio,0.0
+71,No private capital,Transfers-to-GDP ratio,0.0
+72,No private capital,Transfers-to-GDP ratio,0.0
+73,No private capital,Transfers-to-GDP ratio,0.0
+74,No private capital,Transfers-to-GDP ratio,0.0
+75,No private capital,Transfers-to-GDP ratio,0.0
+76,No private capital,Transfers-to-GDP ratio,0.0
+77,No private capital,Transfers-to-GDP ratio,0.0
+78,No private capital,Transfers-to-GDP ratio,0.0
+79,No private capital,Transfers-to-GDP ratio,0.0
+80,No private capital,Transfers-to-GDP ratio,0.0
+81,No private capital,Transfers-to-GDP ratio,0.0
+82,No private capital,Transfers-to-GDP ratio,0.0
+83,No private capital,Transfers-to-GDP ratio,0.0
+84,No private capital,Transfers-to-GDP ratio,0.0
+85,No private capital,Transfers-to-GDP ratio,0.0
+86,No private capital,Transfers-to-GDP ratio,0.0
+87,No private capital,Transfers-to-GDP ratio,0.0
+88,No private capital,Transfers-to-GDP ratio,0.0
+89,No private capital,Transfers-to-GDP ratio,0.0
+90,No private capital,Transfers-to-GDP ratio,0.0
+91,No private capital,Transfers-to-GDP ratio,0.0
+92,No private capital,Transfers-to-GDP ratio,0.0
+93,No private capital,Transfers-to-GDP ratio,0.0
+94,No private capital,Transfers-to-GDP ratio,0.0
+95,No private capital,Transfers-to-GDP ratio,0.0
+96,No private capital,Transfers-to-GDP ratio,0.0
+97,No private capital,Transfers-to-GDP ratio,0.0
+98,No private capital,Transfers-to-GDP ratio,0.0
+99,No private capital,Transfers-to-GDP ratio,0.0
+100,No private capital,Transfers-to-GDP ratio,0.0
+1,No indexation,Transfers-to-GDP ratio,0.0
+2,No indexation,Transfers-to-GDP ratio,0.0
+3,No indexation,Transfers-to-GDP ratio,0.0
+4,No indexation,Transfers-to-GDP ratio,0.0
+5,No indexation,Transfers-to-GDP ratio,0.0
+6,No indexation,Transfers-to-GDP ratio,0.0
+7,No indexation,Transfers-to-GDP ratio,0.0
+8,No indexation,Transfers-to-GDP ratio,0.0
+9,No indexation,Transfers-to-GDP ratio,0.0
+10,No indexation,Transfers-to-GDP ratio,0.0
+11,No indexation,Transfers-to-GDP ratio,0.0
+12,No indexation,Transfers-to-GDP ratio,0.0
+13,No indexation,Transfers-to-GDP ratio,0.0
+14,No indexation,Transfers-to-GDP ratio,0.0
+15,No indexation,Transfers-to-GDP ratio,0.0
+16,No indexation,Transfers-to-GDP ratio,0.0
+17,No indexation,Transfers-to-GDP ratio,0.0
+18,No indexation,Transfers-to-GDP ratio,0.0
+19,No indexation,Transfers-to-GDP ratio,0.0
+20,No indexation,Transfers-to-GDP ratio,0.0
+21,No indexation,Transfers-to-GDP ratio,0.0
+22,No indexation,Transfers-to-GDP ratio,0.0
+23,No indexation,Transfers-to-GDP ratio,0.0
+24,No indexation,Transfers-to-GDP ratio,0.0
+25,No indexation,Transfers-to-GDP ratio,0.0
+26,No indexation,Transfers-to-GDP ratio,0.0
+27,No indexation,Transfers-to-GDP ratio,0.0
+28,No indexation,Transfers-to-GDP ratio,0.0
+29,No indexation,Transfers-to-GDP ratio,0.0
+30,No indexation,Transfers-to-GDP ratio,0.0
+31,No indexation,Transfers-to-GDP ratio,0.0
+32,No indexation,Transfers-to-GDP ratio,0.0
+33,No indexation,Transfers-to-GDP ratio,0.0
+34,No indexation,Transfers-to-GDP ratio,0.0
+35,No indexation,Transfers-to-GDP ratio,0.0
+36,No indexation,Transfers-to-GDP ratio,0.0
+37,No indexation,Transfers-to-GDP ratio,0.0
+38,No indexation,Transfers-to-GDP ratio,0.0
+39,No indexation,Transfers-to-GDP ratio,0.0
+40,No indexation,Transfers-to-GDP ratio,0.0
+41,No indexation,Transfers-to-GDP ratio,0.0
+42,No indexation,Transfers-to-GDP ratio,0.0
+43,No indexation,Transfers-to-GDP ratio,0.0
+44,No indexation,Transfers-to-GDP ratio,0.0
+45,No indexation,Transfers-to-GDP ratio,0.0
+46,No indexation,Transfers-to-GDP ratio,0.0
+47,No indexation,Transfers-to-GDP ratio,0.0
+48,No indexation,Transfers-to-GDP ratio,0.0
+49,No indexation,Transfers-to-GDP ratio,0.0
+50,No indexation,Transfers-to-GDP ratio,0.0
+51,No indexation,Transfers-to-GDP ratio,0.0
+52,No indexation,Transfers-to-GDP ratio,0.0
+53,No indexation,Transfers-to-GDP ratio,0.0
+54,No indexation,Transfers-to-GDP ratio,0.0
+55,No indexation,Transfers-to-GDP ratio,0.0
+56,No indexation,Transfers-to-GDP ratio,0.0
+57,No indexation,Transfers-to-GDP ratio,0.0
+58,No indexation,Transfers-to-GDP ratio,0.0
+59,No indexation,Transfers-to-GDP ratio,0.0
+60,No indexation,Transfers-to-GDP ratio,0.0
+61,No indexation,Transfers-to-GDP ratio,0.0
+62,No indexation,Transfers-to-GDP ratio,0.0
+63,No indexation,Transfers-to-GDP ratio,0.0
+64,No indexation,Transfers-to-GDP ratio,0.0
+65,No indexation,Transfers-to-GDP ratio,0.0
+66,No indexation,Transfers-to-GDP ratio,0.0
+67,No indexation,Transfers-to-GDP ratio,0.0
+68,No indexation,Transfers-to-GDP ratio,0.0
+69,No indexation,Transfers-to-GDP ratio,0.0
+70,No indexation,Transfers-to-GDP ratio,0.0
+71,No indexation,Transfers-to-GDP ratio,0.0
+72,No indexation,Transfers-to-GDP ratio,0.0
+73,No indexation,Transfers-to-GDP ratio,0.0
+74,No indexation,Transfers-to-GDP ratio,0.0
+75,No indexation,Transfers-to-GDP ratio,0.0
+76,No indexation,Transfers-to-GDP ratio,0.0
+77,No indexation,Transfers-to-GDP ratio,0.0
+78,No indexation,Transfers-to-GDP ratio,0.0
+79,No indexation,Transfers-to-GDP ratio,0.0
+80,No indexation,Transfers-to-GDP ratio,0.0
+81,No indexation,Transfers-to-GDP ratio,0.0
+82,No indexation,Transfers-to-GDP ratio,0.0
+83,No indexation,Transfers-to-GDP ratio,0.0
+84,No indexation,Transfers-to-GDP ratio,0.0
+85,No indexation,Transfers-to-GDP ratio,0.0
+86,No indexation,Transfers-to-GDP ratio,0.0
+87,No indexation,Transfers-to-GDP ratio,0.0
+88,No indexation,Transfers-to-GDP ratio,0.0
+89,No indexation,Transfers-to-GDP ratio,0.0
+90,No indexation,Transfers-to-GDP ratio,0.0
+91,No indexation,Transfers-to-GDP ratio,0.0
+92,No indexation,Transfers-to-GDP ratio,0.0
+93,No indexation,Transfers-to-GDP ratio,0.0
+94,No indexation,Transfers-to-GDP ratio,0.0
+95,No indexation,Transfers-to-GDP ratio,0.0
+96,No indexation,Transfers-to-GDP ratio,0.0
+97,No indexation,Transfers-to-GDP ratio,0.0
+98,No indexation,Transfers-to-GDP ratio,0.0
+99,No indexation,Transfers-to-GDP ratio,0.0
+100,No indexation,Transfers-to-GDP ratio,0.0
+1,No trend growth,Transfers-to-GDP ratio,0.0
+2,No trend growth,Transfers-to-GDP ratio,0.0
+3,No trend growth,Transfers-to-GDP ratio,0.0
+4,No trend growth,Transfers-to-GDP ratio,0.0
+5,No trend growth,Transfers-to-GDP ratio,0.0
+6,No trend growth,Transfers-to-GDP ratio,0.0
+7,No trend growth,Transfers-to-GDP ratio,0.0
+8,No trend growth,Transfers-to-GDP ratio,0.0
+9,No trend growth,Transfers-to-GDP ratio,0.0
+10,No trend growth,Transfers-to-GDP ratio,0.0
+11,No trend growth,Transfers-to-GDP ratio,0.0
+12,No trend growth,Transfers-to-GDP ratio,0.0
+13,No trend growth,Transfers-to-GDP ratio,0.0
+14,No trend growth,Transfers-to-GDP ratio,0.0
+15,No trend growth,Transfers-to-GDP ratio,0.0
+16,No trend growth,Transfers-to-GDP ratio,0.0
+17,No trend growth,Transfers-to-GDP ratio,0.0
+18,No trend growth,Transfers-to-GDP ratio,0.0
+19,No trend growth,Transfers-to-GDP ratio,0.0
+20,No trend growth,Transfers-to-GDP ratio,0.0
+21,No trend growth,Transfers-to-GDP ratio,0.0
+22,No trend growth,Transfers-to-GDP ratio,0.0
+23,No trend growth,Transfers-to-GDP ratio,0.0
+24,No trend growth,Transfers-to-GDP ratio,0.0
+25,No trend growth,Transfers-to-GDP ratio,0.0
+26,No trend growth,Transfers-to-GDP ratio,0.0
+27,No trend growth,Transfers-to-GDP ratio,0.0
+28,No trend growth,Transfers-to-GDP ratio,0.0
+29,No trend growth,Transfers-to-GDP ratio,0.0
+30,No trend growth,Transfers-to-GDP ratio,0.0
+31,No trend growth,Transfers-to-GDP ratio,0.0
+32,No trend growth,Transfers-to-GDP ratio,0.0
+33,No trend growth,Transfers-to-GDP ratio,0.0
+34,No trend growth,Transfers-to-GDP ratio,0.0
+35,No trend growth,Transfers-to-GDP ratio,0.0
+36,No trend growth,Transfers-to-GDP ratio,0.0
+37,No trend growth,Transfers-to-GDP ratio,0.0
+38,No trend growth,Transfers-to-GDP ratio,0.0
+39,No trend growth,Transfers-to-GDP ratio,0.0
+40,No trend growth,Transfers-to-GDP ratio,0.0
+41,No trend growth,Transfers-to-GDP ratio,0.0
+42,No trend growth,Transfers-to-GDP ratio,0.0
+43,No trend growth,Transfers-to-GDP ratio,0.0
+44,No trend growth,Transfers-to-GDP ratio,0.0
+45,No trend growth,Transfers-to-GDP ratio,0.0
+46,No trend growth,Transfers-to-GDP ratio,0.0
+47,No trend growth,Transfers-to-GDP ratio,0.0
+48,No trend growth,Transfers-to-GDP ratio,0.0
+49,No trend growth,Transfers-to-GDP ratio,0.0
+50,No trend growth,Transfers-to-GDP ratio,0.0
+51,No trend growth,Transfers-to-GDP ratio,0.0
+52,No trend growth,Transfers-to-GDP ratio,0.0
+53,No trend growth,Transfers-to-GDP ratio,0.0
+54,No trend growth,Transfers-to-GDP ratio,0.0
+55,No trend growth,Transfers-to-GDP ratio,0.0
+56,No trend growth,Transfers-to-GDP ratio,0.0
+57,No trend growth,Transfers-to-GDP ratio,0.0
+58,No trend growth,Transfers-to-GDP ratio,0.0
+59,No trend growth,Transfers-to-GDP ratio,0.0
+60,No trend growth,Transfers-to-GDP ratio,0.0
+61,No trend growth,Transfers-to-GDP ratio,0.0
+62,No trend growth,Transfers-to-GDP ratio,0.0
+63,No trend growth,Transfers-to-GDP ratio,0.0
+64,No trend growth,Transfers-to-GDP ratio,0.0
+65,No trend growth,Transfers-to-GDP ratio,0.0
+66,No trend growth,Transfers-to-GDP ratio,0.0
+67,No trend growth,Transfers-to-GDP ratio,0.0
+68,No trend growth,Transfers-to-GDP ratio,0.0
+69,No trend growth,Transfers-to-GDP ratio,0.0
+70,No trend growth,Transfers-to-GDP ratio,0.0
+71,No trend growth,Transfers-to-GDP ratio,0.0
+72,No trend growth,Transfers-to-GDP ratio,0.0
+73,No trend growth,Transfers-to-GDP ratio,0.0
+74,No trend growth,Transfers-to-GDP ratio,0.0
+75,No trend growth,Transfers-to-GDP ratio,0.0
+76,No trend growth,Transfers-to-GDP ratio,0.0
+77,No trend growth,Transfers-to-GDP ratio,0.0
+78,No trend growth,Transfers-to-GDP ratio,0.0
+79,No trend growth,Transfers-to-GDP ratio,0.0
+80,No trend growth,Transfers-to-GDP ratio,0.0
+81,No trend growth,Transfers-to-GDP ratio,0.0
+82,No trend growth,Transfers-to-GDP ratio,0.0
+83,No trend growth,Transfers-to-GDP ratio,0.0
+84,No trend growth,Transfers-to-GDP ratio,0.0
+85,No trend growth,Transfers-to-GDP ratio,0.0
+86,No trend growth,Transfers-to-GDP ratio,0.0
+87,No trend growth,Transfers-to-GDP ratio,0.0
+88,No trend growth,Transfers-to-GDP ratio,0.0
+89,No trend growth,Transfers-to-GDP ratio,0.0
+90,No trend growth,Transfers-to-GDP ratio,0.0
+91,No trend growth,Transfers-to-GDP ratio,0.0
+92,No trend growth,Transfers-to-GDP ratio,0.0
+93,No trend growth,Transfers-to-GDP ratio,0.0
+94,No trend growth,Transfers-to-GDP ratio,0.0
+95,No trend growth,Transfers-to-GDP ratio,0.0
+96,No trend growth,Transfers-to-GDP ratio,0.0
+97,No trend growth,Transfers-to-GDP ratio,0.0
+98,No trend growth,Transfers-to-GDP ratio,0.0
+99,No trend growth,Transfers-to-GDP ratio,0.0
+100,No trend growth,Transfers-to-GDP ratio,0.0
+1,Derived canonical NK,Transfers-to-GDP ratio,0.0
+2,Derived canonical NK,Transfers-to-GDP ratio,0.0
+3,Derived canonical NK,Transfers-to-GDP ratio,0.0
+4,Derived canonical NK,Transfers-to-GDP ratio,0.0
+5,Derived canonical NK,Transfers-to-GDP ratio,0.0
+6,Derived canonical NK,Transfers-to-GDP ratio,0.0
+7,Derived canonical NK,Transfers-to-GDP ratio,0.0
+8,Derived canonical NK,Transfers-to-GDP ratio,0.0
+9,Derived canonical NK,Transfers-to-GDP ratio,0.0
+10,Derived canonical NK,Transfers-to-GDP ratio,0.0
+11,Derived canonical NK,Transfers-to-GDP ratio,0.0
+12,Derived canonical NK,Transfers-to-GDP ratio,0.0
+13,Derived canonical NK,Transfers-to-GDP ratio,0.0
+14,Derived canonical NK,Transfers-to-GDP ratio,0.0
+15,Derived canonical NK,Transfers-to-GDP ratio,0.0
+16,Derived canonical NK,Transfers-to-GDP ratio,0.0
+17,Derived canonical NK,Transfers-to-GDP ratio,0.0
+18,Derived canonical NK,Transfers-to-GDP ratio,0.0
+19,Derived canonical NK,Transfers-to-GDP ratio,0.0
+20,Derived canonical NK,Transfers-to-GDP ratio,0.0
+21,Derived canonical NK,Transfers-to-GDP ratio,0.0
+22,Derived canonical NK,Transfers-to-GDP ratio,0.0
+23,Derived canonical NK,Transfers-to-GDP ratio,0.0
+24,Derived canonical NK,Transfers-to-GDP ratio,0.0
+25,Derived canonical NK,Transfers-to-GDP ratio,0.0
+26,Derived canonical NK,Transfers-to-GDP ratio,0.0
+27,Derived canonical NK,Transfers-to-GDP ratio,0.0
+28,Derived canonical NK,Transfers-to-GDP ratio,0.0
+29,Derived canonical NK,Transfers-to-GDP ratio,0.0
+30,Derived canonical NK,Transfers-to-GDP ratio,0.0
+31,Derived canonical NK,Transfers-to-GDP ratio,0.0
+32,Derived canonical NK,Transfers-to-GDP ratio,0.0
+33,Derived canonical NK,Transfers-to-GDP ratio,0.0
+34,Derived canonical NK,Transfers-to-GDP ratio,0.0
+35,Derived canonical NK,Transfers-to-GDP ratio,0.0
+36,Derived canonical NK,Transfers-to-GDP ratio,0.0
+37,Derived canonical NK,Transfers-to-GDP ratio,0.0
+38,Derived canonical NK,Transfers-to-GDP ratio,0.0
+39,Derived canonical NK,Transfers-to-GDP ratio,0.0
+40,Derived canonical NK,Transfers-to-GDP ratio,0.0
+41,Derived canonical NK,Transfers-to-GDP ratio,0.0
+42,Derived canonical NK,Transfers-to-GDP ratio,0.0
+43,Derived canonical NK,Transfers-to-GDP ratio,0.0
+44,Derived canonical NK,Transfers-to-GDP ratio,0.0
+45,Derived canonical NK,Transfers-to-GDP ratio,0.0
+46,Derived canonical NK,Transfers-to-GDP ratio,0.0
+47,Derived canonical NK,Transfers-to-GDP ratio,0.0
+48,Derived canonical NK,Transfers-to-GDP ratio,0.0
+49,Derived canonical NK,Transfers-to-GDP ratio,0.0
+50,Derived canonical NK,Transfers-to-GDP ratio,0.0
+51,Derived canonical NK,Transfers-to-GDP ratio,0.0
+52,Derived canonical NK,Transfers-to-GDP ratio,0.0
+53,Derived canonical NK,Transfers-to-GDP ratio,0.0
+54,Derived canonical NK,Transfers-to-GDP ratio,0.0
+55,Derived canonical NK,Transfers-to-GDP ratio,0.0
+56,Derived canonical NK,Transfers-to-GDP ratio,0.0
+57,Derived canonical NK,Transfers-to-GDP ratio,0.0
+58,Derived canonical NK,Transfers-to-GDP ratio,0.0
+59,Derived canonical NK,Transfers-to-GDP ratio,0.0
+60,Derived canonical NK,Transfers-to-GDP ratio,0.0
+61,Derived canonical NK,Transfers-to-GDP ratio,0.0
+62,Derived canonical NK,Transfers-to-GDP ratio,0.0
+63,Derived canonical NK,Transfers-to-GDP ratio,0.0
+64,Derived canonical NK,Transfers-to-GDP ratio,0.0
+65,Derived canonical NK,Transfers-to-GDP ratio,0.0
+66,Derived canonical NK,Transfers-to-GDP ratio,0.0
+67,Derived canonical NK,Transfers-to-GDP ratio,0.0
+68,Derived canonical NK,Transfers-to-GDP ratio,0.0
+69,Derived canonical NK,Transfers-to-GDP ratio,0.0
+70,Derived canonical NK,Transfers-to-GDP ratio,0.0
+71,Derived canonical NK,Transfers-to-GDP ratio,0.0
+72,Derived canonical NK,Transfers-to-GDP ratio,0.0
+73,Derived canonical NK,Transfers-to-GDP ratio,0.0
+74,Derived canonical NK,Transfers-to-GDP ratio,0.0
+75,Derived canonical NK,Transfers-to-GDP ratio,0.0
+76,Derived canonical NK,Transfers-to-GDP ratio,0.0
+77,Derived canonical NK,Transfers-to-GDP ratio,0.0
+78,Derived canonical NK,Transfers-to-GDP ratio,0.0
+79,Derived canonical NK,Transfers-to-GDP ratio,0.0
+80,Derived canonical NK,Transfers-to-GDP ratio,0.0
+81,Derived canonical NK,Transfers-to-GDP ratio,0.0
+82,Derived canonical NK,Transfers-to-GDP ratio,0.0
+83,Derived canonical NK,Transfers-to-GDP ratio,0.0
+84,Derived canonical NK,Transfers-to-GDP ratio,0.0
+85,Derived canonical NK,Transfers-to-GDP ratio,0.0
+86,Derived canonical NK,Transfers-to-GDP ratio,0.0
+87,Derived canonical NK,Transfers-to-GDP ratio,0.0
+88,Derived canonical NK,Transfers-to-GDP ratio,0.0
+89,Derived canonical NK,Transfers-to-GDP ratio,0.0
+90,Derived canonical NK,Transfers-to-GDP ratio,0.0
+91,Derived canonical NK,Transfers-to-GDP ratio,0.0
+92,Derived canonical NK,Transfers-to-GDP ratio,0.0
+93,Derived canonical NK,Transfers-to-GDP ratio,0.0
+94,Derived canonical NK,Transfers-to-GDP ratio,0.0
+95,Derived canonical NK,Transfers-to-GDP ratio,0.0
+96,Derived canonical NK,Transfers-to-GDP ratio,0.0
+97,Derived canonical NK,Transfers-to-GDP ratio,0.0
+98,Derived canonical NK,Transfers-to-GDP ratio,0.0
+99,Derived canonical NK,Transfers-to-GDP ratio,0.0
+100,Derived canonical NK,Transfers-to-GDP ratio,0.0
 1,Full model,Debt-to-GDP ratio (b<sub>t</sub>),0.207
 2,Full model,Debt-to-GDP ratio (b<sub>t</sub>),0.441
 3,Full model,Debt-to-GDP ratio (b<sub>t</sub>),0.654

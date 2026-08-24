@@ -55,8 +55,8 @@ PANELS = [
     ("PI_ann", "Inflation (Π<sub>t</sub>)"),
     ("R_ann", "Nominal interest rate (R<sub>t</sub>)"),
     ("rreal_ann", "Real interest rate (R<sub>t</sub>/Π<sub>t</sub>)"),
-    ("pdef_yss", "Primary deficit"),
-    ("T_yss", "Transfers (T<sub>t</sub>)"),
+    ("pdef_yss", "Primary deficit-to-GDP ratio"),
+    ("T_yss", "Transfers-to-GDP ratio"),
     ("by_yss", "Debt-to-GDP ratio (b<sub>t</sub>)"),
     None,
 ]
@@ -64,8 +64,8 @@ PANELS = [
 COMPARISON_ROWS = [
     ("yd", "Output (Y<sup>d</sup><sub>t</sub>)"),
     ("C", "Consumption (C<sub>t</sub>)"),
-    ("pdef_yss", "Prim. def. (PD<sub>t</sub>)"),
-    ("by_yss", "Public debt (b<sub>t</sub>)"),
+    ("pdef_yss", "Prim. deficit-to-GDP"),
+    ("by_yss", "Debt-to-GDP ratio (b<sub>t</sub>)"),
 ]
 
 NCOLS = 4
