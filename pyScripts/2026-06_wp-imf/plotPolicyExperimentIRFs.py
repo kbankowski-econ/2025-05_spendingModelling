@@ -5,11 +5,10 @@ and fig:efficiencyIRFsEM).
 Two 5x4 grids in the layout of the standard-shock transmission figure
 (plotStandardShocksAEPerm.py):
 
-  1. reallocationIRFs   - the five reallocation experiments of Figure 5: a
+  1. reallocationIRFs   - the three AE reallocation experiments of Figure 5: a
      permanent +1 percent of GDP shift into infrastructure, human capital, or
-     R&D (AE), and into infrastructure or human capital (EMDE), each funded by
-     a cut in public consumption. AE responses are solid, EMDE responses dotted;
-     colors match Figure 5.
+     R&D, each funded by a cut in public consumption. Solid lines; colors match
+     Figure 5.
   2. efficiencyIRFsEM   - the two standard EMDE experiments of Figure 6: the
      same EMDE reallocations combined with a gradual closure of the calibrated
      efficiency gaps over 25 years. Full response paths, same formatting.
@@ -47,16 +46,12 @@ NEUTRAL = "#757575"
 
 # (model directory, instrument label, colour, dash, show instrument legend entry)
 # Colors match Figure 5: infrastructure blue, human capital purple, R&D green.
-# AE experiments are solid; EMDE experiments dotted.
+# AE experiments only, all solid; the EMDE efficiency figure below uses dotted.
 REALLOCATION_SERIES = [
     ("Model_HumanCapital_epsi_ig",    "Infrastructure investment", "#1565C0", "solid", True),
     ("Model_HumanCapital_epsi_cge",   "Human capital investment",  "#6A1B9A", "solid", True),
     ("Model_HumanCapital_epsi_cgrd",  "R&D spending",              "#2E7D32", "solid", True),
-    ("EM_Model_HumanCapital_epsiig",  "Infrastructure investment", "#1565C0", "dot",   False),
-    ("EM_Model_HumanCapital_epsicge", "Human capital investment",  "#6A1B9A", "dot",   False),
 ]
-# Grey style keys appended to the legend: solid = AE, dotted = EMDE.
-REALLOCATION_STYLE_KEYS = [("AEs (solid lines)", "solid"), ("EMDEs (dotted lines)", "dot")]
 
 EFFICIENCY_SERIES = [
     ("EM_Model_HumanCapital_epsiigeff25y",  "Infrastructure investment", "#1565C0", "dot", True),
@@ -294,7 +289,7 @@ def build_figure(df, series, style_keys, output_stem):
 
 def main():
     df = load_data()
-    build_figure(df, REALLOCATION_SERIES, REALLOCATION_STYLE_KEYS, "reallocationIRFs")
+    build_figure(df, REALLOCATION_SERIES, [], "reallocationIRFs")
     build_figure(df, EFFICIENCY_SERIES, [], "efficiencyIRFsEM")
 
 

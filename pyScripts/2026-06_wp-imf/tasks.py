@@ -229,8 +229,8 @@ def plotDiffusionAE(c):
 def plotPolicyExperimentIRFs(c):
     """
     Appendix: detailed 5x4 transmission grids for the policy experiments —
-    the five Figure 5 reallocations (AE solid, EMDE dotted) and the two
-    standard EMDE efficiency experiments of Figure 6 (25-year gap closure).
+    the three AE reallocations of Figure 5 and the two standard EMDE
+    efficiency experiments of Figure 6 (25-year gap closure).
     Out: figures/reallocationIRFs.png/.pdf/.html/.csv and
          figures/efficiencyIRFsEM.png/.pdf/.html/.csv
     """
