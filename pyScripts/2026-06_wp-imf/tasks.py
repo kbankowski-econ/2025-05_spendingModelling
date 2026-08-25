@@ -28,6 +28,8 @@ PAPER FIGURES (read docs/csvFiles/figureNumbers_yearly.csv):
 - plotPolicyEfficiency: FM-style gradual efficiency improvements by country group
 - plotHumanCapital:     Human capital + R&D mix IRFs
 - plotDiffusionAE:      Technology diffusion-speed sensitivity
+- plotPolicyExperimentIRFs: Detailed 5x4 transmission grids for the policy
+                    experiments (appendix)
 - plotCalibrationData:  WEO evidence underlying country-group calibration targets
 - plotInvestmentComposition: OECD functional composition of government investment
 - plotEfficiencyBands:  Spending-efficiency gaps by income group (appendix)
@@ -221,6 +223,18 @@ def plotDiffusionAE(c):
     Out: figures/diffusionAE_yd.png/.html/.csv
     """
     _run_plot(c, "plotDiffusionAE.py", "Generating: Technology Diffusion")
+
+
+@task
+def plotPolicyExperimentIRFs(c):
+    """
+    Appendix: detailed 5x4 transmission grids for the policy experiments —
+    the five Figure 5 reallocations (AE solid, EMDE dotted) and the two
+    standard EMDE efficiency experiments of Figure 6 (25-year gap closure).
+    Out: figures/reallocationIRFs.png/.pdf/.html/.csv and
+         figures/efficiencyIRFsEM.png/.pdf/.html/.csv
+    """
+    _run_plot(c, "plotPolicyExperimentIRFs.py", "Generating: Policy-Experiment IRFs (appendix)")
 
 
 @task
@@ -422,6 +436,7 @@ def investigateContributions(c):
     plotPolicyEfficiency,
     plotHumanCapital,
     plotDiffusionAE,
+    plotPolicyExperimentIRFs,
     plotSensitivityIRF,
     plotSensitivityIRFPerm,
     plotCalibrationData,

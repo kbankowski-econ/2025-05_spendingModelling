@@ -278,7 +278,7 @@ Section~\ref{sec:properties} examines the model's properties, including the tran
 Section~\ref{sec:results} presents the policy experiments: reallocating expenditure, improving spending efficiency, and combining human capital with R\&D.
 Section~\ref{sec:conclusions} concludes.
 Appendix~\ref{app:equilibrium} provides the analytical derivations and Appendix~\ref{app:glossary} the model equations and notation.
-Further appendices document the composition of government investment, the spending-efficiency estimates, robustness to model structure, and results for persistent temporary shocks.
+Further appendices document the composition of government investment, the spending-efficiency estimates, detailed responses to the policy experiments, robustness to model structure, and results for persistent temporary shocks.
 
 %========================================================================
 \section{The Model} \label{sec:model}
@@ -1423,6 +1423,42 @@ Figure~\ref{fig:efficiencyBands} plots the estimated spending-efficiency gaps ov
 Shaded areas show the 25th--75th percentile range across economies within each income group; lines are group medians; circles mark the 2023 value, the calibration reference.
 R\&D is shown for AEs only, as the public-R\&D technology-creation channel is inactive for EMDEs.
 The paper's human-capital gap $e^{GE}$ combines the health and education categories.}
+\end{figure}
+
+%========================================================================
+\section{Detailed Responses to the Policy Experiments} \label{app:policyIRFs}
+%========================================================================
+
+This appendix reports the full transmission paths behind the policy experiments of Section~\ref{sec:results}, in the variable layout of Figure~\ref{fig:standardShocks}.
+Figure~\ref{fig:reallocationIRFs} traces the five reallocation experiments of Figure~\ref{fig:reallocation}: solid lines are AE responses, dotted lines EMDE responses, and colors match Figure~\ref{fig:reallocation}.
+Figure~\ref{fig:efficiencyIRFsEM} reports the two standard EMDE efficiency experiments underlying Figure~\ref{fig:policyEfficiency}, panel~b: the same EMDE reallocations combined with a gradual closure of the calibrated efficiency gaps over 25 years.
+Comparing the two figures' dotted lines isolates the contribution of the efficiency improvement.
+
+\begin{figure}[H]
+    \centering
+    \caption{Transmission of Expenditure Reallocations \label{fig:reallocationIRFs}}
+    \includegraphics{figures/reallocationIRFs.pdf}
+    \source{IMF staff estimates.}
+    \desc{Responses to the five reallocation experiments of Figure~\ref{fig:reallocation}: a permanent increase of 1 percent of GDP in the expenditure categories listed in the legend, funded by a cut in public consumption.
+Solid lines are AE responses and dotted lines EMDE responses; colors match Figure~\ref{fig:reallocation}.
+Public R\&D is omitted for EMDEs because the innovation channel is inactive in that calibration.
+Circles mark first-quarter effects, and the log-transformed quarterly axis expands the early response horizon.
+Panels in the top three rows and the real marginal-cost panel are percent deviations from steady-state levels.
+Inflation and the nominal and real interest rates are annualized percentage-point deviations.
+The primary deficit and transfers are deviations in percentage points of quarterly steady-state GDP; public debt is reported in percentage points of annual steady-state GDP.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \caption{Emerging Market and Developing Economies: Transmission of Reallocations with Efficiency Improvements \label{fig:efficiencyIRFsEM}}
+    \includegraphics{figures/efficiencyIRFsEM.pdf}
+    \source{IMF staff estimates.}
+    \desc{Full responses to the two standard EMDE experiments of Figure~\ref{fig:policyEfficiency}, panel~b: the EMDE reallocations of Figure~\ref{fig:reallocation} combined with a gradual closure of the calibrated efficiency gaps over 25 years.
+Formatting follows Figure~\ref{fig:reallocationIRFs}; EMDE responses are dotted.
+Circles mark first-quarter effects, and the log-transformed quarterly axis expands the early response horizon.
+Panels in the top three rows and the real marginal-cost panel are percent deviations from steady-state levels.
+Inflation and the nominal and real interest rates are annualized percentage-point deviations.
+The primary deficit and transfers are deviations in percentage points of quarterly steady-state GDP; public debt is reported in percentage points of annual steady-state GDP.}
 \end{figure}
 
 %========================================================================
