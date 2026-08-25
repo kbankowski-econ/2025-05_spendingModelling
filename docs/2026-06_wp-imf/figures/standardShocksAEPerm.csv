@@ -7199,403 +7199,403 @@ horizon_quarter,shock,variable,pct_dev
 98,R&D investment,Transfers-to-GDP ratio,0.0
 99,R&D investment,Transfers-to-GDP ratio,0.0
 100,R&D investment,Transfers-to-GDP ratio,0.0
-1,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),0.237
-2,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),0.515
-3,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),0.792
-4,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),1.069
-5,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),1.346
-6,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),1.623
-7,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),1.9
-8,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),2.178
-9,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),2.455
-10,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),2.733
-11,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),3.011
-12,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),3.289
-13,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),3.567
-14,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),3.845
-15,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),4.123
-16,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),4.401
-17,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),4.68
-18,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),4.958
-19,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),5.237
-20,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),5.516
-21,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),5.794
-22,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),6.073
-23,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),6.352
-24,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),6.631
-25,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),6.911
-26,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),7.19
-27,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),7.47
-28,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),7.749
-29,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),8.029
-30,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),8.309
-31,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),8.589
-32,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),8.869
-33,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),9.149
-34,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),9.429
-35,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),9.709
-36,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),9.99
-37,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),10.271
-38,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),10.551
-39,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),10.832
-40,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),11.113
-41,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),11.394
-42,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),11.676
-43,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),11.957
-44,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),12.239
-45,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),12.52
-46,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),12.802
-47,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),13.084
-48,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),13.366
-49,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),13.649
-50,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),13.931
-51,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),14.214
-52,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),14.496
-53,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),14.779
-54,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),15.062
-55,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),15.346
-56,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),15.629
-57,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),15.913
-58,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),16.196
-59,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),16.48
-60,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),16.764
-61,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),17.049
-62,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),17.333
-63,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),17.618
-64,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),17.903
-65,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),18.188
-66,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),18.473
-67,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),18.758
-68,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),19.044
-69,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),19.33
-70,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),19.616
-71,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),19.902
-72,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),20.188
-73,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),20.475
-74,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),20.762
-75,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),21.049
-76,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),21.336
-77,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),21.624
-78,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),21.911
-79,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),22.199
-80,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),22.487
-81,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),22.776
-82,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),23.064
-83,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),23.353
-84,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),23.642
-85,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),23.932
-86,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),24.221
-87,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),24.511
-88,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),24.801
-89,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),25.092
-90,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),25.382
-91,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),25.673
-92,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),25.964
-93,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),26.255
-94,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),26.547
-95,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),26.839
-96,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),27.131
-97,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),27.423
-98,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),27.716
-99,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),28.009
-100,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),28.302
-1,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),0.154
-2,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),0.419
-3,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),0.685
-4,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),0.951
-5,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.217
-6,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.484
-7,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.751
-8,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.017
-9,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.284
-10,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.55
-11,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.815
-12,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),3.08
-13,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),3.344
-14,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),3.607
-15,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),3.869
-16,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),4.13
-17,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),4.389
-18,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),4.648
-19,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),4.905
-20,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),5.161
-21,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),5.415
-22,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),5.668
-23,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),5.919
-24,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),6.168
-25,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),6.416
-26,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),6.663
-27,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),6.907
-28,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),7.15
-29,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),7.391
-30,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),7.631
-31,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),7.868
-32,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),8.104
-33,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),8.338
-34,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),8.571
-35,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),8.801
-36,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),9.03
-37,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),9.257
-38,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),9.482
-39,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),9.705
-40,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),9.927
-41,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),10.146
-42,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),10.364
-43,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),10.58
-44,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),10.795
-45,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),11.007
-46,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),11.218
-47,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),11.427
-48,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),11.634
-49,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),11.84
-50,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),12.043
-51,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),12.245
-52,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),12.446
-53,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),12.644
-54,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),12.841
-55,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),13.037
-56,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),13.23
-57,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),13.422
-58,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),13.613
-59,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),13.802
-60,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),13.989
-61,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),14.174
-62,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),14.358
-63,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),14.541
-64,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),14.722
-65,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),14.901
-66,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),15.079
-67,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),15.255
-68,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),15.43
-69,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),15.604
-70,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),15.776
-71,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),15.946
-72,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.115
-73,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.283
-74,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.45
-75,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.614
-76,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.778
-77,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.94
-78,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),17.101
-79,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),17.261
-80,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),17.419
-81,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),17.576
-82,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),17.732
-83,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),17.887
-84,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),18.04
-85,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),18.192
-86,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),18.343
-87,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),18.492
-88,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),18.641
-89,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),18.788
-90,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),18.934
-91,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),19.079
-92,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),19.223
-93,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),19.366
-94,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),19.507
-95,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),19.648
-96,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),19.788
-97,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),19.926
-98,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),20.063
-99,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),20.2
-100,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),20.335
-1,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),0.128
-2,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),0.378
-3,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),0.627
-4,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),0.878
-5,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.13
-6,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.383
-7,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.638
-8,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.895
-9,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.154
-10,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.415
-11,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.677
-12,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.942
-13,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),3.208
-14,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),3.475
-15,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),3.745
-16,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),4.016
-17,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),4.289
-18,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),4.563
-19,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),4.838
-20,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),5.115
-21,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),5.392
-22,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),5.671
-23,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),5.95
-24,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),6.231
-25,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),6.511
-26,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),6.793
-27,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),7.075
-28,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),7.357
-29,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),7.639
-30,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),7.921
-31,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),8.202
-32,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),8.484
-33,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),8.765
-34,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),9.046
-35,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),9.326
-36,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),9.605
-37,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),9.883
-38,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),10.16
-39,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),10.436
-40,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),10.711
-41,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),10.984
-42,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),11.256
-43,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),11.526
-44,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),11.795
-45,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),12.062
-46,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),12.326
-47,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),12.589
-48,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),12.849
-49,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),13.108
-50,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),13.363
-51,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),13.617
-52,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),13.868
-53,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),14.116
-54,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),14.362
-55,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),14.604
-56,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),14.844
-57,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.081
-58,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.315
-59,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.546
-60,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.774
-61,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.999
-62,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.22
-63,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.438
-64,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.652
-65,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.863
-66,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),17.071
-67,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),17.274
-68,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),17.475
-69,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),17.671
-70,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),17.864
-71,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),18.053
-72,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),18.238
-73,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),18.419
-74,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),18.597
-75,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),18.77
-76,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),18.94
-77,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),19.105
-78,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),19.267
-79,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),19.424
-80,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),19.577
-81,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),19.726
-82,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),19.871
-83,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),20.012
-84,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),20.149
-85,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),20.281
-86,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),20.409
-87,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),20.533
-88,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),20.653
-89,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),20.768
-90,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),20.879
-91,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),20.986
-92,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),21.088
-93,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),21.186
-94,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),21.28
-95,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),21.369
-96,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),21.454
-97,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),21.535
-98,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),21.611
-99,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),21.683
-100,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),21.751
-1,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),0.166
-2,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),0.432
-3,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),0.7
-4,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),0.969
-5,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),1.241
-6,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),1.515
-7,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),1.792
-8,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),2.07
-9,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),2.351
-10,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),2.634
-11,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),2.918
-12,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),3.203
-13,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),3.489
-14,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),3.776
-15,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),4.063
-16,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),4.35
-17,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),4.637
-18,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),4.923
-19,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),5.208
-20,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),5.493
-21,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),5.775
-22,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),6.057
-23,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),6.336
-24,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),6.613
-25,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),6.889
-26,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),7.161
-27,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),7.432
-28,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),7.699
-29,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),7.964
-30,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),8.226
-31,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),8.485
-32,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),8.74
-33,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),8.993
-34,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),9.242
-35,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),9.488
-36,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),9.73
-37,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),9.969
-38,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),10.205
-39,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),10.436
-40,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),10.664
-41,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),10.889
-42,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.109
-43,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.327
-44,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.54
-45,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.749
-46,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.955
-47,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.157
-48,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.356
-49,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.55
-50,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.741
-51,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.928
-52,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.111
-53,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.291
-54,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.467
-55,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.639
-56,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.808
-57,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.972
-58,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),14.134
-59,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),14.291
-60,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),14.445
-61,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),14.596
-62,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),14.743
-63,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),14.886
-64,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),15.026
-65,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),15.163
-66,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),15.296
-67,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),15.425
-68,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),15.552
-69,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),15.675
-70,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),15.794
-71,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),15.911
-72,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),16.024
-73,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),16.134
-74,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),16.241
-75,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),16.344
-76,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),16.445
-77,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),16.542
-78,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),16.636
-79,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),16.728
-80,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),16.816
-81,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),16.901
-82,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),16.984
-83,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.063
-84,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.14
-85,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.214
-86,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.285
-87,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.353
-88,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.419
-89,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.482
-90,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.542
-91,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.6
-92,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.655
-93,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.707
-94,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.757
-95,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.804
-96,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.849
-97,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.891
-98,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.931
-99,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),17.969
-100,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),18.004
+1,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),-0.078
+2,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),0.349
+3,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),0.613
+4,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),0.882
+5,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),1.153
+6,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),1.425
+7,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),1.696
+8,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),1.97
+9,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),2.241
+10,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),2.514
+11,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),2.787
+12,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),3.06
+13,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),3.333
+14,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),3.606
+15,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),3.879
+16,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),4.151
+17,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),4.425
+18,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),4.698
+19,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),4.973
+20,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),5.247
+21,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),5.52
+22,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),5.794
+23,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),6.068
+24,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),6.342
+25,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),6.617
+26,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),6.891
+27,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),7.167
+28,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),7.44
+29,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),7.716
+30,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),7.99
+31,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),8.266
+32,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),8.541
+33,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),8.817
+34,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),9.091
+35,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),9.367
+36,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),9.643
+37,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),9.92
+38,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),10.195
+39,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),10.471
+40,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),10.748
+41,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),11.024
+42,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),11.301
+43,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),11.577
+44,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),11.855
+45,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),12.132
+46,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),12.409
+47,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),12.686
+48,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),12.964
+49,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),13.242
+50,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),13.52
+51,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),13.798
+52,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),14.076
+53,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),14.354
+54,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),14.633
+55,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),14.912
+56,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),15.191
+57,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),15.471
+58,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),15.75
+59,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),16.029
+60,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),16.308
+61,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),16.589
+62,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),16.869
+63,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),17.15
+64,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),17.431
+65,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),17.711
+66,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),17.992
+67,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),18.273
+68,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),18.554
+69,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),18.837
+70,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),19.119
+71,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),19.4
+72,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),19.682
+73,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),19.965
+74,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),20.248
+75,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),20.53
+76,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),20.814
+77,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),21.098
+78,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),21.381
+79,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),21.665
+80,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),21.949
+81,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),22.233
+82,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),22.518
+83,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),22.802
+84,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),23.088
+85,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),23.374
+86,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),23.659
+87,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),23.945
+88,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),24.231
+89,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),24.519
+90,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),24.804
+91,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),25.091
+92,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),25.379
+93,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),25.666
+94,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),25.954
+95,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),26.242
+96,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),26.531
+97,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),26.819
+98,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),27.108
+99,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),27.397
+100,Government consumption,Debt-to-GDP ratio (b<sub>t</sub>),27.687
+1,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),-0.277
+2,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),0.383
+3,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),0.587
+4,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),0.801
+5,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.018
+6,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.24
+7,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.462
+8,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.684
+9,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),1.908
+10,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.132
+11,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.355
+12,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.579
+13,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),2.802
+14,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),3.025
+15,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),3.248
+16,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),3.47
+17,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),3.691
+18,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),3.912
+19,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),4.132
+20,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),4.351
+21,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),4.569
+22,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),4.785
+23,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),5.001
+24,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),5.214
+25,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),5.428
+26,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),5.64
+27,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),5.85
+28,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),6.06
+29,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),6.266
+30,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),6.474
+31,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),6.677
+32,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),6.881
+33,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),7.083
+34,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),7.284
+35,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),7.483
+36,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),7.68
+37,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),7.876
+38,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),8.07
+39,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),8.262
+40,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),8.454
+41,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),8.644
+42,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),8.832
+43,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),9.019
+44,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),9.205
+45,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),9.388
+46,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),9.57
+47,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),9.751
+48,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),9.93
+49,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),10.108
+50,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),10.284
+51,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),10.458
+52,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),10.631
+53,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),10.803
+54,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),10.974
+55,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),11.143
+56,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),11.31
+57,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),11.477
+58,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),11.641
+59,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),11.805
+60,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),11.967
+61,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),12.127
+62,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),12.287
+63,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),12.445
+64,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),12.601
+65,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),12.757
+66,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),12.911
+67,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),13.063
+68,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),13.215
+69,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),13.366
+70,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),13.515
+71,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),13.662
+72,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),13.809
+73,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),13.955
+74,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),14.1
+75,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),14.241
+76,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),14.384
+77,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),14.525
+78,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),14.664
+79,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),14.803
+80,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),14.941
+81,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),15.077
+82,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),15.212
+83,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),15.347
+84,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),15.48
+85,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),15.613
+86,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),15.744
+87,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),15.873
+88,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.004
+89,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.131
+90,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.258
+91,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.384
+92,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.51
+93,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.635
+94,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.758
+95,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),16.881
+96,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),17.003
+97,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),17.124
+98,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),17.243
+99,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),17.363
+100,Infrastructure investment,Debt-to-GDP ratio (b<sub>t</sub>),17.481
+1,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),-1.018
+2,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),-0.244
+3,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),0.049
+4,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),0.356
+5,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),0.664
+6,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),0.968
+7,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.268
+8,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.566
+9,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),1.859
+10,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.149
+11,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.437
+12,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),2.722
+13,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),3.004
+14,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),3.284
+15,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),3.561
+16,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),3.838
+17,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),4.111
+18,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),4.382
+19,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),4.652
+20,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),4.92
+21,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),5.185
+22,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),5.449
+23,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),5.711
+24,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),5.972
+25,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),6.23
+26,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),6.487
+27,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),6.741
+28,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),6.994
+29,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),7.244
+30,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),7.493
+31,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),7.738
+32,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),7.982
+33,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),8.225
+34,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),8.465
+35,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),8.702
+36,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),8.936
+37,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),9.17
+38,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),9.399
+39,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),9.627
+40,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),9.852
+41,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),10.074
+42,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),10.294
+43,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),10.511
+44,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),10.725
+45,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),10.937
+46,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),11.144
+47,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),11.349
+48,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),11.552
+49,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),11.751
+50,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),11.946
+51,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),12.139
+52,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),12.329
+53,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),12.515
+54,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),12.699
+55,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),12.877
+56,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),13.054
+57,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),13.226
+58,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),13.395
+59,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),13.561
+60,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),13.724
+61,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),13.883
+62,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),14.037
+63,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),14.19
+64,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),14.337
+65,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),14.481
+66,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),14.621
+67,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),14.757
+68,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),14.891
+69,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.019
+70,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.144
+71,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.266
+72,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.383
+73,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.497
+74,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.607
+75,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.713
+76,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.816
+77,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),15.913
+78,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.008
+79,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.099
+80,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.185
+81,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.267
+82,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.346
+83,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.421
+84,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.493
+85,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.559
+86,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.623
+87,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.681
+88,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.737
+89,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.789
+90,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.836
+91,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.879
+92,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.919
+93,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.955
+94,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),16.987
+95,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),17.015
+96,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),17.039
+97,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),17.059
+98,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),17.076
+99,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),17.089
+100,Human capital investment,Debt-to-GDP ratio (b<sub>t</sub>),17.098
+1,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),-0.313
+2,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),0.419
+3,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),0.737
+4,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),1.038
+5,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),1.322
+6,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),1.591
+7,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),1.847
+8,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),2.093
+9,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),2.333
+10,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),2.569
+11,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),2.8
+12,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),3.028
+13,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),3.254
+14,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),3.479
+15,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),3.702
+16,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),3.925
+17,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),4.146
+18,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),4.367
+19,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),4.585
+20,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),4.804
+21,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),5.02
+22,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),5.236
+23,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),5.449
+24,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),5.661
+25,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),5.872
+26,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),6.08
+27,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),6.287
+28,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),6.49
+29,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),6.692
+30,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),6.892
+31,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),7.088
+32,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),7.282
+33,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),7.475
+34,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),7.663
+35,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),7.849
+36,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),8.032
+37,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),8.213
+38,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),8.391
+39,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),8.565
+40,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),8.736
+41,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),8.905
+42,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),9.07
+43,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),9.232
+44,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),9.391
+45,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),9.546
+46,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),9.699
+47,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),9.848
+48,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),9.995
+49,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),10.138
+50,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),10.278
+51,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),10.414
+52,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),10.548
+53,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),10.678
+54,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),10.806
+55,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),10.93
+56,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.051
+57,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.169
+58,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.285
+59,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.396
+60,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.505
+61,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.611
+62,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.714
+63,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.813
+64,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),11.911
+65,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.006
+66,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.096
+67,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.184
+68,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.271
+69,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.353
+70,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.433
+71,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.511
+72,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.586
+73,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.658
+74,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.727
+75,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.794
+76,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.858
+77,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.92
+78,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),12.979
+79,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.035
+80,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.089
+81,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.141
+82,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.19
+83,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.237
+84,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.282
+85,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.324
+86,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.363
+87,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.4
+88,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.436
+89,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.469
+90,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.5
+91,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.529
+92,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.556
+93,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.58
+94,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.603
+95,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.623
+96,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.641
+97,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.657
+98,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.672
+99,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.684
+100,R&D investment,Debt-to-GDP ratio (b<sub>t</sub>),13.695

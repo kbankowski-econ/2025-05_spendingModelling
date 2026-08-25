@@ -5,7 +5,7 @@ import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-from wp_charts import chart_render_px, chart_display_cm, font_px_for_pt, smart_save_image, write_pdf
+from wp_charts import chart_render_px, chart_display_cm, debt_to_ratio_change, font_px_for_pt, smart_save_image, write_pdf
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parents[1]
@@ -33,6 +33,7 @@ def main():
     df = pd.read_csv(INPUT_CSV)
     df = df.rename(columns={df.columns[0]: "date"})
     df["year"] = df["date"].str.extract(r"(\d{4})").astype(int)
+    df = debt_to_ratio_change(df)
     indexed = df[df["year"].isin(YEARS)].set_index("year")
 
     fig = make_subplots(

@@ -25,6 +25,30 @@ _CM_PER_INCH = 2.54
 _CM_TO_PX = 37.795275591  # 1 cm at 96 DPI (the render canvas's logical DPI)
 _PT_PER_INCH = 72.27       # TeX points per inch (LaTeX's "pt")
 
+# Steady-state public debt in percent of annual GDP (Table 2 calibration targets).
+DEBT_SS_PCT = {"AE": 78.8, "EM": 46.4}
+
+
+def debt_to_ratio_change(df):
+    """Convert every `<model>___by_yss` column in `df` from the numerator-only
+    measure exported by the model (change in debt over steady-state annual GDP,
+    in percentage points) to the change in the measured debt-to-GDP ratio, with
+    debt divided by current final demand:
+
+        (bbar + delta) / (1 + yd/100) - bbar
+
+    where bbar is the country group's steady-state debt ratio (EM_-prefixed
+    models use the EMDE target) and yd the output percent deviation. Columns
+    without a matching `<model>___yd` series are left unchanged."""
+    for col in [c for c in df.columns if c.endswith("___by_yss")]:
+        model = col[: -len("___by_yss")]
+        yd_col = f"{model}___yd"
+        if yd_col not in df.columns:
+            continue
+        bbar = DEBT_SS_PCT["EM" if model.startswith("EM_") else "AE"]
+        df[col] = (bbar + df[col]) / (1.0 + df[yd_col] / 100.0) - bbar
+    return df
+
 
 def font_px_for_pt(target_pt, render_width_px, display_width_cm):
     """Canvas font size (px) so chart text renders at `target_pt` points on the

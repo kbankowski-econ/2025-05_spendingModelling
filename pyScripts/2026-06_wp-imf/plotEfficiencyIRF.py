@@ -10,6 +10,7 @@ from plotly.subplots import make_subplots
 from wp_charts import (
     chart_display_cm,
     chart_render_px,
+    debt_to_ratio_change,
     font_px_for_pt,
     smart_save_image,
     write_pdf,
@@ -95,7 +96,8 @@ def load_data():
     period = 4 * date_parts["year"] + date_parts["quarter"]
     df["horizon_quarter"] = period - period.iloc[0]
     df = df.sort_values("horizon_quarter")
-    return df[df["horizon_quarter"].between(IMPACT_QUARTER, PLOT_HORIZON_QUARTERS)]
+    df = df[df["horizon_quarter"].between(IMPACT_QUARTER, PLOT_HORIZON_QUARTERS)].copy()
+    return debt_to_ratio_change(df)
 
 
 def plot_efficiency_irfs(scenarios, output_stem):

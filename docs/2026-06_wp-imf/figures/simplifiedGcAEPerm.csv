@@ -13499,803 +13499,803 @@ horizon_quarter,model,variable,pct_dev
 98,Derived canonical NK,Transfers-to-GDP ratio,0.0
 99,Derived canonical NK,Transfers-to-GDP ratio,0.0
 100,Derived canonical NK,Transfers-to-GDP ratio,0.0
-1,Full model,Debt-to-GDP ratio (b<sub>t</sub>),0.237
-2,Full model,Debt-to-GDP ratio (b<sub>t</sub>),0.515
-3,Full model,Debt-to-GDP ratio (b<sub>t</sub>),0.792
-4,Full model,Debt-to-GDP ratio (b<sub>t</sub>),1.069
-5,Full model,Debt-to-GDP ratio (b<sub>t</sub>),1.346
-6,Full model,Debt-to-GDP ratio (b<sub>t</sub>),1.623
-7,Full model,Debt-to-GDP ratio (b<sub>t</sub>),1.9
-8,Full model,Debt-to-GDP ratio (b<sub>t</sub>),2.178
-9,Full model,Debt-to-GDP ratio (b<sub>t</sub>),2.455
-10,Full model,Debt-to-GDP ratio (b<sub>t</sub>),2.733
-11,Full model,Debt-to-GDP ratio (b<sub>t</sub>),3.011
-12,Full model,Debt-to-GDP ratio (b<sub>t</sub>),3.289
-13,Full model,Debt-to-GDP ratio (b<sub>t</sub>),3.567
-14,Full model,Debt-to-GDP ratio (b<sub>t</sub>),3.845
-15,Full model,Debt-to-GDP ratio (b<sub>t</sub>),4.123
-16,Full model,Debt-to-GDP ratio (b<sub>t</sub>),4.401
-17,Full model,Debt-to-GDP ratio (b<sub>t</sub>),4.68
-18,Full model,Debt-to-GDP ratio (b<sub>t</sub>),4.958
-19,Full model,Debt-to-GDP ratio (b<sub>t</sub>),5.237
-20,Full model,Debt-to-GDP ratio (b<sub>t</sub>),5.516
-21,Full model,Debt-to-GDP ratio (b<sub>t</sub>),5.794
-22,Full model,Debt-to-GDP ratio (b<sub>t</sub>),6.073
-23,Full model,Debt-to-GDP ratio (b<sub>t</sub>),6.352
-24,Full model,Debt-to-GDP ratio (b<sub>t</sub>),6.631
-25,Full model,Debt-to-GDP ratio (b<sub>t</sub>),6.911
-26,Full model,Debt-to-GDP ratio (b<sub>t</sub>),7.19
-27,Full model,Debt-to-GDP ratio (b<sub>t</sub>),7.47
-28,Full model,Debt-to-GDP ratio (b<sub>t</sub>),7.749
-29,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.029
-30,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.309
-31,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.589
-32,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.869
-33,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.149
-34,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.429
-35,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.709
-36,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.99
-37,Full model,Debt-to-GDP ratio (b<sub>t</sub>),10.271
-38,Full model,Debt-to-GDP ratio (b<sub>t</sub>),10.551
-39,Full model,Debt-to-GDP ratio (b<sub>t</sub>),10.832
-40,Full model,Debt-to-GDP ratio (b<sub>t</sub>),11.113
-41,Full model,Debt-to-GDP ratio (b<sub>t</sub>),11.394
-42,Full model,Debt-to-GDP ratio (b<sub>t</sub>),11.676
-43,Full model,Debt-to-GDP ratio (b<sub>t</sub>),11.957
-44,Full model,Debt-to-GDP ratio (b<sub>t</sub>),12.239
-45,Full model,Debt-to-GDP ratio (b<sub>t</sub>),12.52
-46,Full model,Debt-to-GDP ratio (b<sub>t</sub>),12.802
-47,Full model,Debt-to-GDP ratio (b<sub>t</sub>),13.084
-48,Full model,Debt-to-GDP ratio (b<sub>t</sub>),13.366
-49,Full model,Debt-to-GDP ratio (b<sub>t</sub>),13.649
-50,Full model,Debt-to-GDP ratio (b<sub>t</sub>),13.931
-51,Full model,Debt-to-GDP ratio (b<sub>t</sub>),14.214
-52,Full model,Debt-to-GDP ratio (b<sub>t</sub>),14.496
-53,Full model,Debt-to-GDP ratio (b<sub>t</sub>),14.779
-54,Full model,Debt-to-GDP ratio (b<sub>t</sub>),15.062
-55,Full model,Debt-to-GDP ratio (b<sub>t</sub>),15.346
-56,Full model,Debt-to-GDP ratio (b<sub>t</sub>),15.629
-57,Full model,Debt-to-GDP ratio (b<sub>t</sub>),15.913
-58,Full model,Debt-to-GDP ratio (b<sub>t</sub>),16.196
-59,Full model,Debt-to-GDP ratio (b<sub>t</sub>),16.48
-60,Full model,Debt-to-GDP ratio (b<sub>t</sub>),16.764
-61,Full model,Debt-to-GDP ratio (b<sub>t</sub>),17.049
-62,Full model,Debt-to-GDP ratio (b<sub>t</sub>),17.333
-63,Full model,Debt-to-GDP ratio (b<sub>t</sub>),17.618
-64,Full model,Debt-to-GDP ratio (b<sub>t</sub>),17.903
-65,Full model,Debt-to-GDP ratio (b<sub>t</sub>),18.188
-66,Full model,Debt-to-GDP ratio (b<sub>t</sub>),18.473
-67,Full model,Debt-to-GDP ratio (b<sub>t</sub>),18.758
-68,Full model,Debt-to-GDP ratio (b<sub>t</sub>),19.044
-69,Full model,Debt-to-GDP ratio (b<sub>t</sub>),19.33
-70,Full model,Debt-to-GDP ratio (b<sub>t</sub>),19.616
-71,Full model,Debt-to-GDP ratio (b<sub>t</sub>),19.902
-72,Full model,Debt-to-GDP ratio (b<sub>t</sub>),20.188
-73,Full model,Debt-to-GDP ratio (b<sub>t</sub>),20.475
-74,Full model,Debt-to-GDP ratio (b<sub>t</sub>),20.762
-75,Full model,Debt-to-GDP ratio (b<sub>t</sub>),21.049
-76,Full model,Debt-to-GDP ratio (b<sub>t</sub>),21.336
-77,Full model,Debt-to-GDP ratio (b<sub>t</sub>),21.624
-78,Full model,Debt-to-GDP ratio (b<sub>t</sub>),21.911
-79,Full model,Debt-to-GDP ratio (b<sub>t</sub>),22.199
-80,Full model,Debt-to-GDP ratio (b<sub>t</sub>),22.487
-81,Full model,Debt-to-GDP ratio (b<sub>t</sub>),22.776
-82,Full model,Debt-to-GDP ratio (b<sub>t</sub>),23.064
-83,Full model,Debt-to-GDP ratio (b<sub>t</sub>),23.353
-84,Full model,Debt-to-GDP ratio (b<sub>t</sub>),23.642
-85,Full model,Debt-to-GDP ratio (b<sub>t</sub>),23.932
-86,Full model,Debt-to-GDP ratio (b<sub>t</sub>),24.221
-87,Full model,Debt-to-GDP ratio (b<sub>t</sub>),24.511
-88,Full model,Debt-to-GDP ratio (b<sub>t</sub>),24.801
-89,Full model,Debt-to-GDP ratio (b<sub>t</sub>),25.092
-90,Full model,Debt-to-GDP ratio (b<sub>t</sub>),25.382
-91,Full model,Debt-to-GDP ratio (b<sub>t</sub>),25.673
-92,Full model,Debt-to-GDP ratio (b<sub>t</sub>),25.964
-93,Full model,Debt-to-GDP ratio (b<sub>t</sub>),26.255
-94,Full model,Debt-to-GDP ratio (b<sub>t</sub>),26.547
-95,Full model,Debt-to-GDP ratio (b<sub>t</sub>),26.839
-96,Full model,Debt-to-GDP ratio (b<sub>t</sub>),27.131
-97,Full model,Debt-to-GDP ratio (b<sub>t</sub>),27.423
-98,Full model,Debt-to-GDP ratio (b<sub>t</sub>),27.716
-99,Full model,Debt-to-GDP ratio (b<sub>t</sub>),28.009
-100,Full model,Debt-to-GDP ratio (b<sub>t</sub>),28.302
-1,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),0.24
-2,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),0.517
-3,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),0.794
-4,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),1.071
-5,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),1.349
-6,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),1.626
-7,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),1.903
-8,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),2.181
-9,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),2.458
-10,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),2.736
-11,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),3.013
-12,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),3.291
-13,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),3.569
-14,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),3.847
-15,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),4.125
-16,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),4.404
-17,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),4.682
-18,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),4.961
-19,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),5.239
-20,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),5.518
-21,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),5.797
-22,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),6.076
-23,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),6.355
-24,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),6.634
-25,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),6.914
-26,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),7.193
-27,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),7.473
-28,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),7.753
-29,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),8.033
-30,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),8.313
-31,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),8.593
-32,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),8.874
-33,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),9.155
-34,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),9.435
-35,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),9.717
-36,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),9.998
-37,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),10.279
-38,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),10.561
-39,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),10.843
-40,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),11.125
-41,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),11.407
-42,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),11.689
-43,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),11.972
-44,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),12.255
-45,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),12.538
-46,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),12.821
-47,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),13.105
-48,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),13.389
-49,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),13.673
-50,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),13.957
-51,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),14.242
-52,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),14.527
-53,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),14.812
-54,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),15.097
-55,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),15.383
-56,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),15.668
-57,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),15.955
-58,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),16.241
-59,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),16.528
-60,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),16.815
-61,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),17.102
-62,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),17.389
-63,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),17.677
-64,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),17.965
-65,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),18.254
-66,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),18.543
-67,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),18.832
-68,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),19.121
-69,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),19.411
-70,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),19.701
-71,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),19.991
-72,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),20.282
-73,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),20.572
-74,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),20.864
-75,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),21.155
-76,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),21.447
-77,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),21.74
-78,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),22.032
-79,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),22.325
-80,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),22.618
-81,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),22.912
-82,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),23.206
-83,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),23.5
-84,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),23.795
-85,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),24.09
-86,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),24.386
-87,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),24.681
-88,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),24.978
-89,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),25.274
-90,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),25.571
-91,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),25.868
-92,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),26.166
-93,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),26.464
-94,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),26.762
-95,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),27.061
-96,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),27.36
-97,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),27.66
-98,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),27.96
-99,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),28.26
-100,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),28.561
-1,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),0.247
-2,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),0.526
-3,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),0.803
-4,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),1.081
-5,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),1.359
-6,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),1.637
-7,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),1.915
-8,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),2.193
-9,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),2.471
-10,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),2.749
-11,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),3.027
-12,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),3.306
-13,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),3.584
-14,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),3.863
-15,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),4.142
-16,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),4.421
-17,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),4.7
-18,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),4.979
-19,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),5.259
-20,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),5.538
-21,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),5.818
-22,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),6.098
-23,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),6.379
-24,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),6.659
-25,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),6.94
-26,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),7.221
-27,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),7.502
-28,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),7.784
-29,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),8.066
-30,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),8.348
-31,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),8.63
-32,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),8.913
-33,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),9.196
-34,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),9.479
-35,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),9.762
-36,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),10.046
-37,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),10.33
-38,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),10.614
-39,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),10.899
-40,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),11.184
-41,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),11.469
-42,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),11.755
-43,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),12.041
-44,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),12.327
-45,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),12.614
-46,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),12.9
-47,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),13.188
-48,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),13.475
-49,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),13.763
-50,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),14.052
-51,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),14.34
-52,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),14.629
-53,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),14.919
-54,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),15.209
-55,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),15.499
-56,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),15.789
-57,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),16.08
-58,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),16.371
-59,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),16.663
-60,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),16.955
-61,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),17.247
-62,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),17.54
-63,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),17.833
-64,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),18.127
-65,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),18.421
-66,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),18.715
-67,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),19.01
-68,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),19.305
-69,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),19.601
-70,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),19.897
-71,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),20.193
-72,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),20.49
-73,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),20.787
-74,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),21.085
-75,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),21.383
-76,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),21.681
-77,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),21.98
-78,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),22.279
-79,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),22.579
-80,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),22.879
-81,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),23.179
-82,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),23.48
-83,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),23.782
-84,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),24.084
-85,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),24.386
-86,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),24.688
-87,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),24.992
-88,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),25.295
-89,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),25.599
-90,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),25.903
-91,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),26.208
-92,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),26.514
-93,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),26.819
-94,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),27.125
-95,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),27.432
-96,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),27.739
-97,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),28.047
-98,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),28.354
-99,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),28.663
-100,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),28.972
-1,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),0.247
-2,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),0.526
-3,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),0.803
-4,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),1.081
-5,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),1.359
-6,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),1.637
-7,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),1.915
-8,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),2.193
-9,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),2.471
-10,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),2.749
-11,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),3.027
-12,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),3.306
-13,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),3.584
-14,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),3.863
-15,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),4.142
-16,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),4.421
-17,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),4.7
-18,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),4.979
-19,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),5.259
-20,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),5.538
-21,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),5.818
-22,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),6.098
-23,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),6.379
-24,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),6.659
-25,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),6.94
-26,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),7.221
-27,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),7.502
-28,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),7.784
-29,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),8.066
-30,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),8.348
-31,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),8.63
-32,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),8.913
-33,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),9.196
-34,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),9.479
-35,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),9.762
-36,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),10.046
-37,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),10.33
-38,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),10.614
-39,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),10.899
-40,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),11.184
-41,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),11.469
-42,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),11.755
-43,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),12.041
-44,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),12.327
-45,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),12.614
-46,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),12.9
-47,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),13.188
-48,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),13.475
-49,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),13.763
-50,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),14.052
-51,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),14.34
-52,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),14.629
-53,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),14.919
-54,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),15.209
-55,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),15.499
-56,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),15.789
-57,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),16.08
-58,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),16.371
-59,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),16.663
-60,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),16.955
-61,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),17.247
-62,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),17.54
-63,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),17.833
-64,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),18.127
-65,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),18.421
-66,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),18.715
-67,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),19.01
-68,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),19.305
-69,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),19.601
-70,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),19.897
-71,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),20.193
-72,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),20.49
-73,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),20.787
-74,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),21.085
-75,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),21.383
-76,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),21.681
-77,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),21.98
-78,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),22.279
-79,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),22.579
-80,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),22.879
-81,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),23.179
-82,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),23.48
-83,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),23.782
-84,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),24.084
-85,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),24.386
-86,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),24.688
-87,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),24.992
-88,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),25.295
-89,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),25.599
-90,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),25.903
-91,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),26.208
-92,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),26.514
-93,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),26.819
-94,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),27.125
-95,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),27.432
-96,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),27.739
-97,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),28.047
-98,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),28.354
-99,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),28.663
-100,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),28.972
-1,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),0.264
-2,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),0.529
-3,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),0.794
-4,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),1.06
-5,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),1.326
-6,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),1.592
-7,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),1.859
-8,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),2.126
-9,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),2.394
-10,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),2.662
-11,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),2.93
-12,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),3.199
-13,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),3.468
-14,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),3.738
-15,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),4.008
-16,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),4.278
-17,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),4.549
-18,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),4.82
-19,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),5.092
-20,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),5.364
-21,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),5.637
-22,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),5.909
-23,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),6.183
-24,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),6.456
-25,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),6.731
-26,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),7.005
-27,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),7.28
-28,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),7.555
-29,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),7.831
-30,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),8.107
-31,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),8.384
-32,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),8.661
-33,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),8.938
-34,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),9.216
-35,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),9.494
-36,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),9.773
-37,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),10.052
-38,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),10.332
-39,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),10.611
-40,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),10.892
-41,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),11.173
-42,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),11.454
-43,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),11.735
-44,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),12.017
-45,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),12.3
-46,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),12.583
-47,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),12.866
-48,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),13.15
-49,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),13.434
-50,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),13.718
-51,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),14.003
-52,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),14.289
-53,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),14.575
-54,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),14.861
-55,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),15.148
-56,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),15.435
-57,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),15.723
-58,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),16.011
-59,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),16.299
-60,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),16.588
-61,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),16.877
-62,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),17.167
-63,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),17.457
-64,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),17.748
-65,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),18.039
-66,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),18.33
-67,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),18.622
-68,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),18.915
-69,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),19.207
-70,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),19.501
-71,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),19.794
-72,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),20.089
-73,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),20.383
-74,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),20.678
-75,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),20.974
-76,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),21.27
-77,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),21.566
-78,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),21.863
-79,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),22.16
-80,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),22.458
-81,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),22.756
-82,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),23.054
-83,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),23.353
-84,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),23.653
-85,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),23.953
-86,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),24.253
-87,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),24.554
-88,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),24.855
-89,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),25.157
-90,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),25.459
-91,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),25.762
-92,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),26.065
-93,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),26.369
-94,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),26.673
-95,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),26.977
-96,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),27.282
-97,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),27.587
-98,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),27.893
-99,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),28.199
-100,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),28.506
-1,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),0.264
-2,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),0.529
-3,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),0.794
-4,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),1.06
-5,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),1.326
-6,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),1.592
-7,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),1.859
-8,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),2.126
-9,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),2.394
-10,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),2.662
-11,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),2.93
-12,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),3.199
-13,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),3.468
-14,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),3.738
-15,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),4.008
-16,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),4.278
-17,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),4.549
-18,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),4.82
-19,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),5.092
-20,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),5.364
-21,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),5.637
-22,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),5.909
-23,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),6.183
-24,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),6.456
-25,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),6.731
-26,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),7.005
-27,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),7.28
-28,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),7.555
-29,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),7.831
-30,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),8.107
-31,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),8.384
-32,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),8.661
-33,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),8.938
-34,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),9.216
-35,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),9.494
-36,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),9.773
-37,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),10.052
-38,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),10.332
-39,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),10.611
-40,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),10.892
-41,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),11.173
-42,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),11.454
-43,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),11.735
-44,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),12.017
-45,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),12.3
-46,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),12.583
-47,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),12.866
-48,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),13.15
-49,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),13.434
-50,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),13.718
-51,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),14.003
-52,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),14.289
-53,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),14.575
-54,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),14.861
-55,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),15.148
-56,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),15.435
-57,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),15.723
-58,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),16.011
-59,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),16.299
-60,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),16.588
-61,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),16.877
-62,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),17.167
-63,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),17.457
-64,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),17.748
-65,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),18.039
-66,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),18.33
-67,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),18.622
-68,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),18.915
-69,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),19.207
-70,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),19.501
-71,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),19.794
-72,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),20.089
-73,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),20.383
-74,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),20.678
-75,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),20.974
-76,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),21.27
-77,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),21.566
-78,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),21.863
-79,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),22.16
-80,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),22.458
-81,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),22.756
-82,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),23.054
-83,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),23.353
-84,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),23.653
-85,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),23.953
-86,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),24.253
-87,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),24.554
-88,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),24.855
-89,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),25.157
-90,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),25.459
-91,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),25.762
-92,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),26.065
-93,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),26.369
-94,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),26.673
-95,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),26.977
-96,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),27.282
-97,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),27.587
-98,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),27.893
-99,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),28.199
-100,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),28.506
-1,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),0.265
-2,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),0.53
-3,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),0.795
-4,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),1.061
-5,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),1.328
-6,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),1.594
-7,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),1.862
-8,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),2.129
-9,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),2.397
-10,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),2.665
-11,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),2.934
-12,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),3.203
-13,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),3.473
-14,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),3.743
-15,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),4.013
-16,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),4.284
-17,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),4.555
-18,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),4.827
-19,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),5.099
-20,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),5.371
-21,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),5.644
-22,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),5.917
-23,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),6.191
-24,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),6.465
-25,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),6.739
-26,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),7.014
-27,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),7.29
-28,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),7.565
-29,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),7.841
-30,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),8.118
-31,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),8.395
-32,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),8.672
-33,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),8.95
-34,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),9.228
-35,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),9.507
-36,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),9.786
-37,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),10.065
-38,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),10.345
-39,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),10.626
-40,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),10.906
-41,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),11.187
-42,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),11.469
-43,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),11.751
-44,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),12.033
-45,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),12.316
-46,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),12.599
-47,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),12.883
-48,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),13.167
-49,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),13.452
-50,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),13.737
-51,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),14.022
-52,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),14.308
-53,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),14.594
-54,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),14.881
-55,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),15.168
-56,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),15.455
-57,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),15.743
-58,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),16.032
-59,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),16.321
-60,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),16.61
-61,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),16.9
-62,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),17.19
-63,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),17.48
-64,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),17.771
-65,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),18.063
-66,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),18.355
-67,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),18.647
-68,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),18.94
-69,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),19.233
-70,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),19.527
-71,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),19.821
-72,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),20.115
-73,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),20.41
-74,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),20.706
-75,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),21.001
-76,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),21.298
-77,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),21.595
-78,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),21.892
-79,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),22.189
-80,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),22.487
-81,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),22.786
-82,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),23.085
-83,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),23.384
-84,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),23.684
-85,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),23.985
-86,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),24.285
-87,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),24.587
-88,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),24.888
-89,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),25.19
-90,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),25.493
-91,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),25.796
-92,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),26.1
-93,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),26.404
-94,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),26.708
-95,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),27.013
-96,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),27.318
-97,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),27.624
-98,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),27.93
-99,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),28.237
-100,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),28.544
-1,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-2,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-3,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-4,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-5,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-6,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-7,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-8,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-9,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-10,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-11,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-12,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-13,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-14,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-15,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-16,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-17,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-18,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-19,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-20,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-21,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-22,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-23,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-24,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-25,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-26,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-27,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-28,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-29,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-30,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-31,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-32,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-33,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-34,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-35,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-36,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-37,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-38,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-39,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-40,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-41,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-42,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-43,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-44,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-45,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-46,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-47,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-48,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-49,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-50,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-51,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-52,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-53,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-54,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-55,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-56,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-57,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-58,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-59,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-60,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-61,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-62,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-63,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-64,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-65,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-66,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-67,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-68,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-69,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-70,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-71,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-72,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-73,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-74,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-75,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-76,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-77,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-78,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-79,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-80,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-81,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-82,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-83,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-84,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-85,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-86,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-87,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-88,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-89,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-90,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-91,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-92,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-93,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-94,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-95,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-96,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-97,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-98,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-99,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
-100,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),0.0
+1,Full model,Debt-to-GDP ratio (b<sub>t</sub>),-0.078
+2,Full model,Debt-to-GDP ratio (b<sub>t</sub>),0.349
+3,Full model,Debt-to-GDP ratio (b<sub>t</sub>),0.613
+4,Full model,Debt-to-GDP ratio (b<sub>t</sub>),0.882
+5,Full model,Debt-to-GDP ratio (b<sub>t</sub>),1.153
+6,Full model,Debt-to-GDP ratio (b<sub>t</sub>),1.425
+7,Full model,Debt-to-GDP ratio (b<sub>t</sub>),1.696
+8,Full model,Debt-to-GDP ratio (b<sub>t</sub>),1.97
+9,Full model,Debt-to-GDP ratio (b<sub>t</sub>),2.241
+10,Full model,Debt-to-GDP ratio (b<sub>t</sub>),2.514
+11,Full model,Debt-to-GDP ratio (b<sub>t</sub>),2.787
+12,Full model,Debt-to-GDP ratio (b<sub>t</sub>),3.06
+13,Full model,Debt-to-GDP ratio (b<sub>t</sub>),3.333
+14,Full model,Debt-to-GDP ratio (b<sub>t</sub>),3.606
+15,Full model,Debt-to-GDP ratio (b<sub>t</sub>),3.879
+16,Full model,Debt-to-GDP ratio (b<sub>t</sub>),4.151
+17,Full model,Debt-to-GDP ratio (b<sub>t</sub>),4.425
+18,Full model,Debt-to-GDP ratio (b<sub>t</sub>),4.698
+19,Full model,Debt-to-GDP ratio (b<sub>t</sub>),4.973
+20,Full model,Debt-to-GDP ratio (b<sub>t</sub>),5.247
+21,Full model,Debt-to-GDP ratio (b<sub>t</sub>),5.52
+22,Full model,Debt-to-GDP ratio (b<sub>t</sub>),5.794
+23,Full model,Debt-to-GDP ratio (b<sub>t</sub>),6.068
+24,Full model,Debt-to-GDP ratio (b<sub>t</sub>),6.342
+25,Full model,Debt-to-GDP ratio (b<sub>t</sub>),6.617
+26,Full model,Debt-to-GDP ratio (b<sub>t</sub>),6.891
+27,Full model,Debt-to-GDP ratio (b<sub>t</sub>),7.167
+28,Full model,Debt-to-GDP ratio (b<sub>t</sub>),7.44
+29,Full model,Debt-to-GDP ratio (b<sub>t</sub>),7.716
+30,Full model,Debt-to-GDP ratio (b<sub>t</sub>),7.99
+31,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.266
+32,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.541
+33,Full model,Debt-to-GDP ratio (b<sub>t</sub>),8.817
+34,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.091
+35,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.367
+36,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.643
+37,Full model,Debt-to-GDP ratio (b<sub>t</sub>),9.92
+38,Full model,Debt-to-GDP ratio (b<sub>t</sub>),10.195
+39,Full model,Debt-to-GDP ratio (b<sub>t</sub>),10.471
+40,Full model,Debt-to-GDP ratio (b<sub>t</sub>),10.748
+41,Full model,Debt-to-GDP ratio (b<sub>t</sub>),11.024
+42,Full model,Debt-to-GDP ratio (b<sub>t</sub>),11.301
+43,Full model,Debt-to-GDP ratio (b<sub>t</sub>),11.577
+44,Full model,Debt-to-GDP ratio (b<sub>t</sub>),11.855
+45,Full model,Debt-to-GDP ratio (b<sub>t</sub>),12.132
+46,Full model,Debt-to-GDP ratio (b<sub>t</sub>),12.409
+47,Full model,Debt-to-GDP ratio (b<sub>t</sub>),12.686
+48,Full model,Debt-to-GDP ratio (b<sub>t</sub>),12.964
+49,Full model,Debt-to-GDP ratio (b<sub>t</sub>),13.242
+50,Full model,Debt-to-GDP ratio (b<sub>t</sub>),13.52
+51,Full model,Debt-to-GDP ratio (b<sub>t</sub>),13.798
+52,Full model,Debt-to-GDP ratio (b<sub>t</sub>),14.076
+53,Full model,Debt-to-GDP ratio (b<sub>t</sub>),14.354
+54,Full model,Debt-to-GDP ratio (b<sub>t</sub>),14.633
+55,Full model,Debt-to-GDP ratio (b<sub>t</sub>),14.912
+56,Full model,Debt-to-GDP ratio (b<sub>t</sub>),15.191
+57,Full model,Debt-to-GDP ratio (b<sub>t</sub>),15.471
+58,Full model,Debt-to-GDP ratio (b<sub>t</sub>),15.75
+59,Full model,Debt-to-GDP ratio (b<sub>t</sub>),16.029
+60,Full model,Debt-to-GDP ratio (b<sub>t</sub>),16.308
+61,Full model,Debt-to-GDP ratio (b<sub>t</sub>),16.589
+62,Full model,Debt-to-GDP ratio (b<sub>t</sub>),16.869
+63,Full model,Debt-to-GDP ratio (b<sub>t</sub>),17.15
+64,Full model,Debt-to-GDP ratio (b<sub>t</sub>),17.431
+65,Full model,Debt-to-GDP ratio (b<sub>t</sub>),17.711
+66,Full model,Debt-to-GDP ratio (b<sub>t</sub>),17.992
+67,Full model,Debt-to-GDP ratio (b<sub>t</sub>),18.273
+68,Full model,Debt-to-GDP ratio (b<sub>t</sub>),18.554
+69,Full model,Debt-to-GDP ratio (b<sub>t</sub>),18.837
+70,Full model,Debt-to-GDP ratio (b<sub>t</sub>),19.119
+71,Full model,Debt-to-GDP ratio (b<sub>t</sub>),19.4
+72,Full model,Debt-to-GDP ratio (b<sub>t</sub>),19.682
+73,Full model,Debt-to-GDP ratio (b<sub>t</sub>),19.965
+74,Full model,Debt-to-GDP ratio (b<sub>t</sub>),20.248
+75,Full model,Debt-to-GDP ratio (b<sub>t</sub>),20.53
+76,Full model,Debt-to-GDP ratio (b<sub>t</sub>),20.814
+77,Full model,Debt-to-GDP ratio (b<sub>t</sub>),21.098
+78,Full model,Debt-to-GDP ratio (b<sub>t</sub>),21.381
+79,Full model,Debt-to-GDP ratio (b<sub>t</sub>),21.665
+80,Full model,Debt-to-GDP ratio (b<sub>t</sub>),21.949
+81,Full model,Debt-to-GDP ratio (b<sub>t</sub>),22.233
+82,Full model,Debt-to-GDP ratio (b<sub>t</sub>),22.518
+83,Full model,Debt-to-GDP ratio (b<sub>t</sub>),22.802
+84,Full model,Debt-to-GDP ratio (b<sub>t</sub>),23.088
+85,Full model,Debt-to-GDP ratio (b<sub>t</sub>),23.374
+86,Full model,Debt-to-GDP ratio (b<sub>t</sub>),23.659
+87,Full model,Debt-to-GDP ratio (b<sub>t</sub>),23.945
+88,Full model,Debt-to-GDP ratio (b<sub>t</sub>),24.231
+89,Full model,Debt-to-GDP ratio (b<sub>t</sub>),24.519
+90,Full model,Debt-to-GDP ratio (b<sub>t</sub>),24.804
+91,Full model,Debt-to-GDP ratio (b<sub>t</sub>),25.091
+92,Full model,Debt-to-GDP ratio (b<sub>t</sub>),25.379
+93,Full model,Debt-to-GDP ratio (b<sub>t</sub>),25.666
+94,Full model,Debt-to-GDP ratio (b<sub>t</sub>),25.954
+95,Full model,Debt-to-GDP ratio (b<sub>t</sub>),26.242
+96,Full model,Debt-to-GDP ratio (b<sub>t</sub>),26.531
+97,Full model,Debt-to-GDP ratio (b<sub>t</sub>),26.819
+98,Full model,Debt-to-GDP ratio (b<sub>t</sub>),27.108
+99,Full model,Debt-to-GDP ratio (b<sub>t</sub>),27.397
+100,Full model,Debt-to-GDP ratio (b<sub>t</sub>),27.687
+1,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),-0.066
+2,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),0.35
+3,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),0.615
+4,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),0.885
+5,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),1.157
+6,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),1.429
+7,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),1.702
+8,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),1.975
+9,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),2.247
+10,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),2.521
+11,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),2.794
+12,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),3.068
+13,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),3.341
+14,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),3.615
+15,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),3.889
+16,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),4.163
+17,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),4.437
+18,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),4.713
+19,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),4.987
+20,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),5.262
+21,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),5.537
+22,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),5.812
+23,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),6.088
+24,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),6.362
+25,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),6.639
+26,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),6.914
+27,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),7.191
+28,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),7.467
+29,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),7.744
+30,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),8.02
+31,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),8.297
+32,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),8.575
+33,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),8.853
+34,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),9.129
+35,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),9.408
+36,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),9.686
+37,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),9.964
+38,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),10.242
+39,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),10.521
+40,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),10.801
+41,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),11.08
+42,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),11.358
+43,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),11.638
+44,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),11.918
+45,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),12.199
+46,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),12.479
+47,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),12.76
+48,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),13.042
+49,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),13.323
+50,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),13.604
+51,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),13.886
+52,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),14.169
+53,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),14.451
+54,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),14.733
+55,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),15.017
+56,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),15.299
+57,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),15.584
+58,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),15.867
+59,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),16.152
+60,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),16.437
+61,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),16.721
+62,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),17.006
+63,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),17.292
+64,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),17.577
+65,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),17.863
+66,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),18.15
+67,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),18.437
+68,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),18.724
+69,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),19.012
+70,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),19.3
+71,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),19.587
+72,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),19.875
+73,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),20.163
+74,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),20.453
+75,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),20.743
+76,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),21.033
+77,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),21.323
+78,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),21.613
+79,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),21.904
+80,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),22.195
+81,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),22.487
+82,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),22.779
+83,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),23.071
+84,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),23.364
+85,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),23.657
+86,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),23.951
+87,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),24.244
+88,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),24.539
+89,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),24.834
+90,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),25.128
+91,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),25.423
+92,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),25.72
+93,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),26.015
+94,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),26.311
+95,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),26.609
+96,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),26.905
+97,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),27.204
+98,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),27.502
+99,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),27.801
+100,No endogenous technology,Debt-to-GDP ratio (b<sub>t</sub>),28.099
+1,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),0.034
+2,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),0.34
+3,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),0.612
+4,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),0.887
+5,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),1.161
+6,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),1.437
+7,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),1.713
+8,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),1.988
+9,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),2.263
+10,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),2.539
+11,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),2.815
+12,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),3.091
+13,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),3.367
+14,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),3.644
+15,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),3.92
+16,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),4.198
+17,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),4.474
+18,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),4.752
+19,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),5.029
+20,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),5.307
+21,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),5.584
+22,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),5.863
+23,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),6.141
+24,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),6.42
+25,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),6.699
+26,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),6.978
+27,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),7.258
+28,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),7.538
+29,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),7.817
+30,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),8.098
+31,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),8.378
+32,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),8.659
+33,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),8.942
+34,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),9.223
+35,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),9.504
+36,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),9.786
+37,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),10.069
+38,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),10.351
+39,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),10.635
+40,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),10.918
+41,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),11.202
+42,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),11.487
+43,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),11.771
+44,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),12.055
+45,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),12.341
+46,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),12.626
+47,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),12.913
+48,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),13.198
+49,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),13.485
+50,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),13.772
+51,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),14.06
+52,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),14.347
+53,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),14.636
+54,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),14.924
+55,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),15.213
+56,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),15.501
+57,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),15.791
+58,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),16.082
+59,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),16.372
+60,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),16.663
+61,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),16.954
+62,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),17.245
+63,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),17.537
+64,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),17.83
+65,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),18.122
+66,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),18.416
+67,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),18.71
+68,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),19.004
+69,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),19.298
+70,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),19.593
+71,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),19.888
+72,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),20.184
+73,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),20.479
+74,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),20.776
+75,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),21.073
+76,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),21.37
+77,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),21.669
+78,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),21.967
+79,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),22.265
+80,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),22.564
+81,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),22.863
+82,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),23.163
+83,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),23.464
+84,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),23.765
+85,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),24.065
+86,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),24.366
+87,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),24.669
+88,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),24.971
+89,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),25.274
+90,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),25.577
+91,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),25.881
+92,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),26.186
+93,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),26.489
+94,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),26.794
+95,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),27.101
+96,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),27.407
+97,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),27.714
+98,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),28.02
+99,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),28.328
+100,No human capital,Debt-to-GDP ratio (b<sub>t</sub>),28.636
+1,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),0.034
+2,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),0.34
+3,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),0.612
+4,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),0.887
+5,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),1.161
+6,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),1.437
+7,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),1.713
+8,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),1.988
+9,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),2.263
+10,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),2.539
+11,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),2.815
+12,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),3.091
+13,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),3.367
+14,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),3.644
+15,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),3.92
+16,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),4.198
+17,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),4.474
+18,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),4.752
+19,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),5.029
+20,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),5.307
+21,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),5.584
+22,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),5.863
+23,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),6.141
+24,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),6.42
+25,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),6.699
+26,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),6.978
+27,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),7.258
+28,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),7.538
+29,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),7.817
+30,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),8.098
+31,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),8.378
+32,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),8.659
+33,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),8.942
+34,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),9.223
+35,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),9.504
+36,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),9.786
+37,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),10.069
+38,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),10.351
+39,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),10.635
+40,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),10.918
+41,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),11.202
+42,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),11.487
+43,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),11.771
+44,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),12.055
+45,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),12.341
+46,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),12.626
+47,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),12.913
+48,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),13.198
+49,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),13.485
+50,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),13.772
+51,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),14.06
+52,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),14.347
+53,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),14.636
+54,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),14.924
+55,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),15.213
+56,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),15.501
+57,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),15.791
+58,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),16.082
+59,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),16.372
+60,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),16.663
+61,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),16.954
+62,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),17.245
+63,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),17.537
+64,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),17.83
+65,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),18.122
+66,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),18.416
+67,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),18.71
+68,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),19.004
+69,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),19.298
+70,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),19.593
+71,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),19.888
+72,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),20.184
+73,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),20.479
+74,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),20.776
+75,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),21.073
+76,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),21.37
+77,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),21.669
+78,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),21.967
+79,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),22.265
+80,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),22.564
+81,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),22.863
+82,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),23.163
+83,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),23.464
+84,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),23.765
+85,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),24.065
+86,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),24.366
+87,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),24.669
+88,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),24.971
+89,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),25.274
+90,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),25.577
+91,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),25.881
+92,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),26.186
+93,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),26.489
+94,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),26.794
+95,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),27.101
+96,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),27.407
+97,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),27.714
+98,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),28.02
+99,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),28.328
+100,No public infrastructure,Debt-to-GDP ratio (b<sub>t</sub>),28.636
+1,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),0.031
+2,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),0.296
+3,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),0.56
+4,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),0.825
+5,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),1.09
+6,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),1.356
+7,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),1.622
+8,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),1.888
+9,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),2.155
+10,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),2.422
+11,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),2.69
+12,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),2.958
+13,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),3.226
+14,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),3.495
+15,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),3.764
+16,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),4.034
+17,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),4.304
+18,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),4.574
+19,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),4.845
+20,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),5.116
+21,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),5.389
+22,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),5.66
+23,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),5.933
+24,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),6.205
+25,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),6.479
+26,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),6.753
+27,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),7.027
+28,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),7.301
+29,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),7.576
+30,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),7.851
+31,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),8.128
+32,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),8.404
+33,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),8.68
+34,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),8.957
+35,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),9.234
+36,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),9.512
+37,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),9.791
+38,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),10.07
+39,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),10.348
+40,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),10.628
+41,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),10.908
+42,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),11.189
+43,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),11.469
+44,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),11.75
+45,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),12.032
+46,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),12.314
+47,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),12.596
+48,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),12.88
+49,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),13.163
+50,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),13.446
+51,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),13.73
+52,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),14.015
+53,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),14.3
+54,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),14.586
+55,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),14.872
+56,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),15.158
+57,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),15.445
+58,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),15.732
+59,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),16.019
+60,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),16.307
+61,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),16.596
+62,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),16.885
+63,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),17.174
+64,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),17.464
+65,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),17.754
+66,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),18.044
+67,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),18.335
+68,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),18.628
+69,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),18.919
+70,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),19.212
+71,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),19.504
+72,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),19.798
+73,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),20.091
+74,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),20.385
+75,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),20.681
+76,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),20.976
+77,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),21.271
+78,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),21.567
+79,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),21.863
+80,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),22.16
+81,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),22.457
+82,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),22.754
+83,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),23.053
+84,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),23.352
+85,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),23.651
+86,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),23.95
+87,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),24.25
+88,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),24.55
+89,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),24.851
+90,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),25.152
+91,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),25.454
+92,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),25.757
+93,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),26.06
+94,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),26.363
+95,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),26.666
+96,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),26.97
+97,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),27.274
+98,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),27.579
+99,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),27.884
+100,No private capital,Debt-to-GDP ratio (b<sub>t</sub>),28.19
+1,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),0.031
+2,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),0.296
+3,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),0.56
+4,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),0.825
+5,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),1.09
+6,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),1.356
+7,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),1.622
+8,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),1.888
+9,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),2.155
+10,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),2.422
+11,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),2.69
+12,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),2.958
+13,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),3.226
+14,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),3.495
+15,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),3.764
+16,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),4.034
+17,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),4.304
+18,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),4.574
+19,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),4.845
+20,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),5.116
+21,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),5.389
+22,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),5.66
+23,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),5.933
+24,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),6.205
+25,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),6.479
+26,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),6.753
+27,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),7.027
+28,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),7.301
+29,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),7.576
+30,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),7.851
+31,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),8.128
+32,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),8.404
+33,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),8.68
+34,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),8.957
+35,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),9.234
+36,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),9.512
+37,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),9.791
+38,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),10.07
+39,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),10.348
+40,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),10.628
+41,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),10.908
+42,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),11.189
+43,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),11.469
+44,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),11.75
+45,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),12.032
+46,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),12.314
+47,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),12.596
+48,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),12.88
+49,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),13.163
+50,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),13.446
+51,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),13.73
+52,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),14.015
+53,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),14.3
+54,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),14.586
+55,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),14.872
+56,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),15.158
+57,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),15.445
+58,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),15.732
+59,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),16.019
+60,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),16.307
+61,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),16.596
+62,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),16.885
+63,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),17.174
+64,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),17.464
+65,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),17.754
+66,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),18.044
+67,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),18.335
+68,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),18.628
+69,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),18.919
+70,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),19.212
+71,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),19.504
+72,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),19.798
+73,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),20.091
+74,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),20.385
+75,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),20.681
+76,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),20.976
+77,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),21.271
+78,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),21.567
+79,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),21.863
+80,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),22.16
+81,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),22.457
+82,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),22.754
+83,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),23.053
+84,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),23.352
+85,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),23.651
+86,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),23.95
+87,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),24.25
+88,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),24.55
+89,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),24.851
+90,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),25.152
+91,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),25.454
+92,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),25.757
+93,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),26.06
+94,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),26.363
+95,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),26.666
+96,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),26.97
+97,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),27.274
+98,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),27.579
+99,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),27.884
+100,No indexation,Debt-to-GDP ratio (b<sub>t</sub>),28.19
+1,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),0.036
+2,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),0.3
+3,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),0.564
+4,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),0.829
+5,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),1.096
+6,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),1.361
+7,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),1.628
+8,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),1.894
+9,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),2.161
+10,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),2.429
+11,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),2.697
+12,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),2.965
+13,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),3.234
+14,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),3.503
+15,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),3.773
+16,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),4.043
+17,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),4.313
+18,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),4.584
+19,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),4.856
+20,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),5.127
+21,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),5.399
+22,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),5.671
+23,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),5.944
+24,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),6.218
+25,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),6.491
+26,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),6.765
+27,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),7.04
+28,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),7.314
+29,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),7.59
+30,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),7.866
+31,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),8.142
+32,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),8.418
+33,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),8.695
+34,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),8.973
+35,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),9.251
+36,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),9.529
+37,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),9.807
+38,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),10.086
+39,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),10.367
+40,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),10.646
+41,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),10.926
+42,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),11.207
+43,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),11.488
+44,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),11.769
+45,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),12.052
+46,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),12.334
+47,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),12.617
+48,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),12.9
+49,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),13.184
+50,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),13.468
+51,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),13.753
+52,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),14.038
+53,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),14.323
+54,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),14.609
+55,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),14.895
+56,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),15.182
+57,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),15.469
+58,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),15.757
+59,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),16.045
+60,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),16.333
+61,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),16.622
+62,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),16.911
+63,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),17.201
+64,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),17.491
+65,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),17.782
+66,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),18.073
+67,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),18.364
+68,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),18.656
+69,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),18.949
+70,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),19.242
+71,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),19.535
+72,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),19.828
+73,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),20.122
+74,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),20.417
+75,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),20.711
+76,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),21.008
+77,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),21.304
+78,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),21.6
+79,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),21.896
+80,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),22.193
+81,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),22.491
+82,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),22.789
+83,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),23.088
+84,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),23.387
+85,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),23.687
+86,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),23.986
+87,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),24.287
+88,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),24.587
+89,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),24.888
+90,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),25.19
+91,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),25.493
+92,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),25.796
+93,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),26.099
+94,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),26.402
+95,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),26.706
+96,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),27.01
+97,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),27.315
+98,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),27.62
+99,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),27.926
+100,No trend growth,Debt-to-GDP ratio (b<sub>t</sub>),28.233
+1,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+2,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+3,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+4,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+5,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+6,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+7,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+8,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+9,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+10,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+11,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+12,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+13,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+14,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+15,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+16,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+17,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+18,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+19,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+20,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+21,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+22,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+23,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+24,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+25,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+26,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+27,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+28,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+29,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+30,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+31,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+32,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+33,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+34,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+35,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+36,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+37,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+38,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+39,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+40,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+41,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+42,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+43,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+44,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+45,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+46,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+47,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+48,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+49,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+50,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+51,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+52,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+53,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+54,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+55,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+56,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+57,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+58,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+59,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+60,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+61,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+62,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+63,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+64,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+65,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+66,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+67,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+68,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+69,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+70,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+71,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+72,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+73,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+74,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+75,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+76,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+77,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+78,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+79,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+80,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+81,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+82,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+83,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+84,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+85,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+86,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+87,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+88,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+89,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+90,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+91,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+92,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+93,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+94,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+95,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+96,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+97,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+98,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+99,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154
+100,Derived canonical NK,Debt-to-GDP ratio (b<sub>t</sub>),-0.154

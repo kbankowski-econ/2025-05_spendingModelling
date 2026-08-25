@@ -111,7 +111,7 @@ Reallocating spending toward productive uses therefore delivers substantial long
 A shift of 1 percent of GDP from government consumption to infrastructure raises 25-year output by 2.4 percent in AEs and 3.4 percent in EMDEs, compared with 4.3 and 5.6 percent when allocated to human capital.
 Comparable gains arise when spending is shifted toward R\&D in AEs, although their magnitude depends on the pace of technology diffusion.
 Closing spending-efficiency gaps can generate additional gains.
-Both reforms also lower public debt: reallocation cuts the 2050 debt-to-GDP ratio by about 5 to 7.5 percentage points, and efficiency improvements reduce it further.
+Both reforms also lower public debt: reallocation cuts the 2050 debt-to-GDP ratio by about 7 to 10 percentage points, and efficiency improvements reduce it further.
 \bigskip
 
 
@@ -130,13 +130,15 @@ Both reforms also lower public debt: reallocation cuts the 2050 debt-to-GDP rati
 %     \ref{sec:calibration}, "Steady-State Coefficients and Experiment
 %     Design"). Revisit the calibration if warranted.
 % [2] Consider normalizing public debt by final demand rather than gross
-%     output. The code sets by = b/y (model_block.modpart:89), while every
-%     other fiscal object -- the spending rules, the transfer rule, and the
-%     reported ratios -- is scaled by ydss. Measured debt-to-GDP corresponds
-%     to final demand, so b/yd is the more standard choice. The two coincide
-%     in steady state (v^p = 1), so the debt targets are unaffected and the
-%     difference is second order; switching means re-running all model
-%     variants and regenerating the figures and tables, hence deferred.
+%     output INSIDE the model. The code sets by = b/y (model_block.modpart:89).
+%     The REPORTED debt figures no longer depend on this: as of the
+%     ratio-measure change, every figure converts the exported by_yss into the
+%     change in b/(current annual yd) in post-processing
+%     (wp_charts.debt_to_ratio_change), i.e. debt over current final demand.
+%     Only the model-internal rule variable by still uses gross output y; the
+%     two coincide in steady state (v^p = 1), so the debt targets are
+%     unaffected and the remaining difference is second order. Switching the
+%     model variable means re-running all variants, hence deferred.
 % [3] Consider separate depreciation rates for the two public capital
 %     stocks. Equations (kgi) and (kge) now use the common delta, matching
 %     the code (model_block.modpart:80,83) and the glossary, which calls
@@ -258,15 +260,15 @@ This ordering matches the long-sample evidence in \citet{antolin2025long}, whose
 The second set of results turns to the policy question posed above, evaluating reallocation options over a 25-year window.
 Reallocating spending toward investment---an ex ante budget-neutral shift---raises output over the long run, with infrastructure paying off sooner and human capital later.
 Specifically, a budget-neutral permanent shift of 1 percent of GDP raises output by about 2.4 percent in AEs and 3.4 percent in EMDEs when directed to infrastructure from less productive government consumption, and by about 4.3 and 5.6 percent when directed to human capital.
-With primary spending ex ante unchanged and revenues rising with output, these shifts also reduce the debt-to-GDP ratio by about 5 percentage points by 2050.
+With primary spending ex ante unchanged and revenues rising with output, these shifts also reduce the debt-to-GDP ratio by about 7 to 8 percentage points by 2050.
 
-For AEs, which operate closer to the technology frontier, public R\&D offers a third destination: the same shift of 1 percent of GDP raises output by about 4 percent and delivers the largest debt reduction, about 7.5 percentage points.
+For AEs, which operate closer to the technology frontier, public R\&D offers a third destination: the same shift of 1 percent of GDP raises output by about 4 percent and delivers the largest debt reduction, about 10 percentage points.
 Combining instruments does better still: a 50/50 split between human capital and R\&D delivers about 5 percent after 25 years, exceeding either alone, because R\&D expands the set of adoptable technologies while human capital both raises effective labor and feeds technology creation.
 The size of that complementarity depends heavily on diffusion: the same package yields 1.6 percent under slow adoption and 8 percent under fast adoption. 
 
 Finally, closing efficiency gaps delivers sizable additional gains.
 Gradually eliminating the estimated gaps over 25 years adds nearly 2 percent to output for infrastructure in AEs and about 1 percent for human capital and R\&D; in EMDEs, the gains are roughly 5 percent for infrastructure and 2 percent for human-capital investment.
-Because the improvements are costless in the model, the additional output again lowers the debt-to-GDP ratio, by a further 1--2 percentage points in AEs and 1--4 percentage points in EMDEs by 2050.
+Because the improvements are costless in the model, the additional output again lowers the debt-to-GDP ratio, by a further 1--3 percentage points in AEs and 2--6 percentage points in EMDEs by 2050.
 Speed and starting point both matter: gains are larger for EMDEs that start further from the efficiency frontier or close the gaps more quickly.
 
 
@@ -842,7 +844,7 @@ All panels report deviations from the steady state, calculated by block.
 Panels in the top three rows are percent deviations from the steady-state level.
 The real marginal-cost panel uses the same units.
 Inflation and the nominal and real interest rates are annualized percentage-point deviations, calculated as the change in the gross quarterly rate multiplied by 400.
-Fiscal flows are deviations in percentage points of quarterly steady-state GDP; public debt is reported against annual steady-state GDP.
+Fiscal flows are deviations in percentage points of quarterly steady-state GDP; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.
 The real interest rate is the nominal interest rate deflated by inflation.}
 \end{figure}
 
@@ -985,7 +987,7 @@ The EMDE R\&D response is omitted because technology creation is inactive in tha
 Circles mark first-quarter effects, and the log-transformed quarterly axis expands the early response horizon.
 Columns distinguish the three spending instruments, while rows report output, consumption, the primary deficit, and public debt.
 Output and consumption are percent deviations from steady-state levels.
-The primary deficit is reported against quarterly steady-state GDP and public debt against annual steady-state GDP, both in percentage-point deviations.
+The primary deficit is reported against quarterly steady-state GDP in percentage-point deviations; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.
 The three panels within each row share a common vertical scale.}
 \end{figure}
 
@@ -999,6 +1001,7 @@ Building productive capacity extends beyond demand management, and its gains unf
 The experiments in this section therefore compare permanent reallocations, gradual improvements in spending efficiency, and complementary policy mixes.
 The policies take effect in 2026, and their effects are traced through 2050.
 The reallocation and efficiency experiments are evaluated both by their output gains and by their implications for the public debt-to-GDP ratio.
+Debt effects are reported as changes in the measured debt-to-GDP ratio, with debt divided by current GDP, so they include the contribution of higher output to the denominator.
 
 \subsection{Reallocating Expenditure toward Productive Spending}
 
@@ -1011,7 +1014,7 @@ Both spending categories enter aggregate demand, so their direct demand effects 
 As public infrastructure accumulates, however, output gains gather pace.
 Public infrastructure enters production directly, raising the marginal return to private capital and encouraging private investment.
 By 2050, output is about 2.4 percent higher in AEs and 3.4 percent higher in EMDEs.
-The reallocation also pays a fiscal dividend: with primary spending ex ante unchanged and revenues rising on the back of improved output, the debt-to-GDP ratio is about 5 percentage points lower in both economies by 2050.
+The reallocation also pays a fiscal dividend: with primary spending ex ante unchanged and revenues rising on the back of improved output, the debt-to-GDP ratio is about 7 percentage points lower in both economies by 2050.
 
 Redirecting expenditure toward \emph{public human-capital investment}, such as school and hospital infrastructure, produces an initial output gain.
 Households reallocate some time from education to work, temporarily boosting labor supply.
@@ -1020,14 +1023,14 @@ Once public education and health capital accumulates and supports workforce skil
 By 2050, output is about 4.3 percent higher in AEs and 5.6 percent higher in EMDEs.
 The larger EMDE response reflects the combination of a lower initial human-capital stock and a higher calibrated elasticity with respect to public human-capital investment.
 Debt relief follows the same delayed profile.
-The fall in the debt-to-GDP ratio is modest through 2040 but gains momentum afterward and reaches about 5 percentage points in both economies by 2050.
+The fall in the debt-to-GDP ratio is modest through 2040 but gains momentum afterward and reaches about 8 percentage points in both economies by 2050.
 
 \emph{Public R\&D} offers AEs another route to larger long-run gains through technology creation and adoption.
 It does not raise output initially, but its long-run effects are sizable.
 By 2050, the reallocation raises output by about 4 percent, broadly matching the gain from human-capital investment.
 Created technologies first accumulate in the stock awaiting adoption and then diffuse into production.
 Although this two-stage process delays the payoff, R\&D generates material gains sooner than human-capital investment at medium horizons.
-The earlier arrival of gains also compounds into the largest debt reduction among the three instruments, leaving the debt-to-GDP ratio about 7.5 percentage points lower by 2050.
+The earlier arrival of gains also compounds into the largest debt reduction among the three instruments, leaving the debt-to-GDP ratio about 10 percentage points lower by 2050.
 
 \begin{figure}[H]
     \centering
@@ -1035,7 +1038,7 @@ The earlier arrival of gains also compounds into the largest debt reduction amon
     \includegraphics{figures/reallocation_yd.pdf}
     \source{IMF staff estimates.}
     \desc{Responses to a permanent increase of 1 percent of GDP in the expenditure categories listed in the legend, funded by a cut in public consumption.
-    Output is reported as a percent deviation from steady state; public debt is reported against annual steady-state GDP in percentage-point deviations.}
+    Output is reported as a percent deviation from steady state; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.}
 \end{figure}
 
 \subsection{Improving Spending Efficiency} \label{subsec:policyEfficiency}
@@ -1048,18 +1051,18 @@ For AEs, closing the gaps over 25 years adds nearly 2 percent to output for infr
 Differences across instruments reflect both the calibrated gap sizes and the mechanisms through which effective spending builds productive stocks.
 The model treats the efficiency improvements themselves as costless.
 They are therefore particularly attractive within the model: productive capacity expands without additional debt accumulation or further cuts to other spending.
-In fact, the additional output lowers the debt-to-GDP ratio by a further 2 percentage points for infrastructure and around 1 percentage point for human-capital investment and R\&D by 2050.
+In fact, the additional output lowers the debt-to-GDP ratio by a further 3 percentage points for infrastructure and 1--2 percentage points for human-capital investment and R\&D by 2050.
 
 The scope for efficiency gains is substantially larger in EMDEs (Figure~\ref{fig:policyEfficiency}, panel~b).
 Closing the calibrated gaps over 25 years adds about 2 percent to output for human-capital investment and 5 percent for infrastructure.
 The larger gains reflect both higher initial gaps and stronger marginal returns to productive public capital where initial stocks are lower.
-The additional debt reduction is correspondingly larger: about 4 percentage points for infrastructure and 1 percentage point for human-capital investment by 2050.
+The additional debt reduction is correspondingly larger: about 6 percentage points for infrastructure and 2 percentage points for human-capital investment by 2050.
 Public R\&D is omitted because technology creation is inactive in the EMDE calibration.
 
 The benefits depend not only on the size of the gap but also on the pace of its closure, as the EMDE experiments demonstrate.
 Completing the reform over 15 rather than 25 years raises the additional gains from about 2 to 3.2 percent for human-capital investment and from 5 to 6.6 percent for infrastructure.
 Productive stocks begin accumulating sooner.
-Faster closure also deepens the additional debt reduction, from about 4 to 7 percentage points for infrastructure, and doubles it for human-capital investment, from 1 to 2 percentage points.
+Faster closure also deepens the additional debt reduction, from about 6 to 9 percentage points for infrastructure and from 2 to 3 percentage points for human-capital investment.
 The starting point also matters even when the gap is narrowed by the same amount.
 In hypothetical sensitivity scenarios, initial gaps are exactly 10 percentage points above the empirical calibration and are narrowed by the same amount as in the calibrated-gap reforms.
 Relative to the calibrated-gap cases, these scenarios raise output gains by about 0.3--0.5 percentage point for human-capital investment and 0.9--1.1 percentage points for infrastructure.
@@ -1082,7 +1085,7 @@ The payoff from reform is therefore stronger where initial spending inefficiency
     \desc{Additional output gains relative to the corresponding expenditure reallocation without an efficiency improvement.
     Panel~a reports the gains after 25 years when each calibrated AE efficiency gap is gradually closed over that horizon.
     Panel~b reports the gains after 25 years when the calibrated EMDE gaps are closed over 15 or 25 years; circles show the corresponding effects from hypothetical initial gaps exactly 10 percentage points higher, narrowed by the same amount as in the calibrated-gap reforms.
-    The bottom rows report the corresponding additional change in the debt-to-GDP ratio, in percentage points of annual steady-state GDP.
+    The bottom rows report the corresponding additional change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.
     The R\&D channel is inactive in the EMDE calibration.}
 \end{figure}
 
@@ -1457,7 +1460,7 @@ The seven cumulative steps remove endogenous technology, human capital, public i
 The solid red endpoint is derived from the full model, whereas the dashed black line is an independently coded canonical control; their responses coincide.
 Inactive channels appear as flat or missing lines.
 Demand, supply, labor, and real marginal cost are percent deviations from steady-state levels.
-Inflation and interest rates are annualized percentage-point deviations; fiscal flows are reported against quarterly steady-state GDP and public debt against annual steady-state GDP.
+Inflation and interest rates are annualized percentage-point deviations; fiscal flows are reported against quarterly steady-state GDP, while public debt is reported as the change in the debt-to-GDP ratio, with debt measured against current annual GDP.
 The real interest rate is the nominal interest rate deflated by inflation.}
 \end{figure}
 
@@ -1487,7 +1490,7 @@ All panels report deviations from the steady state, calculated by block.
 Panels in the top three rows are percent deviations from the steady-state level.
 The real marginal-cost panel uses the same units.
 Inflation and the nominal and real interest rates are annualized percentage-point deviations, calculated as the change in the gross quarterly rate multiplied by 400.
-Fiscal flows are deviations in percentage points of quarterly steady-state GDP; public debt is reported against annual steady-state GDP.
+Fiscal flows are deviations in percentage points of quarterly steady-state GDP; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.
 The real interest rate is the nominal interest rate deflated by inflation.}
 \end{figure}
 
@@ -1540,7 +1543,7 @@ The seven cumulative steps remove endogenous technology, human capital, public i
 The solid red endpoint is derived from the full model, whereas the dashed black line is an independently coded canonical control; their responses coincide.
 Inactive channels appear as flat or missing lines.
 Demand, supply, labor, and real marginal cost are percent deviations from steady-state levels.
-Inflation and interest rates are annualized percentage-point deviations; fiscal flows are reported against quarterly steady-state GDP and public debt against annual steady-state GDP.
+Inflation and interest rates are annualized percentage-point deviations; fiscal flows are reported against quarterly steady-state GDP, while public debt is reported as the change in the debt-to-GDP ratio, with debt measured against current annual GDP.
 The real interest rate is the nominal interest rate deflated by inflation.}
 \end{figure}
 
@@ -1604,7 +1607,7 @@ Colors match Figure~\ref{fig:reallocation}.
 Circles mark first-quarter effects, and the log-transformed quarterly axis expands the early response horizon.
 Panels in the top three rows and the real marginal-cost panel are percent deviations from steady-state levels.
 Inflation and the nominal and real interest rates are annualized percentage-point deviations.
-The primary deficit and transfers are deviations in percentage points of quarterly steady-state GDP; public debt is reported in percentage points of annual steady-state GDP.}
+The primary deficit and transfers are deviations in percentage points of quarterly steady-state GDP; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.}
 \end{figure}
 
 \begin{figure}[H]
@@ -1617,7 +1620,7 @@ Formatting and colors follow Figure~\ref{fig:reallocationIRFs}.
 Circles mark first-quarter effects, and the log-transformed quarterly axis expands the early response horizon.
 Panels in the top three rows and the real marginal-cost panel are percent deviations from steady-state levels.
 Inflation and the nominal and real interest rates are annualized percentage-point deviations.
-The primary deficit and transfers are deviations in percentage points of quarterly steady-state GDP; public debt is reported in percentage points of annual steady-state GDP.}
+The primary deficit and transfers are deviations in percentage points of quarterly steady-state GDP; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.}
 \end{figure}
 
 \end{document}

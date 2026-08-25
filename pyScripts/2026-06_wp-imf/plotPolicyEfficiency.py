@@ -9,6 +9,7 @@ from plotly.subplots import make_subplots
 from wp_charts import (
     chart_display_cm,
     chart_render_px,
+    debt_to_ratio_change,
     font_px_for_pt,
     smart_save_image,
     write_pdf,
@@ -109,6 +110,7 @@ def load_target_row():
     df = pd.read_csv(INPUT_CSV)
     df = df.rename(columns={df.columns[0]: "date"})
     df["year"] = df["date"].str.extract(r"(\d{4})").astype(int)
+    df = debt_to_ratio_change(df)
     return df[df["year"] == TARGET_YEAR].iloc[0]
 
 

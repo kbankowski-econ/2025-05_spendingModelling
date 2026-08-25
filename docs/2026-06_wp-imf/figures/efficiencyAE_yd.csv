@@ -2399,803 +2399,803 @@ horizon_quarter,instrument,treatment,variable,response
 98,R&D,Efficiency improvement (AE),Prim. deficit-to-GDP,-0.248
 99,R&D,Efficiency improvement (AE),Prim. deficit-to-GDP,-0.248
 100,R&D,Efficiency improvement (AE),Prim. deficit-to-GDP,-0.248
-1,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.037
-2,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.104
-3,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.17
-4,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.236
-5,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.302
-6,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.369
-7,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.436
-8,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.502
-9,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.569
-10,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.635
-11,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.701
-12,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.767
-13,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.833
-14,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.899
-15,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.964
-16,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.029
-17,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.093
-18,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.158
-19,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.222
-20,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.285
-21,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.348
-22,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.411
-23,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.473
-24,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.535
-25,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.596
-26,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.657
-27,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.718
-28,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.777
-29,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.837
-30,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.896
-31,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.954
-32,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.012
-33,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.07
-34,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.127
-35,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.183
-36,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.239
-37,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.294
-38,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.349
-39,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.404
-40,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.457
-41,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.511
-42,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.564
-43,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.616
-44,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.668
-45,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.719
-46,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.77
-47,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.82
-48,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.87
-49,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.919
-50,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.968
-51,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.016
-52,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.064
-53,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.112
-54,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.158
-55,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.205
-56,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.251
-57,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.296
-58,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.341
-59,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.386
-60,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.43
-61,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.473
-62,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.517
-63,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.559
-64,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.602
-65,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.644
-66,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.685
-67,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.726
-68,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.766
-69,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.807
-70,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.846
-71,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.886
-72,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.925
-73,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.963
-74,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.001
-75,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.039
-76,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.076
-77,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.113
-78,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.15
-79,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.186
-80,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.222
-81,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.257
-82,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.292
-83,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.327
-84,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.361
-85,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.395
-86,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.429
-87,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.462
-88,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.495
-89,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.528
-90,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.56
-91,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.592
-92,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.623
-93,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.655
-94,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.686
-95,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.716
-96,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.747
-97,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.777
-98,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.807
-99,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.836
-100,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.865
-1,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.022
-2,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.025
-3,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.028
-4,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.031
-5,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.033
-6,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.036
-7,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.038
-8,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.04
-9,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.043
-10,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.045
-11,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.047
-12,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.05
-13,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.052
-14,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.055
-15,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.058
-16,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.061
-17,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.065
-18,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.068
-19,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.072
-20,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.076
-21,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.081
-22,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.086
-23,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.091
-24,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.097
-25,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.103
-26,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.109
-27,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.116
-28,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.123
-29,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.13
-30,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.138
-31,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.146
-32,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.155
-33,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.164
-34,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.173
-35,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.183
-36,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.193
-37,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.203
-38,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.214
-39,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.225
-40,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.237
-41,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.249
-42,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.261
-43,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.274
-44,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.287
-45,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.3
-46,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.314
-47,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.328
-48,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.343
-49,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.357
-50,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.372
-51,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.388
-52,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.404
-53,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.42
-54,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.436
-55,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.452
-56,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.469
-57,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.486
-58,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.504
-59,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.522
-60,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.54
-61,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.558
-62,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.576
-63,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.595
-64,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.614
-65,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.633
-66,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.653
-67,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.673
-68,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.693
-69,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.713
-70,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.733
-71,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.754
-72,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.774
-73,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.795
-74,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.816
-75,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.838
-76,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.859
-77,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.881
-78,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.903
-79,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.925
-80,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.947
-81,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.969
-82,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.991
-83,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.014
-84,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.037
-85,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.06
-86,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.083
-87,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.106
-88,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.129
-89,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.152
-90,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.176
-91,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.199
-92,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.223
-93,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.247
-94,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.27
-95,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.294
-96,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.318
-97,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.342
-98,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.366
-99,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.391
-100,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.415
-1,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.024
-2,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.027
-3,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.031
-4,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.034
-5,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.037
-6,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.039
-7,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.041
-8,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.043
-9,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.044
-10,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.046
-11,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.048
-12,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.05
-13,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.052
-14,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.054
-15,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.057
-16,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.06
-17,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.063
-18,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.067
-19,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.071
-20,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.076
-21,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.081
-22,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.086
-23,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.092
-24,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.098
-25,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.105
-26,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.112
-27,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.12
-28,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.129
-29,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.137
-30,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.147
-31,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.156
-32,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.167
-33,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.177
-34,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.188
-35,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.2
-36,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.212
-37,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.224
-38,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.237
-39,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.251
-40,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.264
-41,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.278
-42,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.293
-43,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.307
-44,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.323
-45,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.338
-46,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.354
-47,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.37
-48,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.386
-49,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.403
-50,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.42
-51,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.437
-52,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.455
-53,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.473
-54,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.491
-55,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.509
-56,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.527
-57,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.546
-58,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.565
-59,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.584
-60,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.603
-61,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.622
-62,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.642
-63,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.661
-64,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.681
-65,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.701
-66,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.721
-67,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.741
-68,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.761
-69,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.782
-70,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.802
-71,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.823
-72,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.843
-73,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.864
-74,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.884
-75,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.905
-76,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.926
-77,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.946
-78,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.967
-79,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.988
-80,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.009
-81,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.029
-82,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.05
-83,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.071
-84,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.092
-85,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.113
-86,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.133
-87,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.154
-88,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.175
-89,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.196
-90,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.216
-91,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.237
-92,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.257
-93,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.278
-94,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.298
-95,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.319
-96,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.339
-97,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.359
-98,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.38
-99,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.4
-100,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.42
-1,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.027
-2,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.088
-3,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.15
-4,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.211
-5,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.272
-6,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.334
-7,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.397
-8,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.46
-9,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.523
-10,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.587
-11,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.651
-12,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.716
-13,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.781
-14,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.847
-15,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.913
-16,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.98
-17,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.047
-18,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.115
-19,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.182
-20,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.251
-21,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.319
-22,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.388
-23,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.457
-24,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.526
-25,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.596
-26,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.665
-27,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.735
-28,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.805
-29,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.875
-30,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.945
-31,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.014
-32,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.084
-33,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.153
-34,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.223
-35,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.292
-36,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.361
-37,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.43
-38,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.498
-39,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.566
-40,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.633
-41,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.701
-42,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.767
-43,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.834
-44,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.899
-45,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.965
-46,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.029
-47,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.093
-48,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.156
-49,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.219
-50,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.281
-51,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.342
-52,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.403
-53,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.462
-54,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.521
-55,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.579
-56,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.636
-57,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.692
-58,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.748
-59,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.802
-60,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.855
-61,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.908
-62,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.959
-63,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.01
-64,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.059
-65,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.108
-66,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.155
-67,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.201
-68,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.246
-69,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.291
-70,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.333
-71,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.375
-72,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.416
-73,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.455
-74,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.494
-75,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.531
-76,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.567
-77,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.601
-78,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.635
-79,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.667
-80,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.698
-81,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.728
-82,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.757
-83,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.784
-84,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.81
-85,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.835
-86,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.859
-87,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.881
-88,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.902
-89,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.922
-90,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.94
-91,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.957
-92,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.973
-93,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.988
-94,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),5.001
-95,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),5.013
-96,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),5.024
-97,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),5.033
-98,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),5.041
-99,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),5.048
-100,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),5.054
-1,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.032
-2,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.037
-3,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.044
-4,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.05
-5,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.056
-6,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.062
-7,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.068
-8,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.073
-9,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.078
-10,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.082
-11,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.086
-12,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.09
-13,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.093
-14,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.096
-15,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.098
-16,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.1
-17,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.102
-18,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.103
-19,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.104
-20,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.104
-21,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.104
-22,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.104
-23,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.104
-24,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.104
-25,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.103
-26,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.102
-27,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.102
-28,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.101
-29,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.1
-30,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.099
-31,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.098
-32,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.097
-33,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.097
-34,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.096
-35,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.096
-36,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.095
-37,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.096
-38,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.096
-39,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.096
-40,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.097
-41,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.099
-42,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.1
-43,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.103
-44,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.105
-45,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.108
-46,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.112
-47,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.116
-48,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.12
-49,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.125
-50,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.131
-51,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.137
-52,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.144
-53,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.152
-54,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.16
-55,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.169
-56,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.179
-57,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.189
-58,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.2
-59,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.212
-60,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.225
-61,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.238
-62,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.252
-63,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.267
-64,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.283
-65,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.299
-66,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.317
-67,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.335
-68,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.354
-69,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.373
-70,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.394
-71,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.416
-72,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.438
-73,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.461
-74,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.485
-75,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.51
-76,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.536
-77,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.562
-78,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.59
-79,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.618
-80,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.647
-81,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.677
-82,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.708
-83,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.74
-84,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.773
-85,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.806
-86,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.84
-87,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.875
-88,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.911
-89,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.948
-90,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.986
-91,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.024
-92,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.063
-93,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.103
-94,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.144
-95,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.186
-96,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.228
-97,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.272
-98,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.316
-99,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.36
-100,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.406
-1,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.023
-2,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.026
-3,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.03
-4,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.034
-5,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.039
-6,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.043
-7,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.048
-8,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.053
-9,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.057
-10,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.061
-11,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.065
-12,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.068
-13,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.071
-14,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.074
-15,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.076
-16,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.078
-17,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.08
-18,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.082
-19,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.083
-20,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.084
-21,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.085
-22,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.085
-23,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.086
-24,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.086
-25,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.086
-26,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.087
-27,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.087
-28,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.087
-29,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.088
-30,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.089
-31,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.089
-32,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.09
-33,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.092
-34,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.093
-35,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.095
-36,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.097
-37,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.1
-38,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.103
-39,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.106
-40,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.11
-41,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.115
-42,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.12
-43,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.125
-44,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.131
-45,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.138
-46,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.145
-47,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.153
-48,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.162
-49,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.171
-50,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.181
-51,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.191
-52,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.202
-53,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.214
-54,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.227
-55,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.24
-56,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.254
-57,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.268
-58,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.284
-59,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.3
-60,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.317
-61,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.334
-62,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.352
-63,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.371
-64,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.391
-65,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.411
-66,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.432
-67,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.454
-68,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.476
-69,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.499
-70,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.523
-71,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.547
-72,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.572
-73,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.598
-74,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.624
-75,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.651
-76,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.678
-77,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.706
-78,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.735
-79,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.764
-80,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.794
-81,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.824
-82,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.855
-83,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.887
-84,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.919
-85,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.951
-86,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.984
-87,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.017
-88,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.051
-89,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.086
-90,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.12
-91,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.156
-92,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.191
-93,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.227
-94,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.264
-95,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.3
-96,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.338
-97,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.375
-98,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.413
-99,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.451
-100,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.489
-1,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.034
-2,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.1
-3,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.166
-4,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.232
-5,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.3
-6,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.368
-7,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.437
-8,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.507
-9,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.577
-10,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.648
-11,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.72
-12,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.792
-13,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.864
-14,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.936
-15,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.009
-16,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.081
-17,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.153
-18,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.224
-19,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.295
-20,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.366
-21,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.436
-22,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.505
-23,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.573
-24,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.641
-25,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.708
-26,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.773
-27,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.838
-28,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.902
-29,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.964
-30,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.026
-31,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.086
-32,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.145
-33,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.202
-34,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.259
-35,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.314
-36,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.368
-37,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.42
-38,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.471
-39,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.521
-40,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.57
-41,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.617
-42,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.662
-43,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.707
-44,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.75
-45,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.791
-46,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.832
-47,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.87
-48,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.908
-49,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.944
-50,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.979
-51,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.012
-52,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.044
-53,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.075
-54,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.105
-55,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.133
-56,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.16
-57,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.185
-58,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.209
-59,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.232
-60,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.254
-61,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.274
-62,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.294
-63,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.312
-64,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.328
-65,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.344
-66,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.358
-67,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.371
-68,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.383
-69,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.394
-70,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.404
-71,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.412
-72,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.42
-73,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.426
-74,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.431
-75,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.435
-76,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.438
-77,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.44
-78,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.441
-79,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.44
-80,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.439
-81,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.437
-82,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.434
-83,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.429
-84,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.424
-85,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.418
-86,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.411
-87,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.403
-88,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.393
-89,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.383
-90,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.373
-91,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.361
-92,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.348
-93,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.334
-94,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.32
-95,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.304
-96,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.288
-97,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.271
-98,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.253
-99,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.234
-100,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.215
-1,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.025
-2,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.028
-3,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.032
-4,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.035
-5,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.037
-6,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.039
-7,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.04
-8,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.04
-9,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.039
-10,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.038
-11,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.036
-12,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.033
-13,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.031
-14,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.027
-15,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.024
-16,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.021
-17,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.018
-18,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.015
-19,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.013
-20,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.011
-21,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.009
-22,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.008
-23,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.008
-24,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.008
-25,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.009
-26,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.011
-27,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.014
-28,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.018
-29,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.022
-30,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.028
-31,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.035
-32,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.042
-33,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.051
-34,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.061
-35,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.071
-36,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.083
-37,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.096
-38,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.11
-39,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.125
-40,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.141
-41,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.159
-42,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.177
-43,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.197
-44,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.217
-45,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.239
-46,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.261
-47,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.285
-48,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.31
-49,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.335
-50,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.362
-51,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.39
-52,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.418
-53,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.448
-54,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.479
-55,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.51
-56,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.542
-57,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.576
-58,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.61
-59,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.645
-60,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.681
-61,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.717
-62,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.755
-63,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.793
-64,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.832
-65,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.871
-66,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.912
-67,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.953
-68,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.995
-69,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.037
-70,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.081
-71,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.124
-72,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.169
-73,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.214
-74,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.26
-75,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.306
-76,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.352
-77,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.4
-78,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.448
-79,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.496
-80,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.545
-81,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.594
-82,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.644
-83,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.694
-84,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.744
-85,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.796
-86,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.847
-87,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.899
-88,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.951
-89,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.003
-90,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.056
-91,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.109
-92,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.163
-93,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.217
-94,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.271
-95,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.325
-96,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.38
-97,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.435
-98,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.49
-99,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.545
-100,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.601
+1,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),-0.073
+2,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.097
+3,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.148
+4,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.201
+5,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.255
+6,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.311
+7,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.367
+8,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.422
+9,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.479
+10,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.534
+11,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.59
+12,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.645
+13,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.702
+14,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.758
+15,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.814
+16,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.869
+17,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.923
+18,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.978
+19,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.034
+20,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.088
+21,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.142
+22,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.196
+23,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.249
+24,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.302
+25,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.355
+26,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.407
+27,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.46
+28,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.51
+29,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.562
+30,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.613
+31,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.664
+32,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.713
+33,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.764
+34,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.813
+35,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.861
+36,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.91
+37,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.957
+38,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.005
+39,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.053
+40,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.099
+41,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.145
+42,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.191
+43,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.237
+44,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.282
+45,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.326
+46,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.37
+47,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.414
+48,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.457
+49,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.499
+50,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.543
+51,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.584
+52,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.626
+53,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.667
+54,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.707
+55,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.748
+56,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.788
+57,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.827
+58,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.867
+59,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.906
+60,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.944
+61,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.981
+62,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.02
+63,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.056
+64,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.094
+65,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.131
+66,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.166
+67,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.202
+68,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.237
+69,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.273
+70,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.307
+71,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.342
+72,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.376
+73,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.409
+74,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.443
+75,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.475
+76,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.508
+77,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.54
+78,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.573
+79,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.604
+80,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.635
+81,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.666
+82,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.696
+83,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.727
+84,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.757
+85,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.787
+86,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.817
+87,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.845
+88,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.874
+89,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.904
+90,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.931
+91,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.96
+92,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.986
+93,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.015
+94,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.042
+95,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.068
+96,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.095
+97,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.122
+98,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.148
+99,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.174
+100,Infrastructure,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),4.199
+1,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.053
+2,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),0.01
+3,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.006
+4,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.02
+5,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.032
+6,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.045
+7,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.057
+8,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.068
+9,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.081
+10,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.092
+11,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.104
+12,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.115
+13,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.126
+14,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.138
+15,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.149
+16,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.161
+17,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.173
+18,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.184
+19,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.196
+20,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.208
+21,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.221
+22,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.234
+23,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.246
+24,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.26
+25,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.273
+26,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.286
+27,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.3
+28,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.314
+29,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.328
+30,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.343
+31,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.357
+32,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.373
+33,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.388
+34,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.404
+35,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.42
+36,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.437
+37,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.453
+38,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.47
+39,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.487
+40,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.505
+41,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.522
+42,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.54
+43,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.559
+44,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.577
+45,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.596
+46,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.616
+47,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.635
+48,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.656
+49,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.674
+50,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.695
+51,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.716
+52,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.737
+53,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.758
+54,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.779
+55,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.799
+56,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.821
+57,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.843
+58,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.866
+59,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.888
+60,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.911
+61,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.933
+62,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.955
+63,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.979
+64,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.001
+65,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.025
+66,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.049
+67,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.073
+68,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.097
+69,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.121
+70,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.145
+71,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.17
+72,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.194
+73,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.219
+74,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.243
+75,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.269
+76,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.293
+77,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.319
+78,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.344
+79,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.369
+80,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.395
+81,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.42
+82,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.446
+83,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.472
+84,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.498
+85,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.524
+86,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.55
+87,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.576
+88,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.602
+89,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.628
+90,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.656
+91,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.681
+92,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.708
+93,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.735
+94,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.761
+95,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.788
+96,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.815
+97,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.841
+98,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.868
+99,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.895
+100,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.922
+1,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.073
+2,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),0.001
+3,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.017
+4,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.033
+5,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.047
+6,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.061
+7,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.074
+8,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.087
+9,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.099
+10,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.112
+11,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.124
+12,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.136
+13,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.148
+14,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.16
+15,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.172
+16,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.184
+17,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.197
+18,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.209
+19,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.222
+20,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.235
+21,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.249
+22,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.261
+23,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.275
+24,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.289
+25,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.303
+26,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.318
+27,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.332
+28,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.348
+29,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.363
+30,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.379
+31,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.394
+32,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.411
+33,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.427
+34,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.444
+35,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.461
+36,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.479
+37,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.496
+38,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.514
+39,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.533
+40,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.551
+41,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.569
+42,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.588
+43,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.607
+44,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.627
+45,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.646
+46,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.666
+47,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.686
+48,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.705
+49,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.726
+50,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.746
+51,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.767
+52,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.788
+53,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.809
+54,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.83
+55,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.851
+56,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.872
+57,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.894
+58,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.915
+59,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.937
+60,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.958
+61,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.979
+62,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.002
+63,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.023
+64,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.045
+65,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.067
+66,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.089
+67,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.111
+68,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.133
+69,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.156
+70,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.177
+71,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.2
+72,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.222
+73,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.244
+74,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.266
+75,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.288
+76,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.311
+77,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.332
+78,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.354
+79,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.377
+80,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.399
+81,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.42
+82,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.442
+83,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.464
+84,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.486
+85,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.508
+86,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.529
+87,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.551
+88,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.573
+89,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.595
+90,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.615
+91,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.637
+92,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.658
+93,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.68
+94,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.7
+95,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.722
+96,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.743
+97,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.763
+98,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.785
+99,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.805
+100,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.826
+1,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),-0.3
+2,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),-0.091
+3,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),-0.017
+4,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.059
+5,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.135
+6,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.211
+7,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.287
+8,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.362
+9,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.435
+10,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.508
+11,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.58
+12,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.651
+13,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.722
+14,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.792
+15,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.862
+16,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.931
+17,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.0
+18,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.069
+19,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.136
+20,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.204
+21,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.27
+22,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.337
+23,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.402
+24,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.467
+25,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.533
+26,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.596
+27,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.66
+28,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.724
+29,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.787
+30,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.849
+31,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.91
+32,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.971
+33,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.031
+34,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.092
+35,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.15
+36,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.209
+37,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.267
+38,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.324
+39,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.38
+40,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.436
+41,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.491
+42,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.544
+43,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.598
+44,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.65
+45,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.703
+46,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.753
+47,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.802
+48,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.851
+49,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.9
+50,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.947
+51,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.994
+52,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.04
+53,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.083
+54,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.127
+55,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.169
+56,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.21
+57,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.251
+58,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.291
+59,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.329
+60,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.365
+61,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.402
+62,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.437
+63,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.472
+64,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.504
+65,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.537
+66,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.567
+67,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.596
+68,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.625
+69,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.653
+70,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.679
+71,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.704
+72,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.729
+73,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.751
+74,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.773
+75,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.793
+76,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.813
+77,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.83
+78,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.847
+79,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.863
+80,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.877
+81,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.891
+82,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.903
+83,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.914
+84,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.924
+85,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.932
+86,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.941
+87,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.946
+88,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.951
+89,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.955
+90,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.958
+91,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.959
+92,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.959
+93,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.958
+94,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.956
+95,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.952
+96,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.948
+97,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.942
+98,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.935
+99,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.927
+100,Human capital,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),3.917
+1,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.281
+2,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.175
+3,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.167
+4,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.155
+5,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.145
+6,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.136
+7,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.128
+8,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.12
+9,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.114
+10,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.108
+11,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.103
+12,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.099
+13,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.096
+14,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.094
+15,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.091
+16,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.089
+17,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.089
+18,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.088
+19,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.088
+20,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.088
+21,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.089
+22,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.091
+23,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.092
+24,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.095
+25,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.098
+26,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.101
+27,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.106
+28,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.11
+29,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.116
+30,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.121
+31,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.127
+32,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.134
+33,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.142
+34,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.149
+35,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.158
+36,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.167
+37,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.177
+38,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.187
+39,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.197
+40,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.209
+41,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.222
+42,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.234
+43,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.249
+44,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.263
+45,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.278
+46,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.294
+47,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.311
+48,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.328
+49,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.345
+50,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.365
+51,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.384
+52,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.405
+53,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.426
+54,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.448
+55,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.471
+56,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.495
+57,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.519
+58,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.545
+59,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.571
+60,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.599
+61,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.626
+62,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.654
+63,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.684
+64,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.715
+65,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.745
+66,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.778
+67,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.811
+68,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.845
+69,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.879
+70,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.914
+71,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.951
+72,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.988
+73,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.026
+74,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.064
+75,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.104
+76,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.145
+77,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.185
+78,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.228
+79,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.271
+80,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.314
+81,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.358
+82,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.404
+83,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.45
+84,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.497
+85,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.545
+86,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.593
+87,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.642
+88,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.692
+89,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.742
+90,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.795
+91,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.847
+92,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.899
+93,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.952
+94,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.007
+95,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.062
+96,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.118
+97,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.175
+98,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.232
+99,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.289
+100,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.347
+1,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.225
+2,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.134
+3,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.126
+4,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.116
+5,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.108
+6,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.1
+7,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.094
+8,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.09
+9,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.086
+10,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.083
+11,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.082
+12,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.08
+13,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.08
+14,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.081
+15,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.082
+16,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.084
+17,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.086
+18,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.09
+19,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.093
+20,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.097
+21,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.102
+22,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.106
+23,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.112
+24,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.118
+25,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.124
+26,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.132
+27,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.139
+28,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.147
+29,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.156
+30,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.166
+31,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.175
+32,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.185
+33,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.196
+34,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.207
+35,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.219
+36,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.231
+37,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.244
+38,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.258
+39,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.272
+40,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.287
+41,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.303
+42,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.319
+43,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.335
+44,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.352
+45,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.37
+46,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.388
+47,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.408
+48,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.428
+49,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.449
+50,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.47
+51,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.491
+52,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.514
+53,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.536
+54,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.561
+55,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.585
+56,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.61
+57,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.635
+58,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.662
+59,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.689
+60,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.716
+61,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.744
+62,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.772
+63,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.801
+64,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.832
+65,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.862
+66,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.893
+67,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.925
+68,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.956
+69,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.989
+70,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.022
+71,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.056
+72,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.09
+73,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.125
+74,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.16
+75,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.195
+76,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.231
+77,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.267
+78,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.305
+79,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.342
+80,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.38
+81,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.417
+82,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.456
+83,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.495
+84,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.535
+85,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.574
+86,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.614
+87,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.654
+88,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.695
+89,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.737
+90,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.777
+91,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.819
+92,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.861
+93,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.903
+94,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.945
+95,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.988
+96,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-2.031
+97,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-2.074
+98,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-2.117
+99,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-2.16
+100,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-2.203
+1,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),-0.101
+2,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.115
+3,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.201
+4,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.279
+5,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.351
+6,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.417
+7,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.478
+8,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.537
+9,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.593
+10,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.646
+11,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.7
+12,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.752
+13,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.803
+14,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.853
+15,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.905
+16,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),0.954
+17,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.004
+18,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.052
+19,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.101
+20,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.15
+21,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.198
+22,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.245
+23,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.291
+24,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.338
+25,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.384
+26,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.428
+27,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.473
+28,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.516
+29,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.558
+30,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.601
+31,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.641
+32,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.681
+33,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.72
+34,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.758
+35,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.795
+36,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.831
+37,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.865
+38,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.898
+39,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.931
+40,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.963
+41,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.993
+42,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.022
+43,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.05
+44,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.078
+45,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.103
+46,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.128
+47,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.151
+48,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.174
+49,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.195
+50,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.215
+51,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.234
+52,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.251
+53,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.268
+54,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.284
+55,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.299
+56,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.312
+57,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.324
+58,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.335
+59,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.346
+60,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.355
+61,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.363
+62,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.37
+63,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.376
+64,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.381
+65,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.384
+66,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.387
+67,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.389
+68,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.389
+69,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.39
+70,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.388
+71,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.386
+72,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.383
+73,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.379
+74,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.374
+75,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.368
+76,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.361
+77,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.353
+78,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.345
+79,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.334
+80,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.324
+81,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.313
+82,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.3
+83,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.286
+84,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.273
+85,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.258
+86,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.243
+87,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.226
+88,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.209
+89,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.19
+90,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.172
+91,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.152
+92,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.132
+93,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.111
+94,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.089
+95,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.066
+96,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.043
+97,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),2.018
+98,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.993
+99,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.968
+100,R&D,"Spending increase (AE, benchmark)",Debt-to-GDP ratio (b<sub>t</sub>),1.942
+1,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.081
+2,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),0.029
+3,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),0.047
+4,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),0.057
+5,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),0.061
+6,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),0.058
+7,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),0.051
+8,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),0.04
+9,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),0.028
+10,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),0.013
+11,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.002
+12,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.018
+13,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.036
+14,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.052
+15,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.07
+16,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.088
+17,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.105
+18,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.124
+19,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.143
+20,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.161
+21,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.18
+22,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.199
+23,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.219
+24,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.239
+25,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.26
+26,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.28
+27,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.303
+28,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.326
+29,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.348
+30,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.372
+31,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.396
+32,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.421
+33,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.447
+34,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.474
+35,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.501
+36,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.529
+37,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.558
+38,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.588
+39,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.618
+40,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.65
+41,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.682
+42,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.715
+43,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.75
+44,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.784
+45,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.82
+46,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.856
+47,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.893
+48,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.931
+49,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.97
+50,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.01
+51,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.05
+52,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.091
+53,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.133
+54,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.176
+55,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.219
+56,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.263
+57,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.308
+58,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.353
+59,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.4
+60,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.447
+61,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.493
+62,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.541
+63,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.59
+64,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.639
+65,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.688
+66,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.739
+67,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.79
+68,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.842
+69,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.893
+70,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.946
+71,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.998
+72,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.052
+73,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.105
+74,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.16
+75,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.214
+76,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.269
+77,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.325
+78,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.381
+79,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.437
+80,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.493
+81,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.55
+82,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.607
+83,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.665
+84,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.722
+85,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.781
+86,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.839
+87,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.898
+88,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.957
+89,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.015
+90,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.075
+91,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.134
+92,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.194
+93,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.254
+94,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.314
+95,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.374
+96,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.435
+97,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.495
+98,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.556
+99,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.616
+100,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.678

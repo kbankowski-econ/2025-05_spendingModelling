@@ -24,7 +24,7 @@ import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
-from wp_charts import chart_render_px, chart_display_cm, font_px_for_pt, smart_save_image, write_pdf
+from wp_charts import chart_render_px, chart_display_cm, debt_to_ratio_change, font_px_for_pt, smart_save_image, write_pdf
 
 # --- Paths (resolved from this file; the data CSV is the only external input) -
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -121,7 +121,8 @@ def load_data():
     period = 4 * date_parts["year"] + date_parts["quarter"]
     df["horizon_quarter"] = period - period.iloc[0]
     df = df.sort_values("horizon_quarter")
-    return df[df["horizon_quarter"].between(IMPACT_QUARTER, PLOT_HORIZON_QUARTERS)]
+    df = df[df["horizon_quarter"].between(IMPACT_QUARTER, PLOT_HORIZON_QUARTERS)].copy()
+    return debt_to_ratio_change(df)
 
 
 def series_key(model, label):
