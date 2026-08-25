@@ -1,5 +1,5 @@
-year,Infrastructure investment,Human capital investment
-2026,-0.001,0.563
-2030,1.338,0.098
-2040,2.914,3.155
-2050,3.367,5.632
+year,Infrastructure investment — Output,Infrastructure investment — Public debt,Human capital investment — Output,Human capital investment — Public debt
+2026,-0.001,-0.129,0.563,-0.118
+2030,1.338,-0.295,0.098,-0.271
+2040,2.914,-2.338,3.155,-1.175
+2050,3.367,-5.415,5.632,-5.496

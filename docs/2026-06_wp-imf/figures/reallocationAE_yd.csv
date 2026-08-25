@@ -1,5 +1,5 @@
-year,Infrastructure investment,Human capital investment,R&D spending
-2026,-0.045,0.421,-0.323
-2030,0.658,-0.084,0.508
-2040,1.758,1.754,2.791
-2050,2.398,4.299,4.099
+year,Infrastructure investment — Output,Infrastructure investment — Public debt,Human capital investment — Output,Human capital investment — Public debt,R&D spending — Output,R&D spending — Public debt
+2026,-0.045,-0.115,0.421,-0.169,-0.323,-0.097
+2030,0.658,-0.297,-0.084,-0.328,0.508,-0.028
+2040,1.758,-2.079,1.754,-0.833,2.791,-1.905
+2050,2.398,-5.338,4.299,-5.216,4.099,-7.483

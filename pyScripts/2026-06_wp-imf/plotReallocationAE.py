@@ -1,8 +1,8 @@
 """
 Figure: AE reallocation (panel a of fig:reallocation).
 
-Grouped bar chart of advanced-economy output response (yd, % deviation from
-baseline) to three expenditure-reallocation shocks, at four horizons.
+Two-row grouped bar chart of advanced-economy output and debt-to-GDP responses
+to three expenditure-reallocation shocks, at four horizons.
 
 Shocks:
   - Infrastructure investment -> Model_HumanCapital_epsi_ig
@@ -18,6 +18,7 @@ from pathlib import Path
 
 import pandas as pd
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
 from wp_charts import chart_render_px, chart_display_cm, font_px_for_pt, smart_save_image, write_pdf
 
@@ -31,7 +32,7 @@ FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 STYLE = {
     "template": "simple_white",
     "font_size": 22,
-    "margins": {"t": 40, "b": 30, "l": 25, "r": 25},  # snug to the legend
+    "margins": {"t": 125, "b": 30, "l": 65, "r": 25},
     "legend": {"orientation": "h", "yanchor": "bottom", "y": 1.02,
                "xanchor": "center", "x": 0.5, "font_size": 14},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
@@ -40,9 +41,9 @@ STYLE = {
 }
 
 SERIES = [
-    ("Model_HumanCapital_epsi_ig___yd",    "Infrastructure investment", "#1565C0"),
-    ("Model_HumanCapital_epsi_cge___yd",   "Human capital investment",  "#6A1B9A"),
-    ("Model_HumanCapital_epsi_cgrd___yd",  "R&D spending",              "#2E7D32"),
+    ("Model_HumanCapital_epsi_ig",   "Infrastructure investment", "#1565C0"),
+    ("Model_HumanCapital_epsi_cge",  "Human capital investment",  "#6A1B9A"),
+    ("Model_HumanCapital_epsi_cgrd", "R&D spending",              "#2E7D32"),
 ]
 
 YEARS = [2026, 2030, 2040, 2050]
@@ -52,8 +53,8 @@ OUTPUT_STEM = "reallocationAE_yd"
 
 # Both sizes come from chartTable.csv: render = original chart size (canvas,
 # controls fonts/quality); display = size shown in the paper (aspect preserved).
-WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (14.82, 9.53))
-DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (14.82, 9.53))
+WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (14.82, 16.8))
+DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (14.82, 16.8))
 
 # Font matching the paper: Palatino (the paper's mathpazo) sized to the paper's
 # 11pt body. FONT_PX is recomputed from the render/display sizes, so the text
@@ -76,17 +77,27 @@ def main():
     df = load_data()
     df = df[df["year"].isin(YEARS)].sort_values("year")
 
-    fig = go.Figure()
-    for col, label, color in SERIES:
-        fig.add_trace(
-            go.Bar(
-                x=YEAR_LABELS,
-                y=df.set_index("year").loc[YEARS, col].values,
-                name=label,
-                marker_color=color,
+    fig = make_subplots(
+        rows=2,
+        cols=1,
+        shared_xaxes=True,
+        vertical_spacing=0.12,
+    )
+    indexed = df.set_index("year")
+    for model, label, color in SERIES:
+        for row, variable in ((1, "yd"), (2, "by_yss")):
+            fig.add_trace(
+                go.Bar(
+                    x=YEAR_LABELS,
+                    y=indexed.loc[YEARS, f"{model}___{variable}"].values,
+                    name=label,
+                    legendgroup=model,
+                    showlegend=row == 1,
+                    marker_color=color,
+                ),
+                row=row,
+                col=1,
             )
-        )
-
     fig.update_layout(
         template=STYLE["template"],
         width=WIDTH_PX,
@@ -97,10 +108,10 @@ def main():
         bargap=0.2,
         bargroupgap=0.05,
         legend=dict(
-            orientation=STYLE["legend"]["orientation"],
+            orientation="v",
             yref="container", yanchor="top", y=0.99,  # pin to figure top, no blank band
-            xanchor=STYLE["legend"]["xanchor"],
-            x=STYLE["legend"]["x"],
+            xanchor="left",
+            x=0.18,
             font=dict(size=LEGEND_FONT_PX),
         ),
     )
@@ -127,6 +138,8 @@ def main():
         tickfont=dict(size=FONT_PX),
         title=None,
     )
+    fig.update_yaxes(title_text="Output", title_standoff=8, row=1, col=1)
+    fig.update_yaxes(title_text="Debt-to-GDP Ratio", title_standoff=8, row=2, col=1)
 
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
     png_path = FIGURES_DIR / f"{OUTPUT_STEM}.png"
@@ -137,9 +150,17 @@ def main():
     fig.write_html(html_path, auto_open=True)
     print(f"  Saved {png_path.name}, {pdf_path.name} and {html_path.name}")
 
-    csv_cols = ["year"] + [c for c, _, _ in SERIES]
+    csv_cols = ["year"] + [
+        f"{model}___{variable}"
+        for model, _, _ in SERIES
+        for variable in ("yd", "by_yss")
+    ]
     csv_data = df[csv_cols].copy()
-    rename_map = {c: label for c, label, _ in SERIES}
+    rename_map = {
+        f"{model}___{variable}": f"{label} — {'Output' if variable == 'yd' else 'Public debt'}"
+        for model, label, _ in SERIES
+        for variable in ("yd", "by_yss")
+    }
     csv_data = csv_data.rename(columns=rename_map).round(3)
     csv_path = FIGURES_DIR / f"{OUTPUT_STEM}.csv"
     csv_data.to_csv(csv_path, index=False)

@@ -163,6 +163,12 @@ def plotSimplifiedGcAEPerm(c):
 
 
 @task
+def plotReallocation(c):
+    """Unified 2x2 AE/EMDE expenditure-reallocation figure."""
+    _run_plot(c, "plotReallocation.py", "Generating: Reallocation")
+
+
+@task
 def plotReallocationAE(c):
     """
     AE output response to three expenditure-reallocation shocks.
@@ -411,8 +417,7 @@ def investigateContributions(c):
     plotStandardShocksAEPerm,
     plotSimplifiedGcAE,
     plotSimplifiedGcAEPerm,
-    plotReallocationAE,
-    plotReallocationEM,
+    plotReallocation,
     plotEfficiencyAE,
     plotPolicyEfficiency,
     plotHumanCapital,
