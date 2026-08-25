@@ -1,9 +1,9 @@
 Why is infrastructure investment more inflationary than government consumption?
 
-The supply-side intuition is correct obviously. The model contains exactly the predicted result but not directly visible in permanent shocks. Frankly, we thought about it quite a bit some time ago and included numerous additional charts to illustrate such issues. There are a few relevant issues here one shold consider.
+The supply-side intuition is obviously correct. The model contains exactly the predicted result, though it is not directly visible under permanent shocks. Frankly, we thought about it quite a bit some time ago and included numerous additional charts to illustrate such issues. There are a few relevant issues here one should consider.
 
 
-1. Government consumption is a pure demand shocks so you could ask why there is so little inflation associated with it
+1. Government consumption is a pure demand shock, so you could ask why there is so little inflation associated with it
 
 Government consumption is pure waste, so it triggers a large negative wealth
 effect: consumption drops 1.7 percent on impact and stays depressed, and labor
@@ -12,7 +12,7 @@ the government-consumption shock is nearly price-neutral (about 0.05 percentage
 point) despite being "pure demand."
 
 Infrastructure raises permanent income. Consumption falls only half as much on
-impact and turns positive after sevelra years.
+impact and turns positive after several years.
 
 
 2. Crowding-in is itself demand
