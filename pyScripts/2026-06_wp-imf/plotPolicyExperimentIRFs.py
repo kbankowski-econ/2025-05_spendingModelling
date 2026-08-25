@@ -9,9 +9,10 @@ Two 5x4 grids in the layout of the standard-shock transmission figure
      permanent +1 percent of GDP shift into infrastructure, human capital, or
      R&D, each funded by a cut in public consumption. Solid lines; colors match
      Figure 5.
-  2. efficiencyIRFsEM   - the two standard EMDE experiments of Figure 6: the
-     same EMDE reallocations combined with a gradual closure of the calibrated
-     efficiency gaps over 25 years. Full response paths, same formatting.
+  2. efficiencyIRFsAE   - the three standard AE experiments of Figure 6,
+     panel a: the same AE reallocations combined with a gradual closure of the
+     calibrated efficiency gaps over 25 years. Full response paths, same
+     formatting.
 
 Standalone: the only input is docs/csvFiles/figureNumbers.csv; writes
 PNG/PDF/HTML/CSV into docs/2026-06_wp-imf/figures/.
@@ -54,8 +55,9 @@ REALLOCATION_SERIES = [
 ]
 
 EFFICIENCY_SERIES = [
-    ("EM_Model_HumanCapital_epsiigeff25y",  "Infrastructure investment", "#1565C0", "dot", True),
-    ("EM_Model_HumanCapital_epsicgeeff25y", "Human capital investment",  "#6A1B9A", "dot", True),
+    ("Model_HumanCapital_epsi_igeff25y",    "Infrastructure investment", "#1565C0", "solid", True),
+    ("Model_HumanCapital_epsi_cgeeff25y",   "Human capital investment",  "#6A1B9A", "solid", True),
+    ("Model_HumanCapital_epsi_cgrd_eff25y", "R&D spending",              "#2E7D32", "solid", True),
 ]
 
 # Panel layout identical to the standard-shock transmission figure.
@@ -290,7 +292,7 @@ def build_figure(df, series, style_keys, output_stem):
 def main():
     df = load_data()
     build_figure(df, REALLOCATION_SERIES, [], "reallocationIRFs")
-    build_figure(df, EFFICIENCY_SERIES, [], "efficiencyIRFsEM")
+    build_figure(df, EFFICIENCY_SERIES, [], "efficiencyIRFsAE")
 
 
 if __name__ == "__main__":
