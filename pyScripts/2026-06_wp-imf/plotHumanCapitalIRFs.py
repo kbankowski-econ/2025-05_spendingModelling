@@ -7,7 +7,7 @@ human-capital related spending shocks.
 Series:
   - Model_HumanCapital_epsi_cgeCgrd___yd  (Joint human capital + R&D)
   - Model_HumanCapital_epsi_cge___yd      (Human capital investment)
-  - Model_HumanCapital_epsi_cgrd___yd     (R&D investment)
+  - Model_HumanCapital_epsi_cgrd___yd     (R&D spending)
 
 Standalone: this script has no local-module dependencies. Its only input is the
 data file docs/csvFiles/figureNumbers_yearly.csv; it writes the PNG/HTML/CSV
@@ -43,7 +43,7 @@ STYLE = {
 SERIES = [
     ("Model_HumanCapital_epsi_cgeCgrd___yd",  "Joint human capital + R&D", "#E65100"),
     ("Model_HumanCapital_epsi_cge___yd",      "Human capital investment",  "#6A1B9A"),
-    ("Model_HumanCapital_epsi_cgrd___yd",     "R&D investment",            "#2E7D32"),
+    ("Model_HumanCapital_epsi_cgrd___yd",     "R&D spending",            "#2E7D32"),
 ]
 
 PLOT_START_YEAR = 2026

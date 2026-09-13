@@ -10,7 +10,7 @@ that stays at +1 percent of GDP:
   - Government consumption      -> Model_HumanCapital_exp_gc_perm
   - Infrastructure investment  -> Model_HumanCapital_exp_igi_perm
   - Human capital investment   -> Model_HumanCapital_exp_ige_perm
-  - R&D investment             -> Model_HumanCapital_exp_grd_perm
+  - R&D spending             -> Model_HumanCapital_exp_grd_perm
 
 A 5x4 grid of percent deviations from steady state. Standalone: the only input
 is docs/csvFiles/figureNumbers.csv; it writes PNG/PDF/HTML/CSV into
@@ -48,7 +48,7 @@ SHOCKS = [
     ("Model_HumanCapital_exp_gc_perm",  "Government consumption",     "#757575"),
     ("Model_HumanCapital_exp_igi_perm", "Infrastructure investment", "#1565C0"),
     ("Model_HumanCapital_exp_ige_perm", "Human capital investment",  "#6A1B9A"),
-    ("Model_HumanCapital_exp_grd_perm", "R&D investment",            "#2E7D32"),
+    ("Model_HumanCapital_exp_grd_perm", "R&D spending",            "#2E7D32"),
 ]
 
 # (variable suffix, panel title); laid out row-major in a 5x4 grid, one thematic

@@ -9,7 +9,7 @@ standard debt-financed expansion shocks, each an AR(1) increase with persistence
   - Government consumption      -> Model_HumanCapital_exp_gc
   - Infrastructure investment  -> Model_HumanCapital_exp_igi
   - Human capital investment   -> Model_HumanCapital_exp_ige
-  - R&D investment             -> Model_HumanCapital_exp_grd
+  - R&D spending             -> Model_HumanCapital_exp_grd
 
 A 5x4 grid of deviations from steady state. Standalone: the only input
 is docs/csvFiles/figureNumbers.csv; it writes PNG/PDF/HTML/CSV into
@@ -47,7 +47,7 @@ SHOCKS = [
     ("Model_HumanCapital_exp_gc",  "Government consumption",     "#757575"),
     ("Model_HumanCapital_exp_igi", "Infrastructure investment", "#1565C0"),
     ("Model_HumanCapital_exp_ige", "Human capital investment",  "#6A1B9A"),
-    ("Model_HumanCapital_exp_grd", "R&D investment",            "#2E7D32"),
+    ("Model_HumanCapital_exp_grd", "R&D spending",            "#2E7D32"),
 ]
 
 # (variable suffix, panel title); laid out row-major in a 5x4 grid, one thematic
