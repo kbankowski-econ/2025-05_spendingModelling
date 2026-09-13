@@ -2535,7 +2535,7 @@ horizon_quarter,instrument,treatment,variable,response
 34,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.404
 35,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.42
 36,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.437
-37,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.453
+37,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.454
 38,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.47
 39,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.488
 40,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.505
@@ -2596,7 +2596,7 @@ horizon_quarter,instrument,treatment,variable,response
 95,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.788
 96,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.815
 97,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.841
-98,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.868
+98,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.869
 99,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.895
 100,Infrastructure,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.922
 1,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.073
@@ -2630,7 +2630,7 @@ horizon_quarter,instrument,treatment,variable,response
 29,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.363
 30,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.379
 31,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.394
-32,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.41
+32,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.411
 33,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.427
 34,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.444
 35,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.461
@@ -2655,7 +2655,7 @@ horizon_quarter,instrument,treatment,variable,response
 54,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.829
 55,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.85
 56,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.872
-57,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.892
+57,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.893
 58,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.914
 59,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.935
 60,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.957
@@ -2663,8 +2663,8 @@ horizon_quarter,instrument,treatment,variable,response
 62,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.001
 63,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.023
 64,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.045
-65,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.066
-66,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.088
+65,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.067
+66,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.089
 67,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.111
 68,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.133
 69,Infrastructure,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.155
@@ -2851,7 +2851,7 @@ horizon_quarter,instrument,treatment,variable,response
 50,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.365
 51,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.384
 52,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.404
-53,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.425
+53,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.426
 54,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.448
 55,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.471
 56,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.494
@@ -2865,14 +2865,14 @@ horizon_quarter,instrument,treatment,variable,response
 64,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.713
 65,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.744
 66,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.775
-67,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.808
+67,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.809
 68,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.842
 69,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.877
 70,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.913
 71,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.948
 72,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.985
 73,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.024
-74,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.061
+74,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.062
 75,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.101
 76,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.142
 77,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.183
@@ -2887,11 +2887,11 @@ horizon_quarter,instrument,treatment,variable,response
 86,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.59
 87,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.638
 88,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.689
-89,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.739
+89,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.74
 90,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.79
 91,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.842
-92,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.894
-93,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.948
+92,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.895
+93,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.949
 94,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.003
 95,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.058
 96,Human capital,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.113
@@ -2946,7 +2946,7 @@ horizon_quarter,instrument,treatment,variable,response
 45,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.37
 46,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.388
 47,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.407
-48,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.427
+48,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.428
 49,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.448
 50,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.468
 51,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-0.491
@@ -2981,7 +2981,7 @@ horizon_quarter,instrument,treatment,variable,response
 80,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.378
 81,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.416
 82,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.455
-83,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.493
+83,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.494
 84,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.533
 85,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.573
 86,Human capital,Efficiency improvement (EMDE),Debt-to-GDP ratio (b<sub>t</sub>),-1.613
@@ -3142,12 +3142,12 @@ horizon_quarter,instrument,treatment,variable,response
 41,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.681
 42,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.714
 43,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.748
-44,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.782
+44,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.783
 45,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.818
 46,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.855
 47,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.892
 48,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.93
-49,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.968
+49,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-0.969
 50,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.008
 51,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.048
 52,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.089
@@ -3170,8 +3170,8 @@ horizon_quarter,instrument,treatment,variable,response
 69,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.889
 70,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.942
 71,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-1.995
-72,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.048
-73,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.101
+72,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.049
+73,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.102
 74,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.156
 75,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.211
 76,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.265
@@ -3184,11 +3184,11 @@ horizon_quarter,instrument,treatment,variable,response
 83,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.66
 84,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.718
 85,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.776
-86,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.834
+86,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.835
 87,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.892
 88,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-2.951
 89,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.011
-90,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.069
+90,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.07
 91,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.13
 92,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.189
 93,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.249
@@ -3198,4 +3198,4 @@ horizon_quarter,instrument,treatment,variable,response
 97,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.491
 98,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.551
 99,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.612
-100,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.672
+100,R&D,Efficiency improvement (AE),Debt-to-GDP ratio (b<sub>t</sub>),-3.673

@@ -96,7 +96,7 @@ Cy=1-Ip_y-Igiy-Gcy-Igey-Grdy-((Z/A-1)*S)/yd;
 x2=1/(1+tauc)*1/Cy/(1-betta*thetap);  % x2=lambda*y/(1-betta*thetap)= 1/(1+tauc)*y/c/(1-betta*thetap)
 x1=mc*x2;
 
-b=y*by;
+b=yd*by;   % vp=1 in steady state, so yd=y; stated in yd for consistency with by=b/yd
 T=b-((R/PI)*b/g+Gc+Igi+Ige+Grd-tauw*w*N-tauc*C);
 
 %Variables of interest

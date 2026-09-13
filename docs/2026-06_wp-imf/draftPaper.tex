@@ -133,17 +133,7 @@ Closing spending-efficiency gaps not only generates additional output gains but 
 %     L=1/3 and the calibrated beta, delta^h and gamma (Section
 %     \ref{sec:calibration}, "Steady-State Coefficients and Experiment
 %     Design"). Revisit the calibration if warranted.
-% [2] Consider normalizing public debt by final demand rather than gross
-%     output INSIDE the model. The code sets by = b/y (model_block.modpart:89).
-%     The REPORTED debt figures no longer depend on this: as of the
-%     ratio-measure change, every figure converts the exported by_yss into the
-%     change in b/(current annual yd) in post-processing
-%     (wp_charts.debt_to_ratio_change), i.e. debt over current final demand.
-%     Only the model-internal rule variable by still uses gross output y; the
-%     two coincide in steady state (v^p = 1), so the debt targets are
-%     unaffected and the remaining difference is second order. Switching the
-%     model variable means re-running all variants, hence deferred.
-% [3] Key parameters that remain unresolved (from
+% [2] Key parameters that remain unresolved (from
 %     issues/literature-consistency.md): (a) the AE adoption elasticity
 %     varsigma=0.8 -- the sources use ~0.92-0.95, and 0.8 is Comin-Gertler's
 %     CREATION elasticity, so either recalibrate or justify the choice;
@@ -443,7 +433,7 @@ It can also improve the productivity of spending by narrowing the efficiency gap
 The monetary authority sets the nominal interest rate faced by the government.
 
 \paragraph{Government budget.}
-Let $B_t$ denote real public debt and $b_t=B_t/Y_t$ the debt-to-GDP ratio.
+Let $B_t$ denote real public debt and $b_t=B_t/Y_t^{d}$ the debt-to-GDP ratio, with debt measured against final demand as in the data.
 Current debt equals the real value of inherited debt plus the primary deficit:
 \begin{equation} \label{eq:govbudget}
     B_t = \frac{R_{t-1}}{\Pi_t} B_{t-1} + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + T_t - \tau_t^{w} w_t N_t - \tau_t^{c} C_t,

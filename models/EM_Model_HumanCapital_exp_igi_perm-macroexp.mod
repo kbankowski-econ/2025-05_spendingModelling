@@ -216,8 +216,8 @@ Kg*g = (1-delta)*Kg(-1)+(1-eGI)*Igi;
 Kge*g = (1-delta)*Kge(-1)+(1-eGE)*Ige;
 // Government debt
 b = (R(-1)/PI)*b(-1)/g+Gc+Igi+Ige+Grd+T-tauw*w*N-tauc*C;
-// Debt to GDP
-by = b/y;
+// Debt to GDP (measured GDP = final demand yd; y = vp*yd coincides in steady state)
+by = b/yd;
 // Government spending instruments (subject to expenditure shocks)
 Gc = Gcy*ydss+ydss*epsi_gc;                                     // consumption (explicit instrument; neutrality imposed via the offsetting epsi_gc shock)
 Igi = Igiy*ydss+ydss*epsi_igi;                                     // infrastructure investment
