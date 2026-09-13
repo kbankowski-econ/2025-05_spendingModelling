@@ -3,8 +3,7 @@
 GBARD in percent of GDP, documenting the public R&D spending target (Grdy):
 solid lines are country-group medians, dotted lines GDP-weighted averages,
 shaded areas the 25th-75th percentile range; the right panel pools the
-country-year observations, with open diamonds marking the calibrated targets
-(0.6 percent of GDP for AEs, 0.1 for EMDEs).
+country-year observations.
 
 In:  data/oecdGbard.csv (national currency, millions; retrieveOECDGbard.py),
      data/world_imf2026.dta (WEO GDP in national currency),
@@ -42,10 +41,9 @@ GROUPS = [
     ("Advanced Economies", "AE", "#1E88E5"),
     ("Emerging Market and Developing Economies", "EMDE", "#E67E22"),
 ]
-TARGETS = {"AE": 0.6, "EMDE": 0.1}  # calibrated Grdy, percent of GDP
 
-WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (15, 6))
-DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (15, 6))
+WIDTH_PX, HEIGHT_PX = chart_render_px(OUTPUT_STEM, (15, 5.5))
+DISPLAY_CM = chart_display_cm(OUTPUT_STEM, (15, 5.5))
 FONT_FAMILY = "Palatino, 'Palatino Linotype', 'Book Antiqua', serif"
 FONT_PX = font_px_for_pt(8, WIDTH_PX, DISPLAY_CM[0])
 LEGEND_FONT_PX = font_px_for_pt(8, WIDTH_PX, DISPLAY_CM[0])
@@ -192,18 +190,6 @@ def main():
                 hovertemplate=f"{label}: %{{y:.2f}}<extra></extra>",
                 cliponaxis=False,
             ), row=1, col=2)
-        fig.add_trace(go.Scatter(
-            x=[box_position], y=[TARGETS[code]],
-            mode="markers",
-            marker=dict(symbol="diamond-open", size=9, color=color,
-                        line=dict(width=1.5)),
-            name="Calibration target" if code == "AE" else None,
-            legendgroup="target",
-            legendrank=5,
-            showlegend=(code == "AE"),
-            hovertemplate=f"{code} target: {TARGETS[code]:.1f}<extra></extra>",
-            cliponaxis=False,
-        ), row=1, col=2)
 
         for _, observation in band.iterrows():
             csv_rows.append({
@@ -216,7 +202,6 @@ def main():
                 "gdp_weighted_average": round(
                     float(observation["gdp_weighted_average"]), 4
                 ),
-                "target": TARGETS[code],
             })
 
     fig.update_xaxes(
