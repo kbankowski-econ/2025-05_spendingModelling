@@ -140,7 +140,7 @@ byss=0.46444789855028866*4;          % steady-state debt to quarterly GDP (annua
 Igiy=0.03393197673959215;            % infrastructure investment                     | AE: 0.02583899130065564
 Gcy=0.14683743823337528;             % public consumption                            | AE: 0.1766798699446066
 Igey=0.015140748512668771;           % human-capital-related investment              | AE: 0.012788682912736575
-Grdy=0.001;                         % R&D spending                                  | AE: 0.006
+Grdy=0.002;                         % R&D spending (GBARD, App. C)                  | AE: 0.007
 % human capital
 mu=0.15;                         % elasticity of HC formation w.r.t. public HRC  | AE: 0.1
 % R&D and technology adoption

@@ -17,20 +17,20 @@
 \endlastfoot
 \multicolumn{6}{@{}l}{\textit{Households}} \\
 \addlinespace[0.1em]
-1 & $\hat{C}_t$ & Consumption \gloseq{\tfrac{1}{\hat C_t}=\hat\lambda_t(1+\tau^c_t)} & \texttt{C} & 0.353 & 0.349 \\
+1 & $\hat{C}_t$ & Consumption \gloseq{\tfrac{1}{\hat C_t}=\hat\lambda_t(1+\tau^c_t)} & \texttt{C} & 0.352 & 0.349 \\
 2 & $L_t$ & Labor supply (hours) \gloseq{\omega(L_t+E_t)^{\varphi}=\hat\lambda_t(1-\tau^w_t)\hat w_t H_{t-1}} & \texttt{L} & 0.333 & 0.333 \\
 3 & $N_t$ & Effective labor, $H_{t-1} L_t$ \gloseq{N_t=H_{t-1}L_t} & \texttt{N} & 0.333 & 0.333 \\
 4 & $H_t$ & Private human-capital stock \gloseq{H_t=(1-\delta^h)H_{t-1}+\chi E_t^{\gamma}(\hat K^{GE}_{t-1})^{\mu}} & \texttt{H} & 1 & 1 \\
 5 & $E_t$ & Time in human-capital accumulation \gloseq{\omega(L_t+E_t)^{\varphi}=\lambda^H_t\,\chi\gamma\,E_t^{\gamma-1}(\hat K^{GE}_{t-1})^{\mu}} & \texttt{E} & 0.157 & 0.157 \\
 6 & $\hat{I}_t$ & Private investment \gloseq{1=\beta\,\mathbb{E}_t\!\big[\tfrac{\hat\lambda_{t+1}}{\hat\lambda_t}(1-\delta+r^k_{t+1})/g\big]} & \texttt{Ip} & 0.159 & 0.133 \\
 7 & $\hat{K}_t$ & Private capital \gloseq{g\hat K_t=(1-\delta)\hat K_{t-1}+\hat I_t} & \texttt{Kp} & 5.368 & 3.551 \\
-8 & $\hat{\lambda}_t$ & Marginal utility of consumption \gloseq{\hat\lambda_t=\beta\,\mathbb{E}_t\!\big[\hat\lambda_{t+1}R_t/(g\Pi_{t+1})\big]} & \texttt{lambda} & 2.465 & 2.565 \\
-9 & $\lambda_t^{H}$ & Shadow value of human capital \gloseq{\lambda^H_t=\beta\,\mathbb{E}_t\!\big[\hat\lambda_{t+1}(1-\tau^w_{t+1})\hat w_{t+1}L_{t+1}+\lambda^H_{t+1}(1-\delta^h)\big]} & \texttt{lambda\_H} & 25.094 & 26.939 \\
+8 & $\hat{\lambda}_t$ & Marginal utility of consumption \gloseq{\hat\lambda_t=\beta\,\mathbb{E}_t\!\big[\hat\lambda_{t+1}R_t/(g\Pi_{t+1})\big]} & \texttt{lambda} & 2.47 & 2.57 \\
+9 & $\lambda_t^{H}$ & Shadow value of human capital \gloseq{\lambda^H_t=\beta\,\mathbb{E}_t\!\big[\hat\lambda_{t+1}(1-\tau^w_{t+1})\hat w_{t+1}L_{t+1}+\lambda^H_{t+1}(1-\delta^h)\big]} & \texttt{lambda\_H} & 25.146 & 26.986 \\
 \addlinespace[0.4em]
 \multicolumn{6}{@{}l}{\textit{Production and technology: price setting}} \\
 \addlinespace[0.1em]
-10 & $x_{1,t}$ & Price-setting auxiliary \gloseq{x_{1,t}=\hat\lambda_t mc_t \hat Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{-\epsilon}x_{1,t+1}} & \texttt{x1} & 8.061 & 6.952 \\
-11 & $x_{2,t}$ & Price-setting auxiliary \gloseq{x_{2,t}=\hat\lambda_t\Pi^*_t \hat Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{1-\epsilon}\tfrac{\Pi^*_t}{\Pi^*_{t+1}}x_{2,t+1}} & \texttt{x2} & 8.956 & 7.724 \\
+10 & $x_{1,t}$ & Price-setting auxiliary \gloseq{x_{1,t}=\hat\lambda_t mc_t \hat Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{-\epsilon}x_{1,t+1}} & \texttt{x1} & 8.078 & 6.964 \\
+11 & $x_{2,t}$ & Price-setting auxiliary \gloseq{x_{2,t}=\hat\lambda_t\Pi^*_t \hat Y^d_t+\beta\theta_p\,\mathbb{E}_t(\Pi_t^{\chi_p}/\Pi_{t+1})^{1-\epsilon}\tfrac{\Pi^*_t}{\Pi^*_{t+1}}x_{2,t+1}} & \texttt{x2} & 8.975 & 7.738 \\
 12 & $\Pi_t^{*}$ & Reset (optimal) inflation \gloseq{\epsilon\,x_{1,t}=(\epsilon-1)\,x_{2,t}} & \texttt{PIstar} & 1 & 1 \\
 13 & $\Pi_t$ & Gross inflation \gloseq{1=\theta_p(\Pi_{t-1}^{\chi_p}/\Pi_t)^{1-\epsilon}+(1-\theta_p)(\Pi^*_t)^{1-\epsilon}} & \texttt{PI} & 1 & 1 \\
 \addlinespace[0.4em]
@@ -58,15 +58,15 @@
 27 & $\hat{K}_t^{GI}$ & Public infrastructure capital \gloseq{g\hat K^{GI}_t=(1-\delta)\hat K^{GI}_{t-1}+(1-e^{GI}_t)\hat I^{GI}_t} & \texttt{Kg} & 0.408 & 0.325 \\
 28 & $\hat{I}_t^{GE}$ & Public education and health investment \gloseq{\hat I^{GE}_t=\hat I^{GE,SS}+\hat Y^{d,SS}\varepsilon^{ge}_t} & \texttt{Ige} & 0.009 & 0.009 \\
 29 & $\hat{K}_t^{GE}$ & Public education and health capital \gloseq{g\hat K^{GE}_t=(1-\delta)\hat K^{GE}_{t-1}+(1-e^{GE}_t)\hat I^{GE}_t} & \texttt{Kge} & 0.219 & 0.164 \\
-30 & $\hat{G}_t^{RD}$ & Public R\&D spending \gloseq{\hat G^{RD}_t=\hat G^{RD,SS}+\hat Y^{d,SS}\varepsilon^{rd}_t} & \texttt{Grd} & 0.004 & 0.001 \\
-31 & $\hat{G}_t$ & Total government spending \gloseq{\hat G_t=\hat G^C_t+\hat I^{GI}_t+\hat I^{GE}_t+\hat G^{RD}_t} & \texttt{G} & 0.162 & 0.119 \\
+30 & $\hat{G}_t^{RD}$ & Public R\&D spending \gloseq{\hat G^{RD}_t=\hat G^{RD,SS}+\hat Y^{d,SS}\varepsilon^{rd}_t} & \texttt{Grd} & 0.005 & 0.001 \\
+31 & $\hat{G}_t$ & Total government spending \gloseq{\hat G_t=\hat G^C_t+\hat I^{GI}_t+\hat I^{GE}_t+\hat G^{RD}_t} & \texttt{G} & 0.163 & 0.12 \\
 32 & $\hat{B}_t$ & Public debt \gloseq{\hat B_t=\tfrac{R_{t-1}}{\Pi_t}\tfrac{\hat B_{t-1}}{g}+\hat G^C_t+\hat I^{GI}_t+\hat I^{GE}_t+\hat G^{RD}_t+\hat T_t-\tau^w_t\hat w_t N_t-\tau^c_t\hat C_t} & \texttt{b} & 2.303 & 1.126 \\
 33 & $b_t$ & Debt-to-GDP ratio \gloseq{b_t=\hat B_t/\hat Y_t} & \texttt{by} & 3.15 & 1.858 \\
-34 & $\hat{T}_t$ & Lump-sum transfers \gloseq{\hat T_t=\hat T^{SS}-\gamma^T_d e_{T,t}^{\mathrm{aux}}(b_{t-1}-b^*)\hat Y^{d,SS}} & \texttt{T} & 0.008 & -0.035 \\
+34 & $\hat{T}_t$ & Lump-sum transfers \gloseq{\hat T_t=\hat T^{SS}-\gamma^T_d e_{T,t}^{\mathrm{aux}}(b_{t-1}-b^*)\hat Y^{d,SS}} & \texttt{T} & 0.008 & -0.036 \\
 35 & $\tau_t^{c}$ & Consumption-tax rate \gloseq{\tau^c_t=\tau^c+\varepsilon^{\tau c}_t} & \texttt{tauc} & 0.151 & 0.116 \\
 36 & $\tau_t^{w}$ & Labor-income-tax rate \gloseq{\tau^w_t=\tau^w+\varepsilon^{\tau w}_t} & \texttt{tauw} & 0.309 & 0.14 \\
 37 & $R_t$ & Nominal policy and government financing rate \gloseq{\tfrac{R_t}{R^{SS}}=\big(\tfrac{R_{t-1}}{R^{SS}}\big)^{\rho_R}\big[(\tfrac{\Pi_t}{\Pi})^{\gamma_\pi}(\tfrac{mc_t}{mc^{SS}})^{\gamma_y}\big]^{1-\rho_R}e^{\varepsilon^{mp}_t}} & \texttt{R} & 1.006 & 1.014 \\
-38 & $e_t^{GI}$ & Infrastructure efficiency gap \gloseq{e^{GI}_t=e^{GI}-\varepsilon^{gi,\mathit{eff}}_t} & \texttt{eGI} & 0.359 & 0.406 \\
+38 & $e_t^{GI}$ & Infrastructure efficiency gap \gloseq{e^{GI}_t=e^{GI}-\varepsilon^{gi,\mathit{eff}}_t} & \texttt{eGI} & 0.36 & 0.406 \\
 39 & $e_t^{GE}$ & Education and health efficiency gap \gloseq{e^{GE}_t=e^{GE}-\varepsilon^{ge,\mathit{eff}}_t} & \texttt{eGE} & 0.306 & 0.329 \\
 40 & $e_t^{GRD}$ & R\&D efficiency gap \gloseq{e^{GRD}_t=e^{GRD}-\varepsilon^{rd,\mathit{eff}}_t} & \texttt{eGRD} & 0.399 & 0.2 \\
 \addlinespace[0.4em]
@@ -84,6 +84,6 @@
 \multicolumn{6}{@{}l}{\textit{Fiscal reporting}} \\
 \addlinespace[0.1em]
 46 & -- & Primary deficit \gloseq{(\hat G^C_t+\hat I^{GI}_t+\hat I^{GE}_t+\hat G^{RD}_t+\hat T_t-\tau^w_t\hat w_tN_t-\tau^c_t\hat C_t)/\hat Y^{d,SS}} & \texttt{pdef\_yss} & -0.005 & -0.003 \\
-47 & -- & Transfers \gloseq{\hat T_t/\hat Y^{d,SS}} & \texttt{T\_yss} & 0.011 & -0.058 \\
+47 & -- & Transfers \gloseq{\hat T_t/\hat Y^{d,SS}} & \texttt{T\_yss} & 0.01 & -0.06 \\
 48 & -- & Public debt relative to annual output \gloseq{\hat B_t/(4\hat Y^{d,SS})} & \texttt{by\_yss} & 0.788 & 0.464 \\
 \end{longtable}

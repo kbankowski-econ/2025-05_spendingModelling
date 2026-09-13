@@ -153,7 +153,7 @@ byss=0.7875515483152252*4;           % steady-state debt to quarterly GDP (annua
 Igiy=0.02583899130065564;            % infrastructure investment                     | EM: 0.03393197673959215
 Gcy=0.1766798699446066;              % public consumption                            | EM: 0.14683743823337528
 Igey=0.012788682912736575;           % human-capital-related investment              | EM: 0.015140748512668771
-Grdy=0.006;                         % R&D spending                                  | EM: 0.001
+Grdy=0.007;                         % R&D spending (GBARD, App. C)                  | EM: 0.002
 % human capital
 mu=0.1;                          % elasticity of HC formation w.r.t. public HRC  | EM: 0.15
 % R&D and technology adoption
@@ -162,7 +162,7 @@ alphaRD=0.09;                         % long-run R&D elasticity in tech creation
 alphaHA=0.1/(1-rho_A);                % long-run HC elasticity (keeps loading at 0.1) | EM: 0
 varsigma=0.8;                       % adoption elasticity                           | EM: 0.1
 % AE efficiency gaps (2023 medians; INF re-estimated 2026-06)
-eGI_ss=0.359;
+eGI_ss=0.360;   % database median 0.35953, rounded half-up to match Table 4
 eGE_ss=0.306;
 // Expose the macro level to the external steady-state routine.
 parameters simplify_level;
