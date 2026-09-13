@@ -285,6 +285,25 @@ def plotInvestmentComposition(c):
 
 
 @task
+def plotGbardBands(c):
+    """
+    GBARD (government budget allocations for R&D) by country group, percent of
+    GDP, with the calibrated Grdy targets (appendix figure).
+    Out: figures/gbardBands.png/.pdf/.html/.csv
+    """
+    _run_plot(c, "plotGbardBands.py", "Generating: GBARD Bands (appendix)")
+
+
+@task
+def retrieveOECDGbard(c):
+    """
+    Retrieve GBARD (MSTI measure C, national currency) for the paper sample.
+    Out: data/oecdGbard.csv
+    """
+    _run_table(c, "retrieveOECDGbard.py", "OECD GBARD data")
+
+
+@task
 def plotEfficiencyBands(c):
     """
     Spending-efficiency gaps by income group (appendix figure).
@@ -441,6 +460,7 @@ def investigateContributions(c):
     plotSensitivityIRFPerm,
     plotCalibrationData,
     plotInvestmentComposition,
+    plotGbardBands,
     plotEfficiencyBands,
     makeMultipliers,
     makeCommonParametersTable,

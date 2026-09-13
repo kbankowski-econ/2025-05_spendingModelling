@@ -143,20 +143,14 @@ Closing spending-efficiency gaps not only generates additional output gains but 
 %     two coincide in steady state (v^p = 1), so the debt targets are
 %     unaffected and the remaining difference is second order. Switching the
 %     model variable means re-running all variants, hence deferred.
-% [3] Document the source of the public R&D spending target (0.6 percent of
-%     GDP for AEs, 0.1 for EMDEs; Grdy in AE_parameters.macro:16 and
-%     EM_parameters.macro:16). Every other target in Table 2 is traceable to
-%     WEO, WoRLD, ILOSTAT or OECD (2025), and the table note says the R&D
-%     figure is NOT one of the GDP-weighted country-group means -- without
-%     saying what it is. It drives the R&D multiplier, so a referee will ask.
-% [4] Reconcile the AE infrastructure efficiency gap. Table 4 is generated
+% [3] Reconcile the AE infrastructure efficiency gap. Table 4 is generated
 %     from the efficiency database and shows 0.360, while the model is
 %     calibrated with eGI_ss=0.359 (models/AE_efficiency.macro) and the text
 %     quotes 35.9 percent. Every other cell in that table matches its macro
 %     exactly, and the table note claims the reported estimates are the gaps
 %     used directly in the model. Set the macro to the database value at the
 %     next full re-run, or have the table report the calibrated value.
-% [5] Key parameters that remain unresolved (from
+% [4] Key parameters that remain unresolved (from
 %     issues/literature-consistency.md): (a) the AE adoption elasticity
 %     varsigma=0.8 -- the sources use ~0.92-0.95, and 0.8 is Comin-Gertler's
 %     CREATION elasticity, so either recalibrate or justify the choice;
@@ -286,7 +280,7 @@ Section~\ref{sec:properties} examines the model's properties, including the tran
 Section~\ref{sec:results} presents the policy experiments: reallocating expenditure, improving spending efficiency, and combining human capital with R\&D.
 Section~\ref{sec:conclusions} concludes.
 Appendix~\ref{app:equilibrium} provides the analytical derivations and Appendix~\ref{app:glossary} the model equations and notation.
-Further appendices document the composition of government investment, the spending-efficiency estimates, robustness to model structure, results for persistent temporary shocks, and detailed responses to the policy experiments.
+Further appendices document the composition of government investment and public R\&D funding, the spending-efficiency estimates, robustness to model structure, results for persistent temporary shocks, and detailed responses to the policy experiments.
 
 %========================================================================
 \section{The Model} \label{sec:model}
@@ -637,6 +631,7 @@ Turning to spending, government consumption maps directly to $G_t^C$ and is cali
 This category covers intermediate consumption, social transfers in kind, and compensation of government employees, including teachers, doctors, nurses, and other public workers.
 In the data, government investment includes infrastructure and human-capital-related investment and averages 3.9 percent of GDP for AEs and 4.9 percent for EMDEs.
 Baseline public R\&D spending is 0.6 percent of GDP for AEs and 0.1 percent for EMDEs.
+These targets are informed by the OECD data on government budget allocations for R\&D documented in Appendix~\ref{app:investmentComposition}.
 
 As the model treats infrastructure and human capital as separate instruments, the government investment totals must be decomposed.
 The split uses the functional composition of government investment reported by \citet{OECD2025Glance}; Appendix~\ref{app:investmentComposition} describes the mapping in detail.
@@ -1383,7 +1378,7 @@ All shocks are zero in steady state; the paths they follow in each experiment ar
 \input{glossaryExogenous.tex}
 
 %========================================================================
-\section{Functional Composition of Government Investment} \label{app:investmentComposition}
+\section{Functional Composition of Government Investment and Public R\&D Funding} \label{app:investmentComposition}
 %========================================================================
 
 Government investment can be split into the model's two productive-capital blocks using its functional composition.
@@ -1417,6 +1412,24 @@ The balanced sample contains 29 AEs and seven EMDEs in every year; the latter ar
 \par\vspace{0.5mm}\noindent
 General public services, defence, public order and safety, economic affairs, and environmental protection are assigned to infrastructure and other public capital.
 Housing and community amenities; health; recreation, culture, and religion; education; and social protection are assigned to human-capital-related investment.}
+\end{figure}
+
+The appendix also documents the public R\&D spending target of Section~\ref{sec:calibration}.
+The target is informed by government budget allocations for R\&D (GBARD), the Frascati Manual measure of R\&D funding allocated in government budgets regardless of the sector performing the research.
+The funder-based scope matches the model's R\&D instrument, which finances technology creation rather than a particular performing institution.
+Over 2013--23, GBARD averages about 0.7 percent of GDP for the sample AEs and about 0.2 percent for the OECD's EMDE members (Figure~\ref{fig:gbardBands}).
+The calibrated targets of 0.6 and 0.1 percent of GDP are set at or below these values; the EMDE target in particular reflects the broader EMDE aggregate, which includes economies with little public R\&D funding.
+Because part of GBARD is disbursed within general government, a small share of it also appears inside measured government consumption and investment; the calibration accepts this modest overlap rather than reallocating the aggregates.
+
+\begin{figure}[H]
+    \centering
+    \caption{Government Budget Allocations for R\&D, 2013--23 \label{fig:gbardBands}}
+    \includegraphics{figures/gbardBands.pdf}
+    \source{OECD Main Science and Technology Indicators database; IMF, World Economic Outlook database; authors' calculations.}
+    \desc{Government budget allocations for R\&D (GBARD) in percent of GDP.
+Solid lines show country-group medians, dotted lines show GDP-weighted country-group averages, and shaded areas show the 25th--75th percentile range.
+The right panel pools the country-year observations; short lines show the means of the annual medians and GDP-weighted averages, and open diamonds mark the calibrated public R\&D spending targets.
+Costa Rica does not report GBARD.}
 \end{figure}
 
 %========================================================================
