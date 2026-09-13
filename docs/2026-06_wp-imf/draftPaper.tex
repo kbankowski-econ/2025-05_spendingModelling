@@ -127,15 +127,18 @@ Closing spending-efficiency gaps not only generates additional output gains but 
 % 2026-09-12). .sped.md's REMAINING section defers to it. Dropped by
 % decision, not to be re-added: separate depreciation rates for the two
 % public capital stocks; alternative fiscal-multiplier definitions.
-% [1] Key parameters that remain unresolved (from
-%     issues/literature-consistency.md): (a) the AE adoption elasticity
-%     varsigma=0.8 -- the sources use ~0.92-0.95, and 0.8 is Comin-Gertler's
-%     CREATION elasticity, so either recalibrate or justify the choice;
-%     (b) the alpha_HA=0.45 long-run elasticity attributed to
-%     Chang-Gomes-Schorfheide, whose quarterly loading is 0.111 -- decide
-%     whether the attribution or the value needs adjusting; (c) the
-%     learning-by-doing wording credited to CGS, where technology is
-%     exogenous -- reword the attribution if kept.
+% [1] MAIN OPEN DECISION -- the AE adoption elasticity varsigma=0.8. The
+%     cited sources use 0.925 (Anzoategui et al.) and 0.95 (Comin-Gertler's
+%     adoption elasticity); 0.8 is Comin-Gertler's CREATION elasticity. The
+%     text no longer misattributes it, but the value is unsourced: either
+%     recalibrate to ~0.925 (re-run; materially changes the diffusion and
+%     R&D adoption results, since varsigma is the Figure 8 lever) or add a
+%     sentence presenting 0.8 as deliberately conservative. Decision
+%     deferred on 2026-09-13. Also pending, minor: Appendix A still says
+%     human capital captures learning by doing "as in" CGS (line ~1254);
+%     mirror the main text's "borrows the persistent form of CGS" wording.
+%     Assessed against issues/literature-consistency.md: the alpha_HA
+%     attribution and the adoption-lag items there are already resolved.
 % -------------------------------------------------------------------------
 
 \clearpage
@@ -701,7 +704,7 @@ Given this persistence, the human-capital elasticity reported in Table~\ref{tab:
 The public R\&D elasticity similarly translates into a per-quarter loading of $(1-\rho_A)\alpha_{RD}=0.0189$, remaining close to the R\&D impact estimates in \citet{FieldhouseMertens2023}.
 
 Technology adoption is endogenous and follows the same structure in both calibrations.
-Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the quarterly technology-survival rate is $\phi=0.98$ for both country groups, corresponding to an annual obsolescence rate of about 8 percent.
+Following \citet{Anzoateguietal2019}, the quarterly technology-survival rate is $\phi=0.98$ for both country groups, corresponding to an annual obsolescence rate of about 8 percent.
 The elasticity of the adoption probability with respect to adoption spending, $\varsigma$, is set at 0.8 for AEs and 0.1 for EMDEs.
 The lower EMDE value preserves endogenous diffusion of the existing stock of unadopted technologies while making the adoption probability less responsive to adoption expenditure.
 
