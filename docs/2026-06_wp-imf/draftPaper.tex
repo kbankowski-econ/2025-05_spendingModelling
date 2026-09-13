@@ -78,8 +78,8 @@
 \fancyfoot[R]{\thepage}
 \usepackage{natbib}
 
-% Equation numbering tied to section numbers
-\numberwithin{equation}{section}
+% Equations numbered continuously (1, 2, ...) in the main text; the appendix
+% switches to per-appendix numbering (A.1, A.2, ...) right after \appendix.
 
 %----------------------------------------------------------------------------------------
 %       TITLE SECTION
@@ -510,9 +510,9 @@ Final demand is allocated across private consumption and investment, the four pu
     Y_t^{d} = C_t + I_t + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + \mathcal{R}_t.
 \end{equation}
 Here $\mathcal{R}_t$ is the aggregate resource cost of adoption, with stationary counterpart
-\[
+\begin{equation} \label{eq:adoptioncost}
     \hat{\mathcal{R}}_t=\left(\frac{\hat{Z}_{t-1}}{\hat{A}_{t-1}}-1\right)\hat{S}_t.
-\]
+\end{equation}
 The cost is stationary adoption expenditure $\hat{S}_t$ scaled by the stock of unadopted technologies relative to adopted ones.
 As in a standard New Keynesian model with Calvo price setting, the price-dispersion index $v_t^{p}$ makes the gross production required to satisfy a given level of final demand exceed that demand, so $Y_t = v_t^{p}Y_t^{d}$.
 A competitive equilibrium is a sequence of quantities and prices such that households, producers, retailers, and adopters optimize; fiscal and monetary policy rules hold; and the goods, labor, capital, and bond markets clear for given paths of the exogenous processes.
@@ -521,50 +521,50 @@ A competitive equilibrium is a sequence of quantities and prices such that house
 
 The economy is solved around the technology-driven balanced-growth path described at the beginning of this section.
 For output, private capital, and public infrastructure capital to share the real trend, production requires the gross growth rate of the technology trend to satisfy\footnote{Private capital and public infrastructure capital both grow at $g$ and enter with elasticities $\alpha$ and $\alpha_G$, contributing $g^{\alpha}$ and $g^{\alpha_G}$ to gross output growth, while effective labor is stationary. The love-of-variety term must supply the remaining $g^{1-\alpha-\alpha_G}$, implying technology-stock growth of $g^{(1-\alpha-\alpha_G)/(\vartheta-1)}$.}
-\[
+\begin{equation} \label{eq:techtrend}
     1+\gamma^a\equiv\frac{\Gamma_t}{\Gamma_{t-1}}
     =g^{(1-\alpha-\alpha_G)/(\vartheta-1)}.
-\]
+\end{equation}
 Under the stock convention, the inherited inputs used in date-$t$ production are scaled by the corresponding date-$t$ trends: $\hat K_{t-1}=K_{t-1}/\Lambda_t$, $\hat K_{t-1}^{GI}=K_{t-1}^{GI}/\Lambda_t$, and $\hat A_{t-1}=A_{t-1}/\Gamma_t$.
 The stationary production function is therefore
-\[
+\begin{equation} \label{eq:prodstat}
     \hat{Y}_t = \hat{A}_{t-1}^{\vartheta-1} \hat K_{t-1}^{\alpha} \left( \hat K_{t-1}^{GI}\right)^{\alpha_G} N_t^{1-\alpha}.
-\]
+\end{equation}
 
 Equations involving only contemporaneous common-trend flows retain their level-form appearance.
 The resource constraint, for example, becomes
-\[
+\begin{equation} \label{eq:resourcestat}
     \hat{Y}_t^{d}=\hat{C}_t+\hat{I}_t+\hat{G}_t^{C}
     +\hat{I}_t^{GI}+\hat{I}_t^{GE}+\hat{G}_t^{RD}+\hat{\mathcal{R}}_t.
-\]
+\end{equation}
 The same principle applies to contemporaneous accounting identities and static optimality conditions: every trending object is replaced by its stationary counterpart, while the common trend cancels.
 
 Equations linking common-trend variables across dates retain the gross growth factor $g$.
 Physical-capital accumulation places the growth factor on the newly chosen stationary stock,
-\[
+\begin{equation} \label{eq:capstat}
     g\hat{K}_t=(1-\delta)\hat{K}_{t-1}+\hat{I}_t,
-\]
+\end{equation}
 and the same adjustment applies to both public physical-capital stocks.
 Human capital requires no such adjustment because $H_t$ is stationary by construction.
 The model normalizes public debt by the current real trend, $\hat B_t=B_t/\Lambda_t$.
 Its stationary budget constraint therefore divides inherited debt by $g$, preserving a stationary debt-to-output ratio.
 Intertemporal optimality conditions place the growth adjustment in the discount term.
 For example, the bond Euler equation becomes
-\[
+\begin{equation} \label{eq:eulerstat}
     \hat{\lambda}_t = \beta\,\mathbb{E}_t\!\left[
     \hat{\lambda}_{t+1}\frac{R_t}{g\Pi_{t+1}}\right].
-\]
+\end{equation}
 Level marginal utility moves inversely with the real trend, so its stationary counterpart is $\hat{\lambda}_t=\Lambda_{t}\lambda_t$.
 Accordingly, the growth-adjusted discount factor used in the stationary technology block is $\mathit{SDF}_{t+1}=\beta\hat\lambda_{t+1}(1+\tau_{t+1}^c)/[\hat\lambda_t(1+\tau_t^c)]$.
 Aggregate technology values and adoption expenditure follow the flow convention and are divided by $\Lambda_t$.
 
 The technology stocks require a distinct adjustment because they grow with $\Gamma_t$.
 Using $\hat A_t=A_t/\Gamma_{t+1}$ and $\hat Z_t=Z_t/\Gamma_{t+1}$, the level adoption equation becomes
-\[
+\begin{equation} \label{eq:adoptstat}
     (1+\gamma^a)\hat{A}_t
     =q_t\phi\left(\hat{Z}_{t-1}-\hat{A}_{t-1}\right)
     +\phi\hat{A}_{t-1}.
-\]
+\end{equation}
 The continuation terms in the technology value functions correspondingly carry $1/(1+\gamma^a)$, while the adoption probability depends on stationary expenditure $\hat{S}_t$.
 Technology creation is specified directly in ratios of stationary stocks to their steady-state values, so it requires no additional growth factor.
 
@@ -1148,6 +1148,7 @@ Even in its current form, the framework can be applied to country-specific spend
 
 \clearpage
 \appendix
+\counterwithin{equation}{section} % appendix equations numbered A.1, A.2, ...
 
 %========================================================================
 \section{Analytical Derivations} \label{app:equilibrium}
