@@ -123,6 +123,10 @@ Closing spending-efficiency gaps not only generates additional output gains but 
 \noindent\textbf{JEL Codes:} E62, H51, H52, H54, O38, O41
 
 % --- TODO (address before circulation) -----------------------------------
+% THIS LIST IS THE SINGLE SOURCE OF TRUTH FOR OPEN PAPER TODOs (decided
+% 2026-09-12). .sped.md's REMAINING section defers to it. Dropped by
+% decision, not to be re-added: separate depreciation rates for the two
+% public capital stocks; alternative fiscal-multiplier definitions.
 % [1] Assess the model-implied steady-state value E=0.157 against the
 %     literature: the implied allocation of time to education and health
 %     appears high. E is pinned by the household optimality conditions given
@@ -139,26 +143,28 @@ Closing spending-efficiency gaps not only generates additional output gains but 
 %     two coincide in steady state (v^p = 1), so the debt targets are
 %     unaffected and the remaining difference is second order. Switching the
 %     model variable means re-running all variants, hence deferred.
-% [3] Consider separate depreciation rates for the two public capital
-%     stocks. Equations (kgi) and (kge) now use the common delta, matching
-%     the code (model_block.modpart:80,83) and the glossary, which calls
-%     delta the depreciation rate of private and public physical capital.
-%     Infrastructure and school or hospital capital plausibly depreciate at
-%     different rates, so delta^GI and delta^GE could be introduced and
-%     calibrated separately; that requires new targets and a re-run.
-% [4] Document the source of the public R&D spending target (0.6 percent of
+% [3] Document the source of the public R&D spending target (0.6 percent of
 %     GDP for AEs, 0.1 for EMDEs; Grdy in AE_parameters.macro:16 and
 %     EM_parameters.macro:16). Every other target in Table 2 is traceable to
 %     WEO, WoRLD, ILOSTAT or OECD (2025), and the table note says the R&D
 %     figure is NOT one of the GDP-weighted country-group means -- without
 %     saying what it is. It drives the R&D multiplier, so a referee will ask.
-% [5] Reconcile the AE infrastructure efficiency gap. Table 4 is generated
+% [4] Reconcile the AE infrastructure efficiency gap. Table 4 is generated
 %     from the efficiency database and shows 0.360, while the model is
 %     calibrated with eGI_ss=0.359 (models/AE_efficiency.macro) and the text
 %     quotes 35.9 percent. Every other cell in that table matches its macro
 %     exactly, and the table note claims the reported estimates are the gaps
 %     used directly in the model. Set the macro to the database value at the
 %     next full re-run, or have the table report the calibrated value.
+% [5] Key parameters that remain unresolved (from
+%     issues/literature-consistency.md): (a) the AE adoption elasticity
+%     varsigma=0.8 -- the sources use ~0.92-0.95, and 0.8 is Comin-Gertler's
+%     CREATION elasticity, so either recalibrate or justify the choice;
+%     (b) the alpha_HA=0.45 long-run elasticity attributed to
+%     Chang-Gomes-Schorfheide, whose quarterly loading is 0.111 -- decide
+%     whether the attribution or the value needs adjusting; (c) the
+%     learning-by-doing wording credited to CGS, where technology is
+%     exogenous -- reword the attribution if kept.
 % -------------------------------------------------------------------------
 
 \clearpage
