@@ -127,13 +127,7 @@ Closing spending-efficiency gaps not only generates additional output gains but 
 % 2026-09-12). .sped.md's REMAINING section defers to it. Dropped by
 % decision, not to be re-added: separate depreciation rates for the two
 % public capital stocks; alternative fiscal-multiplier definitions.
-% [1] Assess the model-implied steady-state value E=0.157 against the
-%     literature: the implied allocation of time to education and health
-%     appears high. E is pinned by the household optimality conditions given
-%     L=1/3 and the calibrated beta, delta^h and gamma (Section
-%     \ref{sec:calibration}, "Steady-State Coefficients and Experiment
-%     Design"). Revisit the calibration if warranted.
-% [2] Key parameters that remain unresolved (from
+% [1] Key parameters that remain unresolved (from
 %     issues/literature-consistency.md): (a) the AE adoption elasticity
 %     varsigma=0.8 -- the sources use ~0.92-0.95, and 0.8 is Comin-Gertler's
 %     CREATION elasticity, so either recalibrate or justify the choice;
@@ -743,7 +737,9 @@ These estimates are the efficiency gaps used directly in the model.}
 Three scale parameters are solved jointly with the steady state rather than selected directly, allowing the model to implement its steady-state targets, normalizations, and optimality conditions.
 Following a standard normalization in quarterly DSGE models, as in \citet{Cantoreetal2017}, steady-state labor supply equals one-third of the available time endowment, $L=1/3$.
 The labor-disutility scale $\omega$ is determined internally to implement this target.
-The household optimality conditions imply $E=0.157$ given $L=1/3$ and the calibrated values of $\beta$, $\delta^h$, and $\gamma$.
+The household optimality conditions imply $E=0.157$ given $L=1/3$ and the calibrated values of $\beta$, $\delta^h$, and $\gamma$.\footnote{The implied allocation is best read at the level of the dynastic household, whose time endowment includes its schooling-age members.
+Education and health time of about one-third of combined work and education time is then in line with the ratio of expected years of schooling to years of working life.
+The value also reflects the human-capital depreciation rate $\delta^h$, which lies at the upper end of the range used in the literature; the sensitivity analysis with respect to $\mu$ in Subsection~\ref{subsec:sensitivity} brackets the strength of the human-capital channel.}
 Conditional on this allocation, the human-capital accumulation scale $\chi$ is determined from the accumulation equation to ensure the normalized steady-state value $H=1$.
 Following \citet{Anzoateguietal2019}, the steady-state adoption probability is set to $q^{SS}=0.05$ per quarter.
 This target implies an average adoption lag of $1/q^{SS}=20$ quarters, or five years.
