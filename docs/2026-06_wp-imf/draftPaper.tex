@@ -150,7 +150,13 @@ Closing spending-efficiency gaps not only generates additional output gains but 
 %     exactly, and the table note claims the reported estimates are the gaps
 %     used directly in the model. Set the macro to the database value at the
 %     next full re-run, or have the table report the calibrated value.
-% [4] Key parameters that remain unresolved (from
+% [4] PENDING RE-RUN: the R&D spending targets were raised to the GBARD
+%     values (Grdy = 0.007 AE / 0.002 EMDE in the parameter macros, and 0.7 /
+%     0.2 percent in the Section 3 text), but the committed results, tables,
+%     and figures still reflect the old 0.6 / 0.1 calibration. Re-run all
+%     models, regenerate the figure and table pipeline, and update the
+%     result-dependent text (R&D multipliers and experiments) accordingly.
+% [5] Key parameters that remain unresolved (from
 %     issues/literature-consistency.md): (a) the AE adoption elasticity
 %     varsigma=0.8 -- the sources use ~0.92-0.95, and 0.8 is Comin-Gertler's
 %     CREATION elasticity, so either recalibrate or justify the choice;
@@ -630,8 +636,8 @@ Annual real GDP growth provides an observable proxy for these calibrated trend-g
 Turning to spending, government consumption maps directly to $G_t^C$ and is calibrated at 17.7 percent of GDP for AEs and 14.7 percent for EMDEs.
 This category covers intermediate consumption, social transfers in kind, and compensation of government employees, including teachers, doctors, nurses, and other public workers.
 In the data, government investment includes infrastructure and human-capital-related investment and averages 3.9 percent of GDP for AEs and 4.9 percent for EMDEs.
-Baseline public R\&D spending is 0.6 percent of GDP for AEs and 0.1 percent for EMDEs.
-These targets are informed by the OECD data on government budget allocations for R\&D documented in Appendix~\ref{app:investmentComposition}.
+Baseline public R\&D spending is 0.7 percent of GDP for AEs and 0.2 percent for EMDEs.
+These targets correspond to the government budget allocations for R\&D documented in Appendix~\ref{app:investmentComposition}.
 
 As the model treats infrastructure and human capital as separate instruments, the government investment totals must be decomposed.
 The split uses the functional composition of government investment reported by \citet{OECD2025Glance}; Appendix~\ref{app:investmentComposition} describes the mapping in detail.
