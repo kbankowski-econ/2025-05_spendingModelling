@@ -76,5 +76,42 @@ Policy experiments and conclusion
       spending reforms, a natural next step." ("which constitutes" dropped as
       clunky).
 
-Still open from this review: the "Consistency points worth checking" section
-and the three additional comments in additionalComments.md.
+Consistency points worth checking
+
+C1. Fixed. The text uses "R&D spending" throughout; the only "R&D investment"
+    occurrences were three figure legends (standard-shock figures and the
+    human-capital mix figure). Legends renamed and figures regenerated.
+C2. Largely already consistent by design: "government investment" is the data
+    total (national accounts / OECD COFOG), "public investment" the literature
+    term, "infrastructure investment" the model instrument. One imprecise spot
+    fixed: the methods paragraph now says "Public infrastructure investment
+    builds productive capital ...".
+C3. No action. "50/50" is used uniformly; "one-half" never refers to the
+    policy mix.
+C4. Fixed. Section 5 endpoints unified to "by 2050" (matching the figures'
+    calendar axes); "25-year horizon" kept for the Section 4 multipliers and
+    "over 15/25 years" kept for gap-closure durations, which are durations,
+    not endpoints.
+C5. Confirmed and fixed. Main text, Appendix A, and the glossary all state
+    q_t = (q_0 + eps_t^q) S_t^sigma; the calibration text restated it without
+    the shock. It now references the equation and notes eps_t^q = 0 in steady
+    state.
+C6. Confirmed and clarified. The EMDE value 0.2 for the R&D efficiency gap in
+    the endogenous-variable glossary is a coding placeholder (eGRD_ss = 0.2 in
+    the EMDE macro); with alpha_RD excluded it enters no active equation. The
+    glossary appendix now says so, which reconciles it with the "--" entries
+    in the efficiency-gap and parameter tables.
+
+Additional comments (additionalComments.md)
+
+1. Sources. Not removed but reattributed: all 16 own-output figures and tables
+   now read "Source: Authors' estimates." (IMF working-paper convention; a
+   Source line is expected on every exhibit, so deletion would not survive the
+   WP review process). External data sources unchanged.
+2. Equation numbering. Main-text equations now numbered continuously from 1
+   (they run 1-31); appendix equations numbered A.1, A.2, ... The seven
+   previously unnumbered displays in the balanced-growth subsection are now
+   numbered. Appendix A's intermediate derivation steps remain unnumbered by
+   convention (only final or referenced equations carry numbers).
+3. Copilot typos. Covered by the ten definite corrections above (one commit
+   each).
