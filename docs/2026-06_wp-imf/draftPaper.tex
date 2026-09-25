@@ -78,15 +78,16 @@
 \fancyfoot[R]{\thepage}
 \usepackage{natbib}
 
-% Equations numbered continuously (1, 2, ...) in the main text; the appendix
-% switches to per-appendix numbering (A.1, A.2, ...) right after \appendix.
+% Equation numbering tied to section numbers
+\numberwithin{equation}{section}
 
 %----------------------------------------------------------------------------------------
 %       TITLE SECTION
 %----------------------------------------------------------------------------------------
-\title{\texorpdfstring{\vspace{-15mm}\fontsize{20pt}{24pt}\selectfont\textbf{Spending Smarter: A Model of Public Spending Allocation, Efficiency, and Long-Run Growth}}{Spending Smarter: A Model of Public Spending Allocation, Efficiency, and Long-Run Growth}}
+\title{\texorpdfstring{\vspace{-15mm}\fontsize{20pt}{24pt}\selectfont\textbf{Spending Smarter: A Model of Public Spending Allocation, Efficiency, and Long-Run Growth}\thanks{We thank Era Dabla-Norris, Davide Furceri, Zsuzsa Munkacsi, Marta Ruiz Arranz, Galen Sher, and Shu-Chun Susan Yang for helpful comments and suggestions. Disclaimer: The views expressed are those of the authors and do not necessarily represent the views of the IMF, its Executive Board, or IMF management.}%
+  }{Spending Smarter: A Model of Public Spending Allocation, Efficiency, and Long-Run Growth}}
 \author{
-\large {\textsc{\texorpdfstring{Krzysztof~Ba\'nkowski}{Krzysztof Bankowski}\footnote{International Monetary Fund. Email: kbankowski@imf.org. The views expressed are those of the authors and do not necessarily represent the views of the IMF, its Executive Board, or IMF management.}}}\\[2mm]
+\large {\textsc{\texorpdfstring{Krzysztof~Ba\'nkowski}{Krzysztof Bankowski}\footnote{International Monetary Fund. Email: kbankowski@imf.org.}}}\\[2mm]
 {\textsc{\texorpdfstring{Anh Dinh Minh Nguyen}{Anh Dinh Minh Nguyen}\footnote{International Monetary Fund. Email: ANguyen3@imf.org.}}}\\[2mm]
 }
 \date{August 2026}
@@ -101,17 +102,17 @@
 \end{center}
 
 \begin{abstract}
-By how much can a country raise long-run output by reallocating public spending toward more productive uses and by closing spending-efficiency gaps?
+How much can a country raise long-run output by reallocating public spending toward more productive uses and by closing spending-efficiency gaps? 
 This paper develops a model to answer that question, bringing together strands of the modelling literature that have so far been pursued in isolation.
 It combines the productive components of public spending---infrastructure, human capital, and R\&D---with household human-capital formation in an endogenous growth framework.
 All productive spending is adjusted for efficiency, so that only a fraction of each unit spent is converted into productive stocks.
 The model is parameterized separately for a representative advanced economy (AE) and a representative emerging market and developing economy (EMDE).
-Over a 25-year horizon, the implied output multipliers on permanent increases in productive spending are sizable---roughly 1.8 to 2.3 in AEs and 2.6 to 2.7 in EMDEs.
+Over a 25-year horizon, the implied output multipliers on permanent increases in productive spending are sizable---roughly 1.8 to 2.5 in AEs and 2.6 to 2.7 in EMDEs.
 Reallocating spending toward productive uses therefore delivers substantial long-run output gains, with infrastructure paying off sooner and human capital later. 
 A shift of 1 percent of GDP from government consumption to infrastructure raises 25-year output by 2.4 percent in AEs and 3.4 percent in EMDEs, compared with 4.3 and 5.6 percent when allocated to human capital.
 Comparable gains arise when spending is shifted toward R\&D in AEs, although their magnitude depends on the pace of technology diffusion.
-The reallocations also cut the 2050 debt-to-GDP ratio by about 7 to 9 percentage points.
-Closing spending-efficiency gaps not only generates additional output gains but also accelerates debt reduction, reinforcing fiscal sustainability.
+The reallocations also cut the 2050 debt-to-GDP ratio by about 7 to 10 percentage points.
+Closing spending-efficiency gaps not only generates additional output gains but also accelerates the debt reduction, reinforcing fiscal sustainability.
 \bigskip
 
 
@@ -123,14 +124,42 @@ Closing spending-efficiency gaps not only generates additional output gains but 
 \noindent\textbf{JEL Codes:} E62, H51, H52, H54, O38, O41
 
 % --- TODO (address before circulation) -----------------------------------
-% THIS LIST IS THE SINGLE SOURCE OF TRUTH FOR OPEN PAPER TODOs (decided
-% 2026-09-12). .sped.md's REMAINING section defers to it. Dropped by
-% decision, not to be re-added: separate depreciation rates for the two
-% public capital stocks; alternative fiscal-multiplier definitions.
-% No open items (2026-09-13). The varsigma=0.8 choice is kept and presented
-% as deliberately conservative relative to Anzoategui et al. (0.925) and
-% Comin-Gertler (0.95) in the calibration text; all other items in
-% issues/literature-consistency.md are resolved. Add new TODOs here.
+% [1] Assess the model-implied steady-state value E=0.157 against the
+%     literature: the implied allocation of time to education and health
+%     appears high. E is pinned by the household optimality conditions given
+%     L=1/3 and the calibrated beta, delta^h and gamma (Section
+%     \ref{sec:calibration}, "Steady-State Coefficients and Experiment
+%     Design"). Revisit the calibration if warranted.
+% [2] Consider normalizing public debt by final demand rather than gross
+%     output INSIDE the model. The code sets by = b/y (model_block.modpart:89).
+%     The REPORTED debt figures no longer depend on this: as of the
+%     ratio-measure change, every figure converts the exported by_yss into the
+%     change in b/(current annual yd) in post-processing
+%     (wp_charts.debt_to_ratio_change), i.e. debt over current final demand.
+%     Only the model-internal rule variable by still uses gross output y; the
+%     two coincide in steady state (v^p = 1), so the debt targets are
+%     unaffected and the remaining difference is second order. Switching the
+%     model variable means re-running all variants, hence deferred.
+% [3] Consider separate depreciation rates for the two public capital
+%     stocks. Equations (kgi) and (kge) now use the common delta, matching
+%     the code (model_block.modpart:80,83) and the glossary, which calls
+%     delta the depreciation rate of private and public physical capital.
+%     Infrastructure and school or hospital capital plausibly depreciate at
+%     different rates, so delta^GI and delta^GE could be introduced and
+%     calibrated separately; that requires new targets and a re-run.
+% [4] Document the source of the public R&D spending target (0.6 percent of
+%     GDP for AEs, 0.1 for EMDEs; Grdy in AE_parameters.macro:16 and
+%     EM_parameters.macro:16). Every other target in Table 2 is traceable to
+%     WEO, WoRLD, ILOSTAT or OECD (2025), and the table note says the R&D
+%     figure is NOT one of the GDP-weighted country-group means -- without
+%     saying what it is. It drives the R&D multiplier, so a referee will ask.
+% [5] Reconcile the AE infrastructure efficiency gap. Table 4 is generated
+%     from the efficiency database and shows 0.360, while the model is
+%     calibrated with eGI_ss=0.359 (models/AE_efficiency.macro) and the text
+%     quotes 35.9 percent. Every other cell in that table matches its macro
+%     exactly, and the table note claims the reported estimates are the gaps
+%     used directly in the model. Set the macro to the database value at the
+%     next full re-run, or have the table report the calibrated value.
 % -------------------------------------------------------------------------
 
 \clearpage
@@ -139,8 +168,8 @@ Closing spending-efficiency gaps not only generates additional output gains but 
 \end{abstract}
 
 \startcontents
-\pdfbookmark[1]{Table of Contents}{toc}
-\printcontents{ }{1}{\section*{Table of Contents}}
+\pdfbookmark[1]{Table of content}{toc}
+\printcontents{ }{1}{\section*{Table of content}}
 
 \thispagestyle{fancy}
 
@@ -159,12 +188,12 @@ With public debt elevated and fiscal space limited in many economies, the qualit
 Beyond the amount spent, two features of public budgets shape their long-run payoff.
 The first is \emph{allocation}: how spending is split between current consumption and growth-enhancing categories, such as investment in infrastructure, human capital, and innovation.
 The second is \emph{efficiency}: how much of each dollar spent is actually converted into productive stocks, as opposed to being lost through weak project selection, governance failures, and implementation slippage.
-In principle, both margins are under the government's control, and both can raise output without raising the deficit.
+Both margins are, in principle, under the government's control, and both can raise output without raising the deficit.
 Yet the existing literature evaluates them mostly in isolation and within frameworks that consider only a subset of the relevant spending instruments.
 
 % [2] RESEARCH QUESTION + CONTRIBUTION --- lead with our own contribution, then
 %     set it against others in one sentence (substitutes for a lit-review section).
-This paper develops a model to answer a concrete question: by how much can a country raise long-run output by reallocating public spending toward more productive uses and by closing spending-efficiency gaps?
+This paper develops a model to answer a concrete question: how much can a country raise long-run output by reallocating public spending toward more productive uses and by closing spending-efficiency gaps?
 The contribution is threefold.
 
 First, the proposed model integrates the entire expenditure side of fiscal policy: non-productive (consumption) and productive (infrastructure, human capital, and R\&D) spending.
@@ -172,10 +201,10 @@ These are embedded together with household human-capital formation in an endogen
 In this setting, both the allocation and the efficiency of spending are operative.
 
 Existing work typically covers only a subset of these channels.
-Public investment models, such as those of \citet{coenen2012effects}, \citet{TraumYang2015}, \citet{DrautzburgUhlig2015}, \citet{bergetal2012public}, and \citet{marto2018building}, feature a rich fiscal block and, in the latter two cases, an efficiency wedge, but treat productivity as exogenous and human capital as fixed.
+Public investment models, such as those of \citet{coenen2012effects}, \citet{TraumYang2015}, \citet{DrautzburgUhlig2015}, \citet{bergetal2012public}, and \citet{marto2018building}, feature a rich fiscal block and, in the last two cases, an efficiency wedge, but treat productivity as exogenous and human capital as fixed.
 By contrast, \citet{Atoliaetal2021} endogenize the household education margin and pose the infrastructure-versus-schools allocation question, but abstract from R\&D spending and the innovation channel.
 Finally, the creation-adoption framework developed by \citet{CominGertler2006} and \citet{Anzoateguietal2019} endogenizes technology but features only limited expenditure disaggregation.
-To our knowledge, this is the first model to incorporate different expenditure categories and efficiency wedges, particularly those affecting productive spending, within a unified framework.
+To our knowledge, this is the first attempt in which different expenditure categories and efficiency wedges (especially for productive spending components) are modelled within a unified framework. 
 That integration allows the model to speak to the horizon over which each type of spending pays off, to whether instruments substitute for or reinforce one another, and to how country characteristics shape the gains.
 
 Second, we extend the analysis of spending efficiency beyond public infrastructure investment to every productive category. 
@@ -186,13 +215,13 @@ We can therefore evaluate policy options that combine the two, such as reallocat
 Third, the model is parameterized separately for a representative advanced economy (AE) and a representative emerging market and developing economy (EMDE).
 The payoff to each instrument and the return to closing each gap can therefore be compared across country groups within one internally consistent framework.
 We do so by combining several sources of data, including the IMF's World Economic Outlook (WEO) and World Revenue Longitudinal Database (WoRLD), the ILO's labor statistics (ILOSTAT), and the functional composition of government investment reported by the OECD.
-The resulting database also supports country-specific applications of the model.
+The resulting database also supports applying the model to country-specific spending reforms.
 
 
 % [3] METHODS --- key features of the approach; the former strand-by-strand lit
 %     review folded in here as context (citations kept), not as a separate section.
 The model embeds these channels in an otherwise standard New Keynesian setting with endogenous growth.
-Public infrastructure investment builds productive capital---roads, communication networks---that raises private-sector productivity, in the tradition of the public-investment and output-multiplier literature \citep{TraumYang2015, DrautzburgUhlig2015, IMF2020FM}.
+Public investment builds productive infrastructure capital---roads, communication networks---that raises private-sector productivity, in the tradition of the public-investment and output-multiplier literature \citep{TraumYang2015, DrautzburgUhlig2015, IMF2020FM}.
 Households accumulate human capital by devoting time to education and health, complemented by a stock of public human capital such as schools and hospitals \citep{BlankenauSimpson2004, Dissouetal2016, Atoliaetal2021}.
 Growth is endogenous.
 Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model separates the stock of created technologies $Z_t$, available for adoption, from the stock of adopted technologies $A_t$ in use.
@@ -208,7 +237,7 @@ For EMDEs, we focus on infrastructure and human capital, reflecting the higher p
 
 Three sets of results follow.
 We first characterize the model's transmission properties through cumulative multipliers on permanent, debt-financed spending increases.
-We report the results separately for each instrument and compare them with the available evidence.\footnote{Most of the literature focuses on the fiscal multipliers of temporary (but persistent) spending increases, while our benchmark shock is permanent.}
+We report these instrument by instrument and set them against the available evidence.\footnote{Most of the literature focuses on the fiscal multipliers of temporary (but persistent) spending increases, while our benchmark shock is permanent.}
 
 
 Government consumption raises output on impact through demand but builds no productive capacity.
@@ -220,13 +249,13 @@ With a higher elasticity of 0.1, in line with our EMDE parameterization, the cor
 
 Human-capital investment (i.e., education and health spending) exhibits a non-monotonic path.
 The multiplier starts close to 0.9 in AEs and 1.1 in EMDEs, reflecting the initial increase in labor supply.
-It then falls to about 0.4--0.5 over a five-year horizon, before rising steadily to 1.9 in AEs and 2.7 in EMDEs at the 25-year horizon.
-While education and health spending multipliers are far less studied than infrastructure multipliers, this slow-building profile is consistent with \citet{Atoliaetal2021}.
+It then falls to about 0.4 over a five-year horizon, before rising steadily to 1.9 in AEs and 2.7 in EMDEs at the 25-year horizon.
+While education and health spending multipliers are far less studied than infrastructure, this slow-building profile is consistent with \citet{Atoliaetal2021}.
 Our short-term estimates are in line with \citet{furceri2012effects} and our long-term ones with \citet{reeves2013does}.\footnote{\citet{Atoliaetal2021} compare public investment in roads and in schools within a calibrated model of a low-income economy, and likewise find that education investment is dominated by infrastructure at medium horizons but delivers larger gains in the long run.
 \citet{furceri2012effects} find a short-term multiplier of health spending of 0.9 for a sample of OECD countries.
 \citet{reeves2013does} document multipliers for health and education spending of about 1.92 and 3.16, respectively, for 25 EU countries from 1995 to 2010 (Table 2 of their paper); they estimate a static specification in levels, so their coefficients are better interpreted as long-run associations than as short-run multipliers.}
 
-Public R\&D in AEs has the slowest start and the most steeply rising profile, reaching 0.9 at the 10-year horizon and 2.3 at the 25-year horizon, reflecting the two-stage structure in which technologies must first be created and then adopted before they raise productivity. 
+Public R\&D in AEs has the slowest start and the most steeply rising profile, reaching 0.9 at the 10-year horizon and 2.5 at the 25-year horizon, reflecting the two-stage structure in which technologies must first be created and then adopted before they raise productivity. 
 This ordering matches the long-sample evidence in \citet{antolin2025long}, whose output multiplier for public R\&D is below one at business-cycle frequencies but near 1.8 over 15 years.\footnote{\citet{antolin2025long} estimate a BVAR with long lags on 125 years of US data and newly reconstructed spending series disaggregated by category, and find that public R\&D raises innovation, productivity, and output persistently at long horizons.}
 
 The second set of results turns to the policy question posed above, evaluating reallocation options over a 25-year window.
@@ -234,9 +263,9 @@ Reallocating spending toward investment---an ex ante budget-neutral shift---rais
 Specifically, a budget-neutral permanent shift of 1 percent of GDP raises output by about 2.4 percent in AEs and 3.4 percent in EMDEs when directed to infrastructure from less productive government consumption, and by about 4.3 and 5.6 percent when directed to human capital.
 With primary spending ex ante unchanged and revenues rising with output, these shifts also reduce the debt-to-GDP ratio by about 7 to 8 percentage points by 2050.
 
-For AEs, which operate closer to the technology frontier, public R\&D offers a third destination: the same shift of 1 percent of GDP raises output by about 3.7 percent and delivers the largest debt reduction, about 9 percentage points.
-Combining instruments does better still: a 50/50 split between human capital and R\&D delivers about 4.6 percent by 2050, exceeding either alone, because R\&D expands the set of adoptable technologies while human capital both raises effective labor and feeds technology creation.
-The size of that complementarity depends heavily on diffusion: the same package yields 1.3 percent under slow adoption and 7.6 percent under fast adoption.
+For AEs, which operate closer to the technology frontier, public R\&D offers a third destination: the same shift of 1 percent of GDP raises output by about 4 percent and delivers the largest debt reduction, about 10 percentage points.
+Combining instruments does better still: a 50/50 split between human capital and R\&D delivers about 5 percent after 25 years, exceeding either alone, because R\&D expands the set of adoptable technologies while human capital both raises effective labor and feeds technology creation.
+The size of that complementarity depends heavily on diffusion: the same package yields 1.6 percent under slow adoption and 8 percent under fast adoption. 
 
 Finally, closing efficiency gaps delivers sizable additional gains.
 Gradually eliminating the estimated gaps over 25 years adds nearly 2 percent to output for infrastructure in AEs and about 1 percent for human capital and R\&D; in EMDEs, the gains are roughly 5 percent for infrastructure and 2 percent for human-capital investment.
@@ -252,7 +281,7 @@ Section~\ref{sec:properties} examines the model's properties, including the tran
 Section~\ref{sec:results} presents the policy experiments: reallocating expenditure, improving spending efficiency, and combining human capital with R\&D.
 Section~\ref{sec:conclusions} concludes.
 Appendix~\ref{app:equilibrium} provides the analytical derivations and Appendix~\ref{app:glossary} the model equations and notation.
-Further appendices document the composition of government investment and public R\&D funding, the spending-efficiency estimates, robustness to model structure, results for persistent temporary shocks, and detailed responses to the policy experiments.
+Further appendices document the composition of government investment, the spending-efficiency estimates, robustness to model structure, results for persistent temporary shocks, and detailed responses to the policy experiments.
 
 %========================================================================
 \section{The Model} \label{sec:model}
@@ -335,7 +364,7 @@ Equation~\eqref{eq:edutime} values an additional hour of education by the human 
 
 \subsection{Production and Technology}
 
-The production side departs from the textbook New Keynesian framework in several respects.
+The production side departs from a textbook New Keynesian framework along several dimensions.
 First, it separates price setting from real production: retailers set sticky prices, while intermediate producers determine unit factor cost and sell to retailers at a fixed gross markup.
 In this structure, unit factor cost and retail marginal cost are not equivalent; the wedge between them generates residual profits that accrue to the owners of adopted technologies.
 Second, production depends on human capital through effective labor, $N_t = H_{t-1}L_t$, rather than hours alone, while public infrastructure augments productive capacity.
@@ -417,12 +446,12 @@ The productivity payoff of the adopted-technology stock $A_t$ is realized in the
 
 \subsection{Government: Fiscal and Monetary Policy}
 
-The fiscal authority determines the composition and financing of public spending while ensuring public-debt stability.
+The fiscal authority determines the composition of public spending and how it is financed while public debt is stabilized.
 It can also improve the productivity of spending by narrowing the efficiency gaps, which measure the fraction of investment and R\&D outlays not converted into productive capital or technology.
 The monetary authority sets the nominal interest rate faced by the government.
 
 \paragraph{Government budget.}
-Let $B_t$ denote real public debt and $b_t=B_t/Y_t^{d}$ the debt-to-GDP ratio, with debt measured relative to final demand as in the data.
+Let $B_t$ denote real public debt and $b_t=B_t/Y_t$ the debt-to-GDP ratio.
 Current debt equals the real value of inherited debt plus the primary deficit:
 \begin{equation} \label{eq:govbudget}
     B_t = \frac{R_{t-1}}{\Pi_t} B_{t-1} + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + T_t - \tau_t^{w} w_t N_t - \tau_t^{c} C_t,
@@ -451,7 +480,7 @@ Only the fraction $1-e_t^x$ of an investment flow becomes productive capital, so
 The R\&D gap operates analogously: only the productive fraction $\left(1-e_{t-1}^{GRD}\right)\hat{G}_{t-1}^{RD}$ enters technology creation in equation~\eqref{eq:Z}.
 
 \paragraph{Tax rules, fiscal closure, and experiment financing.}
-The consumption and labor-income tax rates remain at their steady-state values unless perturbed by their respective tax-rate shocks:
+The consumption- and labor-income-tax rates equal their steady-state values unless perturbed by their respective tax-rate shocks:
 \begin{equation} \label{eq:taxrules}
     \tau_t^j = \tau^j + \varepsilon_t^{\tau j}, \qquad j\in\{c,w\}.
 \end{equation}
@@ -482,9 +511,9 @@ Final demand is allocated across private consumption and investment, the four pu
     Y_t^{d} = C_t + I_t + G_t^{C} + I_t^{GI} + I_t^{GE} + G_t^{RD} + \mathcal{R}_t.
 \end{equation}
 Here $\mathcal{R}_t$ is the aggregate resource cost of adoption, with stationary counterpart
-\begin{equation} \label{eq:adoptioncost}
+\[
     \hat{\mathcal{R}}_t=\left(\frac{\hat{Z}_{t-1}}{\hat{A}_{t-1}}-1\right)\hat{S}_t.
-\end{equation}
+\]
 The cost is stationary adoption expenditure $\hat{S}_t$ scaled by the stock of unadopted technologies relative to adopted ones.
 As in a standard New Keynesian model with Calvo price setting, the price-dispersion index $v_t^{p}$ makes the gross production required to satisfy a given level of final demand exceed that demand, so $Y_t = v_t^{p}Y_t^{d}$.
 A competitive equilibrium is a sequence of quantities and prices such that households, producers, retailers, and adopters optimize; fiscal and monetary policy rules hold; and the goods, labor, capital, and bond markets clear for given paths of the exogenous processes.
@@ -493,50 +522,50 @@ A competitive equilibrium is a sequence of quantities and prices such that house
 
 The economy is solved around the technology-driven balanced-growth path described at the beginning of this section.
 For output, private capital, and public infrastructure capital to share the real trend, production requires the gross growth rate of the technology trend to satisfy\footnote{Private capital and public infrastructure capital both grow at $g$ and enter with elasticities $\alpha$ and $\alpha_G$, contributing $g^{\alpha}$ and $g^{\alpha_G}$ to gross output growth, while effective labor is stationary. The love-of-variety term must supply the remaining $g^{1-\alpha-\alpha_G}$, implying technology-stock growth of $g^{(1-\alpha-\alpha_G)/(\vartheta-1)}$.}
-\begin{equation} \label{eq:techtrend}
+\[
     1+\gamma^a\equiv\frac{\Gamma_t}{\Gamma_{t-1}}
     =g^{(1-\alpha-\alpha_G)/(\vartheta-1)}.
-\end{equation}
+\]
 Under the stock convention, the inherited inputs used in date-$t$ production are scaled by the corresponding date-$t$ trends: $\hat K_{t-1}=K_{t-1}/\Lambda_t$, $\hat K_{t-1}^{GI}=K_{t-1}^{GI}/\Lambda_t$, and $\hat A_{t-1}=A_{t-1}/\Gamma_t$.
 The stationary production function is therefore
-\begin{equation} \label{eq:prodstat}
+\[
     \hat{Y}_t = \hat{A}_{t-1}^{\vartheta-1} \hat K_{t-1}^{\alpha} \left( \hat K_{t-1}^{GI}\right)^{\alpha_G} N_t^{1-\alpha}.
-\end{equation}
+\]
 
 Equations involving only contemporaneous common-trend flows retain their level-form appearance.
 The resource constraint, for example, becomes
-\begin{equation} \label{eq:resourcestat}
+\[
     \hat{Y}_t^{d}=\hat{C}_t+\hat{I}_t+\hat{G}_t^{C}
     +\hat{I}_t^{GI}+\hat{I}_t^{GE}+\hat{G}_t^{RD}+\hat{\mathcal{R}}_t.
-\end{equation}
+\]
 The same principle applies to contemporaneous accounting identities and static optimality conditions: every trending object is replaced by its stationary counterpart, while the common trend cancels.
 
 Equations linking common-trend variables across dates retain the gross growth factor $g$.
 Physical-capital accumulation places the growth factor on the newly chosen stationary stock,
-\begin{equation} \label{eq:capstat}
+\[
     g\hat{K}_t=(1-\delta)\hat{K}_{t-1}+\hat{I}_t,
-\end{equation}
+\]
 and the same adjustment applies to both public physical-capital stocks.
 Human capital requires no such adjustment because $H_t$ is stationary by construction.
 The model normalizes public debt by the current real trend, $\hat B_t=B_t/\Lambda_t$.
 Its stationary budget constraint therefore divides inherited debt by $g$, preserving a stationary debt-to-output ratio.
 Intertemporal optimality conditions place the growth adjustment in the discount term.
 For example, the bond Euler equation becomes
-\begin{equation} \label{eq:eulerstat}
+\[
     \hat{\lambda}_t = \beta\,\mathbb{E}_t\!\left[
     \hat{\lambda}_{t+1}\frac{R_t}{g\Pi_{t+1}}\right].
-\end{equation}
+\]
 Level marginal utility moves inversely with the real trend, so its stationary counterpart is $\hat{\lambda}_t=\Lambda_{t}\lambda_t$.
 Accordingly, the growth-adjusted discount factor used in the stationary technology block is $\mathit{SDF}_{t+1}=\beta\hat\lambda_{t+1}(1+\tau_{t+1}^c)/[\hat\lambda_t(1+\tau_t^c)]$.
 Aggregate technology values and adoption expenditure follow the flow convention and are divided by $\Lambda_t$.
 
 The technology stocks require a distinct adjustment because they grow with $\Gamma_t$.
 Using $\hat A_t=A_t/\Gamma_{t+1}$ and $\hat Z_t=Z_t/\Gamma_{t+1}$, the level adoption equation becomes
-\begin{equation} \label{eq:adoptstat}
+\[
     (1+\gamma^a)\hat{A}_t
     =q_t\phi\left(\hat{Z}_{t-1}-\hat{A}_{t-1}\right)
     +\phi\hat{A}_{t-1}.
-\end{equation}
+\]
 The continuation terms in the technology value functions correspondingly carry $1/(1+\gamma^a)$, while the adoption probability depends on stationary expenditure $\hat{S}_t$.
 Technology creation is specified directly in ratios of stationary stocks to their steady-state values, so it requires no additional growth factor.
 
@@ -602,8 +631,7 @@ Annual real GDP growth provides an observable proxy for these calibrated trend-g
 Turning to spending, government consumption maps directly to $G_t^C$ and is calibrated at 17.7 percent of GDP for AEs and 14.7 percent for EMDEs.
 This category covers intermediate consumption, social transfers in kind, and compensation of government employees, including teachers, doctors, nurses, and other public workers.
 In the data, government investment includes infrastructure and human-capital-related investment and averages 3.9 percent of GDP for AEs and 4.9 percent for EMDEs.
-Baseline public R\&D spending is 0.7 percent of GDP for AEs and 0.2 percent for EMDEs.
-These targets correspond to the government budget allocations for R\&D documented in Appendix~\ref{app:investmentComposition}.
+Baseline public R\&D spending is 0.6 percent of GDP for AEs and 0.1 percent for EMDEs.
 
 As the model treats infrastructure and human capital as separate instruments, the government investment totals must be decomposed.
 The split uses the functional composition of government investment reported by \citet{OECD2025Glance}; Appendix~\ref{app:investmentComposition} describes the mapping in detail.
@@ -611,7 +639,7 @@ The OECD dataset covers a narrower set of economies than the WEO-based sample bu
 In both country groups, about two-thirds of government investment goes to infrastructure and about one-third to human capital.
 Infrastructure investment is therefore 2.6 percent of GDP for AEs and 3.4 percent for EMDEs, while public human-capital investment---including capital spending on schools and hospitals---is 1.3 and 1.5 percent.
 
-Turning to tax rates, both implicit rates follow the effective average tax approach of \citet{MendozaRazinTesar1994}, which divides the revenue raised from a category by its corresponding base.
+Turning to tax rates, both implicit rates follow the effective-average-tax approach of \citet{MendozaRazinTesar1994}, which divides the revenue raised from a category by its corresponding base.
 The implicit consumption tax rate is 15.1 percent for AEs and 11.6 percent for EMDEs.
 Its numerator is general sales taxes and excises, and its base is private consumption plus government consumption excluding employee compensation, net of those taxes.
 The labor-income tax rate is 30.9 and 14.0 percent, respectively.
@@ -660,7 +688,7 @@ Spending shares are relative to quarterly GDP, while implicit tax rates are meas
 Each productive-spending category operates through a distinct propagation mechanism, and the country-specific calibration reflects differences in initial productive stocks and innovation capacity.
 Infrastructure investment builds public capital; human-capital investment raises workforce skills.
 The EMDE calibration assigns higher elasticities to both channels, reflecting higher marginal returns to infrastructure and the greater structural importance of publicly provided education and health inputs.
-The technology block operates differently across the two calibrations: AEs feature endogenous technology creation through human capital and public R\&D, whereas EMDEs adopt from an exogenously expanding technology frontier.
+The technology block differs in nature: AEs feature endogenous technology creation through human capital and public R\&D, whereas EMDEs adopt from an exogenously expanding technology frontier.
 Adoption remains endogenous in both calibrations, but is less responsive to expenditure in EMDEs.
 Table~\ref{tab:parameters} summarizes the structural parameters governing these channels in the two country-group calibrations.
 
@@ -672,7 +700,7 @@ Table~\ref{tab:parameters} summarizes the structural parameters governing these 
     \input{parametersTable.tex}
 
 \vspace{1mm}
-\tabnote{Authors' estimates; see references in the text.}{Parameters for the representative AE and EMDE calibrations.
+\tabnote{IMF staff estimates; see references in the text.}{Parameters for the representative AE and EMDE calibrations.
 ``--'' marks technology-creation parameters that are inactive for EMDEs.
 The EMDE calibration instead retains endogenous adoption, with $\varsigma=0.10$, so existing unadopted technologies can diffuse into production even though human capital and public R\&D do not expand the created-technology stock.}
 \end{table}
@@ -692,18 +720,17 @@ The elasticity with respect to time spent accumulating human capital is $\gamma=
 The endogenous technology-creation process described in Section~\ref{sec:model}, through which learning by doing and effective public R\&D expand the created-technology stock, is active only in the AE calibration.
 For EMDEs, the created-technology stock instead follows an exogenous balanced-growth path with gross growth rate $1+\gamma^a$.
 Within the AE calibration, $\rho_A$ is set at 0.79 quarterly, following the persistence estimate in \citet{ChangGomesSchorfheide2002}.
-Given this persistence, the human-capital elasticity reported in Table~\ref{tab:parameters} translates into a per-quarter loading of $(1-\rho_A)\alpha_{HA}=0.10$ for the learning-by-doing channel, close to the corresponding quarterly loading of 0.111 estimated by \citet{ChangGomesSchorfheide2002}.
+Given this persistence, the human-capital elasticity reported in Table~\ref{tab:parameters} translates into a per-quarter loading of $(1-\rho_A)\alpha_{HA}=0.10$ for the learning-by-doing channel.
 The public R\&D elasticity similarly translates into a per-quarter loading of $(1-\rho_A)\alpha_{RD}=0.0189$, remaining close to the R\&D impact estimates in \citet{FieldhouseMertens2023}.
 
 Technology adoption is endogenous and follows the same structure in both calibrations.
-Following \citet{Anzoateguietal2019}, the quarterly technology-survival rate is $\phi=0.98$ for both country groups, corresponding to an annual obsolescence rate of about 8 percent.
-The elasticity of the adoption probability with respect to adoption spending, $\varsigma$, is set at 0.8 for AEs and 0.1 for EMDEs.
-The AE value is deliberately conservative relative to the estimates of 0.925 in \citet{Anzoateguietal2019} and 0.95 in \citet{CominGertler2006}; the technology-diffusion experiment in Subsection~\ref{subsec:hcrd} shows how stronger adoption responsiveness amplifies the gains.
+Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the quarterly technology-survival rate is $\phi=0.98$ for both country groups, corresponding to an annual obsolescence rate of about 8 percent.
+The elasticity of the adoption probability with respect to adoption spending, $\varsigma$, is set at 0.8 for AEs, following  \cite{cloyne2022short}'s estimate, and 0.1 for EMDEs.
 The lower EMDE value preserves endogenous diffusion of the existing stock of unadopted technologies while making the adoption probability less responsive to adoption expenditure.
 
 \subsection{Spending-Efficiency Gaps}
 
-The inefficiency parameters are treated separately because they are central to the spending-efficiency experiments.
+The inefficiency parameters deserve separate treatment, as they are central to the spending-efficiency experiments.
 The efficiency gaps are set based on the empirical estimates of spending efficiency in \citet{Bankowskietal2026}, separately for each productive spending category.
 Table~\ref{tab:efficiencyGaps} reports how these gaps are constructed from the underlying 2023 efficiency estimates; Appendix~\ref{app:efficiency} plots their full time series by income group.
 
@@ -721,7 +748,7 @@ Public R\&D spending remains in the EMDE government budget but does not affect t
 
     \vspace{1mm}
     \tabnote{\citet{Bankowskietal2026}.}{Spending-efficiency gaps (one minus the efficiency score), 2023 values.
-The AE column reports the median across advanced economies; the EMDE column averages the emerging-market and low-income medians; the human-capital gap is the average of the health and education gaps.
+The advanced-economy column uses the advanced-economy median across economies; the EMDE column averages the emerging-market and low-income medians; the human-capital gap is the average of the health and education gaps.
 The public-R\&D technology-creation channel is inactive for EMDEs.
 The ``--'' entries in the Symbol column indicate that health and education are empirical components used to construct $e^{GE}$ rather than separate model objects.
 Figure~\ref{fig:efficiencyBands} in the appendix plots these gaps over time by income group, from which the 2023 medians used here are taken.
@@ -733,15 +760,13 @@ These estimates are the efficiency gaps used directly in the model.}
 Three scale parameters are solved jointly with the steady state rather than selected directly, allowing the model to implement its steady-state targets, normalizations, and optimality conditions.
 Following a standard normalization in quarterly DSGE models, as in \citet{Cantoreetal2017}, steady-state labor supply equals one-third of the available time endowment, $L=1/3$.
 The labor-disutility scale $\omega$ is determined internally to implement this target.
-The household optimality conditions imply $E=0.157$ given $L=1/3$ and the calibrated values of $\beta$, $\delta^h$, and $\gamma$.\footnote{The implied allocation is best read at the level of the dynastic household, whose time endowment includes its schooling-age members.
-Education and health time of about one-third of combined work and education time is then in line with the ratio of expected years of schooling to years of working life.
-The value also reflects the human-capital depreciation rate $\delta^h$, which lies at the upper end of the range used in the literature; the sensitivity analysis with respect to $\mu$ in Subsection~\ref{subsec:sensitivity} brackets the strength of the human-capital channel.}
+The household optimality conditions imply $E=0.157$ given $L=1/3$ and the calibrated values of $\beta$, $\delta^h$, and $\gamma$.
 Conditional on this allocation, the human-capital accumulation scale $\chi$ is determined from the accumulation equation to ensure the normalized steady-state value $H=1$.
 Following \citet{Anzoateguietal2019}, the steady-state adoption probability is set to $q^{SS}=0.05$ per quarter.
 This target implies an average adoption lag of $1/q^{SS}=20$ quarters, or five years.
-The scale $q_0$ in the adoption-probability equation~\eqref{eq:qmain} is determined internally so that this target is attained in the steady state, where $\varepsilon_t^{q}=0$.
+The scale $q_0$ in $q_t=q_0(\hat{S}_t)^{\varsigma}$ is determined internally so that the adoption-probability equation attains this target in the steady state.
 
-While the three scale parameters are determined as part of the steady-state solution, the technology-growth rate is implied by trend output growth according to $1+\gamma^a=g^{(1-\alpha-\alpha_G)/(\vartheta-1)}$.
+Whereas the three scale parameters are determined within the steady state, the technology-growth rate is implied by trend output growth according to $1+\gamma^a=g^{(1-\alpha-\alpha_G)/(\vartheta-1)}$.
 At zero steady-state inflation, the steady-state nominal interest rate satisfies $R^{SS}=g/\beta$.
 Appendix~\ref{app:glossary} reports the resulting values of the internally calibrated scales and all derived steady-state objects.
 The size, duration, and persistence of the exercises described in Sections~\ref{sec:properties} and~\ref{sec:results} are specified through the paths of the relevant exogenous shocks.
@@ -771,7 +796,7 @@ As a component of aggregate demand, its permanent increase raises total output.
 At the same time, forward-looking households anticipate that the additional debt will eventually require lower lump-sum transfers.
 The resulting negative wealth effect crowds out private consumption and raises labor supply.
 The latter supports output even though government consumption does not add directly to productive capacity.
-Setting aside the initial adjustment, the output gain reaches about 0.6 percent by the end of the reported horizon.
+Setting aside the initial adjustment, the output gain reaches around one-half of a percent by the end of the horizon shown.
 Turning to price dynamics, real marginal cost rises on impact: the inherited capital stock cannot adjust, so higher demand raises labor relative to capital.
 Calvo price setters pass this increase into inflation.
 The monetary-policy rule raises the nominal interest rate in response to both inflation and the markup-based proxy for the flex-price output gap.\footnote{Appendix~\ref{app:simplified} shows that inflation disappears exactly when private capital and its factor-demand conditions are removed; in the resulting labor-only model, the permanent expansion leaves real marginal cost and inflation unchanged.}
@@ -784,7 +809,7 @@ Their distinguishing effects arise from the assets they create and how quickly t
 \emph{Infrastructure investment} builds public capital from the outset.
 Because this stock enters production directly through equation~\eqref{eq:production}, it raises productivity sooner than the other productive instruments and eventually crowds in private investment and consumption.
 Although the labor-supply response is of a similar order of magnitude to that under government consumption, the output gain is substantially larger.
-By the end of the reported horizon, output is about 3 percent above its steady-state level, compared with about 0.6 percent under government consumption.
+By the end of the horizon shown, output is around 3 percent above its steady-state level, compared with around one-half of a percent under government consumption.
 The greater pressure on the inherited capital stock produces a larger impact increase in real marginal cost and inflation than under government consumption.
 The gains in economic activity also broaden the tax bases, gradually narrowing the primary deficit and slowing debt accumulation relative to government consumption.
 
@@ -804,7 +829,7 @@ The larger tax base nearly closes the primary deficit by that point, although th
 It first expands the stock of technologies available for adoption, after which private adoption converts them into technologies used in production (equations~\ref{eq:Z} and~\ref{eq:A}).
 Because this instrument does not quickly add to productive capacity, output briefly dips while new technologies are being adopted.
 Demand pressures therefore persist while spending continues, and inflation becomes the strongest among all instruments for many years.
-Thereafter, however, output increases substantially, reaching about 4.3 percent above its steady-state level by the end of the horizon.
+What follows, however, is a powerful boost to output, which rises to around 4.5 percent above its steady-state level by the end of the horizon.
 The resulting gains in economic activity benefit public finances, eliminating the primary deficit by the end of the reported horizon.
 Public debt is consequently lower than under the other spending increases.
 
@@ -812,7 +837,7 @@ Public debt is consequently lower than under the other spending increases.
     \centering
     \caption{Transmission of Permanent Public-Spending Increases: Advanced Economies \label{fig:standardShocks}}
     \includegraphics{figures/standardShocksAEPerm.pdf}
-    \source{Authors' estimates.}
+    \source{IMF staff estimates.}
     \desc{Impulse responses to four debt-financed permanent increases, each equal to 1 percent of GDP in one spending category with no offsetting cut, as listed in the legend.
 Circles mark first-quarter impact responses.
 The log-transformed quarterly axis expands the early response horizon.
@@ -820,7 +845,7 @@ All panels report deviations from the steady state, calculated by block.
 Panels in the top three rows are percent deviations from the steady-state level.
 The real marginal-cost panel uses the same units.
 Inflation and the nominal and real interest rates are annualized percentage-point deviations, calculated as the change in the gross quarterly rate multiplied by 400.
-Fiscal flows are deviations in percentage points of quarterly steady-state GDP; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured relative to current annual GDP.
+Fiscal flows are deviations in percentage points of quarterly steady-state GDP; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.
 The real interest rate is the nominal interest rate deflated by inflation.}
 \end{figure}
 
@@ -839,7 +864,7 @@ The multiplier therefore converges only gradually toward its long-run value.
 Permanent spending increases yield cumulative multipliers that vary across instruments, horizons, and country-group calibrations (Table~\ref{tab:multipliers}).
 The spending instruments exhibit distinct dynamic profiles:
 \begin{inparaenum}[(i)]
-\item \emph{Government consumption} provides a useful benchmark because it is the standard fiscal instrument.
+\item \emph{Government consumption} provides a natural reference point because it is the standard fiscal instrument.
 It raises output from the outset by adding to demand.
 Because it does not expand productive capacity, its multiplier stays between 0.2 and 0.4 throughout.
 \item \emph{Infrastructure investment}, by contrast, has a different profile.
@@ -848,11 +873,11 @@ Over two decades, the cumulative multiplier expands severalfold, to 1.6--2.4.
 \item \emph{Human-capital investment} has a strong short-run multiplier of 0.9--1.1, supported by the initial increase in labor supply.
 After some initial weakening, human-capital accumulation yields a large multiplier of 1.9--2.7 by the 25-year horizon.
 \item \emph{R\&D} starts more slowly, at 0.1 on impact, because technologies must first be created and then adopted.
-Its multiplier then rises to 2.3 by the 25-year horizon.
+Its multiplier then rises to 2.5 by the 25-year horizon.
 \end{inparaenum}
 By the 25-year horizon, human-capital investment overtakes infrastructure, and public R\&D overtakes both.
 At medium horizons, the productive-spending multipliers are broadly in line with empirical estimates of public-investment and R\&D multipliers \citep{Ramey2020, AfonsoRodrigues2024, FieldhouseMertens2023}.
-The multiplier profiles are still rising at that horizon, reflecting the durability of the productive stocks these instruments create.
+Their profiles are still rising at that point, reflecting the durability of the productive stocks these instruments create.
 
 The differences across country groups reveal the role of productive capacity in the model.
 The multiplier for government consumption, which relies on demand channels, is broadly similar across the two calibrations at short and medium horizons, at about 0.3 after ten years.
@@ -868,7 +893,7 @@ The absence of an EMDE R\&D multiplier reflects a different source of technology
     \input{multipliersTablePermanent.tex}
 
     \vspace{1mm}
-    \tabnote{Authors' estimates.}{Present-value cumulative output gain per unit of additional spending at the 1-, 5-, 10-, 20-, and 25-year horizons, for a permanent 1-percent-of-GDP debt-financed increase in each spending category, with no offsetting cut to other spending.
+    \tabnote{IMF staff estimates.}{Present-value cumulative output gain per unit of additional spending at the 1-, 5-, 10-, 20-, and 25-year horizons, for a permanent 1-percent-of-GDP debt-financed increase in each spending category, with no offsetting cut to other spending.
 Formally, the $N$-year multiplier is $\left(\sum_{t=1}^{4N}\beta^{t}\,\Delta \hat{Y}_t\right)\big/\left(\sum_{t=1}^{4N}\beta^{t}\,\Delta \hat{G}_t\right)$, where $\Delta \hat{Y}_t$ and $\Delta \hat{G}_t$ are the deviations of stationary output and of the stationary spending category from steady state and $\beta$ is the model's discount factor (so flows are discounted at the steady-state real interest rate).
 The smaller colored rows beneath each full-model estimate report partial-model variants.
 Green rows remove human capital, blue rows remove endogenous technology, and red rows remove both channels.
@@ -888,7 +913,7 @@ Their quantitative importance can therefore be assessed by asking how much each 
 
 Both blocks are fundamental to the effects of their associated instruments.
 Once the relevant productive channel is removed, additional human-capital or R\&D spending becomes equivalent to wasteful government consumption within the corresponding partial model (Table~\ref{tab:multipliers}).
-At the 25-year horizon, the human-capital channel contributes 1.5 points to the AE human-capital investment multiplier of 1.9 and 2.5 points to the EMDE multiplier of 2.7.
+At the 25-year horizon, the human-capital channel contributes 1.6 points to the AE human-capital investment multiplier of 1.9 and 2.5 points to the EMDE multiplier of 2.7.
 Endogenous technology contributes 2.1 points to the AE public-R\&D multiplier of 2.5.
 Their effects on the other spending instruments are considerably smaller: removing both channels lowers the government-consumption and infrastructure multipliers by only 0.1 to 0.2.
 Integrating the two channels is therefore essential for capturing the sustained gains from human-capital and R\&D spending, while their effects on the more standard fiscal instruments remain comparatively limited.
@@ -903,7 +928,7 @@ The R\&D response scales with the elasticity of technology creation with respect
 
 Figure~\ref{fig:sensitivity} illustrates this sensitivity by tracing the output response to each permanent productive expansion as its relevant elasticity is varied over an illustrative range.
 The ranges bracket the country-group calibrations and nearby values supported by the literature discussed in Subsection~\ref{subsec:productive-calibration}.
-At the 25-year horizon, the output response spans about 1.9 to 7.4 percent for infrastructure, 2.7 to 9.5 percent for human capital, and 2.6 to 5.9 percent for R\&D.
+At the 25-year horizon, the output response spans about 1.9 to 7.4 percent for infrastructure, 2.7 to 9.5 percent for human capital, and 2.8 to 6.5 percent for R\&D.
 The timing of the gains is robust across these ranges.
 Infrastructure begins to pay off earliest and then builds gradually.
 Human-capital investment produces a short-lived impact gain before larger benefits emerge over time.
@@ -918,7 +943,7 @@ These parameter differences help account for the larger EMDE multipliers reporte
     \centering
     \caption{Sensitivity of Output Responses to Structural Parameters under Permanent Spending Increases: Advanced Economies \label{fig:sensitivity}}
     \includegraphics{figures/sensitivityIRF_AEPerm.pdf}
-    \source{Authors' estimates.}
+    \source{IMF staff estimates.}
     \desc{Output responses (percent deviation from steady state) to a debt-financed permanent increase of 1 percent of GDP with no offsetting cut, as one structural parameter is varied over a range that brackets the calibrated and nearby literature values.
 Each panel pairs one spending category with the elasticity governing its productive channel: infrastructure with $\alpha_G$, human capital with $\mu$, and R\&D with $\alpha_{RD}$.
 In each panel the lines run from the low (light) to the high (dark) value of the parameter, with each line labeled by its parameter value at the right.
@@ -937,7 +962,7 @@ Hence, it expands productive capacity without an additional budgetary cost.
 Comparing permanent efficiency improvements with matched increases in productive spending reveals partly different transmission channels behind similar output effects (Figure~\ref{fig:efficiencyAE}).
 Each efficiency improvement is calibrated to match the increase in effective productive inputs generated by a debt-financed permanent spending increase of 0.25 percent of GDP.\footnote{Matching a 1-percent-of-GDP increase would require negative efficiency gaps for some instruments; the smaller 0.25-percent-of-GDP experiment is therefore used for illustration.}
 For instrument $x$, this requires eliminating waste equal to $(1-e^{x,SS})\times0.25$ percent of GDP.
-For AEs, the infrastructure gap narrows by approximately 6.2 percentage points from an initial 36.0 percent and the human-capital gap by 13.6 points from 30.6 percent.
+For AEs, the infrastructure gap narrows by approximately 6.2 percentage points from an initial 35.9 percent and the human-capital gap by 13.6 points from 30.6 percent.
 The R\&D gap narrows by 25.0 percentage points from an initial 39.9 percent.
 For EMDEs, the infrastructure gap narrows by 4.4 percentage points from 40.6 percent and the human-capital gap by 11.1 points from 32.9 percent.
 No EMDE R\&D response is reported because technology creation is inactive in that calibration.
@@ -955,7 +980,7 @@ The output gains are larger in EMDEs, reflecting stronger calibrated productive-
     \centering
     \caption{Transmission of Matched Permanent Spending and Efficiency Improvements \label{fig:efficiencyAE}}
     \includegraphics{figures/efficiencyAE_yd.pdf}
-    \source{Authors' estimates.}
+    \source{IMF staff estimates.}
     \desc{Solid lines report the benchmark impulse responses to permanent 0.25-percent-of-GDP spending increases in the AE calibration, financed through debt with no offsetting cut.
 Dotted lines report AE efficiency improvements calibrated to generate the same increase in effective productive spending, with spending levels unchanged.
 Dashed lines report the corresponding matched EMDE efficiency improvements for infrastructure and human capital.
@@ -963,7 +988,7 @@ The EMDE R\&D response is omitted because technology creation is inactive in tha
 Circles mark first-quarter effects, and the log-transformed quarterly axis expands the early response horizon.
 Columns distinguish the three spending instruments, while rows report output, consumption, the primary deficit, and public debt.
 Output and consumption are percent deviations from steady-state levels.
-The primary deficit is reported against quarterly steady-state GDP in percentage-point deviations; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured relative to current annual GDP.
+The primary deficit is reported against quarterly steady-state GDP in percentage-point deviations; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.
 The three panels within each row share a common vertical scale.}
 \end{figure}
 
@@ -1003,18 +1028,18 @@ The fall in the debt-to-GDP ratio is modest through 2040 but gains momentum afte
 
 \emph{Public R\&D} offers AEs another route to larger long-run gains through technology creation and adoption.
 It does not raise output initially, but its long-run effects are sizable.
-By 2050, the reallocation raises output by about 3.7 percent, approaching the gain from human-capital investment.
+By 2050, the reallocation raises output by about 4 percent, broadly matching the gain from human-capital investment.
 Created technologies first accumulate in the stock awaiting adoption and then diffuse into production.
 Although this two-stage process delays the payoff, R\&D generates material gains sooner than human-capital investment at medium horizons.
-The earlier arrival of gains also compounds into the largest debt reduction among the three instruments, leaving the debt-to-GDP ratio about 9 percentage points lower by 2050.
+The earlier arrival of gains also compounds into the largest debt reduction among the three instruments, leaving the debt-to-GDP ratio about 10 percentage points lower by 2050.
 
 \begin{figure}[H]
     \centering
     \caption{Reallocation of Expenditure \label{fig:reallocation}}
     \includegraphics{figures/reallocation_yd.pdf}
-    \source{Authors' estimates.}
+    \source{IMF staff estimates.}
     \desc{Responses to a permanent increase of 1 percent of GDP in the expenditure categories listed in the legend, funded by a cut in public consumption.
-    Output is reported as a percent deviation from steady state; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured relative to current annual GDP.}
+    Output is reported as a percent deviation from steady state; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.}
 \end{figure}
 
 \subsection{Improving Spending Efficiency} \label{subsec:policyEfficiency}
@@ -1025,7 +1050,7 @@ The experiments therefore combine the reallocations above with a gradual closure
 
 For AEs, closing the gaps over 25 years adds nearly 2 percent to output for infrastructure investment and about 1 percent for human-capital investment and R\&D (Figure~\ref{fig:policyEfficiency}, panel~a).
 Differences across instruments reflect both the calibrated gap sizes and the mechanisms through which effective spending builds productive stocks.
-The model assumes that efficiency improvements entail no direct resource or implementation costs.
+The model treats the efficiency improvements themselves as costless.
 They are therefore particularly attractive within the model: productive capacity expands without additional debt accumulation or further cuts to other spending.
 In fact, the additional output lowers the debt-to-GDP ratio by a further 3 percentage points for infrastructure and 1--2 percentage points for human-capital investment and R\&D by 2050.
 
@@ -1036,7 +1061,7 @@ The additional debt reduction is correspondingly larger: about 6 percentage poin
 Public R\&D is omitted because technology creation is inactive in the EMDE calibration.
 
 The benefits depend not only on the size of the gap but also on the pace of its closure, as the EMDE experiments demonstrate.
-Completing the reform over 15 rather than 25 years raises the additional gains from about 2 to 3.3 percent for human-capital investment and from 5 to 6.5 percent for infrastructure.
+Completing the reform over 15 rather than 25 years raises the additional gains from about 2 to 3.2 percent for human-capital investment and from 5 to 6.6 percent for infrastructure.
 Productive stocks begin accumulating sooner.
 Faster closure also deepens the additional debt reduction, from about 6 to 9 percentage points for infrastructure and from 2 to 3 percentage points for human-capital investment.
 The starting point also matters even when the gap is narrowed by the same amount.
@@ -1057,11 +1082,11 @@ The payoff from reform is therefore stronger where initial spending inefficiency
         \caption{Emerging Market and Developing Economies}
         \includegraphics{figures/policyEfficiencyEM_yd.pdf}
     \end{subfigure}
-    \source{Authors' estimates.}
+    \source{IMF staff estimates.}
     \desc{Additional output gains relative to the corresponding expenditure reallocation without an efficiency improvement.
-    Panel~a reports the gains by 2050 when each calibrated AE efficiency gap is gradually closed over 25 years.
-    Panel~b reports the gains by 2050 when the calibrated EMDE gaps are closed over 15 or 25 years; circles show the corresponding effects from hypothetical initial gaps exactly 10 percentage points higher, narrowed by the same amount as in the calibrated-gap reforms.
-    The bottom rows report the corresponding additional change in the debt-to-GDP ratio in percentage points, with debt measured relative to current annual GDP.
+    Panel~a reports the gains after 25 years when each calibrated AE efficiency gap is gradually closed over that horizon.
+    Panel~b reports the gains after 25 years when the calibrated EMDE gaps are closed over 15 or 25 years; circles show the corresponding effects from hypothetical initial gaps exactly 10 percentage points higher, narrowed by the same amount as in the calibrated-gap reforms.
+    The bottom rows report the corresponding additional change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.
     The R\&D channel is inactive in the EMDE calibration.}
 \end{figure}
 
@@ -1071,22 +1096,22 @@ For AEs, which operate closer to the technology frontier, human-capital investme
 The policy experiment in this subsection also demonstrates why spending instruments should not always be considered in isolation: their productive effects can reinforce one another.
 Combining instruments can therefore yield larger gains than concentrating the same total reallocation in a single category.
 
-The interaction between human capital and public R\&D illustrates this complementarity.
-A 50/50 reallocation toward the two categories raises output by about 4.6 percent by 2050, compared with 4.3 percent for human capital and 3.7 percent for R\&D alone (Figure~\ref{fig:humanCapital}).
+The interaction between human capital and public R\&D provides a telling example.
+A 50/50 reallocation toward the two categories raises output by about 5 percent after 25 years, compared with about 4 percent for either category alone (Figure~\ref{fig:humanCapital}).
 R\&D expands the set of technologies available for adoption, while human capital raises workforce skills and supports technology creation.
 
 \begin{figure}[H]
     \centering
     \caption{Advanced Economies: Combining Human Capital and R\&D \label{fig:humanCapital}}
     \includegraphics{figures/humanCapital_yd_IRF.pdf}
-    \source{Authors' estimates.}
+    \source{IMF staff estimates.}
     \desc{Output gains (percent deviation from steady state) from increasing public investment in human capital, public spending on research and development (R\&D), and a 50/50 mix of both, financed by cutting public consumption.}
 \end{figure}
 
 The return to this policy mix depends strongly on how quickly new technologies diffuse within the private sector.
 The experiments vary the resulting quarterly adoption probability $q_t$.
-By 2050, it is about 4.0 percent under limited diffusion, 5.2 percent in the baseline, and 6.7 percent under improved diffusion.
-The corresponding output gain falls to about 1.3 percent under limited diffusion or rises to 7.6 percent under improved diffusion, compared with 4.6 percent in the baseline (Figure~\ref{fig:diffusion}).
+By 2050, it is about 4.0 percent under limited diffusion, 5.3 percent in the baseline, and 6.7 percent under improved diffusion.
+The corresponding output gain falls to about 1.6 percent under limited diffusion or rises to 8 percent under improved diffusion, compared with 5 percent in the baseline (Figure~\ref{fig:diffusion}).
 Complementary institutions that support technology transfer and private-sector adoption can therefore magnify the payoff from fiscal reallocation.
 
 
@@ -1094,7 +1119,7 @@ Complementary institutions that support technology transfer and private-sector a
     \centering
     \caption{Advanced Economies: High versus Low Levels of Technology Diffusion, 2050 \label{fig:diffusion}}
     \includegraphics{figures/diffusionAE_yd.pdf}
-    \source{Authors' estimates.}
+    \source{IMF staff estimates.}
     \desc{Output gains (percent deviation from steady state) from a 50/50 human-capital/R\&D spending mix for different levels of technology diffusion.}
 \end{figure}
 
@@ -1115,7 +1140,7 @@ Several avenues remain for future work.
 Introducing heterogeneous households would allow the distributional consequences of reallocation to be assessed.
 Modeling the resource cost and political economy of efficiency reform explicitly would replace the assumption that closing a gap is costless, and so convert the estimates here into net returns.
 Linking the two country groups would let advanced-economy R\&D shift the technology frontier from which emerging market and developing economies adopt---exogenous in the present calibration---and so capture the global spillovers from frontier technology creation.
-Even in its current form, the framework can be applied to country-specific spending reforms, a natural next step.
+In the meantime, the framework can already be applied to country-specific spending reforms, a natural next step.
 
 %========================================================================
 \bibliographystyle{ecta}
@@ -1124,7 +1149,6 @@ Even in its current form, the framework can be applied to country-specific spend
 
 \clearpage
 \appendix
-\counterwithin{equation}{section} % appendix equations numbered A.1, A.2, ...
 
 %========================================================================
 \section{Analytical Derivations} \label{app:equilibrium}
@@ -1191,7 +1215,7 @@ They purchase intermediate output at the relative price $mc_t$, transform it one
 With one-for-one transformation, $mc_t$ is the retailer's real marginal cost.
 
 The intermediate producers' markup rule below pins down this cost, so the Calvo problem is the standard New Keynesian pricing problem.
-Concretely, each period, a fraction $1-\theta_p$ of retailers reoptimizes, while the remaining retailers index their prices to past inflation at rate $\chi_p$.
+Concretely, each period, a fraction $1-\theta_p$ of retailers reoptimizes, while the remainder index their price to past inflation at rate $\chi_p$.
 A reoptimizing retailer chooses the reset price $\Pi_t^{*}$ to maximize expected discounted profits while its price remains in force.
 The optimality condition can be written recursively in a standard manner as
 \begin{align*}
@@ -1247,7 +1271,7 @@ They accrue to the owners of adopted technologies and are the dividends priced i
 Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model distinguishes between the stock of created technologies $Z_t$, which are available for adoption, and the stock of adopted technologies $A_t$, which enter production.
 The gap $Z_t-A_t$ is the stock of unadopted technologies.
 
-Technology creation is a reduced-form process: lagged human capital captures learning by doing, borrowing the persistent form of \citet{ChangGomesSchorfheide2002}, while lagged effective public R\&D expands the stock of technologies available for adoption:
+Technology creation is a reduced-form process: lagged human capital captures learning by doing, as in \citet{ChangGomesSchorfheide2002}, while lagged effective public R\&D expands the stock of technologies available for adoption:
 \[
 \begin{aligned}
     \log\!\left(\frac{\hat{Z}_t}{\hat{Z}^{SS}}\right) ={}& \rho_A \log\!\left(\frac{\hat{Z}_{t-1}}{\hat{Z}^{SS}}\right)
@@ -1333,7 +1357,6 @@ The last two columns give each variable's steady-state value for the representat
 Each variable's defining stationarized equilibrium equation is shown beneath its description ($g$ is the gross real-trend growth rate, $1+\gamma^{a}$ the technology-stock-trend growth rate, and superscript $SS$ a steady-state value).
 Consistent with the main text, date-$t$ real flows and public debt are divided by $\Lambda_t$, physical-capital stocks are divided by $\Lambda_{t+1}$, and technology stocks are divided by $\Gamma_{t+1}$.
 Hats identify these detrended counterparts; variables that are stationary by construction retain unaccented notation.
-The EMDE value shown for the R\&D efficiency gap $e_t^{GRD}$ is a coding placeholder: because technology creation is inactive in that calibration ($\alpha_{RD}$ excluded), the gap enters no active equation and has no effect on the results, which is why Table~\ref{tab:efficiencyGaps} reports no EMDE R\&D gap.
 
 \input{glossaryEndogenous.tex}
 
@@ -1353,7 +1376,7 @@ All shocks are zero in steady state; the paths they follow in each experiment ar
 \input{glossaryExogenous.tex}
 
 %========================================================================
-\section{Functional Composition of Government Investment and Public R\&D Funding} \label{app:investmentComposition}
+\section{Functional Composition of Government Investment} \label{app:investmentComposition}
 %========================================================================
 
 Government investment can be split into the model's two productive-capital blocks using its functional composition.
@@ -1369,7 +1392,7 @@ Summing the relevant functional shares yields the two model categories, which to
 Rather than relying on one observation per economy, the calculation uses the balanced 2013--22 panel available for all 36 countries in the original OECD sample.\footnote{Government investment is measured by gross fixed capital formation (\texttt{P51G}).
 The broader \texttt{P5L} measure is used for Chile, where \texttt{P51G} is unavailable, and Costa Rica, where it is reported as zero.}
 The annual shares are calculated relative to total government investment within each country and year.
-The economies are then assigned to the AE and EMDE groups using the WEO classification.
+The countries are then assigned to the AE and EMDE groups using the WEO classification.
 Annual medians identify the central economy, while GDP-weighted averages and interquartile ranges summarize the remaining cross-country variation (Figure~\ref{fig:investmentComposition}).
 The GDP-weighted averages allocate 67 percent of government investment to infrastructure in AEs and 69 percent in EMDEs.
 Human-capital-related investment accounts for the remaining 33 and 31 percent, respectively.
@@ -1389,29 +1412,11 @@ General public services, defence, public order and safety, economic affairs, and
 Housing and community amenities; health; recreation, culture, and religion; education; and social protection are assigned to human-capital-related investment.}
 \end{figure}
 
-The appendix also documents the data behind the public R\&D spending target of Section~\ref{sec:calibration}.
-The target draws on government budget allocations for R\&D (GBARD), the Frascati Manual measure of R\&D funding allocated in government budgets regardless of the sector performing the research.
-The funder-based scope matches the model's R\&D instrument, which finances technology creation.
-Over 2013--23, GBARD averages about 0.7 percent of GDP for the sample AEs and about 0.2 percent for the OECD's EMDE members (Figure~\ref{fig:gbardBands}).
-Because part of GBARD is disbursed within general government, a share of it also appears inside the aggregates behind the government-consumption and investment targets.
-Given the small magnitudes involved, this overlap should be benign for the calibration.
-
-\begin{figure}[H]
-    \centering
-    \caption{Government Budget Allocations for R\&D, 2013--23 \label{fig:gbardBands}}
-    \includegraphics{figures/gbardBands.pdf}
-    \source{OECD Main Science and Technology Indicators database; IMF, World Economic Outlook database; authors' calculations.}
-    \desc{Government budget allocations for R\&D (GBARD) in percent of GDP.
-Solid lines show country-group medians, dotted lines show GDP-weighted country-group averages, and shaded areas show the 25th--75th percentile range.
-The right panel pools the country-year observations; short lines show the means of the annual medians and GDP-weighted averages.
-The sample follows Figure~\ref{fig:investmentComposition}, except that Costa Rica does not report GBARD and the series for Switzerland and Colombia have gaps; the panel therefore covers 29 AEs and up to six EMDEs per year.}
-\end{figure}
-
 %========================================================================
 \section{Spending-Efficiency Estimates} \label{app:efficiency}
 %========================================================================
 
-Figure~\ref{fig:efficiencyBands} plots the estimated spending-efficiency gaps over time by income group that underlie the calibration in Section~\ref{sec:calibration} (Table~\ref{tab:efficiencyGaps}).
+Figure~\ref{fig:efficiencyBands} plots the estimated spending-efficiency gaps over time by income group, underlying the calibration of Section~\ref{sec:calibration} (Table~\ref{tab:efficiencyGaps}).
 
 \begin{figure}[H]
     \centering
@@ -1449,14 +1454,14 @@ Appendix~\ref{app:tempshocks} repeats the simplification exercise for a persiste
     \centering
     \caption{Permanent Government-Consumption Increase under Progressive Model Simplification: Advanced Economies \label{fig:simplifiedGc}}
     \includegraphics{figures/simplifiedGcAEPerm.pdf}
-    \source{Authors' estimates.}
+    \source{IMF staff estimates.}
     \desc{Responses to a permanent 1-percent-of-GDP increase in government consumption with no offsetting cut.
 Circles mark first-quarter effects, and the log-transformed quarterly axis expands the early response horizon.
 The seven cumulative steps remove endogenous technology, human capital, public infrastructure, private capital, price indexation, trend growth, and the extended fiscal block, in that order.
 The solid red endpoint is derived from the full model, whereas the dashed black line is an independently coded canonical control; their responses coincide.
 Inactive channels appear as flat or missing lines.
 Demand, supply, labor, and real marginal cost are percent deviations from steady-state levels.
-Inflation and interest rates are annualized percentage-point deviations; fiscal flows are reported against quarterly steady-state GDP, while public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured relative to current annual GDP.
+Inflation and interest rates are annualized percentage-point deviations; fiscal flows are reported against quarterly steady-state GDP, while public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.
 The real interest rate is the nominal interest rate deflated by inflation.}
 \end{figure}
 
@@ -1477,7 +1482,7 @@ Short-run demand effects are correspondingly more prominent relative to the long
     \centering
     \caption{Transmission of Persistent Temporary Public-Spending Shocks: Advanced Economies \label{fig:standardShocksTemp}}
     \includegraphics{figures/standardShocksAE.pdf}
-    \source{Authors' estimates.}
+    \source{IMF staff estimates.}
     \desc{Temporary-shock counterpart of Figure~\ref{fig:standardShocks}.
 Impulse responses to four debt-financed expansions, each a persistent AR(1) increase with persistence 0.9 and an impact of 1 percent of GDP in one spending category, with no offsetting cut.
 Circles mark first-quarter impact responses.
@@ -1486,7 +1491,7 @@ All panels report deviations from the steady state, calculated by block.
 Panels in the top three rows are percent deviations from the steady-state level.
 The real marginal-cost panel uses the same units.
 Inflation and the nominal and real interest rates are annualized percentage-point deviations, calculated as the change in the gross quarterly rate multiplied by 400.
-Fiscal flows are deviations in percentage points of quarterly steady-state GDP; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured relative to current annual GDP.
+Fiscal flows are deviations in percentage points of quarterly steady-state GDP; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.
 The real interest rate is the nominal interest rate deflated by inflation.}
 \end{figure}
 
@@ -1532,14 +1537,14 @@ The derived endpoint again coincides with the independently coded canonical cont
     \centering
     \caption{Persistent Temporary Government-Consumption Shock under Progressive Model Simplification: Advanced Economies \label{fig:simplifiedGcTemp}}
     \includegraphics{figures/simplifiedGcAE.pdf}
-    \source{Authors' estimates.}
+    \source{IMF staff estimates.}
     \desc{Responses to an AR(1) increase in government consumption with persistence 0.9, a 1-percent-of-GDP impact, and no offsetting cut.
 Circles mark first-quarter effects, and the log-transformed quarterly axis expands the early response horizon.
 The seven cumulative steps remove endogenous technology, human capital, public infrastructure, private capital, price indexation, trend growth, and the extended fiscal block, in that order.
 The solid red endpoint is derived from the full model, whereas the dashed black line is an independently coded canonical control; their responses coincide.
 Inactive channels appear as flat or missing lines.
 Demand, supply, labor, and real marginal cost are percent deviations from steady-state levels.
-Inflation and interest rates are annualized percentage-point deviations; fiscal flows are reported against quarterly steady-state GDP, while public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured relative to current annual GDP.
+Inflation and interest rates are annualized percentage-point deviations; fiscal flows are reported against quarterly steady-state GDP, while public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.
 The real interest rate is the nominal interest rate deflated by inflation.}
 \end{figure}
 
@@ -1553,7 +1558,7 @@ Differences across the parameter values therefore widen less over the 25-year ho
     \centering
     \caption{Sensitivity of Output Responses to Structural Parameters under Persistent Temporary Shocks: Advanced Economies \label{fig:sensitivityTemp}}
     \includegraphics{figures/sensitivityIRF_AE.pdf}
-    \source{Authors' estimates.}
+    \source{IMF staff estimates.}
     \desc{Temporary-shock counterpart of Figure~\ref{fig:sensitivity}.
 Output responses (percent deviation from steady state) to a debt-financed persistent AR(1) expansion with persistence 0.9, an impact of 1 percent of GDP, and no offsetting cut, as one structural parameter is varied over an illustrative range.
 Each panel pairs one spending category with the elasticity governing its productive channel: infrastructure with $\alpha_G$, human capital with $\mu$, and R\&D with $\alpha_{RD}$.
@@ -1579,7 +1584,7 @@ At 25 years, for example, the advanced-economy human-capital multiplier is 3.8 u
     \input{multipliersTable.tex}
 
     \vspace{1mm}
-    \tabnote{Authors' estimates.}{As Table~\ref{tab:multipliers}, but for a debt-financed AR(1) increase with persistence 0.9 and an impact of 1 percent of GDP in each spending category, with no offsetting cut to other spending.
+    \tabnote{IMF staff estimates.}{As Table~\ref{tab:multipliers}, but for a debt-financed AR(1) increase with persistence 0.9 and an impact of 1 percent of GDP in each spending category, with no offsetting cut to other spending.
 Output and spending are discounted at the model's steady-state real interest rate before cumulating.
 The R\&D innovation channel is shut down for EMDEs.}
 \end{table}
@@ -1597,26 +1602,26 @@ Comparing the two figures isolates the contribution of the efficiency improvemen
     \centering
     \caption{Advanced Economies: Transmission of Expenditure Reallocations \label{fig:reallocationIRFs}}
     \includegraphics{figures/reallocationIRFs.pdf}
-    \source{Authors' estimates.}
+    \source{IMF staff estimates.}
     \desc{AE responses to the three reallocation experiments of Figure~\ref{fig:reallocation}: a permanent increase of 1 percent of GDP in the expenditure categories listed in the legend, funded by a cut in public consumption.
 Colors match Figure~\ref{fig:reallocation}.
 Circles mark first-quarter effects, and the log-transformed quarterly axis expands the early response horizon.
 Panels in the top three rows and the real marginal-cost panel are percent deviations from steady-state levels.
 Inflation and the nominal and real interest rates are annualized percentage-point deviations.
-The primary deficit and transfers are deviations in percentage points of quarterly steady-state GDP; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured relative to current annual GDP.}
+The primary deficit and transfers are deviations in percentage points of quarterly steady-state GDP; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.}
 \end{figure}
 
 \begin{figure}[H]
     \centering
     \caption{Advanced Economies: Transmission of Reallocations with Efficiency Improvements \label{fig:efficiencyIRFsAE}}
     \includegraphics{figures/efficiencyIRFsAE.pdf}
-    \source{Authors' estimates.}
+    \source{IMF staff estimates.}
     \desc{Full AE responses to the three standard efficiency experiments of Figure~\ref{fig:policyEfficiency}, panel~a: the reallocations of Figure~\ref{fig:reallocation} combined with a gradual closure of the calibrated AE efficiency gaps over 25 years.
 Formatting and colors follow Figure~\ref{fig:reallocationIRFs}.
 Circles mark first-quarter effects, and the log-transformed quarterly axis expands the early response horizon.
 Panels in the top three rows and the real marginal-cost panel are percent deviations from steady-state levels.
 Inflation and the nominal and real interest rates are annualized percentage-point deviations.
-The primary deficit and transfers are deviations in percentage points of quarterly steady-state GDP; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured relative to current annual GDP.}
+The primary deficit and transfers are deviations in percentage points of quarterly steady-state GDP; public debt is reported as the change in the debt-to-GDP ratio in percentage points, with debt measured against current annual GDP.}
 \end{figure}
 
 \end{document}
