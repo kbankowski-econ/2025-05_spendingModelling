@@ -185,7 +185,7 @@ Efficiency thus becomes an instrument of policy alongside allocation, rather tha
 We can therefore evaluate policy options that combine the two, such as reallocating expenditure with and without a simultaneous improvement in efficiency.
 
 Third, the model is parameterized separately for a representative advanced economy (AE) and a representative emerging market and developing economy (EMDE).
-The payoff to each instrument and the return to closing each gap can therefore be compared across country groups within one internally consistent framework.
+The payoff to each instrument and the return to closing each gap can therefore be compared across the two economies within one internally consistent framework.
 We do so by combining several sources of data, including the IMF's World Economic Outlook (WEO) and World Revenue Longitudinal Database (WoRLD), the ILO's labor statistics (ILOSTAT), and the functional composition of government investment reported by the OECD.
 The resulting database also supports country-specific applications of the model.
 
@@ -200,7 +200,7 @@ Following \citet{CominGertler2006} and \citet{Anzoateguietal2019}, the model sep
 Public R\&D raises the pool of available technologies, while costly private adoption brings them into use, subject to realistic diffusion lags.
 Across all three productive channels, public spending is efficiency-adjusted \citep{bergetal2012public}: only a fraction of each unit spent is converted into productive stocks.
 
-The model is calibrated separately for the two country groups.
+The model is calibrated separately for the two representative economies.
 For AEs, we consider all three productive instruments: infrastructure, human capital, and R\&D.
 For EMDEs, we focus on infrastructure and human capital, reflecting the higher priority these economies attach to those categories as well as their position further from the technology frontier.
 
@@ -550,7 +550,7 @@ The permanent policy reforms in Section~\ref{sec:results} are evaluated over a 2
 %========================================================================
 
 The model is calibrated at a quarterly frequency, separately for the representative AE and EMDE.
-The calibration is organized around parameters common to both country groups, country-group-specific steady-state targets, and structural parameters governing the productive-spending and endogenous-growth channels.
+The calibration is organized around parameters common to both economies, economy-specific steady-state targets, and structural parameters governing the productive-spending and endogenous-growth channels.
 Spending-efficiency gaps are treated separately.
 So are the scale parameters calibrated internally to match steady-state targets, and the coefficients derived from equilibrium restrictions.
 The main text reports the choices most relevant to the quantitative exercises; Appendix~\ref{app:glossary} gives the complete parameter vector and its model-code mapping.
@@ -593,9 +593,9 @@ The complete calibration, including the internally determined scale parameters, 
 \subsection{Economy-Specific Calibration Targets}
 
 The AE and EMDE calibrations differ in trend growth, spending composition, implicit tax rates, and public debt.
-These differences are introduced through country-group-specific calibration targets constructed from a broad global sample organized according to the World Economic Outlook (WEO) classification.\footnote{The April 2026 WEO vintage is used, which comprises 42 advanced economies and 150 EMDEs; the latter consist of 93 emerging market economies and 57 low-income developing countries.}
-With a few exceptions described below, the targets are the 2000--23 means of the annual GDP-weighted country-group aggregates shown in Figure~\ref{fig:calibrationDataBands}.
-This period balances broad country coverage against the need to average through cyclical fluctuations and obtain representative values for the two country groups.
+These differences are introduced through economy-specific calibration targets constructed from a broad global sample organized according to the World Economic Outlook (WEO) classification.\footnote{The April 2026 WEO vintage is used, which comprises 42 advanced economies and 150 EMDEs; the latter consist of 93 emerging market economies and 57 low-income developing countries.}
+With a few exceptions described below, the targets are the 2000--23 means of the annual GDP-weighted group aggregates shown in Figure~\ref{fig:calibrationDataBands}.
+This period balances broad country coverage against the need to average through cyclical fluctuations and obtain representative values for the two economies.
 Table~\ref{tab:calibrationTargets} reports the targets in the annualized or percentage units used in the paper; its note explains their correspondence to the quarterly model.
 
 Annual trend output growth is 1.9 percent for AEs and 5.1 percent for EMDEs.
@@ -609,7 +609,7 @@ These targets correspond to the government budget allocations for R\&D documente
 As the model treats infrastructure and human capital as separate instruments, the government investment totals must be decomposed.
 The split uses the functional composition of government investment reported by \citet{OECD2025Glance}; Appendix~\ref{app:investmentComposition} describes the mapping in detail.
 The OECD dataset covers a narrower set of economies than the WEO-based sample but provides the only cross-country breakdown available for this calibration.
-In both country groups, about two-thirds of government investment goes to infrastructure and about one-third to human capital.
+In both groups, about two-thirds of government investment goes to infrastructure and about one-third to human capital.
 Infrastructure investment is therefore 2.6 percent of GDP for AEs and 3.4 percent for EMDEs, while public human-capital investment---including capital spending on schools and hospitals---is 1.3 and 1.5 percent.
 
 Turning to tax rates, both implicit rates follow the effective average tax approach of \citet{MendozaRazinTesar1994}, which divides the revenue raised from a category by its corresponding base.
@@ -622,10 +622,10 @@ Public debt is measured as general-government gross debt, with targets of 78.8 p
 
 \begin{figure}[H]
     \centering
-    \caption{Data Underlying Country-Group Calibration Targets, 2000--23 \label{fig:calibrationDataBands}}
+    \caption{Data Underlying Economy-Specific Calibration Targets, 2000--23 \label{fig:calibrationDataBands}}
     \includegraphics{figures/calibrationDataBands.pdf}
     \source{IMF, World Economic Outlook database and World Revenue Longitudinal Database; ILOSTAT; IMF staff calculations.}
-    \desc{In the left-hand panels, solid lines show country-group medians, dotted lines show GDP-weighted group averages, and shaded areas show the 25th--75th percentile range.
+    \desc{In the left-hand panels, solid lines show group medians, dotted lines show GDP-weighted group averages, and shaded areas show the 25th--75th percentile range.
 In the right-hand panels, boxes show the interquartile range of country-year observations pooled over 2000--23.
 Short solid lines show the means of annual group medians, and short dotted lines show the means of annual GDP-weighted aggregates used for the calibration targets in Table~\ref{tab:calibrationTargets}.
 \par\vspace{0.5mm}\noindent
@@ -644,13 +644,13 @@ China is excluded from the government-investment aggregates because its \texttt{
 
 \begin{table}[H]
     \centering
-    \caption{Country-Group Steady-State Targets \label{tab:calibrationTargets}}
+    \caption{Economy-Specific Steady-State Targets \label{tab:calibrationTargets}}
     \footnotesize
     \renewcommand{\arraystretch}{1.2}
     \input{calibrationTargetsTable.tex}
 
     \vspace{1mm}
-    \tabnote{IMF, World Economic Outlook database and World Revenue Longitudinal Database; ILOSTAT; \citet{OECD2025Glance}; IMF staff calculations.}{The targets correspond to the means of the annual GDP-weighted country-group aggregates shown in Figure~\ref{fig:calibrationDataBands}; total fixed investment is split using the functional composition reported in Appendix~\ref{app:investmentComposition}.
+    \tabnote{IMF, World Economic Outlook database and World Revenue Longitudinal Database; ILOSTAT; \citet{OECD2025Glance}; IMF staff calculations.}{The targets correspond to the means of the annual GDP-weighted group aggregates shown in Figure~\ref{fig:calibrationDataBands}; total fixed investment is split using the functional composition reported in Appendix~\ref{app:investmentComposition}.
 Trend growth is annualized from the quarterly gross rate.
 Public debt is reported relative to annual GDP; the Dynare implementation divides debt by quarterly GDP and therefore stores four times the ratios shown here.
 Spending shares are relative to quarterly GDP, while implicit tax rates are measured against their corresponding tax bases; both are numerically unchanged at an annual frequency.}
@@ -663,7 +663,7 @@ Infrastructure investment builds public capital; human-capital investment raises
 The EMDE calibration assigns higher elasticities to both channels, reflecting higher marginal returns to infrastructure and the greater structural importance of publicly provided education and health inputs.
 The technology block operates differently across the two calibrations: AEs feature endogenous technology creation through human capital and public R\&D, whereas EMDEs adopt from an exogenously expanding technology frontier.
 Adoption remains endogenous in both calibrations, but is less responsive to expenditure in EMDEs.
-Table~\ref{tab:parameters} summarizes the structural parameters governing these channels in the two country-group calibrations.
+Table~\ref{tab:parameters} summarizes the structural parameters governing these channels in the two calibrations.
 
 \begin{table}[H]
     \centering
@@ -697,7 +697,7 @@ Given this persistence, the human-capital elasticity reported in Table~\ref{tab:
 The public R\&D elasticity similarly translates into a per-quarter loading of $(1-\rho_A)\alpha_{RD}=0.0189$, remaining close to the R\&D impact estimates in \citet{FieldhouseMertens2023}.
 
 Technology adoption is endogenous and follows the same structure in both calibrations.
-Following \citet{Anzoateguietal2019}, the quarterly technology-survival rate is $\phi=0.98$ for both country groups, corresponding to an annual obsolescence rate of about 8 percent.
+Following \citet{Anzoateguietal2019}, the quarterly technology-survival rate is $\phi=0.98$ in both calibrations, corresponding to an annual obsolescence rate of about 8 percent.
 The elasticity of the adoption probability with respect to adoption spending, $\varsigma$, is set at 0.8 for AEs, following \cite{cloyne2022short}'s estimate, and 0.1 for EMDEs.
 The AE value is deliberately conservative relative to the estimates of 0.925 in \citet{Anzoateguietal2019} and 0.95 in \citet{CominGertler2006}; the technology-diffusion experiment in Subsection~\ref{subsec:hcrd} shows how stronger adoption responsiveness amplifies the gains.
 The lower EMDE value preserves endogenous diffusion of the existing stock of unadopted technologies while making the adoption probability less responsive to adoption expenditure.
@@ -758,7 +758,7 @@ All exercises consider permanent changes.
 Appendix~\ref{app:tempshocks} reports the corresponding results for persistent but temporary shocks.
 
 The transmission analysis focuses on the AE calibration to describe the underlying mechanisms clearly.
-The cumulative-multiplier analysis then adds the EMDE calibration, allowing the responses to be compared across country groups.
+The cumulative-multiplier analysis then adds the EMDE calibration, allowing the responses to be compared across the two economies.
 The channel decomposition and sensitivity analysis subsequently assess the sources and robustness of these results.
 
 \subsection{Transmission of Public Spending} \label{subsec:transmission}
@@ -837,7 +837,7 @@ Output and spending are discounted at the model's steady-state real interest rat
 Because the spending increase is permanent, its fiscal cost continues to accumulate alongside its output effects.
 The multiplier therefore converges only gradually toward its long-run value.
 
-Permanent spending increases yield cumulative multipliers that vary across instruments, horizons, and country-group calibrations (Table~\ref{tab:multipliers}).
+Permanent spending increases yield cumulative multipliers that vary across instruments, horizons, and calibrations (Table~\ref{tab:multipliers}).
 The spending instruments exhibit distinct dynamic profiles:
 \begin{inparaenum}[(i)]
 \item \emph{Government consumption} provides a useful benchmark because it is the standard fiscal instrument.
@@ -855,7 +855,7 @@ By the 25-year horizon, human-capital investment overtakes infrastructure, and p
 At medium horizons, the productive-spending multipliers are broadly in line with empirical estimates of public-investment and R\&D multipliers \citep{Ramey2020, AfonsoRodrigues2024, FieldhouseMertens2023}.
 The multiplier profiles are still rising at that horizon, reflecting the durability of the productive stocks these instruments create.
 
-The differences across country groups reveal the role of productive capacity in the model.
+The differences across the two economies reveal the role of productive capacity in the model.
 The multiplier for government consumption, which relies on demand channels, is broadly similar across the two calibrations at short and medium horizons, at about 0.3 after ten years.
 The infrastructure and human-capital multipliers are materially larger in EMDEs than in AEs at medium-term horizons: after ten years, 1.5 against 1.0 for infrastructure and 0.8 against 0.5 for human capital.
 This difference reflects the higher productive-spending elasticities and larger public-investment shares in the EMDE calibration.
@@ -896,7 +896,7 @@ Integrating the two channels is therefore essential for capturing the sustained 
 
 \subsection{Sensitivity} \label{subsec:sensitivity}
 
-The productive-spending elasticities are central to both the size of the output gains and the differences between the two country-group calibrations.
+The productive-spending elasticities are central to both the size of the output gains and the differences between the two calibrations.
 In the model, the strength of each productive-spending channel is governed primarily by its own elasticity.
 The infrastructure response scales with the output elasticity of public infrastructure ($\alpha_G$).
 The human-capital response scales with the elasticity of human-capital formation with respect to the public stock ($\mu$).
@@ -905,7 +905,7 @@ The R\&D response scales with the elasticity of technology creation with respect
 
 Figure~\ref{fig:sensitivity} illustrates this sensitivity by tracing the output response to each permanent productive expansion as one relevant elasticity at a time is varied over an illustrative range.
 For human capital, the exercise varies $\mu$ and $\gamma$ in separate panels.
-The ranges bracket the country-group calibrations and nearby values supported by the literature discussed in Subsection~\ref{subsec:productive-calibration}.
+The ranges bracket the two calibrations and nearby values supported by the literature discussed in Subsection~\ref{subsec:productive-calibration}.
 At the 25-year horizon, the output response spans about 1.9 to 7.4 percent for infrastructure, 2.7 to 9.5 percent for human capital, and 2.6 to 5.9 percent for R\&D.
 Varying $\gamma$ instead moves mainly the short run.
 A higher $\gamma$ raises the return to education time and amplifies the immediate labor-supply response, but the long-run gain is pinned down by the accumulated public human-capital stock.
@@ -914,7 +914,7 @@ Infrastructure begins to pay off earliest and then builds gradually.
 Human-capital investment produces a short-lived impact gain before larger benefits emerge over time.
 R\&D briefly lowers output after impact and delivers its strongest gains later.
 
-The highlighted country-group values show how the calibration of these elasticities contributes to differences in the effects of productive spending.
+The highlighted AE and EMDE values show how the calibration of these elasticities contributes to differences in the effects of productive spending.
 The values are grounded in the literature reviewed in Subsection~\ref{subsec:productive-calibration} and capture relevant structural differences between the two groups.
 At the EMDE values of $\alpha_G$ and $\mu$, infrastructure and human-capital investment are more potent than at the corresponding AE values.
 These parameter differences help account for the larger EMDE multipliers reported in Subsection~\ref{subsec:multipliers}.
@@ -1120,7 +1120,7 @@ Raising growth and containing debt thus emerge as complements rather than compet
 Several avenues remain for future work.
 Introducing heterogeneous households would allow the distributional consequences of reallocation to be assessed.
 Modeling the resource cost and political economy of efficiency reform explicitly would replace the assumption that closing a gap is costless, and so convert the estimates here into net returns.
-Linking the two country groups would let advanced-economy R\&D shift the technology frontier from which emerging market and developing economies adopt---exogenous in the present calibration---and so capture the global spillovers from frontier technology creation.
+Linking the two economies would let advanced-economy R\&D shift the technology frontier from which emerging market and developing economies adopt---exogenous in the present calibration---and so capture the global spillovers from frontier technology creation.
 Even in its current form, the framework can be applied to country-specific spending reforms, a natural next step.
 
 %========================================================================
@@ -1385,7 +1385,7 @@ Human-capital-related investment accounts for the remaining 33 and 31 percent, r
     \caption{Functional Composition of Government Investment, 2013--22 \label{fig:investmentComposition}}
     \includegraphics{figures/investmentCompositionBands.pdf}
     \source{OECD Annual Government Expenditure by Function database; IMF, World Economic Outlook database; IMF staff calculations.}
-    \desc{Solid lines show country-group medians, dotted lines show GDP-weighted country-group averages, and shaded areas show the 25th--75th percentile range.
+    \desc{Solid lines show group medians, dotted lines show GDP-weighted group averages, and shaded areas show the 25th--75th percentile range.
 The smaller panels pool country-year observations over 2013--22; short solid lines show the means of annual group medians, and short dotted lines show the means of annual GDP-weighted averages.
 \par\vspace{0.5mm}\noindent
 Shares are percentages of total general-government gross fixed capital formation.
@@ -1408,7 +1408,7 @@ Given the small magnitudes involved, this overlap should be benign for the calib
     \includegraphics{figures/gbardBands.pdf}
     \source{OECD Main Science and Technology Indicators database; IMF, World Economic Outlook database; authors' calculations.}
     \desc{Government budget allocations for R\&D (GBARD) in percent of GDP.
-Solid lines show country-group medians, dotted lines show GDP-weighted country-group averages, and shaded areas show the 25th--75th percentile range.
+Solid lines show group medians, dotted lines show GDP-weighted group averages, and shaded areas show the 25th--75th percentile range.
 The right panel pools the country-year observations; short lines show the means of the annual medians and GDP-weighted averages.
 The sample follows Figure~\ref{fig:investmentComposition}, except that Costa Rica does not report GBARD and the series for Switzerland and Colombia have gaps; the panel therefore covers 29 AEs and up to six EMDEs per year.}
 \end{figure}
