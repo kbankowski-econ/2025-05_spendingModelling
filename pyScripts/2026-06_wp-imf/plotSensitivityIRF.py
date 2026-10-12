@@ -198,19 +198,24 @@ def main(permanent=False):
             r_end = float(r[ycols[-1]])
             is_base = abs(r.param_value - AE_VALUES[param]) < 1e-9
             is_emde = param in EMDE_VALUES and abs(r.param_value - EMDE_VALUES[param]) < 1e-9
+            # gamma is shared by the two calibrations, so its baseline label
+            # carries both tags, broken over two lines to stay narrow.
+            lines = 2 if (is_base and param == "gamma") else 1
             items.append({"y": r_end, "label_y": r_end, "val": r.param_value,
-                          "is_base": is_base, "is_emde": is_emde,
+                          "is_base": is_base, "is_emde": is_emde, "lines": lines,
                           "color": _lerp_hex(c_lo, c_hi, frac)})
         items.sort(key=lambda d: d["y"])
         anchor = next((k for k, d in enumerate(items) if d["is_base"]), len(items) // 2)
         for k in range(anchor + 1, len(items)):              # push higher labels up
-            items[k]["label_y"] = max(items[k]["y"], items[k - 1]["label_y"] + label_min_gap)
+            gap = label_min_gap * (items[k]["lines"] + items[k - 1]["lines"]) / 2
+            items[k]["label_y"] = max(items[k]["y"], items[k - 1]["label_y"] + gap)
         for k in range(anchor - 1, -1, -1):                  # push lower labels down
-            items[k]["label_y"] = min(items[k]["y"], items[k + 1]["label_y"] - label_min_gap)
+            gap = label_min_gap * (items[k]["lines"] + items[k + 1]["lines"]) / 2
+            items[k]["label_y"] = min(items[k]["y"], items[k + 1]["label_y"] - gap)
         for d in items:
             label = _format_param(d["val"])
             if d["is_base"]:
-                label += " (AE)"
+                label += " (AE,<br>EMDE)" if d["lines"] == 2 else " (AE)"
             elif d["is_emde"]:
                 label += " (EMDE)"
             fig.add_annotation(
