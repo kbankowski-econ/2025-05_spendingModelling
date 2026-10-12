@@ -532,17 +532,14 @@ For example, the bond Euler equation becomes
     \hat{\lambda}_{t+1}\frac{R_t}{g\Pi_{t+1}}\right].
 \end{equation}
 Level marginal utility moves inversely with the real trend, so its stationary counterpart is $\hat{\lambda}_t=\Lambda_{t}\lambda_t$.
-Aggregate technology values and adoption expenditure follow the flow convention and are divided by $\Lambda_t$.
 
-The technology stocks require a distinct adjustment because they grow with $\Gamma_t$.
-Using $\hat A_t=A_t/\Gamma_{t+1}$ and $\hat Z_t=Z_t/\Gamma_{t+1}$, the level adoption equation becomes
+For technology stocks, the corresponding growth factor is $1+\gamma^a$, so the stationary adoption equation is
 \begin{equation} \label{eq:adoptstat}
     (1+\gamma^a)\hat{A}_t
     =q_t\phi\left(\hat{Z}_{t-1}-\hat{A}_{t-1}\right)
     +\phi\hat{A}_{t-1}.
 \end{equation}
-The continuation terms in the technology value functions correspondingly carry $1/(1+\gamma^a)$, while the adoption probability depends on stationary expenditure $\hat{S}_t$.
-Technology creation is specified directly in ratios of stationary stocks to their steady-state values, so it requires no additional growth factor.
+The technology-creation equation~\eqref{eq:Z} is already specified in stationary terms and requires no further growth adjustment.
 
 The steady state of this stationary system represents the balanced-growth path of the level economy.
 The model is implemented in Dynare, where hats are suppressed only as a coding convention, and solved as a deterministic perfect-foresight system.
