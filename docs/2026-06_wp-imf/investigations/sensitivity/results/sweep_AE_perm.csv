@@ -11,6 +11,12 @@ Model_HumanCapital_exp_ige_perm,Ige,mu,0.05,0,0.596027,0.360605,0.407228,0.86460
 Model_HumanCapital_exp_ige_perm,Ige,mu,0.1,0,0.915423,0.437706,0.491573,1.344158,1.890193,8.003388
 Model_HumanCapital_exp_ige_perm,Ige,mu,0.15,0,1.226830,0.510873,0.576218,1.836877,2.656190,11.836701
 Model_HumanCapital_exp_ige_perm,Ige,mu,0.2,0,1.530573,0.580274,0.661208,2.342887,3.446207,15.781552
+Model_HumanCapital_exp_ige_gam_perm,Ige,baseline,,1,0.915423,0.437706,0.491573,1.344158,1.890193,8.003388
+Model_HumanCapital_exp_ige_gam_perm,Ige,gamma,0.3,0,0.545528,0.299275,0.444669,1.326018,1.870162,8.107650
+Model_HumanCapital_exp_ige_gam_perm,Ige,gamma,0.4,0,0.717870,0.366100,0.468436,1.335594,1.880552,8.054818
+Model_HumanCapital_exp_ige_gam_perm,Ige,gamma,0.5,0,0.915423,0.437706,0.491573,1.344158,1.890193,8.003388
+Model_HumanCapital_exp_ige_gam_perm,Ige,gamma,0.6,0,1.147064,0.515807,0.514361,1.351860,1.899229,7.953277
+Model_HumanCapital_exp_ige_gam_perm,Ige,gamma,0.7,0,1.426171,0.602667,0.537081,1.358821,1.907773,7.904406
 Model_HumanCapital_exp_grd_perm,Grd,baseline,,1,0.137511,0.256546,0.850175,1.874465,2.276223,5.065115
 Model_HumanCapital_exp_grd_perm,Grd,alphaRD,0.05,0,0.194109,0.269203,0.622298,1.220898,1.454068,3.088174
 Model_HumanCapital_exp_grd_perm,Grd,alphaRD,0.07,0,0.165511,0.263342,0.737472,1.548188,1.864959,4.073781

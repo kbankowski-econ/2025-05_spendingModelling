@@ -1,7 +1,8 @@
 %% §4.4 sensitivity sweep — multipliers vs. structural parameters (AE).
 % Paper-specific sweep of the three productive-spending expansions and their
 % corresponding structural elasticities: infrastructure and alpha_G (alphaG),
-% human capital and mu, and R&D and alpha_RD. For each grid value it re-solves
+% human capital and mu and gamma (education-time elasticity), and R&D and
+% alpha_RD. For each grid value it re-solves
 % the perfect-foresight model and recomputes the *present-value
 % cumulative own-spending multiplier* at the same horizons as the paper's
 % multiplier table (makeMultipliers.py).
@@ -39,12 +40,14 @@ if permanent
     exps = {
         'Model_HumanCapital_exp_igi_perm', 'Igi', {{'epsi_igi', 'const', 0.01, '1:1000'}}, 'alphaG',  [0.03 0.054 0.075 0.10 0.122 0.15]
         'Model_HumanCapital_exp_ige_perm', 'Ige', {{'epsi_ige', 'const', 0.01, '1:1000'}}, 'mu',      [0.05 0.10 0.15 0.20]
+        'Model_HumanCapital_exp_ige_gam_perm', 'Ige', {{'epsi_ige', 'const', 0.01, '1:1000'}}, 'gamma', [0.30 0.40 0.50 0.60 0.70]
         'Model_HumanCapital_exp_grd_perm', 'Grd', {{'epsi_grd', 'const', 0.01, '1:1000'}}, 'alphaRD', [0.05 0.07 0.09 0.11 0.13]
         };
 else
     exps = {
         'Model_HumanCapital_exp_igi', 'Igi', {{'epsi_igi', 'ar1', [0.01 0.9], '1:1000'}}, 'alphaG',  [0.03 0.054 0.075 0.10 0.122 0.15]
         'Model_HumanCapital_exp_ige', 'Ige', {{'epsi_ige', 'ar1', [0.01 0.9], '1:1000'}}, 'mu',      [0.05 0.10 0.15 0.20]
+        'Model_HumanCapital_exp_ige_gam', 'Ige', {{'epsi_ige', 'ar1', [0.01 0.9], '1:1000'}}, 'gamma', [0.30 0.40 0.50 0.60 0.70]
         'Model_HumanCapital_exp_grd', 'Grd', {{'epsi_grd', 'ar1', [0.01 0.9], '1:1000'}}, 'alphaRD', [0.05 0.07 0.09 0.11 0.13]
         };
 end
@@ -52,7 +55,7 @@ end
 horizonsYr = [1 5 10 20 25 250];          % years; quarter window is 4N
 periods    = 2000;
 if smoke
-    exps       = exps(3, :);              % R&D / alphaRD only
+    exps       = exps(4, :);              % R&D / alphaRD only
     exps{1, 5} = exps{1, 5}([1 2 4]);    % 3 points
     horizonsYr = [1 5 10];
     periods    = 1200;                    % must exceed the period-1000 shock path

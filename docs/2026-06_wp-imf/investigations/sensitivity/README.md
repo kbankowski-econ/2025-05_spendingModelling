@@ -7,7 +7,12 @@ structural elasticity governing each productive-spending channel:
 |---|---|---:|---|
 | Infrastructure investment | `alphaG` | 0.054 | 0.03, 0.054, 0.075, 0.10, 0.122, 0.15 |
 | Human-capital investment | `mu` | 0.10 | 0.05, 0.10, 0.15, 0.20 |
+| Human-capital investment | `gamma` | 0.50 | 0.30, 0.40, 0.50, 0.60, 0.70 |
 | R&D spending | `alphaRD` | 0.09 | 0.05, 0.07, 0.09, 0.11, 0.13 |
+
+The human-capital expansion appears twice: once varying `mu` (public human
+capital stock elasticity) and once varying `gamma` (education-time elasticity).
+`gamma` is common to the AE and EMDE calibrations.
 
 For each pair, `sweep.m` overrides the parameter with `set_param_value`, solves
 the deterministic perfect-foresight model, and records output responses and

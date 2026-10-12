@@ -9,12 +9,13 @@ swept over an illustrative range, one panel each:
 
   - Infrastructure investment -> Model_HumanCapital_exp_igi, vary alpha_G
   - Human capital investment  -> Model_HumanCapital_exp_ige, vary mu
+  - Human capital investment  -> Model_HumanCapital_exp_ige_gam, vary gamma
   - R&D investment            -> Model_HumanCapital_exp_grd, vary alpha_RD
 
 In each panel the lines fan from the low (light) to the high (dark) parameter
 value. The AE baseline and, where applicable, the EMDE value remain on that
 color scale and are identified only by thicker lines. Circles identify the
-first-quarter responses. A 1x3 grid of percent deviations from steady state.
+first-quarter responses. A 1x4 grid of percent deviations from steady state.
 
 Data source: the one-at-a-time parameter sweep produced by
 investigations/sensitivity/sweep.m. By default this reads sweep_AE_irf.csv;
@@ -53,17 +54,20 @@ STYLE = {
 
 # (model directory, swept parameter, panel title, parameter symbol, (light, dark)
 # colour ramp). Colours match the reallocation/standard-shock figures: infra
-# blue, human capital purple, R&D green; the ramp goes low -> high.
+# blue, human capital purple (for both of its elasticities), R&D green; the
+# ramp goes low -> high.
 PANELS = [
     ("Model_HumanCapital_exp_igi", "alphaG",  "Infrastructure (α<sub>G</sub>)",
      "α<sub>G</sub>", ("#90CAF9", "#0D47A1")),
     ("Model_HumanCapital_exp_ige", "mu",      "Human Capital (μ)",
      "μ", ("#CE93D8", "#4A148C")),
+    ("Model_HumanCapital_exp_ige_gam", "gamma", "Human Capital (γ)",
+     "γ", ("#CE93D8", "#4A148C")),
     ("Model_HumanCapital_exp_grd", "alphaRD", "R&D (α<sub>RD</sub>)",
      "α<sub>RD</sub>", ("#A5D6A7", "#1B5E20")),
 ]
 
-AE_VALUES = {"alphaG": 0.054, "mu": 0.10, "alphaRD": 0.09}
+AE_VALUES = {"alphaG": 0.054, "mu": 0.10, "gamma": 0.50, "alphaRD": 0.09}
 EMDE_VALUES = {"alphaG": 0.10, "mu": 0.15}
 
 HORIZON_QUARTERS = 100                      # 25 years of quarterly responses
@@ -93,8 +97,8 @@ def main(permanent=False):
 
     # Both sizes come from chartTable.csv: render = original chart size (canvas,
     # controls fonts/quality); display = size shown in the paper (aspect preserved).
-    width_px, height_px = chart_render_px(output_stem, (22.5, 8.25))
-    display_cm = chart_display_cm(output_stem, (15.0, 5.5))
+    width_px, height_px = chart_render_px(output_stem, (30.0, 8.25))
+    display_cm = chart_display_cm(output_stem, (15.0, 4.125))
 
     # Font matching the paper: Palatino (the paper's mathpazo), sized so the chart
     # text renders at a fixed point size on the page.
@@ -121,8 +125,8 @@ def main(permanent=False):
     fig = make_subplots(
         rows=1, cols=len(PANELS),
         subplot_titles=[p[2] for p in PANELS],
-        shared_yaxes=True,            # common y-scale across all three panels
-        horizontal_spacing=0.15,
+        shared_yaxes=True,            # common y-scale across all four panels
+        horizontal_spacing=0.11,
     )
 
     for j, (base_ex, param, _title, _psym, (c_lo, c_hi)) in enumerate(PANELS):
