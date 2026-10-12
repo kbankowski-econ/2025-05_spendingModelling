@@ -42,9 +42,13 @@ RESULTS_DIR = (PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "investigations" /
 FIGURES_DIR = PROJECT_ROOT / "docs" / "2026-06_wp-imf" / "figures"
 
 # --- Styling (inlined; matches the other working-paper figures) ---------------
+# Margins are the other figures' values scaled by 4/3: this figure renders at
+# 2x its display width (30 cm canvas shown at 15 cm) instead of the usual 1.5x,
+# so its point-sized fonts are 4/3 larger in canvas pixels and need the same
+# extra room, chiefly below the x-axis tick labels.
 STYLE = {
     "template": "simple_white",
-    "margins": {"t": 44, "b": 28, "l": 40, "r": 80},
+    "margins": {"t": 59, "b": 38, "l": 53, "r": 107},
     "axes": {"linecolor": "black", "linewidth": 1.5, "ticks": "inside",
              "showgrid": True, "gridcolor": "rgba(0,0,0,0.15)", "gridwidth": 0.5,
              "zeroline": True, "zerolinewidth": 1.5},

@@ -120,9 +120,28 @@ def smart_save_image(fig, output_path, display_cm, scale=2):
 
 def write_pdf(fig, output_path, render_width_px, display_width_cm):
     """Write a vector PDF sized to the display width (cm), matching the PNG. The
-    figure is laid out on the (high-resolution) render canvas; scaling the PDF
-    page by display/render makes its natural size equal the display size, so a
-    bare \\includegraphics{...pdf} renders it at the paper size. Assumes the
-    display and render aspect ratios match (height follows from the scale)."""
-    scale = display_width_cm * _CM_TO_PX / render_width_px
-    fig.write_image(str(output_path), format="pdf", scale=scale)
+    figure is laid out on the (high-resolution) render canvas; the page is then
+    rescaled so its natural size equals the display size, so a bare
+    \\includegraphics{...pdf} renders it at the paper size. Assumes the display
+    and render aspect ratios match (height follows from the scale).
+
+    kaleido v1 (HeadlessChrome backend) mishandles fractional `scale` on vector
+    export -- it shrinks the page but clips the content at the bottom -- so the
+    figure is exported at scale 1 and the page is rescaled with Ghostscript."""
+    import subprocess
+    import tempfile
+
+    aspect = fig.layout.height / fig.layout.width
+    width_pt = display_width_cm / _CM_PER_INCH * 72.0
+    height_pt = width_pt * aspect
+    with tempfile.TemporaryDirectory() as tmp:
+        full_pdf = Path(tmp) / "full.pdf"
+        fig.write_image(str(full_pdf), format="pdf", scale=1)
+        subprocess.run(
+            ["gs", "-q", "-dBATCH", "-dNOPAUSE", "-sDEVICE=pdfwrite",
+             f"-dDEVICEWIDTHPOINTS={width_pt:.2f}",
+             f"-dDEVICEHEIGHTPOINTS={height_pt:.2f}",
+             "-dFIXEDMEDIA", "-dPDFFitPage",
+             "-o", str(output_path), str(full_pdf)],
+            check=True,
+        )
