@@ -145,3 +145,75 @@ def write_pdf(fig, output_path, render_width_px, display_width_cm):
              "-o", str(output_path), str(full_pdf)],
             check=True,
         )
+    align_legend_rows(output_path)
+
+
+# Match the roughly 15.75-point row pitch of the paper's other wrapped legends.
+# Explicit row labels keep this export adjustment separate from subplot titles.
+_LEGEND_ROWS = {
+    "efficiencyAE_yd": (
+        "Spending increase (AE, benchmark)", "Efficiency improvement (EMDE)"),
+    "policyEfficiencyEM_yd": (
+        "Closing the gap in the baseline",
+        "Efficiency improvement from a higher initial gap"),
+    "humanCapital_yd_IRF": ("Joint human capital + R&D", "R&D spending"),
+}
+
+
+def align_legend_rows(output_path, spacing_pt=15.75):
+    """Align selected exported legend rows without changing plot geometry.
+
+    Work in PDF points so figures with different canvas scales have the same
+    printed row spacing. Copy vector strips, preserving fonts and legend keys.
+    Refresh the companion PNG from the corrected PDF at its existing width.
+    """
+    import unicodedata
+    import fitz
+
+    output_path = Path(output_path)
+    labels = _LEGEND_ROWS.get(output_path.stem)
+    if labels is None:
+        return
+    source = fitz.open(output_path)
+    page = source[0]
+    lines = [line for block in page.get_text("dict")["blocks"]
+             for line in block.get("lines", [])]
+    rows = []
+    for label in labels:
+        matches = [line for line in lines if unicodedata.normalize(
+            "NFKC", "".join(span["text"] for span in line["spans"])) == label]
+        if len(matches) != 1:
+            raise ValueError(f"Expected one legend label {label!r} in {output_path}")
+        line = matches[0]
+        rows.append((line["spans"][0]["origin"][1], fitz.Rect(line["bbox"])))
+    shifts = [rows[0][0] + i * spacing_pt - row[0]
+              for i, row in enumerate(rows)]
+    if max(abs(shift) for shift in shifts) < 0.01:
+        source.close()
+        return
+    clips = [fitz.Rect(0, box.y0 - 2, page.rect.width, box.y1 + 2)
+             for _, box in rows]
+    result = fitz.open()
+    target = result.new_page(width=page.rect.width, height=page.rect.height)
+    target.show_pdf_page(target.rect, source, 0)
+    # Erase just the legend band, then place each original row at its new height.
+    band = fitz.Rect(0, min(c.y0 for c in clips), page.rect.width,
+                     max(c.y1 + max(0, d) for c, d in zip(clips, shifts)))
+    target.add_redact_annot(band, fill=(1, 1, 1))
+    target.apply_redactions(images=0, graphics=0)
+    for clip, shift in zip(clips, shifts):
+        dest = fitz.Rect(clip.x0, clip.y0 + shift, clip.x1, clip.y1 + shift)
+        target.show_pdf_page(dest, source, 0, clip=clip, overlay=True)
+    if len(source) > 1:
+        result.insert_pdf(source, from_page=1)
+    target = result[0]
+    data = result.tobytes(garbage=4, deflate=True)
+    source.close()
+    output_path.write_bytes(data)
+    png_path = output_path.with_suffix(".png")
+    if png_path.exists():
+        width = int.from_bytes(png_path.read_bytes()[16:20], "big")
+        zoom = width / target.rect.width
+        bitmap = target.get_pixmap(matrix=fitz.Matrix(zoom, zoom), alpha=False)
+        png_path.write_bytes(_png_with_dpi(bitmap.tobytes("png"), zoom * 72))
+    result.close()
