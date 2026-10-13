@@ -137,8 +137,8 @@ def add_row_labels(fig, font_px, debt_axis):
     """Rotated row labels anchored at the plot-area edge and offset by a fixed
     pixel xshift (as in plotEfficiencyIRF.py), so both rows' labels align."""
     row_labels = (
-        ("Output", sum(fig.layout.yaxis.domain) / 2),
-        ("Debt-to-GDP Ratio", sum(debt_axis.domain) / 2),
+        ("Output (Y<sup>d</sup><sub>t</sub>)", sum(fig.layout.yaxis.domain) / 2),
+        ("Debt-to-GDP<br>ratio (b<sub>t</sub>)", sum(debt_axis.domain) / 2),
     )
     for text, y in row_labels:
         fig.add_annotation(

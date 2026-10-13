@@ -115,8 +115,8 @@ def main():
     # the axis in both rows even though the lower row's negative tick labels are
     # wider than the upper row's positive labels.
     row_labels = (
-        ("Output", sum(fig.layout.yaxis.domain) / 2),
-        ("Debt-to-GDP Ratio", sum(fig.layout.yaxis3.domain) / 2),
+        ("Output (Y<sup>d</sup><sub>t</sub>)", sum(fig.layout.yaxis.domain) / 2),
+        ("Debt-to-GDP<br>ratio (b<sub>t</sub>)", sum(fig.layout.yaxis3.domain) / 2),
     )
     for text, y in row_labels:
         fig.add_annotation(
@@ -143,7 +143,7 @@ def main():
         for economy, model in (("AE", ae_model), ("EMDE", em_model)):
             if model is None:
                 continue
-            for variable, outcome in (("yd", "Output"), ("by_yss", "Public debt")):
+            for variable, outcome in (("yd", "Output (Y^d_t)"), ("by_yss", "Debt-to-GDP ratio (b_t)")):
                 export[f"{economy} — {label} — {outcome}"] = indexed.loc[
                     YEARS, f"{model}___{variable}"
                 ].values

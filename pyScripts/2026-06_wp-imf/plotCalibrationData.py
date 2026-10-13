@@ -73,7 +73,7 @@ PANELS = [
     ("Government investment", "nfig_gdp"),
     ("Consumption tax", "tau_c"),
     ("Labor income tax", "tau_l"),
-    ("Public debt", "ggxwdg_gdp"),
+    ("Debt-to-GDP ratio", "ggxwdg_gdp"),
 ]
 BAND_OPACITY = 0.15
 LINE_WIDTH = 2.5
