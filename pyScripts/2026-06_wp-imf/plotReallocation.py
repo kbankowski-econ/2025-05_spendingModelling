@@ -44,7 +44,7 @@ def main():
         row_heights=[2 / 3, 1 / 3],
         horizontal_spacing=0.10,
         vertical_spacing=0.18,
-        subplot_titles=("Advanced Economies", "Emerging Market and Developing Economies"),
+        subplot_titles=("Advanced Economy", "Emerging Market and Developing Economy"),
     )
 
     for label, color, ae_model, em_model in SERIES:
