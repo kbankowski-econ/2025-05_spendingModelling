@@ -65,8 +65,8 @@ PANELS = [
 COMPARISON_ROWS = [
     ("yd", "Output (Y<sup>d</sup><sub>t</sub>)"),
     ("C", "Consumption (C<sub>t</sub>)"),
-    ("pdef_yss", "Prim. deficit-to-GDP"),
-    ("by_yss", "Debt-to-GDP ratio (b<sub>t</sub>)"),
+    ("pdef_yss", "Primary deficit"),
+    ("by_yss", "Debt/GDP"),
 ]
 
 NCOLS = 4
