@@ -65,11 +65,13 @@ cd(fullfile(project_path, 'models'));
 % productive spending. For instrument x, the equivalent gap reduction is
 %   delta_e_x = (1-e_x_ss) * delta_X / (X_ss/Y_ss).
 comparisonSpendingShock = 0.0025;
-comparisonEffGI = (1-0.359) * comparisonSpendingShock / 0.02583899130065564;
-comparisonEffGE = (1-0.306) * comparisonSpendingShock / 0.012788682912736575;
-comparisonEffGRD = (1-0.399) * comparisonSpendingShock / 0.006;
-comparisonEffGI_EMDE = (1-0.406) * comparisonSpendingShock / 0.03393197673959215;
-comparisonEffGE_EMDE = (1-0.329) * comparisonSpendingShock / 0.015140748512668771;
+% Read the model's calibration directly so changes in baseline spending or
+% efficiency cannot leave the comparison shocks using stale constants.
+comparisonEffGI = matchedEfficiencyShock('AE', 'AE', 'Igiy', 'eGI_ss', comparisonSpendingShock);
+comparisonEffGE = matchedEfficiencyShock('AE', 'AE', 'Igey', 'eGE_ss', comparisonSpendingShock);
+comparisonEffGRD = matchedEfficiencyShock('AE', 'AE', 'Grdy', 'eGRD_ss', comparisonSpendingShock);
+comparisonEffGI_EMDE = matchedEfficiencyShock('EM', 'EMnorm', 'Igiy', 'eGI_ss', comparisonSpendingShock);
+comparisonEffGE_EMDE = matchedEfficiencyShock('EM', 'EMnorm', 'Igey', 'eGE_ss', comparisonSpendingShock);
 
 modelList = {
     % =================== STANDARD EXPANSIONS (Sections 4.1-4.2) ===================
@@ -336,3 +338,20 @@ end
 % MAT subsystem and the bytes differ run-to-run even for identical data.
 % See canonicalizeResults.m.
 utils.subroutines.spawnCanonicalize();
+
+function shock = matchedEfficiencyShock(params, efficiency, shareName, gapName, spendingShock)
+    calibration = [fileread([params '_parameters.macro']) newline ...
+                   fileread([efficiency '_efficiency.macro'])];
+    share = calibrationScalar(calibration, shareName);
+    gap = calibrationScalar(calibration, gapName);
+    shock = (1-gap) * spendingShock / share;
+    assert(share > 0 && gap >= 0 && gap <= 1 && shock >= 0 && shock <= gap, ...
+        'Invalid calibration or infeasible matched efficiency improvement for %s.', shareName);
+end
+
+function value = calibrationScalar(calibration, name)
+    token = regexp(calibration, ['(?m)^\s*' name '\s*=\s*([0-9.eE+-]+)\s*;'], 'tokens');
+    assert(numel(token) == 1, 'Expected one numeric calibration assignment for %s.', name);
+    value = str2double(token{1}{1});
+    assert(isfinite(value), 'Nonfinite calibration value for %s.', name);
+end

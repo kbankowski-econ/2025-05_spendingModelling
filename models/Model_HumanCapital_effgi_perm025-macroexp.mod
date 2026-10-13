@@ -272,7 +272,7 @@ shocks;
 var epsi_effgi;
 periods 1:1000 ;
 values
-    0.062018674852812
+    0.0619219218499215
 ;
 var eTaux;
 periods 1:2000 ;
