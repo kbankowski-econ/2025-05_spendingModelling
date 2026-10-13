@@ -2,7 +2,7 @@
 Figure: spending-efficiency gaps by income group (App. B, fig:efficiencyBands).
 
 Spending-efficiency gaps over time — interquartile bands by income group
-(advanced economies, emerging markets, low-income developing countries) for
+(advanced economies, emerging markets, low-income countries) for
 infrastructure, health, education and R&D (2x2 panel; R&D for AEs only).
 
 The shaded band is the 25th-75th percentile of eff_gap across each group's
@@ -56,7 +56,7 @@ AE_ONLY_SECTORS = {"RND"}
 GROUPS = [
     ("Advanced Economies", "AE", "#1E88E5"),               # blue
     ("Emerging Markets", "EM", "#FF9800"),                 # orange
-    ("Low-Income Developing Countries", "LIC", "#795548"), # brown
+    ("Low-Income Countries", "LIC", "#795548"),            # brown
 ]
 BAND_OPACITY = 0.15
 
