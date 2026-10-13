@@ -733,15 +733,12 @@ These estimates are the efficiency gaps used directly in the model.}
 \subsection{Steady-State Coefficients and Experiment Design}
 
 Three scale parameters are solved jointly with the steady state rather than selected directly, allowing the model to implement its steady-state targets, normalizations, and optimality conditions.
-
-First, the labor-disutility scale $\omega$ is determined internally to ensure that steady-state labor supply equals one-third of the available time endowment, $L=1/3$, following a standard normalization in quarterly DSGE models, as in \citet{Cantoreetal2017}.
+\emph{First}, the labor-disutility scale $\omega$ is determined internally to ensure that steady-state labor supply equals one-third of the available time endowment, $L=1/3$, following a standard normalization in quarterly DSGE models, as in \citet{Cantoreetal2017}.
 The household optimality conditions imply $E=0.157$ given $L=1/3$ and the calibrated values of $\beta$, $\delta^h$, and $\gamma$.\footnote{The implied allocation is best read at the level of the dynastic household, whose time endowment includes its schooling-age members.
 Education and health time of about one-third of combined work and education time is then in line with the ratio of expected years of schooling to years of working life. Steady-state education time rises proportionally with $\gamma$, but the long-run output response is largely insensitive to this parameter as discussed below.
 The value also reflects the human-capital depreciation rate $\delta^h$, which lies at the upper end of the range used in the literature; the sensitivity analysis with respect to $\mu$ in Subsection~\ref{subsec:sensitivity} brackets the strength of the human-capital channel.}
-
-Second, conditional on this allocation, the human-capital accumulation scale $\chi$ is determined from the accumulation equation to ensure the normalized steady-state value $H=1$.
-
-Third, the adoption-probability scale $q_0$ is determined internally to match a steady-state adoption probability of $q^{SS}=0.05$ per quarter, following \citet{Anzoateguietal2019}.
+\emph{Second}, conditional on this allocation, the human-capital accumulation scale $\chi$ is determined from the accumulation equation to ensure the normalized steady-state value $H=1$.
+\emph{Third}, the adoption-probability scale $q_0$ is determined internally to match a steady-state adoption probability of $q^{SS}=0.05$ per quarter, following \citet{Anzoateguietal2019}.
 This target implies an average adoption lag of $1/q^{SS}=20$ quarters, or five years.
 The target is imposed in equation~\eqref{eq:qmain} with $\varepsilon_t^{q}=0$ in the steady state.
 
