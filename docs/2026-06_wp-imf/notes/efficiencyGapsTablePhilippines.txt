@@ -1,0 +1,37 @@
+Table 4. Derivation of the Spending-Efficiency Gaps — extended with the Philippines
+===================================================================================
+
+Symbol   Efficiency gap (1 - efficiency)   AE      EMDE                        Philippines
+-----------------------------------------------------------------------------------------
+e^GI     Infrastructure                    0.360   (0.371+0.441)/2 = 0.406     0.342
+
+--         Health                          0.295   (0.312+0.308)/2 = 0.310     0.351
+--         Education                       0.318   (0.348+0.350)/2 = 0.349     0.350
+
+e^GE     Human capital (average)           0.306   0.329                       0.350
+
+e^GRD    R&D                               0.399   --                          --
+
+Sources: Bańkowski et al. (2026); IMF staff spending-efficiency estimates
+(2025-04-14 database), [SECTOR]_inefficiency-scores.csv, eff_gap column,
+reference year 2023.
+
+Note: Spending-efficiency gaps (one minus the efficiency score), 2023 values.
+The AE column reports the median across advanced economies; the EMDE column
+averages the emerging-market and low-income medians; the human-capital gap is
+the average of the health and education gaps. The Philippines column reports
+the country's own 2023 eff_gap estimates (income group: EM); its human-capital
+gap averages its health (0.351) and education (0.350) gaps at full precision.
+The Philippines has no 2023 R&D efficiency estimate (its R&D series ends in
+2019, at 0.536); the public-R&D technology-creation channel is in any case
+inactive outside the AE calibration.
+
+Vintage caveat: the AE and EMDE columns reproduce the paper's Table 4 exactly.
+The current efficiency database (after the 2026-06-07 "Finland included"
+re-estimate) yields slightly different infrastructure medians
+(AE 0.366; EMDE (0.367+0.428)/2 = 0.398); all other rows are unchanged.
+The Philippines values are taken from this current database.
+
+Generated 2026-10-28 from
+/Users/kk/Developer/2025-05_fmEfficiencyScores/code-output/2025-04-14-efficiency-estimates/
+following the methodology of pyScripts/2026-06_wp-imf/makeEfficiencyGapsTable.py.
