@@ -1,0 +1,51 @@
+Table 4 analogue: Spending-Efficiency Gaps from the Bańkowski–Cho–Sher (2026)
+database, extended with the Philippines
+=============================================================================
+
+Same construction as Table 4 of the working paper ("Derivation of the
+Spending-Efficiency Gaps"), but computed from the efficiency database of
+Bańkowski, Cho, and Sher (2026), "Public Spending Efficiency", IMF Working
+Paper, instead of the IMF October 2025 Fiscal Monitor estimates. Gaps are
+1 - bcs_<category> efficiency score, 2023 values.
+
+Symbol   Efficiency gap (1 - efficiency)   AE      EMDE                        Philippines
+-----------------------------------------------------------------------------------------
+e^GI     Infrastructure (investment)       0.254   (0.263+0.342)/2 = 0.303     0.252
+
+--         Health                          0.186   (0.185+0.184)/2 = 0.185     0.191
+--         Education                       0.287   (0.286+0.294)/2 = 0.290     0.303
+
+e^GE     Human capital (average)           0.236   0.237                       0.247
+
+e^GRD    R&D                               0.486   --                          --
+
+Source: /Users/kk/Developer/2026-08_fmEfficiencyGalen/output/efficiency-scores.csv
+(Bańkowski, Cho, and Sher (2026) BCS scores; median across outcome-variable
+specifications of a four-component stochastic frontier, 182 countries).
+
+Note: Construction mirrors Table 4 of the spending-modelling working paper.
+The AE column is the 2023 median gap across advanced economies; the EMDE
+column averages the emerging-market and low-income 2023 medians; the
+human-capital gap averages the health and education gaps per column at full
+precision. The Philippines column reports the country's own 2023 gaps
+(income group: EM); its human-capital gap averages its health (0.191) and
+education (0.303) gaps. R&D follows the paper's convention (AE only; the
+technology-creation channel is inactive outside the AE calibration). The
+Philippines has no 2023 R&D score in this database — its R&D series covers
+2006–15 only (2015 gap: 0.547).
+
+Caveats relative to the FM-based Table 4:
+  - The BCS gaps are substantially smaller than the Fiscal Monitor gaps used
+    in the paper (e.g. infrastructure AE 0.254 vs 0.360; EMDE 0.303 vs 0.406),
+    so they are not drop-in replacements for the model's e^ parameters.
+  - 2023 coverage is thin for R&D: the AE median is over 7 countries only
+    (10 countries in total report a 2023 R&D score).
+  - "Infrastructure" here is the BCS "investment" category (bcs_investment);
+    the public release ships with the licensed road indicators blank, so
+    published investment scores may not be exactly reproducible from the repo.
+
+Companion file: efficiencyGapsTablePhilippines.txt (the paper's Table 4,
+based on the IMF staff / Fiscal Monitor efficiency database, with the same
+Philippines extension).
+
+Generated 2026-10-28.
