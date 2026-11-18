@@ -1,0 +1,43 @@
+Publication-page review — 18 November 2026
+
+Reviewed: draftPaper_forPub.pdf, added in commit 3efddae8.
+Compared with: draftPaper.pdf.
+Page numbers below refer to physical PDF pages in the publication version.
+
+The added pages are substantively consistent with the draft, but need the
+following editorial fixes before publication:
+
+1. Pages 1–2: Restore the original title punctuation:
+   "Spending Smarter: Public Expenditure Allocation, Efficiency, and Long-Run
+   Growth". The new title replaces the colon with a hyphen and omits the
+   comma after "Allocation".
+
+2. Page 2: Remove the duplicated "Prepared by" in the author line.
+
+3. Pages 1–2 and 66: Complete the publication placeholders, including
+   WP/YY/XX, the copyright year (currently ©YYYY), and the back-cover title
+   and working-paper number. Remove the brackets around [2026] and [NOV]
+   on the front cover.
+
+4. Pages 1–2: Match the author spelling in the draft: Bańkowski rather than
+   Bankowski.
+
+5. Minor cleanup: Page 2 repeats the disclaimer in the acknowledgments,
+   below the main disclaimer box. The PDF bookmarks also retain a parent
+   entry named "draftPaper (1)".
+
+Consistency checks:
+
+- The abstract matches the draft after normalizing whitespace and line-break
+  hyphenation, including all numerical findings.
+- JEL codes, keywords, email addresses, and acknowledgments agree with the
+  draft.
+- Publication PDF pages 3–65 have identical extracted text to draft PDF
+  pages 2–64. The original title/abstract page is replaced by two new pages,
+  and a back cover is added, giving 66 pages instead of 64.
+- The checked contents links and section bookmarks account for the added
+  front page and point to the correct shifted pages.
+- The new front matter is dated November 2026, replacing October 2026 in
+  the draft.
+
+No changes were made to either PDF as part of this review.
